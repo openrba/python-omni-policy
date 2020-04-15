@@ -1,0 +1,141 @@
+azurerm_automation_schedule:
+    status: HOLD
+    subcategory: Automation
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_automation_schedule'
+    description: Manages a Automation Schedule.
+    arguments:
+        name:
+            description: Specifies the name of the Schedule. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Schedule is created.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        automation_account_name:
+            description: The name of the automation account in which the Schedule
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        frequency:
+            description: The frequency of the schedule. - can be either `OneTime`,
+                `Day`, `Hour`, `Week`, or `Month`.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description for this Schedule.
+            required: false
+            policy: ''
+            notes: ''
+        interval:
+            description: The number of `frequency`s between runs. Only valid when
+                frequency is `Day`, `Hour`, `Week`, or `Month` and defaults to `1`.
+            required: false
+            policy: ''
+            notes: ''
+        start_time:
+            description: Start time of the schedule. Must be at least five minutes
+                in the future. Defaults to seven minutes in the future from the time
+                the resource is created.
+            required: false
+            policy: ''
+            notes: ''
+        expiry_time:
+            description: The end time of the schedule.
+            required: false
+            policy: ''
+            notes: ''
+        timezone:
+            description: 'The timezone of the start time. Defaults to `UTC`. For possible
+                values see: https://msdn.microsoft.com/en-us/library/ms912391(v=winembedded.11).aspx'
+            required: false
+            policy: ''
+            notes: ''
+        week_days:
+            description: List of days of the week that the job should execute on.
+                Only valid when frequency is `Week`.
+            required: false
+            policy: ''
+            notes: ''
+        month_days:
+            description: List of days of the month that the job should execute on.
+                Must be between `1` and `31`. `-1` for last day of the month. Only
+                valid when frequency is `Month`.
+            required: false
+            policy: ''
+            notes: ''
+        monthly_occurrence:
+            description: List of occurrences of days within a month. Only valid when
+                frequency is `Month`. The `monthly_occurrence` block supports fields
+                documented below.
+            required: false
+            policy: ''
+            notes: ''
+        day:
+            description: Day of the occurrence. Must be one of `Monday`, `Tuesday`,
+                `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`.
+            required: true
+            policy: ''
+            notes: ''
+        occurrence:
+            description: Occurrence of the week within the month. Must be between
+                `1` and `5`. `-1` for last week within the month.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Automation Schedule ID.
+    timeouts:
+        create:
+            description: Used when creating the Automation Schedule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Automation Schedule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Automation Schedule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Automation Schedule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndFlYVjBiMjFoZEdsdmJpMWhZMk52ZFc1MEln
+        b2dJR3h2WTJGMGFXOXVJRDBnSWxkbGMzUWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhw
+        MWNtVnliVjloZFhSdmJXRjBhVzl1WDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0
+        WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFptVjRMV0YxZEc5dFlYUnBiMjR0WVdOamIzVnVk
+        Q0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpW
+        OW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1G
+        dFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDZ29n
+        SUhOcmRTQjdDaUFnSUNCdVlXMWxJRDBnSWtKaGMybGpJZ29nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bUY2ZFhKbGNtMWZZWFYwYjIxaGRHbHZibDl6WTJobFpIVnNaU0lnSW1WNFlXMXdiR1VpSUhzS0lD
+        QnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBabVY0TFdGMWRHOXRZWFJwYjI0
+        dGMyTm9aV1IxYkdVaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnSUNBZ1BTQmhlblZ5
+        WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR0YxZEc5dFlYUnBi
+        MjVmWVdOamIzVnVkRjl1WVcxbElEMGdZWHAxY21WeWJWOWhkWFJ2YldGMGFXOXVYMkZqWTI5MWJu
+        UXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ1puSmxjWFZsYm1ONUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNB
+        aVYyVmxheUlLSUNCcGJuUmxjblpoYkNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURFS0lDQjBhVzFs
+        ZW05dVpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSkRaVzUwY21Gc0lFVjFjbTl3WlNCVGRHRnVa
+        R0Z5WkNCVWFXMWxJZ29nSUhOMFlYSjBYM1JwYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWpJd01U
+        UXRNRFF0TVRWVU1UZzZNREE2TVRVck1ESTZNREFpQ2lBZ1pHVnpZM0pwY0hScGIyNGdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNBaVZHaHBjeUJwY3lCaGJpQmxlR0Z0Y0d4bElITmphR1ZrZFd4bElnb2dJSGRs
+        Wld0ZlpHRjVjeUFnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdXeUpHY21sa1lYa2lYUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQmRYUnZiV0YwYVc5dUlGTmphR1ZrZFd4bElHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYVjBiMjFoZEdsdmJsOXpZMmhsWkhWc1pTNW9kRzFzTG0xaGNtdGtiM2R1

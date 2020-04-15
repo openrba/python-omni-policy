@@ -1,0 +1,185 @@
+{
+    "aws_opsworks_stack": {
+        "status": "HOLD",
+        "subcategory": "OpsWorks",
+        "layout": "aws",
+        "page_title": "AWS: aws_opsworks_stack",
+        "description": "Provides an OpsWorks stack resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the stack.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "The name of the region where the stack will exist.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_role_arn": {
+                "description": "The ARN of an IAM role that the OpsWorks service will act as.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "default_instance_profile_arn": {
+                "description": "The ARN of an IAM Instance Profile that created instances",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "agent_version": {
+                "description": "If set to `\"LATEST\"`, OpsWorks will automatically install the latest version.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "berkshelf_version": {
+                "description": "If `manage_berkshelf` is enabled, the version of Berkshelf to use.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "color": {
+                "description": "Color to paint next to the stack's resources in the OpsWorks console.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_availability_zone": {
+                "description": "Name of the availability zone where instances will be created",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "configuration_manager_name": {
+                "description": "Name of the configuration manager to use. Defaults to \"Chef\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "configuration_manager_version": {
+                "description": "Version of the configuration manager to use. Defaults to \"11.4\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_cookbooks_source": {
+                "description": "When `use_custom_cookbooks` is set, provide this sub-object as",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_json": {
+                "description": "Custom JSON attributes to apply to the entire stack.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_os": {
+                "description": "Name of OS that will be installed on instances by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_root_device_type": {
+                "description": "Name of the type of root device instances will have by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_ssh_key_name": {
+                "description": "Name of the SSH keypair that instances will have by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_subnet_id": {
+                "description": "Id of the subnet in which instances will be created by default. Mandatory",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hostname_theme": {
+                "description": "Keyword representing the naming scheme that will be used for instance hostnames",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "manage_berkshelf": {
+                "description": "Boolean value controlling whether Opsworks will run Berkshelf for this stack.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "use_custom_cookbooks": {
+                "description": "Boolean value controlling whether the custom cookbook settings are",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "use_opsworks_security_groups": {
+                "description": "Boolean value controlling whether the standard OpsWorks",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_id": {
+                "description": "The id of the VPC that this stack belongs to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of source to use. For example, \"archive\".",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The URL where the cookbooks resource can be found.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "username": {
+                "description": "Username to use when authenticating to the source.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "password": {
+                "description": "Password to use when authenticating to the source. Terraform cannot perform drift detection of this configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ssh_key": {
+                "description": "SSH key to use when authenticating to the source. Terraform cannot perform drift detection of this configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "revision": {
+                "description": "For sources that are version-aware, the revision to use.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The id of the stack."
+            }
+        },
+        "timeouts": {}
+    }
+}

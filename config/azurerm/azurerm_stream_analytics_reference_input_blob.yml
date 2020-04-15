@@ -1,0 +1,151 @@
+azurerm_stream_analytics_reference_input_blob:
+    status: HOLD
+    subcategory: Stream Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_stream_analytics_reference_input_blob'
+    description: Manages a Stream Analytics Reference Input Blob.
+    arguments:
+        name:
+            description: The name of the Reference Input Blob. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Stream Analytics
+                Job exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        stream_analytics_job_name:
+            description: The name of the Stream Analytics Job. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        date_format:
+            description: The date format. Wherever `{date}` appears in `path_pattern`,
+                the value of this property is used as the date format instead.
+            required: true
+            policy: ''
+            notes: ''
+        path_pattern:
+            description: The blob path pattern. Not a regular expression. It represents
+                a pattern against which blob names will be matched to determine whether
+                or not they should be included as input or output to the job.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_name:
+            description: The name of the Storage Account that has the blob container
+                with reference data.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_key:
+            description: The Access Key which should be used to connect to this Storage
+                Account.
+            required: true
+            policy: ''
+            notes: ''
+        storage_container_name:
+            description: The name of the Container within the Storage Account.
+            required: true
+            policy: ''
+            notes: ''
+        time_format:
+            description: The time format. Wherever `{time}` appears in `path_pattern`,
+                the value of this property is used as the time format instead.
+            required: true
+            policy: ''
+            notes: ''
+        serialization:
+            description: A `serialization` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The serialization format used for the reference data. Possible
+                values are `Avro`, `Csv` and `Json`.
+            required: true
+            policy: ''
+            notes: ''
+        encoding:
+            description: The encoding of the incoming data in the case of input and
+                the encoding of outgoing data in the case of output. It currently
+                can only be set to `UTF8`.
+            required: false
+            policy: ''
+            notes: This is required when `type` is set to `Csv` or `Json`.
+        field_delimiter:
+            description: The delimiter that will be used to separate comma-separated
+                value (CSV
+            required: false
+            policy: ''
+            notes: This is required when `type` is set to `Csv`.
+    attributes:
+        id:
+            description: The ID of the Stream Analytics Reference Input Blob.
+    timeouts:
+        create:
+            description: Used when creating the Stream Analytics Reference Input Blob.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Stream Analytics Reference Input Blob.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Stream Analytics Reference Input
+                Blob.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Stream Analytics Reference Input Blob.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQTlJQ0psZUdGdGNHeGxMWEpsYzI5MWNtTmxjeUlLZlFvS1pHRjBZU0FpWVhwMWNt
+        VnliVjl6ZEhKbFlXMWZZVzVoYkhsMGFXTnpYMnB2WWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGFtOWlJZ29nSUhKbGMyOTFjbU5s
+        WDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZEc5eVlXZGxYMkZqWTI5MWJu
+        UWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0ltVjRZVzF3YkdWemRHOXlZV05qSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0Fn
+        SUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdi
+        RzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpW
+        OW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ1lXTmpiM1Z1ZEY5MGFXVnlJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb2dJR0ZqWTI5MWJuUmZjbVZ3YkdsallYUnBiMjVm
+        ZEhsd1pTQTlJQ0pNVWxNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM04wYjNKaFoyVmZZ
+        Mjl1ZEdGcGJtVnlJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKbGVHRnRjR3hsSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0E5SUdG
+        NmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2MzUnZjbUZu
+        WlY5aFkyTnZkVzUwWDI1aGJXVWdJRDBnWVhwMWNtVnliVjl6ZEc5eVlXZGxYMkZqWTI5MWJuUXVa
+        WGhoYlhCc1pTNXVZVzFsQ2lBZ1kyOXVkR0ZwYm1WeVgyRmpZMlZ6YzE5MGVYQmxJRDBnSW5CeWFY
+        WmhkR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjBjbVZoYlY5aGJtRnNlWFJwWTNO
+        ZmNtVm1aWEpsYm1ObFgybHVjSFYwWDJKc2IySWlJQ0owWlhOMElpQjdDaUFnYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKaWJHOWlMWEpsWm1WeVpXNWpaUzFwYm5CMWRDSUtJ
+        Q0J6ZEhKbFlXMWZZVzVoYkhsMGFXTnpYMnB2WWw5dVlXMWxJRDBnWkdGMFlTNWhlblZ5WlhKdFgz
+        TjBjbVZoYlY5aGJtRnNlWFJwWTNOZmFtOWlMbVY0WVcxd2JHVXVibUZ0WlFvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdJQ0FnSUNBZ1BTQmtZWFJoTG1GNmRYSmxjbTFmYzNSeVpXRnRYMkZ1
+        WVd4NWRHbGpjMTlxYjJJdVpYaGhiWEJzWlM1eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbENpQWdj
+        M1J2Y21GblpWOWhZMk52ZFc1MFgyNWhiV1VnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpW
+        OWhZMk52ZFc1MExtVjRZVzF3YkdVdWJtRnRaUW9nSUhOMGIzSmhaMlZmWVdOamIzVnVkRjlyWlhr
+        Z0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNOMGIzSmhaMlZmWVdOamIzVnVkQzVsZUdGdGNHeGxMbkJ5
+        YVcxaGNubGZZV05qWlhOelgydGxlUW9nSUhOMGIzSmhaMlZmWTI5dWRHRnBibVZ5WDI1aGJXVWdJ
+        Q0FnUFNCaGVuVnlaWEp0WDNOMGIzSmhaMlZmWTI5dWRHRnBibVZ5TG1WNFlXMXdiR1V1Ym1GdFpR
+        b2dJSEJoZEdoZmNHRjBkR1Z5YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYzI5dFpTMXlZVzVrYjIw
+        dGNHRjBkR1Z5YmlJS0lDQmtZWFJsWDJadmNtMWhkQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbmw1
+        ZVhrdlRVMHZaR1FpQ2lBZ2RHbHRaVjltYjNKdFlYUWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSklT
+        Q0lLQ2lBZ2MyVnlhV0ZzYVhwaGRHbHZiaUI3Q2lBZ0lDQjBlWEJsSUNBZ0lDQTlJQ0pLYzI5dUln
+        b2dJQ0FnWlc1amIyUnBibWNnUFNBaVZWUkdPQ0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwVGRISmxZVzBnUVc1aGJIbDBhV056SUZKbFptVnlaVzVqWlNCSmJuQjFkQ0JDYkc5aUozTWdZ
+        MkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnlaV0Z0WDJGdVlXeDVkR2xqYzE5eVpXWmxjbVZ1WTJWZmFXNXdkWFJmWW14
+        dllpNW9kRzFzTG0xaGNtdGtiM2R1

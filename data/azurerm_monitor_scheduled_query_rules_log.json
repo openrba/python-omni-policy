@@ -1,0 +1,98 @@
+{
+    "azurerm_monitor_scheduled_query_rules_log": {
+        "status": "HOLD",
+        "subcategory": "Monitor",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_monitor_scheduled_query_rules_log",
+        "description": "Manages a LogToMetricAction Scheduled Query Rules resources within Azure Monitor",
+        "arguments": {
+            "name": {
+                "description": "Name of the dimension.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the scheduled query rule instance.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "criteria": {
+                "description": "A `criteria` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "data_source_id": {
+                "description": "The resource uri over which log search query is to be run.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the scheduled query rule.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Whether this scheduled query rule is enabled.  Default is `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dimension": {
+                "description": "A `dimension` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_name": {
+                "description": "Name of the metric.  Supported metrics are listed in the Azure Monitor [Microsoft.OperationalInsights/workspaces](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported#microsoftoperationalinsightsworkspaces",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "operator": {
+                "description": "Operator for dimension values, - 'Include'.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "values": {
+                "description": "List of dimension values.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the scheduled query rule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Scheduled Query Rule Log.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Scheduled Query Rule Log.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Scheduled Query Rule Log.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Scheduled Query Rule Log.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

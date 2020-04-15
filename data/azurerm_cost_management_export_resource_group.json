@@ -1,0 +1,116 @@
+{
+    "azurerm_cost_management_export_resource_group": {
+        "status": "HOLD",
+        "subcategory": "Cost Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_cost_management_export_resource_group",
+        "description": "Manages an Azure Cost Management Export for a Resource Group.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Cost Management Export. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_id": {
+                "description": "The id of the resource group in which to export information.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recurrence_type": {
+                "description": "How often the requested information will be exported. Valid values include `Annually`, `Daily`, `Monthly`, `Weekly`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recurrence_period_start": {
+                "description": "The date the export will start capturing information.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recurrence_period_end": {
+                "description": "The date the export will stop capturing information. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "delivery_info": {
+                "description": "A `delivery_info` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "query": {
+                "description": "A `query` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "active": {
+                "description": "Is the cost management export active? Default is `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "The storage account id where exports will be delivered.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "container_name": {
+                "description": "The name of the container where exports will be uploaded.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "root_folder_path": {
+                "description": "The path of the directory where exports will be uploaded.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of the query.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "time_frame": {
+                "description": "The time frame for pulling data for the query. If custom, then a specific time period must be provided. Possible values include: `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`, `TheLastYear`, `Custom`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Cost Management Export."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the resource.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the resource.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the resource.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the resource.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

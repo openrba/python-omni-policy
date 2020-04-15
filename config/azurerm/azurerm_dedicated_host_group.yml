@@ -1,0 +1,82 @@
+azurerm_dedicated_host_group:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_dedicated_host_group'
+    description: Manage a Dedicated Host Group.
+    arguments:
+        name:
+            description: Specifies the name of the Dedicated Host Group. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the resource group the Dedicated Host
+                Group is located in. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where the Dedicated Host Group exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        platform_fault_domain_count:
+            description: The number of fault domains that the Dedicated Host Group
+                spans. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        zones:
+            description: A list of Availability Zones in which the Dedicated Host
+                Group should be located. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Dedicated Host Group.
+    timeouts:
+        create:
+            description: Used when creating the Dedicated Host Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Dedicated Host Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Dedicated Host Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Dedicated Host Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbWN0WTI5dGNIVjBaU0lLSUNCc2Iy
+        TmhkR2x2YmlBOUlDSlhaWE4wSUVWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZlpHVmthV05oZEdWa1gyaHZjM1JmWjNKdmRYQWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVXRaR1ZrYVdOaGRHVmtM
+        V2h2YzNRdFozSnZkWEFpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQWdJQ0FnSUNBZ0lE
+        MGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JzYjJO
+        aGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5s
+        WDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J3YkdGMFptOXliVjltWVhWc2RGOWti
+        MjFoYVc1ZlkyOTFiblFnUFNBeENuMEs=
+    import: !!binary |
+        Q2dwRVpXUnBZMkYwWldRZ1NHOXpkQ0JIY205MWNDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHVmthV05oZEdWa1gyaHZjM1JmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

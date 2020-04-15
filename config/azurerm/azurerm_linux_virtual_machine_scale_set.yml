@@ -1,0 +1,106 @@
+azurerm_linux_virtual_machine_scale_set:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_linux_virtual_machine_scale_set'
+    description: Manages a Linux Virtual Machine Scale Set.
+    arguments:
+        name:
+            description: The name of the Linux Virtual Machine Scale Set. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where the Linux Virtual Machine Scale
+                Set should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the Linux Virtual
+                Machine Scale Set should be exist. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        admin_username:
+            description: The username of the local administrator on each Virtual Machine
+                Scale Set instance. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        instances:
+            description: The number of Virtual Machines in the Scale Set.
+            required: true
+            policy: ''
+            notes: If you're using AutoScaling, you may wish to use [Terraform's `ignore_changes`
+                functionality](https://www.terraform.io/docs/configuration/resources.html#ignore_changes)
+                to ignore changes to this field.
+        sku:
+            description: The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+            required: true
+            policy: ''
+            notes: ''
+        network_interface:
+            description: One or more `network_interface` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        os_disk:
+            description: An `os_disk` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        additional_capabilities:
+            description: A `additional_capabilities` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        admin_password:
+            description: The Password which should be used for the local-administrator
+                on this Virtual Machine. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: When an `admin_password` is specified `disable_password_authentication`
+                must be set to `false`.
+        admin_ssh_key:
+            description: One or more `admin_ssh_key` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        automatic_os_upgrade_policy:
+            description: A `automatic_os_upgrade_policy` block as defined below. This
+                is Required and can only be specified when `upgrade_mode` is set to
+                `Automatic`.
+            required: false
+            policy: ''
+            notes: ''
+        boot_diagnostics:
+            description: A `boot_diagnostics` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        computer_name_prefix:
+            description: The prefix which should be used for the name of the Virtual
+                Machines in this Scale Set. If unspecified this defaults to the value
+                for the `name` field.
+            required: false
+            policy: ''
+            notes: ''
+        custom_data:
+            description: The Base64-Encoded Custom Data which should be used for this
+                Virtual Machine Scale Set.
+            required: false
+            policy: ''
+            notes: When Custom Data has been configured, it's not possible to remove
+                it without tainting the Virtual Machine Scale Set, due to a limitation
+                of the Azure API.
+        data_disk:
+            description: One or more `data_disk` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

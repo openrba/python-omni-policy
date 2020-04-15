@@ -1,0 +1,47 @@
+{
+    "aws_lightsail_key_pair": {
+        "status": "HOLD",
+        "subcategory": "Lightsail",
+        "layout": "aws",
+        "page_title": "AWS: aws_lightsail_key_pair",
+        "description": "Provides an Lightsail Key Pair",
+        "arguments": {
+            "name": {
+                "description": "The name of the Lightsail Key Pair. If omitted, a unique",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pgp_key": {
+                "description": "An optional PGP key to encrypt the resulting private",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_key": {
+                "description": "The public key material. This public key will be",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name used for this key pair"
+            },
+            "arn": {
+                "description": "The ARN of the Lightsail key pair"
+            },
+            "fingerprint": {
+                "description": "The MD5 public key fingerprint as specified in section 4 of RFC 4716."
+            },
+            "public_key": {
+                "description": "the public key, base64 encoded"
+            },
+            "private_key": {
+                "description": "the private key, base64 encoded. This is only populated"
+            }
+        },
+        "timeouts": {}
+    }
+}

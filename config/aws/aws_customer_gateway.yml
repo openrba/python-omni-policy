@@ -1,0 +1,34 @@
+aws_customer_gateway:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_customer_gateway'
+    description: 'Provides a customer gateway inside a VPC. These objects can be
+
+        connected to VPN gateways via VPN connections, and allow you to
+
+        establish tunnels between your network and the VPC.'
+    arguments:
+        bgp_asn:
+            description: The gateway's Border Gateway Protocol (BGP
+            required: true
+            policy: ''
+            notes: ''
+        ip_address:
+            description: The IP address of the gateway's Internet-routable external
+                interface.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of customer gateway. The only type AWS
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Tags to apply to the gateway.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

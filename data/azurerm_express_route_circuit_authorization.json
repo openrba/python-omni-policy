@@ -1,0 +1,62 @@
+{
+    "azurerm_express_route_circuit_authorization": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_express_route_circuit_authorization",
+        "description": "Manages an ExpressRoute Circuit Authorization.",
+        "arguments": {
+            "name": {
+                "description": "The name of the ExpressRoute circuit. Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "express_route_circuit_name": {
+                "description": "The name of the Express Route Circuit in which to create the Authorization.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Resource ID of the ExpressRoute Circuit Authorization."
+            },
+            "authorization_key": {
+                "description": "The Authorization Key."
+            },
+            "authorization_use_status": {
+                "description": "The authorization use status."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the ExpressRoute Circuit Authorization.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the ExpressRoute Circuit Authorization.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the ExpressRoute Circuit Authorization.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the ExpressRoute Circuit Authorization.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+azurerm_bot_connection:
+    status: HOLD
+    subcategory: Bot
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_bot_connection'
+    description: Manages a Bot Connection.
+    arguments:
+        name:
+            description: Specifies the name of the Bot Connection. Changing this forces
+                a new resource to be created. Must be globally unique.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Bot
+                Connection. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The supported Azure location where the resource exists. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        bot_name:
+            description: The name of the Bot Resource this connection will be associated
+                with. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        service_provider_name:
+            description: The name of the service provider that will be associated
+                with this connection. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        client_id:
+            description: The Client ID that will be used to authenticate with the
+                service provider.
+            required: true
+            policy: ''
+            notes: ''
+        client_secret:
+            description: The Client Secret that will be used to authenticate with
+                the service provider.
+            required: true
+            policy: ''
+            notes: ''
+        scopes:
+            description: The Scopes at which the connection should be applied.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: A map of additional parameters to apply to the connection.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Bot Connection.
+    timeouts:
+        create:
+            description: Used when creating the Bot Connection.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Bot Connection.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Bot Connection.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Bot Connection.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnlJZ0ltTjFjbkpsYm5RaUlIdDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYSmxjMjkxY21ObGN5SUtJQ0JzYjJO
+        aGRHbHZiaUE5SUNKdWIzSjBhR1YxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        WW05MFgyTm9ZVzV1Wld4elgzSmxaMmx6ZEhKaGRHbHZiaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1VpQ2lBZ2JHOWpZWFJwYjI0Z0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0puYkc5aVlXd2lDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNB
+        OUlDSWtlMkY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxmU0lL
+        SUNCemEzVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1l3SWdvZ0lHMXBZM0p2YzI5bWRGOWhj
+        SEJmYVdRZ0lDQWdQU0FpSkh0a1lYUmhMbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnk1amRY
+        SnlaVzUwTG1Oc2FXVnVkRjlwWkgwaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkp2ZEY5
+        amIyNXVaV04wYVc5dUlpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUdKdmRGOXVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0lrZTJGNmRYSmxjbTFmWW05MFgyTm9ZVzV1Wld4elgzSmxaMmx6ZEhKaGRHbHZiaTVsZUdGdGNH
+        eGxMbTVoYldWOUlnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSWtlMkY2ZFhK
+        bGNtMWZZbTkwWDJOb1lXNXVaV3h6WDNKbFoybHpkSEpoZEdsdmJpNWxlR0Z0Y0d4bExteHZZMkYw
+        YVc5dWZTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBZ1BTQWlKSHRoZW5WeVpYSnRY
+        M0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaWDBpQ2lBZ2MyVnlkbWxqWlY5d2Nt
+        OTJhV1JsY2w5dVlXMWxJRDBnSW1KdmVDSUtJQ0JqYkdsbGJuUmZhV1FnSUNBZ0lDQWdJQ0FnSUNB
+        Z1BTQWlaWGhoYlhCc1pVbGtJZ29nSUdOc2FXVnVkRjl6WldOeVpYUWdJQ0FnSUNBZ0lDQTlJQ0ps
+        ZUdGdGNHeGxVMlZqY21WMElncDlDZz09
+    import: !!binary |
+        Q2dwQ2IzUWdRMjl1Ym1WamRHbHZiaUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltOTBYMk52Ym01bFkzUnBiMjR1YldGeWEyUnZkMjQ9

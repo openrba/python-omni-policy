@@ -1,0 +1,103 @@
+azurerm_route_table:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_route_table'
+    description: Manages a Route Table
+    arguments:
+        name:
+            description: The name of the route.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the route
+                table. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        route:
+            description: '[List of objects](/docs/configuration/attr-as-blocks.html'
+            required: false
+            policy: ''
+            notes: ''
+        disable_bgp_route_propagation:
+            description: Boolean flag which controls propagation of routes learned
+                by BGP on that route table. True means disable.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        address_prefix:
+            description: The destination CIDR to which the route applies, such as
+                10.1.0.0/16
+            required: true
+            policy: ''
+            notes: ''
+        next_hop_type:
+            description: The type of Azure hop the packet should be sent to. Possible
+                values are `VirtualNetworkGateway`, `VnetLocal`, `Internet`, `VirtualAppliance`
+                and `None`.
+            required: true
+            policy: ''
+            notes: ''
+        next_hop_in_ip_address:
+            description: Contains the IP address packets should be forwarded to. Next
+                hop values are only allowed in routes where the next hop type is `VirtualAppliance`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Route Table ID.
+        subnets:
+            description: The collection of Subnets associated with this route table.
+    timeouts:
+        create:
+            description: Used when creating the Route Table.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Route Table.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Route Table.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Route Table.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFVtVnpiM1Z5WTJWSGNt
+        OTFjREVpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmY205MWRHVmZkR0ZpYkdVaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlZV05qWlhCMFlXNWpaVlJsYzNSVFpXTjFj
+        bWwwZVVkeWIzVndNU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2Ymdv
+        Z0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5
+        WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCa2FYTmhZbXhsWDJKbmNGOXli
+        M1YwWlY5d2NtOXdZV2RoZEdsdmJpQTlJR1poYkhObENnb2dJSEp2ZFhSbElIc0tJQ0FnSUc1aGJX
+        VWdJQ0FnSUNBZ0lDQWdJRDBnSW5KdmRYUmxNU0lLSUNBZ0lHRmtaSEpsYzNOZmNISmxabWw0SUQw
+        Z0lqRXdMakV1TUM0d0x6RTJJZ29nSUNBZ2JtVjRkRjlvYjNCZmRIbHdaU0FnUFNBaWRtNWxkR3h2
+        WTJGc0lnb2dJSDBLQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJR1Z1ZG1seWIyNXRaVzUwSUQwZ0lsQnli
+        MlIxWTNScGIyNGlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwU2IzVjBaU0JVWVdKc1pYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdj
+        bVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtOTFkR1ZmZEdGaWJHVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

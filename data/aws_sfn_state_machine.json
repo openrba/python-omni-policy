@@ -1,0 +1,47 @@
+{
+    "aws_sfn_state_machine": {
+        "status": "HOLD",
+        "subcategory": "Step Function (SFN)",
+        "layout": "aws",
+        "page_title": "AWS: aws_sfn_state_machine",
+        "description": "Provides a Step Function State Machine resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the state machine.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "definition": {
+                "description": "The Amazon States Language definition of the state machine.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_arn": {
+                "description": "The Amazon Resource Name (ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ARN of the state machine."
+            },
+            "creation_date": {
+                "description": "The date the state machine was created."
+            },
+            "status": {
+                "description": "The current status of the state machine. Either \"ACTIVE\" or \"DELETING\"."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,28 @@
+aws_iot_policy:
+    status: HOLD
+    subcategory: IoT
+    layout: aws
+    page_title: 'AWS: aws_iot_policy'
+    description: Provides an IoT policy.
+    arguments:
+        name:
+            description: The name of the policy.
+            required: true
+            policy: ''
+            notes: ''
+        policy:
+            description: The policy document. This is a JSON formatted string. Use
+                the [IoT Developer Guide](http://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The ARN assigned by AWS to this policy.
+        name:
+            description: The name of this policy.
+        default_version_id:
+            description: The default version of this policy.
+        policy:
+            description: The policy document.
+    timeouts: {}

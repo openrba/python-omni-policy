@@ -1,0 +1,77 @@
+{
+    "aws_ec2_client_vpn_endpoint": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_ec2_client_vpn_endpoint",
+        "description": "Provides an AWS Client VPN endpoint for OpenVPN clients.",
+        "arguments": {
+            "authentication_options": {
+                "description": "Information about the authentication method to be used to authenticate clients.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_cidr_block": {
+                "description": "The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_log_options": {
+                "description": "Information about the client connection logging options.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Name of the repository.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_servers": {
+                "description": "Information about the DNS servers to be used for DNS resolution. A Client VPN endpoint can have up to two DNS servers. If no DNS server is specified, the DNS address of the VPC that is to be associated with Client VPN endpoint is used as the DNS server.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_certificate_arn": {
+                "description": "The ARN of the ACM server certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "split_tunnel": {
+                "description": "Indicates whether split-tunnel is enabled on VPN endpoint. Default value is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "transport_protocol": {
+                "description": "The transport protocol to be used by the VPN session. Default value is `udp`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Client VPN endpoint."
+            },
+            "dns_name": {
+                "description": "The DNS name to be used by clients when establishing their VPN session."
+            },
+            "status": {
+                "description": "The current state of the Client VPN endpoint."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,65 @@
+aws_dx_hosted_transit_virtual_interface_accepter:
+    status: HOLD
+    subcategory: Direct Connect
+    layout: aws
+    page_title: 'AWS: aws_dx_hosted_transit_virtual_interface_accepter'
+    description: Provides a resource to manage the accepter's side of a Direct Connect
+        hosted transit virtual interface.
+    arguments:
+        dx_gateway_id:
+            description: The ID of the [Direct Connect gateway](dx_gateway.html
+            required: true
+            policy: ''
+            notes: ''
+        virtual_interface_id:
+            description: The ID of the Direct Connect virtual interface to accept.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the virtual interface.
+        arn:
+            description: The ARN of the virtual interface.
+    timeouts: {}
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGQzTWlJSHNLSUNBaklFTnlaV0YwYjNJbmN5QmpjbVZrWlc1MGFXRnNj
+        eTRLZlFvS2NISnZkbWxrWlhJZ0ltRjNjeUlnZXdvZ0lHRnNhV0Z6SUQwZ0ltRmpZMlZ3ZEdWeUln
+        b0tJQ0FqSUVGalkyVndkR1Z5SjNNZ1kzSmxaR1Z1ZEdsaGJITXVDbjBLQ21SaGRHRWdJbUYzYzE5
+        allXeHNaWEpmYVdSbGJuUnBkSGtpSUNKaFkyTmxjSFJsY2lJZ2V3b2dJSEJ5YjNacFpHVnlJRDBn
+        SW1GM2N5NWhZMk5sY0hSbGNpSUtmUW9LSXlCRGNtVmhkRzl5SjNNZ2MybGtaU0J2WmlCMGFHVWdW
+        a2xHQ25KbGMyOTFjbU5sSUNKaGQzTmZaSGhmYUc5emRHVmtYM1J5WVc1emFYUmZkbWx5ZEhWaGJG
+        OXBiblJsY21aaFkyVWlJQ0pqY21WaGRHOXlJaUI3Q2lBZ1kyOXVibVZqZEdsdmJsOXBaQ0FnSUNB
+        OUlDSmtlR052YmkxNmVucDZlbnA2ZWlJS0lDQnZkMjVsY2w5aFkyTnZkVzUwWDJsa0lEMGdJaVI3
+        WkdGMFlTNWhkM05mWTJGc2JHVnlYMmxrWlc1MGFYUjVMbUZqWTJWd2RHVnlMbUZqWTI5MWJuUmZh
+        V1I5SWdvS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBOUlDSjBaaTEwY21GdWMybDBMWFpwWmkxbGVH
+        RnRjR3hsSWdvZ0lIWnNZVzRnSUNBZ0lDQWdJQ0FnSUQwZ05EQTVOQW9nSUdGa1pISmxjM05mWm1G
+        dGFXeDVJRDBnSW1sd2RqUWlDaUFnWW1kd1gyRnpiaUFnSUNBZ0lDQWdQU0EyTlRNMU1nb0tJQ0Fq
+        SUZSb1pTQmhkM05mWkhoZmFHOXpkR1ZrWDNSeVlXNXphWFJmZG1seWRIVmhiRjlwYm5SbGNtWmhZ
+        MlVLSUNBaklHMTFjM1FnWW1VZ1pHVnpkSEp2ZVdWa0lHSmxabTl5WlNCMGFHVWdZWGR6WDJSNFgy
+        ZGhkR1YzWVhrdUNpQWdaR1Z3Wlc1a2MxOXZiaUE5SUZzaVlYZHpYMlI0WDJkaGRHVjNZWGt1Wlho
+        aGJYQnNaU0pkQ24wS0NpTWdRV05qWlhCMFpYSW5jeUJ6YVdSbElHOW1JSFJvWlNCV1NVWXVDbkps
+        YzI5MWNtTmxJQ0poZDNOZlpIaGZaMkYwWlhkaGVTSWdJbVY0WVcxd2JHVWlJSHNLSUNCd2NtOTJh
+        V1JsY2lBOUlDSmhkM011WVdOalpYQjBaWElpQ2dvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SjBaaTFrZUdjdFpYaGhiWEJzWlNJS0lDQmhiV0Y2YjI1ZmMybGtaVjloYzI0Z1BTQTJORFV4TWdw
+        OUNncHlaWE52ZFhKalpTQWlZWGR6WDJSNFgyaHZjM1JsWkY5MGNtRnVjMmwwWDNacGNuUjFZV3hm
+        YVc1MFpYSm1ZV05sWDJGalkyVndkR1Z5SWlBaVlXTmpaWEIwWlhJaUlIc0tJQ0J3Y205MmFXUmxj
+        aUFnSUNBZ0lDQWdJQ0FnSUNBOUlDSmhkM011WVdOalpYQjBaWElpQ2lBZ2RtbHlkSFZoYkY5cGJu
+        UmxjbVpoWTJWZmFXUWdQU0FpSkh0aGQzTmZaSGhmYUc5emRHVmtYM1J5WVc1emFYUmZkbWx5ZEhW
+        aGJGOXBiblJsY21aaFkyVXVZM0psWVhSdmNpNXBaSDBpQ2lBZ1pIaGZaMkYwWlhkaGVWOXBaQ0Fn
+        SUNBZ0lDQWdQU0FpSkh0aGQzTmZaSGhmWjJGMFpYZGhlUzVsZUdGdGNHeGxMbWxrZlNJS0NpQWdk
+        R0ZuY3lBOUlIc0tJQ0FnSUZOcFpHVWdQU0FpUVdOalpYQjBaWElpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwRWFYSmxZM1FnUTI5dWJtVmpkQ0JvYjNOMFpXUWdkSEpoYm5OcGRDQjJhWEowZFdGc0lHbHVk
+        R1Z5Wm1GalpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdkbWxtSUdsa1lD
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZUY5b2IzTjBaV1JmZEhKaGJuTnBkRjkyYVhKMGRXRnNYMmx1ZEdWeVptRmpaVjloWTJO
+        bGNIUmxjaTVvZEcxc0xtMWhjbXRrYjNkdQ==

@@ -1,0 +1,62 @@
+{
+    "azurerm_api_management_group_user": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_group_user",
+        "description": "Manages an API Management User Assignment to a Group.",
+        "arguments": {
+            "user_id": {
+                "description": "The ID of the API Management User which should be assigned to this API Management Group. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "group_name": {
+                "description": "The Name of the API Management Group within the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_management_name": {
+                "description": "The name of the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management Group User."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management Group User.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management Group User.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management Group User.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management Group User.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

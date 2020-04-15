@@ -1,0 +1,92 @@
+azurerm_kusto_database:
+    status: HOLD
+    subcategory: Data Explorer
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_kusto_database'
+    description: Manages Kusto / Data Explorer Database
+    arguments:
+        name:
+            description: The name of the Kusto Database to create. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location where the Kusto Database should be created.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the Resource Group where the Kusto Database should
+                exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cluster_name:
+            description: Specifies the name of the Kusto Cluster this database will
+                be added to. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        hot_cache_period:
+            description: 'The time the data that should be kept in cache for fast
+                queries as ISO 8601 timespan. Default is unlimited. For more information
+                see: [ISO 8601 Timespan](https://en.wikipedia.org/wiki/ISO_8601#Durations)'
+            required: false
+            policy: ''
+            notes: ''
+        soft_delete_period:
+            description: 'The time the data should be kept before it stops being accessible
+                to queries as ISO 8601 timespan. Default is unlimited. For more information
+                see: [ISO 8601 Timespan](https://en.wikipedia.org/wiki/ISO_8601#Durations)'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Kusto Cluster ID.
+        size:
+            description: The size of the database in bytes.
+    timeouts:
+        create:
+            description: Used when creating the Kusto Database.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Kusto Database.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Kusto Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Kusto Database.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKdGVTMXJkWE4wYnkxeVp5SUtJQ0JzYjJOaGRHbHZiaUE5SUNKRllY
+        TjBJRlZUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXJkWE4wYjE5amJIVnpkR1Z5SWlB
+        aVkyeDFjM1JsY2lJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWEzVnpkRzlq
+        YkhWemRHVnlJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlKSHRoZW5WeVpYSnRY
+        M0psYzI5MWNtTmxYMmR5YjNWd0xuSm5MbXh2WTJGMGFXOXVmU0lLSUNCeVpYTnZkWEpqWlY5bmNt
+        OTFjRjl1WVcxbElEMGdJaVI3WVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNXlaeTV1WVcx
+        bGZTSUtDaUFnYzJ0MUlIc0tJQ0FnSUc1aGJXVWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa1gwUXhNMTky
+        TWlJS0lDQWdJR05oY0dGamFYUjVJRDBnTWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxj
+        bTFmYTNWemRHOWZaR0YwWVdKaGMyVWlJQ0prWVhSaFltRnpaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdQU0FpYlhrdGEzVnpkRzh0WkdGMFlXSmhjMlVpQ2lBZ2NtVnpiM1Z5WTJW
+        ZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWNtY3VibUZ0
+        WlFvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxY
+        MmR5YjNWd0xuSm5MbXh2WTJGMGFXOXVDaUFnWTJ4MWMzUmxjbDl1WVcxbElDQWdJQ0FnSUNBOUlH
+        RjZkWEpsY20xZmEzVnpkRzlmWTJ4MWMzUmxjaTVqYkhWemRHVnlMbTVoYldVS0NpQWdhRzkwWDJO
+        aFkyaGxYM0JsY21sdlpDQWdJRDBnSWxBM1JDSUtJQ0J6YjJaMFgyUmxiR1YwWlY5d1pYSnBiMlFn
+        UFNBaVVETXhSQ0lLZlFvPQ==
+    import: !!binary |
+        Q2dwTGRYTjBieUJEYkhWemRHVnljeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmEzVnpkRzlmWkdGMFlXSmhjMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

@@ -1,0 +1,29 @@
+{
+    "aws_ram_resource_association": {
+        "status": "HOLD",
+        "subcategory": "RAM",
+        "layout": "aws",
+        "page_title": "AWS: aws_ram_resource_association",
+        "description": "Manages a Resource Access Manager (RAM) Resource Association.",
+        "arguments": {
+            "resource_arn": {
+                "description": "Amazon Resource Name (ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_share_arn": {
+                "description": "Amazon Resource Name (ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Amazon Resource Name (ARN) of the resource share."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "azurerm_web_application_firewall_policy": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_web_application_firewall_policy",
+        "description": "Manages a Azure Web Application Firewall Policy instance.",
+        "arguments": {
+            "name": {
+                "description": "Gets name of the resource that is unique within a policy. This name can be used to access the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Resource location. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_rules": {
+                "description": "One or more `custom_rule` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_settings": {
+                "description": "A `policy_setting` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the Web Application Firewall Policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "Describes priority of the rule. Rules with a lower value will be evaluated before rules with a higher value",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_type": {
+                "description": "Describes the type of rule",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "match_conditions": {
+                "description": "One or more `match_condition` block defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "Type of Actions",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "match_variables": {
+                "description": "One or more `match_variable` block defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "operator": {
+                "description": "Describes operator to be matched",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "negation_condition": {
+                "description": "Describes if this is negate condition or not",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "match_values": {
+                "description": "Match value",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "variable_name": {
+                "description": "The name of the Match Variable",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "selector": {
+                "description": "Describes field of the matchVariable collection",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Describes if the policy is in enabled state or disabled state Defaults to `Enabled`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mode": {
+                "description": "Describes if it is in detection mode  or prevention mode at the policy level Defaults to `Prevention`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Web Application Firewall Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

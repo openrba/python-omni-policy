@@ -1,0 +1,41 @@
+{
+    "aws_opsworks_user_profile": {
+        "status": "HOLD",
+        "subcategory": "OpsWorks",
+        "layout": "aws",
+        "page_title": "AWS: aws_opsworks_user_profile",
+        "description": "Provides an OpsWorks User Profile resource.",
+        "arguments": {
+            "user_arn": {
+                "description": "The user's IAM ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_self_management": {
+                "description": "Whether users can specify their own SSH public key through the My Settings page",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ssh_username": {
+                "description": "The ssh username, with witch this user wants to log in",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ssh_public_key": {
+                "description": "The users public key",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Same value as `user_arn`"
+            }
+        },
+        "timeouts": {}
+    }
+}

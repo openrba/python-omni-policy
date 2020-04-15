@@ -1,0 +1,29 @@
+aws_ram_resource_share:
+    status: HOLD
+    subcategory: RAM
+    layout: aws
+    page_title: 'AWS: aws_ram_resource_share'
+    description: Manages a Resource Access Manager (RAM) Resource Share.
+    arguments:
+        name:
+            description: The name of the resource share.
+            required: true
+            policy: ''
+            notes: ''
+        allow_external_principals:
+            description: Indicates whether principals outside your organization can
+                be associated with a resource share.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource share.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Amazon Resource Name (ARN) of the resource share.
+        id:
+            description: The Amazon Resource Name (ARN) of the resource share.
+    timeouts: {}

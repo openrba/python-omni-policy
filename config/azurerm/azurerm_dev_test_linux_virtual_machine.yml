@@ -1,0 +1,225 @@
+azurerm_dev_test_linux_virtual_machine:
+    status: HOLD
+    subcategory: Dev Test
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_dev_test_linux_virtual_machine'
+    description: Manages a Linux Virtual Machine within a Dev Test Lab.
+    arguments:
+        name:
+            description: Specifies the name of the Dev Test Machine. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: The validation requirements for the Name change based on the `os_type`
+                used in this Virtual Machine. For a Linux VM the name must be between
+                1-62 characters, and for a Windows VM the name must be between 1-15
+                characters. It must begin and end with a letter or number, and cannot
+                be all numbers.
+        lab_name:
+            description: Specifies the name of the Dev Test Lab in which the Virtual
+                Machine should be created. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Dev Test Lab
+                resource exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the Dev Test
+                Lab exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        gallery_image_reference:
+            description: A `gallery_image_reference` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        lab_subnet_name:
+            description: The name of a Subnet within the Dev Test Virtual Network
+                where this machine should exist. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        lab_virtual_network_id:
+            description: The ID of the Dev Test Virtual Network where this Virtual
+                Machine should be created. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        size:
+            description: The Machine Size to use for this Virtual Machine, such as
+                `Standard_F2`. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_type:
+            description: The type of Storage to use on this Virtual Machine. Possible
+                values are `Standard` and `Premium`.
+            required: true
+            policy: ''
+            notes: ''
+        username:
+            description: The Username associated with the local administrator on this
+                Virtual Machine. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        allow_claim:
+            description: Can this Virtual Machine be claimed by users? Defaults to
+                `true`.
+            required: false
+            policy: ''
+            notes: ''
+        disallow_public_ip_address:
+            description: Should the Virtual Machine be created without a Public IP
+                Address? Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        inbound_nat_rule:
+            description: One or more `inbound_nat_rule` blocks as defined below. Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: If any `inbound_nat_rule` blocks are specified then `disallow_public_ip_address`
+                must be set to `true`.
+        notes:
+            description: Any notes about the Virtual Machine.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The Password associated with the `username` used to login
+                to this Virtual Machine. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: ''
+        ssh_key:
+            description: The SSH Key associated with the `username` used to login
+                to this Virtual Machine. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: One or either `password` or `ssh_key` must be specified.
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        offer:
+            description: The Offer of the Gallery Image. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        publisher:
+            description: The Publisher of the Gallery Image. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: The SKU of the Gallery Image. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        version:
+            description: The Version of the Gallery Image. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        protocol:
+            description: The Protocol used for this NAT Rule. Possible values are
+                `Tcp` and `Udp`. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        backend_port:
+            description: The Backend Port associated with this NAT Rule. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Machine.
+        fqdn:
+            description: The FQDN of the Virtual Machine.
+        inbound_nat_rule:
+            description: One or more `inbound_nat_rule` blocks as defined below.
+        unique_identifier:
+            description: The unique immutable identifier of the Virtual Machine.
+        frontend_port:
+            description: The frontend port associated with this Inbound NAT Rule.
+    timeouts:
+        create:
+            description: Used when creating the DevTest Linux Virtual Machine.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the DevTest Linux Virtual Machine.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the DevTest Linux Virtual Machine.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the DevTest Linux Virtual Machine.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMlJsZGw5
+        MFpYTjBYMnhoWWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVdFpHVjJkR1Z6ZEd4aFlpSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENnb2dJSFJoWjNNZ1BTQjdDaUFnSUNBaVUzbGtibVY1
+        SWlBOUlDSkJkWE4wY21Gc2FXRWlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWta
+        WFpmZEdWemRGOTJhWEowZFdGc1gyNWxkSGR2Y21zaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpT
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXNWxkSGR2Y21zaUNpQWdiR0ZpWDI1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmWkdWMlgzUmxjM1JmYkdGaUxtVjRZVzF3
+        YkdVdWJtRnRaUW9nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxj
+        MjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb0tJQ0J6ZFdKdVpYUWdld29nSUNBZ2RY
+        TmxYM0IxWW14cFkxOXBjRjloWkdSeVpYTnpJQ0FnSUNBZ0lDQWdJQ0E5SUNKQmJHeHZkeUlLSUNB
+        Z0lIVnpaVjlwYmw5MmFYSjBkV0ZzWDIxaFkyaHBibVZmWTNKbFlYUnBiMjRnUFNBaVFXeHNiM2Np
+        Q2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlrWlhaZmRHVnpkRjlzYVc1MWVGOTJh
+        WEowZFdGc1gyMWhZMmhwYm1VaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMWFp0TURNaUNpQWdiR0ZpWDI1aGJXVWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZlpHVjJYM1JsYzNSZmJHRmlMbVY0WVcxd2JHVXVibUZ0
+        WlFvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFj
+        bU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J6YVhwbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lYSmtYMFJU
+        TWlJS0lDQjFjMlZ5Ym1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWMWMyVnlP
+        VGtpQ2lBZ2MzTm9YMnRsZVNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUdacGJHVW9JbjR2TG5OemFD
+        OXBaRjl5YzJFdWNIVmlJaWtLSUNCc1lXSmZkbWx5ZEhWaGJGOXVaWFIzYjNKclgybGtJRDBnWVhw
+        MWNtVnliVjlrWlhaZmRHVnpkRjkyYVhKMGRXRnNYMjVsZEhkdmNtc3VaWGhoYlhCc1pTNXBaQW9n
+        SUd4aFlsOXpkV0p1WlhSZmJtRnRaU0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYMlJsZGw5MFpYTjBY
+        M1pwY25SMVlXeGZibVYwZDI5eWF5NWxlR0Z0Y0d4bExuTjFZbTVsZEZzd1hTNXVZVzFsQ2lBZ2Mz
+        UnZjbUZuWlY5MGVYQmxJQ0FnSUNBZ0lDQWdJQ0E5SUNKUWNtVnRhWFZ0SWdvZ0lHNXZkR1Z6SUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVUyOXRaU0J1YjNSbGN5QmhZbTkxZENCMGFHbHpJRlpw
+        Y25SMVlXd2dUV0ZqYUdsdVpTNGlDZ29nSUdkaGJHeGxjbmxmYVcxaFoyVmZjbVZtWlhKbGJtTmxJ
+        SHNLSUNBZ0lHOW1abVZ5SUNBZ0lDQTlJQ0pWWW5WdWRIVlRaWEoyWlhJaUNpQWdJQ0J3ZFdKc2FY
+        Tm9aWElnUFNBaVEyRnViMjVwWTJGc0lnb2dJQ0FnYzJ0MUlDQWdJQ0FnSUQwZ0lqRTRMakEwTFV4
+        VVV5SUtJQ0FnSUhabGNuTnBiMjRnSUNBOUlDSnNZWFJsYzNRaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRVpYWWdWR1Z6ZENCTWFXNTFlQ0JXYVhKMGRXRnNJRTFoWTJocGJtVnpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHVjJYM1JsYzNSZmJHbHVkWGhmZG1seWRIVmhiRjl0WVdOb2FXNWxMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

@@ -1,0 +1,109 @@
+azurerm_role_definition:
+    status: HOLD
+    subcategory: Authorization
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_role_definition'
+    description: Manages a custom Role Definition.
+    arguments:
+        role_definition_id:
+            description: A unique UUID/GUID which identifies this role - one will
+                be generated if not specified. Changing this forces a new resource
+                to be created.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the Role Definition. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        scope:
+            description: The scope at which the Role Definition applies too, such
+                as `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333`, `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup`,
+                or `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup/providers/Microsoft.Compute/virtualMachines/myVM`.
+                It is recommended to use the first entry of the `assignable_scopes`.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the Role Definition.
+            required: false
+            policy: ''
+            notes: ''
+        permissions:
+            description: A `permissions` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        assignable_scopes:
+            description: One or more assignable scopes for this Role Definition, such
+                as `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333`, `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup`,
+                or `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup/providers/Microsoft.Compute/virtualMachines/myVM`.
+            required: true
+            policy: ''
+            notes: ''
+        actions:
+            description: One or more Allowed Actions, such as `*`, `Microsoft.Resources/subscriptions/resourceGroups/read`.
+                See ['Azure Resource Manager resource provider operations'](https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations
+            required: false
+            policy: ''
+            notes: ''
+        data_actions:
+            description: One or more Allowed Data Actions, such as `*`, `Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read`.
+                See ['Azure Resource Manager resource provider operations'](https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations
+            required: false
+            policy: ''
+            notes: ''
+        not_actions:
+            description: One or more Disallowed Actions, such as `*`, `Microsoft.Resources/subscriptions/resourceGroups/read`.
+                See ['Azure Resource Manager resource provider operations'](https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations
+            required: false
+            policy: ''
+            notes: ''
+        not_data_actions:
+            description: One or more Disallowed Data Actions, such as `*`, `Microsoft.Resources/subscriptions/resourceGroups/read`.
+                See ['Azure Resource Manager resource provider operations'](https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Role Definition ID.
+    timeouts:
+        create:
+            description: Used when creating the Role Definition.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Role Definition.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Role Definition.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Role Definition.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjM1ZpYzJOeWFYQjBhVzl1SWlBaWNISnBiV0Z5ZVNJZ2V3cDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5YjJ4bFgyUmxabWx1YVhScGIyNGlJQ0psZUdGdGNH
+        eGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdQU0FpYlhrdFkzVnpkRzl0TFhKdmJHVWlDaUFnYzJO
+        dmNHVWdJQ0FnSUNBZ1BTQmtZWFJoTG1GNmRYSmxjbTFmYzNWaWMyTnlhWEIwYVc5dUxuQnlhVzFo
+        Y25rdWFXUUtJQ0JrWlhOamNtbHdkR2x2YmlBOUlDSlVhR2x6SUdseklHRWdZM1Z6ZEc5dElISnZi
+        R1VnWTNKbFlYUmxaQ0IyYVdFZ1ZHVnljbUZtYjNKdElnb0tJQ0J3WlhKdGFYTnphVzl1Y3lCN0Np
+        QWdJQ0JoWTNScGIyNXpJQ0FnSUNBOUlGc2lLaUpkQ2lBZ0lDQnViM1JmWVdOMGFXOXVjeUE5SUZ0
+        ZENpQWdmUW9LSUNCaGMzTnBaMjVoWW14bFgzTmpiM0JsY3lBOUlGc0tJQ0FnSUdSaGRHRXVZWHAx
+        Y21WeWJWOXpkV0p6WTNKcGNIUnBiMjR1Y0hKcGJXRnllUzVwWkN3Z0l5QXZjM1ZpYzJOeWFYQjBh
+        Vzl1Y3k4d01EQXdNREF3TUMwd01EQXdMVEF3TURBdE1EQXdNQzB3TURBd01EQXdNREF3TURBS0lD
+        QmRDbjBL
+    import: !!binary |
+        Q2dwU2IyeGxJRVJsWm1sdWFYUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtOXNaVjlrWldacGJtbDBhVzl1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

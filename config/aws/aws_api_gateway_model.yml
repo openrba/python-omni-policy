@@ -1,0 +1,36 @@
+aws_api_gateway_model:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_model'
+    description: Provides a Model for a REST API Gateway.
+    arguments:
+        rest_api_id:
+            description: The ID of the associated REST API
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the model
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the model
+            required: false
+            policy: ''
+            notes: ''
+        content_type:
+            description: The content type of the model
+            required: true
+            policy: ''
+            notes: ''
+        schema:
+            description: The schema of the model in a JSON form
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the model
+    timeouts: {}

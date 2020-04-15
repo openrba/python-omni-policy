@@ -1,0 +1,47 @@
+{
+    "aws_gamelift_game_session_queue": {
+        "status": "HOLD",
+        "subcategory": "Gamelift",
+        "layout": "aws",
+        "page_title": "AWS: aws_gamelift_game_session_queue",
+        "description": "Provides a Gamelift Game Session Queue resource.",
+        "arguments": {
+            "name": {
+                "description": "Name of the session queue.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout_in_seconds": {
+                "description": "Maximum time a game session request can remain in the queue.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "destinations": {
+                "description": "List of fleet/alias ARNs used by session queue for placing game sessions.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "player_latency_policy": {
+                "description": "One or more policies used to choose fleet based on player latency. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Game Session Queue ARN."
+            }
+        },
+        "timeouts": {}
+    }
+}

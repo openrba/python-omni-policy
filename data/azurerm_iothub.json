@@ -1,0 +1,254 @@
+{
+    "azurerm_iothub": {
+        "status": "HOLD",
+        "subcategory": "IoT Hub",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_iothub",
+        "description": "Manages an IotHub",
+        "arguments": {
+            "name": {
+                "description": "The name of the route.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "A `sku` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "event_hub_partition_count": {
+                "description": "The number of device-to-cloud partitions used by backing event hubs. Must be between `2` and `128`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "event_hub_retention_in_days": {
+                "description": "The event hub retention to use in days. Must be between `1` and `7`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint": {
+                "description": "An `endpoint` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fallback_route": {
+                "description": "A `fallback_route` block as defined below. If the fallback route is enabled, messages that don't match any of the supplied routes are automatically sent to this route. Defaults to messages/events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "file_upload": {
+                "description": "A `file_upload` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_filter_rule": {
+                "description": "One or more `ip_filter_rule` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route": {
+                "description": "A `route` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "capacity": {
+                "description": "The number of provisioned IoT Hub units.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_string": {
+                "description": "The connection string for the Azure Storage account to which files are uploaded.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "batch_frequency_in_seconds": {
+                "description": "Time interval at which blobs are written to storage. Value should be between 60 and 720 seconds. Default value is 300 seconds. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_chunk_size_in_bytes": {
+                "description": "Maximum number of bytes for each blob written to storage. Value should be between 10485760(10MB",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "container_name": {
+                "description": "The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "encoding": {
+                "description": "Encoding that is used to serialize messages to blobs. Supported values are 'avro' and 'avrodeflate'. Default value is 'avro'. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "file_name_format": {
+                "description": "File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``. All parameters are mandatory but can be reordered. This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_mask": {
+                "description": "The IP address range in CIDR notation for the rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source": {
+                "description": "The source that the routing rule is to be applied to, such as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`, `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`, `RoutingSourceDeviceJobLifecycleEvents`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "condition": {
+                "description": "The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to true by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint_names": {
+                "description": "The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Used to specify whether the fallback route is enabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sas_ttl": {
+                "description": "The period of time for which the SAS URI generated by IoT Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 24 hours, and evaluates to 'PT1H' by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notifications": {
+                "description": "Used to specify whether file notifications are sent to IoT Hub on upload. It evaluates to false by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lock_duration": {
+                "description": "The lock duration for the file upload notifications queue, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 5 and 300 seconds, and evaluates to 'PT1M' by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_ttl": {
+                "description": "The period of time for which a file upload notification message is available to consume before it is expired by the IoT hub, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations). This value must be between 1 minute and 48 hours, and evaluates to 'PT1H' by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_delivery_count": {
+                "description": "The number of times the IoT hub attempts to deliver a file upload notification message. It evaluates to 10 by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the IoTHub."
+            },
+            "event_hub_events_endpoint": {
+                "description": " The EventHub compatible endpoint for events data"
+            },
+            "event_hub_events_path": {
+                "description": " The EventHub compatible path for events data"
+            },
+            "event_hub_operations_endpoint": {
+                "description": " The EventHub compatible endpoint for operational data"
+            },
+            "event_hub_operations_path": {
+                "description": " The EventHub compatible path for operational data"
+            },
+            "hostname": {
+                "description": "The hostname of the IotHub Resource."
+            },
+            "shared_access_policy": {
+                "description": "One or more `shared_access_policy` blocks as defined below."
+            },
+            "key_name": {
+                "description": "The name of the shared access policy."
+            },
+            "primary_key": {
+                "description": "The primary key."
+            },
+            "secondary_key": {
+                "description": "The secondary key."
+            },
+            "permissions": {
+                "description": "The permissions assigned to the shared access policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the IotHub.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the IotHub.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the IotHub.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the IotHub.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

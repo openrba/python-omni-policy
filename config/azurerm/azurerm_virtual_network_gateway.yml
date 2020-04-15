@@ -1,0 +1,241 @@
+azurerm_virtual_network_gateway:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_network_gateway'
+    description: Manages a virtual network gateway to establish secure, cross-premises
+        connectivity.
+    arguments:
+        name:
+            description: A user-defined name of the revoked certificate.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location/region where the Virtual Network Gateway is
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of the Virtual Network Gateway. Valid options are
+            required: true
+            policy: ''
+            notes: ''
+        vpn_type:
+            description: The routing type of the Virtual Network Gateway. Valid
+            required: false
+            policy: ''
+            notes: ''
+        enable_bgp:
+            description: If `true`, BGP (Border Gateway Protocol
+            required: false
+            policy: ''
+            notes: ''
+        active_active:
+            description: If `true`, an active-active Virtual Network Gateway
+            required: false
+            policy: ''
+            notes: ''
+        default_local_network_gateway_id:
+            description: The ID of the local network gateway
+            required: false
+            policy: ''
+            notes: ''
+        sku:
+            description: Configuration of the size and capacity of the virtual network
+            required: true
+            policy: ''
+            notes: ''
+        generation:
+            description: The Generation of the Virtual Network gateway. Possible values
+                include `Generation1`, `Generation2` or `None`.
+            required: false
+            policy: ''
+            notes: The available values depend on the `type` and `sku` arguments -
+                where `Generation2` is only value for a `sku` larger than `VpnGw2`
+                or `VpnGw2AZ`.
+        ip_configuration:
+            description: One or two `ip_configuration` blocks documented below.
+            required: true
+            policy: ''
+            notes: ''
+        vpn_client_configuration:
+            description: A `vpn_client_configuration` block which
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        private_ip_address_allocation:
+            description: Defines how the private IP address
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the gateway subnet of a virtual network in
+            required: true
+            policy: ''
+            notes: ''
+        public_ip_address_id:
+            description: The ID of the public ip address to associate
+            required: false
+            policy: ''
+            notes: ''
+        address_space:
+            description: The address space out of which ip addresses for
+            required: true
+            policy: ''
+            notes: ''
+        root_certificate:
+            description: One or more `root_certificate` blocks which are
+            required: false
+            policy: ''
+            notes: ''
+        revoked_certificate:
+            description: One or more `revoked_certificate` blocks which
+            required: false
+            policy: ''
+            notes: ''
+        radius_server_address:
+            description: The address of the Radius server.
+            required: false
+            policy: ''
+            notes: ''
+        radius_server_secret:
+            description: The secret used by the Radius server.
+            required: false
+            policy: ''
+            notes: ''
+        vpn_client_protocols:
+            description: List of the protocols supported by the vpn client.
+            required: false
+            policy: ''
+            notes: ''
+        asn:
+            description: The Autonomous System Number (ASN
+            required: false
+            policy: ''
+            notes: ''
+        peering_address:
+            description: The BGP peer IP address of the virtual network
+            required: false
+            policy: ''
+            notes: ''
+        peer_weight:
+            description: The weight added to routes which have been learned
+            required: false
+            policy: ''
+            notes: ''
+        public_cert_data:
+            description: The SHA1 thumbprint of the certificate to be
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Network Gateway.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Network Gateway.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Virtual Network Gateway.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Virtual Network Gateway.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Network Gateway.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJsYzNRaUNpQWdiRzlqWVhScGIyNGdQU0FpVjJWemRD
+        QlZVeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pySWlB
+        aVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHVnpkQ0lL
+        SUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpT
+        QTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWVdS
+        a2NtVnpjMTl6Y0dGalpTQWdJQ0FnSUNBOUlGc2lNVEF1TUM0d0xqQXZNVFlpWFFwOUNncHlaWE52
+        ZFhKalpTQWlZWHAxY21WeWJWOXpkV0p1WlhRaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlSMkYwWlhkaGVWTjFZbTVsZENJS0lDQnlaWE52ZFhKalpW
+        OW5jbTkxY0Y5dVlXMWxJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhC
+        c1pTNXVZVzFsQ2lBZ2RtbHlkSFZoYkY5dVpYUjNiM0pyWDI1aGJXVWdQU0JoZW5WeVpYSnRYM1pw
+        Y25SMVlXeGZibVYwZDI5eWF5NWxlR0Z0Y0d4bExtNWhiV1VLSUNCaFpHUnlaWE56WDNCeVpXWnBl
+        Q0FnSUNBZ0lDQTlJQ0l4TUM0d0xqRXVNQzh5TkNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNt
+        MWZjSFZpYkdsalgybHdJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0FpZEdWemRDSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5
+        YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZ
+        MlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJY
+        QnNaUzV1WVcxbENnb2dJR0ZzYkc5allYUnBiMjVmYldWMGFHOWtJRDBnSWtSNWJtRnRhV01pQ24w
+        S0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzWnBjblIxWVd4ZmJtVjBkMjl5YTE5bllYUmxkMkY1
+        SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHVnpk
+        Q0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpW
+        OW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1G
+        dFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDZ29n
+        SUhSNWNHVWdJQ0FnSUQwZ0lsWndiaUlLSUNCMmNHNWZkSGx3WlNBOUlDSlNiM1YwWlVKaGMyVmtJ
+        Z29LSUNCaFkzUnBkbVZmWVdOMGFYWmxJRDBnWm1Gc2MyVUtJQ0JsYm1GaWJHVmZZbWR3SUNBZ0lE
+        MGdabUZzYzJVS0lDQnphM1VnSUNBZ0lDQWdJQ0FnSUQwZ0lrSmhjMmxqSWdvS0lDQnBjRjlqYjI1
+        bWFXZDFjbUYwYVc5dUlIc0tJQ0FnSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJblp1WlhSSFlYUmxkMkY1UTI5dVptbG5JZ29nSUNBZ2NIVmliR2xqWDJsd1gyRmta
+        SEpsYzNOZmFXUWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0IxWW14cFkxOXBjQzVsZUdGdGNH
+        eGxMbWxrQ2lBZ0lDQndjbWwyWVhSbFgybHdYMkZrWkhKbGMzTmZZV3hzYjJOaGRHbHZiaUE5SUNK
+        RWVXNWhiV2xqSWdvZ0lDQWdjM1ZpYm1WMFgybGtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNCaGVuVnlaWEp0WDNOMVltNWxkQzVsZUdGdGNHeGxMbWxrQ2lBZ2ZRb0tJQ0IyY0c1ZlkyeHBa
+        VzUwWDJOdmJtWnBaM1Z5WVhScGIyNGdld29nSUNBZ1lXUmtjbVZ6YzE5emNHRmpaU0E5SUZzaU1U
+        QXVNaTR3TGpBdk1qUWlYUW9LSUNBZ0lISnZiM1JmWTJWeWRHbG1hV05oZEdVZ2V3b2dJQ0FnSUNC
+        dVlXMWxJRDBnSWtScFoybERaWEowTFVabFpHVnlZWFJsWkMxSlJDMVNiMjkwTFVOQklnb0tJQ0Fn
+        SUNBZ2NIVmliR2xqWDJObGNuUmZaR0YwWVNBOUlEdzhSVTlHQ2sxSlNVUjFla05EUVhGUFowRjNT
+        VUpCWjBsUlEwaFVXbGREVFN0SmJHWkdTVkpZU1haNVMxTnlha0ZPUW1kcmNXaHJhVWM1ZHpCQ1FW
+        RnpSa0ZFUW00S1RWRnpkME5SV1VSV1VWRkhSWGRLVmxWNlJWWk5RazFIUVRGVlJVTm9UVTFTUjJ4
+        dVlWVk9iR051VVdkVFZ6VnFUVkpyZDBaM1dVUldVVkZNUlhoQ013cGtNMk4xV2tkc2JtRlhUbXhq
+        YmxGMVdUSTVkRTFUV1hkS1FWbEVWbEZSUkVWNE1VVmhWMlJ3VVRKV2VXUkRRa2RhVjFKc1kyMUdN
+        RnBYVVdkVFZWRm5DbFZ0T1haa1EwSkVVVlJCWlVaM01IaE5la0Y0VFZSVmVFMXFRWGROUkVKaFJu
+        Y3dlazE2UVhoTlZGVjRUV3BCZDAxRVFtRk5SMk40UTNwQlNrSm5UbFlLUWtGWlZFRnNWbFJOVWxW
+        M1JYZFpSRlpSVVV0RmQzaEZZVmRrY0ZFeVZubGtRMEpLWW0xTmVFZFVRVmhDWjA1V1FrRnpWRVZJ
+        WkROa2VUVnJZVmRrY0FwWk1sWjVaRU0xYW1JeU1IaEtha0ZyUW1kT1ZrSkJUVlJJVlZKd1dqSnNS
+        RnBZU2pCSlJWcHNXa2RXZVZsWVVteGFRMEpLVWtOQ1UySXlPVEJKUlU1Q0NrMUpTVUpKYWtGT1Ft
+        ZHJjV2hyYVVjNWR6QkNRVkZGUmtGQlQwTkJVVGhCVFVsSlFrTm5TME5CVVVWQmRrRkZRalJ3WTBO
+        eGJrNU9UMWRGTmxWeU5Xb0tVVkJWU0NzeGVURkdPVXRrU0ZSU1UzcGhObXMxYVVSc1dIRXhhMGRU
+        TVhGQmEzVkxkSGM1U25OcFRsSnlhbXgwYlVadWVrMWFVa0ppV0RoVWJHWnNPQXA2UVdoQ2JXSTJa
+        RVJrZFVSSFJVUXdNV3RDYzFSclozbDNXVkI0V0ZaVVMyVmpNRmQ0V1VWRlJqQnZUVzQwZDFOWlRt
+        d3diSFF5WlVwQlMwaFlhazVtQ2tkVWQybHBZbVJRT0VOVlVqSm5hRk5OTW5OVlZFazRUblF4VDIx
+        bVl6UlRUVWhvUjJoWlJEWTBkVXBOWWxnNU9GUklVUzgwVEUxSGRWbGxaMjkxSzJRS1IxUnBZV2ht
+        U0hScWJqZEJZbTlUUld0dWQwRk5Ta2hEYURWU2JGbGFXalpDTVU4MFVXSkxTaXN6TkZFd1pVdG5i
+        a2t6V0RaV1l6bDFNSHBtTmtSSU9BcEVheXMwZWxGRVdWSlNWSEZVYmxaUE0xWlVPR3A2Y1VSc1Ex
+        SjFUblJ4TmxsMmNubFBWMDQzTkM5a2NUaE1VV2hWYmxoSWRrWjVjbk5rVFdGRk1WZ3lDa1IzU1VS
+        QlVVRkNiekpOZDFsVVFWQkNaMDVXU0ZKTlFrRm1PRVZDVkVGRVFWRklMMDFCTkVkQk1WVmtSSGRG
+        UWk5M1VVVkJkMGxDYUdwQlpFSm5UbFlLU0ZFMFJVWm5VVlZIVW1SclJtNWlSM1F4UlZkcVMzZGlW
+        VzVsS3pWUFlWcDJVbGwzU0hkWlJGWlNNR3BDUW1kM1JtOUJWVWRTWkd0R2JtSkhkREZGVndwcVMz
+        ZGlWVzVsS3pWUFlWcDJVbGwzUkZGWlNrdHZXa2xvZG1OT1FWRkZURUpSUVVSblowVkNRVWhqY1hO
+        SWEzSnFjRVZUY1daMVZsUlNhWEIwU21aUUNqbEtZbVIwVjNGU1ZHMVBaaloxU21reVl6aFpWbkZK
+        Tmxoc1MxaHpSRGhETVdSVlZXRmhTRXRNVlVwNmRrdHBZWHBwWWxaMVFuZE5TVlE0TkVGNWNWSUtV
+        VVZNYmpObE1FSjBaMFY1YlVWNVowMVZOVFk1WWpBeFdsQjRiMFpUYms1WVl6ZHhSRnBDUkdWbU9G
+        ZG1jVUZXTDNONGExUnBPRXc1UW10dFJsbG1UQXAxUjB4UGFGSktUMFp3Y2xCa2IwUkpWVUpDSzNS
+        dFEyd3piMFJqUW5remRtNVZaVTlGYVc5Nk9IcEJhM0J5WTJJelIwaDNTRUZMSzNaSWJXMW1aMk51
+        Q2xkelprMU1TRFJLUTB4aEwzUlNXVXdyVW5jdlRqTjVZa05yUkhBd01ITXdWMVZhSzBGdlJIbDNV
+        Mnd3VVM5YVJXNU9XVEJOYzBacGR6Wk1lVWxrWW5FS1RTOXpMekZLVW5SUE0ySkVVM3BFT1ZSaGVs
+        SldlbTR5YjBKeGVsTmhPRlpuU1c4MVF6RnVUMjV2UVV0S1ZHeHpRMnhLUzNaSmFHNVNiR0ZNVVhG
+        clBRcEZUMFlLQ2lBZ0lDQjlDZ29nSUNBZ2NtVjJiMnRsWkY5alpYSjBhV1pwWTJGMFpTQjdDaUFn
+        SUNBZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpVm1WeWFYcHZiaTFIYkc5aVlXd3RVbTl2ZEMxRFFTSUtJ
+        Q0FnSUNBZ2RHaDFiV0p3Y21sdWRDQTlJQ0k1TVRJeE9UaEZSVVl5TTBSRFFVTTBNRGt6T1RNeE1r
+        WkZSVGszUkVRMU5qQkNRVVUwT1VJeElnb2dJQ0FnZlFvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUU1bGRIZHZjbXNnUjJGMFpYZGhlWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5dVpYUjNiM0pyWDJkaGRHVjNZWGt1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

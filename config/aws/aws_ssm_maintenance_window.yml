@@ -1,0 +1,69 @@
+aws_ssm_maintenance_window:
+    status: HOLD
+    subcategory: SSM
+    layout: aws
+    page_title: 'AWS: aws_ssm_maintenance_window'
+    description: Provides an SSM Maintenance Window resource
+    arguments:
+        name:
+            description: The name of the maintenance window.
+            required: true
+            policy: ''
+            notes: ''
+        schedule:
+            description: The schedule of the Maintenance Window in the form of a [cron](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html
+            required: true
+            policy: ''
+            notes: ''
+        cutoff:
+            description: The number of hours before the end of the Maintenance Window
+                that Systems Manager stops scheduling new tasks for execution.
+            required: true
+            policy: ''
+            notes: ''
+        duration:
+            description: The duration of the Maintenance Window in hours.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description for the maintenance window.
+            required: false
+            policy: ''
+            notes: ''
+        allow_unassociated_targets:
+            description: Whether targets must be registered with the Maintenance Window
+                before tasks can be defined for those targets.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: 'Whether the maintenance window is enabled. Default: `true`.'
+            required: false
+            policy: ''
+            notes: ''
+        end_date:
+            description: Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html
+            required: false
+            policy: ''
+            notes: ''
+        schedule_timezone:
+            description: Timezone for schedule in [Internet Assigned Numbers Authority
+                (IANA
+            required: false
+            policy: ''
+            notes: ''
+        start_date:
+            description: Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the maintenance window.
+    timeouts: {}

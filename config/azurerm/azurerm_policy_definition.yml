@@ -1,0 +1,102 @@
+azurerm_policy_definition:
+    status: HOLD
+    subcategory: Policy
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_policy_definition'
+    description: Manages a policy rule definition. Policy definitions do not take
+        effect until they are assigned to a scope using a Policy Assignment.
+    arguments:
+        name:
+            description: The name of the policy definition. Changing this forces a
+            required: true
+            policy: ''
+            notes: ''
+        policy_type:
+            description: The policy type. Possible values are `BuiltIn`, `Custom`
+                and `NotSpecified`. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        mode:
+            description: The policy mode that allows you to specify which resource
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name of the policy definition.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the policy definition.
+            required: false
+            policy: ''
+            notes: ''
+        management_group_name:
+            description: The name of the Management Group where this policy should
+                be defined. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        policy_rule:
+            description: The policy rule for the policy definition. This
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: The metadata for the policy definition. This
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: Parameters for the policy definition. This field
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Policy Definition.
+    timeouts:
+        create:
+            description: Used when creating the Policy Definition.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Policy Definition.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Policy Definition.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Policy Definition.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNHOXNhV041WDJSbFptbHVhWFJwYjI0aUlDSndiMnhwWTNraUlI
+        c0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ1BTQWlZV05qVkdWemRGQnZiR2xqZVNJS0lDQndiMnhwWTNs
+        ZmRIbHdaU0FnUFNBaVEzVnpkRzl0SWdvZ0lHMXZaR1VnSUNBZ0lDQWdJQ0E5SUNKSmJtUmxlR1Zr
+        SWdvZ0lHUnBjM0JzWVhsZmJtRnRaU0E5SUNKaFkyTmxjSFJoYm1ObElIUmxjM1FnY0c5c2FXTjVJ
+        R1JsWm1sdWFYUnBiMjRpQ2dvZ0lHMWxkR0ZrWVhSaElEMGdQRHhOUlZSQlJFRlVRUW9nSUNBZ2V3
+        b2dJQ0FnSW1OaGRHVm5iM0o1SWpvZ0lrZGxibVZ5WVd3aUNpQWdJQ0I5Q2lBZ0NrMUZWRUZFUVZS
+        QkNnb0tJQ0J3YjJ4cFkzbGZjblZzWlNBOUlEdzhVRTlNU1VOWlgxSlZURVVLQ1hzS0lDQWdJQ0pw
+        WmlJNklIc0tJQ0FnSUNBZ0ltNXZkQ0k2SUhzS0lDQWdJQ0FnSUNBaVptbGxiR1FpT2lBaWJHOWpZ
+        WFJwYjI0aUxBb2dJQ0FnSUNBZ0lDSnBiaUk2SUNKYmNHRnlZVzFsZEdWeWN5Z25ZV3hzYjNkbFpF
+        eHZZMkYwYVc5dWN5Y3BYU0lLSUNBZ0lDQWdmUW9nSUNBZ2ZTd0tJQ0FnSUNKMGFHVnVJam9nZXdv
+        Z0lDQWdJQ0FpWldabVpXTjBJam9nSW1GMVpHbDBJZ29nSUNBZ2ZRb2dJSDBLVUU5TVNVTlpYMUpW
+        VEVVS0Nnb2dJSEJoY21GdFpYUmxjbk1nUFNBOFBGQkJVa0ZOUlZSRlVsTUtDWHNLSUNBZ0lDSmhi
+        R3h2ZDJWa1RHOWpZWFJwYjI1eklqb2dld29nSUNBZ0lDQWlkSGx3WlNJNklDSkJjbkpoZVNJc0Np
+        QWdJQ0FnSUNKdFpYUmhaR0YwWVNJNklIc0tJQ0FnSUNBZ0lDQWlaR1Z6WTNKcGNIUnBiMjRpT2lB
+        aVZHaGxJR3hwYzNRZ2IyWWdZV3hzYjNkbFpDQnNiMk5oZEdsdmJuTWdabTl5SUhKbGMyOTFjbU5s
+        Y3k0aUxBb2dJQ0FnSUNBZ0lDSmthWE53YkdGNVRtRnRaU0k2SUNKQmJHeHZkMlZrSUd4dlkyRjBh
+        Vzl1Y3lJc0NpQWdJQ0FnSUNBZ0luTjBjbTl1WjFSNWNHVWlPaUFpYkc5allYUnBiMjRpQ2lBZ0lD
+        QWdJSDBLSUNBZ0lIMEtJQ0I5Q2xCQlVrRk5SVlJGVWxNS0NuMEs=
+    import: !!binary |
+        Q2dwUWIyeHBZM2tnUkdWbWFXNXBkR2x2Ym5NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NHOXNhV041SUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXNhV041WDJSbFptbHVhWFJwYjI0dWFIUnRiQzV0WVhKclpHOTNiZz09

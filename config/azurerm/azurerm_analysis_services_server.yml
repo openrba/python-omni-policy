@@ -1,0 +1,116 @@
+azurerm_analysis_services_server:
+    status: HOLD
+    subcategory: Analysis Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_analysis_services_server'
+    description: Manages an Analysis Services Server.
+    arguments:
+        name:
+            description: Specifies the name of the firewall rule.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where the Analysis Services Server exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the Analysis Services
+                Server should be exist. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: 'SKU for the Analysis Services Server. Possible values are:
+                `D1`, `B1`, `B2`, `S0`, `S1`, `S2`, `S4`, `S8` and `S9`'
+            required: true
+            policy: ''
+            notes: ''
+        admin_users:
+            description: List of email addresses of admin users.
+            required: false
+            policy: ''
+            notes: ''
+        querypool_connection_mode:
+            description: Controls how the read-write server is used in the query pool.
+                If this values is set to `All` then read-write servers are also used
+                for queries. Otherwise with `ReadOnly` these servers do not participate
+                in query operations.
+            required: false
+            policy: ''
+            notes: ''
+        backup_blob_container_uri:
+            description: URI and SAS token for a blob container to store backups.
+            required: false
+            policy: ''
+            notes: ''
+        enable_power_bi_service:
+            description: Indicates if the Power BI service is allowed to access or
+                not.
+            required: false
+            policy: ''
+            notes: ''
+        ipv4_firewall_rule:
+            description: One or more `ipv4_firewall_rule` block(s
+            required: false
+            policy: ''
+            notes: ''
+        range_start:
+            description: Start of the firewall rule range as IPv4 address.
+            required: true
+            policy: ''
+            notes: ''
+        range_end:
+            description: End of the firewall rule range as IPv4 address.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Analysis Services Server.
+        server_full_name:
+            description: The full name of the Analysis Services Server.
+    timeouts:
+        create:
+            description: Used when creating the Analysis Services Server.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Analysis Services Server.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Analysis Services Server.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Analysis Services Server.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKaGJtRnNlWE5wY3kxelpYSjJhV05sY3kxelpYSjJaWEl0ZEdWemRD
+        SUtJQ0JzYjJOaGRHbHZiaUE5SUNKdWIzSjBhR1YxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmWVc1aGJIbHphWE5mYzJWeWRtbGpaWE5mYzJWeWRtVnlJaUFpYzJWeWRtVnlJaUI3
+        Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVlXNWhiSGx6YVhOelpYSjJh
+        V05sYzNObGNuWmxjaUlLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdWIz
+        SjBhR1YxY205d1pTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBZ0lDQTlJR0Y2ZFhK
+        bGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWNtY3VibUZ0WlFvZ0lITnJkU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0lsTXdJZ29nSUdGa2JXbHVYM1Z6WlhKeklDQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnV3lKdGVYVnpaWEpBWkc5dFlXbHVMblJzWkNKZENpQWdaVzVoWW14bFgzQnZkMlZ5WDJKcFgz
+        TmxjblpwWTJVZ1BTQjBjblZsQ2dvZ0lHbHdkalJmWm1seVpYZGhiR3hmY25Wc1pTQjdDaUFnSUNC
+        dVlXMWxJQ0FnSUNBZ0lDQTlJQ0p0ZVZKMWJHVXhJZ29nSUNBZ2NtRnVaMlZmYzNSaGNuUWdQU0Fp
+        TWpFd0xqRXhOeTR5TlRJdU1DSUtJQ0FnSUhKaGJtZGxYMlZ1WkNBZ0lEMGdJakl4TUM0eE1UY3VN
+        alV5TGpJMU5TSUtJQ0I5Q2dvZ0lIUmhaM01nUFNCN0NpQWdJQ0JoWW1NZ1BTQXhNak1LSUNCOUNu
+        MEs=
+    import: !!binary |
+        Q2dwQmJtRnNlWE5wY3lCVFpYSjJhV05sY3lCVFpYSjJaWElnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllXNWhiSGx6YVhOZmMyVnlkbWxqWlhOZmMyVnlkbVZ5TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

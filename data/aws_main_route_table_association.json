@@ -1,0 +1,32 @@
+{
+    "aws_main_route_table_association": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_main_route_table_association",
+        "description": "Provides a resource for managing the main routing table of a VPC.",
+        "arguments": {
+            "vpc_id": {
+                "description": "The ID of the VPC whose main route table should be set",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "route_table_id": {
+                "description": "The ID of the Route Table to set as the new",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Route Table Association"
+            },
+            "original_route_table_id": {
+                "description": "Used internally, see __Notes__ below"
+            }
+        },
+        "timeouts": {}
+    }
+}

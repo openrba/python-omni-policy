@@ -1,0 +1,51 @@
+aws_lightsail_instance:
+    status: HOLD
+    subcategory: Lightsail
+    layout: aws
+    page_title: 'AWS: aws_lightsail_instance'
+    description: Provides an Lightsail Instance
+    arguments:
+        name:
+            description: The name of the Lightsail Instance. Names be unique within
+                each AWS Region in your Lightsail account.
+            required: true
+            policy: ''
+            notes: ''
+        availability_zone:
+            description: The Availability Zone in which to create your
+            required: true
+            policy: ''
+            notes: ''
+        blueprint_id:
+            description: The ID for a virtual private server image
+            required: true
+            policy: ''
+            notes: ''
+        bundle_id:
+            description: The bundle of specification information (see list below)
+            required: true
+            policy: ''
+            notes: ''
+        key_pair_name:
+            description: The name of your key pair. Created in the
+            required: false
+            policy: ''
+            notes: ''
+        user_data:
+            description: launch script to configure server with additional user data
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ARN of the Lightsail instance (matches `arn`).
+        arn:
+            description: The ARN of the Lightsail instance (matches `id`).
+        created_at:
+            description: The timestamp when the instance was created.
+    timeouts: {}

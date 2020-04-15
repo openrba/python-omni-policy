@@ -1,0 +1,178 @@
+aws_lambda_function:
+    status: HOLD
+    subcategory: Lambda
+    layout: aws
+    page_title: 'AWS: aws_lambda_function'
+    description: Provides a Lambda Function resource. Lambda allows you to trigger
+        execution of code in response to events in AWS, enabling serverless backend
+        solutions. The Lambda Function itself includes source code and runtime configuration.
+    arguments:
+        filename:
+            description: The path to the function's deployment package within the
+                local filesystem. If defined, The `s3_`-prefixed options cannot be
+                used.
+            required: false
+            policy: ''
+            notes: ''
+        s3_bucket:
+            description: The S3 bucket location containing the function's deployment
+                package. Conflicts with `filename`. This bucket must reside in the
+                same AWS region where you are creating the Lambda function.
+            required: false
+            policy: ''
+            notes: ''
+        s3_key:
+            description: The S3 key of an object containing the function's deployment
+                package. Conflicts with `filename`.
+            required: false
+            policy: ''
+            notes: ''
+        s3_object_version:
+            description: The object version containing the function's deployment package.
+                Conflicts with `filename`.
+            required: false
+            policy: ''
+            notes: ''
+        function_name:
+            description: A unique name for your Lambda Function.
+            required: true
+            policy: ''
+            notes: ''
+        dead_letter_config:
+            description: Nested block to configure the function's *dead letter queue*.
+                See details below.
+            required: false
+            policy: ''
+            notes: ''
+        handler:
+            description: The function [entrypoint][3] in your code.
+            required: true
+            policy: ''
+            notes: ''
+        role:
+            description: IAM role attached to the Lambda Function. This governs both
+                who / what can invoke your Lambda Function, as well as what resources
+                our Lambda Function has access to. See [Lambda Permission Model][4]
+                for more details.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: Description of what your Lambda Function does.
+            required: false
+            policy: ''
+            notes: ''
+        layers:
+            description: List of Lambda Layer Version ARNs (maximum of 5
+            required: false
+            policy: ''
+            notes: ''
+        memory_size:
+            description: Amount of memory in MB your Lambda Function can use at runtime.
+                Defaults to `128`. See [Limits][5]
+            required: false
+            policy: ''
+            notes: ''
+        runtime:
+            description: See [Runtimes][6] for valid values.
+            required: true
+            policy: ''
+            notes: ''
+        timeout:
+            description: The amount of time your Lambda Function has to run in seconds.
+                Defaults to `3`. See [Limits][5]
+            required: false
+            policy: ''
+            notes: ''
+        reserved_concurrent_executions:
+            description: The amount of reserved concurrent executions for this lambda
+                function. A value of `0` disables lambda from being triggered and
+                `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency
+                Limits `-1`. See [Managing Concurrency][9]
+            required: false
+            policy: ''
+            notes: ''
+        publish:
+            description: Whether to publish creation/change as new Lambda Function
+                Version. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        vpc_config:
+            description: Provide this to allow your function to access your VPC. Fields
+                documented below. See [Lambda in VPC][7]
+            required: false
+            policy: ''
+            notes: ''
+        environment:
+            description: The Lambda environment's configuration settings. Fields documented
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_arn:
+            description: Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        source_code_hash:
+            description: Used to trigger updates. Must be set to a base64-encoded
+                SHA256 hash of the package file specified with either `filename` or
+                `s3_key`. The usual way to set this is `filebase64sha256("file.zip")`
+                (Terraform 0.11.12 and later
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the object.
+            required: false
+            policy: ''
+            notes: ''
+        target_arn:
+            description: The ARN of an SNS topic or SQS queue to notify when an invocation
+                fails. If this
+            required: true
+            policy: ''
+            notes: ''
+        mode:
+            description: Can be either `PassThrough` or `Active`. If PassThrough,
+                Lambda will only trace
+            required: true
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: A list of subnet IDs associated with the Lambda function.
+            required: true
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: A list of security group IDs associated with the Lambda function.
+            required: true
+            policy: ''
+            notes: ''
+        variables:
+            description: A map that defines environment variables for the Lambda function.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Amazon Resource Name (ARN) identifying your Lambda Function.
+        qualified_arn:
+            description: The Amazon Resource Name (ARN) identifying your Lambda Function
+                Version
+        invoke_arn:
+            description: 'The ARN to be used for invoking Lambda Function from API
+                Gateway '
+        version:
+            description: Latest published version of your Lambda Function.
+        last_modified:
+            description: The date this resource was last modified.
+        kms_key_arn:
+            description: (Optional) The ARN for the KMS encryption key.
+        source_code_hash:
+            description: Base64-encoded representation of raw SHA-256 sum of the zip
+                file, provided either via `filename` or `s3_*` parameters.
+        source_code_size:
+            description: The size in bytes of the function .zip file.
+    timeouts: {}

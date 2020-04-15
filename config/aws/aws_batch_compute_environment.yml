@@ -1,0 +1,144 @@
+aws_batch_compute_environment:
+    status: HOLD
+    subcategory: Batch
+    layout: aws
+    page_title: 'AWS: aws_batch_compute_environment'
+    description: Creates a AWS Batch compute environment.
+    arguments:
+        compute_environment_name:
+            description: The name for your compute environment. Up to 128 letters
+                (uppercase and lowercase), numbers, and underscores are allowed. If
+                omitted, Terraform will assign a random, unique name.
+            required: false
+            policy: ''
+            notes: ''
+        compute_environment_name_prefix:
+            description: Creates a unique compute environment name beginning with
+                the specified prefix. Conflicts with `compute_environment_name`.
+            required: false
+            policy: ''
+            notes: ''
+        compute_resources:
+            description: Details of the compute resources managed by the compute environment.
+                This parameter is required for managed compute environments. See details
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        service_role:
+            description: The full Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        state:
+            description: The state of the compute environment. If the state is `ENABLED`,
+                then the compute environment accepts jobs from a queue and can scale
+                out automatically based on queues. Valid items are `ENABLED` or `DISABLED`.
+                Defaults to `ENABLED`.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of compute environment. Valid items are `EC2` or
+                `SPOT`.
+            required: true
+            policy: ''
+            notes: ''
+        allocation_strategy:
+            description: The allocation strategy to use for the compute resource in
+                case not enough instances of the best fitting instance type can be
+                allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED`
+                or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html
+            required: false
+            policy: ''
+            notes: ''
+        bid_percentage:
+            description: Integer of minimum percentage that a Spot Instance price
+                must be when compared with the On-Demand price for that instance type
+                before instances are launched. For example, if your bid percentage
+                is 20% (`20`), then the Spot price must be below 20% of the current
+                On-Demand price for that EC2 instance. This parameter is required
+                for SPOT compute environments.
+            required: false
+            policy: ''
+            notes: ''
+        desired_vcpus:
+            description: The desired number of EC2 vCPUS in the compute environment.
+            required: false
+            policy: ''
+            notes: ''
+        ec2_key_pair:
+            description: The EC2 key pair that is used for instances launched in the
+                compute environment.
+            required: false
+            policy: ''
+            notes: ''
+        image_id:
+            description: The Amazon Machine Image (AMI
+            required: false
+            policy: ''
+            notes: ''
+        instance_role:
+            description: The Amazon ECS instance role applied to Amazon EC2 instances
+                in a compute environment.
+            required: true
+            policy: ''
+            notes: ''
+        instance_type:
+            description: A list of instance types that may be launched.
+            required: true
+            policy: ''
+            notes: ''
+        launch_template:
+            description: The launch template to use for your compute resources. See
+                details below.
+            required: false
+            policy: ''
+            notes: ''
+        max_vcpus:
+            description: The maximum number of EC2 vCPUs that an environment can reach.
+            required: true
+            policy: ''
+            notes: ''
+        min_vcpus:
+            description: The minimum number of EC2 vCPUs that an environment should
+                maintain.
+            required: true
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: A list of EC2 security group that are associated with instances
+                launched in the compute environment.
+            required: true
+            policy: ''
+            notes: ''
+        spot_iam_fleet_role:
+            description: The Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        subnets:
+            description: A list of VPC subnets into which the compute resources are
+                launched.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value pair tags to be applied to resources that are launched
+                in the compute environment.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Amazon Resource Name (ARN) of the compute environment.
+        ecs_cluster_arn:
+            description: The Amazon Resource Name (ARN) of the underlying Amazon ECS
+                cluster used by the compute environment.
+        status:
+            description: The current status of the compute environment (for example,
+                CREATING or VALID).
+        status_reason:
+            description: A short, human-readable string to provide additional details
+                about the current status of the compute environment.
+    timeouts: {}

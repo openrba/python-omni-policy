@@ -1,0 +1,111 @@
+azurerm_backup_policy_file_share:
+    status: HOLD
+    subcategory: Recovery Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_backup_policy_file_share'
+    description: Manages an Azure File Share Backup Policy.
+    arguments:
+        name:
+            description: Specifies the name of the policy. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the policy.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_vault_name:
+            description: Specifies the name of the Recovery Services Vault to use.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        backup:
+            description: Configures the Policy backup frequency and times as documented
+                in the `backup` block below.
+            required: true
+            policy: ''
+            notes: ''
+        timezone:
+            description: Specifies the timezone. Defaults to `UTC`
+            required: false
+            policy: ''
+            notes: ''
+        retention_daily:
+            description: Configures the policy daily retention as documented in the
+                `retention_daily` block below.
+            required: true
+            policy: ''
+            notes: During the public preview, only daily retentions are supported.
+                This argument is made available in this format for consistency with
+                VM backup policies and to allow for potential future support of additional
+                retention policies
+        frequency:
+            description: Sets the backup frequency. Currently, only `Daily` is supported
+            required: true
+            policy: ''
+            notes: During the public preview, only daily backups are supported. This
+                argument is made available for consistency with VM backup policies
+                and to allow for potential future support of weekly backups
+        times:
+            description: The time of day to perform the backup in 24-hour format.
+                Times must be either on the hour or half hour (e.g. 12:00, 12:30,
+                13:00, etc.)
+            required: true
+            policy: ''
+            notes: ''
+        count:
+            description: The number of daily backups to keep. Must be between `1`
+                and `180` (inclusive)
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Azure File Share Backup Policy.
+    timeouts:
+        create:
+            description: Used when creating the File Share Backup Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the File Share Backup Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the File Share Backup Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the File Share Backup Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKMFptVjRMWEpsWTI5MlpYSjVYM1poZFd4MElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzSmxZMjkyWlhK
+        NVgzTmxjblpwWTJWelgzWmhkV3gwSWlBaWRtRjFiSFFpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW5SbVpYZ3RjbVZqYjNabGNua3RkbUYxYkhRaUNpQWdiRzlqWVhScGIyNGdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNJa2UyRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1Y21jdWJH
+        OWpZWFJwYjI1OUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNBaUpIdGhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG5KbkxtNWhiV1Y5SWdvZ0lITnJkU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpVTNSaGJtUmhjbVFpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgySmhZ
+        MnQxY0Y5d2IyeHBZM2xmWm1sc1pWOXphR0Z5WlNJZ0luQnZiR2xqZVNJZ2V3b2dJRzVoYldVZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHWmxlQzF5WldOdmRtVnllUzEyWVhWc2RDMXdiMnhwWTNr
+        aUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUNJa2UyRjZkWEpsY20xZmNtVnpiM1Z5
+        WTJWZlozSnZkWEF1Y21jdWJtRnRaWDBpQ2lBZ2NtVmpiM1psY25sZmRtRjFiSFJmYm1GdFpTQTlJ
+        Q0lrZTJGNmRYSmxjbTFmY21WamIzWmxjbmxmYzJWeWRtbGpaWE5mZG1GMWJIUXVkbUYxYkhRdWJt
+        RnRaWDBpQ2dvZ0lIUnBiV1Y2YjI1bElEMGdJbFZVUXlJS0NpQWdZbUZqYTNWd0lIc0tJQ0FnSUda
+        eVpYRjFaVzVqZVNBOUlDSkVZV2xzZVNJS0lDQWdJSFJwYldVZ0lDQWdJQ0E5SUNJeU16b3dNQ0lL
+        SUNCOUNnb2dJSEpsZEdWdWRHbHZibDlrWVdsc2VTQjdDaUFnSUNCamIzVnVkQ0E5SURFd0NpQWdm
+        UXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQmVuVnlaU0JHYVd4bElGTm9ZWEpsSUVKaFkydDFjQ0JRYjJ4cFkybGxjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRmphM1Z3WDNCdmJHbGplVjltYVd4bFgzTm9ZWEpsTG0xaGNtdGtiM2R1

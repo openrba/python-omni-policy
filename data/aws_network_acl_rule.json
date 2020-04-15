@@ -1,0 +1,83 @@
+{
+    "aws_network_acl_rule": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_network_acl_rule",
+        "description": "Provides an network ACL Rule resource.",
+        "arguments": {
+            "network_acl_id": {
+                "description": "The ID of the network ACL.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_number": {
+                "description": "The rule number for the entry (for example, 100). ACL entries are processed in ascending order by rule number.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "egress": {
+                "description": "Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet). Default `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": "The protocol. A value of -1 means all protocols.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_action": {
+                "description": "Indicates whether to allow or deny the traffic that matches the rule. Accepted values: `allow` | `deny`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cidr_block": {
+                "description": "The network range to allow or deny, in CIDR notation (for example 172.16.0.0/24 ).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipv6_cidr_block": {
+                "description": "The IPv6 CIDR block to allow or deny.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "from_port": {
+                "description": "The from port to match.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "to_port": {
+                "description": "The to port to match.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "icmp_type": {
+                "description": "ICMP protocol: The ICMP type. Required if specifying ICMP for the protocol. e.g. -1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "icmp_code": {
+                "description": "ICMP protocol: The ICMP code. Required if specifying ICMP for the protocol. e.g. -1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the network ACL Rule"
+            }
+        },
+        "timeouts": {}
+    }
+}

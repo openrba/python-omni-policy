@@ -1,0 +1,149 @@
+{
+    "aws_docdb_cluster": {
+        "status": "HOLD",
+        "subcategory": "DocumentDB",
+        "layout": "aws",
+        "page_title": "AWS: aws_docdb",
+        "description": "Manages a DocDB Aurora Cluster",
+        "arguments": {
+            "apply_immediately": {
+                "description": "Specifies whether any cluster modifications",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zones": {
+                "description": "A list of EC2 Availability Zones that",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backup_retention_period": {
+                "description": "The days to retain backups for. Default `1`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_identifier_prefix": {
+                "description": "Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_identifier": {
+                "description": "The cluster identifier. If omitted, Terraform will assign a random, unique identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "db_subnet_group_name": {
+                "description": "A DB subnet group to associate with this DB instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "db_cluster_parameter_group_name": {
+                "description": "A cluster parameter group to associate with the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "deletion_protection": {
+                "description": "A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled_cloudwatch_logs_exports": {
+                "description": "List of log types to export to cloudwatch. If omitted, no logs will be exported.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_version": {
+                "description": "The database engine version. Updating this argument results in an outage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine": {
+                "description": "The name of the database engine to be used for this DB cluster. Defaults to `docdb`. Valid Values: `docdb`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "final_snapshot_identifier": {
+                "description": "The name of your final DB snapshot",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_id": {
+                "description": "The ARN for the KMS encryption key. When specifying `kms_key_id`, `storage_encrypted` needs to be set to true.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "master_password": {
+                "description": "Password for the master DB user. Note that this may",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "master_username": {
+                "description": "Username for the master DB user. ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The port on which the DB accepts connections",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "preferred_backup_window": {
+                "description": "The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "skip_final_snapshot": {
+                "description": "Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_identifier": {
+                "description": "Specifies whether or not to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_encrypted": {
+                "description": "Specifies whether the DB cluster is encrypted. The default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the DB cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_security_group_ids": {
+                "description": "List of VPC security groups to associate",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of cluster"
+            }
+        },
+        "timeouts": {}
+    }
+}

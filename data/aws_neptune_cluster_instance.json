@@ -1,0 +1,137 @@
+{
+    "aws_neptune_cluster_instance": {
+        "status": "HOLD",
+        "subcategory": "Neptune",
+        "layout": "aws",
+        "page_title": "AWS: aws_neptune_cluster_instance",
+        "description": "Provides an Neptune Cluster Resource Instance",
+        "arguments": {
+            "apply_immediately": {
+                "description": "Specifies whether any instance modifications",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_minor_version_upgrade": {
+                "description": "Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The EC2 Availability Zone that the neptune instance is created in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_identifier": {
+                "description": "The identifier of the [`aws_neptune_cluster`](/docs/providers/aws/r/neptune_cluster.html",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "engine": {
+                "description": "The name of the database engine to be used for the neptune instance. Defaults to `neptune`. Valid Values: `neptune`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_version": {
+                "description": "The neptune engine version.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identifier": {
+                "description": "The indentifier for the neptune instance, if omitted, Terraform will assign a random, unique identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identifier_prefix": {
+                "description": "Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_class": {
+                "description": "The instance class to use.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "neptune_subnet_group_name": {
+                "description": "A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptune_subnet_group_name` of the attached [`aws_neptune_cluster`](/docs/providers/aws/r/neptune_cluster.html).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "neptune_parameter_group_name": {
+                "description": "The name of the neptune parameter group to associate with this instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The port on which the DB accepts connections. Defaults to `8182`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "preferred_backup_window": {
+                "description": "The daily time range during which automated backups are created if automated backups are enabled. Eg: \"04:00-09:00\"",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "preferred_maintenance_window": {
+                "description": "The window to perform maintenance in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "promotion_tier": {
+                "description": "Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "publicly_accessible": {
+                "description": "Bool to control if instance is publicly accessible. Default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "address": {
+                "description": "The hostname of the instance. See also `endpoint` and `port`."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of neptune instance"
+            },
+            "dbi_resource_id": {
+                "description": "The region-unique, immutable identifier for the neptune instance."
+            },
+            "endpoint": {
+                "description": "The connection endpoint in `address:port` format."
+            },
+            "id": {
+                "description": "The Instance identifier"
+            },
+            "kms_key_arn": {
+                "description": "The ARN for the KMS encryption key if one is set to the neptune cluster."
+            },
+            "storage_encrypted": {
+                "description": "Specifies whether the neptune cluster is encrypted."
+            }
+        },
+        "timeouts": {}
+    }
+}

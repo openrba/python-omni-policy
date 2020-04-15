@@ -1,0 +1,99 @@
+azurerm_mariadb_virtual_network_rule:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mariadb_virtual_network_rule'
+    description: Manages a MariaDB Virtual Network Rule.
+    arguments:
+        name:
+            description: The name of the MariaDB Virtual Network Rule. Cannot be empty
+                and must only contain alphanumeric characters and hyphens. Cannot
+                start with a number, and cannot start or end with a hyphen. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group where the MariaDB server resides.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: The name of the SQL Server to which this MariaDB virtual
+                network rule will be applied to. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet that the MariaDB server will be connected
+                to.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the MariaDB Virtual Network Rule.
+    timeouts:
+        create:
+            description: Used when creating the MariaDB Virtual Network Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the MariaDB Virtual Network Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the MariaDB Virtual Network Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MariaDB Virtual Network Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFhadVpYUWlDaUFnWVdSa2NtVnpjMTl6Y0dGalpTQWdJ
+        Q0FnSUNBOUlGc2lNVEF1Tnk0eU9TNHdMekk1SWwwS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lD
+        QWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5
+        dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZm
+        WjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjFZ
+        bTVsZENJZ0ltbHVkR1Z5Ym1Gc0lpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QWlhVzUwWlhKdVlXd2lDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ1BTQmhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSFpwY25SMVlXeGZibVYw
+        ZDI5eWExOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXN1WlhoaGJYQnNa
+        UzV1WVcxbENpQWdZV1JrY21WemMxOXdjbVZtYVhnZ0lDQWdJQ0FnUFNBaU1UQXVOeTR5T1M0d0x6
+        STVJZ29nSUhObGNuWnBZMlZmWlc1a2NHOXBiblJ6SUNBZ0lEMGdXeUpOYVdOeWIzTnZablF1VTNG
+        c0lsMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYldGeWFXRmtZbDl6WlhKMlpYSWlJQ0ps
+        ZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0p0WVhKcFlXUmlMWE5sY25abGNpMHhJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5
+        allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQWdJQ0FnSUNBZ0lEMGdZWHAx
+        Y21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JoWkcxcGJtbHpk
+        SEpoZEc5eVgyeHZaMmx1SUNBZ0lDQWdJQ0FnSUQwZ0ltMWhjbWxoWkdKaFpHMXBiblZ1SWdvZ0lH
+        RmtiV2x1YVhOMGNtRjBiM0pmYkc5bmFXNWZjR0Z6YzNkdmNtUWdQU0FpU0VCVGFERkRiMUl6SVNJ
+        S0lDQjJaWEp6YVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWpVdU55SUtJQ0J6
+        YzJ4ZlpXNW1iM0pqWlcxbGJuUWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lrVnVZV0pzWldRaUNnb2dJ
+        SE5yZFY5dVlXMWxJRDBnSWtkUVgwZGxialZmTWlJS0NpQWdjM1J2Y21GblpWOXdjbTltYVd4bElI
+        c0tJQ0FnSUhOMGIzSmhaMlZmYldJZ0lDQWdJQ0FnSUNBZ0lDQTlJRFV4TWpBS0lDQWdJR0poWTJ0
+        MWNGOXlaWFJsYm5ScGIyNWZaR0Y1Y3lBOUlEY0tJQ0FnSUdkbGIxOXlaV1IxYm1SaGJuUmZZbUZq
+        YTNWd0lDQTlJQ0pFYVhOaFlteGxaQ0lLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRY
+        MjFoY21saFpHSmZkbWx5ZEhWaGJGOXVaWFIzYjNKclgzSjFiR1VpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdFlYSnBZV1JpTFhadVpYUXRjblZzWlNJ
+        S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjlu
+        Y205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCelpYSjJaWEpmYm1GdFpTQWdJQ0FnSUNBZ0lEMGdZ
+        WHAxY21WeWJWOXRZWEpwWVdSaVgzTmxjblpsY2k1bGVHRnRjR3hsTG01aGJXVUtJQ0J6ZFdKdVpY
+        UmZhV1FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5emRXSnVaWFF1YVc1MFpYSnVZV3d1YVdR
+        S2ZRbz0=
+    import: !!binary |
+        Q2dwTllYSnBZVVJDSUZacGNuUjFZV3dnVG1WMGQyOXlheUJTZFd4bGN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRnlhV0ZrWWw5MmFYSjBkV0ZzWDI1bGRIZHZjbXRmY25Wc1pTNW9kRzFzTG0x
+        aGNtdGtiM2R1

@@ -1,0 +1,98 @@
+{
+    "azurerm_api_management_user": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_user",
+        "description": "Manages an API Management User.",
+        "arguments": {
+            "api_management_name": {
+                "description": "The name of the API Management Service in which the User should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "email": {
+                "description": "The email address associated with this user.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "first_name": {
+                "description": "The first name for this user.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "last_name": {
+                "description": "The last name for this user.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "user_id": {
+                "description": "The Identifier for this User, which must be unique within the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "confirmation": {
+                "description": "The kind of confirmation email which will be sent to this user. Possible values are `invite` and `signup`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "note": {
+                "description": "A note about this user.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "password": {
+                "description": "The password associated with this user.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "state": {
+                "description": "The state of this user. Possible values are `active`, `blocked` and `pending`.",
+                "required": false,
+                "policy": "",
+                "notes": "the State can be changed from Pending -> Active/Blocked but not from Active/Blocked -> Pending."
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management User."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management User.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management User.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management User.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management User.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

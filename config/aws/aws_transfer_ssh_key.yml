@@ -1,0 +1,25 @@
+aws_transfer_ssh_key:
+    status: HOLD
+    subcategory: Transfer
+    layout: aws
+    page_title: 'AWS: aws_transfer_ssh_key'
+    description: Provides a AWS Transfer SSH Public Key resource.
+    arguments:
+        server_id:
+            description: The Server ID of the Transfer Server (e.g. `s-12345678`)
+            required: false
+            policy: ''
+            notes: ''
+        user_name:
+            description: The name of the user account that is assigned to one or more
+                servers.
+            required: false
+            policy: ''
+            notes: ''
+        body:
+            description: The public key portion of an SSH key pair.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

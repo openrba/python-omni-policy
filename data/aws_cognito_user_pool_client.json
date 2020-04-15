@@ -1,0 +1,109 @@
+{
+    "aws_cognito_user_pool_client": {
+        "status": "HOLD",
+        "subcategory": "Cognito",
+        "layout": "aws",
+        "page_title": "AWS: aws_cognito_user_pool_client",
+        "description": "Provides a Cognito User Pool Client resource.",
+        "arguments": {
+            "allowed_oauth_flows": {
+                "description": "List of allowed OAuth flows (code, implicit, client_credentials).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_oauth_flows_user_pool_client": {
+                "description": "Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_oauth_scopes": {
+                "description": "List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "callback_urls": {
+                "description": "List of allowed callback URLs for the identity providers.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_redirect_uri": {
+                "description": "The default redirect URI. Must be in the list of callback URLs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "explicit_auth_flows": {
+                "description": "List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "generate_secret": {
+                "description": "Should an application secret be generated.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logout_urls": {
+                "description": "List of allowed logout URLs for the identity providers.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the application client.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "prevent_user_existence_errors": {
+                "description": "Choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to `ENABLED` and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to `LEGACY`, those APIs will return a `UserNotFoundException` exception if the user does not exist in the user pool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "read_attributes": {
+                "description": "List of user pool attributes the application client can read from.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "refresh_token_validity": {
+                "description": "The time limit in days refresh tokens are valid for.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "supported_identity_providers": {
+                "description": "List of provider names for the identity providers that are supported on this client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_pool_id": {
+                "description": "The user pool the client belongs to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "write_attributes": {
+                "description": "List of user pool attributes the application client can write to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "analytics_configuration": {
+                "description": "The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

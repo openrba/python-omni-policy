@@ -1,0 +1,38 @@
+{
+    "aws_api_gateway_resource": {
+        "status": "HOLD",
+        "subcategory": "API Gateway (REST APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_api_gateway_resource",
+        "description": "Provides an API Gateway Resource.",
+        "arguments": {
+            "rest_api_id": {
+                "description": "The ID of the associated REST API",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parent_id": {
+                "description": "The ID of the parent API resource",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "path_part": {
+                "description": "The last path segment of this API resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The resource's identifier."
+            },
+            "path": {
+                "description": "The complete path for this API resource, including all parent paths."
+            }
+        },
+        "timeouts": {}
+    }
+}

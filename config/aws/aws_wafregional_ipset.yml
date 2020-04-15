@@ -1,0 +1,24 @@
+aws_wafregional_ipset:
+    status: HOLD
+    subcategory: WAF Regional
+    layout: aws
+    page_title: 'AWS: aws_wafregional_ipset'
+    description: Provides a AWS WAF Regional IPSet resource for use with ALB.
+    arguments:
+        name:
+            description: The name or description of the IPSet.
+            required: true
+            policy: ''
+            notes: ''
+        ip_set_descriptor:
+            description: One or more pairs specifying the IP address type (IPV4 or
+                IPV6
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the WAF IPSet.
+        arn:
+            description: The ARN of the WAF IPSet.
+    timeouts: {}

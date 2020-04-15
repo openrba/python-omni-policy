@@ -1,0 +1,86 @@
+{
+    "azurerm_iotcentral_application": {
+        "status": "HOLD",
+        "subcategory": "IoT Central",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_iotcentral_application",
+        "description": "Manages an IotCentral Application",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the IotHub resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource has to be create. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sub_domain": {
+                "description": "A `sub_domain` name. Subdomain for the IoT Central URL. Each application must have a unique subdomain.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "A `display_name` name. Custom display name for the IoT Central application. Default is resource name. ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "A `sku` name. Possible values is `ST1`, `ST2`, Default value is `ST1`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "template": {
+                "description": "A `template` name. IoT Central application template name. Default is a custom application.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the IoT Central Application."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the IoT Central Application.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the IoT Central Application.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the IoT Central Application.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the IoT Central Application.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

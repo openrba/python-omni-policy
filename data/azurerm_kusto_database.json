@@ -1,0 +1,77 @@
+{
+    "azurerm_kusto_database": {
+        "status": "HOLD",
+        "subcategory": "Data Explorer",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_kusto_database",
+        "description": "Manages Kusto / Data Explorer Database",
+        "arguments": {
+            "name": {
+                "description": "The name of the Kusto Database to create. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The location where the Kusto Database should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the Resource Group where the Kusto Database should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_name": {
+                "description": "Specifies the name of the Kusto Cluster this database will be added to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "hot_cache_period": {
+                "description": "The time the data that should be kept in cache for fast queries as ISO 8601 timespan. Default is unlimited. For more information see: [ISO 8601 Timespan](https://en.wikipedia.org/wiki/ISO_8601#Durations)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "soft_delete_period": {
+                "description": "The time the data should be kept before it stops being accessible to queries as ISO 8601 timespan. Default is unlimited. For more information see: [ISO 8601 Timespan](https://en.wikipedia.org/wiki/ISO_8601#Durations)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Kusto Cluster ID."
+            },
+            "size": {
+                "description": "The size of the database in bytes."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Kusto Database.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Kusto Database.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Kusto Database.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Kusto Database.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

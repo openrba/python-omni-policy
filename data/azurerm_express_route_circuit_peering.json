@@ -1,0 +1,107 @@
+{
+    "azurerm_express_route_circuit_peering": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_express_route_circuit_peering",
+        "description": "Manages an ExpressRoute Circuit Peering.",
+        "arguments": {
+            "peering_type": {
+                "description": "The type of the ExpressRoute Circuit Peering. Acceptable values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "express_route_circuit_name": {
+                "description": "The name of the ExpressRoute Circuit in which to create the Peering.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "primary_peer_address_prefix": {
+                "description": "A `/30` subnet for the primary link.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "secondary_peer_address_prefix": {
+                "description": "A `/30` subnet for the secondary link.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vlan_id": {
+                "description": "A valid VLAN ID to establish this peering on.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shared_key": {
+                "description": "The shared key. Can be a maximum of 25 characters.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "peer_asn": {
+                "description": "The Either a 16-bit or a 32-bit ASN. Can either be public or private..",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "microsoft_peering_config": {
+                "description": "A `microsoft_peering_config` block as defined below. Required when `peering_type` is set to `MicrosoftPeering`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "advertised_public_prefixes": {
+                "description": "A list of Advertised Public Prefixes",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Resource ID of the ExpressRoute Circuit Peering."
+            },
+            "azure_asn": {
+                "description": "The ASN used by Azure."
+            },
+            "primary_azure_port": {
+                "description": "The Primary Port used by Azure for this Peering."
+            },
+            "secondary_azure_port": {
+                "description": "The Secondary Port used by Azure for this Peering."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the ExpressRoute Circuit Peering.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the ExpressRoute Circuit Peering.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the ExpressRoute Circuit Peering.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the ExpressRoute Circuit Peering.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

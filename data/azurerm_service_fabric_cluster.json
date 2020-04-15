@@ -1,0 +1,323 @@
+{
+    "azurerm_service_fabric_cluster": {
+        "status": "HOLD",
+        "subcategory": "Service Fabric",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_service_fabric_cluster",
+        "description": "Manages a Service Fabric Cluster.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Node Type. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the Service Fabric Cluster exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the Azure Region where the Service Fabric Cluster should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "reliability_level": {
+                "description": "Specifies the Reliability Level of the Cluster. Possible values include `None`, `Bronze`, `Silver`, `Gold` and `Platinum`.",
+                "required": true,
+                "policy": "",
+                "notes": "The Reliability Level of the Cluster depends on the number of nodes in the Cluster: `Platinum` requires at least 9 VM's, `Gold` requires at least 7 VM's, `Silver` requires at least 5 VM's, `Bronze` requires at least 3 VM's."
+            },
+            "management_endpoint": {
+                "description": "Specifies the Management Endpoint of the cluster such as `http://example.com`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "node_type": {
+                "description": "One or more `node_type` blocks as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "upgrade_mode": {
+                "description": "Specifies the Upgrade Mode of the cluster. Possible values are `Automatic` or `Manual`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vm_image": {
+                "description": "Specifies the Image expected for the Service Fabric Cluster, such as `Windows`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_code_version": {
+                "description": "Required if Upgrade Mode set to `Manual`, Specifies the Version of the Cluster Code of the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "add_on_features": {
+                "description": "A List of one or more features which should be enabled, such as `DnsService`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "azure_active_directory": {
+                "description": "An `azure_active_directory` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_common_names": {
+                "description": "A `certificate_common_names` block as defined below. Conflicts with `certificate`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate": {
+                "description": "A `certificate` block as defined below. Conflicts with `certificate_common_names`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "reverse_proxy_certificate": {
+                "description": "A `reverse_proxy_certificate` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "client_certificate_thumbprint": {
+                "description": "One or two `client_certificate_thumbprint` blocks as defined below. ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "client_certificate_common_name": {
+                "description": "A `client_certificate_common_name` block as defined below. ",
+                "required": false,
+                "policy": "",
+                "notes": "If Client Certificates are enabled then at a Certificate must be configured on the cluster."
+            },
+            "diagnostics_config": {
+                "description": "A `diagnostics_config` block as defined below. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fabric_settings": {
+                "description": "One or more `fabric_settings` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The Azure Active Directory Tenant ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_application_id": {
+                "description": "The Azure Active Directory Cluster Application ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_application_id": {
+                "description": "The Azure Active Directory Client ID which should be used for the Client Application.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "common_names": {
+                "description": "A `common_names` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "x509_store_name": {
+                "description": "The X509 Store where the Certificate Exists, such as `My`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_common_name": {
+                "description": "The common or subject name of the certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_issuer_thumbprint": {
+                "description": "The Issuer Thumbprint of the Certificate.",
+                "required": false,
+                "policy": "",
+                "notes": "Certificate Issuer Thumbprint may become required in the future, `https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-create-cluster-using-cert-cn#download-and-update-a-sample-template`."
+            },
+            "thumbprint": {
+                "description": "The Thumbprint associated with the Client Certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "thumbprint_secondary": {
+                "description": "The Secondary Thumbprint of the Certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "is_admin": {
+                "description": "Does the Client Certificate have Admin Access to the cluster? Non-admin clients can only perform read only operations on the cluster.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_name": {
+                "description": "The name of the Storage Account where the Diagnostics should be sent to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protected_account_key_name": {
+                "description": "The protected diagnostics storage key name, such as `StorageAccountKey1`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "blob_endpoint": {
+                "description": "The Blob Endpoint of the Storage Account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "queue_endpoint": {
+                "description": "The Queue Endpoint of the Storage Account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "table_endpoint": {
+                "description": "The Table Endpoint of the Storage Account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "A map containing settings for the specified Fabric Setting.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "placement_properties": {
+                "description": "The placement tags applied to nodes in the node type, which can be used to indicate where certain services (workload",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "capacities": {
+                "description": "The capacity tags applied to the nodes in the node type, the cluster resource manager uses these tags to understand how much resource a node has.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_count": {
+                "description": "The number of nodes for this Node Type.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "is_primary": {
+                "description": "Is this the Primary Node Type? Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_endpoint_port": {
+                "description": "The Port used for the Client Endpoint for this Node Type. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "http_endpoint_port": {
+                "description": "The Port used for the HTTP Endpoint for this Node Type. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "durability_level": {
+                "description": "The Durability Level for this Node Type. Possible values include `Bronze`, `Gold` and `Silver`. Defaults to `Bronze`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "application_ports": {
+                "description": "A `application_ports` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ephemeral_ports": {
+                "description": "A `ephemeral_ports` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "reverse_proxy_endpoint_port": {
+                "description": "The Port used for the Reverse Proxy Endpoint  for this Node Type. Changing this will upgrade the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "start_port": {
+                "description": "The start of the Ephemeral Port Range on this Node Type.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "end_port": {
+                "description": "The end of the Ephemeral Port Range on this Node Type.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Service Fabric Cluster."
+            },
+            "cluster_endpoint": {
+                "description": "The Cluster Endpoint for this Service Fabric Cluster."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Service Fabric Cluster.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Service Fabric Cluster.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Service Fabric Cluster.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Service Fabric Cluster.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

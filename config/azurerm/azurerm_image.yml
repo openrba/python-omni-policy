@@ -1,0 +1,135 @@
+azurerm_image:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_image'
+    description: Manages a custom virtual machine image that can be used to create
+        virtual machines.
+    arguments:
+        name:
+            description: Specifies the name of the image. Changing this forces a
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specified the supported Azure location where the resource
+                exists.
+            required: true
+            policy: ''
+            notes: ''
+        source_virtual_machine_id:
+            description: The Virtual Machine ID from which to create the image.
+            required: false
+            policy: ''
+            notes: ''
+        os_disk:
+            description: One or more `os_disk` elements as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        data_disk:
+            description: One or more `data_disk` elements as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        zone_resilient:
+            description: Is zone resiliency enabled?  Defaults to `false`.  Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        hyper_v_generation:
+            description: The HyperVGenerationType of the VirtualMachine created from
+                the image as `V1`, `V2`. The default is `V1`.
+            required: false
+            policy: ''
+            notes: ''
+        os_type:
+            description: 'Specifies the type of operating system contained in the
+                virtual machine image. Possible values are: Windows or Linux.'
+            required: true
+            policy: ''
+            notes: ''
+        os_state:
+            description: Specifies the state of the operating system contained in
+                the blob. Currently, the only value is Generalized.
+            required: true
+            policy: ''
+            notes: ''
+        managed_disk_id:
+            description: Specifies the ID of the managed disk resource that you want
+                to use to create the image.
+            required: false
+            policy: ''
+            notes: ''
+        blob_uri:
+            description: Specifies the URI in Azure storage of the blob that you want
+                to use to create the image.
+            required: false
+            policy: ''
+            notes: ''
+        caching:
+            description: Specifies the caching mode as `ReadWrite`, `ReadOnly`, or
+                `None`. The default is `None`.
+            required: false
+            policy: ''
+            notes: ''
+        size_gb:
+            description: Specifies the size of the image to be created. The target
+                size can't be smaller than the source size.
+            required: false
+            policy: ''
+            notes: ''
+        lun:
+            description: Specifies the logical unit number of the data disk.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Image.
+    timeouts:
+        create:
+            description: Used when creating the Image.
+            required: false
+            timeout: 90
+        update:
+            description: Used when updating the Image.
+            required: false
+            timeout: 90
+        read:
+            description: Used when retrieving the Image.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Image.
+            required: false
+            timeout: 90
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMmx0WVdk
+        bElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlZV05q
+        ZEdWemRDSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ0lsZGxjM1FnVlZNaUNpQWdj
+        bVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRY
+        QXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lHOXpYMlJwYzJzZ2V3b2dJQ0FnYjNOZmRIbHdaU0FnUFNB
+        aVRHbHVkWGdpQ2lBZ0lDQnZjMTl6ZEdGMFpTQTlJQ0pIWlc1bGNtRnNhWHBsWkNJS0lDQWdJR0pz
+        YjJKZmRYSnBJRDBnSW50aWJHOWlYM1Z5YVgwaUNpQWdJQ0J6YVhwbFgyZGlJQ0E5SURNd0NpQWdm
+        UXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwSmJXRm5aWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY21WemIzVnlZ
+        MlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXMWhaMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

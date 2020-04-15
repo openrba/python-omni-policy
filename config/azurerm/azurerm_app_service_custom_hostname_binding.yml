@@ -1,0 +1,94 @@
+azurerm_app_service_custom_hostname_binding:
+    status: HOLD
+    subcategory: App Service (Web Apps)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_app_service_custom_hostname_binding'
+    description: Manages a Hostname Binding within an App Service.
+    arguments:
+        hostname:
+            description: Specifies the Custom Hostname to use for the App Service,
+                example `www.example.com`. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        app_service_name:
+            description: The name of the App Service in which to add the Custom Hostname
+                Binding. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the App Service exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ssl_state:
+            description: The SSL type. Possible values are `IpBasedEnabled` and `SniEnabled`.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        thumbprint:
+            description: The SSL certificate thumbprint. Changing this forces a new
+                resource to be created.
+            required: false
+            policy: ''
+            notes: '`thumbprint` must be specified when `ssl_state` is set.'
+    attributes:
+        id:
+            description: The ID of the App Service Custom Hostname Binding
+        virtual_ip:
+            description: The virtual IP address assigned to the hostname if IP based
+                SSL is enabled.
+    timeouts:
+        create:
+            description: Used when creating the App Service Custom Hostname Binding.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the App Service Custom Hostname Binding.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the App Service Custom Hostname Binding.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the App Service Custom Hostname Binding.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKeVlXNWtiMjFmYVdRaUlDSnpaWEoyWlhJaUlIc0tJQ0JyWldWd1pYSnpJ
+        RDBnZXdvZ0lDQWdZWHBwWDJsa0lEMGdNUW9nSUgwS0NpQWdZbmwwWlY5c1pXNW5kR2dnUFNBNENu
+        MEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0lpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdJQ0FnSUQwZ0luTnZiV1V0Y21WemIzVnlZMlV0WjNKdmRYQWlDaUFn
+        Ykc5allYUnBiMjRnUFNBaVYyVnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnla
+        WEp0WDJGd2NGOXpaWEoyYVdObFgzQnNZVzRpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKemIyMWxMV0Z3Y0MxelpYSjJhV05sTFhCc1lXNGlDaUFnYkc5
+        allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1
+        WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb0tJQ0J6YTNVZ2V3
+        b2dJQ0FnZEdsbGNpQTlJQ0pUZEdGdVpHRnlaQ0lLSUNBZ0lITnBlbVVnUFNBaVV6RWlDaUFnZlFw
+        OUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWhjSEJmYzJWeWRtbGpaU0lnSW1WNFlXMXdiR1Vp
+        SUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnY21GdVpHOXRYMmxrTG5ObGNuWmxj
+        aTVvWlhnS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRY
+        SmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhC
+        ZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFs
+        Q2lBZ1lYQndYM05sY25acFkyVmZjR3hoYmw5cFpDQTlJR0Y2ZFhKbGNtMWZZWEJ3WDNObGNuWnBZ
+        MlZmY0d4aGJpNWxlR0Z0Y0d4bExtbGtDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJGd2NG
+        OXpaWEoyYVdObFgyTjFjM1J2YlY5b2IzTjBibUZ0WlY5aWFXNWthVzVuSWlBaVpYaGhiWEJzWlNJ
+        Z2V3b2dJR2h2YzNSdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWQzZDNMbTE1ZDJWaWMybDBaUzVq
+        YjIwaUNpQWdZWEJ3WDNObGNuWnBZMlZmYm1GdFpTQWdJQ0E5SUdGNmRYSmxjbTFmWVhCd1gzTmxj
+        blpwWTJVdVpYaGhiWEJzWlM1dVlXMWxDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlH
+        RjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENuMEs=
+    import: !!binary |
+        Q2dwQmNIQWdVMlZ5ZG1salpTQkRkWE4wYjIwZ1NHOXpkRzVoYldVZ1FtbHVaR2x1WjNNZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndYM05sY25acFkyVmZZM1Z6ZEc5dFgyaHZjM1J1WVcxbFgySnBibVJwYm1j
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

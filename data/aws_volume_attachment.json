@@ -1,0 +1,53 @@
+{
+    "aws_volume_attachment": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_volume_attachment",
+        "description": "Provides an AWS EBS Volume Attachment",
+        "arguments": {
+            "device_name": {
+                "description": "The device name to expose to the instance (for",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_id": {
+                "description": "ID of the Instance to attach to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "volume_id": {
+                "description": "ID of the Volume to be attached",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "force_detach": {
+                "description": "Set to `true` if you want to force the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "skip_destroy": {
+                "description": "Set this to true if you do not wish",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "device_name": {
+                "description": "The device name exposed to the instance"
+            },
+            "instance_id": {
+                "description": "ID of the Instance"
+            },
+            "volume_id": {
+                "description": "ID of the Volume"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,108 @@
+azurerm_storage_account_network_rules:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_account_network_rules'
+    description: Manages network rules inside of a Azure Storage Account.
+    arguments:
+        storage_account_name:
+            description: Specifies the name of the storage account. Changing this
+                forces a new resource to be created. This must be unique across the
+                entire Azure service, not just within the resource group.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the storage
+                account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        default_action:
+            description: Specifies the default action of allow or deny when no other
+                rules match. Valid options are `Deny` or `Allow`.
+            required: true
+            policy: ''
+            notes: ''
+        bypass:
+            description: ' Specifies whether traffic is bypassed for Logging/Metrics/AzureServices.
+                Valid options are any combination of `Logging`, `Metrics`, `AzureServices`,
+                or `None`.'
+            required: false
+            policy: ''
+            notes: ''
+        ip_rules:
+            description: List of public IP or IP ranges in CIDR Format. Only IPV4
+                addresses are allowed. Private IP address ranges (as defined in [RFC
+                1918](https://tools.ietf.org/html/rfc1918#section-3)
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network_subnet_ids:
+            description: A list of virtual network subnet ids to to secure the storage
+                account.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Storage Account.
+    timeouts:
+        create:
+            description: Used when creating the  Network Rules for this Storage Account.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Network Rules for this Storage Account.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Network Rules for this Storage Account.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Network Rules for this Storage Account.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFhadVpYUWlDaUFnWVdSa2NtVnpjMTl6Y0dGalpTQWdJ
+        Q0FnSUNBOUlGc2lNVEF1TUM0d0xqQXZNVFlpWFFvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lD
+        QWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0
+        S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjlu
+        Y205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmMzVmli
+        bVYwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lt
+        VjRZVzF3YkdVdGMzVmlibVYwSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCMmFYSjBkV0Zz
+        WDI1bGRIZHZjbXRmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZkbWx5ZEhWaGJGOXVaWFIzYjNKckxtVjRZ
+        VzF3YkdVdWJtRnRaUW9nSUdGa1pISmxjM05mY0hKbFptbDRJQ0FnSUNBZ0lEMGdJakV3TGpBdU1p
+        NHdMekkwSWdvZ0lITmxjblpwWTJWZlpXNWtjRzlwYm5SeklDQWdJRDBnV3lKTmFXTnliM052Wm5R
+        dVUzUnZjbUZuWlNKZENuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM04wYjNKaFoyVmZZV05q
+        YjNWdWRDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaWMzUnZjbUZuWldGalkyOTFiblJ1WVcxbElnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gy
+        NWhiV1VnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1
+        dVlXMWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5
+        WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdZV05qYjNWdWRGOTBh
+        V1Z5SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lYSmtJZ29nSUdGalkyOTFiblJmY21Wd2JH
+        bGpZWFJwYjI1ZmRIbHdaU0E5SUNKSFVsTWlDZ29nSUhSaFozTWdQU0I3Q2lBZ0lDQmxiblpwY205
+        dWJXVnVkQ0E5SUNKemRHRm5hVzVuSWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        YzNSdmNtRm5aVjloWTJOdmRXNTBYMjVsZEhkdmNtdGZjblZzWlhNaUlDSjBaWE4wSWlCN0NpQWdj
+        bVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIz
+        VndMblJsYzNRdWJtRnRaUW9nSUhOMGIzSmhaMlZmWVdOamIzVnVkRjl1WVcxbElEMGdZWHAxY21W
+        eWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RdWRHVnpkQzV1WVcxbENnb2dJR1JsWm1GMWJIUmZZV04w
+        YVc5dUlDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtGc2JHOTNJZ29nSUdsd1gzSjFiR1Z6SUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ1d5SXhNamN1TUM0d0xqRWlYUW9nSUhacGNuUjFZV3hmYm1WMGQy
+        OXlhMTl6ZFdKdVpYUmZhV1J6SUQwZ1cyRjZkWEpsY20xZmMzVmlibVYwTG5SbGMzUXVhV1JkQ2lB
+        Z1lubHdZWE56SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQmJJazFsZEhKcFkzTWlYUXA5
+        Q2c9PQ==
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUVGalkyOTFiblFnVG1WMGQyOXlheUJTZFd4bGN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5aFkyTnZkVzUwWDI1bGRIZHZjbXRmY25Wc1pYTXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

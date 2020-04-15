@@ -1,0 +1,74 @@
+azurerm_cdn_profile:
+    status: HOLD
+    subcategory: CDN
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cdn_profile'
+    description: Manages a CDN Profile to create a collection of CDN Endpoints.
+    arguments:
+        name:
+            description: Specifies the name of the CDN Profile. Changing this forces
+                a
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: The pricing related information of current CDN profile. Accepted
+                values are `Standard_Akamai`, `Standard_ChinaCdn`, `Standard_Microsoft`,
+                `Standard_Verizon` or `Premium_Verizon`.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the CDN Profile.
+    timeouts:
+        create:
+            description: Used when creating the CDN Profile.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CDN Profile.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CDN Profile.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CDN Profile.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyTmtibDl3Y205
+        bWFXeGxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Fp
+        WlhoaGJYQnNaVU5rYmxCeWIyWnBiR1VpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0pYWlhOMElGVlRJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgz
+        SmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSE5yZFNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNBaVUzUmhibVJoY21SZlZtVnlhWHB2YmlJS0NpQWdkR0ZuY3lBOUlIc0tJQ0Fn
+        SUdWdWRtbHliMjV0Wlc1MElEMGdJbEJ5YjJSMVkzUnBiMjRpQ2lBZ0lDQmpiM04wWDJObGJuUmxj
+        aUE5SUNKTlUwWlVJZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwRFJFNGdVSEp2Wm1sc1pYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdj
+        bVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyUnVYM0J5YjJacGJHVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

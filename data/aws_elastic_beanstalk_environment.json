@@ -1,0 +1,98 @@
+{
+    "aws_elastic_beanstalk_environment": {
+        "status": "HOLD",
+        "subcategory": "Elastic Beanstalk",
+        "layout": "aws",
+        "page_title": "AWS: aws_elastic_beanstalk_environment",
+        "description": "Provides an Elastic Beanstalk Environment Resource",
+        "arguments": {
+            "name": {
+                "description": "A unique name for this Environment. This name is used",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application": {
+                "description": "Name of the application that contains the version",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cname_prefix": {
+                "description": "Prefix to use for the fully qualified DNS name of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Short description of the Environment",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tier": {
+                "description": "Elastic Beanstalk Environment tier. Valid values are `Worker`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "setting": {
+                "description": "Option settings to configure the new Environment. These",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "solution_stack_name": {
+                "description": "A solution stack to base your environment",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "template_name": {
+                "description": "The name of the Elastic Beanstalk Configuration",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "platform_arn": {
+                "description": "The [ARN][2] of the Elastic Beanstalk [Platform][3]",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wait_for_ready_timeout": {
+                "description": "The maximum",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "version_label": {
+                "description": "The name of the Elastic Beanstalk Application Version",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A set of tags to apply to the Environment.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "ID of the Elastic Beanstalk Environment."
+            },
+            "name": {
+                "description": "Name of the Elastic Beanstalk Environment."
+            },
+            "description": {
+                "description": "Description of the Elastic Beanstalk Environment."
+            },
+            "tier": {
+                "description": "The environment tier specified."
+            }
+        },
+        "timeouts": {}
+    }
+}

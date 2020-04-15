@@ -1,0 +1,107 @@
+{
+    "azurerm_key_vault_key": {
+        "status": "HOLD",
+        "subcategory": "Key Vault",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_key_vault_key",
+        "description": "Manages a Key Vault Key.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Key Vault Key. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_id": {
+                "description": "The ID of the Key Vault where the Key should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_type": {
+                "description": "Specifies the Key Type to use for this Key Vault Key. Possible values are `EC` (Elliptic Curve), `EC-HSM`, `Oct` (Octet), `RSA` and `RSA-HSM`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_size": {
+                "description": "Specifies the Size of the RSA key to create in bytes. For example, 1024 or 2048. *Note*: This field is required if `key_type` is `RSA` or `RSA-HSM`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "curve": {
+                "description": "Specifies the curve to use when creating an `EC` key. Possible values are `P-256`, `P-384`, `P-521`, and `SECP256K1`. This field will be required in a future release if `key_type` is `EC` or `EC-HSM`. The API will default to `P-256` if nothing is specified. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_opts": {
+                "description": "A list of JSON web key operations. Possible values include: `decrypt`, `encrypt`, `sign`, `unwrapKey`, `verify` and `wrapKey`. Please note these values are case sensitive.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "not_before_date": {
+                "description": "Key not usable before the provided UTC datetime (Y-m-d'T'H:M:S'Z').",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expiration_date": {
+                "description": "Expiration UTC datetime (Y-m-d'T'H:M:S'Z').",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Key Vault Key ID."
+            },
+            "version": {
+                "description": "The current version of the Key Vault Key."
+            },
+            "n": {
+                "description": "The RSA modulus of this Key Vault Key."
+            },
+            "e": {
+                "description": "The RSA public exponent of this Key Vault Key."
+            },
+            "x": {
+                "description": "The EC X component of this Key Vault Key."
+            },
+            "y": {
+                "description": "The EC Y component of this Key Vault Key."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Key Vault Key.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Key Vault Key.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Key Vault Key.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Key Vault Key.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

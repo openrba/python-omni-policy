@@ -1,0 +1,29 @@
+{
+    "aws_route53_query_log": {
+        "status": "HOLD",
+        "subcategory": "Route53",
+        "layout": "aws",
+        "page_title": "AWS: aws_route53_query_log",
+        "description": "Provides a Route53 query logging configuration resource.",
+        "arguments": {
+            "cloudwatch_log_group_arn": {
+                "description": "CloudWatch log group ARN to send query logs.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_id": {
+                "description": "Route53 hosted zone ID to enable query logs.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The query logging configuration ID"
+            }
+        },
+        "timeouts": {}
+    }
+}

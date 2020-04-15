@@ -1,0 +1,124 @@
+azurerm_stream_analytics_output_mssql:
+    status: HOLD
+    subcategory: Stream Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_stream_analytics_output_mssql'
+    description: Manages a Stream Analytics Output to Microsoft SQL Server Database.
+    arguments:
+        name:
+            description: The name of the Stream Output. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Stream Analytics
+                Job exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        stream_analytics_job_name:
+            description: The name of the Stream Analytics Job. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server:
+            description: The SQL server url. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        user:
+            description: Username used to login to the Microsoft SQL Server. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: Password used together with username, to login to the Microsoft
+                SQL Server. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        table:
+            description: Table in the database that the output points to. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Stream Analytics Output Microsoft SQL Server
+                Database.
+    timeouts:
+        create:
+            description: Used when creating the Stream Analytics Output Microsoft
+                SQL Server Database.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Stream Analytics Output Microsoft
+                SQL Server Database.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Stream Analytics Output Microsoft
+                SQL Server Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Stream Analytics Output Microsoft
+                SQL Server Database.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQTlJQ0psZUdGdGNHeGxMWEpsYzI5MWNtTmxjeUlLZlFvS1pHRjBZU0FpWVhwMWNt
+        VnliVjl6ZEhKbFlXMWZZVzVoYkhsMGFXTnpYMnB2WWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGFtOWlJZ29nSUhKbGMyOTFjbU5s
+        WDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6Y1d4ZmMyVnlkbVZ5SWlBaVpY
+        aGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNB
+        aVpYaGhiWEJzWlMxelpYSjJaWElpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxD
+        aUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNt
+        VnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUhabGNuTnBiMjRnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlNVEl1TUNJS0lDQmhaRzFwYm1semRISmhkRzl5
+        WDJ4dloybHVJQ0FnSUNBZ0lDQWdJRDBnSW1SaVlXUnRhVzRpQ2lBZ1lXUnRhVzVwYzNSeVlYUnZj
+        bDlzYjJkcGJsOXdZWE56ZDI5eVpDQTlJQ0psZUdGdGNHeGxMWEJoYzNOM2IzSmtJZ3A5Q2dweVpY
+        TnZkWEpqWlNBaVlYcDFjbVZ5YlY5emNXeGZaR0YwWVdKaGMyVWlJQ0psZUdGdGNHeGxJaUI3Q2lB
+        Z2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJz
+        WldSaUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZ
+        WHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JzYjJOaGRH
+        bHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNW
+        eVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lITmxjblpsY2w5dVlXMWxJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5emNXeGZjMlZ5ZG1WeUxtVjRZ
+        VzF3YkdVdWJtRnRaUW9nSUhKbGNYVmxjM1JsWkY5elpYSjJhV05sWDI5aWFtVmpkR2wyWlY5dVlX
+        MWxJRDBnSWxNd0lnb2dJR052Ykd4aGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdJbE5SVEY5TVFWUkpUakZmUjBWT1JWSkJURjlEVURGZlEwbGZRVk1pQ2lBZ2JXRjRYM05w
+        ZW1WZllubDBaWE1nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaU1qWTRORE0xTkRVMk1EQXdJ
+        Z29nSUdOeVpXRjBaVjl0YjJSbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtSbFpt
+        RjFiSFFpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjBjbVZoYlY5aGJtRnNlWFJwWTNO
+        ZmIzVjBjSFYwWDIxemMzRnNJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTMXZkWFJ3ZFhRdGMzRnNJZ29nSUhOMGNtVmhi
+        VjloYm1Gc2VYUnBZM05mYW05aVgyNWhiV1VnUFNCaGVuVnlaWEp0WDNOMGNtVmhiVjloYm1Gc2VY
+        UnBZM05mYW05aUxtVjRZVzF3YkdVdWJtRnRaUW9nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldV
+        Z0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNOMGNtVmhiVjloYm1Gc2VYUnBZM05mYW05aUxtVjRZVzF3
+        YkdVdWNtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpRb0tJQ0J6WlhKMlpYSWdJQ0E5SUdGNmRYSmxj
+        bTFmYzNGc1gzTmxjblpsY2k1bGVHRnRjR3hsTG1aMWJHeDVYM0YxWVd4cFptbGxaRjlrYjIxaGFX
+        NWZibUZ0WlFvZ0lIVnpaWElnSUNBZ0lEMGdZWHAxY21WeWJWOXpjV3hmYzJWeWRtVnlMbVY0WVcx
+        d2JHVXVZV1J0YVc1cGMzUnlZWFJ2Y2w5c2IyZHBiZ29nSUhCaGMzTjNiM0prSUQwZ1lYcDFjbVZ5
+        YlY5emNXeGZjMlZ5ZG1WeUxtVjRZVzF3YkdVdVlXUnRhVzVwYzNSeVlYUnZjbDlzYjJkcGJsOXdZ
+        WE56ZDI5eVpBb2dJR1JoZEdGaVlYTmxJRDBnWVhwMWNtVnliVjl6Y1d4ZlpHRjBZV0poYzJVdVpY
+        aGhiWEJzWlM1dVlXMWxDaUFnZEdGaWJHVWdJQ0FnUFNBaVJYaGhiWEJzWlZSaFlteGxJZ3A5Q2c9
+        PQ==
+    import: !!binary |
+        Q2dwVGRISmxZVzBnUVc1aGJIbDBhV056SUU5MWRIQjFkSE1nZEc4Z1RXbGpjbTl6YjJaMElGTlJU
+        Q0JUWlhKMlpYSWdSR0YwWVdKaGMyVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pT
+        QmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnlaV0Z0WDJGdVlXeDVkR2xqYzE5dmRYUndkWFJmYlhOemNXd3VhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

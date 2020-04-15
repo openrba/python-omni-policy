@@ -1,0 +1,65 @@
+{
+    "azurerm_dns_zone": {
+        "status": "HOLD",
+        "subcategory": "DNS",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_dns_zone",
+        "description": "Manages a DNS Zone.",
+        "arguments": {
+            "name": {
+                "description": "The name of the DNS Zone. Must be a valid domain name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the resource group where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The DNS Zone ID."
+            },
+            "max_number_of_record_sets": {
+                "description": "(Optional) Maximum number of Records in the zone. Defaults to `1000`."
+            },
+            "number_of_record_sets": {
+                "description": "(Optional) The number of records already in the zone."
+            },
+            "name_servers": {
+                "description": "(Optional) A list of values that make up the NS record for the zone."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the DNS Zone.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the DNS Zone.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the DNS Zone.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the DNS Zone.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

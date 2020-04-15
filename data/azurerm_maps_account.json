@@ -1,0 +1,71 @@
+{
+    "azurerm_maps_account": {
+        "status": "HOLD",
+        "subcategory": "Maps",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_maps_account",
+        "description": "Manages an Azure Maps Account.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Azure Maps Account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the Azure Maps Account should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "The sku of the Azure Maps Account. Possible values are `S0` and `S1`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the Azure Maps Account.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Azure Maps Account."
+            },
+            "primary_access_key": {
+                "description": "The primary key used to authenticate and authorize access to the Maps REST APIs."
+            },
+            "secondary_access_key": {
+                "description": "The secondary key used to authenticate and authorize access to the Maps REST APIs."
+            },
+            "x_ms_client_id": {
+                "description": "A unique identifier for the Maps Account."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Maps Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Maps Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Maps Account.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Maps Account.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

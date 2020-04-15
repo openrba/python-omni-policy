@@ -1,0 +1,134 @@
+azurerm_data_factory_linked_service_data_lake_storage_gen2:
+    status: HOLD
+    subcategory: Data Factory
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_data_factory_linked_service_data_lake_storage_gen2'
+    description: Manages a Linked Service (connection) between Data Lake Storage Gen2
+        and Azure Data Factory.
+    arguments:
+        name:
+            description: Specifies the name of the Data Factory Linked Service MySQL.
+                Changing this forces a new resource to be created. Must be globally
+                unique. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Data
+                Factory Linked Service MySQL. Changing this forces a new resource
+            required: true
+            policy: ''
+            notes: ''
+        data_factory_name:
+            description: The Data Factory name in which to associate the Linked Service
+                with. Changing this forces a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        url:
+            description: The endpoint for the Azure Data Lake Storage Gen2 service.
+            required: true
+            policy: ''
+            notes: ''
+        service_principal_id:
+            description: The service principal id in which to authenticate against
+                the Azure Data Lake Storage Gen2 account.
+            required: true
+            policy: ''
+            notes: ''
+        service_principal_key:
+            description: The service principal key in which to authenticate against
+                the Azure Data Lake Storage Gen2 account.
+            required: true
+            policy: ''
+            notes: ''
+        tenant:
+            description: The tenant id or name in which to authenticate against the
+                Azure Data Lake Storage Gen2 account.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description for the Data Factory Linked Service MySQL.
+            required: false
+            policy: ''
+            notes: ''
+        integration_runtime_name:
+            description: The integration runtime reference to associate with the Data
+                Factory Linked Service MySQL.
+            required: false
+            policy: ''
+            notes: ''
+        annotations:
+            description: List of tags that can be used for describing the Data Factory
+                Linked Service MySQL.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: A map of parameters to associate with the Data Factory Linked
+                Service MySQL.
+            required: false
+            policy: ''
+            notes: ''
+        additional_properties:
+            description: A map of additional properties to associate with the Data
+                Factory Linked Service MySQL.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Factory Data Lake Storage Gen2 Linked
+                Service.
+    timeouts:
+        create:
+            description: Used when creating the Data Factory Data Lake Storage Gen2
+                Linked Service.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Factory Data Lake Storage Gen2
+                Linked Service.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Factory Data Lake Storage Gen2
+                Linked Service.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Factory Data Lake Storage Gen2
+                Linked Service.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        a1lYUmhYMlpoWTNSdmNua2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtmUW9LWkdGMFlTQWlZWHAxY21WeWJWOWpiR2xsYm5SZlkyOXVabWxu
+        SWlBaVkzVnljbVZ1ZENJZ2V3cDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlrWVhSaFgyWmhZ
+        M1J2Y25sZmJHbHVhMlZrWDNObGNuWnBZMlZmWkdGMFlWOXNZV3RsWDNOMGIzSmhaMlZmWjJWdU1p
+        SWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlho
+        aGJYQnNaU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQWdQU0JoZW5WeVpYSnRYM0ps
+        YzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdSaGRHRmZabUZqZEc5eWVWOXVZ
+        VzFsSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZaR0YwWVY5bVlXTjBiM0o1TG1WNFlXMXdiR1V1Ym1GdFpR
+        b2dJSE5sY25acFkyVmZjSEpwYm1OcGNHRnNYMmxrSUNBOUlHUmhkR0V1WVhwMWNtVnliVjlqYkds
+        bGJuUmZZMjl1Wm1sbkxtTjFjbkpsYm5RdVkyeHBaVzUwWDJsa0NpQWdjMlZ5ZG1salpWOXdjbWx1
+        WTJsd1lXeGZhMlY1SUQwZ0ltVjRZVzF3YkdWTFpYa2lDaUFnZEdWdVlXNTBJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdJakV4TVRFeE1URXhMVEV4TVRFdE1URXhNUzB4TVRFeExURXhNVEV4TVRFeE1U
+        RXhNU0lLSUNCMWNtd2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYUhSMGNITTZMeTlrWVhS
+        aGJHRnJaWE4wYjNKaFoyVm5aVzR5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwRVlYUmhJRVpoWTNSdmNua2dSR0YwWVNCTVlXdGxJRk4wYjNKaFoyVWdSMlZ1TWlCTWFXNXJa
+        V1FnVTJWeWRtbGpaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY21WemIz
+        VnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjltWVdOMGIzSjVYMnhwYm10bFpGOXpaWEoyYVdObFgyUmhkR0ZmYkdG
+        clpWOXpkRzl5WVdkbFgyZGxiakl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

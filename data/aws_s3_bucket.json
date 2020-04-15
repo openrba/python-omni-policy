@@ -1,0 +1,428 @@
+{
+    "aws_s3_bucket": {
+        "status": "HOLD",
+        "subcategory": "S3",
+        "layout": "aws",
+        "page_title": "AWS: aws_s3_bucket",
+        "description": "Provides a S3 bucket resource.",
+        "arguments": {
+            "bucket": {
+                "description": "The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket_prefix": {
+                "description": "Creates a unique bucket name beginning with the specified prefix. Conflicts with `bucket`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "acl": {
+                "description": "The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "grant": {
+                "description": "An [ACL policy grant](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#sample-acl",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy": {
+                "description": "A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": " A mapping of tags that identifies subset of objects to which the rule applies.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "force_destroy": {
+                "description": "A boolean that indicates all objects (including any [locked objects](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "website": {
+                "description": "A website object (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cors_rule": {
+                "description": "A rule of [Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "versioning": {
+                "description": "A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logging": {
+                "description": "A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lifecycle_rule": {
+                "description": "A configuration of [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "acceleration_status": {
+                "description": "Sets the accelerate configuration of an existing bucket. Can be `Enabled` or `Suspended`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "If specified, the AWS region this bucket should reside in. Otherwise, the region used by the callee.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "request_payer": {
+                "description": "Specifies who should bear the cost of Amazon S3 data transfer.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "replication_configuration": {
+                "description": "A configuration of [replication configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_side_encryption_configuration": {
+                "description": "A configuration of [server-side encryption configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "object_lock_configuration": {
+                "description": "A configuration of [S3 object locking](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "index_document": {
+                "description": "Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "error_document": {
+                "description": "An absolute path to the document to return in case of a 4XX error.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "redirect_all_requests_to": {
+                "description": "A hostname to redirect all website requests for this bucket to. Hostname can optionally be prefixed with a protocol (`http://` or `https://`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "routing_rules": {
+                "description": "A json array containing [routing rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_headers": {
+                "description": "Specifies which headers are allowed.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_methods": {
+                "description": "Specifies which methods are allowed. Can be `GET`, `PUT`, `POST`, `DELETE` or `HEAD`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_origins": {
+                "description": "Specifies which origins are allowed.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "expose_headers": {
+                "description": "Specifies expose header in the response.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_age_seconds": {
+                "description": "Specifies time in seconds that browser can cache the response for a preflight request.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Boolean which indicates if this criteria is enabled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "mfa_delete": {
+                "description": "Enable MFA delete for either `Change the versioning state of your bucket` or `Permanently delete an object version`. Default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_bucket": {
+                "description": "The name of the bucket that will receive the log objects.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_prefix": {
+                "description": "To specify a key prefix for log objects.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "Canonical user id to grant for. Used only when `type` is `CanonicalUser`.  ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix": {
+                "description": "Object keyname prefix that identifies subset of objects to which the rule applies.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "abort_incomplete_multipart_upload_days": {
+                "description": "Specifies the number of days after initiating a multipart upload when the multipart upload must be completed.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expiration": {
+                "description": "Specifies a period in the object's expire (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "transition": {
+                "description": "Specifies a period in the object's transitions (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "noncurrent_version_expiration": {
+                "description": "Specifies when noncurrent object versions expire (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "noncurrent_version_transition": {
+                "description": "Specifies when noncurrent object versions transitions (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "date": {
+                "description": "Specifies the date after which you want the corresponding action to take effect.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "days": {
+                "description": "The number of days that you want to specify for the default retention period.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expired_object_delete_marker": {
+                "description": "On a versioned bucket (versioning-enabled or versioning-suspended bucket), you can add this element in the lifecycle configuration to direct Amazon S3 to delete expired object delete markers.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_class": {
+                "description": "The class of storage used to store the object. Can be `STANDARD`, `REDUCED_REDUNDANCY`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "The ARN of the IAM role for Amazon S3 to assume when replicating the objects.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rules": {
+                "description": "Specifies the rules managing the replication (documented below).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "but must be unique between multiple rules",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "destination": {
+                "description": "Specifies the destination for the rule (documented below).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_selection_criteria": {
+                "description": "Specifies special object selection criteria (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "status": {
+                "description": "The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "filter": {
+                "description": "Filter that identifies subset of objects to which the replication rule applies (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "replica_kms_key_id": {
+                "description": "Destination KMS encryption key ARN for SSE-KMS replication. Must be used in conjunction with",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "access_control_translation": {
+                "description": "Specifies the overrides to use for object owners on replication. Must be used in conjunction with `account_id` owner override configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "account_id": {
+                "description": "The Account ID to use for overriding the object owner on replication. Must be used in conjunction with `access_control_translation` override configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sse_kms_encrypted_objects": {
+                "description": "Match SSE-KMS encrypted objects (documented below). If specified, `replica_kms_key_id`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rule": {
+                "description": "The Object Lock rule in place for this bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "apply_server_side_encryption_by_default": {
+                "description": "A single object for setting server-side encryption by default. (documented below)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sse_algorithm": {
+                "description": "The server-side encryption algorithm to use. Valid values are `AES256` and `aws:kms`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_master_key_id": {
+                "description": "The AWS KMS master key ID used for the SSE-KMS encryption. This can only be used when you set the value of `sse_algorithm` as `aws:kms`. The default `aws/s3` AWS KMS master key is used if this element is absent while the `sse_algorithm` is `aws:kms`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "- Type of grantee to apply for. Valid values are `CanonicalUser` and `Group`. `AmazonCustomerByEmail` is not supported.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "permissions": {
+                "description": "List of permissions to apply for grantee. Valid values are `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "uri": {
+                "description": "Uri address to grant for. Used only when `type` is `Group`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "owner": {
+                "description": "The override value for the owner on replicated objects. Currently only `Destination` is supported.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object_lock_enabled": {
+                "description": "Indicates whether this bucket has an Object Lock configuration enabled. Valid value is `Enabled`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "default_retention": {
+                "description": "The default retention period that you want to apply to new objects placed in this bucket.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "mode": {
+                "description": "The default Object Lock retention mode you want to apply to new objects placed in this bucket. Valid values are `GOVERNANCE` and `COMPLIANCE`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "years": {
+                "description": "The number of years that you want to specify for the default retention period.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the bucket."
+            },
+            "arn": {
+                "description": "The ARN of the bucket. Will be of format `arn:aws:s3:::bucketname`."
+            },
+            "bucket_domain_name": {
+                "description": "The bucket domain name. Will be of format `bucketname.s3.amazonaws.com`."
+            },
+            "bucket_regional_domain_name": {
+                "description": "The bucket region-specific domain name. The bucket domain name including the region name, please refer [here](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) for format. Note: The AWS CloudFront allows specifying S3 region-specific endpoint when creating S3 origin, it will prevent [redirect issues](https://forums.aws.amazon.com/thread.jspa?threadID=216814) from CloudFront to S3 Origin URL."
+            },
+            "hosted_zone_id": {
+                "description": "The [Route 53 Hosted Zone ID](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints) for this bucket's region."
+            },
+            "region": {
+                "description": "The AWS region this bucket resides in."
+            },
+            "website_endpoint": {
+                "description": "The website endpoint, if the bucket is configured with a website. If not, this will be an empty string."
+            },
+            "website_domain": {
+                "description": "The domain of the website endpoint, if the bucket is configured with a website. If not, this will be an empty string. This is used to create Route 53 alias records."
+            }
+        },
+        "timeouts": {}
+    }
+}

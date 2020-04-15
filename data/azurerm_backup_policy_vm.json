@@ -1,0 +1,134 @@
+{
+    "azurerm_backup_policy_vm": {
+        "status": "HOLD",
+        "subcategory": "Recovery Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_backup_policy_vm",
+        "description": "Manages an Azure Backup VM Backup Policy.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Backup Policy. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the policy. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recovery_vault_name": {
+                "description": "Specifies the name of the Recovery Services Vault to use. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backup": {
+                "description": "Configures the Policy backup frequency, times & days as documented in the `backup` block below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "timezone": {
+                "description": "Specifies the timezone. Defaults to `UTC`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_daily": {
+                "description": "Configures the policy daily retention as documented in the `retention_daily` block below. Required when backup frequency is `Daily`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_weekly": {
+                "description": "Configures the policy weekly retention as documented in the `retention_weekly` block below. Required when backup frequency is `Weekly`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_monthly": {
+                "description": "Configures the policy monthly retention as documented in the `retention_monthly` block below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_yearly": {
+                "description": "Configures the policy yearly retention as documented in the `retention_yearly` block below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "frequency": {
+                "description": "Sets the backup frequency. Must be either `Daily` or`Weekly`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "time": {
+                "description": "The time of day to perform the backup in 24hour format.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "weekdays": {
+                "description": "The weekday backups to retain . Must be one of `Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday` or `Saturday`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "count": {
+                "description": "The number of yearly backups to keep. Must be between `1` and `9999`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "weeks": {
+                "description": "The weeks of the month to retain backups of. Must be one of `First`, `Second`, `Third`, `Fourth`, `Last`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "months": {
+                "description": "The months of the year to retain backups of. Must be one of `January`, `February`, `March`, `April`, `May`, `June`, `July`, `Augest`, `September`, `October`, `November` and `December`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the VM Backup Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the VM Backup Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the VM Backup Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the VM Backup Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the VM Backup Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

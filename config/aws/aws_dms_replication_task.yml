@@ -1,0 +1,61 @@
+aws_dms_replication_task:
+    status: HOLD
+    subcategory: Database Migration Service (DMS)
+    layout: aws
+    page_title: 'AWS: aws_dms_replication_task'
+    description: Provides a DMS (Data Migration Service) replication task resource.
+    arguments:
+        cdc_start_time:
+            description: The Unix timestamp integer for the start of the Change Data
+                Capture (CDC
+            required: false
+            policy: ''
+            notes: ''
+        migration_type:
+            description: The migration type. Can be one of `full-load | cdc | full-load-and-cdc`.
+            required: true
+            policy: ''
+            notes: ''
+        replication_instance_arn:
+            description: The Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        replication_task_id:
+            description: The replication task identifier.
+            required: true
+            policy: ''
+            notes: ''
+        replication_task_settings:
+            description: An escaped JSON string that contains the task settings. For
+                a complete list of task settings, see [Task Settings for AWS Database
+                Migration Service Tasks](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.html).
+            required: false
+            policy: ''
+            notes: ''
+        source_endpoint_arn:
+            description: The Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        table_mappings:
+            description: An escaped JSON string that contains the table mappings.
+                For information on table mapping see [Using Table Mapping with an
+                AWS Database Migration Service Task to Select and Filter Data](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TableMapping.html)
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        target_endpoint_arn:
+            description: The Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        replication_task_arn:
+            description: The Amazon Resource Name (ARN) for the replication task.
+    timeouts: {}

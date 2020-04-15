@@ -1,0 +1,71 @@
+{
+    "aws_kms_external_key": {
+        "status": "HOLD",
+        "subcategory": "KMS",
+        "layout": "aws",
+        "page_title": "AWS: aws_kms_external_key",
+        "description": "Manages a KMS Customer Master Key that uses external key material",
+        "arguments": {
+            "deletion_window_in_days": {
+                "description": "Duration in days after which the key is deleted after destruction of the resource. Must be between `7` and `30` days. Defaults to `30`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description of the key.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Specifies whether the key is enabled. Keys pending import can only be `false`. Imported keys default to `true` unless expired.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_material_base64": {
+                "description": "Base64 encoded 256-bit symmetric encryption key material to import. The CMK is permanently associated with this key material. The same key material can be reimported, but you cannot import different key material.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy": {
+                "description": "A key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A key-value map of tags to assign to the key.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "valid_to": {
+                "description": "Time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the CMK becomes unusable. If not specified, key material does not expire. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The Amazon Resource Name (ARN) of the key."
+            },
+            "expiration_model": {
+                "description": "Whether the key material expires. Empty when pending key material import, otherwise `KEY_MATERIAL_EXPIRES` or `KEY_MATERIAL_DOES_NOT_EXPIRE`."
+            },
+            "id": {
+                "description": "The unique identifier for the key."
+            },
+            "key_state": {
+                "description": "The state of the CMK."
+            },
+            "key_usage": {
+                "description": "The cryptographic operations for which you can use the CMK."
+            }
+        },
+        "timeouts": {}
+    }
+}

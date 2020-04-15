@@ -1,0 +1,36 @@
+aws_dx_gateway:
+    status: HOLD
+    subcategory: Direct Connect
+    layout: aws
+    page_title: 'AWS: aws_dx_gateway'
+    description: Provides a Direct Connect Gateway.
+    arguments:
+        name:
+            description: The name of the connection.
+            required: true
+            policy: ''
+            notes: ''
+        amazon_side_asn:
+            description: The ASN to be configured on the Amazon side of the connection.
+                The ASN must be in the private range of 64,512 to 65,534 or 4,200,000,000
+                to 4,294,967,294.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the gateway.
+        owner_account_id:
+            description: AWS Account ID of the gateway.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaSGhmWjJGMFpYZGhlU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1l0WkhobkxXVjRZVzF3YkdVaUNpQWdZVzFoZW05dVgz
+        TnBaR1ZmWVhOdUlEMGdJalkwTlRFeUlncDlDZz09
+    import: !!binary |
+        Q2dwRWFYSmxZM1FnUTI5dWJtVmpkQ0JIWVhSbGQyRjVjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0JuWVhSbGQyRjVJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZUY5bllYUmxkMkY1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

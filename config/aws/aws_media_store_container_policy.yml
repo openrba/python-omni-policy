@@ -1,0 +1,21 @@
+aws_media_store_container_policy:
+    status: HOLD
+    subcategory: MediaStore
+    layout: aws
+    page_title: 'AWS: aws_media_store_container_policy'
+    description: Provides a MediaStore Container Policy.
+    arguments:
+        container_name:
+            description: The name of the container.
+            required: true
+            policy: ''
+            notes: ''
+        policy:
+            description: The contents of the policy. For more information about building
+                AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document
+                Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

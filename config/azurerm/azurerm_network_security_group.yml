@@ -1,0 +1,179 @@
+azurerm_network_security_group:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_security_group'
+    description: Manages a network security group that contains a list of network
+        security rules. Network security groups enable inbound or outbound traffic
+        to be enabled or denied.
+    arguments:
+        name:
+            description: The name of the security rule.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the network
+                security group. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        security_rule:
+            description: '[List of objects](/docs/configuration/attr-as-blocks.html'
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A description for this rule. Restricted to 140 characters.
+            required: false
+            policy: ''
+            notes: ''
+        protocol:
+            description: Network protocol this rule applies to. Can be `Tcp`, `Udp`,
+                `Icmp`, or `*` to match all.
+            required: true
+            policy: ''
+            notes: ''
+        source_port_range:
+            description: Source Port or Range. Integer or range between `0` and `65535`
+                or `*` to match any. This is required if `source_port_ranges` is not
+                specified.
+            required: false
+            policy: ''
+            notes: ''
+        source_port_ranges:
+            description: List of source ports or port ranges. This is required if
+                `source_port_range` is not specified.
+            required: false
+            policy: ''
+            notes: ''
+        destination_port_range:
+            description: Destination Port or Range. Integer or range between `0` and
+                `65535` or `*` to match any. This is required if `destination_port_ranges`
+                is not specified.
+            required: false
+            policy: ''
+            notes: ''
+        destination_port_ranges:
+            description: List of destination ports or port ranges. This is required
+                if `destination_port_range` is not specified.
+            required: false
+            policy: ''
+            notes: ''
+        source_address_prefix:
+            description: "CIDR or source IP range or * to match any IP. Tags such\
+                \ as \u2018VirtualNetwork\u2019, \u2018AzureLoadBalancer\u2019 and\
+                \ \u2018Internet\u2019 can also be used. This is required if `source_address_prefixes`\
+                \ is not specified."
+            required: false
+            policy: ''
+            notes: ''
+        source_address_prefixes:
+            description: List of source address prefixes. Tags may not be used. This
+                is required if `source_address_prefix` is not specified.
+            required: false
+            policy: ''
+            notes: ''
+        source_application_security_group_ids:
+            description: A List of source Application Security Group ID's
+            required: false
+            policy: ''
+            notes: ''
+        destination_address_prefix:
+            description: "CIDR or destination IP range or * to match any IP. Tags\
+                \ such as \u2018VirtualNetwork\u2019, \u2018AzureLoadBalancer\u2019\
+                \ and \u2018Internet\u2019 can also be used. This is required if `destination_address_prefixes`\
+                \ is not specified."
+            required: false
+            policy: ''
+            notes: ''
+        destination_address_prefixes:
+            description: List of destination address prefixes. Tags may not be used.
+                This is required if `destination_address_prefix` is not specified.
+            required: false
+            policy: ''
+            notes: ''
+        destination_application_security_group_ids:
+            description: A List of destination Application Security Group ID's
+            required: false
+            policy: ''
+            notes: ''
+        access:
+            description: Specifies whether network traffic is allowed or denied. Possible
+                values are `Allow` and `Deny`.
+            required: true
+            policy: ''
+            notes: ''
+        priority:
+            description: Specifies the priority of the rule. The value can be between
+                100 and 4096. The priority number must be unique for each rule in
+                the collection. The lower the priority number, the higher the priority
+                of the rule.
+            required: true
+            policy: ''
+            notes: ''
+        direction:
+            description: The direction specifies if rule will be evaluated on incoming
+                or outgoing traffic. Possible values are `Inbound` and `Outbound`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Network Security Group.
+    timeouts:
+        create:
+            description: Used when creating the Network Security Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Network Security Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Network Security Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Network Security Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFVtVnpiM1Z5WTJWSGNt
+        OTFjREVpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmYm1WMGQyOXlhMTl6WldOMWNtbDBlVjluY205MWNDSWdJbVY0WVcxd2JHVWlJSHNL
+        SUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFUyVmpk
+        WEpwZEhsSGNtOTFjREVpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNt
+        MWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3
+        YkdVdWJtRnRaUW9LSUNCelpXTjFjbWwwZVY5eWRXeGxJSHNLSUNBZ0lHNWhiV1VnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJsYzNReE1qTWlDaUFnSUNCd2NtbHZjbWwwZVNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlERXdNQW9nSUNBZ1pHbHlaV04wYVc5dUlDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ1BTQWlTVzVpYjNWdVpDSUtJQ0FnSUdGalkyVnpjeUFnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0lrRnNiRzkzSWdvZ0lDQWdjSEp2ZEc5amIyd2dJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpVkdOd0lnb2dJQ0FnYzI5MWNtTmxYM0J2Y25SZmNtRnVaMlVnSUNBZ0lD
+        QWdJQ0FnUFNBaUtpSUtJQ0FnSUdSbGMzUnBibUYwYVc5dVgzQnZjblJmY21GdVoyVWdJQ0FnSUQw
+        Z0lpb2lDaUFnSUNCemIzVnlZMlZmWVdSa2NtVnpjMTl3Y21WbWFYZ2dJQ0FnSUNBOUlDSXFJZ29n
+        SUNBZ1pHVnpkR2x1WVhScGIyNWZZV1JrY21WemMxOXdjbVZtYVhnZ1BTQWlLaUlLSUNCOUNnb2dJ
+        SFJoWjNNZ1BTQjdDaUFnSUNCbGJuWnBjbTl1YldWdWRDQTlJQ0pRY205a2RXTjBhVzl1SWdvZ0lI
+        MEtmUW89
+    import: !!binary |
+        Q2dwT1pYUjNiM0pySUZObFkzVnlhWFI1SUVkeWIzVndjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5elpXTjFjbWwwZVY5bmNtOTFjQzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

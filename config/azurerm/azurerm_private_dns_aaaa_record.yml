@@ -1,0 +1,84 @@
+azurerm_private_dns_aaaa_record:
+    status: HOLD
+    subcategory: Private DNS
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_private_dns_aaaa_record'
+    description: Manages a Private DNS AAAA Record.
+    arguments:
+        name:
+            description: The name of the DNS A Record.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the resource group where the resource exists. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        zone_name:
+            description: Specifies the Private DNS Zone where the resource exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        TTL:
+            description: The Time To Live (TTL
+            required: true
+            policy: ''
+            notes: ''
+        records:
+            description: A list of IPv6 Addresses.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Private DNS AAAA Record ID.
+        fqdn:
+            description: The FQDN of the DNS AAAA Record.
+    timeouts:
+        create:
+            description: Used when creating the Private DNS AAAA Record.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Private DNS AAAA Record.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Private DNS AAAA Record.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Private DNS AAAA Record.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpZEdWemRDSWdl
+        d29nSUc1aGJXVWdJQ0FnSUQwZ0ltRmpZMlZ3ZEdGdVkyVlVaWE4wVW1WemIzVnlZMlZIY205MWNE
+        RWlDaUFnYkc5allYUnBiMjRnUFNBaVYyVnpkQ0JWVXlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhK
+        bGNtMWZjSEpwZG1GMFpWOWtibk5mZW05dVpTSWdJblJsYzNRaUlIc0tJQ0J1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0ltMTVaRzl0WVdsdUxtTnZiU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFj
+        Rjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1MFpYTjBMbTVoYldVS2ZR
+        b0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjSEpwZG1GMFpWOWtibk5mWVdGaFlWOXlaV052Y21R
+        aUlDSjBaWE4wSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBJZ29n
+        SUhwdmJtVmZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzQnlhWFpoZEdWZlpHNXpY
+        M3B2Ym1VdWRHVnpkQzV1WVcxbENpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRY
+        SmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVkR1Z6ZEM1dVlXMWxDaUFnZEhSc0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBOUlETXdNQW9nSUhKbFkyOXlaSE1nSUNBZ0lDQWdJQ0FnSUNBZ1BTQmJJbVpr
+        TldRNk56QmlZem81TXpCbE9tUXdNRGc2TURBd01Eb3dNREF3T2pBd01EQTZOek16TkNJc0lDSm1a
+        RFZrT2pjd1ltTTZPVE13WlRwa01EQTRPam8zTXpNMUlsMEtmUW89
+    import: !!binary |
+        Q2dwUWNtbDJZWFJsSUVST1V5QkJRVUZCSUZKbFkyOXlaSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNISnBkbUYwWlY5a2JuTmZZV0ZoWVY5eVpXTnZjbVF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

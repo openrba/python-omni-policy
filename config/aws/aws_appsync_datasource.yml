@@ -1,0 +1,57 @@
+aws_appsync_datasource:
+    status: HOLD
+    subcategory: AppSync
+    layout: aws
+    page_title: 'AWS: aws_appsync_datasource'
+    description: Provides an AppSync DataSource.
+    arguments:
+        api_id:
+            description: The API ID for the GraphQL API for the DataSource.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: A user-supplied name for the DataSource.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: 'The type of the DataSource. Valid values: `AWS_LAMBDA`,
+                `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.'
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the DataSource.
+            required: false
+            policy: ''
+            notes: ''
+        service_role_arn:
+            description: The IAM service role ARN for the data source.
+            required: false
+            policy: ''
+            notes: ''
+        dynamodb_config:
+            description: DynamoDB settings. See [below](#dynamodb_config)
+            required: false
+            policy: ''
+            notes: ''
+        elasticsearch_config:
+            description: Amazon Elasticsearch settings. See [below](#elasticsearch_config)
+            required: false
+            policy: ''
+            notes: ''
+        http_config:
+            description: HTTP settings. See [below](#http_config)
+            required: false
+            policy: ''
+            notes: ''
+        lambda_config:
+            description: AWS Lambda settings. See [below](#lambda_config)
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The ARN
+    timeouts: {}

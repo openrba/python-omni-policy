@@ -1,0 +1,28 @@
+azurerm_spring_cloud_service:
+    status: HOLD
+    subcategory: Spring Cloud
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_spring_cloud_service'
+    description: Manages an Azure Spring Cloud Service.
+    arguments:
+        name:
+            description: Specifies the name of the Spring Cloud Service resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies The name of the resource group in which to create
+                the Spring Cloud Service. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

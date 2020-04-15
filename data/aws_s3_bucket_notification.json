@@ -1,0 +1,79 @@
+{
+    "aws_s3_bucket_notification": {
+        "status": "HOLD",
+        "subcategory": "S3",
+        "layout": "aws",
+        "page_title": "AWS: aws_s3_bucket_notification",
+        "description": "Manages a S3 Bucket Notification Configuration",
+        "arguments": {
+            "bucket": {
+                "description": "The name of the bucket to put notification configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "topic": {
+                "description": "The notification configuration to SNS Topic (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "queue": {
+                "description": "The notification configuration to SQS Queue (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lambda_function": {
+                "description": "Used to configure notifications to a Lambda Function (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "Specifies unique identifier for each of the notification configurations.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "topic_arn": {
+                "description": "Specifies Amazon SNS topic ARN.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "events": {
+                "description": "Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "filter_prefix": {
+                "description": "Specifies object key name prefix.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "filter_suffix": {
+                "description": "Specifies object key name suffix.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "queue_arn": {
+                "description": "Specifies Amazon SQS queue ARN.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lambda_function_arn": {
+                "description": "Specifies Amazon Lambda function ARN.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "aws_dx_connection_association": {
+        "status": "HOLD",
+        "subcategory": "Direct Connect",
+        "layout": "aws",
+        "page_title": "AWS: aws_dx_connection_association",
+        "description": "Associates a Direct Connect Connection with a LAG.",
+        "arguments": {
+            "connection_id": {
+                "description": "The ID of the connection.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lag_id": {
+                "description": "The ID of the LAG with which to associate the connection.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

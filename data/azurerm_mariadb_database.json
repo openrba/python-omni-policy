@@ -1,0 +1,68 @@
+{
+    "azurerm_mariadb_database": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_mariadb_database",
+        "description": "Manages a MariaDB Database within a MariaDB Server.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the MariaDB Database, which needs [to be a valid MariaDB identifier](https://mariadb.com/kb/en/library/identifier-names/). Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "Specifies the name of the MariaDB Server. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the MariaDB Server exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "charset": {
+                "description": "Specifies the Charset for the MariaDB Database, which needs [to be a valid MariaDB Charset](https://mariadb.com/kb/en/library/setting-character-sets-and-collations). Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "collation": {
+                "description": "Specifies the Collation for the MariaDB Database, which needs [to be a valid MariaDB Collation](https://mariadb.com/kb/en/library/setting-character-sets-and-collations). Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the MariaDB Database."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the MariaDB Database.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the MariaDB Database.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the MariaDB Database.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the MariaDB Database.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

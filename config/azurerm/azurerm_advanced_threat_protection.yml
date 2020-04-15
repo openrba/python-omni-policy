@@ -1,0 +1,61 @@
+azurerm_advanced_threat_protection:
+    status: HOLD
+    subcategory: Security Center
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_advanced_threat_protection'
+    description: Manages a resources Advanced Threat Protection setting.
+    arguments:
+        target_resource_id:
+            description: The ID of the Azure Resource which to enable Advanced Threat
+                Protection on. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Should Advanced Threat Protection be enabled on this resource?
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Advanced Threat Protection resource.
+    timeouts:
+        create:
+            description: Used when creating the Advanced Threat Protection.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Advanced Threat Protection.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Advanced Threat Protection.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Advanced Threat Protection.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKaGRIQXRaWGhoYlhCc1pTSUtJQ0JzYjJOaGRHbHZiaUE5SUNKdWIz
+        SjBhR1YxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNSdmNtRm5aVjloWTJO
+        dmRXNTBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Fp
+        WlhoaGJYQnNaWE4wYjNKaFoyVWlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZk
+        WEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENnb2dJR3h2WTJGMGFX
+        OXVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        dVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lHRmpZMjkxYm5SZmRHbGxjaUFnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlDSlRkR0Z1WkdGeVpDSUtJQ0JoWTJOdmRXNTBYM0psY0d4cFkyRjBhVzl1WDNSNWNHVWdQ
+        U0FpVEZKVElnb0tJQ0IwWVdkeklEMGdld29nSUNBZ1pXNTJhWEp2Ym0xbGJuUWdQU0FpWlhoaGJY
+        QnNaU0lLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZrZG1GdVkyVmtYM1JvY21W
+        aGRGOXdjbTkwWldOMGFXOXVJaUFpWlhoaGJYQnNaU0lnZXdvZ0lIUmhjbWRsZEY5eVpYTnZkWEpq
+        WlY5cFpDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWhZMk52ZFc1MExtVjRZVzF3YkdVdWFXUUtJ
+        Q0JsYm1GaWJHVmtJQ0FnSUNBZ0lDQWdJQ0FnUFNCMGNuVmxDbjBL
+    import: !!binary |
+        Q2dwQlpIWmhibU5sWkNCVWFISmxZWFFnVUhKdmRHVmpkR2x2YmlCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllXUjJZVzVqWldSZmRHaHlaV0YwWDNCeWIzUmxZM1JwYjI0dWFIUnRiQzV0WVhK
+        clpHOTNiZz09

@@ -1,0 +1,86 @@
+{
+    "azurerm_storage_table": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_table",
+        "description": "Manages a Table within an Azure Storage Account.",
+        "arguments": {
+            "name": {
+                "description": "The name of the storage table. Must be unique within the storage account the table is located.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_name": {
+                "description": "Specifies the storage account in which to create the storage table.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "acl": {
+                "description": "One or more `acl` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "The ID which should be used for this Shared Identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_policy": {
+                "description": "An `access_policy` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "expiry": {
+                "description": "The ISO8061 UTC time at which this Access Policy should be valid until.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "permissions": {
+                "description": "The permissions which should associated with this Shared Identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "start": {
+                "description": "The ISO8061 UTC time at which this Access Policy should be valid from.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Table within the Storage Account."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Table.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Table.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Table.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Table.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

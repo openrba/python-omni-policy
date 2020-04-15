@@ -1,0 +1,66 @@
+aws_appsync_graphql_api:
+    status: HOLD
+    subcategory: AppSync
+    layout: aws
+    page_title: 'AWS: aws_appsync_graphql_api'
+    description: Provides an AppSync GraphQL API.
+    arguments:
+        authentication_type:
+            description: 'The authentication type. Valid values: `API_KEY`, `AWS_IAM`,
+                `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`'
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: A user-supplied name for the GraphqlApi.
+            required: true
+            policy: ''
+            notes: ''
+        log_config:
+            description: Nested argument containing logging configuration. Defined
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        openid_connect_config:
+            description: Nested argument containing OpenID Connect configuration.
+                Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        user_pool_config:
+            description: The Amazon Cognito User Pool configuration. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        schema:
+            description: The schema definition, in GraphQL schema language format.
+                Terraform cannot perform drift detection of this configuration.
+            required: false
+            policy: ''
+            notes: ''
+        additional_authentication_provider:
+            description: One or more additional authentication providers for the GraphqlApi.
+                Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        xray_enabled:
+            description: Whether tracing with X-ray is enabled. Defaults to false.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: API ID
+        arn:
+            description: The ARN
+        uris:
+            description: Map of URIs associated with the API. e.g. `uris["GRAPHQL"]
+                = https://ID.appsync-api.REGION.amazonaws.com/graphql`
+    timeouts: {}

@@ -1,0 +1,38 @@
+aws_cloudwatch_event_permission:
+    status: HOLD
+    subcategory: CloudWatch
+    layout: aws
+    page_title: 'AWS: aws_cloudwatch_event_permission'
+    description: Provides a resource to create a CloudWatch Events permission to support
+        cross-account events in the current account default event bus.
+    arguments:
+        principal:
+            description: The 12-digit AWS account ID that you are permitting to put
+                events to your default event bus. Specify `*` to permit any account
+                to put events to your default event bus, optionally limited by `condition`.
+            required: true
+            policy: ''
+            notes: ''
+        statement_id:
+            description: An identifier string for the external account that you are
+                granting permissions to.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: The action that you are enabling the other account to perform.
+                Defaults to `events:PutEvents`.
+            required: false
+            policy: ''
+            notes: ''
+        condition:
+            description: Configuration block to limit the event bus permissions you
+                are granting to only accounts that fulfill the condition. Specified
+                below.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The statement ID of the CloudWatch Events permission.
+    timeouts: {}

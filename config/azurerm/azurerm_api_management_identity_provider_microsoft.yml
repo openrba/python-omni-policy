@@ -1,0 +1,82 @@
+azurerm_api_management_identity_provider_microsoft:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_identity_provider_microsoft'
+    description: Manages an API Management Microsoft Identity Provider.
+    arguments:
+        api_management_name:
+            description: The Name of the API Management Service where this Microsoft
+                Identity Provider should be created. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group where the API Management Service
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        client_id:
+            description: Client Id of the Azure AD Application.
+            required: true
+            policy: ''
+            notes: ''
+        client_secret:
+            description: Client secret of the Azure AD Application.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Microsoft Identity Provider.
+    timeouts:
+        create:
+            description: Used when creating the API Management Microsoft Identity
+                Provider.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Microsoft Identity
+                Provider.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Microsoft Identity
+                Provider.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Microsoft Identity
+                Provider.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SkVaWFpsYkc5d1pYSmZNU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZllYQnBYMjFoYm1G
+        blpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmYldsamNtOXpiMlowSWlBaVpYaGhiWEJz
+        WlNJZ2V3b2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFj
+        bU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHRndhVjl0WVc1aFoyVnRaVzUwWDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYMkZ3YVY5dFlXNWhaMlZ0Wlc1MExtVjRZVzF3YkdVdWJtRnRaUW9nSUdO
+        c2FXVnVkRjlwWkNBZ0lDQWdJQ0FnSUNBZ1BTQWlNREF3TURBd01EQXRNREF3TUMwd01EQXdMVEF3
+        TURBdE1EQXdNREF3TURBd01EQXdJZ29nSUdOc2FXVnVkRjl6WldOeVpYUWdJQ0FnSUNBZ1BTQWlN
+        REF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBaUNuMEs=
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JOYVdOeWIzTnZablFnU1dSbGJuUnBkSGtnVUhKdmRtbGta
+        WElnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xD
+        QmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmYlds
+        amNtOXpiMlowTG1oMGJXd3ViV0Z5YTJSdmQyND0=

@@ -1,0 +1,37 @@
+{
+    "aws_batch_job_queue": {
+        "status": "HOLD",
+        "subcategory": "Batch",
+        "layout": "aws",
+        "page_title": "AWS: aws_batch_job_queue",
+        "description": "Provides a Batch Job Queue resource.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the job queue.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "compute_environments": {
+                "description": "Specifies the set of compute environments",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "The priority of the job queue. Job queues with a higher priority",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "state": {
+                "description": "The state of the job queue. Must be one of: `ENABLED` or `DISABLED`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,95 @@
+azurerm_express_route_gateway:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_express_route_gateway'
+    description: Manages an ExpressRoute gateway.
+    arguments:
+        name:
+            description: The name of the ExpressRoute gateway. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the ExpressRoute
+                gateway. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_hub_id:
+            description: The ID of a Virtual HUB within which the ExpressRoute gateway
+                should be created.
+            required: true
+            policy: ''
+            notes: ''
+        scale_units:
+            description: The number of scale units with which to provision the ExpressRoute
+                gateway. Each scale unit is equal to 2Gbps, with support for up to
+                10 scale units (20Gbps).
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the ExpressRoute gateway.
+    timeouts:
+        create:
+            description: Used when creating the ExpressRoute Gateway.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the ExpressRoute Gateway.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the ExpressRoute Gateway.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ExpressRoute Gateway.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDNkaGJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJbVY0WVcxd2JHVXRkbWx5ZEhWaGJIZGhiaUlLSUNCeVpYTnZkWEpqWlY5bmNtOTFj
+        Rjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJX
+        VUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5
+        bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0
+        WDNacGNuUjFZV3hmYUhWaUlpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlaWGhoYlhCc1pTMTJhWEowZFdGc2FIVmlJZ29nSUhKbGMyOTFjbU5sWDJkeWIz
+        VndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1G
+        dFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5s
+        WDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0IyYVhKMGRXRnNYM2RoYmw5cFpDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDNkaGJpNWxlR0Z0Y0d4bExtbGtDaUFnWVdSa2Nt
+        VnpjMTl3Y21WbWFYZ2dJQ0FnSUNBOUlDSXhNQzR3TGpFdU1DOHlOQ0lLZlFvS2NtVnpiM1Z5WTJV
+        Z0ltRjZkWEpsY20xZlpYaHdjbVZ6YzE5eWIzVjBaVjluWVhSbGQyRjVJaUFpWlhoaGJYQnNaU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhod2NtVnpjMUp2ZFhSbE1TSUtJ
+        Q0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNt
+        OTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdkbWx5
+        ZEhWaGJGOW9kV0pmYVdRZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmZG1seWRIVmhiRjlvZFdJdVpYaGhi
+        WEJzWlM1cFpBb2dJSE5qWVd4bFgzVnVhWFJ6SUNBZ0lDQWdJQ0FnUFNBeENnb2dJSFJoWjNNZ1BT
+        QjdDaUFnSUNCbGJuWnBjbTl1YldWdWRDQTlJQ0pRY205a2RXTjBhVzl1SWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwRmVIQnlaWE56VW05MWRHVWdSMkYwWlhkaGVYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYaHdjbVZ6YzE5eWIzVjBaVjluWVhSbGQyRjVMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

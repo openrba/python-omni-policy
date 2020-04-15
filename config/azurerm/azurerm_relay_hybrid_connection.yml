@@ -1,0 +1,89 @@
+azurerm_relay_hybrid_connection:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_relay_hybrid_connection'
+    description: Manages an Azure Relay Hybrid Connection.
+    arguments:
+        name:
+            description: Specifies the name of the Azure Relay Hybrid Connection.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Azure
+                Relay Hybrid Connection. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        relay_namespace_name:
+            description: The name of the Azure Relay in which to create the Azure
+                Relay Hybrid Connection. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        requires_client_authorization:
+            description: Specify if client authorization is needed for this hybrid
+                connection. True by default. Changing this forces a new resource to
+                be created.
+            required: false
+            policy: ''
+            notes: ''
+        user_metadata:
+            description: The usermetadata is a placeholder to store user-defined string
+                data for the hybrid connection endpoint. For example, it can be used
+                to store descriptive data, such as a list of teams and their contact
+                information. Also, user-defined configuration settings can be stored.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Relay Hybrid Connection.
+    timeouts:
+        create:
+            description: Used when creating the Relay Hybrid Connection.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Relay Hybrid Connection.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Relay Hybrid Connection.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Relay Hybrid Connection.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        eVpXeGhlVjl1WVcxbGMzQmhZMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFhKbGJHRjVJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allY
+        UnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhK
+        alpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtDaUFnYzJ0MVgyNWhiV1VnUFNBaVUzUmhibVJo
+        Y21RaUNnb2dJSFJoWjNNZ1BTQjdDaUFnSUNCemIzVnlZMlVnUFNBaWRHVnljbUZtYjNKdElnb2dJ
+        SDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnNZWGxmYUhsaWNtbGtYMk52Ym01bFkz
+        UnBiMjRpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNBaVlXTmpkR1Z6ZEhKdWFHTXRKV1FpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJm
+        Ym1GdFpTQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZ
+        VzF3YkdVdWJtRnRaUW9nSUhKbGJHRjVYMjVoYldWemNHRmpaVjl1WVcxbElDQWdJQ0FnSUNBZ0lE
+        MGdZWHAxY21WeWJWOXlaV3hoZVY5dVlXMWxjM0JoWTJVdVpYaGhiWEJzWlM1dVlXMWxDaUFnY21W
+        eGRXbHlaWE5mWTJ4cFpXNTBYMkYxZEdodmNtbDZZWFJwYjI0Z1BTQm1ZV3h6WlFvZ0lIVnpaWEpm
+        YldWMFlXUmhkR0VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGMzUnRaWFJoWkdGMFlTSUtm
+        UW89
+    import: !!binary |
+        Q2dwU1pXeGhlU0JJZVdKeWFXUWdRMjl1Ym1WamRHbHZiaWR6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtVnNZWGxmYUhsaWNtbGtYMk52Ym01bFkzUnBiMjR1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

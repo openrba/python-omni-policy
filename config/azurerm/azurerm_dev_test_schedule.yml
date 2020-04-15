@@ -1,0 +1,97 @@
+azurerm_dev_test_schedule:
+    status: HOLD
+    subcategory: Dev Test
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_dev_test_schedule'
+    description: Manages automated startup and shutdown schedules for Azure Dev Test
+        Lab.
+    arguments:
+        name:
+            description: The name of the dev test lab schedule. Valid value for name
+                depends on the `task_type`. For instance for task_type `LabVmsStartupTask`
+                the name needs to be `LabVmAutoStart`.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location where the schedule is created. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the dev
+                test lab schedule. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        lab_name:
+            description: The name of the dev test lab. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        task_type:
+            description: The task type of the schedule. Possible values include `LabVmsShutdownTask`
+                and `LabVmAutoStart`.
+            required: true
+            policy: ''
+            notes: ''
+        time_zone_id:
+            description: The time zone ID (e.g. Pacific Standard time).
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the DevTest Schedule.
+    timeouts:
+        create:
+            description: Used when creating the DevTest Schedule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the DevTest Schedule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the DevTest Schedule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the DevTest Schedule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpYzJGdGNHeGxJ
+        aUI3Q2lBZ2JtRnRaU0FnSUNBZ1BTQWlaWGhoYlhCc1pTMXlaWE52ZFhKalpYTWlDaUFnYkc5allY
+        UnBiMjRnUFNBaVYyVnpkQ0JWVXlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZaR1YyWDNS
+        bGMzUmZiR0ZpSWlBaWMyRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5
+        SUNKWmIzVnlSR1YyVkdWemRFeGhZaUlLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZ
+        WHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2Nt
+        VnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        dVpYaGhiWEJzWlM1dVlXMWxDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJSbGRsOTBaWE4w
+        WDNOamFHVmtkV3hsSWlBaWMyRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNKTVlXSldiVUYxZEc5VGRHRnlkQ0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lB
+        Z2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2
+        ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnYkdGaVgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZk
+        WEpsY20xZlpHVjJYM1JsYzNSZmJHRmlMbVY0WVcxd2JHVXVibUZ0WlFvS0lDQjNaV1ZyYkhsZmNt
+        VmpkWEp5Wlc1alpTQjdDaUFnSUNCMGFXMWxJQ0FnSUNBZ1BTQWlNVEV3TUNJS0lDQWdJSGRsWld0
+        ZlpHRjVjeUE5SUZzaVRXOXVaR0Y1SWl3Z0lsUjFaWE5rWVhraVhRb2dJSDBLQ2lBZ2RHbHRaVjk2
+        YjI1bFgybGtJRDBnSWxCaFkybG1hV01nVTNSaGJtUmhjbVFnVkdsdFpTSUtJQ0IwWVhOclgzUjVj
+        R1VnSUNBZ1BTQWlUR0ZpVm0xelUzUmhjblIxY0ZSaGMyc2lDZ29nSUc1dmRHbG1hV05oZEdsdmJs
+        OXpaWFIwYVc1bmN5QjdDaUFnZlFvS0lDQjBZV2R6SUQwZ2V3b2dJQ0FnWlc1MmFYSnZibTFsYm5R
+        Z1BTQWlVSEp2WkhWamRHbHZiaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRVpYWlVaWE4wSUZOamFHVmtkV3hsSjNNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHVjJYM1JsYzNSZmMyTm9aV1IxYkdVdWFIUnRiQzV0WVhKclpHOTNiZz09

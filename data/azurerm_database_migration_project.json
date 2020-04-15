@@ -1,0 +1,80 @@
+{
+    "azurerm_database_migration_project": {
+        "status": "HOLD",
+        "subcategory": "Database Migration",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_database_migration_project",
+        "description": "Manage Azure Database Migration Project instance.",
+        "arguments": {
+            "name": {
+                "description": "Specify the name of the database migration project. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_name": {
+                "description": "Name of the database migration service where resource belongs to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Name of the resource group in which to create the database migration project. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_platform": {
+                "description": "The platform type of the migration source. Currently only support: `SQL`(on-premises SQL Server). Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_platform": {
+                "description": "The platform type of the migration target. Currently only support: `SQLDB`(Azure SQL Database). Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assigned to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of Database Migration Project."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management API.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management API.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management API.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management API.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

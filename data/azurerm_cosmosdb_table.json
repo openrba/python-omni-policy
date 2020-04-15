@@ -1,0 +1,62 @@
+{
+    "azurerm_cosmosdb_table": {
+        "status": "HOLD",
+        "subcategory": "CosmosDB (DocumentDB)",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_cosmosdb_table",
+        "description": "Manages a Table within a Cosmos DB Account.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Cosmos DB Table. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Cosmos DB Table is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "account_name": {
+                "description": "The name of the Cosmos DB Table to create the table within. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "throughput": {
+                "description": "The throughput of Table (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual terraform destroy-apply.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the CosmosDB Table."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the CosmosDB Table.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the CosmosDB Table.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the CosmosDB Table.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the CosmosDB Table.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

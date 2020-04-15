@@ -1,0 +1,29 @@
+aws_ec2_client_vpn_network_association:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_ec2_client_vpn_network_association'
+    description: Provides network associations for AWS Client VPN endpoints.
+    arguments:
+        client_vpn_endpoint_id:
+            description: The ID of the Client VPN endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet to associate with the Client VPN endpoint.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique ID of the target network association.
+        security_groups:
+            description: The IDs of the security groups applied to the target network
+                association.
+        status:
+            description: The current state of the target network association.
+        vpc_id:
+            description: 'The ID of the VPC in which the target network (subnet) is
+                located. '
+    timeouts: {}

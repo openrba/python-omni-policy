@@ -1,0 +1,74 @@
+azurerm_virtual_machine:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_machine'
+    description: Manages a Virtual Machine.
+    arguments:
+        name:
+            description: Specifies the name of the Virtual Machine. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the Resource Group in which the Virtual
+                Machine should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the Azure Region where the Virtual Machine exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        network_interface_ids:
+            description: A list of Network Interface ID's which should be associated
+                with the Virtual Machine.
+            required: true
+            policy: ''
+            notes: ''
+        os_profile_linux_config:
+            description: A `os_profile_linux_config` block.
+            required: false
+            policy: ''
+            notes: ''
+        os_profile_windows_config:
+            description: A `os_profile_windows_config` block.
+            required: false
+            policy: ''
+            notes: ''
+        vm_size:
+            description: Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+            required: true
+            policy: ''
+            notes: ''
+        availability_set_id:
+            description: The ID of the Availability Set in which the Virtual Machine
+                should exist. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        boot_diagnostics:
+            description: A `boot_diagnostics` block.
+            required: false
+            policy: ''
+            notes: ''
+        additional_capabilities:
+            description: A `additional_capabilities` block.
+            required: false
+            policy: ''
+            notes: ''
+        delete_os_disk_on_termination:
+            description: Should the OS Disk (either the Managed Disk / VHD Blob
+            required: false
+            policy: ''
+            notes: ''
+        delete_data_disks_on_termination:
+            description: Should the Data Disks (either the Managed Disks / VHD Blobs
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

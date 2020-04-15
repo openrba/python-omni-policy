@@ -1,0 +1,179 @@
+{
+    "azurerm_key_vault": {
+        "status": "HOLD",
+        "subcategory": "Key Vault",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_key_vault",
+        "description": "Manages a Key Vault.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Key Vault. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Key Vault. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "The Name of the SKU used for this Key Vault. Possible values are `standard` and `premium`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault. Must match the `tenant_id` used above.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_policy": {
+                "description": "[A list](/docs/configuration/attr-as-blocks.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled_for_deployment": {
+                "description": "Boolean flag to specify whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled_for_disk_encryption": {
+                "description": "Boolean flag to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled_for_template_deployment": {
+                "description": "Boolean flag to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_acls": {
+                "description": "A `network_acls` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "purge_protection_enabled": {
+                "description": "Is Purge Protection enabled for this Key Vault? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "soft_delete_enabled": {
+                "description": "Should Soft Delete be enabled for this Key Vault? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "object_id": {
+                "description": "The object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault. The object ID must be unique for the list of access policies.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application_id": {
+                "description": "The object ID of an Application in Azure Active Directory.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_permissions": {
+                "description": "List of certificate permissions, must be one or more from the following: `backup`, `create`, `delete`, `deleteissuers`, `get`, `getissuers`, `import`, `list`, `listissuers`, `managecontacts`, `manageissuers`, `purge`, `recover`, `restore`, `setissuers` and `update`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_permissions": {
+                "description": "List of key permissions, must be one or more from the following: `backup`, `create`, `decrypt`, `delete`, `encrypt`, `get`, `import`, `list`, `purge`, `recover`, `restore`, `sign`, `unwrapKey`, `update`, `verify` and `wrapKey`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "secret_permissions": {
+                "description": "List of secret permissions, must be one or more from the following: `backup`, `delete`, `get`, `list`, `purge`, `recover`, `restore` and `set`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_permissions": {
+                "description": "List of storage permissions, must be one or more from the following: `backup`, `delete`, `deletesas`, `get`, `getsas`, `list`, `listsas`, `purge`, `recover`, `regeneratekey`, `restore`, `set`, `setsas` and `update`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bypass": {
+                "description": "Specifies which traffic can bypass the network rules. Possible values are `AzureServices` and `None`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "default_action": {
+                "description": "The Default Action to use when no rules match from `ip_rules` / `virtual_network_subnet_ids`. Possible values are `Allow` and `Deny`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_rules": {
+                "description": "One or more IP Addresses, or CIDR Blocks which should be able to access the Key Vault.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_network_subnet_ids": {
+                "description": "One or more Subnet ID's which should be able to access this Key Vault.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Key Vault."
+            },
+            "vault_uri": {
+                "description": "The URI of the Key Vault, used for performing operations on keys and secrets."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Key Vault.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Key Vault.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Key Vault.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Key Vault.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

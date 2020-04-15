@@ -1,0 +1,96 @@
+azurerm_virtual_hub_connection:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_hub_connection'
+    description: Manages a Connection for a Virtual Hub.
+    arguments:
+        name:
+            description: The Name which should be used for this Connection, which
+                must be unique within the Virtual Hub. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_hub_id:
+            description: The ID of the Virtual Hub within which this connection should
+                be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        remote_virtual_network_id:
+            description: The ID of the Virtual Network which the Virtual Hub should
+                be connected to. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        hub_to_vitual_network_traffic_allowed:
+            description: Is the Virtual Hub traffic allowed to transit via the Remote
+                Virtual Network? Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        vitual_network_to_hub_gateways_traffic_allowed:
+            description: Is Remote Virtual Network traffic allowed to transit the
+                Hub's Virtual Network Gateway's? Changing this forces a new resource
+                to be created.
+            required: false
+            policy: ''
+            notes: ''
+        internet_security_enabled:
+            description: Should Internet Security be enabled to secure internet traffic?
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Hub Connection.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Hub Connection.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Virtual Hub Connection.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Hub Connection.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRjeUxqQXVNQzR3THpFMklsMEtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lD
+        QWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJG
+        MGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5
+        WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRY
+        M1pwY25SMVlXeGZkMkZ1SWlBaWRHVnpkQ0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpWlhoaGJYQnNaUzEyZDJGdUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNC
+        aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHeHZZMkYw
+        YVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZ
+        VzF3YkdVdWJHOWpZWFJwYjI0S2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZkbWx5ZEhWaGJG
+        OW9kV0lpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNK
+        bGVHRnRjR3hsTFdoMVlpSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5
+        YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExt
+        eHZZMkYwYVc5dUNpQWdkbWx5ZEhWaGJGOTNZVzVmYVdRZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmZG1s
+        eWRIVmhiRjkzWVc0dVpYaGhiWEJzWlM1cFpBb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0Fn
+        UFNBaU1UQXVNQzR4TGpBdk1qUWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNacGNuUjFZ
+        V3hmYUhWaVgyTnZibTVsWTNScGIyNGlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYWm9kV0lpQ2lBZ2RtbHlkSFZoYkY5
+        b2RXSmZhV1FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5b2RXSXVaWGho
+        YlhCc1pTNXBaQW9nSUhKbGJXOTBaVjkyYVhKMGRXRnNYMjVsZEhkdmNtdGZhV1FnUFNCaGVuVnla
+        WEp0WDNacGNuUjFZV3hmYm1WMGQyOXlheTVsZUdGdGNHeGxMbWxrQ24wSw==
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUVoMVlpQkRiMjV1WldOMGFXOXVKM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5b2RXSmZZMjl1Ym1WamRHbHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

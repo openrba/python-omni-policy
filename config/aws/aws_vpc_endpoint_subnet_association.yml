@@ -1,0 +1,28 @@
+aws_vpc_endpoint_subnet_association:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_vpc_endpoint_subnet_association'
+    description: Provides a resource to create an association between a VPC endpoint
+        and a subnet.
+    arguments:
+        vpc_endpoint_id:
+            description: The ID of the VPC endpoint with which the subnet will be
+                associated.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet to be associated with the VPC endpoint.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the association.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqWDJWdVpIQnZhVzUwWDNOMVltNWxkRjloYzNOdlkybGhk
+        R2x2YmlJZ0luTnVYMlZqTWlJZ2V3b2dJSFp3WTE5bGJtUndiMmx1ZEY5cFpDQTlJQ0lrZTJGM2Mx
+        OTJjR05mWlc1a2NHOXBiblF1WldNeUxtbGtmU0lLSUNCemRXSnVaWFJmYVdRZ0lDQWdJQ0FnUFNB
+        aUpIdGhkM05mYzNWaWJtVjBMbk51TG1sa2ZTSUtmUW89

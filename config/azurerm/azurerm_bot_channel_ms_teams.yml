@@ -1,0 +1,88 @@
+azurerm_bot_channel_ms_teams:
+    status: HOLD
+    subcategory: Bot
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_bot_channel_ms_teams'
+    description: Manages an MS Teams integration for a Bot Channel
+    arguments:
+        resource_group_name:
+            description: The name of the resource group in which to create the Bot
+                Channel. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The supported Azure location where the resource exists. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        bot_name:
+            description: The name of the Bot Resource this channel will be associated
+                with. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        calling_web_hook:
+            description: Specifies the webhook for Microsoft Teams channel calls.
+            required: false
+            policy: ''
+            notes: ''
+        enable_calling:
+            description: Specifies whether to enable Microsoft Teams channel calls.
+                This defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Microsoft Teams Integration for a Bot Channel.
+    timeouts:
+        create:
+            description: Used when creating the Microsoft Teams Integration for a
+                Bot Channel.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Microsoft Teams Integration for a
+                Bot Channel.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Microsoft Teams Integration for
+                a Bot Channel.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Microsoft Teams Integration for a
+                Bot Channel.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnlJZ0ltTjFjbkpsYm5RaUlIdDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYSmxjMjkxY21ObGN5SUtJQ0JzYjJO
+        aGRHbHZiaUE5SUNKdWIzSjBhR1YxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        WW05MFgyTm9ZVzV1Wld4elgzSmxaMmx6ZEhKaGRHbHZiaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1VpQ2lBZ2JHOWpZWFJwYjI0Z0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0puYkc5aVlXd2lDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNB
+        OUlDSWtlMkY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxmU0lL
+        SUNCemEzVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1l3SWdvZ0lHMXBZM0p2YzI5bWRGOWhj
+        SEJmYVdRZ0lDQWdQU0FpSkh0a1lYUmhMbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnk1amRY
+        SnlaVzUwTG1Oc2FXVnVkRjlwWkgwaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkp2ZEY5
+        amFHRnVibVZzWDIxelgzUmxZVzF6SWlBaVpYaGhiWEJzWlNJZ2V3b2dJR0p2ZEY5dVlXMWxJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaUpIdGhlblZ5WlhKdFgySnZkRjlqYUdGdWJtVnNjMTl5WldkcGMzUnlZ
+        WFJwYjI0dVpYaGhiWEJzWlM1dVlXMWxmU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJaVI3WVhwMWNtVnliVjlpYjNSZlkyaGhibTVsYkhOZmNtVm5hWE4wY21GMGFXOXVMbVY0WVcx
+        d2JHVXViRzlqWVhScGIyNTlJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQWlKSHRo
+        ZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaWDBpQ2lBZ1kyRnNi
+        R2x1WjE5M1pXSmZhRzl2YXlBZ0lDQTlJQ0pvZEhSd2N6b3ZMMlY0WVcxd2JHVXlMbU52YlM4aUNp
+        QWdaVzVoWW14bFgyTmhiR3hwYm1jZ0lDQWdJQ0E5SUdaaGJITmxDbjBL
+    import: !!binary |
+        Q2dwVWFHVWdUV2xqY205emIyWjBJRlJsWVcxeklFbHVkR1ZuY21GMGFXOXVJR1p2Y2lCaElFSnZk
+        Q0JEYUdGdWJtVnNJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNt
+        TmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltOTBYMk5vWVc1dVpXeGZiWE5mZEdWaGJYTXViV0Z5YTJSdmQyND0=

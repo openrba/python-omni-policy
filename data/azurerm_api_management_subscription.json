@@ -1,0 +1,80 @@
+{
+    "azurerm_api_management_subscription": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_subscription",
+        "description": "Manages a Subscription within a API Management Service.",
+        "arguments": {
+            "api_management_name": {
+                "description": "The name of the API Management Service where this Subscription should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "The display name of this Subscription.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "product_id": {
+                "description": "The ID of the Product which should be assigned to this Subscription. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "user_id": {
+                "description": "The ID of the User which should be assigned to this Subscription. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "state": {
+                "description": "The state of this Subscription. Possible values are `active`, `cancelled`, `expired`, `rejected`, `submitted` and `suspended`. Defaults to `submitted`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subscription_id": {
+                "description": "An Identifier which should used as the ID of this Subscription. If not specified a new Subscription ID will be generated. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management Subscription."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management Subscription.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management Subscription.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management Subscription.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management Subscription.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

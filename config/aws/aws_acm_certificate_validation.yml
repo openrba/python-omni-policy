@@ -1,0 +1,24 @@
+aws_acm_certificate_validation:
+    status: HOLD
+    subcategory: ACM
+    layout: aws
+    page_title: 'AWS: aws_acm_certificate_validation'
+    description: Waits for and checks successful validation of an ACM certificate.
+    arguments:
+        certificate_arn:
+            description: The ARN of the certificate that is being validated.
+            required: true
+            policy: ''
+            notes: ''
+        validation_record_fqdns:
+            description: List of FQDNs that implement the validation. Only valid for
+                DNS validation method ACM certificates. If this is set, the resource
+                can implement additional sanity checks and has an explicit dependency
+                on the resource that is implementing the validation
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The time at which the certificate was issued
+    timeouts: {}

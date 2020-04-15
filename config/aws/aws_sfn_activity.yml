@@ -1,0 +1,26 @@
+aws_sfn_activity:
+    status: HOLD
+    subcategory: Step Function (SFN)
+    layout: aws
+    page_title: 'AWS: aws_sfn_activity'
+    description: Provides a Step Function Activity resource.
+    arguments:
+        name:
+            description: The name of the activity to create.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Amazon Resource Name (ARN) that identifies the created
+                activity.
+        name:
+            description: The name of the activity.
+        creation_date:
+            description: The date the activity was created.
+    timeouts: {}

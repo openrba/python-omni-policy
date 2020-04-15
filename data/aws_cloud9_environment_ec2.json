@@ -1,0 +1,65 @@
+{
+    "aws_cloud9_environment_ec2": {
+        "status": "HOLD",
+        "subcategory": "Cloud9",
+        "layout": "aws",
+        "page_title": "AWS: aws_cloud9_environment_ec2",
+        "description": "Provides a Cloud9 EC2 Development Environment.",
+        "arguments": {
+            "name": {
+                "description": "The name of the environment.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_type": {
+                "description": "The type of instance to connect to the environment, e.g. `t2.micro`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "automatic_stop_time_minutes": {
+                "description": "The number of minutes until the running instance is shut down after the environment has last been used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the environment.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "owner_arn": {
+                "description": "The ARN of the environment owner. This can be ARN of any AWS IAM principal. Defaults to the environment's creator.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the environment."
+            },
+            "arn": {
+                "description": "The ARN of the environment."
+            },
+            "type": {
+                "description": "The type of the environment (e.g. `ssh` or `ec2`)"
+            }
+        },
+        "timeouts": {}
+    }
+}

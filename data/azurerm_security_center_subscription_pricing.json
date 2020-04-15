@@ -1,0 +1,44 @@
+{
+    "azurerm_security_center_subscription_pricing": {
+        "status": "HOLD",
+        "subcategory": "Security Center",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_security_center_subscription_pricing",
+        "description": "Manages the Pricing Tier for Azure Security Center in the current subscription.",
+        "arguments": {
+            "tier": {
+                "description": "The pricing tier to use. Possible values are `Free` and `Standard`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The subscription pricing ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Security Center Subscription Pricing.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Security Center Subscription Pricing.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Security Center Subscription Pricing.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Security Center Subscription Pricing.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

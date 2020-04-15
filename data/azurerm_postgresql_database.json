@@ -1,0 +1,68 @@
+{
+    "azurerm_postgresql_database": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_postgresql_database",
+        "description": "Manages a PostgreSQL Database within a PostgreSQL Server.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the PostgreSQL Database, which needs [to be a valid PostgreSQL identifier](https://www.postgresql.org/docs/current/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS). Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "Specifies the name of the PostgreSQL Server. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the PostgreSQL Server exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "charset": {
+                "description": "Specifies the Charset for the PostgreSQL Database, which needs [to be a valid PostgreSQL Charset](https://www.postgresql.org/docs/current/static/multibyte.html). Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "collation": {
+                "description": "Specifies the Collation for the PostgreSQL Database, which needs [to be a valid PostgreSQL Collation](https://www.postgresql.org/docs/current/static/collation.html). Note that Microsoft uses different [notation](https://msdn.microsoft.com/library/windows/desktop/dd373814.aspx",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the PostgreSQL Database."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the PostgreSQL Database.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the PostgreSQL Database.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the PostgreSQL Database.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the PostgreSQL Database.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+azurerm_api_management_diagnostic:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_diagnostic'
+    description: Manages an API Management Service Diagnostic.
+    arguments:
+        identifier:
+            description: The diagnostic identifier for the API Management Service.
+                At this time the only supported value is `applicationinsights`. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The Name of the API Management Service where this Diagnostic
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group where the API Management Service
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Indicates whether a Diagnostic should receive data or not.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Diagnostic.
+    timeouts:
+        create:
+            description: Used when creating the API Management Diagnostic.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Diagnostic.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Diagnostic.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Diagnostic.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpZEdWemRDSWdl
+        d29nSUc1aGJXVWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGNtVnpiM1Z5WTJWeklnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjloY0ds
+        ZmJXRnVZV2RsYldWdWRDSWdJblJsYzNRaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVdFlYQnBiU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZ
+        WHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1MFpYTjBMbXh2WTJGMGFXOXVDaUFnY21WemIz
+        VnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1ZEdW
+        emRDNXVZVzFsQ2lBZ2NIVmliR2x6YUdWeVgyNWhiV1VnSUNBZ0lDQTlJQ0pOZVNCRGIyMXdZVzU1
+        SWdvZ0lIQjFZbXhwYzJobGNsOWxiV0ZwYkNBZ0lDQWdQU0FpWTI5dGNHRnVlVUIwWlhKeVlXWnZj
+        bTB1YVc4aUNpQWdjMnQxWDI1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKRVpYWmxiRzl3WlhKZk1T
+        SUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWVhCcFgyMWhibUZuWlcxbGJuUmZaR2xoWjI1
+        dmMzUnBZeUlnSW5SbGMzUWlJSHNLSUNCcFpHVnVkR2xtYVdWeUlDQWdJQ0FnSUNBZ0lEMGdJbUZ3
+        Y0d4cFkyRjBhVzl1YVc1emFXZG9kSE1pQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJ
+        R0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWRHVnpkQzV1WVcxbENpQWdZWEJwWDIxaGJt
+        Rm5aVzFsYm5SZmJtRnRaU0E5SUdGNmRYSmxjbTFmWVhCcFgyMWhibUZuWlcxbGJuUXVkR1Z6ZEM1
+        dVlXMWxDaUFnWlc1aFlteGxaQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlIUnlkV1VLZlFvPQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JFYVdGbmJtOXpkR2xqY3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWkdsaFoyNXZjM1JwWXk1b2RHMXNMbTFoY210
+        a2IzZHU=

@@ -1,0 +1,110 @@
+{
+    "azurerm_data_factory_dataset_mysql": {
+        "status": "HOLD",
+        "subcategory": "Data Factory",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_data_factory_dataset_mysql",
+        "description": "Manages a MySQL Dataset inside a Azure Data Factory.",
+        "arguments": {
+            "name": {
+                "description": "The name of the column.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Data Factory Dataset MySQL. Changing this forces a new resource",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "data_factory_name": {
+                "description": "The Data Factory name in which to associate the Dataset with. Changing this forces a new resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "linked_service_name": {
+                "description": "The Data Factory Linked Service name in which to associate the Dataset with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "table_name": {
+                "description": "The table name of the Data Factory Dataset MySQL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "folder": {
+                "description": "The folder that this Dataset is in. If not specified, the Dataset will appear at the root level.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "schema_column": {
+                "description": "A `schema_column` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the column.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "annotations": {
+                "description": "List of tags that can be used for describing the Data Factory Dataset MySQL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "A map of parameters to associate with the Data Factory Dataset MySQL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "additional_properties": {
+                "description": "A map of additional properties to associate with the Data Factory Dataset MySQL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "Type of the column. Valid values are `Byte`, `Byte[]`, `Boolean`, `Date`, `DateTime`,`DateTimeOffset`, `Decimal`, `Double`, `Guid`, `Int16`, `Int32`, `Int64`, `Single`, `String`, `TimeSpan`. Please note these values are case sensitive.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Data Factory MySQL Dataset."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Data Factory MySQL Dataset.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Data Factory MySQL Dataset.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Data Factory MySQL Dataset.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Data Factory MySQL Dataset.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

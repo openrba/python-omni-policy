@@ -1,0 +1,68 @@
+{
+    "azurerm_api_management_product_policy": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_product_policy",
+        "description": "Manages an API Management Product Policy",
+        "arguments": {
+            "product_id": {
+                "description": "The ID of the API Management Product within the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_management_name": {
+                "description": "The name of the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "xml_content": {
+                "description": "The XML Content for this Policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "xml_link": {
+                "description": "A link to a Policy XML Document, which must be publicly available.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management Product Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management Product Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management Product Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management Product Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management Product Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

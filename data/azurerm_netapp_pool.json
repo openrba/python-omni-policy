@@ -1,0 +1,80 @@
+{
+    "azurerm_netapp_pool": {
+        "status": "HOLD",
+        "subcategory": "NetApp",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_netapp_pool",
+        "description": "Manages a Pool within a NetApp Account.",
+        "arguments": {
+            "name": {
+                "description": "The name of the NetApp Pool. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group where the NetApp Pool should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "account_name": {
+                "description": "The name of the NetApp account in which the NetApp Pool should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_level": {
+                "description": "The service level of the file system. Valid values include `Premium`, `Standard`, or `Ultra`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "size_in_tb": {
+                "description": "Provisioned size of the pool in TB. Value must be between `4` and `500`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the NetApp Pool."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the NetApp Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the NetApp Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the NetApp Pool.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the NetApp Pool.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "aws_spot_fleet_request": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_spot_fleet_request",
+        "description": "Provides a Spot Fleet Request resource.",
+        "arguments": {
+            "iam_fleet_role": {
+                "description": "Grants the Spot fleet permission to terminate",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "replace_unhealthy_instances": {
+                "description": "Indicates whether Spot fleet should replace unhealthy instances. Default `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "spot_price": {
+                "description": "The maximum bid price per unit hour.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wait_for_fulfillment": {
+                "description": "If set, Terraform will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_interruption_behaviour": {
+                "description": "Indicates whether a Spot",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fleet_type": {
+                "description": "The type of fleet request. Indicates whether the Spot Fleet only requests the target",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "valid_until": {
+                "description": "The end date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "valid_from": {
+                "description": "The start date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "load_balancers": {
+                "description": "A list of elastic load balancer names to add to the Spot fleet.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_group_arns": {
+                "description": "A list of `aws_alb_target_group` ARNs, for use with Application Load Balancing.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Spot fleet request ID"
+            },
+            "spot_request_state": {
+                "description": "The state of the Spot fleet request."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when requesting the spot instance (only valid if `wait_for_fulfillment = true`)",
+                "required": false,
+                "timeout": 10
+            },
+            "delete": {
+                "description": "Used when destroying the spot instance",
+                "required": false,
+                "timeout": 5
+            }
+        }
+    }
+}

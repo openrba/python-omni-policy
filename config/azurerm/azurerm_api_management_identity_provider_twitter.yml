@@ -1,0 +1,79 @@
+azurerm_api_management_identity_provider_twitter:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_identity_provider_twitter'
+    description: Manages an API Management Twitter Identity Provider.
+    arguments:
+        api_management_name:
+            description: The Name of the API Management Service where this Twitter
+                Identity Provider should be created. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group where the API Management Service
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_key:
+            description: App Consumer API key for Twitter.
+            required: true
+            policy: ''
+            notes: ''
+        api_secret_key:
+            description: App Consumer API secret key for Twitter.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Twitter Identity Provider.
+    timeouts:
+        create:
+            description: Used when creating the API Management Twitter Identity Provider.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Twitter Identity Provider.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Twitter Identity
+                Provider.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Twitter Identity Provider.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SkVaWFpsYkc5d1pYSmZNU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZllYQnBYMjFoYm1G
+        blpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmZEhkcGRIUmxjaUlnSW1WNFlXMXdiR1Vp
+        SUhzS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpa
+        VjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCaGNHbGZiV0Z1WVdkbGJXVnVkRjl1WVcxbElE
+        MGdZWHAxY21WeWJWOWhjR2xmYldGdVlXZGxiV1Z1ZEM1bGVHRnRjR3hsTG01aGJXVUtJQ0JoY0ds
+        ZmEyVjVJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lqQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3
+        TURBd01EQXdNREF3SWdvZ0lHRndhVjl6WldOeVpYUmZhMlY1SUNBZ0lDQWdQU0FpTURBd01EQXdN
+        REF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQWlDbjBL
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JVZDJsMGRHVnlJRWxrWlc1MGFYUjVJRkJ5YjNacFpHVnlJ
+        R05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pT
+        NW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmZEhk
+        cGRIUmxjaTVvZEcxc0xtMWhjbXRrYjNkdQ==

@@ -1,0 +1,128 @@
+{
+    "azurerm_virtual_network": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_virtual_network",
+        "description": "Manages a virtual network including any configured subnets. Each subnet can optionally be configured with a security group to be associated with the subnet.",
+        "arguments": {
+            "name": {
+                "description": "The name of the subnet.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "address_space": {
+                "description": "The address space that is used the virtual",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The location/region where the virtual network is",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ddos_protection_plan": {
+                "description": "A `ddos_protection_plan` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_servers": {
+                "description": "List of IP addresses of DNS servers",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet": {
+                "description": "Can be specified multiple times to define multiple",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "The Resource ID of DDoS Protection Plan.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enable": {
+                "description": "Enable/disable DDoS Protection Plan on Virtual Network.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "address_prefix": {
+                "description": "The address prefix to use for the subnet.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group": {
+                "description": "The Network Security Group to associate with",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of this subnet."
+            },
+            "name": {
+                "description": "The name of the virtual network."
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the virtual network."
+            },
+            "location": {
+                "description": "The location/region where the virtual network is created."
+            },
+            "address_space": {
+                "description": "The address space that is used the virtual network."
+            },
+            "guid": {
+                "description": "The GUID of the virtual network."
+            },
+            "subnet": {
+                "description": "One or more `subnet` blocks as defined below."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Virtual Network.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Virtual Network.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Virtual Network.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Virtual Network.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

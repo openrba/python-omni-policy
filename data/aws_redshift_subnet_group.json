@@ -1,0 +1,44 @@
+{
+    "aws_redshift_subnet_group": {
+        "status": "HOLD",
+        "subcategory": "Redshift",
+        "layout": "aws",
+        "page_title": "AWS: aws_redshift_subnet_group",
+        "description": "Provides a Redshift Subnet Group resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Redshift Subnet group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the Redshift Subnet group. Defaults to \"Managed by Terraform\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_ids": {
+                "description": "An array of VPC subnet IDs.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the Redshift Subnet group name"
+            },
+            "id": {
+                "description": "The Redshift Subnet group ID."
+            }
+        },
+        "timeouts": {}
+    }
+}

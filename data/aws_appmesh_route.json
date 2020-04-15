@@ -1,0 +1,170 @@
+{
+    "aws_appmesh_route": {
+        "status": "HOLD",
+        "subcategory": "AppMesh",
+        "layout": "aws",
+        "page_title": "AWS: aws_appmesh_route",
+        "description": "Provides an AWS App Mesh route resource.",
+        "arguments": {
+            "name": {
+                "description": "A name for the HTTP header in the client request that will be matched on.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "mesh_name": {
+                "description": "The name of the service mesh in which to create the route.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_router_name": {
+                "description": "The name of the virtual router in which to create the route.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "spec": {
+                "description": "The route specification to apply.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "http_route": {
+                "description": "The HTTP routing information for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "The priority for the route, between `0` and `1000`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tcp_route": {
+                "description": "The TCP routing information for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "The action to take if a match is determined.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "match": {
+                "description": "The method and value to match the header value sent with a request. Specify one match method.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "weighted_target": {
+                "description": "The targets that traffic is routed to when a request matches the route.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix": {
+                "description": "The header value sent by the client must begin with the specified characters.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "header": {
+                "description": "The client request headers to match on.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "method": {
+                "description": "The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scheme": {
+                "description": "The client request header scheme to match on. Valid values: `http`, `https`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_node": {
+                "description": "The virtual node to associate with the weighted target.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "weight": {
+                "description": "The relative weight of the weighted target. An integer between 0 and 100.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "invert": {
+                "description": "If `true`, the match is on the opposite of the `match` method and value. Default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "exact": {
+                "description": "The header value sent by the client must match the specified value exactly.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "range": {
+                "description": "The object that specifies the range of numbers that the header value sent by the client must be included in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "regex": {
+                "description": "The header value sent by the client must include the specified characters.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "suffix": {
+                "description": "The header value sent by the client must end with the specified characters.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "end": {
+                "description": "The end of the range.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "start": {
+                "description": "The start of the range.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the route."
+            },
+            "arn": {
+                "description": "The ARN of the route."
+            },
+            "created_date": {
+                "description": "The creation date of the route."
+            },
+            "last_updated_date": {
+                "description": "The last update date of the route."
+            }
+        },
+        "timeouts": {}
+    }
+}

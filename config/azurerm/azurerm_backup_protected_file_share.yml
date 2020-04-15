@@ -1,0 +1,28 @@
+azurerm_backup_protected_file_share:
+    status: HOLD
+    subcategory: Recovery Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_backup_protected_file_share'
+    description: Manages an Azure Backup Protected File Share.
+    arguments:
+        resource_group_name:
+            description: The name of the resource group in which to create the Azure
+                Backup Protected File Share. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_vault_name:
+            description: Specifies the name of the Recovery Services Vault to use.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        source_storage_account_id:
+            description: Specifies the ID of the storage account of the file share
+                to backup. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

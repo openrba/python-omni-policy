@@ -1,0 +1,28 @@
+aws_sagemaker_notebook_instance_lifecycle_configuration:
+    status: HOLD
+    subcategory: Sagemaker
+    layout: aws
+    page_title: 'AWS: aws_sagemaker_notebook_instance_lifecycle_configuration'
+    description: Provides a lifecycle configuration for SageMaker Notebook Instances.
+    arguments:
+        name:
+            description: The name of the lifecycle configuration (must be unique).
+                If omitted, Terraform will assign a random, unique name.
+            required: false
+            policy: ''
+            notes: ''
+        on_create:
+            description: A shell script (base64-encoded
+            required: false
+            policy: ''
+            notes: ''
+        on_start:
+            description: A shell script (base64-encoded
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Amazon Resource Name (ARN) assigned by AWS to this lifecycle
+                configuration.
+    timeouts: {}

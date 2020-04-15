@@ -1,0 +1,64 @@
+aws_globalaccelerator_accelerator:
+    status: HOLD
+    subcategory: Global Accelerator
+    layout: aws
+    page_title: 'AWS: aws_globalaccelerator_accelerator'
+    description: Provides a Global Accelerator accelerator.
+    arguments:
+        name:
+            description: The name of the accelerator.
+            required: true
+            policy: ''
+            notes: ''
+        ip_address_type:
+            description: The value for the address type must be `IPV4`.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Indicates whether the accelerator is enabled. The value is
+                true or false. The default value is true.
+            required: false
+            policy: ''
+            notes: ''
+        attributes:
+            description: The attributes of the accelerator. Fields documented below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        flow_logs_enabled:
+            description: Indicates whether flow logs are enabled.
+            required: false
+            policy: ''
+            notes: ''
+        flow_logs_s3_bucket:
+            description: The name of the Amazon S3 bucket for the flow logs.
+            required: false
+            policy: ''
+            notes: ''
+        flow_logs_s3_prefix:
+            description: The prefix for the location in the Amazon S3 bucket for the
+                flow logs.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Amazon Resource Name (ARN) of the accelerator.
+        dns_name:
+            description: The DNS name of the accelerator. For example, `a5d53ff5ee6bca4ce.awsglobalaccelerator.com`.
+        hosted_zone_id:
+            description: ' The Global Accelerator Route 53 zone ID that can be used
+                to'
+        ip_sets:
+            description: IP address set associated with the accelerator.
+        ip_addresses:
+            description: A list of IP addresses in the IP address set.
+        ip_family:
+            description: The types of IP addresses included in this IP set.
+    timeouts: {}

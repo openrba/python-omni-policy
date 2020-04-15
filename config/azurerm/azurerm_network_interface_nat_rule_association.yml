@@ -1,0 +1,115 @@
+azurerm_network_interface_nat_rule_association:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_interface_nat_rule_association'
+    description: Manages the association between a Network Interface and a Load Balancer's
+        NAT Rule.
+    arguments:
+        network_interface_id:
+            description: The ID of the Network Interface. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ip_configuration_name:
+            description: The Name of the IP Configuration within the Network Interface
+                which should be connected to the NAT Rule. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        nat_rule_id:
+            description: The ID of the Load Balancer NAT Rule which this Network Interface
+                which should be connected to. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The (Terraform specific) ID of the Association between the
+                Network Interface and the Load Balancers NAT Rule.
+    timeouts:
+        create:
+            description: Used when creating the association between the Network Interface
+                and the Load Balancers NAT Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the association between the Network Interface
+                and the Load Balancers NAT Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the association between the Network
+                Interface and the Load Balancers NAT Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the association between the Network Interface
+                and the Load Balancers NAT Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMakF2TVRZaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbWx1ZEdWeWJtRnNJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0IyYVhKMGRXRnNYMjVs
+        ZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lqRXdMakF1TWk0d0x6
+        STBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5d2RXSnNhV05mYVhBaUlDSmxlR0Z0Y0d4
+        bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYQnBjQ0lL
+        SUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpT
+        QTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWVd4
+        c2IyTmhkR2x2Ymw5dFpYUm9iMlFnSUNBOUlDSlRkR0YwYVdNaUNuMEtDbkpsYzI5MWNtTmxJQ0po
+        ZW5WeVpYSnRYMnhpSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaVpYaGhiWEJzWlMxc1lpSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lY
+        cDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21W
+        emIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1
+        WlhoaGJYQnNaUzV1WVcxbENnb2dJR1p5YjI1MFpXNWtYMmx3WDJOdmJtWnBaM1Z5WVhScGIyNGdl
+        d29nSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpY0hKcGJXRnllU0lLSUNBZ0lI
+        QjFZbXhwWTE5cGNGOWhaR1J5WlhOelgybGtJRDBnWVhwMWNtVnliVjl3ZFdKc2FXTmZhWEF1Wlho
+        aGJYQnNaUzVwWkFvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYkdKZmJtRjBYM0ox
+        YkdVaUlDSmxlR0Z0Y0d4bElpQjdDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJX
+        VUtJQ0JzYjJGa1ltRnNZVzVqWlhKZmFXUWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhK
+        dFgyeGlMbVY0WVcxd2JHVXVhV1FLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpVWtSUVFXTmpaWE56SWdvZ0lIQnliM1J2WTI5c0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNKVVkzQWlDaUFnWm5KdmJuUmxibVJmY0c5eWRDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdNek00T1FvZ0lHSmhZMnRsYm1SZmNHOXlkQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0E5SURNek9Ea0tJQ0JtY205dWRHVnVaRjlwY0Y5amIyNW1hV2QxY21GMGFXOXVYMjVo
+        YldVZ1BTQWljSEpwYldGeWVTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYm1WMGQyOXlh
+        MTlwYm5SbGNtWmhZMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKbGVHRnRjR3hsTFc1cFl5SUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFn
+        Y21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZk
+        WEF1WlhoaGJYQnNaUzV1WVcxbENnb2dJR2x3WDJOdmJtWnBaM1Z5WVhScGIyNGdld29nSUNBZ2Jt
+        RnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZEdWemRHTnZibVpwWjNW
+        eVlYUnBiMjR4SWdvZ0lDQWdjM1ZpYm1WMFgybGtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNCaGVuVnlaWEp0WDNOMVltNWxkQzVsZUdGdGNHeGxMbWxrQ2lBZ0lDQndjbWwyWVhSbFgybHdY
+        MkZrWkhKbGMzTmZZV3hzYjJOaGRHbHZiaUE5SUNKRWVXNWhiV2xqSWdvZ0lIMEtmUW9LY21WemIz
+        VnlZMlVnSW1GNmRYSmxjbTFmYm1WMGQyOXlhMTlwYm5SbGNtWmhZMlZmYm1GMFgzSjFiR1ZmWVhO
+        emIyTnBZWFJwYjI0aUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1WMGQyOXlhMTlwYm5SbGNtWmhZMlZm
+        YVdRZ0lEMGdZWHAxY21WeWJWOXVaWFIzYjNKclgybHVkR1Z5Wm1GalpTNWxlR0Z0Y0d4bExtbGtD
+        aUFnYVhCZlkyOXVabWxuZFhKaGRHbHZibDl1WVcxbElEMGdJblJsYzNSamIyNW1hV2QxY21GMGFX
+        OXVNU0lLSUNCdVlYUmZjblZzWlY5cFpDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYMnhpWDI1
+        aGRGOXlkV3hsTG1WNFlXMXdiR1V1YVdRS2ZRbz0=
+    import: !!binary |
+        Q2dwQmMzTnZZMmxoZEdsdmJuTWdZbVYwZDJWbGJpQk9aWFIzYjNKcklFbHVkR1Z5Wm1GalpYTWdZ
+        VzVrSUV4dllXUWdRbUZzWVc1alpYSWdUa0ZVSUZKMWJHVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lI
+        VnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5cGJuUmxjbVpoWTJWZmJtRjBYM0oxYkdWZllYTnpiMk5wWVhS
+        cGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

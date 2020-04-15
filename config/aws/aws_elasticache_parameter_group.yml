@@ -1,0 +1,37 @@
+aws_elasticache_parameter_group:
+    status: HOLD
+    subcategory: ElastiCache
+    layout: aws
+    page_title: 'AWS: aws_elasticache_parameter_group'
+    description: Provides an ElastiCache parameter group resource.
+    arguments:
+        name:
+            description: The name of the ElastiCache parameter.
+            required: true
+            policy: ''
+            notes: ''
+        family:
+            description: The family of the ElastiCache parameter group.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the ElastiCache parameter group. Defaults
+                to "Managed by Terraform".
+            required: false
+            policy: ''
+            notes: ''
+        parameter:
+            description: A list of ElastiCache parameters to apply.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The value of the ElastiCache parameter.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ElastiCache parameter group name.
+    timeouts: {}

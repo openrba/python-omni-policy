@@ -1,0 +1,97 @@
+azurerm_database_migration_service:
+    status: HOLD
+    subcategory: Database Migration
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_database_migration_service'
+    description: Manage a Azure Database Migration Service.
+    arguments:
+        name:
+            description: Specify the name of the database migration service. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Name of the resource group in which to create the database
+                migration service. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the virtual subnet resource to which the database
+                migration service should be joined. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: The sku name of the database migration service. Possible
+                values are `Premium_4vCores`, `Standard_1vCores`, `Standard_2vCores`
+                and `Standard_4vCores`. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assigned to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of Database Migration Service.
+    timeouts:
+        create:
+            description: Used when creating the API Management API.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management API.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management API.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management API.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WnlJS0lDQnNiMk5oZEdsdmJpQTlJQ0pYWlhO
+        MElFVjFjbTl3WlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZkbWx5ZEhWaGJGOXVaWFIz
+        YjNKcklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWla
+        WGhoYlhCc1pTMTJibVYwSWdvZ0lHRmtaSEpsYzNOZmMzQmhZMlVnSUNBZ0lDQWdQU0JiSWpFd0xq
+        QXVNQzR3THpFMklsMEtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5
+        eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZm
+        WjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNa
+        UzV1WVcxbENuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM04xWW01bGRDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMWE4xWW01
+        bGRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5
+        WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdkbWx5ZEhWaGJGOXVaWFIzYjNKclgyNWhi
+        V1VnUFNCaGVuVnlaWEp0WDNacGNuUjFZV3hmYm1WMGQyOXlheTVsZUdGdGNHeGxMbTVoYldVS0lD
+        QmhaR1J5WlhOelgzQnlaV1pwZUNBZ0lDQWdJQ0E5SUNJeE1DNHdMakV1TUM4eU5DSUtmUW9LY21W
+        emIzVnlZMlVnSW1GNmRYSmxjbTFmWkdGMFlXSmhjMlZmYldsbmNtRjBhVzl1WDNObGNuWnBZMlVp
+        SUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRj
+        R3hsTFdSdGN5SUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpY
+        TnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNK
+        dmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1
+        WVcxbENpQWdjM1ZpYm1WMFgybGtJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzNWaWJtVjBM
+        bVY0WVcxd2JHVXVhV1FLSUNCemEzVmZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lY
+        SmtYekYyUTI5eVpYTWlDbjBL
+    import: !!binary |
+        Q2dwRVlYUmhZbUZ6WlNCTmFXZHlZWFJwYjI0Z1UyVnlkbWxqWlhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZV0poYzJWZmJXbG5jbUYwYVc5dVgzTmxjblpwWTJVdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

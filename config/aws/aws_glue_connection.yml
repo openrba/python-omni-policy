@@ -1,0 +1,48 @@
+aws_glue_connection:
+    status: HOLD
+    subcategory: Glue
+    layout: aws
+    page_title: 'AWS: aws_glue_connection'
+    description: Provides an Glue Connection resource.
+    arguments:
+        catalog_id:
+            description: The ID of the Data Catalog in which to create the connection.
+                If none is supplied, the AWS account ID is used by default.
+            required: false
+            policy: ''
+            notes: ''
+        connection_properties:
+            description: A map of key-value pairs used as parameters for this connection.
+            required: true
+            policy: ''
+            notes: ''
+        connection_type:
+            description: The type of the connection. Defaults to `JBDC`.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the connection.
+            required: false
+            policy: ''
+            notes: ''
+        match_criteria:
+            description: A list of criteria that can be used in selecting this connection.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the connection.
+            required: true
+            policy: ''
+            notes: ''
+        physical_connection_requirements:
+            description: A map of physical connection requirements, such as VPC and
+                SecurityGroup. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: Catalog ID and name of the connection
+    timeouts: {}

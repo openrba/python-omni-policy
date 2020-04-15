@@ -1,0 +1,29 @@
+{
+    "aws_wafregional_size_constraint_set": {
+        "status": "HOLD",
+        "subcategory": "WAF Regional",
+        "layout": "aws",
+        "page_title": "AWS: aws_wafregional_size_constraint_set",
+        "description": "Provides an AWS WAF Regional Size Constraint Set resource for use with ALB.",
+        "arguments": {
+            "name": {
+                "description": "The name or description of the Size Constraint Set.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "size_constraints": {
+                "description": "Specifies the parts of web requests that you want to inspect the size of.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the WAF Size Constraint Set."
+            }
+        },
+        "timeouts": {}
+    }
+}

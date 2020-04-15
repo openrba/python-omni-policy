@@ -1,0 +1,33 @@
+aws_ses_domain_identity_verification:
+    status: HOLD
+    subcategory: SES
+    layout: aws
+    page_title: 'AWS: aws_ses_domain_identity_verification'
+    description: Waits for and checks successful verification of an SES domain identity.
+    arguments:
+        domain:
+            description: The domain name of the SES domain identity to verify.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The domain name of the domain identity.
+        arn:
+            description: The ARN of the domain identity.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDJSdmJXRnBibDlwWkdWdWRHbDBlU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQmtiMjFoYVc0Z1BTQWlaWGhoYlhCc1pTNWpiMjBpQ24wS0NuSmxjMjkxY21ObElD
+        SmhkM05mY205MWRHVTFNMTl5WldOdmNtUWlJQ0psZUdGdGNHeGxYMkZ0WVhwdmJuTmxjMTkyWlhK
+        cFptbGpZWFJwYjI1ZmNtVmpiM0prSWlCN0NpQWdlbTl1WlY5cFpDQTlJQ0lrZTJGM2MxOXliM1Yw
+        WlRVelgzcHZibVV1WlhoaGJYQnNaUzU2YjI1bFgybGtmU0lLSUNCdVlXMWxJQ0FnSUQwZ0lsOWhi
+        V0Y2YjI1elpYTXVKSHRoZDNOZmMyVnpYMlJ2YldGcGJsOXBaR1Z1ZEdsMGVTNWxlR0Z0Y0d4bExt
+        bGtmU0lLSUNCMGVYQmxJQ0FnSUQwZ0lsUllWQ0lLSUNCMGRHd2dJQ0FnSUQwZ0lqWXdNQ0lLSUNC
+        eVpXTnZjbVJ6SUQwZ1d5SWtlMkYzYzE5elpYTmZaRzl0WVdsdVgybGtaVzUwYVhSNUxtVjRZVzF3
+        YkdVdWRtVnlhV1pwWTJGMGFXOXVYM1J2YTJWdWZTSmRDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZj
+        MlZ6WDJSdmJXRnBibDlwWkdWdWRHbDBlVjkyWlhKcFptbGpZWFJwYjI0aUlDSmxlR0Z0Y0d4bFgz
+        WmxjbWxtYVdOaGRHbHZiaUlnZXdvZ0lHUnZiV0ZwYmlBOUlDSWtlMkYzYzE5elpYTmZaRzl0WVds
+        dVgybGtaVzUwYVhSNUxtVjRZVzF3YkdVdWFXUjlJZ29LSUNCa1pYQmxibVJ6WDI5dUlEMGdXeUpo
+        ZDNOZmNtOTFkR1UxTTE5eVpXTnZjbVF1WlhoaGJYQnNaVjloYldGNmIyNXpaWE5mZG1WeWFXWnBZ
+        MkYwYVc5dVgzSmxZMjl5WkNKZENuMEs=

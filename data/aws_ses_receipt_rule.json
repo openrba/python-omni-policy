@@ -1,0 +1,187 @@
+{
+    "aws_ses_receipt_rule": {
+        "status": "HOLD",
+        "subcategory": "SES",
+        "layout": "aws",
+        "page_title": "AWS: aws_ses_receipt_rule",
+        "description": "Provides an SES receipt rule resource",
+        "arguments": {
+            "name": {
+                "description": "The name of the rule",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_set_name": {
+                "description": "The name of the rule set",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "after": {
+                "description": "The name of the rule to place this rule after",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "If true, the rule will be enabled",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "recipients": {
+                "description": "A list of email addresses",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scan_enabled": {
+                "description": "If true, incoming emails will be scanned for spam and viruses",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tls_policy": {
+                "description": "Require or Optional",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "add_header_action": {
+                "description": "A list of Add Header Action blocks. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bounce_action": {
+                "description": "A list of Bounce Action blocks. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lambda_action": {
+                "description": "A list of Lambda Action blocks. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_action": {
+                "description": "A list of S3 Action blocks. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sns_action": {
+                "description": "A list of SNS Action blocks. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "stop_action": {
+                "description": "A list of Stop Action blocks. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "workmail_action": {
+                "description": "A list of WorkMail Action blocks. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "header_name": {
+                "description": "The name of the header to add",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "header_value": {
+                "description": "The value of the header to add",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "position": {
+                "description": "The position of the action in the receipt rule",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "message": {
+                "description": "The message to send",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sender": {
+                "description": "The email address of the sender",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "smtp_reply_code": {
+                "description": "The RFC 5321 SMTP reply code",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "status_code": {
+                "description": "The RFC 3463 SMTP enhanced status code",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "topic_arn": {
+                "description": "The ARN of an SNS topic to notify",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "function_arn": {
+                "description": "The ARN of the Lambda function to invoke",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "invocation_type": {
+                "description": "Event or RequestResponse",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket_name": {
+                "description": "The name of the S3 bucket",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_arn": {
+                "description": "The ARN of the KMS key",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "object_key_prefix": {
+                "description": "The key prefix of the S3 bucket",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "The scope to apply",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "organization_arn": {
+                "description": "The ARN of the WorkMail organization",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

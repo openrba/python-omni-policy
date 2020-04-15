@@ -1,0 +1,46 @@
+aws_cloudformation_stack_set_instance:
+    status: HOLD
+    subcategory: CloudFormation
+    layout: aws
+    page_title: 'AWS: aws_cloudformation_stack_set_instance'
+    description: Manages a CloudFormation StackSet Instance.
+    arguments:
+        stack_set_name:
+            description: Name of the StackSet.
+            required: true
+            policy: ''
+            notes: ''
+        account_id:
+            description: Target AWS Account ID to create a Stack based on the StackSet.
+                Defaults to current account.
+            required: false
+            policy: ''
+            notes: ''
+        parameter_overrides:
+            description: Key-value map of input parameters to override from the StackSet
+                for this Instance.
+            required: false
+            policy: ''
+            notes: ''
+        region:
+            description: Target AWS Region to create a Stack based on the StackSet.
+                Defaults to current region.
+            required: false
+            policy: ''
+            notes: ''
+        retain_stack:
+            description: During Terraform resource destroy, remove Instance from StackSet
+                while keeping the Stack and its associated resources. Must be enabled
+                in Terraform state _before_ destroy operation to take effect. You
+                cannot reassociate a retained Stack or add an existing, saved Stack
+                to a new StackSet. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: StackSet name, target AWS account ID, and target AWS region
+                separated by commas (`,`)
+        stack_id:
+            description: Stack identifier
+    timeouts: {}

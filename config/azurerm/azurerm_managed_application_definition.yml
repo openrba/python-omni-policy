@@ -1,0 +1,143 @@
+azurerm_managed_application_definition:
+    status: HOLD
+    subcategory: Managed Applications
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_managed_application_definition'
+    description: Manages a Managed Application Definition.
+    arguments:
+        name:
+            description: Specifies the name of the Managed Application Definition.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Managed Application
+                Definition should exist. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        lock_level:
+            description: Specifies the managed application lock level. Valid values
+                include `CanNotDelete`, `None`, `ReadOnly`. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        authorization:
+            description: One or more `authorization` block defined below.
+            required: false
+            policy: ''
+            notes: ''
+        create_ui_definition:
+            description: Specifies the `createUiDefinition` json for the backing template
+                with `Microsoft.Solutions/applications` resource.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: Specifies the managed application definition display name.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Specifies the managed application definition description.
+            required: false
+            policy: ''
+            notes: ''
+        package_enabled:
+            description: Is the package enabled? Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        main_template:
+            description: Specifies the inline main template json which has resources
+                to be provisioned.
+            required: false
+            policy: ''
+            notes: ''
+        package_file_uri:
+            description: Specifies the managed application definition package file
+                Uri.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: If either `create_ui_definition` or `main_template` is set they
+                both must be set.
+        role_definition_id:
+            description: Specifies a role definition identifier for the provider.
+                This role will define all the permissions that the provider must have
+                on the managed application's container resource group. This role definition
+                cannot have permission to delete the resource group.
+            required: true
+            policy: ''
+            notes: ''
+        service_principal_id:
+            description: Specifies a service principal identifier for the provider.
+                This is the identity that the provider will use to call ARM to manage
+                the managed application resources.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Managed Application Definition.
+    timeouts:
+        create:
+            description: Used when creating the Managed Application Definition.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Managed Application Definition.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Managed Application Definition.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Managed Application Definition.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS1pHRjBZ
+        U0FpWVhwMWNtVnliVjlqYkdsbGJuUmZZMjl1Wm1sbklpQWlZM1Z5Y21WdWRDSWdlMzBLQ25KbGMy
+        OTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNaU0lnZXdv
+        Z0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlkyRjBhVzl1
+        SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5dFlXNWha
+        MlZrWDJGd2NHeHBZMkYwYVc5dVgyUmxabWx1YVhScGIyNGlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2Jt
+        RnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMVzFoYm1GblpXUmhjSEJzYVdO
+        aGRHbHZibVJsWm1sdWFYUnBiMjRpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2
+        ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxj
+        MjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xt
+        VjRZVzF3YkdVdWJtRnRaUW9nSUd4dlkydGZiR1YyWld3Z0lDQWdJQ0FnSUNBZ1BTQWlVbVZoWkU5
+        dWJIa2lDaUFnY0dGamEyRm5aVjltYVd4bFgzVnlhU0FnSUNBOUlDSm9kSFJ3Y3pvdkwyZHBkR2gx
+        WWk1amIyMHZRWHAxY21VdllYcDFjbVV0YldGdVlXZGxaR0Z3Y0MxellXMXdiR1Z6TDNKaGR5OXRZ
+        WE4wWlhJdlRXRnVZV2RsWkNCQmNIQnNhV05oZEdsdmJpQlRZVzF3YkdVZ1VHRmphMkZuWlhNdk1q
+        QXhMVzFoYm1GblpXUXRjM1J2Y21GblpTMWhZMk52ZFc1MEwyMWhibUZuWldSemRHOXlZV2RsTG5w
+        cGNDSUtJQ0JrYVhOd2JHRjVYMjVoYldVZ0lDQWdJQ0FnSUQwZ0lsUmxjM1JOWVc1aFoyVmtRWEJ3
+        YkdsallYUnBiMjVFWldacGJtbDBhVzl1SWdvZ0lHUmxjMk55YVhCMGFXOXVJQ0FnSUNBZ0lDQWdQ
+        U0FpVkdWemRDQk5ZVzVoWjJWa0lFRndjR3hwWTJGMGFXOXVJRVJsWm1sdWFYUnBiMjRpQ2dvZ0lH
+        RjFkR2h2Y21sNllYUnBiMjRnZXdvZ0lDQWdjMlZ5ZG1salpWOXdjbWx1WTJsd1lXeGZhV1FnUFNC
+        a1lYUmhMbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnk1amRYSnlaVzUwTG05aWFtVmpkRjlw
+        WkFvZ0lDQWdjbTlzWlY5a1pXWnBibWwwYVc5dVgybGtJQ0FnUFNBaVlUQTVOR0kwTXpBdFpHRmtN
+        eTAwTWpSa0xXRmxOVGd0TVRObU56Sm1aRGN5TlRreElnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwTllXNWhaMlZrSUVGd2NHeHBZMkYwYVc5dUlFUmxabWx1YVhScGIyNGdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRnVZV2RsWkY5aGNIQnNhV05oZEdsdmJsOWtaV1pwYm1sMGFXOXVMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

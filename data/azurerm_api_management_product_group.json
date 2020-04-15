@@ -1,0 +1,62 @@
+{
+    "azurerm_api_management_product_group": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_product_group",
+        "description": "Manages an API Management Product Assignment to a Group.",
+        "arguments": {
+            "product_id": {
+                "description": "The ID of the API Management Product within the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "group_name": {
+                "description": "The Name of the API Management Group within the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_management_name": {
+                "description": "The name of the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management Product Group."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management Product Group.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management Product Group.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management Product Group.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management Product Group.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

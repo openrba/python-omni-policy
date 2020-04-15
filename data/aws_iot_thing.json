@@ -1,0 +1,41 @@
+{
+    "aws_iot_thing": {
+        "status": "HOLD",
+        "subcategory": "IoT",
+        "layout": "aws",
+        "page_title": "AWS: aws_iot_thing",
+        "description": "Creates and manages an AWS IoT Thing.",
+        "arguments": {
+            "name": {
+                "description": "The name of the thing.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "attributes": {
+                "description": "Map of attributes of the thing.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "thing_type_name": {
+                "description": "The thing type name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "default_client_id": {
+                "description": "The default client ID."
+            },
+            "version": {
+                "description": "The current version of the thing record in the registry."
+            },
+            "arn": {
+                "description": "The ARN of the thing."
+            }
+        },
+        "timeouts": {}
+    }
+}

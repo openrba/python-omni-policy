@@ -1,0 +1,122 @@
+{
+    "azurerm_managed_application_definition": {
+        "status": "HOLD",
+        "subcategory": "Managed Applications",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_managed_application_definition",
+        "description": "Manages a Managed Application Definition.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Managed Application Definition. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group where the Managed Application Definition should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lock_level": {
+                "description": "Specifies the managed application lock level. Valid values include `CanNotDelete`, `None`, `ReadOnly`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "authorization": {
+                "description": "One or more `authorization` block defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "create_ui_definition": {
+                "description": "Specifies the `createUiDefinition` json for the backing template with `Microsoft.Solutions/applications` resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "Specifies the managed application definition display name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Specifies the managed application definition description.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "package_enabled": {
+                "description": "Is the package enabled? Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "main_template": {
+                "description": "Specifies the inline main template json which has resources to be provisioned.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "package_file_uri": {
+                "description": "Specifies the managed application definition package file Uri.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": "If either `create_ui_definition` or `main_template` is set they both must be set."
+            },
+            "role_definition_id": {
+                "description": "Specifies a role definition identifier for the provider. This role will define all the permissions that the provider must have on the managed application's container resource group. This role definition cannot have permission to delete the resource group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_principal_id": {
+                "description": "Specifies a service principal identifier for the provider. This is the identity that the provider will use to call ARM to manage the managed application resources.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Managed Application Definition."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Managed Application Definition.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Managed Application Definition.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Managed Application Definition.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Managed Application Definition.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

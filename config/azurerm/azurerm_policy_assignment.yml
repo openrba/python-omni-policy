@@ -1,0 +1,137 @@
+azurerm_policy_assignment:
+    status: HOLD
+    subcategory: Policy
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_policy_assignment'
+    description: Configures the specified Policy Definition at the specified Scope.
+    arguments:
+        name:
+            description: The name of the Policy Assignment. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        scope:
+            description: The Scope at which the Policy Assignment should be applied,
+                which must be a Resource ID (such as Subscription e.g. `/subscriptions/00000000-0000-0000-000000000000`
+                or a Resource Group e.g.`/subscriptions/00000000-0000-0000-000000000000/resourceGroups/myResourceGroup`).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        policy_definition_id:
+            description: The ID of the Policy Definition to be applied at the specified
+                Scope.
+            required: true
+            policy: ''
+            notes: ''
+        identity:
+            description: An `identity` block.
+            required: false
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where this policy assignment should exist.
+                This is required when an Identity is assigned. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A description to use for this Policy Assignment. Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: A friendly display name to use for this Policy Assignment.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: Parameters for the policy definition. This field is a JSON
+                object that maps to the Parameters field from the Policy Definition.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        not_scopes:
+            description: A list of the Policy Assignment's excluded scopes. The list
+                must contain Resource IDs (such as Subscriptions e.g. `/subscriptions/00000000-0000-0000-000000000000`
+                or Resource Groups e.g.`/subscriptions/00000000-0000-0000-000000000000/resourceGroups/myResourceGroup`).
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The Managed Service Identity Type of this Policy Assignment.
+                Possible values are `SystemAssigned` (where Azure will generate a
+                Service Principal for you), or `None` (no use of a Managed Service
+                Identity).
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Policy Assignment id.
+        identity:
+            description: An `identity` block.
+        principal_id:
+            description: The Principal ID of this Policy Assignment if `type` is `SystemAssigned`.
+        tenant_id:
+            description: The Tenant ID of this Policy Assignment if `type` is `SystemAssigned`.
+    timeouts:
+        create:
+            description: Used when creating the Policy Assignment.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Policy Assignment.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Policy Assignment.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Policy Assignment.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNCdmJHbGplVjlrWldacGJtbDBhVzl1SWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBOUlDSnRlUzF3YjJ4cFkza3RaR1ZtYVc1cGRH
+        bHZiaUlLSUNCd2IyeHBZM2xmZEhsd1pTQWdQU0FpUTNWemRHOXRJZ29nSUcxdlpHVWdJQ0FnSUNB
+        Z0lDQTlJQ0pCYkd3aUNpQWdaR2x6Y0d4aGVWOXVZVzFsSUQwZ0ltMTVMWEJ2YkdsamVTMWtaV1pw
+        Ym1sMGFXOXVJZ29LSUNCd2IyeHBZM2xmY25Wc1pTQTlJRHc4VUU5TVNVTlpYMUpWVEVVS0NYc0tJ
+        Q0FnSUNKcFppSTZJSHNLSUNBZ0lDQWdJbTV2ZENJNklIc0tJQ0FnSUNBZ0lDQWlabWxsYkdRaU9p
+        QWliRzlqWVhScGIyNGlMQW9nSUNBZ0lDQWdJQ0pwYmlJNklDSmJjR0Z5WVcxbGRHVnljeWduWVd4
+        c2IzZGxaRXh2WTJGMGFXOXVjeWNwWFNJS0lDQWdJQ0FnZlFvZ0lDQWdmU3dLSUNBZ0lDSjBhR1Z1
+        SWpvZ2V3b2dJQ0FnSUNBaVpXWm1aV04wSWpvZ0ltRjFaR2wwSWdvZ0lDQWdmUW9nSUgwS1VFOU1T
+        VU5aWDFKVlRFVUtDZ29nSUhCaGNtRnRaWFJsY25NZ1BTQThQRkJCVWtGTlJWUkZVbE1LQ1hzS0lD
+        QWdJQ0poYkd4dmQyVmtURzlqWVhScGIyNXpJam9nZXdvZ0lDQWdJQ0FpZEhsd1pTSTZJQ0pCY25K
+        aGVTSXNDaUFnSUNBZ0lDSnRaWFJoWkdGMFlTSTZJSHNLSUNBZ0lDQWdJQ0FpWkdWelkzSnBjSFJw
+        YjI0aU9pQWlWR2hsSUd4cGMzUWdiMllnWVd4c2IzZGxaQ0JzYjJOaGRHbHZibk1nWm05eUlISmxj
+        MjkxY21ObGN5NGlMQW9nSUNBZ0lDQWdJQ0prYVhOd2JHRjVUbUZ0WlNJNklDSkJiR3h2ZDJWa0lH
+        eHZZMkYwYVc5dWN5SXNDaUFnSUNBZ0lDQWdJbk4wY205dVoxUjVjR1VpT2lBaWJHOWpZWFJwYjI0
+        aUNpQWdJQ0FnSUgwS0lDQWdJSDBLSUNCOUNsQkJVa0ZOUlZSRlVsTUtDbjBLQ25KbGMyOTFjbU5s
+        SUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhi
+        V1VnSUNBZ0lEMGdJblJsYzNRdGNtVnpiM1Z5WTJWeklnb2dJR3h2WTJGMGFXOXVJRDBnSWxkbGMz
+        UWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl3YjJ4cFkzbGZZWE56YVdk
+        dWJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5
+        SUNKbGVHRnRjR3hsTFhCdmJHbGplUzFoYzNOcFoyNXRaVzUwSWdvZ0lITmpiM0JsSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExt
+        bGtDaUFnY0c5c2FXTjVYMlJsWm1sdWFYUnBiMjVmYVdRZ1BTQmhlblZ5WlhKdFgzQnZiR2xqZVY5
+        a1pXWnBibWwwYVc5dUxtVjRZVzF3YkdVdWFXUUtJQ0JrWlhOamNtbHdkR2x2YmlBZ0lDQWdJQ0Fn
+        SUNBOUlDSlFiMnhwWTNrZ1FYTnphV2R1YldWdWRDQmpjbVZoZEdWa0lIWnBZU0JoYmlCQlkyTmxj
+        SFJoYm1ObElGUmxjM1FpQ2lBZ1pHbHpjR3hoZVY5dVlXMWxJQ0FnSUNBZ0lDQWdQU0FpVFhrZ1JY
+        aGhiWEJzWlNCUWIyeHBZM2tnUVhOemFXZHViV1Z1ZENJS0NpQWdjR0Z5WVcxbGRHVnljeUE5SUR3
+        OFVFRlNRVTFGVkVWU1V3cDdDaUFnSW1Gc2JHOTNaV1JNYjJOaGRHbHZibk1pT2lCN0NpQWdJQ0Fp
+        ZG1Gc2RXVWlPaUJiSUNKWFpYTjBJRVYxY205d1pTSWdYUW9nSUgwS2ZRcFFRVkpCVFVWVVJWSlRD
+        Z3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwUWIyeHBZM2tnUVhOemFXZHViV1Z1ZEhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NHOXNhV041SUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXNhV041WDJGemMybG5ibTFsYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

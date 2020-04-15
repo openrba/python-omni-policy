@@ -1,0 +1,92 @@
+{
+    "aws_launch_template": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_launch_template",
+        "description": "Provides an EC2 launch template resource. Can be used to create instances or auto scaling groups.",
+        "arguments": {
+            "capacity_reservation_specification": {
+                "description": "below for more details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cpu_options": {
+                "description": "below for more details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "elastic_inference_accelerator": {
+                "description": "Configuration block containing an Elastic Inference Accelerator to attach to the instance. See [Elastic Inference Accelerator](#elastic-inference-accelerator",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_market_options": {
+                "description": "option for the instance. See [Market Options](#market-options)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "license_specification": {
+                "description": "below for more details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata_options": {
+                "description": "Customize the metadata options for the instance. See [Metadata Options](#metadata-options",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "monitoring": {
+                "description": "below for more details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "placement": {
+                "description": "below for more details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tag_specifications": {
+                "description": "below for more details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the launch template.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hibernation_options": {
+                "description": "below for more details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the launch template."
+            },
+            "id": {
+                "description": "The ID of the launch template."
+            },
+            "default_version": {
+                "description": "The default version of the launch template."
+            },
+            "latest_version": {
+                "description": "The latest version of the launch template."
+            }
+        },
+        "timeouts": {}
+    }
+}

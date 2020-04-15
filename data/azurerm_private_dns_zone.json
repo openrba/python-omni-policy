@@ -1,0 +1,68 @@
+{
+    "azurerm_private_dns_zone": {
+        "status": "HOLD",
+        "subcategory": "Private DNS",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_private_dns_zone",
+        "description": "Manages a Private DNS Zone.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Private DNS Zone. Must be a valid domain name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the resource group where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Prviate DNS Zone ID."
+            },
+            "number_of_record_sets": {
+                "description": "The current number of record sets in this Private DNS zone."
+            },
+            "max_number_of_record_sets": {
+                "description": "The maximum number of record sets that can be created in this Private DNS zone."
+            },
+            "max_number_of_virtual_network_links": {
+                "description": "The maximum number of virtual networks that can be linked to this Private DNS zone."
+            },
+            "max_number_of_virtual_network_links_with_registration": {
+                "description": "The maximum number of virtual networks that can be linked to this Private DNS zone with registration enabled."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Private DNS Zone.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Private DNS Zone.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Private DNS Zone.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Private DNS Zone.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

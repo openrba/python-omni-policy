@@ -1,0 +1,37 @@
+{
+    "aws_datasync_agent": {
+        "status": "HOLD",
+        "subcategory": "DataSync",
+        "layout": "aws",
+        "page_title": "AWS: aws_datasync_agent",
+        "description": "Manages an AWS DataSync Agent in the provider region",
+        "arguments": {
+            "name": {
+                "description": "Name of the DataSync Agent.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "activation_key": {
+                "description": "DataSync Agent activation key during resource creation. Conflicts with `ip_address`. If an `ip_address` is provided instead, Terraform will retrieve the `activation_key` as part of the resource creation.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_address": {
+                "description": "DataSync Agent IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. DataSync Agent must be accessible on port 80 from where Terraform is running.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value pairs of resource tags to assign to the DataSync Agent.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,116 @@
+azurerm_data_factory_trigger_schedule:
+    status: HOLD
+    subcategory: Data Factory
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_data_factory_trigger_schedule'
+    description: Manages a Trigger Schedule inside a Azure Data Factory.
+    arguments:
+        name:
+            description: Specifies the name of the Data Factory Schedule Trigger.
+                Changing this forces a new resource to be created. Must be globally
+                unique. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Data
+                Factory Schedule Trigger. Changing this forces a new resource
+            required: true
+            policy: ''
+            notes: ''
+        data_factory_name:
+            description: The Data Factory name in which to associate the Schedule
+                Trigger with. Changing this forces a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        pipeline_name:
+            description: The Data Factory Pipeline name that the trigger will act
+                on.
+            required: true
+            policy: ''
+            notes: ''
+        start_time:
+            description: The time the Schedule Trigger will start. This defaults to
+                the current time. The time will be represented in UTC.
+            required: false
+            policy: ''
+            notes: ''
+        end_time:
+            description: The time the Schedule Trigger should end. The time will be
+                represented in UTC.
+            required: false
+            policy: ''
+            notes: ''
+        interval:
+            description: The interval for how often the trigger occurs. This defaults
+                to 1.
+            required: false
+            policy: ''
+            notes: ''
+        frequency:
+            description: The trigger freqency. Valid values include `Minute`, `Hour`,
+                `Day`, `Week`, `Month`. Defaults to `Minute`.
+            required: false
+            policy: ''
+            notes: ''
+        pipeline_parameters:
+            description: The pipeline parameters that the trigger will act upon.
+            required: false
+            policy: ''
+            notes: ''
+        annotations:
+            description: List of tags that can be used for describing the Data Factory
+                Schedule Trigger.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Factory Schedule Trigger.
+    timeouts:
+        create:
+            description: Used when creating the Data Factory Schedule Trigger.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Factory Schedule Trigger.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Factory Schedule Trigger.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Factory Schedule Trigger.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        a1lYUmhYMlpoWTNSdmNua2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWkdGMFlWOW1ZV04w
+        YjNKNVgzQnBjR1ZzYVc1bElpQWlkR1Z6ZENJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaVpYaGhiWEJzWlNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNt
+        VnliVjl5WlhOdmRYSmpaVjluY205MWNDNTBaWE4wTG01aGJXVUtJQ0JrWVhSaFgyWmhZM1J2Y25s
+        ZmJtRnRaU0FnSUQwZ1lYcDFjbVZ5YlY5a1lYUmhYMlpoWTNSdmNua3VkR1Z6ZEM1dVlXMWxDbjBL
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJSaGRHRmZabUZqZEc5eWVWOTBjbWxuWjJWeVgzTmph
+        R1ZrZFd4bElpQWlkR1Z6ZENJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpY
+        aGhiWEJzWlNJS0lDQmtZWFJoWDJaaFkzUnZjbmxmYm1GdFpTQWdJRDBnWVhwMWNtVnliVjlrWVhS
+        aFgyWmhZM1J2Y25rdWRHVnpkQzV1WVcxbENpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5
+        SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVkR1Z6ZEM1dVlXMWxDaUFnY0dsd1pXeHBi
+        bVZmYm1GdFpTQWdJQ0FnSUNBOUlHRjZkWEpsY20xZlpHRjBZVjltWVdOMGIzSjVYM0JwY0dWc2FX
+        NWxMblJsYzNRdWJtRnRaUW9LSUNCcGJuUmxjblpoYkNBZ1BTQTFDaUFnWm5KbGNYVmxibU41SUQw
+        Z0lrUmhlU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwRVlYUmhJRVpoWTNSdmNua2dVMk5vWldSMWJHVWdWSEpwWjJkbGNpQmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjltWVdOMGIzSjVYM1J5YVdkblpYSmZjMk5vWldSMWJHVXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

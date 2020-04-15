@@ -1,0 +1,21 @@
+aws_lightsail_static_ip_attachment:
+    status: HOLD
+    subcategory: Lightsail
+    layout: aws
+    page_title: 'AWS: aws_lightsail_static_ip_attachment'
+    description: Provides an Lightsail Static IP Attachment
+    arguments:
+        static_ip_name:
+            description: The name of the allocated static IP
+            required: true
+            policy: ''
+            notes: ''
+        instance_name:
+            description: The name of the Lightsail instance to attach the IP to
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        ip_address:
+            description: The allocated static IP address
+    timeouts: {}

@@ -1,0 +1,41 @@
+{
+    "aws_backup_vault": {
+        "status": "HOLD",
+        "subcategory": "Backup",
+        "layout": "aws",
+        "page_title": "AWS: aws_backup_vault",
+        "description": "Provides an AWS Backup vault resource.",
+        "arguments": {
+            "name": {
+                "description": "Name of the backup vault to create.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Metadata that you can assign to help organize the resources that you create.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_arn": {
+                "description": "The server-side encryption key that is used to protect your backups.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the vault."
+            },
+            "arn": {
+                "description": "The ARN of the vault."
+            },
+            "recovery_points": {
+                "description": "The number of recovery points that are stored in a backup vault."
+            }
+        },
+        "timeouts": {}
+    }
+}

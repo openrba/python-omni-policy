@@ -1,0 +1,83 @@
+azurerm_sql_firewall_rule:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_sql_firewall_rule'
+    description: Manages a SQL Firewall Rule.
+    arguments:
+        name:
+            description: The name of the firewall rule.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: The name of the SQL Server on which to create the Firewall
+                Rule.
+            required: true
+            policy: ''
+            notes: ''
+        start_ip_address:
+            description: The starting IP address to allow through the firewall for
+                this rule.
+            required: true
+            policy: ''
+            notes: ''
+        end_ip_address:
+            description: The ending IP address to allow through the firewall for this
+                rule.
+            required: true
+            policy: ''
+            notes: The Azure feature `Allow access to Azure services` can be enabled
+                by setting `start_ip_address` and `end_ip_address` to `0.0.0.0` which
+                ([is documented in the Azure API Docs](https://docs.microsoft.com/en-us/rest/api/sql/firewallrules/createorupdate)).
+    attributes:
+        id:
+            description: The SQL Firewall Rule ID.
+    timeouts:
+        create:
+            description: Used when creating the SQL Firewall Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the SQL Firewall Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the SQL Firewall Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the SQL Firewall Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFVtVnpiM1Z5WTJWSGNt
+        OTFjREVpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmYzNGc1gzTmxjblpsY2lJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltMTVjM0ZzYzJWeWRtVnlJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgy
+        ZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNBaVYyVnpkQ0JWVXlJS0lDQjJaWEp6YVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSWpFeUxqQWlDaUFnWVdSdGFXNXBjM1J5WVhSdmNsOXNiMmRwYmlBZ0lDQWdJ
+        Q0FnSUNBOUlDSTBaRzB4YmpFMU4zSTBOekJ5SWdvZ0lHRmtiV2x1YVhOMGNtRjBiM0pmYkc5bmFX
+        NWZjR0Z6YzNkdmNtUWdQU0FpTkMxMk0zSjVMVFV6WTNJek55MXdORFUxZHpCeVpDSUtmUW9LY21W
+        emIzVnlZMlVnSW1GNmRYSmxjbTFmYzNGc1gyWnBjbVYzWVd4c1gzSjFiR1VpSUNKbGVHRnRjR3hs
+        SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKR2FYSmxkMkZzYkZKMWJHVXhJ
+        Z29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgy
+        ZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSE5sY25abGNsOXVZVzFsSUNBZ0lDQWdJQ0FnUFNC
+        aGVuVnlaWEp0WDNOeGJGOXpaWEoyWlhJdVpYaGhiWEJzWlM1dVlXMWxDaUFnYzNSaGNuUmZhWEJm
+        WVdSa2NtVnpjeUFnSUNBOUlDSXhNQzR3TGpFM0xqWXlJZ29nSUdWdVpGOXBjRjloWkdSeVpYTnpJ
+        Q0FnSUNBZ1BTQWlNVEF1TUM0eE55NDJNaUlLZlFvPQ==
+    import: !!binary |
+        Q2dwVFVVd2dSbWx5WlhkaGJHd2dVblZzWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzRnNYMlpwY21WM1lXeHNYM0oxYkdVdWFIUnRiQzV0WVhKclpHOTNiZz09

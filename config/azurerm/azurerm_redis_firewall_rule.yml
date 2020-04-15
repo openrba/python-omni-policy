@@ -1,0 +1,70 @@
+azurerm_redis_firewall_rule:
+    status: HOLD
+    subcategory: Redis
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_redis_firewall_rule'
+    description: Manages a Firewall Rule associated with a Redis Cache.
+    arguments:
+        name:
+            description: The name of the Firewall Rule. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        redis_cache_name:
+            description: The name of the Redis Cache. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which this Redis Cache
+                exists.
+            required: true
+            policy: ''
+            notes: ''
+        start_ip:
+            description: The lowest IP address included in the range
+            required: true
+            policy: ''
+            notes: ''
+        end_ip:
+            description: The highest IP address included in the range.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Redis Firewall Rule.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKeVlXNWtiMjFmYVdRaUlDSnpaWEoyWlhJaUlIc0tJQ0JyWldWd1pYSnpJ
+        RDBnZXdvZ0lDQWdZWHBwWDJsa0lEMGdNUW9nSUgwS0NpQWdZbmwwWlY5c1pXNW5kR2dnUFNBNENu
+        MEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0lpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdJQ0FnSUQwZ0luSmxaR2x6TFhKbGMyOTFjbU5sWjNKdmRYQWlDaUFn
+        Ykc5allYUnBiMjRnUFNBaVYyVnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnla
+        WEp0WDNKbFpHbHpYMk5oWTJobElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ1BTQWljbVZrYVhNa2UzSmhibVJ2YlY5cFpDNXpaWEoyWlhJdWFHVjRmU0lLSUNC
+        c2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJ
+        R0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWTJGd1lX
+        TnBkSGtnSUNBZ0lDQWdJQ0FnSUNBOUlERUtJQ0JtWVcxcGJIa2dJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0lsQWlDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBOUlDSlFjbVZ0YVhWdElnb2dJR1Z1
+        WVdKc1pWOXViMjVmYzNOc1gzQnZjblFnUFNCbVlXeHpaUW9LSUNCeVpXUnBjMTlqYjI1bWFXZDFj
+        bUYwYVc5dUlIc0tJQ0FnSUcxaGVHTnNhV1Z1ZEhNZ0lDQWdJQ0FnSUNBOUlESTFOZ29nSUNBZ2JX
+        RjRiV1Z0YjNKNVgzSmxjMlZ5ZG1Wa0lEMGdNZ29nSUNBZ2JXRjRiV1Z0YjNKNVgyUmxiSFJoSUNB
+        Z0lEMGdNZ29nSUNBZ2JXRjRiV1Z0YjNKNVgzQnZiR2xqZVNBZ0lEMGdJbUZzYkd0bGVYTXRiSEox
+        SWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmY21Wa2FYTmZabWx5WlhkaGJHeGZj
+        blZzWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lu
+        TnZiV1ZKVUhKaGJtZGxJZ29nSUhKbFpHbHpYMk5oWTJobFgyNWhiV1VnSUNBZ1BTQmhlblZ5WlhK
+        dFgzSmxaR2x6WDJOaFkyaGxMbVY0WVcxd2JHVXVibUZ0WlFvZ0lISmxjMjkxY21ObFgyZHliM1Z3
+        WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRa
+        UW9nSUhOMFlYSjBYMmx3SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlNUzR5TGpNdU5DSUtJQ0JsYm1SZmFY
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lqSXVNeTQwTGpVaUNuMEs=
+    import: !!binary |
+        Q2dwU1pXUnBjeUJHYVhKbGQyRnNiQ0JTZFd4bGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtVmthWE5mWm1seVpYZGhiR3hmY25Wc1pTNW9kRzFzTG0xaGNtdGtiM2R1

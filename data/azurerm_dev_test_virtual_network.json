@@ -1,0 +1,95 @@
+{
+    "azurerm_dev_test_virtual_network": {
+        "status": "HOLD",
+        "subcategory": "Dev Test",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_dev_test_virtual_network",
+        "description": "Manages a Virtual Network within a DevTest Lab.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Dev Test Virtual Network. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lab_name": {
+                "description": "Specifies the name of the Dev Test Lab in which the Virtual Network should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Dev Test Lab resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description for the Virtual Network.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet": {
+                "description": "A `subnet` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "use_public_ip_address": {
+                "description": "Can Virtual Machines in this Subnet use Public IP Addresses? Possible values are `Allow`, `Default` and `Deny`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "use_in_virtual_machine_creation": {
+                "description": "Can this subnet be used for creating Virtual Machines? Possible values are `Allow`, `Default` and `Deny`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Dev Test Virtual Network."
+            },
+            "subnet": {
+                "description": "A `subnet` block as defined below."
+            },
+            "unique_identifier": {
+                "description": "The unique immutable identifier of the Dev Test Virtual Network."
+            },
+            "name": {
+                "description": "The name of the Subnet for this Virtual Network."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the DevTest Virtual Network.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the DevTest Virtual Network.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the DevTest Virtual Network.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the DevTest Virtual Network.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "aws_redshift_snapshot_schedule": {
+        "status": "HOLD",
+        "subcategory": "Redshift",
+        "layout": "aws",
+        "page_title": "AWS: aws_redshift_snapshot_schedule",
+        "description": "Provides an Redshift Snapshot Schedule resource.",
+        "arguments": {
+            "identifier": {
+                "description": "The snapshot schedule identifier. If omitted, Terraform will assign a random, unique identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identifier_prefix": {
+                "description": "Creates a unique",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the snapshot schedule.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "definitions": {
+                "description": "The definition of the snapshot schedule. The definition is made up of schedule expressions, for example `cron(30 12 *)` or `rate(12 hours)`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "force_destroy": {
+                "description": "Whether to destroy all associated clusters with this snapshot schedule on deletion. Must be enabled and applied before attempting deletion.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

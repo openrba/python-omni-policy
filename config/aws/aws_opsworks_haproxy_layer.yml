@@ -1,0 +1,163 @@
+aws_opsworks_haproxy_layer:
+    status: HOLD
+    subcategory: OpsWorks
+    layout: aws
+    page_title: 'AWS: aws_opsworks_haproxy_layer'
+    description: Provides an OpsWorks HAProxy layer resource.
+    arguments:
+        stack_id:
+            description: The id of the stack the layer will belong to.
+            required: true
+            policy: ''
+            notes: ''
+        stats_password:
+            description: The password to use for HAProxy stats.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: A human-readable name for the layer.
+            required: false
+            policy: ''
+            notes: ''
+        auto_assign_elastic_ips:
+            description: Whether to automatically assign an elastic IP address to
+                the layer's instances.
+            required: false
+            policy: ''
+            notes: ''
+        auto_assign_public_ips:
+            description: For stacks belonging to a VPC, whether to automatically assign
+                a public IP address to each of the layer's instances.
+            required: false
+            policy: ''
+            notes: ''
+        custom_instance_profile_arn:
+            description: The ARN of an IAM profile that will be used for the layer's
+                instances.
+            required: false
+            policy: ''
+            notes: ''
+        custom_security_group_ids:
+            description: Ids for a set of security groups to apply to the layer's
+                instances.
+            required: false
+            policy: ''
+            notes: ''
+        auto_healing:
+            description: Whether to enable auto-healing for the layer.
+            required: false
+            policy: ''
+            notes: ''
+        healthcheck_method:
+            description: HTTP method to use for instance healthchecks. Defaults to
+                "OPTIONS".
+            required: false
+            policy: ''
+            notes: ''
+        healthcheck_url:
+            description: URL path to use for instance healthchecks. Defaults to "/".
+            required: false
+            policy: ''
+            notes: ''
+        install_updates_on_boot:
+            description: Whether to install OS and package updates on each instance
+                when it boots.
+            required: false
+            policy: ''
+            notes: ''
+        instance_shutdown_timeout:
+            description: The time, in seconds, that OpsWorks will wait for Chef to
+                complete after triggering the Shutdown event.
+            required: false
+            policy: ''
+            notes: ''
+        elastic_load_balancer:
+            description: Name of an Elastic Load Balancer to attach to this layer
+            required: false
+            policy: ''
+            notes: ''
+        drain_elb_on_shutdown:
+            description: Whether to enable Elastic Load Balancing connection draining.
+            required: false
+            policy: ''
+            notes: ''
+        stats_enabled:
+            description: Whether to enable HAProxy stats.
+            required: false
+            policy: ''
+            notes: ''
+        stats_url:
+            description: The HAProxy stats URL. Defaults to "/haproxy?stats".
+            required: false
+            policy: ''
+            notes: ''
+        stats_user:
+            description: The username for HAProxy stats. Defaults to "opsworks".
+            required: false
+            policy: ''
+            notes: ''
+        system_packages:
+            description: Names of a set of system packages to install on the layer's
+                instances.
+            required: false
+            policy: ''
+            notes: ''
+        use_ebs_optimized_instances:
+            description: Whether to use EBS-optimized instances.
+            required: false
+            policy: ''
+            notes: ''
+        ebs_volume:
+            description: '`ebs_volume` blocks, as described below, will each create
+                an EBS volume and connect it to the layer''s instances.'
+            required: false
+            policy: ''
+            notes: ''
+        custom_json:
+            description: Custom JSON attributes to apply to the layer.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        mount_point:
+            description: The path to mount the EBS volume on the layer's instances.
+            required: true
+            policy: ''
+            notes: ''
+        size:
+            description: The size of the volume in gigabytes.
+            required: true
+            policy: ''
+            notes: ''
+        number_of_disks:
+            description: The number of disks to use for the EBS volume.
+            required: true
+            policy: ''
+            notes: ''
+        raid_level:
+            description: The RAID level to use for the volume.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of volume to create. This may be `standard` (the
+                default), `io1` or `gp2`.
+            required: false
+            policy: ''
+            notes: ''
+        iops:
+            description: For PIOPS volumes, the IOPS per disk.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The id of the layer.
+        arn:
+            description: The Amazon Resource Name(ARN) of the layer.
+    timeouts: {}

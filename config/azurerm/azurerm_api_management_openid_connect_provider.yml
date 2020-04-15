@@ -1,0 +1,102 @@
+azurerm_api_management_openid_connect_provider:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_openid_connect_provider'
+    description: Manages an OpenID Connect Provider within a API Management Service.
+    arguments:
+        name:
+            description: the Name of the OpenID Connect Provider which should be created
+                within the API Management Service. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the API Management Service in which this OpenID
+                Connect Provider should be created. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the API Management Service
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        client_id:
+            description: The Client ID used for the Client Application.
+            required: true
+            policy: ''
+            notes: ''
+        client_secret:
+            description: The Client Secret used for the Client Application.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: A user-friendly name for this OpenID Connect Provider.
+            required: true
+            policy: ''
+            notes: ''
+        metadata_endpoint:
+            description: The URI of the Metadata endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of this OpenID Connect Provider.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management OpenID Connect Provider.
+    timeouts:
+        create:
+            description: Used when creating the API Management OpenID Connect Provider.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management OpenID Connect Provider.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management OpenID Connect Provider.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management OpenID Connect Provider.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDZ29nSUhOcmRWOXVZVzFsSUQwZ0lrUmxkbVZzYjNCbGNs
+        OHhJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5aGNHbGZiV0Z1WVdkbGJXVnVkRjl2Y0dW
+        dWFXUmZZMjl1Ym1WamRGOXdjbTkyYVdSbGNpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjSEp2ZG1sa1pYSWlDaUFnWVhCcFgyMWhi
+        bUZuWlcxbGJuUmZibUZ0WlNBOUlHRjZkWEpsY20xZllYQnBYMjFoYm1GblpXMWxiblF1WlhoaGJY
+        QnNaUzV1WVcxbENpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ1kyeHBaVzUwWDJsa0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0l3TURBd01URXhNUzB5TWpJeUxUTXpNek10TkRRME5DMDFOVFUxTmpZMk5qYzNO
+        emNpQ2lBZ1pHbHpjR3hoZVY5dVlXMWxJQ0FnSUNBZ0lDQTlJQ0pGZUdGdGNHeGxJRkJ5YjNacFpH
+        VnlJZ29nSUcxbGRHRmtZWFJoWDJWdVpIQnZhVzUwSUNBZ1BTQWlhSFIwY0hNNkx5OWxlR0Z0Y0d4
+        bExtTnZiUzlsZUdGdGNHeGxJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JQY0dWdVNVUWdRMjl1Ym1WamRDQlFjbTkyYVdSbGNuTWdZ
+        MkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYjNCbGJtbGtYMk52Ym01bFkzUmZjSEp2ZG1s
+        a1pYSXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

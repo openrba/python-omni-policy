@@ -1,0 +1,85 @@
+azurerm_notification_hub_namespace:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_notification_hub_namespace'
+    description: Manages a Notification Hub Namespace.
+    arguments:
+        name:
+            description: The name to use for this Notification Hub Namespace. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the Notification
+                Hub Namespace should exist. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure Region in which this Notification Hub Namespace
+                should be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_type:
+            description: The Type of Namespace - possible values are `Messaging` or
+                `NotificationHub`. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: The name of the SKU to use for this Notification Hub Namespace.
+                Possible values are `Free`, `Basic` or `Standard`. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Is this Notification Hub Namespace enabled? Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Notification Hub Namespace.
+        servicebus_endpoint:
+            description: The ServiceBus Endpoint for this Notification Hub Namespace.
+    timeouts:
+        create:
+            description: Used when creating the Notification Hub Namespace.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Notification Hub Namespace.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Notification Hub Namespace.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Notification Hub Namespace.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbTV2ZEdsbWFXTmhkR2x2Ym1oMVlpMXlaWE52ZFhKalpY
+        TWlDaUFnYkc5allYUnBiMjRnUFNBaVFYVnpkSEpoYkdsaElFVmhjM1FpQ24wS0NuSmxjMjkxY21O
+        bElDSmhlblZ5WlhKdFgyNXZkR2xtYVdOaGRHbHZibDlvZFdKZmJtRnRaWE53WVdObElpQWlaWGho
+        YlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWliWGxoY0hCdVlXMWxj
+        M0JoWTJVaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIz
+        VnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNB
+        Z0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2
+        YmdvZ0lHNWhiV1Z6Y0dGalpWOTBlWEJsSUNBZ0lDQWdQU0FpVG05MGFXWnBZMkYwYVc5dVNIVmlJ
+        Z29nSUhOcmRWOXVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlSbkpsWlNJS2ZRbz0=
+    import: !!binary |
+        Q2dwT2IzUnBabWxqWVhScGIyNGdTSFZpSUU1aGJXVnpjR0ZqWlhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtOTBhV1pwWTJGMGFXOXVYMmgxWWw5dVlXMWxjM0JoWTJVdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

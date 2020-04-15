@@ -1,0 +1,179 @@
+azurerm_private_link_service:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_private_link_service'
+    description: Manages a Private Link Service.
+    arguments:
+        name:
+            description: Specifies the name which should be used for the NAT IP Configuration.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Private Link Service
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        nat_ip_configuration:
+            description: One or more (up to 8
+            required: true
+            policy: ''
+            notes: ''
+        load_balancer_frontend_ip_configuration_ids:
+            description: A list of Frontend IP Configuration ID's from a Standard
+                Load Balancer, where traffic from the Private Link Service should
+                be routed. You can use Load Balancer Rules to direct this traffic
+                to appropriate backend pools where your applications are running.
+            required: true
+            policy: ''
+            notes: ''
+        auto_approval_subscription_ids:
+            description: A list of Subscription UUID/GUID's that will be automatically
+                be able to use this Private Link Service.
+            required: false
+            policy: ''
+            notes: ''
+        enable_proxy_protocol:
+            description: Should the Private Link Service support the Proxy Protocol?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource. Changing this
+                forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        visibility_subscription_ids:
+            description: A list of Subscription UUID/GUID's that will be able to see
+                this Private Link Service.
+            required: false
+            policy: ''
+            notes: If no Subscription ID's are specified then Azure allows every Subscription
+                to see this Private Link Service.
+        subnet_id:
+            description: Specifies the ID of the Subnet which should be used for the
+                Private Link Service.
+            required: true
+            policy: ''
+            notes: Verify that the Subnet's `enforce_private_link_service_network_policies`
+                attribute is set to `true`.
+        primary:
+            description: Is this is the Primary IP Configuration? Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        private_ip_address:
+            description: Specifies a Private Static IP Address for this IP Configuration.
+            required: false
+            policy: ''
+            notes: ''
+        private_ip_address_version:
+            description: The version of the IP Protocol which should be used. At this
+                time the only supported value is `IPv4`. Defaults to `IPv4`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        alias:
+            description: A globally unique DNS Name for your Private Link Service.
+                You can use this alias to request a connection to your Private Link
+                Service.
+        network_interfaces:
+            description: A list of network interface resource ids that are being used
+                by the service.
+    timeouts:
+        create:
+            description: Used when creating the Private Link Service.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Private Link Service.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Private Link Service.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Private Link Service.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZk
+        WEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUdGa1pISmxjM05mYzNCaFkyVWdJQ0Fn
+        SUNBZ1BTQmJJakV3TGpVdU1DNHdMekUySWwwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYTjFZbTVsZENJ
+        S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRa
+        UW9nSUhacGNuUjFZV3hmYm1WMGQyOXlhMTl1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1WNFlXMXdiR1V1Ym1G
+        dFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNJeE1DNDFMakV1TUM4eU5DSUtJQ0JsYm1admNtTmxYM0J5YVhaaGRHVmZi
+        R2x1YTE5elpYSjJhV05sWDI1bGRIZHZjbXRmY0c5c2FXTnBaWE1nUFNCMGNuVmxDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGVuVnlaWEp0WDNCMVlteHBZMTlwY0NJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdFlYQnBJZ29nSUhOcmRTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJ
+        Q0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRH
+        bHZiZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21O
+        bFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR0ZzYkc5allYUnBiMjVmYldWMGFHOWtJQ0Fn
+        UFNBaVUzUmhkR2xqSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXNZaUlnSW1WNFlXMXdi
+        R1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0YkdJaUNp
+        QWdjMnQxSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS0lDQnNiMk5oZEds
+        dmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0
+        Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lHWnliMjUwWlc1a1gy
+        bHdYMk52Ym1acFozVnlZWFJwYjI0Z2V3b2dJQ0FnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z1BTQmhlblZ5WlhKdFgzQjFZbXhwWTE5cGNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNBZ0lIQjFZbXhw
+        WTE5cGNGOWhaR1J5WlhOelgybGtJRDBnWVhwMWNtVnliVjl3ZFdKc2FXTmZhWEF1WlhoaGJYQnNa
+        UzVwWkFvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmY0hKcGRtRjBaVjlzYVc1clgz
+        TmxjblpwWTJVaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        OUlDSmxlR0Z0Y0d4bExYQnlhWFpoZEdWc2FXNXJJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVo
+        YldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJ
+        R3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIz
+        VndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtDaUFnWVhWMGIxOWhjSEJ5YjNaaGJGOXpkV0p6WTNK
+        cGNIUnBiMjVmYVdSeklDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUZzaU1EQXdNREF3TURBdE1EQXdNQzB3
+        TURBd0xUQXdNREF0TURBd01EQXdNREF3TURBd0lsMEtJQ0IyYVhOcFltbHNhWFI1WDNOMVluTmpj
+        bWx3ZEdsdmJsOXBaSE1nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnV3lJd01EQXdNREF3TUMwd01E
+        QXdMVEF3TURBdE1EQXdNQzB3TURBd01EQXdNREF3TURBaVhRb2dJR3h2WVdSZlltRnNZVzVqWlhK
+        ZlpuSnZiblJsYm1SZmFYQmZZMjl1Wm1sbmRYSmhkR2x2Ymw5cFpITWdQU0JiWVhwMWNtVnliVjlz
+        WWk1bGVHRnRjR3hsTG1aeWIyNTBaVzVrWDJsd1gyTnZibVpwWjNWeVlYUnBiMjR1TUM1cFpGMEtD
+        aUFnYm1GMFgybHdYMk52Ym1acFozVnlZWFJwYjI0Z2V3b2dJQ0FnYm1GdFpTQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWNISnBiV0Z5ZVNJS0lDQWdJSEJ5YVhaaGRHVmZhWEJmWVdS
+        a2NtVnpjeUFnSUNBZ0lDQWdJRDBnSWpFd0xqVXVNUzR4TnlJS0lDQWdJSEJ5YVhaaGRHVmZhWEJm
+        WVdSa2NtVnpjMTkyWlhKemFXOXVJRDBnSWtsUWRqUWlDaUFnSUNCemRXSnVaWFJmYVdRZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmMzVmlibVYwTG1WNFlXMXdiR1V1YVdRS0lD
+        QWdJSEJ5YVcxaGNua2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnZEhKMVpRb2dJSDBLQ2lB
+        Z2JtRjBYMmx3WDJOdmJtWnBaM1Z5WVhScGIyNGdld29nSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWljMlZqYjI1a1lYSjVJZ29nSUNBZ2NISnBkbUYwWlY5cGNGOWha
+        R1J5WlhOeklDQWdJQ0FnSUNBZ1BTQWlNVEF1TlM0eExqRTRJZ29nSUNBZ2NISnBkbUYwWlY5cGNG
+        OWhaR1J5WlhOelgzWmxjbk5wYjI0Z1BTQWlTVkIyTkNJS0lDQWdJSE4xWW01bGRGOXBaQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl6ZFdKdVpYUXVaWGhoYlhCc1pTNXBaQW9n
+        SUNBZ2NISnBiV0Z5ZVNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQm1ZV3h6WlFvZ0lIMEtm
+        UW89
+    import: !!binary |
+        Q2dwUWNtbDJZWFJsSUV4cGJtc2dVMlZ5ZG1salpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNISnBkbUYwWlY5c2FXNXJYM05sY25acFkyVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

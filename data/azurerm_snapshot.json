@@ -1,0 +1,95 @@
+{
+    "azurerm_snapshot": {
+        "status": "HOLD",
+        "subcategory": "Compute",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_snapshot",
+        "description": "Manages a Disk Snapshot.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Snapshot resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Snapshot. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "create_option": {
+                "description": "Indicates how the snapshot is to be created. Possible values are `Copy` or `Import`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_uri": {
+                "description": "Specifies the URI to a Managed or Unmanaged Disk. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_resource_id": {
+                "description": "Specifies a reference to an existing snapshot, when `create_option` is `Copy`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "Specifies the ID of an storage account. Used with `source_uri` to allow authorization during import of unmanaged blobs from a different subscription. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_size_gb": {
+                "description": "The size of the Snapshotted Disk in GB.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Snapshot ID."
+            },
+            "disk_size_gb": {
+                "description": "The Size of the Snapshotted Disk in GB."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Snapshot.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Snapshot.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Snapshot.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Snapshot.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

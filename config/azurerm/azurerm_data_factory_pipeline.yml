@@ -1,0 +1,89 @@
+azurerm_data_factory_pipeline:
+    status: HOLD
+    subcategory: Data Factory
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_data_factory_pipeline'
+    description: Manages a Pipeline inside a Azure Data Factory.
+    arguments:
+        name:
+            description: Specifies the name of the Data Factory Pipeline. Changing
+                this forces a new resource to be created. Must be globally unique.
+                See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Data
+                Factory Pipeline. Changing this forces a new resource
+            required: true
+            policy: ''
+            notes: ''
+        data_factory_name:
+            description: The Data Factory name in which to associate the Pipeline
+                with. Changing this forces a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description for the Data Factory Pipeline.
+            required: false
+            policy: ''
+            notes: ''
+        annotations:
+            description: List of tags that can be used for describing the Data Factory
+                Pipeline.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: A map of parameters to associate with the Data Factory Pipeline.
+            required: false
+            policy: ''
+            notes: ''
+        variables:
+            description: A map of variables to associate with the Data Factory Pipeline.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Factory Pipeline.
+    timeouts:
+        create:
+            description: Used when creating the Data Factory Pipeline.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Factory Pipeline.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Factory Pipeline.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Factory Pipeline.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        a1lYUmhYMlpoWTNSdmNua2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWkdGMFlWOW1ZV04w
+        YjNKNVgzQnBjR1ZzYVc1bElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlaWGhoYlhCc1pTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lY
+        cDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQmtZWFJoWDJa
+        aFkzUnZjbmxmYm1GdFpTQWdJRDBnWVhwMWNtVnliVjlrWVhSaFgyWmhZM1J2Y25rdVpYaGhiWEJz
+        WlM1dVlXMWxDbjBL
+    import: !!binary |
+        Q2dwRVlYUmhJRVpoWTNSdmNua2dVR2x3Wld4cGJtVW5jeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjltWVdOMGIzSjVYM0JwY0dWc2FXNWxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

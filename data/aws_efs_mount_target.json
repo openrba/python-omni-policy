@@ -1,0 +1,50 @@
+{
+    "aws_efs_mount_target": {
+        "status": "HOLD",
+        "subcategory": "EFS",
+        "layout": "aws",
+        "page_title": "AWS: aws_efs_mount_target",
+        "description": "Provides an Elastic File System (EFS) mount target.",
+        "arguments": {
+            "file_system_id": {
+                "description": "The ID of the file system for which the mount target is intended.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the subnet to add the mount target in.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_address": {
+                "description": "The address (within the address range of the specified subnet",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_groups": {
+                "description": "A list of up to 5 VPC security group IDs (that must",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the mount target."
+            },
+            "dns_name": {
+                "description": "The DNS name for the given subnet/AZ per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html)."
+            },
+            "file_system_arn": {
+                "description": "Amazon Resource Name of the file system."
+            },
+            "network_interface_id": {
+                "description": "The ID of the network interface that Amazon EFS created when it created the mount target."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,88 @@
+azurerm_logic_app_action_http:
+    status: HOLD
+    subcategory: Logic App
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_logic_app_action_http'
+    description: Manages an HTTP Action within a Logic App Workflow
+    arguments:
+        name:
+            description: Specifies the name of the HTTP Action to be created within
+                the Logic App Workflow. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: This name must be unique across all Actions within the Logic App
+                Workflow.
+        logic_app_id:
+            description: Specifies the ID of the Logic App Workflow. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        method:
+            description: Specifies the HTTP Method which should be used for this HTTP
+                Action. Possible values include `DELETE`, `GET`, `PATCH`, `POST` and
+                `PUT`.
+            required: true
+            policy: ''
+            notes: ''
+        uri:
+            description: Specifies the URI which will be called when this HTTP Action
+                is triggered.
+            required: true
+            policy: ''
+            notes: ''
+        body:
+            description: Specifies the HTTP Body that should be sent to the `uri`
+                when this HTTP Action is triggered.
+            required: false
+            policy: ''
+            notes: ''
+        headers:
+            description: Specifies a Map of Key-Value Pairs that should be sent to
+                the `uri` when this HTTP Action is triggered.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the HTTP Action within the Logic App Workflow.
+    timeouts:
+        create:
+            description: Used when creating the Logic App HTTP Action.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Logic App HTTP Action.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Logic App HTTP Action.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Logic App HTTP Action.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbmR2Y210bWJHOTNMWEpsYzI5MWNtTmxjeUlLSUNCc2Iy
+        TmhkR2x2YmlBOUlDSkZZWE4wSUZWVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzYjJk
+        cFkxOWhjSEJmZDI5eWEyWnNiM2NpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKM2IzSnJabXh2ZHpFaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJn
+        b2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJk
+        eWIzVndMbVY0WVcxd2JHVXVibUZ0WlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXNiMmRw
+        WTE5aGNIQmZZV04wYVc5dVgyaDBkSEFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJ
+        Q0FnSUQwZ0luZGxZbWh2YjJzaUNpQWdiRzluYVdOZllYQndYMmxrSUQwZ1lYcDFjbVZ5YlY5c2Iy
+        ZHBZMTloY0hCZmQyOXlhMlpzYjNjdVpYaGhiWEJzWlM1cFpBb2dJRzFsZEdodlpDQWdJQ0FnSUNB
+        OUlDSkhSVlFpQ2lBZ2RYSnBJQ0FnSUNBZ0lDQWdJRDBnSW1oMGRIQTZMeTlsZUdGdGNHeGxMbU52
+        YlM5emIyMWxMWGRsWW1odmIyc2lDbjBL
+    import: !!binary |
+        Q2dwTWIyZHBZeUJCY0hBZ1NGUlVVQ0JCWTNScGIyNXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5hV05mWVhCd1gyRmpkR2x2Ymw5b2RIUndMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

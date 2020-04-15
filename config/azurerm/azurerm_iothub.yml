@@ -1,0 +1,311 @@
+azurerm_iothub:
+    status: HOLD
+    subcategory: IoT Hub
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_iothub'
+    description: Manages an IotHub
+    arguments:
+        name:
+            description: The name of the route.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group under which the IotHub resource
+                has to be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                has to be createc. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: A `sku` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        event_hub_partition_count:
+            description: The number of device-to-cloud partitions used by backing
+                event hubs. Must be between `2` and `128`.
+            required: false
+            policy: ''
+            notes: ''
+        event_hub_retention_in_days:
+            description: The event hub retention to use in days. Must be between `1`
+                and `7`.
+            required: false
+            policy: ''
+            notes: ''
+        endpoint:
+            description: An `endpoint` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        fallback_route:
+            description: A `fallback_route` block as defined below. If the fallback
+                route is enabled, messages that don't match any of the supplied routes
+                are automatically sent to this route. Defaults to messages/events.
+            required: false
+            policy: ''
+            notes: ''
+        file_upload:
+            description: A `file_upload` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        ip_filter_rule:
+            description: One or more `ip_filter_rule` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        route:
+            description: A `route` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        capacity:
+            description: The number of provisioned IoT Hub units.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`,
+                `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.
+            required: true
+            policy: ''
+            notes: ''
+        connection_string:
+            description: The connection string for the Azure Storage account to which
+                files are uploaded.
+            required: true
+            policy: ''
+            notes: ''
+        batch_frequency_in_seconds:
+            description: Time interval at which blobs are written to storage. Value
+                should be between 60 and 720 seconds. Default value is 300 seconds.
+                This attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+            required: false
+            policy: ''
+            notes: ''
+        max_chunk_size_in_bytes:
+            description: Maximum number of bytes for each blob written to storage.
+                Value should be between 10485760(10MB
+            required: false
+            policy: ''
+            notes: ''
+        container_name:
+            description: The name of the root container where you upload files. The
+                container need not exist but should be creatable using the connection_string
+                specified.
+            required: true
+            policy: ''
+            notes: ''
+        encoding:
+            description: Encoding that is used to serialize messages to blobs. Supported
+                values are 'avro' and 'avrodeflate'. Default value is 'avro'. This
+                attribute is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+            required: false
+            policy: ''
+            notes: ''
+        file_name_format:
+            description: File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``.
+                All parameters are mandatory but can be reordered. This attribute
+                is mandatory for endpoint type `AzureIotHub.StorageContainer`.
+            required: false
+            policy: ''
+            notes: ''
+        ip_mask:
+            description: The IP address range in CIDR notation for the rule.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: The desired action for requests captured by this rule. Possible
+                values are  `Accept`, `Reject`
+            required: true
+            policy: ''
+            notes: ''
+        source:
+            description: 'The source that the routing rule is to be applied to, such
+                as `DeviceMessages`. Possible values include: `RoutingSourceInvalid`,
+                `RoutingSourceDeviceMessages`, `RoutingSourceTwinChangeEvents`, `RoutingSourceDeviceLifecycleEvents`,
+                `RoutingSourceDeviceJobLifecycleEvents`.'
+            required: false
+            policy: ''
+            notes: ''
+        condition:
+            description: 'The condition that is evaluated to apply the routing rule.
+                If no condition is provided, it evaluates to true by default. For
+                grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.'
+            required: false
+            policy: ''
+            notes: ''
+        endpoint_names:
+            description: The endpoints to which messages that satisfy the condition
+                are routed. Currently only 1 endpoint is allowed.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Used to specify whether the fallback route is enabled.
+            required: false
+            policy: ''
+            notes: ''
+        sas_ttl:
+            description: The period of time for which the SAS URI generated by IoT
+                Hub for file upload is valid, specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations).
+                This value must be between 1 minute and 24 hours, and evaluates to
+                'PT1H' by default.
+            required: false
+            policy: ''
+            notes: ''
+        notifications:
+            description: Used to specify whether file notifications are sent to IoT
+                Hub on upload. It evaluates to false by default.
+            required: false
+            policy: ''
+            notes: ''
+        lock_duration:
+            description: The lock duration for the file upload notifications queue,
+                specified as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations).
+                This value must be between 5 and 300 seconds, and evaluates to 'PT1M'
+                by default.
+            required: false
+            policy: ''
+            notes: ''
+        default_ttl:
+            description: The period of time for which a file upload notification message
+                is available to consume before it is expired by the IoT hub, specified
+                as an [ISO 8601 timespan duration](https://en.wikipedia.org/wiki/ISO_8601#Durations).
+                This value must be between 1 minute and 48 hours, and evaluates to
+                'PT1H' by default.
+            required: false
+            policy: ''
+            notes: ''
+        max_delivery_count:
+            description: The number of times the IoT hub attempts to deliver a file
+                upload notification message. It evaluates to 10 by default.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the IoTHub.
+        event_hub_events_endpoint:
+            description: ' The EventHub compatible endpoint for events data'
+        event_hub_events_path:
+            description: ' The EventHub compatible path for events data'
+        event_hub_operations_endpoint:
+            description: ' The EventHub compatible endpoint for operational data'
+        event_hub_operations_path:
+            description: ' The EventHub compatible path for operational data'
+        hostname:
+            description: The hostname of the IotHub Resource.
+        shared_access_policy:
+            description: One or more `shared_access_policy` blocks as defined below.
+        key_name:
+            description: The name of the shared access policy.
+        primary_key:
+            description: The primary key.
+        secondary_key:
+            description: The secondary key.
+        permissions:
+            description: The permissions assigned to the shared access policy.
+    timeouts:
+        create:
+            description: Used when creating the IotHub.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the IotHub.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the IotHub.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the IotHub.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lrTmhibUZrWVNCRFpXNTBjbUZzSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21W
+        eWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1Z6ZEc5eVlXZGxJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRY
+        QXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFn
+        WVdOamIzVnVkRjkwYVdWeUlDQWdJQ0FnSUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lHRmpZ
+        MjkxYm5SZmNtVndiR2xqWVhScGIyNWZkSGx3WlNBOUlDSk1VbE1pQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgzTjBiM0poWjJWZlkyOXVkR0ZwYm1WeUlpQWlaWGhoYlhCc1pTSWdld29nSUc1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxZMjl1ZEdGcGJtVnlJZ29n
+        SUhOMGIzSmhaMlZmWVdOamIzVnVkRjl1WVcxbElDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWhZ
+        Mk52ZFc1MExtVjRZVzF3YkdVdWJtRnRaUW9nSUdOdmJuUmhhVzVsY2w5aFkyTmxjM05mZEhsd1pT
+        QTlJQ0p3Y21sMllYUmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5bGRtVnVkR2gxWWw5
+        dVlXMWxjM0JoWTJVaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlDSmxlR0Z0Y0d4bExXNWhiV1Z6WVhCalpTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZ
+        VzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lD
+        QnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205
+        MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdjMnQxSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5
+        SUNKQ1lYTnBZeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlpYWmxiblJvZFdJaUlDSmxl
+        R0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExX
+        VjJaVzUwYUhWaUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNK
+        bGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHNWhiV1Z6Y0dGalpWOXVZVzFs
+        SUNBZ0lDQWdQU0JoZW5WeVpYSnRYMlYyWlc1MGFIVmlYMjVoYldWemNHRmpaUzVsZUdGdGNHeGxM
+        bTVoYldVS0lDQndZWEowYVhScGIyNWZZMjkxYm5RZ0lDQWdJRDBnTWdvZ0lHMWxjM05oWjJWZmNt
+        VjBaVzUwYVc5dUlDQWdQU0F4Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyVjJaVzUwYUhW
+        aVgyRjFkR2h2Y21sNllYUnBiMjVmY25Wc1pTSWdJbVY0WVcxd2JHVWlJSHNLSUNCeVpYTnZkWEpq
+        WlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRj
+        R3hsTG01aGJXVUtJQ0J1WVcxbGMzQmhZMlZmYm1GdFpTQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5bGRt
+        VnVkR2gxWWw5dVlXMWxjM0JoWTJVdVpYaGhiWEJzWlM1dVlXMWxDaUFnWlhabGJuUm9kV0pmYm1G
+        dFpTQWdJQ0FnSUNBOUlHRjZkWEpsY20xZlpYWmxiblJvZFdJdVpYaGhiWEJzWlM1dVlXMWxDaUFn
+        Ym1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmhZMk4wWlhOMElnb2dJSE5sYm1RZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNCMGNuVmxDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJsdmRH
+        aDFZaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtW
+        NFlXMXdiR1V0U1c5VVNIVmlJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5
+        WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JH
+        VXViRzlqWVhScGIyNEtDaUFnYzJ0MUlIc0tJQ0FnSUc1aGJXVWdJQ0FnSUQwZ0lsTXhJZ29nSUNB
+        Z1kyRndZV05wZEhrZ1BTQWlNU0lLSUNCOUNnb2dJR1Z1WkhCdmFXNTBJSHNLSUNBZ0lIUjVjR1Vn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa0Y2ZFhKbFNXOTBTSFZpTGxOMGIzSmha
+        MlZEYjI1MFlXbHVaWElpQ2lBZ0lDQmpiMjV1WldOMGFXOXVYM04wY21sdVp5QWdJQ0FnSUNBZ0lD
+        QTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWhZMk52ZFc1MExtVjRZVzF3YkdVdWNISnBiV0Z5ZVY5
+        aWJHOWlYMk52Ym01bFkzUnBiMjVmYzNSeWFXNW5DaUFnSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSmxlSEJ2Y25RaUNpQWdJQ0JpWVhSamFGOW1jbVZ4ZFdWdVkzbGZh
+        VzVmYzJWamIyNWtjeUE5SURZd0NpQWdJQ0J0WVhoZlkyaDFibXRmYzJsNlpWOXBibDlpZVhSbGN5
+        QWdJQ0E5SURFd05EZzFOell3Q2lBZ0lDQmpiMjUwWVdsdVpYSmZibUZ0WlNBZ0lDQWdJQ0FnSUNB
+        Z0lDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWpiMjUwWVdsdVpYSXVaWGhoYlhCc1pTNXVZVzFs
+        Q2lBZ0lDQmxibU52WkdsdVp5QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pCZG5Kdklnb2dJ
+        Q0FnWm1sc1pWOXVZVzFsWDJadmNtMWhkQ0FnSUNBZ0lDQWdJQ0FnUFNBaWUybHZkR2gxWW4wdmUz
+        QmhjblJwZEdsdmJuMWZlMWxaV1ZsOVgzdE5UWDFmZTBSRWZWOTdTRWg5WDN0dGJYMGlDaUFnZlFv
+        S0lDQmxibVJ3YjJsdWRDQjdDaUFnSUNCMGVYQmxJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSkJlblZ5
+        WlVsdmRFaDFZaTVGZG1WdWRFaDFZaUlLSUNBZ0lHTnZibTVsWTNScGIyNWZjM1J5YVc1bklEMGdZ
+        WHAxY21WeWJWOWxkbVZ1ZEdoMVlsOWhkWFJvYjNKcGVtRjBhVzl1WDNKMWJHVXVaWGhoYlhCc1pT
+        NXdjbWx0WVhKNVgyTnZibTVsWTNScGIyNWZjM1J5YVc1bkNpQWdJQ0J1WVcxbElDQWdJQ0FnSUNB
+        Z0lDQWdJQ0E5SUNKbGVIQnZjblF5SWdvZ0lIMEtDaUFnY205MWRHVWdld29nSUNBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVpYaHdiM0owSWdvZ0lDQWdjMjkxY21ObElDQWdJQ0FnSUNBZ1BTQWlS
+        R1YyYVdObFRXVnpjMkZuWlhNaUNpQWdJQ0JqYjI1a2FYUnBiMjRnSUNBZ0lDQTlJQ0owY25WbEln
+        b2dJQ0FnWlc1a2NHOXBiblJmYm1GdFpYTWdQU0JiSW1WNGNHOXlkQ0pkQ2lBZ0lDQmxibUZpYkdW
+        a0lDQWdJQ0FnSUNBOUlIUnlkV1VLSUNCOUNnb2dJSEp2ZFhSbElIc0tJQ0FnSUc1aGJXVWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNGNHOXlkRElpQ2lBZ0lDQnpiM1Z5WTJVZ0lDQWdJQ0FnSUNBOUlDSkVa
+        WFpwWTJWTlpYTnpZV2RsY3lJS0lDQWdJR052Ym1ScGRHbHZiaUFnSUNBZ0lEMGdJblJ5ZFdVaUNp
+        QWdJQ0JsYm1Sd2IybHVkRjl1WVcxbGN5QTlJRnNpWlhod2IzSjBNaUpkQ2lBZ0lDQmxibUZpYkdW
+        a0lDQWdJQ0FnSUNBOUlIUnlkV1VLSUNCOUNnb2dJSFJoWjNNZ1BTQjdDaUFnSUNCd2RYSndiM05s
+        SUQwZ0luUmxjM1JwYm1jaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwSmIxUklkV0p6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFj
+        bU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXOTBhSFZpTG1oMGJXd3ViV0Z5YTJSdmQyND0=

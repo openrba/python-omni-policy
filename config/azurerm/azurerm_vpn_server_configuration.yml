@@ -1,0 +1,235 @@
+azurerm_vpn_server_configuration:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_vpn_server_configuration'
+    description: Manages a VPN Server Configuration.
+    arguments:
+        name:
+            description: A name used to uniquely identify this certificate.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group in which this VPN Server Configuration
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where this VPN Server Configuration should
+                be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        vpn_authentication_types:
+            description: A list of one of more Authentication Types applicable for
+                this VPN Server Configuration. Possible values are `AAD` (Azure Active
+                Directory), `Certificate` and `Radius`.
+            required: true
+            policy: ''
+            notes: At this time a maximum of one VPN Authentication Types can be specified.
+        ipsec_policy:
+            description: A `ipsec_policy` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        vpn_protocols:
+            description: A list of VPN Protocols to use for this Server Configuration.
+                Possible values are `IkeV2` and `OpenVPN`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        azure_active_directory_authentication:
+            description: A `azure_active_directory_authentication` block as defined
+                below.
+            required: true
+            policy: ''
+            notes: ''
+        client_root_certificate:
+            description: One or more `client_root_certificate` blocks as defined above.
+            required: false
+            policy: ''
+            notes: ''
+        client_revoked_certificate:
+            description: One or more `client_revoked_certificate` blocks as defined
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        radius_server:
+            description: A `radius_server` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        audience:
+            description: The Audience which should be used for authentication.
+            required: true
+            policy: ''
+            notes: ''
+        issuer:
+            description: The Issuer which should be used for authentication.
+            required: true
+            policy: ''
+            notes: ''
+        tenant:
+            description: The Tenant which should be used for authentication.
+            required: true
+            policy: ''
+            notes: ''
+        thumbprint:
+            description: The Thumbprint of the Certificate.
+            required: true
+            policy: ''
+            notes: ''
+        public_cert_data:
+            description: The Public Key Data associated with the Certificate.
+            required: true
+            policy: ''
+            notes: ''
+        dh_group:
+            description: The DH Group, used in IKE Phase 1. Possible values include
+                `DHGroup1`, `DHGroup2`, `DHGroup14`, `DHGroup24`, `DHGroup2048`, `ECP256`,
+                `ECP384` and `None`.
+            required: true
+            policy: ''
+            notes: ''
+        ike_encryption:
+            description: The IKE encryption algorithm, used for IKE Phase 2. Possible
+                values include `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`
+                and `GCMAES256`.
+            required: true
+            policy: ''
+            notes: ''
+        ike_integrity:
+            description: The IKE encryption integrity algorithm, used for IKE Phase
+                2. Possible values include `GCMAES128`, `GCMAES256`, `MD5`, `SHA1`,
+                `SHA256` and `SHA384`.
+            required: true
+            policy: ''
+            notes: ''
+        ipsec_encryption:
+            description: The IPSec encryption algorithm, used for IKE phase 1. Possible
+                values include `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`,
+                `GCMAES192`, `GCMAES256` and `None`.
+            required: true
+            policy: ''
+            notes: ''
+        ipsec_integrity:
+            description: The IPSec integrity algorithm, used for IKE phase 1. Possible
+                values include `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`
+                and `SHA256`.
+            required: true
+            policy: ''
+            notes: ''
+        pfs_group:
+            description: The Pfs Group, used in IKE Phase 2. Possible values include
+                `ECP256`, `ECP384`, `PFS1`, `PFS2`, `PFS14`, `PFS24`, `PFS2048`, `PFSMM`
+                and `None`.
+            required: true
+            policy: ''
+            notes: ''
+        sa_lifetime_seconds:
+            description: The IPSec Security Association lifetime in seconds for a
+                Site-to-Site VPN tunnel.
+            required: true
+            policy: ''
+            notes: ''
+        sa_data_size_kilobytes:
+            description: The IPSec Security Association payload size in KB for a Site-to-Site
+                VPN tunnel.
+            required: true
+            policy: ''
+            notes: ''
+        address:
+            description: The Address of the Radius Server.
+            required: true
+            policy: ''
+            notes: ''
+        secret:
+            description: The Secret used to communicate with the Radius Server.
+            required: true
+            policy: ''
+            notes: ''
+        server_root_certificate:
+            description: One or more `server_root_certificate` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the VPN Server Configuration.
+    timeouts:
+        create:
+            description: Used when creating the VPN Server Configuration.
+            required: false
+            timeout: 90
+        update:
+            description: Used when updating the VPN Server Configuration.
+            required: false
+            timeout: 90
+        read:
+            description: Used when retrieving the VPN Server Configuration.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the VPN Server Configuration.
+            required: false
+            timeout: 90
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmNHNWZjMlZ5ZG1WeVgyTnZibVpwWjNWeVlYUnBiMjRpSUNKMFpYTjBJaUI3Q2lBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdFkyOXVabWxuSWdvZ0lISmxj
+        MjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZloz
+        SnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1
+        Q2lBZ2RuQnVYMkYxZEdobGJuUnBZMkYwYVc5dVgzUjVjR1Z6SUQwZ1d5SkRaWEowYVdacFkyRjBa
+        U0pkQ2dvZ0lHTnNhV1Z1ZEY5eWIyOTBYMk5sY25ScFptbGpZWFJsSUhzS0lDQWdJRzVoYldVZ0lD
+        QWdJQ0FnSUNBZ0lDQWdQU0FpUkdsbmFVTmxjblF0Um1Wa1pYSmhkR1ZrTFVsRUxWSnZiM1F0UTBF
+        aUNpQWdJQ0J3ZFdKc2FXTmZZMlZ5ZEY5a1lYUmhJRDBnUER4RlQwWUtUVWxKUkhWNlEwTkJjVTlu
+        UVhkSlFrRm5TVkZEU0ZSYVYwTk5LMGxzWmtaSlVsaEpkbmxMVTNKcVFVNUNaMnR4YUd0cFJ6bDNN
+        RUpCVVhOR1FVUkNiZ3BOVVhOM1ExRlpSRlpSVVVkRmQwcFdWWHBGVmsxQ1RVZEJNVlZGUTJoTlRW
+        SkhiRzVoVlU1c1kyNVJaMU5YTldwTlVtdDNSbmRaUkZaUlVVeEZlRUl6Q21RelkzVmFSMnh1WVZk
+        T2JHTnVVWFZaTWpsMFRWTlpkMHBCV1VSV1VWRkVSWGd4UldGWFpIQlJNbFo1WkVOQ1IxcFhVbXhq
+        YlVZd1dsZFJaMU5WVVdjS1ZXMDVkbVJEUWtSUlZFRmxSbmN3ZUUxNlFYaE5WRlY0VFdwQmQwMUVR
+        bUZHZHpCNlRYcEJlRTFVVlhoTmFrRjNUVVJDWVUxSFkzaERla0ZLUW1kT1ZncENRVmxVUVd4V1ZF
+        MVNWWGRGZDFsRVZsRlJTMFYzZUVWaFYyUndVVEpXZVdSRFFrcGliVTE0UjFSQldFSm5UbFpDUVhO
+        VVJVaGtNMlI1Tld0aFYyUndDbGt5Vm5sa1F6VnFZakl3ZUVwcVFXdENaMDVXUWtGTlZFaFZVbkJh
+        TW14RVdsaEtNRWxGV214YVIxWjVXVmhTYkZwRFFrcFNRMEpUWWpJNU1FbEZUa0lLVFVsSlFrbHFR
+        VTVDWjJ0eGFHdHBSemwzTUVKQlVVVkdRVUZQUTBGUk9FRk5TVWxDUTJkTFEwRlJSVUYyUVVWQ05I
+        QmpRM0Z1VGs1UFYwVTJWWEkxYWdwUlVGVklLekY1TVVZNVMyUklWRkpUZW1FMmF6VnBSR3hZY1RG
+        clIxTXhjVUZyZFV0MGR6bEtjMmxPVW5KcWJIUnRSbTU2VFZwU1FtSllPRlJzWm13NENucEJhRUp0
+        WWpaa1JHUjFSRWRGUkRBeGEwSnpWR3RuZVhkWlVIaFlWbFJMWldNd1YzaFpSVVZHTUc5TmJqUjNV
+        MWxPYkRCc2RESmxTa0ZMU0ZocVRtWUtSMVIzYVdsaVpGQTRRMVZTTW1kb1UwMHljMVZVU1RoT2RE
+        RlBiV1pqTkZOTlNHaEhhRmxFTmpSMVNrMWlXRGs0VkVoUkx6Uk1UVWQxV1dWbmIzVXJaQXBIVkds
+        aGFHWklkR3B1TjBGaWIxTkZhMjUzUVUxS1NFTm9OVkpzV1ZwYU5rSXhUelJSWWt0S0t6TTBVVEJs
+        UzJkdVNUTllObFpqT1hVd2VtWTJSRWc0Q2tSckt6UjZVVVJaVWxKVWNWUnVWazh6VmxRNGFucHhS
+        R3hEVW5WT2RIRTJXWFp5ZVU5WFRqYzBMMlJ4T0V4UmFGVnVXRWgyUm5seWMyUk5ZVVV4V0RJS1JI
+        ZEpSRUZSUVVKdk1rMTNXVlJCVUVKblRsWklVazFDUVdZNFJVSlVRVVJCVVVndlRVRTBSMEV4VldS
+        RWQwVkNMM2RSUlVGM1NVSm9ha0ZrUW1kT1ZncElVVFJGUm1kUlZVZFNaR3RHYm1KSGRERkZWMnBM
+        ZDJKVmJtVXJOVTloV25aU1dYZElkMWxFVmxJd2FrSkNaM2RHYjBGVlIxSmthMFp1WWtkME1VVlhD
+        bXBMZDJKVmJtVXJOVTloV25aU1dYZEVVVmxLUzI5YVNXaDJZMDVCVVVWTVFsRkJSR2RuUlVKQlNH
+        TnhjMGhyY21wd1JWTnhablZXVkZKcGNIUktabEFLT1VwaVpIUlhjVkpVYlU5bU5uVkthVEpqT0Zs
+        V2NVazJXR3hMV0hORU9FTXhaRlZWWVdGSVMweFZTbnAyUzJsaGVtbGlWblZDZDAxSlZEZzBRWGx4
+        VWdwUlJVeHVNMlV3UW5SblJYbHRSWGxuVFZVMU5qbGlNREZhVUhodlJsTnVUbGhqTjNGRVdrSkVa
+        V1k0VjJaeFFWWXZjM2hyVkdrNFREbENhMjFHV1daTUNuVkhURTlvVWtwUFJuQnlVR1J2UkVsVlFr
+        SXJkRzFEYkROdlJHTkNlVE4yYmxWbFQwVnBiM280ZWtGcmNISmpZak5IU0hkSVFVc3Jka2h0Ylda
+        blkyNEtWM05tVFV4SU5FcERUR0V2ZEZKWlRDdFNkeTlPTTNsaVEydEVjREF3Y3pCWFZWb3JRVzlF
+        ZVhkVGJEQlJMMXBGYms1Wk1FMXpSbWwzTmt4NVNXUmljUXBOTDNNdk1VcFNkRTh6WWtSVGVrUTVW
+        R0Y2VWxaNmJqSnZRbkY2VTJFNFZtZEpielZETVc1UGJtOUJTMHBVYkhORGJFcExka2xvYmxKc1lV
+        eFJjV3M5Q2tWUFJnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwV1VFNGdVMlZ5ZG1WeUlFTnZibVpwWjNWeVlYUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRuQnVYM05sY25abGNsOWpiMjVtYVdkMWNtRjBhVzl1TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

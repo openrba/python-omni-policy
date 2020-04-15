@@ -1,0 +1,24 @@
+aws_datapipeline_pipeline:
+    status: HOLD
+    subcategory: DataPipeline
+    layout: aws
+    page_title: 'AWS: aws_datapipeline_pipeline'
+    description: Provides a AWS DataPipeline Pipeline.
+    arguments:
+        name:
+            description: The name of Pipeline.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of Pipeline.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,119 @@
+{
+    "azurerm_private_link_service": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_private_link_service",
+        "description": "Manages a Private Link Service.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name which should be used for the NAT IP Configuration. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group where the Private Link Service should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "nat_ip_configuration": {
+                "description": "One or more (up to 8",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "load_balancer_frontend_ip_configuration_ids": {
+                "description": "A list of Frontend IP Configuration ID's from a Standard Load Balancer, where traffic from the Private Link Service should be routed. You can use Load Balancer Rules to direct this traffic to appropriate backend pools where your applications are running.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_approval_subscription_ids": {
+                "description": "A list of Subscription UUID/GUID's that will be automatically be able to use this Private Link Service.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_proxy_protocol": {
+                "description": "Should the Private Link Service support the Proxy Protocol? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "visibility_subscription_ids": {
+                "description": "A list of Subscription UUID/GUID's that will be able to see this Private Link Service.",
+                "required": false,
+                "policy": "",
+                "notes": "If no Subscription ID's are specified then Azure allows every Subscription to see this Private Link Service."
+            },
+            "subnet_id": {
+                "description": "Specifies the ID of the Subnet which should be used for the Private Link Service.",
+                "required": true,
+                "policy": "",
+                "notes": "Verify that the Subnet's `enforce_private_link_service_network_policies` attribute is set to `true`."
+            },
+            "primary": {
+                "description": "Is this is the Primary IP Configuration? Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "private_ip_address": {
+                "description": "Specifies a Private Static IP Address for this IP Configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "private_ip_address_version": {
+                "description": "The version of the IP Protocol which should be used. At this time the only supported value is `IPv4`. Defaults to `IPv4`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "alias": {
+                "description": "A globally unique DNS Name for your Private Link Service. You can use this alias to request a connection to your Private Link Service."
+            },
+            "network_interfaces": {
+                "description": "A list of network interface resource ids that are being used by the service."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Private Link Service.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Private Link Service.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Private Link Service.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Private Link Service.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

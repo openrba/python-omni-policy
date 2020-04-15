@@ -1,0 +1,50 @@
+{
+    "aws_load_balancer_policy": {
+        "status": "HOLD",
+        "subcategory": "Elastic Load Balancing (ELB Classic)",
+        "layout": "aws",
+        "page_title": "AWS: aws_load_balancer_policy",
+        "description": "Provides a load balancer policy, which can be attached to an ELB listener or backend server.",
+        "arguments": {
+            "load_balancer_name": {
+                "description": "The load balancer on which the policy is defined.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_name": {
+                "description": "The name of the load balancer policy.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_type_name": {
+                "description": "The policy type.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_attribute": {
+                "description": "Policy attribute to apply to the policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the policy."
+            },
+            "policy_name": {
+                "description": "The name of the stickiness policy."
+            },
+            "policy_type_name": {
+                "description": "The policy type of the policy."
+            },
+            "load_balancer_name": {
+                "description": "The load balancer on which the policy is defined."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "aws_ses_domain_identity_verification": {
+        "status": "HOLD",
+        "subcategory": "SES",
+        "layout": "aws",
+        "page_title": "AWS: aws_ses_domain_identity_verification",
+        "description": "Waits for and checks successful verification of an SES domain identity.",
+        "arguments": {
+            "domain": {
+                "description": "The domain name of the SES domain identity to verify.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The domain name of the domain identity."
+            },
+            "arn": {
+                "description": "The ARN of the domain identity."
+            }
+        },
+        "timeouts": {}
+    }
+}

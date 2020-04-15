@@ -1,0 +1,83 @@
+azurerm_api_management_product_group:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_product_group'
+    description: Manages an API Management Product Assignment to a Group.
+    arguments:
+        product_id:
+            description: The ID of the API Management Product within the API Management
+                Service. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        group_name:
+            description: The Name of the API Management Group within the API Management
+                Service. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the API Management Service. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Product Group.
+    timeouts:
+        create:
+            description: Used when creating the API Management Product Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Product Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Product Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Product Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXRndhU0lLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ3A5Q2dw
+        a1lYUmhJQ0poZW5WeVpYSnRYMkZ3YVY5dFlXNWhaMlZ0Wlc1MFgzQnliMlIxWTNRaUlDSmxlR0Z0
+        Y0d4bElpQjdDaUFnY0hKdlpIVmpkRjlwWkNBZ0lDQWdJQ0FnSUNBOUlDSnRlUzF3Y205a2RXTjBJ
+        Z29nSUdGd2FWOXRZVzVoWjJWdFpXNTBYMjVoYldVZ1BTQmtZWFJoTG1GNmRYSmxjbTFmWVhCcFgy
+        MWhibUZuWlcxbGJuUXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1G
+        dFpTQTlJR1JoZEdFdVlYcDFjbVZ5YlY5aGNHbGZiV0Z1WVdkbGJXVnVkQzVsZUdGdGNHeGxMbkps
+        YzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VLZlFvS1pHRjBZU0FpWVhwMWNtVnliVjloY0dsZmJXRnVZ
+        V2RsYldWdWRGOW5jbTkxY0NJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUQwZ0ltMTVMV2R5YjNWd0lnb2dJR0Z3YVY5dFlXNWhaMlZ0Wlc1MFgyNWhiV1VnUFNC
+        a1lYUmhMbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RdVpYaGhiWEJzWlM1dVlXMWxDaUFn
+        Y21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHUmhkR0V1WVhwMWNtVnliVjloY0dsZmJXRnVZ
+        V2RsYldWdWRDNWxlR0Z0Y0d4bExuSmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVUtmUW9LY21WemIz
+        VnlZMlVnSW1GNmRYSmxjbTFmWVhCcFgyMWhibUZuWlcxbGJuUmZjSEp2WkhWamRGOW5jbTkxY0NJ
+        Z0ltVjRZVzF3YkdVaUlIc0tJQ0J3Y205a2RXTjBYMmxrSUNBZ0lDQWdJQ0FnSUQwZ1pHRjBZUzVo
+        ZW5WeVpYSnRYMkZ3YVY5dFlXNWhaMlZ0Wlc1MFgzQnliMlIxWTNRdVpYaGhiWEJzWlM1d2NtOWtk
+        V04wWDJsa0NpQWdaM0p2ZFhCZmJtRnRaU0FnSUNBZ0lDQWdJQ0E5SUdSaGRHRXVZWHAxY21WeWJW
+        OWhjR2xmYldGdVlXZGxiV1Z1ZEY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQmhjR2xmYldG
+        dVlXZGxiV1Z1ZEY5dVlXMWxJRDBnWkdGMFlTNWhlblZ5WlhKdFgyRndhVjl0WVc1aFoyVnRaVzUw
+        TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCa1lYUmhM
+        bUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RdVpYaGhiWEJzWlM1eVpYTnZkWEpqWlY5bmNt
+        OTFjRjl1WVcxbENuMEs=
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JRY205a2RXTjBJRWR5YjNWd2N5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmY0hKdlpIVmpkRjluY205MWNDNW9kRzFzTG0x
+        aGNtdGtiM2R1

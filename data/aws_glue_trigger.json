@@ -1,0 +1,74 @@
+{
+    "aws_glue_trigger": {
+        "status": "HOLD",
+        "subcategory": "Glue",
+        "layout": "aws",
+        "page_title": "AWS: aws_glue_trigger",
+        "description": "Manages a Glue Trigger resource.",
+        "arguments": {
+            "actions": {
+                "description": "List of actions initiated by this trigger when it fires. Defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the new trigger.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Start the trigger. Defaults to `true`. Not valid to disable for `ON_DEMAND` type.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the trigger.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "predicate": {
+                "description": "A predicate to specify when the new trigger should fire. Required when trigger type is `CONDITIONAL`. Defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "schedule": {
+                "description": "A cron expression used to specify the schedule. [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of trigger. Valid values are `CONDITIONAL`, `ON_DEMAND`, and `SCHEDULED`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "workflow_name": {
+                "description": "A workflow to which the trigger should be associated to. Every workflow graph (DAG",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of Glue Trigger"
+            },
+            "id": {
+                "description": "Trigger name"
+            }
+        },
+        "timeouts": {}
+    }
+}

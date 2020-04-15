@@ -1,0 +1,35 @@
+{
+    "aws_workspaces_ip_group": {
+        "status": "HOLD",
+        "subcategory": "WorkSpaces",
+        "layout": "aws",
+        "page_title": "AWS: aws_workspaces_ip_group",
+        "description": "Provides an IP access control group in AWS WorkSpaces Service.",
+        "arguments": {
+            "name": {
+                "description": "The name of the IP group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the IP group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rules": {
+                "description": "One or more pairs specifying the IP group rule (in CIDR format",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The IP group identifier."
+            }
+        },
+        "timeouts": {}
+    }
+}

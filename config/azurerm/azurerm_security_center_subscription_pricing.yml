@@ -1,0 +1,45 @@
+azurerm_security_center_subscription_pricing:
+    status: HOLD
+    subcategory: Security Center
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_security_center_subscription_pricing'
+    description: Manages the Pricing Tier for Azure Security Center in the current
+        subscription.
+    arguments:
+        tier:
+            description: The pricing tier to use. Possible values are `Free` and `Standard`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The subscription pricing ID.
+    timeouts:
+        create:
+            description: Used when creating the Security Center Subscription Pricing.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Security Center Subscription Pricing.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Security Center Subscription Pricing.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Security Center Subscription Pricing.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNObFkzVnlhWFI1WDJObGJuUmxjbDl6ZFdKelkzSnBj
+        SFJwYjI1ZmNISnBZMmx1WnlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0IwYVdWeUlEMGdJbE4wWVc1a1lY
+        SmtJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwVWFHVWdjSEpwWTJsdVp5QjBhV1Z5SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVmpkWEpwZEhsZlkyVnVkR1Z5WDNOMVluTmpjbWx3ZEdsdmJsOXdjbWxqYVc1
+        bkxtMWhjbXRrYjNkdQ==

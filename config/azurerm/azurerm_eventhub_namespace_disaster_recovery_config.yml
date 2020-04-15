@@ -1,0 +1,97 @@
+azurerm_eventhub_namespace_disaster_recovery_config:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_eventhub_namespace_disaster_recovery_config'
+    description: Manages an Disaster Recovery Config for an Event Hub Namespace.
+    arguments:
+        name:
+            description: Specifies the name of the Disaster Recovery Config. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: Specifies the name of the primary EventHub Namespace to replicate.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Disaster Recovery
+                Config exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        partner_namespace_id:
+            description: The ID of the EventHub Namespace to replicate to.
+            required: false
+            policy: ''
+            notes: ''
+        alternate_name:
+            description: An alternate name to use when the Disaster Recovery Config's
+                name is the same as the replicated namespace's name.
+            required: false
+            policy: ''
+            notes: ''
+        wait_for_replication:
+            description: Should the resource wait for replication upon creation? Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The EventHub Namespace Disaster Recovery Config ID.
+    timeouts:
+        create:
+            description: Used when creating the EventHub Namespace Disaster Recovery
+                Config.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the EventHub Namespace Disaster Recovery
+                Config.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the EventHub Namespace Disaster Recovery
+                Config.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the EventHub Namespace Disaster Recovery
+                Config.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVYyWlc1MGFIVmlMWEpsY0d4cFkyRjBhVzl1SWdvZ0lH
+        eHZZMkYwYVc5dUlEMGdJbGRsYzNRZ1JYVnliM0JsSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21W
+        eWJWOWxkbVZ1ZEdoMVlsOXVZVzFsYzNCaFkyVWlJQ0p3Y21sdFlYSjVJaUI3Q2lBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZG1WdWRHaDFZaTF3Y21sdFlYSjVJZ29nSUd4dlkyRjBh
+        Vzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlX
+        MXdiR1V1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0J6YTNVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnli
+        VjlsZG1WdWRHaDFZbDl1WVcxbGMzQmhZMlVpSUNKelpXTnZibVJoY25raUlIc0tJQ0J1WVcxbElD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjJaVzUwYUhWaUxYTmxZMjl1WkdGeWVTSUtJQ0JzYjJO
+        aGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ0lsZGxjM1FnVlZNaUNpQWdjbVZ6YjNWeVkyVmZaM0p2
+        ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZ
+        VzFsQ2lBZ2MydDFJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pUZEdGdVpHRnlaQ0lLZlFvS2Nt
+        VnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlpYWmxiblJvZFdKZmJtRnRaWE53WVdObFgyUnBjMkZ6ZEdW
+        eVgzSmxZMjkyWlhKNVgyTnZibVpwWnlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSnlaWEJzYVdOaGRHVXRaWFpsYm1oMVlpSUtJQ0J5WlhOdmRYSmpa
+        VjluY205MWNGOXVZVzFsSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJY
+        QnNaUzV1WVcxbENpQWdibUZ0WlhOd1lXTmxYMjVoYldVZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDJW
+        MlpXNTBhSFZpWDI1aGJXVnpjR0ZqWlM1d2NtbHRZWEo1TG01aGJXVUtJQ0J3WVhKMGJtVnlYMjVo
+        YldWemNHRmpaVjlwWkNBOUlHRjZkWEpsY20xZlpYWmxiblJvZFdKZmJtRnRaWE53WVdObExuTmxZ
+        Mjl1WkdGeWVTNXBaQXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRmRtVnVkRWgxWW5NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpi
+        M1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYWmxiblJvZFdKZmJtRnRaWE53WVdObFgyUnBjMkZ6ZEdWeVgzSmxZMjkyWlhK
+        NVgyTnZibVpwWnk1b2RHMXNMbTFoY210a2IzZHU=

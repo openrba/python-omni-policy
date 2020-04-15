@@ -1,0 +1,68 @@
+aws_sagemaker_endpoint_configuration:
+    status: HOLD
+    subcategory: Sagemaker
+    layout: aws
+    page_title: 'AWS: aws_sagemaker_endpoint_configuration'
+    description: Provides a SageMaker Endpoint Configuration resource.
+    arguments:
+        production_variants:
+            description: Fields are documented below.
+            required: true
+            policy: ''
+            notes: ''
+        kms_key_arn:
+            description: Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the endpoint configuration. If omitted, Terraform
+                will assign a random, unique name.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        initial_instance_count:
+            description: Initial number of instances used for auto-scaling.
+            required: true
+            policy: ''
+            notes: ''
+        instance_type:
+            description: '- The type of instance to start.'
+            required: true
+            policy: ''
+            notes: ''
+        accelerator_type:
+            description: '- The size of the Elastic Inference (EI'
+            required: false
+            policy: ''
+            notes: ''
+        initial_variant_weight:
+            description: '- Determines initial traffic distribution among all of the
+                models that you specify in the endpoint configuration. If unspecified,
+                it defaults to 1.0.'
+            required: false
+            policy: ''
+            notes: ''
+        model_name:
+            description: The name of the model to use.
+            required: true
+            policy: ''
+            notes: ''
+        variant_name:
+            description: The name of the variant. If omitted, Terraform will assign
+                a random, unique name.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Amazon Resource Name (ARN) assigned by AWS to this endpoint
+                configuration.
+        name:
+            description: The name of the endpoint configuration.
+    timeouts: {}

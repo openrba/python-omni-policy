@@ -1,0 +1,38 @@
+aws_athena_named_query:
+    status: HOLD
+    subcategory: Athena
+    layout: aws
+    page_title: 'AWS: aws_athena_named_query'
+    description: Provides an Athena Named Query resource.
+    arguments:
+        name:
+            description: The plain language name for the query. Maximum length of
+                128.
+            required: true
+            policy: ''
+            notes: ''
+        workgroup:
+            description: The workgroup to which the query belongs. Defaults to `primary`
+            required: false
+            policy: ''
+            notes: ''
+        database:
+            description: The database to which the query belongs.
+            required: true
+            policy: ''
+            notes: ''
+        query:
+            description: The text of the query itself. In other words, all query statements.
+                Maximum length of 262144.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A brief explanation of the query. Maximum length of 1024.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique ID of the query.
+    timeouts: {}

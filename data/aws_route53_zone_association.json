@@ -1,0 +1,44 @@
+{
+    "aws_route53_zone_association": {
+        "status": "HOLD",
+        "subcategory": "Route53",
+        "layout": "aws",
+        "page_title": "AWS: aws_route53_zone_association",
+        "description": "Manages a Route53 Hosted Zone VPC association",
+        "arguments": {
+            "zone_id": {
+                "description": "The private hosted zone to associate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_id": {
+                "description": "The VPC to associate with the private hosted zone.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_region": {
+                "description": "The VPC's region. Defaults to the region of the AWS provider.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The calculated unique identifier for the association."
+            },
+            "zone_id": {
+                "description": "The ID of the hosted zone for the association."
+            },
+            "vpc_id": {
+                "description": "The ID of the VPC for the association."
+            },
+            "vpc_region": {
+                "description": "The region in which the VPC identified by `vpc_id` was created."
+            }
+        },
+        "timeouts": {}
+    }
+}

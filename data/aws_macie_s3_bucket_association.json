@@ -1,0 +1,53 @@
+{
+    "aws_macie_s3_bucket_association": {
+        "status": "HOLD",
+        "subcategory": "Macie",
+        "layout": "aws",
+        "page_title": "AWS: aws_macie_s3_bucket_association",
+        "description": "Associates an S3 resource with Amazon Macie for monitoring and data classification.",
+        "arguments": {
+            "bucket_name": {
+                "description": "The name of the S3 bucket that you want to associate with Amazon Macie.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "classification_type": {
+                "description": "The configuration of how Amazon Macie classifies the S3 objects.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "member_account_id": {
+                "description": "The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `member_account_id` isn't specified, the action associates specified S3 resources with Macie for the current master account.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix": {
+                "description": "Object key prefix identifying one or more S3 objects to which the association applies.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "continuous": {
+                "description": "A string value indicating that Macie perform a one-time classification of all of the existing objects in the bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "one_time": {
+                "description": "A string value indicating whether or not Macie performs a one-time classification of all of the existing objects in the bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the association."
+            }
+        },
+        "timeouts": {}
+    }
+}

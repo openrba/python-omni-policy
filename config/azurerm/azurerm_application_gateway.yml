@@ -1,0 +1,80 @@
+azurerm_application_gateway:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_application_gateway'
+    description: Manages an Application Gateway.
+    arguments:
+        name:
+            description: The name of the Application Gateway. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to the Application
+                Gateway should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure region where the Application Gateway should exist.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        backend_address_pool:
+            description: One or more `backend_address_pool` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        backend_http_settings:
+            description: One or more `backend_http_settings` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        frontend_ip_configuration:
+            description: One or more `frontend_ip_configuration` blocks as defined
+                below.
+            required: true
+            policy: ''
+            notes: ''
+        frontend_port:
+            description: One or more `frontend_port` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        gateway_ip_configuration:
+            description: One or more `gateway_ip_configuration` blocks as defined
+                below.
+            required: true
+            policy: ''
+            notes: ''
+        http_listener:
+            description: One or more `http_listener` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        identity:
+            description: A `identity` block.
+            required: false
+            policy: ''
+            notes: ''
+        request_routing_rule:
+            description: One or more `request_routing_rule` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: A `sku` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        zones:
+            description: A collection of availability zones to spread the Application
+                Gateway over.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

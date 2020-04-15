@@ -1,0 +1,221 @@
+{
+    "aws_ssm_maintenance_window_task": {
+        "status": "HOLD",
+        "subcategory": "SSM",
+        "layout": "aws",
+        "page_title": "AWS: aws_ssm_maintenance_window_task",
+        "description": "Provides an SSM Maintenance Window Task resource",
+        "arguments": {
+            "window_id": {
+                "description": "The Id of the maintenance window to register the task with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_concurrency": {
+                "description": "The maximum number of targets this task can be run for in parallel.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_errors": {
+                "description": "The maximum number of errors allowed before this task stops being scheduled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "task_type": {
+                "description": "The type of task being registered. The only allowed value is `RUN_COMMAND`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "task_arn": {
+                "description": "The ARN of the task to execute.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_role_arn": {
+                "description": "The IAM service role to assume during task execution.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The parameter name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the maintenance window task.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "targets": {
+                "description": "The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logging_info": {
+                "description": "A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `task_invocation_parameters` configuration block `run_command_parameters` configuration block `output_s3_*` arguments instead. Conflicts with `task_invocation_parameters`. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "task_parameters": {
+                "description": "A structure containing information about parameters required by the particular `task_arn`. Use `parameter` configuration blocks under the `task_invocation_parameters` configuration block instead. Conflicts with `task_invocation_parameters`. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "task_invocation_parameters": {
+                "description": "The parameters for task execution. This argument is conflict with `task_parameters` and `logging_info`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_parameters": {
+                "description": "The parameters for an AUTOMATION task type. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lambda_parameters": {
+                "description": "The parameters for a LAMBDA task type. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "run_command_parameters": {
+                "description": "The parameters for a RUN_COMMAND task type. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "step_functions_parameters": {
+                "description": "The parameters for a STEP_FUNCTIONS task type. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "document_version": {
+                "description": "The version of an Automation document to use during task execution.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameter": {
+                "description": "The parameters for the RUN_COMMAND task execution. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "client_context": {
+                "description": "Pass client-specific information to the Lambda function that you are invoking.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "payload": {
+                "description": "JSON to provide to your Lambda function as input.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "qualifier": {
+                "description": "Specify a Lambda function version or alias name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "comment": {
+                "description": "Information about the command(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "document_hash": {
+                "description": "The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "document_hash_type": {
+                "description": "SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notification_config": {
+                "description": "Configurations for sending notifications about command status changes on a per-instance basis. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "output_s3_bucket": {
+                "description": "The name of the Amazon S3 bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "output_s3_key_prefix": {
+                "description": "The Amazon S3 bucket subfolder.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout_seconds": {
+                "description": "If this time is reached and the command has not already started executing, it doesn't run.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "input": {
+                "description": "The inputs for the STEP_FUNCTION task.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notification_arn": {
+                "description": "An Amazon Resource Name (ARN",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notification_events": {
+                "description": "The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notification_type": {
+                "description": "When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "values": {
+                "description": "The array of strings.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the maintenance window task."
+            }
+        },
+        "timeouts": {}
+    }
+}

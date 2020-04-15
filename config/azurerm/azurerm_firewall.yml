@@ -1,0 +1,38 @@
+azurerm_firewall:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_firewall'
+    description: Manages an Azure Firewall.
+    arguments:
+        name:
+            description: Specifies the name of the Firewall. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ip_configuration:
+            description: A `ip_configuration` block as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        zones:
+            description: Specifies the availability zones in which the Azure Firewall
+                should be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

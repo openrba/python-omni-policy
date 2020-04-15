@@ -1,0 +1,44 @@
+{
+    "aws_db_security_group": {
+        "status": "HOLD",
+        "subcategory": "RDS",
+        "layout": "aws",
+        "page_title": "AWS: aws_db_security_group",
+        "description": "Provides an RDS security group resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the DB security group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the DB security group. Defaults to \"Managed by Terraform\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ingress": {
+                "description": "A list of ingress rules.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The db security group ID."
+            },
+            "arn": {
+                "description": "The arn of the DB security group."
+            }
+        },
+        "timeouts": {}
+    }
+}

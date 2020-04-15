@@ -1,0 +1,88 @@
+azurerm_stream_analytics_function_javascript_udf:
+    status: HOLD
+    subcategory: Stream Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_stream_analytics_function_javascript_udf'
+    description: Manages a JavaScript UDF Function within Stream Analytics Streaming
+        Job.
+    arguments:
+        name:
+            description: The name of the JavaScript UDF Function. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Stream Analytics
+                Job exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        stream_analytics_job_name:
+            description: The name of the Stream Analytics Job where this Function
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        input:
+            description: One or more `input` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        output:
+            description: An `output` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        script:
+            description: The JavaScript of this UDF Function.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Stream Analytics JavaScript UDF Function.
+    timeouts:
+        create:
+            description: Used when creating the Stream Analytics JavaScript UDF Function.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Stream Analytics JavaScript UDF Function.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Stream Analytics JavaScript UDF
+                Function.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Stream Analytics JavaScript UDF Function.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQTlJQ0psZUdGdGNHeGxMWEpsYzI5MWNtTmxjeUlLZlFvS1pHRjBZU0FpWVhwMWNt
+        VnliVjl6ZEhKbFlXMWZZVzVoYkhsMGFXTnpYMnB2WWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGFtOWlJZ29nSUhKbGMyOTFjbU5s
+        WDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZEhKbFlXMWZZVzVoYkhsMGFX
+        TnpYMloxYm1OMGFXOXVYMnBoZG1GelkzSnBjSFJmZFdSbUlpQWlaWGhoYlhCc1pTSWdld29nSUc1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlMxcVlYWmhjMk55
+        YVhCMExXWjFibU4wYVc5dUlnb2dJSE4wY21WaGJWOWhibUZzZVhScFkzTmZhbTlpWDI1aGJXVWdQ
+        U0JrWVhSaExtRjZkWEpsY20xZmMzUnlaV0Z0WDJGdVlXeDVkR2xqYzE5cWIySXVaWGhoYlhCc1pT
+        NXVZVzFsQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQWdJQ0FnSUNBOUlHUmhkR0V1WVhw
+        MWNtVnliVjl6ZEhKbFlXMWZZVzVoYkhsMGFXTnpYMnB2WWk1bGVHRnRjR3hsTG5KbGMyOTFjbU5s
+        WDJkeWIzVndYMjVoYldVS0NpQWdjMk55YVhCMElEMGdQRHhUUTFKSlVGUUtablZ1WTNScGIyNGda
+        MlYwVW1GdVpHOXRUblZ0WW1WeUtHbHVLU0I3Q2lBZ2NtVjBkWEp1SUdsdU93cDlDbE5EVWtsUVZB
+        b0tDaUFnYVc1d2RYUWdld29nSUNBZ2RIbHdaU0E5SUNKaWFXZHBiblFpQ2lBZ2ZRb0tJQ0J2ZFhS
+        d2RYUWdld29nSUNBZ2RIbHdaU0E5SUNKaWFXZHBiblFpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwVGRISmxZVzBnUVc1aGJIbDBhV056SUVwaGRtRlRZM0pwY0hRZ1ZVUkdJRVoxYm1OMGFXOXVj
+        eUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnlaV0Z0WDJGdVlXeDVkR2xqYzE5bWRXNWpkR2x2Ymw5cVlYWmhjMk55YVhC
+        MFgzVmtaaTVvZEcxc0xtMWhjbXRrYjNkdQ==

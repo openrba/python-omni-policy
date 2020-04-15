@@ -1,0 +1,68 @@
+{
+    "azurerm_relay_hybrid_connection": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_relay_hybrid_connection",
+        "description": "Manages an Azure Relay Hybrid Connection.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Azure Relay Hybrid Connection. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Azure Relay Hybrid Connection. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "relay_namespace_name": {
+                "description": "The name of the Azure Relay in which to create the Azure Relay Hybrid Connection. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "requires_client_authorization": {
+                "description": "Specify if client authorization is needed for this hybrid connection. True by default. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_metadata": {
+                "description": "The usermetadata is a placeholder to store user-defined string data for the hybrid connection endpoint. For example, it can be used to store descriptive data, such as a list of teams and their contact information. Also, user-defined configuration settings can be stored.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Relay Hybrid Connection."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Relay Hybrid Connection.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Relay Hybrid Connection.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Relay Hybrid Connection.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Relay Hybrid Connection.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

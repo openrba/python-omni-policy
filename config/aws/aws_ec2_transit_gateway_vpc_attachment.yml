@@ -1,0 +1,57 @@
+aws_ec2_transit_gateway_vpc_attachment:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_ec2_transit_gateway_vpc_attachment'
+    description: Manages an EC2 Transit Gateway VPC Attachment
+    arguments:
+        subnet_ids:
+            description: Identifiers of EC2 Subnets.
+            required: true
+            policy: ''
+            notes: ''
+        transit_gateway_id:
+            description: Identifier of EC2 Transit Gateway.
+            required: true
+            policy: ''
+            notes: ''
+        vpc_id:
+            description: Identifier of EC2 VPC.
+            required: true
+            policy: ''
+            notes: ''
+        dns_support:
+            description: 'Whether DNS support is enabled. Valid values: `disable`,
+                `enable`. Default value: `enable`.'
+            required: false
+            policy: ''
+            notes: ''
+        ipv6_support:
+            description: 'Whether IPv6 support is enabled. Valid values: `disable`,
+                `enable`. Default value: `disable`.'
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value tags for the EC2 Transit Gateway VPC Attachment.
+            required: false
+            policy: ''
+            notes: ''
+        transit_gateway_default_route_table_association:
+            description: 'Boolean whether the VPC Attachment should be associated
+                with the EC2 Transit Gateway association default route table. This
+                cannot be configured or perform drift detection with Resource Access
+                Manager shared EC2 Transit Gateways. Default value: `true`.'
+            required: false
+            policy: ''
+            notes: ''
+        transit_gateway_default_route_table_propagation:
+            description: 'Boolean whether the VPC Attachment should propagate routes
+                with the EC2 Transit Gateway propagation default route table. This
+                cannot be configured or perform drift detection with Resource Access
+                Manager shared EC2 Transit Gateways. Default value: `true`.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

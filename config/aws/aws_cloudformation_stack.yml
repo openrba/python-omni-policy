@@ -1,0 +1,109 @@
+aws_cloudformation_stack:
+    status: HOLD
+    subcategory: CloudFormation
+    layout: aws
+    page_title: 'AWS: aws_cloudformation_stack'
+    description: Provides a CloudFormation Stack resource.
+    arguments:
+        name:
+            description: Stack name.
+            required: true
+            policy: ''
+            notes: ''
+        template_body:
+            description: 'Structure containing the template body (max size: 51,200
+                bytes).'
+            required: false
+            policy: ''
+            notes: ''
+        template_url:
+            description: 'Location of a file containing the template body (max size:
+                460,800 bytes).'
+            required: false
+            policy: ''
+            notes: ''
+        capabilities:
+            description: A list of capabilities.
+            required: false
+            policy: ''
+            notes: ''
+        disable_rollback:
+            description: Set to true to disable rollback of the stack if stack creation
+                failed.
+            required: false
+            policy: ''
+            notes: ''
+        notification_arns:
+            description: A list of SNS topic ARNs to publish stack related events.
+            required: false
+            policy: ''
+            notes: ''
+        on_failure:
+            description: Action to be taken if stack creation fails. This must be
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: A map of Parameter structures that specify input parameters
+                for the stack.
+            required: false
+            policy: ''
+            notes: ''
+        policy_body:
+            description: Structure containing the stack policy body.
+            required: false
+            policy: ''
+            notes: ''
+        policy_url:
+            description: Location of a file containing the stack policy.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A list of tags to associate with this stack.
+            required: false
+            policy: ''
+            notes: ''
+        iam_role_arn:
+            description: The ARN of an IAM role that AWS CloudFormation assumes to
+                create the stack. If you don't specify a value, AWS CloudFormation
+                uses the role that was previously associated with the stack. If no
+                role is available, AWS CloudFormation uses a temporary session that
+                is generated from your user credentials.
+            required: false
+            policy: ''
+            notes: ''
+        timeout_in_minutes:
+            description: The amount of time that can pass before the stack status
+                becomes `CREATE_FAILED`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: A unique identifier of the stack.
+        outputs:
+            description: A map of outputs from the stack.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSbWIzSnRZWFJwYjI1ZmMzUmhZMnNpSUNKdVpYUjNi
+        M0pySWlCN0NpQWdibUZ0WlNBOUlDSnVaWFIzYjNKcmFXNW5MWE4wWVdOcklnb0tJQ0J3WVhKaGJX
+        VjBaWEp6SUQwZ2V3b2dJQ0FnVmxCRFEybGtjaUE5SUNJeE1DNHdMakF1TUM4eE5pSUtJQ0I5Q2dv
+        Z0lIUmxiWEJzWVhSbFgySnZaSGtnUFNBOFBGTlVRVU5MQ25zS0lDQWlVR0Z5WVcxbGRHVnljeUln
+        T2lCN0NpQWdJQ0FpVmxCRFEybGtjaUlnT2lCN0NpQWdJQ0FnSUNKVWVYQmxJaUE2SUNKVGRISnBi
+        bWNpTEFvZ0lDQWdJQ0FpUkdWbVlYVnNkQ0lnT2lBaU1UQXVNQzR3TGpBdk1UWWlMQW9nSUNBZ0lD
+        QWlSR1Z6WTNKcGNIUnBiMjRpSURvZ0lrVnVkR1Z5SUhSb1pTQkRTVVJTSUdKc2IyTnJJR1p2Y2lC
+        MGFHVWdWbEJETGlCRVpXWmhkV3gwSUdseklERXdMakF1TUM0d0x6RTJMaUlLSUNBZ0lIMEtJQ0I5
+        TEFvZ0lDSlNaWE52ZFhKalpYTWlJRG9nZXdvZ0lDQWdJbTE1Vm5Caklqb2dld29nSUNBZ0lDQWlW
+        SGx3WlNJZ09pQWlRVmRUT2pwRlF6STZPbFpRUXlJc0NpQWdJQ0FnSUNKUWNtOXdaWEowYVdWeklp
+        QTZJSHNLSUNBZ0lDQWdJQ0FpUTJsa2NrSnNiMk5ySWlBNklIc2dJbEpsWmlJZ09pQWlWbEJEUTJs
+        a2NpSWdmU3dLSUNBZ0lDQWdJQ0FpVkdGbmN5SWdPaUJiQ2lBZ0lDQWdJQ0FnSUNCN0lrdGxlU0k2
+        SUNKT1lXMWxJaXdnSWxaaGJIVmxJam9nSWxCeWFXMWhjbmxmUTBaZlZsQkRJbjBLSUNBZ0lDQWdJ
+        Q0JkQ2lBZ0lDQWdJSDBLSUNBZ0lIMEtJQ0I5Q24wS1UxUkJRMHNLZlFvPQ==
+    import: !!binary |
+        Q2dwRGJHOTFaR1p2Y20xaGRHbHZiaUJUZEdGamEzTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdibUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpHWnZjbTFoZEdsdmJsOXpkR0ZqYXk1b2RHMXNMbTFoY210a2IzZHU=

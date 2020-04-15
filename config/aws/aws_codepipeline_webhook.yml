@@ -1,0 +1,76 @@
+aws_codepipeline_webhook:
+    status: HOLD
+    subcategory: CodePipeline
+    layout: aws
+    page_title: 'AWS: aws_codepipeline_webhook'
+    description: Provides a CodePipeline Webhook
+    arguments:
+        name:
+            description: The name of the webhook.
+            required: true
+            policy: ''
+            notes: ''
+        authentication:
+            description: The type of authentication  to use. One of `IP`, `GITHUB_HMAC`,
+                or `UNAUTHENTICATED`.
+            required: true
+            policy: ''
+            notes: ''
+        authentication_configuration:
+            description: An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth
+                blocks are documented below.
+            required: false
+            policy: ''
+            notes: ''
+        filter:
+            description: One or more `filter` blocks. Filter blocks are documented
+                below.
+            required: true
+            policy: ''
+            notes: ''
+        target_action:
+            description: The name of the action in a pipeline you want to connect
+                to the webhook. The action must be from the source (first
+            required: true
+            policy: ''
+            notes: ''
+        target_pipeline:
+            description: The name of the pipeline.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        secret_token:
+            description: The shared secret for the GitHub repository webhook. Set
+                this as `secret` in your `github_repository_webhook`'s `configuration`
+                block. Required for `GITHUB_HMAC`.
+            required: false
+            policy: ''
+            notes: ''
+        allowed_ip_range:
+            description: A valid CIDR block for `IP` filtering. Required for `IP`.
+            required: false
+            policy: ''
+            notes: ''
+        json_path:
+            description: The [JSON path](https://github.com/json-path/JsonPath
+            required: true
+            policy: ''
+            notes: ''
+        match_equals:
+            description: The value to match on (e.g. `refs/heads/{Branch}`). See [AWS
+                docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The CodePipeline webhook's ARN.
+        url:
+            description: The CodePipeline webhook's URL. POST events to this endpoint
+                to trigger the target.
+    timeouts: {}

@@ -1,0 +1,112 @@
+azurerm_container_registry_webhook:
+    status: HOLD
+    subcategory: Container
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_container_registry_webhook'
+    description: Manages an Azure Container Registry Webhook.
+    arguments:
+        name:
+            description: Specifies the name of the Container Registry Webhook. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Container
+                Registry Webhook. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        registry_name:
+            description: The Name of Container registry this Webhook belongs to. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        service_uri:
+            description: Specifies the service URI for the Webhook to post notifications.
+            required: true
+            policy: ''
+            notes: ''
+        actions:
+            description: 'A list of actions that trigger the Webhook to post notifications.
+                At least one action needs to be specified. Valid values are: `push`,
+                `delete`, `quarantine`, `chart_push`, `chart_delete`'
+            required: true
+            policy: ''
+            notes: ''
+        status:
+            description: 'Specifies if this Webhook triggers notifications or not.
+                Valid values: `enabled` and `disabled`. Default is `enabled`.'
+            required: false
+            policy: ''
+            notes: ''
+        scope:
+            description: Specifies the scope of repositories that can trigger an event.
+                For example, `foo:*` means events for all tags under repository `foo`.
+                `foo:bar` means events for 'foo:bar' only. `foo` is equivalent to
+                `foo:latest`. Empty means all events.
+            required: false
+            policy: ''
+            notes: ''
+        custom_headers:
+            description: Custom headers that will be added to the webhook notifications
+                request.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Container Registry Webhook.
+    timeouts:
+        create:
+            description: Used when creating the Container Registry Webhook.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Container Registry Webhook.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Container Registry Webhook.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Container Registry Webhook.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKeVpYTnZkWEpqWlVkeWIzVndNU0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SlhaWE4wSUZWVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlqYjI1MFlXbHVaWEpmY21W
+        bmFYTjBjbmtpSUNKaFkzSWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbU52
+        Ym5SaGFXNWxjbEpsWjJsemRISjVNU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZ
+        WHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1eVp5NXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lD
+        QWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWNtY3ViRzlqWVhS
+        cGIyNEtJQ0J6YTNVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb2dJR0Zr
+        YldsdVgyVnVZV0pzWldRZ0lDQWdJQ0FnUFNCbVlXeHpaUXA5Q2dweVpYTnZkWEpqWlNBaVlYcDFj
+        bVZ5YlY5amIyNTBZV2x1WlhKZmNtVm5hWE4wY25sZmQyVmlhRzl2YXlJZ0luZGxZbWh2YjJzaUlI
+        c0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltMTVkMlZpYUc5dmF5SUtJQ0J5WlhO
+        dmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzV5
+        Wnk1dVlXMWxDaUFnY21WbmFYTjBjbmxmYm1GdFpTQWdJQ0FnSUNBOUlHRjZkWEpsY20xZlkyOXVk
+        R0ZwYm1WeVgzSmxaMmx6ZEhKNUxtRmpjaTV1WVcxbENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVjbWN1Ykc5allYUnBiMjRLQ2lB
+        Z2MyVnlkbWxqWlY5MWNta2dQU0FpYUhSMGNITTZMeTl0ZVhkbFltaHZiMnR5WldObGFYWmxjaTVs
+        ZUdGdGNHeGxMMjE1ZEdGbklnb2dJSE4wWVhSMWN5QWdJQ0FnSUQwZ0ltVnVZV0pzWldRaUNpQWdj
+        Mk52Y0dVZ0lDQWdJQ0FnUFNBaWJYbDBZV2M2S2lJS0lDQmhZM1JwYjI1eklDQWdJQ0E5SUZzaWNI
+        VnphQ0pkQ2lBZ1kzVnpkRzl0WDJobFlXUmxjbk1nUFNCN0NpQWdJQ0FpUTI5dWRHVnVkQzFVZVhC
+        bElpQTlJQ0poY0hCc2FXTmhkR2x2Ymk5cWMyOXVJZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwRGIyNTBZV2x1WlhJZ1VtVm5hWE4wY25rZ1YyVmlhRzl2YTNNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXVkR0ZwYm1WeVgzSmxaMmx6ZEhKNVgzZGxZbWh2YjJzdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

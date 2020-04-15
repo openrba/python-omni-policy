@@ -1,0 +1,350 @@
+{
+    "azurerm_batch_pool": {
+        "status": "HOLD",
+        "subcategory": "Batch",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_batch_pool",
+        "description": "Manages an Azure Batch pool.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Batch pool. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Batch pool. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "account_name": {
+                "description": "Specifies the name of the Batch account in which the pool will be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "node_agent_sku_id": {
+                "description": "Specifies the Sku of the node agents that will be created in the Batch pool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vm_size": {
+                "description": "Specifies the size of the VM created in the Batch pool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_image_reference": {
+                "description": "A `storage_image_reference` for the virtual machines that will compose the Batch pool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "Specifies the display name of the Batch pool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_tasks_per_node": {
+                "description": "Specifies the maximum number of tasks that can run concurrently on a single compute node in the pool. Defaults to `1`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fixed_scale": {
+                "description": "A `fixed_scale` block that describes the scale settings when using fixed scale.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_scale": {
+                "description": "A `auto_scale` block that describes the scale settings when using auto scale.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "start_task": {
+                "description": "A `start_task` block that describes the start task settings for the Batch pool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate": {
+                "description": "One or more `certificate` blocks that describe the certificates to be installed on each compute node in the pool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "container_configuration": {
+                "description": "The container configuration used in the pool's VMs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "A map of custom batch pool metadata.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_configuration": {
+                "description": "A `network_configuration` block that describes the network configurations for the Batch pool.",
+                "required": false,
+                "policy": "",
+                "notes": "For Windows compute nodes, the Batch service installs the certificates to the specified certificate store and location. For Linux compute nodes, the certificates are stored in a directory inside the task working directory and an environment variable `AZ_BATCH_CERTIFICATES_DIR` is supplied to the task to query for this location. For certificates with visibility of `remoteUser`, a `certs` directory is created in the user's home directory (e.g., `/home/{user-name}/certs`) and certificates are placed in that directory."
+            },
+            "publisher": {
+                "description": "Specifies the publisher of the image used to create the virtual machines. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "offer": {
+                "description": "Specifies the offer of the image used to create the virtual machines. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "Specifies the SKU of the image used to create the virtual machines. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "Specifies the version of the image used to create the virtual machines. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "The ID of the Batch Certificate to install on the Batch Pool, which must be inside the same Batch Account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_dedicated_nodes": {
+                "description": "The number of nodes in the Batch pool. Defaults to `1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_low_priority_nodes": {
+                "description": "The number of low priority nodes in the Batch pool. Defaults to `0`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resize_timeout": {
+                "description": "The timeout for resize operations. Defaults to `PT15M`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "evaluation_interval": {
+                "description": "The interval to wait before evaluating if the pool needs to be scaled. Defaults to `PT15M`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "formula": {
+                "description": "The autoscale formula that needs to be used for scaling the Batch pool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "command_line": {
+                "description": "The command line executed by the start task.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_task_retry_count": {
+                "description": "The number of retry count. Defaults to `1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wait_for_success": {
+                "description": "A flag that indicates if the Batch pool should wait for the start task to be completed. Default to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment": {
+                "description": "A map of strings (key,value",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_identity": {
+                "description": "A `user_identity` block that describes the user identity under which the start task runs.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_file": {
+                "description": "One or more `resource_file` blocks that describe the files to be downloaded to a compute node.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_name": {
+                "description": "The user name to log into the registry server. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_user": {
+                "description": "A `auto_user` block that describes the user identity under which the start task runs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "elevation_level": {
+                "description": "The elevation level of the user identity under which the start task runs. Possible values are `Admin` or `NonAdmin`. Defaults to `NonAdmin`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "The scope of the user identity under which the start task runs. Possible values are `Task` or `Pool`. Defaults to `Task`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "store_location": {
+                "description": "The location of the certificate store on the compute node into which to install the certificate. Possible values are `CurrentUser` or `LocalMachine`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "store_name": {
+                "description": "The name of the certificate store on the compute node into which to install the certificate. This property is applicable only for pools configured with Windows nodes (that is, created with cloudServiceConfiguration, or with virtualMachineConfiguration using a Windows image reference). Common store names include: `My`, `Root`, `CA`, `Trust`, `Disallowed`, `TrustedPeople`, `TrustedPublisher`, `AuthRoot`, `AddressBook`, but any custom store name can also be used. The default value is `My`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "visibility": {
+                "description": "Which user accounts on the compute node should have access to the private data of the certificate.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of container configuration. Possible value is `DockerCompatible`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "container_registries": {
+                "description": "Additional container registries from which container images can be pulled by the pool's VMs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_storage_container_name": {
+                "description": "The storage container name in the auto storage account.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "blob_prefix": {
+                "description": "The blob prefix to use when downloading blobs from an Azure Storage container. Only the blobs whose names begin with the specified prefix will be downloaded. The property is valid only when `auto_storage_container_name` or `storage_container_url` is used. This prefix can be a partial filename or a subdirectory. If a prefix is not specified, all the files in the container will be downloaded.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "file_mode": {
+                "description": "The file permission mode represented as a string in octal format (e.g. `\"0644\"`). This property applies only to files being downloaded to Linux compute nodes. It will be ignored if it is specified for a `resource_file` which will be downloaded to a Windows node. If this property is not specified for a Linux node, then a default value of 0770 is applied to the file.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "file_path": {
+                "description": "The location on the compute node to which to download the file, relative to the task's working directory. If the `http_url` property is specified, the `file_path` is required and describes the path which the file will be downloaded to, including the filename. Otherwise, if the `auto_storage_container_name` or `storage_container_url` property is specified, `file_path` is optional and is the directory to download the files to. In the case where `file_path` is used as a directory, any directory structure already associated with the input data will be retained in full and appended to the specified filePath directory. The specified relative path cannot break out of the task's working directory (for example by using '..').",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "http_url": {
+                "description": "The URL of the file to download. If the URL is Azure Blob Storage, it must be readable using anonymous access; that is, the Batch service does not present any credentials when downloading the blob. There are two ways to get such a URL for a blob in Azure storage: include a Shared Access Signature (SAS",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_container_url": {
+                "description": "The URL of the blob container within Azure Blob Storage. This URL must be readable and listable using anonymous access; that is, the Batch service does not present any credentials when downloading the blob. There are two ways to get such a URL for a blob in Azure storage: include a Shared Access Signature (SAS",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "registry_server": {
+                "description": "The container registry URL. The default is \"docker.io\". Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "password": {
+                "description": "The password to log into the registry server. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ARM resource identifier of the virtual network subnet which the compute nodes of the pool will join. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_ips": {
+                "description": "A list of public ip ids that will be allocated to nodes. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint_configuration": {
+                "description": "A list of inbound NAT pools that can be used to address specific ports on an individual compute node externally. Set as documented in the inbound_nat_pools block below. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_security_group_rules": {
+                "description": "A list of network security group rules that will be applied to the endpoint. The maximum number of rules that can be specified across all the endpoints on a Batch pool is `25`. If no network security group rules are specified, a default rule will be created to allow inbound access to the specified backendPort. Set as documented in the network_security_group_rules block below. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Batch Pool."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Batch Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Batch Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Batch Pool.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Batch Pool.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

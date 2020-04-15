@@ -1,0 +1,19 @@
+aws_storagegateway_cache:
+    status: HOLD
+    subcategory: Storage Gateway
+    layout: aws
+    page_title: 'AWS: aws_storagegateway_cache'
+    description: Manages an AWS Storage Gateway cache
+    arguments:
+        disk_id:
+            description: Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
+            required: true
+            policy: ''
+            notes: ''
+        gateway_arn:
+            description: The Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

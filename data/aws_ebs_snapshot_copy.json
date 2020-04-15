@@ -1,0 +1,41 @@
+{
+    "aws_ebs_snapshot_copy": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_ebs_snapshot_copy",
+        "description": "Duplicates an existing Amazon snapshot",
+        "arguments": {
+            "description": {
+                "description": "A description of what the snapshot is.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The snapshot ID (e.g. snap-59fcb34e)."
+            },
+            "owner_id": {
+                "description": "The AWS account ID of the snapshot owner."
+            },
+            "owner_alias": {
+                "description": "Value from an Amazon-maintained list (`amazon`, `aws-marketplace`, `microsoft`) of snapshot owners."
+            },
+            "encrypted": {
+                "description": "Whether the snapshot is encrypted."
+            },
+            "volume_size": {
+                "description": "The size of the drive in GiBs."
+            },
+            "kms_key_id": {
+                "description": "The ARN for the KMS encryption key."
+            },
+            "data_encryption_key_id": {
+                "description": "The data encryption key identifier for the snapshot."
+            }
+        },
+        "timeouts": {}
+    }
+}

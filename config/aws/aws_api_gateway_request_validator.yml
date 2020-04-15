@@ -1,0 +1,30 @@
+aws_api_gateway_request_validator:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_request_validator'
+    description: Manages an API Gateway Request Validator.
+    arguments:
+        name:
+            description: The name of the request validator
+            required: true
+            policy: ''
+            notes: ''
+        rest_api_id:
+            description: The ID of the associated Rest API
+            required: true
+            policy: ''
+            notes: ''
+        validate_request_body:
+            description: Boolean whether to validate request body. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        validate_request_parameters:
+            description: Boolean whether to validate request parameters. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

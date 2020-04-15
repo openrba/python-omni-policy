@@ -1,0 +1,85 @@
+{
+    "aws_glue_catalog_table": {
+        "status": "HOLD",
+        "subcategory": "Glue",
+        "layout": "aws",
+        "page_title": "AWS: aws_glue_catalog_table",
+        "description": "Provides a Glue Catalog Table.",
+        "arguments": {
+            "name": {
+                "description": "Name of the table. For Hive compatibility, this must be entirely lowercase.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "database_name": {
+                "description": "Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all lowercase.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "catalog_id": {
+                "description": "ID of the Glue Catalog and database to create the table in. If omitted, this defaults to the AWS Account ID plus the database name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description of the table.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "owner": {
+                "description": "Owner of the table.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention": {
+                "description": "Retention time for this table.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_descriptor": {
+                "description": "A [storage descriptor](#storage_descriptor",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "partition_keys": {
+                "description": "A list of columns by which the table is partitioned. Only primitive types are supported as partition keys.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "view_original_text": {
+                "description": "If the table is a view, the original text of the view; otherwise null.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "view_expanded_text": {
+                "description": "If the table is a view, the expanded text of the view; otherwise null.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "table_type": {
+                "description": "The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "Properties associated with this table, as a list of key-value pairs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

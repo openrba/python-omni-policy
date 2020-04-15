@@ -1,0 +1,62 @@
+{
+    "azurerm_lb_backend_address_pool": {
+        "status": "HOLD",
+        "subcategory": "Load Balancer",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_lb_backend_address_pool",
+        "description": "Manages a Load Balancer Backend Address Pool.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Backend Address Pool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "loadbalancer_id": {
+                "description": "The ID of the Load Balancer in which to create the Backend Address Pool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Backend Address Pool."
+            },
+            "backend_ip_configurations": {
+                "description": "The Backend IP Configurations associated with this Backend Address Pool."
+            },
+            "load_balancing_rules": {
+                "description": "The Load Balancing Rules associated with this Backend Address Pool."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Load Balancer Backend Address Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Load Balancer Backend Address Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Load Balancer Backend Address Pool.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Load Balancer Backend Address Pool.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

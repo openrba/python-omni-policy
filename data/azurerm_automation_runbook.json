@@ -1,0 +1,110 @@
+{
+    "azurerm_automation_runbook": {
+        "status": "HOLD",
+        "subcategory": "Automation",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_automation_runbook",
+        "description": "Manages a Automation Runbook.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Runbook. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Runbook is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_account_name": {
+                "description": "The name of the automation account in which the Runbook is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "runbook_type": {
+                "description": "The type of the runbook - can be either `Graph`, `GraphPowerShell`, `GraphPowerShellWorkflow`, `PowerShellWorkflow`, `PowerShell` or `Script`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "log_progress": {
+                "description": "Progress log option.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "log_verbose": {
+                "description": "Verbose log option.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "publish_content_link": {
+                "description": "The published runbook content link.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description for this credential.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content": {
+                "description": "The desired content of the runbook.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "uri": {
+                "description": "The uri of the runbook content.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Automation Runbook ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Automation Runbook.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Automation Runbook.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Automation Runbook.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Automation Runbook.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

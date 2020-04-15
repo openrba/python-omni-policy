@@ -1,0 +1,89 @@
+{
+    "azurerm_cognitive_account": {
+        "status": "HOLD",
+        "subcategory": "Cognitive Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_cognitive_account",
+        "description": "Manages a Cognitive Services Account.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Cognitive Service Account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Cognitive Service Account is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "kind": {
+                "description": "Specifies the type of Cognitive Service Account that should be created. Possible values are `Academic`, `Bing.Autosuggest`, `Bing.Autosuggest.v7`, `Bing.CustomSearch`, `Bing.Search`, `Bing.Search.v7`, `Bing.Speech`, `Bing.SpellCheck`, `Bing.SpellCheck.v7`, `CognitiveServices`, `ComputerVision`, `ContentModerator`, `CustomSpeech`, `CustomVision.Prediction`, `CustomVision.Training`, `Emotion`, `Face`,`FormRecognizer`, `ImmersiveReader`, `LUIS`, `LUIS.Authoring`, `QnAMaker`, `Recommendations`, `SpeakerRecognition`, `Speech`, `SpeechServices`, `SpeechTranslation`, `TextAnalytics`, `TextTranslation` and `WebLM`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "Specifies the SKU Name for this Cognitive Service Account. Possible values are `F0`, `F1`, `S0`, `S1`, `S2`, `S3`, `S4`, `S5`, `S6`, `P0`, `P1`, and `P2`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "qna_runtime_endpoint": {
+                "description": "A URL to link a QnAMaker cognitive account to a QnA runtime.",
+                "required": false,
+                "policy": "",
+                "notes": "This URL is mandatory if the `kind` is set to `QnAMaker`."
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Cognitive Service Account."
+            },
+            "endpoint": {
+                "description": "The endpoint used to connect to the Cognitive Service Account."
+            },
+            "primary_access_key": {
+                "description": "A primary access key which can be used to connect to the Cognitive Service Account."
+            },
+            "secondary_access_key": {
+                "description": "The secondary access key which can be used to connect to the Cognitive Service Account."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Cognitive Service Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Cognitive Service Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Cognitive Service Account.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Cognitive Service Account.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

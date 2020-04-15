@@ -1,0 +1,86 @@
+{
+    "azurerm_policy_set_definition": {
+        "status": "HOLD",
+        "subcategory": "Policy",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_policy_set_definition",
+        "description": "Manages a policy set definition.",
+        "arguments": {
+            "name": {
+                "description": "The name of the policy set definition. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_type": {
+                "description": "The policy set type. Possible values are `BuiltIn` or `Custom`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "The display name of the policy set definition.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_definitions": {
+                "description": "The policy definitions for the policy set definition. This is a json object representing the bundled policy definitions.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the policy set definition.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "management_group_id": {
+                "description": "The ID of the Management Group where this policy should be defined. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "The metadata for the policy set definition. This is a json object representing additional metadata that should be stored with the policy definition.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "Parameters for the policy set definition. This field is a json object that allows you to parameterize your policy definition.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Policy Set Definition."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Policy Set Definition.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Policy Set Definition.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Policy Set Definition.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Policy Set Definition.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

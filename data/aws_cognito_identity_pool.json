@@ -1,0 +1,68 @@
+{
+    "aws_cognito_identity_pool": {
+        "status": "HOLD",
+        "subcategory": "Cognito",
+        "layout": "aws",
+        "page_title": "AWS: aws_cognito_identity_pool",
+        "description": "Provides an AWS Cognito Identity Pool.",
+        "arguments": {
+            "identity_pool_name": {
+                "description": "- The Cognito Identity Pool name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_unauthenticated_identities": {
+                "description": "- Whether the identity pool supports unauthenticated logins or not.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "developer_provider_name": {
+                "description": "- The \"domain\" by which Cognito will refer to your users. This name acts as a placeholder that allows your",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cognito_identity_providers": {
+                "description": "- An array of [Amazon Cognito Identity user pools](#cognito-identity-providers",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "openid_connect_provider_arns": {
+                "description": "- A list of OpendID Connect provider ARNs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "saml_provider_arns": {
+                "description": "- An array of Amazon Resource Names (ARNs",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "supported_login_providers": {
+                "description": "- Key-Value pairs mapping provider names to provider app IDs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the Identity Pool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "An identity pool ID in the format REGION:GUID."
+            },
+            "arn": {
+                "description": "The ARN of the identity pool."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,15 @@
+aws_api_gateway_account:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_account'
+    description: Provides a settings of an API Gateway Account.
+    arguments:
+        cloudwatch_role_arn:
+            description: The ARN of an IAM role for CloudWatch (to allow logging &
+                monitoring).
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

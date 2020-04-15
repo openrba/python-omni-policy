@@ -1,0 +1,79 @@
+azurerm_api_management_identity_provider_facebook:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_identity_provider_facebook'
+    description: Manages an API Management Facebook Identity Provider.
+    arguments:
+        api_management_name:
+            description: The Name of the API Management Service where this Facebook
+                Identity Provider should be created. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group where the API Management Service
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        app_id:
+            description: App ID for Facebook.
+            required: true
+            policy: ''
+            notes: ''
+        app_secret:
+            description: App Secret for Facebook.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Facebook Identity Provider.
+    timeouts:
+        create:
+            description: Used when creating the API Management Facebook Identity Provider.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Facebook Identity Provider.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Facebook Identity
+                Provider.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Facebook Identity Provider.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SkVaWFpsYkc5d1pYSmZNU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZllYQnBYMjFoYm1G
+        blpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmWm1GalpXSnZiMnNpSUNKbGVHRnRjR3hs
+        SWlCN0NpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZ
+        MlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ1lYQnBYMjFoYm1GblpXMWxiblJmYm1GdFpT
+        QTlJR0Y2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RdVpYaGhiWEJzWlM1dVlXMWxDaUFnWVhC
+        d1gybGtJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3
+        TURBd01EQXdNREF3TUNJS0lDQmhjSEJmYzJWamNtVjBJQ0FnSUNBZ0lDQWdJRDBnSWpBd01EQXdN
+        REF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JHWVdObFltOXZheUJKWkdWdWRHbDBlU0JRY205MmFXUmxj
+        aUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmWm1G
+        alpXSnZiMnN1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

@@ -1,0 +1,26 @@
+aws_iam_user_group_membership:
+    status: HOLD
+    subcategory: IAM
+    layout: aws
+    page_title: 'AWS: aws_iam_user_group_membership'
+    description: 'Provides a resource for adding an IAM User to IAM Groups without
+        conflicting
+
+        with itself.'
+    arguments:
+        user:
+            description: The name of the [IAM User][2] to add to groups
+            required: true
+            policy: ''
+            notes: ''
+        groups:
+            description: A list of [IAM Groups][1] to add the user to
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        user:
+            description: The name of the IAM User
+        groups:
+            description: The list of IAM Groups
+    timeouts: {}

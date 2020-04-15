@@ -1,0 +1,37 @@
+{
+    "aws_datasync_location_s3": {
+        "status": "HOLD",
+        "subcategory": "DataSync",
+        "layout": "aws",
+        "page_title": "AWS: aws_datasync_location_s3",
+        "description": "Manages an AWS DataSync S3 Location",
+        "arguments": {
+            "s3_bucket_arn": {
+                "description": "Amazon Resource Name (ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_config": {
+                "description": "Configuration block containing information for connecting to S3.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subdirectory": {
+                "description": "Prefix to perform actions as source or destination.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value pairs of resource tags to assign to the DataSync Location.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

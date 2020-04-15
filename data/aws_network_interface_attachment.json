@@ -1,0 +1,44 @@
+{
+    "aws_network_interface_attachment": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_network_interface_attachment",
+        "description": "Attach an Elastic network interface (ENI) resource with EC2 instance.",
+        "arguments": {
+            "instance_id": {
+                "description": "Instance ID to attach.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "network_interface_id": {
+                "description": "ENI ID to attach.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "device_index": {
+                "description": "Network interface index (int).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "instance_id": {
+                "description": "Instance ID."
+            },
+            "network_interface_id": {
+                "description": "Network interface ID."
+            },
+            "attachment_id": {
+                "description": "The ENI Attachment ID."
+            },
+            "status": {
+                "description": "The status of the Network Interface Attachment."
+            }
+        },
+        "timeouts": {}
+    }
+}

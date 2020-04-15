@@ -1,0 +1,79 @@
+aws_ssm_document:
+    status: HOLD
+    subcategory: SSM
+    layout: aws
+    page_title: 'AWS: aws_ssm_document'
+    description: Provides an SSM Document resource
+    arguments:
+        name:
+            description: The name of the document.
+            required: true
+            policy: ''
+            notes: ''
+        attachments_source:
+            description: One or more configuration blocks describing attachments sources
+                to a version of a document. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        content:
+            description: The JSON or YAML content of the document.
+            required: true
+            policy: ''
+            notes: ''
+        document_format:
+            description: 'The format of the document. Valid document types include:
+                `JSON` and `YAML`'
+            required: false
+            policy: ''
+            notes: ''
+        document_type:
+            description: 'The type of the document. Valid document types include:
+                `Automation`, `Command`, `Package`, `Policy`, and `Session`'
+            required: true
+            policy: ''
+            notes: ''
+        permissions:
+            description: Additional Permissions to attach to the document. See [Permissions](#permissions
+            required: false
+            policy: ''
+            notes: ''
+        target_type:
+            description: The target type which defines the kinds of resources the
+                document can run on. For example, /AWS::EC2::Instance. For a list
+                of valid resource types, see AWS Resource Types Reference (http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the object.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        created_date:
+            description: The date the document was created.
+        description:
+            description: The description of the document.
+        schema_version:
+            description: The schema version of the document.
+        default_version:
+            description: The default version of the document.
+        hash:
+            description: The sha1 or sha256 of the document content
+        hash_type:
+            description: '"Sha1" "Sha256". The hashing algorithm used when hashing
+                the content.'
+        latest_version:
+            description: The latest version of the document.
+        owner:
+            description: The AWS user account of the person who created the document.
+        status:
+            description: '"Creating", "Active" or "Deleting". The current status of
+                the document.'
+        parameter:
+            description: The parameters that are available to this document.
+        platform_types:
+            description: A list of OS platforms compatible with this SSM document,
+                either "Windows" or "Linux".
+    timeouts: {}

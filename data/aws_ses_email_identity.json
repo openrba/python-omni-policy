@@ -1,0 +1,23 @@
+{
+    "aws_ses_email_identity": {
+        "status": "HOLD",
+        "subcategory": "SES",
+        "layout": "aws",
+        "page_title": "AWS: aws_ses_email_identity",
+        "description": "Provides an SES email identity resource",
+        "arguments": {
+            "email": {
+                "description": "The email address to assign to SES",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN of the email identity."
+            }
+        },
+        "timeouts": {}
+    }
+}

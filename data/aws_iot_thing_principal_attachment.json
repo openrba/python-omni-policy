@@ -1,0 +1,25 @@
+{
+    "aws_iot_thing_principal_attachment": {
+        "status": "HOLD",
+        "subcategory": "IoT",
+        "layout": "aws",
+        "page_title": "AWS: aws_iot_thing_principal_attachment",
+        "description": "Provides AWS IoT Thing Principal attachment.",
+        "arguments": {
+            "principal": {
+                "description": "The AWS IoT Certificate ARN or Amazon Cognito Identity ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "thing": {
+                "description": "The name of the thing.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

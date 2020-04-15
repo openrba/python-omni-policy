@@ -1,0 +1,104 @@
+{
+    "aws_db_option_group": {
+        "status": "HOLD",
+        "subcategory": "RDS",
+        "layout": "aws",
+        "page_title": "AWS: aws_db_option_group",
+        "description": "Provides an RDS DB option group resource.",
+        "arguments": {
+            "name": {
+                "description": "The Name of the setting.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name_prefix": {
+                "description": "Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "option_group_description": {
+                "description": "The description of the option group. Defaults to \"Managed by Terraform\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_name": {
+                "description": "Specifies the name of the engine that this option group should be associated with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "major_engine_version": {
+                "description": "Specifies the major version of the engine that this option group should be associated with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "option": {
+                "description": "A list of Options to apply.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "option_name": {
+                "description": "The Name of the Option (e.g. MEMCACHED).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "option_settings": {
+                "description": "A list of option settings to apply.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The Port number when connecting to the Option (e.g. 11211).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "The version of the option (e.g. 13.1.0.0).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "db_security_group_memberships": {
+                "description": "A list of DB Security Groups for which the option is enabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_security_group_memberships": {
+                "description": "A list of VPC Security Groups for which the option is enabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The Value of the setting.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The db option group name."
+            },
+            "arn": {
+                "description": "The ARN of the db option group."
+            }
+        },
+        "timeouts": {}
+    }
+}

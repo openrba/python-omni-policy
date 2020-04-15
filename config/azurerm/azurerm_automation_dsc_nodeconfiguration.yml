@@ -1,0 +1,101 @@
+azurerm_automation_dsc_nodeconfiguration:
+    status: HOLD
+    subcategory: Automation
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_automation_dsc_nodeconfiguration'
+    description: Manages a Automation DSC Node Configuration.
+    arguments:
+        name:
+            description: Specifies the name of the DSC Node Configuration. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the DSC Node Configuration
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        automation_account_name:
+            description: The name of the automation account in which the DSC Node
+                Configuration is created. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        content_embedded:
+            description: The PowerShell DSC Node Configuration (mof content).
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The DSC Node Configuration ID.
+    timeouts:
+        create:
+            description: Used when creating the Automation DSC Node Configuration.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Automation DSC Node Configuration.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Automation DSC Node Configuration.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Automation DSC Node Configuration.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjloZFhS
+        dmJXRjBhVzl1WDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKaFkyTnZkVzUwTVNJS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNp
+        QWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNK
+        dmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lITnJkU0I3Q2lBZ0lDQnVZVzFsSUQwZ0lrSmhjMmxq
+        SWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWVhWMGIyMWhkR2x2Ymw5a2MyTmZZ
+        Mjl1Wm1sbmRYSmhkR2x2YmlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0owWlhOMElnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNB
+        Z0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0Jo
+        ZFhSdmJXRjBhVzl1WDJGalkyOTFiblJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZZWFYwYjIxaGRHbHZi
+        bDloWTJOdmRXNTBMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJG
+        MGFXOXVDaUFnWTI5dWRHVnVkRjlsYldKbFpHUmxaQ0FnSUNBZ0lDQWdQU0FpWTI5dVptbG5kWEpo
+        ZEdsdmJpQjBaWE4wSUh0OUlncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjloZFhSdmJXRjBh
+        Vzl1WDJSelkxOXViMlJsWTI5dVptbG5kWEpoZEdsdmJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlX
+        MWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBMbXh2WTJGc2FHOXpkQ0lLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZm
+        WjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ1lYVjBiMjFoZEdsdmJsOWhZMk52ZFc1MFgyNWhi
+        V1VnUFNCaGVuVnlaWEp0WDJGMWRHOXRZWFJwYjI1ZllXTmpiM1Z1ZEM1bGVHRnRjR3hsTG01aGJX
+        VUtJQ0JrWlhCbGJtUnpYMjl1SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJRnRoZW5WeVpYSnRYMkYxZEc5
+        dFlYUnBiMjVmWkhOalgyTnZibVpwWjNWeVlYUnBiMjR1WlhoaGJYQnNaVjBLQ2lBZ1kyOXVkR1Z1
+        ZEY5bGJXSmxaR1JsWkNBOUlEdzhiVzltWTI5dWRHVnVkQXBwYm5OMFlXNWpaU0J2WmlCTlUwWlVY
+        MFpwYkdWRWFYSmxZM1J2Y25sRGIyNW1hV2QxY21GMGFXOXVJR0Z6SUNSTlUwWlVYMFpwYkdWRWFY
+        SmxZM1J2Y25sRGIyNW1hV2QxY21GMGFXOXVNWEpsWmdwN0NpQWdVbVZ6YjNWeVkyVkpSQ0E5SUNK
+        YlJtbHNaVjFpYkdFaU93b2dJRVZ1YzNWeVpTQTlJQ0pRY21WelpXNTBJanNLSUNCRGIyNTBaVzUw
+        Y3lBOUlDSmliMmQxY3lCRGIyNTBaVzUwSWpzS0lDQkVaWE4wYVc1aGRHbHZibEJoZEdnZ1BTQWlZ
+        enBjWEdKdlozVnpMblI0ZENJN0NpQWdUVzlrZFd4bFRtRnRaU0E5SUNKUVUwUmxjMmx5WldSVGRH
+        RjBaVU52Ym1acFozVnlZWFJwYjI0aU93b2dJRk52ZFhKalpVbHVabThnUFNBaU9qb3pPam81T2pw
+        bWFXeGxJanNLSUNCTmIyUjFiR1ZXWlhKemFXOXVJRDBnSWpFdU1DSTdDaUFnUTI5dVptbG5kWEpo
+        ZEdsdmJrNWhiV1VnUFNBaVlteGhJanNLZlRzS2FXNXpkR0Z1WTJVZ2IyWWdUMDFKWDBOdmJtWnBa
+        M1Z5WVhScGIyNUViMk4xYldWdWRBcDdDaUFnVm1WeWMybHZiajBpTWk0d0xqQWlPd29nSUUxcGJt
+        bHRkVzFEYjIxd1lYUnBZbXhsVm1WeWMybHZiaUE5SUNJeExqQXVNQ0k3Q2lBZ1EyOXRjR0YwYVdK
+        c1pWWmxjbk5wYjI1QlpHUnBkR2x2Ym1Gc1VISnZjR1Z5ZEdsbGN6MGdleUpQYldsZlFtRnpaVkps
+        YzI5MWNtTmxPa052Ym1acFozVnlZWFJwYjI1T1lXMWxJbjA3Q2lBZ1FYVjBhRzl5UFNKaWIyZDFj
+        MEYxZEdodmNpSTdDaUFnUjJWdVpYSmhkR2x2YmtSaGRHVTlJakEyTHpFMUx6SXdNVGdnTVRRNk1E
+        WTZNalFpT3dvZ0lFZGxibVZ5WVhScGIyNUliM04wUFNKaWIyZDFjME52YlhCMWRHVnlJanNLSUNC
+        T1lXMWxQU0owWlhOMElqc0tmVHNLYlc5bVkyOXVkR1Z1ZEFvS2ZRbz0=
+    import: !!binary |
+        Q2dwQmRYUnZiV0YwYVc5dUlFUlRReUJPYjJSbElFTnZibVpwWjNWeVlYUnBiMjRuY3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYVjBiMjFoZEdsdmJsOWtjMk5mYm05a1pXTnZibVpwWjNWeVlYUnBiMjR1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

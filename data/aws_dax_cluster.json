@@ -1,0 +1,113 @@
+{
+    "aws_dax_cluster": {
+        "status": "HOLD",
+        "subcategory": "DynamoDB Accelerator (DAX)",
+        "layout": "aws",
+        "page_title": "AWS: aws_dax_cluster",
+        "description": "Provides an DAX Cluster resource.",
+        "arguments": {
+            "cluster_name": {
+                "description": "Group identifier. DAX converts this name to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_role_arn": {
+                "description": "A valid Amazon Resource Name (ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "node_type": {
+                "description": "The compute and memory capacity of the nodes. See",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "replication_factor": {
+                "description": "The number of nodes in the DAX cluster. A",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zones": {
+                "description": "List of Availability Zones in which the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description for the cluster",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notification_topic_arn": {
+                "description": "An Amazon Resource Name (ARN",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameter_group_name": {
+                "description": "Name of the parameter group to associate",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "maintenance_window": {
+                "description": "Specifies the weekly time range for when",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_ids": {
+                "description": "One or more VPC security groups associated",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_side_encryption": {
+                "description": "Encrypt at rest options",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_group_name": {
+                "description": "Name of the subnet group to be used for the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Whether to enable encryption at rest. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN of the DAX cluster"
+            },
+            "nodes": {
+                "description": "List of node objects including `id`, `address`, `port` and"
+            },
+            "configuration_endpoint": {
+                "description": "The configuration endpoint for this DAX cluster,"
+            },
+            "cluster_address": {
+                "description": "The DNS name of the DAX cluster without the port appended"
+            },
+            "port": {
+                "description": "The port used by the configuration endpoint"
+            }
+        },
+        "timeouts": {}
+    }
+}

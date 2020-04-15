@@ -1,0 +1,81 @@
+azurerm_mysql_configuration:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mysql_configuration'
+    description: Sets a MySQL Configuration value on a MySQL Server.
+    arguments:
+        name:
+            description: Specifies the name of the MySQL Configuration, which needs
+                [to be a valid MySQL configuration name](https://dev.mysql.com/doc/refman/5.7/en/server-configuration.html).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: Specifies the name of the MySQL Server. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the MySQL Server
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: Specifies the value of the MySQL Configuration. See the MySQL
+                documentation for valid values.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the MySQL Configuration.
+    timeouts:
+        create:
+            description: Used when creating the MySQL Configuration.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the MySQL Configuration.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the MySQL Configuration.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MySQL Configuration.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZ3YVMxeVp5MXdjbThpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyMTVjM0ZzWDNO
+        bGNuWmxjaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SW0xNWMzRnNMWE5sY25abGNpMHhJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtDaUFnYzJ0MVgyNWhiV1VnUFNBaVIxQmZSMlZ1TlY4eUlnb0tJQ0J6
+        ZEc5eVlXZGxYM0J5YjJacGJHVWdld29nSUNBZ2MzUnZjbUZuWlY5dFlpQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnTlRFeU1Bb2dJQ0FnWW1GamEzVndYM0psZEdWdWRHbHZibDlrWVhseklEMGdOd29nSUNBZ1oy
+        VnZYM0psWkhWdVpHRnVkRjlpWVdOcmRYQWdJRDBnSWtScGMyRmliR1ZrSWdvZ0lIMEtDaUFnWVdS
+        dGFXNXBjM1J5WVhSdmNsOXNiMmRwYmlBZ0lDQWdJQ0FnSUNBOUlDSndjM0ZzWVdSdGFXNTFiaUlL
+        SUNCaFpHMXBibWx6ZEhKaGRHOXlYMnh2WjJsdVgzQmhjM04zYjNKa0lEMGdJa2hBVTJneFEyOVNN
+        eUVpQ2lBZ2RtVnljMmx2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0kxTGpjaUNp
+        QWdjM05zWDJWdVptOXlZMlZ0Wlc1MElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKRmJtRmliR1ZrSWdw
+        OUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXRlWE54YkY5amIyNW1hV2QxY21GMGFXOXVJaUFp
+        WlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYVc1MFpYSmhZ
+        M1JwZG1WZmRHbHRaVzkxZENJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNt
+        VnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCelpYSjJaWEpmYm1G
+        dFpTQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXRlWE54YkY5elpYSjJaWEl1WlhoaGJYQnNaUzV1
+        WVcxbENpQWdkbUZzZFdVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJMk1EQWlDbjBL
+    import: !!binary |
+        Q2dwTmVWTlJUQ0JEYjI1bWFXZDFjbUYwYVc5dWN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJYbHpjV3hmWTI5dVptbG5kWEpoZEdsdmJpNW9kRzFzTG0xaGNtdGtiM2R1

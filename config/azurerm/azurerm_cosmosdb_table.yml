@@ -1,0 +1,71 @@
+azurerm_cosmosdb_table:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_table'
+    description: Manages a Table within a Cosmos DB Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cosmos DB Table. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cosmos DB Table
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the Cosmos DB Table to create the table within.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        throughput:
+            description: The throughput of Table (RU/s). Must be set in increments
+                of `100`. The minimum value is `400`. This must be set upon database
+                creation otherwise it cannot be updated without a manual terraform
+                destroy-apply.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the CosmosDB Table.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB Table.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CosmosDB Table.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CosmosDB Table.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB Table.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMjl6Ylc5elpHSmZZV05qYjNWdWRDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhndFkyOXpiVzl6WkdJdFlX
+        TmpiM1Z1ZENJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnSW5SbVpYZ3RZMjl6Ylc5
+        elpHSXRZV05qYjNWdWRDMXlaeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlkyOXpiVzl6
+        WkdKZmRHRmliR1VpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNKMFptVjRMV052YzIxdmN5MTBZV0pzWlNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlX
+        MWxJRDBnWkdGMFlTNWhlblZ5WlhKdFgyTnZjMjF2YzJSaVgyRmpZMjkxYm5RdVpYaGhiWEJzWlM1
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbENpQWdZV05qYjNWdWRGOXVZVzFsSUNBZ0lDQWdJQ0E5
+        SUdSaGRHRXVZWHAxY21WeWJWOWpiM050YjNOa1lsOWhZMk52ZFc1MExtVjRZVzF3YkdVdWJtRnRa
+        UW9nSUhSb2NtOTFaMmh3ZFhRZ0lDQWdJQ0FnSUNBZ1BTQTBNREFLZlFvPQ==
+    import: !!binary |
+        Q2dwRGIzTnRiM05FUWlCVVlXSnNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZmRHRmliR1V1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

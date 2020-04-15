@@ -1,0 +1,98 @@
+{
+    "azurerm_custom_provider": {
+        "status": "HOLD",
+        "subcategory": "Custom Providers",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_custom_provider",
+        "description": "Manages an Azure Custom Provider.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the action. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Custom Provider.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_type": {
+                "description": "Any number of `resource_type` block as defined below. One of `resource_type` or `action` must be specified.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "Any number of `action` block as defined below. One of `resource_type` or `action` must be specified.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "validation": {
+                "description": "Any number of `validation` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint": {
+                "description": "Specifies the endpoint of the action. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "routing_type": {
+                "description": "The routing type that is supported for the resource request. Valid values are `ResourceTypeRoutingProxy` or `ResourceTypeRoutingProxyCache`. This value defaults to `ResourceTypeRoutingProxy`. ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "specification": {
+                "description": "The endpoint where the validation specification is located. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Custom Provider."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the resource.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the resource.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the resource.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the resource.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

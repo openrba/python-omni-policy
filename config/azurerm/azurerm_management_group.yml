@@ -1,0 +1,79 @@
+azurerm_management_group:
+    status: HOLD
+    subcategory: Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_management_group'
+    description: Manages a Management Group.
+    arguments:
+        name:
+            description: The name or UUID for this Management Group, which needs to
+                be unique across your tenant. A new UUID will be generated if not
+                provided. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        group_id:
+            description: The name or UUID for this Management Group, which needs to
+                be unique across your tenant. A new UUID will be generated if not
+                provided. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: A friendly name for this Management Group. If not specified,
+                this'll be the same as the `name`.
+            required: false
+            policy: ''
+            notes: ''
+        parent_management_group_id:
+            description: The ID of the Parent Management Group. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        subscription_ids:
+            description: A list of Subscription GUIDs which should be assigned to
+                the Management Group.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Management Group.
+    timeouts:
+        create:
+            description: Used when creating the Management Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Management Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Management Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Management Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjM1ZpYzJOeWFYQjBhVzl1SWlBaVkzVnljbVZ1ZENJZ2V3cDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl0WVc1aFoyVnRaVzUwWDJkeWIzVndJaUFpWlhoaGJY
+        QnNaVjl3WVhKbGJuUWlJSHNLSUNCa2FYTndiR0Y1WDI1aGJXVWdQU0FpVUdGeVpXNTBSM0p2ZFhB
+        aUNnb2dJSE4xWW5OamNtbHdkR2x2Ymw5cFpITWdQU0JiQ2lBZ0lDQmtZWFJoTG1GNmRYSmxjbTFm
+        YzNWaWMyTnlhWEIwYVc5dUxtTjFjbkpsYm5RdWMzVmljMk55YVhCMGFXOXVYMmxrTEFvZ0lGMEtm
+        UW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYldGdVlXZGxiV1Z1ZEY5bmNtOTFjQ0lnSW1WNFlX
+        MXdiR1ZmWTJocGJHUWlJSHNLSUNCa2FYTndiR0Y1WDI1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        OUlDSkRhR2xzWkVkeWIzVndJZ29nSUhCaGNtVnVkRjl0WVc1aFoyVnRaVzUwWDJkeWIzVndYMmxr
+        SUQwZ1lYcDFjbVZ5YlY5dFlXNWhaMlZ0Wlc1MFgyZHliM1Z3TG1WNFlXMXdiR1ZmY0dGeVpXNTBM
+        bWxrQ2dvZ0lITjFZbk5qY21sd2RHbHZibDlwWkhNZ1BTQmJDaUFnSUNCa1lYUmhMbUY2ZFhKbGNt
+        MWZjM1ZpYzJOeWFYQjBhVzl1TG1OMWNuSmxiblF1YzNWaWMyTnlhWEIwYVc5dVgybGtMQW9nSUYw
+        S0lDQWpJRzkwYUdWeUlITjFZbk5qY21sd2RHbHZiaUJKUkhNZ1kyRnVJR2R2SUdobGNtVUtmUW89
+    import: !!binary |
+        Q2dwTllXNWhaMlZ0Wlc1MElFZHliM1Z3Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCdFlXNWhaMlZ0Wlc1MElHZHliM1Z3SUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRnVZV2RsYldWdWRGOW5jbTkxY0M1b2RHMXNMbTFoY210a2IzZHU=

@@ -1,0 +1,57 @@
+aws_db_parameter_group:
+    status: HOLD
+    subcategory: RDS
+    layout: aws
+    page_title: 'AWS: aws_db_parameter_group'
+    description: Provides an RDS DB parameter group resource.
+    arguments:
+        name:
+            description: The name of the DB parameter.
+            required: true
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name beginning with the specified prefix.
+                Conflicts with `name`.
+            required: false
+            policy: ''
+            notes: ''
+        family:
+            description: The family of the DB parameter group.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the DB parameter group. Defaults to "Managed
+                by Terraform".
+            required: false
+            policy: ''
+            notes: ''
+        parameter:
+            description: A list of DB parameters to apply. Note that parameters may
+                differ from a family to an other. Full list of all parameters can
+                be discovered via [`aws rds describe-db-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameters.html
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The value of the DB parameter.
+            required: true
+            policy: ''
+            notes: ''
+        apply_method:
+            description: '"immediate" (default), or "pending-reboot". Some'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The db parameter group name.
+        arn:
+            description: The ARN of the db parameter group.
+    timeouts: {}

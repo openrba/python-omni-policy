@@ -1,0 +1,47 @@
+{
+    "aws_lambda_function_event_invoke_config": {
+        "status": "HOLD",
+        "subcategory": "Lambda",
+        "layout": "aws",
+        "page_title": "AWS: aws_lambda_function_event_invoke_config",
+        "description": "Manages an asynchronous invocation configuration for a Lambda Function or Alias.",
+        "arguments": {
+            "function_name": {
+                "description": "Name or Amazon Resource Name (ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "destination_config": {
+                "description": "Configuration block with destination configuration. See below for details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "maximum_event_age_in_seconds": {
+                "description": "Maximum age of a request that Lambda sends to a function for processing in seconds. Valid values between 60 and 21600.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "maximum_retry_attempts": {
+                "description": "Maximum number of times to retry when the function returns an error. Valid values between 0 and 2. Defaults to 2.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "qualifier": {
+                "description": "Lambda Function published version, `$LATEST`, or Lambda Alias name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Fully qualified Lambda Function name or Amazon Resource Name (ARN)"
+            }
+        },
+        "timeouts": {}
+    }
+}

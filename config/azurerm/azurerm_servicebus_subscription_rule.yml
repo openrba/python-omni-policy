@@ -1,0 +1,166 @@
+azurerm_servicebus_subscription_rule:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_servicebus_subscription_rule'
+    description: Manages a ServiceBus Subscription Rule.
+    arguments:
+        name:
+            description: Specifies the name of the ServiceBus Subscription Rule. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: The name of the ServiceBus Namespace in which the ServiceBus
+                Topic exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        topic_name:
+            description: The name of the ServiceBus Topic in which the ServiceBus
+                Subscription exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subscription_name:
+            description: The name of the ServiceBus Subscription in which this Rule
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in the ServiceBus Namespace
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        filter_type:
+            description: Type of filter to be applied to a BrokeredMessage. Possible
+                values are `SqlFilter` and `CorrelationFilter`.
+            required: true
+            policy: ''
+            notes: ''
+        sql_filter:
+            description: Represents a filter written in SQL language-based syntax
+                that to be evaluated against a BrokeredMessage. Required when `filter_type`
+                is set to `SqlFilter`.
+            required: false
+            policy: ''
+            notes: ''
+        correlation_filter:
+            description: A `correlation_filter` block as documented below to be evaluated
+                against a BrokeredMessage. Required when `filter_type` is set to `CorrelationFilter`.
+            required: false
+            policy: ''
+            notes: ''
+        action:
+            description: Represents set of actions written in SQL language-based syntax
+                that is performed against a BrokeredMessage.
+            required: false
+            policy: ''
+            notes: ''
+        content_type:
+            description: Content type of the message.
+            required: false
+            policy: ''
+            notes: ''
+        correlation_id:
+            description: Identifier of the correlation.
+            required: false
+            policy: ''
+            notes: ''
+        label:
+            description: Application specific label.
+            required: false
+            policy: ''
+            notes: ''
+        message_id:
+            description: Identifier of the message.
+            required: false
+            policy: ''
+            notes: ''
+        reply_to:
+            description: Address of the queue to reply to.
+            required: false
+            policy: ''
+            notes: ''
+        reply_to_session_id:
+            description: Session identifier to reply to.
+            required: false
+            policy: ''
+            notes: ''
+        session_id:
+            description: Session identifier.
+            required: false
+            policy: ''
+            notes: ''
+        to:
+            description: Address to send to.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ServiceBus Subscription Rule ID.
+    timeouts:
+        create:
+            description: Used when creating the ServiceBus Subscription Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ServiceBus Subscription Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ServiceBus Subscription Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ServiceBus Subscription Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGMyVnlkbWxqWldKMWN5MXpkV0p6WTNKcGNI
+        UnBiMjR0Y25Wc1pTMXpjV3dpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24w
+        S0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTmxjblpwWTJWaWRYTmZibUZ0WlhOd1lXTmxJaUFp
+        WlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZEdabGVGOXpa
+        WFpwWTJWaWRYTmZibUZ0WlhOd1lXTmxJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG01aGJXVUtJQ0J6YTNVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZ
+        VzVrWVhKa0lnb0tJQ0IwWVdkeklEMGdld29nSUNBZ2MyOTFjbU5sSUQwZ0luUmxjbkpoWm05eWJT
+        SUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTmxjblpwWTJWaWRYTmZkRzl3YVdN
+        aUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBabVY0
+        WDNObGRtbGpaV0oxYzE5MGIzQnBZeUlLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZ
+        WHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0J1WVcxbGMz
+        QmhZMlZmYm1GdFpTQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5elpYSjJhV05sWW5WelgyNWhiV1Z6Y0dG
+        alpTNWxlR0Z0Y0d4bExtNWhiV1VLQ2lBZ1pXNWhZbXhsWDNCaGNuUnBkR2x2Ym1sdVp5QTlJSFJ5
+        ZFdVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjMlZ5ZG1salpXSjFjMTl6ZFdKelkzSnBj
+        SFJwYjI0aUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SjBabVY0WDNObGRtbGpaV0oxYzE5emRXSnpZM0pwY0hScGIyNGlDaUFnY21WemIzVnlZMlZmWjNK
+        dmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1
+        WVcxbENpQWdibUZ0WlhOd1lXTmxYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzJWeWRtbGpa
+        V0oxYzE5dVlXMWxjM0JoWTJVdVpYaGhiWEJzWlM1dVlXMWxDaUFnZEc5d2FXTmZibUZ0WlNBZ0lD
+        QWdJQ0FnSUNBOUlHRjZkWEpsY20xZmMyVnlkbWxqWldKMWMxOTBiM0JwWXk1bGVHRnRjR3hsTG01
+        aGJXVUtJQ0J0WVhoZlpHVnNhWFpsY25sZlkyOTFiblFnSUQwZ01RcDlDZ3B5WlhOdmRYSmpaU0Fp
+        WVhwMWNtVnliVjl6WlhKMmFXTmxZblZ6WDNOMVluTmpjbWx3ZEdsdmJsOXlkV3hsSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHWmxlRjl6WlhacFky
+        VmlkWE5mY25Wc1pTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5
+        eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnVZVzFsYzNCaFkyVmZibUZ0
+        WlNBZ0lDQWdJRDBnWVhwMWNtVnliVjl6WlhKMmFXTmxZblZ6WDI1aGJXVnpjR0ZqWlM1bGVHRnRj
+        R3hsTG01aGJXVUtJQ0IwYjNCcFkxOXVZVzFsSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5elpY
+        SjJhV05sWW5WelgzUnZjR2xqTG1WNFlXMXdiR1V1Ym1GdFpRb2dJSE4xWW5OamNtbHdkR2x2Ymw5
+        dVlXMWxJQ0FnUFNCaGVuVnlaWEp0WDNObGNuWnBZMlZpZFhOZmMzVmljMk55YVhCMGFXOXVMbVY0
+        WVcxd2JHVXVibUZ0WlFvZ0lHWnBiSFJsY2w5MGVYQmxJQ0FnSUNBZ0lDQWdQU0FpVTNGc1JtbHNk
+        R1Z5SWdvZ0lITnhiRjltYVd4MFpYSWdJQ0FnSUNBZ0lDQWdQU0FpWTI5c2IzVnlJRDBnSjNKbFpD
+        Y2lDbjBL
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVKMWN5QlRkV0p6WTNKcGNIUnBiMjRnVW5Wc1pTQmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWldKMWMxOXpkV0p6WTNKcGNIUnBiMjVmY25Wc1pTNW9kRzFzTG0x
+        aGNtdGtiM2R1

@@ -1,0 +1,242 @@
+{
+    "azurerm_monitor_action_group": {
+        "status": "HOLD",
+        "subcategory": "Monitor",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_monitor_action_group",
+        "description": "Manages an Action Group within Azure Monitor",
+        "arguments": {
+            "name": {
+                "description": "The name of the webhook receiver. Names must be unique (case-insensitive",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Action Group instance.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "short_name": {
+                "description": "The short name of the action group. This will be used in SMS messages.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Whether this action group is enabled. If an action group is not enabled, then none of its receivers will receive communications. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "arm_role_receiver": {
+                "description": "One or more `arm_role_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_runbook_receiver": {
+                "description": "One or more `automation_runbook_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "azure_app_push_receiver": {
+                "description": "One or more `azure_app_push_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "azure_function_receiver": {
+                "description": "One or more `azure_function_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "email_receiver": {
+                "description": "One or more `email_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "itsm_receiver": {
+                "description": "One or more `itsm_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logic_app_receiver": {
+                "description": "One or more `logic_app_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sms_receiver": {
+                "description": "One or more `sms_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "voice_receiver": {
+                "description": "One or more `voice_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "webhook_receiver": {
+                "description": "One or more `webhook_receiver` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role_id": {
+                "description": "The arm role id.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "use_common_alert_schema": {
+                "description": "Enables or disables the common alert schema.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_account_id": {
+                "description": "The automation account ID which holds this runbook and authenticates to Azure resources.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "runbook_name": {
+                "description": "The name for this runbook.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "webhook_resource_id": {
+                "description": "The resource id for webhook linked to this runbook.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "is_global_runbook": {
+                "description": "Indicates whether this instance is global runbook.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_uri": {
+                "description": "The URI where webhooks should be sent.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "email_address": {
+                "description": "The email address of this receiver.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "function_app_resouce_id": {
+                "description": "The Azure resource ID of the function app.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "function_name": {
+                "description": "The function name in the function app.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "http_trigger_url": {
+                "description": "The http trigger url where http request sent to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "workspace_id": {
+                "description": "The Azure Log Analytics workspace ID where this connection is defined.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_id": {
+                "description": "The unique connection identifier of the ITSM connection.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ticket_configuration": {
+                "description": "A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "The region of the workspace.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_id": {
+                "description": "The Azure resource ID of the logic app.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "callback_url": {
+                "description": "The callback url where http request sent to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "country_code": {
+                "description": "The country code of the voice receiver.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "phone_number": {
+                "description": "The phone number of the voice receiver.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Action Group."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Action Group.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Action Group.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Action Group.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Action Group.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

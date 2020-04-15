@@ -1,0 +1,124 @@
+azurerm_servicebus_topic:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_servicebus_topic'
+    description: Manages a ServiceBus Topic.
+    arguments:
+        name:
+            description: Specifies the name of the ServiceBus Topic resource. Changing
+                this forces a
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: The name of the ServiceBus Namespace to create
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        status:
+            description: The Status of the Service Bus Topic. Acceptable values are
+                `Active` or `Disabled`. Defaults to `Active`.
+            required: false
+            policy: ''
+            notes: ''
+        auto_delete_on_idle:
+            description: The ISO 8601 timespan duration of the idle interval after
+                which the
+            required: false
+            policy: ''
+            notes: ''
+        default_message_ttl:
+            description: The ISO 8601 timespan duration of TTL of messages sent to
+                this topic if no
+            required: false
+            policy: ''
+            notes: ''
+        duplicate_detection_history_time_window:
+            description: The ISO 8601 timespan duration during which
+            required: false
+            policy: ''
+            notes: ''
+        enable_batched_operations:
+            description: Boolean flag which controls if server-side
+            required: false
+            policy: ''
+            notes: ''
+        enable_express:
+            description: Boolean flag which controls whether Express Entities
+            required: false
+            policy: ''
+            notes: ''
+        enable_partitioning:
+            description: Boolean flag which controls whether to enable
+            required: false
+            policy: ''
+            notes: Partitioning is available at entity creation for all queues and
+                topics in Basic or Standard SKUs. It is not available for the Premium
+                messaging SKU, but any previously existing partitioned entities in
+                Premium namespaces continue to work as expected. Please [see the documentation](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning)
+                for more information.
+        max_size_in_megabytes:
+            description: Integer value which controls the size of
+            required: false
+            policy: ''
+            notes: ''
+        requires_duplicate_detection:
+            description: Boolean flag which controls whether
+            required: false
+            policy: ''
+            notes: ''
+        support_ordering:
+            description: Boolean flag which controls whether the Topic
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ServiceBus Topic ID.
+    timeouts:
+        create:
+            description: Used when creating the ServiceBus Topic.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ServiceBus Topic.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ServiceBus Topic.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ServiceBus Topic.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGMyVnlkbWxqWldKMWN5MTBiM0JwWXlJS0lD
+        QnNiMk5oZEdsdmJpQTlJQ0pYWlhOMElFVjFjbTl3WlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhK
+        bGNtMWZjMlZ5ZG1salpXSjFjMTl1WVcxbGMzQmhZMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0
+        WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFptVjRYM05sZG1salpXSjFjMTl1WVcxbGMzQmhZ
+        MlVpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVky
+        VmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1
+        aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9n
+        SUhOcmRTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDZ29nSUhSaFozTWdQ
+        U0I3Q2lBZ0lDQnpiM1Z5WTJVZ1BTQWlkR1Z5Y21GbWIzSnRJZ29nSUgwS2ZRb0tjbVZ6YjNWeVky
+        VWdJbUY2ZFhKbGNtMWZjMlZ5ZG1salpXSjFjMTkwYjNCcFl5SWdJbVY0WVcxd2JHVWlJSHNLSUNC
+        dVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhoZmMyVjJhV05sWW5WelgzUnZjR2xq
+        SWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxY
+        MmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUc1aGJXVnpjR0ZqWlY5dVlXMWxJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzTmxjblpwWTJWaWRYTmZibUZ0WlhOd1lXTmxMbVY0WVcxd2JHVXVibUZ0WlFv
+        S0lDQmxibUZpYkdWZmNHRnlkR2wwYVc5dWFXNW5JRDBnZEhKMVpRcDlDZz09
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVKMWN5QlViM0JwWTNNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWldKMWMxOTBiM0JwWXk1b2RHMXNMbTFoY210a2IzZHU=

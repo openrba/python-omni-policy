@@ -1,0 +1,134 @@
+azurerm_shared_image:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_shared_image'
+    description: Manages a Shared Image within a Shared Image Gallery.
+    arguments:
+        name:
+            description: Specifies the name of the Shared Image. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        gallery_name:
+            description: Specifies the name of the Shared Image Gallery in which this
+                Shared Image should exist. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Shared Image
+                Gallery exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the Shared Image
+                Gallery exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        identifier:
+            description: An `identifier` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        os_type:
+            description: The type of Operating System present in this Shared Image.
+                Possible values are `Linux` and `Windows`.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of this Shared Image.
+            required: false
+            policy: ''
+            notes: ''
+        eula:
+            description: The End User Licence Agreement for the Shared Image.
+            required: false
+            policy: ''
+            notes: ''
+        privacy_statement_uri:
+            description: The URI containing the Privacy Statement associated with
+                this Shared Image.
+            required: false
+            policy: ''
+            notes: ''
+        release_note_uri:
+            description: The URI containing the Release Notes associated with this
+                Shared Image.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the Shared Image.
+            required: false
+            policy: ''
+            notes: ''
+        offer:
+            description: The Offer Name for this Shared Image.
+            required: true
+            policy: ''
+            notes: ''
+        publisher:
+            description: The Publisher Name for this Gallery Image.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: The Name of the SKU for this Gallery Image.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Shared Image.
+    timeouts:
+        create:
+            description: Used when creating the Shared Image.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Shared Image.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Shared Image.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Shared Image.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emFHRnlaV1JmYVcxaFoyVmZaMkZzYkdWeWVTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVmZhVzFoWjJWZloyRnNiR1Z5ZVNJS0lDQnla
+        WE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWND
+        NWxlR0Z0Y0d4bExtNWhiV1VLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ1pHVnpZM0pw
+        Y0hScGIyNGdJQ0FnSUNBZ0lDQTlJQ0pUYUdGeVpXUWdhVzFoWjJWeklHRnVaQ0IwYUdsdVozTXVJ
+        Z29LSUNCMFlXZHpJRDBnZXdvZ0lDQWdTR1ZzYkc4Z1BTQWlWR2hsY21VaUNpQWdJQ0JYYjNKc1pD
+        QTlJQ0pGZUdGdGNHeGxJZ29nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjMmhoY21W
+        a1gybHRZV2RsSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaWJYa3RhVzFoWjJVaUNpQWdaMkZzYkdWeWVWOXVZVzFsSUNBZ0lDQWdJQ0E5SUdGNmRYSmxj
+        bTFmYzJoaGNtVmtYMmx0WVdkbFgyZGhiR3hsY25rdVpYaGhiWEJzWlM1dVlXMWxDaUFnY21WemIz
+        VnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1Wlho
+        aGJYQnNaUzV1WVcxbENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFm
+        Y21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJRzl6WDNSNWNHVWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNBaVRHbHVkWGdpQ2dvZ0lHbGtaVzUwYVdacFpYSWdld29nSUNBZ2NI
+        VmliR2x6YUdWeUlEMGdJbEIxWW14cGMyaGxjazVoYldVaUNpQWdJQ0J2Wm1abGNpQWdJQ0FnUFNB
+        aVQyWm1aWEpPWVcxbElnb2dJQ0FnYzJ0MUlDQWdJQ0FnSUQwZ0lrVjRZVzF3YkdWVGEzVWlDaUFn
+        ZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwVGFHRnlaV1FnU1cxaFoyVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyaGhjbVZrWDJsdFlXZGxMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

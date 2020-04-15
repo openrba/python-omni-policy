@@ -1,0 +1,101 @@
+azurerm_virtual_hub:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_hub'
+    description: Manages a Virtual Hub within a Virtual WAN.
+    arguments:
+        name:
+            description: The name of the Virtual Hub. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the Resource Group where the Virtual
+                Hub should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the Virtual
+                Hub should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        address_prefix:
+            description: The Address Prefix which should be used for this Virtual
+                Hub.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_wan_id:
+            description: The ID of a Virtual WAN within which the Virtual Hub should
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        route:
+            description: One or more `route` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the Virtual Hub.
+            required: false
+            policy: ''
+            notes: ''
+        address_prefixes:
+            description: A list of Address Prefixes.
+            required: true
+            policy: ''
+            notes: ''
+        next_hop_ip_address:
+            description: The IP Address that Packets should be forwarded to as the
+                Next Hop.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Hub.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Hub.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Virtual Hub.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Virtual Hub.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Hub.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDNkaGJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJbVY0WVcxd2JHVXRkbWx5ZEhWaGJIZGhiaUlLSUNCeVpYTnZkWEpqWlY5bmNtOTFj
+        Rjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJX
+        VUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5
+        bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0
+        WDNacGNuUjFZV3hmYUhWaUlpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlaWGhoYlhCc1pTMTJhWEowZFdGc2FIVmlJZ29nSUhKbGMyOTFjbU5sWDJkeWIz
+        VndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1G
+        dFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5s
+        WDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0IyYVhKMGRXRnNYM2RoYmw5cFpDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDNkaGJpNWxlR0Z0Y0d4bExtbGtDaUFnWVdSa2Nt
+        VnpjMTl3Y21WbWFYZ2dJQ0FnSUNBOUlDSXhNQzR3TGpFdU1DOHlOQ0lLZlFvPQ==
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUVoMVlpZHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5b2RXSXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

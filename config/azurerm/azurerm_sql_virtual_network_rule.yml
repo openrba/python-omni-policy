@@ -1,0 +1,100 @@
+azurerm_sql_virtual_network_rule:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_sql_virtual_network_rule'
+    description: Manages a SQL Virtual Network Rule.
+    arguments:
+        name:
+            description: The name of the SQL virtual network rule. Changing this forces
+                a new resource to be created. Cannot be empty and must only contain
+                alphanumeric characters and hyphens. Cannot start with a number, and
+                cannot start or end with a hyphen.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group where the SQL server resides.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: The name of the SQL Server to which this SQL virtual network
+                rule will be applied to. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet that the SQL server will be connected
+                to.
+            required: true
+            policy: ''
+            notes: ''
+        ignore_missing_vnet_service_endpoint:
+            description: Create the virtual network rule before the subnet has the
+                virtual network service endpoint enabled. The default value is false.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the SQL virtual network rule.
+    timeouts:
+        create:
+            description: Used when creating the SQL Virtual Network Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the SQL Virtual Network Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the SQL Virtual Network Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the SQL Virtual Network Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjM0ZzTFhObGNuWmxjaTEyYm1WMExY
+        SjFiR1VpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmZG1seWRIVmhiRjl1WlhSM2IzSnJJaUFpZG01bGRDSWdld29nSUc1aGJXVWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTMTJibVYwSWdvZ0lHRmtaSEpsYzNOZmMzQmhZ
+        MlVnSUNBZ0lDQWdQU0JiSWpFd0xqY3VNamt1TUM4eU9TSmRDaUFnYkc5allYUnBiMjRnSUNBZ0lD
+        QWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJO
+        aGRHbHZiZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkx
+        Y21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnli
+        Vjl6ZFdKdVpYUWlJQ0p6ZFdKdVpYUWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0psZUdGdGNHeGxMWE4xWW01bGRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNB
+        OUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdkbWx5
+        ZEhWaGJGOXVaWFIzYjNKclgyNWhiV1VnUFNCaGVuVnlaWEp0WDNacGNuUjFZV3hmYm1WMGQyOXlh
+        eTUyYm1WMExtNWhiV1VLSUNCaFpHUnlaWE56WDNCeVpXWnBlQ0FnSUNBZ0lDQTlJQ0l4TUM0M0xq
+        STVMakF2TWpraUNpQWdjMlZ5ZG1salpWOWxibVJ3YjJsdWRITWdJQ0FnUFNCYklrMXBZM0p2YzI5
+        bWRDNVRjV3dpWFFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXpjV3hmYzJWeWRtVnlJaUFp
+        YzNGc2MyVnlkbVZ5SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNKMWJuRnBkV1ZoZW5WeVpYTnhiSE5sY25abGNpSUtJQ0J5WlhOdmRYSmpaVjluY205MWNG
+        OXVZVzFsSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdG
+        dGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        WVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdk
+        bVZ5YzJsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJeE1pNHdJZ29nSUdGa2JX
+        bHVhWE4wY21GMGIzSmZiRzluYVc0Z0lDQWdJQ0FnSUNBZ1BTQWlOR1J0TVc0eE5UZHlORGN3Y2lJ
+        S0lDQmhaRzFwYm1semRISmhkRzl5WDJ4dloybHVYM0JoYzNOM2IzSmtJRDBnSWpRdGRqTnllUzAx
+        TTJOeU16Y3RjRFExTlhjd2NtUWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNOeGJGOTJh
+        WEowZFdGc1gyNWxkSGR2Y210ZmNuVnNaU0lnSW5OeGJIWnVaWFJ5ZFd4bElpQjdDaUFnYm1GdFpT
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSnpjV3d0ZG01bGRDMXlkV3hsSWdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3
+        YkdVdWJtRnRaUW9nSUhObGNuWmxjbDl1WVcxbElDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzTnhi
+        Rjl6WlhKMlpYSXVjM0ZzYzJWeWRtVnlMbTVoYldVS0lDQnpkV0p1WlhSZmFXUWdJQ0FnSUNBZ0lD
+        QWdJRDBnWVhwMWNtVnliVjl6ZFdKdVpYUXVjM1ZpYm1WMExtbGtDbjBL
+    import: !!binary |
+        Q2dwVFVVd2dWbWx5ZEhWaGJDQk9aWFIzYjNKcklGSjFiR1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzRnNYM1pwY25SMVlXeGZibVYwZDI5eWExOXlkV3hsTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

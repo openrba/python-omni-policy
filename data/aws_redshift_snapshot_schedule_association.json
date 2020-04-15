@@ -1,0 +1,25 @@
+{
+    "aws_redshift_snapshot_schedule_association": {
+        "status": "HOLD",
+        "subcategory": "Redshift",
+        "layout": "aws",
+        "page_title": "AWS: aws_redshift_snapshot_schedule_association",
+        "description": "Provides an Association Redshift Cluster and Snapshot Schedule resource.",
+        "arguments": {
+            "cluster_identifier": {
+                "description": "The cluster identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "schedule_identifier": {
+                "description": "The snapshot schedule identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

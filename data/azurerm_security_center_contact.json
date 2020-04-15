@@ -1,0 +1,62 @@
+{
+    "azurerm_security_center_contact": {
+        "status": "HOLD",
+        "subcategory": "Security Center",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_security_center_contact",
+        "description": "Manages the subscription's Security Center Contact.",
+        "arguments": {
+            "email": {
+                "description": "The email of the Security Center Contact.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "phone": {
+                "description": "The phone number of the Security Center Contact.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "alert_notifications": {
+                "description": "Whether to send security alerts notifications to the security contact.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "alerts_to_admins": {
+                "description": "Whether to send security alerts notifications to subscription admins.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Security Center Contact ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Security Center Contact.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Security Center Contact.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Security Center Contact.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Security Center Contact.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+azurerm_hdinsight_rserver_cluster:
+    status: HOLD
+    subcategory: HDInsight
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_hdinsight_rserver_cluster'
+    description: Manages a HDInsight RServer Cluster.
+    arguments:
+        name:
+            description: Specifies the name for this HDInsight RServer Cluster. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the Resource Group in which this HDInsight
+                RServer Cluster should exist. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the Azure Region which this HDInsight RServer Cluster
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cluster_version:
+            description: Specifies the Version of HDInsights which should be used
+                for this Cluster. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        gateway:
+            description: A `gateway` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        roles:
+            description: A `roles` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        rstudio:
+            description: Should R Studio community edition for RServer be installed?
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account:
+            description: One or more `storage_account` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        tier:
+            description: Specifies the Tier which should be used for this HDInsight
+                RServer Cluster. Possible values are `Standard` or `Premium`. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        min_tls_version:
+            description: The minimal supported TLS version. Possible values are 1.0,
+                1.1 or 1.2. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A map of Tags which should be assigned to this HDInsight
+                RServer Cluster.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Is the Ambari portal enabled? Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The Password associated with the local administrator for
+                the Zookeeper Nodes. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: If specified, this password must be at least 10 characters in length
+                and must contain at least one digit, one uppercase and one lower case
+                letter, one non-alphanumeric character (except characters ' " ` \).
+        username:
+            description: The Username of the local administrator for the Zookeeper
+                Nodes. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        vm_size:
+            description: The Size of the Virtual Machine which should be used as the
+                Zookeeper Nodes. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ssh_keys:
+            description: A list of SSH Keys which should be used for the local administrator
+                on the Zookeeper Nodes. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: Either a `password` or one or more `ssh_keys` must be specified
+                - but not both.
+        subnet_id:
+            description: The ID of the Subnet within the Virtual Network where the
+                Zookeeper Nodes should be provisioned within. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network_id:
+            description: The ID of the Virtual Network where the Zookeeper Nodes should
+                be provisioned within. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        edge_node:
+            description: A `edge_node` block as defined above.
+            required: true
+            policy: ''
+            notes: ''
+        head_node:
+            description: A `head_node` block as defined above.
+            required: true
+            policy: ''
+            notes: ''
+        worker_node:
+            description: A `worker_node` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        zookeeper_node:
+            description: A `zookeeper_node` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        is_default:
+            description: Is this the Default Storage Account for the HDInsight RServer
+                Cluster? Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: One of the `storage_account` blocks must be marked as the default.
+        storage_account_key:
+            description: The Access Key which should be used to connect to the Storage
+                Account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_container_id:
+            description: The ID of the Storage Container. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: This can be obtained from the `id` of the `azurerm_storage_container`
+                resource.
+        min_instance_count:
+            description: The minimum number of instances which should be run for the
+                Worker Nodes. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        target_instance_count:
+            description: The number of instances which should be run for the Worker
+                Nodes.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the HDInsight RServer Cluster.
+        edge_ssh_endpoint:
+            description: The SSH Connectivity Endpoint for the Edge Node of the HDInsight
+                RServer Cluster.
+        https_endpoint:
+            description: The HTTPS Connectivity Endpoint for this HDInsight RServer
+                Cluster.
+        ssh_endpoint:
+            description: The SSH Connectivity Endpoint for this HDInsight RServer
+                Cluster.
+    timeouts:
+        create:
+            description: Used when creating the RServer HDInsight Cluster.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the RServer HDInsight Cluster.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the RServer HDInsight Cluster.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the RServer HDInsight Cluster.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emRHOXlZV2RsWDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbWhrYVc1emFXZG9kSE4wYjNJaUNpQWdjbVZ6YjNWeVkyVmZa
+        M0p2ZFhCZmJtRnRaU0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVH
+        RnRjR3hsTG01aGJXVUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5W
+        eVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lDQmhZMk52
+        ZFc1MFgzUnBaWElnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDaUFnWVdOamIzVnVk
+        Rjl5WlhCc2FXTmhkR2x2Ymw5MGVYQmxJRDBnSWt4U1V5SUtmUW9LY21WemIzVnlZMlVnSW1GNmRY
+        SmxjbTFmYzNSdmNtRm5aVjlqYjI1MFlXbHVaWElpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltaGthVzV6YVdkb2RDSUtJQ0J5WlhOdmRYSmpaVjlu
+        Y205MWNGOXVZVzFsSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJSE4wYjNKaFoyVmZZV05qYjNWdWRGOXVZVzFsSUNBOUlHRjZkWEpsY20xZmMz
+        UnZjbUZuWlY5aFkyTnZkVzUwTG1WNFlXMXdiR1V1Ym1GdFpRb2dJR052Ym5SaGFXNWxjbDloWTJO
+        bGMzTmZkSGx3WlNBOUlDSndjbWwyWVhSbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlv
+        WkdsdWMybG5hSFJmY25ObGNuWmxjbDlqYkhWemRHVnlJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhi
+        V1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzFvWkdsamJIVnpkR1Z5SWdvZ0lI
+        SmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xtVjRZVzF3YkdVdWJtRnRaUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5
+        WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCamJIVnpk
+        R1Z5WDNabGNuTnBiMjRnSUNBZ0lEMGdJak11TmlJS0lDQjBhV1Z5SUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lISnpkSFZrYVc4Z0lDQWdJQ0FnSUNBZ0lDQWdQU0IwY25W
+        bENnb2dJR2RoZEdWM1lYa2dld29nSUNBZ1pXNWhZbXhsWkNBZ1BTQjBjblZsQ2lBZ0lDQjFjMlZ5
+        Ym1GdFpTQTlJQ0poWTJOMFpYTjBkWE55WjNjaUNpQWdJQ0J3WVhOemQyOXlaQ0E5SUNKVVpYSnlR
+        V1p2Y20weE1qTWhJZ29nSUgwS0NpQWdjM1J2Y21GblpWOWhZMk52ZFc1MElIc0tJQ0FnSUhOMGIz
+        SmhaMlZmWTI5dWRHRnBibVZ5WDJsa0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyTnZiblJoYVc1
+        bGNpNWxlR0Z0Y0d4bExtbGtDaUFnSUNCemRHOXlZV2RsWDJGalkyOTFiblJmYTJWNUlDQTlJR0Y2
+        ZFhKbGNtMWZjM1J2Y21GblpWOWhZMk52ZFc1MExtVjRZVzF3YkdVdWNISnBiV0Z5ZVY5aFkyTmxj
+        M05mYTJWNUNpQWdJQ0JwYzE5a1pXWmhkV3gwSUNBZ0lDQWdJQ0FnSUNBOUlIUnlkV1VLSUNCOUNn
+        b2dJSEp2YkdWeklIc0tJQ0FnSUdobFlXUmZibTlrWlNCN0NpQWdJQ0FnSUhadFgzTnBlbVVnSUQw
+        Z0lsTjBZVzVrWVhKa1gwUXpYM1l5SWdvZ0lDQWdJQ0IxYzJWeWJtRnRaU0E5SUNKaFkyTjBaWE4w
+        ZFhOeWRtMGlDaUFnSUNBZ0lIQmhjM04zYjNKa0lEMGdJa0ZqWTFSbGMzUjJaRk5ETkdSaFpqazRO
+        aUVpQ2lBZ0lDQjlDZ29nSUNBZ2QyOXlhMlZ5WDI1dlpHVWdld29nSUNBZ0lDQjJiVjl6YVhwbElD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVUzUmhibVJoY21SZlJEUmZWaklpQ2lBZ0lDQWdJSFZ6WlhK
+        dVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmhZMk4wWlhOMGRYTnlkbTBpQ2lBZ0lDQWdJSEJo
+        YzNOM2IzSmtJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSkJZMk5VWlhOMGRtUlRRelJrWVdZNU9EWWhJ
+        Z29nSUNBZ0lDQjBZWEpuWlhSZmFXNXpkR0Z1WTJWZlkyOTFiblFnUFNBekNpQWdJQ0I5Q2dvZ0lD
+        QWdlbTl2YTJWbGNHVnlYMjV2WkdVZ2V3b2dJQ0FnSUNCMmJWOXphWHBsSUNBOUlDSlRkR0Z1WkdG
+        eVpGOUVNMTkyTWlJS0lDQWdJQ0FnZFhObGNtNWhiV1VnUFNBaVlXTmpkR1Z6ZEhWemNuWnRJZ29n
+        SUNBZ0lDQndZWE56ZDI5eVpDQTlJQ0pCWTJOVVpYTjBkbVJUUXpSa1lXWTVPRFloSWdvZ0lDQWdm
+        UW9LSUNBZ0lHVmtaMlZmYm05a1pTQjdDaUFnSUNBZ0lIWnRYM05wZW1VZ0lEMGdJbE4wWVc1a1lY
+        SmtYMFF6WDNZeUlnb2dJQ0FnSUNCMWMyVnlibUZ0WlNBOUlDSmhZMk4wWlhOMGRYTnlkbTBpQ2lB
+        Z0lDQWdJSEJoYzNOM2IzSmtJRDBnSWtGalkxUmxjM1IyWkZORE5HUmhaams0TmlFaUNpQWdJQ0I5
+        Q2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwSVJFbHVjMmxuYUhRZ1VsTmxjblpsY2lCRGJIVnpkR1Z5Y3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFHUnBibk5wWjJoMFgzSnpaWEoyWlhKZlkyeDFjM1JsY2k1b2RHMXNMbTFoY210
+        a2IzZHU=

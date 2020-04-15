@@ -1,0 +1,45 @@
+aws_appautoscaling_target:
+    status: HOLD
+    subcategory: Application Autoscaling
+    layout: aws
+    page_title: 'AWS: aws_appautoscaling_target'
+    description: Provides an Application AutoScaling ScalableTarget resource.
+    arguments:
+        max_capacity:
+            description: The max capacity of the scalable target.
+            required: true
+            policy: ''
+            notes: ''
+        min_capacity:
+            description: The min capacity of the scalable target.
+            required: true
+            policy: ''
+            notes: ''
+        resource_id:
+            description: 'The resource type and unique identifier string for the resource
+                associated with the scaling policy. Documentation can be found in
+                the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)'
+            required: true
+            policy: ''
+            notes: ''
+        role_arn:
+            description: The ARN of the IAM role that allows Application
+            required: false
+            policy: ''
+            notes: ''
+        scalable_dimension:
+            description: 'The scalable dimension of the scalable target. Documentation
+                can be found in the `ScalableDimension` parameter at: [AWS Application
+                Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)'
+            required: true
+            policy: ''
+            notes: ''
+        service_namespace:
+            description: 'The AWS service namespace of the scalable target. Documentation
+                can be found in the `ServiceNamespace` parameter at: [AWS Application
+                Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)'
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

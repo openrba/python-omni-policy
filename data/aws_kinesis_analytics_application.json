@@ -1,0 +1,74 @@
+{
+    "aws_kinesis_analytics_application": {
+        "status": "HOLD",
+        "subcategory": "Kinesis",
+        "layout": "aws",
+        "page_title": "AWS: aws_kinesis_analytics_application",
+        "description": "Provides a AWS Kinesis Analytics Application",
+        "arguments": {
+            "name": {
+                "description": "Name of the Kinesis Analytics Application.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "code": {
+                "description": "SQL Code to transform input data, and generate output.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description of the application.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cloudwatch_logging_options": {
+                "description": "The CloudWatch log stream options to monitor application errors.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "inputs": {
+                "description": "Input configuration of the application. See [Inputs](#inputs",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "outputs": {
+                "description": "Output destination configuration of the application. See [Outputs](#outputs",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "reference_data_sources": {
+                "description": "An S3 Reference Data Source for the application.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ARN of the Kinesis Analytics Application."
+            },
+            "arn": {
+                "description": "The ARN of the Kinesis Analytics Appliation."
+            },
+            "create_timestamp": {
+                "description": "The Timestamp when the application version was created."
+            },
+            "last_update_timestamp": {
+                "description": "The Timestamp when the application was last updated."
+            },
+            "status": {
+                "description": "The Status of the application."
+            },
+            "version": {
+                "description": "The Version of the application."
+            }
+        },
+        "timeouts": {}
+    }
+}

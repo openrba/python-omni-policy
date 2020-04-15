@@ -1,0 +1,35 @@
+{
+    "aws_dax_parameter_group": {
+        "status": "HOLD",
+        "subcategory": "DynamoDB Accelerator (DAX)",
+        "layout": "aws",
+        "page_title": "AWS: aws_dax_parameter_group",
+        "description": "Provides an DAX Parameter Group resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the parameter group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the parameter group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "The parameters of the parameter group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the parameter group."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "azurerm_site_recovery_replicated_vm": {
+        "status": "HOLD",
+        "subcategory": "Recovery Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_site_recovery_replicated_vm",
+        "description": "Manages a VM protected with Azure Site Recovery on Azure.",
+        "arguments": {
+            "name": {
+                "description": "The name of the network mapping.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Name of the resource group where the vault that should be updated is located.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recovery_vault_name": {
+                "description": "The name of the vault that should be updated.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_recovery_fabric_name": {
+                "description": "Name of fabric that should contains this replication.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_vm_id": {
+                "description": "Id of the VM to replicate",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_recovery_protection_container_name": {
+                "description": "Name of the protection container to use.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_resource_group_id": {
+                "description": "Resource group disk should belong to when a failover is done.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_recovery_fabric_id": {
+                "description": " Id of fabric where the VM replication should be handled when a failover is done.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_recovery_protection_container_id": {
+                "description": " Id of protection container where the VM replication should be created when a failover is done.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_availability_set_id": {
+                "description": " Id of availability set that the new VM should belong to when a failover is done.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "managed_disk": {
+                "description": "One or more `managed_disk` block.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_id": {
+                "description": "Id of disk that should be replicated.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "staging_storage_account_id": {
+                "description": "Storage account that should be used for caching.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_disk_type": {
+                "description": "What type should the disk be when a failover is done.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_replica_disk_type": {
+                "description": "What type should the disk be that holds the replication data.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Site Recovery Replicated VM."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Site Recovery Replicated VM.",
+                "required": false,
+                "timeout": 80
+            },
+            "update": {
+                "description": "Used when updating the Site Recovery Replicated VM.",
+                "required": false,
+                "timeout": 80
+            },
+            "read": {
+                "description": "Used when retrieving the Site Recovery Replicated VM.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Site Recovery Replicated VM.",
+                "required": false,
+                "timeout": 80
+            }
+        }
+    }
+}

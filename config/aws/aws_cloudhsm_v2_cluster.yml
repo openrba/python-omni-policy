@@ -1,0 +1,41 @@
+aws_cloudhsm_v2_cluster:
+    status: HOLD
+    subcategory: CloudHSM v2
+    layout: aws
+    page_title: 'AWS: aws_cloudhsm_v2_cluster'
+    description: Provides a CloudHSM v2 resource.
+    arguments:
+        source_backup_identifier:
+            description: The id of Cloud HSM v2 cluster backup to be restored.
+            required: false
+            policy: ''
+            notes: ''
+        hsm_type:
+            description: The type of HSM module in the cluster. Currently, only hsm1.medium
+                is supported.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: The IDs of subnets in which cluster will operate.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        cluster_id:
+            description: The id of the CloudHSM cluster.
+        cluster_state:
+            description: The state of the cluster.
+        vpc_id:
+            description: The id of the VPC that the CloudHSM cluster resides in.
+        security_group_id:
+            description: The ID of the security group associated with the CloudHSM
+                cluster.
+        cluster_certificates:
+            description: The list of cluster certificates.
+    timeouts: {}

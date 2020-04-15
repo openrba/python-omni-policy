@@ -1,0 +1,75 @@
+azurerm_application_insights_web_test:
+    status: HOLD
+    subcategory: Application Insights
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_application_insights_web_test'
+    description: Manages an Application Insights WebTest.
+    arguments:
+        name:
+            description: Specifies the name of the Application Insights WebTest. Changing
+                this forces a
+            required: true
+            policy: ''
+            notes: ''
+        application_insights_id:
+            description: The ID of the Application Insights component on which the
+                WebTest operates. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location of the resource group.
+            required: true
+            policy: ''
+            notes: ''
+        kind:
+            description: The kind of web test that this web test watches. Choices
+                are `ping` and `multistep`.
+            required: true
+            policy: ''
+            notes: ''
+        geo_locations:
+            description: A list of where to physically run the tests from to give
+                global coverage for accessibility of your application.
+            required: true
+            policy: ''
+            notes: ''
+        configuration:
+            description: An XML configuration specification for a WebTest.
+            required: true
+            policy: ''
+            notes: ''
+        frequency:
+            description: Interval in seconds between test runs for this WebTest. Default
+                is `300`.
+            required: false
+            policy: ''
+            notes: ''
+        timeout:
+            description: Seconds until this WebTest will timeout and fail. Default
+                is `30`.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Is the test actively being monitored.
+            required: false
+            policy: ''
+            notes: ''
+        retry_enabled:
+            description: Allow for retries should this WebTest fail.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Purpose/user defined descriptive test for this WebTest.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Resource tags.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

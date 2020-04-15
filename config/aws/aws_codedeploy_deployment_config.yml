@@ -1,0 +1,72 @@
+aws_codedeploy_deployment_config:
+    status: HOLD
+    subcategory: CodeDeploy
+    layout: aws
+    page_title: 'AWS: aws_codedeploy_deployment_config'
+    description: Provides a CodeDeploy deployment config.
+    arguments:
+        deployment_config_name:
+            description: The name of the deployment config.
+            required: true
+            policy: ''
+            notes: ''
+        compute_platform:
+            description: The compute platform can be `Server`, `Lambda`, or `ECS`.
+                Default is `Server`.
+            required: false
+            policy: ''
+            notes: ''
+        minimum_healthy_hosts:
+            description: A minimum_healthy_hosts block. Required for `Server` compute
+                platform. Minimum Healthy Hosts are documented below.
+            required: false
+            policy: ''
+            notes: ''
+        traffic_routing_config:
+            description: A traffic_routing_config block. Traffic Routing Config is
+                documented below.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Type of traffic routing config. One of `TimeBasedCanary`,
+                `TimeBasedLinear`, `AllAtOnce`.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The value when the type is `FLEET_PERCENT` represents the
+                minimum number of healthy instances as
+            required: true
+            policy: ''
+            notes: ''
+        time_based_canary:
+            description: The time based canary configuration information. If `type`
+                is `TimeBasedLinear`, use `time_based_linear` instead.
+            required: false
+            policy: ''
+            notes: ''
+        time_based_linear:
+            description: The time based linear configuration information. If `type`
+                is `TimeBasedCanary`, use `time_based_canary` instead.
+            required: false
+            policy: ''
+            notes: ''
+        interval:
+            description: The number of minutes between each incremental traffic shift
+                of a `TimeBasedLinear` deployment.
+            required: false
+            policy: ''
+            notes: ''
+        percentage:
+            description: The percentage of traffic that is shifted at the start of
+                each increment of a `TimeBasedLinear` deployment.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The deployment group's config name.
+        deployment_config_id:
+            description: The AWS Assigned deployment config id
+    timeouts: {}

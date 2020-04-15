@@ -1,0 +1,41 @@
+aws_neptune_subnet_group:
+    status: HOLD
+    subcategory: Neptune
+    layout: aws
+    page_title: 'AWS: aws_neptune_subnet_group'
+    description: Provides an Neptune subnet group resource.
+    arguments:
+        name:
+            description: The name of the neptune subnet group. If omitted, Terraform
+                will assign a random, unique name.
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name beginning with the specified prefix.
+                Conflicts with `name`.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the neptune subnet group. Defaults to
+                "Managed by Terraform".
+            required: false
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: A list of VPC subnet IDs.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The neptune subnet group name.
+        arn:
+            description: The ARN of the neptune subnet group.
+    timeouts: {}

@@ -1,0 +1,59 @@
+azuread_service_principal:
+    status: HOLD
+    subcategory: Service Principals
+    layout: azuread
+    page_title: 'Azure Active Directory: azuread_service_principal'
+    description: Manages a Service Principal associated with an Application within
+        Azure Active Directory.
+    arguments:
+        application_id:
+            description: The ID of the Azure AD Application for which to create a
+                Service Principal.
+            required: true
+            policy: ''
+            notes: ''
+        app_role_assignment_required:
+            description: Does this Service Principal require an AppRoleAssignment
+                to a user or group before Azure AD will issue a user or access token
+                to the application? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A list of tags to apply to the Service Principal.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique identifier for one of the `OAuth2Permission`.
+        application_id:
+            description: The Application ID (appId) for the Service Principal.
+        object_id:
+            description: The Service Principal's Object ID.
+        display_name:
+            description: The Display Name of the Azure Active Directory Application
+                associated with this Service Principal.
+        app_role_assignment_required:
+            description: Whether this Service Principal requires an AppRoleAssignment
+                to a user or group before Azure AD will issue a user or access token
+                to the application.
+        oauth2_permissions:
+            description: A collection of OAuth 2.0 permissions exposed by the associated
+                application. Each permission is covered by a `oauth2_permission` block
+                as documented below.
+        type:
+            description: The type of the permission.
+        admin_consent_description:
+            description: The description of the admin consent.
+        admin_consent_display_name:
+            description: The display name of the admin consent.
+        is_enabled:
+            description: Is this permission enabled?
+        user_consent_description:
+            description: The description of the user consent.
+        user_consent_display_name:
+            description: The display name of the user consent.
+        value:
+            description: The name of this permission.
+    timeouts: {}

@@ -1,0 +1,65 @@
+{
+    "aws_route53_resolver_endpoint": {
+        "status": "HOLD",
+        "subcategory": "Route53 Resolver",
+        "layout": "aws",
+        "page_title": "AWS: aws_route53_resolver_endpoint",
+        "description": "Provides a Route 53 Resolver endpoint resource.",
+        "arguments": {
+            "direction": {
+                "description": "The direction of DNS queries to or from the Route 53 Resolver endpoint.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_address": {
+                "description": "The subnets and IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_ids": {
+                "description": "The ID of one or more security groups that you want to use to control access to this VPC.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The friendly name of the Route 53 Resolver endpoint.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the subnet that contains the IP address.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ip": {
+                "description": "The IP address in the subnet that you want to use for DNS queries.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Route 53 Resolver endpoint."
+            },
+            "arn": {
+                "description": "The ARN of the Route 53 Resolver endpoint."
+            },
+            "host_vpc_id": {
+                "description": "The ID of the VPC that you want to create the resolver endpoint in."
+            }
+        },
+        "timeouts": {}
+    }
+}

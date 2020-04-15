@@ -1,0 +1,43 @@
+aws_dx_lag:
+    status: HOLD
+    subcategory: Direct Connect
+    layout: aws
+    page_title: 'AWS: aws_dx_lag'
+    description: Provides a Direct Connect LAG.
+    arguments:
+        name:
+            description: The name of the LAG.
+            required: true
+            policy: ''
+            notes: ''
+        connections_bandwidth:
+            description: 'The bandwidth of the individual physical connections bundled
+                by the LAG. Valid values: 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps,
+                500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps. Case sensitive.'
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The AWS Direct Connect location in which the LAG should be
+                allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html
+            required: true
+            policy: ''
+            notes: ''
+        force_destroy:
+            description: A boolean that indicates all connections associated with
+                the LAG should be deleted so that the LAG can be destroyed without
+                error. These objects are *not* recoverable.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the LAG.
+        arn:
+            description: The ARN of the LAG.
+    timeouts: {}

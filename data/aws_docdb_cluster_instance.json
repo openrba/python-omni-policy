@@ -1,0 +1,107 @@
+{
+    "aws_docdb_cluster_instance": {
+        "status": "HOLD",
+        "subcategory": "DocumentDB",
+        "layout": "aws",
+        "page_title": "AWS: aws_docdb_cluster_instance",
+        "description": "Provides an DocDB Cluster Resource Instance",
+        "arguments": {
+            "apply_immediately": {
+                "description": "Specifies whether any database modifications",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_minor_version_upgrade": {
+                "description": "Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_CreateDBInstance.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_identifier": {
+                "description": "The identifier of the [`aws_docdb_cluster`](/docs/providers/aws/r/docdb_cluster.html",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "engine": {
+                "description": "The name of the database engine to be used for the DocDB instance. Defaults to `docdb`. Valid Values: `docdb`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identifier": {
+                "description": "The indentifier for the DocDB instance, if omitted, Terraform will assign a random, unique identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identifier_prefix": {
+                "description": "Creates a unique identifier beginning with the specified prefix. Conflicts with `identifer`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_class": {
+                "description": "The instance class to use. For details on CPU and memory, see [Scaling for DocDB Instances][2]. DocDB currently",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "preferred_maintenance_window": {
+                "description": "The window to perform maintenance in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "promotion_tier": {
+                "description": "Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of cluster instance"
+            },
+            "db_subnet_group_name": {
+                "description": "The DB subnet group to associate with this DB instance."
+            },
+            "dbi_resource_id": {
+                "description": "The region-unique, immutable identifier for the DB instance."
+            },
+            "endpoint": {
+                "description": "The DNS address for this instance. May not be writable"
+            },
+            "engine_version": {
+                "description": "The database engine version"
+            },
+            "kms_key_id": {
+                "description": "The ARN for the KMS encryption key if one is set to the cluster."
+            },
+            "port": {
+                "description": "The database port"
+            },
+            "preferred_backup_window": {
+                "description": "The daily time range during which automated backups are created if automated backups are enabled."
+            },
+            "storage_encrypted": {
+                "description": "Specifies whether the DB cluster is encrypted."
+            }
+        },
+        "timeouts": {}
+    }
+}

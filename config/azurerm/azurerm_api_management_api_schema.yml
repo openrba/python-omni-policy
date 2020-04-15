@@ -1,0 +1,88 @@
+azurerm_api_management_api_schema:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_api_schema'
+    description: Manages an API Schema within an API Management Service.
+    arguments:
+        schema_id:
+            description: A unique identifier for this API Schema. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_name:
+            description: The name of the API within the API Management Service where
+                this API Schema should be created. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The Name of the API Management Service where the API exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        content_type:
+            description: The content type of the API Schema.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The JSON escaped string defining the document representing
+                the Schema.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management API Schema.
+    timeouts:
+        create:
+            description: Used when creating the API Management API Schema.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management API Schema.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management API Schema.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management API Schema.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYQnBJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYzJWaGNtTm9MV0Z3YVNJS0lD
+        QmhjR2xmYldGdVlXZGxiV1Z1ZEY5dVlXMWxJRDBnSW5ObFlYSmphQzFoY0drdGJXRnVZV2RsYldW
+        dWRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ0luTmxZWEpqYUMxelpYSjJhV05s
+        SWdvZ0lISmxkbWx6YVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0FpTWlJS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYQnBYM05qYUdWdFlTSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCaGNHbGZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lEMGdaR0YwWVM1aGVuVnlaWEp0WDJG
+        d2FWOXRZVzVoWjJWdFpXNTBYMkZ3YVM1bGVHRnRjR3hsTG01aGJXVUtJQ0JoY0dsZmJXRnVZV2Rs
+        YldWdWRGOXVZVzFsSUQwZ1pHRjBZUzVoZW5WeVpYSnRYMkZ3YVY5dFlXNWhaMlZ0Wlc1MFgyRndh
+        UzVsZUdGdGNHeGxMbUZ3YVY5dFlXNWhaMlZ0Wlc1MFgyNWhiV1VLSUNCeVpYTnZkWEpqWlY5bmNt
+        OTFjRjl1WVcxbElEMGdaR0YwWVM1aGVuVnlaWEp0WDJGd2FWOXRZVzVoWjJWdFpXNTBYMkZ3YVM1
+        bGVHRnRjR3hsTG5KbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVS0lDQnpZMmhsYldGZmFXUWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0YzJOb1pTeGhJZ29nSUdOdmJuUmxiblJmZEhsd1pTQWdJ
+        Q0FnSUNBZ1BTQWlZWEJ3YkdsallYUnBiMjR2ZG01a0xtMXpMV0Y2ZFhKbExXRndhVzB1ZUhOa0sz
+        aHRiQ0lLSUNCMllXeDFaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdabWxzWlNnaVlYQnBYMjFoYm1G
+        blpXMWxiblJmWVhCcFgzTmphR1Z0WVM1NGJXd2lLUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JCVUVrZ1UyTm9aVzFoSjNNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWVhCcFgzTmphR1Z0WVM1b2RHMXNMbTFoY210
+        a2IzZHU=

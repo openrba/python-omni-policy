@@ -1,0 +1,68 @@
+{
+    "azurerm_api_management_identity_provider_aad": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_identity_provider_aad",
+        "description": "Manages an API Management AAD Identity Provider.",
+        "arguments": {
+            "api_management_name": {
+                "description": "The Name of the API Management Service where this AAD Identity Provider should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The Name of the Resource Group where the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_id": {
+                "description": "Client Id of the Application in the AAD Identity Provider.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_secret": {
+                "description": "Client secret of the Application in the AAD Identity Provider.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_tenants": {
+                "description": "List of allowed AAD Tenants.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management AAD Identity Provider."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management AAD Identity Provider.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management AAD Identity Provider.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management AAD Identity Provider.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management AAD Identity Provider.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

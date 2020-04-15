@@ -1,0 +1,28 @@
+aws_vpc_peering_connection_options:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_vpc_peering_connection_options'
+    description: Provides a resource to manage VPC peering connection options.
+    arguments:
+        vpc_peering_connection_id:
+            description: The ID of the requester VPC peering connection.
+            required: true
+            policy: ''
+            notes: ''
+        accepter:
+            description: '- An optional configuration block that allows for [VPC Peering
+                Connection]'
+            required: false
+            policy: ''
+            notes: ''
+        requester:
+            description: '- A optional configuration block that allows for [VPC Peering
+                Connection]'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the VPC Peering Connection Options.
+    timeouts: {}

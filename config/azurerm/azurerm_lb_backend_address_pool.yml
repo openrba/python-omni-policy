@@ -1,0 +1,79 @@
+azurerm_lb_backend_address_pool:
+    status: HOLD
+    subcategory: Load Balancer
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_lb_backend_address_pool'
+    description: Manages a Load Balancer Backend Address Pool.
+    arguments:
+        name:
+            description: Specifies the name of the Backend Address Pool.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the resource.
+            required: true
+            policy: ''
+            notes: ''
+        loadbalancer_id:
+            description: The ID of the Load Balancer in which to create the Backend
+                Address Pool.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Backend Address Pool.
+        backend_ip_configurations:
+            description: The Backend IP Configurations associated with this Backend
+                Address Pool.
+        load_balancing_rules:
+            description: The Load Balancing Rules associated with this Backend Address
+                Pool.
+    timeouts:
+        create:
+            description: Used when creating the Load Balancer Backend Address Pool.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Load Balancer Backend Address Pool.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Load Balancer Backend Address Pool.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Load Balancer Backend Address Pool.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJa3h2WVdSQ1lXeGhibU5sY2xKSElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzQjFZbXhwWTE5
+        cGNDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbEIx
+        WW14cFkwbFFSbTl5VEVJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJ
+        RlZUSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNt
+        TmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdGc2JHOWpZWFJwYjI1ZmJXVjBhRzlrSUNB
+        Z1BTQWlVM1JoZEdsaklncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzWWlJZ0ltVjRZVzF3
+        YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsUmxjM1JNYjJGa1FtRnNZ
+        VzVqWlhJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJRlZUSWdvZ0lI
+        SmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xtVjRZVzF3YkdVdWJtRnRaUW9LSUNCbWNtOXVkR1Z1WkY5cGNGOWpiMjVtYVdkMWNtRjBhVzl1
+        SUhzS0lDQWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsQjFZbXhwWTBsUVFXUmtj
+        bVZ6Y3lJS0lDQWdJSEIxWW14cFkxOXBjRjloWkdSeVpYTnpYMmxrSUQwZ1lYcDFjbVZ5YlY5d2RX
+        SnNhV05mYVhBdVpYaGhiWEJzWlM1cFpBb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmJHSmZZbUZqYTJWdVpGOWhaR1J5WlhOelgzQnZiMndpSUNKbGVHRnRjR3hsSWlCN0NpQWdjbVZ6
+        YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVa
+        WGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWhaR0poYkdGdVkyVnlYMmxrSUNBZ0lDQTlJR0Y2ZFhKbGNt
+        MWZiR0l1WlhoaGJYQnNaUzVwWkFvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpUW1G
+        amEwVnVaRUZrWkhKbGMzTlFiMjlzSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRUpoWTJ0bGJtUWdRV1JrY21WemN5QlFiMjlzY3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHSmZZbUZqYTJWdVpGOWhaR1J5WlhOelgzQnZiMnd1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

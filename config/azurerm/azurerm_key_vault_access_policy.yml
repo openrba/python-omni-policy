@@ -1,0 +1,102 @@
+azurerm_key_vault_access_policy:
+    status: HOLD
+    subcategory: Key Vault
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_key_vault_access_policy'
+    description: Manages a Key Vault Access Policy.
+    arguments:
+        key_vault_id:
+            description: Specifies the id of the Key Vault resource. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: The Azure Active Directory tenant ID that should be used
+            required: true
+            policy: ''
+            notes: ''
+        object_id:
+            description: The object ID of a user, service principal or security
+            required: true
+            policy: ''
+            notes: ''
+        application_id:
+            description: The object ID of an Application in Azure Active Directory.
+            required: false
+            policy: ''
+            notes: ''
+        certificate_permissions:
+            description: List of certificate permissions, must be one or more from
+            required: false
+            policy: ''
+            notes: ''
+        key_permissions:
+            description: List of key permissions, must be one or more from
+            required: true
+            policy: ''
+            notes: ''
+        secret_permissions:
+            description: List of secret permissions, must be one or more
+            required: true
+            policy: ''
+            notes: ''
+        storage_permissions:
+            description: 'List of storage permissions, must be one or more from the
+                following: `backup`, `delete`, `deletesas`, `get`, `getsas`, `list`,
+                `listsas`, `purge`, `recover`, `regeneratekey`, `restore`, `set`,
+                `setsas` and `update`.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: Key Vault Access Policy ID.
+    timeouts:
+        create:
+            description: Used when creating the Key Vault Access Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Key Vault Access Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Key Vault Access Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Key Vault Access Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5
+        dUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMnRsZVY5MllYVnNkQ0lnSW1WNFlXMXdiR1Vp
+        SUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGMzUjJZWFZzZENJS0lDQnNi
+        Mk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWND
+        NWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdG
+        NmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lITnJkVjl1
+        WVcxbElEMGdJbk4wWVc1a1lYSmtJZ29LSUNCMFpXNWhiblJmYVdRZ1BTQWlNakl5TWpJeU1qSXRN
+        akl5TWkweU1qSXlMVEl5TWpJdE1qSXlNakl5TWpJeU1qSXlJZ29LSUNCbGJtRmliR1ZrWDJadmNs
+        OWthWE5yWDJWdVkzSjVjSFJwYjI0Z1BTQjBjblZsQ2dvZ0lIUmhaM01nUFNCN0NpQWdJQ0JsYm5a
+        cGNtOXViV1Z1ZENBOUlDSlFjbTlrZFdOMGFXOXVJZ29nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2
+        ZFhKbGNtMWZhMlY1WDNaaGRXeDBYMkZqWTJWemMxOXdiMnhwWTNraUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYTJWNVgzWmhkV3gwWDJsa0lEMGdZWHAxY21WeWJWOXJaWGxmZG1GMWJIUXVaWGhoYlhCc1pT
+        NXBaQW9LSUNCMFpXNWhiblJmYVdRZ1BTQWlNREF3TURBd01EQXRNREF3TUMwd01EQXdMVEF3TURB
+        dE1EQXdNREF3TURBd01EQXdJZ29nSUc5aWFtVmpkRjlwWkNBOUlDSXhNVEV4TVRFeE1TMHhNVEV4
+        TFRFeE1URXRNVEV4TVMweE1URXhNVEV4TVRFeE1URWlDZ29nSUd0bGVWOXdaWEp0YVhOemFXOXVj
+        eUE5SUZzS0lDQWdJQ0puWlhRaUxBb2dJRjBLQ2lBZ2MyVmpjbVYwWDNCbGNtMXBjM05wYjI1eklE
+        MGdXd29nSUNBZ0ltZGxkQ0lzQ2lBZ1hRcDlDZz09
+    import: !!binary |
+        Q2dwTFpYa2dWbUYxYkhRZ1FXTmpaWE56SUZCdmJHbGphV1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnVW1WemIzVnlZMlVnU1VRZ2IyWWdkR2hsSUV0bGVTQldZWFZzZEN3Z2NH
+        eDFjeUJ6YjIxbElHRmtaR2wwYVc5dVlXd2diV1YwWVdSaGRHRXVDZ3BKWmlCaWIzUm9JR0Z1SUdC
+        dlltcGxZM1JmYVdSZ0lHRnVaQ0JnWVhCd2JHbGpZWFJwYjI1ZmFXUmdJR0Z5WlNCemNHVmphV1pw
+        WldRc0lIUm9aVzRnZEdobElFRmpZMlZ6Y3lCUWIyeHBZM2tnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JtYjJ4c2IzZHBibWNnWTI5a1pUb0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmEyVjVYM1poZFd4MFgyRmpZMlZ6YzE5d2IyeHBZM2t1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

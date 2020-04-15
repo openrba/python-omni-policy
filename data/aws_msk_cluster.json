@@ -1,0 +1,98 @@
+{
+    "aws_msk_cluster": {
+        "status": "HOLD",
+        "subcategory": "Managed Streaming for Kafka (MSK)",
+        "layout": "aws",
+        "page_title": "AWS: aws_msk_cluster",
+        "description": "Terraform resource for managing an AWS Managed Streaming for Kafka cluster",
+        "arguments": {
+            "broker_node_group_info": {
+                "description": "Configuration block for the broker nodes of the Kafka cluster.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_name": {
+                "description": "Name of the MSK cluster.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "kafka_version": {
+                "description": "Specify the desired Kafka software version.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "number_of_broker_nodes": {
+                "description": "The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_authentication": {
+                "description": "Configuration block for specifying a client authentication. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "configuration_info": {
+                "description": "Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_info": {
+                "description": "Configuration block for specifying encryption. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enhanced_monitoring": {
+                "description": "Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "open_monitoring": {
+                "description": "Configuration block for JMX and Node monitoring for the MSK cluster. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logging_info": {
+                "description": "Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the MSK cluster."
+            },
+            "bootstrap_brokers": {
+                "description": "A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`."
+            },
+            "bootstrap_brokers_tls": {
+                "description": "A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`."
+            },
+            "current_version": {
+                "description": "Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`"
+            },
+            "encryption_info.0.encryption_at_rest_kms_key_arn": {
+                "description": "The ARN of the KMS key used for encryption at rest of the broker data volumes."
+            },
+            "zookeeper_connect_string": {
+                "description": "A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,31 @@
+aws_ecs_capacity_provider:
+    status: HOLD
+    subcategory: ECS
+    layout: aws
+    page_title: 'AWS: aws_ecs_capacity_provider'
+    description: Provides an ECS cluster capacity provider.
+    arguments:
+        name:
+            description: The name of the capacity provider.
+            required: true
+            policy: ''
+            notes: ''
+        auto_scaling_group_provider:
+            description: Nested argument defining the provider for the ECS auto scaling
+                group. Defined below.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Amazon Resource Name (ARN) that identifies the capacity
+                provider.
+        arn:
+            description: The Amazon Resource Name (ARN) that identifies the capacity
+                provider.
+    timeouts: {}

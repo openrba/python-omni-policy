@@ -1,0 +1,91 @@
+azurerm_mariadb_database:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mariadb_database'
+    description: Manages a MariaDB Database within a MariaDB Server.
+    arguments:
+        name:
+            description: Specifies the name of the MariaDB Database, which needs [to
+                be a valid MariaDB identifier](https://mariadb.com/kb/en/library/identifier-names/).
+                Changing this forces a
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: Specifies the name of the MariaDB Server. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the MariaDB Server
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        charset:
+            description: Specifies the Charset for the MariaDB Database, which needs
+                [to be a valid MariaDB Charset](https://mariadb.com/kb/en/library/setting-character-sets-and-collations).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        collation:
+            description: Specifies the Collation for the MariaDB Database, which needs
+                [to be a valid MariaDB Collation](https://mariadb.com/kb/en/library/setting-character-sets-and-collations).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the MariaDB Database.
+    timeouts:
+        create:
+            description: Used when creating the MariaDB Database.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the MariaDB Database.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the MariaDB Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MariaDB Database.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGJXRnlhV0ZrWWkxa1lYUmhZbUZ6WlMxU1J5
+        SUtJQ0JzYjJOaGRHbHZiaUE5SUNKM1pYTjBaWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhw
+        MWNtVnliVjl0WVhKcFlXUmlYM05sY25abGNpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbTFoY21saFpHSXRjM1p5SWdvZ0lHeHZZMkYwYVc5dUlDQWdJ
+        Q0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJH
+        OWpZWFJwYjI0S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhO
+        dmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLQ2lBZ2MydDFYMjVoYldVZ1BTQWlRbDlI
+        Wlc0MVh6SWlDZ29nSUhOMGIzSmhaMlZmY0hKdlptbHNaU0I3Q2lBZ0lDQnpkRzl5WVdkbFgyMWlJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNBMU1USXdNQW9nSUNBZ1ltRmphM1Z3WDNKbGRHVnVkR2x2Ymw5a1lY
+        bHpJRDBnTndvZ0lDQWdaMlZ2WDNKbFpIVnVaR0Z1ZEY5aVlXTnJkWEFnSUQwZ0lrUnBjMkZpYkdW
+        a0lnb2dJSDBLQ2lBZ1lXUnRhVzVwYzNSeVlYUnZjbDlzYjJkcGJpQWdJQ0FnSUNBZ0lDQTlJQ0po
+        WTJOMFpYTjBkVzRpQ2lBZ1lXUnRhVzVwYzNSeVlYUnZjbDlzYjJkcGJsOXdZWE56ZDI5eVpDQTlJ
+        Q0pJUUZOb01VTnZVak1oSWdvZ0lIWmxjbk5wYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpTVRBdU1pSUtJQ0J6YzJ4ZlpXNW1iM0pqWlcxbGJuUWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0lrVnVZV0pzWldRaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMjFoY21saFpHSmZaR0Yw
+        WVdKaGMyVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0p0WVhKcFlXUmlYMlJoZEdGaVlYTmxJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSE5sY25a
+        bGNsOXVZVzFsSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDIxaGNtbGhaR0pmYzJWeWRtVnlMbVY0
+        WVcxd2JHVXVibUZ0WlFvZ0lHTm9ZWEp6WlhRZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZFhSbU9DSUtJ
+        Q0JqYjJ4c1lYUnBiMjRnSUNBZ0lDQWdJQ0FnSUQwZ0luVjBaamhmWjJWdVpYSmhiRjlqYVNJS2ZR
+        bz0=
+    import: !!binary |
+        Q2dwTllYSnBZVVJDSUVSaGRHRmlZWE5sSjNNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRnlhV0ZrWWw5a1lYUmhZbUZ6WlM1b2RHMXNMbTFoY210a2IzZHU=

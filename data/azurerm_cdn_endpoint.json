@@ -1,0 +1,170 @@
+{
+    "azurerm_cdn_endpoint": {
+        "status": "HOLD",
+        "subcategory": "CDN",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_cdn_endpoint",
+        "description": "Manages a CDN Endpoint.",
+        "arguments": {
+            "name": {
+                "description": "The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the CDN Endpoint.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "profile_name": {
+                "description": "The CDN Profile to which to attach the CDN Endpoint.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "is_http_allowed": {
+                "description": "Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "is_https_allowed": {
+                "description": "Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_types_to_compress": {
+                "description": "An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "geo_filter": {
+                "description": "A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "is_compression_enabled": {
+                "description": "Indicates whether compression is to be enabled. Defaults to false.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "querystring_caching_behaviour": {
+                "description": "Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "optimization_type": {
+                "description": "What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "origin": {
+                "description": "The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "origin_host_header": {
+                "description": "The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "origin_path": {
+                "description": "The path used at for origin requests.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "probe_path": {
+                "description": "the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "host_name": {
+                "description": "A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "http_port": {
+                "description": "The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "https_port": {
+                "description": "The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "relative_path": {
+                "description": "The relative path applicable to geo filter.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "The Action of the Geo Filter. Possible values include `Allow` and `Block`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "country_codes": {
+                "description": "A List of two letter country codes (e.g. `US`, `GB`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the CDN Endpoint."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the CDN Endpoint.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the CDN Endpoint.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the CDN Endpoint.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the CDN Endpoint.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "azurerm_api_management_logger": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_logger",
+        "description": "Manages a Logger within an API Management Service.",
+        "arguments": {
+            "name": {
+                "description": "The name of an EventHub.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_management_name": {
+                "description": "The name of the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application_insights": {
+                "description": "An `application_insights` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "buffered": {
+                "description": "Specifies whether records should be buffered in the Logger prior to publishing. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of this Logger.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "eventhub": {
+                "description": "An `eventhub` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instrumentation_key": {
+                "description": "The instrumentation key used to push data to Application Insights.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_string": {
+                "description": "The connection string of an EventHub Namespace.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management Logger."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management Logger.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management Logger.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management Logger.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management Logger.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

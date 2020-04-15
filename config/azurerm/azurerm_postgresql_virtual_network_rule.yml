@@ -1,0 +1,107 @@
+azurerm_postgresql_virtual_network_rule:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_postgresql_virtual_network_rule'
+    description: Manages a PostgreSQL Virtual Network Rule.
+    arguments:
+        name:
+            description: The name of the PostgreSQL virtual network rule. Cannot be
+                empty and must only contain alphanumeric characters and hyphens. Cannot
+                start with a number, and cannot start or end with a hyphen. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group where the PostgreSQL server
+                resides. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: The name of the SQL Server to which this PostgreSQL virtual
+                network rule will be applied to. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet that the PostgreSQL server will be connected
+                to.
+            required: true
+            policy: ''
+            notes: ''
+        ignore_missing_vnet_service_endpoint:
+            description: Should the Virtual Network Rule be created before the Subnet
+                has the Virtual Network Service Endpoint enabled? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the PostgreSQL Virtual Network Rule.
+    timeouts:
+        create:
+            description: Used when creating the PostgreSQL Virtual Network Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the PostgreSQL Virtual Network Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the PostgreSQL Virtual Network Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the PostgreSQL Virtual Network Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM1pwY25S
+        MVlXeGZibVYwZDI5eWF5SWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJbVY0WVcxd2JHVXRkbTVsZENJS0lDQmhaR1J5WlhOelgzTndZV05sSUNBZ0lDQWdJ
+        RDBnV3lJeE1DNDNMakk1TGpBdk1qa2lYUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNWaWJtVjBJ
+        aUFpYVc1MFpYSnVZV3dpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKcGJu
+        UmxjbTVoYkNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJQ0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2RtbHlkSFZoYkY5dVpYUjNiM0py
+        WDI1aGJXVWdQU0JoZW5WeVpYSnRYM1pwY25SMVlXeGZibVYwZDI5eWF5NWxlR0Z0Y0d4bExtNWhi
+        V1VLSUNCaFpHUnlaWE56WDNCeVpXWnBlQ0FnSUNBZ0lDQTlJQ0l4TUM0M0xqSTVMakF2TWpraUNp
+        QWdjMlZ5ZG1salpWOWxibVJ3YjJsdWRITWdJQ0FnUFNCYklrMXBZM0p2YzI5bWRDNVRjV3dpWFFw
+        OUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXdiM04wWjNKbGMzRnNYM05sY25abGNpSWdJbVY0
+        WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbkJ2YzNSbmNtVnpj
+        V3d0YzJWeWRtVnlMVEVpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNt
+        MWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3
+        YkdVdWJtRnRaUW9LSUNCemEzVmZibUZ0WlNBOUlDSkNYMGRsYmpWZk1pSUtDaUFnYzNSdmNtRm5a
+        Vjl3Y205bWFXeGxJSHNLSUNBZ0lITjBiM0poWjJWZmJXSWdJQ0FnSUNBZ0lDQWdJQ0E5SURVeE1q
+        QUtJQ0FnSUdKaFkydDFjRjl5WlhSbGJuUnBiMjVmWkdGNWN5QTlJRGNLSUNBZ0lHZGxiMTl5WldS
+        MWJtUmhiblJmWW1GamEzVndJQ0E5SUNKRWFYTmhZbXhsWkNJS0lDQjlDZ29nSUdGa2JXbHVhWE4w
+        Y21GMGIzSmZiRzluYVc0Z0lDQWdJQ0FnSUNBZ1BTQWljSE54YkdGa2JXbHVkVzRpQ2lBZ1lXUnRh
+        VzVwYzNSeVlYUnZjbDlzYjJkcGJsOXdZWE56ZDI5eVpDQTlJQ0pJUUZOb01VTnZVak1oSWdvZ0lI
+        Wmxjbk5wYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpT1M0MUlnb2dJSE56YkY5
+        bGJtWnZjbU5sYldWdWRDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVJXNWhZbXhsWkNJS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbUY2ZFhKbGNtMWZjRzl6ZEdkeVpYTnhiRjkyYVhKMGRXRnNYMjVsZEhkdmNtdGZj
+        blZzWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWNHOXpkR2R5WlhOeGJDMTJibVYwTFhKMWJHVWlDaUFnY21W
+        emIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5
+        YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnpaWEoyWlhKZmJtRnRa
+        U0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0J2YzNSbmNt
+        VnpjV3hmYzJWeWRtVnlMbVY0WVcxd2JHVXVibUZ0WlFvZ0lITjFZbTVsZEY5cFpDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjM1ZpYm1WMExtbHVkR1Z5
+        Ym1Gc0xtbGtDaUFnYVdkdWIzSmxYMjFwYzNOcGJtZGZkbTVsZEY5elpYSjJhV05sWDJWdVpIQnZh
+        VzUwSUQwZ2RISjFaUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwUWIzTjBaM0psVTFGTUlGWnBjblIxWVd3Z1RtVjBkMjl5YXlCU2RXeGxjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXpkR2R5WlhOeGJGOTJhWEowZFdGc1gyNWxkSGR2Y210ZmNuVnNaUzVvZEcx
+        c0xtMWhjbXRrYjNkdQ==

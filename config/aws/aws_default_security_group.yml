@@ -1,0 +1,43 @@
+aws_default_security_group:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_default_security_group'
+    description: Manage the default Security Group resource.
+    arguments:
+        ingress:
+            description: Can be specified multiple times for each
+            required: false
+            policy: ''
+            notes: ''
+        egress:
+            description: Can be specified multiple times for each
+            required: false
+            policy: ''
+            notes: ''
+        vpc_id:
+            description: The VPC ID. **Note that changing
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the security group
+        vpc_id:
+            description: The VPC ID.
+        owner_id:
+            description: The owner ID.
+        name:
+            description: The name of the security group
+        description:
+            description: The description of the security group
+        ingress:
+            description: The ingress rules. See above for more.
+        egress:
+            description: The egress rules. See above for more.
+    timeouts: {}

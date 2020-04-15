@@ -1,0 +1,23 @@
+{
+    "aws_simpledb_domain": {
+        "status": "HOLD",
+        "subcategory": "SimpleDB",
+        "layout": "aws",
+        "page_title": "AWS: aws_simpledb_domain",
+        "description": "Provides a SimpleDB domain resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the SimpleDB domain",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the SimpleDB domain"
+            }
+        },
+        "timeouts": {}
+    }
+}

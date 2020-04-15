@@ -1,0 +1,104 @@
+{
+    "aws_vpc_endpoint": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpc_endpoint",
+        "description": "Provides a VPC Endpoint resource.",
+        "arguments": {
+            "service_name": {
+                "description": "The service name. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_id": {
+                "description": "The ID of the VPC in which the endpoint will be used.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_accept": {
+                "description": "Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy": {
+                "description": "A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "private_dns_enabled": {
+                "description": "Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route_table_ids": {
+                "description": "One or more route table IDs. Applicable for endpoints of type `Gateway`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_ids": {
+                "description": "The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type `Interface`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_ids": {
+                "description": "The ID of one or more security groups to associate with the network interface. Required for endpoints of type `Interface`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_endpoint_type": {
+                "description": "The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the VPC endpoint."
+            },
+            "cidr_blocks": {
+                "description": "The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`."
+            },
+            "dns_entry": {
+                "description": "The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below."
+            },
+            "network_interface_ids": {
+                "description": "One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`."
+            },
+            "owner_id": {
+                "description": "The ID of the AWS account that owns the VPC endpoint."
+            },
+            "prefix_list_id": {
+                "description": "The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`."
+            },
+            "requester_managed": {
+                "description": " Whether or not the VPC Endpoint is being managed by its service "
+            },
+            "state": {
+                "description": "The state of the VPC endpoint."
+            },
+            "dns_name": {
+                "description": "The DNS name."
+            },
+            "hosted_zone_id": {
+                "description": "The ID of the private hosted zone."
+            }
+        },
+        "timeouts": {}
+    }
+}

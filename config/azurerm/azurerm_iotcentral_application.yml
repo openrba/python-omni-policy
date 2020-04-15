@@ -1,0 +1,96 @@
+azurerm_iotcentral_application:
+    status: HOLD
+    subcategory: IoT Central
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_iotcentral_application'
+    description: Manages an IotCentral Application
+    arguments:
+        name:
+            description: Specifies the name of the IotHub resource. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group under which the IotHub resource
+                has to be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                has to be create. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sub_domain:
+            description: A `sub_domain` name. Subdomain for the IoT Central URL. Each
+                application must have a unique subdomain.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: 'A `display_name` name. Custom display name for the IoT Central
+                application. Default is resource name. '
+            required: false
+            policy: ''
+            notes: ''
+        sku:
+            description: A `sku` name. Possible values is `ST1`, `ST2`, Default value
+                is `ST1`
+            required: false
+            policy: ''
+            notes: ''
+        template:
+            description: A `template` name. IoT Central application template name.
+                Default is a custom application.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the IoT Central Application.
+    timeouts:
+        create:
+            description: Used when creating the IoT Central Application.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the IoT Central Application.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the IoT Central Application.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the IoT Central Application.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVWlDaUFnYkc5allY
+        UnBiMjRnUFNBaVYyVnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJs
+        dmRHTmxiblJ5WVd4ZllYQndiR2xqWVhScGIyNGlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMV2x2ZEdObGJuUnlZV3d0WVhCd0lnb2dJ
+        SEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNBaUpIdGhlblZ5WlhKdFgzSmxjMjkxY21ObFgy
+        ZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpYMGlDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNB
+        OUlDSWtlMkY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2
+        Ym4waUNpQWdjM1ZpWDJSdmJXRnBiaUFnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFdsdmRHTmxi
+        blJ5WVd3dFlYQndMWE4xWW1SdmJXRnBiaUlLQ2lBZ1pHbHpjR3hoZVY5dVlXMWxJRDBnSW1WNFlX
+        MXdiR1V0YVc5MFkyVnVkSEpoYkMxaGNIQXRaR2x6Y0d4aGVTMXVZVzFsSWdvZ0lITnJkU0FnSUNB
+        Z0lDQWdJQ0E5SUNKVE1TSUtJQ0IwWlcxd2JHRjBaU0FnSUNBZ1BTQWlhVzkwWXkxa1pXWmhkV3gw
+        UURFdU1DNHdJZ29LSUNCMFlXZHpJRDBnZXdvZ0lDQWdSbTl2SUQwZ0lrSmhjaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwVWFHVWdTVzlVSUVObGJuUnlZV3dnUVhCd2JHbGpZWFJwYjI0Z1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXOTBZMlZ1ZEhKaGJGOWhjSEJzYVdOaGRHbHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

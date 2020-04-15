@@ -1,0 +1,73 @@
+azurerm_cosmosdb_gremlin_database:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_gremlin_database'
+    description: Manages a Gremlin Database within a Cosmos DB Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cosmos DB Gremlin Database. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cosmos DB Gremlin
+                Database is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the CosmosDB Account to create the Gremlin Database
+                within. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        throughput:
+            description: The throughput of the Gremlin database (RU/s). Must be set
+                in increments of `100`. The minimum value is `400`. This must be set
+                upon database creation otherwise it cannot be updated without a manual
+                terraform destroy-apply.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the CosmosDB Gremlin Database.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB Gremlin Database.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CosmosDB Gremlin Database.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CosmosDB Gremlin Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB Gremlin Database.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMjl6Ylc5elpHSmZZV05qYjNWdWRDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhndFkyOXpiVzl6WkdJdFlX
+        TmpiM1Z1ZENJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnSW5SbVpYZ3RZMjl6Ylc5
+        elpHSXRZV05qYjNWdWRDMXlaeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlkyOXpiVzl6
+        WkdKZlozSmxiV3hwYmw5a1lYUmhZbUZ6WlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUm1aWGd0WTI5emJXOXpMV2R5Wlcxc2FXNHRaR0lpQ2lBZ2Nt
+        VnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR1JoZEdFdVlYcDFjbVZ5YlY5amIzTnRiM05rWWw5
+        aFkyTnZkVzUwTG1WNFlXMXdiR1V1Y21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlFvZ0lHRmpZMjkx
+        Ym5SZmJtRnRaU0FnSUNBZ0lDQWdQU0JrWVhSaExtRjZkWEpsY20xZlkyOXpiVzl6WkdKZllXTmpi
+        M1Z1ZEM1bGVHRnRjR3hsTG01aGJXVUtJQ0IwYUhKdmRXZG9jSFYwSUNBZ0lDQWdJQ0FnSUQwZ05E
+        QXdDbjBL
+    import: !!binary |
+        Q2dwRGIzTnRiM05FUWlCSGNtVnRiR2x1SUVSaGRHRmlZWE5sY3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZlozSmxiV3hwYmw5a1lYUmhZbUZ6WlM1b2RHMXNMbTFoY210
+        a2IzZHU=

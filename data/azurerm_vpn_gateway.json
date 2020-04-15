@@ -1,0 +1,98 @@
+{
+    "azurerm_vpn_gateway": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_vpn_gateway",
+        "description": "Manages a VPN Gateway within a Virtual Hub.",
+        "arguments": {
+            "name": {
+                "description": "The Name which should be used for this VPN Gateway. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The Name of the Resource Group in which this VPN Gateway should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The Azure location where this VPN Gateway should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_hub_id": {
+                "description": "The ID of the Virtual Hub within which this VPN Gateway should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bgp_settings": {
+                "description": "A `bgp_settings` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scale_unit": {
+                "description": "The Scale Unit for this VPN Gateway. Defaults to `1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the VPN Gateway.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "asn": {
+                "description": "The ASN of the BGP Speaker. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "peer_weight": {
+                "description": "The weight added to Routes learned from this BGP Speaker. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the VPN Gateway."
+            },
+            "bgp_settings": {
+                "description": "A `bgp_settings` block as defined below."
+            },
+            "bgp_peering_address": {
+                "description": "The Address which should be used for the BGP Peering."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the VPN Gateway.",
+                "required": false,
+                "timeout": 90
+            },
+            "update": {
+                "description": "Used when updating the VPN Gateway.",
+                "required": false,
+                "timeout": 90
+            },
+            "read": {
+                "description": "Used when retrieving the VPN Gateway.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the VPN Gateway.",
+                "required": false,
+                "timeout": 90
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+aws_dynamodb_global_table:
+    status: HOLD
+    subcategory: DynamoDB
+    layout: aws
+    page_title: 'AWS: aws_dynamodb_global_table'
+    description: Manages DynamoDB Global Tables V1 (version 2017.11.29)
+    arguments:
+        name:
+            description: The name of the global table. Must match underlying DynamoDB
+                Table names in all regions.
+            required: true
+            policy: ''
+            notes: ''
+        replica:
+            description: Underlying DynamoDB Table. At least 1 replica must be defined.
+                See below.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The name of the DynamoDB Global Table
+        arn:
+            description: The ARN of the DynamoDB Global Table
+    timeouts: {}

@@ -1,0 +1,67 @@
+aws_appmesh_virtual_service:
+    status: HOLD
+    subcategory: AppMesh
+    layout: aws
+    page_title: 'AWS: aws_appmesh_virtual_service'
+    description: Provides an AWS App Mesh virtual service resource.
+    arguments:
+        name:
+            description: The name to use for the virtual service.
+            required: true
+            policy: ''
+            notes: ''
+        mesh_name:
+            description: The name of the service mesh in which to create the virtual
+                service.
+            required: true
+            policy: ''
+            notes: ''
+        spec:
+            description: The virtual service specification to apply.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        provider:
+            description: The App Mesh object that is acting as the provider for a
+                virtual service. You can specify a single virtual node or virtual
+                router.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_node:
+            description: The virtual node associated with a virtual service.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_router:
+            description: The virtual router associated with a virtual service.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_node_name:
+            description: The name of the virtual node that is acting as a service
+                provider.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_router_name:
+            description: The name of the virtual router that is acting as a service
+                provider.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the virtual service.
+        arn:
+            description: The ARN of the virtual service.
+        created_date:
+            description: The creation date of the virtual service.
+        last_updated_date:
+            description: The last update date of the virtual service.
+    timeouts: {}

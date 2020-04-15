@@ -1,0 +1,27 @@
+aws_ec2_traffic_mirror_filter:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_ec2_traffic_mirror_filter'
+    description: Provides an Traffic mirror filter
+    arguments:
+        description:
+            description: A description of the filter.
+            required: false
+            policy: ''
+            notes: ''
+        network_services:
+            description: 'List of amazon network services that should be mirrored.
+                Valid values: `amazon-dns`.'
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The name of the filter.
+    timeouts: {}

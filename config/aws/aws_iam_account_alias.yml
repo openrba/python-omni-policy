@@ -1,0 +1,14 @@
+aws_iam_account_alias:
+    status: HOLD
+    subcategory: IAM
+    layout: aws
+    page_title: 'AWS: aws_iam_account_alias'
+    description: Manages the account alias for the AWS Account.
+    arguments:
+        account_alias:
+            description: The account alias
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

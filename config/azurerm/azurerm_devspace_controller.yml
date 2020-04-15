@@ -1,0 +1,108 @@
+azurerm_devspace_controller:
+    status: HOLD
+    subcategory: DevSpace
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_devspace_controller'
+    description: Manages a DevSpace Controller.
+    arguments:
+        name:
+            description: Specifies the name of the DevSpace Controller. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group under which the DevSpace Controller
+                resource has to be created. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported location where the DevSpace Controller
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: Specifies the SKU Name for this DevSpace Controller. Possible
+                values are `S1`.
+            required: true
+            policy: ''
+            notes: ''
+        target_container_host_resource_id:
+            description: The resource id of Azure Kubernetes Service cluster. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        target_container_host_credentials_base64:
+            description: Base64 encoding of `kube_config_raw` of Azure Kubernetes
+                Service cluster. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the DevSpace Controller.
+        data_plane_fqdn:
+            description: DNS name for accessing DataPlane services.
+        host_suffix:
+            description: The host suffix for the DevSpace Controller.
+    timeouts:
+        create:
+            description: Used when creating the DevSpace Controller.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the DevSpace Controller.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the DevSpace Controller.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the DevSpace Controller.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVmZjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        cmRXSmxjbTVsZEdWelgyTnNkWE4wWlhJaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSmhZMk4wWlhOMFlXdHpNU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlky
+        RjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNW
+        eVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWkc1elgzQnlaV1pwZUNBZ0lDQWdJQ0Fn
+        SUNBOUlDSmhZMk4wWlhOMFlXdHpNU0lLQ2lBZ1lXZGxiblJmY0c5dmJGOXdjbTltYVd4bElIc0tJ
+        Q0FnSUc1aGJXVWdJQ0FnUFNBaVpHVm1ZWFZzZENJS0lDQWdJR052ZFc1MElDQWdQU0FpTVNJS0lD
+        QWdJSFp0WDNOcGVtVWdQU0FpVTNSaGJtUmhjbVJmUkZNeVgzWXlJZ29nSUgwS0NpQWdjMlZ5ZG1s
+        alpWOXdjbWx1WTJsd1lXd2dld29nSUNBZ1kyeHBaVzUwWDJsa0lDQWdJQ0E5SUNJd01EQXdNREF3
+        TUMwd01EQXdMVEF3TURBdE1EQXdNQzB3TURBd01EQXdNREF3TURBaUNpQWdJQ0JqYkdsbGJuUmZj
+        MlZqY21WMElEMGdJakF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd0ln
+        b2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlpHVjJjM0JoWTJWZlkyOXVkSEp2Ykd4
+        bGNpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbUZq
+        WTNSbGMzUmtjMk14SWdvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRY
+        M0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lDQnlaWE52ZFhKalpW
+        OW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4
+        bExtNWhiV1VLQ2lBZ2MydDFYMjVoYldVZ1BTQWlVekVpQ2dvZ0lHaHZjM1JmYzNWbVptbDRJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWMzVm1abWw0SWdvZ0lIUmhj
+        bWRsZEY5amIyNTBZV2x1WlhKZmFHOXpkRjl5WlhOdmRYSmpaVjlwWkNBZ0lDQWdJQ0FnUFNBaUpI
+        dGhlblZ5WlhKdFgydDFZbVZ5Ym1WMFpYTmZZMngxYzNSbGNpNWxlR0Z0Y0d4bExtbGtmU0lLSUNC
+        MFlYSm5aWFJmWTI5dWRHRnBibVZ5WDJodmMzUmZZM0psWkdWdWRHbGhiSE5mWW1GelpUWTBJRDBn
+        SWlSN1ltRnpaVFkwWlc1amIyUmxLR0Y2ZFhKbGNtMWZhM1ZpWlhKdVpYUmxjMTlqYkhWemRHVnlM
+        bVY0WVcxd2JHVXVhM1ZpWlY5amIyNW1hV2RmY21GM0tYMGlDZ29nSUhSaFozTWdQU0I3Q2lBZ0lD
+        QkZiblpwY205dWJXVnVkQ0E5SUNKVVpYTjBhVzVuSWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwRVpYWlRjR0ZqWlNCRGIyNTBjbTlzYkdWeUozTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHVjJjM0JoWTJWZlkyOXVkSEp2Ykd4bGNpNW9kRzFzTG0xaGNtdGtiM2R1

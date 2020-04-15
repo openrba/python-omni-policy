@@ -1,0 +1,49 @@
+{
+    "aws_apigatewayv2_integration_response": {
+        "status": "HOLD",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_integration_response",
+        "description": "Manages an Amazon API Gateway Version 2 integration response.",
+        "arguments": {
+            "api_id": {
+                "description": "The API identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "integration_id": {
+                "description": "The identifier of the [`aws_apigatewayv2_integration`](/docs/providers/aws/r/apigatewayv2_integration.html).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "integration_response_key": {
+                "description": "The integration response key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "content_handling_strategy": {
+                "description": "How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "response_templates": {
+                "description": "A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "template_selection_expression": {
+                "description": "The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

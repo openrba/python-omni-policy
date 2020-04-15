@@ -1,0 +1,110 @@
+aws_db_option_group:
+    status: HOLD
+    subcategory: RDS
+    layout: aws
+    page_title: 'AWS: aws_db_option_group'
+    description: Provides an RDS DB option group resource.
+    arguments:
+        name:
+            description: The Name of the setting.
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name beginning with the specified prefix.
+                Conflicts with `name`. Must be lowercase, to match as it is stored
+                in AWS.
+            required: false
+            policy: ''
+            notes: ''
+        option_group_description:
+            description: The description of the option group. Defaults to "Managed
+                by Terraform".
+            required: false
+            policy: ''
+            notes: ''
+        engine_name:
+            description: Specifies the name of the engine that this option group should
+                be associated with.
+            required: true
+            policy: ''
+            notes: ''
+        major_engine_version:
+            description: Specifies the major version of the engine that this option
+                group should be associated with.
+            required: true
+            policy: ''
+            notes: ''
+        option:
+            description: A list of Options to apply.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        option_name:
+            description: The Name of the Option (e.g. MEMCACHED).
+            required: true
+            policy: ''
+            notes: ''
+        option_settings:
+            description: A list of option settings to apply.
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: The Port number when connecting to the Option (e.g. 11211).
+            required: false
+            policy: ''
+            notes: ''
+        version:
+            description: The version of the option (e.g. 13.1.0.0).
+            required: false
+            policy: ''
+            notes: ''
+        db_security_group_memberships:
+            description: A list of DB Security Groups for which the option is enabled.
+            required: false
+            policy: ''
+            notes: ''
+        vpc_security_group_memberships:
+            description: A list of VPC Security Groups for which the option is enabled.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The Value of the setting.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The db option group name.
+        arn:
+            description: The ARN of the db option group.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0pmYjNCMGFXOXVYMmR5YjNWd0lpQWlaWGhoYlhCc1pTSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdmNIUnBiMjR0WjNKdmRY
+        QXRkR1Z6ZEMxMFpYSnlZV1p2Y20waUNpQWdiM0IwYVc5dVgyZHliM1Z3WDJSbGMyTnlhWEIwYVc5
+        dUlEMGdJbFJsY25KaFptOXliU0JQY0hScGIyNGdSM0p2ZFhBaUNpQWdaVzVuYVc1bFgyNWhiV1Vn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbk54YkhObGNuWmxjaTFsWlNJS0lDQnRZV3B2Y2w5bGJtZHBi
+        bVZmZG1WeWMybHZiaUFnSUNBZ1BTQWlNVEV1TURBaUNnb2dJRzl3ZEdsdmJpQjdDaUFnSUNCdmNI
+        UnBiMjVmYm1GdFpTQTlJQ0pVYVcxbGVtOXVaU0lLQ2lBZ0lDQnZjSFJwYjI1ZmMyVjBkR2x1WjNN
+        Z2V3b2dJQ0FnSUNCdVlXMWxJQ0E5SUNKVVNVMUZYMXBQVGtVaUNpQWdJQ0FnSUhaaGJIVmxJRDBn
+        SWxWVVF5SUtJQ0FnSUgwS0lDQjlDZ29nSUc5d2RHbHZiaUI3Q2lBZ0lDQnZjSFJwYjI1ZmJtRnRa
+        U0E5SUNKVFVVeFRSVkpXUlZKZlFrRkRTMVZRWDFKRlUxUlBVa1VpQ2dvZ0lDQWdiM0IwYVc5dVgz
+        TmxkSFJwYm1keklIc0tJQ0FnSUNBZ2JtRnRaU0FnUFNBaVNVRk5YMUpQVEVWZlFWSk9JZ29nSUNB
+        Z0lDQjJZV3gxWlNBOUlDSWtlMkYzYzE5cFlXMWZjbTlzWlM1bGVHRnRjR3hsTG1GeWJuMGlDaUFn
+        SUNCOUNpQWdmUW9LSUNCdmNIUnBiMjRnZXdvZ0lDQWdiM0IwYVc5dVgyNWhiV1VnUFNBaVZFUkZJ
+        Z29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwRVFpQlBjSFJwYjI0Z1ozSnZkWEJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5dmNIUnBiMjVmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

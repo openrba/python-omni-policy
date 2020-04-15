@@ -1,0 +1,172 @@
+azurerm_api_management_authorization_server:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_authorization_server'
+    description: Manages an Authorization Server within an API Management Service.
+    arguments:
+        api_management_name:
+            description: The name of the API Management Service in which this Authorization
+                Server should be created. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        authorization_methods:
+            description: The HTTP Verbs supported by the Authorization Endpoint. Possible
+                values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `PATCH`, `POST`, `PUT`
+                and `TRACE`.
+            required: true
+            policy: ''
+            notes: '`GET` must always be present.'
+        authorization_endpoint:
+            description: The OAUTH Authorization Endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        client_id:
+            description: The Client/App ID registered with this Authorization Server.
+            required: true
+            policy: ''
+            notes: ''
+        client_registration_endpoint:
+            description: The URI of page where Client/App Registration is performed
+                for this Authorization Server.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The user-friendly name of this Authorization Server.
+            required: true
+            policy: ''
+            notes: ''
+        grant_types:
+            description: Form of Authorization Grants required when requesting an
+                Access Token. Possible values are `authorizationCode`, `clientCredentials`,
+                `implicit` and `resourceOwnerPassword`.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The Name of the Parameter.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        bearer_token_sending_methods:
+            description: The mechanism by which Access Tokens are passed to the API.
+                Possible values are `authorizationHeader` and `query`.
+            required: false
+            policy: ''
+            notes: ''
+        client_authentication_method:
+            description: The Authentication Methods supported by the Token endpoint
+                of this Authorization Server.. Possible values are `Basic` and `Body`.
+            required: false
+            policy: ''
+            notes: ''
+        client_secret:
+            description: The Client/App Secret registered with this Authorization
+                Server.
+            required: false
+            policy: ''
+            notes: ''
+        default_scope:
+            description: The Default Scope used when requesting an Access Token, specified
+                as a string containing space-delimited values.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the Authorization Server, which may contain
+                HTML formatting tags.
+            required: false
+            policy: ''
+            notes: ''
+        resource_owner_password:
+            description: The password associated with the Resource Owner.
+            required: false
+            policy: ''
+            notes: This can only be specified when `grant_type` includes `resourceOwnerPassword`.
+        resource_owner_username:
+            description: The username associated with the Resource Owner.
+            required: false
+            policy: ''
+            notes: This can only be specified when `grant_type` includes `resourceOwnerPassword`.
+        support_state:
+            description: Does this Authorization Server support State? If this is
+                set to `true` the client may use the state parameter to raise protocol
+                security.
+            required: false
+            policy: ''
+            notes: ''
+        token_body_parameters:
+            description: A `token_body_parameters` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        token_endpoint:
+            description: The OAUTH Token Endpoint.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The Value of the Parameter.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Authorization Server.
+    timeouts:
+        create:
+            description: Used when creating the API Management Authorization Server.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Authorization Server.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Authorization Server.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Authorization Server.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYQnBJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYzJWaGNtTm9MV0Z3YVNJS0lD
+        QmhjR2xmYldGdVlXZGxiV1Z1ZEY5dVlXMWxJRDBnSW5ObFlYSmphQzFoY0drdGJXRnVZV2RsYldW
+        dWRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ0luTmxZWEpqYUMxelpYSjJhV05s
+        SWdvZ0lISmxkbWx6YVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0FpTWlJS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYVjBhRzl5YVhwaGRHbHZibDl6WlhKMlpY
+        SWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQTlJQ0owWlhOMExYTmxjblpsY2lJS0lDQmhjR2xmYldGdVlXZGxiV1Z1ZEY5dVlXMWxJQ0Fn
+        SUNBZ0lDQWdJRDBnWkdGMFlTNWhlblZ5WlhKdFgyRndhVjl0WVc1aFoyVnRaVzUwTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNBZ0lDQWdJQ0FnUFNCa1lY
+        UmhMbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RdVpYaGhiWEJzWlM1eVpYTnZkWEpqWlY5
+        bmNtOTFjRjl1WVcxbENpQWdaR2x6Y0d4aGVWOXVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5
+        SUNKVVpYTjBJRk5sY25abGNpSUtJQ0JoZFhSb2IzSnBlbUYwYVc5dVgyVnVaSEJ2YVc1MElDQWdJ
+        Q0FnSUQwZ0ltaDBkSEJ6T2k4dlpYaGhiWEJzWlM1dGVXUnZiV0ZwYmk1amIyMHZZMnhwWlc1MEwy
+        RjFkR2h2Y21sNlpTSUtJQ0JqYkdsbGJuUmZhV1FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0lqUXlOREkwTWpReUxUUXlOREl0TkRJME1pMDBNalF5TFRReU5ESTBNalF5TkRJME1pSUtJQ0Jq
+        YkdsbGJuUmZjbVZuYVhOMGNtRjBhVzl1WDJWdVpIQnZhVzUwSUQwZ0ltaDBkSEJ6T2k4dlpYaGhi
+        WEJzWlM1dGVXUnZiV0ZwYmk1amIyMHZZMnhwWlc1MEwzSmxaMmx6ZEdWeUlnb0tJQ0JuY21GdWRG
+        OTBlWEJsY3lBOUlGc0tJQ0FnSUNKaGRYUm9iM0pwZW1GMGFXOXVRMjlrWlNJc0NpQWdYUXA5Q2c9
+        PQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JCZFhSb2IzSnBlbUYwYVc5dUlGTmxjblpsY25NZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWVhWMGFHOXlhWHBoZEdsdmJsOXpaWEoyWlhJ
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

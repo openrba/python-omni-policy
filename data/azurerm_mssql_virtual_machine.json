@@ -1,0 +1,140 @@
+{
+    "azurerm_mssql_virtual_machine": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_mssql_virtual_machine",
+        "description": "Manages a Microsoft SQL Virtual Machine",
+        "arguments": {
+            "virtual_machine_id": {
+                "description": "The ID of the Virtual Machine. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_license_type": {
+                "description": "The SQL Server license type. Possible values are `AHUB` (Azure Hybrid Benefit",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_patching": {
+                "description": "An `auto_patching` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_credential": {
+                "description": "(Optional",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "r_services_enabled": {
+                "description": "Should R Services be enabled?",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_connectivity_port": {
+                "description": "The SQL Server port. Defaults to `1433`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_connectivity_type": {
+                "description": "The connectivity type used for this SQL Server. Defaults to `PRIVATE`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_connectivity_update_password": {
+                "description": "The SQL Server sysadmin login password.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_connectivity_update_username": {
+                "description": "The SQL Server sysadmin login to create.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "day_of_week": {
+                "description": "The day of week to apply the patch on.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "maintenance_window_starting_hour": {
+                "description": "The Hour, in the Virtual Machine Time-Zone when the patching maintenance window should begin.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "maintenance_window_duration_in_minutes": {
+                "description": "The size of the Maintenance Window in minutes.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The credential name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_url": {
+                "description": "The azure Key Vault url. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_principal_name": {
+                "description": "The service principal name to access key vault. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_principal_secret": {
+                "description": "The service principal name secret to access key vault. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the SQL Virtual Machine."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the MSSQL Virtual Machine.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the MSSQL Virtual Machine.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the MSSQL Virtual Machine.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the MSSQL Virtual Machine.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

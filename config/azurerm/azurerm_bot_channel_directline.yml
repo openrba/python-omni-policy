@@ -1,0 +1,52 @@
+azurerm_bot_channel_directline:
+    status: HOLD
+    subcategory: Bot
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_bot_channel_directline'
+    description: Manages an Directline integration for a Bot Channel
+    arguments: {}
+    attributes: {}
+    timeouts:
+        create:
+            description: Used when creating the Directline Channel.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Directline Channel.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Directline Channel.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Directline Channel.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnlJZ0ltTjFjbkpsYm5RaUlIdDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYSmxjMjkxY21ObGN5SUtJQ0JzYjJO
+        aGRHbHZiaUE5SUNKdWIzSjBhR1YxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        WW05MFgyTm9ZVzV1Wld4elgzSmxaMmx6ZEhKaGRHbHZiaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1VpQ2lBZ2JHOWpZWFJwYjI0Z0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0puYkc5aVlXd2lDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNB
+        OUlDSWtlMkY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxmU0lL
+        SUNCemEzVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1l3SWdvZ0lHMXBZM0p2YzI5bWRGOWhj
+        SEJmYVdRZ0lDQWdQU0FpSkh0a1lYUmhMbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnk1amRY
+        SnlaVzUwTG5ObGNuWnBZMlZmY0hKcGJtTnBjR0ZzWDJGd2NHeHBZMkYwYVc5dVgybGtmU0lLZlFv
+        S2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlltOTBYMk5vWVc1dVpXeGZaR2x5WldOMGJHbHVaU0ln
+        SW1WNFlXMXdiR1VpSUhzS0lDQmliM1JmYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJRDBnSWlSN1lYcDFj
+        bVZ5YlY5aWIzUmZZMmhoYm01bGJITmZjbVZuYVhOMGNtRjBhVzl1TG1WNFlXMXdiR1V1Ym1GdFpY
+        MGlDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlDSWtlMkY2ZFhKbGNtMWZZbTkwWDJO
+        b1lXNXVaV3h6WDNKbFoybHpkSEpoZEdsdmJpNWxlR0Z0Y0d4bExteHZZMkYwYVc5dWZTSUtJQ0J5
+        WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ0lpUjdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1bGVHRnRjR3hsTG01aGJXVjlJZ29LSUNCemFYUmxJSHNLSUNBZ0lHNWhiV1VnSUNBZ1BT
+        QWlaR1ZtWVhWc2RDSUtJQ0FnSUdWdVlXSnNaV1FnUFNCMGNuVmxDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwVWFHVWdSR2x5WldOMGJHbHVaU0JEYUdGdWJtVnNJR1p2Y2lCaElFSnZkQ0JqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltOTBYMk5vWVc1dVpXeGZaR2x5WldOMGJHbHVaUzV0WVhKclpHOTNiZz09

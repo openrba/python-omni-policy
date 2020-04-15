@@ -1,0 +1,25 @@
+{
+    "aws_elb_attachment": {
+        "status": "HOLD",
+        "subcategory": "Elastic Load Balancing (ELB Classic)",
+        "layout": "aws",
+        "page_title": "AWS: aws_elb_attachment",
+        "description": "Provides an Elastic Load Balancer Attachment resource.",
+        "arguments": {
+            "elb": {
+                "description": "The name of the ELB.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance": {
+                "description": "Instance ID to place in the ELB pool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,282 @@
+azurerm_hdinsight_hadoop_cluster:
+    status: HOLD
+    subcategory: HDInsight
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_hdinsight_hadoop_cluster'
+    description: Manages a HDInsight Hadoop Cluster.
+    arguments:
+        name:
+            description: The name of the install script action. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the Resource Group in which this HDInsight
+                Hadoop Cluster should exist. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the Azure Region which this HDInsight Hadoop Cluster
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cluster_version:
+            description: Specifies the Version of HDInsights which should be used
+                for this Cluster. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        component_version:
+            description: A `component_version` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        gateway:
+            description: A `gateway` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        roles:
+            description: A `roles` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account:
+            description: One or more `storage_account` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_gen2:
+            description: A `storage_account_gen2` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        tier:
+            description: Specifies the Tier which should be used for this HDInsight
+                Hadoop Cluster. Possible values are `Standard` or `Premium`. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        min_tls_version:
+            description: The minimal supported TLS version. Possible values are 1.0,
+                1.1 or 1.2. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A map of Tags which should be assigned to this HDInsight
+                Hadoop Cluster.
+            required: false
+            policy: ''
+            notes: ''
+        hadoop:
+            description: The version of Hadoop which should be used for this HDInsight
+                Hadoop Cluster. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Is the Ambari portal enabled? Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The Password associated with the local administrator for
+                the Zookeeper Nodes. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: If specified, this password must be at least 10 characters in length
+                and must contain at least one digit, one uppercase and one lower case
+                letter, one non-alphanumeric character (except characters ' " ` \).
+        username:
+            description: The Username of the local administrator for the Zookeeper
+                Nodes. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        vm_size:
+            description: The Size of the Virtual Machine which should be used as the
+                Edge Nodes. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ssh_keys:
+            description: A list of SSH Keys which should be used for the local administrator
+                on the Zookeeper Nodes. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: Either a `password` or one or more `ssh_keys` must be specified
+                - but not both.
+        subnet_id:
+            description: The ID of the Subnet within the Virtual Network where the
+                Zookeeper Nodes should be provisioned within. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network_id:
+            description: The ID of the Virtual Network where the Zookeeper Nodes should
+                be provisioned within. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        head_node:
+            description: A `head_node` block as defined above.
+            required: true
+            policy: ''
+            notes: ''
+        worker_node:
+            description: A `worker_node` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        zookeeper_node:
+            description: A `zookeeper_node` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        edge_node:
+            description: A `edge_node` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        is_default:
+            description: Is this the Default Storage Account for the HDInsight Hadoop
+                Cluster? Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: One of the `storage_account` or `storage_account_gen2` blocks must
+                be marked as the default.
+        storage_account_key:
+            description: The Access Key which should be used to connect to the Storage
+                Account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_container_id:
+            description: The ID of the Storage Container. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: This can be obtained from the `id` of the `azurerm_storage_container`
+                resource.
+        storage_resource_id:
+            description: The ID of the Storage Account. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        filesystem_id:
+            description: The ID of the Gen2 Filesystem. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        managed_identity_resource_id:
+            description: The ID of Managed Identity to use for accessing the Gen2
+                filesystem. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: This can be obtained from the `id` of the `azurerm_storage_container`
+                resource.
+        min_instance_count:
+            description: The minimum number of instances which should be run for the
+                Worker Nodes. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        target_instance_count:
+            description: The number of instances which should be run for the Worker
+                Nodes.
+            required: false
+            policy: ''
+            notes: ''
+        uri:
+            description: The URI pointing to the script to run during the installation
+                of the edge node. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the HDInsight Hadoop Cluster.
+        https_endpoint:
+            description: The HTTPS Connectivity Endpoint for this HDInsight Hadoop
+                Cluster.
+        ssh_endpoint:
+            description: The SSH Connectivity Endpoint for this HDInsight Hadoop Cluster.
+    timeouts:
+        create:
+            description: Used when creating the Hadoop HDInsight Cluster.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Hadoop HDInsight Cluster.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Hadoop HDInsight Cluster.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Hadoop HDInsight Cluster.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emRHOXlZV2RsWDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbWhrYVc1emFXZG9kSE4wYjNJaUNpQWdjbVZ6YjNWeVkyVmZa
+        M0p2ZFhCZmJtRnRaU0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVH
+        RnRjR3hsTG01aGJXVUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5W
+        eVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lDQmhZMk52
+        ZFc1MFgzUnBaWElnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDaUFnWVdOamIzVnVk
+        Rjl5WlhCc2FXTmhkR2x2Ymw5MGVYQmxJRDBnSWt4U1V5SUtmUW9LY21WemIzVnlZMlVnSW1GNmRY
+        SmxjbTFmYzNSdmNtRm5aVjlqYjI1MFlXbHVaWElpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltaGthVzV6YVdkb2RDSUtJQ0J5WlhOdmRYSmpaVjlu
+        Y205MWNGOXVZVzFsSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJSE4wYjNKaFoyVmZZV05qYjNWdWRGOXVZVzFsSUNBOUlHRjZkWEpsY20xZmMz
+        UnZjbUZuWlY5aFkyTnZkVzUwTG1WNFlXMXdiR1V1Ym1GdFpRb2dJR052Ym5SaGFXNWxjbDloWTJO
+        bGMzTmZkSGx3WlNBOUlDSndjbWwyWVhSbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlv
+        WkdsdWMybG5hSFJmYUdGa2IyOXdYMk5zZFhOMFpYSWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMV2hrYVdOc2RYTjBaWElpQ2lBZ2Nt
+        VnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        dVpYaGhiWEJzWlM1dVlXMWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEps
+        Y20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUdOc2RYTjBa
+        WEpmZG1WeWMybHZiaUFnSUNBZ1BTQWlNeTQySWdvZ0lIUnBaWElnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpVTNSaGJtUmhjbVFpQ2dvZ0lHTnZiWEJ2Ym1WdWRGOTJaWEp6YVc5dUlIc0tJQ0FnSUdo
+        aFpHOXZjQ0E5SUNJeUxqY2lDaUFnZlFvS0lDQm5ZWFJsZDJGNUlIc0tJQ0FnSUdWdVlXSnNaV1Fn
+        SUQwZ2RISjFaUW9nSUNBZ2RYTmxjbTVoYldVZ1BTQWlZV05qZEdWemRIVnpjbWQzSWdvZ0lDQWdj
+        R0Z6YzNkdmNtUWdQU0FpVkdWeWNrRm1iM0p0TVRJeklTSUtJQ0I5Q2dvZ0lITjBiM0poWjJWZllX
+        TmpiM1Z1ZENCN0NpQWdJQ0J6ZEc5eVlXZGxYMk52Ym5SaGFXNWxjbDlwWkNBOUlHRjZkWEpsY20x
+        ZmMzUnZjbUZuWlY5amIyNTBZV2x1WlhJdVpYaGhiWEJzWlM1cFpBb2dJQ0FnYzNSdmNtRm5aVjlo
+        WTJOdmRXNTBYMnRsZVNBZ1BTQmhlblZ5WlhKdFgzTjBiM0poWjJWZllXTmpiM1Z1ZEM1bGVHRnRj
+        R3hsTG5CeWFXMWhjbmxmWVdOalpYTnpYMnRsZVFvZ0lDQWdhWE5mWkdWbVlYVnNkQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCMGNuVmxDaUFnZlFvS0lDQnliMnhsY3lCN0NpQWdJQ0JvWldGa1gyNXZaR1VnZXdv
+        Z0lDQWdJQ0IyYlY5emFYcGxJQ0E5SUNKVGRHRnVaR0Z5WkY5RU0xOVdNaUlLSUNBZ0lDQWdkWE5s
+        Y201aGJXVWdQU0FpWVdOamRHVnpkSFZ6Y25adElnb2dJQ0FnSUNCd1lYTnpkMjl5WkNBOUlDSkJZ
+        Mk5VWlhOMGRtUlRRelJrWVdZNU9EWWhJZ29nSUNBZ2ZRb0tJQ0FnSUhkdmNtdGxjbDl1YjJSbElI
+        c0tJQ0FnSUNBZ2RtMWZjMmw2WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprWDBR
+        MFgxWXlJZ29nSUNBZ0lDQjFjMlZ5Ym1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVlXTmpkR1Z6
+        ZEhWemNuWnRJZ29nSUNBZ0lDQndZWE56ZDI5eVpDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVFXTmpW
+        R1Z6ZEhaa1UwTTBaR0ZtT1RnMklTSUtJQ0FnSUNBZ2RHRnlaMlYwWDJsdWMzUmhibU5sWDJOdmRX
+        NTBJRDBnTXdvZ0lDQWdmUW9LSUNBZ0lIcHZiMnRsWlhCbGNsOXViMlJsSUhzS0lDQWdJQ0FnZG0x
+        ZmMybDZaU0FnUFNBaVUzUmhibVJoY21SZlJETmZWaklpQ2lBZ0lDQWdJSFZ6WlhKdVlXMWxJRDBn
+        SW1GalkzUmxjM1IxYzNKMmJTSUtJQ0FnSUNBZ2NHRnpjM2R2Y21RZ1BTQWlRV05qVkdWemRIWmtV
+        ME0wWkdGbU9UZzJJU0lLSUNBZ0lIMEtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwSVJFbHVjMmxuYUhRZ1NHRmtiMjl3SUVOc2RYTjBaWEp6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFHUnBibk5wWjJoMFgyaGhaRzl2Y0Y5amJIVnpkR1Z5TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

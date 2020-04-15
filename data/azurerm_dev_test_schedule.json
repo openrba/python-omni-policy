@@ -1,0 +1,80 @@
+{
+    "azurerm_dev_test_schedule": {
+        "status": "HOLD",
+        "subcategory": "Dev Test",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_dev_test_schedule",
+        "description": "Manages automated startup and shutdown schedules for Azure Dev Test Lab.",
+        "arguments": {
+            "name": {
+                "description": "The name of the dev test lab schedule. Valid value for name depends on the `task_type`. For instance for task_type `LabVmsStartupTask` the name needs to be `LabVmAutoStart`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The location where the schedule is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the dev test lab schedule. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lab_name": {
+                "description": "The name of the dev test lab. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "task_type": {
+                "description": "The task type of the schedule. Possible values include `LabVmsShutdownTask` and `LabVmAutoStart`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "time_zone_id": {
+                "description": "The time zone ID (e.g. Pacific Standard time).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the DevTest Schedule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the DevTest Schedule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the DevTest Schedule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the DevTest Schedule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the DevTest Schedule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

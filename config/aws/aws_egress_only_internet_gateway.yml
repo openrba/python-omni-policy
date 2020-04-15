@@ -1,0 +1,21 @@
+aws_egress_only_internet_gateway:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_egress_only_internet_gateway'
+    description: Provides a resource to create an egress-only Internet gateway.
+    arguments:
+        vpc_id:
+            description: The VPC ID to create in.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the egress-only Internet gateway.
+    timeouts: {}

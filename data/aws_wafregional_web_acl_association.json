@@ -1,0 +1,29 @@
+{
+    "aws_wafregional_web_acl_association": {
+        "status": "HOLD",
+        "subcategory": "WAF Regional",
+        "layout": "aws",
+        "page_title": "AWS: aws_wafregional_web_acl_association",
+        "description": "Manages an association with WAF Regional Web ACL",
+        "arguments": {
+            "web_acl_id": {
+                "description": "The ID of the WAF Regional WebACL to create an association.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_arn": {
+                "description": "ARN of the resource to associate with. For example, an Application Load Balancer or API Gateway Stage.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the association"
+            }
+        },
+        "timeouts": {}
+    }
+}

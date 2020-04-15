@@ -1,0 +1,35 @@
+{
+    "aws_redshift_snapshot_copy_grant": {
+        "status": "HOLD",
+        "subcategory": "Redshift",
+        "layout": "aws",
+        "page_title": "AWS: aws_redshift_snapshot_copy_grant",
+        "description": "Creates a snapshot copy grant that allows AWS Redshift to encrypt copied snapshots with a customer master key from AWS KMS in a destination region.",
+        "arguments": {
+            "snapshot_copy_grant_name": {
+                "description": "A friendly name for identifying the grant.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_id": {
+                "description": "The unique identifier for the customer master key (CMK",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of snapshot copy grant"
+            }
+        },
+        "timeouts": {}
+    }
+}

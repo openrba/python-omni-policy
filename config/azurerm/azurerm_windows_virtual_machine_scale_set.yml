@@ -1,0 +1,622 @@
+azurerm_windows_virtual_machine_scale_set:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_windows_virtual_machine_scale_set'
+    description: Manages a Windows Virtual Machine Scale Set.
+    arguments:
+        name:
+            description: The Name of the Public IP Address Configuration.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where the Windows Virtual Machine Scale
+                Set should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the Windows Virtual
+                Machine Scale Set should be exist. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        admin_password:
+            description: The Password which should be used for the local-administrator
+                on this Virtual Machine. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        admin_username:
+            description: The username of the local administrator on each Virtual Machine
+                Scale Set instance. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        instances:
+            description: The number of Virtual Machines in the Scale Set.
+            required: true
+            policy: ''
+            notes: If you're using AutoScaling, you may wish to use [Terraform's `ignore_changes`
+                functionality](https://www.terraform.io/docs/configuration/resources.html#ignore_changes)
+                to ignore changes to this field.
+        sku:
+            description: The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+            required: true
+            policy: ''
+            notes: ''
+        network_interface:
+            description: One or more `network_interface` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        os_disk:
+            description: An `os_disk` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        additional_capabilities:
+            description: A `additional_capabilities` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        additional_unattend_content:
+            description: One or more `additional_unattend_content` blocks as defined
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        automatic_os_upgrade_policy:
+            description: A `automatic_os_upgrade_policy` block as defined below. This
+                is Required and can only be specified when `upgrade_mode` is set to
+                `Automatic`.
+            required: false
+            policy: ''
+            notes: ''
+        boot_diagnostics:
+            description: A `boot_diagnostics` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        computer_name_prefix:
+            description: The prefix which should be used for the name of the Virtual
+                Machines in this Scale Set. If unspecified this defaults to the value
+                for the `name` field.
+            required: false
+            policy: ''
+            notes: ''
+        custom_data:
+            description: The Base64-Encoded Custom Data which should be used for this
+                Virtual Machine Scale Set.
+            required: false
+            policy: ''
+            notes: When Custom Data has been configured, it's not possible to remove
+                it without tainting the Virtual Machine Scale Set, due to a limitation
+                of the Azure API.
+        data_disk:
+            description: One or more `data_disk` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        do_not_run_extensions_on_overprovisioned_machines:
+            description: Should Virtual Machine Extensions be run on Overprovisioned
+                Virtual Machines in the Scale Set? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        enable_automatic_updates:
+            description: Are automatic updates enabled for this Virtual Machine? Defaults
+                to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        eviction_policy:
+            description: The Policy which should be used Virtual Machines are Evicted
+                from the Scale Set. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: This can only be configured when `priority` is set to `Spot`.
+        health_probe_id:
+            description: The ID of a Load Balancer Probe which should be used to determine
+                the health of an instance. Changing this forces a new resource to
+                be created. This is Required and can only be specified when `upgrade_mode`
+                is set to `Automatic` or `Rolling`.
+            required: false
+            policy: ''
+            notes: ''
+        identity:
+            description: A `identity` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        license_type:
+            description: Specifies the type of on-premise license (also known as [Azure
+                Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)
+            required: false
+            policy: ''
+            notes: ''
+        max_bid_price:
+            description: The maximum price you're willing to pay for each Virtual
+                Machine in this Scale Set, in US Dollars; which must be greater than
+                the current spot price. If this bid price falls below the current
+                spot price the Virtual Machines in the Scale Set will be evicted using
+                the `eviction_policy`. Defaults to `-1`, which means that each Virtual
+                Machine in the Scale Set should not be evicted for price reasons.
+            required: false
+            policy: ''
+            notes: This can only be configured when `priority` is set to `Spot`.
+        overprovision:
+            description: Should Azure over-provision Virtual Machines in this Scale
+                Set? This means that multiple Virtual Machines will be provisioned
+                and Azure will keep the instances which become available first - which
+                improves provisioning success rates and improves deployment time.
+                You're not billed for these over-provisioned VM's and they don't count
+                towards the Subscription Quota. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        priority:
+            description: The Priority of this Virtual Machine Scale Set. Possible
+                values are `Regular` and `Spot`. Defaults to `Regular`. Changing this
+                value forces a new resource.
+            required: false
+            policy: ''
+            notes: When `priority` is set to `Spot` an `eviction_policy` must be specified.
+        provision_vm_agent:
+            description: Should the Azure VM Agent be provisioned on each Virtual
+                Machine in the Scale Set? Defaults to `true`. Changing this value
+                forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        proximity_placement_group_id:
+            description: The ID of the Proximity Placement Group in which the Virtual
+                Machine Scale Set should be assigned to. Changing this forces a new
+                resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        rolling_upgrade_policy:
+            description: A `rolling_upgrade_policy` block as defined below. This is
+                Required and can only be specified when `upgrade_mode` is set to `Automatic`
+                or `Rolling`.
+            required: false
+            policy: ''
+            notes: ''
+        scale_in_policy:
+            description: The scale-in policy rule that decides which virtual machines
+                are chosen for removal when a Virtual Machine Scale Set is scaled
+                in. Possible values for the scale-in policy rules are `Default`, `NewestVM`
+                and `OldestVM`, defaults to `Default`. For more information about
+                scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+            required: false
+            policy: ''
+            notes: ''
+        secret:
+            description: One or more `secret` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        single_placement_group:
+            description: Should this Virtual Machine Scale Set be limited to a Single
+                Placement Group, which means the number of instances will be capped
+                at 100 Virtual Machines. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        source_image_id:
+            description: The ID of an Image which each Virtual Machine in this Scale
+                Set should be based on.
+            required: false
+            policy: ''
+            notes: One of either `source_image_id` or `source_image_reference` must
+                be set.
+        source_image_reference:
+            description: A `source_image_reference` block as defined below.
+            required: false
+            policy: ''
+            notes: One of either `source_image_id` or `source_image_reference` must
+                be set.
+        tags:
+            description: A mapping of tags which should be assigned to this Virtual
+                Machine Scale Set.
+            required: false
+            policy: ''
+            notes: ''
+        terminate_notification:
+            description: A `terminate_notification` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        timezone:
+            description: Specifies the time zone of the virtual machine, [the possible
+                values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+            required: false
+            policy: ''
+            notes: ''
+        upgrade_mode:
+            description: Specifies how Upgrades (e.g. changing the Image/SKU
+            required: false
+            policy: ''
+            notes: ''
+        winrm_listener:
+            description: One or more `winrm_listener` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        zone_balance:
+            description: Should the Virtual Machines in this Scale Set be strictly
+                evenly distributed across Availability Zones? Defaults to `false`.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: This can only be set to `true` when one or more `zones` are configured.
+        zones:
+            description: A list of Availability Zones in which the Virtual Machines
+                in this Scale Set should be created in. Changing this forces a new
+                resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        ultra_ssd_enabled:
+            description: Should the capacity to enable Data Disks of the `UltraSSD_LRS`
+                storage account type be supported on this Virtual Machine Scale Set?
+                Defaults to `false`. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        content:
+            description: The XML formatted content that is added to the unattend.xml
+                file for the specified path and component. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        setting:
+            description: The name of the setting to which the content applies. Possible
+                values are `AutoLogon` and `FirstLogonCommands`. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        disable_automatic_rollback:
+            description: Should automatic rollbacks be disabled? Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        enable_automatic_os_upgrade:
+            description: Should OS Upgrades automatically be applied to Scale Set
+                instances in a rolling fashion when a newer version of the OS Image
+                becomes available? Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_uri:
+            description: The Primary/Secondary Endpoint for the Azure Storage Account
+                which should be used to store Boot Diagnostics, including Console
+                Output and Screenshots from the Hypervisor.
+            required: true
+            policy: ''
+            notes: ''
+        store:
+            description: The certificate store on the Virtual Machine where the certificate
+                should be added.
+            required: true
+            policy: ''
+            notes: ''
+        url:
+            description: The Secret URL of a Key Vault Certificate.
+            required: true
+            policy: ''
+            notes: This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
+                Resource.
+        caching:
+            description: The Type of Caching which should be used for the Internal
+                OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+            required: true
+            policy: ''
+            notes: ''
+        disk_size_gb:
+            description: The Size of the Internal OS Disk in GB, if you wish to vary
+                from the size used in the image this Virtual Machine Scale Set is
+                sourced from.
+            required: false
+            policy: ''
+            notes: If specified this must be equal to or larger than the size of the
+                Image the VM Scale Set is based on. When creating a larger disk than
+                exists in the image you'll need to repartition the disk to use the
+                remaining space.
+        lun:
+            description: The Logical Unit Number of the Data Disk, which must be unique
+                within the Virtual Machine.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_type:
+            description: The Type of Storage Account which should back this the Internal
+                OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`
+                and `Premium_LRS`.
+            required: true
+            policy: ''
+            notes: ''
+        disk_encryption_set_id:
+            description: The ID of the Disk Encryption Set which should be used to
+                encrypt this OS Disk.
+            required: false
+            policy: ''
+            notes: The Disk Encryption Set must have the `Reader` Role Assignment
+                scoped on the Key Vault - in addition to an Access Policy to the Key
+                Vault
+        write_accelerator_enabled:
+            description: Should Write Accelerator be Enabled for this OS Disk? Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: This requires that the `storage_account_type` is set to `Premium_LRS`
+                and that `caching` is set to `None`.
+        type:
+            description: The type of Managed Identity which should be assigned to
+                the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`,
+                `UserAssigned` and `SystemAssigned, UserAssigned`.
+            required: true
+            policy: ''
+            notes: ''
+        identity_ids:
+            description: A list of User Managed Identity ID's which should be assigned
+                to the Windows Virtual Machine Scale Set.
+            required: false
+            policy: ''
+            notes: ''
+        application_gateway_backend_address_pool_ids:
+            description: A list of Backend Address Pools ID's from a Application Gateway
+                which this Virtual Machine Scale Set should be connected to.
+            required: false
+            policy: ''
+            notes: ''
+        application_security_group_ids:
+            description: A list of Application Security Group ID's which this Virtual
+                Machine Scale Set should be connected to.
+            required: false
+            policy: ''
+            notes: ''
+        load_balancer_backend_address_pool_ids:
+            description: A list of Backend Address Pools ID's from a Load Balancer
+                which this Virtual Machine Scale Set should be connected to.
+            required: false
+            policy: ''
+            notes: When using this field you'll also need to configure a Rule for
+                the Load Balancer, and use a `depends_on` between this resource and
+                the Load Balancer Rule.
+        load_balancer_inbound_nat_rules_ids:
+            description: A list of NAT Rule ID's from a Load Balancer which this Virtual
+                Machine Scale Set should be connected to.
+            required: false
+            policy: ''
+            notes: When using this field you'll also need to configure a Rule for
+                the Load Balancer, and use a `depends_on` between this resource and
+                the Load Balancer Rule.
+        primary:
+            description: Is this the Primary IP Configuration?
+            required: false
+            policy: ''
+            notes: If multiple `network_interface` blocks are specified, one must
+                be set to `primary`.
+        public_ip_address:
+            description: A `public_ip_address` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the Subnet which this IP Configuration should be
+                connected to.
+            required: false
+            policy: ''
+            notes: ''
+        version:
+            description: The Internet Protocol Version which should be used for this
+                IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults
+                to `IPv4`.
+            required: false
+            policy: ''
+            notes: ''
+        ip_configuration:
+            description: One or more `ip_configuration` blocks as defined above.
+            required: true
+            policy: ''
+            notes: ''
+        dns_servers:
+            description: A list of IP Addresses of DNS Servers which should be assigned
+                to the Network Interface.
+            required: false
+            policy: ''
+            notes: ''
+        enable_accelerated_networking:
+            description: Does this Network Interface support Accelerated Networking?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        enable_ip_forwarding:
+            description: Does this Network Interface support IP Forwarding? Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        network_security_group_id:
+            description: The ID of a Network Security Group which should be assigned
+                to this Network Interface.
+            required: false
+            policy: ''
+            notes: ''
+        diff_disk_settings:
+            description: A `diff_disk_settings` block as defined above. Changing this
+                forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        domain_name_label:
+            description: The Prefix which should be used for the Domain Name Label
+                for each Virtual Machine Instance. Azure concatenates the Domain Name
+                Label and Virtual Machine Index to create a unique Domain Name Label
+                for each Virtual Machine.
+            required: false
+            policy: ''
+            notes: ''
+        idle_timeout_in_minutes:
+            description: The Idle Timeout in Minutes for the Public IP Address. Possible
+                values are in the range `4` to `32`.
+            required: false
+            policy: ''
+            notes: ''
+        ip_tag:
+            description: One or more `ip_tag` blocks as defined above.
+            required: false
+            policy: ''
+            notes: ''
+        public_ip_prefix_id:
+            description: The ID of the Public IP Address Prefix from where Public
+                IP Addresses should be allocated. Changing this forces a new resource
+                to be created.
+            required: false
+            policy: ''
+            notes: ''
+        max_batch_instance_percent:
+            description: The maximum percent of total virtual machine instances that
+                will be upgraded simultaneously by the rolling upgrade in one batch.
+                As this is a maximum, unhealthy instances in previous or future batches
+                can cause the percentage of instances in a batch to decrease to ensure
+                higher reliability. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        max_unhealthy_instance_percent:
+            description: The maximum percentage of the total virtual machine instances
+                in the scale set that can be simultaneously unhealthy, either as a
+                result of being upgraded, or by being found in an unhealthy state
+                by the virtual machine health checks before the rolling upgrade aborts.
+                This constraint will be checked prior to starting any batch. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        max_unhealthy_upgraded_instance_percent:
+            description: The maximum percentage of upgraded virtual machine instances
+                that can be found to be in an unhealthy state. This check will happen
+                after each batch is upgraded. If this percentage is ever exceeded,
+                the rolling update aborts. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        pause_time_between_batches:
+            description: The wait time between completing the update for all virtual
+                machines in one batch and starting the next batch. The time duration
+                should be specified in ISO 8601 format. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        certificate:
+            description: One or more `certificate` blocks as defined above.
+            required: true
+            policy: ''
+            notes: ''
+        key_vault_id:
+            description: The ID of the Key Vault from which all Secrets should be
+                sourced.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Should the terminate notification be enabled on this Virtual
+                Machine Scale Set? Defaults to `false`.
+            required: true
+            policy: ''
+            notes: ''
+        timeout:
+            description: Length of time (in minutes, between 5 and 15
+            required: false
+            policy: ''
+            notes: ''
+        certificate_url:
+            description: The Secret URL of a Key Vault Certificate, which must be
+                specified when `protocol` is set to `Https`.
+            required: false
+            policy: ''
+            notes: This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
+                Resource.
+        protocol:
+            description: The Protocol of the WinRM Listener. Possible values are `Http`
+                and `Https`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Windows Virtual Machine Scale Set.
+        identity:
+            description: An `identity` block as defined below.
+        unique_id:
+            description: The Unique ID for this Windows Virtual Machine Scale Set.
+        principal_id:
+            description: The ID of the System Managed Service Principal.
+    timeouts:
+        create:
+            description: Used when creating the Windows Virtual Machine Scale Set.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating (and rolling the instances of
+            required: false
+            timeout: 60
+        delete:
+            description: Used when deleting the Windows Virtual Machine Scale Set.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZk
+        WEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUdGa1pISmxjM05mYzNCaFkyVWdJQ0Fn
+        SUNBZ1BTQmJJakV3TGpBdU1DNHdMekUySWwwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlhVzUwWlhKdVlXd2lJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0pwYm5SbGNtNWhiQ0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQTlJR0Y2ZFhK
+        bGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnZG1seWRIVmhiRjl1
+        WlhSM2IzSnJYMjVoYldVZ1BTQmhlblZ5WlhKdFgzWnBjblIxWVd4ZmJtVjBkMjl5YXk1bGVHRnRj
+        R3hsTG01aGJXVUtJQ0JoWkdSeVpYTnpYM0J5WldacGVDQWdJQ0FnSUNBOUlDSXhNQzR3TGpJdU1D
+        OHlOQ0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmQybHVaRzkzYzE5MmFYSjBkV0ZzWDIx
+        aFkyaHBibVZmYzJOaGJHVmZjMlYwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlMxMmJYTnpJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndY
+        MjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpR
+        b2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJk
+        eWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J6YTNVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0lsTjBZVzVrWVhKa1gwWXlJZ29nSUdsdWMzUmhibU5sY3lBZ0lDQWdJQ0FnSUNBZ1BTQXhD
+        aUFnWVdSdGFXNWZjR0Z6YzNkdmNtUWdJQ0FnSUNBOUlDSlFRRFUxZHpCeVpERXlNelFoSWdvZ0lH
+        RmtiV2x1WDNWelpYSnVZVzFsSUNBZ0lDQWdQU0FpWVdSdGFXNTFjMlZ5SWdvS0lDQnpiM1Z5WTJW
+        ZmFXMWhaMlZmY21WbVpYSmxibU5sSUhzS0lDQWdJSEIxWW14cGMyaGxjaUE5SUNKTmFXTnliM052
+        Wm5SWGFXNWtiM2R6VTJWeWRtVnlJZ29nSUNBZ2IyWm1aWElnSUNBZ0lEMGdJbGRwYm1SdmQzTlRa
+        WEoyWlhJaUNpQWdJQ0J6YTNVZ0lDQWdJQ0FnUFNBaU1qQXhOaTFFWVhSaFkyVnVkR1Z5TFZObGNu
+        WmxjaTFEYjNKbElnb2dJQ0FnZG1WeWMybHZiaUFnSUQwZ0lteGhkR1Z6ZENJS0lDQjlDZ29nSUc5
+        elgyUnBjMnNnZXdvZ0lDQWdjM1J2Y21GblpWOWhZMk52ZFc1MFgzUjVjR1VnUFNBaVUzUmhibVJo
+        Y21SZlRGSlRJZ29nSUNBZ1kyRmphR2x1WnlBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpVW1WaFpGZHlh
+        WFJsSWdvZ0lIMEtDaUFnYm1WMGQyOXlhMTlwYm5SbGNtWmhZMlVnZXdvZ0lDQWdibUZ0WlNBZ0lD
+        QTlJQ0psZUdGdGNHeGxJZ29nSUNBZ2NISnBiV0Z5ZVNBOUlIUnlkV1VLQ2lBZ0lDQnBjRjlqYjI1
+        bWFXZDFjbUYwYVc5dUlIc0tJQ0FnSUNBZ2JtRnRaU0FnSUNBZ0lEMGdJbWx1ZEdWeWJtRnNJZ29n
+        SUNBZ0lDQndjbWx0WVhKNUlDQWdQU0IwY25WbENpQWdJQ0FnSUhOMVltNWxkRjlwWkNBOUlHRjZk
+        WEpsY20xZmMzVmlibVYwTG1sdWRHVnlibUZzTG1sa0NpQWdJQ0I5Q2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwWGFXNWtiM2R6SUZacGNuUjFZV3dnVFdGamFHbHVaU0JUWTJGc1pTQlRaWFJ6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmQybHVaRzkzYzE5MmFYSjBkV0ZzWDIxaFkyaHBibVZmYzJOaGJHVmZjMlYwTG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

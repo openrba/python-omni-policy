@@ -1,0 +1,101 @@
+azurerm_cognitive_account:
+    status: HOLD
+    subcategory: Cognitive Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cognitive_account'
+    description: Manages a Cognitive Services Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cognitive Service Account. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cognitive Service
+                Account is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        kind:
+            description: Specifies the type of Cognitive Service Account that should
+                be created. Possible values are `Academic`, `Bing.Autosuggest`, `Bing.Autosuggest.v7`,
+                `Bing.CustomSearch`, `Bing.Search`, `Bing.Search.v7`, `Bing.Speech`,
+                `Bing.SpellCheck`, `Bing.SpellCheck.v7`, `CognitiveServices`, `ComputerVision`,
+                `ContentModerator`, `CustomSpeech`, `CustomVision.Prediction`, `CustomVision.Training`,
+                `Emotion`, `Face`,`FormRecognizer`, `ImmersiveReader`, `LUIS`, `LUIS.Authoring`,
+                `QnAMaker`, `Recommendations`, `SpeakerRecognition`, `Speech`, `SpeechServices`,
+                `SpeechTranslation`, `TextAnalytics`, `TextTranslation` and `WebLM`.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: Specifies the SKU Name for this Cognitive Service Account.
+                Possible values are `F0`, `F1`, `S0`, `S1`, `S2`, `S3`, `S4`, `S5`,
+                `S6`, `P0`, `P1`, and `P2`.
+            required: true
+            policy: ''
+            notes: ''
+        qna_runtime_endpoint:
+            description: A URL to link a QnAMaker cognitive account to a QnA runtime.
+            required: false
+            policy: ''
+            notes: This URL is mandatory if the `kind` is set to `QnAMaker`.
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Cognitive Service Account.
+        endpoint:
+            description: The endpoint used to connect to the Cognitive Service Account.
+        primary_access_key:
+            description: A primary access key which can be used to connect to the
+                Cognitive Service Account.
+        secondary_access_key:
+            description: The secondary access key which can be used to connect to
+                the Cognitive Service Account.
+    timeouts:
+        create:
+            description: Used when creating the Cognitive Service Account.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Cognitive Service Account.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Cognitive Service Account.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Cognitive Service Account.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        amIyZHVhWFJwZG1WZllXTmpiM1Z1ZENJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdFlXTmpiM1Z1ZENJS0lDQnNiMk5oZEdsdmJpQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExt
+        eHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2EybHVaQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0pHWVdObElnb0tJQ0J6YTNWZmJtRnRaU0E5SUNKVE1DSUtDaUFnZEdGbmN5QTlJ
+        SHNLSUNBZ0lFRmpZMlZ3ZEdGdVkyVWdQU0FpVkdWemRDSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwRGIyZHVhWFJwZG1VZ1UyVnlkbWxqWlNCQlkyTnZkVzUwY3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOW5ibWwwYVhabFgyRmpZMjkxYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

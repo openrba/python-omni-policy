@@ -1,0 +1,57 @@
+aws_wafregional_byte_match_set:
+    status: HOLD
+    subcategory: WAF Regional
+    layout: aws
+    page_title: 'AWS: aws_wafregional_byte_match_set'
+    description: Provides a AWS WAF Regional ByteMatchSet resource for use with ALB.
+    arguments:
+        name:
+            description: The name or description of the ByteMatchSet.
+            required: true
+            policy: ''
+            notes: ''
+        byte_match_tuples:
+            description: that you want AWS WAF to search for in web requests. ByteMatchTuple
+                documented below.
+            required: false
+            policy: ''
+            notes: ''
+        field_to_match:
+            description: Settings for the ByteMatchTuple. FieldToMatch documented
+                below.
+            required: true
+            policy: ''
+            notes: ''
+        positional_constraint:
+            description: Within the portion of a web request that you want to search.
+            required: true
+            policy: ''
+            notes: ''
+        target_string:
+            description: The value that you want AWS WAF to search for. The maximum
+                length of the value is 50 bytes.
+            required: true
+            policy: ''
+            notes: ''
+        text_transformation:
+            description: The formatting way for web request.
+            required: true
+            policy: ''
+            notes: ''
+        data:
+            description: When the value of Type is HEADER, enter the name of the header
+                that you want AWS WAF to search, for example, User-Agent or Referer.
+                If the value of Type is any other value, omit Data.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The part of the web request that you want AWS WAF to search
+                for a specified string.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the WAF ByteMatchSet.
+    timeouts: {}

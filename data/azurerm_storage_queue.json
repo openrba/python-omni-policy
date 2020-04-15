@@ -1,0 +1,56 @@
+{
+    "azurerm_storage_queue": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_queue",
+        "description": "Manages a Queue within an Azure Storage Account.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Queue which should be created within the Storage Account. Must be unique within the storage account the queue is located.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_name": {
+                "description": "Specifies the Storage Account in which the Storage Queue should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "A mapping of MetaData which should be assigned to this Storage Queue.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Storage Queue."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Queue.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Queue.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Queue.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Queue.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

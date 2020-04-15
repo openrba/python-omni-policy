@@ -1,0 +1,155 @@
+{
+    "aws_elasticache_cluster": {
+        "status": "HOLD",
+        "subcategory": "ElastiCache",
+        "layout": "aws",
+        "page_title": "AWS: aws_elasticache_cluster",
+        "description": "Provides an ElastiCache Cluster resource.",
+        "arguments": {
+            "cluster_id": {
+                "description": "Group identifier. ElastiCache converts",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "replication_group_id": {
+                "description": "The ID of the replication group to which this cluster should belong. If this parameter is specified, the cluster is added to the specified replication group as a read replica; otherwise, the cluster is a standalone primary that is not part of any replication group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine": {
+                "description": "Name of the cache engine to be used for this cache cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_version": {
+                "description": "Version number of the cache engine to be used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "maintenance_window": {
+                "description": "Specifies the weekly time range for when maintenance",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "node_type": {
+                "description": "The compute and memory capacity of the nodes. See",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "num_cache_nodes": {
+                "description": "The initial number of cache nodes that the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameter_group_name": {
+                "description": "Name of the parameter group to associate",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379. Cannot be provided with `replication_group_id`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_group_name": {
+                "description": "Name of the subnet group to be used",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_names": {
+                "description": "List of security group",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_ids": {
+                "description": "One or more VPC security groups associated",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "apply_immediately": {
+                "description": "Specifies whether any database modifications",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_arns": {
+                "description": "A single-element string list containing an",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_name": {
+                "description": "The name of a snapshot from which to restore data into the new node group.  Changing the `snapshot_name` forces a new resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_window": {
+                "description": "The daily time range (in UTC",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_retention_limit": {
+                "description": "The number of days for which ElastiCache will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notification_topic_arn": {
+                "description": "An Amazon Resource Name (ARN",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "az_mode": {
+                "description": "Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `num_cache_nodes` must be greater than `1`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferred_availability_zones` instead. Default: System chosen Availability Zone.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "preferred_availability_zones": {
+                "description": "A list of the Availability Zones in which cache nodes are created. If you are creating your cluster in an Amazon VPC you can only locate nodes in Availability Zones that are associated with the subnets in the selected subnet group. The number of Availability Zones listed must equal the value of `num_cache_nodes`. If you want all the nodes in the same Availability Zone, use `availability_zone` instead, or repeat the Availability Zone multiple times in the list. Default: System chosen Availability Zones. Detecting drift of existing node availability zone is not currently supported. Updating this argument by itself to migrate existing node availability zones is not currently supported and will show a perpetual difference.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "cache_nodes": {
+                "description": "List of node objects including `id`, `address`, `port` and `availability_zone`."
+            },
+            "configuration_endpoint": {
+                "description": "(Memcached only) The configuration endpoint to allow host discovery."
+            },
+            "cluster_address": {
+                "description": "(Memcached only) The DNS name of the cache cluster without the port appended."
+            }
+        },
+        "timeouts": {}
+    }
+}

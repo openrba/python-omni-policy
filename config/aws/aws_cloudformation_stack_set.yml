@@ -1,0 +1,75 @@
+aws_cloudformation_stack_set:
+    status: HOLD
+    subcategory: CloudFormation
+    layout: aws
+    page_title: 'AWS: aws_cloudformation_stack_set'
+    description: Manages a CloudFormation StackSet.
+    arguments:
+        administration_role_arn:
+            description: Amazon Resource Number (ARN
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Name of the StackSet. The name must be unique in the region
+                where you create your StackSet. The name can contain only alphanumeric
+                characters (case-sensitive
+            required: true
+            policy: ''
+            notes: ''
+        capabilities:
+            description: 'A list of capabilities. Valid values: `CAPABILITY_IAM`,
+                `CAPABILITY_NAMED_IAM`, `CAPABILITY_AUTO_EXPAND`.'
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the StackSet.
+            required: false
+            policy: ''
+            notes: ''
+        execution_role_name:
+            description: Name of the IAM Role in all target accounts for StackSet
+                operations. Defaults to `AWSCloudFormationStackSetExecutionRole`.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: Key-value map of input parameters for the StackSet template.
+                All template parameters, including those with a `Default`, must be
+                configured or ignored with `lifecycle` configuration block `ignore_changes`
+                argument. All `NoEcho` template parameters must be ignored with the
+                `lifecycle` configuration block `ignore_changes` argument.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value map of tags to associate with this StackSet and
+                the Stacks created from it. AWS CloudFormation also propagates these
+                tags to supported resources that are created in the Stacks. A maximum
+                number of 50 tags can be specified.
+            required: false
+            policy: ''
+            notes: ''
+        template_body:
+            description: 'String containing the CloudFormation template body. Maximum
+                size: 51,200 bytes. Conflicts with `template_url`.'
+            required: false
+            policy: ''
+            notes: ''
+        template_url:
+            description: 'String containing the location of a file containing the
+                CloudFormation template body. The URL must point to a template that
+                is located in an Amazon S3 bucket. Maximum location file size: 460,800
+                bytes. Conflicts with `template_body`.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: Amazon Resource Name (ARN) of the StackSet.
+        id:
+            description: Name of the StackSet.
+        stack_set_id:
+            description: Unique identifier of the StackSet.
+    timeouts: {}

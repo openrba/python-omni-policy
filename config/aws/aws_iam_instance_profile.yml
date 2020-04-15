@@ -1,0 +1,31 @@
+aws_iam_instance_profile:
+    status: HOLD
+    subcategory: IAM
+    layout: aws
+    page_title: 'AWS: aws_iam_instance_profile'
+    description: Provides an IAM instance profile.
+    arguments:
+        name:
+            description: The profile's name. If omitted, Terraform will assign a random,
+                unique name.
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name beginning with the specified prefix.
+                Conflicts with `name`.
+            required: false
+            policy: ''
+            notes: ''
+        path:
+            description: Path in which to create the profile.
+            required: false
+            policy: ''
+            notes: ''
+        role:
+            description: The role name to include in the profile.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

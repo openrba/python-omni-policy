@@ -1,0 +1,43 @@
+aws_batch_job_definition:
+    status: HOLD
+    subcategory: Batch
+    layout: aws
+    page_title: 'AWS: aws_batch_job_definition'
+    description: Provides a Batch Job Definition resource.
+    arguments:
+        name:
+            description: Specifies the name of the job definition.
+            required: true
+            policy: ''
+            notes: ''
+        container_properties:
+            description: A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: Specifies the parameter substitution placeholders to set
+                in the job definition.
+            required: false
+            policy: ''
+            notes: ''
+        retry_strategy:
+            description: Specifies the retry strategy to use for failed jobs that
+                are submitted with this job definition.
+            required: false
+            policy: ''
+            notes: ''
+        timeout:
+            description: Specifies the timeout for jobs so that if a job runs longer,
+                AWS Batch terminates the job. Maximum number of `timeout` is `1`.
+                Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of job definition.  Must be `container`
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

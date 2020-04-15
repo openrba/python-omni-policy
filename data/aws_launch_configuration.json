@@ -1,0 +1,137 @@
+{
+    "aws_launch_configuration": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_launch_configuration",
+        "description": "Provides a resource to create a new launch configuration, used for autoscaling groups.",
+        "arguments": {
+            "name": {
+                "description": "The name of the launch configuration. If you leave",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name_prefix": {
+                "description": "Creates a unique name beginning with the specified",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "image_id": {
+                "description": "The EC2 image ID to launch.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_type": {
+                "description": "The size of instance to launch.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_instance_profile": {
+                "description": "The name attribute of the IAM instance profile to associate",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_name": {
+                "description": "The key name that should be used for the instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_groups": {
+                "description": "A list of associated security group IDS.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "associate_public_ip_address": {
+                "description": "Associate a public ip address with an instance in a VPC.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_classic_link_id": {
+                "description": "The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_classic_link_security_groups": {
+                "description": "The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_data": {
+                "description": "The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `user_data_base64` instead.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_data_base64": {
+                "description": "Can be used instead of `user_data` to pass base64-encoded binary data directly. Use this instead of `user_data` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_monitoring": {
+                "description": "Enables/disables detailed monitoring. This is enabled by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ebs_optimized": {
+                "description": "If true, the launched EC2 instance will be EBS-optimized.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "root_block_device": {
+                "description": "Customize details about the root block",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ebs_block_device": {
+                "description": "Additional EBS block devices to attach to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ephemeral_block_device": {
+                "description": "Customize Ephemeral (also known as",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "spot_price": {
+                "description": "The maximum price to use for reserving spot instances.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "placement_tenancy": {
+                "description": "The tenancy of the instance. Valid values are",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the launch configuration."
+            },
+            "arn": {
+                "description": "The Amazon Resource Name of the launch configuration."
+            },
+            "name": {
+                "description": "The name of the launch configuration."
+            }
+        },
+        "timeouts": {}
+    }
+}

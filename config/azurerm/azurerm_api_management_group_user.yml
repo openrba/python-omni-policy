@@ -1,0 +1,73 @@
+azurerm_api_management_group_user:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_group_user'
+    description: Manages an API Management User Assignment to a Group.
+    arguments:
+        user_id:
+            description: The ID of the API Management User which should be assigned
+                to this API Management Group. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        group_name:
+            description: The Name of the API Management Group within the API Management
+                Service. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the API Management Service. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Group User.
+    timeouts:
+        create:
+            description: Used when creating the API Management Group User.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Group User.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Group User.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Group User.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZmRYTmxjaUlnSW1WNFlXMXdi
+        R1VpSUhzS0lDQjFjMlZ5WDJsa0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW0xNUxYVnpaWElpQ2lBZ1lY
+        QnBYMjFoYm1GblpXMWxiblJmYm1GdFpTQTlJQ0psZUdGdGNHeGxMV0Z3YVcwaUNpQWdjbVZ6YjNW
+        eVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUNKelpXRnlZMmd0YzJWeWRtbGpaU0lLZlFvS2NtVnpiM1Z5
+        WTJVZ0ltRjZkWEpsY20xZllYQnBYMjFoYm1GblpXMWxiblJmWjNKdmRYQmZkWE5sY2lJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0IxYzJWeVgybGtJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1pHRjBZUzVoZW5WeVpY
+        SnRYMkZ3YVY5dFlXNWhaMlZ0Wlc1MFgzVnpaWEl1WlhoaGJYQnNaUzVwWkFvZ0lHZHliM1Z3WDI1
+        aGJXVWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzFuY205MWNDSUtJQ0J5WlhOdmRYSmpaVjlu
+        Y205MWNGOXVZVzFsSUQwZ1pHRjBZUzVoZW5WeVpYSnRYMkZ3YVY5dFlXNWhaMlZ0Wlc1MFgzVnpa
+        WEl1WlhoaGJYQnNaUzV5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsQ2lBZ1lYQnBYMjFoYm1GblpX
+        MWxiblJmYm1GdFpTQTlJR1JoZEdFdVlYcDFjbVZ5YlY5aGNHbGZiV0Z1WVdkbGJXVnVkRjkxYzJW
+        eUxtVjRZVzF3YkdVdVlYQnBYMjFoYm1GblpXMWxiblJmYm1GdFpRcDlDZz09
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JIY205MWNDQlZjMlZ5Y3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWjNKdmRYQmZkWE5sY2k1b2RHMXNMbTFoY210
+        a2IzZHU=

@@ -1,0 +1,41 @@
+{
+    "aws_ses_template": {
+        "status": "HOLD",
+        "subcategory": "SES",
+        "layout": "aws",
+        "page_title": "AWS: aws_ses_template",
+        "description": "Provides a resource to create a SES template",
+        "arguments": {
+            "name": {
+                "description": "The name of the template. Cannot exceed 64 characters. You will refer to this name when you send email.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "html": {
+                "description": "The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subject": {
+                "description": "The subject line of the email.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "text": {
+                "description": "The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the SES template"
+            }
+        },
+        "timeouts": {}
+    }
+}

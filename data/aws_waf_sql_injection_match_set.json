@@ -1,0 +1,29 @@
+{
+    "aws_waf_sql_injection_match_set": {
+        "status": "HOLD",
+        "subcategory": "WAF",
+        "layout": "aws",
+        "page_title": "AWS: aws_waf_sql_injection_match_set",
+        "description": "Provides a AWS WAF SQL Injection Match Set resource.",
+        "arguments": {
+            "name": {
+                "description": "The name or description of the SQL Injection Match Set.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_injection_match_tuples": {
+                "description": "The parts of web requests that you want AWS WAF to inspect for malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the WAF SQL Injection Match Set."
+            }
+        },
+        "timeouts": {}
+    }
+}

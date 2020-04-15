@@ -1,0 +1,19 @@
+aws_iam_user_policy_attachment:
+    status: HOLD
+    subcategory: IAM
+    layout: aws
+    page_title: 'AWS: aws_iam_user_policy_attachment'
+    description: Attaches a Managed IAM Policy to an IAM user
+    arguments:
+        user:
+            description: '- The user the policy should be applied to'
+            required: true
+            policy: ''
+            notes: ''
+        policy_arn:
+            description: '- The ARN of the policy you want to apply'
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

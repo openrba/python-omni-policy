@@ -1,0 +1,69 @@
+{
+    "aws_ami_copy": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_ami_copy",
+        "description": "Duplicates an existing Amazon Machine Image (AMI)",
+        "arguments": {
+            "name": {
+                "description": "A region-unique name for the AMI.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_ami_id": {
+                "description": "The id of the AMI to copy. This id must be valid in the region",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_ami_region": {
+                "description": "The region from which the AMI will be copied. This may be the",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "encrypted": {
+                "description": "Specifies whether the destination snapshots of the copied image should be encrypted. Defaults to `false`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_id": {
+                "description": "The full ARN of the KMS Key to use when encrypting the snapshots of an image during a copy operation. If not specified, then the default AWS KMS Key will be used",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the created AMI."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the AMI",
+                "required": false,
+                "timeout": 40
+            },
+            "update": {
+                "description": "Used when updating the AMI",
+                "required": false,
+                "timeout": 40
+            },
+            "delete": {
+                "description": "Used when deregistering the AMI",
+                "required": false,
+                "timeout": 90
+            }
+        }
+    }
+}

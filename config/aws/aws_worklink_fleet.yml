@@ -1,0 +1,90 @@
+aws_worklink_fleet:
+    status: HOLD
+    subcategory: WorkLink
+    layout: aws
+    page_title: 'AWS: aws_worklink_fleet'
+    description: Provides a AWS WorkLink Fleet resource.
+    arguments:
+        name:
+            description: A region-unique name for the AMI.
+            required: true
+            policy: ''
+            notes: ''
+        audit_stream_arn:
+            description: The ARN of the Amazon Kinesis data stream that receives the
+                audit events.
+            required: false
+            policy: ''
+            notes: ''
+        device_ca_certificate:
+            description: The certificate chain, including intermediate certificates
+                and the root certificate authority certificate used to issue device
+                certificates.
+            required: false
+            policy: ''
+            notes: ''
+        identity_provider:
+            description: Provide this to allow manage the identity provider configuration
+                for the fleet. Fields documented below.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: The name of the fleet.
+            required: false
+            policy: ''
+            notes: ''
+        network:
+            description: Provide this to allow manage the company network configuration
+                for the fleet. Fields documented below.
+            required: false
+            policy: ''
+            notes: ''
+        optimize_for_end_user_location:
+            description: The option to optimize for better performance by routing
+                traffic through the closest AWS Region to users, which may be outside
+                of your home Region. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        vpc_id:
+            description: The VPC ID with connectivity to associated websites.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: A list of subnet IDs used for X-ENI connections from Amazon
+                WorkLink rendering containers.
+            required: true
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: A list of security group IDs associated with access to the
+                provided subnets.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of identity provider.
+            required: true
+            policy: ''
+            notes: ''
+        saml_metadata:
+            description: "The SAML metadata document provided by the customer\u2019\
+                s identity provider."
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ARN of the created WorkLink Fleet.
+        arn:
+            description: The ARN of the created WorkLink Fleet.
+        company_code:
+            description: The identifier used by users to sign in to the Amazon WorkLink
+                app.
+        created_time:
+            description: The time that the fleet was created.
+        last_updated_time:
+            description: The time that the fleet was last updated.
+    timeouts: {}

@@ -1,0 +1,86 @@
+{
+    "azurerm_virtual_network_peering": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_virtual_network_peering",
+        "description": "Manages a virtual network peering which allows resources to access other\nresources in the linked virtual network.",
+        "arguments": {
+            "name": {
+                "description": "The name of the virtual network peering. Changing this",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_network_name": {
+                "description": "The name of the virtual network. Changing",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "remote_virtual_network_id": {
+                "description": "The full Azure resource ID of the",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_virtual_network_access": {
+                "description": "Controls if the VMs in the remote",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_forwarded_traffic": {
+                "description": "Controls if forwarded traffic from  VMs",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_gateway_transit": {
+                "description": "Controls gatewayLinks can be used in the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "use_remote_gateways": {
+                "description": "Controls if remote gateways can be used on",
+                "required": false,
+                "policy": "",
+                "notes": "`use_remote_gateways` must be set to `false` if using Global Virtual Network Peerings."
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Virtual Network Peering."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Virtual Network Peering.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Virtual Network Peering.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Virtual Network Peering.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Virtual Network Peering.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

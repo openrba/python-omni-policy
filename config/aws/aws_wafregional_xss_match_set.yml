@@ -1,0 +1,23 @@
+aws_wafregional_xss_match_set:
+    status: HOLD
+    subcategory: WAF Regional
+    layout: aws
+    page_title: 'AWS: aws_wafregional_xss_match_set'
+    description: Provides an AWS WAF Regional XSS Match Set resource for use with
+        ALB.
+    arguments:
+        name:
+            description: The name of the set
+            required: true
+            policy: ''
+            notes: ''
+        xss_match_tuple:
+            description: The parts of web requests that you want to inspect for cross-site
+                scripting attacks.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Regional WAF XSS Match Set.
+    timeouts: {}

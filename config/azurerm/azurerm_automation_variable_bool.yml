@@ -1,0 +1,85 @@
+azurerm_automation_variable_bool:
+    status: HOLD
+    subcategory: Automation
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_automation_variable_bool'
+    description: Manages a boolean variable in Azure Automation.
+    arguments:
+        name:
+            description: The name of the Automation Variable. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Automation
+                Variable. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        automation_account_name:
+            description: The name of the automation account in which the Variable
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the Automation Variable.
+            required: false
+            policy: ''
+            notes: ''
+        encrypted:
+            description: Specifies if the Automation Variable is encrypted. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The value of the Automation Variable as a `boolean`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Automation Variable.
+    timeouts:
+        create:
+            description: Used when creating the Automation Bool Variable.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Automation Bool Variable.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Automation Bool Variable.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Automation Bool Variable.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndFpYaGhiWEJzWlMxeVp5SUtJQ0JzYjJOaGRH
+        bHZiaUE5SUNKWFpYTjBJRlZUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWhkWFJ2YldG
+        MGFXOXVYMkZqWTI5MWJuUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0owWm1WNExXVjRZVzF3YkdVdFlXTmpiM1Z1ZENJS0lDQnNiMk5oZEdsdmJpQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExt
+        eHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lITnJkU0I3Q2lBZ0lDQnVZVzFs
+        SUQwZ0lrSmhjMmxqSWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWVhWMGIyMWhk
+        R2x2Ymw5MllYSnBZV0pzWlY5aWIyOXNJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUm1aWGd0WlhoaGJYQnNaUzEyWVhJaUNpQWdjbVZ6YjNW
+        eVkyVmZaM0p2ZFhCZmJtRnRaU0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3
+        TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR0YxZEc5dFlYUnBiMjVmWVdOamIzVnVkRjl1WVcxbElEMGdZ
+        WHAxY21WeWJWOWhkWFJ2YldGMGFXOXVYMkZqWTI5MWJuUXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2Rt
+        RnNkV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCbVlXeHpaUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQmRYUnZiV0YwYVc5dUlFSnZiMndnVm1GeWFXRmliR1VnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYVjBiMjFoZEdsdmJsOTJZWEpwWVdKc1pWOWliMjlzTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

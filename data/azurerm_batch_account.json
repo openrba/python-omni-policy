@@ -1,0 +1,101 @@
+{
+    "azurerm_batch_account": {
+        "status": "HOLD",
+        "subcategory": "Batch",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_batch_account",
+        "description": "Manages an Azure Batch account.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Batch account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Batch account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "pool_allocation_mode": {
+                "description": "Specifies the mode to use for pool allocation. Possible values are `BatchService` or `UserSubscription`. Defaults to `BatchService`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_reference": {
+                "description": "A `key_vault_reference` block that describes the Azure KeyVault reference to use when deploying the Azure Batch account using the `UserSubscription` pool allocation mode.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "Specifies the storage account to use for the Batch account. If not specified, Azure Batch will manage the storage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "The Azure identifier of the Azure KeyVault to use.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The HTTPS URL of the Azure KeyVault to use.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Batch Account."
+            },
+            "primary_access_key": {
+                "description": "The Batch account primary access key."
+            },
+            "secondary_access_key": {
+                "description": "The Batch account secondary access key."
+            },
+            "account_endpoint": {
+                "description": "The account endpoint used to interact with the Batch service."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Batch Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Batch Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Batch Account.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Batch Account.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

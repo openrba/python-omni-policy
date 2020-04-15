@@ -1,0 +1,368 @@
+{
+    "aws_db_instance": {
+        "status": "HOLD",
+        "subcategory": "RDS",
+        "layout": "aws",
+        "page_title": "AWS: aws_db_instance",
+        "description": "Provides an RDS instance resource.",
+        "arguments": {
+            "allocated_storage": {
+                "description": "The allocated storage in gibibytes. If `max_allocated_storage` is configured, this argument represents the initial storage allocation and differences from the configuration will be ignored automatically when Storage Autoscaling occurs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_major_version_upgrade": {
+                "description": "Indicates that major version",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "apply_immediately": {
+                "description": "Specifies whether any database modifications",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_minor_version_upgrade": {
+                "description": "Indicates that minor engine upgrades",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The AZ for the RDS instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backup_retention_period": {
+                "description": "The days to retain backups for. Must be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backup_window": {
+                "description": "The daily time range (in UTC",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ca_cert_identifier": {
+                "description": "The identifier of the CA certificate for the DB instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "character_set_name": {
+                "description": "The character set name to use for DB",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "copy_tags_to_snapshot": {
+                "description": "Copy all Instance `tags` to snapshots. Default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "db_subnet_group_name": {
+                "description": "Name of [DB subnet group](/docs/providers/aws/r/db_subnet_group.html). DB instance will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "delete_automated_backups": {
+                "description": "Specifies whether to remove automated backups immediately after the DB instance is deleted. Default is `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "deletion_protection": {
+                "description": "If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain": {
+                "description": "The ID of the Directory Service Active Directory domain to create the instance in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain_iam_role_name": {
+                "description": "The name of the IAM role to be used when making API calls to the Directory Service.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled_cloudwatch_logs_exports": {
+                "description": "List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`): `agent` (MSSQL), `alert`, `audit`, `error`, `general`, `listener`, `slowquery`, `trace`, `postgresql` (PostgreSQL), `upgrade` (PostgreSQL).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_version": {
+                "description": "The engine version to use. If `auto_minor_version_upgrade`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "final_snapshot_identifier": {
+                "description": "The name of your final DB snapshot",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_database_authentication_enabled": {
+                "description": "Specifies whether or",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identifier": {
+                "description": "The name of the RDS instance,",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identifier_prefix": {
+                "description": "Creates a unique",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_class": {
+                "description": "The instance type of the RDS instance.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "iops": {
+                "description": "The amount of provisioned IOPS. Setting this implies a",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_id": {
+                "description": "The ARN for the KMS encryption key. If creating an",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "maintenance_window": {
+                "description": "The window to perform maintenance in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_allocated_storage": {
+                "description": "When configured, the upper limit to which Amazon RDS can automatically scale the storage of the DB instance. Configuring this will automatically ignore differences to `allocated_storage`. Must be greater than or equal to `allocated_storage` or `0` to disable Storage Autoscaling.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "monitoring_interval": {
+                "description": "The interval, in seconds, between points",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "monitoring_role_arn": {
+                "description": "The ARN for the IAM role that permits RDS",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "multi_az": {
+                "description": "Specifies if the RDS instance is multi-AZ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the [AWS documentation](http://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "option_group_name": {
+                "description": "Name of the DB option group to associate.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameter_group_name": {
+                "description": "Name of the DB parameter group to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The port on which the DB accepts connections.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "publicly_accessible": {
+                "description": "Bool to control if instance is publicly",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "replicate_source_db": {
+                "description": "Specifies that this resource is a Replicate",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_names": {
+                "description": "List of DB Security Groups to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "skip_final_snapshot": {
+                "description": "Determines whether a final DB snapshot is",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_identifier": {
+                "description": "Specifies whether or not to create this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_encrypted": {
+                "description": "Specifies whether the DB instance is",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_type": {
+                "description": "One of \"standard\" (magnetic), \"gp2\" (general",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timezone": {
+                "description": "Time zone of the DB instance. `timezone` is currently",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_security_group_ids": {
+                "description": "List of VPC security groups to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_import": {
+                "description": "Restore from a Percona Xtrabackup in S3.  See [Importing Data into an Amazon RDS MySQL DB Instance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "performance_insights_enabled": {
+                "description": "Specifies whether Performance Insights are enabled. Defaults to false.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "performance_insights_kms_key_id": {
+                "description": "The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true. Once KMS key is set, it can never be changed.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "performance_insights_retention_period": {
+                "description": "The amount of time in days to retain Performance Insights data. Either 7 (7 days",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "address": {
+                "description": "The hostname of the RDS instance. See also `endpoint` and `port`."
+            },
+            "arn": {
+                "description": "The ARN of the RDS instance."
+            },
+            "allocated_storage": {
+                "description": "The amount of allocated storage."
+            },
+            "availability_zone": {
+                "description": "The availability zone of the instance."
+            },
+            "backup_retention_period": {
+                "description": "The backup retention period."
+            },
+            "backup_window": {
+                "description": "The backup window."
+            },
+            "ca_cert_identifier": {
+                "description": "Specifies the identifier of the CA certificate for the"
+            },
+            "domain": {
+                "description": "The ID of the Directory Service Active Directory domain the instance is joined to"
+            },
+            "domain_iam_role_name": {
+                "description": "The name of the IAM role to be used when making API calls to the Directory Service."
+            },
+            "endpoint": {
+                "description": "The connection endpoint in `address:port` format."
+            },
+            "engine": {
+                "description": "The database engine."
+            },
+            "engine_version": {
+                "description": "The database engine version."
+            },
+            "hosted_zone_id": {
+                "description": "The canonical hosted zone ID of the DB instance (to be used"
+            },
+            "id": {
+                "description": "The RDS instance ID."
+            },
+            "instance_class": {
+                "description": "The RDS instance class."
+            },
+            "maintenance_window": {
+                "description": "The instance maintenance window."
+            },
+            "multi_az": {
+                "description": "If the RDS instance is multi AZ enabled."
+            },
+            "name": {
+                "description": "The database name."
+            },
+            "port": {
+                "description": "The database port."
+            },
+            "resource_id": {
+                "description": "The RDS Resource ID of this instance."
+            },
+            "status": {
+                "description": "The RDS instance status."
+            },
+            "storage_encrypted": {
+                "description": "Specifies whether the DB instance is encrypted."
+            },
+            "username": {
+                "description": "The master username for the database."
+            },
+            "character_set_name": {
+                "description": "The character set used on Oracle instances."
+            }
+        },
+        "timeouts": {}
+    }
+}

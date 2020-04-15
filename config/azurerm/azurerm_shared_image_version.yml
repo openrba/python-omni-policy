@@ -1,0 +1,124 @@
+azurerm_shared_image_version:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_shared_image_version'
+    description: Manages a Version of a Shared Image within a Shared Image Gallery.
+    arguments:
+        name:
+            description: The Azure Region in which this Image Version should exist.
+            required: true
+            policy: ''
+            notes: ''
+        gallery_name:
+            description: The name of the Shared Image Gallery in which the Shared
+                Image exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        image_name:
+            description: The name of the Shared Image within the Shared Image Gallery
+                in which this Version should be created. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure Region in which the Shared Image Gallery exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the Shared Image
+                Gallery exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        managed_image_id:
+            description: The ID of the Managed Image which should be used for this
+                Shared Image Version. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: The ID can be sourced from the `azurerm_image` [Data Source](https://www.terraform.io/docs/providers/azurerm/d/image.html)
+                or [Resource](https://www.terraform.io/docs/providers/azurerm/r/image.html).
+        target_region:
+            description: One or more `target_region` blocks as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        exclude_from_latest:
+            description: Should this Image Version be excluded from the `latest` filter?
+                If set to `true` this Image Version won't be returned for the `latest`
+                version. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A collection of tags which should be applied to this resource.
+            required: false
+            policy: ''
+            notes: ''
+        regional_replica_count:
+            description: The number of replicas of the Image Version to be created
+                per region.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_type:
+            description: The storage account type for the image version, which defaults
+                to `Standard_LRS`. You can store all of your image version replicas
+                in Zone Redundant Storage by specifying `Standard_ZRS`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Shared Image Version.
+    timeouts:
+        create:
+            description: Used when creating the Shared Image Version.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Shared Image Version.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Shared Image Version.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Shared Image Version.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZhVzFoWjJVaUlDSmxlR2x6ZEdsdVp5SWdld29nSUc1aGJXVWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWljMlZoY21Ob0xXRndhU0lLSUNCeVpYTnZkWEpqWlY5bmNt
+        OTFjRjl1WVcxbElEMGdJbkJoWTJ0bGNtbHRZV2RsY3lJS2ZRb0taR0YwWVNBaVlYcDFjbVZ5YlY5
+        emFHRnlaV1JmYVcxaFoyVWlJQ0psZUdsemRHbHVaeUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpWlhocGMzUnBibWN0YVcxaFoyVWlDaUFnWjJGc2JHVnllVjl1WVcxbElDQWdJ
+        Q0FnSUNBOUlDSmxlR2x6ZEdsdVoxOW5ZV3hzWlhKNUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gy
+        NWhiV1VnUFNBaVpYaHBjM1JwYm1jdGNtVnpiM1Z5WTJWeklncDlDZ3B5WlhOdmRYSmpaU0FpWVhw
+        MWNtVnliVjl6YUdGeVpXUmZhVzFoWjJWZmRtVnljMmx2YmlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1
+        WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lqQXVNQzR4SWdvZ0lHZGhiR3hsY25sZmJtRnRa
+        U0FnSUNBZ0lDQWdQU0JrWVhSaExtRjZkWEpsY20xZmMyaGhjbVZrWDJsdFlXZGxMbVY0YVhOMGFX
+        NW5MbWRoYkd4bGNubGZibUZ0WlFvZ0lHbHRZV2RsWDI1aGJXVWdJQ0FnSUNBZ0lDQWdQU0JrWVhS
+        aExtRjZkWEpsY20xZmMyaGhjbVZrWDJsdFlXZGxMbVY0YVhOMGFXNW5MbTVoYldVS0lDQnlaWE52
+        ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWkdGMFlTNWhlblZ5WlhKdFgzTm9ZWEpsWkY5cGJXRm5a
+        UzVsZUdsemRHbHVaeTV5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lD
+        QWdJQ0FnSUNBZ0lDQTlJR1JoZEdFdVlYcDFjbVZ5YlY5emFHRnlaV1JmYVcxaFoyVXVaWGhwYzNS
+        cGJtY3ViRzlqWVhScGIyNEtJQ0J0WVc1aFoyVmtYMmx0WVdkbFgybGtJQ0FnSUQwZ1pHRjBZUzVo
+        ZW5WeVpYSnRYMmx0WVdkbExtVjRhWE4wYVc1bkxtbGtDZ29nSUhSaGNtZGxkRjl5WldkcGIyNGdl
+        d29nSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUdSaGRHRXVZWHAxY21WeWJW
+        OXphR0Z5WldSZmFXMWhaMlV1WlhocGMzUnBibWN1Ykc5allYUnBiMjRLSUNBZ0lISmxaMmx2Ym1G
+        c1gzSmxjR3hwWTJGZlkyOTFiblFnUFNBaU5TSUtJQ0FnSUhOMGIzSmhaMlZmWVdOamIzVnVkRjkw
+        ZVhCbElDQWdQU0FpVTNSaGJtUmhjbVJmVEZKVElnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwVGFHRnlaV1FnU1cxaFoyVWdWbVZ5YzJsdmJuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyaGhjbVZrWDJsdFlXZGxYM1psY25OcGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

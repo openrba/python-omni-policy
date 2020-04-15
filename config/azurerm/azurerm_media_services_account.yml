@@ -1,0 +1,89 @@
+azurerm_media_services_account:
+    status: HOLD
+    subcategory: Media
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_media_services_account'
+    description: Manages a Media Services Account.
+    arguments:
+        name:
+            description: Specifies the name of the Media Services Account. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Media
+                Services Account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account:
+            description: One or more `storage_account` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        id:
+            description: Specifies the ID of the Storage Account that will be associated
+                with the Media Services instance.
+            required: true
+            policy: ''
+            notes: ''
+        is_primary:
+            description: Specifies whether the storage account should be the primary
+                account or not. Defaults to `false`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Media Services Account.
+    timeouts:
+        create:
+            description: Used when creating the Media Services Account.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Media Services Account.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Media Services Account.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Media Services Account.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbTFsWkdsaExYSmxjMjkxY21ObGN5SUtJQ0JzYjJOaGRH
+        bHZiaUE5SUNKWFpYTjBJRVYxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNS
+        dmNtRm5aVjloWTJOdmRXNTBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bGMzUnZjbUZqWXlJS0lDQnlaWE52ZFhKalpWOW5j
+        bTkxY0Y5dVlXMWxJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlX
+        MXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhK
+        bGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lHRmpZMjkx
+        Ym5SZmRHbGxjaUFnSUNBZ0lDQWdJQ0FnSUNBOUlDSlRkR0Z1WkdGeVpDSUtJQ0JoWTJOdmRXNTBY
+        M0psY0d4cFkyRjBhVzl1WDNSNWNHVWdQU0FpUjFKVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNt
+        VnliVjl0WldScFlWOXpaWEoyYVdObGMxOWhZMk52ZFc1MElpQWlaWGhoYlhCc1pTSWdld29nSUc1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pXMWxaR2xoWVdOaklnb2dJR3h2
+        WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndM
+        bVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lY
+        cDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0NpQWdjM1J2Y21G
+        blpWOWhZMk52ZFc1MElIc0tJQ0FnSUdsa0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzTjBiM0po
+        WjJWZllXTmpiM1Z1ZEM1bGVHRnRjR3hsTG1sa0NpQWdJQ0JwYzE5d2NtbHRZWEo1SUQwZ2RISjFa
+        UW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwTlpXUnBZU0JUWlhKMmFXTmxjeUJCWTJOdmRXNTBjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXVmthV0ZmYzJWeWRtbGpaWE5mWVdOamIzVnVkQzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

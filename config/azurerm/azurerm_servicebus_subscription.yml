@@ -1,0 +1,141 @@
+azurerm_servicebus_subscription:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_servicebus_subscription'
+    description: Manages a ServiceBus Subscription.
+    arguments:
+        name:
+            description: Specifies the name of the ServiceBus Subscription resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: The name of the ServiceBus Namespace to create this Subscription
+                in. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        topic_name:
+            description: The name of the ServiceBus Topic to create this Subscription
+                in. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the namespace.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        max_delivery_count:
+            description: The maximum number of deliveries.
+            required: true
+            policy: ''
+            notes: ''
+        auto_delete_on_idle:
+            description: The idle interval after which the topic is automatically
+                deleted as an [ISO 8601 duration](https://en.wikipedia.org/wiki/ISO_8601#Durations).
+                The minimum duration is `5` minutes or `P5M`.
+            required: false
+            policy: ''
+            notes: ''
+        default_message_ttl:
+            description: The Default message timespan to live as an [ISO 8601 duration](https://en.wikipedia.org/wiki/ISO_8601#Durations).
+                This is the duration after which the message expires, starting from
+                when the message is sent to Service Bus. This is the default value
+                used when TimeToLive is not set on a message itself.
+            required: false
+            policy: ''
+            notes: ''
+        lock_duration:
+            description: The lock duration for the subscription as an [ISO 8601 duration](https://en.wikipedia.org/wiki/ISO_8601#Durations).
+                The default value is `1` minute or `P1M`.
+            required: false
+            policy: ''
+            notes: ''
+        dead_lettering_on_message_expiration:
+            description: Boolean flag which controls whether the Subscription has
+                dead letter support when a message expires. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        enable_batched_operations:
+            description: Boolean flag which controls whether the Subscription supports
+                batched operations. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        requires_session:
+            description: Boolean flag which controls whether this Subscription supports
+                the concept of a session. Defaults to `false`. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        forward_to:
+            description: The name of a Queue or Topic to automatically forward messages
+                to.
+            required: false
+            policy: ''
+            notes: ''
+        forward_dead_lettered_messages_to:
+            description: The name of a Queue or Topic to automatically forward Dead
+                Letter messages to.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ServiceBus Subscription ID.
+    timeouts:
+        create:
+            description: Used when creating the ServiceBus Subscription.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ServiceBus Subscription.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ServiceBus Subscription.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ServiceBus Subscription.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGMyVnlkbWxqWldKMWN5MXpkV0p6WTNKcGNI
+        UnBiMjRpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21O
+        bElDSmhlblZ5WlhKdFgzTmxjblpwWTJWaWRYTmZibUZ0WlhOd1lXTmxJaUFpWlhoaGJYQnNaU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZEdabGVGOXpaWFpwWTJWaWRYTmZi
+        bUZ0WlhOd1lXTmxJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgz
+        SmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5
+        bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hs
+        TG01aGJXVUtJQ0J6YTNVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb0tJ
+        Q0IwWVdkeklEMGdld29nSUNBZ2MyOTFjbU5sSUQwZ0luUmxjbkpoWm05eWJTSUtJQ0I5Q24wS0Nu
+        SmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTmxjblpwWTJWaWRYTmZkRzl3YVdNaUlDSmxlR0Z0Y0d4
+        bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBabVY0WDNObGRtbGpaV0ox
+        YzE5MGIzQnBZeUlLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXla
+        WE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0J1WVcxbGMzQmhZMlZmYm1GdFpT
+        QWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5elpYSjJhV05sWW5WelgyNWhiV1Z6Y0dGalpTNWxlR0Z0Y0d4
+        bExtNWhiV1VLQ2lBZ1pXNWhZbXhsWDNCaGNuUnBkR2x2Ym1sdVp5QTlJSFJ5ZFdVS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbUY2ZFhKbGNtMWZjMlZ5ZG1salpXSjFjMTl6ZFdKelkzSnBjSFJwYjI0aUlDSmxl
+        R0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBabVY0WDNObGRt
+        bGpaV0oxYzE5emRXSnpZM0pwY0hScGIyNGlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNB
+        OUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdibUZ0
+        WlhOd1lXTmxYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzJWeWRtbGpaV0oxYzE5dVlXMWxj
+        M0JoWTJVdVpYaGhiWEJzWlM1dVlXMWxDaUFnZEc5d2FXTmZibUZ0WlNBZ0lDQWdJQ0FnSUNBOUlH
+        RjZkWEpsY20xZmMyVnlkbWxqWldKMWMxOTBiM0JwWXk1bGVHRnRjR3hsTG01aGJXVUtJQ0J0WVho
+        ZlpHVnNhWFpsY25sZlkyOTFiblFnSUQwZ01RcDlDZz09
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVKMWN5QlRkV0p6WTNKcGNIUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWldKMWMxOXpkV0p6WTNKcGNIUnBiMjR1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

@@ -1,0 +1,25 @@
+{
+    "aws_iot_policy_attachment": {
+        "status": "HOLD",
+        "subcategory": "IoT",
+        "layout": "aws",
+        "page_title": "AWS: aws_iot_policy_attachment",
+        "description": "Provides an IoT policy attachment.",
+        "arguments": {
+            "policy": {
+                "description": "The name of the policy to attach.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target": {
+                "description": "The identity to which the policy is attached.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

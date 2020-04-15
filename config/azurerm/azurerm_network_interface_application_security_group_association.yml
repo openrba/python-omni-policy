@@ -1,0 +1,93 @@
+azurerm_network_interface_application_security_group_association:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_interface_application_security_group_association'
+    description: Manages the association between a Network Interface and a Application
+        Security Group
+    arguments:
+        network_interface_id:
+            description: The ID of the Network Interface. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        application_security_group_id:
+            description: The ID of the Application Security Group which this Network
+                Interface which should be connected to. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The (Terraform specific) ID of the Association between the
+                Network Interface and the Application Security Group.
+    timeouts:
+        create:
+            description: Used when creating the association between the Network Interface
+                and the Application Security Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the association between the Network Interface
+                and the Application Security Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the association between the Network
+                Interface and the Application Security Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the association between the Network Interface
+                and the Application Security Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMakF2TVRZaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbWx1ZEdWeWJtRnNJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0IyYVhKMGRXRnNYMjVs
+        ZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lqRXdMakF1TVM0d0x6
+        STBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5aGNIQnNhV05oZEdsdmJsOXpaV04xY21s
+        MGVWOW5jbTkxY0NJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVdFlYTm5JZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYm1WMGQyOXlhMTlw
+        Ym5SbGNtWmhZMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNKbGVHRnRjR3hsTFc1cFl5SUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lY
+        cDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21W
+        emIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1
+        WlhoaGJYQnNaUzV1WVcxbENnb2dJR2x3WDJOdmJtWnBaM1Z5WVhScGIyNGdld29nSUNBZ2JtRnRa
+        U0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGMzUmpiMjVtYVdkMWNt
+        RjBhVzl1TVNJS0lDQWdJSE4xWW01bGRGOXBaQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        OUlHRjZkWEpsY20xZmMzVmlibVYwTG1WNFlXMXdiR1V1YVdRS0lDQWdJSEJ5YVhaaGRHVmZhWEJm
+        WVdSa2NtVnpjMTloYkd4dlkyRjBhVzl1SUNBOUlDSkVlVzVoYldsaklnb2dJQ0FnWVhCd2JHbGpZ
+        WFJwYjI1ZmMyVmpkWEpwZEhsZlozSnZkWEJmYVdSeklEMGdXMkY2ZFhKbGNtMWZZWEJ3YkdsallY
+        UnBiMjVmYzJWamRYSnBkSGxmWjNKdmRYQXVaWGhoYlhCc1pTNXBaRjBLSUNCOUNuMEtDbkpsYzI5
+        MWNtTmxJQ0poZW5WeVpYSnRYMjVsZEhkdmNtdGZhVzUwWlhKbVlXTmxYMkZ3Y0d4cFkyRjBhVzl1
+        WDNObFkzVnlhWFI1WDJkeWIzVndYMkZ6YzI5amFXRjBhVzl1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJ
+        RzVsZEhkdmNtdGZhVzUwWlhKbVlXTmxYMmxrSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5dVpY
+        UjNiM0pyWDJsdWRHVnlabUZqWlM1bGVHRnRjR3hsTG1sa0NpQWdZWEJ3YkdsallYUnBiMjVmYzJW
+        amRYSnBkSGxmWjNKdmRYQmZhV1FnUFNCaGVuVnlaWEp0WDJGd2NHeHBZMkYwYVc5dVgzTmxZM1Z5
+        YVhSNVgyZHliM1Z3TG1WNFlXMXdiR1V1YVdRS2ZRbz0=
+    import: !!binary |
+        Q2dwQmMzTnZZMmxoZEdsdmJuTWdZbVYwZDJWbGJpQk9aWFIzYjNKcklFbHVkR1Z5Wm1GalpYTWdZ
+        VzVrSUVGd2NHeHBZMkYwYVc5dUlGTmxZM1Z5YVhSNUlFZHliM1Z3Y3lCallXNGdZbVVnYVcxd2Iz
+        SjBaV1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5cGJuUmxjbVpoWTJWZllYQndiR2xqWVhScGIyNWZjMlZqZFhK
+        cGRIbGZaM0p2ZFhCZllYTnpiMk5wWVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

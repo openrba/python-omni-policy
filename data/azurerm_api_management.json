@@ -1,0 +1,211 @@
+{
+    "azurerm_api_management": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management",
+        "description": "Manages an API Management Service.",
+        "arguments": {
+            "name": {
+                "description": "The name of the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The name of the Azure Region in which the API Management Service should be expanded to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Service should be exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "publisher_name": {
+                "description": "The name of publisher/company.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "publisher_email": {
+                "description": "The email of publisher/company.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "`sku_name` is a string consisting of two parts separated by an underscore(\\_). The fist part is the `name`, valid values include: `Developer`, `Basic`, `Standard` and `Premium`. The second part is the `capacity` (e.g. the number of deployed units of the `sku`), which must be a positive `integer` (e.g. `Developer_1`).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "additional_location": {
+                "description": "One or more `additional_location` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate": {
+                "description": "The Base64 Encoded Certificate.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identity": {
+                "description": "An `identity` block is documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hostname_configuration": {
+                "description": "A `hostname_configuration` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "notification_sender_email": {
+                "description": "Email address from which the notification will be sent.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy": {
+                "description": "A `policy` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "protocols": {
+                "description": "A `protocols` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security": {
+                "description": "A `security` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sign_in": {
+                "description": "A `sign_in` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sign_up": {
+                "description": "A `sign_up` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags assigned to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encoded_certificate": {
+                "description": "The Base64 Encoded PFX Certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_password": {
+                "description": "The password associated with the certificate provided above.",
+                "required": false,
+                "policy": "",
+                "notes": "Either `key_vault_id` or `certificate` and `certificate_password` must be specified."
+            },
+            "store_name": {
+                "description": "The name of the Certificate Store where this certificate should be stored. Possible values are `CertificateAuthority` and `Root`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "management": {
+                "description": "One or more `management` blocks as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "portal": {
+                "description": "One or more `portal` blocks as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "proxy": {
+                "description": "One or more `proxy` blocks as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scm": {
+                "description": "One or more `scm` blocks as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "Specifies the type of Managed Service Identity that should be configured on this API Management Service. At this time the only supported value is`SystemAssigned`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "host_name": {
+                "description": "The Hostname to use for the Management API.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_id": {
+                "description": "The ID of the Key Vault Secret containing the SSL Certificate, which must be should be of the type `application/x-pkcs12`.",
+                "required": false,
+                "policy": "",
+                "notes": "Setting this field requires the `identity` block to be specified, since this identity is used for to retrieve the Key Vault Certificate. Auto-updating the Certificate from the Key Vault requires the Secret version isn't specified."
+            },
+            "negotiate_client_certificate": {
+                "description": "Should Client Certificate Negotiation be enabled for this Hostname? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "xml_content": {
+                "description": "The XML Content for this Policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "xml_link": {
+                "description": "A link to an API Management Policy XML Document, which must be publicly available.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_ssl_binding": {
+                "description": "Is the certificate associated with this Hostname the Default SSL Certificate? This is used when an SNI header isn't specified by a client. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_http2": {
+                "description": "Should HTTP/2 be supported by the API Management Service? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_backend_ssl30": {
+                "description": "Should SSL 3.0 be enabled on the backend of the gateway? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

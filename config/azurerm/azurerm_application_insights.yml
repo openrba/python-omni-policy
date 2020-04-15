@@ -1,0 +1,117 @@
+azurerm_application_insights:
+    status: HOLD
+    subcategory: Application Insights
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_application_insights'
+    description: Manages an Application Insights component.
+    arguments:
+        name:
+            description: Specifies the name of the Application Insights component.
+                Changing this forces a
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        application_type:
+            description: Specifies the type of Application Insights to create. Valid
+                values are `ios` for _iOS_, `java` for _Java web_, `MobileCenter`
+                for _App Center_, `Node.JS` for _Node.js_, `other` for _General_,
+                `phone` for _Windows Phone_, `store` for _Windows Store_ and `web`
+                for _ASP.NET_. Please note these values are case sensitive; unmatched
+                values are treated as _ASP.NET_ by Azure. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        daily_data_cap_in_gb:
+            description: Specifies the Application Insights component daily data volume
+                cap in GB.
+            required: false
+            policy: ''
+            notes: ''
+        daily_data_cap_notifications_disabled:
+            description: Specifies if a notification email will be send when the daily
+                data volume cap is met.
+            required: false
+            policy: ''
+            notes: ''
+        retention_in_days:
+            description: Specifies the retention period in days. Possible values are
+                `30`, `60`, `90`, `120`, `180`, `270`, `365`, `550` or `730`.
+            required: false
+            policy: ''
+            notes: ''
+        sampling_percentage:
+            description: Specifies the percentage of the data produced by the monitored
+                application that is sampled for Application Insights telemetry.
+            required: false
+            policy: ''
+            notes: ''
+        disable_ip_masking:
+            description: By default the real client ip is masked as `0.0.0.0` in the
+                logs. Use this argument to disable masking and log the real client
+                ip. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Application Insights component.
+        app_id:
+            description: The App ID associated with this Application Insights component.
+        instrumentation_key:
+            description: The Instrumentation Key for this Application Insights component.
+    timeouts:
+        create:
+            description: Used when creating the Application Insights Component.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Application Insights Component.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Application Insights Component.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Application Insights Component.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtTFhSbGMzUWlDaUFnYkc5allYUnBiMjRnUFNBaVYy
+        VnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJGd2NHeHBZMkYwYVc5
+        dVgybHVjMmxuYUhSeklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlkR1l0ZEdWemRDMWhjSEJwYm5OcFoyaDBjeUlLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlky
+        RjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNW
+        eVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWVhCd2JHbGpZWFJwYjI1ZmRIbHdaU0Fn
+        SUNBOUlDSjNaV0lpQ24wS0NtOTFkSEIxZENBaWFXNXpkSEoxYldWdWRHRjBhVzl1WDJ0bGVTSWdl
+        d29nSUhaaGJIVmxJRDBnWVhwMWNtVnliVjloY0hCc2FXTmhkR2x2Ymw5cGJuTnBaMmgwY3k1bGVH
+        RnRjR3hsTG1sdWMzUnlkVzFsYm5SaGRHbHZibDlyWlhrS2ZRb0tiM1YwY0hWMElDSmhjSEJmYVdR
+        aUlIc0tJQ0IyWVd4MVpTQTlJR0Y2ZFhKbGNtMWZZWEJ3YkdsallYUnBiMjVmYVc1emFXZG9kSE11
+        WlhoaGJYQnNaUzVoY0hCZmFXUUtmUW89
+    import: !!binary |
+        Q2dwQmNIQnNhV05oZEdsdmJpQkpibk5wWjJoMGN5QnBibk4wWVc1alpYTWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndiR2xqWVhScGIyNWZhVzV6YVdkb2RITXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

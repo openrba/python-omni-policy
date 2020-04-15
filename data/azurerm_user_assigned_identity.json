@@ -1,0 +1,68 @@
+{
+    "azurerm_user_assigned_identity": {
+        "status": "HOLD",
+        "subcategory": "Authorization",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azure_user_assigned_identity",
+        "description": "Manages a new user assigned identity.",
+        "arguments": {
+            "name": {
+                "description": "The name of the user assigned identity. Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The location/region where the user assigned identity is",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The user assigned identity ID."
+            },
+            "principal_id": {
+                "description": "Service Principal ID associated with the user assigned identity."
+            },
+            "client_id": {
+                "description": "Client ID associated with the user assigned identity."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the User Assigned Identity.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the User Assigned Identity.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the User Assigned Identity.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the User Assigned Identity.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

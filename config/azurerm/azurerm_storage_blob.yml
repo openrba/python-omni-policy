@@ -1,0 +1,133 @@
+azurerm_storage_blob:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_blob'
+    description: Manages a Blob within a Storage Container.
+    arguments:
+        name:
+            description: The name of the storage blob. Must be unique within the storage
+                container the blob is located.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_name:
+            description: Specifies the storage account in which to create the storage
+                container.
+            required: true
+            policy: ''
+            notes: ''
+        storage_container_name:
+            description: The name of the storage container in which this blob should
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of the storage blob to be created. Possible values
+                are `Append`, `Block` or `Page`. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        size:
+            description: Used only for `page` blobs to specify the size in bytes of
+                the blob to be created. Must be a multiple of 512. Defaults to 0.
+            required: false
+            policy: ''
+            notes: ''
+        access_tier:
+            description: The access tier of the storage blob. Possible values are
+                `Archive`, `Cool` and `Hot`.
+            required: false
+            policy: ''
+            notes: ''
+        content_type:
+            description: The content type of the storage blob. Cannot be defined if
+                `source_uri` is defined. Defaults to `application/octet-stream`.
+            required: false
+            policy: ''
+            notes: ''
+        source:
+            description: An absolute path to a file on the local system. This field
+                cannot be specified for Append blobs and cannot be specified if `source_content`
+                or `source_uri` is specified.
+            required: false
+            policy: ''
+            notes: ''
+        source_content:
+            description: The content for this blob which should be defined inline.
+                This field can only be specified for Block blobs and cannot be specified
+                if `source` or `source_uri` is specified.
+            required: false
+            policy: ''
+            notes: ''
+        source_uri:
+            description: The URI of an existing blob, or a file in the Azure File
+                service, to use as the source contents
+            required: false
+            policy: ''
+            notes: ''
+        parallelism:
+            description: The number of workers per CPU core to run for concurrent
+                uploads. Defaults to `8`.
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: A map of custom blob metadata.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Storage Blob.
+        url:
+            description: The URL of the blob
+    timeouts:
+        create:
+            description: Used when creating the Storage Blob.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Blob.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Blob.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Blob.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emRHOXlZV2RsWDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVnpkRzl5WVdOaklnb2dJSEpsYzI5MWNtTmxY
+        MmR5YjNWd1gyNWhiV1VnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpY
+        aGhiWEJzWlM1dVlXMWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdZV05q
+        YjNWdWRGOTBhV1Z5SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lYSmtJZ29nSUdGalkyOTFi
+        blJmY21Wd2JHbGpZWFJwYjI1ZmRIbHdaU0E5SUNKTVVsTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVu
+        VnlaWEp0WDNOMGIzSmhaMlZmWTI5dWRHRnBibVZ5SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldV
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmpiMjUwWlc1MElnb2dJSE4wYjNKaFoyVmZZV05q
+        YjNWdWRGOXVZVzFsSUNBOUlHRjZkWEpsY20xZmMzUnZjbUZuWlY5aFkyTnZkVzUwTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJR052Ym5SaGFXNWxjbDloWTJObGMzTmZkSGx3WlNBOUlDSndjbWwyWVhSbEln
+        cDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZEc5eVlXZGxYMkpzYjJJaUlDSmxlR0Z0Y0d4
+        bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0p0ZVMxaGQyVnpiMjFs
+        TFdOdmJuUmxiblF1ZW1sd0lnb2dJSE4wYjNKaFoyVmZZV05qYjNWdWRGOXVZVzFsSUNBZ1BTQmhl
+        blZ5WlhKdFgzTjBiM0poWjJWZllXTmpiM1Z1ZEM1bGVHRnRjR3hsTG01aGJXVUtJQ0J6ZEc5eVlX
+        ZGxYMk52Ym5SaGFXNWxjbDl1WVcxbElEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyTnZiblJoYVc1
+        bGNpNWxlR0Z0Y0d4bExtNWhiV1VLSUNCMGVYQmxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SWtKc2IyTnJJZ29nSUhOdmRYSmpaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYzI5dFpTMXNi
+        Mk5oYkMxbWFXeGxMbnBwY0NJS2ZRbz0=
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUVKc2IySW5jeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5aWJHOWlMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

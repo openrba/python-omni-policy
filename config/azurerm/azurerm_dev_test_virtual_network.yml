@@ -1,0 +1,105 @@
+azurerm_dev_test_virtual_network:
+    status: HOLD
+    subcategory: Dev Test
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_dev_test_virtual_network'
+    description: Manages a Virtual Network within a DevTest Lab.
+    arguments:
+        name:
+            description: Specifies the name of the Dev Test Virtual Network. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        lab_name:
+            description: Specifies the name of the Dev Test Lab in which the Virtual
+                Network should be created. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Dev Test Lab
+                resource exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description for the Virtual Network.
+            required: false
+            policy: ''
+            notes: ''
+        subnet:
+            description: A `subnet` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        use_public_ip_address:
+            description: Can Virtual Machines in this Subnet use Public IP Addresses?
+                Possible values are `Allow`, `Default` and `Deny`.
+            required: true
+            policy: ''
+            notes: ''
+        use_in_virtual_machine_creation:
+            description: Can this subnet be used for creating Virtual Machines? Possible
+                values are `Allow`, `Default` and `Deny`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Dev Test Virtual Network.
+        subnet:
+            description: A `subnet` block as defined below.
+        unique_identifier:
+            description: The unique immutable identifier of the Dev Test Virtual Network.
+        name:
+            description: The name of the Subnet for this Virtual Network.
+    timeouts:
+        create:
+            description: Used when creating the DevTest Virtual Network.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the DevTest Virtual Network.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the DevTest Virtual Network.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the DevTest Virtual Network.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMlJsZGw5
+        MFpYTjBYMnhoWWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVdFpHVjJkR1Z6ZEd4aFlpSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENnb2dJSFJoWjNNZ1BTQjdDaUFnSUNBaVUzbGtibVY1
+        SWlBOUlDSkJkWE4wY21Gc2FXRWlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWta
+        WFpmZEdWemRGOTJhWEowZFdGc1gyNWxkSGR2Y21zaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpT
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXNWxkSGR2Y21zaUNpQWdiR0ZpWDI1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmWkdWMlgzUmxjM1JmYkdGaUxtVjRZVzF3
+        YkdVdWJtRnRaUW9nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxj
+        MjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb0tJQ0J6ZFdKdVpYUWdld29nSUNBZ2RY
+        TmxYM0IxWW14cFkxOXBjRjloWkdSeVpYTnpJQ0FnSUNBZ0lDQWdJQ0E5SUNKQmJHeHZkeUlLSUNB
+        Z0lIVnpaVjlwYmw5MmFYSjBkV0ZzWDIxaFkyaHBibVZmWTNKbFlYUnBiMjRnUFNBaVFXeHNiM2Np
+        Q2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwRVpYWlVaWE4wSUZacGNuUjFZV3dnVG1WMGQyOXlhM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHVjJYM1JsYzNSZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

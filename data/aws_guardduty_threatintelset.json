@@ -1,0 +1,47 @@
+{
+    "aws_guardduty_threatintelset": {
+        "status": "HOLD",
+        "subcategory": "GuardDuty",
+        "layout": "aws",
+        "page_title": "AWS: aws_guardduty_threatintelset",
+        "description": "Provides a resource to manage a GuardDuty ThreatIntelSet",
+        "arguments": {
+            "activate": {
+                "description": "Specifies whether GuardDuty is to start using the uploaded ThreatIntelSet.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "detector_id": {
+                "description": "The detector ID of the GuardDuty.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "format": {
+                "description": "The format of the file that contains the ThreatIntelSet. Valid values: `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT` | `FIRE_EYE`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The URI of the file that contains the ThreatIntelSet.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The friendly name to identify the ThreatIntelSet.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the GuardDuty ThreatIntelSet and the detector ID. Format: `<DetectorID>:<ThreatIntelSetID>`"
+            }
+        },
+        "timeouts": {}
+    }
+}

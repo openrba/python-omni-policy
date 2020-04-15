@@ -1,0 +1,80 @@
+{
+    "azurerm_bot_channel_slack": {
+        "status": "HOLD",
+        "subcategory": "Bot",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_bot_channel_slack",
+        "description": "Manages a Slack integration for a Bot Channel",
+        "arguments": {
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Bot Channel. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bot_name": {
+                "description": "The name of the Bot Resource this channel will be associated with. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_id": {
+                "description": "The Client ID that will be used to authenticate with Slack.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_secret": {
+                "description": "The Client Secret that will be used to authenticate with Slack.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "verification_token": {
+                "description": "The Verification Token that will be used to authenticate with Slack.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "landing_page_url": {
+                "description": "The Slack Landing Page URL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Slack Integration for a Bot Channel."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Slack Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Slack Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Slack Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Slack Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+azurerm_log_analytics_workspace:
+    status: HOLD
+    subcategory: Log Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_log_analytics_workspace'
+    description: Manages a Log Analytics (formally Operational Insights) Workspace.
+    arguments:
+        name:
+            description: Specifies the name of the Log Analytics Workspace. Workspace
+                name should include 4-63 letters, digits or '-'. The '-' shouldn't
+                be the first or the last symbol. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Log Analytics
+                workspace is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: Specifies the Sku of the Log Analytics Workspace. Possible
+                values are `Free`, `PerNode`, `Premium`, `Standard`, `Standalone`,
+                `Unlimited`, and `PerGB2018` (new Sku as of `2018-04-03`).
+            required: true
+            policy: ''
+            notes: ''
+        retention_in_days:
+            description: The workspace data retention in days. Possible values range
+                between 30 and 730.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Log Analytics Workspace ID.
+        primary_shared_key:
+            description: The Primary shared key for the Log Analytics Workspace.
+        secondary_shared_key:
+            description: The Secondary shared key for the Log Analytics Workspace.
+        workspace_id:
+            description: The Workspace (or Customer) ID for the Log Analytics Workspace.
+        portal_url:
+            description: The Portal URL for the Log Analytics Workspace.
+    timeouts:
+        create:
+            description: Used when creating the Log Analytics Workspace.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Log Analytics Workspace.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Log Analytics Workspace.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Log Analytics Workspace.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lrVmhjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMnh2WjE5
+        aGJtRnNlWFJwWTNOZmQyOXlhM053WVdObElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlZV05qZEdWemRDMHdNU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlky
+        RjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNW
+        eVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnYzJ0MUlDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlDSlFaWEpIUWpJd01UZ2lDaUFnY21WMFpXNTBhVzl1WDJsdVgyUmhlWE1nSUNBOUlETXdD
+        bjBL
+    import: !!binary |
+        Q2dwTWIyY2dRVzVoYkhsMGFXTnpJRmR2Y210emNHRmpaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5YMkZ1WVd4NWRHbGpjMTkzYjNKcmMzQmhZMlV1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

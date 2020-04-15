@@ -1,0 +1,122 @@
+{
+    "azurerm_lb_rule": {
+        "status": "HOLD",
+        "subcategory": "Load Balancer",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_lb_rule",
+        "description": "Manages a Load Balancer Rule.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the LB Rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "loadbalancer_id": {
+                "description": "The ID of the Load Balancer in which to create the Rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "frontend_ip_configuration_name": {
+                "description": "The name of the frontend IP configuration to which the rule is associated.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": "The transport protocol for the external endpoint. Possible values are `Tcp`, `Udp` or `All`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "frontend_port": {
+                "description": "The port for the external endpoint. Port numbers for each Rule must be unique within the Load Balancer. Possible values range between 0 and 65534, inclusive.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_port": {
+                "description": "The port used for internal connections on the endpoint. Possible values range between 0 and 65535, inclusive.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_address_pool_id": {
+                "description": "A reference to a Backend Address Pool over which this Load Balancing Rule operates.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "probe_id": {
+                "description": "A reference to a Probe used by this Load Balancing Rule.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_floating_ip": {
+                "description": "Are the Floating IPs enabled for this Load Balncer Rule? A \"floating\u201d IP is reassigned to a secondary server in case the primary server fails. Required to configure a SQL AlwaysOn Availability Group. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "idle_timeout_in_minutes": {
+                "description": "Specifies the idle timeout in minutes for TCP connections. Valid values are between `4` and `30` minutes. Defaults to `4` minutes.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "load_distribution": {
+                "description": "Specifies the load balancing distribution type to be used by the Load Balancer. Possible values are: `Default` \u2013 The load balancer is configured to use a 5 tuple hash to map traffic to available servers. `SourceIP` \u2013 The load balancer is configured to use a 2 tuple hash to map traffic to available servers. `SourceIPProtocol` \u2013 The load balancer is configured to use a 3 tuple hash to map traffic to available servers. Also known as Session Persistence, where  the options are called `None`, `Client IP` and `Client IP and Protocol` respectively.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disable_outbound_snat": {
+                "description": "Is snat enabled for this Load Balancer Rule? Default `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_tcp_reset": {
+                "description": "Is TCP Reset enabled for this Load Balancer Rule? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Load Balancer Rule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Load Balancer Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Load Balancer Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Load Balancer Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Load Balancer Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

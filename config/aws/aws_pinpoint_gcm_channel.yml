@@ -1,0 +1,24 @@
+aws_pinpoint_gcm_channel:
+    status: HOLD
+    subcategory: Pinpoint
+    layout: aws
+    page_title: 'AWS: aws_pinpoint_gcm_channel'
+    description: Provides a Pinpoint GCM Channel resource.
+    arguments:
+        application_id:
+            description: The application ID.
+            required: true
+            policy: ''
+            notes: ''
+        api_key:
+            description: Platform credential API key from Google.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Whether the channel is enabled or disabled. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

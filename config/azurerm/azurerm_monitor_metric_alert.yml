@@ -1,0 +1,187 @@
+azurerm_monitor_metric_alert:
+    status: HOLD
+    subcategory: Monitor
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_monitor_metric_alert'
+    description: Manages a Metric Alert within Azure Monitor
+    arguments:
+        name:
+            description: One of the dimension names.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Metric
+                Alert instance.
+            required: true
+            policy: ''
+            notes: ''
+        scopes:
+            description: A set of strings of resource IDs at which the metric criteria
+                should be applied.
+            required: true
+            policy: ''
+            notes: ''
+        criteria:
+            description: One or more `criteria` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: One or more `action` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Should this Metric Alert be enabled? Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        auto_mitigate:
+            description: Should the alerts in this Metric Alert be auto resolved?
+                Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The description of this Metric Alert.
+            required: false
+            policy: ''
+            notes: ''
+        frequency:
+            description: The evaluation frequency of this Metric Alert, represented
+                in ISO 8601 duration format. Possible values are `PT1M`, `PT5M`, `PT15M`,
+                `PT30M` and `PT1H`. Defaults to `PT1M`.
+            required: false
+            policy: ''
+            notes: ''
+        severity:
+            description: The severity of this Metric Alert. Possible values are `0`,
+                `1`, `2`, `3` and `4`. Defaults to `3`.
+            required: false
+            policy: ''
+            notes: ''
+        window_size:
+            description: The period of time that is used to monitor alert activity,
+                represented in ISO 8601 duration format. This value must be greater
+                than `frequency`. Possible values are `PT1M`, `PT5M`, `PT15M`, `PT30M`,
+                `PT1H`, `PT6H`, `PT12H` and `P1D`. Defaults to `PT5M`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        action_group_id:
+            description: The ID of the Action Group can be sourced from [the `azurerm_monitor_action_group`
+                resource](./monitor_action_group.html)
+            required: true
+            policy: ''
+            notes: ''
+        webhook_properties:
+            description: The map of custom string properties to include with the post
+                operation. These data are appended to the webhook payload.
+            required: false
+            policy: ''
+            notes: ''
+        metric_namespace:
+            description: One of the metric namespaces to be monitored.
+            required: true
+            policy: ''
+            notes: ''
+        metric_name:
+            description: One of the metric names to be monitored.
+            required: true
+            policy: ''
+            notes: ''
+        aggregation:
+            description: The statistic that runs over the metric values. Possible
+                values are `Average`, `Count`, `Minimum`, `Maximum` and `Total`.
+            required: true
+            policy: ''
+            notes: ''
+        operator:
+            description: The dimension operator. Possible values are `Include` and
+                `Exclude`.
+            required: true
+            policy: ''
+            notes: ''
+        threshold:
+            description: The criteria threshold value that activates the alert.
+            required: true
+            policy: ''
+            notes: ''
+        dimension:
+            description: One or more `dimension` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        values:
+            description: The list of dimension values.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the metric alert.
+    timeouts:
+        create:
+            description: Used when creating the Metric Alert.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Metric Alert.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Metric Alert.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Metric Alert.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpYldGcGJpSWdl
+        d29nSUc1aGJXVWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGNtVnpiM1Z5WTJWeklnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjBiM0poWjJW
+        ZllXTmpiM1Z1ZENJZ0luUnZYMjF2Ym1sMGIzSWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlhOMGIzSmhaMlZoWTJOdmRXNTBJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRY
+        QXViV0ZwYmk1dVlXMWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNXRZV2x1TG14dlkyRjBhVzl1Q2lBZ1lXTmpiM1Z1
+        ZEY5MGFXVnlJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb2dJR0ZqWTI5MWJuUmZj
+        bVZ3YkdsallYUnBiMjVmZEhsd1pTQTlJQ0pNVWxNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpY
+        SnRYMjF2Ym1sMGIzSmZZV04wYVc5dVgyZHliM1Z3SWlBaWJXRnBiaUlnZXdvZ0lHNWhiV1VnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzFoWTNScGIyNW5jbTkxY0NJS0lDQnlaWE52
+        ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNXRZ
+        V2x1TG01aGJXVUtJQ0J6YUc5eWRGOXVZVzFsSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWaFkz
+        UWlDZ29nSUhkbFltaHZiMnRmY21WalpXbDJaWElnZXdvZ0lDQWdibUZ0WlNBZ0lDQWdJQ0FnUFNB
+        aVkyRnNiRzE1WVhCcElnb2dJQ0FnYzJWeWRtbGpaVjkxY21rZ1BTQWlhSFIwY0RvdkwyVjRZVzF3
+        YkdVdVkyOXRMMkZzWlhKMElnb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmJXOXVh
+        WFJ2Y2w5dFpYUnlhV05mWVd4bGNuUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMVzFsZEhKcFkyRnNaWEowSWdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtMWhhVzR1
+        Ym1GdFpRb2dJSE5qYjNCbGN5QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCYllYcDFjbVZ5YlY5emRHOXlZ
+        V2RsWDJGalkyOTFiblF1ZEc5ZmJXOXVhWFJ2Y2k1cFpGMEtJQ0JrWlhOamNtbHdkR2x2YmlBZ0lD
+        QWdJQ0FnSUQwZ0lrRmpkR2x2YmlCM2FXeHNJR0psSUhSeWFXZG5aWEpsWkNCM2FHVnVJRlJ5WVc1
+        ellXTjBhVzl1Y3lCamIzVnVkQ0JwY3lCbmNtVmhkR1Z5SUhSb1lXNGdOVEF1SWdvS0lDQmpjbWww
+        WlhKcFlTQjdDaUFnSUNCdFpYUnlhV05mYm1GdFpYTndZV05sSUQwZ0lrMXBZM0p2YzI5bWRDNVRk
+        Rzl5WVdkbEwzTjBiM0poWjJWQlkyTnZkVzUwY3lJS0lDQWdJRzFsZEhKcFkxOXVZVzFsSUNBZ0lD
+        QWdQU0FpVkhKaGJuTmhZM1JwYjI1eklnb2dJQ0FnWVdkbmNtVm5ZWFJwYjI0Z0lDQWdJQ0E5SUNK
+        VWIzUmhiQ0lLSUNBZ0lHOXdaWEpoZEc5eUlDQWdJQ0FnSUNBZ1BTQWlSM0psWVhSbGNsUm9ZVzRp
+        Q2lBZ0lDQjBhSEpsYzJodmJHUWdJQ0FnSUNBZ0lEMGdOVEFLQ2lBZ0lDQmthVzFsYm5OcGIyNGdl
+        d29nSUNBZ0lDQnVZVzFsSUNBZ0lDQTlJQ0pCY0dsT1lXMWxJZ29nSUNBZ0lDQnZjR1Z5WVhSdmNp
+        QTlJQ0pKYm1Oc2RXUmxJZ29nSUNBZ0lDQjJZV3gxWlhNZ0lDQTlJRnNpS2lKZENpQWdJQ0I5Q2lB
+        Z2ZRb0tJQ0JoWTNScGIyNGdld29nSUNBZ1lXTjBhVzl1WDJkeWIzVndYMmxrSUQwZ1lYcDFjbVZ5
+        YlY5dGIyNXBkRzl5WDJGamRHbHZibDluY205MWNDNXRZV2x1TG1sa0NpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwTlpYUnlhV01nUVd4bGNuUnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXOXVhWFJ2Y2w5dFpYUnlhV05mWVd4bGNuUXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

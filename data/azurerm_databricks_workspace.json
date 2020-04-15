@@ -1,0 +1,107 @@
+{
+    "azurerm_databricks_workspace": {
+        "status": "HOLD",
+        "subcategory": "Databricks",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_databricks_workspace",
+        "description": "Manages a Databricks Workspace",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Databricks Workspace resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the Databricks Workspace should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource has to be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "The `sku` to use for the Databricks Workspace. Possible values are `standard`, `premium`, or `trial`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "managed_resource_group_name": {
+                "description": "The name of the resource group where Azure should place the managed Databricks resources. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_parameters": {
+                "description": "A `custom_parameters` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "no_public_ip": {
+                "description": "Are public IP Addresses not allowed?",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_subnet_name": {
+                "description": "The name of the Public Subnet within the Virtual Network. Required if `virtual_network_id` is set.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "private_subnet_name": {
+                "description": "The name of the Private Subnet within the Virtual Network. Required if `virtual_network_id` is set.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_network_id": {
+                "description": "The ID of a Virtual Network where this Databricks Cluster should be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Databricks Workspace."
+            },
+            "managed_resource_group_id": {
+                "description": "The ID of the Managed Resource Group created by the Databricks Workspace."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Databricks Workspace.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Databricks Workspace.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Databricks Workspace.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Databricks Workspace.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

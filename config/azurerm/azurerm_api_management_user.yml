@@ -1,0 +1,112 @@
+azurerm_api_management_user:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_user'
+    description: Manages an API Management User.
+    arguments:
+        api_management_name:
+            description: The name of the API Management Service in which the User
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        email:
+            description: The email address associated with this user.
+            required: true
+            policy: ''
+            notes: ''
+        first_name:
+            description: The first name for this user.
+            required: true
+            policy: ''
+            notes: ''
+        last_name:
+            description: The last name for this user.
+            required: true
+            policy: ''
+            notes: ''
+        user_id:
+            description: The Identifier for this User, which must be unique within
+                the API Management Service. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        confirmation:
+            description: The kind of confirmation email which will be sent to this
+                user. Possible values are `invite` and `signup`. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        note:
+            description: A note about this user.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The password associated with this user.
+            required: false
+            policy: ''
+            notes: ''
+        state:
+            description: The state of this user. Possible values are `active`, `blocked`
+                and `pending`.
+            required: false
+            policy: ''
+            notes: the State can be changed from Pending -> Active/Blocked but not
+                from Active/Blocked -> Pending.
+    attributes:
+        id:
+            description: The ID of the API Management User.
+    timeouts:
+        create:
+            description: Used when creating the API Management User.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management User.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management User.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management User.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDZ29nSUhOcmRWOXVZVzFsSUQwZ0lrUmxkbVZzYjNCbGNs
+        OHhJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5aGNHbGZiV0Z1WVdkbGJXVnVkRjkxYzJW
+        eUlpQWlaWGhoYlhCc1pTSWdld29nSUhWelpYSmZhV1FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlOVGt6
+        TVdFM05XRmxOR0ppWkRVeE1qSTRPR00yT0RCaUlnb2dJR0Z3YVY5dFlXNWhaMlZ0Wlc1MFgyNWhi
+        V1VnUFNCaGVuVnlaWEp0WDJGd2FWOXRZVzVoWjJWdFpXNTBMbVY0WVcxd2JHVXVibUZ0WlFvZ0lI
+        SmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdacGNuTjBYMjVoYldVZ0lDQWdJQ0FnSUNBZ1BTQWlSWGho
+        YlhCc1pTSUtJQ0JzWVhOMFgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUQwZ0lsVnpaWElpQ2lBZ1pXMWhh
+        V3dnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0owYjIwcmRHWmtaWFpBYUdGemFHbGpiM0p3TG1OdmJT
+        SUtJQ0J6ZEdGMFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltRmpkR2wyWlNJS2ZRbz0=
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JWYzJWeWN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmZFhObGNpNW9kRzFzTG0xaGNtdGtiM2R1

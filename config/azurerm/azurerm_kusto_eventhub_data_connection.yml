@@ -1,0 +1,149 @@
+azurerm_kusto_eventhub_data_connection:
+    status: HOLD
+    subcategory: Data Explorer
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_kusto_eventhub_data_connection'
+    description: Manages Kusto / Data Explorer EventHub Data Connection
+    arguments:
+        name:
+            description: The name of the Kusto EventHub Data Connection to create.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location where the Kusto Database should be created.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the Resource Group where the Kusto Database should
+                exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cluster_name:
+            description: Specifies the name of the Kusto Cluster this data connection
+                will be added to. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        database_name:
+            description: Specifies the name of the Kusto Database this data connection
+                will be added to. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        eventhub_id:
+            description: Specifies the resource id of the EventHub this data connection
+                will use for ingestion. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        consumer_group:
+            description: Specifies the EventHub consumer group this data connection
+                will use for ingestion. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        table_name:
+            description: Specifies the target table name used for the message ingestion.
+                Table must exist before resource is created.
+            required: false
+            policy: ''
+            notes: ''
+        mapping_rule_name:
+            description: Specifies the mapping rule used for the message ingestion.
+                Mapping rule must exist before resource is created.
+            required: false
+            policy: ''
+            notes: ''
+        data_format:
+            description: 'Specifies the data format of the EventHub messages. Allowed
+                values: `AVRO`, `CSV`, `JSON`, `MULTIJSON`, `PSV`, `RAW`, `SCSV`,
+                `SINGLEJSON`, `SOHSV`, `TSV` and `TXT`'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Kusto EventHub Data Connection.
+    timeouts:
+        create:
+            description: Used when creating the Kusto EventHub Data Connection.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Kusto EventHub Data Connection.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Kusto EventHub Data Connection.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Kusto EventHub Data Connection.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKdGVTMXJkWE4wYnkxeVp5SUtJQ0JzYjJOaGRHbHZiaUE5SUNKRllY
+        TjBJRlZUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXJkWE4wYjE5amJIVnpkR1Z5SWlB
+        aVkyeDFjM1JsY2lJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWEzVnpkRzlq
+        YkhWemRHVnlJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxj
+        MjkxY21ObFgyZHliM1Z3TG5KbkxteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJt
+        RnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVjbWN1Ym1GdFpRb0tJQ0J6YTNV
+        Z2V3b2dJQ0FnYm1GdFpTQWdJQ0FnUFNBaVUzUmhibVJoY21SZlJERXpYM1l5SWdvZ0lDQWdZMkZ3
+        WVdOcGRIa2dQU0F5Q2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlyZFhOMGIxOWtZ
+        WFJoWW1GelpTSWdJbVJoZEdGaVlYTmxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0p0ZVMxcmRYTjBieTFrWVhSaFltRnpaU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcx
+        bElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1eVp5NXVZVzFsQ2lBZ2JHOWpZWFJw
+        YjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWNtY3Vi
+        RzlqWVhScGIyNEtJQ0JqYkhWemRHVnlYMjVoYldVZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5cmRY
+        TjBiMTlqYkhWemRHVnlMbU5zZFhOMFpYSXVibUZ0WlFvZ0lHaHZkRjlqWVdOb1pWOXdaWEpwYjJR
+        Z0lDQWdQU0FpVURkRUlnb2dJSE52Wm5SZlpHVnNaWFJsWDNCbGNtbHZaQ0FnUFNBaVVETXhSQ0lL
+        ZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlpYWmxiblJvZFdKZmJtRnRaWE53WVdObElpQWla
+        WFpsYm5Sb2RXSmZibk1pSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW0xNUxX
+        VjJaVzUwYUhWaUxXNXpJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG5KbkxteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2
+        ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVjbWN1Ym1GdFpRb2dJ
+        SE5yZFNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVUzUmhibVJoY21RaUNuMEtDbkpsYzI5MWNt
+        TmxJQ0poZW5WeVpYSnRYMlYyWlc1MGFIVmlJaUFpWlhabGJuUm9kV0lpSUhzS0lDQnVZVzFsSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW0xNUxXVjJaVzUwYUhWaUlnb2dJRzVoYldWemNHRmpaVjl1
+        WVcxbElDQWdJQ0FnUFNCaGVuVnlaWEp0WDJWMlpXNTBhSFZpWDI1aGJXVnpjR0ZqWlM1bGRtVnVk
+        R2gxWWw5dWN5NXVZVzFsQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNt
+        MWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWNtY3VibUZ0WlFvZ0lIQmhjblJwZEdsdmJsOWpiM1Z1ZENB
+        Z0lDQWdQU0F4Q2lBZ2JXVnpjMkZuWlY5eVpYUmxiblJwYjI0Z0lDQTlJREVLZlFvS2NtVnpiM1Z5
+        WTJVZ0ltRjZkWEpsY20xZlpYWmxiblJvZFdKZlkyOXVjM1Z0WlhKZlozSnZkWEFpSUNKamIyNXpk
+        VzFsY2w5bmNtOTFjQ0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYlhrdFpY
+        WmxiblJvZFdJdFkyOXVjM1Z0WlhKbmNtOTFjQ0lLSUNCdVlXMWxjM0JoWTJWZmJtRnRaU0FnSUNB
+        Z0lEMGdZWHAxY21WeWJWOWxkbVZ1ZEdoMVlsOXVZVzFsYzNCaFkyVXVaWFpsYm5Sb2RXSmZibk11
+        Ym1GdFpRb2dJR1YyWlc1MGFIVmlYMjVoYldVZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDJWMlpXNTBh
+        SFZpTG1WMlpXNTBhSFZpTG01aGJXVUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lY
+        cDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzV5Wnk1dVlXMWxDbjBLQ25KbGMyOTFjbU5sSUNK
+        aGVuVnlaWEp0WDJ0MWMzUnZYMlYyWlc1MGFIVmlYMlJoZEdGZlkyOXVibVZqZEdsdmJpSWdJbVYy
+        Wlc1MGFIVmlYMk52Ym01bFkzUnBiMjRpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnSW0xNUxXdDFjM1J2TFdWMlpXNTBhSFZpTFdSaGRHRXRZMjl1Ym1WamRHbHZiaUlLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        eVp5NXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6
+        YjNWeVkyVmZaM0p2ZFhBdWNtY3ViRzlqWVhScGIyNEtJQ0JqYkhWemRHVnlYMjVoYldVZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5cmRYTjBiMTlqYkhWemRHVnlMbU5zZFhOMFpYSXVibUZ0WlFvZ0lH
+        UmhkR0ZpWVhObFgyNWhiV1VnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYMnQxYzNSdlgyUmhkR0ZpWVhO
+        bExtUmhkR0ZpWVhObExtNWhiV1VLQ2lBZ1pYWmxiblJvZFdKZmFXUWdJQ0FnUFNCaGVuVnlaWEp0
+        WDJWMlpXNTBhSFZpTG1WMlpXNW9kV0l1YVdRS0lDQmpiMjV6ZFcxbGNsOW5jbTkxY0NBOUlHRjZk
+        WEpsY20xZlpYWmxiblJvZFdKZlkyOXVjM1Z0WlhKZlozSnZkWEF1WTI5dWMzVnRaWEpmWjNKdmRY
+        QXVibUZ0WlFvS0lDQjBZV0pzWlY5dVlXMWxJQ0FnSUNBZ0lDQTlJQ0p0ZVMxMFlXSnNaU0lnSUNB
+        Z0lDQWdJQ0FqS0U5d2RHbHZibUZzS1FvZ0lHMWhjSEJwYm1kZmNuVnNaVjl1WVcxbElEMGdJbTE1
+        TFhSaFlteGxMVzFoY0hCcGJtY2lJQ01vVDNCMGFXOXVZV3dwQ2lBZ1pHRjBZVjltYjNKdFlYUWdJ
+        Q0FnSUNBZ1BTQWlTbE5QVGlJZ0lDQWdJQ0FnSUNBZ0lDQWdJeWhQY0hScGIyNWhiQ2tLZlFvPQ==
+    import: !!binary |
+        Q2dwTGRYTjBieUJGZG1WdWRFaDFZaUJFWVhSaElFTnZibTVsWTNScGIyNXpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmEzVnpkRzlmWlhabGJuUm9kV0pmWkdGMFlWOWpiMjV1WldOMGFXOXVMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

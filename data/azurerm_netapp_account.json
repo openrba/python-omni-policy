@@ -1,0 +1,104 @@
+{
+    "azurerm_netapp_account": {
+        "status": "HOLD",
+        "subcategory": "NetApp",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_netapp_account",
+        "description": "Manages a NetApp Account.",
+        "arguments": {
+            "name": {
+                "description": "The name of the NetApp Account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group where the NetApp Account should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "active_directory": {
+                "description": "A `active_directory` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_servers": {
+                "description": "A list of DNS server IP addresses for the Active Directory domain. Only allows `IPv4` address.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "domain": {
+                "description": "The name of the Active Directory domain.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "smb_server_name": {
+                "description": "The NetBIOS name which should be used for the NetApp SMB Server, which will be registered as a computer account in the AD and used to mount volumes.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "username": {
+                "description": "The Username of Active Directory Domain Administrator.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "password": {
+                "description": "The password associated with the `username`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "organizational_unit": {
+                "description": "The Organizational Unit (OU",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the NetApp Account."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the NetApp Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the NetApp Account.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the NetApp Account.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the NetApp Account.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

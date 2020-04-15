@@ -1,0 +1,61 @@
+aws_workspaces_directory:
+    status: HOLD
+    subcategory: WorkSpaces
+    layout: aws
+    page_title: 'AWS: aws_workspaces_directory'
+    description: Provides a directory registration in AWS WorkSpaces Service.
+    arguments:
+        directory_id:
+            description: The directory identifier for registration in WorkSpaces service.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: The identifiers of the subnets where the directory resides.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags assigned to the WorkSpaces directory.
+            required: false
+            policy: ''
+            notes: ''
+        self_service_permissions:
+            description: The permissions to enable or disable self-service capabilities.
+            required: false
+            policy: ''
+            notes: ''
+        change_compute_type:
+            description: Whether WorkSpaces directory users can change the compute
+                type (bundle
+            required: false
+            policy: ''
+            notes: ''
+        increase_volume_size:
+            description: Whether WorkSpaces directory users can increase the volume
+                size of the drives on their workspace. Default `false`.
+            required: false
+            policy: ''
+            notes: ''
+        rebuild_workspace:
+            description: Whether WorkSpaces directory users can rebuild the operating
+                system of a workspace to its original state. Default `false`.
+            required: false
+            policy: ''
+            notes: ''
+        restart_workspace:
+            description: Whether WorkSpaces directory users can restart their workspace.
+                Default `true`.
+            required: false
+            policy: ''
+            notes: ''
+        switch_running_mode:
+            description: Whether WorkSpaces directory users can switch the running
+                mode of their workspace. Default `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The WorkSpaces directory identifier.
+    timeouts: {}

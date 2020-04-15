@@ -1,0 +1,25 @@
+{
+    "aws_cloudwatch_dashboard": {
+        "status": "HOLD",
+        "subcategory": "CloudWatch",
+        "layout": "aws",
+        "page_title": "AWS: aws_cloudwatch_dashboard",
+        "description": "Provides a CloudWatch Dashboard resource.",
+        "arguments": {
+            "dashboard_name": {
+                "description": "The name of the dashboard.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dashboard_body": {
+                "description": "The detailed information about the dashboard, including what widgets are included and their location on the dashboard. You can read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

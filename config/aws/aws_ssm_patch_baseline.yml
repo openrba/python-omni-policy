@@ -1,0 +1,97 @@
+aws_ssm_patch_baseline:
+    status: HOLD
+    subcategory: SSM
+    layout: aws
+    page_title: 'AWS: aws_ssm_patch_baseline'
+    description: Provides an SSM Patch Baseline resource
+    arguments:
+        name:
+            description: The name of the patch baseline.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the patch baseline.
+            required: false
+            policy: ''
+            notes: ''
+        operating_system:
+            description: Defines the operating system the patch baseline applies to.
+                Supported operating systems include `WINDOWS`, `AMAZON_LINUX`, `AMAZON_LINUX_2`,
+                `SUSE`, `UBUNTU`, `CENTOS`, and `REDHAT_ENTERPRISE_LINUX`. The Default
+                value is `WINDOWS`.
+            required: false
+            policy: ''
+            notes: ''
+        approved_patches_compliance_level:
+            description: 'Defines the compliance level for approved patches. This
+                means that if an approved patch is reported as missing, this is the
+                severity of the compliance violation. Valid compliance levels include
+                the following: `CRITICAL`, `HIGH`, `MEDIUM`, `LOW`, `INFORMATIONAL`,
+                `UNSPECIFIED`. The default value is `UNSPECIFIED`.'
+            required: false
+            policy: ''
+            notes: ''
+        approved_patches:
+            description: A list of explicitly approved patches for the baseline.
+            required: false
+            policy: ''
+            notes: ''
+        rejected_patches:
+            description: A list of rejected patches.
+            required: false
+            policy: ''
+            notes: ''
+        global_filter:
+            description: A set of global filters used to exclude patches from the
+                baseline. Up to 4 global filters can be specified using Key/Value
+                pairs. Valid Keys are `PRODUCT | CLASSIFICATION | MSRC_SEVERITY |
+                PATCH_ID`.
+            required: false
+            policy: ''
+            notes: ''
+        approval_rule:
+            description: A set of rules used to include patches in the baseline. up
+                to 10 approval rules can be specified. Each approval_rule block requires
+                the fields documented below.
+            required: false
+            policy: ''
+            notes: ''
+        approve_after_days:
+            description: 'The number of days after the release date of each patch
+                matched by the rule the patch is marked as approved in the patch baseline.
+                Valid Range: 0 to 100.'
+            required: true
+            policy: ''
+            notes: ''
+        patch_filter:
+            description: The patch filter group that defines the criteria for the
+                rule. Up to 5 patch filters can be specified per approval rule using
+                Key/Value pairs. Valid Keys are `PATCH_SET | PRODUCT | CLASSIFICATION
+                | MSRC_SEVERITY | PATCH_ID`.
+            required: true
+            policy: ''
+            notes: ''
+        compliance_level:
+            description: 'Defines the compliance level for patches approved by this
+                rule. Valid compliance levels include the following: `CRITICAL`, `HIGH`,
+                `MEDIUM`, `LOW`, `INFORMATIONAL`, `UNSPECIFIED`. The default value
+                is `UNSPECIFIED`.'
+            required: false
+            policy: ''
+            notes: ''
+        enable_non_security:
+            description: Boolean enabling the application of non-security updates.
+                The default value is 'false'. Valid for Linux instances only.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the patch baseline.
+    timeouts: {}

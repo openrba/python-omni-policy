@@ -1,0 +1,62 @@
+{
+    "azurerm_storage_account_customer_managed_key": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_account_customer_managed_key",
+        "description": "Manages a Customer Managed Key for a Storage Account.",
+        "arguments": {
+            "storage_account_id": {
+                "description": "The ID of the Storage Account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_id": {
+                "description": "The ID of the Key Vault. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_name": {
+                "description": "The name of Key Vault Key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_version": {
+                "description": "The version of Key Vault Key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Storage Account."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Account Customer Managed Keys.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Account Customer Managed Keys.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Account Customer Managed Keys.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Account Customer Managed Keys.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

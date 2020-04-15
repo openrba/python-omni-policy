@@ -1,0 +1,224 @@
+aws_emr_cluster:
+    status: HOLD
+    subcategory: Elastic Map Reduce (EMR)
+    layout: aws
+    page_title: 'AWS: aws_emr_cluster'
+    description: Provides an Elastic MapReduce Cluster
+    arguments:
+        name:
+            description: The name of the job flow
+            required: true
+            policy: ''
+            notes: ''
+        release_label:
+            description: The release label for the Amazon EMR release
+            required: true
+            policy: ''
+            notes: ''
+        master_instance_group:
+            description: Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups
+            required: false
+            policy: ''
+            notes: ''
+        master_instance_type:
+            description: Use the `master_instance_group` configuration block `instance_type`
+                argument instead. The EC2 instance type of the master node. Cannot
+                be specified if `master_instance_group` or `instance_group` configuration
+                blocks are set.
+            required: false
+            policy: ''
+            notes: ''
+        scale_down_behavior:
+            description: The way that individual Amazon EC2 instances terminate when
+                an automatic scale-in activity occurs or an `instance group` is resized.
+            required: false
+            policy: ''
+            notes: ''
+        additional_info:
+            description: 'A JSON string for selecting additional features such as
+                adding proxy information. Note: Currently there is no API to retrieve
+                the value of this argument after EMR cluster creation from provider,
+                therefore Terraform cannot detect drift from the actual EMR cluster
+                if its value is changed outside Terraform.'
+            required: false
+            policy: ''
+            notes: ''
+        service_role:
+            description: IAM role that will be assumed by the Amazon EMR service to
+                access AWS resources
+            required: true
+            policy: ''
+            notes: ''
+        security_configuration:
+            description: The security configuration name to attach to the EMR cluster.
+                Only valid for EMR clusters with `release_label` 4.8.0 or greater
+            required: false
+            policy: ''
+            notes: ''
+        core_instance_group:
+            description: Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups
+            required: false
+            policy: ''
+            notes: ''
+        core_instance_type:
+            description: Use the `core_instance_group` configuration block `instance_type`
+                argument instead. The EC2 instance type of the slave nodes. Cannot
+                be specified if `core_instance_group` or `instance_group` configuration
+                blocks are set.
+            required: false
+            policy: ''
+            notes: ''
+        core_instance_count:
+            description: Use the `core_instance_group` configuration block `instance_count`
+                argument instead. Number of Amazon EC2 instances used to execute the
+                job flow. EMR will use one node as the cluster's master node and use
+                the remainder of the nodes (`core_instance_count`-1
+            required: false
+            policy: ''
+            notes: ''
+        instance_group:
+            description: Use the `master_instance_group` configuration block, `core_instance_group`
+                configuration block and [`aws_emr_instance_group` resource(s)](/docs/providers/aws/r/emr_instance_group.html
+            required: false
+            policy: ''
+            notes: ''
+        log_uri:
+            description: S3 bucket to write the log files of the job flow. If a value
+                is not provided, logs are not created
+            required: false
+            policy: ''
+            notes: ''
+        applications:
+            description: 'A list of applications for the cluster. Valid values are:
+                `Flink`, `Hadoop`, `Hive`, `Mahout`, `Pig`, `Spark`, and `JupyterHub`
+                (as of EMR 5.14.0). Case insensitive'
+            required: false
+            policy: ''
+            notes: ''
+        termination_protection:
+            description: Switch on/off termination protection (default is `false`,
+                except when using multiple master nodes). Before attempting to destroy
+                the resource when termination protection is enabled, this configuration
+                must be applied with its value set to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        keep_job_flow_alive_when_no_steps:
+            description: Switch on/off run cluster with no steps or when all steps
+                are complete (default is on)
+            required: false
+            policy: ''
+            notes: ''
+        ec2_attributes:
+            description: Attributes for the EC2 instances running the job flow. Defined
+                below
+            required: false
+            policy: ''
+            notes: ''
+        kerberos_attributes:
+            description: Kerberos configuration for the cluster. Defined below
+            required: false
+            policy: ''
+            notes: ''
+        ebs_root_volume_size:
+            description: Size in GiB of the EBS root device volume of the Linux AMI
+                that is used for each EC2 instance. Available in Amazon EMR version
+                4.x and later.
+            required: false
+            policy: ''
+            notes: ''
+        custom_ami_id:
+            description: A custom Amazon Linux AMI for the cluster (instead of an
+                EMR-owned AMI). Available in Amazon EMR version 5.7.0 and later.
+            required: false
+            policy: ''
+            notes: ''
+        bootstrap_action:
+            description: Ordered list of bootstrap actions that will be run before
+                Hadoop is started on the cluster nodes. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        configurations:
+            description: List of configurations supplied for the EMR cluster you are
+                creating
+            required: false
+            policy: ''
+            notes: ''
+        configurations_json:
+            description: A JSON string for supplying list of configurations for the
+                EMR cluster.
+            required: false
+            policy: ''
+            notes: ''
+        visible_to_all_users:
+            description: Whether the job flow is visible to all IAM users of the AWS
+                account associated with the job flow. Default `true`
+            required: false
+            policy: ''
+            notes: ''
+        autoscaling_role:
+            description: An IAM role for automatic scaling policies. The IAM role
+                provides permissions that the automatic scaling feature requires to
+                launch and terminate EC2 instances in an instance group.
+            required: false
+            policy: ''
+            notes: ''
+        step:
+            description: List of steps to run when creating the cluster. Defined below.
+                It is highly recommended to utilize the [lifecycle configuration block](/docs/configuration/resources.html
+            required: false
+            policy: ''
+            notes: ''
+        step_concurrency_level:
+            description: The number of steps that can be executed concurrently. You
+                can specify a maximum of 256 steps. Only valid for EMR clusters with
+                `release_label` 5.28.0 or greater. (default is 1)
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: list of tags to apply to the EMR Cluster
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The ARN of the cluster.
+        id:
+            description: The ID of the EMR Cluster
+        name:
+            description: The name of the cluster.
+        release_label:
+            description: The release label for the Amazon EMR release.
+        master_instance_group.0.id:
+            description: Master node type Instance Group ID, if using Instance Group
+                for this node type.
+        master_public_dns:
+            description: The public DNS name of the master EC2 instance.
+        core_instance_group.0.id:
+            description: Core node type Instance Group ID, if using Instance Group
+                for this node type.
+        log_uri:
+            description: The path to the Amazon S3 location where logs for this cluster
+                are stored.
+        applications:
+            description: The applications installed on this cluster.
+        ec2_attributes:
+            description: 'Provides information about the EC2 instances in a cluster
+                grouped by category: key name, subnet ID, IAM instance profile, and
+                so on.'
+        bootstrap_action:
+            description: A list of bootstrap actions that will be run before Hadoop
+                is started on the cluster nodes.
+        configurations:
+            description: The list of Configurations supplied to the EMR cluster.
+        service_role:
+            description: The IAM role that will be assumed by the Amazon EMR service
+                to access AWS resources on your behalf.
+        visible_to_all_users:
+            description: Indicates whether the job flow is visible to all IAM users
+                of the AWS account associated with the job flow.
+        tags:
+            description: The list of tags associated with a cluster.
+    timeouts: {}

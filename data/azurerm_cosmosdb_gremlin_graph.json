@@ -1,0 +1,140 @@
+{
+    "azurerm_cosmosdb_gremlin_graph": {
+        "status": "HOLD",
+        "subcategory": "CosmosDB (DocumentDB)",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_cosmosdb_gremlin_graph",
+        "description": "Manages a Gremlin Graph within a Cosmos DB Account.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Cosmos DB Gremlin Graph. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "account_name": {
+                "description": "The name of the CosmosDB Account to create the Gremlin Graph within. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "database_name": {
+                "description": "The name of the Cosmos DB Graph Database in which the Cosmos DB Gremlin Graph is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "partition_key_path": {
+                "description": "Define a partition key. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "throughput": {
+                "description": "The throughput of the Gremlin database (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual terraform destroy-apply.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "index_policy": {
+                "description": "The configuration of the indexing policy. One or more `index_policy` blocks as defined below. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "conflict_resolution_policy": {
+                "description": "The conflict resolution policy for the graph. One or more `conflict_resolution_policy` blocks as defined below. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "unique_key": {
+                "description": "One or more `unique_key` blocks as defined below. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automatic": {
+                "description": "Indicates if the indexing policy is automatic. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "indexing_mode": {
+                "description": "Indicates the indexing mode. Possible values include: `Consistent`, `Lazy`, `None`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "included_paths": {
+                "description": "List of paths to include in the indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "excluded_paths": {
+                "description": "List of paths to exclude from indexing. Required if `indexing_mode` is `Consistent` or `Lazy`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mode": {
+                "description": "Indicates the conflict resolution mode. Possible values include: `LastWriterWins`, `Custom`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "conflict_resolution_path": {
+                "description": "The conflict resolution path in the case of LastWriterWins mode.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "conflict_resolution_procedure": {
+                "description": "The procedure to resolve conflicts in the case of custom mode.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "paths": {
+                "description": "A list of paths to use for this unique key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the CosmosDB Gremlin Graph."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the CosmosDB Gremlin Graph.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the CosmosDB Gremlin Graph.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the CosmosDB Gremlin Graph.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the CosmosDB Gremlin Graph.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

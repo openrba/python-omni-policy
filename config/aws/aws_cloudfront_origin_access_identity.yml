@@ -1,0 +1,14 @@
+aws_cloudfront_origin_access_identity:
+    status: HOLD
+    subcategory: CloudFront
+    layout: aws
+    page_title: 'AWS: aws_cloudfront_origin_access_identity'
+    description: Provides a CloudFront origin access identity.
+    arguments:
+        comment:
+            description: '- An optional comment for the origin access identity.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

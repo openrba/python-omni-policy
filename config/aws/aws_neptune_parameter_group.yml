@@ -1,0 +1,50 @@
+aws_neptune_parameter_group:
+    status: HOLD
+    subcategory: Neptune
+    layout: aws
+    page_title: 'AWS: aws_neptune_parameter_group'
+    description: Manages a Neptune Parameter Group
+    arguments:
+        name:
+            description: The name of the Neptune parameter.
+            required: true
+            policy: ''
+            notes: ''
+        family:
+            description: The family of the Neptune parameter group.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the Neptune parameter group. Defaults
+                to "Managed by Terraform".
+            required: false
+            policy: ''
+            notes: ''
+        parameter:
+            description: A list of Neptune parameters to apply.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The value of the Neptune parameter.
+            required: true
+            policy: ''
+            notes: ''
+        apply_method:
+            description: The apply method of the Neptune parameter. Valid values are
+                `immediate` and `pending-reboot`. Defaults to `pending-reboot`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Neptune parameter group name.
+        arn:
+            description: The Neptune parameter group Amazon Resource Name (ARN).
+    timeouts: {}

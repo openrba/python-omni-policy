@@ -1,0 +1,95 @@
+{
+    "aws_gamelift_fleet": {
+        "status": "HOLD",
+        "subcategory": "Gamelift",
+        "layout": "aws",
+        "page_title": "AWS: aws_gamelift_fleet",
+        "description": "Provides a Gamelift Fleet resource.",
+        "arguments": {
+            "build_id": {
+                "description": "ID of the Gamelift Build to be deployed on the fleet.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Human-readable description of the fleet.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ec2_inbound_permission": {
+                "description": "Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ec2_instance_type": {
+                "description": "Name of an EC2 instance type. e.g. `t2.micro`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "fleet_type": {
+                "description": "Type of fleet. This value must be `ON_DEMAND` or `SPOT`. Defaults to `ON_DEMAND`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_role_arn": {
+                "description": "ARN of an IAM role that instances in the fleet can assume.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_groups": {
+                "description": "List of names of metric groups to add this fleet to. A metric group tracks metrics across all fleets in the group. Defaults to `default`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the fleet.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "new_game_session_protection_policy": {
+                "description": "Game session protection policy to apply to all instances in this fleet. e.g. `FullProtection`. Defaults to `NoProtection`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_creation_limit_policy": {
+                "description": "Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "runtime_configuration": {
+                "description": "Instructions for launching server processes on each instance in the fleet. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Fleet ID."
+            },
+            "arn": {
+                "description": "Fleet ARN."
+            },
+            "operating_system": {
+                "description": "Operating system of the fleet's computing resources."
+            }
+        },
+        "timeouts": {}
+    }
+}

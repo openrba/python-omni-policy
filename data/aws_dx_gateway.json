@@ -1,0 +1,32 @@
+{
+    "aws_dx_gateway": {
+        "status": "HOLD",
+        "subcategory": "Direct Connect",
+        "layout": "aws",
+        "page_title": "AWS: aws_dx_gateway",
+        "description": "Provides a Direct Connect Gateway.",
+        "arguments": {
+            "name": {
+                "description": "The name of the connection.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "amazon_side_asn": {
+                "description": "The ASN to be configured on the Amazon side of the connection. The ASN must be in the private range of 64,512 to 65,534 or 4,200,000,000 to 4,294,967,294.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the gateway."
+            },
+            "owner_account_id": {
+                "description": "AWS Account ID of the gateway."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "aws_ssm_activation": {
+        "status": "HOLD",
+        "subcategory": "SSM",
+        "layout": "aws",
+        "page_title": "AWS: aws_ssm_activation",
+        "description": "Registers an on-premises server or virtual machine with Amazon EC2 so that it can be managed using Run Command.",
+        "arguments": {
+            "name": {
+                "description": "The default name of the registered managed instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the resource that you want to register.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expiration_date": {
+                "description": "UTC timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_role": {
+                "description": "The IAM Role to attach to the managed instance.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "registration_limit": {
+                "description": "The maximum number of managed instances you want to register. The default value is 1 instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the object.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The activation ID."
+            },
+            "activation_code": {
+                "description": "The code the system generates when it processes the activation."
+            },
+            "name": {
+                "description": "The default name of the registered managed instance."
+            },
+            "description": {
+                "description": "The description of the resource that was registered."
+            },
+            "expired": {
+                "description": "If the current activation has expired."
+            },
+            "expiration_date": {
+                "description": "The date by which this activation request should expire. The default value is 24 hours."
+            },
+            "iam_role": {
+                "description": "The IAM Role attached to the managed instance."
+            },
+            "registration_limit": {
+                "description": "The maximum number of managed instances you want to be registered. The default value is 1 instance."
+            },
+            "registration_count": {
+                "description": "The number of managed instances that are currently registered using this activation."
+            }
+        },
+        "timeouts": {}
+    }
+}

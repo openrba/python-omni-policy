@@ -1,0 +1,37 @@
+{
+    "azurerm_app_service_environment": {
+        "status": "HOLD",
+        "subcategory": "App Service (Web Apps)",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_app_service_environment",
+        "description": "Manages an App Service Environment.",
+        "arguments": {
+            "name": {
+                "description": "The name of the App Service Environment. Changing this forces a new resource to be created. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the Subnet which the App Service Environment should be connected to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "pricing_tier": {
+                "description": "Pricing tier for the front end instances. Possible values are `I1`, `I2` and `I3`. Defaults to `I1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "front_end_scale_factor": {
+                "description": "Scale factor for front end instances. Possible values are between `5` and `15`. Defaults to `15`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

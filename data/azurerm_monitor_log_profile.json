@@ -1,0 +1,86 @@
+{
+    "azurerm_monitor_log_profile": {
+        "status": "HOLD",
+        "subcategory": "Monitor",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_monitor_log_profile",
+        "description": "Manages a Log Profile.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Log Profile. Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "categories": {
+                "description": "List of categories of the logs.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "locations": {
+                "description": "List of regions for which Activity Log events are stored or streamed.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "The resource ID of the storage account in which the Activity Log is stored. At least one of `storage_account_id` or `servicebus_rule_id` must be set.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "servicebus_rule_id": {
+                "description": "The service bus (or event hub",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_policy": {
+                "description": "A `retention_policy` block as documented below. A retention policy for how long Activity Logs are retained in the storage account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "A boolean value to indicate whether the retention policy is enabled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "days": {
+                "description": "The number of days for the retention policy. Defaults to 0.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Log Profile."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Log Profile.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Log Profile.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Log Profile.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Log Profile.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

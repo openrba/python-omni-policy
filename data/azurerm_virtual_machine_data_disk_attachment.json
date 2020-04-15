@@ -1,0 +1,74 @@
+{
+    "azurerm_virtual_machine_data_disk_attachment": {
+        "status": "HOLD",
+        "subcategory": "Compute",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_virtual_machine_data_disk_attachment",
+        "description": "Manages attaching a Disk to a Virtual Machine.",
+        "arguments": {
+            "virtual_machine_id": {
+                "description": "The ID of the Virtual Machine to which the Data Disk should be attached. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "managed_disk_id": {
+                "description": "The ID of an existing Managed Disk which should be attached. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lun": {
+                "description": "The Logical Unit Number of the Data Disk, which needs to be unique within the Virtual Machine. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "caching": {
+                "description": "Specifies the caching requirements for this Data Disk. Possible values include `None`, `ReadOnly` and `ReadWrite`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "create_option": {
+                "description": "The Create Option of the Data Disk, such as `Empty` or `Attach`. Defaults to `Attach`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "write_accelerator_enabled": {
+                "description": "Specifies if Write Accelerator is enabled on the disk. This can only be enabled on `Premium_LRS` managed disks with no caching and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator). Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Virtual Machine Data Disk attachment."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Virtual Machine Data Disk Attachment.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Virtual Machine Data Disk Attachment.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Virtual Machine Data Disk Attachment.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Virtual Machine Data Disk Attachment.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+azurerm_cosmosdb_gremlin_graph:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_gremlin_graph'
+    description: Manages a Gremlin Graph within a Cosmos DB Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cosmos DB Gremlin Graph. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cosmos DB Gremlin
+                Graph is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the CosmosDB Account to create the Gremlin Graph
+                within. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        database_name:
+            description: The name of the Cosmos DB Graph Database in which the Cosmos
+                DB Gremlin Graph is created. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        partition_key_path:
+            description: Define a partition key. Changing this forces a new resource
+                to be created.
+            required: false
+            policy: ''
+            notes: ''
+        throughput:
+            description: The throughput of the Gremlin database (RU/s). Must be set
+                in increments of `100`. The minimum value is `400`. This must be set
+                upon database creation otherwise it cannot be updated without a manual
+                terraform destroy-apply.
+            required: false
+            policy: ''
+            notes: ''
+        index_policy:
+            description: The configuration of the indexing policy. One or more `index_policy`
+                blocks as defined below. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        conflict_resolution_policy:
+            description: The conflict resolution policy for the graph. One or more
+                `conflict_resolution_policy` blocks as defined below. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        unique_key:
+            description: One or more `unique_key` blocks as defined below. Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        automatic:
+            description: Indicates if the indexing policy is automatic. Defaults to
+                `true`.
+            required: false
+            policy: ''
+            notes: ''
+        indexing_mode:
+            description: 'Indicates the indexing mode. Possible values include: `Consistent`,
+                `Lazy`, `None`.'
+            required: true
+            policy: ''
+            notes: ''
+        included_paths:
+            description: List of paths to include in the indexing. Required if `indexing_mode`
+                is `Consistent` or `Lazy`.
+            required: false
+            policy: ''
+            notes: ''
+        excluded_paths:
+            description: List of paths to exclude from indexing. Required if `indexing_mode`
+                is `Consistent` or `Lazy`.
+            required: false
+            policy: ''
+            notes: ''
+        mode:
+            description: 'Indicates the conflict resolution mode. Possible values
+                include: `LastWriterWins`, `Custom`.'
+            required: true
+            policy: ''
+            notes: ''
+        conflict_resolution_path:
+            description: The conflict resolution path in the case of LastWriterWins
+                mode.
+            required: false
+            policy: ''
+            notes: ''
+        conflict_resolution_procedure:
+            description: The procedure to resolve conflicts in the case of custom
+                mode.
+            required: false
+            policy: ''
+            notes: ''
+        paths:
+            description: A list of paths to use for this unique key.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the CosmosDB Gremlin Graph.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB Gremlin Graph.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CosmosDB Gremlin Graph.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CosmosDB Gremlin Graph.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB Gremlin Graph.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMjl6Ylc5elpHSmZZV05qYjNWdWRDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhndFkyOXpiVzl6WkdJdFlX
+        TmpiM1Z1ZENJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnSW5SbVpYZ3RZMjl6Ylc5
+        elpHSXRZV05qYjNWdWRDMXlaeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlkyOXpiVzl6
+        WkdKZlozSmxiV3hwYmw5a1lYUmhZbUZ6WlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUm1aWGd0WTI5emJXOXpMV2R5Wlcxc2FXNHRaR0lpQ2lBZ2Nt
+        VnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR1JoZEdFdVlYcDFjbVZ5YlY5amIzTnRiM05rWWw5
+        aFkyTnZkVzUwTG1WNFlXMXdiR1V1Y21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlFvZ0lHRmpZMjkx
+        Ym5SZmJtRnRaU0FnSUNBZ0lDQWdQU0JrWVhSaExtRjZkWEpsY20xZlkyOXpiVzl6WkdKZllXTmpi
+        M1Z1ZEM1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWTI5emJX
+        OXpaR0pmWjNKbGJXeHBibDluY21Gd2FDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhndFkyOXpiVzl6TFdkeVpXMXNhVzR0WjNKaGNHZ2lDaUFn
+        Y21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZlkyOXpiVzl6WkdKZllXTmpi
+        M1Z1ZEM1bGVHRnRjR3hsTG5KbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVS0lDQmhZMk52ZFc1MFgy
+        NWhiV1VnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjlqYjNOdGIzTmtZbDloWTJOdmRXNTBMbVY0WVcx
+        d2JHVXVibUZ0WlFvZ0lHUmhkR0ZpWVhObFgyNWhiV1VnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYMk52
+        YzIxdmMyUmlYMmR5Wlcxc2FXNWZaR0YwWVdKaGMyVXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2NHRnlk
+        R2wwYVc5dVgydGxlVjl3WVhSb0lDQTlJQ0l2UlhoaGJYQnNaU0lLSUNCMGFISnZkV2RvY0hWMElD
+        QWdJQ0FnSUNBZ0lEMGdOREF3Q2dvZ0lHbHVaR1Y0WDNCdmJHbGplU0I3Q2lBZ0lDQmhkWFJ2YldG
+        MGFXTWdJQ0FnSUNBOUlIUnlkV1VLSUNBZ0lHbHVaR1Y0YVc1blgyMXZaR1VnSUQwZ0lrTnZibk5w
+        YzNSbGJuUWlDaUFnSUNCcGJtTnNkV1JsWkY5d1lYUm9jeUE5SUZzaUx5b2lYUW9nSUNBZ1pYaGpi
+        SFZrWldSZmNHRjBhSE1nUFNCYklpOWNJbDlsZEdGblhDSXZQeUpkQ2lBZ2ZRb0tJQ0JqYjI1bWJH
+        bGpkRjl5WlhOdmJIVjBhVzl1WDNCdmJHbGplU0I3Q2lBZ0lDQnRiMlJsSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ1BTQWlUR0Z6ZEZkeWFYUmxjbGRwYm5NaUNpQWdJQ0JqYjI1bWJHbGpkRjl5
+        WlhOdmJIVjBhVzl1WDNCaGRHZ2dQU0FpTDE5MGN5SUtJQ0I5Q2dvZ0lIVnVhWEYxWlY5clpYa2dl
+        d29nSUNBZ2NHRjBhSE1nUFNCYklpOWtaV1pwYm1sMGFXOXVMMmxrTVNJc0lDSXZaR1ZtYVc1cGRH
+        bHZiaTlwWkRJaVhRb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwRGIzTnRiM01nUjNKbGJXeHBiaUJIY21Gd2FITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZlozSmxiV3hwYmw5bmNtRndhQzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

@@ -1,0 +1,62 @@
+{
+    "azurerm_cosmosdb_cassandra_keyspace": {
+        "status": "HOLD",
+        "subcategory": "CosmosDB (DocumentDB)",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_cosmosdb_cassandra_keyspace",
+        "description": "Manages a Cassandra KeySpace within a Cosmos DB Account.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Cosmos DB Cassandra KeySpace. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Cosmos DB Cassandra KeySpace is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "account_name": {
+                "description": "The name of the Cosmos DB Cassandra KeySpace to create the table within. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "throughput": {
+                "description": "The throughput of Cassandra keyspace (RU/s). Must be set in increments of `100`. The minimum value is `400`. This must be set upon database creation otherwise it cannot be updated without a manual terraform destroy-apply.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "the ID of the CosmosDB Cassandra KeySpace."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the CosmosDB Cassandra KeySpace.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the CosmosDB Cassandra KeySpace.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the CosmosDB Cassandra KeySpace.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the CosmosDB Cassandra KeySpace.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

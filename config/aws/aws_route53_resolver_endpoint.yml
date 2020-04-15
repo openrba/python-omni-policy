@@ -1,0 +1,74 @@
+aws_route53_resolver_endpoint:
+    status: HOLD
+    subcategory: Route53 Resolver
+    layout: aws
+    page_title: 'AWS: aws_route53_resolver_endpoint'
+    description: Provides a Route 53 Resolver endpoint resource.
+    arguments:
+        direction:
+            description: The direction of DNS queries to or from the Route 53 Resolver
+                endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        ip_address:
+            description: The subnets and IP addresses in your VPC that you want DNS
+                queries to pass through on the way from your VPCs
+            required: true
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: The ID of one or more security groups that you want to use
+                to control access to this VPC.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The friendly name of the Route 53 Resolver endpoint.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet that contains the IP address.
+            required: true
+            policy: ''
+            notes: ''
+        ip:
+            description: The IP address in the subnet that you want to use for DNS
+                queries.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Route 53 Resolver endpoint.
+        arn:
+            description: The ARN of the Route 53 Resolver endpoint.
+        host_vpc_id:
+            description: The ID of the VPC that you want to create the resolver endpoint
+                in.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbTkxZEdVMU0xOXlaWE52YkhabGNsOWxibVJ3YjJsdWRDSWdJ
+        bVp2YnlJZ2V3b2dJRzVoYldVZ0lDQWdJQ0E5SUNKbWIyOGlDaUFnWkdseVpXTjBhVzl1SUQwZ0lr
+        bE9RazlWVGtRaUNnb2dJSE5sWTNWeWFYUjVYMmR5YjNWd1gybGtjeUE5SUZzS0lDQWdJQ0lrZTJG
+        M2MxOXpaV04xY21sMGVWOW5jbTkxY0M1elp6RXVhV1I5SWl3S0lDQWdJQ0lrZTJGM2MxOXpaV04x
+        Y21sMGVWOW5jbTkxY0M1elp6SXVhV1I5SWl3S0lDQmRDZ29nSUdsd1gyRmtaSEpsYzNNZ2V3b2dJ
+        Q0FnYzNWaWJtVjBYMmxrSUQwZ0lpUjdZWGR6WDNOMVltNWxkQzV6YmpFdWFXUjlJZ29nSUgwS0Np
+        QWdhWEJmWVdSa2NtVnpjeUI3Q2lBZ0lDQnpkV0p1WlhSZmFXUWdQU0FpSkh0aGQzTmZjM1ZpYm1W
+        MExuTnVNaTVwWkgwaUNpQWdJQ0JwY0NBZ0lDQWdJQ0FnUFNBaU1UQXVNQzQyTkM0MElnb2dJSDBL
+        Q2lBZ2RHRm5jeUI3Q2lBZ0lDQkZiblpwY205dWJXVnVkQ0E5SUNKUWNtOWtJZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dvZ1VtOTFkR1VnTlRNZ1VtVnpiMngyWlhJZ1pXNWtjRzlwYm5SeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1VtOTFkR1VnTlRNZ1VtVnpiMngyWlhJZ1pXNWtjRzlwYm5RZ1NV
+        UXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpUVXpYM0psYzI5c2RtVnlYMlZ1WkhCdmFXNTBMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

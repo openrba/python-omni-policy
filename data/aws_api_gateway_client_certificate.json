@@ -1,0 +1,25 @@
+{
+    "aws_api_gateway_client_certificate": {
+        "status": "HOLD",
+        "subcategory": "API Gateway (REST APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_api_gateway_client_certificate",
+        "description": "Provides an API Gateway Client Certificate.",
+        "arguments": {
+            "description": {
+                "description": "The description of the client certificate.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

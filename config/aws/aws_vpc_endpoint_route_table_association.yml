@@ -1,0 +1,23 @@
+aws_vpc_endpoint_route_table_association:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_vpc_endpoint_route_table_association'
+    description: Manages a VPC Endpoint Route Table Association
+    arguments:
+        route_table_id:
+            description: Identifier of the EC2 Route Table to be associated with the
+                VPC Endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        vpc_endpoint_id:
+            description: Identifier of the VPC Endpoint with which the EC2 Route Table
+                will be associated.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: A hash of the EC2 Route Table and VPC Endpoint identifiers.
+    timeouts: {}

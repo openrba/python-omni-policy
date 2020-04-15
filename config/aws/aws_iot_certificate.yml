@@ -1,0 +1,29 @@
+aws_iot_certificate:
+    status: HOLD
+    subcategory: IoT
+    layout: aws
+    page_title: 'AWS: aws_iot_certificate'
+    description: Creates and manages an AWS IoT certificate.
+    arguments:
+        active:
+            description: ' Boolean flag to indicate if the certificate should be active'
+            required: true
+            policy: ''
+            notes: ''
+        csr:
+            description: The certificate signing request. Review
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The internal ID assigned to this certificate.
+        arn:
+            description: The ARN of the created certificate.
+        certificate_pem:
+            description: The certificate data, in PEM format.
+        public_key:
+            description: When no CSR is provided, the public key.
+        private_key:
+            description: When no CSR is provided, the private key.
+    timeouts: {}

@@ -1,0 +1,56 @@
+{
+    "azurerm_storage_data_lake_gen2_filesystem": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_data_lake_gen2_filesystem",
+        "description": "Manages a Data Lake Gen2 File System within an Azure Storage Account.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Data Lake Gen2 File System which should be created within the Storage Account. Must be unique within the storage account the queue is located. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "Specifies the ID of the Storage Account in which the Data Lake Gen2 File System should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "properties": {
+                "description": "A mapping of Key to Base64-Encoded Values which should be assigned to this Data Lake Gen2 File System.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Data Lake Gen2 File System."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Data Lake Gen2 File System.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Data Lake Gen2 File System.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Data Lake Gen2 File System.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Data Lake Gen2 File System.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

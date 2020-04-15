@@ -1,0 +1,34 @@
+azurerm_public_ip_prefix:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_public_ip_prefix'
+    description: Manages a Public IP Prefix.
+    arguments:
+        name:
+            description: Specifies the name of the Public IP Prefix resource . Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Public
+                IP Prefix.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: The SKU of the Public IP Prefix. Accepted values are `Standard`.
+                Defaults to `Standard`. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

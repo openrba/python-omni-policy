@@ -1,0 +1,16 @@
+{
+    "aws_securityhub_account": {
+        "status": "HOLD",
+        "subcategory": "Security Hub",
+        "layout": "aws",
+        "page_title": "AWS: aws_securityhub_account",
+        "description": "Enables Security Hub for an AWS account.",
+        "arguments": {},
+        "attributes": {
+            "id": {
+                "description": "AWS Account ID."
+            }
+        },
+        "timeouts": {}
+    }
+}

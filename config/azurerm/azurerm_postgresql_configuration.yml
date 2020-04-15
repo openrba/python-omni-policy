@@ -1,0 +1,83 @@
+azurerm_postgresql_configuration:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_postgresql_configuration'
+    description: Sets a PostgreSQL Configuration value on a PostgreSQL Server.
+    arguments:
+        name:
+            description: Specifies the name of the PostgreSQL Configuration, which
+                needs [to be a valid PostgreSQL configuration name](https://www.postgresql.org/docs/current/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIER).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: Specifies the name of the PostgreSQL Server. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the PostgreSQL Server
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: Specifies the value of the PostgreSQL Configuration. See
+                the PostgreSQL documentation for valid values.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the PostgreSQL Configuration.
+    timeouts:
+        create:
+            description: Used when creating the PostgreSQL Configuration.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the PostgreSQL Configuration.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the PostgreSQL Configuration.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the PostgreSQL Configuration.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZ3YVMxeVp5MXdjbThpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzQnZjM1JuY21W
+        emNXeGZjMlZ5ZG1WeUlpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWljRzl6ZEdkeVpYTnhiQzF6WlhKMlpYSXRNU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlky
+        RjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNW
+        eVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDZ29nSUhOcmRWOXVZVzFsSUQwZ0lrSmZSMlZ1
+        TlY4eUlnb0tJQ0J6ZEc5eVlXZGxYM0J5YjJacGJHVWdld29nSUNBZ2MzUnZjbUZuWlY5dFlpQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnTlRFeU1Bb2dJQ0FnWW1GamEzVndYM0psZEdWdWRHbHZibDlrWVhseklE
+        MGdOd29nSUNBZ1oyVnZYM0psWkhWdVpHRnVkRjlpWVdOcmRYQWdJRDBnSWtScGMyRmliR1ZrSWdv
+        Z0lIMEtDaUFnWVdSdGFXNXBjM1J5WVhSdmNsOXNiMmRwYmlBZ0lDQWdJQ0FnSUNBOUlDSndjM0Zz
+        WVdSdGFXNTFiaUlLSUNCaFpHMXBibWx6ZEhKaGRHOXlYMnh2WjJsdVgzQmhjM04zYjNKa0lEMGdJ
+        a2hBVTJneFEyOVNNeUVpQ2lBZ2RtVnljMmx2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0k1TGpVaUNpQWdjM05zWDJWdVptOXlZMlZ0Wlc1MElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNK
+        RmJtRmliR1ZrSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXdiM04wWjNKbGMzRnNYMk52
+        Ym1acFozVnlZWFJwYjI0aUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBOUlDSmlZV05yYzJ4aGMyaGZjWFZ2ZEdVaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJt
+        RnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lB
+        Z2MyVnlkbVZ5WDI1aGJXVWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjRzl6ZEdkeVpYTnhiRjl6
+        WlhKMlpYSXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2RtRnNkV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0p2YmlJS2ZRbz0=
+    import: !!binary |
+        Q2dwUWIzTjBaM0psVTFGTUlFTnZibVpwWjNWeVlYUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXpkR2R5WlhOeGJGOWpiMjVtYVdkMWNtRjBhVzl1TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

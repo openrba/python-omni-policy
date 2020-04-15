@@ -1,0 +1,83 @@
+azurerm_app_service_virtual_network_swift_connection:
+    status: HOLD
+    subcategory: App Service (Web Apps)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_app_service_virtual_network_swift_connection'
+    description: Manages an App Service Virtual Network Association.
+    arguments:
+        app_service_id:
+            description: The ID of the App Service to associate to the VNet. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet the app service will be associated to
+                (the subnet must have a `service_delegation` configured for `Microsoft.Web/serverFarms`).
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the App Service Virtual Network Association
+    timeouts:
+        create:
+            description: Used when creating the App Service Virtual Network Association.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the App Service Virtual Network Association.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the App Service Virtual Network Association.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the App Service Virtual Network Association.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpZEdWemRDSWdl
+        d29nSUc1aGJXVWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGNtVnpiM1Z5WTJWeklnb2dJR3h2WTJGMGFX
+        OXVJRDBnSW5WcmMyOTFkR2dpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzWnBjblIxWVd4
+        ZmJtVjBkMjl5YXlJZ0luUmxjM1FpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SW1GalkzUmxjM1IyYm1WMElnb2dJR0ZrWkhKbGMzTmZjM0JoWTJVZ0lDQWdJQ0FnUFNCYklqRXdM
+        akF1TUM0d0x6RTJJbDBLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJW
+        OXlaWE52ZFhKalpWOW5jbTkxY0M1MFpYTjBMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNK
+        dmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1ZEdWemRDNXVZVzFs
+        Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjFZbTVsZENJZ0luUmxjM1F4SWlCN0NpQWdi
+        bUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVlXTmpkR1Z6ZEhOMVltNWxkREVpQ2lBZ2Nt
+        VnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xuUmxjM1F1Ym1GdFpRb2dJSFpwY25SMVlXeGZibVYwZDI5eWExOXVZVzFsSUQwZ1lYcDFjbVZ5
+        YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXN1ZEdWemRDNXVZVzFsQ2lBZ1lXUmtjbVZ6YzE5d2NtVm1h
+        WGdnSUNBZ0lDQWdQU0FpTVRBdU1DNHhMakF2TWpRaUNnb2dJR1JsYkdWbllYUnBiMjRnZXdvZ0lD
+        QWdibUZ0WlNBOUlDSmhZMk4wWlhOMFpHVnNaV2RoZEdsdmJpSUtDaUFnSUNCelpYSjJhV05sWDJS
+        bGJHVm5ZWFJwYjI0Z2V3b2dJQ0FnSUNCdVlXMWxJQ0FnSUQwZ0lrMXBZM0p2YzI5bWRDNVhaV0l2
+        YzJWeWRtVnlSbUZ5YlhNaUNpQWdJQ0FnSUdGamRHbHZibk1nUFNCYklrMXBZM0p2YzI5bWRDNU9a
+        WFIzYjNKckwzWnBjblIxWVd4T1pYUjNiM0pyY3k5emRXSnVaWFJ6TDJGamRHbHZiaUpkQ2lBZ0lD
+        QjlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWhjSEJmYzJWeWRtbGpaVjl3YkdG
+        dUlpQWlkR1Z6ZENJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVlXTmpkR1Z6
+        ZEdGemNDSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZk
+        WEpqWlY5bmNtOTFjQzUwWlhOMExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJt
+        RnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVkR1Z6ZEM1dVlXMWxDZ29nSUhO
+        cmRTQjdDaUFnSUNCMGFXVnlJRDBnSWxOMFlXNWtZWEprSWdvZ0lDQWdjMmw2WlNBOUlDSlRNU0lL
+        SUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3Y0Y5elpYSjJhV05sSWlBaWRHVnpk
+        Q0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWVdOamRHVnpkR0Z6SWdvZ0lH
+        eHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xuUmxjM1F1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAx
+        Y21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1MFpYTjBMbTVoYldVS0lDQmhjSEJmYzJWeWRtbGpa
+        Vjl3YkdGdVgybGtJRDBnWVhwMWNtVnliVjloY0hCZmMyVnlkbWxqWlY5d2JHRnVMblJsYzNRdWFX
+        UUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWVhCd1gzTmxjblpwWTJWZmRtbHlkSFZoYkY5
+        dVpYUjNiM0pyWDNOM2FXWjBYMk52Ym01bFkzUnBiMjRpSUNKMFpYTjBJaUI3Q2lBZ1lYQndYM05s
+        Y25acFkyVmZhV1FnUFNCaGVuVnlaWEp0WDJGd2NGOXpaWEoyYVdObExuUmxjM1F1YVdRS0lDQnpk
+        V0p1WlhSZmFXUWdJQ0FnSUNBOUlHRjZkWEpsY20xZmMzVmlibVYwTG5SbGMzUXhMbWxrQ24wSw==
+    import: !!binary |
+        Q2dwQmNIQWdVMlZ5ZG1salpTQldhWEowZFdGc0lFNWxkSGR2Y21zZ1FYTnpiMk5wWVhScGIyNXpJ
+        R05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pT
+        NW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndYM05sY25acFkyVmZkbWx5ZEhWaGJGOXVaWFIzYjNKclgzTjNhV1owWDJO
+        dmJtNWxZM1JwYjI0dWFIUnRiQzV0WVhKclpHOTNiZz09

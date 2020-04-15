@@ -1,0 +1,35 @@
+{
+    "aws_route_table_association": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_route_table_association",
+        "description": "Provides a resource to create an association between a route table and a subnet or a route table and an internet gateway or virtual private gateway.",
+        "arguments": {
+            "subnet_id": {
+                "description": "The subnet ID to create an association. Conflicts with `gateway_id`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "gateway_id": {
+                "description": "The gateway ID to create an association. Conflicts with `subnet_id`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route_table_id": {
+                "description": "The ID of the routing table to associate with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the association"
+            }
+        },
+        "timeouts": {}
+    }
+}

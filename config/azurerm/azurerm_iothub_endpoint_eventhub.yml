@@ -1,0 +1,85 @@
+azurerm_iothub_endpoint_eventhub:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_iothub_endpoint_eventhub'
+    description: Manages an IotHub EventHub Endpoint
+    arguments:
+        name:
+            description: 'The name of the endpoint. The name must be unique across
+                endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`,
+                `fileNotifications` and `$default`.'
+            required: true
+            policy: ''
+            notes: ''
+        connection_string:
+            description: The connection string for the endpoint.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the IoTHub EventHub Endpoint.
+    timeouts:
+        create:
+            description: Used when creating the IotHub EventHub Endpoint.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the IotHub EventHub Endpoint.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the IotHub EventHub Endpoint.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the IotHub EventHub Endpoint.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lrVmhjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMlYyWlc1
+        MGFIVmlYMjVoYldWemNHRmpaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1ZGZG1WdWRFaDFZazVoYldWemNHRmpaU0lLSUNCc2IyTmhk
+        R2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVH
+        RnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhK
+        bGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnYzJ0MUlDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSkNZWE5wWXlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZa
+        WFpsYm5Sb2RXSWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0psZUdGdGNHeGxSWFpsYm5SSWRXSWlDaUFnYm1GdFpYTndZV05sWDI1aGJXVWdJQ0FnSUNB
+        OUlHRjZkWEpsY20xZlpYWmxiblJvZFdKZmJtRnRaWE53WVdObExtVjRZVzF3YkdVdWJtRnRaUW9n
+        SUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHli
+        M1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEJoY25ScGRHbHZibDlqYjNWdWRDQWdJQ0FnUFNBeUNp
+        QWdiV1Z6YzJGblpWOXlaWFJsYm5ScGIyNGdJQ0E5SURFS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhK
+        bGNtMWZaWFpsYm5Sb2RXSmZZWFYwYUc5eWFYcGhkR2x2Ymw5eWRXeGxJaUFpWlhoaGJYQnNaU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaVkoxYkdVaUNpQWdi
+        bUZ0WlhOd1lXTmxYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmWlhabGJuUm9kV0pmYm1GdFpY
+        TndZV05sTG1WNFlXMXdiR1V1Ym1GdFpRb2dJR1YyWlc1MGFIVmlYMjVoYldVZ0lDQWdJQ0FnUFNC
+        aGVuVnlaWEp0WDJWMlpXNTBhSFZpTG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEpsYzI5MWNtTmxYMmR5
+        YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVi
+        bUZ0WlFvS0lDQnNhWE4wWlc0Z1BTQm1ZV3h6WlFvZ0lITmxibVFnSUNBOUlIUnlkV1VLSUNCdFlX
+        NWhaMlVnUFNCbVlXeHpaUXA5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5cGIzUm9kV0lpSUNK
+        bGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hs
+        U1c5MGFIVmlJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxj
+        MjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtDaUFnYzJ0MUlIc0tJQ0FnSUc1aGJXVWdJQ0FnSUQwZ0lrSXhJZ29nSUNBZ2RHbGxjaUFn
+        SUNBZ1BTQWlRbUZ6YVdNaUNpQWdJQ0JqWVhCaFkybDBlU0E5SUNJeElnb2dJSDBLQ2lBZ2RHRm5j
+        eUE5SUhzS0lDQWdJSEIxY25CdmMyVWdQU0FpWlhoaGJYQnNaU0lLSUNCOUNuMEtDbkpsYzI5MWNt
+        TmxJQ0poZW5WeVpYSnRYMmx2ZEdoMVlsOWxibVJ3YjJsdWRGOWxkbVZ1ZEdoMVlpSWdJbVY0WVcx
+        d2JHVWlJSHNLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52
+        ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JwYjNSb2RXSmZibUZ0WlNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5cGIzUm9kV0l1WlhoaGJYQnNaUzV1WVcxbENpQWdibUZ0WlNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsSWdvS0lDQmpiMjV1WldOMGFXOXVYM04wY21s
+        dVp5QTlJR0Y2ZFhKbGNtMWZaWFpsYm5Sb2RXSmZZWFYwYUc5eWFYcGhkR2x2Ymw5eWRXeGxMbVY0
+        WVcxd2JHVXVjSEpwYldGeWVWOWpiMjV1WldOMGFXOXVYM04wY21sdVp3cDlDZz09
+    import: !!binary |
+        Q2dwSmIxUklkV0lnUlhabGJuUklkV0lnUlc1a2NHOXBiblFnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXOTBhSFZpWDJWdVpIQnZhVzUwWDJWMlpXNTBhSFZpTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

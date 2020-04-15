@@ -1,0 +1,43 @@
+{
+    "azurerm_hpc_cache_blob_target": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_hpc_cache_blob_target",
+        "description": "Manages a Blob Target within a HPC Cache.",
+        "arguments": {
+            "cache_name": {
+                "description": "The name HPC Cache, which the HPC Cache Blob Target will be added to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the HPC Cache Blob Target. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which to create the HPC Cache Blob Target. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace_path": {
+                "description": "The client-facing file path of the HPC Cache Blob Target.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_container_id": {
+                "description": "The Resource Manager ID of the Storage Container used as the HPC Cache Blob Target. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

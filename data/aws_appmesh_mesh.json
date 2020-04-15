@@ -1,0 +1,56 @@
+{
+    "aws_appmesh_mesh": {
+        "status": "HOLD",
+        "subcategory": "AppMesh",
+        "layout": "aws",
+        "page_title": "AWS: aws_appmesh_mesh",
+        "description": "Provides an AWS App Mesh service mesh resource.",
+        "arguments": {
+            "name": {
+                "description": "The name to use for the service mesh.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "spec": {
+                "description": "The service mesh specification to apply.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "egress_filter": {
+                "description": "The egress filter rules for the service mesh.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The egress filter type. By default, the type is `DROP_ALL`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the service mesh."
+            },
+            "arn": {
+                "description": "The ARN of the service mesh."
+            },
+            "created_date": {
+                "description": "The creation date of the service mesh."
+            },
+            "last_updated_date": {
+                "description": "The last update date of the service mesh."
+            }
+        },
+        "timeouts": {}
+    }
+}

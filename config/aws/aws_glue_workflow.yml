@@ -1,0 +1,27 @@
+aws_glue_workflow:
+    status: HOLD
+    subcategory: Glue
+    layout: aws
+    page_title: 'AWS: aws_glue_workflow'
+    description: Provides an Glue Workflow resource.
+    arguments:
+        default_run_properties:
+            description: A map of default run properties for this workflow. These
+                properties are passed to all jobs associated to the workflow.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the workflow.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name you assign to this workflow.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: Workflow name
+    timeouts: {}

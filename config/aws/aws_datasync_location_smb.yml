@@ -1,0 +1,56 @@
+aws_datasync_location_smb:
+    status: HOLD
+    subcategory: DataSync
+    layout: aws
+    page_title: 'AWS: aws_datasync_location_smb'
+    description: Manages an AWS DataSync SMB Location
+    arguments:
+        agent_arns:
+            description: A list of DataSync Agent ARNs with which this location will
+                be associated.
+            required: true
+            policy: ''
+            notes: ''
+        domain:
+            description: The name of the Windows domain the SMB server belongs to.
+            required: false
+            policy: ''
+            notes: ''
+        mount_options:
+            description: Configuration block containing mount options used by DataSync
+                to access the SMB Server. Can be `AUTOMATIC`, `SMB2`, or `SMB3`.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The password of the user who can mount the share and has
+                file permissions in the SMB.
+            required: true
+            policy: ''
+            notes: ''
+        server_hostname:
+            description: Specifies the IP address or DNS name of the SMB server. The
+                DataSync Agent(s
+            required: true
+            policy: ''
+            notes: ''
+        subdirectory:
+            description: Subdirectory to perform actions as source or destination.
+                Should be exported by the NFS server.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value pairs of resource tags to assign to the DataSync
+                Location.
+            required: false
+            policy: ''
+            notes: ''
+        user:
+            description: The user who can mount the share and has file and folder
+                permissions in the SMB share.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,58 @@
+azurerm_marketplace_agreement:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_marketplace_agreement'
+    description: Allows accepting the Legal Terms for a Marketplace Image.
+    arguments:
+        offer:
+            description: The Offer of the Marketplace Image. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        plan:
+            description: The Plan of the Marketplace Image. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        publisher:
+            description: The Publisher of the Marketplace Image. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Resource ID of the Marketplace Agreement.
+    timeouts:
+        create:
+            description: Used when creating the Marketplace Agreement.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Marketplace Agreement.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Marketplace Agreement.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Marketplace Agreement.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDIxaGNtdGxkSEJzWVdObFgyRm5jbVZsYldWdWRDSWdJ
+        bUpoY25KaFkzVmtZU0lnZXdvZ0lIQjFZbXhwYzJobGNpQTlJQ0ppWVhKeVlXTjFaR0Z1WlhSM2Iz
+        SnJjeUlLSUNCdlptWmxjaUFnSUNBZ1BTQWlkMkZtSWdvZ0lIQnNZVzRnSUNBZ0lDQTlJQ0pvYjNW
+        eWJIa2lDbjBL
+    import: !!binary |
+        Q2dwTllYSnJaWFJ3YkdGalpTQkJaM0psWlcxbGJuUWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRnlhMlYwY0d4aFkyVmZZV2R5WldWdFpXNTBMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

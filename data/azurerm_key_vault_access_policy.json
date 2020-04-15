@@ -1,0 +1,86 @@
+{
+    "azurerm_key_vault_access_policy": {
+        "status": "HOLD",
+        "subcategory": "Key Vault",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_key_vault_access_policy",
+        "description": "Manages a Key Vault Access Policy.",
+        "arguments": {
+            "key_vault_id": {
+                "description": "Specifies the id of the Key Vault resource. Changing this",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The Azure Active Directory tenant ID that should be used",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object_id": {
+                "description": "The object ID of a user, service principal or security",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application_id": {
+                "description": "The object ID of an Application in Azure Active Directory.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_permissions": {
+                "description": "List of certificate permissions, must be one or more from",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_permissions": {
+                "description": "List of key permissions, must be one or more from",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "secret_permissions": {
+                "description": "List of secret permissions, must be one or more",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_permissions": {
+                "description": "List of storage permissions, must be one or more from the following: `backup`, `delete`, `deletesas`, `get`, `getsas`, `list`, `listsas`, `purge`, `recover`, `regeneratekey`, `restore`, `set`, `setsas` and `update`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Key Vault Access Policy ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Key Vault Access Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Key Vault Access Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Key Vault Access Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Key Vault Access Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

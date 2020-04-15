@@ -1,0 +1,104 @@
+azurerm_api_management_subscription:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_subscription'
+    description: Manages a Subscription within a API Management Service.
+    arguments:
+        api_management_name:
+            description: The name of the API Management Service where this Subscription
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name of this Subscription.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        product_id:
+            description: The ID of the Product which should be assigned to this Subscription.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        user_id:
+            description: The ID of the User which should be assigned to this Subscription.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        state:
+            description: The state of this Subscription. Possible values are `active`,
+                `cancelled`, `expired`, `rejected`, `submitted` and `suspended`. Defaults
+                to `submitted`.
+            required: false
+            policy: ''
+            notes: ''
+        subscription_id:
+            description: An Identifier which should used as the ID of this Subscription.
+                If not specified a new Subscription ID will be generated. Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Subscription.
+    timeouts:
+        create:
+            description: Used when creating the API Management Subscription.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Subscription.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Subscription.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Subscription.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXRndhVzBpQ2lBZ2Nt
+        VnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJQ0psZUdGdGNHeGxMWEpsYzI5MWNtTmxjeUlLZlFv
+        S1pHRjBZU0FpWVhwMWNtVnliVjloY0dsZmJXRnVZV2RsYldWdWRGOXdjbTlrZFdOMElpQWlaWGho
+        YlhCc1pTSWdld29nSUhCeWIyUjFZM1JmYVdRZ0lDQWdJQ0FnSUNBZ1BTQWlNREF3TURBd01EQXRN
+        REF3TUMwd01EQXdMVEF3TURBdE1EQXdNREF3TURBd01EQXdJZ29nSUdGd2FWOXRZVzVoWjJWdFpX
+        NTBYMjVoYldVZ1BTQmtZWFJoTG1GNmRYSmxjbTFmWVhCcFgyMWhibUZuWlcxbGJuUXVaWGhoYlhC
+        c1pTNXVZVzFsQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR1JoZEdFdVlYcDFjbVZ5
+        YlY5aGNHbGZiV0Z1WVdkbGJXVnVkQzVsZUdGdGNHeGxMbkpsYzI5MWNtTmxYMmR5YjNWd1gyNWhi
+        V1VLZlFvS1pHRjBZU0FpWVhwMWNtVnliVjloY0dsZmJXRnVZV2RsYldWdWRGOTFjMlZ5SWlBaVpY
+        aGhiWEJzWlNJZ2V3b2dJSFZ6WlhKZmFXUWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaU1URXhNVEV4TVRF
+        dE1URXhNUzB4TVRFeExURXhNVEV0TVRFeE1URXhNVEV4TVRFeElnb2dJR0Z3YVY5dFlXNWhaMlZ0
+        Wlc1MFgyNWhiV1VnUFNCa1lYUmhMbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RdVpYaGhi
+        WEJzWlM1dVlXMWxDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHUmhkR0V1WVhwMWNt
+        VnliVjloY0dsZmJXRnVZV2RsYldWdWRDNWxlR0Z0Y0d4bExuSmxjMjkxY21ObFgyZHliM1Z3WDI1
+        aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWVhCcFgyMWhibUZuWlcxbGJuUmZjM1Zp
+        YzJOeWFYQjBhVzl1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJR0Z3YVY5dFlXNWhaMlZ0Wlc1MFgyNWhi
+        V1VnUFNCa1lYUmhMbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5RdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHUmhkR0V1WVhwMWNtVnliVjloY0ds
+        ZmJXRnVZV2RsYldWdWRDNWxlR0Z0Y0d4bExuSmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVUtJQ0Ix
+        YzJWeVgybGtJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1pHRjBZUzVoZW5WeVpYSnRYMkZ3YVY5dFlXNWha
+        MlZ0Wlc1MFgzVnpaWEl1WlhoaGJYQnNaUzVwWkFvZ0lIQnliMlIxWTNSZmFXUWdJQ0FnSUNBZ0lD
+        QWdQU0JrWVhSaExtRjZkWEpsY20xZllYQnBYMjFoYm1GblpXMWxiblJmY0hKdlpIVmpkQzVsZUdG
+        dGNHeGxMbWxrQ2lBZ1pHbHpjR3hoZVY5dVlXMWxJQ0FnSUNBZ0lDQTlJQ0pRWVhKelpYSWdRVkJK
+        SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JUZFdKelkzSnBjSFJwYjI1eklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYzNWaWMyTnlhWEIwYVc5dUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

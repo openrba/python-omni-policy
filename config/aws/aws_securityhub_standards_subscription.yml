@@ -1,0 +1,17 @@
+aws_securityhub_standards_subscription:
+    status: HOLD
+    subcategory: Security Hub
+    layout: aws
+    page_title: 'AWS: aws_securityhub_standards_subscription'
+    description: Subscribes to a Security Hub standard.
+    arguments:
+        standards_arn:
+            description: The ARN of a standard - see below.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ARN of a resource that represents your subscription to
+                a supported standard.
+    timeouts: {}

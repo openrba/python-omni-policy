@@ -1,0 +1,78 @@
+azurerm_storage_share_directory:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_share_directory'
+    description: Manages a Directory within an Azure Storage File Share.
+    arguments:
+        name:
+            description: The name (or path
+            required: true
+            policy: ''
+            notes: ''
+        share_name:
+            description: The name of the File Share where this Directory should be
+                created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_name:
+            description: The name of the Storage Account within which the File Share
+                is located. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        metadata:
+            description: A mapping of metadata to assign to this Directory.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Directory within the File Share.
+    timeouts:
+        create:
+            description: Used when creating the Storage Share Directory.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Share Directory.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Share Directory.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Share Directory.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUY2ZFhKbGRHVnpkQ0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SlhaWE4wSUVWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmMzUnZjbUZuWlY5
+        aFkyTnZkVzUwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0poZW5WeVpYUmxjM1J6ZEc5eVlXZGxJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndY
+        MjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pT
+        NXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5
+        eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnWVdOamIzVnVkRjkw
+        YVdWeUlDQWdJQ0FnSUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lHRmpZMjkxYm5SZmNtVndi
+        R2xqWVhScGIyNWZkSGx3WlNBOUlDSk1VbE1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgz
+        TjBiM0poWjJWZmMyaGhjbVVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNBaWMyaGhjbVZ1WVcxbElnb2dJSE4wYjNKaFoyVmZZV05qYjNWdWRGOXVZVzFs
+        SUQwZ1lYcDFjbVZ5YlY5emRHOXlZV2RsWDJGalkyOTFiblF1WlhoaGJYQnNaUzV1WVcxbENpQWdj
+        WFZ2ZEdFZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBMU1BcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNt
+        VnliVjl6ZEc5eVlXZGxYM05vWVhKbFgyUnBjbVZqZEc5eWVTSWdJbVY0WVcxd2JHVWlJSHNLSUNC
+        dVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUhOb1lYSmxYMjVo
+        YldVZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgzTm9ZWEpsTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJSE4wYjNKaFoyVmZZV05qYjNWdWRGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5emRH
+        OXlZV2RsWDJGalkyOTFiblF1WlhoaGJYQnNaUzV1WVcxbENuMEs=
+    import: !!binary |
+        Q2dwRWFYSmxZM1J2Y21sbGN5QjNhWFJvYVc0Z1lXNGdRWHAxY21VZ1UzUnZjbUZuWlNCR2FXeGxJ
+        Rk5vWVhKbElHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lISmxjMjkxY21ObElH
+        bGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5emFHRnlaVjlrYVhKbFkzUnZjbmt1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

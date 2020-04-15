@@ -1,0 +1,113 @@
+azurerm_virtual_machine_scale_set_extension:
+    status: HOLD
+    layout: azurerm
+    subcategory: Compute
+    page_title: 'Azure Resource Manager: azurerm_virtual_machine_scale_set_extension'
+    description: Manages an Extension for a Virtual Machine Scale Set.
+    arguments:
+        name:
+            description: The name for the Virtual Machine Scale Set Extension. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_machine_scale_set_id:
+            description: The ID of the Virtual Machine Scale Set. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: This should be the ID from the `azurerm_linux_virtual_machine_scale_set`
+                or `azurerm_windows_virtual_machine_scale_set` resource - when using
+                the older `azurerm_virtual_machine_scale_set` resource extensions
+                should instead be defined inline.
+        publisher:
+            description: Specifies the Publisher of the Extension. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: Specifies the Type of the Extension. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        type_handler_version:
+            description: Specifies the version of the extension to use, available
+                versions can be found using the Azure CLI.
+            required: true
+            policy: ''
+            notes: ''
+        auto_upgrade_minor_version:
+            description: Should the latest version of the Extension be used at Deployment
+                Time, if one is available? This won't auto-update the extension on
+                existing installation. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        force_update_tag:
+            description: A value which, when different to the previous value can be
+                used to force-run the Extension even if the Extension Configuration
+                hasn't changed.
+            required: false
+            policy: ''
+            notes: ''
+        protected_settings:
+            description: A JSON String which specifies Sensitive Settings (such as
+                Passwords
+            required: false
+            policy: ''
+            notes: ''
+        provision_after_extensions:
+            description: An ordered list of Extension names which this should be provisioned
+                after.
+            required: false
+            policy: ''
+            notes: ''
+        settings:
+            description: A JSON String which specifies Settings for the Extension.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Machine Scale Set Extension.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Machine Scale Set Extension.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Virtual Machine Scale Set Extension.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Virtual Machine Scale Set Extension.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Machine Scale Set Extension.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJ4cGJuVjRYM1pwY25SMVlXeGZiV0ZqYUdsdVpWOXpZ
+        MkZzWlY5elpYUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ0l5NHVMZ3A5Q2dweVpYTnZkWEpqWlNBaVlY
+        cDFjbVZ5YlY5MmFYSjBkV0ZzWDIxaFkyaHBibVZmYzJOaGJHVmZjMlYwWDJWNGRHVnVjMmx2YmlJ
+        Z0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVaUNpQWdkbWx5ZEhWaGJGOXRZV05vYVc1bFgzTmpZV3hsWDNObGRGOXBa
+        Q0E5SUdGNmRYSmxjbTFmYkdsdWRYaGZkbWx5ZEhWaGJGOXRZV05vYVc1bFgzTmpZV3hsWDNObGRD
+        NWxlR0Z0Y0d4bExtbGtDaUFnY0hWaWJHbHphR1Z5SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        OUlDSk5hV055YjNOdlpuUXVRWHAxY21VdVJYaDBaVzV6YVc5dWN5SUtJQ0IwZVhCbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lrTjFjM1J2YlZOamNtbHdkQ0lLSUNCMGVYQmxY
+        MmhoYm1Sc1pYSmZkbVZ5YzJsdmJpQWdJQ0FnSUNBZ0lEMGdJakl1TUNJS0lDQnpaWFIwYVc1bmN5
+        QTlJR3B6YjI1bGJtTnZaR1VvZXdvZ0lDQWdJbU52YlcxaGJtUlViMFY0WldOMWRHVWlJRDBnSW1W
+        amFHOGdKRWhQVTFST1FVMUZJZ29nSUgwcENuMEs=
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUUxaFkyaHBibVVnVTJOaGJHVWdVMlYwSUVWNGRHVnVjMmx2Ym5NZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5dFlXTm9hVzVsWDNOallXeGxYM05sZEY5bGVIUmxibk5wYjI0
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

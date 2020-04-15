@@ -1,0 +1,52 @@
+aws_storagegateway_cached_iscsi_volume:
+    status: HOLD
+    subcategory: Storage Gateway
+    layout: aws
+    page_title: 'AWS: aws_storagegateway_cached_iscsi_volume'
+    description: Manages an AWS Storage Gateway cached iSCSI volume
+    arguments:
+        gateway_arn:
+            description: The Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        network_interface_id:
+            description: The network interface of the gateway on which to expose the
+                iSCSI target. Only IPv4 addresses are accepted.
+            required: true
+            policy: ''
+            notes: ''
+        target_name:
+            description: The name of the iSCSI target used by initiators to connect
+                to the target and as a suffix for the target ARN. The target name
+                must be unique across all volumes of a gateway.
+            required: true
+            policy: ''
+            notes: ''
+        volume_size_in_bytes:
+            description: The size of the volume in bytes.
+            required: true
+            policy: ''
+            notes: ''
+        snapshot_id:
+            description: The snapshot ID of the snapshot to restore as the new cached
+                volume. e.g. `snap-1122aabb`.
+            required: false
+            policy: ''
+            notes: ''
+        source_volume_arn:
+            description: The ARN for an existing volume. Specifying this ARN makes
+                the new volume into an exact copy of the specified existing volume's
+                latest recovery point. The `volume_size_in_bytes` value for this new
+                volume must be equal to or larger than the size of the existing volume,
+                in bytes.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

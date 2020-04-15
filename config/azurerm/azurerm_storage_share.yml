@@ -1,0 +1,110 @@
+azurerm_storage_share:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_share'
+    description: Manages a File Share within Azure Storage.
+    arguments:
+        name:
+            description: The name of the share. Must be unique within the storage
+                account where the share is located.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_name:
+            description: Specifies the storage account in which to create the share.
+            required: true
+            policy: ''
+            notes: ''
+        acl:
+            description: One or more `acl` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        quota:
+            description: The maximum size of the share, in gigabytes. For Standard
+                storage accounts, this must be greater than 0 and less than 5120 GB
+                (5 TB). For Premium FileStorage storage accounts, this must be greater
+                than 100 GB and less than 102400 GB (100 TB). Default is 5120.
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: A mapping of MetaData for this File Share.
+            required: false
+            policy: ''
+            notes: ''
+        id:
+            description: The ID which should be used for this Shared Identifier.
+            required: true
+            policy: ''
+            notes: ''
+        access_policy:
+            description: An `access_policy` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        expiry:
+            description: The ISO8061 UTC time at which this Access Policy should be
+                valid until.
+            required: true
+            policy: ''
+            notes: ''
+        permissions:
+            description: The permissions which should associated with this Shared
+                Identifier.
+            required: true
+            policy: ''
+            notes: ''
+        start:
+            description: The ISO8061 UTC time at which this Access Policy should be
+                valid from.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the File Share.
+        resource_manager_id:
+            description: The Resource Manager ID of this File Share.
+        url:
+            description: The URL of the File Share
+    timeouts:
+        create:
+            description: Used when creating the Storage Share.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Share.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Share.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Share.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUY2ZFhKbGRHVnpkQ0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SlhaWE4wSUVWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmMzUnZjbUZuWlY5
+        aFkyTnZkVzUwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0poZW5WeVpYUmxjM1J6ZEc5eVlXZGxJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndY
+        MjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pT
+        NXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5
+        eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnWVdOamIzVnVkRjkw
+        YVdWeUlDQWdJQ0FnSUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lHRmpZMjkxYm5SZmNtVndi
+        R2xqWVhScGIyNWZkSGx3WlNBOUlDSk1VbE1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgz
+        TjBiM0poWjJWZmMyaGhjbVVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNBaWMyaGhjbVZ1WVcxbElnb2dJSE4wYjNKaFoyVmZZV05qYjNWdWRGOXVZVzFs
+        SUQwZ1lYcDFjbVZ5YlY5emRHOXlZV2RsWDJGalkyOTFiblF1WlhoaGJYQnNaUzV1WVcxbENpQWdj
+        WFZ2ZEdFZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBMU1BcDlDZz09
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUZOb1lYSmxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5emFHRnlaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

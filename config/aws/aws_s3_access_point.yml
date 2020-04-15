@@ -1,0 +1,64 @@
+aws_s3_access_point:
+    status: HOLD
+    subcategory: S3
+    layout: aws
+    page_title: 'AWS: aws_s3_access_point'
+    description: Manages an S3 Access Point.
+    arguments:
+        bucket:
+            description: The name of the bucket that you want to associate this access
+                point with.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name you want to assign to this access point.
+            required: true
+            policy: ''
+            notes: ''
+        account_id:
+            description: The AWS account ID for the owner of the bucket for which
+                you want to create an access point. Defaults to automatically determined
+                account ID of the Terraform AWS provider.
+            required: false
+            policy: ''
+            notes: ''
+        policy:
+            description: A valid JSON document that specifies the policy that you
+                want to apply to this access point.
+            required: false
+            policy: ''
+            notes: ''
+        public_access_block_configuration:
+            description: Configuration block to manage the `PublicAccessBlock` configuration
+                that you want to apply to this Amazon S3 bucket. You can enable the
+                configuration options in any combination. Detailed below.
+            required: false
+            policy: ''
+            notes: ''
+        vpc_configuration:
+            description: Configuration block to restrict access to this access point
+                to requests from the specified Virtual Private Cloud (VPC). Detailed
+                below.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: Amazon Resource Name (ARN) of the S3 Access Point.
+        domain_name:
+            description: The DNS domain name of the S3 Access Point in the format
+                _`name`_-_`account_id`_.s3-accesspoint._region_.amazonaws.com.
+        has_public_access_policy:
+            description: Indicates whether this access point currently has a policy
+                that allows public access.
+        id:
+            description: AWS account ID and access point name separated by a colon
+                (`:`).
+        network_origin:
+            description: Indicates whether this access point allows access from the
+                public Internet. Values are `VPC` (the access point doesn't allow
+                access from the public Internet) and `Internet` (the access point
+                allows access from the public Internet, subject to the access point
+                and bucket access policies).
+    timeouts: {}

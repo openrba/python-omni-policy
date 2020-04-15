@@ -1,0 +1,37 @@
+{
+    "aws_datasync_location_nfs": {
+        "status": "HOLD",
+        "subcategory": "DataSync",
+        "layout": "aws",
+        "page_title": "AWS: aws_datasync_location_nfs",
+        "description": "Manages an AWS DataSync NFS Location",
+        "arguments": {
+            "on_prem_config": {
+                "description": "Configuration block containing information for connecting to the NFS File System.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_hostname": {
+                "description": "Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subdirectory": {
+                "description": "Subdirectory to perform actions as source or destination. Should be exported by the NFS server.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value pairs of resource tags to assign to the DataSync Location.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

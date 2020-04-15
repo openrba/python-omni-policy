@@ -1,0 +1,27 @@
+aws_kms_ciphertext:
+    status: HOLD
+    subcategory: KMS
+    layout: aws
+    page_title: 'AWS: aws_kms_ciphertext'
+    description: Provides ciphertext encrypted using a KMS key
+    arguments:
+        plaintext:
+            description: Data to be encrypted. Note that this may show up in logs,
+                and it will be stored in the state file.
+            required: true
+            policy: ''
+            notes: ''
+        key_id:
+            description: Globally unique key ID for the customer master key.
+            required: true
+            policy: ''
+            notes: ''
+        context:
+            description: An optional mapping that makes up the encryption context.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        ciphertext_blob:
+            description: Base64 encoded ciphertext
+    timeouts: {}

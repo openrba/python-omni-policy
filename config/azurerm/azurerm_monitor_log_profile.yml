@@ -1,0 +1,109 @@
+azurerm_monitor_log_profile:
+    status: HOLD
+    subcategory: Monitor
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_monitor_log_profile'
+    description: Manages a Log Profile.
+    arguments:
+        name:
+            description: The name of the Log Profile. Changing this forces a
+            required: true
+            policy: ''
+            notes: ''
+        categories:
+            description: List of categories of the logs.
+            required: true
+            policy: ''
+            notes: ''
+        locations:
+            description: List of regions for which Activity Log events are stored
+                or streamed.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: The resource ID of the storage account in which the Activity
+                Log is stored. At least one of `storage_account_id` or `servicebus_rule_id`
+                must be set.
+            required: false
+            policy: ''
+            notes: ''
+        servicebus_rule_id:
+            description: The service bus (or event hub
+            required: false
+            policy: ''
+            notes: ''
+        retention_policy:
+            description: A `retention_policy` block as documented below. A retention
+                policy for how long Activity Logs are retained in the storage account.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: A boolean value to indicate whether the retention policy
+                is enabled.
+            required: true
+            policy: ''
+            notes: ''
+        days:
+            description: The number of days for the retention policy. Defaults to
+                0.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Log Profile.
+    timeouts:
+        create:
+            description: Used when creating the Log Profile.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Log Profile.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Log Profile.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Log Profile.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbXh2WjNCeWIyWnBiR1YwWlhOMExYSm5JZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltVmhjM1IxY3lJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjM1J2Y21G
+        blpWOWhZMk52ZFc1MElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKaFpuTmpjMlJtZVhSM0lnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhi
+        V1VnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhO
+        dmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdZV05qYjNWdWRGOTBhV1Z5
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lYSmtJZ29nSUdGalkyOTFiblJmY21Wd2JHbGpZ
+        WFJwYjI1ZmRIbHdaU0E5SUNKSFVsTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJWMlpX
+        NTBhSFZpWDI1aGJXVnpjR0ZqWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ0lteHZaM0J5YjJacGJHVmxkbVZ1ZEdoMVlpSUtJQ0JzYjJOaGRHbHZiaUFn
+        SUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxM
+        bXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNt
+        VnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjMnQxSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS0lDQmpZWEJoWTJsMGVTQWdJQ0FnSUNBZ0lDQWdJRDBn
+        TWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXRiMjVwZEc5eVgyeHZaMTl3Y205bWFXeGxJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnUFNBaVpHVm1ZWFZzZENJS0NpQWdZMkYwWldkdmNt
+        bGxjeUE5SUZzS0lDQWdJQ0pCWTNScGIyNGlMQW9nSUNBZ0lrUmxiR1YwWlNJc0NpQWdJQ0FpVjNK
+        cGRHVWlMQW9nSUYwS0NpQWdiRzlqWVhScGIyNXpJRDBnV3dvZ0lDQWdJbmRsYzNSMWN5SXNDaUFn
+        SUNBaVoyeHZZbUZzSWl3S0lDQmRDZ29nSUNNZ1VtOXZkRTFoYm1GblpWTm9ZWEpsWkVGalkyVnpj
+        MHRsZVNCcGN5QmpjbVZoZEdWa0lHSjVJR1JsWm1GMWJIUWdkMmwwYUNCc2FYTjBaVzRzSUhObGJt
+        UXNJRzFoYm1GblpTQndaWEp0YVhOemFXOXVjd29nSUhObGNuWnBZMlZpZFhOZmNuVnNaVjlwWkNB
+        OUlDSWtlMkY2ZFhKbGNtMWZaWFpsYm5Sb2RXSmZibUZ0WlhOd1lXTmxMbVY0WVcxd2JHVXVhV1I5
+        TDJGMWRHaHZjbWw2WVhScGIyNXlkV3hsY3k5U2IyOTBUV0Z1WVdkbFUyaGhjbVZrUVdOalpYTnpT
+        MlY1SWdvZ0lITjBiM0poWjJWZllXTmpiM1Z1ZEY5cFpDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpW
+        OWhZMk52ZFc1MExtVjRZVzF3YkdVdWFXUUtDaUFnY21WMFpXNTBhVzl1WDNCdmJHbGplU0I3Q2lB
+        Z0lDQmxibUZpYkdWa0lEMGdkSEoxWlFvZ0lDQWdaR0Y1Y3lBZ0lDQTlJRGNLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQklFeHZaeUJRY205bWFXeGxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXOXVhWFJ2Y2w5c2IyZGZjSEp2Wm1sc1pTNW9kRzFzTG0xaGNtdGtiM2R1

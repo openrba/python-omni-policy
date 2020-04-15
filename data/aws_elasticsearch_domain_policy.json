@@ -1,0 +1,25 @@
+{
+    "aws_elasticsearch_domain_policy": {
+        "status": "HOLD",
+        "subcategory": "ElasticSearch",
+        "layout": "aws",
+        "page_title": "AWS: aws_elasticsearch_domain",
+        "description": "Provides an Elasticsearch Domain Policy.",
+        "arguments": {
+            "domain_name": {
+                "description": "Name of the domain.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_policies": {
+                "description": "IAM policy document specifying the access policies for the domain",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

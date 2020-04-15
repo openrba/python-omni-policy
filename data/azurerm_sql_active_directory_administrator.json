@@ -1,0 +1,68 @@
+{
+    "azurerm_sql_active_directory_administrator": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource manager: azurerm_sql_active_directory_administrator",
+        "description": "Manages an Active Directory administrator on a SQL server",
+        "arguments": {
+            "server_name": {
+                "description": "The name of the SQL Server on which to set the administrator. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group for the SQL server. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "login": {
+                "description": "The login name of the principal to set as the server administrator",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object_id": {
+                "description": "The ID of the principal to set as the server administrator",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The Azure Tenant ID",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the SQL Active Directory Administrator."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the SQL Active Directory Administrator.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the SQL Active Directory Administrator.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the SQL Active Directory Administrator.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the SQL Active Directory Administrator.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

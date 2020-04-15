@@ -1,0 +1,110 @@
+{
+    "aws_fsx_windows_file_system": {
+        "status": "HOLD",
+        "subcategory": "File System (FSx)",
+        "layout": "aws",
+        "page_title": "AWS: aws_fsx_windows_file_system",
+        "description": "Manages a FSx Windows File System.",
+        "arguments": {
+            "storage_capacity": {
+                "description": "Storage capacity (GiB",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_ids": {
+                "description": "A list of IDs for the subnets that the file system will be accessible from. File systems support only one subnet. The file server is also launched in that subnet's Availability Zone.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "throughput_capacity": {
+                "description": "Throughput (megabytes per second",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "active_directory_id": {
+                "description": "The ID for an existing Microsoft Active Directory instance that the file system should join when it's created. Cannot be specified with `self_managed_active_directory`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automatic_backup_retention_days": {
+                "description": "The number of days to retain automatic backups. Minimum of `0` and maximum of `35`. Defaults to `7`. Set to `0` to disable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "copy_tags_to_backups": {
+                "description": "A boolean flag indicating whether tags on the file system should be copied to backups. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "daily_automatic_backup_start_time": {
+                "description": "The preferred time (in `HH:MM` format",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_id": {
+                "description": "ARN for the KMS Key to encrypt the file system at rest. Defaults to an AWS managed KMS Key.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_ids": {
+                "description": "A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "self_managed_active_directory": {
+                "description": "Configuration block that Amazon FSx uses to join the Windows File Server instance to your self-managed (including on-premises",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "skip_final_backup": {
+                "description": "When enabled, will skip the default final backup taken when the file system is deleted. This configuration must be applied separately before attempting to delete the resource to have the desired behavior. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the file system.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "weekly_maintenance_start_time": {
+                "description": "The preferred start time (in `d:HH:MM` format",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name of the file system."
+            },
+            "dns_name": {
+                "description": "DNS name for the file system, e.g. `fs-12345678.corp.example.com` (domain name matching the Active Directory domain name)"
+            },
+            "id": {
+                "description": "Identifier of the file system, e.g. `fs-12345678`"
+            },
+            "network_interface_ids": {
+                "description": "Set of Elastic Network Interface identifiers from which the file system is accessible."
+            },
+            "owner_id": {
+                "description": "AWS account identifier that created the file system."
+            },
+            "vpc_id": {
+                "description": "Identifier of the Virtual Private Cloud for the file system."
+            }
+        },
+        "timeouts": {}
+    }
+}

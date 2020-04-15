@@ -1,0 +1,145 @@
+azurerm_sql_server:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_sql_server'
+    description: Manages a SQL Azure Database Server.
+    arguments:
+        name:
+            description: The name of the SQL Server. This needs to be globally unique
+                within Azure.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the SQL
+                Server.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        version:
+            description: 'The version for the new server. Valid values are: 2.0 (for
+                v11 server'
+            required: true
+            policy: ''
+            notes: ''
+        administrator_login:
+            description: The administrator login name for the new server. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        administrator_login_password:
+            description: The password associated with the `administrator_login` user.
+                Needs to comply with Azure's [Password Policy](https://msdn.microsoft.com/library/ms161959.aspx)
+            required: true
+            policy: ''
+            notes: ''
+        connection_policy:
+            description: The connection policy the server will use. Possible values
+                are `Default`, `Proxy`, and `Redirect`. Defaults to `Default`.
+            required: false
+            policy: ''
+            notes: ''
+        identity:
+            description: An `identity` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        extended_auditing_policy:
+            description: A `extended_auditing_policy` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Specifies the identity type of the SQL Server. At this time
+                the only allowed value is `SystemAssigned`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The SQL Server ID.
+        fully_qualified_domain_name:
+            description: The fully qualified domain name of the Azure SQL Server (e.g.
+                myServerName.database.windows.net)
+        principal_id:
+            description: The Principal ID for the Service Principal associated with
+                the Identity of this SQL Server.
+        tenant_id:
+            description: The Tenant ID for the Service Principal associated with the
+                Identity of this SQL Server.
+        storage_account_access_key:
+            description: (Required)  Specifies the access key to use for the auditing
+                storage account.
+        storage_endpoint:
+            description: (Required) Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net).
+        storage_account_access_key_is_secondary:
+            description: (Optional) Specifies whether `storage_account_access_key`
+                value is the storage's secondary key.
+        retention_in_days:
+            description: (Optional) Specifies the number of days to retain logs for
+                in the storage account.
+    timeouts:
+        create:
+            description: Used when creating the SQL Server.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the SQL Server.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the SQL Server.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the SQL Server.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVJoZEdGaVlYTmxMWEpuSWdvZ0lHeHZZMkYwYVc5dUlE
+        MGdJbGRsYzNRZ1ZWTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNOMGIzSmhaMlZmWVdO
+        amIzVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pYTmhJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJ
+        Q0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JH
+        OWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5
+        bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnWVdOamIzVnVkRjkwYVdWeUlDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lHRmpZMjkxYm5SZmNtVndiR2xqWVhScGIyNWZk
+        SGx3WlNBOUlDSk1VbE1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTnhiRjl6WlhKMlpY
+        SWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQTlJQ0p0ZVhOeGJITmxjblpsY2lJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJQ0Fn
+        SUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhi
+        V1VLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJW
+        OXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2RtVnljMmx2YmlB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0l4TWk0d0lnb2dJR0ZrYldsdWFYTjBjbUYw
+        YjNKZmJHOW5hVzRnSUNBZ0lDQWdJQ0FnUFNBaWJYSmhaRzFwYm1semRISmhkRzl5SWdvZ0lHRmti
+        V2x1YVhOMGNtRjBiM0pmYkc5bmFXNWZjR0Z6YzNkdmNtUWdQU0FpZEdocGMwbHpSRzluTVRFaUNn
+        b2dJR1Y0ZEdWdVpHVmtYMkYxWkdsMGFXNW5YM0J2YkdsamVTQjdDaUFnSUNCemRHOXlZV2RsWDJW
+        dVpIQnZhVzUwSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM04w
+        YjNKaFoyVmZZV05qYjNWdWRDNWxlR0Z0Y0d4bExuQnlhVzFoY25sZllteHZZbDlsYm1Sd2IybHVk
+        QW9nSUNBZ2MzUnZjbUZuWlY5aFkyTnZkVzUwWDJGalkyVnpjMTlyWlhrZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnWVhwMWNtVnliVjl6ZEc5eVlXZGxYMkZqWTI5MWJuUXVaWGhoYlhCc1pTNXdjbWx0WVhK
+        NVgyRmpZMlZ6YzE5clpYa0tJQ0FnSUhOMGIzSmhaMlZmWVdOamIzVnVkRjloWTJObGMzTmZhMlY1
+        WDJselgzTmxZMjl1WkdGeWVTQTlJSFJ5ZFdVS0lDQWdJSEpsZEdWdWRHbHZibDlwYmw5a1lYbHpJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlEWUtJQ0I5Q2dvZ0lIUmhaM01nUFNCN0Np
+        QWdJQ0JsYm5acGNtOXViV1Z1ZENBOUlDSndjbTlrZFdOMGFXOXVJZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwVFVVd2dVMlZ5ZG1WeWN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnla
+        WE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzRnNYM05sY25abGNpNW9kRzFzTG0xaGNtdGtiM2R1

@@ -1,0 +1,103 @@
+{
+    "azurerm_redis_cache": {
+        "status": "HOLD",
+        "subcategory": "Redis",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_redis_cache",
+        "description": "Manages a Redis Cache",
+        "arguments": {
+            "name": {
+                "description": "The name of the Redis instance. Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The location of the resource group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "capacity": {
+                "description": "The size of the Redis cache to deploy. Valid values for a SKU `family` of C (Basic/Standard",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "family": {
+                "description": "The SKU family/pricing group to use. Valid values are `C` (for Basic/Standard SKU family",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "The SKU of Redis to use. Possible values are `Basic`, `Standard` and `Premium`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_non_ssl_port": {
+                "description": "Enable the non-SSL port (6379",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "minimum_tls_version": {
+                "description": "The minimum TLS version.  Defaults to `1.0`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "patch_schedule": {
+                "description": "A list of `patch_schedule` blocks as defined below - only available for Premium SKU's.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "private_static_ip_address": {
+                "description": "The Static IP Address to assign to the Redis Cache when hosted inside the Virtual Network. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "redis_configuration": {
+                "description": "A `redis_configuration` as defined below - with some limitations by SKU - defaults/details are shown below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shard_count": {
+                "description": "*Only available when using the Premium SKU* The number of Shards to create on the Redis Cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "*Only available when using the Premium SKU* The ID of the Subnet within which the Redis Cache should be deployed. This Subnet must only contain Azure Cache for Redis instances without any other type of resources. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zones": {
+                "description": "A list of a single item of the Availability Zone which the Redis Cache should be allocated in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

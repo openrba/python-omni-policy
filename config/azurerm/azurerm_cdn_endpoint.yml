@@ -1,0 +1,188 @@
+azurerm_cdn_endpoint:
+    status: HOLD
+    subcategory: CDN
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cdn_endpoint'
+    description: Manages a CDN Endpoint.
+    arguments:
+        name:
+            description: The name of the origin. This is an arbitrary value. However,
+                this value needs to be unique under the endpoint. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the CDN
+                Endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        profile_name:
+            description: The CDN Profile to which to attach the CDN Endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        is_http_allowed:
+            description: Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        is_https_allowed:
+            description: Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        content_types_to_compress:
+            description: An array of strings that indicates a content types on which
+                compression will be applied. The value for the elements should be
+                MIME types.
+            required: false
+            policy: ''
+            notes: ''
+        geo_filter:
+            description: A set of Geo Filters for this CDN Endpoint. Each `geo_filter`
+                block supports fields documented below.
+            required: false
+            policy: ''
+            notes: ''
+        is_compression_enabled:
+            description: Indicates whether compression is to be enabled. Defaults
+                to false.
+            required: false
+            policy: ''
+            notes: ''
+        querystring_caching_behaviour:
+            description: Sets query string caching behavior. Allowed values are `IgnoreQueryString`,
+                `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+            required: false
+            policy: ''
+            notes: ''
+        optimization_type:
+            description: What types of optimization should this CDN Endpoint optimize
+                for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`,
+                `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+            required: false
+            policy: ''
+            notes: ''
+        origin:
+            description: The set of origins of the CDN endpoint. When multiple origins
+                exist, the first origin will be used as primary and rest will be used
+                as failover options. Each `origin` block supports fields documented
+                below.
+            required: true
+            policy: ''
+            notes: ''
+        origin_host_header:
+            description: The host header CDN provider will send along with content
+                requests to origins. Defaults to the host name of the origin.
+            required: false
+            policy: ''
+            notes: ''
+        origin_path:
+            description: The path used at for origin requests.
+            required: false
+            policy: ''
+            notes: ''
+        probe_path:
+            description: the path to a file hosted on the origin which helps accelerate
+                delivery of the dynamic content and calculate the most optimal routes
+                for the CDN. This is relative to the `origin_path`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        host_name:
+            description: A string that determines the hostname/IP address of the origin
+                server. This string can be a domain name, Storage Account endpoint,
+                Web App endpoint, IPv4 address or IPv6 address. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        http_port:
+            description: The HTTP port of the origin. Defaults to `80`. Changing this
+                forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        https_port:
+            description: The HTTPS port of the origin. Defaults to `443`. Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        relative_path:
+            description: The relative path applicable to geo filter.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: The Action of the Geo Filter. Possible values include `Allow`
+                and `Block`.
+            required: true
+            policy: ''
+            notes: ''
+        country_codes:
+            description: A List of two letter country codes (e.g. `US`, `GB`
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the CDN Endpoint.
+    timeouts:
+        create:
+            description: Used when creating the CDN Endpoint.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CDN Endpoint.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CDN Endpoint.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CDN Endpoint.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKeVlXNWtiMjFmYVdRaUlDSnpaWEoyWlhJaUlIc0tJQ0JyWldWd1pYSnpJ
+        RDBnZXdvZ0lDQWdZWHBwWDJsa0lEMGdNUW9nSUgwS0NpQWdZbmwwWlY5c1pXNW5kR2dnUFNBNENu
+        MEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0lpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdJQ0FnSUQwZ0ltRmpZMlZ3ZEdGdVkyVlVaWE4wVW1WemIzVnlZMlZI
+        Y205MWNERWlDaUFnYkc5allYUnBiMjRnUFNBaVYyVnpkQ0JWVXlJS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bUY2ZFhKbGNtMWZZMlJ1WDNCeWIyWnBiR1VpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsUTJSdVVISnZabWxzWlNJS0lDQnNiMk5oZEds
+        dmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0
+        Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2MydDFJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0pUZEdGdVpHRnlaRjlXWlhKcGVtOXVJZ3A5Q2dweVpYTnZkWEpqWlNB
+        aVlYcDFjbVZ5YlY5alpHNWZaVzVrY0c5cGJuUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJSEpoYm1SdmJWOXBaQzV6WlhKMlpYSXVhR1Y0Q2lBZ2NISnZa
+        bWxzWlY5dVlXMWxJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZZMlJ1WDNCeWIyWnBiR1V1WlhoaGJY
+        QnNaUzV1WVcxbENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNtTmxYMmR5
+        YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVi
+        bUZ0WlFvS0lDQnZjbWxuYVc0Z2V3b2dJQ0FnYm1GdFpTQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWRFpH
+        NVBjbWxuYVc0aUNpQWdJQ0JvYjNOMFgyNWhiV1VnUFNBaWQzZDNMbVY0WVcxd2JHVXVZMjl0SWdv
+        Z0lIMEtmUW89
+    import: !!binary |
+        Q2dwRFJFNGdSVzVrY0c5cGJuUnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyUnVYMlZ1WkhCdmFXNTBMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

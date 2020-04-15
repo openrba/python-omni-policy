@@ -1,0 +1,29 @@
+{
+    "aws_vpc_dhcp_options_association": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpc_dhcp_options_association",
+        "description": "Provides a VPC DHCP Options Association resource.",
+        "arguments": {
+            "vpc_id": {
+                "description": "The ID of the VPC to which we would like to associate a DHCP Options Set.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dhcp_options_id": {
+                "description": "The ID of the DHCP Options Set to associate to the VPC.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the DHCP Options Set Association."
+            }
+        },
+        "timeouts": {}
+    }
+}

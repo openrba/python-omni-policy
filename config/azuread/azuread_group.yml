@@ -1,0 +1,36 @@
+azuread_group:
+    status: HOLD
+    subcategory: Groups
+    layout: azuread
+    page_title: 'Azure Active Directory: azuread_group'
+    description: Manages a Group within Azure Active Directory.
+    arguments:
+        name:
+            description: The display name for the Group. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description for the Group.  Changing this forces a new
+                resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        members:
+            description: A set of members who should be present in this Group. Supported
+                Object types are Users, Groups or Service Principals.
+            required: false
+            policy: ''
+            notes: ''
+        owners:
+            description: A set of owners who own this Group. Supported Object types
+                are Users or Service Principals.
+            required: false
+            policy: ''
+            notes: Do not use `azuread_group_owner` at the same time as the `owners`
+                argument.
+    attributes:
+        id:
+            description: The Object ID of the Group.
+    timeouts: {}

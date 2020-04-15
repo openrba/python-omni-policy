@@ -1,0 +1,45 @@
+aws_ses_event_destination:
+    status: HOLD
+    subcategory: SES
+    layout: aws
+    page_title: 'AWS: aws_ses_event_destination'
+    description: Provides an SES event destination
+    arguments:
+        name:
+            description: The name of the event destination
+            required: true
+            policy: ''
+            notes: ''
+        configuration_set_name:
+            description: The name of the configuration set
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: If true, the event destination will be enabled
+            required: false
+            policy: ''
+            notes: ''
+        matching_types:
+            description: A list of matching types. May be any of `"send"`, `"reject"`,
+                `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
+            required: true
+            policy: ''
+            notes: ''
+        cloudwatch_destination:
+            description: CloudWatch destination for the events
+            required: false
+            policy: ''
+            notes: ''
+        kinesis_destination:
+            description: Send the events to a kinesis firehose destination
+            required: false
+            policy: ''
+            notes: ''
+        sns_destination:
+            description: Send the events to an SNS Topic destination
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

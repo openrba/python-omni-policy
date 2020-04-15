@@ -1,0 +1,380 @@
+{
+    "azurerm_frontdoor": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_frontdoor",
+        "description": "Manages an Azure Front Door instance.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Routing Rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_pool": {
+                "description": "A `backend_pool` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_pool_health_probe": {
+                "description": "A `backend_pool_health_probe` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_pool_load_balancing": {
+                "description": "A `backend_pool_load_balancing` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enforce_backend_pools_certificate_name_check": {
+                "description": "Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "load_balancer_enabled": {
+                "description": "Should the Front Door Load Balancer be Enabled? Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "friendly_name": {
+                "description": "A friendly name for the Front Door service.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "frontend_endpoint": {
+                "description": "A `frontend_endpoint` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "routing_rule": {
+                "description": "A `routing_rule` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backend": {
+                "description": "A `backend` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "load_balancing_name": {
+                "description": "Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "health_probe_name": {
+                "description": "Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "address": {
+                "description": "Location of the backend (IP address or FQDN)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "host_header": {
+                "description": "The value to use as the host header sent to the backend.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "http_port": {
+                "description": "The HTTP TCP port number. Possible values are between `1` - `65535`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "https_port": {
+                "description": "The HTTPS TCP port number. Possible values are between `1` - `65535`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "weight": {
+                "description": "Weight of this endpoint for load balancing purposes. Defaults to `50`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "host_name": {
+                "description": "Specifies the host name of the `frontend_endpoint`. Must be a domain name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "session_affinity_enabled": {
+                "description": "Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "session_affinity_ttl_seconds": {
+                "description": "The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_https_provisioning_enabled": {
+                "description": "Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_https_configuration": {
+                "description": "A `custom_https_configuration` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": "This block is required when `custom_https_provisioning_enabled` is set to `true`."
+            },
+            "web_application_firewall_policy_link_id": {
+                "description": "Defines the Web Application Firewall policy `ID` for each host.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "path": {
+                "description": "The path to use for the Health Probe. Default is `/`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": "Protocol scheme to use for the Health Probe. Defaults to `Http`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "probe_method": {
+                "description": "Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.",
+                "required": false,
+                "policy": "",
+                "notes": "Use the `Head` method if you do not need to check the response body of your health probe."
+            },
+            "interval_in_seconds": {
+                "description": "The number of seconds between each Health Probe. Defaults to `120`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sample_size": {
+                "description": "The number of samples to consider for load balancing decisions. Defaults to `4`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "successful_samples_required": {
+                "description": "The number of samples within the sample period that must succeed. Defaults to `2`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "additional_latency_milliseconds": {
+                "description": "The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "frontend_endpoints": {
+                "description": "The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "accepted_protocols": {
+                "description": "Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "patterns_to_match": {
+                "description": "The route patterns for the Backend Routing Rule. Defaults to `/*`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "forwarding_configuration": {
+                "description": "A `forwarding_configuration` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "redirect_configuration": {
+                "description": "A `redirect_configuration` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_pool_name": {
+                "description": "Specifies the name of the Backend Pool to forward the incoming traffic to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cache_enabled": {
+                "description": "Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cache_use_dynamic_compression": {
+                "description": "Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cache_query_parameter_strip_directive": {
+                "description": "Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_forwarding_path": {
+                "description": "Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "forwarding_protocol": {
+                "description": "Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_host": {
+                "description": " Set this to change the URL for the redirection.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "redirect_protocol": {
+                "description": "Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "redirect_type": {
+                "description": "Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_fragment": {
+                "description": "The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_path": {
+                "description": "The path to retain as per the incoming request, or update in the URL for the redirection.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_query_string": {
+                "description": "Replace any existing query string from the incoming request URL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_source": {
+                "description": "Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "azure_key_vault_certificate_vault_id": {
+                "description": "The ID of the Key Vault containing the SSL certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "azure_key_vault_certificate_secret_name": {
+                "description": "The name of the Key Vault secret representing the full certificate PFX.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "azure_key_vault_certificate_secret_version": {
+                "description": "The version of the Key Vault secret representing the full certificate PFX.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the FrontDoor."
+            },
+            "provisioning_state": {
+                "description": "Provisioning state of the Front Door."
+            },
+            "provisioning_substate": {
+                "description": "Provisioning substate of the Front Door"
+            },
+            "minimum_tls_version": {
+                "description": "Minimum client TLS version supported."
+            },
+            "cname": {
+                "description": "The host that each frontendEndpoint must CNAME to."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the FrontDoor.",
+                "required": false,
+                "timeout": 6
+            },
+            "update": {
+                "description": "Used when updating the FrontDoor.",
+                "required": false,
+                "timeout": 6
+            },
+            "read": {
+                "description": "Used when retrieving the FrontDoor.",
+                "required": false,
+                "timeout": 6
+            },
+            "delete": {
+                "description": "Used when deleting the FrontDoor.",
+                "required": false,
+                "timeout": 6
+            }
+        }
+    }
+}

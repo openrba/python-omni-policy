@@ -1,0 +1,36 @@
+aws_glue_classifier:
+    status: HOLD
+    subcategory: Glue
+    layout: aws
+    page_title: 'AWS: aws_glue_classifier'
+    description: Provides an Glue Classifier resource.
+    arguments:
+        csv_classifier:
+            description: A classifier for Csv content. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        grok_classifier:
+            description: A classifier that uses grok patterns. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        json_classifier:
+            description: A classifier for JSON content. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the classifier.
+            required: true
+            policy: ''
+            notes: ''
+        xml_classifier:
+            description: A classifier for XML content. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: Name of the classifier
+    timeouts: {}

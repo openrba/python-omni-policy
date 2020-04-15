@@ -1,0 +1,125 @@
+{
+    "azurerm_eventgrid_domain": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_eventgrid_domain",
+        "description": "Manages an EventGrid Domain",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the EventGrid Domain resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the EventGrid Domain exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "input_schema": {
+                "description": "Specifies the schema in which incoming events will be published to this domain. Allowed values are `cloudeventv01schema`, `customeventschema`, or `eventgridschema`. Defaults to `eventgridschema`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "input_mapping_fields": {
+                "description": "A `input_mapping_fields` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "input_mapping_default_values": {
+                "description": "A `input_mapping_default_values` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "Specifies the id of the EventGrid Event to associate with the domain. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "topic": {
+                "description": "Specifies the topic of the EventGrid Event to associate with the domain. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "event_type": {
+                "description": "Specifies the default event type of the EventGrid Event to associate with the domain. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "event_time": {
+                "description": "Specifies the event time of the EventGrid Event to associate with the domain. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "data_version": {
+                "description": "Specifies the default data version of the EventGrid Event to associate with the domain. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subject": {
+                "description": "Specifies the default subject of the EventGrid Event to associate with the domain. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the EventGrid Domain."
+            },
+            "endpoint": {
+                "description": "The Endpoint associated with the EventGrid Domain."
+            },
+            "primary_access_key": {
+                "description": "The Primary Shared Access Key associated with the EventGrid Domain."
+            },
+            "secondary_access_key": {
+                "description": "The Secondary Shared Access Key associated with the EventGrid Domain."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the EventGrid Domain.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the EventGrid Domain.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the EventGrid Domain.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the EventGrid Domain.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

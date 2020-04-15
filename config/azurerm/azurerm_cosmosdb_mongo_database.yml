@@ -1,0 +1,73 @@
+azurerm_cosmosdb_mongo_database:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_mongo_database'
+    description: Manages a Mongo Database within a Cosmos DB Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cosmos DB Mongo Database. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cosmos DB Mongo
+                Database is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the Cosmos DB Mongo Database to create the table
+                within. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        throughput:
+            description: The throughput of the MongoDB collection (RU/s). Must be
+                set in increments of `100`. The minimum value is `400`. This must
+                be set upon database creation otherwise it cannot be updated without
+                a manual terraform destroy-apply.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Cosmos DB Mongo Database.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB Mongo Database.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CosmosDB Mongo Database.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CosmosDB Mongo Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB Mongo Database.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMjl6Ylc5elpHSmZZV05qYjNWdWRDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhndFkyOXpiVzl6WkdJdFlX
+        TmpiM1Z1ZENJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnSW5SbVpYZ3RZMjl6Ylc5
+        elpHSXRZV05qYjNWdWRDMXlaeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlkyOXpiVzl6
+        WkdKZmJXOXVaMjlmWkdGMFlXSmhjMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNKMFptVjRMV052YzIxdmN5MXRiMjVuYnkxa1lpSUtJQ0J5WlhOdmRY
+        SmpaVjluY205MWNGOXVZVzFsSUQwZ1pHRjBZUzVoZW5WeVpYSnRYMk52YzIxdmMyUmlYMkZqWTI5
+        MWJuUXVaWGhoYlhCc1pTNXlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxDaUFnWVdOamIzVnVkRjl1
+        WVcxbElDQWdJQ0FnSUNBOUlHUmhkR0V1WVhwMWNtVnliVjlqYjNOdGIzTmtZbDloWTJOdmRXNTBM
+        bVY0WVcxd2JHVXVibUZ0WlFvZ0lIUm9jbTkxWjJod2RYUWdJQ0FnSUNBZ0lDQWdQU0EwTURBS2ZR
+        bz0=
+    import: !!binary |
+        Q2dwRGIzTnRiM01nVFc5dVoyOGdSR0YwWVdKaGMyVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZmJXOXVaMjlmWkdGMFlXSmhjMlV1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

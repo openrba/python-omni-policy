@@ -1,0 +1,85 @@
+{
+    "aws_api_gateway_stage": {
+        "status": "HOLD",
+        "subcategory": "API Gateway (REST APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_api_gateway_stage",
+        "description": "Provides an API Gateway Stage.",
+        "arguments": {
+            "rest_api_id": {
+                "description": "The ID of the associated REST API",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "stage_name": {
+                "description": "The name of the stage",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "deployment_id": {
+                "description": "The ID of the deployment that the stage points to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_log_settings": {
+                "description": "Enables access logs for the API stage. Detailed below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cache_cluster_enabled": {
+                "description": "Specifies whether a cache cluster is enabled for the stage",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cache_cluster_size": {
+                "description": "The size of the cache cluster for the stage, if enabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "client_certificate_id": {
+                "description": "The identifier of a client certificate for the stage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the stage",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "documentation_version": {
+                "description": "The version of the associated API documentation",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "variables": {
+                "description": "A map that defines the stage variables",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "xray_tracing_enabled": {
+                "description": "Whether active tracing with X-ray is enabled. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

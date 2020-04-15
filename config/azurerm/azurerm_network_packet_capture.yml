@@ -1,0 +1,229 @@
+azurerm_network_packet_capture:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_packet_capture'
+    description: Configures Packet Capturing against a Virtual Machine using a Network
+        Watcher.
+    arguments:
+        name:
+            description: The name to use for this Network Packet Capture. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        network_watcher_name:
+            description: The name of the Network Watcher. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Network Watcher
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        target_resource_id:
+            description: The ID of the Resource to capture packets from. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        maximum_bytes_per_packet:
+            description: The number of bytes captured per packet. The remaining bytes
+                are truncated. Defaults to `0` (Entire Packet Captured). Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        maximum_bytes_per_session:
+            description: Maximum size of the capture in Bytes. Defaults to `1073741824`
+                (1GB). Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        maximum_capture_duration:
+            description: The maximum duration of the capture session in seconds. Defaults
+                to `18000` (5 hours). Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        storage_location:
+            description: A `storage_location` block as defined below. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        filter:
+            description: One or more `filter` blocks as defined below. Changing this
+                forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        file_path:
+            description: A valid local path on the targeting VM. Must include the
+                name of the capture file (*.cap). For linux virtual machine it must
+                start with `/var/captures`.
+            required: false
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: The ID of the storage account to save the packet capture
+                session
+            required: false
+            policy: ''
+            notes: ''
+        local_ip_address:
+            description: 'The local IP Address to be filtered on. Notation: "127.0.0.1"
+                for single address entry. "127.0.0.1-127.0.0.255" for range. "127.0.0.1;127.0.0.5"
+                for multiple entries. Multiple ranges not currently supported. Mixing
+                ranges with multiple entries not currently supported. Changing this
+                forces a new resource to be created.'
+            required: false
+            policy: ''
+            notes: ''
+        local_port:
+            description: 'The local port to be filtered on. Notation: "80" for single
+                port entry."80-85" for range. "80;443;" for multiple entries. Multiple
+                ranges not currently supported. Mixing ranges with multiple entries
+                not currently supported. Changing this forces a new resource to be
+                created.'
+            required: false
+            policy: ''
+            notes: ''
+        protocol:
+            description: The Protocol to be filtered on. Possible values include `Any`,
+                `TCP` and `UDP`. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        remote_ip_address:
+            description: 'The remote IP Address to be filtered on. Notation: "127.0.0.1"
+                for single address entry. "127.0.0.1-127.0.0.255" for range. "127.0.0.1;127.0.0.5;"
+                for multiple entries. Multiple ranges not currently supported. Mixing
+                ranges with multiple entries not currently supported.. Changing this
+                forces a new resource to be created.'
+            required: false
+            policy: ''
+            notes: ''
+        remote_port:
+            description: 'The remote port to be filtered on. Notation: "80" for single
+                port entry."80-85" for range. "80;443;" for multiple entries. Multiple
+                ranges not currently supported. Mixing ranges with multiple entries
+                not currently supported. Changing this forces a new resource to be
+                created.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Packet Capture ID.
+        storage_location:
+            description: (Required) A `storage_location` block as defined below.
+        storage_path:
+            description: The URI of the storage path to save the packet capture.
+    timeouts:
+        create:
+            description: Used when creating the Packet Capture.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Packet Capture.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Packet Capture.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Packet Capture.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkJoWTJ0bGRDMWpZWEIwZFhKbExYSm5JZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        dVpYUjNiM0pyWDNkaGRHTm9aWElpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKdVpYUjNiM0pyTFhkaGRHTm9aWElpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJ
+        Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2Iy
+        TmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5
+        MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUXA5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5
+        YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNKd2NtOWtkV04wYVc5dUxXNWxkSGR2Y21zaUNpQWdZV1JrY21WemMx
+        OXpjR0ZqWlNBZ0lDQWdJQ0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNB
+        Z0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1
+        Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXla
+        WE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRY
+        SmxjbTFmYzNWaWJtVjBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSW1sdWRHVnlibUZzSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJRDBn
+        WVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCMmFYSjBk
+        V0ZzWDI1bGRIZHZjbXRmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZkbWx5ZEhWaGJGOXVaWFIzYjNKckxt
+        VjRZVzF3YkdVdWJtRnRaUW9nSUdGa1pISmxjM05mY0hKbFptbDRJQ0FnSUNBZ0lEMGdJakV3TGpB
+        dU1pNHdMekkwSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXVaWFIzYjNKclgybHVkR1Z5
+        Wm1GalpTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJ
+        bkJqZEdWemRDMXVhV01pQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNt
+        MWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3
+        YkdVdWJtRnRaUW9LSUNCcGNGOWpiMjVtYVdkMWNtRjBhVzl1SUhzS0lDQWdJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUmxjM1JqYjI1bWFXZDFjbUYwYVc5dU1T
+        SUtJQ0FnSUhOMVltNWxkRjlwWkNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21W
+        eWJWOXpkV0p1WlhRdVpYaGhiWEJzWlM1cFpBb2dJQ0FnY0hKcGRtRjBaVjlwY0Y5aFpHUnlaWE56
+        WDJGc2JHOWpZWFJwYjI0Z1BTQWlSSGx1WVcxcFl5SUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhl
+        blZ5WlhKdFgzWnBjblIxWVd4ZmJXRmphR2x1WlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWljR04wWlhOMExYWnRJZ29nSUd4dlkyRjBhVzl1SUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJz
+        WlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0E5SUdGNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JtVjBkMjl5YTE5cGJu
+        UmxjbVpoWTJWZmFXUnpJRDBnVzJGNmRYSmxjbTFmYm1WMGQyOXlhMTlwYm5SbGNtWmhZMlV1Wlho
+        aGJYQnNaUzVwWkYwS0lDQjJiVjl6YVhwbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVUzUmhibVJo
+        Y21SZlJqSWlDZ29nSUhOMGIzSmhaMlZmYVcxaFoyVmZjbVZtWlhKbGJtTmxJSHNLSUNBZ0lIQjFZ
+        bXhwYzJobGNpQTlJQ0pEWVc1dmJtbGpZV3dpQ2lBZ0lDQnZabVpsY2lBZ0lDQWdQU0FpVldKMWJu
+        UjFVMlZ5ZG1WeUlnb2dJQ0FnYzJ0MUlDQWdJQ0FnSUQwZ0lqRTJMakEwTFV4VVV5SUtJQ0FnSUha
+        bGNuTnBiMjRnSUNBOUlDSnNZWFJsYzNRaUNpQWdmUW9LSUNCemRHOXlZV2RsWDI5elgyUnBjMnNn
+        ZXdvZ0lDQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYjNOa2FYTnJJZ29nSUNBZ1kyRmph
+        R2x1WnlBZ0lDQWdJQ0FnSUNBZ1BTQWlVbVZoWkZkeWFYUmxJZ29nSUNBZ1kzSmxZWFJsWDI5d2RH
+        bHZiaUFnSUNBZ1BTQWlSbkp2YlVsdFlXZGxJZ29nSUNBZ2JXRnVZV2RsWkY5a2FYTnJYM1I1Y0dV
+        Z1BTQWlVM1JoYm1SaGNtUmZURkpUSWdvZ0lIMEtDaUFnYjNOZmNISnZabWxzWlNCN0NpQWdJQ0Jq
+        YjIxd2RYUmxjbDl1WVcxbElDQTlJQ0p3WTNSbGMzUXRkbTBpQ2lBZ0lDQmhaRzFwYmw5MWMyVnli
+        bUZ0WlNBOUlDSjBaWE4wWVdSdGFXNGlDaUFnSUNCaFpHMXBibDl3WVhOemQyOXlaQ0E5SUNKUVlY
+        TnpkMjl5WkRFeU16UWhJZ29nSUgwS0NpQWdiM05mY0hKdlptbHNaVjlzYVc1MWVGOWpiMjVtYVdj
+        Z2V3b2dJQ0FnWkdsellXSnNaVjl3WVhOemQyOXlaRjloZFhSb1pXNTBhV05oZEdsdmJpQTlJR1po
+        YkhObENpQWdmUXA5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5MmFYSjBkV0ZzWDIxaFkyaHBi
+        bVZmWlhoMFpXNXphVzl1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJRDBnSW01bGRIZHZjbXN0ZDJGMFkyaGxjaUlLSUNCc2IyTmhkR2x2YmlB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1
+        WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lD
+        QjJhWEowZFdGc1gyMWhZMmhwYm1WZmJtRnRaU0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZkbWx5ZEhW
+        aGJGOXRZV05vYVc1bExtVjRZVzF3YkdVdWJtRnRaUW9nSUhCMVlteHBjMmhsY2lBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0lrMXBZM0p2YzI5bWRDNUJlblZ5WlM1T1pYUjNiM0pyVjJGMFkyaGxj
+        aUlLSUNCMGVYQmxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSk9aWFIzYjNKclYy
+        RjBZMmhsY2tGblpXNTBUR2x1ZFhnaUNpQWdkSGx3WlY5b1lXNWtiR1Z5WDNabGNuTnBiMjRnSUNB
+        Z0lDQWdQU0FpTVM0MElnb2dJR0YxZEc5ZmRYQm5jbUZrWlY5dGFXNXZjbDkyWlhKemFXOXVJRDBn
+        ZEhKMVpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZEc5eVlXZGxYMkZqWTI5MWJuUWlJ
+        Q0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lu
+        QmpkR1Z6ZEhOaElnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNBZ0lDQTlJR0Y2ZFhK
+        bGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnYkc5allYUnBiMjRn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxl
+        R0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdZV05qYjNWdWRGOTBhV1Z5SUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbE4wWVc1a1lYSmtJZ29nSUdGalkyOTFiblJmY21Wd2JHbGpZWFJwYjI1ZmRIbHdaU0E5SUNK
+        TVVsTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDI1bGRIZHZjbXRmY0dGamEyVjBYMk5o
+        Y0hSMWNtVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQ
+        U0FpY0dOMFpYTjBZMkZ3ZEhWeVpTSUtJQ0J1WlhSM2IzSnJYM2RoZEdOb1pYSmZibUZ0WlNBOUlH
+        RjZkWEpsY20xZmJtVjBkMjl5YTE5M1lYUmphR1Z5TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEpsYzI5
+        MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVs
+        ZUdGdGNHeGxMbTVoYldVS0lDQjBZWEpuWlhSZmNtVnpiM1Z5WTJWZmFXUWdJQ0E5SUdGNmRYSmxj
+        bTFmZG1seWRIVmhiRjl0WVdOb2FXNWxMbVY0WVcxd2JHVXVhV1FLQ2lBZ2MzUnZjbUZuWlY5c2Iy
+        TmhkR2x2YmlCN0NpQWdJQ0J6ZEc5eVlXZGxYMkZqWTI5MWJuUmZhV1FnUFNCaGVuVnlaWEp0WDNO
+        MGIzSmhaMlZmWVdOamIzVnVkQzVsZUdGdGNHeGxMbWxrQ2lBZ2ZRb0tJQ0JrWlhCbGJtUnpYMjl1
+        SUQwZ1cyRjZkWEpsY20xZmRtbHlkSFZoYkY5dFlXTm9hVzVsWDJWNGRHVnVjMmx2Ymk1bGVHRnRj
+        R3hsWFFwOUNnPT0=
+    import: !!binary |
+        Q2dwUVlXTnJaWFFnUTJGd2RIVnlaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5d1lXTnJaWFJmWTJGd2RIVnlaUzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

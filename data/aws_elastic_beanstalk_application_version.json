@@ -1,0 +1,53 @@
+{
+    "aws_elastic_beanstalk_application_version": {
+        "status": "HOLD",
+        "subcategory": "Elastic Beanstalk",
+        "layout": "aws",
+        "page_title": "AWS: aws_elastic_beanstalk_application_version",
+        "description": "Provides an Elastic Beanstalk Application Version Resource",
+        "arguments": {
+            "name": {
+                "description": "A unique name for the this Application Version.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application": {
+                "description": "Name of the Beanstalk Application the version is associated with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Short description of the Application Version.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket": {
+                "description": "S3 bucket that contains the Application Version source bundle.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "S3 object that is the Application Version source bundle.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "force_delete": {
+                "description": "On delete, force an Application Version to be deleted when it may be in use",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN assigned by AWS for this Elastic Beanstalk Application."
+            }
+        },
+        "timeouts": {}
+    }
+}

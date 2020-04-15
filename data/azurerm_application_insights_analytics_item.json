@@ -1,0 +1,83 @@
+{
+    "azurerm_application_insights_analytics_item": {
+        "status": "HOLD",
+        "subcategory": "Application Insights",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_application_insights_analytics_item",
+        "description": "Manages an Application Insights Analytics Item component.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Application Insights Analytics Item. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application_insights_id": {
+                "description": "The ID of the Application Insights component on which the Analytics Item exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of Analytics Item to create. Can be one of `query`, `function`, `folder`, `recent`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "The scope for the Analytics Item. Can be `shared` or `user`. Changing this forces a new resource to be created. Must be `shared` for functions.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "content": {
+                "description": "The content for the Analytics Item, for example the query text if `type` is `query`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "function_alias": {
+                "description": "The alias to use for the function. Required when `type` is `function`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Application Insights Analytics Item."
+            },
+            "time_created": {
+                "description": "A string containing the time the Analytics Item was created."
+            },
+            "time_modified": {
+                "description": "A string containing the time the Analytics Item was last modified."
+            },
+            "version": {
+                "description": "A string indicating the version of the query format"
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Application Insights Analytics Item.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Application Insights Analytics Item.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Application Insights Analytics Item.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Application Insights Analytics Item.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

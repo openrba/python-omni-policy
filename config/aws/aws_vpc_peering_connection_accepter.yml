@@ -1,0 +1,41 @@
+aws_vpc_peering_connection_accepter:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_vpc_peering_connection_accepter'
+    description: Manage the accepter's side of a VPC Peering Connection.
+    arguments:
+        vpc_peering_connection_id:
+            description: The VPC Peering Connection ID to manage.
+            required: true
+            policy: ''
+            notes: ''
+        auto_accept:
+            description: Whether or not to accept the peering request. Defaults to
+                `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the VPC Peering Connection.
+        accept_status:
+            description: The status of the VPC Peering Connection request.
+        vpc_id:
+            description: The ID of the accepter VPC.
+        peer_vpc_id:
+            description: The ID of the requester VPC.
+        peer_owner_id:
+            description: The AWS account ID of the owner of the requester VPC.
+        peer_region:
+            description: The region of the accepter VPC.
+        accepter:
+            description: A configuration block that describes [VPC Peering Connection]
+        requester:
+            description: A configuration block that describes [VPC Peering Connection]
+    timeouts: {}

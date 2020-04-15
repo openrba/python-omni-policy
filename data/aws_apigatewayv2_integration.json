@@ -1,0 +1,97 @@
+{
+    "aws_apigatewayv2_integration": {
+        "status": "HOLD",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_integration",
+        "description": "Manages an Amazon API Gateway Version 2 integration.",
+        "arguments": {
+            "api_id": {
+                "description": "The API identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "integration_type": {
+                "description": "The integration type of an integration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_id": {
+                "description": "The ID of the VPC link for a private integration. Supported only for HTTP APIs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_type": {
+                "description": "The type of the network connection to the integration endpoint. Valid values: `INTERNET`, `VPC_LINK`. Default is `INTERNET`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_handling_strategy": {
+                "description": "How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`. Supported only for WebSocket APIs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "credentials_arn": {
+                "description": "The credentials required for the integration, if any.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the integration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "integration_method": {
+                "description": "The integration's HTTP method. Must be specified if `integration_type` is not `MOCK`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "integration_uri": {
+                "description": "The URI of the Lambda function for a Lambda proxy integration, when `integration_type` is `AWS_PROXY`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "passthrough_behavior": {
+                "description": "The pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the `request_templates` attribute.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "payload_format_version": {
+                "description": "The [format of the payload](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html#http-api-develop-integrations-lambda.proxy-format",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "request_templates": {
+                "description": "A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client. Supported only for WebSocket APIs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "template_selection_expression": {
+                "description": "The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout_milliseconds": {
+                "description": "Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds or 29 seconds.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

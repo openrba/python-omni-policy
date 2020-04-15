@@ -1,0 +1,19 @@
+{
+    "aws_ebs_encryption_by_default": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_ebs_encryption_by_default",
+        "description": "Manages whether default EBS encryption is enabled for your AWS account in the current AWS region.",
+        "arguments": {
+            "enabled": {
+                "description": "Whether or not default EBS encryption is enabled. Valid values are `true` or `false`. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

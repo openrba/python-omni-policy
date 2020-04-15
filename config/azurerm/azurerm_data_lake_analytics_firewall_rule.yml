@@ -1,0 +1,86 @@
+azurerm_data_lake_analytics_firewall_rule:
+    status: HOLD
+    subcategory: Data Lake
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_data_lake_analytics_firewall_rule'
+    description: Manages a Azure Data Lake Analytics Firewall Rule.
+    arguments:
+        name:
+            description: Specifies the name of the Data Lake Analytics. Changing this
+                forces a new resource to be created. Has to be between 3 to 24 characters.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Data
+                Lake Analytics.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: Specifies the name of the Data Lake Analytics for which the
+                Firewall Rule should take effect.
+            required: true
+            policy: ''
+            notes: ''
+        start_ip_address:
+            description: The Start IP address for the firewall rule.
+            required: true
+            policy: ''
+            notes: ''
+        end_ip_address:
+            description: The End IP Address for the firewall rule.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Lake Firewall Rule.
+    timeouts:
+        create:
+            description: Used when creating the Data Lake Analytics Firewall Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Lake Analytics Firewall Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Lake Analytics Firewall Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Lake Analytics Firewall Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhoZlpHRjBZV3hoYTJWZlpuZGZjblZzWlNJS0lD
+        QnNiMk5oZEdsdmJpQTlJQ0p1YjNKMGFHVjFjbTl3WlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhK
+        bGNtMWZaR0YwWVY5c1lXdGxYM04wYjNKbElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1psZUdSaGRHRnNZV3RsYzNSdmNtVWlDaUFnY21WemIzVnlZ
+        MlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJY
+        QnNaUzV1WVcxbENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJncDlDZ3B5WlhOdmRYSmpaU0Fp
+        WVhwMWNtVnliVjlrWVhSaFgyeGhhMlZmWVc1aGJIbDBhV056WDJGalkyOTFiblFpSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFptVjRaR0YwWVd4aGEy
+        VmhZMk52ZFc1MElnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNK
+        bGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHeHZZMkYwYVc5dUlDQWdJQ0Fn
+        SUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZ
+        WFJwYjI0S0NpQWdaR1ZtWVhWc2RGOXpkRzl5WlY5aFkyTnZkVzUwWDI1aGJXVWdQU0JoZW5WeVpY
+        SnRYMlJoZEdGZmJHRnJaVjl6ZEc5eVpTNWxlR0Z0Y0d4bExtNWhiV1VLZlFvS2NtVnpiM1Z5WTJV
+        Z0ltRjZkWEpsY20xZlpHRjBZVjlzWVd0bFgyRnVZV3g1ZEdsamMxOW1hWEpsZDJGc2JGOXlkV3hs
+        SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWIyWm1h
+        V05sTFdsd0xYSmhibWRsSWdvZ0lHRmpZMjkxYm5SZmJtRnRaU0FnSUNBZ0lDQWdQU0JoZW5WeVpY
+        SnRYMlJoZEdGZmJHRnJaVjloYm1Gc2VYUnBZM011WlhoaGJYQnNaUzV1WVcxbENpQWdjbVZ6YjNW
+        eVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGho
+        YlhCc1pTNXVZVzFsQ2lBZ2MzUmhjblJmYVhCZllXUmtjbVZ6Y3lBZ0lDQTlJQ0l4TGpJdU15NDBJ
+        Z29nSUdWdVpGOXBjRjloWkdSeVpYTnpJQ0FnSUNBZ1BTQWlNaTR6TGpRdU5TSUtmUW89
+    import: !!binary |
+        Q2dwRVlYUmhJRXhoYTJVZ1FXNWhiSGwwYVdOeklFWnBjbVYzWVd4c0lGSjFiR1Z6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjlzWVd0bFgyRnVZV3g1ZEdsamMxOW1hWEpsZDJGc2JGOXlkV3hsTG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

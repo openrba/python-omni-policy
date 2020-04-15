@@ -1,0 +1,32 @@
+{
+    "aws_vpn_gateway_attachment": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpn_gateway_attachment",
+        "description": "Provides a Virtual Private Gateway attachment resource.",
+        "arguments": {
+            "vpc_id": {
+                "description": "The ID of the VPC.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vpn_gateway_id": {
+                "description": "The ID of the Virtual Private Gateway.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "vpc_id": {
+                "description": "The ID of the VPC that Virtual Private Gateway is attached to."
+            },
+            "vpn_gateway_id": {
+                "description": "The ID of the Virtual Private Gateway."
+            }
+        },
+        "timeouts": {}
+    }
+}

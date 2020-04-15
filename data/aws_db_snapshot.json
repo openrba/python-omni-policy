@@ -1,0 +1,77 @@
+{
+    "aws_db_snapshot": {
+        "status": "HOLD",
+        "subcategory": "RDS",
+        "layout": "aws",
+        "page_title": "AWS: aws_db_snapshot",
+        "description": "Manages a RDS database instance snapshot.",
+        "arguments": {
+            "db_instance_identifier": {
+                "description": "The DB Instance Identifier from which to take the snapshot.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "db_snapshot_identifier": {
+                "description": "The Identifier for the snapshot.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "allocated_storage": {
+                "description": "Specifies the allocated storage size in gigabytes (GB)."
+            },
+            "availability_zone": {
+                "description": "Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot."
+            },
+            "db_snapshot_arn": {
+                "description": "The Amazon Resource Name (ARN) for the DB snapshot."
+            },
+            "encrypted": {
+                "description": "Specifies whether the DB snapshot is encrypted."
+            },
+            "engine": {
+                "description": "Specifies the name of the database engine."
+            },
+            "engine_version": {
+                "description": "Specifies the version of the database engine."
+            },
+            "iops": {
+                "description": "Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot."
+            },
+            "kms_key_id": {
+                "description": "The ARN for the KMS encryption key."
+            },
+            "license_model": {
+                "description": "License model information for the restored DB instance."
+            },
+            "option_group_name": {
+                "description": "Provides the option group name for the DB snapshot."
+            },
+            "source_db_snapshot_identifier": {
+                "description": "The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy."
+            },
+            "source_region": {
+                "description": "The region that the DB snapshot was created in or copied from."
+            },
+            "status": {
+                "description": "Specifies the status of this DB snapshot."
+            },
+            "storage_type": {
+                "description": "Specifies the storage type associated with DB snapshot."
+            },
+            "vpc_id": {
+                "description": "Specifies the storage type associated with DB snapshot."
+            }
+        },
+        "timeouts": {}
+    }
+}

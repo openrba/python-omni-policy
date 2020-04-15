@@ -1,0 +1,53 @@
+{
+    "aws_resourcegroups_group": {
+        "status": "HOLD",
+        "subcategory": "Resource Groups",
+        "layout": "aws",
+        "page_title": "AWS: aws_resourcegroups_group",
+        "description": "Provides a Resource Group.",
+        "arguments": {
+            "name": {
+                "description": "The resource group's name. A resource group name can have a maximum of 127 characters, including letters, numbers, hyphens, dots, and underscores. The name cannot start with `AWS` or `aws`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the resource group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_query": {
+                "description": "A `resource_query` block. Resource queries are documented below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "query": {
+                "description": "The resource query as a JSON string.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of the resource query. Defaults to `TAG_FILTERS_1_0`. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN assigned by AWS for this resource group."
+            }
+        },
+        "timeouts": {}
+    }
+}

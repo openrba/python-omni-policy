@@ -1,0 +1,73 @@
+aws_api_gateway_rest_api:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_rest_api'
+    description: Provides an API Gateway REST API.
+    arguments:
+        name:
+            description: The name of the REST API
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the REST API
+            required: false
+            policy: ''
+            notes: ''
+        endpoint_configuration:
+            description: Nested argument defining API endpoint configuration including
+                endpoint type. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        binary_media_types:
+            description: The list of binary media types supported by the RestApi.
+                By default, the RestApi supports only UTF-8-encoded text payloads.
+            required: false
+            policy: ''
+            notes: ''
+        minimum_compression_size:
+            description: Minimum response size to compress for the REST API. Integer
+                between -1 and 10485760 (10MB). Setting a value greater than -1 will
+                enable compression, -1 disables compression (default).
+            required: false
+            policy: ''
+            notes: ''
+        body:
+            description: An OpenAPI specification that defines the set of routes and
+                integrations to create as part of the REST API.
+            required: false
+            policy: ''
+            notes: ''
+        policy:
+            description: JSON formatted policy document that controls access to the
+                API Gateway. For more information about building AWS IAM policy documents
+                with Terraform, see the [AWS IAM Policy Document Guide](https://learn.hashicorp.com/terraform/aws/iam-policy)
+            required: false
+            policy: ''
+            notes: ''
+        api_key_source:
+            description: The source of the API key for requests. Valid values are
+                HEADER (default
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the REST API
+        root_resource_id:
+            description: The resource ID of the REST API's root
+        created_date:
+            description: The creation date of the REST API
+        execution_arn:
+            description: The execution ARN part to be used in [`lambda_permission`](/docs/providers/aws/r/lambda_permission.html)'s
+                `source_arn`
+        arn:
+            description: Amazon Resource Name (ARN)
+    timeouts: {}

@@ -1,0 +1,37 @@
+{
+    "azurerm_disk_encryption_set": {
+        "status": "HOLD",
+        "subcategory": "Compute",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_disk_encryption_set",
+        "description": "Manages a Disk Encryption Set.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Disk Encryption Set. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the name of the Resource Group where the Disk Encryption Set should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the Azure Region where the Disk Encryption Set exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_key_id": {
+                "description": "Specifies the URL to a Key Vault Key (either from a Key Vault Key, or the Key URL for the Key Vault Secret).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,281 @@
+azurerm_monitor_action_group:
+    status: HOLD
+    subcategory: Monitor
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_monitor_action_group'
+    description: Manages an Action Group within Azure Monitor
+    arguments:
+        name:
+            description: The name of the webhook receiver. Names must be unique (case-insensitive
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Action
+                Group instance.
+            required: true
+            policy: ''
+            notes: ''
+        short_name:
+            description: The short name of the action group. This will be used in
+                SMS messages.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Whether this action group is enabled. If an action group
+                is not enabled, then none of its receivers will receive communications.
+                Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        arm_role_receiver:
+            description: One or more `arm_role_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        automation_runbook_receiver:
+            description: One or more `automation_runbook_receiver` blocks as defined
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        azure_app_push_receiver:
+            description: One or more `azure_app_push_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        azure_function_receiver:
+            description: One or more `azure_function_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        email_receiver:
+            description: One or more `email_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        itsm_receiver:
+            description: One or more `itsm_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        logic_app_receiver:
+            description: One or more `logic_app_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        sms_receiver:
+            description: One or more `sms_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        voice_receiver:
+            description: One or more `voice_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        webhook_receiver:
+            description: One or more `webhook_receiver` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        role_id:
+            description: The arm role id.
+            required: true
+            policy: ''
+            notes: ''
+        use_common_alert_schema:
+            description: Enables or disables the common alert schema.
+            required: false
+            policy: ''
+            notes: ''
+        automation_account_id:
+            description: The automation account ID which holds this runbook and authenticates
+                to Azure resources.
+            required: true
+            policy: ''
+            notes: ''
+        runbook_name:
+            description: The name for this runbook.
+            required: true
+            policy: ''
+            notes: ''
+        webhook_resource_id:
+            description: The resource id for webhook linked to this runbook.
+            required: true
+            policy: ''
+            notes: ''
+        is_global_runbook:
+            description: Indicates whether this instance is global runbook.
+            required: true
+            policy: ''
+            notes: ''
+        service_uri:
+            description: The URI where webhooks should be sent.
+            required: true
+            policy: ''
+            notes: ''
+        email_address:
+            description: The email address of this receiver.
+            required: true
+            policy: ''
+            notes: ''
+        function_app_resouce_id:
+            description: The Azure resource ID of the function app.
+            required: true
+            policy: ''
+            notes: ''
+        function_name:
+            description: The function name in the function app.
+            required: true
+            policy: ''
+            notes: ''
+        http_trigger_url:
+            description: The http trigger url where http request sent to.
+            required: true
+            policy: ''
+            notes: ''
+        workspace_id:
+            description: The Azure Log Analytics workspace ID where this connection
+                is defined.
+            required: true
+            policy: ''
+            notes: ''
+        connection_id:
+            description: The unique connection identifier of the ITSM connection.
+            required: true
+            policy: ''
+            notes: ''
+        ticket_configuration:
+            description: A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems
+                option will be part of this blob as well.
+            required: true
+            policy: ''
+            notes: ''
+        region:
+            description: The region of the workspace.
+            required: true
+            policy: ''
+            notes: ''
+        resource_id:
+            description: The Azure resource ID of the logic app.
+            required: true
+            policy: ''
+            notes: ''
+        callback_url:
+            description: The callback url where http request sent to.
+            required: true
+            policy: ''
+            notes: ''
+        country_code:
+            description: The country code of the voice receiver.
+            required: true
+            policy: ''
+            notes: ''
+        phone_number:
+            description: The phone number of the voice receiver.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Action Group.
+    timeouts:
+        create:
+            description: Used when creating the Action Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Action Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Action Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Action Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbTF2Ym1sMGIzSnBibWN0Y21WemIzVnlZMlZ6SWdvZ0lH
+        eHZZMkYwYVc5dUlEMGdJbGRsYzNRZ1ZWTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDIx
+        dmJtbDBiM0pmWVdOMGFXOXVYMmR5YjNWd0lpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlRM0pwZEdsallXeEJiR1Z5ZEhOQlkzUnBiMjRpQ2lBZ2NtVnpi
+        M1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpY
+        aGhiWEJzWlM1dVlXMWxDaUFnYzJodmNuUmZibUZ0WlNBZ0lDQWdJQ0FnSUNBOUlDSndNR0ZqZEds
+        dmJpSUtDaUFnWVhKdFgzSnZiR1ZmY21WalpXbDJaWElnZXdvZ0lDQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlZWEp0Y205c1pXRmpkR2x2YmlJS0lDQWdJSEp2YkdWZmFXUWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVJsTVRNNVpqZzBMVEUzTlRZdE5EZGhaUzA1WW1VMkxU
+        Z3dPR1ppWW1VNE5EYzNNaUlLSUNBZ0lIVnpaVjlqYjIxdGIyNWZZV3hsY25SZmMyTm9aVzFoSUQw
+        Z2RISjFaUW9nSUgwS0NpQWdZWFYwYjIxaGRHbHZibDl5ZFc1aWIyOXJYM0psWTJWcGRtVnlJSHNL
+        SUNBZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltRmpkR2x2Ymw5dVlXMWxY
+        ekVpQ2lBZ0lDQmhkWFJ2YldGMGFXOXVYMkZqWTI5MWJuUmZhV1FnSUNBOUlDSXZjM1ZpYzJOeWFY
+        QjBhVzl1Y3k4d01EQXdNREF3TUMwd01EQXdMVEF3TURBdE1EQXdNQzB3TURBd01EQXdNREF3TURB
+        dmNtVnpiM1Z5WTJWbmNtOTFjSE12Y21jdGNuVnVZbTl2YTNNdmNISnZkbWxrWlhKekwyMXBZM0p2
+        YzI5bWRDNWhkWFJ2YldGMGFXOXVMMkYxZEc5dFlYUnBiMjVoWTJOdmRXNTBjeTloWVdFd01ERWlD
+        aUFnSUNCeWRXNWliMjlyWDI1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdGVTQnlkVzVpYjI5ckln
+        b2dJQ0FnZDJWaWFHOXZhMTl5WlhOdmRYSmpaVjlwWkNBZ0lDQWdQU0FpTDNOMVluTmpjbWx3ZEds
+        dmJuTXZNREF3TURBd01EQXRNREF3TUMwd01EQXdMVEF3TURBdE1EQXdNREF3TURBd01EQXdMM0ps
+        YzI5MWNtTmxaM0p2ZFhCekwzSm5MWEoxYm1KdmIydHpMM0J5YjNacFpHVnljeTl0YVdOeWIzTnZa
+        blF1WVhWMGIyMWhkR2x2Ymk5aGRYUnZiV0YwYVc5dVlXTmpiM1Z1ZEhNdllXRmhNREF4TDNkbFlt
+        aHZiMnR6TDNkbFltaHZiMnRmWVd4bGNuUWlDaUFnSUNCcGMxOW5iRzlpWVd4ZmNuVnVZbTl2YXlB
+        Z0lDQWdJQ0E5SUhSeWRXVUtJQ0FnSUhObGNuWnBZMlZmZFhKcElDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SW1oMGRIQnpPaTh2Y3pFelpYWmxiblJ6TG1GNmRYSmxMV0YxZEc5dFlYUnBiMjR1Ym1WMEwzZGxZ
+        bWh2YjJ0elAzUnZhMlZ1UFhKaGJtUnZiWFJ2YTJWdUlnb2dJQ0FnZFhObFgyTnZiVzF2Ymw5aGJH
+        VnlkRjl6WTJobGJXRWdQU0IwY25WbENpQWdmUW9LSUNCaGVuVnlaVjloY0hCZmNIVnphRjl5WldO
+        bGFYWmxjaUI3Q2lBZ0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUQwZ0luQjFjMmgwYjJGa2JXbHVJZ29n
+        SUNBZ1pXMWhhV3hmWVdSa2NtVnpjeUE5SUNKaFpHMXBia0JqYjI1MGIzTnZMbU52YlNJS0lDQjlD
+        Z29nSUdGNmRYSmxYMloxYm1OMGFXOXVYM0psWTJWcGRtVnlJSHNLSUNBZ0lHNWhiV1VnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSm1kVzVqWVdOMGFXOXVJZ29nSUNBZ1puVnVZM1JwYjI1
+        ZllYQndYM0psYzI5MWNtTmxYMmxrSUQwZ0lpOXpkV0p6WTNKcGNIUnBiMjV6THpBd01EQXdNREF3
+        TFRBd01EQXRNREF3TUMwd01EQXdMVEF3TURBd01EQXdNREF3TUM5eVpYTnZkWEpqWlVkeWIzVndj
+        eTl5WnkxbWRXNWpZWEJ3TDNCeWIzWnBaR1Z5Y3k5TmFXTnliM052Wm5RdVYyVmlMM05wZEdWekwy
+        WjFibU5oY0hBaUNpQWdJQ0JtZFc1amRHbHZibDl1WVcxbElDQWdJQ0FnSUNBZ0lDQWdQU0FpYlhs
+        bWRXNWpJZ29nSUNBZ2FIUjBjRjkwY21sbloyVnlYM1Z5YkNBZ0lDQWdJQ0FnSUQwZ0ltaDBkSEJ6
+        T2k4dlpYaGhiWEJzWlM1amIyMHZkSEpwWjJkbGNpSUtJQ0FnSUhWelpWOWpiMjF0YjI1ZllXeGxj
+        blJmYzJOb1pXMWhJQ0E5SUhSeWRXVUtJQ0I5Q2dvZ0lHVnRZV2xzWDNKbFkyVnBkbVZ5SUhzS0lD
+        QWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ1BTQWljMlZ1WkhSdllXUnRhVzRpQ2lBZ0lDQmxiV0ZwYkY5
+        aFpHUnlaWE56SUQwZ0ltRmtiV2x1UUdOdmJuUnZjMjh1WTI5dElnb2dJSDBLQ2lBZ1pXMWhhV3hm
+        Y21WalpXbDJaWElnZXdvZ0lDQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlj
+        MlZ1WkhSdlpHVjJiM0J6SWdvZ0lDQWdaVzFoYVd4ZllXUmtjbVZ6Y3lBZ0lDQWdJQ0FnSUNBZ1BT
+        QWlaR1YyYjNCelFHTnZiblJ2YzI4dVkyOXRJZ29nSUNBZ2RYTmxYMk52YlcxdmJsOWhiR1Z5ZEY5
+        elkyaGxiV0VnUFNCMGNuVmxDaUFnZlFvS0lDQnBkSE50WDNKbFkyVnBkbVZ5SUhzS0lDQWdJRzVo
+        YldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltTnlaV0YwWlc5eWRYQmtZWFJsZEdsamEyVjBJ
+        Z29nSUNBZ2QyOXlhM053WVdObFgybGtJQ0FnSUNBZ0lDQWdQU0FpTm1WbFpUTmhNVGd0WVdGak15
+        MDBNR1UwTFdJNU9HVXRNV1l6TURsbU16STVPREUySWdvZ0lDQWdZMjl1Ym1WamRHbHZibDlwWkNB
+        Z0lDQWdJQ0FnUFNBaU5UTmtaVFk1TlRZdE5ESmlOQzAwTVdKaExXSmxNMk10WWpFMU5HTmtaakUz
+        WWpFeklnb2dJQ0FnZEdsamEyVjBYMk52Ym1acFozVnlZWFJwYjI0Z1BTQWllMzBpQ2lBZ0lDQnla
+        V2RwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKemIzVjBhR05sYm5SeVlXeDFjeUlLSUNCOUNn
+        b2dJR3h2WjJsalgyRndjRjl5WldObGFYWmxjaUI3Q2lBZ0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBOUlDSnNiMmRwWTJGd2NHRmpkR2x2YmlJS0lDQWdJSEpsYzI5MWNtTmxYMmxr
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJaTl6ZFdKelkzSnBjSFJwYjI1ekx6QXdNREF3TURBd0xUQXdN
+        REF0TURBd01DMHdNREF3TFRBd01EQXdNREF3TURBd01DOXlaWE52ZFhKalpVZHliM1Z3Y3k5eVp5
+        MXNiMmRwWTJGd2NDOXdjbTkyYVdSbGNuTXZUV2xqY205emIyWjBMa3h2WjJsakwzZHZjbXRtYkc5
+        M2N5OXNiMmRwWTJGd2NDSUtJQ0FnSUdOaGJHeGlZV05yWDNWeWJDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SW1oMGRIQnpPaTh2Ykc5bmFXTmhjSEIwY21sbloyVnlkWEpzTHk0dUxpSUtJQ0FnSUhWelpWOWpi
+        MjF0YjI1ZllXeGxjblJmYzJOb1pXMWhJRDBnZEhKMVpRb2dJSDBLQ2lBZ2MyMXpYM0psWTJWcGRt
+        VnlJSHNLSUNBZ0lHNWhiV1VnSUNBZ0lDQWdJQ0E5SUNKdmJtTmhiR3h0YzJjaUNpQWdJQ0JqYjNW
+        dWRISjVYMk52WkdVZ1BTQWlNU0lLSUNBZ0lIQm9iMjVsWDI1MWJXSmxjaUE5SUNJeE1qTXhNak14
+        TWpNMElnb2dJSDBLQ2lBZ2RtOXBZMlZmY21WalpXbDJaWElnZXdvZ0lDQWdibUZ0WlNBZ0lDQWdJ
+        Q0FnSUQwZ0luSmxiVzkwWlhOMWNIQnZjblFpQ2lBZ0lDQmpiM1Z1ZEhKNVgyTnZaR1VnUFNBaU9E
+        WWlDaUFnSUNCd2FHOXVaVjl1ZFcxaVpYSWdQU0FpTVRNNE9EZzRPRGc0T0RnaUNpQWdmUW9LSUNC
+        M1pXSm9iMjlyWDNKbFkyVnBkbVZ5SUhzS0lDQWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJbU5oYkd4dGVXRndhV0Z6ZDJWc2JDSUtJQ0FnSUhObGNuWnBZMlZmZFhKcElDQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnSW1oMGRIQTZMeTlsZUdGdGNHeGxMbU52YlM5aGJHVnlkQ0lLSUNBZ0lI
+        VnpaVjlqYjIxdGIyNWZZV3hsY25SZmMyTm9aVzFoSUQwZ2RISjFaUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwQlkzUnBiMjRnUjNKdmRYQnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXOXVhWFJ2Y2w5aFkzUnBiMjVmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

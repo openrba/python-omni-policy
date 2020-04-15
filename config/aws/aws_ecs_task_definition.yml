@@ -1,0 +1,16 @@
+aws_ecs_task_definition:
+    status: HOLD
+    subcategory: ECS
+    layout: aws
+    page_title: 'AWS: aws_ecs_task_definition'
+    description: Manages a revision of an ECS task definition.
+    arguments: {}
+    attributes:
+        arn:
+            description: Full ARN of the Task Definition (including both `family`
+                and `revision`).
+        family:
+            description: The family of the Task Definition.
+        revision:
+            description: The revision of the task in a particular family.
+    timeouts: {}

@@ -1,0 +1,27 @@
+azurerm_app_service_active_slot:
+    status: HOLD
+    subcategory: App Service (Web Apps)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_app_service_active_slot'
+    description: Promotes an App Service Slot to Production within an App Service
+    arguments:
+        resource_group_name:
+            description: The name of the resource group in which the App Service exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        app_service_name:
+            description: The name of the App Service within which the Slot exists.  Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        app_service_slot_name:
+            description: The name of the App Service Slot which should be promoted
+                to the Production Slot within the App Service.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

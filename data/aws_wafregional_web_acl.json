@@ -1,0 +1,56 @@
+{
+    "aws_wafregional_web_acl": {
+        "status": "HOLD",
+        "subcategory": "WAF Regional",
+        "layout": "aws",
+        "page_title": "AWS: aws_wafregional_web_acl",
+        "description": "Provides a AWS WAF Regional web access control group (ACL) resource for use with ALB.",
+        "arguments": {
+            "default_action": {
+                "description": "The action that you want AWS WAF Regional to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_name": {
+                "description": "The name or description for the Amazon CloudWatch metric of this web ACL.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name or description of the web ACL.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "logging_configuration": {
+                "description": "Configuration block to enable WAF logging. Detailed below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rule": {
+                "description": "Set of configuration blocks containing rules for the web ACL. Detailed below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the WAF Regional WebACL."
+            },
+            "id": {
+                "description": "The ID of the WAF Regional WebACL."
+            }
+        },
+        "timeouts": {}
+    }
+}

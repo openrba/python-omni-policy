@@ -1,0 +1,41 @@
+{
+    "aws_api_gateway_vpc_link": {
+        "status": "HOLD",
+        "subcategory": "API Gateway (REST APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_api_gateway_vpc_link",
+        "description": "Provides an API Gateway VPC Link.",
+        "arguments": {
+            "name": {
+                "description": "The name used to label and identify the VPC link.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the VPC link.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_arns": {
+                "description": "The list of network load balancer arns in the VPC targeted by the VPC link. Currently AWS only supports 1 target.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The identifier of the VpcLink."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "azurerm_logic_app_action_http": {
+        "status": "HOLD",
+        "subcategory": "Logic App",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_logic_app_action_http",
+        "description": "Manages an HTTP Action within a Logic App Workflow",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the HTTP Action to be created within the Logic App Workflow. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": "This name must be unique across all Actions within the Logic App Workflow."
+            },
+            "logic_app_id": {
+                "description": "Specifies the ID of the Logic App Workflow. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "method": {
+                "description": "Specifies the HTTP Method which should be used for this HTTP Action. Possible values include `DELETE`, `GET`, `PATCH`, `POST` and `PUT`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "uri": {
+                "description": "Specifies the URI which will be called when this HTTP Action is triggered.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "body": {
+                "description": "Specifies the HTTP Body that should be sent to the `uri` when this HTTP Action is triggered.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "headers": {
+                "description": "Specifies a Map of Key-Value Pairs that should be sent to the `uri` when this HTTP Action is triggered.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the HTTP Action within the Logic App Workflow."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Logic App HTTP Action.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Logic App HTTP Action.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Logic App HTTP Action.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Logic App HTTP Action.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

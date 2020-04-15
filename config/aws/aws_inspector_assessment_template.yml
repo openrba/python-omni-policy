@@ -1,0 +1,36 @@
+aws_inspector_assessment_template:
+    status: HOLD
+    subcategory: Inspector
+    layout: aws
+    page_title: 'AWS: aws_inspector_assessment_template'
+    description: Provides a Inspector assessment template.
+    arguments:
+        name:
+            description: The name of the assessment template.
+            required: true
+            policy: ''
+            notes: ''
+        target_arn:
+            description: The assessment target ARN to attach the template to.
+            required: true
+            policy: ''
+            notes: ''
+        duration:
+            description: The duration of the inspector run.
+            required: true
+            policy: ''
+            notes: ''
+        rules_package_arns:
+            description: The rules to be used during the run.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of tags for the Inspector assessment template.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The template assessment ARN.
+    timeouts: {}

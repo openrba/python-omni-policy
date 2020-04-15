@@ -1,0 +1,26 @@
+aws_config_aggregate_authorization:
+    status: HOLD
+    subcategory: Config
+    layout: aws
+    page_title: 'AWS: aws_config_aggregate_authorization'
+    description: Manages an AWS Config Aggregate Authorization.
+    arguments:
+        account_id:
+            description: Account ID
+            required: true
+            policy: ''
+            notes: ''
+        region:
+            description: Region
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The ARN of the authorization
+    timeouts: {}

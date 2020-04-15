@@ -1,0 +1,74 @@
+azurerm_storage_data_lake_gen2_filesystem:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_data_lake_gen2_filesystem'
+    description: Manages a Data Lake Gen2 File System within an Azure Storage Account.
+    arguments:
+        name:
+            description: The name of the Data Lake Gen2 File System which should be
+                created within the Storage Account. Must be unique within the storage
+                account the queue is located. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: Specifies the ID of the Storage Account in which the Data
+                Lake Gen2 File System should exist. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        properties:
+            description: A mapping of Key to Base64-Encoded Values which should be
+                assigned to this Data Lake Gen2 File System.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Lake Gen2 File System.
+    timeouts:
+        create:
+            description: Used when creating the Data Lake Gen2 File System.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Lake Gen2 File System.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Lake Gen2 File System.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Lake Gen2 File System.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emRHOXlZV2RsWDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVnpkRzl5WVdkbFlXTmpJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRY
+        QXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFn
+        WVdOamIzVnVkRjkwYVdWeUlDQWdJQ0FnSUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lHRmpZ
+        MjkxYm5SZmNtVndiR2xqWVhScGIyNWZkSGx3WlNBOUlDSk1VbE1pQ2lBZ1lXTmpiM1Z1ZEY5cmFX
+        NWtJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsTjBiM0poWjJWV01pSUtJQ0JwYzE5b2JuTmZaVzVoWW14
+        bFpDQWdJQ0FnSUNBZ0lDQWdQU0FpZEhKMVpTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        YzNSdmNtRm5aVjlrWVhSaFgyeGhhMlZmWjJWdU1sOW1hV3hsYzNsemRHVnRJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUhOMGIz
+        SmhaMlZmWVdOamIzVnVkRjlwWkNBOUlHRjZkWEpsY20xZmMzUnZjbUZuWlY5aFkyTnZkVzUwTG1W
+        NFlXMXdiR1V1YVdRS0NpQWdjSEp2Y0dWeWRHbGxjeUE5SUhzS0lDQWdJR2hsYkd4dklEMGdJbUZI
+        Vm5OaVJ6ZzlJZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwRVlYUmhJRXhoYTJVZ1IyVnVNaUJHYVd4bElGTjVjM1JsYlNkeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5a1lYUmhYMnhoYTJWZloyVnVNbDltYVd4bGMzbHpkR1Z0TG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

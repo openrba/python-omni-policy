@@ -1,0 +1,19 @@
+{
+    "aws_ebs_default_kms_key": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_ebs_default_kms_key",
+        "description": "Manages the default customer master key (CMK) that your AWS account uses to encrypt EBS volumes.",
+        "arguments": {
+            "key_arn": {
+                "description": "The ARN of the AWS Key Management Service (AWS KMS",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

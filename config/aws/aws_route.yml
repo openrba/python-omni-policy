@@ -1,0 +1,79 @@
+aws_route:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_route'
+    description: Provides a resource to create a routing entry in a VPC routing table.
+    arguments:
+        route_table_id:
+            description: The ID of the routing table.
+            required: true
+            policy: ''
+            notes: ''
+        destination_cidr_block:
+            description: The destination CIDR block.
+            required: false
+            policy: ''
+            notes: ''
+        destination_ipv6_cidr_block:
+            description: The destination IPv6 CIDR block.
+            required: false
+            policy: ''
+            notes: ''
+        egress_only_gateway_id:
+            description: Identifier of a VPC Egress Only Internet Gateway.
+            required: false
+            policy: ''
+            notes: ''
+        gateway_id:
+            description: Identifier of a VPC internet gateway or a virtual private
+                gateway.
+            required: false
+            policy: ''
+            notes: ''
+        instance_id:
+            description: Identifier of an EC2 instance.
+            required: false
+            policy: ''
+            notes: ''
+        nat_gateway_id:
+            description: Identifier of a VPC NAT gateway.
+            required: false
+            policy: ''
+            notes: ''
+        network_interface_id:
+            description: Identifier of an EC2 network interface.
+            required: false
+            policy: ''
+            notes: ''
+        transit_gateway_id:
+            description: Identifier of an EC2 Transit Gateway.
+            required: false
+            policy: ''
+            notes: ''
+        vpc_peering_connection_id:
+            description: Identifier of a VPC peering connection.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: Route Table identifier and destination
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbTkxZEdVaUlDSnlJaUI3Q2lBZ2NtOTFkR1ZmZEdGaWJHVmZh
+        V1FnSUNBZ0lDQWdJQ0FnSUNBOUlDSnlkR0l0TkdaaVlqTmhZelFpQ2lBZ1pHVnpkR2x1WVhScGIy
+        NWZZMmxrY2w5aWJHOWpheUFnSUNBOUlDSXhNQzR3TGpFdU1DOHlNaUlLSUNCMmNHTmZjR1ZsY21s
+        dVoxOWpiMjV1WldOMGFXOXVYMmxrSUQwZ0luQmplQzAwTldabU0yUmpNU0lLSUNCa1pYQmxibVJ6
+        WDI5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1d5SmhkM05mY205MWRHVmZkR0ZpYkdVdWRHVnpk
+        R2x1WnlKZENuMEs=
+    import: !!binary |
+        Q2dwSmJtUnBkbWxrZFdGc0lISnZkWFJsY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dZ
+        RkpQVlZSRlZFRkNURVZKUkY5RVJWTlVTVTVCVkVsUFRtQXVDZ3BHYjNJZ1pYaGhiWEJzWlN3Z2FX
+        MXdiM0owSUdFZ2NtOTFkR1VnYVc0Z2NtOTFkR1VnZEdGaWJHVWdZSEowWWkwMk5UWkROalUyTVRa
+        Rk5rWTNNbUFnZDJsMGFDQmhiaUJKVUhZMElHUmxjM1JwYm1GMGFXOXVJRU5KUkZJZ2IyWWdZREV3
+        TGpReUxqQXVNQzh4Tm1BZ2JHbHJaU0IwYUdsek9nb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpTNW9kRzFzTG0xaGNtdGtiM2R1

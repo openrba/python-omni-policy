@@ -1,0 +1,119 @@
+azurerm_template_deployment:
+    status: HOLD
+    subcategory: Template
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_template_deployment'
+    description: Manages a template deployment of resources.
+    arguments:
+        name:
+            description: Specifies the name of the template deployment. Changing this
+                forces a
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        deployment_mode:
+            description: Specifies the mode that is used to deploy resources. This
+                value could be either `Incremental` or `Complete`.
+            required: true
+            policy: ''
+            notes: ''
+        template_body:
+            description: Specifies the JSON definition for the template.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: Specifies the name and value pairs that define the deployment
+                parameters for the template.
+            required: false
+            policy: ''
+            notes: ''
+        parameters_body:
+            description: Specifies a valid Azure JSON parameters file that define
+                the deployment parameters. It can contain KeyVault references
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Template Deployment ID.
+        outputs:
+            description: 'A map of supported scalar output types returned from the
+                deployment (currently, Azure Template Deployment outputs of type String,
+                Int and Bool are supported, and are converted to strings '
+    timeouts:
+        create:
+            description: Used when creating the Template Deployment.
+            required: false
+            timeout: 3
+        update:
+            description: Used when updating the Template Deployment.
+            required: false
+            timeout: 3
+        read:
+            description: Used when retrieving the Template Deployment.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Template Deployment.
+            required: false
+            timeout: 3
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM1JsYlhC
+        c1lYUmxYMlJsY0d4dmVXMWxiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKaFkyTjBaWE4wZEdWdGNHeGhkR1V0TURFaUNpQWdjbVZ6YjNWeVkyVmZa
+        M0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pT
+        NXVZVzFsQ2dvZ0lIUmxiWEJzWVhSbFgySnZaSGtnUFNBOFBFUkZVRXhQV1FwN0NpQWdJaVJ6WTJo
+        bGJXRWlPaUFpYUhSMGNITTZMeTl6WTJobGJXRXViV0Z1WVdkbGJXVnVkQzVoZW5WeVpTNWpiMjB2
+        YzJOb1pXMWhjeTh5TURFMUxUQXhMVEF4TDJSbGNHeHZlVzFsYm5SVVpXMXdiR0YwWlM1cWMyOXVJ
+        eUlzQ2lBZ0ltTnZiblJsYm5SV1pYSnphVzl1SWpvZ0lqRXVNQzR3TGpBaUxBb2dJQ0p3WVhKaGJX
+        VjBaWEp6SWpvZ2V3b2dJQ0FnSW5OMGIzSmhaMlZCWTJOdmRXNTBWSGx3WlNJNklIc0tJQ0FnSUNB
+        Z0luUjVjR1VpT2lBaWMzUnlhVzVuSWl3S0lDQWdJQ0FnSW1SbFptRjFiSFJXWVd4MVpTSTZJQ0pU
+        ZEdGdVpHRnlaRjlNVWxNaUxBb2dJQ0FnSUNBaVlXeHNiM2RsWkZaaGJIVmxjeUk2SUZzS0lDQWdJ
+        Q0FnSUNBaVUzUmhibVJoY21SZlRGSlRJaXdLSUNBZ0lDQWdJQ0FpVTNSaGJtUmhjbVJmUjFKVElp
+        d0tJQ0FnSUNBZ0lDQWlVM1JoYm1SaGNtUmZXbEpUSWdvZ0lDQWdJQ0JkTEFvZ0lDQWdJQ0FpYldW
+        MFlXUmhkR0VpT2lCN0NpQWdJQ0FnSUNBZ0ltUmxjMk55YVhCMGFXOXVJam9nSWxOMGIzSmhaMlVn
+        UVdOamIzVnVkQ0IwZVhCbElnb2dJQ0FnSUNCOUNpQWdJQ0I5Q2lBZ2ZTd0tJQ0FpZG1GeWFXRmli
+        R1Z6SWpvZ2V3b2dJQ0FnSW14dlkyRjBhVzl1SWpvZ0lsdHlaWE52ZFhKalpVZHliM1Z3S0NrdWJH
+        OWpZWFJwYjI1ZElpd0tJQ0FnSUNKemRHOXlZV2RsUVdOamIzVnVkRTVoYldVaU9pQWlXMk52Ym1O
+        aGRDaDFibWx4ZFdWemRISnBibWNvY21WemIzVnlZMlZIY205MWNDZ3BMbWxrS1N3Z0ozTjBiM0po
+        WjJVbktWMGlMQW9nSUNBZ0luQjFZbXhwWTBsUVFXUmtjbVZ6YzA1aGJXVWlPaUFpVzJOdmJtTmhk
+        Q2duYlhsUWRXSnNhV05KY0Njc0lIVnVhWEYxWlhOMGNtbHVaeWh5WlhOdmRYSmpaVWR5YjNWd0tD
+        a3VhV1FwS1YwaUxBb2dJQ0FnSW5CMVlteHBZMGxRUVdSa2NtVnpjMVI1Y0dVaU9pQWlSSGx1WVcx
+        cFl5SXNDaUFnSUNBaVlYQnBWbVZ5YzJsdmJpSTZJQ0l5TURFMUxUQTJMVEUxSWl3S0lDQWdJQ0pr
+        Ym5OTVlXSmxiRkJ5WldacGVDSTZJQ0owWlhKeVlXWnZjbTB0WVdOamRHVnpkQ0lLSUNCOUxBb2dJ
+        Q0p5WlhOdmRYSmpaWE1pT2lCYkNpQWdJQ0I3Q2lBZ0lDQWdJQ0owZVhCbElqb2dJazFwWTNKdmMy
+        OW1kQzVUZEc5eVlXZGxMM04wYjNKaFoyVkJZMk52ZFc1MGN5SXNDaUFnSUNBZ0lDSnVZVzFsSWpv
+        Z0lsdDJZWEpwWVdKc1pYTW9KM04wYjNKaFoyVkJZMk52ZFc1MFRtRnRaU2NwWFNJc0NpQWdJQ0Fn
+        SUNKaGNHbFdaWEp6YVc5dUlqb2dJbHQyWVhKcFlXSnNaWE1vSjJGd2FWWmxjbk5wYjI0bktWMGlM
+        QW9nSUNBZ0lDQWliRzlqWVhScGIyNGlPaUFpVzNaaGNtbGhZbXhsY3lnbmJHOWpZWFJwYjI0bktW
+        MGlMQW9nSUNBZ0lDQWljSEp2Y0dWeWRHbGxjeUk2SUhzS0lDQWdJQ0FnSUNBaVlXTmpiM1Z1ZEZS
+        NWNHVWlPaUFpVzNCaGNtRnRaWFJsY25Nb0ozTjBiM0poWjJWQlkyTnZkVzUwVkhsd1pTY3BYU0lL
+        SUNBZ0lDQWdmUW9nSUNBZ2ZTd0tJQ0FnSUhzS0lDQWdJQ0FnSW5SNWNHVWlPaUFpVFdsamNtOXpi
+        MlowTGs1bGRIZHZjbXN2Y0hWaWJHbGpTVkJCWkdSeVpYTnpaWE1pTEFvZ0lDQWdJQ0FpWVhCcFZt
+        VnljMmx2YmlJNklDSmJkbUZ5YVdGaWJHVnpLQ2RoY0dsV1pYSnphVzl1SnlsZElpd0tJQ0FnSUNB
+        Z0ltNWhiV1VpT2lBaVczWmhjbWxoWW14bGN5Z25jSFZpYkdsalNWQkJaR1J5WlhOelRtRnRaU2Nw
+        WFNJc0NpQWdJQ0FnSUNKc2IyTmhkR2x2YmlJNklDSmJkbUZ5YVdGaWJHVnpLQ2RzYjJOaGRHbHZi
+        aWNwWFNJc0NpQWdJQ0FnSUNKd2NtOXdaWEowYVdWeklqb2dld29nSUNBZ0lDQWdJQ0p3ZFdKc2FX
+        TkpVRUZzYkc5allYUnBiMjVOWlhSb2IyUWlPaUFpVzNaaGNtbGhZbXhsY3lnbmNIVmliR2xqU1ZC
+        QlpHUnlaWE56Vkhsd1pTY3BYU0lzQ2lBZ0lDQWdJQ0FnSW1SdWMxTmxkSFJwYm1keklqb2dld29n
+        SUNBZ0lDQWdJQ0FnSW1SdmJXRnBiazVoYldWTVlXSmxiQ0k2SUNKYmRtRnlhV0ZpYkdWektDZGti
+        bk5NWVdKbGJGQnlaV1pwZUNjcFhTSUtJQ0FnSUNBZ0lDQjlDaUFnSUNBZ0lIMEtJQ0FnSUgwS0lD
+        QmRMQW9nSUNKdmRYUndkWFJ6SWpvZ2V3b2dJQ0FnSW5OMGIzSmhaMlZCWTJOdmRXNTBUbUZ0WlNJ
+        NklIc0tJQ0FnSUNBZ0luUjVjR1VpT2lBaWMzUnlhVzVuSWl3S0lDQWdJQ0FnSW5aaGJIVmxJam9n
+        SWx0MllYSnBZV0pzWlhNb0ozTjBiM0poWjJWQlkyTnZkVzUwVG1GdFpTY3BYU0lLSUNBZ0lIMEtJ
+        Q0I5Q24wS1JFVlFURTlaQ2dvS0lDQWpJSFJvWlhObElHdGxlUzEyWVd4MVpTQndZV2x5Y3lCaGNt
+        VWdjR0Z6YzJWa0lHbHVkRzhnZEdobElFRlNUU0JVWlcxd2JHRjBaU2R6SUdCd1lYSmhiV1YwWlhK
+        ellDQmliRzlqYXdvZ0lIQmhjbUZ0WlhSbGNuTWdQU0I3Q2lBZ0lDQWljM1J2Y21GblpVRmpZMjkx
+        Ym5SVWVYQmxJaUE5SUNKVGRHRnVaR0Z5WkY5SFVsTWlDaUFnZlFvS0lDQmtaWEJzYjNsdFpXNTBY
+        MjF2WkdVZ1BTQWlTVzVqY21WdFpXNTBZV3dpQ24wS0NtOTFkSEIxZENBaWMzUnZjbUZuWlVGalky
+        OTFiblJPWVcxbElpQjdDaUFnZG1Gc2RXVWdQU0JoZW5WeVpYSnRYM1JsYlhCc1lYUmxYMlJsY0d4
+        dmVXMWxiblF1WlhoaGJYQnNaUzV2ZFhSd2RYUnpXeUp6ZEc5eVlXZGxRV05qYjNWdWRFNWhiV1Vp
+        WFFwOUNnPT0=

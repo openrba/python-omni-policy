@@ -1,0 +1,69 @@
+azurerm_virtual_network_gateway_connection:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_network_gateway_connection'
+    description: Manages a connection in an existing Virtual Network Gateway.
+    arguments:
+        name:
+            description: The name of the connection. Changing the name forces a
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location/region where the connection is
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of connection. Valid options are `IPsec`
+            required: true
+            policy: ''
+            notes: ''
+        virtual_network_gateway_id:
+            description: The ID of the Virtual Network Gateway
+            required: true
+            policy: ''
+            notes: ''
+        authorization_key:
+            description: The authorization key associated with the
+            required: false
+            policy: ''
+            notes: ''
+        express_route_circuit_id:
+            description: The ID of the Express Route Circuit
+            required: false
+            policy: ''
+            notes: ''
+        peer_virtual_network_gateway_id:
+            description: The ID of the peer virtual
+            required: false
+            policy: ''
+            notes: ''
+        local_network_gateway_id:
+            description: The ID of the local network gateway
+            required: false
+            policy: ''
+            notes: ''
+        routing_weight:
+            description: The routing weight. Defaults to `10`.
+            required: false
+            policy: ''
+            notes: ''
+        shared_key:
+            description: The shared IPSec key. A key must be provided if a
+            required: false
+            policy: ''
+            notes: ''
+        connection_protocol:
+            description: The IKE protocol version to use. Possible
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,101 @@
+azurerm_batch_certificate:
+    status: HOLD
+    subcategory: Batch
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_batch_certificate'
+    description: Manages a certificate in an Azure Batch account.
+    arguments:
+        account_name:
+            description: Specifies the name of the Batch account. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Batch
+                account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        certificate:
+            description: The base64-encoded contents of the certificate.
+            required: true
+            policy: ''
+            notes: ''
+        format:
+            description: The format of the certificate. Possible values are `Cer`
+                or `Pfx`.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The password to access the certificate's private key. This
+                must and can only be specified when `format` is `Pfx`.
+            required: false
+            policy: ''
+            notes: ''
+        thumbprint:
+            description: The thumbprint of the certificate. At this time the only
+                supported value is 'SHA1'.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Batch Certificate.
+        name:
+            description: The generated name of the certificate.
+        public_data:
+            description: The public key of the certificate.
+    timeouts:
+        create:
+            description: Used when creating the Batch Certificate.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Batch Certificate.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Batch Certificate.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Batch Certificate.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJsYzNSaVlYUmphQ0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SjNaWE4wWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5emRHOXlZV2RsWDJG
+        alkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJblJsYzNSemRHOXlZV2RsSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJ
+        Q0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENp
+        QWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhK
+        alpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ1lXTmpiM1Z1ZEY5MGFXVnlJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb2dJR0ZqWTI5MWJuUmZjbVZ3YkdsallYUnBi
+        MjVmZEhsd1pTQTlJQ0pNVWxNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkpoZEdOb1gy
+        RmpZMjkxYm5RaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z1BTQWlkR1Z6ZEdKaGRHTm9ZV05qYjNWdWRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFs
+        SUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdi
+        RzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIz
+        VndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J3YjI5c1gyRnNiRzlqWVhScGIyNWZiVzlrWlNB
+        OUlDSkNZWFJqYUZObGNuWnBZMlVpQ2lBZ2MzUnZjbUZuWlY5aFkyTnZkVzUwWDJsa0lDQWdQU0Jo
+        ZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRDNWxlR0Z0Y0d4bExtbGtDZ29nSUhSaFozTWdQ
+        U0I3Q2lBZ0lDQmxibllnUFNBaWRHVnpkQ0lLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpY
+        SnRYMkpoZEdOb1gyTmxjblJwWm1sallYUmxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0
+        Y0d4bExtNWhiV1VLSUNCaFkyTnZkVzUwWDI1aGJXVWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZZ
+        bUYwWTJoZllXTmpiM1Z1ZEM1bGVHRnRjR3hsTG01aGJXVUtJQ0JqWlhKMGFXWnBZMkYwWlNBZ0lD
+        QWdJQ0FnSUNBOUlHWnBiR1ZpWVhObE5qUW9JbU5sY25ScFptbGpZWFJsTG5CbWVDSXBDaUFnWm05
+        eWJXRjBJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVR1o0SWdvZ0lIQmhjM04zYjNKa0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW5SbGNuSmhabTl5YlNJS0lDQjBhSFZ0WW5CeWFXNTBJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNJME1rTXhNRGM0TnpSR1JEQkZORUU1TlRnek1qa3lRVEpHTVRBNU9FVTRSa1UwUWpKRlJF
+        UkJJZ29nSUhSb2RXMWljSEpwYm5SZllXeG5iM0pwZEdodElEMGdJbE5JUVRFaUNuMEs=
+    import: !!binary |
+        Q2dwQ1lYUmphQ0JEWlhKMGFXWnBZMkYwWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRjBZMmhmWTJWeWRHbG1hV05oZEdVdWFIUnRiQzV0WVhKclpHOTNiZz09

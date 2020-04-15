@@ -1,0 +1,49 @@
+{
+    "aws_codecommit_trigger": {
+        "status": "HOLD",
+        "subcategory": "CodeCommit",
+        "layout": "aws",
+        "page_title": "AWS: aws_codecommit_trigger",
+        "description": "Provides a CodeCommit Trigger Resource.",
+        "arguments": {
+            "repository_name": {
+                "description": "The name for the repository. This needs to be less than 100 characters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the trigger.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "destination_arn": {
+                "description": "The ARN of the resource that is the target for a trigger. For example, the ARN of a topic in Amazon Simple Notification Service (SNS).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_data": {
+                "description": "Any custom data associated with the trigger that will be included in the information sent to the target of the trigger.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "branches": {
+                "description": "The branches that will be included in the trigger configuration. If no branches are specified, the trigger will apply to all branches.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "events": {
+                "description": "The repository events that will cause the trigger to run actions in another service, such as sending a notification through Amazon Simple Notification Service (SNS). If no events are specified, the trigger will run for all repository events. Event types include: `all`, `updateReference`, `createReference`, `deleteReference`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

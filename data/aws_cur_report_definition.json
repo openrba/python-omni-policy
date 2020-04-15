@@ -1,0 +1,67 @@
+{
+    "aws_cur_report_definition": {
+        "status": "HOLD",
+        "subcategory": "Cost and Usage Report",
+        "layout": "aws",
+        "page_title": "AWS: aws_cur_report_definition",
+        "description": "Provides a Cost and Usage Report Definition.",
+        "arguments": {
+            "report_name": {
+                "description": "Unique name for the report. Must start with a number/letter and is case sensitive. Limited to 256 characters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "time_unit": {
+                "description": "The frequency on which report data are measured and displayed.  Valid values are: HOURLY, DAILY.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "format": {
+                "description": "Format for report. Valid values are: textORcsv.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "compression": {
+                "description": "Compression format for report. Valid values are: GZIP, ZIP.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "additional_schema_elements": {
+                "description": "A list of schema elements. Valid values are: RESOURCES.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_bucket": {
+                "description": "Name of the existing S3 bucket to hold generated reports.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_prefix": {
+                "description": "Report path prefix. Limited to 256 characters.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_region": {
+                "description": "Region of the existing S3 bucket to hold generated reports.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "additional_artifacts": {
+                "description": " A list of additional artifacts. Valid values are: REDSHIFT, QUICKSIGHT.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "aws_dlm_lifecycle_policy": {
+        "status": "HOLD",
+        "subcategory": "Data Lifecycle Manager (DLM)",
+        "layout": "aws",
+        "page_title": "AWS: aws_dlm_lifecycle_policy",
+        "description": "Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.",
+        "arguments": {
+            "description": {
+                "description": "A description for the DLM lifecycle policy.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "execution_role_arn": {
+                "description": "The ARN of an IAM role that is able to be assumed by the DLM service.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_details": {
+                "description": "See the [`policy_details` configuration](#policy-details-arguments",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "state": {
+                "description": "Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the DLM Lifecycle Policy."
+            },
+            "id": {
+                "description": "Identifier of the DLM Lifecycle Policy."
+            }
+        },
+        "timeouts": {}
+    }
+}

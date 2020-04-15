@@ -1,0 +1,41 @@
+{
+    "aws_opsworks_rds_db_instance": {
+        "status": "HOLD",
+        "subcategory": "OpsWorks",
+        "layout": "aws",
+        "page_title": "AWS: aws_opsworks_rds_db_instance",
+        "description": "Provides an OpsWorks RDS DB Instance resource.",
+        "arguments": {
+            "stack_id": {
+                "description": "The stack to register a db instance for. Changing this will force a new resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rds_db_instance_arn": {
+                "description": "The db instance to register for this stack. Changing this will force a new resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "db_user": {
+                "description": "A db username",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "db_password": {
+                "description": "A db password",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The computed id. Please note that this is only used internally to identify the stack <-> instance relation. This value is not used in aws."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "azurerm_private_dns_mx_record": {
+        "status": "HOLD",
+        "subcategory": "Private DNS",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_private_dns_mx_record",
+        "description": "Manages a Private DNS MX Record.",
+        "arguments": {
+            "name": {
+                "description": "The name of the DNS MX Record. Changing this forces a new resource to be created. Default to '@' for root zone entry.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the resource group where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_name": {
+                "description": "Specifies the Private DNS Zone where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "record": {
+                "description": "One or more `record` blocks as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ttl ": {
+                "description": "The Time To Live (TTL",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "preference": {
+                "description": "The preference of the MX record.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "exchange": {
+                "description": "The FQDN of the exchange to MX record points to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Private DNS MX Record ID."
+            },
+            "fqdn": {
+                "description": "The FQDN of the DNS MX Record."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Private DNS MX Record.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Private DNS MX Record.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Private DNS MX Record.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Private DNS MX Record.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

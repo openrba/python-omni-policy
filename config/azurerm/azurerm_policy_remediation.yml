@@ -1,0 +1,102 @@
+azurerm_policy_remediation:
+    status: HOLD
+    subcategory: Policy
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_policy_remediation'
+    description: Manages an Azure Policy Remediation.
+    arguments:
+        name:
+            description: The name of the Policy Remediation. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        scope:
+            description: 'The Scope at which the Policy Remediation should be applied.
+                Changing this forces a new resource to be created. A scope must be
+                a Resource ID out of one of the following list:'
+            required: true
+            policy: ''
+            notes: ''
+        policy_assignment_id:
+            description: The resource ID of the policy assignment that should be remediated.
+            required: true
+            policy: ''
+            notes: ''
+        policy_definition_reference_id:
+            description: The policy definition reference ID of the individual definition
+                that should be remediated. Required when the policy assignment being
+                remediated assigns a policy set definition.
+            required: false
+            policy: ''
+            notes: ''
+        location_filters:
+            description: A list of the resource locations that will be remediated.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Policy Remediation.
+    timeouts:
+        create:
+            description: Used when creating the Policy Remediation.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Policy Remediation.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Policy Remediation.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Policy Remediation.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WlhOdmRYSmpaWE1pQ2lBZ2JHOWpZWFJwYjI0
+        Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzQnZiR2xq
+        ZVY5a1pXWnBibWwwYVc5dUlpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQTlJ
+        Q0p0ZVMxd2IyeHBZM2t0WkdWbWFXNXBkR2x2YmlJS0lDQndiMnhwWTNsZmRIbHdaU0FnUFNBaVEz
+        VnpkRzl0SWdvZ0lHMXZaR1VnSUNBZ0lDQWdJQ0E5SUNKQmJHd2lDaUFnWkdsemNHeGhlVjl1WVcx
+        bElEMGdJbTE1TFhCdmJHbGplUzFrWldacGJtbDBhVzl1SWdvS0lDQndiMnhwWTNsZmNuVnNaU0E5
+        SUR3OFVFOU1TVU5aWDFKVlRFVUtJQ0FnSUhzS0lDQWdJQ0pwWmlJNklIc0tJQ0FnSUNBZ0ltNXZk
+        Q0k2SUhzS0lDQWdJQ0FnSUNBaVptbGxiR1FpT2lBaWJHOWpZWFJwYjI0aUxBb2dJQ0FnSUNBZ0lD
+        SnBiaUk2SUNKYmNHRnlZVzFsZEdWeWN5Z25ZV3hzYjNkbFpFeHZZMkYwYVc5dWN5Y3BYU0lLSUNB
+        Z0lDQWdmUW9nSUNBZ2ZTd0tJQ0FnSUNKMGFHVnVJam9nZXdvZ0lDQWdJQ0FpWldabVpXTjBJam9n
+        SW1GMVpHbDBJZ29nSUNBZ2ZRb2dJSDBLVUU5TVNVTlpYMUpWVEVVS0NpQWdjR0Z5WVcxbGRHVnlj
+        eUE5SUR3OFVFRlNRVTFGVkVWU1V3b2dJQ0FnZXdvZ0lDQWdJbUZzYkc5M1pXUk1iMk5oZEdsdmJu
+        TWlPaUI3Q2lBZ0lDQWdJQ0owZVhCbElqb2dJa0Z5Y21GNUlpd0tJQ0FnSUNBZ0ltMWxkR0ZrWVhS
+        aElqb2dld29nSUNBZ0lDQWdJQ0prWlhOamNtbHdkR2x2YmlJNklDSlVhR1VnYkdsemRDQnZaaUJo
+        Ykd4dmQyVmtJR3h2WTJGMGFXOXVjeUJtYjNJZ2NtVnpiM1Z5WTJWekxpSXNDaUFnSUNBZ0lDQWdJ
+        bVJwYzNCc1lYbE9ZVzFsSWpvZ0lrRnNiRzkzWldRZ2JHOWpZWFJwYjI1eklpd0tJQ0FnSUNBZ0lD
+        QWljM1J5YjI1blZIbHdaU0k2SUNKc2IyTmhkR2x2YmlJS0lDQWdJQ0FnZlFvZ0lDQWdmUW9nSUgw
+        S1VFRlNRVTFGVkVWU1V3cDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl3YjJ4cFkzbGZZWE56
+        YVdkdWJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNKbGVHRnRjR3hsTFhCdmJHbGplUzFoYzNOcFoyNXRaVzUwSWdvZ0lITmpiM0JsSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4
+        bExtbGtDaUFnY0c5c2FXTjVYMlJsWm1sdWFYUnBiMjVmYVdRZ1BTQmhlblZ5WlhKdFgzQnZiR2xq
+        ZVY5a1pXWnBibWwwYVc5dUxtVjRZVzF3YkdVdWFXUUtJQ0JrWlhOamNtbHdkR2x2YmlBZ0lDQWdJ
+        Q0FnSUNBOUlDSlFiMnhwWTNrZ1FYTnphV2R1YldWdWRDQmpjbVZoZEdWa0lIWnBZU0JoYmlCQlky
+        TmxjSFJoYm1ObElGUmxjM1FpQ2lBZ1pHbHpjR3hoZVY5dVlXMWxJQ0FnSUNBZ0lDQWdQU0FpVFhr
+        Z1JYaGhiWEJzWlNCUWIyeHBZM2tnUVhOemFXZHViV1Z1ZENJS0NpQWdjR0Z5WVcxbGRHVnljeUE5
+        SUR3OFVFRlNRVTFGVkVWU1V3cDdDaUFnSW1Gc2JHOTNaV1JNYjJOaGRHbHZibk1pT2lCN0NpQWdJ
+        Q0FpZG1Gc2RXVWlPaUJiSUNKWFpYTjBJRVYxY205d1pTSWdYUW9nSUgwS2ZRcFFRVkpCVFVWVVJW
+        SlRDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNCdmJHbGplVjl5WlcxbFpHbGhkR2x2YmlJ
+        Z0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0
+        Y0d4bExYQnZiR2xqZVMxeVpXMWxaR2xoZEdsdmJpSUtJQ0J6WTI5d1pTQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBOUlHRjZkWEpsY20xZmNHOXNhV041WDJGemMybG5ibTFsYm5RdVpYaGhiWEJzWlM1elky
+        OXdaUW9nSUhCdmJHbGplVjloYzNOcFoyNXRaVzUwWDJsa0lEMGdZWHAxY21WeWJWOXdiMnhwWTNs
+        ZllYTnphV2R1YldWdWRDNWxlR0Z0Y0d4bExtbGtDaUFnYkc5allYUnBiMjVmWm1sc2RHVnljeUFn
+        SUNBZ1BTQmJJbGRsYzNRZ1JYVnliM0JsSWwwS2ZRbz0=
+    import: !!binary |
+        Q2dwUWIyeHBZM2tnVW1WdFpXUnBZWFJwYjI1eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXNhV041WDNKbGJXVmthV0YwYVc5dUxtaDBiV3d1YldGeWEyUnZkMjQ9

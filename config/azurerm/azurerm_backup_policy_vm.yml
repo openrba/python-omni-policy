@@ -1,0 +1,155 @@
+azurerm_backup_policy_vm:
+    status: HOLD
+    subcategory: Recovery Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_backup_policy_vm'
+    description: Manages an Azure Backup VM Backup Policy.
+    arguments:
+        name:
+            description: Specifies the name of the Backup Policy. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the policy.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_vault_name:
+            description: Specifies the name of the Recovery Services Vault to use.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        backup:
+            description: Configures the Policy backup frequency, times & days as documented
+                in the `backup` block below.
+            required: true
+            policy: ''
+            notes: ''
+        timezone:
+            description: Specifies the timezone. Defaults to `UTC`
+            required: false
+            policy: ''
+            notes: ''
+        retention_daily:
+            description: Configures the policy daily retention as documented in the
+                `retention_daily` block below. Required when backup frequency is `Daily`.
+            required: false
+            policy: ''
+            notes: ''
+        retention_weekly:
+            description: Configures the policy weekly retention as documented in the
+                `retention_weekly` block below. Required when backup frequency is
+                `Weekly`.
+            required: false
+            policy: ''
+            notes: ''
+        retention_monthly:
+            description: Configures the policy monthly retention as documented in
+                the `retention_monthly` block below.
+            required: false
+            policy: ''
+            notes: ''
+        retention_yearly:
+            description: Configures the policy yearly retention as documented in the
+                `retention_yearly` block below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        frequency:
+            description: Sets the backup frequency. Must be either `Daily` or`Weekly`.
+            required: true
+            policy: ''
+            notes: ''
+        time:
+            description: The time of day to perform the backup in 24hour format.
+            required: true
+            policy: ''
+            notes: ''
+        weekdays:
+            description: The weekday backups to retain . Must be one of `Sunday`,
+                `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday` or `Saturday`.
+            required: true
+            policy: ''
+            notes: ''
+        count:
+            description: The number of yearly backups to keep. Must be between `1`
+                and `9999`
+            required: true
+            policy: ''
+            notes: ''
+        weeks:
+            description: The weeks of the month to retain backups of. Must be one
+                of `First`, `Second`, `Third`, `Fourth`, `Last`.
+            required: true
+            policy: ''
+            notes: ''
+        months:
+            description: The months of the year to retain backups of. Must be one
+                of `January`, `February`, `March`, `April`, `May`, `June`, `July`,
+                `Augest`, `September`, `October`, `November` and `December`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the VM Backup Policy.
+    timeouts:
+        create:
+            description: Used when creating the VM Backup Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the VM Backup Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the VM Backup Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the VM Backup Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGNtVmpiM1psY25sZmRtRjFiSFFpQ2lBZ2JH
+        OWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmY21W
+        amIzWmxjbmxmYzJWeWRtbGpaWE5mZG1GMWJIUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0owWm1WNExYSmxZMjkyWlhKNUxYWmhkV3gwSWdvZ0lHeHZZ
+        MkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0FpSkh0aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIz
+        VndMbVY0WVcxd2JHVXViRzlqWVhScGIyNTlJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldV
+        Z1BTQWlKSHRoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaWDBp
+        Q2lBZ2MydDFJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pUZEdGdVpHRnlaQ0lLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZlltRmphM1Z3WDNCdmJHbGplVjkyYlNJZ0ltVjRZVzF3YkdVaUlI
+        c0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUm1aWGd0Y21WamIzWmxjbmt0ZG1G
+        MWJIUXRjRzlzYVdONUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNBaUpIdGhlblZ5
+        WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpYMGlDaUFnY21WamIzWmxj
+        bmxmZG1GMWJIUmZibUZ0WlNBOUlDSWtlMkY2ZFhKbGNtMWZjbVZqYjNabGNubGZjMlZ5ZG1salpY
+        TmZkbUYxYkhRdVpYaGhiWEJzWlM1dVlXMWxmU0lLQ2lBZ2RHbHRaWHB2Ym1VZ1BTQWlWVlJESWdv
+        S0lDQmlZV05yZFhBZ2V3b2dJQ0FnWm5KbGNYVmxibU41SUQwZ0lrUmhhV3g1SWdvZ0lDQWdkR2x0
+        WlNBZ0lDQWdJRDBnSWpJek9qQXdJZ29nSUgwS0NpQWdjbVYwWlc1MGFXOXVYMlJoYVd4NUlIc0tJ
+        Q0FnSUdOdmRXNTBJRDBnTVRBS0lDQjlDZ29nSUhKbGRHVnVkR2x2Ymw5M1pXVnJiSGtnZXdvZ0lD
+        QWdZMjkxYm5RZ0lDQWdQU0EwTWdvZ0lDQWdkMlZsYTJSaGVYTWdQU0JiSWxOMWJtUmhlU0lzSUNK
+        WFpXUnVaWE5rWVhraUxDQWlSbkpwWkdGNUlpd2dJbE5oZEhWeVpHRjVJbDBLSUNCOUNnb2dJSEps
+        ZEdWdWRHbHZibDl0YjI1MGFHeDVJSHNLSUNBZ0lHTnZkVzUwSUNBZ0lEMGdOd29nSUNBZ2QyVmxh
+        MlJoZVhNZ1BTQmJJbE4xYm1SaGVTSXNJQ0pYWldSdVpYTmtZWGtpWFFvZ0lDQWdkMlZsYTNNZ0lD
+        QWdQU0JiSWtacGNuTjBJaXdnSWt4aGMzUWlYUW9nSUgwS0NpQWdjbVYwWlc1MGFXOXVYM2xsWVhK
+        c2VTQjdDaUFnSUNCamIzVnVkQ0FnSUNBOUlEYzNDaUFnSUNCM1pXVnJaR0Y1Y3lBOUlGc2lVM1Z1
+        WkdGNUlsMEtJQ0FnSUhkbFpXdHpJQ0FnSUQwZ1d5Sk1ZWE4wSWwwS0lDQWdJRzF2Ym5Sb2N5QWdJ
+        RDBnV3lKS1lXNTFZWEo1SWwwS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwV1RTQkNZV05yZFhBZ1VHOXNhV05wWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRmphM1Z3WDNCdmJHbGplVjkyYlM1dFlYSnJaRzkzYmc9PQ==

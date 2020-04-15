@@ -1,0 +1,107 @@
+{
+    "azurerm_analysis_services_server": {
+        "status": "HOLD",
+        "subcategory": "Analysis Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_analysis_services_server",
+        "description": "Manages an Analysis Services Server.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the firewall rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The Azure location where the Analysis Services Server exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the Analysis Services Server should be exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "SKU for the Analysis Services Server. Possible values are: `D1`, `B1`, `B2`, `S0`, `S1`, `S2`, `S4`, `S8` and `S9`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_users": {
+                "description": "List of email addresses of admin users.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "querypool_connection_mode": {
+                "description": "Controls how the read-write server is used in the query pool. If this values is set to `All` then read-write servers are also used for queries. Otherwise with `ReadOnly` these servers do not participate in query operations.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backup_blob_container_uri": {
+                "description": "URI and SAS token for a blob container to store backups.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_power_bi_service": {
+                "description": "Indicates if the Power BI service is allowed to access or not.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipv4_firewall_rule": {
+                "description": "One or more `ipv4_firewall_rule` block(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "range_start": {
+                "description": "Start of the firewall rule range as IPv4 address.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "range_end": {
+                "description": "End of the firewall rule range as IPv4 address.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Analysis Services Server."
+            },
+            "server_full_name": {
+                "description": "The full name of the Analysis Services Server."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Analysis Services Server.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Analysis Services Server.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Analysis Services Server.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Analysis Services Server.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

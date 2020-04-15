@@ -1,0 +1,92 @@
+{
+    "azurerm_servicebus_queue_authorization_rule": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_servicebus_queue_authorization_rule",
+        "description": "Manages an Authorization Rule for a ServiceBus Queue.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Authorization Rule. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace_name": {
+                "description": "Specifies the name of the ServiceBus Namespace in which the Queue exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "queue_name": {
+                "description": "Specifies the name of the ServiceBus Queue. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the ServiceBus Namespace exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "listen": {
+                "description": "Does this Authorization Rule have Listen permissions to the ServiceBus Queue? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "send": {
+                "description": "Does this Authorization Rule have Send permissions to the ServiceBus Queue? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "manage": {
+                "description": "Does this Authorization Rule have Manage permissions to the ServiceBus Queue? When this property is `true` - both `listen` and `send` must be too. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Authorization Rule."
+            },
+            "primary_key": {
+                "description": "The Primary Key for the Authorization Rule."
+            },
+            "primary_connection_string": {
+                "description": "The Primary Connection String for the Authorization Rule."
+            },
+            "secondary_key": {
+                "description": "The Secondary Key for the Authorization Rule."
+            },
+            "secondary_connection_string": {
+                "description": "The Secondary Connection String for the Authorization Rule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the ServiceBus Queue Authorization Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the ServiceBus Queue Authorization Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the ServiceBus Queue Authorization Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the ServiceBus Queue Authorization Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+azurerm_servicebus_namespace:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_servicebus_namespace'
+    description: Manages a ServiceBus Namespace.
+    arguments:
+        name:
+            description: Specifies the name of the ServiceBus Namespace resource .
+                Changing this forces a
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: Defines which tier to use. Options are basic, standard or
+                premium.
+            required: true
+            policy: ''
+            notes: ''
+        capacity:
+            description: Specifies the capacity. When `sku` is `Premium`, capacity
+                can be `1`, `2`, `4` or `8`. When `sku` is `Basic` or `Standard`,
+                capacity can be `0` only.
+            required: false
+            policy: ''
+            notes: ''
+        zone_redundant:
+            description: Whether or not this resource is zone redundant. `sku` needs
+                to be `Premium`. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ServiceBus Namespace ID.
+        default_primary_connection_string:
+            description: The primary connection string for the authorization
+        default_secondary_connection_string:
+            description: The secondary connection string for the
+        default_primary_key:
+            description: The primary access key for the authorization rule `RootManageSharedAccessKey`.
+        default_secondary_key:
+            description: The secondary access key for the authorization rule `RootManageSharedAccessKey`.
+    timeouts:
+        create:
+            description: Used when creating the ServiceBus Namespace.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ServiceBus Namespace.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ServiceBus Namespace.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ServiceBus Namespace.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJsY25KaFptOXliUzF6WlhKMmFXTmxZblZ6SWdvZ0lH
+        eHZZMkYwYVc5dUlEMGdJbGRsYzNRZ1JYVnliM0JsSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21W
+        eWJWOXpaWEoyYVdObFluVnpYMjVoYldWemNHRmpaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbVpYaGZjMlZ5ZG1salpXSjFjMTl1WVcxbGMzQmhZ
+        MlVpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVky
+        VmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1
+        aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9n
+        SUhOcmRTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDZ29nSUhSaFozTWdQ
+        U0I3Q2lBZ0lDQnpiM1Z5WTJVZ1BTQWlkR1Z5Y21GbWIzSnRJZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVKMWN5Qk9ZVzFsYzNCaFkyVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWldKMWMxOXVZVzFsYzNCaFkyVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

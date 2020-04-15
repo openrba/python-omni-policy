@@ -1,0 +1,95 @@
+aws_storagegateway_nfs_file_share:
+    status: HOLD
+    subcategory: Storage Gateway
+    layout: aws
+    page_title: 'AWS: aws_storagegateway_nfs_file_share'
+    description: Manages an AWS Storage Gateway NFS File Share
+    arguments:
+        client_list:
+            description: The list of clients that are allowed to access the file gateway.
+                The list must contain either valid IP addresses or valid CIDR blocks.
+                Set to `["0.0.0.0/0"]` to not limit access. Minimum 1 item. Maximum
+                100 items.
+            required: true
+            policy: ''
+            notes: ''
+        gateway_arn:
+            description: Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        location_arn:
+            description: The ARN of the backed storage used for storing file data.
+            required: true
+            policy: ''
+            notes: ''
+        role_arn:
+            description: The ARN of the AWS Identity and Access Management (IAM
+            required: true
+            policy: ''
+            notes: ''
+        default_storage_class:
+            description: 'The default storage class for objects put into an Amazon
+                S3 bucket by the file gateway. Defaults to `S3_STANDARD`. Valid values:
+                `S3_STANDARD`, `S3_STANDARD_IA`, `S3_ONEZONE_IA`.'
+            required: false
+            policy: ''
+            notes: ''
+        guess_mime_type_enabled:
+            description: Boolean value that enables guessing of the MIME type for
+                uploaded objects based on file extensions. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        kms_encrypted:
+            description: Boolean value if `true` to use Amazon S3 server side encryption
+                with your own AWS KMS key, or `false` to use a key managed by Amazon
+                S3. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_arn:
+            description: Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        nfs_file_share_defaults:
+            description: Nested argument with file share default values. More information
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        object_acl:
+            description: Access Control List permission for S3 bucket objects. Defaults
+                to `private`.
+            required: false
+            policy: ''
+            notes: ''
+        read_only:
+            description: Boolean to indicate write status of file share. File share
+                does not accept writes if `true`. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        requester_pays:
+            description: Boolean who pays the cost of the request and the data download
+                from the Amazon S3 bucket. Set this value to `true` if you want the
+                requester to pay instead of the bucket owner. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        squash:
+            description: 'Maps a user to anonymous user. Defaults to `RootSquash`.
+                Valid values: `RootSquash` (only root is mapped to anonymous user),
+                `NoSquash` (no one is mapped to anonymous user), `AllSquash` (everyone
+                is mapped to anonymous user)'
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

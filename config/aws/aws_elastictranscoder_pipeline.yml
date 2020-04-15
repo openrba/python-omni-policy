@@ -1,0 +1,73 @@
+aws_elastictranscoder_pipeline:
+    status: HOLD
+    subcategory: Elastic Transcoder
+    layout: aws
+    page_title: 'AWS: aws_elastictranscoder_pipeline'
+    description: Provides an Elastic Transcoder pipeline resource.
+    arguments:
+        aws_kms_key_arn:
+            description: The AWS Key Management Service (AWS KMS
+            required: false
+            policy: ''
+            notes: ''
+        content_config:
+            description: The ContentConfig object specifies information about the
+                Amazon S3 bucket in which you want Elastic Transcoder to save transcoded
+                files and playlists. (documented below)
+            required: false
+            policy: ''
+            notes: ''
+        content_config_permissions:
+            description: The permissions for the `content_config` object. (documented
+                below)
+            required: false
+            policy: ''
+            notes: ''
+        input_bucket:
+            description: The Amazon S3 bucket in which you saved the media files that
+                you want to transcode and the graphics that you want to use as watermarks.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the pipeline. Maximum 40 characters
+            required: false
+            policy: ''
+            notes: ''
+        notifications:
+            description: The Amazon Simple Notification Service (Amazon SNS
+            required: false
+            policy: ''
+            notes: ''
+        output_bucket:
+            description: The Amazon S3 bucket in which you want Elastic Transcoder
+                to save the transcoded files.
+            required: false
+            policy: ''
+            notes: ''
+        role:
+            description: The IAM Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        thumbnail_config:
+            description: The ThumbnailConfig object specifies information about the
+                Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail
+                files. (documented below)
+            required: false
+            policy: ''
+            notes: ''
+        thumbnail_config_permissions:
+            description: The permissions for the `thumbnail_config` object. (documented
+                below)
+            required: false
+            policy: ''
+            notes: ''
+        progressing:
+            description: topic that you want to notify when Elastic Transcoder has
+                started to process a job in this pipeline.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,24 @@
+aws_api_gateway_documentation_version:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_documentation_version'
+    description: Provides a resource to manage an API Gateway Documentation Version.
+    arguments:
+        version:
+            description: The version identifier of the API documentation snapshot.
+            required: true
+            policy: ''
+            notes: ''
+        rest_api_id:
+            description: The ID of the associated Rest API
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the API documentation version.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

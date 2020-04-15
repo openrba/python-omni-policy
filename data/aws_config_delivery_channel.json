@@ -1,0 +1,47 @@
+{
+    "aws_config_delivery_channel": {
+        "status": "HOLD",
+        "subcategory": "Config",
+        "layout": "aws",
+        "page_title": "AWS: aws_config_delivery_channel",
+        "description": "Provides an AWS Config Delivery Channel.",
+        "arguments": {
+            "name": {
+                "description": "The name of the delivery channel. Defaults to `default`. Changing it recreates the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_bucket_name": {
+                "description": "The name of the S3 bucket used to store the configuration history.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_key_prefix": {
+                "description": "The prefix for the specified S3 bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sns_topic_arn": {
+                "description": "The ARN of the SNS topic that AWS Config delivers notifications to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_delivery_properties": {
+                "description": "Options for how AWS Config delivers configuration snapshots. See below",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the delivery channel."
+            }
+        },
+        "timeouts": {}
+    }
+}

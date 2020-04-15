@@ -1,0 +1,130 @@
+azurerm_data_factory_dataset_sql_server_table:
+    status: HOLD
+    subcategory: Data Factory
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_data_factory_dataset_sql_server_table'
+    description: Manages a SQL Server Table Dataset inside a Azure Data Factory.
+    arguments:
+        name:
+            description: The name of the column.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Data
+                Factory Dataset SQL Server Table. Changing this forces a new resource
+            required: true
+            policy: ''
+            notes: ''
+        data_factory_name:
+            description: The Data Factory name in which to associate the Dataset with.
+                Changing this forces a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        linked_service_name:
+            description: The Data Factory Linked Service name in which to associate
+                the Dataset with.
+            required: true
+            policy: ''
+            notes: ''
+        table_name:
+            description: The table name of the Data Factory Dataset SQL Server Table.
+            required: false
+            policy: ''
+            notes: ''
+        folder:
+            description: The folder that this Dataset is in. If not specified, the
+                Dataset will appear at the root level.
+            required: false
+            policy: ''
+            notes: ''
+        schema_column:
+            description: A `schema_column` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the column.
+            required: false
+            policy: ''
+            notes: ''
+        annotations:
+            description: List of tags that can be used for describing the Data Factory
+                Dataset SQL Server Table.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: A map of parameters to associate with the Data Factory Dataset
+                SQL Server Table.
+            required: false
+            policy: ''
+            notes: ''
+        additional_properties:
+            description: A map of additional properties to associate with the Data
+                Factory Dataset SQL Server Table.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Type of the column. Valid values are `Byte`, `Byte[]`, `Boolean`,
+                `Date`, `DateTime`,`DateTimeOffset`, `Decimal`, `Double`, `Guid`,
+                `Int16`, `Int32`, `Int64`, `Single`, `String`, `TimeSpan`. Please
+                note these values are case sensitive.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Factory SQL Server Table Dataset.
+    timeouts:
+        create:
+            description: Used when creating the Data Factory SQL Server Table Dataset.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Factory SQL Server Table Dataset.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Factory SQL Server Table Dataset.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Factory SQL Server Table Dataset.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        a1lYUmhYMlpoWTNSdmNua2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWkdGMFlWOW1ZV04w
+        YjNKNVgyeHBibXRsWkY5elpYSjJhV05sWDNOeGJGOXpaWEoyWlhJaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb2dJSEpsYzI5MWNt
+        TmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcx
+        d2JHVXVibUZ0WlFvZ0lHUmhkR0ZmWm1GamRHOXllVjl1WVcxbElDQWdQU0JoZW5WeVpYSnRYMlJo
+        ZEdGZlptRmpkRzl5ZVM1bGVHRnRjR3hsTG01aGJXVUtJQ0JqYjI1dVpXTjBhVzl1WDNOMGNtbHVa
+        eUFnSUQwZ0lrbHVkR1ZuY21GMFpXUWdVMlZqZFhKcGRIazlSbUZzYzJVN1JHRjBZU0JUYjNWeVky
+        VTlkR1Z6ZER0SmJtbDBhV0ZzSUVOaGRHRnNiMmM5ZEdWemREdFZjMlZ5SUVsRVBYUmxjM1E3VUdG
+        emMzZHZjbVE5ZEdWemRDSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWkdGMFlWOW1ZV04w
+        YjNKNVgyUmhkR0Z6WlhSZmMzRnNYM05sY25abGNsOTBZV0pzWlNJZ0ltVjRZVzF3YkdVaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVaUNpQWdjbVZ6YjNWeVky
+        VmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhC
+        c1pTNXVZVzFsQ2lBZ1pHRjBZVjltWVdOMGIzSjVYMjVoYldVZ0lDQTlJR0Y2ZFhKbGNtMWZaR0Yw
+        WVY5bVlXTjBiM0o1TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3hwYm10bFpGOXpaWEoyYVdObFgyNWhi
+        V1VnUFNCaGVuVnlaWEp0WDJSaGRHRmZabUZqZEc5eWVWOXNhVzVyWldSZmMyVnlkbWxqWlY5emNX
+        eGZjMlZ5ZG1WeUxtVjRZVzF3YkdVdWJtRnRaUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRVlYUmhJRVpoWTNSdmNua2dVMUZNSUZObGNuWmxjaUJVWVdKc1pTQkVZWFJoYzJWMGN5QmpZ
+        VzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5
+        NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjltWVdOMGIzSjVYMlJoZEdGelpYUmZjM0ZzWDNObGNuWmxjbDkwWVdK
+        c1pTNW9kRzFzTG0xaGNtdGtiM2R1

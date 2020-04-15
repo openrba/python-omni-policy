@@ -1,0 +1,56 @@
+{
+    "aws_lambda_alias": {
+        "status": "HOLD",
+        "subcategory": "Lambda",
+        "layout": "aws",
+        "page_title": "AWS: aws_lambda_alias",
+        "description": "Creates a Lambda function alias.",
+        "arguments": {
+            "name": {
+                "description": "Name for the alias you are creating. Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_]+)`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description of the alias.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "function_name": {
+                "description": "The function ARN of the Lambda function for which you want to create an alias.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "function_version": {
+                "description": "Lambda function version for which you are creating the alias. Pattern: `(\\$LATEST|[0-9]+)`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "routing_config": {
+                "description": "The Lambda alias' route configuration settings. Fields documented below",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "additional_version_weights": {
+                "description": "A map that defines the proportion of events that should be sent to different versions of a lambda function.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The Amazon Resource Name (ARN) identifying your Lambda function alias."
+            },
+            "invoke_arn": {
+                "description": "The ARN to be used for invoking Lambda Function from API Gateway "
+            }
+        },
+        "timeouts": {}
+    }
+}

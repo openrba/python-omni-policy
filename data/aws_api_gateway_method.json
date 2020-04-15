@@ -1,0 +1,73 @@
+{
+    "aws_api_gateway_method": {
+        "status": "HOLD",
+        "subcategory": "API Gateway (REST APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_api_gateway_method",
+        "description": "Provides a HTTP Method for an API Gateway Resource.",
+        "arguments": {
+            "rest_api_id": {
+                "description": "The ID of the associated REST API",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_id": {
+                "description": "The API resource ID",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "http_method": {
+                "description": "The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "authorization": {
+                "description": "The type of authorization used for the method (`NONE`, `CUSTOM`, `AWS_IAM`, `COGNITO_USER_POOLS`)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "authorizer_id": {
+                "description": "The authorizer id to be used when the authorization is `CUSTOM` or `COGNITO_USER_POOLS`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "authorization_scopes": {
+                "description": "The authorization scopes used when the authorization is `COGNITO_USER_POOLS`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "api_key_required": {
+                "description": "Specify if the method requires an API key",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "request_models": {
+                "description": "A map of the API models used for the request's content type",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "request_validator_id": {
+                "description": "The ID of a `aws_api_gateway_request_validator`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "request_parameters": {
+                "description": "A map of request parameters (from the path, query string and headers",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

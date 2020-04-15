@@ -1,0 +1,158 @@
+azurerm_traffic_manager_endpoint:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_traffic_manager_endpoint'
+    description: Manages a Traffic Manager Endpoint.
+    arguments:
+        name:
+            description: The name of the custom header.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        profile_name:
+            description: The name of the Traffic Manager Profile to attach
+            required: true
+            policy: ''
+            notes: ''
+        endpoint_status:
+            description: The status of the Endpoint, can be set to
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: 'The Endpoint type, must be one of:'
+            required: true
+            policy: ''
+            notes: ''
+        target:
+            description: The FQDN DNS name of the target. This argument must be
+            required: false
+            policy: ''
+            notes: ''
+        target_resource_id:
+            description: The resource id of an Azure resource to
+            required: false
+            policy: ''
+            notes: ''
+        weight:
+            description: Specifies how much traffic should be distributed to this
+            required: false
+            policy: ''
+            notes: ''
+        priority:
+            description: Specifies the priority of this Endpoint, this must be
+            required: false
+            policy: ''
+            notes: ''
+        endpoint_location:
+            description: Specifies the Azure location of the Endpoint,
+            required: false
+            policy: ''
+            notes: ''
+        min_child_endpoints:
+            description: This argument specifies the minimum number
+            required: false
+            policy: ''
+            notes: ''
+        geo_mappings:
+            description: A list of Geographic Regions used to distribute traffic,
+                such as `WORLD`, `UK` or `DE`. The same location can't be specified
+                in two endpoints. [See the Geographic Hierarchies documentation for
+                more information](https://docs.microsoft.com/en-us/rest/api/trafficmanager/geographichierarchies/getdefault).
+            required: false
+            policy: ''
+            notes: ''
+        custom_header:
+            description: One or more `custom_header` blocks as defined below
+            required: false
+            policy: ''
+            notes: ''
+        subnet:
+            description: One or more `subnet` blocks as defined below
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The value of custom header. Applicable for Http and Https
+                protocol.
+            required: true
+            policy: ''
+            notes: ''
+        first:
+            description: The First IP....
+            required: true
+            policy: ''
+            notes: ''
+        last:
+            description: The Last IP...
+            required: false
+            policy: ''
+            notes: ''
+        scope:
+            description: The Scope...
+            required: false
+            policy: ''
+            notes: One and only one of either `last` (in case of IP range) or `scope`
+                (in case of CIDR) must be specified.
+    attributes:
+        id:
+            description: The ID of the Traffic Manager Endpoint.
+    timeouts:
+        create:
+            description: Used when creating the Traffic Manager Endpoint.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Traffic Manager Endpoint.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Traffic Manager Endpoint.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Traffic Manager Endpoint.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKeVlXNWtiMjFmYVdRaUlDSnpaWEoyWlhJaUlIc0tJQ0JyWldWd1pYSnpJ
+        RDBnZXdvZ0lDQWdZWHBwWDJsa0lEMGdNUW9nSUgwS0NpQWdZbmwwWlY5c1pXNW5kR2dnUFNBNENu
+        MEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0lpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdJQ0FnSUQwZ0luUnlZV1ptYVdOdFlXNWhaMlZ5Wlc1a2NHOXBiblJV
+        WlhOMElnb2dJR3h2WTJGMGFXOXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhl
+        blZ5WlhKdFgzUnlZV1ptYVdOZmJXRnVZV2RsY2w5d2NtOW1hV3hsSWlBaVpYaGhiWEJzWlNJZ2V3
+        b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCeVlXNWtiMjFmYVdRdWMyVnlkbVZ5TG1o
+        bGVBb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5s
+        WDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvS0lDQjBjbUZtWm1salgzSnZkWFJwYm1kZmJXVjBh
+        RzlrSUQwZ0lsZGxhV2RvZEdWa0lnb0tJQ0JrYm5OZlkyOXVabWxuSUhzS0lDQWdJSEpsYkdGMGFY
+        WmxYMjVoYldVZ1BTQnlZVzVrYjIxZmFXUXVjMlZ5ZG1WeUxtaGxlQW9nSUNBZ2RIUnNJQ0FnSUNB
+        Z0lDQWdJQ0E5SURFd01Bb2dJSDBLQ2lBZ2JXOXVhWFJ2Y2w5amIyNW1hV2NnZXdvZ0lDQWdjSEp2
+        ZEc5amIyd2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKb2RIUndJZ29nSUNBZ2NHOXlk
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJRGd3Q2lBZ0lDQndZWFJvSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWk4aUNpQWdJQ0JwYm5SbGNuWmhiRjlwYmw5
+        elpXTnZibVJ6SUNBZ0lDQWdJQ0FnSUQwZ016QUtJQ0FnSUhScGJXVnZkWFJmYVc1ZmMyVmpiMjVr
+        Y3lBZ0lDQWdJQ0FnSUNBZ1BTQTVDaUFnSUNCMGIyeGxjbUYwWldSZmJuVnRZbVZ5WDI5bVgyWmhh
+        V3gxY21WeklEMGdNd29nSUgwS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUdWdWRtbHliMjV0Wlc1MElE
+        MGdJbEJ5YjJSMVkzUnBiMjRpQ2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjkwY21G
+        bVptbGpYMjFoYm1GblpYSmZaVzVrY0c5cGJuUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJSEpoYm1SdmJWOXBaQzV6WlhKMlpYSXVhR1Y0Q2lBZ2NtVnpi
+        M1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpY
+        aGhiWEJzWlM1dVlXMWxDaUFnY0hKdlptbHNaVjl1WVcxbElDQWdJQ0FnSUNBOUlHRjZkWEpsY20x
+        ZmRISmhabVpwWTE5dFlXNWhaMlZ5WDNCeWIyWnBiR1V1WlhoaGJYQnNaUzV1WVcxbENpQWdkR0Z5
+        WjJWMElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpYSnlZV1p2Y20wdWFXOGlDaUFnZEhsd1pTQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlSFJsY201aGJFVnVaSEJ2YVc1MGN5SUtJQ0IzWldsbmFI
+        UWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ01UQXdDbjBL
+    import: !!binary |
+        Q2dwVWNtRm1abWxqSUUxaGJtRm5aWElnUlc1a2NHOXBiblJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRISmhabVpwWTE5dFlXNWhaMlZ5WDJWdVpIQnZhVzUwTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

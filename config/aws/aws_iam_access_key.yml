@@ -1,0 +1,40 @@
+aws_iam_access_key:
+    status: HOLD
+    subcategory: IAM
+    layout: aws
+    page_title: 'AWS: aws_iam_access_key'
+    description: Provides an IAM access key. This is a set of credentials that allow
+        API requests to be made as an IAM user.
+    arguments:
+        user:
+            description: The IAM user to associate with this access key.
+            required: true
+            policy: ''
+            notes: ''
+        pgp_key:
+            description: Either a base-64 encoded PGP public key, or a
+            required: false
+            policy: ''
+            notes: ''
+        status:
+            description: The access key status to apply. Defaults to `Active`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The access key ID.
+        user:
+            description: The IAM user associated with this access key.
+        key_fingerprint:
+            description: The fingerprint of the PGP key used to encrypt
+        secret:
+            description: The secret access key. Note that this will be written
+        encrypted_secret:
+            description: The encrypted secret, base64 encoded, if `pgp_key` was specified.
+        ses_smtp_password:
+            description: '**DEPRECATED** The secret access key converted into an SES
+                SMTP'
+        ses_smtp_password_v4:
+            description: The secret access key converted into an SES SMTP
+    timeouts: {}

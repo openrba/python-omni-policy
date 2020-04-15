@@ -1,0 +1,68 @@
+{
+    "azurerm_policy_remediation": {
+        "status": "HOLD",
+        "subcategory": "Policy",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_policy_remediation",
+        "description": "Manages an Azure Policy Remediation.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Policy Remediation. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "The Scope at which the Policy Remediation should be applied. Changing this forces a new resource to be created. A scope must be a Resource ID out of one of the following list:",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_assignment_id": {
+                "description": "The resource ID of the policy assignment that should be remediated.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_definition_reference_id": {
+                "description": "The policy definition reference ID of the individual definition that should be remediated. Required when the policy assignment being remediated assigns a policy set definition.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "location_filters": {
+                "description": "A list of the resource locations that will be remediated.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Policy Remediation."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Policy Remediation.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Policy Remediation.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Policy Remediation.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Policy Remediation.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

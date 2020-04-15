@@ -1,0 +1,74 @@
+{
+    "azurerm_automation_variable_int": {
+        "status": "HOLD",
+        "subcategory": "Automation",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_automation_variable_int",
+        "description": "Manages a integer variable in Azure Automation.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Automation Variable. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Automation Variable. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_account_name": {
+                "description": "The name of the automation account in which the Variable is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the Automation Variable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encrypted": {
+                "description": "Specifies if the Automation Variable is encrypted. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The value of the Automation Variable as a `integer`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Automation Variable."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Automation Int Variable.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Automation Int Variable.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Automation Int Variable.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Automation Int Variable.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

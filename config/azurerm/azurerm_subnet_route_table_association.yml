@@ -1,0 +1,78 @@
+azurerm_subnet_route_table_association:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_subnet_route_table_association'
+    description: Associates a [Route Table](route_table.html) with a [Subnet](subnet.html)
+        within a [Virtual Network](virtual_network.html).
+    arguments:
+        route_table_id:
+            description: The ID of the Route Table which should be associated with
+                the Subnet. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the Subnet. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Subnet.
+    timeouts:
+        create:
+            description: Used when creating the Subnet Route Table Association.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Subnet Route Table Association.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Subnet Route Table Association.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Subnet Route Table Association.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMakF2TVRZaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbVp5YjI1MFpXNWtJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0IyYVhKMGRXRnNYMjVs
+        ZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lqRXdMakF1TWk0d0x6
+        STBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5eWIzVjBaVjkwWVdKc1pTSWdJbVY0WVcx
+        d2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbTkx
+        ZEdWMFlXSnNaU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXla
+        WE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZloz
+        SnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1
+        dVlXMWxDZ29nSUhKdmRYUmxJSHNLSUNBZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaVpYaGhiWEJzWlNJS0lDQWdJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUNBZ1BTQWlN
+        VEF1TVRBd0xqQXVNQzh4TkNJS0lDQWdJRzVsZUhSZmFHOXdYM1I1Y0dVZ0lDQWdJQ0FnSUNBZ1BT
+        QWlWbWx5ZEhWaGJFRndjR3hwWVc1alpTSUtJQ0FnSUc1bGVIUmZhRzl3WDJsdVgybHdYMkZrWkhK
+        bGMzTWdQU0FpTVRBdU1UQXVNUzR4SWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        YzNWaWJtVjBYM0p2ZFhSbFgzUmhZbXhsWDJGemMyOWphV0YwYVc5dUlpQWlaWGhoYlhCc1pTSWdl
+        d29nSUhOMVltNWxkRjlwWkNBZ0lDQWdJRDBnWVhwMWNtVnliVjl6ZFdKdVpYUXVaWGhoYlhCc1pT
+        NXBaQW9nSUhKdmRYUmxYM1JoWW14bFgybGtJRDBnWVhwMWNtVnliVjl5YjNWMFpWOTBZV0pzWlM1
+        bGVHRnRjR3hsTG1sa0NuMEs=
+    import: !!binary |
+        Q2dwVGRXSnVaWFFnVW05MWRHVWdWR0ZpYkdVZ1FYTnpiMk5wWVhScGIyNXpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUNCdlppQjBhR1VnVTNWaWJt
+        VjBMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzVmlibVYwWDNKdmRYUmxYM1JoWW14bFgyRnpjMjlqYVdGMGFXOXVMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

@@ -1,0 +1,29 @@
+{
+    "aws_cloudwatch_log_resource_policy": {
+        "status": "HOLD",
+        "subcategory": "CloudWatch",
+        "layout": "aws",
+        "page_title": "AWS: aws_cloudwatch_log_resource_policy",
+        "description": "Provides a resource to manage a CloudWatch log resource policy",
+        "arguments": {
+            "policy_document": {
+                "description": "Details of the resource policy, including the identity of the principal that is enabled to put logs to this account. This is formatted as a JSON string. Maximum length of 5120 characters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_name": {
+                "description": "Name of the resource policy.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the CloudWatch log resource policy"
+            }
+        },
+        "timeouts": {}
+    }
+}

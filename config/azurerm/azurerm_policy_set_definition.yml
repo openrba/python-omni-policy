@@ -1,0 +1,105 @@
+azurerm_policy_set_definition:
+    status: HOLD
+    subcategory: Policy
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_policy_set_definition'
+    description: Manages a policy set definition.
+    arguments:
+        name:
+            description: The name of the policy set definition. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        policy_type:
+            description: The policy set type. Possible values are `BuiltIn` or `Custom`.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name of the policy set definition.
+            required: true
+            policy: ''
+            notes: ''
+        policy_definitions:
+            description: The policy definitions for the policy set definition. This
+                is a json object representing the bundled policy definitions.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the policy set definition.
+            required: false
+            policy: ''
+            notes: ''
+        management_group_id:
+            description: The ID of the Management Group where this policy should be
+                defined. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: The metadata for the policy set definition. This is a json
+                object representing additional metadata that should be stored with
+                the policy definition.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: Parameters for the policy set definition. This field is a
+                json object that allows you to parameterize your policy definition.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Policy Set Definition.
+    timeouts:
+        create:
+            description: Used when creating the Policy Set Definition.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Policy Set Definition.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Policy Set Definition.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Policy Set Definition.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNHOXNhV041WDNObGRGOWtaV1pwYm1sMGFXOXVJaUFpWlhoaGJY
+        QnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBVRzlzYVdONVUyVjBJZ29nSUhC
+        dmJHbGplVjkwZVhCbElDQTlJQ0pEZFhOMGIyMGlDaUFnWkdsemNHeGhlVjl1WVcxbElEMGdJbFJs
+        YzNRZ1VHOXNhV041SUZObGRDSUtDaUFnY0dGeVlXMWxkR1Z5Y3lBOUlEdzhVRUZTUVUxRlZFVlNV
+        d29nSUNBZ2V3b2dJQ0FnSUNBZ0lDSmhiR3h2ZDJWa1RHOWpZWFJwYjI1eklqb2dld29nSUNBZ0lD
+        QWdJQ0FnSUNBaWRIbHdaU0k2SUNKQmNuSmhlU0lzQ2lBZ0lDQWdJQ0FnSUNBZ0lDSnRaWFJoWkdG
+        MFlTSTZJSHNLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0prWlhOamNtbHdkR2x2YmlJNklDSlVhR1Vn
+        YkdsemRDQnZaaUJoYkd4dmQyVmtJR3h2WTJGMGFXOXVjeUJtYjNJZ2NtVnpiM1Z5WTJWekxpSXND
+        aUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWlaR2x6Y0d4aGVVNWhiV1VpT2lBaVFXeHNiM2RsWkNCc2Iy
+        TmhkR2x2Ym5NaUxBb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0luTjBjbTl1WjFSNWNHVWlPaUFpYkc5
+        allYUnBiMjRpQ2lBZ0lDQWdJQ0FnSUNBZ0lIMEtJQ0FnSUNBZ0lDQjlDaUFnSUNCOUNsQkJVa0ZO
+        UlZSRlVsTUtDaUFnY0c5c2FXTjVYMlJsWm1sdWFYUnBiMjV6SUQwZ1BEeFFUMHhKUTFsZlJFVkdT
+        VTVKVkVsUFRsTUtJQ0FnSUZzS0lDQWdJQ0FnSUNCN0NpQWdJQ0FnSUNBZ0lDQWdJQ0p3WVhKaGJX
+        VjBaWEp6SWpvZ2V3b2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lteHBjM1JQWmtGc2JHOTNaV1JNYjJO
+        aGRHbHZibk1pT2lCN0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJblpoYkhWbElqb2dJbHR3
+        WVhKaGJXVjBaWEp6S0NkaGJHeHZkMlZrVEc5allYUnBiMjV6SnlsZElnb2dJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ2ZRb2dJQ0FnSUNBZ0lDQWdJQ0I5TEFvZ0lDQWdJQ0FnSUNBZ0lDQWljRzlzYVdONVJH
+        Vm1hVzVwZEdsdmJrbGtJam9nSWk5d2NtOTJhV1JsY25NdlRXbGpjbTl6YjJaMExrRjFkR2h2Y21s
+        NllYUnBiMjR2Y0c5c2FXTjVSR1ZtYVc1cGRHbHZibk12WlRjMk5XSTFaR1V0TVRJeU5TMDBZbUV6
+        TFdKa05UWXRNV0ZqTmpZNU5XRm1PVGc0SWdvZ0lDQWdJQ0FnSUgwS0lDQWdJRjBLVUU5TVNVTlpY
+        MFJGUmtsT1NWUkpUMDVUQ24wSw==
+    import: !!binary |
+        Q2dwUWIyeHBZM2tnVTJWMElFUmxabWx1YVhScGIyNXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdVbVZ6YjNWeVkyVWdTVVFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXNhV041WDNObGRGOWtaV1pwYm1sMGFXOXVMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

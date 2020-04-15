@@ -1,0 +1,36 @@
+aws_glue_catalog_database:
+    status: HOLD
+    subcategory: Glue
+    layout: aws
+    page_title: 'AWS: aws_glue_catalog_database'
+    description: Provides a Glue Catalog Database.
+    arguments:
+        name:
+            description: The name of the database.
+            required: true
+            policy: ''
+            notes: ''
+        catalog_id:
+            description: ID of the Glue Catalog to create the database in. If omitted,
+                this defaults to the AWS Account ID.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the database.
+            required: false
+            policy: ''
+            notes: ''
+        location_uri:
+            description: The location of the database (for example, an HDFS path).
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: A list of key-value pairs that define parameters and properties
+                of the database.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,60 @@
+aws_appmesh_virtual_router:
+    status: HOLD
+    subcategory: AppMesh
+    layout: aws
+    page_title: 'AWS: aws_appmesh_virtual_router'
+    description: Provides an AWS App Mesh virtual router resource.
+    arguments:
+        name:
+            description: The name to use for the virtual router.
+            required: true
+            policy: ''
+            notes: ''
+        mesh_name:
+            description: The name of the service mesh in which to create the virtual
+                router.
+            required: true
+            policy: ''
+            notes: ''
+        spec:
+            description: The virtual router specification to apply.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        listener:
+            description: The listeners that the virtual router is expected to receive
+                inbound traffic from.
+            required: true
+            policy: ''
+            notes: ''
+        port_mapping:
+            description: The port mapping information for the listener.
+            required: true
+            policy: ''
+            notes: ''
+        port:
+            description: The port used for the port mapping.
+            required: true
+            policy: ''
+            notes: ''
+        protocol:
+            description: The protocol used for the port mapping. Valid values are
+                `http` and `tcp`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the virtual router.
+        arn:
+            description: The ARN of the virtual router.
+        created_date:
+            description: The creation date of the virtual router.
+        last_updated_date:
+            description: The last update date of the virtual router.
+    timeouts: {}

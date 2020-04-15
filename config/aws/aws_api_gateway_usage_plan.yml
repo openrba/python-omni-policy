@@ -1,0 +1,26 @@
+aws_api_gateway_usage_plan:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_usage_plan'
+    description: Provides an API Gateway Usage Plan.
+    arguments: {}
+    attributes:
+        id:
+            description: The ID of the API resource
+        name:
+            description: The name of the usage plan.
+        description:
+            description: The description of a usage plan.
+        api_stages:
+            description: The associated API stages of the usage plan.
+        quota_settings:
+            description: The quota of the usage plan.
+        throttle_settings:
+            description: The throttling limits of the usage plan.
+        product_code:
+            description: The AWS Markeplace product identifier to associate with the
+                usage plan as a SaaS product on AWS Marketplace.
+        arn:
+            description: Amazon Resource Name (ARN)
+    timeouts: {}

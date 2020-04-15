@@ -1,0 +1,248 @@
+{
+    "aws_iot_topic_rule": {
+        "status": "HOLD",
+        "subcategory": "IoT",
+        "layout": "aws",
+        "page_title": "AWS: aws_iot_topic_rule",
+        "description": "Creates and manages an AWS IoT topic rule",
+        "arguments": {
+            "name": {
+                "description": "The name of the rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the rule.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Specifies whether the rule is enabled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sql": {
+                "description": "The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_version": {
+                "description": "The version of the SQL rules engine to use when evaluating the rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "alarm_name": {
+                "description": "The CloudWatch alarm name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_arn": {
+                "description": "The ARN of the IAM role that grants access.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "state_reason": {
+                "description": "The reason for the alarm change.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "state_value": {
+                "description": "The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_name": {
+                "description": "The CloudWatch metric name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_namespace": {
+                "description": "The CloudWatch metric namespace name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_timestamp": {
+                "description": "An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_unit": {
+                "description": "The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_value": {
+                "description": "The CloudWatch metric value.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "hash_key_field": {
+                "description": "The hash key name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "hash_key_type": {
+                "description": "The hash key type. Valid values are \"STRING\" or \"NUMBER\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hash_key_value": {
+                "description": "The hash key value.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "payload_field": {
+                "description": "The action payload.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "range_key_field": {
+                "description": "The range key name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "range_key_type": {
+                "description": "The range key type. Valid values are \"STRING\" or \"NUMBER\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "range_key_value": {
+                "description": "The range key value.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "table_name": {
+                "description": "The name of the DynamoDB table.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint": {
+                "description": "The endpoint of your Elasticsearch domain.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "The unique identifier for the document you are storing.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "index": {
+                "description": "The Elasticsearch index where you want to store your data.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of document you are storing.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "delivery_stream_name": {
+                "description": "The delivery stream name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "separator": {
+                "description": "A character separator that is used to separate records written to the Firehose stream. Valid values are: '\\n' (newline), '\\t' (tab), '\\r\\n' (Windows newline), ',' (comma).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "partition_key": {
+                "description": "The partition key.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "stream_name": {
+                "description": "The name of the Amazon Kinesis stream.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "function_arn": {
+                "description": "The ARN of the Lambda function.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "topic": {
+                "description": "The name of the MQTT topic the message should be republished to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket_name": {
+                "description": "The Amazon S3 bucket name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "The object key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "message_format": {
+                "description": "The message format of the message to publish. Accepted values are \"JSON\" and \"RAW\".",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_arn": {
+                "description": "The ARN of the SNS topic.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "queue_url": {
+                "description": "The URL of the Amazon SQS queue.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "use_base64": {
+                "description": "Specifies whether to use Base64 encoding.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the topic rule"
+            },
+            "arn": {
+                "description": "The ARN of the topic rule"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "azurerm_api_management_openid_connect_provider": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_openid_connect_provider",
+        "description": "Manages an OpenID Connect Provider within a API Management Service.",
+        "arguments": {
+            "name": {
+                "description": "the Name of the OpenID Connect Provider which should be created within the API Management Service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_management_name": {
+                "description": "The name of the API Management Service in which this OpenID Connect Provider should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group where the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_id": {
+                "description": "The Client ID used for the Client Application.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_secret": {
+                "description": "The Client Secret used for the Client Application.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "A user-friendly name for this OpenID Connect Provider.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata_endpoint": {
+                "description": "The URI of the Metadata endpoint.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of this OpenID Connect Provider.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management OpenID Connect Provider."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management OpenID Connect Provider.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management OpenID Connect Provider.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management OpenID Connect Provider.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management OpenID Connect Provider.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

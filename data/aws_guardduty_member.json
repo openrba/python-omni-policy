@@ -1,0 +1,56 @@
+{
+    "aws_guardduty_member": {
+        "status": "HOLD",
+        "subcategory": "GuardDuty",
+        "layout": "aws",
+        "page_title": "AWS: aws_guardduty_member",
+        "description": "Provides a resource to manage a GuardDuty member",
+        "arguments": {
+            "account_id": {
+                "description": "AWS account ID for member account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "detector_id": {
+                "description": "The detector ID of the GuardDuty account where you want to create member accounts.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "email": {
+                "description": "Email address for member account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "invite": {
+                "description": "Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the Terraform state value is `true` based on a `relationship_status` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "invitation_message": {
+                "description": "Message for invitation.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disable_email_notification": {
+                "description": "Boolean whether an email notification is sent to the accounts. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the GuardDuty member"
+            },
+            "relationship_status": {
+                "description": "The status of the relationship between the member account and its master account. More information can be found in [Amazon GuardDuty API Reference](https://docs.aws.amazon.com/guardduty/latest/ug/get-members.html)."
+            }
+        },
+        "timeouts": {}
+    }
+}

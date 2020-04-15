@@ -1,0 +1,71 @@
+{
+    "azurerm_log_analytics_linked_service": {
+        "status": "HOLD",
+        "subcategory": "Log Analytics",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_log_analytics_linked_service",
+        "description": "Manages a Log Analytics (formally Operational Insights) Linked Service.",
+        "arguments": {
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Log Analytics Linked Service is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "workspace_name": {
+                "description": "Name of the Log Analytics Workspace that will contain the linkedServices resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "linked_service_name": {
+                "description": "Name of the type of linkedServices resource to connect to the Log Analytics Workspace specified in `workspace_name`. Currently it defaults to and only supports `automation` as a value. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_id": {
+                "description": "The ID of the Resource that will be linked to the workspace. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Log Analytics Linked Service ID."
+            },
+            "name": {
+                "description": "The automatically generated name of the Linked Service. This cannot be specified. The format is always `<workspace_name>/<linked_service_name>` e.g. `workspace1/Automation`"
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Log Analytics Workspace.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Log Analytics Workspace.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Log Analytics Workspace.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Log Analytics Workspace.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

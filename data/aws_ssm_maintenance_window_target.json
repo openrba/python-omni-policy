@@ -1,0 +1,53 @@
+{
+    "aws_ssm_maintenance_window_target": {
+        "status": "HOLD",
+        "subcategory": "SSM",
+        "layout": "aws",
+        "page_title": "AWS: aws_ssm_maintenance_window_target",
+        "description": "Provides an SSM Maintenance Window Target resource",
+        "arguments": {
+            "window_id": {
+                "description": "The Id of the maintenance window to register the target with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the maintenance window target.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the maintenance window target.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_type": {
+                "description": "The type of target being registered with the Maintenance Window. Possible values `INSTANCE`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "targets": {
+                "description": "The targets (either instances or tags). Instances are specified using Key=InstanceIds,Values=InstanceId1,InstanceId2. Tags are specified using Key=tag name,Values=tag value.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "owner_information": {
+                "description": "User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the maintenance window target."
+            }
+        },
+        "timeouts": {}
+    }
+}

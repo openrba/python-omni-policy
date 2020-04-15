@@ -1,0 +1,71 @@
+{
+    "azurerm_automation_job_schedule": {
+        "status": "HOLD",
+        "subcategory": "Automation",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_automation_job_schedule",
+        "description": "Links an Automation Runbook and Schedule.",
+        "arguments": {
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Job Schedule is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_account_name": {
+                "description": "The name of the Automation Account in which the Job Schedule is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "runbook_name": {
+                "description": "The name of a Runbook to link to a Schedule. It needs to be in the same Automation Account as the Schedule and Job Schedule. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "A map of key/value pairs corresponding to the arguments that can be passed to the Runbook. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": "The parameter keys/names must strictly be in lowercase, even if this is not the case in the runbook. This is due to a limitation in Azure Automation where the parameter names are normalized. The values specified don't have this limitation."
+            },
+            "run_on": {
+                "description": "Name of a Hybrid Worker Group the Runbook will be executed on. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Automation Job Schedule."
+            },
+            "job_schedule_id": {
+                "description": "The UUID identifying the Automation Job Schedule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Automation Job Schedule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Automation Job Schedule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Automation Job Schedule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Automation Job Schedule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

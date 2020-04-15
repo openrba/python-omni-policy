@@ -1,0 +1,81 @@
+azurerm_dns_ptr_record:
+    status: HOLD
+    subcategory: DNS
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_dns_ptr_record'
+    description: Manages a DNS PTR Record.
+    arguments:
+        name:
+            description: The name of the DNS PTR Record.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the resource group where the resource exists. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        zone_name:
+            description: Specifies the DNS Zone where the DNS Zone (parent resource
+            required: true
+            policy: ''
+            notes: ''
+        ttl:
+            description: The Time To Live (TTL
+            required: true
+            policy: ''
+            notes: ''
+        records:
+            description: List of Fully Qualified Domain Names.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The DNS PTR Record ID.
+        fqdn:
+            description: The FQDN of the DNS PTR Record.
+    timeouts:
+        create:
+            description: Used when creating the DNS PTR Record.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the DNS PTR Record.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the DNS PTR Record.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the DNS PTR Record.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFVtVnpiM1Z5WTJWSGNt
+        OTFjREVpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmWkc1elgzcHZibVVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKdGVXUnZiV0ZwYmk1amIyMGlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZi
+        bUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENu
+        MEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMlJ1YzE5d2RISmZjbVZqYjNKa0lpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1Z6ZENJS0lDQjZiMjVs
+        WDI1aGJXVWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjlrYm5OZmVtOXVaUzVsZUdGdGNHeGxM
+        bTVoYldVS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRY
+        SmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCMGRHd2dJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdNekF3Q2lBZ2NtVmpiM0prY3lBZ0lDQWdJQ0FnSUNBZ0lDQTlJRnNpZVc5MWNtUnZiV0Zw
+        Ymk1amIyMGlYUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwUVZGSWdjbVZqYjNKa2N5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnla
+        WE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHNXpYM0IwY2w5eVpXTnZjbVF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

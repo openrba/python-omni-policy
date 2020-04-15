@@ -1,0 +1,98 @@
+{
+    "azurerm_kusto_eventhub_data_connection": {
+        "status": "HOLD",
+        "subcategory": "Data Explorer",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_kusto_eventhub_data_connection",
+        "description": "Manages Kusto / Data Explorer EventHub Data Connection",
+        "arguments": {
+            "name": {
+                "description": "The name of the Kusto EventHub Data Connection to create. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The location where the Kusto Database should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the Resource Group where the Kusto Database should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_name": {
+                "description": "Specifies the name of the Kusto Cluster this data connection will be added to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "database_name": {
+                "description": "Specifies the name of the Kusto Database this data connection will be added to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "eventhub_id": {
+                "description": "Specifies the resource id of the EventHub this data connection will use for ingestion. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "consumer_group": {
+                "description": "Specifies the EventHub consumer group this data connection will use for ingestion. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "table_name": {
+                "description": "Specifies the target table name used for the message ingestion. Table must exist before resource is created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mapping_rule_name": {
+                "description": "Specifies the mapping rule used for the message ingestion. Mapping rule must exist before resource is created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "data_format": {
+                "description": "Specifies the data format of the EventHub messages. Allowed values: `AVRO`, `CSV`, `JSON`, `MULTIJSON`, `PSV`, `RAW`, `SCSV`, `SINGLEJSON`, `SOHSV`, `TSV` and `TXT`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Kusto EventHub Data Connection."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Kusto EventHub Data Connection.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Kusto EventHub Data Connection.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Kusto EventHub Data Connection.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Kusto EventHub Data Connection.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

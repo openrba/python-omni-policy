@@ -1,0 +1,35 @@
+aws_apigatewayv2_model:
+    status: HOLD
+    subcategory: API Gateway v2 (WebSocket and HTTP APIs)
+    layout: aws
+    page_title: 'AWS: aws_apigatewayv2_model'
+    description: Manages an Amazon API Gateway Version 2 model.
+    arguments:
+        api_id:
+            description: The API identifier.
+            required: true
+            policy: ''
+            notes: ''
+        content_type:
+            description: ' The content-type for the model, for example, `application/json`.'
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the model. Must be alphanumeric.
+            required: true
+            policy: ''
+            notes: ''
+        schema:
+            description: The schema for the model. This should be a [JSON schema draft
+                4](https://tools.ietf.org/html/draft-zyp-json-schema-04
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the model.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,37 @@
+{
+    "aws_organizations_policy": {
+        "status": "HOLD",
+        "subcategory": "Organizations",
+        "layout": "aws",
+        "page_title": "AWS: aws_organizations_policy",
+        "description": "Provides a resource to manage an AWS Organizations policy.",
+        "arguments": {
+            "content": {
+                "description": "The policy content to add to the new policy. For example, if you create a [service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html), this string must be JSON text that specifies the permissions that admins in attached accounts can delegate to their users, groups, and roles. For more information about the SCP syntax, see the [Service Control Policy Syntax documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_scp-syntax.html",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The friendly name to assign to the policy.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description to assign to the policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of policy to create. Currently, the only valid values are `SERVICE_CONTROL_POLICY` (SCP",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

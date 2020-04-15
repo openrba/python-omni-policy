@@ -1,0 +1,92 @@
+{
+    "azurerm_virtual_hub": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_virtual_hub",
+        "description": "Manages a Virtual Hub within a Virtual WAN.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Virtual Hub. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the name of the Resource Group where the Virtual Hub should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the Virtual Hub should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "address_prefix": {
+                "description": "The Address Prefix which should be used for this Virtual Hub.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_wan_id": {
+                "description": "The ID of a Virtual WAN within which the Virtual Hub should be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "route": {
+                "description": "One or more `route` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the Virtual Hub.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "address_prefixes": {
+                "description": "A list of Address Prefixes.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "next_hop_ip_address": {
+                "description": "The IP Address that Packets should be forwarded to as the Next Hop.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Virtual Hub."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Virtual Hub.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Virtual Hub.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Virtual Hub.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Virtual Hub.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "azurerm_batch_certificate": {
+        "status": "HOLD",
+        "subcategory": "Batch",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_batch_certificate",
+        "description": "Manages a certificate in an Azure Batch account.",
+        "arguments": {
+            "account_name": {
+                "description": "Specifies the name of the Batch account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Batch account. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate": {
+                "description": "The base64-encoded contents of the certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "format": {
+                "description": "The format of the certificate. Possible values are `Cer` or `Pfx`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "password": {
+                "description": "The password to access the certificate's private key. This must and can only be specified when `format` is `Pfx`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "thumbprint": {
+                "description": "The thumbprint of the certificate. At this time the only supported value is 'SHA1'.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Batch Certificate."
+            },
+            "name": {
+                "description": "The generated name of the certificate."
+            },
+            "public_data": {
+                "description": "The public key of the certificate."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Batch Certificate.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Batch Certificate.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Batch Certificate.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Batch Certificate.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

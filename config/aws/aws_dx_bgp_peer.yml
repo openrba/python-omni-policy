@@ -1,0 +1,55 @@
+aws_dx_bgp_peer:
+    status: HOLD
+    subcategory: Direct Connect
+    layout: aws
+    page_title: 'AWS: aws_dx_bgp_peer'
+    description: Provides a Direct Connect BGP peer resource.
+    arguments:
+        address_family:
+            description: The address family for the BGP peer. `ipv4 ` or `ipv6`.
+            required: true
+            policy: ''
+            notes: ''
+        bgp_asn:
+            description: The autonomous system (AS
+            required: true
+            policy: ''
+            notes: ''
+        virtual_interface_id:
+            description: The ID of the Direct Connect virtual interface on which to
+                create the BGP peer.
+            required: true
+            policy: ''
+            notes: ''
+        amazon_address:
+            description: The IPv4 CIDR address to use to send traffic to Amazon.
+            required: false
+            policy: ''
+            notes: ''
+        bgp_auth_key:
+            description: The authentication key for BGP configuration.
+            required: false
+            policy: ''
+            notes: ''
+        customer_address:
+            description: The IPv4 CIDR destination address to which Amazon should
+                send traffic.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the BGP peer resource.
+        bgp_status:
+            description: The Up/Down state of the BGP peer.
+        bgp_peer_id:
+            description: The ID of the BGP peer.
+        aws_device:
+            description: The Direct Connect endpoint on which the BGP peer terminates.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaSGhmWW1kd1gzQmxaWElpSUNKd1pXVnlJaUI3Q2lBZ2RtbHlk
+        SFZoYkY5cGJuUmxjbVpoWTJWZmFXUWdQU0FpSkh0aGQzTmZaSGhmY0hKcGRtRjBaVjkyYVhKMGRX
+        RnNYMmx1ZEdWeVptRmpaUzVtYjI4dWFXUjlJZ29nSUdGa1pISmxjM05mWm1GdGFXeDVJQ0FnSUNB
+        Z0lEMGdJbWx3ZGpZaUNpQWdZbWR3WDJGemJpQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBMk5UTTFNUXA5
+        Q2c9PQ==

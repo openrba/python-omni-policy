@@ -1,0 +1,59 @@
+{
+    "aws_rds_cluster_endpoint": {
+        "status": "HOLD",
+        "subcategory": "RDS",
+        "layout": "aws",
+        "page_title": "AWS: aws_rds_cluster_endpoint",
+        "description": "Manages a RDS Aurora Cluster Endpoint",
+        "arguments": {
+            "cluster_identifier": {
+                "description": "The cluster identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_endpoint_identifier": {
+                "description": "The identifier to use for the new endpoint. This parameter is stored as a lowercase string.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_endpoint_type": {
+                "description": "The type of the endpoint. One of: READER , ANY .",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "static_members": {
+                "description": "List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excluded_members`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "excluded_members": {
+                "description": "List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty. Conflicts with `static_members`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of cluster"
+            },
+            "id": {
+                "description": "The RDS Cluster Endpoint Identifier"
+            },
+            "endpoint": {
+                "description": "A custom endpoint for the Aurora cluster"
+            }
+        },
+        "timeouts": {}
+    }
+}

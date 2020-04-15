@@ -1,0 +1,35 @@
+{
+    "aws_dax_subnet_group": {
+        "status": "HOLD",
+        "subcategory": "DynamoDB Accelerator (DAX)",
+        "layout": "aws",
+        "page_title": "AWS: aws_dax_subnet_group",
+        "description": "Provides an DAX Subnet Group resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the subnet group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the subnet group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_ids": {
+                "description": "A list of VPC subnet IDs for the subnet group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the subnet group."
+            }
+        },
+        "timeouts": {}
+    }
+}

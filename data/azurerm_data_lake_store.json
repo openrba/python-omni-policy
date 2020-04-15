@@ -1,0 +1,83 @@
+{
+    "azurerm_data_lake_store": {
+        "status": "HOLD",
+        "subcategory": "Data Lake",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_data_lake_store",
+        "description": "Manages an Azure Data Lake Store.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Data Lake Store. Changing this forces a new resource to be created. Has to be between 3 to 24 characters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Data Lake Store.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tier": {
+                "description": "The monthly commitment tier for Data Lake Store. Accepted values are `Consumption`, `Commitment_1TB`, `Commitment_10TB`, `Commitment_100TB`, `Commitment_500TB`, `Commitment_1PB` or `Commitment_5PB`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_state": {
+                "description": "Is Encryption enabled on this Data Lake Store Account? Possible values are `Enabled` or `Disabled`. Defaults to `Enabled`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_type": {
+                "description": "The Encryption Type used for this Data Lake Store Account. Currently can be set to `ServiceManaged` when `encryption_state` is `Enabled` - and must be a blank string when it's Disabled.",
+                "required": false,
+                "policy": "",
+                "notes": "Support for User Managed encryption will be supported in the future once a bug in the API is fixed."
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Data Lake Store."
+            },
+            "endpoint": {
+                "description": "The Endpoint for the Data Lake Store."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Data Lake Store.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Data Lake Store.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Data Lake Store.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Data Lake Store.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

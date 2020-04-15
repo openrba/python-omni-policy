@@ -1,0 +1,122 @@
+{
+    "azurerm_signalr_service": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_signalr_service",
+        "description": "Manages an Azure SignalR service.",
+        "arguments": {
+            "name": {
+                "description": "Specifies which tier to use. Valid values are `Free_F1` and `Standard_S1`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the SignalR service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the SignalR service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cors": {
+                "description": "A `cors` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "features": {
+                "description": "A `features` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_origins": {
+                "description": "A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "flag": {
+                "description": "The kind of Feature. Possible values are `EnableConnectivityLogs` and `ServiceMode`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "A value of a feature flag. Possible values are `Classic`, `Default` and `Serverless`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "capacity": {
+                "description": "Specifies the number of units associated with this SignalR service. Valid values are `1`, `2`, `5`, `10`, `20`, `50` and `100`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the SignalR service."
+            },
+            "hostname": {
+                "description": "The FQDN of the SignalR service."
+            },
+            "ip_address": {
+                "description": "The publicly accessible IP of the SignalR service."
+            },
+            "public_port": {
+                "description": "The publicly accessible port of the SignalR service which is designed for browser/client use."
+            },
+            "server_port": {
+                "description": "The publicly accessible port of the SignalR service which is designed for customer server side use."
+            },
+            "primary_access_key": {
+                "description": "The primary access key for the SignalR service."
+            },
+            "primary_connection_string": {
+                "description": "The primary connection string for the SignalR service."
+            },
+            "secondary_access_key": {
+                "description": "The secondary access key for the SignalR service."
+            },
+            "secondary_connection_string": {
+                "description": "The secondary connection string for the SignalR service."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the SignalR Service.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the SignalR Service.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the SignalR Service.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the SignalR Service.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

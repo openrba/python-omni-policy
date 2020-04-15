@@ -1,0 +1,93 @@
+azurerm_hpc_cache:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_hpc_cache'
+    description: Manages a HPC Cache.
+    arguments:
+        name:
+            description: The name of the HPC Cache. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which to create the HPC
+                Cache. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure Region where the HPC Cache
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cache_size_in_gb:
+            description: The size of the HPC Cache, in GB. Possible values are `3072`,
+                `6144`, `12288`, `24576`, and `49152`. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the Subnet for the HPC Cache. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: The SKU of HPC Cache to use. Possible values are `Standard_2G`,
+                `Standard_4G` and `Standard_8G`. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The `id` of the HPC Cache.
+        mount_addresses:
+            description: A list of IP Addresses where the HPC Cache can be mounted.
+    timeouts:
+        create:
+            description: Used when creating the HPC Cache.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the HPC Cache.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the HPC Cache.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsZG00aUNpQWdZV1JrY21WemMxOXpjR0ZqWlNBZ0lDQWdJ
+        Q0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNWaWJtVjBJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlX
+        MXdiR1Z6ZFdKdVpYUWlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ1BTQmhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSFpwY25SMVlXeGZibVYw
+        ZDI5eWExOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXN1WlhoaGJYQnNa
+        UzV1WVcxbENpQWdZV1JrY21WemMxOXdjbVZtYVhnZ0lDQWdJQ0FnUFNBaU1UQXVNQzR4TGpBdk1q
+        UWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJod1kxOWpZV05vWlNJZ0ltVjRZVzF3YkdV
+        aUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWb2NHTmpZV05v
+        WlNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpa
+        VjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lB
+        Z1kyRmphR1ZmYzJsNlpWOXBibDluWWlBZ0lDQTlJRE13TnpJS0lDQnpkV0p1WlhSZmFXUWdJQ0Fn
+        SUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl6ZFdKdVpYUXVaWGhoYlhCc1pTNXBaQW9nSUhOcmRWOXVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUmZNa2NpQ24wSw==
+    import: !!binary |
+        Q2dwSVVFTWdRMkZqYUdWeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lISmxj
+        MjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFIQmpYMk5oWTJobExtaDBiV3d1YldGeWEyUnZkMjQ9

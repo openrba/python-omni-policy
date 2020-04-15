@@ -1,0 +1,50 @@
+{
+    "azurerm_iothub_endpoint_servicebus_queue": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_iothub_endpoint_servicebus_queue",
+        "description": "Manages an IotHub ServiceBus Queue Endpoint",
+        "arguments": {
+            "name": {
+                "description": "The name of the endpoint. The name must be unique across endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`, `fileNotifications` and `$default`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_string": {
+                "description": "The connection string for the endpoint.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the IoTHub ServiceBus Queue Endpoint."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the IotHub ServiceBus Queue Endpoint.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the IotHub ServiceBus Queue Endpoint.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the IotHub ServiceBus Queue Endpoint.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the IotHub ServiceBus Queue Endpoint.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

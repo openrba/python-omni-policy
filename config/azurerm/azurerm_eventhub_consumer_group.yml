@@ -1,0 +1,91 @@
+azurerm_eventhub_consumer_group:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_eventhub_consumer_group'
+    description: Manages a Event Hubs Consumer Group as a nested resource within an
+        Event Hub.
+    arguments:
+        name:
+            description: Specifies the name of the EventHub Consumer Group resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: Specifies the name of the grandparent EventHub Namespace.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        eventhub_name:
+            description: Specifies the name of the EventHub. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the EventHub Consumer
+                Group's grandparent Namespace exists. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        user_metadata:
+            description: Specifies the user metadata.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the EventHub Consumer Group.
+    timeouts:
+        create:
+            description: Used when creating the EventHub Consumer Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the EventHub Consumer Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the EventHub Consumer Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the EventHub Consumer Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyVjJaVzUwYUhW
+        aVgyNWhiV1Z6Y0dGalpTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFJYWmxiblJJZFdKT1lXMWxjM0JoWTJVaUNpQWdi
+        RzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJRlZUSWdvZ0lISmxjMjkxY21ObFgy
+        ZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdV
+        dWJtRnRaUW9nSUhOcmRTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlRbUZ6YVdNaUNpQWdZMkZ3
+        WVdOcGRIa2dJQ0FnSUNBZ0lDQWdJQ0E5SURJS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUdWdWRtbHli
+        MjV0Wlc1MElEMGdJbEJ5YjJSMVkzUnBiMjRpQ2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNt
+        VnliVjlsZG1WdWRHaDFZaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSW1GalkyVndkR0Z1WTJWVVpYTjBSWFpsYm5SSWRXSWlDaUFnYm1GdFpYTndZV05s
+        WDI1aGJXVWdJQ0FnSUNBOUlHRjZkWEpsY20xZlpYWmxiblJvZFdKZmJtRnRaWE53WVdObExtVjRZ
+        VzF3YkdVdWJtRnRaUW9nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgz
+        SmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEJoY25ScGRHbHZibDlqYjNW
+        dWRDQWdJQ0FnUFNBeUNpQWdiV1Z6YzJGblpWOXlaWFJsYm5ScGIyNGdJQ0E5SURJS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbUY2ZFhKbGNtMWZaWFpsYm5Sb2RXSmZZMjl1YzNWdFpYSmZaM0p2ZFhBaUlDSmxl
+        R0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmhZMk5sY0hSaGJt
+        TmxWR1Z6ZEVWMlpXNTBTSFZpUTI5dWMzVnRaWEpIY205MWNDSUtJQ0J1WVcxbGMzQmhZMlZmYm1G
+        dFpTQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5bGRtVnVkR2gxWWw5dVlXMWxjM0JoWTJVdVpYaGhiWEJz
+        WlM1dVlXMWxDaUFnWlhabGJuUm9kV0pmYm1GdFpTQWdJQ0FnSUNBOUlHRjZkWEpsY20xZlpYWmxi
+        blJvZFdJdVpYaGhiWEJzWlM1dVlXMWxDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlH
+        RjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdkWE5sY2w5
+        dFpYUmhaR0YwWVNBZ0lDQWdJQ0E5SUNKemIyMWxMVzFsZEdFdFpHRjBZU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwRmRtVnVkRWgxWWlCRGIyNXpkVzFsY2lCSGNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYWmxiblJvZFdKZlkyOXVjM1Z0WlhKZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

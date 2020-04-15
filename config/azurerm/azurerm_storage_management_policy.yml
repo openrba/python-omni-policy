@@ -1,0 +1,98 @@
+azurerm_storage_management_policy:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_management_policy'
+    description: Manages an Azure Storage Account Management Policy.
+    arguments:
+        storage_account_id:
+            description: Specifies the id of the storage account to apply the management
+                policy to.
+            required: true
+            policy: ''
+            notes: ''
+        rule:
+            description: A `rule` block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A rule name can contain any combination of alpha numeric
+                characters. Rule name is case-sensitive. It must be unique within
+                a policy.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: ' Boolean to specify whether the rule is enabled.'
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Storage Account Management Policy.
+    timeouts:
+        create:
+            description: Used when creating the Storage Account Management Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Account Management Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Account Management Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Account Management Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhCT1lXMWxJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0luZGxjM1IxY3lJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjM1J2Y21G
+        blpWOWhZMk52ZFc1MElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWljM1J2Y21GblpXRmpZMjkxYm5SdVlXMWxJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndY
+        MjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpR
+        b0tJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5
+        MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lDQmhZMk52ZFc1MFgzUnBaWEln
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDaUFnWVdOamIzVnVkRjl5WlhCc2FXTmhk
+        R2x2Ymw5MGVYQmxJRDBnSWt4U1V5SUtJQ0JoWTJOdmRXNTBYMnRwYm1RZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpUW14dllsTjBiM0poWjJVaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM04wYjNK
+        aFoyVmZiV0Z1WVdkbGJXVnVkRjl3YjJ4cFkza2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2MzUnZjbUZu
+        WlY5aFkyTnZkVzUwWDJsa0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RdVpYaGhi
+        WEJzWlM1cFpBb0tJQ0J5ZFd4bElIc0tJQ0FnSUc1aGJXVWdJQ0FnUFNBaWNuVnNaVEVpQ2lBZ0lD
+        QmxibUZpYkdWa0lEMGdkSEoxWlFvZ0lDQWdabWxzZEdWeWN5QjdDaUFnSUNBZ0lIQnlaV1pwZUY5
+        dFlYUmphQ0E5SUZzaVkyOXVkR0ZwYm1WeU1TOXdjbVZtYVhneElsMEtJQ0FnSUNBZ1lteHZZbDkw
+        ZVhCbGN5QWdJRDBnV3lKaWJHOWphMEpzYjJJaVhRb2dJQ0FnZlFvZ0lDQWdZV04wYVc5dWN5QjdD
+        aUFnSUNBZ0lHSmhjMlZmWW14dllpQjdDaUFnSUNBZ0lDQWdkR2xsY2w5MGIxOWpiMjlzWDJGbWRH
+        VnlYMlJoZVhOZmMybHVZMlZmYlc5a2FXWnBZMkYwYVc5dVgyZHlaV0YwWlhKZmRHaGhiaUFnSUNB
+        OUlERXdDaUFnSUNBZ0lDQWdkR2xsY2w5MGIxOWhjbU5vYVhabFgyRm1kR1Z5WDJSaGVYTmZjMmx1
+        WTJWZmJXOWthV1pwWTJGMGFXOXVYMmR5WldGMFpYSmZkR2hoYmlBOUlEVXdDaUFnSUNBZ0lDQWda
+        R1ZzWlhSbFgyRm1kR1Z5WDJSaGVYTmZjMmx1WTJWZmJXOWthV1pwWTJGMGFXOXVYMmR5WldGMFpY
+        SmZkR2hoYmlBZ0lDQWdJQ0FnSUNBOUlERXdNQW9nSUNBZ0lDQjlDaUFnSUNBZ0lITnVZWEJ6YUc5
+        MElIc0tJQ0FnSUNBZ0lDQmtaV3hsZEdWZllXWjBaWEpmWkdGNWMxOXphVzVqWlY5amNtVmhkR2x2
+        Ymw5bmNtVmhkR1Z5WDNSb1lXNGdQU0F6TUFvZ0lDQWdJQ0I5Q2lBZ0lDQjlDaUFnZlFvZ0lISjFi
+        R1VnZXdvZ0lDQWdibUZ0WlNBZ0lDQTlJQ0p5ZFd4bE1pSUtJQ0FnSUdWdVlXSnNaV1FnUFNCbVlX
+        eHpaUW9nSUNBZ1ptbHNkR1Z5Y3lCN0NpQWdJQ0FnSUhCeVpXWnBlRjl0WVhSamFDQTlJRnNpWTI5
+        dWRHRnBibVZ5TWk5d2NtVm1hWGd4SWl3Z0ltTnZiblJoYVc1bGNqSXZjSEpsWm1sNE1pSmRDaUFn
+        SUNBZ0lHSnNiMkpmZEhsd1pYTWdJQ0E5SUZzaVlteHZZMnRDYkc5aUlsMEtJQ0FnSUgwS0lDQWdJ
+        R0ZqZEdsdmJuTWdld29nSUNBZ0lDQmlZWE5sWDJKc2IySWdld29nSUNBZ0lDQWdJSFJwWlhKZmRH
+        OWZZMjl2YkY5aFpuUmxjbDlrWVhselgzTnBibU5sWDIxdlpHbG1hV05oZEdsdmJsOW5jbVZoZEdW
+        eVgzUm9ZVzRnSUNBZ1BTQXhNUW9nSUNBZ0lDQWdJSFJwWlhKZmRHOWZZWEpqYUdsMlpWOWhablJs
+        Y2w5a1lYbHpYM05wYm1ObFgyMXZaR2xtYVdOaGRHbHZibDluY21WaGRHVnlYM1JvWVc0Z1BTQTFN
+        UW9nSUNBZ0lDQWdJR1JsYkdWMFpWOWhablJsY2w5a1lYbHpYM05wYm1ObFgyMXZaR2xtYVdOaGRH
+        bHZibDluY21WaGRHVnlYM1JvWVc0Z0lDQWdJQ0FnSUNBZ1BTQXhNREVLSUNBZ0lDQWdmUW9nSUNB
+        Z0lDQnpibUZ3YzJodmRDQjdDaUFnSUNBZ0lDQWdaR1ZzWlhSbFgyRm1kR1Z5WDJSaGVYTmZjMmx1
+        WTJWZlkzSmxZWFJwYjI1ZlozSmxZWFJsY2w5MGFHRnVJRDBnTXpFS0lDQWdJQ0FnZlFvZ0lDQWdm
+        UW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUVGalkyOTFiblFnVFdGdVlXZGxiV1Z1ZENCUWIyeHBZMmxsY3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5dFlXNWhaMlZ0Wlc1MFgzQnZiR2xqZVM1b2RHMXNMbTFoY210
+        a2IzZHU=

@@ -1,0 +1,116 @@
+{
+    "azurerm_network_watcher_flow_log": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_network_watcher_flow_log",
+        "description": "Manages a Network Watcher Flow Log.",
+        "arguments": {
+            "network_watcher_name": {
+                "description": "The name of the Network Watcher. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Network Watcher was deployed. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "network_security_group_id": {
+                "description": "The ID of the Network Security Group for which to enable flow logs for. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "The ID of the Storage Account where flow logs are stored.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Boolean flag to enable/disable traffic analytics.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_policy": {
+                "description": "A `retention_policy` block as documented below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "traffic_analytics": {
+                "description": "A `traffic_analytics` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "The version (revision",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "days": {
+                "description": "The number of days to retain flow log records.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "workspace_id": {
+                "description": "The resource guid of the attached workspace.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "workspace_region": {
+                "description": "The location of the attached workspace.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "workspace_resource_id": {
+                "description": "The resource ID of the attached workspace.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "interval_in_minutes": {
+                "description": "How frequently service should do flow analytics in minutes.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Network Watcher."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Network Watcher Flow Log.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Network Watcher Flow Log.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Network Watcher Flow Log.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Network Watcher Flow Log.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "aws_organizations_organizational_unit": {
+        "status": "HOLD",
+        "subcategory": "Organizations",
+        "layout": "aws",
+        "page_title": "AWS: aws_organizations_organizational_unit",
+        "description": "Provides a resource to create an organizational unit.",
+        "arguments": {},
+        "attributes": {
+            "accounts": {
+                "description": "List of child accounts for this Organizational Unit. Does not return account information for child Organizational Units. All elements have these attributes:"
+            },
+            "arn": {
+                "description": "ARN of the organizational unit"
+            },
+            "id": {
+                "description": "Identifier of the organization unit"
+            }
+        },
+        "timeouts": {}
+    }
+}

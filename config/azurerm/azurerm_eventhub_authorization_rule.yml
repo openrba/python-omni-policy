@@ -1,0 +1,114 @@
+azurerm_eventhub_authorization_rule:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_eventhub_authorization_rule'
+    description: Manages a Event Hubs authorization Rule within an Event Hub.
+    arguments:
+        name:
+            description: Specifies the name of the EventHub Authorization Rule resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: Specifies the name of the grandparent EventHub Namespace.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        eventhub_name:
+            description: Specifies the name of the EventHub. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the EventHub Namespace
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        listen:
+            description: Does this Authorization Rule have permissions to Listen to
+                the Event Hub? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        send:
+            description: Does this Authorization Rule have permissions to Send to
+                the Event Hub? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        manage:
+            description: Does this Authorization Rule have permissions to Manage to
+                the Event Hub? When this property is `true` - both `listen` and `send`
+                must be too. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The EventHub ID.
+        primary_key:
+            description: The Primary Key for the Event Hubs authorization Rule.
+        primary_connection_string:
+            description: The Primary Connection String for the Event Hubs authorization
+                Rule.
+        secondary_key:
+            description: The Secondary Key for the Event Hubs Authorization Rule.
+        secondary_connection_string:
+            description: The Secondary Connection String for the Event Hubs Authorization
+                Rule.
+    timeouts:
+        create:
+            description: Used when creating the EventHub Authorization Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the EventHub Authorization Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the EventHub Authorization Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the EventHub Authorization Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyVjJaVzUwYUhW
+        aVgyNWhiV1Z6Y0dGalpTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFJYWmxiblJJZFdKT1lXMWxjM0JoWTJVaUNpQWdi
+        RzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJRlZUSWdvZ0lISmxjMjkxY21ObFgy
+        ZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdV
+        dWJtRnRaUW9nSUhOcmRTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlRbUZ6YVdNaUNpQWdZMkZ3
+        WVdOcGRIa2dJQ0FnSUNBZ0lDQWdJQ0E5SURJS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUdWdWRtbHli
+        MjV0Wlc1MElEMGdJbEJ5YjJSMVkzUnBiMjRpQ2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNt
+        VnliVjlsZG1WdWRHaDFZaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSW1GalkyVndkR0Z1WTJWVVpYTjBSWFpsYm5SSWRXSWlDaUFnYm1GdFpYTndZV05s
+        WDI1aGJXVWdJQ0FnSUNBOUlHRjZkWEpsY20xZlpYWmxiblJvZFdKZmJtRnRaWE53WVdObExtVjRZ
+        VzF3YkdVdWJtRnRaUW9nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgz
+        SmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEJoY25ScGRHbHZibDlqYjNW
+        dWRDQWdJQ0FnUFNBeUNpQWdiV1Z6YzJGblpWOXlaWFJsYm5ScGIyNGdJQ0E5SURJS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbUY2ZFhKbGNtMWZaWFpsYm5Sb2RXSmZZWFYwYUc5eWFYcGhkR2x2Ymw5eWRXeGxJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYm1GMmFT
+        SUtJQ0J1WVcxbGMzQmhZMlZmYm1GdFpTQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5bGRtVnVkR2gxWWw5
+        dVlXMWxjM0JoWTJVdVpYaGhiWEJzWlM1dVlXMWxDaUFnWlhabGJuUm9kV0pmYm1GdFpTQWdJQ0Fn
+        SUNBOUlHRjZkWEpsY20xZlpYWmxiblJvZFdJdVpYaGhiWEJzWlM1dVlXMWxDaUFnY21WemIzVnlZ
+        MlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJY
+        QnNaUzV1WVcxbENpQWdiR2x6ZEdWdUlDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUhSeWRXVUtJQ0J6Wlc1
+        a0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1ptRnNjMlVLSUNCdFlXNWhaMlVnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdabUZzYzJVS2ZRbz0=
+    import: !!binary |
+        Q2dwRmRtVnVkRWgxWWlCQmRYUm9iM0pwZW1GMGFXOXVJRkoxYkdWeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYWmxiblJvZFdKZllYVjBhRzl5YVhwaGRHbHZibDl5ZFd4bExtaDBiV3d1YldG
+        eWEyUnZkMjQ9

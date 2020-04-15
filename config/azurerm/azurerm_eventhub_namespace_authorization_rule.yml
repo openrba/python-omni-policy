@@ -1,0 +1,100 @@
+azurerm_eventhub_namespace_authorization_rule:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_eventhub_namespace_authorization_rule'
+    description: Manages an Authorization Rule for an Event Hub Namespace.
+    arguments:
+        name:
+            description: Specifies the name of the Authorization Rule. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: Specifies the name of the EventHub Namespace. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the EventHub Namespace
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        listen:
+            description: Grants listen access to this this Authorization Rule. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        send:
+            description: Grants send access to this this Authorization Rule. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        manage:
+            description: Grants manage access to this this Authorization Rule. When
+                this property is `true` - both `listen` and `send` must be too. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The EventHub Namespace Authorization Rule ID.
+        primary_key:
+            description: The Primary Key for the Authorization Rule.
+        primary_connection_string:
+            description: The Primary Connection String for the Authorization Rule.
+        secondary_key:
+            description: The Secondary Key for the Authorization Rule.
+        secondary_connection_string:
+            description: The Secondary Connection String for the Authorization Rule.
+    timeouts:
+        create:
+            description: Used when creating the EventHub Namespace Authorization Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the EventHub Namespace Authorization Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the EventHub Namespace Authorization
+                Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the EventHub Namespace Authorization Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxaM0p2ZFhBaUNpQWdiRzlqWVhScGIy
+        NGdQU0FpVjJWemRDQlZVeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlpYWmxiblJvZFdK
+        ZmJtRnRaWE53WVdObElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlZV05qWlhCMFlXNWpaVlJsYzNSRmRtVnVkRWgxWWs1aGJXVnpjR0ZqWlNJS0lDQnNi
+        Mk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWND
+        NWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdG
+        NmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2MydDFJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pDWVhOcFl5SUtJQ0JqWVhCaFkybDBlU0FnSUNBZ0lDQWdJ
+        Q0FnSUQwZ01nb0tJQ0IwWVdkeklEMGdld29nSUNBZ1pXNTJhWEp2Ym0xbGJuUWdQU0FpVUhKdlpI
+        VmpkR2x2YmlJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJWMlpXNTBhSFZpWDI1
+        aGJXVnpjR0ZqWlY5aGRYUm9iM0pwZW1GMGFXOXVYM0oxYkdVaUlDSmxlR0Z0Y0d4bElpQjdDaUFn
+        Ym1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSnVZWFpwSWdvZ0lHNWhiV1Z6Y0dGalpWOXVZ
+        VzFsSUNBZ0lDQWdQU0JoZW5WeVpYSnRYMlYyWlc1MGFIVmlYMjVoYldWemNHRmpaUzVsZUdGdGNH
+        eGxMbTVoYldVS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhO
+        dmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLQ2lBZ2JHbHpkR1Z1SUQwZ2RISjFaUW9n
+        SUhObGJtUWdJQ0E5SUdaaGJITmxDaUFnYldGdVlXZGxJRDBnWm1Gc2MyVUtmUW89
+    import: !!binary |
+        Q2dwRmRtVnVkRWgxWWlCT1lXMWxjM0JoWTJVZ1FYVjBhRzl5YVhwaGRHbHZiaUJTZFd4bGN5QmpZ
+        VzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5
+        NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYWmxiblJvZFdKZmJtRnRaWE53WVdObFgyRjFkR2h2Y21sNllYUnBiMjVmY25W
+        c1pTNW9kRzFzTG0xaGNtdGtiM2R1

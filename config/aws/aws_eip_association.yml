@@ -1,0 +1,51 @@
+aws_eip_association:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_eip_association'
+    description: Provides an AWS EIP Association
+    arguments:
+        allocation_id:
+            description: The allocation ID. This is required for EC2-VPC.
+            required: false
+            policy: ''
+            notes: ''
+        allow_reassociation:
+            description: Whether to allow an Elastic IP to
+            required: false
+            policy: ''
+            notes: ''
+        instance_id:
+            description: The ID of the instance. This is required for
+            required: false
+            policy: ''
+            notes: ''
+        network_interface_id:
+            description: The ID of the network interface. If the
+            required: false
+            policy: ''
+            notes: ''
+        private_ip_address:
+            description: The primary or secondary private IP address
+            required: false
+            policy: ''
+            notes: ''
+        public_ip:
+            description: The Elastic IP address. This is required for EC2-Classic.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        association_id:
+            description: The ID that represents the association of the Elastic IP
+        allocation_id:
+            description: As above
+        instance_id:
+            description: As above
+        network_interface_id:
+            description: As above
+        private_ip_address:
+            description: As above
+        public_ip:
+            description: As above
+    timeouts: {}

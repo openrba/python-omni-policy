@@ -1,0 +1,68 @@
+{
+    "azurerm_backup_protected_vm": {
+        "status": "HOLD",
+        "subcategory": "Recovery Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_backup_protected_vm",
+        "description": "Manages an Azure Backup Protected VM.",
+        "arguments": {
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Recovery Services Protected VM. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recovery_vault_name": {
+                "description": "Specifies the name of the Recovery Services Vault to use. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_vm_id": {
+                "description": "Specifies the ID of the VM to backup. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backup_policy_id": {
+                "description": "Specifies the id of the backup policy to use.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Backup Protected Virtual Machine."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Backup Protected Virtual Machine.",
+                "required": false,
+                "timeout": 80
+            },
+            "update": {
+                "description": "Used when updating the Backup Protected Virtual Machine.",
+                "required": false,
+                "timeout": 80
+            },
+            "read": {
+                "description": "Used when retrieving the Backup Protected Virtual Machine.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Backup Protected Virtual Machine.",
+                "required": false,
+                "timeout": 80
+            }
+        }
+    }
+}

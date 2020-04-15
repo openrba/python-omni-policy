@@ -1,0 +1,92 @@
+{
+    "azurerm_backup_policy_file_share": {
+        "status": "HOLD",
+        "subcategory": "Recovery Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_backup_policy_file_share",
+        "description": "Manages an Azure File Share Backup Policy.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the policy. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the policy. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recovery_vault_name": {
+                "description": "Specifies the name of the Recovery Services Vault to use. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backup": {
+                "description": "Configures the Policy backup frequency and times as documented in the `backup` block below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "timezone": {
+                "description": "Specifies the timezone. Defaults to `UTC`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_daily": {
+                "description": "Configures the policy daily retention as documented in the `retention_daily` block below.",
+                "required": true,
+                "policy": "",
+                "notes": "During the public preview, only daily retentions are supported. This argument is made available in this format for consistency with VM backup policies and to allow for potential future support of additional retention policies"
+            },
+            "frequency": {
+                "description": "Sets the backup frequency. Currently, only `Daily` is supported",
+                "required": true,
+                "policy": "",
+                "notes": "During the public preview, only daily backups are supported. This argument is made available for consistency with VM backup policies and to allow for potential future support of weekly backups"
+            },
+            "times": {
+                "description": "The time of day to perform the backup in 24-hour format. Times must be either on the hour or half hour (e.g. 12:00, 12:30, 13:00, etc.)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "count": {
+                "description": "The number of daily backups to keep. Must be between `1` and `180` (inclusive)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Azure File Share Backup Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the File Share Backup Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the File Share Backup Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the File Share Backup Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the File Share Backup Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

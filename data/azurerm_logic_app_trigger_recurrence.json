@@ -1,0 +1,68 @@
+{
+    "azurerm_logic_app_trigger_recurrence": {
+        "status": "HOLD",
+        "subcategory": "Logic App",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_logic_app_trigger_recurrence",
+        "description": "Manages a Recurrence Trigger within a Logic App Workflow",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Recurrence Triggers to be created within the Logic App Workflow. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": "This name must be unique across all Triggers within the Logic App Workflow."
+            },
+            "logic_app_id": {
+                "description": "Specifies the ID of the Logic App Workflow. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "frequency": {
+                "description": "Specifies the Frequency at which this Trigger should be run. Possible values include `Month`, `Week`, `Day`, `Hour`, `Minute` and `Second`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "interval": {
+                "description": "Specifies interval used for the Frequency, for example a value of `4` for `interval` and `hour` for `frequency` would run the Trigger every 4 hours.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "start_time": {
+                "description": "Specifies the start date and time for this trigger in RFC3339 format: `2000-01-02T03:04:05Z`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Recurrence Trigger within the Logic App Workflow."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Logic App Recurrence Trigger.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Logic App Recurrence Trigger.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Logic App Recurrence Trigger.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Logic App Recurrence Trigger.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

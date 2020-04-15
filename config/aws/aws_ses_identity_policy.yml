@@ -1,0 +1,26 @@
+aws_ses_identity_policy:
+    status: HOLD
+    subcategory: SES
+    layout: aws
+    page_title: 'AWS: aws_ses_identity_policy'
+    description: Manages a SES Identity Policy
+    arguments:
+        identity:
+            description: Name or Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Name of the policy.
+            required: true
+            policy: ''
+            notes: ''
+        policy:
+            description: JSON string of the policy. For more information about building
+                AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document
+                Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

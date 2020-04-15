@@ -1,0 +1,134 @@
+{
+    "azurerm_kubernetes_cluster_node_pool": {
+        "status": "HOLD",
+        "subcategory": "Container",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_kubernetes_cluster_node_pool",
+        "description": "Manages a Node Pool within a Kubernetes Cluster",
+        "arguments": {
+            "name": {
+                "description": "The name of the Node Pool which should be created within the Kubernetes Cluster. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": "A Windows Node Pool cannot have a `name` longer than 6 characters."
+            },
+            "kubernetes_cluster_id": {
+                "description": "The ID of the Kubernetes Cluster where this Node Pool should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vm_size": {
+                "description": "The SKU which should be used for the Virtual Machines used in this Node Pool. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zones": {
+                "description": "A list of Availability Zones where the Nodes in this Node Pool should be created in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_auto_scaling": {
+                "description": "Whether to enable [auto-scaler](https://docs.microsoft.com/en-us/azure/aks/cluster-autoscaler). Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": "Additional fields must be configured depending on the value of this field - see below."
+            },
+            "enable_node_public_ip": {
+                "description": "Should each node have a Public IP Address? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_pods": {
+                "description": "The maximum number of pods that can run on each agent. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "node_labels": {
+                "description": "A map of Kubernetes labels which should be applied to nodes in this Node Pool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "node_taints": {
+                "description": "A list of Kubernetes taints which should be applied to nodes in the agent pool (e.g `key=value:NoSchedule`).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "os_disk_size_gb": {
+                "description": "The Agent Operating System disk size in GB. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "os_type": {
+                "description": "The Operating System which should be used for this Node Pool. Changing this forces a new resource to be created. Possible values are `Linux` and `Windows`. Defaults to `Linux`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vnet_subnet_id": {
+                "description": "The ID of the Subnet where this Node Pool should exist.",
+                "required": false,
+                "policy": "",
+                "notes": "At this time the `vnet_subnet_id` must be the same for all node pools in the cluster"
+            },
+            "max_count": {
+                "description": "The maximum number of nodes which should exist within this Node Pool. Valid values are between `1` and `100` and must be greater than or equal to `min_count`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "min_count": {
+                "description": "The minimum number of nodes which should exist within this Node Pool. Valid values are between `1` and `100` and must be less than or equal to `max_count`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "node_count": {
+                "description": "The number of nodes which should exist within this Node Pool. Valid values are between `1` and `100`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Kubernetes Cluster Node Pool."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Kubernetes Cluster Node Pool.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Kubernetes Cluster Node Pool.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Kubernetes Cluster Node Pool.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Kubernetes Cluster Node Pool.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

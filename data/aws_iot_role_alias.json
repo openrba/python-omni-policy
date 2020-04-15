@@ -1,0 +1,35 @@
+{
+    "aws_iot_role_alias": {
+        "status": "HOLD",
+        "subcategory": "IoT",
+        "layout": "aws",
+        "page_title": "AWS: aws_iot_role_alias",
+        "description": "Provides an IoT role alias.",
+        "arguments": {
+            "alias": {
+                "description": "The name of the role alias.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_arn": {
+                "description": "The identity of the role to which the alias refers.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "credential_duration": {
+                "description": "The duration of the credential, in seconds. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 900 seconds (15 minutes",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN assigned by AWS to this role alias."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "azurerm_storage_share_directory": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_share_directory",
+        "description": "Manages a Directory within an Azure Storage File Share.",
+        "arguments": {
+            "name": {
+                "description": "The name (or path",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "share_name": {
+                "description": "The name of the File Share where this Directory should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_name": {
+                "description": "The name of the Storage Account within which the File Share is located. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "A mapping of metadata to assign to this Directory.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Directory within the File Share."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Share Directory.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Share Directory.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Share Directory.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Share Directory.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

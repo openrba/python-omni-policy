@@ -1,0 +1,92 @@
+{
+    "azurerm_servicebus_topic_authorization_rule": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_servicebus_topic_authorization_rule",
+        "description": "Manages a ServiceBus Topic authorization Rule within a ServiceBus Topic.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the ServiceBus Topic Authorization Rule resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace_name": {
+                "description": "Specifies the name of the ServiceBus Namespace. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "topic_name": {
+                "description": "Specifies the name of the ServiceBus Topic. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the ServiceBus Namespace exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "listen": {
+                "description": "Grants listen access to this this Authorization Rule. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "send": {
+                "description": "Grants send access to this this Authorization Rule. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "manage": {
+                "description": "Grants manage access to this this Authorization Rule. When this property is `true` - both `listen` and `send` must be too. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ServiceBus Topic ID."
+            },
+            "primary_key": {
+                "description": "The Primary Key for the ServiceBus Topic authorization Rule."
+            },
+            "primary_connection_string": {
+                "description": "The Primary Connection String for the ServiceBus Topic authorization Rule."
+            },
+            "secondary_key": {
+                "description": "The Secondary Key for the ServiceBus Topic authorization Rule."
+            },
+            "secondary_connection_string": {
+                "description": "The Secondary Connection String for the ServiceBus Topic authorization Rule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the ServiceBus Topic Authorization Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the ServiceBus Topic Authorization Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the ServiceBus Topic Authorization Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the ServiceBus Topic Authorization Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

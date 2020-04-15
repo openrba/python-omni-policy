@@ -1,0 +1,138 @@
+{
+    "aws_dynamodb_table": {
+        "status": "HOLD",
+        "subcategory": "DynamoDB",
+        "layout": "aws",
+        "page_title": "AWS: aws_dynamodb_table",
+        "description": "Provides a DynamoDB table resource",
+        "arguments": {
+            "name": {
+                "description": "The name of the table, this needs to be unique",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "billing_mode": {
+                "description": "Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hash_key": {
+                "description": "The attribute to use as the hash (partition",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "range_key": {
+                "description": "The attribute to use as the range (sort",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "write_capacity": {
+                "description": "The number of write units for this table. If the `billing_mode` is `PROVISIONED`, this field is required.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "read_capacity": {
+                "description": "The number of read units for this table. If the `billing_mode` is `PROVISIONED`, this field is required.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "attribute": {
+                "description": "List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ttl": {
+                "description": "Defines ttl, has two properties, and can only be specified once:",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "local_secondary_index": {
+                "description": "Describe an LSI on the table;",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "global_secondary_index": {
+                "description": "Describe a GSI for the table;",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "replica": {
+                "description": "Configuration block(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "stream_enabled": {
+                "description": "Indicates whether Streams are to be enabled (true",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "stream_view_type": {
+                "description": "When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_side_encryption": {
+                "description": "Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A map of tags to populate on the created table.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "point_in_time_recovery": {
+                "description": "Point-in-time recovery options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The arn of the table"
+            },
+            "id": {
+                "description": "The name of the table"
+            },
+            "stream_arn": {
+                "description": "The ARN of the Table Stream. Only available when `stream_enabled = true`"
+            },
+            "stream_label": {
+                "description": "A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not"
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the table",
+                "required": false,
+                "timeout": 10
+            },
+            "update": {
+                "description": "Used when updating the table configuration and reset for each individual Global Secondary Index and Replica update",
+                "required": false,
+                "timeout": 60
+            },
+            "delete": {
+                "description": "Used when deleting the table",
+                "required": false,
+                "timeout": 10
+            }
+        }
+    }
+}

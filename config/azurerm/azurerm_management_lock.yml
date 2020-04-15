@@ -1,0 +1,68 @@
+azurerm_management_lock:
+    status: HOLD
+    subcategory: Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_management_lock'
+    description: Manages a Management Lock which is scoped to a Subscription, Resource
+        Group or Resource.
+    arguments:
+        name:
+            description: Specifies the name of the Management Lock. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        scope:
+            description: Specifies the scope at which the Management Lock should be
+                created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        lock_level:
+            description: Specifies the Level to be used for this Lock. Possible values
+                are `CanNotDelete` and `ReadOnly`. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        notes:
+            description: Specifies some notes about the lock. Maximum of 512 characters.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Management Lock
+    timeouts:
+        create:
+            description: Used when creating the Management Lock.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Management Lock.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Management Lock.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Management Lock.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjM1ZpYzJOeWFYQjBhVzl1SWlBaVkzVnljbVZ1ZENJZ2V3cDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl0WVc1aFoyVnRaVzUwWDJ4dlkyc2lJQ0p6ZFdKelkz
+        SnBjSFJwYjI0dGJHVjJaV3dpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJRDBnSW5OMVluTmpjbWx3ZEds
+        dmJpMXNaWFpsYkNJS0lDQnpZMjl3WlNBZ0lDQWdJRDBnWkdGMFlTNWhlblZ5WlhKdFgzTjFZbk5q
+        Y21sd2RHbHZiaTVqZFhKeVpXNTBMbWxrQ2lBZ2JHOWphMTlzWlhabGJDQTlJQ0pEWVc1T2IzUkVa
+        V3hsZEdVaUNpQWdibTkwWlhNZ0lDQWdJQ0E5SUNKSmRHVnRjeUJqWVc0bmRDQmlaU0JrWld4bGRH
+        VmtJR2x1SUhSb2FYTWdjM1ZpYzJOeWFYQjBhVzl1SVNJS2ZRbz0=
+    import: !!binary |
+        Q2dwTllXNWhaMlZ0Wlc1MElFeHZZMnR6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRnVZV2RsYldWdWRGOXNiMk5yTG1oMGJXd3ViV0Z5YTJSdmQyND0=

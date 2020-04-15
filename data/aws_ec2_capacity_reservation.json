@@ -1,0 +1,83 @@
+{
+    "aws_ec2_capacity_reservation": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_ec2_capacity_reservation",
+        "description": "Provides an EC2 Capacity Reservation. This allows you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration.",
+        "arguments": {
+            "availability_zone": {
+                "description": "The Availability Zone in which to create the Capacity Reservation.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ebs_optimized": {
+                "description": "Indicates whether the Capacity Reservation supports EBS-optimized instances.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "end_date": {
+                "description": "The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "end_date_type": {
+                "description": "Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ephemeral_storage": {
+                "description": "Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_count": {
+                "description": "The number of instances for which to reserve capacity.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_match_criteria": {
+                "description": "Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_platform": {
+                "description": "The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_type": {
+                "description": "The instance type for which to reserve capacity.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenancy": {
+                "description": "Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Capacity Reservation ID."
+            }
+        },
+        "timeouts": {}
+    }
+}

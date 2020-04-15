@@ -1,0 +1,176 @@
+{
+    "aws_opsworks_instance": {
+        "status": "HOLD",
+        "subcategory": "OpsWorks",
+        "layout": "aws",
+        "page_title": "AWS: aws_opsworks_instance",
+        "description": "Provides an OpsWorks instance resource.",
+        "arguments": {
+            "instance_type": {
+                "description": "The type of instance to start",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "stack_id": {
+                "description": "The id of the stack the instance will belong to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "layer_ids": {
+                "description": "The ids of the layers the instance will belong to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "state": {
+                "description": "The desired state of the instance.  Can be either `\"running\"` or `\"stopped\"`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "install_updates_on_boot": {
+                "description": "Controls where to install OS and package updates when the instance boots.  Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_scaling_type": {
+                "description": "Creates load-based or time-based instances.  If set, can be either: `\"load\"` or `\"timer\"`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "Name of the availability zone where instances will be created",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ebs_optimized": {
+                "description": "If true, the launched EC2 instance will be EBS-optimized.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hostname": {
+                "description": "The instance's host name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "architecture": {
+                "description": "Machine architecture for created instances.  Can be either `\"x86_64\"` (the default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ami_id": {
+                "description": "The AMI to use for the instance.  If an AMI is specified, `os` must be `\"Custom\"`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "os": {
+                "description": "Name of operating system that will be installed.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "root_device_type": {
+                "description": "Name of the type of root device instances will have by default.  Can be either `\"ebs\"` or `\"instance-store\"`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ssh_key_name": {
+                "description": "Name of the SSH keypair that instances will have by default.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "agent_version": {
+                "description": "The AWS OpsWorks agent to install.  Defaults to `\"INHERIT\"`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "Subnet ID to attach to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenancy": {
+                "description": "Instance tenancy to use. Can be one of `\"default\"`, `\"dedicated\"` or `\"host\"`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "virtualization_type": {
+                "description": "Keyword to choose what virtualization mode created instances",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "root_block_device": {
+                "description": "Customize details about the root block",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ebs_block_device": {
+                "description": "Additional EBS block devices to attach to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ephemeral_block_device": {
+                "description": "Customize Ephemeral (also known as",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The id of the OpsWorks instance."
+            },
+            "agent_version": {
+                "description": "The AWS OpsWorks agent version."
+            },
+            "availability_zone": {
+                "description": "The availability zone of the instance."
+            },
+            "ec2_instance_id": {
+                "description": "EC2 instance ID"
+            },
+            "ssh_key_name": {
+                "description": "The key name of the instance"
+            },
+            "public_dns": {
+                "description": "The public DNS name assigned to the instance. For EC2-VPC, this"
+            },
+            "public_ip": {
+                "description": "The public IP address assigned to the instance, if applicable."
+            },
+            "private_dns": {
+                "description": "The private DNS name assigned to the instance. Can only be"
+            },
+            "private_ip": {
+                "description": "The private IP address assigned to the instance"
+            },
+            "subnet_id": {
+                "description": "The VPC subnet ID."
+            },
+            "tenancy": {
+                "description": "The Instance tenancy"
+            },
+            "security_group_ids": {
+                "description": "The associated security groups."
+            }
+        },
+        "timeouts": {}
+    }
+}

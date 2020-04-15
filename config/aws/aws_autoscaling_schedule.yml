@@ -1,0 +1,54 @@
+aws_autoscaling_schedule:
+    status: HOLD
+    subcategory: Autoscaling
+    layout: aws
+    page_title: 'AWS: aws_autoscaling_schedule'
+    description: Provides an AutoScaling Schedule resource.
+    arguments:
+        autoscaling_group_name:
+            description: The name or Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        scheduled_action_name:
+            description: The name of this scaling action.
+            required: true
+            policy: ''
+            notes: ''
+        start_time:
+            description: The time for this action to start, in "YYYY-MM-DDThh:mm:ssZ"
+                format in UTC/GMT only (for example, 2014-06-01T00:00:00Z ).
+            required: false
+            policy: ''
+            notes: ''
+        end_time:
+            description: The time for this action to end, in "YYYY-MM-DDThh:mm:ssZ"
+                format in UTC/GMT only (for example, 2014-06-01T00:00:00Z ).
+            required: false
+            policy: ''
+            notes: ''
+        recurrence:
+            description: The time when recurring future actions will start. Start
+                time is specified by the user following the Unix cron syntax format.
+            required: false
+            policy: ''
+            notes: ''
+        min_size:
+            description: The minimum size for the Auto Scaling group. Default 0.
+            required: false
+            policy: ''
+            notes: ''
+        max_size:
+            description: The maximum size for the Auto Scaling group. Default 0.
+            required: false
+            policy: ''
+            notes: ''
+        desired_capacity:
+            description: The number of EC2 instances that should be running in the
+                group. Default 0.  Set to -1 if you don't want to change the desired
+                capacity at the scheduled time.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

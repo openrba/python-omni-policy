@@ -1,0 +1,72 @@
+{
+    "azurerm_hpc_cache": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_hpc_cache",
+        "description": "Manages a HPC Cache.",
+        "arguments": {
+            "name": {
+                "description": "The name of the HPC Cache. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which to create the HPC Cache. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure Region where the HPC Cache should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cache_size_in_gb": {
+                "description": "The size of the HPC Cache, in GB. Possible values are `3072`, `6144`, `12288`, `24576`, and `49152`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the Subnet for the HPC Cache. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "The SKU of HPC Cache to use. Possible values are `Standard_2G`, `Standard_4G` and `Standard_8G`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The `id` of the HPC Cache."
+            },
+            "mount_addresses": {
+                "description": "A list of IP Addresses where the HPC Cache can be mounted."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the HPC Cache.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the HPC Cache.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the HPC Cache.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

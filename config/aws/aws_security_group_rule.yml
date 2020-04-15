@@ -1,0 +1,75 @@
+aws_security_group_rule:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_security_group_rule'
+    description: Provides an security group rule resource.
+    arguments:
+        type:
+            description: The type of rule being created. Valid options are `ingress`
+                (inbound)
+            required: true
+            policy: ''
+            notes: ''
+        cidr_blocks:
+            description: List of CIDR blocks. Cannot be specified with `source_security_group_id`.
+            required: false
+            policy: ''
+            notes: ''
+        ipv6_cidr_blocks:
+            description: List of IPv6 CIDR blocks.
+            required: false
+            policy: ''
+            notes: ''
+        prefix_list_ids:
+            description: List of prefix list IDs (for allowing access to VPC endpoints).
+            required: false
+            policy: ''
+            notes: ''
+        from_port:
+            description: The start port (or ICMP type number if protocol is "icmp"
+                or "icmpv6").
+            required: true
+            policy: ''
+            notes: ''
+        protocol:
+            description: The protocol. If not icmp, icmpv6, tcp, udp, or all use the
+                [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
+            required: true
+            policy: ''
+            notes: ''
+        security_group_id:
+            description: The security group to apply this rule to.
+            required: true
+            policy: ''
+            notes: ''
+        source_security_group_id:
+            description: The security group id to allow access to/from,
+            required: false
+            policy: ''
+            notes: ''
+        self:
+            description: If true, the security group itself will be added as
+            required: false
+            policy: ''
+            notes: ''
+        to_port:
+            description: The end port (or ICMP code if protocol is "icmp").
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the rule.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the security group rule
+        type:
+            description: The type of rule, `ingress` or `egress`
+        from_port:
+            description: The start port (or ICMP type number if protocol is "icmp")
+        to_port:
+            description: The end port (or ICMP code if protocol is "icmp")
+    timeouts: {}

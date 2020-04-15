@@ -1,0 +1,59 @@
+{
+    "aws_licensemanager_license_configuration": {
+        "status": "HOLD",
+        "subcategory": "License Manager",
+        "layout": "aws",
+        "page_title": "AWS: aws_licensemanager_license_configuration",
+        "description": "Provides a License Manager license configuration resource.",
+        "arguments": {
+            "name": {
+                "description": "Name of the license configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description of the license configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "license_count": {
+                "description": "Number of licenses managed by the license configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "license_count_hard_limit": {
+                "description": "Sets the number of available licenses as a hard limit.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "license_counting_type": {
+                "description": "Dimension to use to track license inventory. Specify either `vCPU`, `Instance`, `Core` or `Socket`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "license_rules": {
+                "description": "Array of configured License Manager rules.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The license configuration ARN."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "aws_datasync_location_efs": {
+        "status": "HOLD",
+        "subcategory": "DataSync",
+        "layout": "aws",
+        "page_title": "AWS: aws_datasync_location_efs",
+        "description": "Manages an EFS Location within AWS DataSync.",
+        "arguments": {
+            "ec2_config": {
+                "description": "Configuration block containing EC2 configurations for connecting to the EFS File System.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "efs_file_system_arn": {
+                "description": "Amazon Resource Name (ARN",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subdirectory": {
+                "description": "Subdirectory to perform actions as source or destination. Default `/`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value pairs of resource tags to assign to the DataSync Location.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

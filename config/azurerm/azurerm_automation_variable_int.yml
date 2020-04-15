@@ -1,0 +1,85 @@
+azurerm_automation_variable_int:
+    status: HOLD
+    subcategory: Automation
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_automation_variable_int'
+    description: Manages a integer variable in Azure Automation.
+    arguments:
+        name:
+            description: The name of the Automation Variable. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Automation
+                Variable. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        automation_account_name:
+            description: The name of the automation account in which the Variable
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the Automation Variable.
+            required: false
+            policy: ''
+            notes: ''
+        encrypted:
+            description: Specifies if the Automation Variable is encrypted. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: The value of the Automation Variable as a `integer`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Automation Variable.
+    timeouts:
+        create:
+            description: Used when creating the Automation Int Variable.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Automation Int Variable.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Automation Int Variable.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Automation Int Variable.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndFpYaGhiWEJzWlMxeVp5SUtJQ0JzYjJOaGRH
+        bHZiaUE5SUNKWFpYTjBJRlZUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWhkWFJ2YldG
+        MGFXOXVYMkZqWTI5MWJuUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0owWm1WNExXVjRZVzF3YkdVdFlXTmpiM1Z1ZENJS0lDQnNiMk5oZEdsdmJpQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExt
+        eHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lITnJkU0I3Q2lBZ0lDQnVZVzFs
+        SUQwZ0lrSmhjMmxqSWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWVhWMGIyMWhk
+        R2x2Ymw5MllYSnBZV0pzWlY5cGJuUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHWmxlQzFsZUdGdGNHeGxMWFpoY2lJS0lDQnlaWE52ZFhK
+        alpWOW5jbTkxY0Y5dVlXMWxJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1
+        WlhoaGJYQnNaUzV1WVcxbENpQWdZWFYwYjIxaGRHbHZibDloWTJOdmRXNTBYMjVoYldVZ1BTQmhl
+        blZ5WlhKdFgyRjFkRzl0WVhScGIyNWZZV05qYjNWdWRDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCMllX
+        eDFaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURFeU16UUtmUW89
+    import: !!binary |
+        Q2dwQmRYUnZiV0YwYVc5dUlFbHVkQ0JXWVhKcFlXSnNaU0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYVjBiMjFoZEdsdmJsOTJZWEpwWVdKc1pWOXBiblF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

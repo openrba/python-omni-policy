@@ -1,0 +1,79 @@
+azurerm_api_management_api_policy:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_api_policy'
+    description: Manages an API Management API Policy
+    arguments:
+        api_name:
+            description: The ID of the API Management API within the API Management
+                Service. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the API Management Service. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        xml_content:
+            description: The XML Content for this Policy as a string. An XML file
+                can be used here with Terraform's [file function](https://www.terraform.io/docs/configuration/functions/file.html
+            required: false
+            policy: ''
+            notes: ''
+        xml_link:
+            description: A link to a Policy XML Document, which must be publicly available.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management API Policy.
+    timeouts:
+        create:
+            description: Used when creating the API Management API Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management API Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management API Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management API Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYQnBJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHRndhVjl1WVcxbElDQWdJQ0FnSUNBZ0lDQWdQU0FpYlhrdFlYQnBJZ29nSUdGd2FW
+        OXRZVzVoWjJWdFpXNTBYMjVoYldVZ1BTQWlaWGhoYlhCc1pTMWhjR2x0SWdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0FpYzJWaGNtTm9MWE5sY25acFkyVWlDbjBLQ25KbGMyOTFjbU5s
+        SUNKaGVuVnlaWEp0WDJGd2FWOXRZVzVoWjJWdFpXNTBYMkZ3YVY5d2IyeHBZM2tpSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdZWEJwWDI1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJa2UyUmhkR0V1WVhwMWNt
+        VnliVjloY0dsZmJXRnVZV2RsYldWdWRGOWhjR2t1WlhoaGJYQnNaUzV1WVcxbGZTSUtJQ0JoY0ds
+        ZmJXRnVZV2RsYldWdWRGOXVZVzFsSUQwZ0lpUjdaR0YwWVM1aGVuVnlaWEp0WDJGd2FWOXRZVzVo
+        WjJWdFpXNTBYMkZ3YVM1bGVHRnRjR3hsTG1Gd2FWOXRZVzVoWjJWdFpXNTBYMjVoYldWOUlnb2dJ
+        SEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNBaUpIdGtZWFJoTG1GNmRYSmxjbTFmWVhCcFgy
+        MWhibUZuWlcxbGJuUmZZWEJwTG1WNFlXMXdiR1V1Y21WemIzVnlZMlZmWjNKdmRYQmZibUZ0Wlgw
+        aUNnb2dJSGh0YkY5amIyNTBaVzUwSUQwZ1BEeFlUVXdLUEhCdmJHbGphV1Z6UGdvZ0lEeHBibUp2
+        ZFc1a1Bnb2dJQ0FnUEdacGJtUXRZVzVrTFhKbGNHeGhZMlVnWm5KdmJUMGllSGw2SWlCMGJ6MGlZ
+        V0pqSWlBdlBnb2dJRHd2YVc1aWIzVnVaRDRLUEM5d2IyeHBZMmxsY3o0S1dFMU1DbjBL
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JCVUVrZ1VHOXNhV041SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWVhCcFgzQnZiR2xqZVM1b2RHMXNMbTFoY210
+        a2IzZHU=

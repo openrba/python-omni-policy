@@ -1,0 +1,92 @@
+{
+    "azurerm_policy_definition": {
+        "status": "HOLD",
+        "subcategory": "Policy",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_policy_definition",
+        "description": "Manages a policy rule definition. Policy definitions do not take effect until they are assigned to a scope using a Policy Assignment.",
+        "arguments": {
+            "name": {
+                "description": "The name of the policy definition. Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_type": {
+                "description": "The policy type. Possible values are `BuiltIn`, `Custom` and `NotSpecified`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "mode": {
+                "description": "The policy mode that allows you to specify which resource",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "The display name of the policy definition.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the policy definition.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "management_group_name": {
+                "description": "The name of the Management Group where this policy should be defined. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_rule": {
+                "description": "The policy rule for the policy definition. This",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "The metadata for the policy definition. This",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "Parameters for the policy definition. This field",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Policy Definition."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Policy Definition.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Policy Definition.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Policy Definition.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Policy Definition.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+azurerm_eventhub_namespace:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_eventhub_namespace'
+    description: Manages an EventHub Namespace.
+    arguments:
+        name:
+            description: Specifies the name of the EventHub Namespace resource. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the namespace.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: Defines which tier to use. Valid options are `Basic` and
+                `Standard`.
+            required: true
+            policy: ''
+            notes: ''
+        capacity:
+            description: Specifies the Capacity / Throughput Units for a `Standard`
+                SKU namespace. Valid values range from `1` - `20`.
+            required: false
+            policy: ''
+            notes: ''
+        auto_inflate_enabled:
+            description: Is Auto Inflate enabled for the EventHub Namespace?
+            required: false
+            policy: ''
+            notes: ''
+        maximum_throughput_units:
+            description: Specifies the maximum number of throughput units when Auto
+                Inflate is Enabled. Valid values range from `1` - `20`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        network_rulesets:
+            description: A `network_rulesets` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        default_action:
+            description: The default action to take when a rule is not matched. Possible
+                values are `Allow` and `Deny`.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_network_rule:
+            description: One or more `virtual_network_rule` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        ip_rule:
+            description: One or more `ip_rule` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The id of the subnet to match on.
+            required: true
+            policy: ''
+            notes: ''
+        ignore_missing_virtual_network_service_endpoint:
+            description: Are missing virtual network service endpoints ignored? Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        ip_mask:
+            description: The ip mask to match on.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: The action to take when the rule is  matched. Possible values
+                are `Allow`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The EventHub Namespace ID.
+        default_primary_connection_string:
+            description: The primary connection string for the authorization
+        default_secondary_connection_string:
+            description: The secondary connection string for the
+        default_primary_key:
+            description: The primary access key for the authorization rule `RootManageSharedAccessKey`.
+        default_secondary_key:
+            description: The secondary access key for the authorization rule `RootManageSharedAccessKey`.
+    timeouts:
+        create:
+            description: Used when creating the EventHub Namespace.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the EventHub Namespace.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the EventHub Namespace.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the EventHub Namespace.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        bGRtVnVkR2gxWWw5dVlXMWxjM0JoWTJVaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXNWhiV1Z6Y0dGalpTSUtJQ0JzYjJOaGRHbHZi
+        aUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNH
+        eGxMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20x
+        ZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjMnQxSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS0lDQmpZWEJoWTJsMGVTQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnTWdvS0lDQjBZV2R6SUQwZ2V3b2dJQ0FnWlc1MmFYSnZibTFsYm5RZ1BTQWlVSEp2WkhWamRH
+        bHZiaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRmRtVnVkRWgxWWlCT1lXMWxjM0JoWTJWeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYWmxiblJvZFdKZmJtRnRaWE53WVdObExtaDBiV3d1YldGeWEyUnZkMjQ9

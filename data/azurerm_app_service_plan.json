@@ -1,0 +1,113 @@
+{
+    "azurerm_app_service_plan": {
+        "status": "HOLD",
+        "subcategory": "App Service (Web Apps)",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_app_service_plan",
+        "description": "Manages an App Service Plan component.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the App Service Plan component. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the App Service Plan component.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "kind": {
+                "description": "The kind of the App Service Plan to create. Possible values are `Windows` (also available as `App`), `Linux`, `elastic` (for Premium Consumption",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "A `sku` block as documented below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "app_service_environment_id": {
+                "description": "The ID of the App Service Environment where the App Service Plan should be located. Changing forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "reserved": {
+                "description": "Is this App Service Plan `Reserved`. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "per_site_scaling": {
+                "description": "Can Apps assigned to this App Service Plan be scaled independently? If set to `false` apps assigned to this plan will scale to all instances of the plan.  Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tier": {
+                "description": "Specifies the plan's pricing tier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "size": {
+                "description": "Specifies the plan's instance size.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "capacity": {
+                "description": "Specifies the number of workers associated with this App Service Plan.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the App Service Plan component."
+            },
+            "maximum_number_of_workers": {
+                "description": "The maximum number of workers supported with the App Service Plan's sku."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the App Service Plan.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the App Service Plan.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the App Service Plan.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the App Service Plan.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

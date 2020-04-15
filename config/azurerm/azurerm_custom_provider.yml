@@ -1,0 +1,101 @@
+azurerm_custom_provider:
+    status: HOLD
+    subcategory: Custom Providers
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_custom_provider'
+    description: Manages an Azure Custom Provider.
+    arguments:
+        name:
+            description: 'Specifies the name of the action. '
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Custom
+                Provider.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_type:
+            description: Any number of `resource_type` block as defined below. One
+                of `resource_type` or `action` must be specified.
+            required: false
+            policy: ''
+            notes: ''
+        action:
+            description: Any number of `action` block as defined below. One of `resource_type`
+                or `action` must be specified.
+            required: false
+            policy: ''
+            notes: ''
+        validation:
+            description: Any number of `validation` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        endpoint:
+            description: 'Specifies the endpoint of the action. '
+            required: true
+            policy: ''
+            notes: ''
+        routing_type:
+            description: 'The routing type that is supported for the resource request.
+                Valid values are `ResourceTypeRoutingProxy` or `ResourceTypeRoutingProxyCache`.
+                This value defaults to `ResourceTypeRoutingProxy`. '
+            required: false
+            policy: ''
+            notes: ''
+        specification:
+            description: 'The endpoint where the validation specification is located. '
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Custom Provider.
+    timeouts:
+        create:
+            description: Used when creating the resource.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the resource.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the resource.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the resource.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        amRYTjBiMjFmY0hKdmRtbGtaWElpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsWDNCeWIzWnBaR1Z5SWdvZ0lHeHZZMkYwYVc5dUlDQWdJ
+        Q0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJH
+        OWpZWFJwYjI0S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhO
+        dmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLQ2lBZ2NtVnpiM1Z5WTJWZmRIbHdaU0I3
+        Q2lBZ0lDQnVZVzFsSUNBZ0lDQTlJQ0prUldZeElnb2dJQ0FnWlc1a2NHOXBiblFnUFNBaWFIUjBj
+        SE02THk5MFpYTjBaVzVrY0c5cGJuUXVZMjl0THlJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwRGRYTjBiMjBnVUhKdmRtbGtaWElnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkzVnpkRzl0WDNCeWIzWnBaR1Z5TG1oMGJXd3ViV0Z5YTJSdmQyND0=

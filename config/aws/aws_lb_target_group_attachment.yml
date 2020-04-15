@@ -1,0 +1,38 @@
+aws_lb_target_group_attachment:
+    status: HOLD
+    subcategory: Elastic Load Balancing v2 (ALB/NLB)
+    layout: aws
+    page_title: 'AWS: aws_lb_target_group_attachment'
+    description: 'Provides the ability to register instances and containers with a
+        LB
+
+        target group'
+    arguments:
+        target_group_arn:
+            description: The ARN of the target group with which to register targets
+            required: true
+            policy: ''
+            notes: ''
+        target_id:
+            description: The ID of the target. This is the Instance ID for an instance,
+                or the container ID for an ECS container. If the target type is ip,
+                specify an IP address. If the target type is lambda, specify the arn
+                of lambda.
+            required: true
+            policy: ''
+            notes: ''
+        port:
+            description: The port on which targets receive traffic.
+            required: false
+            policy: ''
+            notes: ''
+        availability_zone:
+            description: The Availability Zone where the IP address of the target
+                is to be registered.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: A unique identifier for the attachment
+    timeouts: {}

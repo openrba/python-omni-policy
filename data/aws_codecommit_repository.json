@@ -1,0 +1,50 @@
+{
+    "aws_codecommit_repository": {
+        "status": "HOLD",
+        "subcategory": "CodeCommit",
+        "layout": "aws",
+        "page_title": "AWS: aws_codecommit_repository",
+        "description": "Provides a CodeCommit Repository Resource.",
+        "arguments": {
+            "repository_name": {
+                "description": "The name for the repository. This needs to be less than 100 characters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the repository. This needs to be less than 1000 characters",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_branch": {
+                "description": "The default branch of the repository. The branch specified here needs to exist.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "repository_id": {
+                "description": "The ID of the repository"
+            },
+            "arn": {
+                "description": "The ARN of the repository"
+            },
+            "clone_url_http": {
+                "description": "The URL to use for cloning the repository over HTTPS."
+            },
+            "clone_url_ssh": {
+                "description": "The URL to use for cloning the repository over SSH."
+            }
+        },
+        "timeouts": {}
+    }
+}

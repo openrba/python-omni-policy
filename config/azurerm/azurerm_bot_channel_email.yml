@@ -1,0 +1,85 @@
+azurerm_bot_channel_email:
+    status: HOLD
+    subcategory: Bot
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_bot_channel_email'
+    description: Manages a Email integration for a Bot Channel
+    arguments:
+        resource_group_name:
+            description: The name of the resource group in which to create the Bot
+                Channel. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The supported Azure location where the resource exists. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        bot_name:
+            description: The name of the Bot Resource this channel will be associated
+                with. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        email_address:
+            description: The email address that the Bot will authenticate with.
+            required: true
+            policy: ''
+            notes: ''
+        email_password:
+            description: The email password that the Bot will authenticate with.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Email Integration for a Bot Channel.
+    timeouts:
+        create:
+            description: Used when creating the Email Integration for a Bot Channel.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Email Integration for a Bot Channel.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Email Integration for a Bot Channel.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Email Integration for a Bot Channel.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnlJZ0ltTjFjbkpsYm5RaUlIdDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYSmxjMjkxY21ObGN5SUtJQ0JzYjJO
+        aGRHbHZiaUE5SUNKdWIzSjBhR1YxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        WW05MFgyTm9ZVzV1Wld4elgzSmxaMmx6ZEhKaGRHbHZiaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1VpQ2lBZ2JHOWpZWFJwYjI0Z0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0puYkc5aVlXd2lDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNB
+        OUlDSWtlMkY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxmU0lL
+        SUNCemEzVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1l3SWdvZ0lHMXBZM0p2YzI5bWRGOWhj
+        SEJmYVdRZ0lDQWdQU0FpSkh0a1lYUmhMbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnk1amRY
+        SnlaVzUwTG1Oc2FXVnVkRjlwWkgwaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkp2ZEY5
+        amFHRnVibVZzWDBWdFlXbHNJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHSnZkRjl1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNJa2UyRjZkWEpsY20xZlltOTBYMk5vWVc1dVpXeHpYM0psWjJsemRISmhk
+        R2x2Ymk1bGVHRnRjR3hsTG01aGJXVjlJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0lrZTJGNmRYSmxjbTFmWW05MFgyTm9ZVzV1Wld4elgzSmxaMmx6ZEhKaGRHbHZiaTVsZUdG
+        dGNHeGxMbXh2WTJGMGFXOXVmU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQWdQU0Fp
+        Skh0aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlgwaUNpQWdZ
+        MnhwWlc1MFgybGtJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWSlpDSUtJQ0JqYkdsbGJu
+        UmZjMlZqY21WMElDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pWTmxZM0psZENJS0lDQjJaWEpwWm1s
+        allYUnBiMjVmZEc5clpXNGdJQ0FnUFNBaVpYaGhiWEJzWlZabGNtbG1hV05oZEdsdmJsUnZhMlZ1
+        SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwVWFHVWdSVzFoYVd3Z1NXNTBaV2R5WVhScGIyNGdabTl5SUdFZ1FtOTBJRU5vWVc1dVpXd2dZ
+        MkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltOTBYMk5vWVc1dVpXeGZaVzFoYVd3dWJXRnlhMlJ2ZDI0PQ==

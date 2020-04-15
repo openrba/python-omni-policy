@@ -1,0 +1,74 @@
+{
+    "aws_spot_instance_request": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_spot_instance_request",
+        "description": "Provides a Spot Instance Request resource.",
+        "arguments": {
+            "spot_price": {
+                "description": "The maximum price to request on the spot market.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wait_for_fulfillment": {
+                "description": "If set, Terraform will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "spot_type": {
+                "description": "If set to `one-time`, after",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "launch_group": {
+                "description": "A launch group is a group of spot instances that launch together and terminate together.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "block_duration_minutes": {
+                "description": "The required duration for the Spot instances, in minutes. This value must be a multiple of 60 (60, 120, 180, 240, 300, or 360).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_interruption_behaviour": {
+                "description": "Indicates whether a Spot instance stops or terminates when it is interrupted. Default is `terminate` as this is the current AWS behaviour.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "valid_until": {
+                "description": "The end date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "valid_from": {
+                "description": "The start date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Spot Instance Request ID."
+            },
+            "spot_bid_status": {
+                "description": "The current [bid"
+            }
+        },
+        "timeouts": {}
+    }
+}

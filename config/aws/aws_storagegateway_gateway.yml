@@ -1,0 +1,77 @@
+aws_storagegateway_gateway:
+    status: HOLD
+    subcategory: Storage Gateway
+    layout: aws
+    page_title: 'AWS: aws_storagegateway_gateway'
+    description: Manages an AWS Storage Gateway file, tape, or volume gateway in the
+        provider region
+    arguments:
+        gateway_name:
+            description: Name of the gateway.
+            required: true
+            policy: ''
+            notes: ''
+        gateway_timezone:
+            description: Time zone for the gateway. The time zone is of the format
+                "GMT", "GMT-hr:mm", or "GMT+hr:mm". For example, `GMT-4:00` indicates
+                the time is 4 hours behind GMT. The time zone is used, for example,
+                for scheduling snapshots and your gateway's maintenance schedule.
+            required: true
+            policy: ''
+            notes: ''
+        activation_key:
+            description: Gateway activation key during resource creation. Conflicts
+                with `gateway_ip_address`. Additional information is available in
+                the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
+            required: false
+            policy: ''
+            notes: ''
+        gateway_ip_address:
+            description: Gateway IP address to retrieve activation key during resource
+                creation. Conflicts with `activation_key`. Gateway must be accessible
+                on port 80 from where Terraform is running. Additional information
+                is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
+            required: false
+            policy: ''
+            notes: ''
+        gateway_type:
+            description: 'Type of the gateway. The default value is `STORED`. Valid
+                values: `CACHED`, `FILE_S3`, `STORED`, `VTL`.'
+            required: false
+            policy: ''
+            notes: ''
+        cloudwatch_log_group_arn:
+            description: The Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        media_changer_type:
+            description: 'Type of medium changer to use for tape gateway. Terraform
+                cannot detect drift of this argument. Valid values: `STK-L700`, `AWS-Gateway-VTL`.'
+            required: false
+            policy: ''
+            notes: ''
+        smb_active_directory_settings:
+            description: Nested argument with Active Directory domain join information
+                for Server Message Block (SMB
+            required: false
+            policy: ''
+            notes: ''
+        smb_guest_password:
+            description: Guest password for Server Message Block (SMB
+            required: false
+            policy: ''
+            notes: ''
+        tape_drive_type:
+            description: 'Type of tape drive to use for tape gateway. Terraform cannot
+                detect drift of this argument. Valid values: `IBM-ULT3580-TD5`.'
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

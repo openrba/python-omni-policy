@@ -1,0 +1,68 @@
+{
+    "azurerm_automation_module": {
+        "status": "HOLD",
+        "subcategory": "Automation",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_automation_module",
+        "description": "Manages a Automation Module.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Module. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Module is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_account_name": {
+                "description": "The name of the automation account in which the Module is created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "module_link": {
+                "description": "The published Module link.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "uri": {
+                "description": "The uri of the module content (zip or nupkg).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Automation Module ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Automation Module.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Automation Module.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Automation Module.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Automation Module.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

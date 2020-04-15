@@ -1,0 +1,80 @@
+azurerm_api_management_api_operation_policy:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_api_operation_policy'
+    description: Manages an API Management API Operation Policy
+    arguments:
+        api_name:
+            description: The ID of the API Management API Operation within the API
+                Management Service. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the API Management Service. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        xml_content:
+            description: The XML Content for this Policy.
+            required: false
+            policy: ''
+            notes: ''
+        xml_link:
+            description: A link to a Policy XML Document, which must be publicly available.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management API Operation Policy.
+    timeouts:
+        create:
+            description: Used when creating the API Management API Operation Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management API Operation Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management API Operation Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management API Operation Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJGd2FWOXRZVzVoWjJWdFpXNTBYMkZ3YVY5dmNHVnlZ
+        WFJwYjI0aUlDSmxlR0Z0Y0d4bElpQjdDaUFnSXk0dUxncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNt
+        VnliVjloY0dsZmJXRnVZV2RsYldWdWRGOWhjR2xmYjNCbGNtRjBhVzl1WDNCdmJHbGplU0lnSW1W
+        NFlXMXdiR1VpSUhzS0lDQmhjR2xmYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjlo
+        Y0dsZmJXRnVZV2RsYldWdWRGOWhjR2xmYjNCbGNtRjBhVzl1TG1WNFlXMXdiR1V1WVhCcFgyNWhi
+        V1VLSUNCaGNHbGZiV0Z1WVdkbGJXVnVkRjl1WVcxbElEMGdZWHAxY21WeWJWOWhjR2xmYldGdVlX
+        ZGxiV1Z1ZEY5aGNHbGZiM0JsY21GMGFXOXVMbVY0WVcxd2JHVXVZWEJwWDIxaGJtRm5aVzFsYm5S
+        ZmJtRnRaUW9nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgyRndhVjl0
+        WVc1aFoyVnRaVzUwWDJGd2FWOXZjR1Z5WVhScGIyNHVaWGhoYlhCc1pTNXlaWE52ZFhKalpWOW5j
+        bTkxY0Y5dVlXMWxDaUFnYjNCbGNtRjBhVzl1WDJsa0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZllY
+        QnBYMjFoYm1GblpXMWxiblJmWVhCcFgyOXdaWEpoZEdsdmJpNWxlR0Z0Y0d4bExtOXdaWEpoZEds
+        dmJsOXBaQW9LSUNCNGJXeGZZMjl1ZEdWdWRDQTlJRHc4V0UxTUNqeHdiMnhwWTJsbGN6NEtJQ0E4
+        YVc1aWIzVnVaRDRLSUNBZ0lEeG1hVzVrTFdGdVpDMXlaWEJzWVdObElHWnliMjA5SW5oNWVpSWdk
+        Rzg5SW1GaVl5SWdMejRLSUNBOEwybHVZbTkxYm1RK0Nqd3ZjRzlzYVdOcFpYTStDbGhOVEFvS2ZR
+        bz0=
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JCVUVrZ1QzQmxjbUYwYVc5dUlGQnZiR2xqZVNCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWVhCcFgyOXdaWEpoZEdsdmJsOXdiMnhwWTNr
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

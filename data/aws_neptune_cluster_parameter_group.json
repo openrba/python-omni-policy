@@ -1,0 +1,68 @@
+{
+    "aws_neptune_cluster_parameter_group": {
+        "status": "HOLD",
+        "subcategory": "Neptune",
+        "layout": "aws",
+        "page_title": "AWS: aws_neptune_cluster_parameter_group",
+        "description": "Manages a Neptune Cluster Parameter Group",
+        "arguments": {
+            "name": {
+                "description": "The name of the neptune parameter.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name_prefix": {
+                "description": "Creates a unique name beginning with the specified prefix. Conflicts with `name`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "family": {
+                "description": "The family of the neptune cluster parameter group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the neptune cluster parameter group. Defaults to \"Managed by Terraform\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameter": {
+                "description": "A list of neptune parameters to apply.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The value of the neptune parameter.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "apply_method": {
+                "description": "Valid values are `immediate` and `pending-reboot`. Defaults to `pending-reboot`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The neptune cluster parameter group name."
+            },
+            "arn": {
+                "description": "The ARN of the neptune cluster parameter group."
+            }
+        },
+        "timeouts": {}
+    }
+}

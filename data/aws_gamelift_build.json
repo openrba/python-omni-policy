@@ -1,0 +1,50 @@
+{
+    "aws_gamelift_build": {
+        "status": "HOLD",
+        "subcategory": "Gamelift",
+        "layout": "aws",
+        "page_title": "AWS: aws_gamelift_build",
+        "description": "Provides a Gamelift Build resource.",
+        "arguments": {
+            "name": {
+                "description": "Name of the build",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "operating_system": {
+                "description": "Operating system that the game server binaries are built to run on. e.g. `WINDOWS_2012` or `AMAZON_LINUX`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_location": {
+                "description": "Information indicating where your game build files are stored. See below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "Version that is associated with this build.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Gamelift Build ID."
+            },
+            "arn": {
+                "description": "Gamelift Build ARN."
+            }
+        },
+        "timeouts": {}
+    }
+}

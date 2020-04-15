@@ -1,0 +1,26 @@
+{
+    "aws_route53_delegation_set": {
+        "status": "HOLD",
+        "subcategory": "Route53",
+        "layout": "aws",
+        "page_title": "AWS: aws_route53_delegation_set",
+        "description": "Provides a Route53 Delegation Set resource.",
+        "arguments": {
+            "reference_name": {
+                "description": "This is a reference name used in Caller Reference",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The delegation set ID"
+            },
+            "name_servers": {
+                "description": "A list of authoritative name servers for the hosted zone"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,158 @@
+aws_neptune_cluster:
+    status: HOLD
+    subcategory: Neptune
+    layout: aws
+    page_title: 'AWS: aws_neptune_cluster'
+    description: Provides an Neptune Cluster Resource
+    arguments:
+        apply_immediately:
+            description: Specifies whether any cluster modifications are applied immediately,
+                or during the next maintenance window. Default is `false`.
+            required: false
+            policy: ''
+            notes: ''
+        availability_zones:
+            description: A list of EC2 Availability Zones that instances in the Neptune
+                cluster can be created in.
+            required: false
+            policy: ''
+            notes: ''
+        backup_retention_period:
+            description: The days to retain backups for. Default `1`
+            required: false
+            policy: ''
+            notes: ''
+        cluster_identifier:
+            description: The cluster identifier. If omitted, Terraform will assign
+                a random, unique identifier.
+            required: false
+            policy: ''
+            notes: ''
+        cluster_identifier_prefix:
+            description: Creates a unique cluster identifier beginning with the specified
+                prefix. Conflicts with `cluster_identifier`.
+            required: false
+            policy: ''
+            notes: ''
+        enable_cloudwatch_logs_exports:
+            description: A list of the log types this DB cluster is configured to
+                export to Cloudwatch Logs. Currently only supports `audit`.
+            required: false
+            policy: ''
+            notes: ''
+        engine:
+            description: The name of the database engine to be used for this Neptune
+                cluster. Defaults to `neptune`.
+            required: false
+            policy: ''
+            notes: ''
+        engine_version:
+            description: The database engine version.
+            required: false
+            policy: ''
+            notes: ''
+        final_snapshot_identifier:
+            description: The name of your final Neptune snapshot when this Neptune
+                cluster is deleted. If omitted, no final snapshot will be made.
+            required: false
+            policy: ''
+            notes: ''
+        iam_roles:
+            description: A List of ARNs for the IAM roles to associate to the Neptune
+                Cluster.
+            required: false
+            policy: ''
+            notes: ''
+        iam_database_authentication_enabled:
+            description: Specifies whether or mappings of AWS Identity and Access
+                Management (IAM
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_arn:
+            description: The ARN for the KMS encryption key. When specifying `kms_key_arn`,
+                `storage_encrypted` needs to be set to true.
+            required: false
+            policy: ''
+            notes: ''
+        neptune_subnet_group_name:
+            description: A Neptune subnet group to associate with this Neptune instance.
+            required: false
+            policy: ''
+            notes: ''
+        neptune_cluster_parameter_group_name:
+            description: A cluster parameter group to associate with the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        preferred_backup_window:
+            description: 'The daily time range during which automated backups are
+                created if automated backups are enabled using the BackupRetentionPeriod
+                parameter. Time in UTC. Default: A 30-minute window selected at random
+                from an 8-hour block of time per region. e.g. 04:00-09:00'
+            required: false
+            policy: ''
+            notes: ''
+        preferred_maintenance_window:
+            description: The weekly time range during which system maintenance can
+                occur, in (UTC
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: The port on which the Neptune accepts connections. Default
+                is `8182`.
+            required: false
+            policy: ''
+            notes: ''
+        replication_source_identifier:
+            description: ARN of a source Neptune cluster or Neptune instance if this
+                Neptune cluster is to be created as a Read Replica.
+            required: false
+            policy: ''
+            notes: ''
+        skip_final_snapshot:
+            description: Determines whether a final Neptune snapshot is created before
+                the Neptune cluster is deleted. If true is specified, no Neptune snapshot
+                is created. If false is specified, a Neptune snapshot is created before
+                the Neptune cluster is deleted, using the value from `final_snapshot_identifier`.
+                Default is `false`.
+            required: false
+            policy: ''
+            notes: ''
+        snapshot_identifier:
+            description: Specifies whether or not to create this cluster from a snapshot.
+                You can use either the name or ARN when specifying a Neptune cluster
+                snapshot, or the ARN when specifying a Neptune snapshot.
+            required: false
+            policy: ''
+            notes: ''
+        storage_encrypted:
+            description: Specifies whether the Neptune cluster is encrypted. The default
+                is `false` if not specified.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the Neptune cluster.
+            required: false
+            policy: ''
+            notes: ''
+        vpc_security_group_ids:
+            description: List of VPC security groups to associate with the Cluster
+            required: false
+            policy: ''
+            notes: ''
+        deletion_protection:
+            description: A value that indicates whether the DB cluster has deletion
+                protection enabled.The database can't be deleted when deletion protection
+                is enabled. By default, deletion protection is disabled.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Neptune Cluster Amazon Resource Name (ARN)
+        cluster_resource_id:
+            description: The Neptune Cluster Resource ID
+    timeouts: {}

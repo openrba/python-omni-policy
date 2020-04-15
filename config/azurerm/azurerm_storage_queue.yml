@@ -1,0 +1,68 @@
+azurerm_storage_queue:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_queue'
+    description: Manages a Queue within an Azure Storage Account.
+    arguments:
+        name:
+            description: The name of the Queue which should be created within the
+                Storage Account. Must be unique within the storage account the queue
+                is located.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_name:
+            description: Specifies the Storage Account in which the Storage Queue
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        metadata:
+            description: A mapping of MetaData which should be assigned to this Storage
+                Queue.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Storage Queue.
+    timeouts:
+        create:
+            description: Used when creating the Storage Queue.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Queue.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Queue.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Queue.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emRHOXlZV2RsWDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVnpkRzl5WVdkbFlXTmpJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRY
+        QXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFn
+        WVdOamIzVnVkRjkwYVdWeUlDQWdJQ0FnSUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lHRmpZ
+        MjkxYm5SZmNtVndiR2xqWVhScGIyNWZkSGx3WlNBOUlDSk1VbE1pQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgzTjBiM0poWjJWZmNYVmxkV1VpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWJYbHpZVzF3YkdWeGRXVjFaU0lLSUNCemRHOXlZV2Rs
+        WDJGalkyOTFiblJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWhZMk52ZFc1MExtVjRZ
+        VzF3YkdVdWJtRnRaUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUZGMVpYVmxKM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5eGRXVjFaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

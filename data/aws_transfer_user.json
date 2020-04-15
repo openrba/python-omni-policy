@@ -1,0 +1,53 @@
+{
+    "aws_transfer_user": {
+        "status": "HOLD",
+        "subcategory": "Transfer",
+        "layout": "aws",
+        "page_title": "AWS: aws_transfer_user",
+        "description": "Provides a AWS Transfer User resource.",
+        "arguments": {
+            "server_id": {
+                "description": "The Server ID of the Transfer Server (e.g. `s-12345678`)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_name": {
+                "description": "The name used for log in to your SFTP server.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "home_directory": {
+                "description": "The landing directory (folder",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy": {
+                "description": "An IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include `${Transfer:UserName}`, `${Transfer:HomeDirectory}`, and `${Transfer:HomeBucket}`. Since the IAM variable syntax matches Terraform's interpolation syntax, they must be escaped inside Terraform configuration strings (`$${Transfer:UserName}`).  These are evaluated on-the-fly when navigating the bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "Amazon Resource Name (ARN",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of Transfer User"
+            }
+        },
+        "timeouts": {}
+    }
+}

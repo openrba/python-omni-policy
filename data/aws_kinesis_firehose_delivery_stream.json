@@ -1,0 +1,299 @@
+{
+    "aws_kinesis_firehose_delivery_stream": {
+        "status": "HOLD",
+        "subcategory": "Kinesis Firehose",
+        "layout": "aws",
+        "page_title": "AWS: aws_kinesis_firehose_delivery_stream",
+        "description": "Provides a AWS Kinesis Firehose Delivery Stream",
+        "arguments": {
+            "name": {
+                "description": "A name to identify the stream. This is unique to the",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kinesis_source_configuration": {
+                "description": "Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_side_encryption": {
+                "description": "Encrypt at rest options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "destination": {
+                "description": "This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extended_s3` instead), `extended_s3`, `redshift`, `elasticsearch`, and `splunk`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_configuration": {
+                "description": "Required for non-S3 destinations. For S3 destination, use `extended_s3_configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "extended_s3_configuration": {
+                "description": "Enhanced configuration options for the s3 destination. More details are given below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "redshift_configuration": {
+                "description": "Configuration options if redshift is the destination.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "elasticsearch_configuration": {
+                "description": "Configuration options if elasticsearch is the destination. More details are given below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kinesis_stream_arn": {
+                "description": "The kinesis stream used as the source of the firehose delivery stream.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_arn": {
+                "description": "The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The pattern needs to be `arn:.*`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Enables or disables data processing.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket_arn": {
+                "description": "The ARN of the S3 bucket",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix": {
+                "description": "The \"YYYY/MM/DD/HH\" time format prefix is automatically used for delivered S3 files. You can specify an extra prefix to be added in front of the time format prefix. Note that if the prefix ends with a slash, it appears as a folder in the S3 bucket",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "buffer_size": {
+                "description": "Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "buffer_interval": {
+                "description": "Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "compression_format": {
+                "description": "The compression format. If no value is specified, the default is UNCOMPRESSED. Other supported values are GZIP, ZIP & Snappy. If the destination is redshift you cannot use ZIP or Snappy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_arn": {
+                "description": "Specifies the KMS key ARN the stream will use to encrypt data. If not set, no encryption will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cloudwatch_logging_options": {
+                "description": "The CloudWatch Logging Options for the delivery stream. More details are given below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "data_format_conversion_configuration": {
+                "description": "Nested argument for the serializer, deserializer, and schema for converting data from the JSON format to the Parquet or ORC format before writing it to Amazon S3. More details given below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "error_output_prefix": {
+                "description": "Prefix added to failed records before writing them to S3. This prefix appears immediately following the bucket name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "processing_configuration": {
+                "description": "The data processing configuration.  More details are given below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_backup_mode": {
+                "description": "Defines how documents should be delivered to Amazon S3.  Valid values are `FailedEventsOnly` and `AllEvents`.  Default value is `FailedEventsOnly`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_backup_configuration": {
+                "description": "The configuration for backup in Amazon S3. Required if `s3_backup_mode` is `Enabled`. Supports the same fields as `s3_configuration` object.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_jdbcurl": {
+                "description": "The jdbcurl of the redshift cluster.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "username": {
+                "description": "The username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "password": {
+                "description": "The password for the username above.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "retry_duration": {
+                "description": "After an initial failure to deliver to Splunk, the total amount of time, in seconds between 0 to 7200, during which Firehose re-attempts delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "data_table_name": {
+                "description": "The name of the table in the redshift cluster that the s3 bucket will copy to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "copy_options": {
+                "description": "Copy options for copying the data from the s3 intermediate bucket into redshift, for example to change the default delimiter. For valid values, see the [AWS documentation](http://docs.aws.amazon.com/firehose/latest/APIReference/API_CopyCommand.html)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "data_table_columns": {
+                "description": "The data table columns that will be targeted by the copy command.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "buffering_interval": {
+                "description": "Buffer incoming data for the specified period of time, in seconds between 60 to 900, before delivering it to the destination.  The default value is 300s.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "buffering_size": {
+                "description": "Buffer incoming data to the specified size, in MBs between 1 to 100, before delivering it to the destination.  The default value is 5MB.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain_arn": {
+                "description": "The ARN of the Amazon ES domain.  The IAM role must have permission for `DescribeElasticsearchDomain`, `DescribeElasticsearchDomains`, and `DescribeElasticsearchDomainConfig` after assuming `RoleARN`.  The pattern needs to be `arn:.*`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "index_name": {
+                "description": "The Elasticsearch index name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "index_rotation_period": {
+                "description": "The Elasticsearch index rotation period.  Index rotation appends a timestamp to the IndexName to facilitate expiration of old data.  Valid values are `NoRotation`, `OneHour`, `OneDay`, `OneWeek`, and `OneMonth`.  The default value is `OneDay`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type_name": {
+                "description": "The Elasticsearch type name with maximum length of 100 characters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "hec_acknowledgment_timeout": {
+                "description": "The amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hec_endpoint": {
+                "description": "The HTTP Event Collector (HEC",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "hec_endpoint_type": {
+                "description": "The HEC endpoint type. Valid values are `Raw` or `Event`. The default value is `Raw`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_group_name": {
+                "description": "The CloudWatch group name for logging. This value is required if `enabled` is true.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_stream_name": {
+                "description": "The CloudWatch log stream name for logging. This value is required if `enabled` is true.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "processors": {
+                "description": "Array of data processors. More details are given below",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of processor. Valid Values: `Lambda`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "Array of processor parameters. More details are given below",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameter_name": {
+                "description": "Parameter name. Valid Values: `LambdaArn`, `NumberOfRetries`, `RoleArn`, `BufferSizeInMBs`, `BufferIntervalInSeconds`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parameter_value": {
+                "description": "Parameter value. Must be between 1 and 512 length (inclusive). When providing a Lambda ARN, you should specify the resource version as well.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The Amazon Resource Name (ARN) specifying the Stream"
+            }
+        },
+        "timeouts": {}
+    }
+}

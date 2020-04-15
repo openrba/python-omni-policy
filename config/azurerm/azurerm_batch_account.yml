@@ -1,0 +1,111 @@
+azurerm_batch_account:
+    status: HOLD
+    subcategory: Batch
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_batch_account'
+    description: Manages an Azure Batch account.
+    arguments:
+        name:
+            description: Specifies the name of the Batch account. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Batch
+                account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        pool_allocation_mode:
+            description: Specifies the mode to use for pool allocation. Possible values
+                are `BatchService` or `UserSubscription`. Defaults to `BatchService`.
+            required: false
+            policy: ''
+            notes: ''
+        key_vault_reference:
+            description: A `key_vault_reference` block that describes the Azure KeyVault
+                reference to use when deploying the Azure Batch account using the
+                `UserSubscription` pool allocation mode.
+            required: false
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: Specifies the storage account to use for the Batch account.
+                If not specified, Azure Batch will manage the storage.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        id:
+            description: The Azure identifier of the Azure KeyVault to use.
+            required: true
+            policy: ''
+            notes: ''
+        url:
+            description: The HTTPS URL of the Azure KeyVault to use.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Batch Account.
+        primary_access_key:
+            description: The Batch account primary access key.
+        secondary_access_key:
+            description: The Batch account secondary access key.
+        account_endpoint:
+            description: The account endpoint used to interact with the Batch service.
+    timeouts:
+        create:
+            description: Used when creating the Batch Account.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Batch Account.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Batch Account.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Batch Account.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJsYzNSaVlYUmphQ0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SjNaWE4wWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5emRHOXlZV2RsWDJG
+        alkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJblJsYzNSemRHOXlZV2RsSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJ
+        Q0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENp
+        QWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhK
+        alpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ1lXTmpiM1Z1ZEY5MGFXVnlJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb2dJR0ZqWTI5MWJuUmZjbVZ3YkdsallYUnBi
+        MjVmZEhsd1pTQTlJQ0pNVWxNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkpoZEdOb1gy
+        RmpZMjkxYm5RaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z1BTQWlkR1Z6ZEdKaGRHTm9ZV05qYjNWdWRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFs
+        SUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdi
+        RzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIz
+        VndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J3YjI5c1gyRnNiRzlqWVhScGIyNWZiVzlrWlNB
+        OUlDSkNZWFJqYUZObGNuWnBZMlVpQ2lBZ2MzUnZjbUZuWlY5aFkyTnZkVzUwWDJsa0lDQWdQU0Jo
+        ZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRDNWxlR0Z0Y0d4bExtbGtDZ29nSUhSaFozTWdQ
+        U0I3Q2lBZ0lDQmxibllnUFNBaWRHVnpkQ0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQ1lYUmphQ0JCWTJOdmRXNTBJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRjBZMmhmWVdOamIzVnVkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

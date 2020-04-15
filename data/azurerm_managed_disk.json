@@ -1,0 +1,37 @@
+{
+    "azurerm_managed_disk": {
+        "status": "HOLD",
+        "subcategory": "Compute",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_managed_disk",
+        "description": "Manages a Managed Disk.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Managed Disk. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group where the Managed Disk should exist.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specified the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_type": {
+                "description": "The type of storage to use for the managed disk. Possible values are `Standard_LRS`, `Premium_LRS`, `StandardSSD_LRS` or `UltraSSD_LRS`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

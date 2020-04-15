@@ -1,0 +1,73 @@
+{
+    "aws_vpn_connection": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpn_connection",
+        "description": "Manages an EC2 VPN connection. These objects can be connected to customer gateways, and allow you to establish tunnels between your network and Amazon.",
+        "arguments": {
+            "customer_gateway_id": {
+                "description": "The ID of the customer gateway.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of VPN connection. The only type AWS supports at this time is \"ipsec.1\".",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "transit_gateway_id": {
+                "description": "The ID of the EC2 Transit Gateway.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpn_gateway_id": {
+                "description": "The ID of the Virtual Private Gateway.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "static_routes_only": {
+                "description": "Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Tags to apply to the connection.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tunnel1_inside_cidr": {
+                "description": "The CIDR block of the inside IP addresses for the first VPN tunnel.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tunnel2_inside_cidr": {
+                "description": "The CIDR block of the inside IP addresses for the second VPN tunnel.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tunnel1_preshared_key": {
+                "description": "The preshared key of the first VPN tunnel.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tunnel2_preshared_key": {
+                "description": "The preshared key of the second VPN tunnel.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

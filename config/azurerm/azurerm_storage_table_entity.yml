@@ -1,0 +1,89 @@
+azurerm_storage_table_entity:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_table_entity'
+    description: Manages an Entity within a Table in an Azure Storage Account.
+    arguments:
+        storage_account_name:
+            description: Specifies the storage account in which to create the storage
+                table entity.
+            required: true
+            policy: ''
+            notes: ''
+        table_name:
+            description: The name of the storage table in which to create the storage
+                table entity.
+            required: true
+            policy: ''
+            notes: ''
+        partition_key:
+            description: The key for the partition where the entity will be inserted/merged.
+                Changing this forces a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        row_key:
+            description: The key for the row where the entity will be inserted/merged.
+                Changing this forces a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        entity:
+            description: A map of key/value pairs that describe the entity to be inserted/merged
+                in to the storage table.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Entity within the Table in the Storage Account.
+    timeouts:
+        create:
+            description: Used when creating the Storage Table Entity.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Table Entity.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Table Entity.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Table Entity.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUY2ZFhKbFpYaGhiWEJzWlNJS0lDQnNiMk5oZEdsdmJp
+        QTlJQ0ozWlhOMGRYTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNOMGIzSmhaMlZmWVdO
+        amIzVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlZWHAxY21WbGVHRnRjR3hsYzNSdmNtRm5aVEVpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZk
+        WEJmYm1GdFpTQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNH
+        eGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCaFkyTnZkVzUw
+        WDNScFpYSWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVUzUmhibVJoY21RaUNpQWdZV05qYjNWdWRGOXla
+        WEJzYVdOaGRHbHZibDkwZVhCbElEMGdJa3hTVXlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNt
+        MWZjM1J2Y21GblpWOTBZV0pzWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBOUlDSnRlV1Y0WVcxd2JHVjBZV0pzWlNJS0lDQnlaWE52ZFhKalpWOW5jbTkx
+        Y0Y5dVlXMWxJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZ
+        VzFsQ2lBZ2MzUnZjbUZuWlY5aFkyTnZkVzUwWDI1aGJXVWdQU0JoZW5WeVpYSnRYM04wYjNKaFoy
+        VmZZV05qYjNWdWRDNWxlR0Z0Y0d4bExtNWhiV1VLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmMzUnZjbUZuWlY5MFlXSnNaVjlsYm5ScGRIa2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2MzUnZjbUZu
+        WlY5aFkyTnZkVzUwWDI1aGJXVWdQU0JoZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRDNWxl
+        R0Z0Y0d4bExtNWhiV1VLSUNCMFlXSnNaVjl1WVcxbElDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNt
+        MWZjM1J2Y21GblpWOTBZV0pzWlM1bGVHRnRjR3hsTG01aGJXVUtDaUFnY0dGeWRHbDBhVzl1WDJ0
+        bGVTQTlJQ0psZUdGdGNHeGxjR0Z5ZEdsMGFXOXVJZ29nSUhKdmQxOXJaWGtnSUNBZ0lDQWdQU0Fp
+        WlhodFlXMXdiR1Z5YjNjaUNnb2dJR1Z1ZEdsMGVTQTlJSHNLSUNBZ0lHVjRZVzF3YkdVZ1BTQWlj
+        MkZ0Y0d4bElnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwRmJuUnBkR2xsY3lCM2FYUm9hVzRnWVNCVVlXSnNaU0JwYmlCaGJpQkJlblZ5WlNCVGRHOXlZ
+        V2RsSUVGalkyOTFiblFnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY21WemIz
+        VnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5MFlXSnNaVjlsYm5ScGRIa3VhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

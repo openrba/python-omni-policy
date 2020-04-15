@@ -1,0 +1,68 @@
+{
+    "azurerm_postgresql_virtual_network_rule": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_postgresql_virtual_network_rule",
+        "description": "Manages a PostgreSQL Virtual Network Rule.",
+        "arguments": {
+            "name": {
+                "description": "The name of the PostgreSQL virtual network rule. Cannot be empty and must only contain alphanumeric characters and hyphens. Cannot start with a number, and cannot start or end with a hyphen. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group where the PostgreSQL server resides. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "The name of the SQL Server to which this PostgreSQL virtual network rule will be applied to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the subnet that the PostgreSQL server will be connected to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ignore_missing_vnet_service_endpoint": {
+                "description": "Should the Virtual Network Rule be created before the Subnet has the Virtual Network Service Endpoint enabled? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the PostgreSQL Virtual Network Rule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the PostgreSQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the PostgreSQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the PostgreSQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the PostgreSQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

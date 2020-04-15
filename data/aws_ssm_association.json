@@ -1,0 +1,122 @@
+{
+    "aws_ssm_association": {
+        "status": "HOLD",
+        "subcategory": "SSM",
+        "layout": "aws",
+        "page_title": "AWS: aws_ssm_association",
+        "description": "Associates an SSM Document to an instance or EC2 tag.",
+        "arguments": {
+            "name": {
+                "description": "The name of the SSM document to apply.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "association_name": {
+                "description": "The descriptive name for the association.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "document_version": {
+                "description": "The document version you want to associate with the target(s). Can be a specific version or the default version.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_id": {
+                "description": "The instance ID to apply an SSM document to. Use `targets` with key `InstanceIds` for document schema versions 2.0 and above.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "output_location": {
+                "description": "An output location block. Output Location is documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "A block of arbitrary string parameters to pass to the SSM document.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "schedule_expression": {
+                "description": "A cron expression when the association will be applied to the target(s).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "targets": {
+                "description": "A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "compliance_severity": {
+                "description": "The compliance severity for the association. Can be one of the following: `UNSPECIFIED`, `LOW`, `MEDIUM`, `HIGH` or `CRITICAL`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_concurrency": {
+                "description": "The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_errors": {
+                "description": "The number of errors that are allowed before the system stops sending requests to run the association on additional targets. You can specify a number, for example 10, or a percentage of the target set, for example 10%.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_target_parameter_name": {
+                "description": "Specify the target for the association. This target is required for associations that use an `Automation` document and target resources by using rate controls.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_bucket_name": {
+                "description": "The S3 bucket name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_key_prefix": {
+                "description": "The S3 bucket prefix. Results stored in the root if not configured.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "Either `InstanceIds` or `tag:Tag Name` to specify an EC2 tag.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "values": {
+                "description": "A list of instance IDs or tag values. AWS currently limits this list size to one value.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "association_id": {
+                "description": "The ID of the SSM association."
+            },
+            "instance_id": {
+                "description": "The instance id that the SSM document was applied to."
+            },
+            "name": {
+                "description": "The name of the SSM document to apply."
+            },
+            "parameters": {
+                "description": "Additional parameters passed to the SSM document."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "azurerm_template_deployment": {
+        "status": "HOLD",
+        "subcategory": "Template",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_template_deployment",
+        "description": "Manages a template deployment of resources.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the template deployment. Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "deployment_mode": {
+                "description": "Specifies the mode that is used to deploy resources. This value could be either `Incremental` or `Complete`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "template_body": {
+                "description": "Specifies the JSON definition for the template.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "Specifies the name and value pairs that define the deployment parameters for the template.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters_body": {
+                "description": "Specifies a valid Azure JSON parameters file that define the deployment parameters. It can contain KeyVault references",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Template Deployment ID."
+            },
+            "outputs": {
+                "description": "A map of supported scalar output types returned from the deployment (currently, Azure Template Deployment outputs of type String, Int and Bool are supported, and are converted to strings "
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Template Deployment.",
+                "required": false,
+                "timeout": 3
+            },
+            "update": {
+                "description": "Used when updating the Template Deployment.",
+                "required": false,
+                "timeout": 3
+            },
+            "read": {
+                "description": "Used when retrieving the Template Deployment.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Template Deployment.",
+                "required": false,
+                "timeout": 3
+            }
+        }
+    }
+}

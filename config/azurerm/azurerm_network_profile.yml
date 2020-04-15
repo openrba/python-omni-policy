@@ -1,0 +1,102 @@
+azurerm_network_profile:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_profile'
+    description: Manages a Network Profile.
+    arguments:
+        name:
+            description: Specifies the name of the IP Configuration.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        container_network_interface:
+            description: A `container_network_interface` block as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        ip_configuration:
+            description: One or more `ip_configuration` blocks as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: Reference to the subnet associated with the IP Configuration.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Network Profile.
+        container_network_interface_ids:
+            description: A list of Container Network Interface ID's.
+    timeouts:
+        create:
+            description: Used when creating the Network Profile.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Network Profile.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Network Profile.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Network Profile.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVm5jbTkxY0NJS0lDQnNiMk5oZEdsdmJp
+        QTlJQ0pYWlhOMElFVjFjbTl3WlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZkbWx5ZEhW
+        aGJGOXVaWFIzYjNKcklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pYWnVaWFFpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJ
+        R0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lI
+        SmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdGa1pISmxjM05mYzNCaFkyVWdJQ0FnSUNBZ1BTQmJJakV3
+        TGpFdU1DNHdMekUySWwwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjM1ZpYm1WMElpQWla
+        WGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JH
+        VnpkV0p1WlhRaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNCaGVuVnlaWEp0WDNK
+        bGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lIWnBjblIxWVd4ZmJtVjBkMjl5
+        YTE5dVlXMWxJRDBnWVhwMWNtVnliVjkyYVhKMGRXRnNYMjVsZEhkdmNtc3VaWGhoYlhCc1pTNXVZ
+        VzFsQ2lBZ1lXUmtjbVZ6YzE5d2NtVm1hWGdnSUNBZ0lDQWdQU0FpTVRBdU1TNHdMakF2TWpRaUNn
+        b2dJR1JsYkdWbllYUnBiMjRnZXdvZ0lDQWdibUZ0WlNBOUlDSmtaV3hsWjJGMGFXOXVJZ29LSUNB
+        Z0lITmxjblpwWTJWZlpHVnNaV2RoZEdsdmJpQjdDaUFnSUNBZ0lHNWhiV1VnSUNBZ1BTQWlUV2xq
+        Y205emIyWjBMa052Ym5SaGFXNWxja2x1YzNSaGJtTmxMMk52Ym5SaGFXNWxja2R5YjNWd2N5SUtJ
+        Q0FnSUNBZ1lXTjBhVzl1Y3lBOUlGc2lUV2xqY205emIyWjBMazVsZEhkdmNtc3ZkbWx5ZEhWaGJF
+        NWxkSGR2Y210ekwzTjFZbTVsZEhNdllXTjBhVzl1SWwwS0lDQWdJSDBLSUNCOUNuMEtDbkpsYzI5
+        MWNtTmxJQ0poZW5WeVpYSnRYMjVsZEhkdmNtdGZjSEp2Wm1sc1pTSWdJbVY0WVcxd2JHVWlJSHNL
+        SUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVnVaWFJ3Y205bWFXeGxJ
+        Z29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgy
+        ZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcx
+        bElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtDaUFn
+        WTI5dWRHRnBibVZ5WDI1bGRIZHZjbXRmYVc1MFpYSm1ZV05sSUhzS0lDQWdJRzVoYldVZ1BTQWla
+        WGhoYlhCc1pXTnVhV01pQ2dvZ0lDQWdhWEJmWTI5dVptbG5kWEpoZEdsdmJpQjdDaUFnSUNBZ0lH
+        NWhiV1VnSUNBZ0lDQTlJQ0psZUdGdGNHeGxhWEJqYjI1bWFXY2lDaUFnSUNBZ0lITjFZbTVsZEY5
+        cFpDQTlJR0Y2ZFhKbGNtMWZjM1ZpYm1WMExtVjRZVzF3YkdVdWFXUUtJQ0FnSUgwS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwT1pYUjNiM0pySUZCeWIyWnBiR1VnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5d2NtOW1hV3hsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

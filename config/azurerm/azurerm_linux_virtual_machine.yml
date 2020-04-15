@@ -1,0 +1,106 @@
+azurerm_linux_virtual_machine:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_linux_virtual_machine'
+    description: Manages a Linux Virtual Machine.
+    arguments:
+        admin_username:
+            description: The username of the local administrator used for the Virtual
+                Machine. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where the Linux Virtual Machine should
+                exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the Linux Virtual Machine. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        os_disk:
+            description: A `os_disk` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the Linux Virtual
+                Machine should be exist. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        size:
+            description: The SKU which should be used for this Virtual Machine, such
+                as `Standard_F2`.
+            required: true
+            policy: ''
+            notes: ''
+        additional_capabilities:
+            description: A `additional_capabilities` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        admin_password:
+            description: The Password which should be used for the local-administrator
+                on this Virtual Machine. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: When an `admin_password` is specified `disable_password_authentication`
+                must be set to `false`.
+        admin_ssh_key:
+            description: One or more `admin_ssh_key` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        allow_extension_operations:
+            description: Should Extension Operations be allowed on this Virtual Machine?
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        availability_set_id:
+            description: Specifies the ID of the Availability Set in which the Virtual
+                Machine should exist. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        boot_diagnostics:
+            description: A `boot_diagnostics` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        computer_name:
+            description: Specifies the Hostname which should be used for this Virtual
+                Machine. If unspecified this defaults to the value for the `name`
+                field. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        custom_data:
+            description: The Base64-Encoded Custom Data which should be used for this
+                Virtual Machine. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        dedicated_host_id:
+            description: The ID of a Dedicated Host where this machine should be run
+                on. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        disable_password_authentication:
+            description: Should Password Authentication be disabled on this Virtual
+                Machine? Defaults to `true`. Changing this forces a new resource to
+                be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

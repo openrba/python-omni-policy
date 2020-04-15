@@ -1,0 +1,117 @@
+azurerm_vpn_gateway:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_vpn_gateway'
+    description: Manages a VPN Gateway within a Virtual Hub.
+    arguments:
+        name:
+            description: The Name which should be used for this VPN Gateway. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group in which this VPN Gateway
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The Azure location where this VPN Gateway should be created.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_hub_id:
+            description: The ID of the Virtual Hub within which this VPN Gateway should
+                be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        bgp_settings:
+            description: A `bgp_settings` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        scale_unit:
+            description: The Scale Unit for this VPN Gateway. Defaults to `1`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the VPN Gateway.
+            required: false
+            policy: ''
+            notes: ''
+        asn:
+            description: The ASN of the BGP Speaker. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        peer_weight:
+            description: The weight added to Routes learned from this BGP Speaker.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the VPN Gateway.
+        bgp_settings:
+            description: A `bgp_settings` block as defined below.
+        bgp_peering_address:
+            description: The Address which should be used for the BGP Peering.
+    timeouts:
+        create:
+            description: Used when creating the VPN Gateway.
+            required: false
+            timeout: 90
+        update:
+            description: Used when updating the VPN Gateway.
+            required: false
+            timeout: 90
+        read:
+            description: Used when retrieving the VPN Gateway.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the VPN Gateway.
+            required: false
+            timeout: 90
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJ
+        Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2Iy
+        TmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5
+        MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdGa1pISmxjM05mYzNCaFkyVWdJQ0Fn
+        SUNBZ1BTQmJJakV3TGpBdU1DNHdMekUySWwwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZk
+        bWx5ZEhWaGJGOTNZVzRpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKbGVHRnRjR3hsTFhaM1lXNGlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNB
+        OUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdiRzlq
+        WVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVa
+        WGhoYlhCc1pTNXNiMk5oZEdsdmJncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjkyYVhKMGRX
+        RnNYMmgxWWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0ltVjRZVzF3YkdVdGFIVmlJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5
+        WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JH
+        VXViRzlqWVhScGIyNEtJQ0IyYVhKMGRXRnNYM2RoYmw5cFpDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDNkaGJpNWxlR0Z0Y0d4bExtbGtDaUFnWVdSa2NtVnpjMTl3Y21WbWFYZ2dJQ0Fn
+        SUNBOUlDSXhNQzR3TGpFdU1DOHlOQ0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmRuQnVY
+        MmRoZEdWM1lYa2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0psZUdGdGNHeGxMWFp3Ym1jaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdG
+        NmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEps
+        YzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndM
+        bVY0WVcxd2JHVXVibUZ0WlFvZ0lIWnBjblIxWVd4ZmFIVmlYMmxrSUNBZ0lDQWdQU0JoZW5WeVpY
+        SnRYM1pwY25SMVlXeGZhSFZpTG1WNFlXMXdiR1V1YVdRS2ZRbz0=
+    import: !!binary |
+        Q2dwV1VFNGdSMkYwWlhkaGVYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdj
+        bVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRuQnVYMmRoZEdWM1lYa3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

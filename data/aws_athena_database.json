@@ -1,0 +1,53 @@
+{
+    "aws_athena_database": {
+        "status": "HOLD",
+        "subcategory": "Athena",
+        "layout": "aws",
+        "page_title": "AWS: aws_athena_database",
+        "description": "Provides an Athena database.",
+        "arguments": {
+            "name": {
+                "description": "Name of the database to create.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket": {
+                "description": "Name of s3 bucket to save the results of the query execution.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_configuration": {
+                "description": "The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "force_destroy": {
+                "description": "A boolean that indicates all tables should be deleted from the database so that the database can be destroyed without error. The tables are *not* recoverable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_option": {
+                "description": "The type of key; one of `SSE_S3`, `SSE_KMS`, `CSE_KMS`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key": {
+                "description": "The KMS key ARN or ID; required for key types `SSE_KMS` and `CSE_KMS`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The database name"
+            }
+        },
+        "timeouts": {}
+    }
+}

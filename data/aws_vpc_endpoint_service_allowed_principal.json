@@ -1,0 +1,29 @@
+{
+    "aws_vpc_endpoint_service_allowed_principal": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpc_endpoint_service_allowed_principal",
+        "description": "Provides a resource to allow a principal to discover a VPC endpoint service.",
+        "arguments": {
+            "vpc_endpoint_service_id": {
+                "description": "The ID of the VPC endpoint service to allow permission.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "principal_arn": {
+                "description": "The ARN of the principal to allow permissions.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the association."
+            }
+        },
+        "timeouts": {}
+    }
+}

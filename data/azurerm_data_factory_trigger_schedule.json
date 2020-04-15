@@ -1,0 +1,98 @@
+{
+    "azurerm_data_factory_trigger_schedule": {
+        "status": "HOLD",
+        "subcategory": "Data Factory",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_data_factory_trigger_schedule",
+        "description": "Manages a Trigger Schedule inside a Azure Data Factory.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Data Factory Schedule Trigger. Changing this forces a new resource to be created. Must be globally unique. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Data Factory Schedule Trigger. Changing this forces a new resource",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "data_factory_name": {
+                "description": "The Data Factory name in which to associate the Schedule Trigger with. Changing this forces a new resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "pipeline_name": {
+                "description": "The Data Factory Pipeline name that the trigger will act on.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "start_time": {
+                "description": "The time the Schedule Trigger will start. This defaults to the current time. The time will be represented in UTC.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "end_time": {
+                "description": "The time the Schedule Trigger should end. The time will be represented in UTC.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "interval": {
+                "description": "The interval for how often the trigger occurs. This defaults to 1.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "frequency": {
+                "description": "The trigger freqency. Valid values include `Minute`, `Hour`, `Day`, `Week`, `Month`. Defaults to `Minute`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pipeline_parameters": {
+                "description": "The pipeline parameters that the trigger will act upon.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "annotations": {
+                "description": "List of tags that can be used for describing the Data Factory Schedule Trigger.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Data Factory Schedule Trigger."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Data Factory Schedule Trigger.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Data Factory Schedule Trigger.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Data Factory Schedule Trigger.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Data Factory Schedule Trigger.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

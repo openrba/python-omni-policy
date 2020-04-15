@@ -1,0 +1,85 @@
+{
+    "azurerm_data_factory": {
+        "status": "HOLD",
+        "subcategory": "Data Factory",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_data_factory",
+        "description": "Manages an Azure Data Factory (Version 2).",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Data Factory. Changing this forces a new resource to be created. Must be globally unique. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Data Factory.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "github_configuration": {
+                "description": "A `github_configuration` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identity": {
+                "description": "An `identity` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vsts_configuration": {
+                "description": "A `vsts_configuration` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "account_name": {
+                "description": "Specifies the GitHub account name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "branch_name": {
+                "description": "Specifies the branch of the repository to get code from.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "git_url": {
+                "description": "Specifies the GitHub Enterprise host name. For example: https://github.mydomain.com. Use https://github.com for open source repositories.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "repository_name": {
+                "description": "Specifies the name of the git repository.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "root_folder": {
+                "description": "Specifies the root folder within the repository. Set to `/` for the top level.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

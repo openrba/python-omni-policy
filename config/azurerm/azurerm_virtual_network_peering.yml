@@ -1,0 +1,108 @@
+azurerm_virtual_network_peering:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_network_peering'
+    description: 'Manages a virtual network peering which allows resources to access
+        other
+
+        resources in the linked virtual network.'
+    arguments:
+        name:
+            description: The name of the virtual network peering. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        virtual_network_name:
+            description: The name of the virtual network. Changing
+            required: true
+            policy: ''
+            notes: ''
+        remote_virtual_network_id:
+            description: The full Azure resource ID of the
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        allow_virtual_network_access:
+            description: Controls if the VMs in the remote
+            required: false
+            policy: ''
+            notes: ''
+        allow_forwarded_traffic:
+            description: Controls if forwarded traffic from  VMs
+            required: false
+            policy: ''
+            notes: ''
+        allow_gateway_transit:
+            description: Controls gatewayLinks can be used in the
+            required: false
+            policy: ''
+            notes: ''
+        use_remote_gateways:
+            description: Controls if remote gateways can be used on
+            required: false
+            policy: ''
+            notes: '`use_remote_gateways` must be set to `false` if using Global Virtual
+                Network Peerings.'
+    attributes:
+        id:
+            description: The ID of the Virtual Network Peering.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Network Peering.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Virtual Network Peering.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Virtual Network Peering.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Network Peering.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkJsWlhKbFpIWnVaWFJ6TFhKbklnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzWnBjblIxWVd4
+        ZmJtVjBkMjl5YXlJZ0ltVjRZVzF3YkdVdE1TSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWljR1YwWlhKdVpYUjNiM0pyTVNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCaFpH
+        UnlaWE56WDNOd1lXTmxJQ0FnSUNBZ0lEMGdXeUl4TUM0d0xqRXVNQzh5TkNKZENpQWdiRzlqWVhS
+        cGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJRlZUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAx
+        Y21WeWJWOTJhWEowZFdGc1gyNWxkSGR2Y21zaUlDSmxlR0Z0Y0d4bExUSWlJSHNLSUNCdVlXMWxJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbkJsZEdWeWJtVjBkMjl5YXpJaUNpQWdjbVZ6YjNWeVky
+        VmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhC
+        c1pTNXVZVzFsQ2lBZ1lXUmtjbVZ6YzE5emNHRmpaU0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHlMakF2
+        TWpRaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVYyVnpkQ0JWVXlJS2ZRb0tj
+        bVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZkbWx5ZEhWaGJGOXVaWFIzYjNKclgzQmxaWEpwYm1jaUlD
+        SmxlR0Z0Y0d4bExURWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0luQmxaWEl4ZEc4eUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNBZ0lDQWdQU0Jo
+        ZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUhacGNuUjFZ
+        V3hmYm1WMGQyOXlhMTl1WVcxbElDQWdJQ0FnUFNCaGVuVnlaWEp0WDNacGNuUjFZV3hmYm1WMGQy
+        OXlheTVsZUdGdGNHeGxMVEV1Ym1GdFpRb2dJSEpsYlc5MFpWOTJhWEowZFdGc1gyNWxkSGR2Y210
+        ZmFXUWdQU0JoZW5WeVpYSnRYM1pwY25SMVlXeGZibVYwZDI5eWF5NWxlR0Z0Y0d4bExUSXVhV1FL
+        ZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyWDNCbFpYSnBi
+        bWNpSUNKbGVHRnRjR3hsTFRJaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSW5CbFpYSXlkRzh4SWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0FnSUNB
+        Z1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSFpw
+        Y25SMVlXeGZibVYwZDI5eWExOXVZVzFsSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM1pwY25SMVlXeGZi
+        bVYwZDI5eWF5NWxlR0Z0Y0d4bExUSXVibUZ0WlFvZ0lISmxiVzkwWlY5MmFYSjBkV0ZzWDI1bGRI
+        ZHZjbXRmYVdRZ1BTQmhlblZ5WlhKdFgzWnBjblIxWVd4ZmJtVjBkMjl5YXk1bGVHRnRjR3hsTFRF
+        dWFXUUtmUW89
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUU1bGRIZHZjbXNnVUdWbGNtbHVaM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5dVpYUjNiM0pyWDNCbFpYSnBibWN1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

@@ -1,0 +1,91 @@
+azurerm_api_management_property:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_property'
+    description: Manages an API Management Property.
+    arguments:
+        name:
+            description: The name of the API Management Property. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Property should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the [API Management Service](api_management.html
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name of this API Management Property.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The value of this API Management Property.
+            required: true
+            policy: ''
+            notes: ''
+        secret:
+            description: Specifies whether the API Management Property is secret.
+                Valid values are `true` or `false`. The default value is `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A list of tags to be applied to the API Management Property.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Property.
+    timeouts:
+        create:
+            description: Used when creating the API Management Property.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Property.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Property.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Property.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3YVY5
+        dFlXNWhaMlZ0Wlc1MElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pTMWhjR2x0SWdvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQ
+        U0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lD
+        QnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205
+        MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCd2RXSnNhWE5vWlhKZmJtRnRaU0FnSUNBZ0lEMGdJbkIx
+        WWpFaUNpQWdjSFZpYkdsemFHVnlYMlZ0WVdsc0lDQWdJQ0E5SUNKd2RXSXhRR1Z0WVdsc0xtTnZi
+        U0lLQ2lBZ2MydDFYMjVoYldVZ1BTQWlSR1YyWld4dmNHVnlYekVpQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgyRndhVjl0WVc1aFoyVnRaVzUwWDNCeWIzQmxjblI1SWlBaVpYaGhiWEJzWlNJ
+        Z2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlMxaGNHbHRaeUlL
+        SUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JoY0dsZmJXRnVZV2RsYldWdWRGOXVZVzFsSUQwZ1lY
+        cDFjbVZ5YlY5aGNHbGZiV0Z1WVdkbGJXVnVkQzVsZUdGdGNHeGxMbTVoYldVS0lDQmthWE53YkdG
+        NVgyNWhiV1VnSUNBZ0lDQWdJRDBnSWtWNFlXMXdiR1ZRY205d1pYSjBlU0lLSUNCMllXeDFaU0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1Y0WVcxd2JHVWdWbUZzZFdVaUNuMEs=
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JRY205d1pYSjBhV1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmY0hKdmNHVnlkSGt1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

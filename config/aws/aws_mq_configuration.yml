@@ -1,0 +1,45 @@
+aws_mq_configuration:
+    status: HOLD
+    subcategory: MQ
+    layout: aws
+    page_title: 'AWS: aws_mq_configuration'
+    description: Provides an MQ configuration Resource
+    arguments:
+        data:
+            description: The broker configuration in XML format.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the configuration.
+            required: false
+            policy: ''
+            notes: ''
+        engine_type:
+            description: The type of broker engine.
+            required: true
+            policy: ''
+            notes: ''
+        engine_version:
+            description: The version of the broker engine.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the configuration
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique ID that Amazon MQ generates for the configuration.
+        arn:
+            description: The ARN of the configuration.
+        latest_revision:
+            description: The latest revision of the configuration.
+    timeouts: {}

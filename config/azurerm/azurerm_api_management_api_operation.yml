@@ -1,0 +1,191 @@
+azurerm_api_management_api_operation:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_api_operation'
+    description: Manages an API Operation within an API Management Service.
+    arguments:
+        operation_id:
+            description: A unique identifier for this API Operation. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_name:
+            description: The name of the API within the API Management Service where
+                this API Operation should be created. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The Name of the API Management Service where the API exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The Display Name for this API Management Operation.
+            required: true
+            policy: ''
+            notes: ''
+        method:
+            description: The HTTP Method used for this API Management Operation, like
+                `GET`, `DELETE`, `PUT` or `POST` - but not limited to these values.
+            required: true
+            policy: ''
+            notes: ''
+        url_template:
+            description: The relative URL Template identifying the target resource
+                for this operation, which may include parameters.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of this Template Parameter.
+            required: false
+            policy: ''
+            notes: ''
+        request:
+            description: A `request` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        response:
+            description: One or more `response` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        template_parameter:
+            description: One or more `template_parameter` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The Name of this Template Parameter.
+            required: true
+            policy: ''
+            notes: ''
+        required:
+            description: Is this Template Parameter Required?
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The Type of this Template Parameter, such as a `string`.
+            required: true
+            policy: ''
+            notes: ''
+        default_value:
+            description: The default value for this Template Parameter.
+            required: false
+            policy: ''
+            notes: ''
+        values:
+            description: One or more acceptable values for this Template Parameter.
+            required: false
+            policy: ''
+            notes: ''
+        header:
+            description: One or more `header` blocks as defined above.
+            required: false
+            policy: ''
+            notes: ''
+        query_parameter:
+            description: One or more `query_parameter` blocks as defined above.
+            required: false
+            policy: ''
+            notes: ''
+        representation:
+            description: One or more `representation` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        content_type:
+            description: The Content Type of this representation, such as `application/json`.
+            required: true
+            policy: ''
+            notes: ''
+        form_parameter:
+            description: One or more `form_parameter` block as defined above.
+            required: false
+            policy: ''
+            notes: This is Required when `content_type` is set to `application/x-www-form-urlencoded`
+                or `multipart/form-data`.
+        sample:
+            description: An example of this representation.
+            required: false
+            policy: ''
+            notes: ''
+        schema_id:
+            description: The ID of an API Management Schema which represents this
+                Response.
+            required: false
+            policy: ''
+            notes: This can only be specified when `content_type` is not set to `application/x-www-form-urlencoded`
+                or `multipart/form-data`.
+        type_name:
+            description: The Type Name defined by the Schema.
+            required: false
+            policy: ''
+            notes: This can only be specified when `content_type` is not set to `application/x-www-form-urlencoded`
+                or `multipart/form-data`.
+        status_code:
+            description: The HTTP Status Code.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management API Operation.
+    timeouts:
+        create:
+            description: Used when creating the API Management API Operation.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management API Operation.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management API Operation.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management API Operation.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYQnBJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYzJWaGNtTm9MV0Z3YVNJS0lD
+        QmhjR2xmYldGdVlXZGxiV1Z1ZEY5dVlXMWxJRDBnSW5ObFlYSmphQzFoY0drdGJXRnVZV2RsYldW
+        dWRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ0luTmxZWEpqYUMxelpYSjJhV05s
+        SWdvZ0lISmxkbWx6YVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0FpTWlJS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYQnBYMjl3WlhKaGRHbHZiaUlnSW1WNFlX
+        MXdiR1VpSUhzS0lDQnZjR1Z5WVhScGIyNWZhV1FnSUNBZ0lDQWdJRDBnSW5WelpYSXRaR1ZzWlhS
+        bElnb2dJR0Z3YVY5dVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnUFNCa1lYUmhMbUY2ZFhKbGNtMWZZWEJw
+        WDIxaGJtRm5aVzFsYm5SZllYQnBMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHRndhVjl0WVc1aFoyVnRa
+        VzUwWDI1aGJXVWdQU0JrWVhSaExtRjZkWEpsY20xZllYQnBYMjFoYm1GblpXMWxiblJmWVhCcExt
+        VjRZVzF3YkdVdVlYQnBYMjFoYm1GblpXMWxiblJmYm1GdFpRb2dJSEpsYzI5MWNtTmxYMmR5YjNW
+        d1gyNWhiV1VnUFNCa1lYUmhMbUY2ZFhKbGNtMWZZWEJwWDIxaGJtRm5aVzFsYm5SZllYQnBMbVY0
+        WVcxd2JHVXVjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaUW9nSUdScGMzQnNZWGxmYm1GdFpTQWdJ
+        Q0FnSUNBZ1BTQWlSR1ZzWlhSbElGVnpaWElnVDNCbGNtRjBhVzl1SWdvZ0lHMWxkR2h2WkNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdQU0FpUkVWTVJWUkZJZ29nSUhWeWJGOTBaVzF3YkdGMFpTQWdJQ0FnSUNB
+        Z1BTQWlMM1Z6WlhKekwzdHBaSDB2WkdWc1pYUmxJZ29nSUdSbGMyTnlhWEIwYVc5dUlDQWdJQ0Fn
+        SUNBZ1BTQWlWR2hwY3lCallXNGdiMjVzZVNCaVpTQmtiMjVsSUdKNUlIUm9aU0JzYjJkblpXUWdh
+        VzRnZFhObGNpNGlDZ29nSUhKbGMzQnZibk5sSUhzS0lDQWdJSE4wWVhSMWMxOWpiMlJsSUQwZ01q
+        QXdDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JCVUVrZ1QzQmxjbUYwYVc5dUozTWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWVhCcFgyOXdaWEpoZEdsdmJpNW9kRzFzTG0x
+        aGNtdGtiM2R1

@@ -1,0 +1,25 @@
+{
+    "aws_ssm_resource_data_sync": {
+        "status": "HOLD",
+        "subcategory": "SSM",
+        "layout": "aws",
+        "page_title": "AWS: aws_ssm_resource_data_sync",
+        "description": "Provides a SSM resource data sync.",
+        "arguments": {
+            "name": {
+                "description": "Name for the configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_destination": {
+                "description": "Amazon S3 configuration details for the sync.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

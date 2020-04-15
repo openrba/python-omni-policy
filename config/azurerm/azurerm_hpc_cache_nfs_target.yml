@@ -1,0 +1,165 @@
+azurerm_hpc_cache_nfs_target:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_hpc_cache_nfs_target'
+    description: Manages a NFS Target within a HPC Cache.
+    arguments:
+        name:
+            description: The name of the HPC Cache NFS Target. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which to create the HPC
+                Cache NFS Target. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cache_name:
+            description: The name HPC Cache, which the HPC Cache NFS Target will be
+                added to. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        target_host_name:
+            description: The IP address or fully qualified domain name (FQDN
+            required: true
+            policy: ''
+            notes: ''
+        usage_model:
+            description: The type of usage of the HPC Cache NFS Target.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_junction:
+            description: Can be specified multiple times to define multiple `namespace_junction`.
+                Each `namespace_juntion` block supports fields documented below.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_path:
+            description: The client-facing file path of this NFS target within the
+                HPC Cache NFS Target.
+            required: true
+            policy: ''
+            notes: ''
+        nfs_export:
+            description: The NFS export of this NFS target within the HPC Cache NFS
+                Target.
+            required: true
+            policy: ''
+            notes: ''
+        target_path:
+            description: The relative subdirectory path from the `nfs_export` to map
+                to the `namespace_path`. Defaults to `""`, in which case the whole
+                `nfs_export` is exported.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the HPC Cache NFS Target.
+    timeouts:
+        create:
+            description: Used when creating the HPC Cache NFS Target.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the HPC Cache NFS Target.
+            required: false
+            timeout: 5
+        update:
+            description: Used when updating the HPC Cache NFS Target.
+            required: false
+            timeout: 30
+        delete:
+            description: Used when deleting the HPC Cache NFS Target.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsZG00aUNpQWdZV1JrY21WemMxOXpjR0ZqWlNBZ0lDQWdJ
+        Q0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNWaWJtVjBJ
+        aUFpWlhoaGJYQnNaVjlvY0dNaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SmxlR0Z0Y0d4bGMzVmlibVYwYUhCaklnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQjJhWEow
+        ZFdGc1gyNWxkSGR2Y210ZmJtRnRaU0E5SUdGNmRYSmxjbTFmZG1seWRIVmhiRjl1WlhSM2IzSnJM
+        bVY0WVcxd2JHVXVibUZ0WlFvZ0lHRmtaSEpsYzNOZmNISmxabWw0SUNBZ0lDQWdJRDBnSWpFd0xq
+        QXVNUzR3THpJMElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlvY0dOZlkyRmphR1VpSUNK
+        bGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hs
+        YUhCalkyRmphR1VpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZj
+        bVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnYkc5allYUnBiMjRnSUNBZ0lD
+        QWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJO
+        aGRHbHZiZ29nSUdOaFkyaGxYM05wZW1WZmFXNWZaMklnSUNBZ1BTQXpNRGN5Q2lBZ2MzVmlibVYw
+        WDJsa0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjM1ZpYm1WMExtVjRZVzF3YkdWZmFIQmpM
+        bWxrQ2lBZ2MydDFYMjVoYldVZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pUZEdGdVpHRnlaRjh5UnlJS2ZR
+        b0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjM1ZpYm1WMElpQWlaWGhoYlhCc1pWOTJiU0lnZXdv
+        Z0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1Z6ZFdKdVpYUjJiU0lL
+        SUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZa
+        M0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnZG1seWRIVmhiRjl1WlhSM2IzSnJYMjVoYldVZ1BT
+        QmhlblZ5WlhKdFgzWnBjblIxWVd4ZmJtVjBkMjl5YXk1bGVHRnRjR3hsTG01aGJXVUtJQ0JoWkdS
+        eVpYTnpYM0J5WldacGVDQWdJQ0FnSUNBOUlDSXhNQzR3TGpJdU1DOHlOQ0lLZlFvS2NtVnpiM1Z5
+        WTJVZ0ltRjZkWEpsY20xZmJtVjBkMjl5YTE5cGJuUmxjbVpoWTJVaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bGJtbGpJZ29nSUd4dlky
+        RjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1W
+        NFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAx
+        Y21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtDaUFnYVhCZlkyOXVa
+        bWxuZFhKaGRHbHZiaUI3Q2lBZ0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKcGJuUmxjbTVoYkNJS0lDQWdJSE4xWW01bGRGOXBaQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5emRXSnVaWFF1WlhoaGJYQnNaVjkyYlM1cFpBb2dJQ0Fn
+        Y0hKcGRtRjBaVjlwY0Y5aFpHUnlaWE56WDJGc2JHOWpZWFJwYjI0Z1BTQWlSSGx1WVcxcFl5SUtJ
+        Q0I5Q24wS0NteHZZMkZzY3lCN0NpQWdZM1Z6ZEc5dFgyUmhkR0VnUFNBOFBFTlZVMVJQVFY5RVFW
+        UkJDaU1oTDJKcGJpOWlZWE5vQ25OMVpHOGdMV2tnQ21Gd2RDMW5aWFFnYVc1emRHRnNiQ0F0ZVNC
+        dVpuTXRhMlZ5Ym1Wc0xYTmxjblpsY2dwdGEyUnBjaUF0Y0NBdlpYaHdiM0owTDJFdk1RcHRhMlJw
+        Y2lBdGNDQXZaWGh3YjNKMEwyRXZNZ3B0YTJScGNpQXRjQ0F2Wlhod2IzSjBMMklLWTJGMElEdzhJ
+        RVZQUmlBK0lDOWxkR012Wlhod2IzSjBjd292Wlhod2IzSjBMMkVnS2loeWR5eG1jMmxrUFRBc2FX
+        NXpaV04xY21Vc2JtOWZjM1ZpZEhKbFpWOWphR1ZqYXl4aGMzbHVZeWtLTDJWNGNHOXlkQzlpSUNv
+        b2NuY3Nabk5wWkQwd0xHbHVjMlZqZFhKbExHNXZYM04xWW5SeVpXVmZZMmhsWTJzc1lYTjVibU1w
+        Q2tWUFJncHplWE4wWlcxamRHd2djM1JoY25RZ2JtWnpMWE5sY25abGNncGxlSEJ2Y25SbWN5QXRZ
+        WEoyQ2tOVlUxUlBUVjlFUVZSQkNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMnhwYm5WNFgz
+        WnBjblIxWVd4ZmJXRmphR2x1WlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWMmJTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFs
+        SUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnNi
+        Mk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWND
+        NWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdjMmw2WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNK
+        VGRHRnVaR0Z5WkY5R01pSUtJQ0JoWkcxcGJsOTFjMlZ5Ym1GdFpTQWdJQ0FnSUQwZ0ltRmtiV2x1
+        ZFhObGNpSUtJQ0J1WlhSM2IzSnJYMmx1ZEdWeVptRmpaVjlwWkhNZ1BTQmJDaUFnSUNCaGVuVnla
+        WEp0WDI1bGRIZHZjbXRmYVc1MFpYSm1ZV05sTG1WNFlXMXdiR1V1YVdRc0NpQWdYUW9LSUNCaFpH
+        MXBibDl6YzJoZmEyVjVJSHNLSUNBZ0lIVnpaWEp1WVcxbElDQWdQU0FpWVdSdGFXNTFjMlZ5SWdv
+        Z0lDQWdjSFZpYkdsalgydGxlU0E5SUdacGJHVW9JbjR2TG5OemFDOXBaRjl5YzJFdWNIVmlJaWtL
+        SUNCOUNnb2dJRzl6WDJScGMyc2dld29nSUNBZ1kyRmphR2x1WnlBZ0lDQWdJQ0FnSUNBZ0lDQWdQ
+        U0FpVW1WaFpGZHlhWFJsSWdvZ0lDQWdjM1J2Y21GblpWOWhZMk52ZFc1MFgzUjVjR1VnUFNBaVUz
+        UmhibVJoY21SZlRGSlRJZ29nSUgwS0NpQWdjMjkxY21ObFgybHRZV2RsWDNKbFptVnlaVzVqWlNC
+        N0NpQWdJQ0J3ZFdKc2FYTm9aWElnUFNBaVEyRnViMjVwWTJGc0lnb2dJQ0FnYjJabVpYSWdJQ0Fn
+        SUQwZ0lsVmlkVzUwZFZObGNuWmxjaUlLSUNBZ0lITnJkU0FnSUNBZ0lDQTlJQ0l4T0M0d05DMU1W
+        Rk1pQ2lBZ0lDQjJaWEp6YVc5dUlDQWdQU0FpYkdGMFpYTjBJZ29nSUgwS0NpQWdZM1Z6ZEc5dFgy
+        UmhkR0VnUFNCaVlYTmxOalJsYm1OdlpHVW9iRzlqWVd3dVkzVnpkRzl0WDJSaGRHRXBDbjBLQ25K
+        bGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJod1kxOWpZV05vWlY5dVpuTmZkR0Z5WjJWMElpQWlaWGho
+        YlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pXaHdZ
+        MjVtYzNSaGNtZGxkQ0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJW
+        OXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JqWVdOb1pWOXVZVzFsSUNB
+        Z0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5b2NHTmZZMkZqYUdVdVpYaGhiWEJzWlM1dVlXMWxDaUFn
+        ZEdGeVoyVjBYMmh2YzNSZmJtRnRaU0FnSUNBOUlHRjZkWEpsY20xZmJHbHVkWGhmZG1seWRIVmhi
+        Rjl0WVdOb2FXNWxMbVY0WVcxd2JHVXVjSEpwZG1GMFpWOXBjRjloWkdSeVpYTnpDaUFnZFhOaFoy
+        VmZiVzlrWld3Z0lDQWdJQ0FnSUNBOUlDSlNSVUZFWDBoRlFWWlpYMGxPUmxKRlVTSUtJQ0J1WVcx
+        bGMzQmhZMlZmYW5WdVkzUnBiMjRnZXdvZ0lDQWdibUZ0WlhOd1lXTmxYM0JoZEdnZ1BTQWlMMjVt
+        Y3k5aE1TSUtJQ0FnSUc1bWMxOWxlSEJ2Y25RZ0lDQWdJRDBnSWk5bGVIQnZjblF2WVNJS0lDQWdJ
+        SFJoY21kbGRGOXdZWFJvSUNBZ0lEMGdJakVpQ2lBZ2ZRb2dJRzVoYldWemNHRmpaVjlxZFc1amRH
+        bHZiaUI3Q2lBZ0lDQnVZVzFsYzNCaFkyVmZjR0YwYUNBOUlDSXZibVp6TDJJaUNpQWdJQ0J1Wm5O
+        ZlpYaHdiM0owSUNBZ0lDQTlJQ0l2Wlhod2IzSjBMMklpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwT1JsTWdWR0Z5WjJWMElIZHBkR2hwYmlCaElFaFFReUJEWVdOb1pTQmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFIQmpYMk5oWTJobFgyNW1jMTkwWVhKblpYUXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

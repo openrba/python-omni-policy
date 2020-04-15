@@ -1,0 +1,108 @@
+aws_spot_fleet_request:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_spot_fleet_request'
+    description: Provides a Spot Fleet Request resource.
+    arguments:
+        iam_fleet_role:
+            description: Grants the Spot fleet permission to terminate
+            required: true
+            policy: ''
+            notes: ''
+        replace_unhealthy_instances:
+            description: Indicates whether Spot fleet should replace unhealthy instances.
+                Default `false`.
+            required: false
+            policy: ''
+            notes: ''
+        spot_price:
+            description: The maximum bid price per unit hour.
+            required: false
+            policy: ''
+            notes: ''
+        wait_for_fulfillment:
+            description: If set, Terraform will
+            required: false
+            policy: ''
+            notes: ''
+        instance_interruption_behaviour:
+            description: Indicates whether a Spot
+            required: false
+            policy: ''
+            notes: ''
+        fleet_type:
+            description: The type of fleet request. Indicates whether the Spot Fleet
+                only requests the target
+            required: false
+            policy: ''
+            notes: ''
+        valid_until:
+            description: The end date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8
+            required: false
+            policy: ''
+            notes: ''
+        valid_from:
+            description: The start date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8
+            required: false
+            policy: ''
+            notes: ''
+        load_balancers:
+            description: A list of elastic load balancer names to add to the Spot
+                fleet.
+            required: false
+            policy: ''
+            notes: ''
+        target_group_arns:
+            description: A list of `aws_alb_target_group` ARNs, for use with Application
+                Load Balancing.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Spot fleet request ID
+        spot_request_state:
+            description: The state of the Spot fleet request.
+    timeouts:
+        create:
+            description: Used when requesting the spot instance (only valid if `wait_for_fulfillment
+                = true`)
+            required: false
+            timeout: 10
+        delete:
+            description: Used when destroying the spot instance
+            required: false
+            timeout: 5
+    usage: !!binary |
+        Q2lNZ1VtVnhkV1Z6ZENCaElGTndiM1FnWm14bFpYUUtjbVZ6YjNWeVkyVWdJbUYzYzE5emNHOTBY
+        MlpzWldWMFgzSmxjWFZsYzNRaUlDSmphR1ZoY0Y5amIyMXdkWFJsSWlCN0NpQWdhV0Z0WDJac1pX
+        VjBYM0p2YkdVZ0lDQWdJQ0E5SUNKaGNtNDZZWGR6T21saGJUbzZNVEl6TkRVMk56ZzZjbTlzWlM5
+        emNHOTBMV1pzWldWMElnb2dJSE53YjNSZmNISnBZMlVnSUNBZ0lDQWdJQ0FnUFNBaU1DNHdNeUlL
+        SUNCaGJHeHZZMkYwYVc5dVgzTjBjbUYwWldkNUlEMGdJbVJwZG1WeWMybG1hV1ZrSWdvZ0lIUmhj
+        bWRsZEY5allYQmhZMmwwZVNBZ0lDQWdQU0EyQ2lBZ2RtRnNhV1JmZFc1MGFXd2dJQ0FnSUNBZ0lD
+        QTlJQ0l5TURFNUxURXhMVEEwVkRJd09qUTBPakl3V2lJS0NpQWdiR0YxYm1Ob1gzTndaV05wWm1s
+        allYUnBiMjRnZXdvZ0lDQWdhVzV6ZEdGdVkyVmZkSGx3WlNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbTAw
+        TGpFd2VHeGhjbWRsSWdvZ0lDQWdZVzFwSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJ
+        bUZ0YVMweE1qTTBJZ29nSUNBZ2MzQnZkRjl3Y21salpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lq
+        SXVOemt6SWdvZ0lDQWdjR3hoWTJWdFpXNTBYM1JsYm1GdVkza2dJQ0FnSUNBZ0lEMGdJbVJsWkds
+        allYUmxaQ0lLSUNBZ0lHbGhiVjlwYm5OMFlXNWpaVjl3Y205bWFXeGxYMkZ5YmlBOUlDSWtlMkYz
+        YzE5cFlXMWZhVzV6ZEdGdVkyVmZjSEp2Wm1sc1pTNWxlR0Z0Y0d4bExtRnlibjBpQ2lBZ2ZRb0tJ
+        Q0JzWVhWdVkyaGZjM0JsWTJsbWFXTmhkR2x2YmlCN0NpQWdJQ0JwYm5OMFlXNWpaVjkwZVhCbElD
+        QWdJQ0FnSUNBZ0lDQWdQU0FpYlRRdU5IaHNZWEpuWlNJS0lDQWdJR0Z0YVNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQTlJQ0poYldrdE5UWTNPQ0lLSUNBZ0lHdGxlVjl1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSnRlUzFyWlhraUNpQWdJQ0J6Y0c5MFgzQnlhV05sSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpTVM0eE1UY2lDaUFnSUNCcFlXMWZhVzV6ZEdGdVkyVmZjSEp2Wm1sc1pW
+        OWhjbTRnUFNBaUpIdGhkM05mYVdGdFgybHVjM1JoYm1ObFgzQnliMlpwYkdVdVpYaGhiWEJzWlM1
+        aGNtNTlJZ29nSUNBZ1lYWmhhV3hoWW1sc2FYUjVYM3B2Ym1VZ0lDQWdJQ0FnSUQwZ0luVnpMWGRs
+        YzNRdE1XRWlDaUFnSUNCemRXSnVaWFJmYVdRZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWMzVmli
+        bVYwTFRFeU16UWlDaUFnSUNCM1pXbG5hSFJsWkY5allYQmhZMmwwZVNBZ0lDQWdJQ0FnUFNBek5R
+        b0tJQ0FnSUhKdmIzUmZZbXh2WTJ0ZlpHVjJhV05sSUhzS0lDQWdJQ0FnZG05c2RXMWxYM05wZW1V
+        Z1BTQWlNekF3SWdvZ0lDQWdJQ0IyYjJ4MWJXVmZkSGx3WlNBOUlDSm5jRElpQ2lBZ0lDQjlDZ29n
+        SUNBZ2RHRm5jeUE5SUhzS0lDQWdJQ0FnVG1GdFpTQTlJQ0p6Y0c5MExXWnNaV1YwTFdWNFlXMXdi
+        R1VpQ2lBZ0lDQjlDaUFnZlFwOUNnPT0=

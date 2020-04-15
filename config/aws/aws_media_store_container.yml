@@ -1,0 +1,24 @@
+aws_media_store_container:
+    status: HOLD
+    subcategory: MediaStore
+    layout: aws
+    page_title: 'AWS: aws_media_store_container'
+    description: Provides a MediaStore Container.
+    arguments:
+        name:
+            description: The name of the container. Must contain alphanumeric characters
+                or underscores.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The ARN of the container.
+        endpoint:
+            description: The DNS endpoint of the container.
+    timeouts: {}

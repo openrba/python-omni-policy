@@ -1,0 +1,33 @@
+aws_emr_security_configuration:
+    status: HOLD
+    subcategory: Elastic Map Reduce (EMR)
+    layout: aws
+    page_title: 'AWS: aws_emr_security_configuration'
+    description: Provides a resource to manage AWS EMR Security Configurations
+    arguments:
+        name:
+            description: The name of the EMR Security Configuration. By default generated
+                by Terraform.
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name beginning with the specified
+            required: false
+            policy: ''
+            notes: ''
+        configuration:
+            description: A JSON formatted Security Configuration
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the EMR Security Configuration (Same as the `name`)
+        name:
+            description: The Name of the EMR Security Configuration
+        configuration:
+            description: The JSON formatted Security Configuration
+        creation_date:
+            description: Date the Security Configuration was created
+    timeouts: {}

@@ -1,0 +1,67 @@
+{
+    "aws_apigatewayv2_authorizer": {
+        "status": "HOLD",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_authorizer",
+        "description": "Manages an Amazon API Gateway Version 2 authorizer.",
+        "arguments": {
+            "api_id": {
+                "description": "The API identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "authorizer_type": {
+                "description": "The authorizer type. Valid values: `JWT`, `REQUEST`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "identity_sources": {
+                "description": "The identity sources for which authorization is requested.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the authorizer.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "authorizer_credentials_arn": {
+                "description": "The required credentials as an IAM role for API Gateway to invoke the authorizer.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "authorizer_uri": {
+                "description": "The authorizer's Uniform Resource Identifier (URI).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "jwt_configuration": {
+                "description": "The configuration of a JWT authorizer. Required for the `JWT` authorizer type.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audience": {
+                "description": "A list of the intended recipients of the JWT. A valid JWT must provide an aud that matches at least one entry in this list.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "issuer": {
+                "description": "The base domain of the identity provider that issues JSON Web Tokens, such as the `endpoint` attribute of the [`aws_cognito_user_pool`](/docs/providers/aws/r/cognito_user_pool.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

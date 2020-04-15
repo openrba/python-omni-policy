@@ -1,0 +1,86 @@
+{
+    "azurerm_dev_test_lab": {
+        "status": "HOLD",
+        "subcategory": "Dev Test",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_dev_test_lab",
+        "description": "Manages a Dev Test Lab.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Dev Test Lab. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group under which the Dev Test Lab resource has to be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the Dev Test Lab should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_type": {
+                "description": "The type of storage used by the Dev Test Lab. Possible values are `Standard` and `Premium`. Defaults to `Premium`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Dev Test Lab."
+            },
+            "artifacts_storage_account_id": {
+                "description": "The ID of the Storage Account used for Artifact Storage."
+            },
+            "default_storage_account_id": {
+                "description": "The ID of the Default Storage Account for this Dev Test Lab."
+            },
+            "default_premium_storage_account_id": {
+                "description": "The ID of the Default Premium Storage Account for this Dev Test Lab."
+            },
+            "key_vault_id": {
+                "description": "The ID of the Key used for this Dev Test Lab."
+            },
+            "premium_data_disk_storage_account_id": {
+                "description": "The ID of the Storage Account used for Storage of Premium Data Disk."
+            },
+            "unique_identifier": {
+                "description": "The unique immutable identifier of the Dev Test Lab."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the DevTest Lab.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the DevTest Lab.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the DevTest Lab.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the DevTest Lab.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

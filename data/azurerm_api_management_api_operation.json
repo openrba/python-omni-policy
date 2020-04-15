@@ -1,0 +1,188 @@
+{
+    "azurerm_api_management_api_operation": {
+        "status": "HOLD",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_api_operation",
+        "description": "Manages an API Operation within an API Management Service.",
+        "arguments": {
+            "operation_id": {
+                "description": "A unique identifier for this API Operation. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_name": {
+                "description": "The name of the API within the API Management Service where this API Operation should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_management_name": {
+                "description": "The Name of the API Management Service where the API exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The Name of the Resource Group in which the API Management Service exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "The Display Name for this API Management Operation.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "method": {
+                "description": "The HTTP Method used for this API Management Operation, like `GET`, `DELETE`, `PUT` or `POST` - but not limited to these values.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "url_template": {
+                "description": "The relative URL Template identifying the target resource for this operation, which may include parameters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of this Template Parameter.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "request": {
+                "description": "A `request` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "response": {
+                "description": "One or more `response` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "template_parameter": {
+                "description": "One or more `template_parameter` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The Name of this Template Parameter.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "required": {
+                "description": "Is this Template Parameter Required?",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The Type of this Template Parameter, such as a `string`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "default_value": {
+                "description": "The default value for this Template Parameter.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "values": {
+                "description": "One or more acceptable values for this Template Parameter.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "header": {
+                "description": "One or more `header` blocks as defined above.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "query_parameter": {
+                "description": "One or more `query_parameter` blocks as defined above.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "representation": {
+                "description": "One or more `representation` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_type": {
+                "description": "The Content Type of this representation, such as `application/json`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "form_parameter": {
+                "description": "One or more `form_parameter` block as defined above.",
+                "required": false,
+                "policy": "",
+                "notes": "This is Required when `content_type` is set to `application/x-www-form-urlencoded` or `multipart/form-data`."
+            },
+            "sample": {
+                "description": "An example of this representation.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "schema_id": {
+                "description": "The ID of an API Management Schema which represents this Response.",
+                "required": false,
+                "policy": "",
+                "notes": "This can only be specified when `content_type` is not set to `application/x-www-form-urlencoded` or `multipart/form-data`."
+            },
+            "type_name": {
+                "description": "The Type Name defined by the Schema.",
+                "required": false,
+                "policy": "",
+                "notes": "This can only be specified when `content_type` is not set to `application/x-www-form-urlencoded` or `multipart/form-data`."
+            },
+            "status_code": {
+                "description": "The HTTP Status Code.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management API Operation."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management API Operation.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management API Operation.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management API Operation.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management API Operation.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

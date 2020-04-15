@@ -1,0 +1,103 @@
+aws_dms_endpoint:
+    status: HOLD
+    subcategory: Database Migration Service (DMS)
+    layout: aws
+    page_title: 'AWS: aws_dms_endpoint'
+    description: Provides a DMS (Data Migration Service) endpoint resource.
+    arguments:
+        certificate_arn:
+            description: The Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        database_name:
+            description: The name of the endpoint database.
+            required: false
+            policy: ''
+            notes: ''
+        endpoint_id:
+            description: The database endpoint identifier.
+            required: true
+            policy: ''
+            notes: ''
+        endpoint_type:
+            description: The type of endpoint. Can be one of `source | target`.
+            required: true
+            policy: ''
+            notes: ''
+        engine_name:
+            description: The type of engine for the endpoint. Can be one of `aurora
+                | azuredb | db2 | docdb | dynamodb | mariadb | mongodb | mysql | oracle
+                | postgres | redshift | s3 | sqlserver | sybase`.
+            required: true
+            policy: ''
+            notes: ''
+        extra_connection_attributes:
+            description: Additional attributes associated with the connection. For
+                available attributes see [Using Extra Connection Attributes with AWS
+                Database Migration Service](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.ConnectionAttributes.html).
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_arn:
+            description: The Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The password to be used to login to the endpoint database.
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: The port used by the endpoint database.
+            required: false
+            policy: ''
+            notes: ''
+        server_name:
+            description: The host name of the server.
+            required: false
+            policy: ''
+            notes: ''
+        ssl_mode:
+            description: The SSL mode to use for the connection. Can be one of `none
+                | require | verify-ca | verify-full`
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        username:
+            description: The user name to be used to login to the endpoint database.
+            required: false
+            policy: ''
+            notes: ''
+        service_access_role:
+            description: The Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        mongodb_settings:
+            description: 'Settings for the source MongoDB endpoint. Available settings
+                are `auth_type` (default: `password`), `auth_mechanism` (default:
+                `default`), `nesting_level` (default: `none`), `extract_doc_id` (default:
+                `false`), `docs_to_investigate` (default: `1000`'
+            required: false
+            policy: ''
+            notes: ''
+        s3_settings:
+            description: 'Settings for the target S3 endpoint. Available settings
+                are `service_access_role_arn`, `external_table_definition`, `csv_row_delimiter`
+                (default: `\\n`), `csv_delimiter` (default: `,`), `bucket_folder`,
+                `bucket_name` and `compression_type` (default: `NONE`). For more details,
+                see [Using Amazon S3 as a Target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.S3.html).'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        endpoint_arn:
+            description: The Amazon Resource Name (ARN) for the endpoint.
+    timeouts: {}

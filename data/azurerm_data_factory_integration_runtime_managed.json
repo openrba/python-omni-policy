@@ -1,0 +1,158 @@
+{
+    "azurerm_data_factory_integration_runtime_managed": {
+        "status": "HOLD",
+        "subcategory": "Data Factory",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_data_factory_integration_runtime_managed",
+        "description": "Manages an Azure Data Factory Managed Integration Runtime.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Managed Integration Runtime. Changing this forces a new resource to be created. Must be globally unique. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "data_factory_name": {
+                "description": "Specifies the name of the Data Factory the Managed Integration Runtime belongs to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Managed Integration Runtime. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "node_size": {
+                "description": "The size of the nodes on which the Managed Integration Runtime runs. Valid values are: `Standard_D2_v3`, `Standard_D4_v3`, `Standard_D8_v3`, `Standard_D16_v3`, `Standard_D32_v3`, `Standard_D64_v3`, `Standard_E2_v3`, `Standard_E4_v3`, `Standard_E8_v3`, `Standard_E16_v3`, `Standard_E32_v3`, `Standard_E64_v3`, `Standard_D1_v2`, `Standard_D2_v2`, `Standard_D3_v2`, `Standard_D4_v2`, `Standard_A4_v2` and `Standard_A8_v2`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "number_of_nodes": {
+                "description": "Number of nodes for the Managed Integration Runtime. Max is `10`. Defaults to `1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_parallel_executions_per_node": {
+                "description": "Defines the maximum parallel executions per node. Defaults to `1`. Max is `16`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "edition": {
+                "description": "The Managed Integration Runtime edition. Valid values are `Standard` and `Enterprise`. Defaults to `Standard`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "license_type": {
+                "description": "The type of the license that is used. Valid values are `LicenseIncluded` and `BasePrize`. Defaults to `LicenseIncluded`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "catalog_info": {
+                "description": "A `catalog_info` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_setup_script": {
+                "description": "A `custom_setup_script` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vnet_integration": {
+                "description": "A `vnet_integration` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_endpoint": {
+                "description": "The endpoint of an Azure SQL Server that will be used to host the SSIS catalog.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "administrator_login": {
+                "description": "Administrator login name for the SQL Server.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "administrator_password": {
+                "description": "Administrator login password for the SQL Server.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "pricing_tier": {
+                "description": "Pricing tier for the database that will be created for the SSIS catalog. Valid values are: `Basic`, `Standard`, `Premium` and `PremiumRS`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "blob_container_uri": {
+                "description": "The blob endpoint for the container which contains a custom setup script that will be run on every node on startup. See [https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sas_token": {
+                "description": "A container SAS token that gives access to the files. See [https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vnet_id": {
+                "description": "ID of the virtual network to which the nodes of the Managed Integration Runtime will be added.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_name": {
+                "description": "Name of the subnet to which the nodes of the Managed Integration Runtime will be added.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Data Factory Integration Managed Runtime."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Data Factory Integration Managed Runtime.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Data Factory Integration Managed Runtime.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Data Factory Integration Managed Runtime.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Data Factory Integration Managed Runtime.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

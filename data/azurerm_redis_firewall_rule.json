@@ -1,0 +1,47 @@
+{
+    "azurerm_redis_firewall_rule": {
+        "status": "HOLD",
+        "subcategory": "Redis",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_redis_firewall_rule",
+        "description": "Manages a Firewall Rule associated with a Redis Cache.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Firewall Rule. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "redis_cache_name": {
+                "description": "The name of the Redis Cache. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which this Redis Cache exists.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "start_ip": {
+                "description": "The lowest IP address included in the range",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "end_ip": {
+                "description": "The highest IP address included in the range.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Redis Firewall Rule."
+            }
+        },
+        "timeouts": {}
+    }
+}

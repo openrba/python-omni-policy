@@ -1,0 +1,21 @@
+aws_licensemanager_association:
+    status: HOLD
+    subcategory: License Manager
+    layout: aws
+    page_title: 'AWS: aws_licensemanager_association'
+    description: Provides a License Manager association resource.
+    arguments:
+        license_configuration_arn:
+            description: ARN of the license configuration.
+            required: true
+            policy: ''
+            notes: ''
+        resource_arn:
+            description: ARN of the resource associated with the license configuration.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The license configuration ARN.
+    timeouts: {}

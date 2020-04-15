@@ -1,0 +1,231 @@
+helm_release:
+    status: HOLD
+    layout: helm
+    page_title: 'helm: helm_release'
+    sidebar_current: docs-helm-release
+    description: ''
+    arguments:
+        name:
+            description: full name of the variable to be set.
+            required: true
+            policy: ''
+            notes: ''
+        chart:
+            description: Chart name to be installed. A path may be used.
+            required: true
+            policy: ''
+            notes: ''
+        repository:
+            description: Repository where to locate the requested chart. If is an
+                URL the chart is installed without installing the repository.
+            required: false
+            policy: ''
+            notes: ''
+        repository_key_file:
+            description: The repositories cert key file
+            required: false
+            policy: ''
+            notes: ''
+        repository_cert_file:
+            description: The repositories cert file
+            required: false
+            policy: ''
+            notes: ''
+        repository_ca_file:
+            description: 'The Repositories CA File. '
+            required: false
+            policy: ''
+            notes: ''
+        repository_username:
+            description: Username for HTTP basic authentication against the repository.
+            required: false
+            policy: ''
+            notes: ''
+        repository_password:
+            description: Password for HTTP basic authentication against the reposotory.
+            required: false
+            policy: ''
+            notes: ''
+        devel:
+            description: Use chart development versions, too. Equivalent to version
+                '>0.0.0-0'. If version is set, this is ignored.
+            required: false
+            policy: ''
+            notes: ''
+        version:
+            description: Specify the exact chart version to install. If this is not
+                specified, the latest version is installed.
+            required: false
+            policy: ''
+            notes: ''
+        namespace:
+            description: The namespace to install the release into. Defaults to `default`
+            required: false
+            policy: ''
+            notes: ''
+        verify:
+            description: Verify the package before installing it. Defaults to `false`
+            required: false
+            policy: ''
+            notes: ''
+        keyring:
+            description: Location of public keys used for verification. Used only
+                if `verify` is true. Defaults to `/.gnupg/pubring.gpg` in the location
+                set by `home`
+            required: false
+            policy: ''
+            notes: ''
+        timeout:
+            description: Time in seconds to wait for any individual kubernetes operation
+                (like Jobs for hooks). Defaults to `300` seconds.
+            required: false
+            policy: ''
+            notes: ''
+        disable_webhooks:
+            description: Prevent hooks from running. Defauts to `false`
+            required: false
+            policy: ''
+            notes: ''
+        reuse_values:
+            description: When upgrading, reuse the last release's values and merge
+                in any overrides. If 'reset_values' is specified, this is ignored.
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        reset_values:
+            description: When upgrading, reset the values to the ones built into the
+                chart. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        force_update:
+            description: Force resource update through delete/recreate if needed.
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        recreate_pods:
+            description: Perform pods restart during upgrade/rollback. Defaults to
+                `false`.
+            required: false
+            policy: ''
+            notes: ''
+        cleanup_on_fail:
+            description: Allow deletion of new resources created in this upgrade when
+                upgrade fails. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        max_history:
+            description: Maximum number of release versions stored per release. Defaults
+                to `0` (no limit).
+            required: false
+            policy: ''
+            notes: ''
+        atomic:
+            description: If set, installation process purges chart on fail. The wait
+                flag will be set automatically if atomic is used. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        skip_crds:
+            description: If set, no CRDs will be installed. By default, CRDs are installed
+                if not already present. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        render_subchart_notes:
+            description: If set, render subchart notes along with the parent. Defaults
+                to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        disable_openapi_validation:
+            description: If set, the installation process will not validate rendered
+                templates against the Kubernetes OpenAPI Schema. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        wait:
+            description: Will wait until all resources are in a ready state before
+                marking the release as successful. It will wait for as long as `timeout`.
+                Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        values:
+            description: List of values in raw yaml to pass to helm. Values will be
+                merged, in order, as Helm does with multiple `-f` options.
+            required: false
+            policy: ''
+            notes: ''
+        set:
+            description: Value block with custom values to be merged with the values
+                yaml.
+            required: false
+            policy: ''
+            notes: ''
+        set_sensitive:
+            description: Value block with custom sensitive values to be merged with
+                the values yaml that won't be exposed in the plan's diff.
+            required: false
+            policy: ''
+            notes: ''
+        set_string:
+            description: Value block with custom STRING values to be merged with the
+                values yaml.
+            required: false
+            policy: ''
+            notes: ''
+        dependency_update:
+            description: Runs helm dependency update before installing the chart.
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        replace:
+            description: Re-use the given name, even if that name is already used.
+                This is unsafe in production. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Set release description attribute (visible in the history).
+            required: false
+            policy: ''
+            notes: ''
+        postrender:
+            description: Configure a command to run after helm renders the manifest
+                which can alter the manifest contents.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: value of the variable to be set.
+            required: true
+            policy: ''
+            notes: ''
+        binary_path:
+            description: relative or full path to command binary.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        metadata:
+            description: Block status of the deployed release.
+        chart:
+            description: The name of the chart.
+        name:
+            description: Name is the name of the release.
+        namespace:
+            description: Namespace is the kubernetes namespace of the release.
+        revision:
+            description: Version is an int32 which represents the version of the release.
+        status:
+            description: Status of the release.
+        version:
+            description: A SemVer 2 conformant version string of the chart.
+        values:
+            description: The compounded values from `values` and `set*` attributes.
+    timeouts: {}

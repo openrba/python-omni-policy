@@ -1,0 +1,48 @@
+aws_ami_from_instance:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_ami_from_instance'
+    description: Creates an Amazon Machine Image (AMI) from an EBS-backed EC2 instance
+    arguments:
+        name:
+            description: A region-unique name for the AMI.
+            required: true
+            policy: ''
+            notes: ''
+        source_instance_id:
+            description: The id of the instance to use as the basis of the AMI.
+            required: true
+            policy: ''
+            notes: ''
+        snapshot_without_reboot:
+            description: Boolean that overrides the behavior of stopping
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the created AMI.
+    timeouts:
+        create:
+            description: Used when creating the AMI
+            required: false
+            timeout: 40
+        update:
+            description: Used when updating the AMI
+            required: false
+            timeout: 40
+        delete:
+            description: Used when deregistering the AMI
+            required: false
+            timeout: 90
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZVzFwWDJaeWIyMWZhVzV6ZEdGdVkyVWlJQ0psZUdGdGNHeGxJ
+        aUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJsY25KaFptOXliUzFsZUdGdGNH
+        eGxJZ29nSUhOdmRYSmpaVjlwYm5OMFlXNWpaVjlwWkNBOUlDSnBMWGg0ZUhoNGVIaDRJZ3A5Q2c9
+        PQ==

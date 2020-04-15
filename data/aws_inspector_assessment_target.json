@@ -1,0 +1,29 @@
+{
+    "aws_inspector_assessment_target": {
+        "status": "HOLD",
+        "subcategory": "Inspector",
+        "layout": "aws",
+        "page_title": "AWS: aws_inspector_assessment_target",
+        "description": "Provides a Inspector assessment target.",
+        "arguments": {
+            "name": {
+                "description": "The name of the assessment target.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_arn": {
+                "description": "Inspector Resource Group Amazon Resource Name (ARN",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The target assessment ARN."
+            }
+        },
+        "timeouts": {}
+    }
+}

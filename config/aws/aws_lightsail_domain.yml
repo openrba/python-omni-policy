@@ -1,0 +1,18 @@
+aws_lightsail_domain:
+    status: HOLD
+    subcategory: Lightsail
+    layout: aws
+    page_title: 'AWS: aws_lightsail_domain'
+    description: Provides an Lightsail Domain
+    arguments:
+        domain_name:
+            description: The name of the Lightsail domain to manage
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The name used for this domain
+        arn:
+            description: The ARN of the Lightsail domain
+    timeouts: {}

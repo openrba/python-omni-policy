@@ -1,0 +1,41 @@
+{
+    "aws_vpn_gateway": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpn_gateway",
+        "description": "Provides a resource to create a VPC VPN Gateway.",
+        "arguments": {
+            "vpc_id": {
+                "description": "The VPC ID to create in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The Availability Zone for the virtual private gateway.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "amazon_side_asn": {
+                "description": "The Autonomous System Number (ASN",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the VPN Gateway."
+            }
+        },
+        "timeouts": {}
+    }
+}

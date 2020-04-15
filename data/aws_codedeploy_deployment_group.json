@@ -1,0 +1,107 @@
+{
+    "aws_codedeploy_deployment_group": {
+        "status": "HOLD",
+        "subcategory": "CodeDeploy",
+        "layout": "aws",
+        "page_title": "AWS: aws_codedeploy_deployment_group",
+        "description": "Provides a CodeDeploy deployment group.",
+        "arguments": {
+            "app_name": {
+                "description": "The name of the application.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "deployment_group_name": {
+                "description": "The name of the deployment group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_role_arn": {
+                "description": "The service role ARN that allows deployments.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "alarm_configuration": {
+                "description": "Configuration block of alarms associated with the deployment group (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_rollback_configuration": {
+                "description": "Configuration block of the automatic rollback configuration associated with the deployment group (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "autoscaling_groups": {
+                "description": "Autoscaling groups associated with the deployment group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "blue_green_deployment_config": {
+                "description": "Configuration block of the blue/green deployment options for a deployment group (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "deployment_config_name": {
+                "description": "The name of the group's deployment config. The default is \"CodeDeployDefault.OneAtATime\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "deployment_style": {
+                "description": "Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ec2_tag_filter": {
+                "description": "Tag filters associated with the deployment group. See the AWS docs for details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ec2_tag_set": {
+                "description": "Configuration block(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ecs_service": {
+                "description": "Configuration block(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "load_balancer_info": {
+                "description": "Single configuration block of the load balancer to use in a blue/green deployment (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "on_premises_instance_tag_filter": {
+                "description": "On premise tag filters associated with the group. See the AWS docs for details.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "trigger_configuration": {
+                "description": "Configuration block(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Application name and deployment group name."
+            }
+        },
+        "timeouts": {}
+    }
+}

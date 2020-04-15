@@ -1,0 +1,14 @@
+aws_ses_receipt_rule_set:
+    status: HOLD
+    subcategory: SES
+    layout: aws
+    page_title: 'AWS: aws_ses_receipt_rule_set'
+    description: Provides an SES receipt rule set resource
+    arguments:
+        rule_set_name:
+            description: The name of the rule set
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

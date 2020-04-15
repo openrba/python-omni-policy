@@ -1,0 +1,37 @@
+aws_pinpoint_email_channel:
+    status: HOLD
+    subcategory: Pinpoint
+    layout: aws
+    page_title: 'AWS: aws_pinpoint_email_channel'
+    description: Provides a Pinpoint Email Channel resource.
+    arguments:
+        application_id:
+            description: The application ID.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Whether the channel is enabled or disabled. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        from_address:
+            description: The email address used to send emails from.
+            required: true
+            policy: ''
+            notes: ''
+        identity:
+            description: The ARN of an identity verified with SES.
+            required: true
+            policy: ''
+            notes: ''
+        role_arn:
+            description: The ARN of an IAM Role used to submit events to Mobile Analytics'
+                event ingestion service.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        messages_per_second:
+            description: Messages per second that can be sent.
+    timeouts: {}

@@ -1,0 +1,46 @@
+aws_wafregional_rate_based_rule:
+    status: HOLD
+    subcategory: WAF Regional
+    layout: aws
+    page_title: 'AWS: aws_wafregional_rate_based_rule'
+    description: Provides a AWS WAF Regional rate based rule resource.
+    arguments:
+        metric_name:
+            description: The name or description for the Amazon CloudWatch metric
+                of this rule.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name or description of the rule.
+            required: true
+            policy: ''
+            notes: ''
+        rate_key:
+            description: Valid value is IP.
+            required: true
+            policy: ''
+            notes: ''
+        rate_limit:
+            description: The maximum number of requests, which have an identical value
+                in the field specified by the RateKey, allowed in a five-minute period.
+                Minimum value is 100.
+            required: true
+            policy: ''
+            notes: ''
+        predicate:
+            description: The objects to include in a rule (documented below).
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the WAF Regional Rate Based Rule.
+        arn:
+            description: The ARN of the WAF Regional Rate Based Rule.
+    timeouts: {}

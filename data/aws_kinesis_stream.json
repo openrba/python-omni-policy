@@ -1,0 +1,74 @@
+{
+    "aws_kinesis_stream": {
+        "status": "HOLD",
+        "subcategory": "Kinesis",
+        "layout": "aws",
+        "page_title": "AWS: aws_kinesis_stream",
+        "description": "Provides a AWS Kinesis Stream",
+        "arguments": {
+            "name": {
+                "description": "A name to identify the stream. This is unique to the AWS account and region the Stream is created in.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "shard_count": {
+                "description": "The number of shards that the stream will use.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_period": {
+                "description": "Length of time data records are accessible after they are added to the stream. The maximum value of a stream's retention period is 168 hours. Minimum value is 24. Default is 24.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shard_level_metrics": {
+                "description": "A list of shard-level CloudWatch metrics which can be enabled for the stream. See [Monitoring with CloudWatch][3] for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enforce_consumer_deletion": {
+                "description": "A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_type": {
+                "description": "The encryption type to use. The only acceptable values are `NONE` or `KMS`. The default value is `NONE`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_id": {
+                "description": "The GUID for the customer-managed KMS key to use for encryption. You can also use a Kinesis-owned master key by specifying the alias `alias/aws/kinesis`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique Stream id"
+            },
+            "name": {
+                "description": "The unique Stream name"
+            },
+            "shard_count": {
+                "description": "The count of Shards for this Stream"
+            },
+            "arn": {
+                "description": "The Amazon Resource Name (ARN) specifying the Stream (same as `id`)"
+            }
+        },
+        "timeouts": {}
+    }
+}

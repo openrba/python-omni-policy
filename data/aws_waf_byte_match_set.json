@@ -1,0 +1,23 @@
+{
+    "aws_waf_byte_match_set": {
+        "status": "HOLD",
+        "subcategory": "WAF",
+        "layout": "aws",
+        "page_title": "AWS: aws_waf_byte_match_set",
+        "description": "Provides a AWS WAF Byte Match Set resource.",
+        "arguments": {
+            "name": {
+                "description": "The name or description of the Byte Match Set.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the WAF Byte Match Set."
+            }
+        },
+        "timeouts": {}
+    }
+}

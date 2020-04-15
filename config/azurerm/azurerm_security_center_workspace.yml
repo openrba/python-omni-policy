@@ -1,0 +1,61 @@
+azurerm_security_center_workspace:
+    status: HOLD
+    subcategory: Security Center
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_security_center_workspace'
+    description: Manages the subscription's Security Center Workspace.
+    arguments:
+        scope:
+            description: The scope of VMs to send their security data to the desired
+                workspace, unless overridden by a setting with more specific scope.
+            required: true
+            policy: ''
+            notes: ''
+        workspace_id:
+            description: The ID of the Log Analytics Workspace to save the data in.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Security Center Workspace ID.
+    timeouts:
+        create:
+            description: Used when creating the Security Center Workspace.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Security Center Workspace.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Security Center Workspace.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Security Center Workspace.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGMyVmpkWEpwZEhrdGQyOXlhM053WVdObEln
+        b2dJR3h2WTJGMGFXOXVJRDBnSW5kbGMzUjFjeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmJHOW5YMkZ1WVd4NWRHbGpjMTkzYjNKcmMzQmhZMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0
+        WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFptVjRMWE5sWTNWeWFYUjVMWGR2Y210emNHRmpa
+        U0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdJaVI3WVhwMWNtVnliVjl5WlhOdmRY
+        SmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dWZTSUtJQ0J5WlhOdmRYSmpaVjluY205
+        MWNGOXVZVzFsSUQwZ0lpUjdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hs
+        TG01aGJXVjlJZ29nSUhOcmRTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVR1Z5UjBJeU1ERTRJ
+        Z3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5elpXTjFjbWwwZVY5alpXNTBaWEpmZDI5eWEz
+        TndZV05sSWlBaVpYaGhiWEJzWlNJZ2V3b2dJSE5qYjNCbElDQWdJQ0FnSUNBOUlDSXZjM1ZpYzJO
+        eWFYQjBhVzl1Y3k4d01EQXdNREF3TUMwd01EQXdMVEF3TURBdE1EQXdNQzB3TURBd01EQXdNREF3
+        TURBaUNpQWdkMjl5YTNOd1lXTmxYMmxrSUQwZ0lpUjdZWHAxY21WeWJWOXNiMmRmWVc1aGJIbDBh
+        V056WDNkdmNtdHpjR0ZqWlM1bGVHRnRjR3hsTG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwVWFHVWdZMjl1ZEdGamRDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnla
+        WE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVmpkWEpwZEhsZlkyVnVkR1Z5WDNkdmNtdHpjR0ZqWlM1dFlYSnJaRzkzYmc9
+        PQ==

@@ -1,0 +1,83 @@
+{
+    "azurerm_dns_txt_record": {
+        "status": "HOLD",
+        "subcategory": "DNS",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_dns_txt_record",
+        "description": "Manages a DNS TXT Record.",
+        "arguments": {
+            "name": {
+                "description": "The name of the DNS TXT Record.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the resource group where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_name": {
+                "description": "Specifies the DNS Zone where the DNS Zone (parent resource",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ttl": {
+                "description": "The Time To Live (TTL",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "record": {
+                "description": "A list of values that make up the txt record. Each `record` block supports fields documented below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The value of the record. Max length: 1024 characters",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The DNS TXT Record ID."
+            },
+            "fqdn": {
+                "description": "The FQDN of the DNS TXT Record."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the DNS TXT Record.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the DNS TXT Record.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the DNS TXT Record.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the DNS TXT Record.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

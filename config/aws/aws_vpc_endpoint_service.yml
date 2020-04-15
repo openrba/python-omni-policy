@@ -1,0 +1,48 @@
+aws_vpc_endpoint_service:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_vpc_endpoint_service'
+    description: Provides a VPC Endpoint Service resource.
+    arguments:
+        acceptance_required:
+            description: Whether or not VPC endpoint connection requests to the service
+                must be accepted by the service owner - `true` or `false`.
+            required: true
+            policy: ''
+            notes: ''
+        network_load_balancer_arns:
+            description: The ARNs of one or more Network Load Balancers for the endpoint
+                service.
+            required: true
+            policy: ''
+            notes: ''
+        allowed_principals:
+            description: The ARNs of one or more principals allowed to discover the
+                endpoint service.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the VPC endpoint service.
+        availability_zones:
+            description: The Availability Zones in which the service is available.
+        base_endpoint_dns_names:
+            description: The DNS names for the service.
+        manages_vpc_endpoints:
+            description: 'Whether or not the service manages its VPC endpoints '
+        private_dns_name:
+            description: The private DNS name for the service.
+        service_name:
+            description: The service name.
+        service_type:
+            description: The service type, `Gateway` or `Interface`.
+        state:
+            description: The state of the VPC endpoint service.
+    timeouts: {}

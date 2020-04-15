@@ -1,0 +1,97 @@
+azurerm_local_network_gateway:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_local_network_gateway'
+    description: Manages a local network gateway connection over which specific connections
+        can be configured.
+    arguments:
+        name:
+            description: The name of the local network gateway. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location/region where the local network gateway is
+            required: true
+            policy: ''
+            notes: ''
+        gateway_address:
+            description: The IP address of the gateway to which to
+            required: true
+            policy: ''
+            notes: ''
+        address_space:
+            description: The list of string CIDRs representing the
+            required: true
+            policy: ''
+            notes: ''
+        bgp_settings:
+            description: A `bgp_settings` block as defined below containing the
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        asn:
+            description: The BGP speaker's ASN.
+            required: true
+            policy: ''
+            notes: ''
+        bgp_peering_address:
+            description: The BGP peering address and BGP identifier
+            required: true
+            policy: ''
+            notes: ''
+        peer_weight:
+            description: The weight added to routes learned from this
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Local Network Gateway.
+    timeouts:
+        create:
+            description: Used when creating the Local Network Gateway.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Local Network Gateway.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Local Network Gateway.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Local Network Gateway.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbXh2WTJGc1RtVjBkMjl5YTBkWFZHVnpkQ0lLSUNCc2Iy
+        TmhkR2x2YmlBOUlDSlhaWE4wSUZWVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzYjJO
+        aGJGOXVaWFIzYjNKclgyZGhkR1YzWVhraUlDSm9iMjFsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKaVlXTnJTRzl0WlNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCc2Iy
+        TmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ1oyRjBaWGRoZVY5aFpHUnlaWE56SUNBZ0lDQTlJQ0l4
+        TWk0eE15NHhOQzR4TlNJS0lDQmhaR1J5WlhOelgzTndZV05sSUNBZ0lDQWdJRDBnV3lJeE1DNHdM
+        akF1TUM4eE5pSmRDbjBL
+    import: !!binary |
+        Q2dwTWIyTmhiQ0JPWlhSM2IzSnJJRWRoZEdWM1lYbHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOWpZV3hmYm1WMGQyOXlhMTluWVhSbGQyRjVMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

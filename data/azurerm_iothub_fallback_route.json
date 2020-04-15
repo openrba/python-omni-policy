@@ -1,0 +1,68 @@
+{
+    "azurerm_iothub_fallback_route": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_iothub_fallback_route",
+        "description": "Manages an IotHub Fallback Route",
+        "arguments": {
+            "resource_group_name": {
+                "description": "The name of the resource group under which the IotHub Storage Container Endpoint resource has to be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "iothub_name": {
+                "description": "The name of the IoTHub to which this Fallback Route belongs. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Used to specify whether the fallback route is enabled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint_names": {
+                "description": "The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "condition": {
+                "description": "The condition that is evaluated to apply the routing rule. If no condition is provided, it evaluates to `true` by default. For grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the IoTHub Fallback Route."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the IotHub Fallback Route.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the IotHub Fallback Route.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the IotHub Fallback Route.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the IotHub Fallback Route.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

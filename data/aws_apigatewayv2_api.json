@@ -1,0 +1,55 @@
+{
+    "aws_apigatewayv2_api": {
+        "status": "HOLD",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_api",
+        "description": "Manages an Amazon API Gateway Version 2 API.",
+        "arguments": {
+            "name": {
+                "description": "The name of the API.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol_type": {
+                "description": "The API protocol. Valid values: `HTTP`, `WEBSOCKET`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_key_selection_expression": {
+                "description": "An [API key selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-apikey-selection-expressions).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route_selection_expression": {
+                "description": "The [route selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-selection-expressions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "A version identifier for the API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

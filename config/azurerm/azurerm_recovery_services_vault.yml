@@ -1,0 +1,79 @@
+azurerm_recovery_services_vault:
+    status: HOLD
+    subcategory: Recovery Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_recovery_services_vault'
+    description: Manages a Recovery Services Vault.
+    arguments:
+        name:
+            description: Specifies the name of the Recovery Services Vault. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Recovery
+                Services Vault. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        sku:
+            description: 'Sets the vault''s SKU. Possible values include: `Standard`,
+                `RS0`.'
+            required: true
+            policy: ''
+            notes: ''
+        soft_delete_enabled:
+            description: Is soft delete enable for this Vault? Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Recovery Services Vault.
+    timeouts:
+        create:
+            description: Used when creating the Recovery Services Vault.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Recovery Services Vault.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Recovery Services Vault.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Recovery Services Vault.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKMFptVjRMWEpsWTI5MlpYSjVYM1poZFd4MElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzSmxZMjkyWlhK
+        NVgzTmxjblpwWTJWelgzWmhkV3gwSWlBaWRtRjFiSFFpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1ZmY21WamIzWmxjbmxmZG1GMWJIUWlDaUFnYkc5allYUnBi
+        MjRnSUNBZ0lDQWdJQ0FnSUNBOUlDSWtlMkY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWNt
+        Y3ViRzlqWVhScGIyNTlJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQWlKSHRoZW5W
+        eVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xuSm5MbTVoYldWOUlnb2dJSE5yZFNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVUzUmhibVJoY21RaUNnb2dJSE52Wm5SZlpHVnNaWFJsWDJWdVlXSnNa
+        V1FnUFNCMGNuVmxDbjBL
+    import: !!binary |
+        Q2dwU1pXTnZkbVZ5ZVNCVFpYSjJhV05sY3lCV1lYVnNkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtVmpiM1psY25sZmMyVnlkbWxqWlhOZmRtRjFiSFF1YldGeWEyUnZkMjQ9

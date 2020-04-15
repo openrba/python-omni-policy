@@ -1,0 +1,31 @@
+aws_ram_resource_share_accepter:
+    status: HOLD
+    subcategory: RAM
+    layout: aws
+    page_title: 'AWS: aws_ram_resource_share_accepter'
+    description: Manages accepting a Resource Access Manager (RAM) Resource Share
+        invitation.
+    arguments:
+        share_arn:
+            description: The ARN of the resource share.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        invitation_arn:
+            description: The ARN of the resource share invitation.
+        share_id:
+            description: The ID of the resource share as displayed in the console.
+        status:
+            description: The status of the resource share (ACTIVE, PENDING, FAILED,
+                DELETING, DELETED).
+        receiver_account_id:
+            description: The account ID of the receiver account which accepts the
+                invitation.
+        sender_account_id:
+            description: The account ID of the sender account which submits the invitation.
+        share_name:
+            description: The name of the resource share.
+        resources:
+            description: A list of the resource ARNs shared via the resource share.
+    timeouts: {}

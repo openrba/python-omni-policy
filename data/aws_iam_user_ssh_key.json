@@ -1,0 +1,44 @@
+{
+    "aws_iam_user_ssh_key": {
+        "status": "HOLD",
+        "subcategory": "IAM",
+        "layout": "aws",
+        "page_title": "AWS: aws_iam_user_ssh_key",
+        "description": "Uploads an SSH public key and associates it with the specified IAM user.",
+        "arguments": {
+            "username": {
+                "description": "The name of the IAM user to associate the SSH public key with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "encoding": {
+                "description": "Specifies the public key encoding format to use in the response. To retrieve the public key in ssh-rsa format, use `SSH`. To retrieve the public key in PEM format, use `PEM`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "public_key": {
+                "description": "The SSH public key. The public key must be encoded in ssh-rsa format or PEM format.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "status": {
+                "description": "The status to assign to the SSH public key. Active means the key can be used for authentication with an AWS CodeCommit repository. Inactive means the key cannot be used. Default is `active`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "ssh_public_key_id": {
+                "description": "The unique identifier for the SSH public key."
+            },
+            "fingerprint": {
+                "description": "The MD5 message digest of the SSH public key."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,102 @@
+azurerm_point_to_site_vpn_gateway:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_point_to_site_vpn_gateway'
+    description: Manages a Point-to-Site VPN Gateway.
+    arguments:
+        name:
+            description: The Name which should be used for this Connection Configuration.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Point-to-Site
+                VPN Gateway. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        connection_configuration:
+            description: A `connection_configuration` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        scale_unit:
+            description: The Scale Unit for this Point-to-Site VPN Gateway.
+            required: true
+            policy: ''
+            notes: ''
+        virtual_hub_id:
+            description: The ID of the Virtual Hub where this Point-to-Site VPN Gateway
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        vpn_server_configuration_id:
+            description: The ID of the VPN Server Configuration which this Point-to-Site
+                VPN Gateway should use. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the Point-to-Site VPN Gateway.
+            required: false
+            policy: ''
+            notes: ''
+        vpn_client_address_pool:
+            description: A `vpn_client_address_pool` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        address_prefixes:
+            description: A list of CIDR Ranges which should be used as Address Prefixes.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Point-to-Site VPN Gateway.
+    timeouts:
+        create:
+            description: Used when creating the Point-to-Site VPN Gateway.
+            required: false
+            timeout: 90
+        update:
+            description: Used when updating the Point-to-Site VPN Gateway.
+            required: false
+            timeout: 90
+        read:
+            description: Used when retrieving the Point-to-Site VPN Gateway.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Point-to-Site VPN Gateway.
+            required: false
+            timeout: 90
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNCdmFXNTBYM1J2WDNOcGRHVmZkbkJ1WDJkaGRHVjNZ
+        WGtpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSW1WNFlXMXdiR1V0ZG5CdUxXZGhkR1YzWVhraUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0
+        Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnSUNBZ0lDQWdJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExuSmxjMjkxY21ObFgy
+        ZHliM1Z3WDI1aGJXVUtJQ0IyYVhKMGRXRnNYMmgxWWw5cFpDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNC
+        aGVuVnlaWEp0WDNacGNuUjFZV3hmYUhWaUxtVjRZVzF3YkdVdWFXUUtJQ0IyY0c1ZmMyVnlkbVZ5
+        WDJOdmJtWnBaM1Z5WVhScGIyNWZhV1FnUFNCaGVuVnlaWEp0WDNad2JsOXpaWEoyWlhKZlkyOXVa
+        bWxuZFhKaGRHbHZiaTVsZUdGdGNHeGxMbWxrQ2lBZ2MyTmhiR1ZmZFc1cGRDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdNUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwUWIybHVkQzEwYnkxVGFYUmxJRlpRVGlCSFlYUmxkMkY1SjNNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXBiblJmZEc5ZmMybDBaVjkyY0c1ZloyRjBaWGRoZVM1b2RHMXNMbTFoY210
+        a2IzZHU=

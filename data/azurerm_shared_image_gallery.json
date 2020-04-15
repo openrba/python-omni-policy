@@ -1,0 +1,71 @@
+{
+    "azurerm_shared_image_gallery": {
+        "status": "HOLD",
+        "subcategory": "Compute",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_shared_image_gallery",
+        "description": "Manages a Shared Image Gallery.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Shared Image Gallery. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Shared Image Gallery. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description for this Shared Image Gallery.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the Shared Image Gallery.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Shared Image Gallery."
+            },
+            "unique_name": {
+                "description": "The Unique Name for this Shared Image Gallery."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Shared Image Gallery.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Shared Image Gallery.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Shared Image Gallery.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Shared Image Gallery.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

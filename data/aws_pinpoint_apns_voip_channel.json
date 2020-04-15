@@ -1,0 +1,67 @@
+{
+    "aws_pinpoint_apns_voip_channel": {
+        "status": "HOLD",
+        "subcategory": "Pinpoint",
+        "layout": "aws",
+        "page_title": "AWS: aws_pinpoint_apns_voip_channel",
+        "description": "Provides a Pinpoint APNs VoIP Channel resource.",
+        "arguments": {
+            "application_id": {
+                "description": "The application ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Whether the channel is enabled or disabled. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_authentication_method": {
+                "description": "The default authentication method used for APNs. ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate": {
+                "description": "The pem encoded TLS Certificate from Apple.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "private_key": {
+                "description": "The Certificate Private Key file (ie. `.key` file).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bundle_id": {
+                "description": "The ID assigned to your iOS app. To find this value, choose Certificates, IDs & Profiles, choose App IDs in the Identifiers section, and choose your app.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "team_id": {
+                "description": "The ID assigned to your Apple developer account team. This value is provided on the Membership page.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "token_key": {
+                "description": "The `.p8` file that you download from your Apple developer account when you create an authentication key. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "token_key_id": {
+                "description": "The ID assigned to your signing key. To find this value, choose Certificates, IDs & Profiles, and choose your key in the Keys section.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

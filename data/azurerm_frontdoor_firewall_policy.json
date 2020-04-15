@@ -1,0 +1,212 @@
+{
+    "azurerm_frontdoor_firewall_policy": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_frontdoor_firewall_policy",
+        "description": "Manages an Azure Front Door Web Application Firewall Policy instance.",
+        "arguments": {
+            "name": {
+                "description": "Gets name of the resource that is unique within a policy. This name can be used to access the resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Is the managed rule override enabled or disabled. Defaults to `false`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mode": {
+                "description": "The firewall policy mode. Possible values are `Detection`, `Prevention` and defaults to `Prevention`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "redirect_url": {
+                "description": "If action type is redirect, this field represents redirect URL for the client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_rule": {
+                "description": "One or more `custom_rule` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_block_response_status_code": {
+                "description": "If a `custom_rule` block's action type is `block`, this is the response status code. Possible values are `200`, `403`, `405`, `406`, or `429`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_block_response_body": {
+                "description": "If a `custom_rule` block's action type is `block`, this is the response body. The body must be specified in base64 encoding.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "managed_rule": {
+                "description": "One or more `managed_rule` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the Web Application Firewall Policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "The action to be applied when the rule matches. Possible values are `Allow`, `Block`, `Log`, or `Redirect`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "The priority of the rule. Rules with a lower value will be evaluated before rules with a higher value. Defaults to `1`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The name of the managed rule to use with this resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "match_condition": {
+                "description": "One or more `match_condition` block defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rate_limit_duration_in_minutes": {
+                "description": "The rate limit duration in minutes. Defaults to `1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rate_limit_threshold": {
+                "description": "The rate limit threshold. Defaults to `10`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "match_variable": {
+                "description": "The variable type to be excluded. Possible values are `QueryStringArgNames`, `RequestBodyPostArgNames`, `RequestCookieNames`, `RequestHeaderNames`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "match_values": {
+                "description": "Up to `100` possible values to match.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "operator": {
+                "description": "Comparison operator to apply to the selector when specifying which elements in the collection this exclusion applies to. Possible values are: `Equals`, `Contains`, `StartsWith`, `EndsWith`, `EqualsAny`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "selector": {
+                "description": "Selector for the value in the `match_variable` attribute this exclusion applies to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "negation_condition": {
+                "description": "Should the result of the condition be negated.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "transforms": {
+                "description": "Up to `5` transforms to apply. Possible values are `Lowercase`, `RemoveNulls`, `Trim`, `Uppercase`, `URLDecode` or`URLEncode`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "The version on the managed rule to use with this resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "exclusion": {
+                "description": "One or more `exclusion` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "override": {
+                "description": "One or more `override` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_group_name": {
+                "description": "The managed rule group to override.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule": {
+                "description": "One or more `rule` blocks as defined below. If none are specified, all of the rules in the group will be disabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_id": {
+                "description": "Identifier for the managed rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Resource ID."
+            },
+            "location": {
+                "description": "Resource location."
+            },
+            "frontend_endpoint_ids": {
+                "description": "the Frontend Endpoints associated with this Front Door Web Application Firewall policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the FrontDoor Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the FrontDoor Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the FrontDoor Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the FrontDoor Web Application Firewall Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

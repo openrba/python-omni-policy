@@ -1,0 +1,81 @@
+azurerm_powerbi_embedded:
+    status: HOLD
+    subcategory: PowerBI
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_powerbi_embedded'
+    description: Manages a PowerBI Embedded.
+    arguments:
+        name:
+            description: The name of the PowerBI Embedded. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the PowerBI Embedded
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: 'Sets the PowerBI Embedded''s pricing level''s SKU. Possible
+                values include: `A1`, `A2`, `A3`, `A4`, `A5`, `A6`.'
+            required: true
+            policy: ''
+            notes: ''
+        administrators:
+            description: A set of administrator user identities, which manages the
+                Power BI Embedded and must be a member user or a service principal
+                in your AAD tenant.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the PowerBI Embedded.
+    timeouts:
+        create:
+            description: Used when creating the PowerBI Embedded instance.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the PowerBI Embedded instance.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the PowerBI Embedded instance.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the PowerBI Embedded instance.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        d2IzZGxjbUpwWDJWdFltVmtaR1ZrSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlMxd2IzZGxjbUpwSWdvZ0lHeHZZMkYwYVc5dUlDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpSkh0aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JH
+        VXViRzlqWVhScGIyNTlJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQWlKSHRoZW5W
+        eVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaWDBpQ2lBZ2MydDFYMjVo
+        YldVZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pCTVNJS0lDQmhaRzFwYm1semRISmhkRzl5Y3lBZ0lDQWdJ
+        RDBnV3lKaGVuTmthM1JsYzNSQWJXbGpjbTl6YjJaMExtTnZiU0pkQ24wSw==
+    import: !!binary |
+        Q2dwUWIzZGxja0pKSUVWdFltVmtaR1ZrSUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOTNaWEppYVY5bGJXSmxaR1JsWkM1b2RHMXNMbTFoY210a2IzZHU=

@@ -1,0 +1,132 @@
+azurerm_servicebus_queue:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_servicebus_queue'
+    description: Manages a ServiceBus Queue.
+    arguments:
+        name:
+            description: Specifies the name of the ServiceBus Queue resource. Changing
+                this forces a
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: The name of the ServiceBus Namespace to create
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to
+            required: true
+            policy: ''
+            notes: ''
+        auto_delete_on_idle:
+            description: The ISO 8601 timespan duration of the idle interval after
+                which the
+            required: false
+            policy: ''
+            notes: ''
+        default_message_ttl:
+            description: The ISO 8601 timespan duration of the TTL of messages sent
+                to this
+            required: false
+            policy: ''
+            notes: ''
+        duplicate_detection_history_time_window:
+            description: The ISO 8601 timespan duration during which
+            required: false
+            policy: ''
+            notes: ''
+        enable_express:
+            description: Boolean flag which controls whether Express Entities
+            required: false
+            policy: ''
+            notes: ''
+        enable_partitioning:
+            description: Boolean flag which controls whether to enable
+            required: false
+            policy: ''
+            notes: Partitioning is available at entity creation for all queues and
+                topics in Basic or Standard SKUs. It is not available for the Premium
+                messaging SKU, but any previously existing partitioned entities in
+                Premium namespaces continue to work as expected. Please [see the documentation](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning)
+                for more information.
+        lock_duration:
+            description: The ISO 8601 timespan duration of a peek-lock; that is, the
+                amount of time that the message is locked for other receivers. Maximum
+                value is 5 minutes. Defaults to 1 minute. (`PT1M`)
+            required: false
+            policy: ''
+            notes: ''
+        max_size_in_megabytes:
+            description: Integer value which controls the size of
+            required: false
+            policy: ''
+            notes: ''
+        requires_duplicate_detection:
+            description: Boolean flag which controls whether
+            required: false
+            policy: ''
+            notes: ''
+        requires_session:
+            description: Boolean flag which controls whether the Queue requires sessions.
+            required: false
+            policy: ''
+            notes: ''
+        dead_lettering_on_message_expiration:
+            description: Boolean flag which controls whether the Queue has dead letter
+                support when a message expires. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        max_delivery_count:
+            description: Integer value which controls when a message is automatically
+                deadlettered. Defaults to `10`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ServiceBus Queue ID.
+    timeouts:
+        create:
+            description: Used when creating the ServiceBus Queue.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ServiceBus Queue.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ServiceBus Queue.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ServiceBus Queue.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJsY25KaFptOXliUzF6WlhKMmFXTmxZblZ6SWdvZ0lH
+        eHZZMkYwYVc5dUlEMGdJbGRsYzNRZ1JYVnliM0JsSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21W
+        eWJWOXpaWEoyYVdObFluVnpYMjVoYldWemNHRmpaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbVpYaGZjMlYyYVdObFluVnpYMjVoYldWemNHRmpa
+        U0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpW
+        OW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1G
+        dFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFn
+        YzJ0MUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSlRkR0Z1WkdGeVpDSUtDaUFnZEdGbmN5QTlJ
+        SHNLSUNBZ0lITnZkWEpqWlNBOUlDSjBaWEp5WVdadmNtMGlDaUFnZlFwOUNncHlaWE52ZFhKalpT
+        QWlZWHAxY21WeWJWOXpaWEoyYVdObFluVnpYM0YxWlhWbElpQWlaWGhoYlhCc1pTSWdld29nSUc1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1psZUY5elpYSjJhV05sWW5WelgzRjFaWFZs
+        SWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxY
+        MmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUc1aGJXVnpjR0ZqWlY5dVlXMWxJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzTmxjblpwWTJWaWRYTmZibUZ0WlhOd1lXTmxMbVY0WVcxd2JHVXVibUZ0WlFv
+        S0lDQmxibUZpYkdWZmNHRnlkR2wwYVc5dWFXNW5JRDBnZEhKMVpRcDlDZz09
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVKMWN5QlJkV1YxWlNCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWldKMWMxOXhkV1YxWlM1b2RHMXNMbTFoY210a2IzZHU=

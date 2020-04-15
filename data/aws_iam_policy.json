@@ -1,0 +1,62 @@
+{
+    "aws_iam_policy": {
+        "status": "HOLD",
+        "subcategory": "IAM",
+        "layout": "aws",
+        "page_title": "AWS: aws_iam_policy",
+        "description": "Provides an IAM policy.",
+        "arguments": {
+            "description": {
+                "description": "Description of the IAM policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the policy. If omitted, Terraform will assign a random, unique name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name_prefix": {
+                "description": "Creates a unique name beginning with the specified prefix. Conflicts with `name`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "path": {
+                "description": "Path in which to create the policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy": {
+                "description": "The policy document. This is a JSON formatted string. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://learn.hashicorp.com/terraform/aws/iam-policy)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The policy's ID."
+            },
+            "arn": {
+                "description": "The ARN assigned by AWS to this policy."
+            },
+            "description": {
+                "description": "The description of the policy."
+            },
+            "name": {
+                "description": "The name of the policy."
+            },
+            "path": {
+                "description": "The path of the policy in IAM."
+            },
+            "policy": {
+                "description": "The policy document."
+            }
+        },
+        "timeouts": {}
+    }
+}

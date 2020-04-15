@@ -1,0 +1,24 @@
+aws_waf_geo_match_set:
+    status: HOLD
+    subcategory: WAF
+    layout: aws
+    page_title: 'AWS: aws_waf_geo_match_set'
+    description: Provides a AWS WAF GeoMatchSet resource.
+    arguments:
+        name:
+            description: The name or description of the GeoMatchSet.
+            required: true
+            policy: ''
+            notes: ''
+        geo_match_constraint:
+            description: The GeoMatchConstraint objects which contain the country
+                that you want AWS WAF to search for.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the WAF GeoMatchSet.
+        arn:
+            description: Amazon Resource Name (ARN)
+    timeouts: {}

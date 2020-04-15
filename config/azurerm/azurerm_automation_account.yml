@@ -1,0 +1,87 @@
+azurerm_automation_account:
+    status: HOLD
+    subcategory: Automation
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_automation_account'
+    description: Manages a Automation Account.
+    arguments:
+        name:
+            description: The SKU name of the account - only `Basic` is supported at
+                this time.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Automation Account
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: A `sku` block as described below.
+            required: false
+            policy: ''
+            notes: ''
+        sku_name:
+            description: The SKU name of the account - only `Basic` is supported at
+                this time.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Automation Account ID.
+        dsc_server_endpoint:
+            description: The DSC Server Endpoint associated with this Automation Account.
+        dsc_primary_access_key:
+            description: The Primary Access Key for the DSC Endpoint associated with
+                this Automation Account.
+        dsc_secondary_access_key:
+            description: The Secondary Access Key for the DSC Endpoint associated
+                with this Automation Account.
+    timeouts:
+        create:
+            description: Used when creating the Automation Account.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Automation Account.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Automation Account.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Automation Account.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjloZFhS
+        dmJXRjBhVzl1WDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKaGRYUnZiV0YwYVc5dVFXTmpiM1Z1ZERFaUNpQWdiRzlqWVhScGIyNGdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pT
+        NXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNK
+        bGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvS0lDQnphM1ZmYm1GdFpTQTlJQ0pD
+        WVhOcFl5SUtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lHVnVkbWx5YjI1dFpXNTBJRDBnSW1SbGRtVnNi
+        M0J0Wlc1MElnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwQmRYUnZiV0YwYVc5dUlFRmpZMjkxYm5SeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYVjBiMjFoZEdsdmJsOWhZMk52ZFc1MExtaDBiV3d1YldGeWEyUnZkMjQ9

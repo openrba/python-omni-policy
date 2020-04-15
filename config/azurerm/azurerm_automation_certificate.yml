@@ -1,0 +1,85 @@
+azurerm_automation_certificate:
+    status: HOLD
+    subcategory: Automation
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_automation_certificate'
+    description: Manages an Automation Certificate.
+    arguments:
+        name:
+            description: Specifies the name of the Certificate. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Certificate is
+                created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        automation_account_name:
+            description: The name of the automation account in which the Certificate
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        base64:
+            description: Base64 encoded value of the certificate.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of this Automation Certificate.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Automation Certificate ID.
+        is_exportable:
+            description: The is exportable flag of the certificate.
+        thumbprint:
+            description: The thumbprint for the certificate.
+    timeouts:
+        create:
+            description: Used when creating the Automation Certificate.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Automation Certificate.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Automation Certificate.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Automation Certificate.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjloZFhS
+        dmJXRjBhVzl1WDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKaFkyTnZkVzUwTVNJS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNp
+        QWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNK
+        dmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lITnJkVjl1WVcxbElEMGdJa0poYzJsaklncDlDZ3B5
+        WlhOdmRYSmpaU0FpWVhwMWNtVnliVjloZFhSdmJXRjBhVzl1WDJObGNuUnBabWxqWVhSbElpQWla
+        WGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1ObGNu
+        UnBabWxqWVhSbE1TSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBZ0lDQTlJQ0lrZTJG
+        NmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsZlNJS0lDQmhkWFJ2
+        YldGMGFXOXVYMkZqWTI5MWJuUmZibUZ0WlNBOUlDSWtlMkY2ZFhKbGNtMWZZWFYwYjIxaGRHbHZi
+        bDloWTJOdmRXNTBMbVY0WVcxd2JHVXVibUZ0WlgwaUNnb2dJR1JsYzJOeWFYQjBhVzl1SUQwZ0ls
+        Um9hWE1nYVhNZ1lXNGdaWGhoYlhCc1pTQmpaWEowYVdacFkyRjBaU0lLSUNCaVlYTmxOalFnSUNB
+        Z0lDQTlJR0poYzJVMk5HVnVZMjlrWlNobWFXeGxLQ0pqWlhKMGFXWnBZMkYwWlM1d1puZ2lLU2tL
+        ZlFvPQ==
+    import: !!binary |
+        Q2dwQmRYUnZiV0YwYVc5dUlFTmxjblJwWm1sallYUmxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYVjBiMjFoZEdsdmJsOWpaWEowYVdacFkyRjBaUzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

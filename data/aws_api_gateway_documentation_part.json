@@ -1,0 +1,31 @@
+{
+    "aws_api_gateway_documentation_part": {
+        "status": "HOLD",
+        "subcategory": "API Gateway (REST APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_api_gateway_documentation_part",
+        "description": "Provides a settings of an API Gateway Documentation Part.",
+        "arguments": {
+            "location": {
+                "description": "The location of the targeted API entity of the to-be-created documentation part. See below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "properties": {
+                "description": "A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., \"{ \\\"description\\\": \\\"The API does ...\\\" }\". Only Swagger-compliant key-value pairs can be exported and, hence, published.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rest_api_id": {
+                "description": "The ID of the associated Rest API",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

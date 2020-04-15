@@ -1,0 +1,53 @@
+aws_appsync_function:
+    status: HOLD
+    subcategory: AppSync
+    layout: aws
+    page_title: 'AWS: aws_appsync_function'
+    description: Provides an AppSync Function.
+    arguments:
+        api_id:
+            description: The ID of the associated AppSync API.
+            required: true
+            policy: ''
+            notes: ''
+        data_source:
+            description: The Function DataSource name.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The Function name. The function name does not have to be
+                unique.
+            required: true
+            policy: ''
+            notes: ''
+        request_mapping_template:
+            description: The Function request mapping template. Functions support
+                only the 2018-05-29 version of the request mapping template.
+            required: true
+            policy: ''
+            notes: ''
+        response_mapping_template:
+            description: The Function response mapping template.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The Function description.
+            required: false
+            policy: ''
+            notes: ''
+        function_version:
+            description: The version of the request mapping template. Currently the
+                supported value is `2018-05-29`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: API Function ID (Formatted as ApiId-FunctionId)
+        arn:
+            description: The ARN of the Function object.
+        function_id:
+            description: A unique ID representing the Function object.
+    timeouts: {}

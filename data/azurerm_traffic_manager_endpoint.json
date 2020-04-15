@@ -1,0 +1,146 @@
+{
+    "azurerm_traffic_manager_endpoint": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_traffic_manager_endpoint",
+        "description": "Manages a Traffic Manager Endpoint.",
+        "arguments": {
+            "name": {
+                "description": "The name of the custom header.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "profile_name": {
+                "description": "The name of the Traffic Manager Profile to attach",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint_status": {
+                "description": "The status of the Endpoint, can be set to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The Endpoint type, must be one of:",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target": {
+                "description": "The FQDN DNS name of the target. This argument must be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_resource_id": {
+                "description": "The resource id of an Azure resource to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "weight": {
+                "description": "Specifies how much traffic should be distributed to this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "Specifies the priority of this Endpoint, this must be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint_location": {
+                "description": "Specifies the Azure location of the Endpoint,",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "min_child_endpoints": {
+                "description": "This argument specifies the minimum number",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "geo_mappings": {
+                "description": "A list of Geographic Regions used to distribute traffic, such as `WORLD`, `UK` or `DE`. The same location can't be specified in two endpoints. [See the Geographic Hierarchies documentation for more information](https://docs.microsoft.com/en-us/rest/api/trafficmanager/geographichierarchies/getdefault).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_header": {
+                "description": "One or more `custom_header` blocks as defined below",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet": {
+                "description": "One or more `subnet` blocks as defined below",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The value of custom header. Applicable for Http and Https protocol.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "first": {
+                "description": "The First IP....",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "last": {
+                "description": "The Last IP...",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "The Scope...",
+                "required": false,
+                "policy": "",
+                "notes": "One and only one of either `last` (in case of IP range) or `scope` (in case of CIDR) must be specified."
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Traffic Manager Endpoint."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Traffic Manager Endpoint.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Traffic Manager Endpoint.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Traffic Manager Endpoint.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Traffic Manager Endpoint.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

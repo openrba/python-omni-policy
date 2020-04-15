@@ -1,0 +1,72 @@
+azurerm_cosmosdb_sql_database:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_sql_database'
+    description: Manages a SQL Database within a Cosmos DB Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cosmos DB SQL Database. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cosmos DB SQL
+                Database is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the Cosmos DB SQL Database to create the table
+                within. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        throughput:
+            description: The throughput of SQL database (RU/s). Must be set in increments
+                of `100`. The minimum value is `400`. This must be set upon database
+                creation otherwise it cannot be updated without a manual terraform
+                destroy-apply.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the CosmosDB SQL Database.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB SQL Database.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CosmosDB SQL Database.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CosmosDB SQL Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB SQL Database.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMjl6Ylc5elpHSmZZV05qYjNWdWRDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhndFkyOXpiVzl6WkdJdFlX
+        TmpiM1Z1ZENJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnSW5SbVpYZ3RZMjl6Ylc5
+        elpHSXRZV05qYjNWdWRDMXlaeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlkyOXpiVzl6
+        WkdKZmMzRnNYMlJoZEdGaVlYTmxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpZEdabGVDMWpiM050YjNNdGJXOXVaMjh0WkdJaUNpQWdjbVZ6YjNWeVky
+        VmZaM0p2ZFhCZmJtRnRaU0E5SUdSaGRHRXVZWHAxY21WeWJWOWpiM050YjNOa1lsOWhZMk52ZFc1
+        MExtVjRZVzF3YkdVdWNtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpRb2dJR0ZqWTI5MWJuUmZibUZ0
+        WlNBZ0lDQWdJQ0FnUFNCa1lYUmhMbUY2ZFhKbGNtMWZZMjl6Ylc5elpHSmZZV05qYjNWdWRDNWxl
+        R0Z0Y0d4bExtNWhiV1VLSUNCMGFISnZkV2RvY0hWMElDQWdJQ0FnSUNBZ0lEMGdOREF3Q24wSw==
+    import: !!binary |
+        Q2dwRGIzTnRiM01nVTFGTUlFUmhkR0ZpWVhObElHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZmMzRnNYMlJoZEdGaVlYTmxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

@@ -1,0 +1,163 @@
+aws_opsworks_application:
+    status: HOLD
+    subcategory: OpsWorks
+    layout: aws
+    page_title: 'AWS: aws_opsworks_application'
+    description: Provides an OpsWorks application resource.
+    arguments:
+        name:
+            description: A human-readable name for the application.
+            required: true
+            policy: ''
+            notes: ''
+        short_name:
+            description: A short, machine-readable name for the application. This
+                can only be defined on resource creation and ignored on resource update.
+            required: true
+            policy: ''
+            notes: ''
+        stack_id:
+            description: The id of the stack the application will belong to.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of source to use. For example, "archive".
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the app.
+            required: false
+            policy: ''
+            notes: ''
+        environment:
+            description: Object to define environment variables.  Object is described
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        enable_ssl:
+            description: Whether to enable SSL for the app. This must be set in order
+                to let `ssl_configuration.private_key`, `ssl_configuration.certificate`
+                and `ssl_configuration.chain` take effect.
+            required: false
+            policy: ''
+            notes: ''
+        ssl_configuration:
+            description: The SSL configuration of the app. Object is described below.
+            required: false
+            policy: ''
+            notes: ''
+        app_source:
+            description: SCM configuration of the app as described below.
+            required: false
+            policy: ''
+            notes: ''
+        data_source_arn:
+            description: The data source's ARN.
+            required: false
+            policy: ''
+            notes: ''
+        data_source_type:
+            description: The data source's type one of `AutoSelectOpsworksMysqlInstance`,
+                `OpsworksMysqlInstance`, or `RdsDbInstance`.
+            required: false
+            policy: ''
+            notes: ''
+        data_source_database_name:
+            description: The database name.
+            required: false
+            policy: ''
+            notes: ''
+        domains:
+            description: A list of virtual host alias.
+            required: false
+            policy: ''
+            notes: ''
+        document_root:
+            description: Subfolder for the document root for application of type `rails`.
+            required: false
+            policy: ''
+            notes: ''
+        auto_bundle_on_deploy:
+            description: Run bundle install when deploying for application of type
+                `rails`.
+            required: false
+            policy: ''
+            notes: ''
+        rails_env:
+            description: The name of the Rails environment for application of type
+                `rails`.
+            required: false
+            policy: ''
+            notes: ''
+        aws_flow_ruby_settings:
+            description: Specify activity and workflow workers for your app using
+                the aws-flow gem.
+            required: false
+            policy: ''
+            notes: ''
+        url:
+            description: The URL where the app resource can be found.
+            required: true
+            policy: ''
+            notes: ''
+        username:
+            description: Username to use when authenticating to the source.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: Password to use when authenticating to the source. Terraform
+                cannot perform drift detection of this configuration.
+            required: false
+            policy: ''
+            notes: ''
+        ssh_key:
+            description: SSH key to use when authenticating to the source. Terraform
+                cannot perform drift detection of this configuration.
+            required: false
+            policy: ''
+            notes: ''
+        revision:
+            description: For sources that are version-aware, the revision to use.
+            required: false
+            policy: ''
+            notes: ''
+        key:
+            description: Variable name.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: Variable value.
+            required: true
+            policy: ''
+            notes: ''
+        secure:
+            description: Set visibility of the variable value to `true` or `false`.
+            required: false
+            policy: ''
+            notes: ''
+        private_key:
+            description: The private key; the contents of the certificate's domain.key
+                file.
+            required: true
+            policy: ''
+            notes: ''
+        certificate:
+            description: The contents of the certificate's domain.crt file.
+            required: true
+            policy: ''
+            notes: ''
+        chain:
+            description: ' Can be used to specify an intermediate certificate authority
+                key or client authentication.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The id of the application.
+    timeouts: {}

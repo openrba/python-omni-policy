@@ -1,0 +1,29 @@
+{
+    "aws_guardduty_invite_accepter": {
+        "status": "HOLD",
+        "subcategory": "GuardDuty",
+        "layout": "aws",
+        "page_title": "AWS: aws_guardduty_invite_accepter",
+        "description": "Provides a resource to accept a pending GuardDuty invite on creation, ensure the detector has the correct master account on read, and disassociate with the master account upon removal.",
+        "arguments": {
+            "detector_id": {
+                "description": "The detector ID of the member GuardDuty account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "master_account_id": {
+                "description": "AWS account ID for master account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "GuardDuty member detector ID"
+            }
+        },
+        "timeouts": {}
+    }
+}

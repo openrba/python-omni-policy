@@ -1,0 +1,50 @@
+{
+    "azurerm_subnet_nat_gateway_association": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_subnet_nat_gateway_association",
+        "description": "Associates a [NAT Gateway](nat_gateway.html) with a [Subnet](subnet.html) within a [Virtual Network](virtual_network.html).",
+        "arguments": {
+            "nat_gateway_id": {
+                "description": "The ID of the NAT Gateway which should be associated with the Subnet. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the Subnet. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Subnet."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Subnet NAT Gateway Association.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Subnet NAT Gateway Association.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Subnet NAT Gateway Association.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Subnet NAT Gateway Association.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

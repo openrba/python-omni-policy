@@ -1,0 +1,191 @@
+aws_lb_listener:
+    status: HOLD
+    subcategory: Elastic Load Balancing v2 (ALB/NLB)
+    layout: aws
+    page_title: 'AWS: aws_lb_listener'
+    description: Provides a Load Balancer Listener resource.
+    arguments:
+        load_balancer_arn:
+            description: The ARN of the load balancer.
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: The port. Specify a value from `1` to `65535` or `#{port}`.
+                Defaults to `#{port}`.
+            required: false
+            policy: ''
+            notes: ''
+        protocol:
+            description: The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`.
+                Defaults to `#{protocol}`.
+            required: false
+            policy: ''
+            notes: ''
+        ssl_policy:
+            description: The name of the SSL Policy for the listener. Required if
+                `protocol` is `HTTPS` or `TLS`.
+            required: false
+            policy: ''
+            notes: ''
+        certificate_arn:
+            description: The ARN of the default SSL server certificate. Exactly one
+                certificate is required if the protocol is HTTPS. For adding additional
+                SSL certificates, see the [`aws_lb_listener_certificate` resource](/docs/providers/aws/r/lb_listener_certificate.html).
+            required: false
+            policy: ''
+            notes: ''
+        default_action:
+            description: An Action block. Action blocks are documented below.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of routing action. Valid values are `forward`, `redirect`,
+                `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
+            required: true
+            policy: ''
+            notes: ''
+        target_group_arn:
+            description: The ARN of the Target Group to which to route traffic. Required
+                if `type` is `forward`.
+            required: false
+            policy: ''
+            notes: ''
+        redirect:
+            description: Information for creating a redirect action. Required if `type`
+                is `redirect`.
+            required: false
+            policy: ''
+            notes: ''
+        fixed_response:
+            description: Information for creating an action that returns a custom
+                HTTP response. Required if `type` is `fixed-response`.
+            required: false
+            policy: ''
+            notes: ''
+        host:
+            description: The hostname. This component is not percent-encoded. The
+                hostname can contain `#{host}`. Defaults to `#{host}`.
+            required: false
+            policy: ''
+            notes: ''
+        path:
+            description: 'The absolute path, starting with the leading "/". This component
+                is not percent-encoded. The path can contain #{host}, #{path}, and
+                #{port}. Defaults to `/#{path}`.'
+            required: false
+            policy: ''
+            notes: ''
+        query:
+            description: The query parameters, URL-encoded when necessary, but not
+                percent-encoded. Do not include the leading "?". Defaults to `#{query}`.
+            required: false
+            policy: ''
+            notes: ''
+        status_code:
+            description: The HTTP response code. Valid values are `2XX`, `4XX`, or
+                `5XX`.
+            required: false
+            policy: ''
+            notes: ''
+        content_type:
+            description: The content type. Valid values are `text/plain`, `text/css`,
+                `text/html`, `application/javascript` and `application/json`.
+            required: true
+            policy: ''
+            notes: ''
+        message_body:
+            description: The message body.
+            required: false
+            policy: ''
+            notes: ''
+        authentication_request_extra_params:
+            description: 'The query parameters to include in the redirect request
+                to the authorization endpoint. Max: 10.'
+            required: false
+            policy: ''
+            notes: ''
+        on_unauthenticated_request:
+            description: 'The behavior if the user is not authenticated. Valid values:
+                `deny`, `allow` and `authenticate`'
+            required: false
+            policy: ''
+            notes: ''
+        scope:
+            description: The set of user claims to be requested from the IdP.
+            required: false
+            policy: ''
+            notes: ''
+        session_cookie_name:
+            description: The name of the cookie used to maintain session information.
+            required: false
+            policy: ''
+            notes: ''
+        session_timeout:
+            description: The maximum duration of the authentication session, in seconds.
+            required: false
+            policy: ''
+            notes: ''
+        user_pool_arn:
+            description: The ARN of the Cognito user pool.
+            required: true
+            policy: ''
+            notes: ''
+        user_pool_client_id:
+            description: The ID of the Cognito user pool client.
+            required: true
+            policy: ''
+            notes: ''
+        user_pool_domain:
+            description: The domain prefix or fully-qualified domain name of the Cognito
+                user pool.
+            required: true
+            policy: ''
+            notes: ''
+        authorization_endpoint:
+            description: The authorization endpoint of the IdP.
+            required: true
+            policy: ''
+            notes: ''
+        client_id:
+            description: The OAuth 2.0 client identifier.
+            required: true
+            policy: ''
+            notes: ''
+        client_secret:
+            description: The OAuth 2.0 client secret.
+            required: true
+            policy: ''
+            notes: ''
+        issuer:
+            description: The OIDC issuer identifier of the IdP.
+            required: true
+            policy: ''
+            notes: ''
+        token_endpoint:
+            description: The token endpoint of the IdP.
+            required: true
+            policy: ''
+            notes: ''
+        user_info_endpoint:
+            description: The user info endpoint of the IdP.
+            required: true
+            policy: ''
+            notes: ''
+        key:
+            description: The key of query parameter
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The value of query parameter
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ARN of the listener (matches `arn`)
+        arn:
+            description: The ARN of the listener (matches `id`)
+    timeouts: {}

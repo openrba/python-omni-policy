@@ -1,0 +1,95 @@
+{
+    "azurerm_nat_gateway": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_nat_gateway",
+        "description": "Manages a Azure NAT Gateway.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the NAT Gateway. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the name of the Resource Group in which the NAT Gateway should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the NAT Gateway should exist. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "idle_timeout_in_minutes": {
+                "description": "The idle timeout which should be used in minutes. Defaults to `4`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_ip_address_ids": {
+                "description": "A list of Public IP Address ID's which should be associated with the NAT Gateway resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_ip_prefix_ids": {
+                "description": "A list of Public IP Prefix ID's which should be associated with the NAT Gateway resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "The SKU which should be used. At this time the only supported value is `Standard`. Defaults to `Standard`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zones": {
+                "description": "A list of availability zones where the NAT Gateway should be provisioned. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the NAT Gateway."
+            },
+            "resource_guid": {
+                "description": "The resource GUID property of the NAT Gateway."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the NAT Gateway.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the NAT Gateway.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the NAT Gateway.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the NAT Gateway.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

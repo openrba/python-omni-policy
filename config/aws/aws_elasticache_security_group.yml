@@ -1,0 +1,27 @@
+aws_elasticache_security_group:
+    status: HOLD
+    subcategory: ElastiCache
+    layout: aws
+    page_title: 'AWS: aws_elasticache_security_group'
+    description: Provides an ElastiCache Security Group to control access to one or
+        more cache clusters.
+    arguments:
+        name:
+            description: Name for the cache security group. This value is stored as
+                a lowercase string.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: description for the cache security group. Defaults to "Managed
+                by Terraform".
+            required: false
+            policy: ''
+            notes: ''
+        security_group_names:
+            description: List of EC2 security group names to be
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

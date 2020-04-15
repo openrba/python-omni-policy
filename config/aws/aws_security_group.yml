@@ -1,0 +1,124 @@
+aws_security_group:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_security_group'
+    description: Provides a security group resource.
+    arguments:
+        name:
+            description: The name of the security group. If omitted, Terraform will
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name beginning with the specified
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of this egress rule.
+            required: false
+            policy: ''
+            notes: ''
+        ingress:
+            description: Can be specified multiple times for each
+            required: false
+            policy: ''
+            notes: ''
+        egress:
+            description: Can be specified multiple times for each
+            required: false
+            policy: ''
+            notes: ''
+        revoke_rules_on_delete:
+            description: Instruct Terraform to revoke all of the
+            required: false
+            policy: ''
+            notes: ''
+        vpc_id:
+            description: The VPC ID.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        cidr_blocks:
+            description: List of CIDR blocks.
+            required: false
+            policy: ''
+            notes: ''
+        ipv6_cidr_blocks:
+            description: List of IPv6 CIDR blocks.
+            required: false
+            policy: ''
+            notes: ''
+        prefix_list_ids:
+            description: List of prefix list IDs (for allowing access to VPC endpoints)
+            required: false
+            policy: ''
+            notes: ''
+        from_port:
+            description: The start port (or ICMP type number if protocol is "icmp")
+            required: true
+            policy: ''
+            notes: ''
+        protocol:
+            description: The protocol. If you select a protocol of
+            required: true
+            policy: ''
+            notes: ''
+        security_groups:
+            description: List of security group Group Names if using
+            required: false
+            policy: ''
+            notes: ''
+        self:
+            description: If true, the security group itself will be added as
+            required: false
+            policy: ''
+            notes: ''
+        to_port:
+            description: The end range port (or ICMP code if protocol is "icmp").
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the security group
+        arn:
+            description: The ARN of the security group
+        vpc_id:
+            description: The VPC ID.
+        owner_id:
+            description: The owner ID.
+        name:
+            description: The name of the security group
+        description:
+            description: The description of the security group
+        ingress:
+            description: The ingress rules. See above for more.
+        egress:
+            description: The egress rules. See above for more.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbGZaM0p2ZFhBaUlDSmhiR3h2ZDE5MGJITWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQTlJQ0poYkd4dmQxOTBiSE1pQ2lBZ1pHVnpZM0pwY0hScGIy
+        NGdQU0FpUVd4c2IzY2dWRXhUSUdsdVltOTFibVFnZEhKaFptWnBZeUlLSUNCMmNHTmZhV1FnSUNB
+        Z0lDQTlJQ0lrZTJGM2MxOTJjR011YldGcGJpNXBaSDBpQ2dvZ0lHbHVaM0psYzNNZ2V3b2dJQ0Fn
+        WkdWelkzSnBjSFJwYjI0Z1BTQWlWRXhUSUdaeWIyMGdWbEJESWdvZ0lDQWdabkp2YlY5d2IzSjBJ
+        Q0FnUFNBME5ETUtJQ0FnSUhSdlgzQnZjblFnSUNBZ0lEMGdORFF6Q2lBZ0lDQndjbTkwYjJOdmJD
+        QWdJQ0E5SUNKMFkzQWlDaUFnSUNCamFXUnlYMkpzYjJOcmN5QTlJR0YzYzE5MmNHTXViV0ZwYmk1
+        amFXUnlYMkpzYjJOckNpQWdmUW9LSUNCbFozSmxjM01nZXdvZ0lDQWdabkp2YlY5d2IzSjBJQ0Fn
+        UFNBd0NpQWdJQ0IwYjE5d2IzSjBJQ0FnSUNBOUlEQUtJQ0FnSUhCeWIzUnZZMjlzSUNBZ0lEMGdJ
+        aTB4SWdvZ0lDQWdZMmxrY2w5aWJHOWphM01nUFNCYklqQXVNQzR3TGpBdk1DSmRDaUFnZlFvS0lD
+        QjBZV2R6SUQwZ2V3b2dJQ0FnVG1GdFpTQTlJQ0poYkd4dmQxOTBiSE1pQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSGNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnYzJWamRYSnBkSGtnWjNKdmRYQWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WldOMWNtbDBlVjluY205MWNDNW9kRzFzTG0xaGNtdGtiM2R1

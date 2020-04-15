@@ -1,0 +1,68 @@
+{
+    "azurerm_dashboard": {
+        "status": "HOLD",
+        "subcategory": "Portal",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_dashboard",
+        "description": "Manages a shared dashboard in the Azure Portal.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Shared Dashboard. This should be be 64 chars max, only alphanumeric and hyphens (no spaces). For a more friendly display name, add the `hidden-title` tag.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dashboard_properties": {
+                "description": "JSON data representing dashboard body. See above for details on how to obtain this from the Portal.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Dashboard."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Dashboard.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Dashboard.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Dashboard.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Dashboard.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

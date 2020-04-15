@@ -1,0 +1,26 @@
+aws_directory_service_conditional_forwarder:
+    status: HOLD
+    subcategory: Directory Service
+    layout: aws
+    page_title: 'AWS: aws_directory_service_conditional_forwarder'
+    description: Provides a conditional forwarder for managed Microsoft AD in AWS
+        Directory Service.
+    arguments:
+        directory_id:
+            description: The id of directory.
+            required: true
+            policy: ''
+            notes: ''
+        dns_ips:
+            description: A list of forwarder IP addresses.
+            required: true
+            policy: ''
+            notes: ''
+        remote_domain_name:
+            description: The fully qualified domain name of the remote domain for
+                which forwarders will be used.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

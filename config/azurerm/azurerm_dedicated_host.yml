@@ -1,0 +1,103 @@
+azurerm_dedicated_host:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_dedicated_host'
+    description: Manage a Dedicated Host within a Dedicated Host Group.
+    arguments:
+        name:
+            description: Specifies the name of this Dedicated Host. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        dedicated_host_group_id:
+            description: Specifies the ID of the Dedicated Host Group where the Dedicated
+                Host should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specify the supported Azure location where the resource exists.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: Specify the sku name of the Dedicated Host. Possible values
+                are `DSv3-Type1`, `DSv3-Type2`, `ESv3-Type1`, `ESv3-Type2`,`FSv2-Type2`.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        platform_fault_domain:
+            description: Specify the fault domain of the Dedicated Host Group in which
+                to create the Dedicated Host. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        auto_replace_on_failure:
+            description: Should the Dedicated Host automatically be replaced in case
+                of a Hardware Failure? Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        license_type:
+            description: Specifies the software license type that will be applied
+                to the VMs deployed on the Dedicated Host. Possible values are `None`,
+                `Windows_Server_Hybrid` and `Windows_Server_Perpetual`. Defaults to
+                `None`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Dedicated Host.
+    timeouts:
+        create:
+            description: Used when creating the Dedicated Host.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Dedicated Host.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Dedicated Host.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Dedicated Host.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkzTWlDaUFnYkc5allY
+        UnBiMjRnUFNBaVYyVnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJS
+        bFpHbGpZWFJsWkY5b2IzTjBYMmR5YjNWd0lpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXaHZjM1F0WjNKdmRYQWlD
+        aUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpY
+        TnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3
+        YkdVdWJHOWpZWFJwYjI0S0lDQndiR0YwWm05eWJWOW1ZWFZzZEY5a2IyMWhhVzVmWTI5MWJuUWdQ
+        U0F5Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyUmxaR2xqWVhSbFpGOW9iM04wSWlBaVpY
+        aGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcx
+        d2JHVXRhRzl6ZENJS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEps
+        Y20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUdSbFpHbGpZ
+        WFJsWkY5b2IzTjBYMmR5YjNWd1gybGtJRDBnWVhwMWNtVnliVjlrWldScFkyRjBaV1JmYUc5emRG
+        OW5jbTkxY0M1bGVHRnRjR3hsTG1sa0NpQWdjMnQxWDI1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z1BTQWlSRk4yTXkxVWVYQmxNU0lLSUNCd2JHRjBabTl5YlY5bVlYVnNkRjlrYjIxaGFXNGdJQ0E5
+        SURFS2ZRbz0=
+    import: !!binary |
+        Q2dwRVpXUnBZMkYwWldRZ1NHOXpkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHVmthV05oZEdWa1gyaHZjM1F1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

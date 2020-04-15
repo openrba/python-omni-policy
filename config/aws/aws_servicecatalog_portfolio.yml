@@ -1,0 +1,31 @@
+aws_servicecatalog_portfolio:
+    status: HOLD
+    subcategory: Service Catalog
+    layout: aws
+    page_title: 'AWS: aws_servicecatalog_portfolio'
+    description: Provides a resource to create a Service Catalog portfolio
+    arguments:
+        name:
+            description: The name of the portfolio.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the portfolio
+            required: true
+            policy: ''
+            notes: ''
+        provider_name:
+            description: Name of the person or organization who owns the portfolio.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Tags to apply to the connection.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Service Catalog Portfolio.
+    timeouts: {}

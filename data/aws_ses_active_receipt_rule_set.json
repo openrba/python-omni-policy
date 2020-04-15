@@ -1,0 +1,19 @@
+{
+    "aws_ses_active_receipt_rule_set": {
+        "status": "HOLD",
+        "subcategory": "SES",
+        "layout": "aws",
+        "page_title": "AWS: aws_ses_active_receipt_rule_set",
+        "description": "Provides a resource to designate the active SES receipt rule set",
+        "arguments": {
+            "rule_set_name": {
+                "description": "The name of the rule set",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,90 @@
+aws_glue_crawler:
+    status: HOLD
+    subcategory: Glue
+    layout: aws
+    page_title: 'AWS: aws_glue_crawler'
+    description: Manages a Glue Crawler
+    arguments:
+        database_name:
+            description: Glue database where results are written.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Name of the crawler.
+            required: true
+            policy: ''
+            notes: ''
+        role:
+            description: The IAM role friendly name (including path without leading
+                slash), or ARN of an IAM role, used by the crawler to access other
+                resources.
+            required: true
+            policy: ''
+            notes: ''
+        classifiers:
+            description: List of custom classifiers. By default, all AWS classifiers
+                are included in a crawl, but these custom classifiers always override
+                the default classifiers for a given classification.
+            required: false
+            policy: ''
+            notes: ''
+        configuration:
+            description: JSON string of configuration information.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the crawler.
+            required: false
+            policy: ''
+            notes: ''
+        dynamodb_target:
+            description: List of nested DynamoDB target arguments. See below.
+            required: false
+            policy: ''
+            notes: ''
+        jdbc_target:
+            description: List of nested JBDC target arguments. See below.
+            required: false
+            policy: ''
+            notes: ''
+        s3_target:
+            description: List nested Amazon S3 target arguments. See below.
+            required: false
+            policy: ''
+            notes: ''
+        schedule:
+            description: 'A cron expression used to specify the schedule. For more
+                information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html).
+                For example, to run something every day at 12:15 UTC, you would specify:
+                `cron(15 12 * * ? *)`.'
+            required: false
+            policy: ''
+            notes: ''
+        schema_change_policy:
+            description: Policy for the crawler's update and deletion behavior.
+            required: false
+            policy: ''
+            notes: ''
+        security_configuration:
+            description: The name of Security Configuration to be used by the crawler
+            required: false
+            policy: ''
+            notes: ''
+        table_prefix:
+            description: The table prefix used for catalog tables that are created.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: Crawler name
+        arn:
+            description: 'The ARN of the crawler '
+    timeouts: {}

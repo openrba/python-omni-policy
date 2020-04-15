@@ -1,0 +1,37 @@
+{
+    "aws_pinpoint_adm_channel": {
+        "status": "HOLD",
+        "subcategory": "Pinpoint",
+        "layout": "aws",
+        "page_title": "AWS: aws_pinpoint_adm_channel",
+        "description": "Provides a Pinpoint ADM Channel resource.",
+        "arguments": {
+            "application_id": {
+                "description": "The application ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_id": {
+                "description": "Client ID (part of OAuth Credentials",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_secret": {
+                "description": "Client Secret (part of OAuth Credentials",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Specifies whether to enable the channel. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

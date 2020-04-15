@@ -1,0 +1,117 @@
+azurerm_servicebus_topic_authorization_rule:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_servicebus_topic_authorization_rule'
+    description: Manages a ServiceBus Topic authorization Rule within a ServiceBus
+        Topic.
+    arguments:
+        name:
+            description: Specifies the name of the ServiceBus Topic Authorization
+                Rule resource. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: Specifies the name of the ServiceBus Namespace. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        topic_name:
+            description: Specifies the name of the ServiceBus Topic. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the ServiceBus Namespace
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        listen:
+            description: Grants listen access to this this Authorization Rule. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        send:
+            description: Grants send access to this this Authorization Rule. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        manage:
+            description: Grants manage access to this this Authorization Rule. When
+                this property is `true` - both `listen` and `send` must be too. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ServiceBus Topic ID.
+        primary_key:
+            description: The Primary Key for the ServiceBus Topic authorization Rule.
+        primary_connection_string:
+            description: The Primary Connection String for the ServiceBus Topic authorization
+                Rule.
+        secondary_key:
+            description: The Secondary Key for the ServiceBus Topic authorization
+                Rule.
+        secondary_connection_string:
+            description: The Secondary Connection String for the ServiceBus Topic
+                authorization Rule.
+    timeouts:
+        create:
+            description: Used when creating the ServiceBus Topic Authorization Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ServiceBus Topic Authorization Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ServiceBus Topic Authorization Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ServiceBus Topic Authorization Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGMyVnlkbWxqWldKMWN5SUtJQ0JzYjJOaGRH
+        bHZiaUE5SUNKWFpYTjBJRlZUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXpaWEoyYVdO
+        bFluVnpYMjVoYldWemNHRmpaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW5SbVpYaGZjMlZ5ZG1salpXSjFjMTl1WVcxbGMzQmhZMlVpQ2lBZ2JHOWpZ
+        WFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpY
+        aGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5W
+        eVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUhOcmRTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDZ29nSUhSaFozTWdQU0I3Q2lBZ0lDQnpi
+        M1Z5WTJVZ1BTQWlkR1Z5Y21GbWIzSnRJZ29nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNt
+        MWZjMlZ5ZG1salpXSjFjMTkwYjNCcFl5SWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhoZmMyVnlkbWxqWldKMWMxOTBiM0JwWXlJS0lDQnlaWE52
+        ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxl
+        R0Z0Y0d4bExtNWhiV1VLSUNCdVlXMWxjM0JoWTJWZmJtRnRaU0FnSUNBZ0lEMGdZWHAxY21WeWJW
+        OXpaWEoyYVdObFluVnpYMjVoYldWemNHRmpaUzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNW
+        eVkyVWdJbUY2ZFhKbGNtMWZjMlZ5ZG1salpXSjFjMTkwYjNCcFkxOWhkWFJvYjNKcGVtRjBhVzl1
+        WDNKMWJHVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0owWm1WNFgzTmxjblpwWTJWaWRYTmZkRzl3YVdOZmMyRnpVRzlzYVdONUlnb2dJRzVoYldWemNH
+        RmpaVjl1WVcxbElDQWdJQ0FnUFNCaGVuVnlaWEp0WDNObGNuWnBZMlZpZFhOZmJtRnRaWE53WVdO
+        bExtVjRZVzF3YkdVdWJtRnRaUW9nSUhSdmNHbGpYMjVoYldVZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5
+        WlhKdFgzTmxjblpwWTJWaWRYTmZkRzl3YVdNdVpYaGhiWEJzWlM1dVlXMWxDaUFnY21WemIzVnlZ
+        MlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJY
+        QnNaUzV1WVcxbENpQWdiR2x6ZEdWdUlDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUhSeWRXVUtJQ0J6Wlc1
+        a0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1ptRnNjMlVLSUNCdFlXNWhaMlVnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdabUZzYzJVS2ZRbz0=
+    import: !!binary |
+        Q2dwVFpYSjJhV05sUW5WeklGUnZjR2xqSUdGMWRHaHZjbWw2WVhScGIyNGdjblZzWlhNZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWldKMWMxOTBiM0JwWTE5aGRYUm9iM0pwZW1GMGFXOXVYM0oxYkdV
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

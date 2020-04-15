@@ -1,0 +1,94 @@
+azurerm_storage_table:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_table'
+    description: Manages a Table within an Azure Storage Account.
+    arguments:
+        name:
+            description: The name of the storage table. Must be unique within the
+                storage account the table is located.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_name:
+            description: Specifies the storage account in which to create the storage
+                table.
+            required: true
+            policy: ''
+            notes: ''
+        acl:
+            description: One or more `acl` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        id:
+            description: The ID which should be used for this Shared Identifier.
+            required: true
+            policy: ''
+            notes: ''
+        access_policy:
+            description: An `access_policy` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        expiry:
+            description: The ISO8061 UTC time at which this Access Policy should be
+                valid until.
+            required: true
+            policy: ''
+            notes: ''
+        permissions:
+            description: The permissions which should associated with this Shared
+                Identifier.
+            required: true
+            policy: ''
+            notes: ''
+        start:
+            description: The ISO8061 UTC time at which this Access Policy should be
+                valid from.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Table within the Storage Account.
+    timeouts:
+        create:
+            description: Used when creating the Storage Table.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Table.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Table.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Table.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUY2ZFhKbGRHVnpkQ0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SlhaWE4wSUVWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmMzUnZjbUZuWlY5
+        aFkyTnZkVzUwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0poZW5WeVpYUmxjM1J6ZEc5eVlXZGxNU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFj
+        Rjl1WVcxbElDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JH
+        VXVibUZ0WlFvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20x
+        ZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUdGalkyOTFiblJm
+        ZEdsbGNpQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS0lDQmhZMk52ZFc1MFgzSmxj
+        R3hwWTJGMGFXOXVYM1I1Y0dVZ1BTQWlURkpUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJW
+        OXpkRzl5WVdkbFgzUmhZbXhsSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ0ltMTVjMkZ0Y0d4bGRHRmliR1VpQ2lBZ2MzUnZjbUZuWlY5aFkyTnZkVzUw
+        WDI1aGJXVWdQU0JoZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRDNWxlR0Z0Y0d4bExtNWhi
+        V1VLZlFvPQ==
+    import: !!binary |
+        Q2dwVVlXSnNaU2R6SUhkcGRHaHBiaUJoSUZOMGIzSmhaMlVnUVdOamIzVnVkQ0JqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5MFlXSnNaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

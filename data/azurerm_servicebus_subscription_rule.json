@@ -1,0 +1,140 @@
+{
+    "azurerm_servicebus_subscription_rule": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_servicebus_subscription_rule",
+        "description": "Manages a ServiceBus Subscription Rule.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the ServiceBus Subscription Rule. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace_name": {
+                "description": "The name of the ServiceBus Namespace in which the ServiceBus Topic exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "topic_name": {
+                "description": "The name of the ServiceBus Topic in which the ServiceBus Subscription exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subscription_name": {
+                "description": "The name of the ServiceBus Subscription in which this Rule should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in the ServiceBus Namespace exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "filter_type": {
+                "description": "Type of filter to be applied to a BrokeredMessage. Possible values are `SqlFilter` and `CorrelationFilter`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sql_filter": {
+                "description": "Represents a filter written in SQL language-based syntax that to be evaluated against a BrokeredMessage. Required when `filter_type` is set to `SqlFilter`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "correlation_filter": {
+                "description": "A `correlation_filter` block as documented below to be evaluated against a BrokeredMessage. Required when `filter_type` is set to `CorrelationFilter`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "Represents set of actions written in SQL language-based syntax that is performed against a BrokeredMessage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_type": {
+                "description": "Content type of the message.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "correlation_id": {
+                "description": "Identifier of the correlation.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "label": {
+                "description": "Application specific label.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "message_id": {
+                "description": "Identifier of the message.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "reply_to": {
+                "description": "Address of the queue to reply to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "reply_to_session_id": {
+                "description": "Session identifier to reply to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "session_id": {
+                "description": "Session identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "to": {
+                "description": "Address to send to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ServiceBus Subscription Rule ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the ServiceBus Subscription Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the ServiceBus Subscription Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the ServiceBus Subscription Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the ServiceBus Subscription Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

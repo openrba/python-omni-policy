@@ -1,0 +1,33 @@
+{
+    "azurerm_bot_channel_directline": {
+        "status": "HOLD",
+        "subcategory": "Bot",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_bot_channel_directline",
+        "description": "Manages an Directline integration for a Bot Channel",
+        "arguments": {},
+        "attributes": {},
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Directline Channel.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Directline Channel.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Directline Channel.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Directline Channel.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

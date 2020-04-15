@@ -1,0 +1,29 @@
+{
+    "aws_lightsail_static_ip": {
+        "status": "HOLD",
+        "subcategory": "Lightsail",
+        "layout": "aws",
+        "page_title": "AWS: aws_lightsail_static_ip",
+        "description": "Provides an Lightsail Static IP",
+        "arguments": {
+            "name": {
+                "description": "The name for the allocated static IP",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN of the Lightsail static IP"
+            },
+            "ip_address": {
+                "description": "The allocated static IP address"
+            },
+            "support_code": {
+                "description": "The support code."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,74 @@
+azurerm_subnet_nat_gateway_association:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_subnet_nat_gateway_association'
+    description: Associates a [NAT Gateway](nat_gateway.html) with a [Subnet](subnet.html)
+        within a [Virtual Network](virtual_network.html).
+    arguments:
+        nat_gateway_id:
+            description: The ID of the NAT Gateway which should be associated with
+                the Subnet. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the Subnet. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Subnet.
+    timeouts:
+        create:
+            description: Used when creating the Subnet NAT Gateway Association.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Subnet NAT Gateway Association.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Subnet NAT Gateway Association.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Subnet NAT Gateway Association.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRibUYwTFdkaGRHVjNZWGt0Y21jaUNp
+        QWdiRzlqWVhScGIyNGdQU0FpUldGemRDQlZVeUF5SWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21W
+        eWJWOTJhWEowZFdGc1gyNWxkSGR2Y21zaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXNWxkSGR2Y21zaUNpQWdZV1JrY21WemMxOXpj
+        R0ZqWlNBZ0lDQWdJQ0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNBZ0lD
+        QWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5
+        allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52
+        ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxj
+        bTFmYzNWaWJtVjBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSW1WNFlXMXdiR1V0YzNWaWJtVjBJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldV
+        Z0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0Iy
+        YVhKMGRXRnNYMjVsZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNi
+        M0pyTG1WNFlXMXdiR1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lq
+        RXdMakF1TWk0d0x6STBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5dVlYUmZaMkYwWlhk
+        aGVTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0
+        WVcxd2JHVXRibUYwWjJGMFpYZGhlU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZ
+        WHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2Nt
+        VnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        dVpYaGhiWEJzWlM1dVlXMWxDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNOMVltNWxkRjl1
+        WVhSZloyRjBaWGRoZVY5aGMzTnZZMmxoZEdsdmJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCemRXSnVa
+        WFJmYVdRZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzNWaWJtVjBMbVY0WVcxd2JHVXVhV1FLSUNCdVlY
+        UmZaMkYwWlhkaGVWOXBaQ0E5SUdGNmRYSmxjbTFmYm1GMFgyZGhkR1YzWVhrdVpYaGhiWEJzWlM1
+        cFpBcDlDZz09
+    import: !!binary |
+        Q2dwVGRXSnVaWFFnVGtGVUlFZGhkR1YzWVhrZ1FYTnpiMk5wWVhScGIyNXpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUNCdlppQjBhR1VnVTNWaWJt
+        VjBMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzVmlibVYwWDI1aGRGOW5ZWFJsZDJGNVgyRnpjMjlqYVdGMGFXOXVMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

@@ -1,0 +1,38 @@
+{
+    "aws_gamelift_alias": {
+        "status": "HOLD",
+        "subcategory": "Gamelift",
+        "layout": "aws",
+        "page_title": "AWS: aws_gamelift_alias",
+        "description": "Provides a Gamelift Alias resource.",
+        "arguments": {
+            "name": {
+                "description": "Name of the alias.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description of the alias.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "routing_strategy": {
+                "description": "Specifies the fleet and/or routing type to use for the alias.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Alias ID."
+            },
+            "arn": {
+                "description": "Alias ARN."
+            }
+        },
+        "timeouts": {}
+    }
+}

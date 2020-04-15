@@ -1,0 +1,71 @@
+aws_ec2_fleet:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_ec2_fleet'
+    description: Provides a resource to manage EC2 Fleets
+    arguments:
+        launch_template_config:
+            description: Nested argument containing EC2 Launch Template configurations.
+                Defined below.
+            required: true
+            policy: ''
+            notes: ''
+        target_capacity_specification:
+            description: Nested argument containing target capacity configurations.
+                Defined below.
+            required: true
+            policy: ''
+            notes: ''
+        excess_capacity_termination_policy:
+            description: 'Whether running instances should be terminated if the total
+                target capacity of the EC2 Fleet is decreased below the current size
+                of the EC2. Valid values: `no-termination`, `termination`. Defaults
+                to `termination`.'
+            required: false
+            policy: ''
+            notes: ''
+        on_demand_options:
+            description: Nested argument containing On-Demand configurations. Defined
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        replace_unhealthy_instances:
+            description: Whether EC2 Fleet should replace unhealthy instances. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        spot_options:
+            description: Nested argument containing Spot configurations. Defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Map of Fleet tags. To tag instances at launch, specify the
+                tags in the Launch Template.
+            required: false
+            policy: ''
+            notes: ''
+        terminate_instances:
+            description: Whether to terminate instances for an EC2 Fleet if it is
+                deleted successfully. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        terminate_instances_with_expiration:
+            description: Whether running instances should be terminated when the EC2
+                Fleet expires. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: 'The type of request. Indicates whether the EC2 Fleet only
+                requests the target capacity, or also attempts to maintain it. Valid
+                values: `maintain`, `request`. Defaults to `maintain`.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

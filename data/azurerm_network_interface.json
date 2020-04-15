@@ -1,0 +1,43 @@
+{
+    "azurerm_network_interface": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_network_interface",
+        "description": "Manages a Network Interface.",
+        "arguments": {
+            "ip_configuration": {
+                "description": "One or more `ip_configuration` blocks as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The location where the Network Interface should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the Network Interface. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which to create the Network Interface. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_servers": {
+                "description": "A list of IP Addresses defining the DNS Servers which should be used for this Network Interface.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

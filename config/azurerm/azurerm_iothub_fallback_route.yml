@@ -1,0 +1,110 @@
+azurerm_iothub_fallback_route:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_iothub_fallback_route'
+    description: Manages an IotHub Fallback Route
+    arguments:
+        resource_group_name:
+            description: The name of the resource group under which the IotHub Storage
+                Container Endpoint resource has to be created. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        iothub_name:
+            description: The name of the IoTHub to which this Fallback Route belongs.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Used to specify whether the fallback route is enabled.
+            required: true
+            policy: ''
+            notes: ''
+        endpoint_names:
+            description: The endpoints to which messages that satisfy the condition
+                are routed. Currently only 1 endpoint is allowed.
+            required: true
+            policy: ''
+            notes: ''
+        condition:
+            description: 'The condition that is evaluated to apply the routing rule.
+                If no condition is provided, it evaluates to `true` by default. For
+                grammar, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language.'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the IoTHub Fallback Route.
+    timeouts:
+        create:
+            description: Used when creating the IotHub Fallback Route.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the IotHub Fallback Route.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the IotHub Fallback Route.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the IotHub Fallback Route.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM04wYjNK
+        aFoyVmZZV05qYjNWdWRDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlhOMGIzSmhaMlZoWTJOdmRXNTBJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRY
+        QXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFn
+        WVdOamIzVnVkRjkwYVdWeUlDQWdJQ0FnSUNBZ0lDQWdJRDBnSWxOMFlXNWtZWEprSWdvZ0lHRmpZ
+        MjkxYm5SZmNtVndiR2xqWVhScGIyNWZkSGx3WlNBOUlDSk1VbE1pQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgzTjBiM0poWjJWZlkyOXVkR0ZwYm1WeUlpQWlaWGhoYlhCc1pTSWdld29nSUc1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUhKbGMyOTFjbU5s
+        WDJkeWIzVndYMjVoYldVZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhi
+        WEJzWlM1dVlXMWxDaUFnYzNSdmNtRm5aVjloWTJOdmRXNTBYMjVoYldVZ0lEMGdZWHAxY21WeWJW
+        OXpkRzl5WVdkbFgyRmpZMjkxYm5RdVpYaGhiWEJzWlM1dVlXMWxDaUFnWTI5dWRHRnBibVZ5WDJG
+        alkyVnpjMTkwZVhCbElEMGdJbkJ5YVhaaGRHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0
+        WDJsdmRHaDFZaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnSW1WNFlXMXdiR1ZKYjNSb2RXSWlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlH
+        RjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdiRzlqWVhS
+        cGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGho
+        YlhCc1pTNXNiMk5oZEdsdmJnb0tJQ0J6YTNVZ2V3b2dJQ0FnYm1GdFpTQWdJQ0FnUFNBaVV6RWlD
+        aUFnSUNCallYQmhZMmwwZVNBOUlDSXhJZ29nSUgwS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUhCMWNu
+        QnZjMlVnUFNBaWRHVnpkR2x1WnlJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJs
+        dmRHaDFZbDlsYm1Sd2IybHVkRjl6ZEc5eVlXZGxYMk52Ym5SaGFXNWxjaUlnSW1WNFlXMXdiR1Vp
+        SUhzS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpa
+        VjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCcGIzUm9kV0pmYm1GdFpTQWdJQ0FnSUNBZ0lE
+        MGdZWHAxY21WeWJWOXBiM1JvZFdJdVpYaGhiWEJzWlM1dVlXMWxDaUFnYm1GdFpTQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb0tJQ0JqYjI1dVpXTjBhVzl1WDNOMGNtbHVaeUFn
+        SUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzNSdmNtRm5aVjloWTJOdmRXNTBMbVY0WVcxd2JHVXVj
+        SEpwYldGeWVWOWliRzlpWDJOdmJtNWxZM1JwYjI1ZmMzUnlhVzVuQ2lBZ1ltRjBZMmhmWm5KbGNY
+        VmxibU41WDJsdVgzTmxZMjl1WkhNZ1BTQTJNQW9nSUcxaGVGOWphSFZ1YTE5emFYcGxYMmx1WDJK
+        NWRHVnpJQ0FnSUQwZ01UQTBPRFUzTmpBS0lDQmpiMjUwWVdsdVpYSmZibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWpiMjUwWVdsdVpYSXVaWGhoYlhCc1pTNXVZ
+        VzFsQ2lBZ1pXNWpiMlJwYm1jZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlRWFp5YnlJS0lD
+        Qm1hV3hsWDI1aGJXVmZabTl5YldGMElDQWdJQ0FnSUNBZ0lDQTlJQ0o3YVc5MGFIVmlmUzk3Y0dG
+        eWRHbDBhVzl1ZlY5N1dWbFpXWDFmZTAxTmZWOTdSRVI5WDN0SVNIMWZlMjF0ZlNJS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbUY2ZFhKbGNtMWZhVzkwYUhWaVgyWmhiR3hpWVdOclgzSnZkWFJsSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMy
+        OTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHbHZkR2gxWWw5dVlXMWxJQ0FnSUNB
+        Z0lDQWdQU0JoZW5WeVpYSnRYMmx2ZEdoMVlpNWxlR0Z0Y0d4bExtNWhiV1VLQ2lBZ1kyOXVaR2ww
+        YVc5dUlDQWdJQ0FnUFNBaWRISjFaU0lLSUNCbGJtUndiMmx1ZEY5dVlXMWxjeUE5SUZ0aGVuVnla
+        WEp0WDJsdmRHaDFZbDlsYm1Sd2IybHVkRjl6ZEc5eVlXZGxYMk52Ym5SaGFXNWxjaTVsZUdGdGNH
+        eGxMbTVoYldWZENpQWdaVzVoWW14bFpDQWdJQ0FnSUNBZ1BTQjBjblZsQ24wSw==
+    import: !!binary |
+        Q2dwSmIxUklkV0lnUm1Gc2JHSmhZMnNnVW05MWRHVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXOTBhSFZpWDJaaGJHeGlZV05yWDNKdmRYUmxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

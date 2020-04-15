@@ -1,0 +1,40 @@
+aws_opsworks_permission:
+    status: HOLD
+    subcategory: OpsWorks
+    layout: aws
+    page_title: 'AWS: aws_opsworks_permission'
+    description: Provides an OpsWorks permission resource.
+    arguments:
+        allow_ssh:
+            description: Whether the user is allowed to use SSH to communicate with
+                the instance
+            required: false
+            policy: ''
+            notes: ''
+        allow_sudo:
+            description: Whether the user is allowed to use sudo to elevate privileges
+            required: false
+            policy: ''
+            notes: ''
+        user_arn:
+            description: The user's IAM ARN to set permissions for
+            required: true
+            policy: ''
+            notes: ''
+        level:
+            description: The users permission level. Mus be one of `deny`, `show`,
+                `deploy`, `manage`, `iam_only`
+            required: false
+            policy: ''
+            notes: ''
+        stack_id:
+            description: The stack to set the permissions for
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The computed id of the permission. Please note that this
+                is only used internally to identify the permission. This value is
+                not used in aws.
+    timeouts: {}

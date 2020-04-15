@@ -1,0 +1,29 @@
+aws_pinpoint_baidu_channel:
+    status: HOLD
+    subcategory: Pinpoint
+    layout: aws
+    page_title: 'AWS: aws_pinpoint_baidu_channel'
+    description: Provides a Pinpoint Baidu Channel resource.
+    arguments:
+        application_id:
+            description: The application ID.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Specifies whether to enable the channel. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        api_key:
+            description: Platform credential API key from Baidu.
+            required: true
+            policy: ''
+            notes: ''
+        secret_key:
+            description: Platform credential Secret key from Baidu.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

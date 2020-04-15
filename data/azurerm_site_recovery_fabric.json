@@ -1,0 +1,62 @@
+{
+    "azurerm_site_recovery_fabric": {
+        "status": "HOLD",
+        "subcategory": "Recovery Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_site_recovery_fabric",
+        "description": "Manages a Site Recovery Replication Fabric on Azure.",
+        "arguments": {
+            "name": {
+                "description": "The name of the network mapping.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Name of the resource group where the vault that should be updated is located.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recovery_vault_name": {
+                "description": "The name of the vault that should be updated.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "In what region should the fabric be located.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Site Recovery Fabric."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Site Recovery Fabric.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Site Recovery Fabric.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Site Recovery Fabric.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Site Recovery Fabric.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

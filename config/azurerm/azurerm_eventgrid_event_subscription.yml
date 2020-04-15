@@ -1,0 +1,196 @@
+azurerm_eventgrid_event_subscription:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_eventgrid_event_subscription'
+    description: Manages an EventGrid Event Subscription
+    arguments:
+        name:
+            description: Specifies the name of the EventGrid Event Subscription resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        scope:
+            description: Specifies the scope at which the EventGrid Event Subscription
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        event_delivery_schema:
+            description: 'Specifies the event delivery schema for the event subscription.
+                Possible values include: `EventGridSchema`, `CloudEventV01Schema`,
+                `CustomInputSchema`.'
+            required: false
+            policy: ''
+            notes: ''
+        topic_name:
+            description: Specifies the name of the topic to associate with the event
+                subscription.
+            required: false
+            policy: ''
+            notes: ''
+        storage_queue_endpoint:
+            description: A `storage_queue_endpoint` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        eventhub_endpoint:
+            description: A `eventhub_endpoint` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        hybrid_connection_endpoint:
+            description: A `hybrid_connection_endpoint` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        webhook_endpoint:
+            description: A `webhook_endpoint` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        included_event_types:
+            description: A list of applicable event types that need to be part of
+                the event subscription.
+            required: false
+            policy: ''
+            notes: ''
+        subject_filter:
+            description: A `subject_filter` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        storage_blob_dead_letter_destination:
+            description: A `storage_blob_dead_letter_destination` block as defined
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        retry_policy:
+            description: A `retry_policy` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        labels:
+            description: A list of labels to assign to the event subscription.
+            required: false
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: Specifies the id of the storage account id where the storage
+                blob is located.
+            required: true
+            policy: ''
+            notes: ''
+        queue_name:
+            description: Specifies the name of the storage queue where the Event Subscriptio
+                will receive events.
+            required: true
+            policy: ''
+            notes: ''
+        eventhub_id:
+            description: Specifies the id of the eventhub where the Event Subscription
+                will receive events.
+            required: true
+            policy: ''
+            notes: ''
+        hybrid_connection_id:
+            description: Specifies the id of the hybrid connection where the Event
+                Subscription will receive events.
+            required: true
+            policy: ''
+            notes: ''
+        url:
+            description: Specifies the url of the webhook where the Event Subscription
+                will receive events.
+            required: true
+            policy: ''
+            notes: ''
+        subject_begins_with:
+            description: A string to filter events for an event subscription based
+                on a resource path prefix.
+            required: false
+            policy: ''
+            notes: ''
+        subject_ends_with:
+            description: A string to filter events for an event subscription based
+                on a resource path suffix.
+            required: false
+            policy: ''
+            notes: ''
+        case_sensitive:
+            description: Specifies if `subject_begins_with` and `subject_ends_with`
+                case sensitive. This value defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        storage_blob_container_name:
+            description: Specifies the name of the Storage blob container that is
+                the destination of the deadletter events
+            required: true
+            policy: ''
+            notes: ''
+        max_delivery_attempts:
+            description: Specifies the maximum number of delivery retry attempts for
+                events.
+            required: true
+            policy: ''
+            notes: ''
+        event_time_to_live:
+            description: Specifies the time to live (in minutes
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the EventGrid Event Subscription.
+    timeouts:
+        create:
+            description: Used when creating the EventGrid Event Subscription.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the EventGrid Event Subscription.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the EventGrid Event Subscription.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the EventGrid Event Subscription.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWkdWbVlYVnNk
+        Q0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVJsWm1GMWJIUlNaWE52ZFhKalpVZHliM1Z3SWdvZ0lH
+        eHZZMkYwYVc5dUlEMGdJbGRsYzNRZ1ZWTWdNaUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmMzUnZjbUZuWlY5aFkyTnZkVzUwSWlBaVpHVm1ZWFZzZENJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0prWldaaGRXeDBVM1J2Y21GblpVRmpZMjkxYm5RaUNpQWdj
+        bVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpW
+        OW5jbTkxY0M1a1pXWmhkV3gwTG01aGJXVUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtUmxabUYxYkhRdWJHOWpZWFJw
+        YjI0S0lDQmhZMk52ZFc1MFgzUnBaWElnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlD
+        aUFnWVdOamIzVnVkRjl5WlhCc2FXTmhkR2x2Ymw5MGVYQmxJRDBnSWt4U1V5SUtDaUFnZEdGbmN5
+        QTlJSHNLSUNBZ0lHVnVkbWx5YjI1dFpXNTBJRDBnSW5OMFlXZHBibWNpQ2lBZ2ZRcDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhwMWNtVnliVjl6ZEc5eVlXZGxYM0YxWlhWbElpQWlaR1ZtWVhWc2RDSWdld29n
+        SUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVJsWm1GMWJIUlRkRzl5WVdkbFVYVmxk
+        V1VpQ2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNt
+        TmxYMmR5YjNWd0xtUmxabUYxYkhRdWJtRnRaUW9nSUhOMGIzSmhaMlZmWVdOamIzVnVkRjl1WVcx
+        bElEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RdVpHVm1ZWFZzZEM1dVlXMWxDbjBL
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJWMlpXNTBaM0pwWkY5bGRtVnVkRjl6ZFdKelkzSnBj
+        SFJwYjI0aUlDSmtaV1poZFd4MElpQjdDaUFnYm1GdFpTQWdQU0FpWkdWbVlYVnNkRVYyWlc1MFUz
+        VmljMk55YVhCMGFXOXVJZ29nSUhOamIzQmxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205
+        MWNDNWtaV1poZFd4MExtbGtDZ29nSUhOMGIzSmhaMlZmY1hWbGRXVmZaVzVrY0c5cGJuUWdld29n
+        SUNBZ2MzUnZjbUZuWlY5aFkyTnZkVzUwWDJsa0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZ
+        MjkxYm5RdVpHVm1ZWFZzZEM1cFpBb2dJQ0FnY1hWbGRXVmZibUZ0WlNBZ0lDQWdJQ0FnSUQwZ1lY
+        cDFjbVZ5YlY5emRHOXlZV2RsWDNGMVpYVmxMbVJsWm1GMWJIUXVibUZ0WlFvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwRmRtVnVkRWR5YVdRZ1JHOXRZV2x1SjNNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYWmxiblJuY21sa1gyVjJaVzUwWDNOMVluTmpjbWx3ZEdsdmJpNW9kRzFzTG0x
+        aGNtdGtiM2R1

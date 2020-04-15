@@ -1,0 +1,335 @@
+azurerm_monitor_autoscale_setting:
+    status: HOLD
+    subcategory: Monitor
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_monitor_autoscale_setting'
+    description: Manages an AutoScale Setting which can be applied to Virtual Machine
+        Scale Sets, App Services and other scalable resources.
+    arguments:
+        name:
+            description: Specifies the name of the profile.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in the AutoScale Setting should
+                be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the AutoScale
+                Setting should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        profile:
+            description: Specifies one or more (up to 20
+            required: true
+            policy: ''
+            notes: ''
+        target_resource_id:
+            description: Specifies the resource ID of the resource that the autoscale
+                setting should be added to.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Specifies whether automatic scaling is enabled for the target
+                resource. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        notification:
+            description: Specifies a `notification` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        capacity:
+            description: A `capacity` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        rule:
+            description: One or more (up to 10
+            required: true
+            policy: ''
+            notes: ''
+        fixed_date:
+            description: A `fixed_date` block as defined below. This cannot be specified
+                if a `recurrence` block is specified.
+            required: false
+            policy: ''
+            notes: ''
+        recurrence:
+            description: A `recurrence` block as defined below. This cannot be specified
+                if a `fixed_date` block is specified.
+            required: false
+            policy: ''
+            notes: ''
+        default:
+            description: The number of instances that are available for scaling if
+                metrics are not available for evaluation. The default is only used
+                if the current instance count is lower than the default. Valid values
+                are between `0` and `1000`.
+            required: true
+            policy: ''
+            notes: ''
+        maximum:
+            description: The maximum number of instances for this resource. Valid
+                values are between `0` and `1000`.
+            required: true
+            policy: ''
+            notes: The maximum number of instances is also limited by the amount of
+                Cores available in the subscription.
+        minimum:
+            description: The minimum number of instances for this resource. Valid
+                values are between `0` and `1000`.
+            required: true
+            policy: ''
+            notes: ''
+        metric_trigger:
+            description: A `metric_trigger` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        scale_action:
+            description: A `scale_action` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        metric_name:
+            description: The name of the metric that defines what the rule monitors,
+                such as `Percentage CPU` for `Virtual Machine Scale Sets` and `CpuPercentage`
+                for `App Service Plan`.
+            required: true
+            policy: ''
+            notes: The allowed value of `metric_name` highly depends on the targeting
+                resource type, please visit [Supported metrics with Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported)
+                for more details.
+        metric_resource_id:
+            description: The ID of the Resource which the Rule monitors.
+            required: true
+            policy: ''
+            notes: ''
+        operator:
+            description: 'Specifies the operator used to compare the metric data and
+                threshold. Possible values are: `Equals`, `NotEquals`, `GreaterThan`,
+                `GreaterThanOrEqual`, `LessThan`, `LessThanOrEqual`.'
+            required: true
+            policy: ''
+            notes: ''
+        statistic:
+            description: Specifies how the metrics from multiple instances are combined.
+                Possible values are `Average`, `Min` and `Max`.
+            required: true
+            policy: ''
+            notes: ''
+        time_aggregation:
+            description: Specifies how the data that's collected should be combined
+                over time. Possible values include `Average`, `Count`, `Maximum`,
+                `Minimum`, `Last` and `Total`. Defaults to `Average`.
+            required: true
+            policy: ''
+            notes: ''
+        time_grain:
+            description: Specifies the granularity of metrics that the rule monitors,
+                which must be one of the pre-defined values returned from the metric
+                definitions for the metric. This value must be between 1 minute and
+                12 hours an be formatted as an ISO 8601 string.
+            required: true
+            policy: ''
+            notes: ''
+        time_window:
+            description: Specifies the time range for which data is collected, which
+                must be greater than the delay in metric collection (which varies
+                from resource to resource). This value must be between 5 minutes and
+                12 hours and be formatted as an ISO 8601 string.
+            required: true
+            policy: ''
+            notes: ''
+        threshold:
+            description: Specifies the threshold of the metric that triggers the scale
+                action.
+            required: true
+            policy: ''
+            notes: ''
+        cooldown:
+            description: The amount of time to wait since the last scaling action
+                before this action occurs. Must be between 1 minute and 1 week and
+                formatted as a ISO 8601 string.
+            required: true
+            policy: ''
+            notes: ''
+        direction:
+            description: The scale direction. Possible values are `Increase` and `Decrease`.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of action that should occur. Possible values are
+                `ChangeCount`, `ExactCount` and `PercentChangeCount`.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The number of instances involved in the scaling action. Defaults
+                to `1`.
+            required: true
+            policy: ''
+            notes: ''
+        end:
+            description: Specifies the end date for the profile, formatted as an RFC3339
+                date string.
+            required: true
+            policy: ''
+            notes: ''
+        start:
+            description: Specifies the start date for the profile, formatted as an
+                RFC3339 date string.
+            required: true
+            policy: ''
+            notes: ''
+        timezone:
+            description: The Time Zone used for the `hours` field. A list of [possible
+                values can be found here](https://msdn.microsoft.com/en-us/library/azure/dn931928.aspx).
+                Defaults to `UTC`.
+            required: true
+            policy: ''
+            notes: ''
+        days:
+            description: A list of days that this profile takes effect on. Possible
+                values include `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`,
+                `Saturday` and `Sunday`.
+            required: true
+            policy: ''
+            notes: ''
+        hours:
+            description: A list containing a single item, which specifies the Hour
+                interval at which this recurrence should be triggered (in 24-hour
+                time). Possible values are from `0` to `23`.
+            required: true
+            policy: ''
+            notes: ''
+        minutes:
+            description: A list containing a single item which specifies the Minute
+                interval at which this recurrence should be triggered.
+            required: true
+            policy: ''
+            notes: ''
+        email:
+            description: A `email` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        webhook:
+            description: One or more `webhook` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        send_to_subscription_administrator:
+            description: Should email notifications be sent to the subscription administrator?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        send_to_subscription_co_administrator:
+            description: Should email notifications be sent to the subscription co-administrator?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        custom_emails:
+            description: Specifies a list of custom email addresses to which the email
+                notifications will be sent.
+            required: false
+            policy: ''
+            notes: ''
+        service_uri:
+            description: The HTTPS URI which should receive scale notifications.
+            required: true
+            policy: ''
+            notes: ''
+        properties:
+            description: A map of settings.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the AutoScale Setting.
+    timeouts:
+        create:
+            description: Used when creating the AutoScale Setting.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the AutoScale Setting.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the AutoScale Setting.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the AutoScale Setting.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUYxZEc5elkyRnNhVzVuVkdWemRDSUtJQ0JzYjJOaGRH
+        bHZiaUE5SUNKWFpYTjBJRlZUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOTJhWEowZFdG
+        c1gyMWhZMmhwYm1WZmMyTmhiR1ZmYzJWMElpQWlaWGhoYlhCc1pTSWdld29nSUNNZ0xpNHVDbjBL
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDIxdmJtbDBiM0pmWVhWMGIzTmpZV3hsWDNObGRIUnBi
+        bWNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdGVV
+        RjFkRzl6WTJGc1pWTmxkSFJwYm1jaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdG
+        NmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJw
+        YjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhi
+        WEJzWlM1c2IyTmhkR2x2YmdvZ0lIUmhjbWRsZEY5eVpYTnZkWEpqWlY5cFpDQWdQU0JoZW5WeVpY
+        SnRYM1pwY25SMVlXeGZiV0ZqYUdsdVpWOXpZMkZzWlY5elpYUXVaWGhoYlhCc1pTNXBaQW9LSUNC
+        d2NtOW1hV3hsSUhzS0lDQWdJRzVoYldVZ1BTQWlaR1ZtWVhWc2RGQnliMlpwYkdVaUNnb2dJQ0Fn
+        WTJGd1lXTnBkSGtnZXdvZ0lDQWdJQ0JrWldaaGRXeDBJRDBnTVFvZ0lDQWdJQ0J0YVc1cGJYVnRJ
+        RDBnTVFvZ0lDQWdJQ0J0WVhocGJYVnRJRDBnTVRBS0lDQWdJSDBLQ2lBZ0lDQnlkV3hsSUhzS0lD
+        QWdJQ0FnYldWMGNtbGpYM1J5YVdkblpYSWdld29nSUNBZ0lDQWdJRzFsZEhKcFkxOXVZVzFsSUNB
+        Z0lDQWdJQ0E5SUNKUVpYSmpaVzUwWVdkbElFTlFWU0lLSUNBZ0lDQWdJQ0J0WlhSeWFXTmZjbVZ6
+        YjNWeVkyVmZhV1FnUFNCaGVuVnlaWEp0WDNacGNuUjFZV3hmYldGamFHbHVaVjl6WTJGc1pWOXpa
+        WFF1WlhoaGJYQnNaUzVwWkFvZ0lDQWdJQ0FnSUhScGJXVmZaM0poYVc0Z0lDQWdJQ0FnSUNBOUlD
+        SlFWREZOSWdvZ0lDQWdJQ0FnSUhOMFlYUnBjM1JwWXlBZ0lDQWdJQ0FnSUNBOUlDSkJkbVZ5WVdk
+        bElnb2dJQ0FnSUNBZ0lIUnBiV1ZmZDJsdVpHOTNJQ0FnSUNBZ0lDQTlJQ0pRVkRWTklnb2dJQ0Fn
+        SUNBZ0lIUnBiV1ZmWVdkbmNtVm5ZWFJwYjI0Z0lDQTlJQ0pCZG1WeVlXZGxJZ29nSUNBZ0lDQWdJ
+        Rzl3WlhKaGRHOXlJQ0FnSUNBZ0lDQWdJQ0E5SUNKSGNtVmhkR1Z5VkdoaGJpSUtJQ0FnSUNBZ0lD
+        QjBhSEpsYzJodmJHUWdJQ0FnSUNBZ0lDQWdQU0EzTlFvZ0lDQWdJQ0I5Q2dvZ0lDQWdJQ0J6WTJG
+        c1pWOWhZM1JwYjI0Z2V3b2dJQ0FnSUNBZ0lHUnBjbVZqZEdsdmJpQTlJQ0pKYm1OeVpXRnpaU0lL
+        SUNBZ0lDQWdJQ0IwZVhCbElDQWdJQ0FnUFNBaVEyaGhibWRsUTI5MWJuUWlDaUFnSUNBZ0lDQWdk
+        bUZzZFdVZ0lDQWdJRDBnSWpFaUNpQWdJQ0FnSUNBZ1kyOXZiR1J2ZDI0Z0lEMGdJbEJVTVUwaUNp
+        QWdJQ0FnSUgwS0lDQWdJSDBLQ2lBZ0lDQnlkV3hsSUhzS0lDQWdJQ0FnYldWMGNtbGpYM1J5YVdk
+        blpYSWdld29nSUNBZ0lDQWdJRzFsZEhKcFkxOXVZVzFsSUNBZ0lDQWdJQ0E5SUNKUVpYSmpaVzUw
+        WVdkbElFTlFWU0lLSUNBZ0lDQWdJQ0J0WlhSeWFXTmZjbVZ6YjNWeVkyVmZhV1FnUFNCaGVuVnla
+        WEp0WDNacGNuUjFZV3hmYldGamFHbHVaVjl6WTJGc1pWOXpaWFF1WlhoaGJYQnNaUzVwWkFvZ0lD
+        QWdJQ0FnSUhScGJXVmZaM0poYVc0Z0lDQWdJQ0FnSUNBOUlDSlFWREZOSWdvZ0lDQWdJQ0FnSUhO
+        MFlYUnBjM1JwWXlBZ0lDQWdJQ0FnSUNBOUlDSkJkbVZ5WVdkbElnb2dJQ0FnSUNBZ0lIUnBiV1Zm
+        ZDJsdVpHOTNJQ0FnSUNBZ0lDQTlJQ0pRVkRWTklnb2dJQ0FnSUNBZ0lIUnBiV1ZmWVdkbmNtVm5Z
+        WFJwYjI0Z0lDQTlJQ0pCZG1WeVlXZGxJZ29nSUNBZ0lDQWdJRzl3WlhKaGRHOXlJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKTVpYTnpWR2hoYmlJS0lDQWdJQ0FnSUNCMGFISmxjMmh2YkdRZ0lDQWdJQ0FnSUNB
+        Z1BTQXlOUW9nSUNBZ0lDQjlDZ29nSUNBZ0lDQnpZMkZzWlY5aFkzUnBiMjRnZXdvZ0lDQWdJQ0Fn
+        SUdScGNtVmpkR2x2YmlBOUlDSkVaV055WldGelpTSUtJQ0FnSUNBZ0lDQjBlWEJsSUNBZ0lDQWdQ
+        U0FpUTJoaGJtZGxRMjkxYm5RaUNpQWdJQ0FnSUNBZ2RtRnNkV1VnSUNBZ0lEMGdJakVpQ2lBZ0lD
+        QWdJQ0FnWTI5dmJHUnZkMjRnSUQwZ0lsQlVNVTBpQ2lBZ0lDQWdJSDBLSUNBZ0lIMEtJQ0I5Q2dv
+        Z0lHNXZkR2xtYVdOaGRHbHZiaUI3Q2lBZ0lDQmxiV0ZwYkNCN0NpQWdJQ0FnSUhObGJtUmZkRzlm
+        YzNWaWMyTnlhWEIwYVc5dVgyRmtiV2x1YVhOMGNtRjBiM0lnSUNBZ1BTQjBjblZsQ2lBZ0lDQWdJ
+        SE5sYm1SZmRHOWZjM1ZpYzJOeWFYQjBhVzl1WDJOdlgyRmtiV2x1YVhOMGNtRjBiM0lnUFNCMGNu
+        VmxDaUFnSUNBZ0lHTjFjM1J2YlY5bGJXRnBiSE1nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0JiSW1Ga2JXbHVRR052Ym5SdmMyOHVZMjl0SWwwS0lDQWdJSDBLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQmRYUnZVMk5oYkdVZ1UyVjBkR2x1WnlCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXOXVhWFJ2Y2w5aGRYUnZjMk5oYkdWZmMyVjBkR2x1Wnk1b2RHMXNMbTFoY210
+        a2IzZHU=

@@ -1,0 +1,200 @@
+{
+    "azurerm_vpn_server_configuration": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_vpn_server_configuration",
+        "description": "Manages a VPN Server Configuration.",
+        "arguments": {
+            "name": {
+                "description": "A name used to uniquely identify this certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The Name of the Resource Group in which this VPN Server Configuration should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The Azure location where this VPN Server Configuration should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vpn_authentication_types": {
+                "description": "A list of one of more Authentication Types applicable for this VPN Server Configuration. Possible values are `AAD` (Azure Active Directory), `Certificate` and `Radius`.",
+                "required": true,
+                "policy": "",
+                "notes": "At this time a maximum of one VPN Authentication Types can be specified."
+            },
+            "ipsec_policy": {
+                "description": "A `ipsec_policy` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpn_protocols": {
+                "description": "A list of VPN Protocols to use for this Server Configuration. Possible values are `IkeV2` and `OpenVPN`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "azure_active_directory_authentication": {
+                "description": "A `azure_active_directory_authentication` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_root_certificate": {
+                "description": "One or more `client_root_certificate` blocks as defined above.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "client_revoked_certificate": {
+                "description": "One or more `client_revoked_certificate` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "radius_server": {
+                "description": "A `radius_server` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "audience": {
+                "description": "The Audience which should be used for authentication.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "issuer": {
+                "description": "The Issuer which should be used for authentication.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant": {
+                "description": "The Tenant which should be used for authentication.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "thumbprint": {
+                "description": "The Thumbprint of the Certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "public_cert_data": {
+                "description": "The Public Key Data associated with the Certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dh_group": {
+                "description": "The DH Group, used in IKE Phase 1. Possible values include `DHGroup1`, `DHGroup2`, `DHGroup14`, `DHGroup24`, `DHGroup2048`, `ECP256`, `ECP384` and `None`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ike_encryption": {
+                "description": "The IKE encryption algorithm, used for IKE Phase 2. Possible values include `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128` and `GCMAES256`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ike_integrity": {
+                "description": "The IKE encryption integrity algorithm, used for IKE Phase 2. Possible values include `GCMAES128`, `GCMAES256`, `MD5`, `SHA1`, `SHA256` and `SHA384`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ipsec_encryption": {
+                "description": "The IPSec encryption algorithm, used for IKE phase 1. Possible values include `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192`, `GCMAES256` and `None`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ipsec_integrity": {
+                "description": "The IPSec integrity algorithm, used for IKE phase 1. Possible values include `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1` and `SHA256`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "pfs_group": {
+                "description": "The Pfs Group, used in IKE Phase 2. Possible values include `ECP256`, `ECP384`, `PFS1`, `PFS2`, `PFS14`, `PFS24`, `PFS2048`, `PFSMM` and `None`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sa_lifetime_seconds": {
+                "description": "The IPSec Security Association lifetime in seconds for a Site-to-Site VPN tunnel.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sa_data_size_kilobytes": {
+                "description": "The IPSec Security Association payload size in KB for a Site-to-Site VPN tunnel.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "address": {
+                "description": "The Address of the Radius Server.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "secret": {
+                "description": "The Secret used to communicate with the Radius Server.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_root_certificate": {
+                "description": "One or more `server_root_certificate` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the VPN Server Configuration."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the VPN Server Configuration.",
+                "required": false,
+                "timeout": 90
+            },
+            "update": {
+                "description": "Used when updating the VPN Server Configuration.",
+                "required": false,
+                "timeout": 90
+            },
+            "read": {
+                "description": "Used when retrieving the VPN Server Configuration.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the VPN Server Configuration.",
+                "required": false,
+                "timeout": 90
+            }
+        }
+    }
+}

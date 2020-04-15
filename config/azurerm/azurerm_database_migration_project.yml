@@ -1,0 +1,110 @@
+azurerm_database_migration_project:
+    status: HOLD
+    subcategory: Database Migration
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_database_migration_project'
+    description: Manage Azure Database Migration Project instance.
+    arguments:
+        name:
+            description: Specify the name of the database migration project. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        service_name:
+            description: Name of the database migration service where resource belongs
+                to. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Name of the resource group in which to create the database
+                migration project. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        source_platform:
+            description: 'The platform type of the migration source. Currently only
+                support: `SQL`(on-premises SQL Server). Changing this forces a new
+                resource to be created.'
+            required: true
+            policy: ''
+            notes: ''
+        target_platform:
+            description: 'The platform type of the migration target. Currently only
+                support: `SQLDB`(Azure SQL Database). Changing this forces a new resource
+                to be created.'
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assigned to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of Database Migration Project.
+    timeouts:
+        create:
+            description: Used when creating the API Management API.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management API.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management API.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management API.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbWNpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzWnBjblIxWVd4
+        ZmJtVjBkMjl5YXlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVdGRtNWxkQ0lLSUNCaFpHUnlaWE56WDNOd1lXTmxJQ0FnSUNBZ0lEMGdX
+        eUl4TUM0d0xqQXVNQzh4TmlKZENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRY
+        SmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5
+        MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0
+        WVcxd2JHVXVibUZ0WlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXpkV0p1WlhRaUlDSmxl
+        R0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pT
+        MXpkV0p1WlhRaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNCaGVuVnlaWEp0WDNK
+        bGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lIWnBjblIxWVd4ZmJtVjBkMjl5
+        YTE5dVlXMWxJRDBnWVhwMWNtVnliVjkyYVhKMGRXRnNYMjVsZEhkdmNtc3VaWGhoYlhCc1pTNXVZ
+        VzFsQ2lBZ1lXUmtjbVZ6YzE5d2NtVm1hWGdnSUNBZ0lDQWdQU0FpTVRBdU1DNHhMakF2TWpRaUNu
+        MEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMlJoZEdGaVlYTmxYMjFwWjNKaGRHbHZibDl6WlhK
+        MmFXTmxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Fp
+        WlhoaGJYQnNaUzFrWW0xeklnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnla
+        WEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J5WlhOdmRY
+        SmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdG
+        dGNHeGxMbTVoYldVS0lDQjJhWEowZFdGc1gzTjFZbTVsZEY5cFpDQWdJRDBnWVhwMWNtVnliVjl6
+        ZFdKdVpYUXVaWGhoYlhCc1pTNXBaQW9nSUhOcmRWOXVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlV
+        M1JoYm1SaGNtUmZNWFpEYjNKbGN5SUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWkdGMFlX
+        SmhjMlZmYldsbmNtRjBhVzl1WDNCeWIycGxZM1FpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFdSaWJYTXRjSEp2YW1WamRDSUtJQ0J6
+        WlhKMmFXTmxYMjVoYldVZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5a1lYUmhZbUZ6WlY5dGFXZHlZ
+        WFJwYjI1ZmMyVnlkbWxqWlM1bGVHRnRjR3hsTG01aGJXVUtJQ0J5WlhOdmRYSmpaVjluY205MWNG
+        OXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldV
+        S0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5
+        YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lDQnpiM1Z5WTJWZmNHeGhkR1p2Y20wZ0lDQWdJ
+        RDBnSWxOUlRDSUtJQ0IwWVhKblpYUmZjR3hoZEdadmNtMGdJQ0FnSUQwZ0lsTlJURVJDSWdwOUNn
+        PT0=
+    import: !!binary |
+        Q2dwRVlYUmhZbUZ6WlNCTmFXZHlZWFJwYjI0Z1VISnZhbVZqZEhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZV0poYzJWZmJXbG5jbUYwYVc5dVgzQnliMnBsWTNRdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

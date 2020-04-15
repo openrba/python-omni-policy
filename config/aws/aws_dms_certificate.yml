@@ -1,0 +1,28 @@
+aws_dms_certificate:
+    status: HOLD
+    subcategory: Database Migration Service (DMS)
+    layout: aws
+    page_title: 'AWS: aws_dms_certificate'
+    description: Provides a DMS (Data Migration Service) certificate resource.
+    arguments:
+        certificate_id:
+            description: The certificate identifier.
+            required: true
+            policy: ''
+            notes: ''
+        certificate_pem:
+            description: The contents of the .pem X.509 certificate file for the certificate.
+                Either `certificate_pem` or `certificate_wallet` must be set.
+            required: false
+            policy: ''
+            notes: ''
+        certificate_wallet:
+            description: The contents of the Oracle Wallet certificate for use with
+                SSL. Either `certificate_pem` or `certificate_wallet` must be set.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        certificate_arn:
+            description: The Amazon Resource Name (ARN) for the certificate.
+    timeouts: {}

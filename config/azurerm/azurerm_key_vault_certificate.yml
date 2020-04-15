@@ -1,0 +1,268 @@
+azurerm_key_vault_certificate:
+    status: HOLD
+    subcategory: Key Vault
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_key_vault_certificate'
+    description: Manages a Key Vault Certificate.
+    arguments:
+        name:
+            description: The name of the Certificate Issuer. Possible values include
+                `Self` (for self-signed certificate), or `Unknown` (for a certificate
+                issuing authority like `Let's Encrypt` and Azure direct supported
+                ones). Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        key_vault_id:
+            description: The ID of the Key Vault where the Certificate should be created.
+            required: true
+            policy: ''
+            notes: ''
+        certificate:
+            description: A `certificate` block as defined below, used to Import an
+                existing certificate.
+            required: false
+            policy: ''
+            notes: ''
+        certificate_policy:
+            description: A `certificate_policy` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        contents:
+            description: The base64-encoded certificate contents. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The password associated with the certificate. Changing this
+                forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        issuer_parameters:
+            description: A `issuer_parameters` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        key_properties:
+            description: A `key_properties` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        lifetime_action:
+            description: A `lifetime_action` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        secret_properties:
+            description: A `secret_properties` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        x509_certificate_properties:
+            description: A `x509_certificate_properties` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        exportable:
+            description: Is this Certificate Exportable? Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        key_size:
+            description: The size of the Key used in the Certificate. Possible values
+                include `2048` and `4096`. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        key_type:
+            description: Specifies the Type of Key, such as `RSA`. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        reuse_key:
+            description: Is the key reusable? Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: A `action` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        trigger:
+            description: A `trigger` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        action_type:
+            description: The Type of action to be performed when the lifetime trigger
+                is triggerec. Possible values include `AutoRenew` and `EmailContacts`.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        days_before_expiry:
+            description: The number of days before the Certificate expires that the
+                action associated with this Trigger should run. Changing this forces
+                a new resource to be created. Conflicts with `lifetime_percentage`.
+            required: false
+            policy: ''
+            notes: ''
+        lifetime_percentage:
+            description: The percentage at which during the Certificates Lifetime
+                the action associated with this Trigger should run. Changing this
+                forces a new resource to be created. Conflicts with `days_before_expiry`.
+            required: false
+            policy: ''
+            notes: ''
+        content_type:
+            description: The Content-Type of the Certificate, such as `application/x-pkcs12`
+                for a PFX or `application/x-pem-file` for a PEM. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        extended_key_usage:
+            description: A list of Extended/Enhanced Key Usages. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        key_usage:
+            description: A list of uses associated with this Key. Possible values
+                include `cRLSign`, `dataEncipherment`, `decipherOnly`, `digitalSignature`,
+                `encipherOnly`, `keyAgreement`, `keyCertSign`, `keyEncipherment` and
+                `nonRepudiation` and are case-sensitive. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subject:
+            description: The Certificate's Subject. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subject_alternative_names:
+            description: A `subject_alternative_names` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        validity_in_months:
+            description: The Certificates Validity Period in Months. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        dns_names:
+            description: A list of alternative DNS names (FQDNs
+            required: false
+            policy: ''
+            notes: ''
+        emails:
+            description: A list of email addresses identified by this Certificate.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        upns:
+            description: A list of User Principal Names identified by the Certificate.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Key Vault Certificate ID.
+        secret_id:
+            description: The ID of the associated Key Vault Secret.
+        version:
+            description: The current version of the Key Vault Certificate.
+        certificate_data:
+            description: The raw Key Vault Certificate data represented as a hexadecimal
+                string.
+        thumbprint:
+            description: The X509 Thumbprint of the Key Vault Certificate represented
+                as a hexadecimal string.
+    timeouts:
+        create:
+            description: Used when creating the Key Vault Certificate.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Key Vault Certificate.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Key Vault Certificate.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Key Vault Certificate.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnlJZ0ltTjFjbkpsYm5RaUlIc0tm
+        UW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQWlJQ0psZUdGdGNH
+        eGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ1BTQWlhMlY1TFhaaGRXeDBMV05sY25ScFptbGpZWFJsTFdW
+        NFlXMXdiR1VpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkx
+        Y21ObElDSmhlblZ5WlhKdFgydGxlVjkyWVhWc2RDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbXRsZVhaaGRXeDBZMlZ5ZEdWNFlXMXdiR1VpQ2lBZ2JH
+        OWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        dVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0Jo
+        ZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUhSbGJtRnVk
+        RjlwWkNBZ0lDQWdJQ0FnSUNBZ1BTQmtZWFJoTG1GNmRYSmxjbTFmWTJ4cFpXNTBYMk52Ym1acFp5
+        NWpkWEp5Wlc1MExuUmxibUZ1ZEY5cFpBb0tJQ0J6YTNWZmJtRnRaU0E5SUNKemRHRnVaR0Z5WkNJ
+        S0NpQWdZV05qWlhOelgzQnZiR2xqZVNCN0NpQWdJQ0IwWlc1aGJuUmZhV1FnUFNCa1lYUmhMbUY2
+        ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnk1amRYSnlaVzUwTG5SbGJtRnVkRjlwWkFvZ0lDQWdi
+        MkpxWldOMFgybGtJRDBnWkdGMFlTNWhlblZ5WlhKdFgyTnNhV1Z1ZEY5amIyNW1hV2N1WTNWeWNt
+        VnVkQzV2WW1wbFkzUmZhV1FLQ2lBZ0lDQmpaWEowYVdacFkyRjBaVjl3WlhKdGFYTnphVzl1Y3lB
+        OUlGc0tJQ0FnSUNBZ0ltTnlaV0YwWlNJc0NpQWdJQ0FnSUNKa1pXeGxkR1VpTEFvZ0lDQWdJQ0Fp
+        WkdWc1pYUmxhWE56ZFdWeWN5SXNDaUFnSUNBZ0lDSm5aWFFpTEFvZ0lDQWdJQ0FpWjJWMGFYTnpk
+        V1Z5Y3lJc0NpQWdJQ0FnSUNKcGJYQnZjblFpTEFvZ0lDQWdJQ0FpYkdsemRDSXNDaUFnSUNBZ0lD
+        SnNhWE4wYVhOemRXVnljeUlzQ2lBZ0lDQWdJQ0p0WVc1aFoyVmpiMjUwWVdOMGN5SXNDaUFnSUNB
+        Z0lDSnRZVzVoWjJWcGMzTjFaWEp6SWl3S0lDQWdJQ0FnSW5ObGRHbHpjM1ZsY25NaUxBb2dJQ0Fn
+        SUNBaWRYQmtZWFJsSWl3S0lDQWdJRjBLQ2lBZ0lDQnJaWGxmY0dWeWJXbHpjMmx2Ym5NZ1BTQmJD
+        aUFnSUNBZ0lDSmlZV05yZFhBaUxBb2dJQ0FnSUNBaVkzSmxZWFJsSWl3S0lDQWdJQ0FnSW1SbFkz
+        SjVjSFFpTEFvZ0lDQWdJQ0FpWkdWc1pYUmxJaXdLSUNBZ0lDQWdJbVZ1WTNKNWNIUWlMQW9nSUNB
+        Z0lDQWlaMlYwSWl3S0lDQWdJQ0FnSW1sdGNHOXlkQ0lzQ2lBZ0lDQWdJQ0pzYVhOMElpd0tJQ0Fn
+        SUNBZ0luQjFjbWRsSWl3S0lDQWdJQ0FnSW5KbFkyOTJaWElpTEFvZ0lDQWdJQ0FpY21WemRHOXla
+        U0lzQ2lBZ0lDQWdJQ0p6YVdkdUlpd0tJQ0FnSUNBZ0luVnVkM0poY0V0bGVTSXNDaUFnSUNBZ0lD
+        SjFjR1JoZEdVaUxBb2dJQ0FnSUNBaWRtVnlhV1o1SWl3S0lDQWdJQ0FnSW5keVlYQkxaWGtpTEFv
+        Z0lDQWdYUW9LSUNBZ0lITmxZM0psZEY5d1pYSnRhWE56YVc5dWN5QTlJRnNLSUNBZ0lDQWdJbUpo
+        WTJ0MWNDSXNDaUFnSUNBZ0lDSmtaV3hsZEdVaUxBb2dJQ0FnSUNBaVoyVjBJaXdLSUNBZ0lDQWdJ
+        bXhwYzNRaUxBb2dJQ0FnSUNBaWNIVnlaMlVpTEFvZ0lDQWdJQ0FpY21WamIzWmxjaUlzQ2lBZ0lD
+        QWdJQ0p5WlhOMGIzSmxJaXdLSUNBZ0lDQWdJbk5sZENJc0NpQWdJQ0JkQ2lBZ2ZRb0tJQ0IwWVdk
+        eklEMGdld29nSUNBZ1pXNTJhWEp2Ym0xbGJuUWdQU0FpVUhKdlpIVmpkR2x2YmlJS0lDQjlDbjBL
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJ0bGVWOTJZWFZzZEY5alpYSjBhV1pwWTJGMFpTSWdJ
+        bVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdQU0FpYVcxd2IzSjBaV1F0WTJWeWRD
+        SUtJQ0JyWlhsZmRtRjFiSFJmYVdRZ1BTQmhlblZ5WlhKdFgydGxlVjkyWVhWc2RDNWxlR0Z0Y0d4
+        bExtbGtDZ29nSUdObGNuUnBabWxqWVhSbElIc0tJQ0FnSUdOdmJuUmxiblJ6SUQwZ1ptbHNaV0po
+        YzJVMk5DZ2lZMlZ5ZEdsbWFXTmhkR1V0ZEc4dGFXMXdiM0owTG5CbWVDSXBDaUFnSUNCd1lYTnpk
+        Mjl5WkNBOUlDSWlDaUFnZlFvS0lDQmpaWEowYVdacFkyRjBaVjl3YjJ4cFkza2dld29nSUNBZ2FY
+        TnpkV1Z5WDNCaGNtRnRaWFJsY25NZ2V3b2dJQ0FnSUNCdVlXMWxJRDBnSWxObGJHWWlDaUFnSUNC
+        OUNnb2dJQ0FnYTJWNVgzQnliM0JsY25ScFpYTWdld29nSUNBZ0lDQmxlSEJ2Y25SaFlteGxJRDBn
+        ZEhKMVpRb2dJQ0FnSUNCclpYbGZjMmw2WlNBZ0lEMGdNakEwT0FvZ0lDQWdJQ0JyWlhsZmRIbHda
+        U0FnSUQwZ0lsSlRRU0lLSUNBZ0lDQWdjbVYxYzJWZmEyVjVJQ0E5SUdaaGJITmxDaUFnSUNCOUNn
+        b2dJQ0FnYzJWamNtVjBYM0J5YjNCbGNuUnBaWE1nZXdvZ0lDQWdJQ0JqYjI1MFpXNTBYM1I1Y0dV
+        Z1BTQWlZWEJ3YkdsallYUnBiMjR2ZUMxd2EyTnpNVElpQ2lBZ0lDQjlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwTFpYa2dWbUYxYkhRZ1EyVnlkR2xtYVdOaGRHVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmEyVjVYM1poZFd4MFgyTmxjblJwWm1sallYUmxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

@@ -1,0 +1,31 @@
+{
+    "aws_autoscaling_notification": {
+        "status": "HOLD",
+        "subcategory": "Autoscaling",
+        "layout": "aws",
+        "page_title": "AWS: aws_autoscaling_notification",
+        "description": "Provides an AutoScaling Group with Notification support",
+        "arguments": {
+            "group_names": {
+                "description": "A list of AutoScaling Group Names",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "notifications": {
+                "description": "A list of Notification Types that trigger",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "topic_arn": {
+                "description": "The Topic ARN for notifications to be sent through",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

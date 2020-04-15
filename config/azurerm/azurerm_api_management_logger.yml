@@ -1,0 +1,109 @@
+azurerm_api_management_logger:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_logger'
+    description: Manages a Logger within an API Management Service.
+    arguments:
+        name:
+            description: The name of an EventHub.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the API Management Service. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        application_insights:
+            description: An `application_insights` block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        buffered:
+            description: Specifies whether records should be buffered in the Logger
+                prior to publishing. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A description of this Logger.
+            required: false
+            policy: ''
+            notes: ''
+        eventhub:
+            description: An `eventhub` block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        instrumentation_key:
+            description: The instrumentation key used to push data to Application
+                Insights.
+            required: true
+            policy: ''
+            notes: ''
+        connection_string:
+            description: The connection string of an EventHub Namespace.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Logger.
+    timeouts:
+        create:
+            description: Used when creating the API Management Logger.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Logger.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Logger.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Logger.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3Y0d4
+        cFkyRjBhVzl1WDJsdWMybG5hSFJ6SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlMxaGNIQnBibk5wWjJoMGN5SUtJQ0JzYjJOaGRHbHZi
+        aUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNH
+        eGxMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20x
+        ZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdZWEJ3YkdsallYUnBiMjVm
+        ZEhsd1pTQWdJQ0E5SUNKUGRHaGxjaUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZllYQnBY
+        MjFoYm1GblpXMWxiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKbGVHRnRjR3hsTFdGd2FXMGlDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNB
+        OUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29n
+        SUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHli
+        M1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEIxWW14cGMyaGxjbDl1WVcxbElDQWdJQ0FnUFNBaVRY
+        a2dRMjl0Y0dGdWVTSUtJQ0J3ZFdKc2FYTm9aWEpmWlcxaGFXd2dJQ0FnSUQwZ0ltTnZiWEJoYm5s
+        QWRHVnljbUZtYjNKdExtbHZJZ29LSUNCemEzVmZibUZ0WlNBOUlDSkVaWFpsYkc5d1pYSmZNU0lL
+        ZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZllYQnBYMjFoYm1GblpXMWxiblJmYkc5bloyVnlJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJY
+        QnNaUzFzYjJkblpYSWlDaUFnWVhCcFgyMWhibUZuWlcxbGJuUmZibUZ0WlNBOUlHRjZkWEpsY20x
+        ZllYQnBYMjFoYm1GblpXMWxiblF1WlhoaGJYQnNaUzV1WVcxbENpQWdjbVZ6YjNWeVkyVmZaM0p2
+        ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZ
+        VzFsQ2dvZ0lHRndjR3hwWTJGMGFXOXVYMmx1YzJsbmFIUnpJSHNLSUNBZ0lHbHVjM1J5ZFcxbGJu
+        UmhkR2x2Ymw5clpYa2dQU0JoZW5WeVpYSnRYMkZ3Y0d4cFkyRjBhVzl1WDJsdWMybG5hSFJ6TG1W
+        NFlXMXdiR1V1YVc1emRISjFiV1Z1ZEdGMGFXOXVYMnRsZVFvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JNYjJkblpYSnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYkc5bloyVnlMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

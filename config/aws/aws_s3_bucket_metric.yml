@@ -1,0 +1,34 @@
+aws_s3_bucket_metric:
+    status: HOLD
+    subcategory: S3
+    layout: aws
+    page_title: 'AWS: aws_s3_bucket_metric'
+    description: Provides a S3 bucket metrics configuration resource.
+    arguments:
+        bucket:
+            description: The name of the bucket to put metric configuration.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Unique identifier of the metrics configuration for the bucket.
+            required: true
+            policy: ''
+            notes: ''
+        filter:
+            description: '[Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter'
+            required: false
+            policy: ''
+            notes: ''
+        prefix:
+            description: Object prefix for filtering (singular).
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Object tags for filtering (up to 10).
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

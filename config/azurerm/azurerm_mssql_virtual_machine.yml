@@ -1,0 +1,145 @@
+azurerm_mssql_virtual_machine:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mssql_virtual_machine'
+    description: Manages a Microsoft SQL Virtual Machine
+    arguments:
+        virtual_machine_id:
+            description: The ID of the Virtual Machine. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sql_license_type:
+            description: The SQL Server license type. Possible values are `AHUB` (Azure
+                Hybrid Benefit
+            required: false
+            policy: ''
+            notes: ''
+        auto_patching:
+            description: An `auto_patching` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        key_vault_credential:
+            description: (Optional
+            required: false
+            policy: ''
+            notes: ''
+        r_services_enabled:
+            description: Should R Services be enabled?
+            required: false
+            policy: ''
+            notes: ''
+        sql_connectivity_port:
+            description: The SQL Server port. Defaults to `1433`.
+            required: false
+            policy: ''
+            notes: ''
+        sql_connectivity_type:
+            description: The connectivity type used for this SQL Server. Defaults
+                to `PRIVATE`.
+            required: false
+            policy: ''
+            notes: ''
+        sql_connectivity_update_password:
+            description: The SQL Server sysadmin login password.
+            required: false
+            policy: ''
+            notes: ''
+        sql_connectivity_update_username:
+            description: The SQL Server sysadmin login to create.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        day_of_week:
+            description: The day of week to apply the patch on.
+            required: true
+            policy: ''
+            notes: ''
+        maintenance_window_starting_hour:
+            description: The Hour, in the Virtual Machine Time-Zone when the patching
+                maintenance window should begin.
+            required: true
+            policy: ''
+            notes: ''
+        maintenance_window_duration_in_minutes:
+            description: The size of the Maintenance Window in minutes.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The credential name.
+            required: true
+            policy: ''
+            notes: ''
+        key_vault_url:
+            description: The azure Key Vault url. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        service_principal_name:
+            description: The service principal name to access key vault. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        service_principal_secret:
+            description: The service principal name secret to access key vault. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the SQL Virtual Machine.
+    timeouts:
+        create:
+            description: Used when creating the MSSQL Virtual Machine.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the MSSQL Virtual Machine.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the MSSQL Virtual Machine.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MSSQL Virtual Machine.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZkbWx5ZEhWaGJGOXRZV05vYVc1bElpQWlaWGhoYlhCc1pTSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTMTJiU0lLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ3A5Q2dw
+        eVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5dGMzTnhiRjkyYVhKMGRXRnNYMjFoWTJocGJtVWlJQ0ps
+        ZUdGdGNHeGxJaUI3Q2lBZ2RtbHlkSFZoYkY5dFlXTm9hVzVsWDJsa0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNCa1lYUmhMbUY2ZFhKbGNtMWZkbWx5ZEhWaGJGOXRZV05vYVc1bExtVjRZVzF3YkdVdWFX
+        UUtJQ0J6Y1d4ZmJHbGpaVzV6WlY5MGVYQmxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pRUVZs
+        SElnb2dJSEpmYzJWeWRtbGpaWE5mWlc1aFlteGxaQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdkSEox
+        WlFvZ0lITnhiRjlqYjI1dVpXTjBhWFpwZEhsZmNHOXlkQ0FnSUNBZ0lDQWdJQ0FnSUQwZ01UUXpN
+        d29nSUhOeGJGOWpiMjV1WldOMGFYWnBkSGxmZEhsd1pTQWdJQ0FnSUNBZ0lDQWdJRDBnSWxCU1NW
+        WkJWRVVpQ2lBZ2MzRnNYMk52Ym01bFkzUnBkbWwwZVY5MWNHUmhkR1ZmY0dGemMzZHZjbVFnUFNB
+        aVVHRnpjM2R2Y21ReE1qTTBJU0lLSUNCemNXeGZZMjl1Ym1WamRHbDJhWFI1WDNWd1pHRjBaVjkx
+        YzJWeWJtRnRaU0E5SUNKemNXeHNiMmRwYmlJS0NpQWdZWFYwYjE5d1lYUmphR2x1WnlCN0NpQWdJ
+        Q0JrWVhsZmIyWmZkMlZsYXlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SlRkVzVrWVhraUNpQWdJQ0J0WVdsdWRHVnVZVzVqWlY5M2FXNWtiM2RmWkhWeVlYUnBiMjVmYVc1
+        ZmJXbHVkWFJsY3lBOUlEWXdDaUFnSUNCdFlXbHVkR1Z1WVc1alpWOTNhVzVrYjNkZmMzUmhjblJw
+        Ym1kZmFHOTFjaUFnSUNBZ0lDQTlJRElLSUNCOUNncDlDZz09
+    import: !!binary |
+        Q2dwVGNXd2dWbWx5ZEhWaGJDQk5ZV05vYVc1bGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJYTnpjV3hmZG1seWRIVmhiRjl0WVdOb2FXNWxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

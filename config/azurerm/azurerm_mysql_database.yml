@@ -1,0 +1,90 @@
+azurerm_mysql_database:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mysql_database'
+    description: Manages a MySQL Database within a MySQL Server.
+    arguments:
+        name:
+            description: Specifies the name of the MySQL Database, which needs [to
+                be a valid MySQL identifier](https://dev.mysql.com/doc/refman/5.7/en/identifiers.html).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: Specifies the name of the MySQL Server. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the MySQL Server
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        charset:
+            description: Specifies the Charset for the MySQL Database, which needs
+                [to be a valid MySQL Charset](https://dev.mysql.com/doc/refman/5.7/en/charset-charsets.html).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        collation:
+            description: Specifies the Collation for the MySQL Database, which needs
+                [to be a valid MySQL Collation](https://dev.mysql.com/doc/refman/5.7/en/charset-mysql.html).
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the MySQL Database.
+    timeouts:
+        create:
+            description: Used when creating the MySQL Database.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the MySQL Database.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the MySQL Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MySQL Database.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZ3YVMxeVp5MXdjbThpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyMTVjM0ZzWDNO
+        bGNuWmxjaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SW0xNWMzRnNMWE5sY25abGNpMHhJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtDaUFnYzJ0MVgyNWhiV1VnUFNBaVFsOUhaVzQxWHpJaUNnb2dJSE4w
+        YjNKaFoyVmZjSEp2Wm1sc1pTQjdDaUFnSUNCemRHOXlZV2RsWDIxaUlDQWdJQ0FnSUNBZ0lDQWdQ
+        U0ExTVRJd0NpQWdJQ0JpWVdOcmRYQmZjbVYwWlc1MGFXOXVYMlJoZVhNZ1BTQTNDaUFnSUNCblpX
+        OWZjbVZrZFc1a1lXNTBYMkpoWTJ0MWNDQWdQU0FpUkdsellXSnNaV1FpQ2lBZ2ZRb0tJQ0JoWkcx
+        cGJtbHpkSEpoZEc5eVgyeHZaMmx1SUNBZ0lDQWdJQ0FnSUQwZ0ltMTVjM0ZzWVdSdGFXNTFiaUlL
+        SUNCaFpHMXBibWx6ZEhKaGRHOXlYMnh2WjJsdVgzQmhjM04zYjNKa0lEMGdJa2hBVTJneFEyOVNN
+        eUVpQ2lBZ2RtVnljMmx2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0kxTGpjaUNp
+        QWdjM05zWDJWdVptOXlZMlZ0Wlc1MElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKRmJtRmliR1ZrSWdw
+        OUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXRlWE54YkY5a1lYUmhZbUZ6WlNJZ0ltVjRZVzF3
+        YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWa1lpSUtJ
+        Q0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNt
+        OTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnpaWEoyWlhKZmJtRnRaU0FnSUNBZ0lDQWdJRDBnWVhw
+        MWNtVnliVjl0ZVhOeGJGOXpaWEoyWlhJdVpYaGhiWEJzWlM1dVlXMWxDaUFnWTJoaGNuTmxkQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSjFkR1k0SWdvZ0lHTnZiR3hoZEdsdmJpQWdJQ0FnSUNBZ0lDQWdQ
+        U0FpZFhSbU9GOTFibWxqYjJSbFgyTnBJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwTmVWTlJUQ0JFWVhSaFltRnpaU2R6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJYbHpjV3hmWkdGMFlXSmhjMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

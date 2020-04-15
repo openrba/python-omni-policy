@@ -1,0 +1,81 @@
+azurerm_firewall_nat_rule_collection:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_firewall_nat_rule_collection'
+    description: Manages a NAT Rule Collection within an Azure Firewall.
+    arguments:
+        name:
+            description: Specifies the name of the rule.
+            required: true
+            policy: ''
+            notes: ''
+        azure_firewall_name:
+            description: Specifies the name of the Firewall in which the NAT Rule
+                Collection should be created. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the Resource Group in which the Firewall
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        priority:
+            description: Specifies the priority of the rule collection. Possible values
+                are between `100` - `65000`.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: Specifies the action the rule will apply to matching traffic.
+                Possible values are `Dnat` and `Snat`.
+            required: true
+            policy: ''
+            notes: ''
+        rule:
+            description: One or more `rule` blocks as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: Specifies a description for the rule.
+            required: false
+            policy: ''
+            notes: ''
+        destination_addresses:
+            description: A list of destination IP addresses and/or IP ranges.
+            required: true
+            policy: ''
+            notes: ''
+        destination_ports:
+            description: A list of destination ports.
+            required: true
+            policy: ''
+            notes: ''
+        protocols:
+            description: A list of protocols. Possible values are `Any`, `ICMP`, `TCP`
+                and `UDP`.  If `action` is `Dnat`, protocols can only be `TCP` and
+                `UDP`.
+            required: true
+            policy: ''
+            notes: ''
+        source_addresses:
+            description: A list of source IP addresses and/or IP ranges.
+            required: true
+            policy: ''
+            notes: ''
+        translated_address:
+            description: The address of the service behind the Firewall.
+            required: true
+            policy: ''
+            notes: ''
+        translated_port:
+            description: The port of the service behind the Firewall.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

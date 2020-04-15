@@ -1,0 +1,62 @@
+{
+    "azurerm_mysql_virtual_network_rule": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_mysql_virtual_network_rule",
+        "description": "Manages a MySQL Virtual Network Rule.",
+        "arguments": {
+            "name": {
+                "description": "The name of the MySQL Virtual Network Rule. Cannot be empty and must only contain alphanumeric characters and hyphens. Cannot start with a number, and cannot start or end with a hyphen. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group where the MySQL server resides. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "The name of the SQL Server to which this MySQL virtual network rule will be applied to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the subnet that the MySQL server will be connected to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the MySQL Virtual Network Rule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the MySQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the MySQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the MySQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the MySQL Virtual Network Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

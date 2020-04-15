@@ -1,0 +1,83 @@
+{
+    "azurerm_bastion_host": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_bastion_host",
+        "description": "Manages a Bastion Host.",
+        "arguments": {
+            "name": {
+                "description": "The name of the IP configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Bastion Host.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_configuration": {
+                "description": "A `ip_configuration` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "Reference to a subnet in which this Bastion Host has been created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "public_ip_address_id": {
+                "description": " Reference to a Public IP Address to associate with this Bastion Host.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Bastion Host."
+            },
+            "dns_name": {
+                "description": "The FQDN for the Bastion Host."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Bastion Host.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Bastion Host.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Bastion Host.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Bastion Host.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "azurerm_private_dns_srv_record": {
+        "status": "HOLD",
+        "subcategory": "Private DNS",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_private_dns_srv_record",
+        "description": "Manages a Private DNS SRV Record.",
+        "arguments": {
+            "name": {
+                "description": "The name of the DNS SRV Record. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the resource group where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_name": {
+                "description": "Specifies the Private DNS Zone where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "record": {
+                "description": "One or more `record` blocks as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ttl ": {
+                "description": "The Time To Live (TTL",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "The priority of the SRV record.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "weight": {
+                "description": "The Weight of the SRV record.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The Port the service is listening on.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target": {
+                "description": "The FQDN of the service.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Private DNS SRV Record ID."
+            },
+            "fqdn": {
+                "description": "The FQDN of the DNS SRV Record."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Private DNS SRV Record.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Private DNS SRV Record.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Private DNS SRV Record.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Private DNS SRV Record.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

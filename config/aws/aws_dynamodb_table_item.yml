@@ -1,0 +1,31 @@
+aws_dynamodb_table_item:
+    status: HOLD
+    subcategory: DynamoDB
+    layout: aws
+    page_title: 'AWS: aws_dynamodb_table_item'
+    description: Provides a DynamoDB table item resource
+    arguments:
+        table_name:
+            description: The name of the table to contain the item.
+            required: true
+            policy: ''
+            notes: ''
+        hash_key:
+            description: Hash key to use for lookups and identification of the item
+            required: true
+            policy: ''
+            notes: ''
+        range_key:
+            description: Range key to use for lookups and identification of the item.
+                Required if there is range key defined in the table.
+            required: false
+            policy: ''
+            notes: ''
+        item:
+            description: JSON representation of a map of attribute name/value pairs,
+                one for each attribute.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

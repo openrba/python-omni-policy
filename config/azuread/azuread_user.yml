@@ -1,0 +1,71 @@
+azuread_user:
+    status: HOLD
+    subcategory: Users
+    layout: azuread
+    page_title: 'Azure Active Directory: azuread_user'
+    description: Manages a User within Azure Active Directory.
+    arguments:
+        user_principal_name:
+            description: The User Principal Name of the Azure AD User.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The name to display in the address book for the user.
+            required: true
+            policy: ''
+            notes: ''
+        account_enabled:
+            description: '`true` if the account should be enabled, otherwise `false`.
+                Defaults to `true`.'
+            required: false
+            policy: ''
+            notes: ''
+        mail_nickname:
+            description: The mail alias for the user. Defaults to the user name part
+                of the User Principal Name.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The password for the User. The password must satisfy minimum
+                requirements as specified by the password policy. The maximum length
+                is 256 characters.
+            required: true
+            policy: ''
+            notes: ''
+        force_password_change:
+            description: '`true` if the User is forced to change the password during
+                the next sign-in. Defaults to `false`.'
+            required: false
+            policy: ''
+            notes: ''
+        immutable_id:
+            description: The value used to associate an on-premises Active Directory
+                user account with their Azure AD user object. This must be specified
+                if you are using a federated domain for the user's userPrincipalName
+                (UPN
+            required: false
+            policy: ''
+            notes: ''
+        usage_location:
+            description: 'The usage location of the User. Required for users that
+                will be assigned licenses due to legal requirement to check for availability
+                of services in countries. The usage location is a two letter country
+                code (ISO standard 3166). Examples include: `NO`, `JP`, and `GB`.
+                Cannot be reset to null once set. '
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Object ID of the Azure AD User.
+        mail:
+            description: The primary email address of the Azure AD User.
+        onpremises_sam_account_name:
+            description: The on premise sam account name of the Azure AD User.
+        onpremises_user_principal_name:
+            description: The on premise user principal name of the Azure AD User.
+        object_id:
+            description: The Object ID of the Azure AD User.
+    timeouts: {}

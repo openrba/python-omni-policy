@@ -1,0 +1,98 @@
+azurerm_mysql_virtual_network_rule:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mysql_virtual_network_rule'
+    description: Manages a MySQL Virtual Network Rule.
+    arguments:
+        name:
+            description: The name of the MySQL Virtual Network Rule. Cannot be empty
+                and must only contain alphanumeric characters and hyphens. Cannot
+                start with a number, and cannot start or end with a hyphen. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group where the MySQL server resides.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: The name of the SQL Server to which this MySQL virtual network
+                rule will be applied to. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the subnet that the MySQL server will be connected
+                to.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the MySQL Virtual Network Rule.
+    timeouts:
+        create:
+            description: Used when creating the MySQL Virtual Network Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the MySQL Virtual Network Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the MySQL Virtual Network Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MySQL Virtual Network Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFhadVpYUWlDaUFnWVdSa2NtVnpjMTl6Y0dGalpTQWdJ
+        Q0FnSUNBOUlGc2lNVEF1Tnk0eU9TNHdMekk1SWwwS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lD
+        QWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5
+        dUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZm
+        WjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjFZ
+        bTVsZENJZ0ltbHVkR1Z5Ym1Gc0lpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QWlhVzUwWlhKdVlXd2lDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ1BTQmhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSFpwY25SMVlXeGZibVYw
+        ZDI5eWExOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXN1WlhoaGJYQnNa
+        UzV1WVcxbENpQWdZV1JrY21WemMxOXdjbVZtYVhnZ0lDQWdJQ0FnUFNBaU1UQXVOeTR5T1M0d0x6
+        STVJZ29nSUhObGNuWnBZMlZmWlc1a2NHOXBiblJ6SUNBZ0lEMGdXeUpOYVdOeWIzTnZablF1VTNG
+        c0lsMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYlhsemNXeGZjMlZ5ZG1WeUlpQWlaWGho
+        YlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWli
+        WGx6Y1d3dGMyVnlkbVZ5TFRFaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEds
+        dmJnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0
+        WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHRmtiV2x1YVhOMGNtRjBi
+        M0pmYkc5bmFXNGdJQ0FnSUNBZ0lDQWdQU0FpYlhsemNXeGhaRzFwYm5WdUlnb2dJR0ZrYldsdWFY
+        TjBjbUYwYjNKZmJHOW5hVzVmY0dGemMzZHZjbVFnUFNBaVNFQlRhREZEYjFJeklTSUtJQ0IyWlhK
+        emFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lqVXVOeUlLSUNCemMyeGZaVzVt
+        YjNKalpXMWxiblFnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1Z1WVdKc1pXUWlDZ29nSUhOcmRWOXVZ
+        VzFsSUQwZ0lrZFFYMGRsYmpWZk1pSUtDaUFnYzNSdmNtRm5aVjl3Y205bWFXeGxJSHNLSUNBZ0lI
+        TjBiM0poWjJWZmJXSWdJQ0FnSUNBZ0lDQWdJQ0E5SURVeE1qQUtJQ0FnSUdKaFkydDFjRjl5WlhS
+        bGJuUnBiMjVmWkdGNWN5QTlJRGNLSUNBZ0lHZGxiMTl5WldSMWJtUmhiblJmWW1GamEzVndJQ0E5
+        SUNKRWFYTmhZbXhsWkNJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDIxNWMzRnNY
+        M1pwY25SMVlXeGZibVYwZDI5eWExOXlkV3hsSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWJYbHpjV3d0ZG01bGRDMXlkV3hsSWdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3
+        YkdVdWJtRnRaUW9nSUhObGNuWmxjbDl1WVcxbElDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgyMTVj
+        M0ZzWDNObGNuWmxjaTVsZUdGdGNHeGxMbTVoYldVS0lDQnpkV0p1WlhSZmFXUWdJQ0FnSUNBZ0lD
+        QWdJRDBnWVhwMWNtVnliVjl6ZFdKdVpYUXVhVzUwWlhKdVlXd3VhV1FLZlFvPQ==
+    import: !!binary |
+        Q2dwTmVWTlJUQ0JXYVhKMGRXRnNJRTVsZEhkdmNtc2dVblZzWlhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJYbHpjV3hmZG1seWRIVmhiRjl1WlhSM2IzSnJYM0oxYkdVdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

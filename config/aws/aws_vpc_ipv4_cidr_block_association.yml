@@ -1,0 +1,36 @@
+aws_vpc_ipv4_cidr_block_association:
+    status: HOLD
+    subcategory: VPC
+    layout: aws
+    page_title: 'AWS: aws_vpc_ipv4_cidr_block_association'
+    description: Associate additional IPv4 CIDR blocks with a VPC
+    arguments:
+        cidr_block:
+            description: The additional IPv4 CIDR block to associate with the VPC.
+            required: true
+            policy: ''
+            notes: ''
+        vpc_id:
+            description: The ID of the VPC to make the association with.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the VPC CIDR association
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaWJXRnBiaUlnZXdvZ0lHTnBaSEpmWW14dlkyc2dQ
+        U0FpTVRBdU1DNHdMakF2TVRZaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmRuQmpYMmx3ZGpSZlky
+        bGtjbDlpYkc5amExOWhjM052WTJsaGRHbHZiaUlnSW5ObFkyOXVaR0Z5ZVY5amFXUnlJaUI3Q2lB
+        Z2RuQmpYMmxrSUNBZ0lDQTlJQ0lrZTJGM2MxOTJjR011YldGcGJpNXBaSDBpQ2lBZ1kybGtjbDlp
+        Ykc5amF5QTlJQ0l4TnpJdU1pNHdMakF2TVRZaUNuMEs=
+    import: !!binary |
+        Q2dwZ1lYZHpYM1p3WTE5cGNIWTBYMk5wWkhKZllteHZZMnRmWVhOemIyTnBZWFJwYjI1Z0lHTmhi
+        aUJpWlNCcGJYQnZjblJsWkNCaWVTQjFjMmx1WnlCMGFHVWdWbEJESUVOSlJGSWdRWE56YjJOcFlY
+        UnBiMjRnU1VRc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZmFYQjJORjlqYVdSeVgySnNiMk5yWDJGemMyOWphV0YwYVc5dUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

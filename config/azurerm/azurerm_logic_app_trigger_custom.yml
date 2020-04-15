@@ -1,0 +1,72 @@
+azurerm_logic_app_trigger_custom:
+    status: HOLD
+    subcategory: Logic App
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_logic_app_trigger_custom'
+    description: Manages a Custom Trigger within a Logic App Workflow
+    arguments:
+        name:
+            description: Specifies the name of the HTTP Trigger to be created within
+                the Logic App Workflow. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: This name must be unique across all Triggers within the Logic App
+                Workflow.
+        logic_app_id:
+            description: Specifies the ID of the Logic App Workflow. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        body:
+            description: Specifies the JSON Blob defining the Body of this Custom
+                Trigger.
+            required: true
+            policy: ''
+            notes: To make the Trigger more readable, you may wish to consider using
+                HEREDOC syntax (as shown above) or [the `local_file` resource](https://www.terraform.io/docs/providers/local/d/file.html)
+                to load the schema from a file on disk.
+    attributes:
+        id:
+            description: The ID of the Trigger within the Logic App Workflow.
+    timeouts:
+        create:
+            description: Used when creating the Logic App Custom Trigger.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Logic App Custom Trigger.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Logic App Custom Trigger.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Logic App Custom Trigger.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbmR2Y210bWJHOTNMWEpsYzI5MWNtTmxjeUlLSUNCc2Iy
+        TmhkR2x2YmlBOUlDSkZZWE4wSUZWVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzYjJk
+        cFkxOWhjSEJmZDI5eWEyWnNiM2NpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKM2IzSnJabXh2ZHpFaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJn
+        b2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJk
+        eWIzVndMbVY0WVcxd2JHVXVibUZ0WlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXNiMmRw
+        WTE5aGNIQmZkSEpwWjJkbGNsOWpkWE4wYjIwaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJ
+        Q0FnSUNBZ0lEMGdJbVY0WVcxd2JHVXRkSEpwWjJkbGNpSUtJQ0JzYjJkcFkxOWhjSEJmYVdRZ1BT
+        QmhlblZ5WlhKdFgyeHZaMmxqWDJGd2NGOTNiM0pyWm14dmR5NWxlR0Z0Y0d4bExtbGtDZ29nSUdK
+        dlpIa2dQU0E4UEVKUFJGa0tld29nSUNKeVpXTjFjbkpsYm1ObElqb2dld29nSUNBZ0ltWnlaWEYx
+        Wlc1amVTSTZJQ0pFWVhraUxBb2dJQ0FnSW1sdWRHVnlkbUZzSWpvZ01Rb2dJSDBzQ2lBZ0luUjVj
+        R1VpT2lBaVVtVmpkWEp5Wlc1alpTSUtmUXBDVDBSWkNncDlDZz09
+    import: !!binary |
+        Q2dwTWIyZHBZeUJCY0hBZ1EzVnpkRzl0SUZSeWFXZG5aWEp6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5hV05mWVhCd1gzUnlhV2RuWlhKZlkzVnpkRzl0TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

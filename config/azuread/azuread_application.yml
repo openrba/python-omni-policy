@@ -1,0 +1,160 @@
+azuread_application:
+    status: HOLD
+    subcategory: Application
+    layout: azuread
+    page_title: 'Azure Active Directory: azuread_application'
+    description: Manages an Application within Azure Active Directory.
+    arguments:
+        name:
+            description: The display name for the application.
+            required: true
+            policy: ''
+            notes: ''
+        homepage:
+            description: The URL to the application's home page. If no homepage is
+                specified this defaults to `https://{name}`.
+            required: false
+            policy: ''
+            notes: ''
+        identifier_uris:
+            description: A list of user-defined URI(s
+            required: false
+            policy: ''
+            notes: ''
+        reply_urls:
+            description: A list of URLs that user tokens are sent to for sign in,
+                or the redirect URIs that OAuth 2.0 authorization codes and access
+                tokens are sent to.
+            required: false
+            policy: ''
+            notes: ''
+        logout_url:
+            description: The URL of the logout page.
+            required: false
+            policy: ''
+            notes: ''
+        available_to_other_tenants:
+            description: Is this Azure AD Application available to other tenants?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        public_client:
+            description: Is this Azure AD Application a public client? Defaults to
+                `false`.
+            required: false
+            policy: ''
+            notes: ''
+        oauth2_allow_implicit_flow:
+            description: Does this Azure AD Application allow OAuth2.0 implicit flow
+                tokens? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        group_membership_claims:
+            description: Configures the `groups` claim issued in a user or OAuth 2.0
+                access token that the app expects. Defaults to `SecurityGroup`. Possible
+                values are `None`, `SecurityGroup` or `All`.
+            required: false
+            policy: ''
+            notes: ''
+        owners:
+            description: 'A list of Azure AD Object IDs that will be granted ownership
+                of the application. Defaults to the Object ID of the caller creating
+                the application. If a list is specified the caller Object ID will
+                no longer be included unless explicitly added to the list. '
+            required: false
+            policy: ''
+            notes: ''
+        required_resource_access:
+            description: A collection of `required_resource_access` blocks as documented
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Specifies whether the id property references an `OAuth2Permission`
+                or an `AppRole`. Possible values are `Scope` or `Role`.
+            required: true
+            policy: ''
+            notes: ''
+        app_role:
+            description: A collection of `app_role` blocks as documented below. For
+                more information https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles
+            required: false
+            policy: ''
+            notes: ''
+        resource_app_id:
+            description: The unique identifier for the resource that the application
+                requires access to. This should be equal to the appId declared on
+                the target resource application.
+            required: true
+            policy: ''
+            notes: ''
+        resource_access:
+            description: A collection of `resource_access` blocks as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        id:
+            description: The unique identifier for one of the `OAuth2Permission` or
+                `AppRole` instances that the resource application exposes.
+            required: true
+            policy: ''
+            notes: ''
+        allowed_member_types:
+            description: Specifies whether this app role definition can be assigned
+                to users and groups by setting to `User`, or to other applications
+                (that are accessing this application in daemon service scenarios
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: Permission help text that appears in the admin app assignment
+                and consent experiences.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: Display name for the permission that appears in the admin
+                consent and app assignment experiences.
+            required: true
+            policy: ''
+            notes: ''
+        is_enabled:
+            description: 'Determines if the app role is enabled: Defaults to `true`.'
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: Specifies the value of the roles claim that the application
+                should expect in the authentication and access tokens.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        application_id:
+            description: The Application ID.
+        object_id:
+            description: The Application's Object ID.
+        oauth2_permissions:
+            description: A collection of OAuth 2.0 permission scopes that the web
+                API (resource) app exposes to client apps. Each permission is covered
+                by a `oauth2_permission` block as documented below.
+        id:
+            description: The unique identifier for one of the `OAuth2Permission`.
+        type:
+            description: The type of the permission.
+        admin_consent_description:
+            description: The description of the admin consent.
+        admin_consent_display_name:
+            description: The display name of the admin consent.
+        is_enabled:
+            description: Is this permission enabled?
+        user_consent_description:
+            description: The description of the user consent.
+        user_consent_display_name:
+            description: The display name of the user consent.
+        value:
+            description: The name of this permission.
+    timeouts: {}

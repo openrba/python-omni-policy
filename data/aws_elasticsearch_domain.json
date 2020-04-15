@@ -1,0 +1,251 @@
+{
+    "aws_elasticsearch_domain": {
+        "status": "HOLD",
+        "subcategory": "ElasticSearch",
+        "layout": "aws",
+        "page_title": "AWS: aws_elasticsearch_domain",
+        "description": "Terraform resource for managing an AWS Elasticsearch Domain.",
+        "arguments": {
+            "domain_name": {
+                "description": "Name of the domain.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_policies": {
+                "description": "IAM policy document specifying the access policies for the domain",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "advanced_options": {
+                "description": "Key-value string pairs to specify advanced configuration options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ebs_options": {
+                "description": "EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encrypt_at_rest": {
+                "description": "Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "node_to_node_encryption": {
+                "description": "Node-to-node encryption options. See below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_config": {
+                "description": "Cluster configuration of the domain, see below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_options": {
+                "description": "Snapshot related options, see below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_options": {
+                "description": "VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_publishing_options": {
+                "description": "Options for publishing slow logs to CloudWatch Logs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "elasticsearch_version": {
+                "description": "The version of Elasticsearch to deploy. Defaults to `1.5`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain_endpoint_options": {
+                "description": "Domain endpoint HTTP(S",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ebs_enabled": {
+                "description": "Whether EBS volumes are attached to data nodes in the domain.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "volume_type": {
+                "description": "The type of EBS volumes attached to data nodes.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iops": {
+                "description": "The baseline input/output (I/O",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Specifies whether Amazon Cognito authentication with Kibana is enabled or not",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kms_key_id": {
+                "description": "The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enforce_https": {
+                "description": "Whether or not to require HTTPS",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tls_security_policy": {
+                "description": "The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. Terraform will only perform drift detection if a configuration value is provided.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_type": {
+                "description": "Instance type of data nodes in the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_count": {
+                "description": "Number of instances in the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dedicated_master_enabled": {
+                "description": "Indicates whether dedicated master nodes are enabled for the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dedicated_master_type": {
+                "description": "Instance type of the dedicated master nodes in the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dedicated_master_count": {
+                "description": "Number of dedicated master nodes in the cluster",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_awareness_config": {
+                "description": "Configuration block containing zone awareness settings. Documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_awareness_enabled": {
+                "description": "Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availability_zone_count` within the `zone_awareness_config` must be set to `3`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone_count": {
+                "description": "Number of Availability Zones for the domain to use with `zone_awareness_enabled`. Defaults to `2`. Valid values: `2` or `3`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_ids": {
+                "description": "List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_ids": {
+                "description": "List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "automated_snapshot_start_hour": {
+                "description": "Hour during which the service takes an automated daily",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "log_type": {
+                "description": "A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cloudwatch_log_group_arn": {
+                "description": "ARN of the Cloudwatch log group to which log needs to be published.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "user_pool_id": {
+                "description": "ID of the Cognito User Pool to use",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "identity_pool_id": {
+                "description": "ID of the Cognito Identity Pool to use",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_arn": {
+                "description": "ARN of the IAM role that has the AmazonESCognitoAccess policy attached",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the domain."
+            },
+            "domain_id": {
+                "description": "Unique identifier for the domain."
+            },
+            "domain_name": {
+                "description": "The name of the Elasticsearch domain."
+            },
+            "endpoint": {
+                "description": "Domain-specific endpoint used to submit index, search, and data upload requests."
+            },
+            "kibana_endpoint": {
+                "description": "Domain-specific endpoint for kibana without https scheme."
+            },
+            "vpc_options.0.availability_zones": {
+                "description": "If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside."
+            },
+            "vpc_options.0.vpc_id": {
+                "description": "If the domain was created inside a VPC, the ID of the VPC."
+            }
+        },
+        "timeouts": {}
+    }
+}

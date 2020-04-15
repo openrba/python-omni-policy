@@ -1,0 +1,80 @@
+{
+    "aws_kms_grant": {
+        "status": "HOLD",
+        "subcategory": "KMS",
+        "layout": "aws",
+        "page_title": "AWS: aws_kms_grant",
+        "description": "Provides a resource-based access control mechanism for KMS Customer Master Keys.",
+        "arguments": {
+            "name": {
+                "description": "A friendly name for identifying the grant.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_id": {
+                "description": "The unique identifier for the customer master key (CMK",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "grantee_principal": {
+                "description": "The principal that is given permission to perform the operations that the grant permits in ARN format. Note that due to eventual consistency issues around IAM principals, terraform's state may not always be refreshed to reflect what is true in AWS.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "operations": {
+                "description": "A list of operations that the grant permits. The permitted values are: `Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, CreateGrant, RetireGrant, DescribeKey`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retiring_principal": {
+                "description": "The principal that is given permission to retire the grant by using RetireGrant operation in ARN format. Note that due to eventual consistency issues around IAM principals, terraform's state may not always be refreshed to reflect what is true in AWS.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "constraints": {
+                "description": "A structure that you can use to allow certain operations in the grant only when the desired encryption context is present. For more information about encryption context, see [Encryption Context](http://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "grant_creation_tokens": {
+                "description": "A list of grant tokens to be used when creating the grant. See [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retire_on_delete": {
+                "description": "If set to false (the default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_context_equals": {
+                "description": "A list of key-value pairs that must match the encryption context in subsequent cryptographic operation requests. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint. Conflicts with `encryption_context_subset`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_context_subset": {
+                "description": "A list of key-value pairs that must be included in the encryption context of subsequent cryptographic operation requests. The grant allows the cryptographic operation only when the encryption context in the request includes the key-value pairs specified in this constraint, although it can include additional key-value pairs. Conflicts with `encryption_context_equals`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "grant_id": {
+                "description": "The unique identifier for the grant."
+            },
+            "grant_token": {
+                "description": "The grant token for the created grant. For more information, see [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token)."
+            }
+        },
+        "timeouts": {}
+    }
+}

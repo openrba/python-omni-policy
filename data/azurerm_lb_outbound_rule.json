@@ -1,0 +1,92 @@
+{
+    "azurerm_lb_outbound_rule": {
+        "status": "HOLD",
+        "subcategory": "Load Balancer",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_lb_outbound_rule",
+        "description": "Manages a Load Balancer Outbound Rule.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Frontend IP Configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "loadbalancer_id": {
+                "description": "The ID of the Load Balancer in which to create the Outbound Rule. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "frontend_ip_configuration": {
+                "description": "One or more `frontend_ip_configuration` blocks as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_address_pool_id": {
+                "description": "The ID of the Backend Address Pool. Outbound traffic is randomly load balanced across IPs in the backend IPs.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": "The transport protocol for the external endpoint. Possible values are `Udp`, `Tcp` or `All`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_tcp_reset": {
+                "description": "Receive bidirectional TCP Reset on TCP flow idle timeout or unexpected connection termination. This element is only used when the protocol is set to TCP.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allocated_outbound_ports": {
+                "description": "The number of outbound ports to be used for NAT.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "idle_timeout_in_minutes": {
+                "description": "The timeout for the TCP idle connection",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Load Balancer Outbound Rule."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Load Balancer Outbound Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Load Balancer Outbound Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Load Balancer Outbound Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Load Balancer Outbound Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

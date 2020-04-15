@@ -1,0 +1,74 @@
+azurerm_maps_account:
+    status: HOLD
+    subcategory: Maps
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_maps_account'
+    description: Manages an Azure Maps Account.
+    arguments:
+        name:
+            description: The name of the Azure Maps Account. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the Azure Maps Account
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku_name:
+            description: The sku of the Azure Maps Account. Possible values are `S0`
+                and `S1`.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the Azure Maps Account.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Azure Maps Account.
+        primary_access_key:
+            description: The primary key used to authenticate and authorize access
+                to the Maps REST APIs.
+        secondary_access_key:
+            description: The secondary key used to authenticate and authorize access
+                to the Maps REST APIs.
+        x_ms_client_id:
+            description: A unique identifier for the Maps Account.
+    timeouts:
+        create:
+            description: Used when creating the Maps Account.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Maps Account.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Maps Account.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Maps Account.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        dFlYQnpYMkZqWTI5MWJuUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxMVzFoY0hNdFlXTmpiM1Z1ZENJS0lDQnlaWE52ZFhKalpWOW5j
+        bTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExt
+        NWhiV1VLSUNCemEzVmZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE14SWdvS0lDQjBZV2R6SUQw
+        Z2V3b2dJQ0FnWlc1MmFYSnZibTFsYm5RZ1BTQWlWR1Z6ZENJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwQklFMWhjSE1nUVdOamIzVnVkQ0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRndjMTloWTJOdmRXNTBMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

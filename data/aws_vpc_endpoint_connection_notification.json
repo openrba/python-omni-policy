@@ -1,0 +1,47 @@
+{
+    "aws_vpc_endpoint_connection_notification": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpc_endpoint_connection_notification",
+        "description": "Provides a VPC Endpoint connection notification resource.",
+        "arguments": {
+            "vpc_endpoint_service_id": {
+                "description": "The ID of the VPC Endpoint Service to receive notifications for.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_endpoint_id": {
+                "description": "The ID of the VPC Endpoint to receive notifications for.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_notification_arn": {
+                "description": "The ARN of the SNS topic for the notifications.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_events": {
+                "description": "One or more endpoint [events](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html#API_CreateVpcEndpointConnectionNotification_RequestParameters",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the VPC connection notification."
+            },
+            "state": {
+                "description": "The state of the notification."
+            },
+            "notification_type": {
+                "description": "The type of notification."
+            }
+        },
+        "timeouts": {}
+    }
+}

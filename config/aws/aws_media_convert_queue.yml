@@ -1,0 +1,46 @@
+aws_media_convert_queue:
+    status: HOLD
+    subcategory: MediaConvert
+    layout: aws
+    page_title: 'AWS: aws_media_convert_queue'
+    description: Provides an AWS Elemental MediaConvert Queue.
+    arguments:
+        name:
+            description: A unique identifier describing the queue
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the queue
+            required: false
+            policy: ''
+            notes: ''
+        pricing_plan:
+            description: Specifies whether the pricing plan for the queue is on-demand
+                or reserved. Valid values are `ON_DEMAND` or `RESERVED`. Default to
+                `ON_DEMAND`.
+            required: false
+            policy: ''
+            notes: ''
+        reservation_plan_settings:
+            description: A detail pricing plan of the  reserved queue. See below.
+            required: false
+            policy: ''
+            notes: ''
+        status:
+            description: A status of the queue. Valid values are `ACTIVE` or `RESERVED`.
+                Default to `PAUSED`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The same as `name`
+        arn:
+            description: The Arn of the queue
+    timeouts: {}

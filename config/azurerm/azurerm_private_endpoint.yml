@@ -1,0 +1,62 @@
+azurerm_private_endpoint:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_private_endpoint'
+    description: Manages a Private Endpoint.
+    arguments:
+        name:
+            description: Specifies the Name of the Private Service Connection. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the Name of the Resource Group within which the
+                Private Endpoint should exist. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The supported Azure location where the resource exists. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the Subnet from which Private IP Addresses will
+                be allocated for this Private Endpoint. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        private_service_connection:
+            description: A `private_service_connection` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        is_manual_connection:
+            description: Does the Private Endpoint require Manual Approval from the
+                remote resource owner? Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: If you are trying to connect the Private Endpoint to a remote resource
+                without having the correct RBAC permissions on the remote resource
+                set this value to `true`.
+        private_connection_resource_id:
+            description: The ID of the Private Link Enabled Remote Resource which
+                this Private Endpoint should be connected to. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subresource_names:
+            description: A list of subresource names which the Private Endpoint is
+                able to connect to. `subresource_names` corresponds to `group_id`.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

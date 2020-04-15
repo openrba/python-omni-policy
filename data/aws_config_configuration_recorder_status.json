@@ -1,0 +1,25 @@
+{
+    "aws_config_configuration_recorder_status": {
+        "status": "HOLD",
+        "subcategory": "Config",
+        "layout": "aws",
+        "page_title": "AWS: aws_config_configuration_recorder_status",
+        "description": "Manages status of an AWS Config Configuration Recorder.",
+        "arguments": {
+            "name": {
+                "description": "The name of the recorder",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "is_enabled": {
+                "description": "Whether the configuration recorder should be enabled or disabled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

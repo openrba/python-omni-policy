@@ -1,0 +1,114 @@
+azurerm_dev_test_policy:
+    status: HOLD
+    subcategory: Dev Test
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_dev_test_policy'
+    description: Manages a Policy within a Dev Test Policy Set.
+    arguments:
+        name:
+            description: Specifies the name of the Dev Test Policy. Possible values
+                are `GalleryImage`, `LabPremiumVmCount`, `LabTargetCost`, `LabVmCount`,
+                `LabVmSize`, `UserOwnedLabPremiumVmCount`, `UserOwnedLabVmCount` and
+                `UserOwnedLabVmCountInSubnet`. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        policy_set_name:
+            description: Specifies the name of the Policy Set within the Dev Test
+                Lab where this policy should be created. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        lab_name:
+            description: Specifies the name of the Dev Test Lab in which the Policy
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Dev Test Lab
+                resource exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the Dev Test
+                Lab exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description for the Policy.
+            required: false
+            policy: ''
+            notes: ''
+        evaluator_type:
+            description: 'The Evaluation Type used for this Policy. Possible values
+                include: ''AllowedValuesPolicy'', ''MaxValuePolicy''. Changing this
+                forces a new resource to be created.'
+            required: true
+            policy: ''
+            notes: ''
+        threshold:
+            description: The Threshold for this Policy.
+            required: true
+            policy: ''
+            notes: ''
+        fact_data:
+            description: The Fact Data for this Policy.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Dev Test Policy.
+    timeouts:
+        create:
+            description: Used when creating the DevTest Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the DevTest Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the DevTest Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the DevTest Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMlJsZGw5
+        MFpYTjBYMnhoWWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVdFpHVjJkR1Z6ZEd4aFlpSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENnb2dJSFJoWjNNZ1BTQjdDaUFnSUNBaVUzbGtibVY1
+        SWlBOUlDSkJkWE4wY21Gc2FXRWlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWta
+        WFpmZEdWemRGOXdiMnhwWTNraUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBOUlDSk1ZV0pXYlVOdmRXNTBJZ29nSUhCdmJHbGplVjl6WlhSZmJtRnRaU0FnSUNB
+        Z1BTQWlaR1ZtWVhWc2RDSUtJQ0JzWVdKZmJtRnRaU0FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5
+        YlY5a1pYWmZkR1Z6ZEY5c1lXSXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2NtVnpiM1Z5WTJWZlozSnZk
+        WEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnWm1GamRGOWtZWFJoSUNBZ0lDQWdJQ0FnSUNBOUlDSWlDaUFnZEdoeVpYTm9iMnhrSUNB
+        Z0lDQWdJQ0FnSUNBOUlDSTVPVGtpQ2lBZ1pYWmhiSFZoZEc5eVgzUjVjR1VnSUNBZ0lDQTlJQ0pO
+        WVhoV1lXeDFaVkJ2YkdsamVTSUtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lDSkJZMk5sY0hSaGJtTmxJ
+        aUE5SUNKVVpYTjBJZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwRVpYWWdWR1Z6ZENCUWIyeHBZMmxsY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHVjJYM1JsYzNSZmNHOXNhV041TG1oMGJXd3ViV0Z5YTJSdmQyND0=

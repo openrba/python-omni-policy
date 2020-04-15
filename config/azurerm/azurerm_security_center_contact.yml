@@ -1,0 +1,62 @@
+azurerm_security_center_contact:
+    status: HOLD
+    subcategory: Security Center
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_security_center_contact'
+    description: Manages the subscription's Security Center Contact.
+    arguments:
+        email:
+            description: The email of the Security Center Contact.
+            required: true
+            policy: ''
+            notes: ''
+        phone:
+            description: The phone number of the Security Center Contact.
+            required: false
+            policy: ''
+            notes: ''
+        alert_notifications:
+            description: Whether to send security alerts notifications to the security
+                contact.
+            required: true
+            policy: ''
+            notes: ''
+        alerts_to_admins:
+            description: Whether to send security alerts notifications to subscription
+                admins.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Security Center Contact ID.
+    timeouts:
+        create:
+            description: Used when creating the Security Center Contact.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Security Center Contact.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Security Center Contact.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Security Center Contact.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNObFkzVnlhWFI1WDJObGJuUmxjbDlqYjI1MFlXTjBJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHVnRZV2xzSUQwZ0ltTnZiblJoWTNSQVpYaGhiWEJzWlM1amIy
+        MGlDaUFnY0dodmJtVWdQU0FpS3pFdE5UVTFMVFUxTlMwMU5UVTFJZ29LSUNCaGJHVnlkRjl1YjNS
+        cFptbGpZWFJwYjI1eklEMGdkSEoxWlFvZ0lHRnNaWEowYzE5MGIxOWhaRzFwYm5NZ0lDQWdQU0Iw
+        Y25WbENuMEs=
+    import: !!binary |
+        Q2dwVWFHVWdZMjl1ZEdGamRDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnla
+        WE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVmpkWEpwZEhsZlkyVnVkR1Z5WDJOdmJuUmhZM1F1YldGeWEyUnZkMjQ9

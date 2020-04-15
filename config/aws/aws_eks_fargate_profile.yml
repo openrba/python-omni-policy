@@ -1,0 +1,49 @@
+aws_eks_fargate_profile:
+    status: HOLD
+    subcategory: EKS
+    layout: aws
+    page_title: 'AWS: aws_eks_fargate_profile'
+    description: Manages an EKS Fargate Profile
+    arguments:
+        cluster_name:
+            description: Name of the EKS Cluster.
+            required: true
+            policy: ''
+            notes: ''
+        fargate_profile_name:
+            description: Name of the EKS Fargate Profile.
+            required: true
+            policy: ''
+            notes: ''
+        pod_execution_role_arn:
+            description: Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        selector:
+            description: Configuration block(s
+            required: true
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: 'Identifiers of private EC2 Subnets to associate with the
+                EKS Fargate Profile. These subnets must have the following resource
+                tag: `kubernetes.io/cluster/CLUSTER_NAME` (where `CLUSTER_NAME` is
+                replaced with the name of the EKS Cluster).'
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: Amazon Resource Name (ARN) of the EKS Fargate Profile.
+        id:
+            description: EKS Cluster name and EKS Fargate Profile name separated by
+                a colon (`:`).
+        status:
+            description: Status of the EKS Fargate Profile.
+    timeouts: {}

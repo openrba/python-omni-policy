@@ -1,0 +1,77 @@
+aws_sagemaker_model:
+    status: HOLD
+    subcategory: Sagemaker
+    layout: aws
+    page_title: 'AWS: aws_sagemaker_model'
+    description: Provides a SageMaker model resource.
+    arguments:
+        name:
+            description: The name of the model (must be unique). If omitted, Terraform
+                will assign a random, unique name.
+            required: false
+            policy: ''
+            notes: ''
+        primary_container:
+            description: The primary docker image containing inference code that is
+                used when the model is deployed for predictions.  If not specified,
+                the `container` argument is required. Fields are documented below.
+            required: false
+            policy: ''
+            notes: ''
+        execution_role_arn:
+            description: A role that SageMaker can assume to access model artifacts
+                and docker images for deployment.
+            required: true
+            policy: ''
+            notes: ''
+        container:
+            description: '-  Specifies containers in the inference pipeline. If not
+                specified, the `primary_container` argument is required. Fields are
+                documented below.'
+            required: false
+            policy: ''
+            notes: ''
+        enable_network_isolation:
+            description: '- Isolates the model container. No inbound or outbound network
+                calls can be made to or from the model container.'
+            required: false
+            policy: ''
+            notes: ''
+        vpc_config:
+            description: '- Specifies the VPC that you want your model to connect
+                to. VpcConfig is used in hosting services and in batch transform.'
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        image:
+            description: The registry path where the inference code image is stored
+                in Amazon ECR.
+            required: true
+            policy: ''
+            notes: ''
+        model_data_url:
+            description: The URL for the S3 location where model artifacts are stored.
+            required: false
+            policy: ''
+            notes: ''
+        container_hostname:
+            description: The DNS host name for the container.
+            required: false
+            policy: ''
+            notes: ''
+        environment:
+            description: Environment variables for the Docker container.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        name:
+            description: The name of the model.
+        arn:
+            description: The Amazon Resource Name (ARN) assigned by AWS to this model.
+    timeouts: {}

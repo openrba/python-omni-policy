@@ -1,0 +1,128 @@
+{
+    "azurerm_mssql_elasticpool": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_mssql_elasticpool",
+        "description": "Manages a SQL Elastic Pool.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either `vCore` based `tier` + `family` pattern (e.g. GP_Gen4, BC_Gen5",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the elastic pool. This must be the same as the resource group of the underlying SQL server.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "The name of the SQL Server on which to create the elastic pool. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "A `sku` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "per_database_settings": {
+                "description": "A `per_database_settings` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_size_gb": {
+                "description": "The max data size of the elastic pool in gigabytes. Conflicts with `max_size_bytes`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_size_bytes": {
+                "description": "The max data size of the elastic pool in bytes. Conflicts with `max_size_gb`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_redundant": {
+                "description": "Whether or not this elastic pool is zone redundant. `tier` needs to be `Premium` for `DTU` based  or `BusinessCritical` for `vCore` based `sku`. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "capacity": {
+                "description": "The scale up/out capacity, representing server's compute units. For more information see the documentation for your Elasticpool configuration: [vCore-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tier": {
+                "description": "The tier of the particular SKU. Possible values are `GeneralPurpose`, `BusinessCritical`, `Basic`, `Standard`, or `Premium`. For more information see the documentation for your Elasticpool configuration: [vCore-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "family": {
+                "description": "The `family` of hardware `Gen4` or `Gen5`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "min_capacity": {
+                "description": "The minimum capacity all databases are guaranteed.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_capacity": {
+                "description": "The maximum capacity any one database can consume.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the MS SQL Elastic Pool."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the MS SQL Elastic Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the MS SQL Elastic Pool.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the MS SQL Elastic Pool.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the MS SQL Elastic Pool.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

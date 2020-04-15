@@ -1,0 +1,29 @@
+aws_sagemaker_endpoint:
+    status: HOLD
+    subcategory: Sagemaker
+    layout: aws
+    page_title: 'AWS: aws_sagemaker_endpoint'
+    description: Provides a SageMaker Endpoint resource.
+    arguments:
+        endpoint_config_name:
+            description: The name of the endpoint configuration to use.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the endpoint. If omitted, Terraform will assign
+                a random, unique name.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Amazon Resource Name (ARN) assigned by AWS to this endpoint.
+        name:
+            description: The name of the endpoint.
+    timeouts: {}

@@ -1,0 +1,116 @@
+aws_sns_topic:
+    status: HOLD
+    subcategory: SNS
+    layout: aws
+    page_title: 'AWS: aws_sns_topic'
+    description: Provides an SNS topic resource.
+    arguments:
+        name:
+            description: The friendly name for the SNS topic. By default generated
+                by Terraform.
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: The friendly name for the SNS topic. Conflicts with `name`.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name for the SNS topic
+            required: false
+            policy: ''
+            notes: ''
+        policy:
+            description: The fully-formed AWS policy as JSON. For more information
+                about building AWS IAM policy documents with Terraform, see the [AWS
+                IAM Policy Document Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
+            required: false
+            policy: ''
+            notes: ''
+        delivery_policy:
+            description: The SNS delivery policy. More on [AWS documentation](https://docs.aws.amazon.com/sns/latest/dg/DeliveryPolicies.html)
+            required: false
+            policy: ''
+            notes: ''
+        application_success_feedback_role_arn:
+            description: The IAM role permitted to receive success feedback for this
+                topic
+            required: false
+            policy: ''
+            notes: ''
+        application_success_feedback_sample_rate:
+            description: Percentage of success to sample
+            required: false
+            policy: ''
+            notes: ''
+        application_failure_feedback_role_arn:
+            description: IAM role for failure feedback
+            required: false
+            policy: ''
+            notes: ''
+        http_success_feedback_role_arn:
+            description: The IAM role permitted to receive success feedback for this
+                topic
+            required: false
+            policy: ''
+            notes: ''
+        http_success_feedback_sample_rate:
+            description: Percentage of success to sample
+            required: false
+            policy: ''
+            notes: ''
+        http_failure_feedback_role_arn:
+            description: IAM role for failure feedback
+            required: false
+            policy: ''
+            notes: ''
+        kms_master_key_id:
+            description: The ID of an AWS-managed customer master key (CMK
+            required: false
+            policy: ''
+            notes: ''
+        lambda_success_feedback_role_arn:
+            description: The IAM role permitted to receive success feedback for this
+                topic
+            required: false
+            policy: ''
+            notes: ''
+        lambda_success_feedback_sample_rate:
+            description: Percentage of success to sample
+            required: false
+            policy: ''
+            notes: ''
+        lambda_failure_feedback_role_arn:
+            description: IAM role for failure feedback
+            required: false
+            policy: ''
+            notes: ''
+        sqs_success_feedback_role_arn:
+            description: The IAM role permitted to receive success feedback for this
+                topic
+            required: false
+            policy: ''
+            notes: ''
+        sqs_success_feedback_sample_rate:
+            description: Percentage of success to sample
+            required: false
+            policy: ''
+            notes: ''
+        sqs_failure_feedback_role_arn:
+            description: IAM role for failure feedback
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ARN of the SNS topic
+        arn:
+            description: The ARN of the SNS topic, as a more obvious property (clone
+                of id)
+    timeouts: {}

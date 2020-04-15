@@ -1,0 +1,157 @@
+azurerm_stream_analytics_output_blob:
+    status: HOLD
+    subcategory: Stream Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_stream_analytics_output_blob'
+    description: Manages a Stream Analytics Output to Blob Storage.
+    arguments:
+        name:
+            description: The name of the Stream Output. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Stream Analytics
+                Job exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        stream_analytics_job_name:
+            description: The name of the Stream Analytics Job. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        date_format:
+            description: The date format. Wherever `{date}` appears in `path_pattern`,
+                the value of this property is used as the date format instead.
+            required: true
+            policy: ''
+            notes: ''
+        path_pattern:
+            description: The blob path pattern. Not a regular expression. It represents
+                a pattern against which blob names will be matched to determine whether
+                or not they should be included as input or output to the job.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_name:
+            description: The name of the Storage Account.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_key:
+            description: The Access Key which should be used to connect to this Storage
+                Account.
+            required: true
+            policy: ''
+            notes: ''
+        storage_container_name:
+            description: The name of the Container within the Storage Account.
+            required: true
+            policy: ''
+            notes: ''
+        time_format:
+            description: The time format. Wherever `{time}` appears in `path_pattern`,
+                the value of this property is used as the time format instead.
+            required: true
+            policy: ''
+            notes: ''
+        serialization:
+            description: A `serialization` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The serialization format used for outgoing data streams.
+                Possible values are `Avro`, `Csv` and `Json`.
+            required: true
+            policy: ''
+            notes: ''
+        encoding:
+            description: The encoding of the incoming data in the case of input and
+                the encoding of outgoing data in the case of output. It currently
+                can only be set to `UTF8`.
+            required: false
+            policy: ''
+            notes: This is required when `type` is set to `Csv` or `Json`.
+        field_delimiter:
+            description: The delimiter that will be used to separate comma-separated
+                value (CSV
+            required: false
+            policy: ''
+            notes: This is required when `type` is set to `Csv`.
+        format:
+            description: Specifies the format of the JSON the output will be written
+                in. Possible values are `Array` and `LineSeparated`.
+            required: false
+            policy: ''
+            notes: This is Required and can only be specified when `type` is set to
+                `Json`.
+    attributes:
+        id:
+            description: The ID of the Stream Analytics Output Blob Storage.
+    timeouts:
+        create:
+            description: Used when creating the Stream Analytics Output Blob Storage.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Stream Analytics Output Blob Storage.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Stream Analytics Output Blob Storage.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Stream Analytics Output Blob Storage.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQTlJQ0psZUdGdGNHeGxMWEpsYzI5MWNtTmxjeUlLZlFvS1pHRjBZU0FpWVhwMWNt
+        VnliVjl6ZEhKbFlXMWZZVzVoYkhsMGFXTnpYMnB2WWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGFtOWlJZ29nSUhKbGMyOTFjbU5s
+        WDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZEc5eVlXZGxYMkZqWTI5MWJu
+        UWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0ltVjRZVzF3YkdWellTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBZ0lDQWdQU0Jr
+        WVhSaExtRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdi
+        RzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdaR0YwWVM1aGVuVnlaWEp0WDNKbGMy
+        OTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0JoWTJOdmRXNTBYM1JwWlhJ
+        Z0lDQWdJQ0FnSUNBZ0lDQWdQU0FpVTNSaGJtUmhjbVFpQ2lBZ1lXTmpiM1Z1ZEY5eVpYQnNhV05o
+        ZEdsdmJsOTBlWEJsSUQwZ0lreFNVeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmMzUnZj
+        bUZuWlY5amIyNTBZV2x1WlhJaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVWlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNB
+        Z0lEMGdaR0YwWVM1aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0
+        WlFvZ0lITjBiM0poWjJWZllXTmpiM1Z1ZEY5dVlXMWxJQ0E5SUdGNmRYSmxjbTFmYzNSdmNtRm5a
+        VjloWTJOdmRXNTBMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHTnZiblJoYVc1bGNsOWhZMk5sYzNOZmRI
+        bHdaU0E5SUNKd2NtbDJZWFJsSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXpkSEpsWVcx
+        ZllXNWhiSGwwYVdOelgyOTFkSEIxZEY5aWJHOWlJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1Vn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWliM1YwY0hWMExYUnZMV0pzYjJJdGMzUnZj
+        bUZuWlNJS0lDQnpkSEpsWVcxZllXNWhiSGwwYVdOelgycHZZbDl1WVcxbElEMGdaR0YwWVM1aGVu
+        VnlaWEp0WDNOMGNtVmhiVjloYm1Gc2VYUnBZM05mYW05aUxtVjRZVzF3YkdVdWJtRnRaUW9nSUhK
+        bGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0FnUFNCa1lYUmhMbUY2ZFhKbGNtMWZjM1J5
+        WldGdFgyRnVZV3g1ZEdsamMxOXFiMkl1WlhoaGJYQnNaUzV5WlhOdmRYSmpaVjluY205MWNGOXVZ
+        VzFsQ2lBZ2MzUnZjbUZuWlY5aFkyTnZkVzUwWDI1aGJXVWdJQ0FnSUNBOUlHRjZkWEpsY20xZmMz
+        UnZjbUZuWlY5aFkyTnZkVzUwTG1WNFlXMXdiR1V1Ym1GdFpRb2dJSE4wYjNKaFoyVmZZV05qYjNW
+        dWRGOXJaWGtnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRDNWxlR0Z0
+        Y0d4bExuQnlhVzFoY25sZllXTmpaWE56WDJ0bGVRb2dJSE4wYjNKaFoyVmZZMjl1ZEdGcGJtVnlY
+        MjVoYldVZ0lDQWdQU0JoZW5WeVpYSnRYM04wYjNKaFoyVmZZMjl1ZEdGcGJtVnlMbVY0WVcxd2JH
+        VXVibUZ0WlFvZ0lIQmhkR2hmY0dGMGRHVnliaUFnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWljMjl0WlMx
+        d1lYUjBaWEp1SWdvZ0lHUmhkR1ZmWm05eWJXRjBJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWllWGw1
+        ZVMxTlRTMWtaQ0lLSUNCMGFXMWxYMlp2Y20xaGRDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lraElJ
+        Z29LSUNCelpYSnBZV3hwZW1GMGFXOXVJSHNLSUNBZ0lIUjVjR1VnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SkRjM1lpQ2lBZ0lDQmxibU52WkdsdVp5QWdJQ0FnSUNBZ1BTQWlWVlJHT0NJS0lDQWdJR1pwWld4
+        a1gyUmxiR2x0YVhSbGNpQTlJQ0lzSWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwVGRISmxZVzBnUVc1aGJIbDBhV056SUU5MWRIQjFkSE1nZEc4Z1FteHZZaUJUZEc5eVlXZGxJ
+        R05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pT
+        NW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnlaV0Z0WDJGdVlXeDVkR2xqYzE5dmRYUndkWFJmWW14dllpNW9kRzFzTG0x
+        aGNtdGtiM2R1

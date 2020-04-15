@@ -1,0 +1,205 @@
+azurerm_cosmosdb_account:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_account'
+    description: Manages a CosmosDB (formally DocumentDB) Account.
+    arguments:
+        name:
+            description: The capability to enable - Possible values are `EnableAggregationPipeline`,
+                `EnableCassandra`, `EnableGremlin`,`EnableMongo`, `EnableTable`, `MongoDBv3.4`,
+                and `mongoEnableDocLevelTTL`.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the CosmosDB Account
+                is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The name of the Azure region to host replicated data.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        offer_type:
+            description: Specifies the Offer Type to use for this CosmosDB Account
+                - currently this can only be set to `Standard`.
+            required: true
+            policy: ''
+            notes: ''
+        kind:
+            description: Specifies the Kind of CosmosDB to create - possible values
+                are `GlobalDocumentDB` and `MongoDB`. Defaults to `GlobalDocumentDB`.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        consistency_policy:
+            description: Specifies a `consistency_policy` resource, used to define
+                the consistency policy for this CosmosDB account.
+            required: true
+            policy: ''
+            notes: ''
+        geo_location:
+            description: Specifies a `geo_location` resource, used to define where
+                data should be replicated with the `failover_priority` 0 specifying
+                the primary location.
+            required: true
+            policy: ''
+            notes: ''
+        ip_range_filter:
+            description: 'CosmosDB Firewall Support: This value specifies the set
+                of IP addresses or IP address ranges in CIDR form to be included as
+                the allowed list of client IP''s for a given database account. IP
+                addresses/ranges must be comma separated and must not contain any
+                spaces.'
+            required: false
+            policy: ''
+            notes: ''
+        enable_automatic_failover:
+            description: Enable automatic fail over for this Cosmos DB account.
+            required: false
+            policy: ''
+            notes: ''
+        capabilities:
+            description: The capabilities which should be enabled for this Cosmos
+                DB account. Possible values are `EnableAggregationPipeline`, `EnableCassandra`,
+                `EnableGremlin`, `EnableTable`, `MongoDBv3.4`, and `mongoEnableDocLevelTTL`.
+            required: false
+            policy: ''
+            notes: ''
+        is_virtual_network_filter_enabled:
+            description: Enables virtual network filtering for this Cosmos DB account.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network_rule:
+            description: Specifies a `virtual_network_rules` resource, used to define
+                which subnets are allowed to access this CosmosDB account.
+            required: false
+            policy: ''
+            notes: ''
+        enable_multiple_write_locations:
+            description: Enable multi-master support for this Cosmos DB account.
+            required: false
+            policy: ''
+            notes: ''
+        consistency_level:
+            description: The Consistency Level to use for this CosmosDB Account -
+                can be either `BoundedStaleness`, `Eventual`, `Session`, `Strong`
+                or `ConsistentPrefix`.
+            required: true
+            policy: ''
+            notes: ''
+        max_interval_in_seconds:
+            description: When used with the Bounded Staleness consistency level, this
+                value represents the time amount of staleness (in seconds
+            required: false
+            policy: ''
+            notes: ''
+        max_staleness_prefix:
+            description: "When used with the Bounded Staleness consistency level,\
+                \ this value represents the number of stale requests tolerated. Accepted\
+                \ range for this value is `10` \u2013 `2147483647`. Defaults to `100`.\
+                \ Required when `consistency_level` is set to `BoundedStaleness`."
+            required: false
+            policy: ''
+            notes: ''
+        prefix:
+            description: The string used to generate the document endpoints for this
+                region. If not specified it defaults to `${cosmosdb_account.name}-${location}`.
+                Changing this causes the location to be deleted and re-provisioned
+                and cannot be changed for the location with failover priority `0`.
+            required: false
+            policy: ''
+            notes: ''
+        failover_priority:
+            description: The failover priority of the region. A failover priority
+                of `0` indicates a write region. The maximum value for a failover
+                priority = (total number of regions - 1). Failover priority values
+                must be unique for each of the regions in which the database account
+                exists. Changing this causes the location to be re-provisioned and
+                cannot be changed for the location with failover priority `0`.
+            required: true
+            policy: ''
+            notes: ''
+        id:
+            description: The ID of the virtual network subnet.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The CosmosDB Account ID.
+        endpoint:
+            description: The endpoint used to connect to the CosmosDB account.
+        read_endpoints:
+            description: A list of read endpoints available for this CosmosDB account.
+        write_endpoints:
+            description: A list of write endpoints available for this CosmosDB account.
+        primary_master_key:
+            description: The Primary master key for the CosmosDB Account.
+        secondary_master_key:
+            description: The Secondary master key for the CosmosDB Account.
+        primary_readonly_master_key:
+            description: The Primary read-only master Key for the CosmosDB Account.
+        secondary_readonly_master_key:
+            description: The Secondary read-only master key for the CosmosDB Account.
+        connection_strings:
+            description: A list of connection strings available for this CosmosDB
+                account. If the kind is `GlobalDocumentDB`, this will be empty.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB Account.
+            required: false
+            timeout: 180
+        update:
+            description: Used when updating the CosmosDB Account.
+            required: false
+            timeout: 180
+        read:
+            description: Used when retrieving the CosmosDB Account.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB Account.
+            required: false
+            timeout: 180
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUhaaGNpNXlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxDaUFnYkc5allY
+        UnBiMjRnUFNCMllYSXVjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJHOWpZWFJwYjI0S2ZRb0tjbVZ6YjNW
+        eVkyVWdJbkpoYm1SdmJWOXBiblJsWjJWeUlpQWljbWtpSUhzS0lDQnRhVzRnUFNBeE1EQXdNQW9n
+        SUcxaGVDQTlJRGs1T1RrNUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMk52YzIxdmMyUmlY
+        MkZqWTI5MWJuUWlJQ0prWWlJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRH
+        WmxlQzFqYjNOdGIzTXRaR0l0Skh0eVlXNWtiMjFmYVc1MFpXZGxjaTV5YVM1eVpYTjFiSFI5SWdv
+        Z0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5
+        YjNWd0xuSm5MbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZk
+        WEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1Y21jdWJtRnRaUW9nSUc5bVptVnlYM1I1Y0dVZ0lD
+        QWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDaUFnYTJsdVpDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        OUlDSkhiRzlpWVd4RWIyTjFiV1Z1ZEVSQ0lnb0tJQ0JsYm1GaWJHVmZZWFYwYjIxaGRHbGpYMlpo
+        YVd4dmRtVnlJRDBnZEhKMVpRb0tJQ0JqYjI1emFYTjBaVzVqZVY5d2IyeHBZM2tnZXdvZ0lDQWdZ
+        Mjl1YzJsemRHVnVZM2xmYkdWMlpXd2dJQ0FnSUNBZ1BTQWlRbTkxYm1SbFpGTjBZV3hsYm1WemN5
+        SUtJQ0FnSUcxaGVGOXBiblJsY25aaGJGOXBibDl6WldOdmJtUnpJRDBnTVRBS0lDQWdJRzFoZUY5
+        emRHRnNaVzVsYzNOZmNISmxabWw0SUNBZ0lEMGdNakF3Q2lBZ2ZRb0tJQ0JuWlc5ZmJHOWpZWFJw
+        YjI0Z2V3b2dJQ0FnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnUFNCMllYSXVabUZwYkc5MlpYSmZi
+        RzlqWVhScGIyNEtJQ0FnSUdaaGFXeHZkbVZ5WDNCeWFXOXlhWFI1SUQwZ01Rb2dJSDBLQ2lBZ1oy
+        VnZYMnh2WTJGMGFXOXVJSHNLSUNBZ0lIQnlaV1pwZUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJtWlhn
+        dFkyOXpiVzl6TFdSaUxTUjdjbUZ1Wkc5dFgybHVkR1ZuWlhJdWNta3VjbVZ6ZFd4MGZTMWpkWE4w
+        YjIxcFpDSUtJQ0FnSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZk
+        WEpqWlY5bmNtOTFjQzV5Wnk1c2IyTmhkR2x2YmdvZ0lDQWdabUZwYkc5MlpYSmZjSEpwYjNKcGRI
+        a2dQU0F3Q2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwRGIzTnRiM05FUWlCQlkyTnZkVzUwY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZllXTmpiM1Z1ZEM1b2RHMXNMbTFoY210a2IzZHU=

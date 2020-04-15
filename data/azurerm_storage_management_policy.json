@@ -1,0 +1,62 @@
+{
+    "azurerm_storage_management_policy": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_management_policy",
+        "description": "Manages an Azure Storage Account Management Policy.",
+        "arguments": {
+            "storage_account_id": {
+                "description": "Specifies the id of the storage account to apply the management policy to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule": {
+                "description": "A `rule` block as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "A rule name can contain any combination of alpha numeric characters. Rule name is case-sensitive. It must be unique within a policy.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": " Boolean to specify whether the rule is enabled.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Storage Account Management Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Account Management Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Account Management Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Account Management Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Account Management Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

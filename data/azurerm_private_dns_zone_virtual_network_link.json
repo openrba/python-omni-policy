@@ -1,0 +1,74 @@
+{
+    "azurerm_private_dns_zone_virtual_network_link": {
+        "status": "HOLD",
+        "subcategory": "Private DNS",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_private_dns_zone_virtual_network_link",
+        "description": "Manages a Private DNS Zone Virtual Network Link.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Private DNS Zone Virtual Network Link. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "private_dns_zone_name": {
+                "description": "The name of the Private DNS zone (without a terminating dot). Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the resource group where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_network_id": {
+                "description": "The Resource ID of the Virtual Network that should be linked to the DNS Zone. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "registration_enabled": {
+                "description": "Is auto-registration of virtual machine records in the virtual network in the Private DNS zone enabled? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Resource ID of the Private DNS Zone Virtual Network Link."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Private DNS Zone Virtual Network Link.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Private DNS Zone Virtual Network Link.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Private DNS Zone Virtual Network Link.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Private DNS Zone Virtual Network Link.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

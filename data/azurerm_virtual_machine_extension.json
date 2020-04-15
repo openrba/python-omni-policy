@@ -1,0 +1,92 @@
+{
+    "azurerm_virtual_machine_extension": {
+        "status": "HOLD",
+        "subcategory": "Compute",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_virtual_machine_extension",
+        "description": "Manages a Virtual Machine Extension to provide post deployment\nconfiguration and run automated tasks.",
+        "arguments": {
+            "name": {
+                "description": "The name of the virtual machine extension peering. Changing",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_machine_id": {
+                "description": "The ID of the Virtual Machine. Changing this forces a new resource to be created",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "publisher": {
+                "description": "The publisher of the extension, available publishers",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of extension, available types for a publisher can",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type_handler_version": {
+                "description": "Specifies the version of the extension to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_upgrade_minor_version": {
+                "description": "Specifies if the platform deploys",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "settings": {
+                "description": "The settings passed to the extension, these are",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protected_settings": {
+                "description": "The protected_settings passed to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Virtual Machine Extension."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Virtual Machine Extension.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Virtual Machine Extension.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Virtual Machine Extension.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Virtual Machine Extension.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

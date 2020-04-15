@@ -1,0 +1,43 @@
+{
+    "aws_s3_bucket_public_access_block": {
+        "status": "HOLD",
+        "subcategory": "S3",
+        "layout": "aws",
+        "page_title": "AWS: aws_s3_bucket_public_access_block",
+        "description": "Manages S3 bucket-level Public Access Block Configuration",
+        "arguments": {
+            "bucket": {
+                "description": "S3 Bucket to which this Public Access Block configuration should be applied.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "block_public_acls": {
+                "description": "Whether Amazon S3 should block public ACLs for this bucket. Defaults to `false`. Enabling this setting does not affect existing policies or ACLs. When set to `true` causes the following behavior:",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "block_public_policy": {
+                "description": "Whether Amazon S3 should block public bucket policies for this bucket. Defaults to `false`. Enabling this setting does not affect the existing bucket policy. When set to `true` causes Amazon S3 to:",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ignore_public_acls": {
+                "description": "Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to `false`. Enabling this setting does not affect the persistence of any existing ACLs and doesn't prevent new public ACLs from being set. When set to `true` causes Amazon S3 to:",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "restrict_public_buckets": {
+                "description": "Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to `false`. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to `true`:",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,20 @@
+aws_organizations_policy_attachment:
+    status: HOLD
+    subcategory: Organizations
+    layout: aws
+    page_title: 'AWS: aws_organizations_policy_attachment'
+    description: Provides a resource to attach an AWS Organizations policy to an organization
+        account, root, or unit.
+    arguments:
+        policy_id:
+            description: The unique identifier (ID
+            required: true
+            policy: ''
+            notes: ''
+        target_id:
+            description: The unique identifier (ID
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

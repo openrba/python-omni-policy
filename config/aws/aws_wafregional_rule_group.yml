@@ -1,0 +1,33 @@
+aws_wafregional_rule_group:
+    status: HOLD
+    subcategory: WAF Regional
+    layout: aws
+    page_title: 'AWS: aws_wafregional_rule_group'
+    description: Provides a AWS WAF Regional Rule Group resource.
+    arguments:
+        name:
+            description: A friendly name of the rule group
+            required: true
+            policy: ''
+            notes: ''
+        metric_name:
+            description: A friendly name for the metrics from the rule group
+            required: true
+            policy: ''
+            notes: ''
+        activated_rule:
+            description: A list of activated rules, see below
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the WAF Regional Rule Group.
+        arn:
+            description: The ARN of the WAF Regional Rule Group.
+    timeouts: {}

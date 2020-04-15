@@ -1,0 +1,89 @@
+{
+    "aws_budgets_budget": {
+        "status": "HOLD",
+        "subcategory": "Budgets",
+        "layout": "aws",
+        "page_title": "AWS: aws_budgets_budget",
+        "description": "Provides a budgets budget resource.",
+        "arguments": {
+            "account_id": {
+                "description": "The ID of the target account for budget. Will use current user's account_id by default if omitted.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of a budget. Unique within accounts.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name_prefix": {
+                "description": "The prefix of the name of a budget. Unique within accounts.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "budget_type": {
+                "description": "Whether this budget tracks monetary cost or usage.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cost_filters": {
+                "description": "Map of [CostFilters](#CostFilters",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cost_types": {
+                "description": "Object containing [CostTypes](#CostTypes",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "limit_amount": {
+                "description": "The amount of cost or usage being measured for a budget.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "limit_unit": {
+                "description": "The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "time_period_end": {
+                "description": "The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "time_period_start": {
+                "description": "The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "time_unit": {
+                "description": "The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "notification": {
+                "description": "Object containing [Budget Notifications](#BudgetNotification). Can be used multiple times to define more than one budget notification",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "id of resource."
+            }
+        },
+        "timeouts": {}
+    }
+}

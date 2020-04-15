@@ -1,0 +1,79 @@
+azurerm_logic_app_action_custom:
+    status: HOLD
+    subcategory: Logic App
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_logic_app_action_custom'
+    description: Manages a Custom Action within a Logic App Workflow
+    arguments:
+        name:
+            description: Specifies the name of the HTTP Action to be created within
+                the Logic App Workflow. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: This name must be unique across all Actions within the Logic App
+                Workflow.
+        logic_app_id:
+            description: Specifies the ID of the Logic App Workflow. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        body:
+            description: Specifies the JSON Blob defining the Body of this Custom
+                Action.
+            required: true
+            policy: ''
+            notes: To make the Action more readable, you may wish to consider using
+                HEREDOC syntax (as shown above) or [the `local_file` resource](https://www.terraform.io/docs/providers/local/d/file.html)
+                to load the schema from a file on disk.
+    attributes:
+        id:
+            description: The ID of the Action within the Logic App Workflow.
+    timeouts:
+        create:
+            description: Used when creating the Logic App Custom Action.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Logic App Custom Action.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Logic App Custom Action.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Logic App Custom Action.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbmR2Y210bWJHOTNMWEpsYzI5MWNtTmxjeUlLSUNCc2Iy
+        TmhkR2x2YmlBOUlDSkZZWE4wSUZWVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzYjJk
+        cFkxOWhjSEJmZDI5eWEyWnNiM2NpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKM2IzSnJabXh2ZHpFaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJn
+        b2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJk
+        eWIzVndMbVY0WVcxd2JHVXVibUZ0WlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXNiMmRw
+        WTE5aGNIQmZZV04wYVc5dVgyTjFjM1J2YlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJ
+        Q0FnSUNBZ1BTQWlaWGhoYlhCc1pTMWhZM1JwYjI0aUNpQWdiRzluYVdOZllYQndYMmxrSUQwZ1lY
+        cDFjbVZ5YlY5c2IyZHBZMTloY0hCZmQyOXlhMlpzYjNjdVpYaGhiWEJzWlM1cFpBb0tJQ0JpYjJS
+        NUlEMGdQRHhDVDBSWkNuc0tJQ0FnSUNKa1pYTmpjbWx3ZEdsdmJpSTZJQ0pCSUhaaGNtbGhZbXhs
+        SUhSdklHTnZibVpwWjNWeVpTQjBhR1VnWVhWMGJ5QmxlSEJwY21GMGFXOXVJR0ZuWlNCcGJpQmtZ
+        WGx6TGlCRGIyNW1hV2QxY21Wa0lHbHVJRzVsWjJGMGFYWmxJRzUxYldKbGNpNGdSR1ZtWVhWc2RD
+        QnBjeUF0TXpBZ0tETXdJR1JoZVhNZ2IyeGtLUzRpTEFvZ0lDQWdJbWx1Y0hWMGN5STZJSHNLSUNB
+        Z0lDQWdJQ0FpZG1GeWFXRmliR1Z6SWpvZ1d3b2dJQ0FnSUNBZ0lDQWdJQ0I3Q2lBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FpYm1GdFpTSTZJQ0pGZUhCcGNtRjBhVzl1UVdkbFNXNUVZWGx6SWl3S0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNKMGVYQmxJam9nSWtsdWRHVm5aWElpTEFvZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSW5aaGJIVmxJam9nTFRNd0NpQWdJQ0FnSUNBZ0lDQWdJSDBLSUNBZ0lDQWdJQ0JkQ2lB
+        Z0lDQjlMQW9nSUNBZ0luSjFia0ZtZEdWeUlqb2dlMzBzQ2lBZ0lDQWlkSGx3WlNJNklDSkpibWww
+        YVdGc2FYcGxWbUZ5YVdGaWJHVWlDbjBLUWs5RVdRb0tmUW89
+    import: !!binary |
+        Q2dwTWIyZHBZeUJCY0hBZ1EzVnpkRzl0SUVGamRHbHZibk1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5hV05mWVhCd1gyRmpkR2x2Ymw5amRYTjBiMjB1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

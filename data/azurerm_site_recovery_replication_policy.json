@@ -1,0 +1,68 @@
+{
+    "azurerm_site_recovery_replication_policy": {
+        "status": "HOLD",
+        "subcategory": "Recovery Services",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_site_recovery_replication_policy",
+        "description": "Manages an Azure Site Recovery replication policy on Azure.",
+        "arguments": {
+            "name": {
+                "description": "The name of the network mapping.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Name of the resource group where the vault that should be updated is located.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recovery_vault_name": {
+                "description": "The name of the vault that should be updated.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "recovery_point_retention_in_minutes": {
+                "description": "The duration in minutes for which the recovery points need to be stored.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application_consistent_snapshot_frequency_in_minutes": {
+                "description": "Specifies the frequency(in minutes",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Site Recovery Replication Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Site Recovery Replication Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Site Recovery Replication Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Site Recovery Replication Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Site Recovery Replication Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

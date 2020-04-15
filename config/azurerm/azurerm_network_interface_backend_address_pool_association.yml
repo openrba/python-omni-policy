@@ -1,0 +1,112 @@
+azurerm_network_interface_backend_address_pool_association:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_interface_backend_address_pool_association'
+    description: Manages the association between a Network Interface and a Load Balancer's
+        Backend Address Pool.
+    arguments:
+        network_interface_id:
+            description: The ID of the Network Interface. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ip_configuration_name:
+            description: The Name of the IP Configuration within the Network Interface
+                which should be connected to the Backend Address Pool. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        backend_address_pool_id:
+            description: The ID of the Load Balancer Backend Address Pool which this
+                Network Interface which should be connected to. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The (Terraform specific) ID of the Association between the
+                Network Interface and the Load Balancers Backend Address Pool.
+    timeouts:
+        create:
+            description: Used when creating the association between the Network Interface
+                and the Load Balancers Backend Address Pool.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the association between the Network Interface
+                and the Load Balancers Backend Address Pool.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the association between the Network
+                Interface and the Load Balancers Backend Address Pool.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the association between the Network Interface
+                and the Load Balancers Backend Address Pool.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMakF2TVRZaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbWx1ZEdWeWJtRnNJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0IyYVhKMGRXRnNYMjVs
+        ZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lqRXdMakF1TWk0d0x6
+        STBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5d2RXSnNhV05mYVhBaUlDSmxlR0Z0Y0d4
+        bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYQnBjQ0lL
+        SUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpT
+        QTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWVd4
+        c2IyTmhkR2x2Ymw5dFpYUm9iMlFnSUNBOUlDSlRkR0YwYVdNaUNuMEtDbkpsYzI5MWNtTmxJQ0po
+        ZW5WeVpYSnRYMnhpSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaVpYaGhiWEJzWlMxc1lpSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lY
+        cDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21W
+        emIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1
+        WlhoaGJYQnNaUzV1WVcxbENnb2dJR1p5YjI1MFpXNWtYMmx3WDJOdmJtWnBaM1Z5WVhScGIyNGdl
+        d29nSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpY0hKcGJXRnllU0lLSUNBZ0lI
+        QjFZbXhwWTE5cGNGOWhaR1J5WlhOelgybGtJRDBnWVhwMWNtVnliVjl3ZFdKc2FXTmZhWEF1Wlho
+        aGJYQnNaUzVwWkFvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYkdKZlltRmphMlZ1
+        WkY5aFpHUnlaWE56WDNCdmIyd2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2NtVnpiM1Z5WTJWZlozSnZk
+        WEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnYkc5aFpHSmhiR0Z1WTJWeVgybGtJQ0FnSUNBOUlHRjZkWEpsY20xZmJHSXVaWGhoYlhC
+        c1pTNXBaQW9nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlZV05qZEdWemRIQnZiMndp
+        Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyNWxkSGR2Y210ZmFXNTBaWEptWVdObElpQWla
+        WGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pT
+        MXVhV01pQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNW
+        eVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3
+        WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRa
+        UW9LSUNCcGNGOWpiMjVtYVdkMWNtRjBhVzl1SUhzS0lDQWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUmxjM1JqYjI1bWFXZDFjbUYwYVc5dU1TSUtJQ0FnSUhO
+        MVltNWxkRjlwWkNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXpkV0p1
+        WlhRdVpYaGhiWEJzWlM1cFpBb2dJQ0FnY0hKcGRtRjBaVjlwY0Y5aFpHUnlaWE56WDJGc2JHOWpZ
+        WFJwYjI0Z1BTQWlSSGx1WVcxcFl5SUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgy
+        NWxkSGR2Y210ZmFXNTBaWEptWVdObFgySmhZMnRsYm1SZllXUmtjbVZ6YzE5d2IyOXNYMkZ6YzI5
+        amFXRjBhVzl1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVsZEhkdmNtdGZhVzUwWlhKbVlXTmxYMmxr
+        SUNBZ0lEMGdZWHAxY21WeWJWOXVaWFIzYjNKclgybHVkR1Z5Wm1GalpTNWxlR0Z0Y0d4bExtbGtD
+        aUFnYVhCZlkyOXVabWxuZFhKaGRHbHZibDl1WVcxbElDQWdQU0FpZEdWemRHTnZibVpwWjNWeVlY
+        UnBiMjR4SWdvZ0lHSmhZMnRsYm1SZllXUmtjbVZ6YzE5d2IyOXNYMmxrSUQwZ1lYcDFjbVZ5YlY5
+        c1lsOWlZV05yWlc1a1gyRmtaSEpsYzNOZmNHOXZiQzVsZUdGdGNHeGxMbWxrQ24wSw==
+    import: !!binary |
+        Q2dwQmMzTnZZMmxoZEdsdmJuTWdZbVYwZDJWbGJpQk9aWFIzYjNKcklFbHVkR1Z5Wm1GalpYTWdZ
+        VzVrSUV4dllXUWdRbUZzWVc1alpYSWdRbUZqYTJWdVpDQkJaR1J5WlhOeklGQnZiMnh6SUdOaGJp
+        QmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdv
+        Sw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5cGJuUmxjbVpoWTJWZlltRmphMlZ1WkY5aFpHUnlaWE56WDNC
+        dmIyeGZZWE56YjJOcFlYUnBiMjR1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

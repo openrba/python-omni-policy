@@ -1,0 +1,19 @@
+aws_ec2_transit_gateway_route_table_association:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_ec2_transit_gateway_route_table_association_table_association'
+    description: Manages an EC2 Transit Gateway Route Table association
+    arguments:
+        transit_gateway_attachment_id:
+            description: Identifier of EC2 Transit Gateway Attachment.
+            required: true
+            policy: ''
+            notes: ''
+        transit_gateway_route_table_id:
+            description: Identifier of EC2 Transit Gateway Route Table.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

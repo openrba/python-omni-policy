@@ -1,0 +1,25 @@
+aws_cognito_user_pool_domain:
+    status: HOLD
+    subcategory: Cognito
+    layout: aws
+    page_title: 'AWS: aws_cognito_user_pool_domain'
+    description: Provides a Cognito User Pool Domain resource.
+    arguments:
+        domain:
+            description: The domain string.
+            required: true
+            policy: ''
+            notes: ''
+        user_pool_id:
+            description: The user pool ID.
+            required: true
+            policy: ''
+            notes: ''
+        certificate_arn:
+            description: The ARN of an ISSUED ACM certificate in us-east-1 for a custom
+                domain.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

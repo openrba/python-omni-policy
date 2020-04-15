@@ -1,0 +1,49 @@
+{
+    "aws_rds_global_cluster": {
+        "status": "HOLD",
+        "subcategory": "RDS",
+        "layout": "aws",
+        "page_title": "AWS: aws_rds_global_cluster",
+        "description": "Manages a RDS Global Cluster",
+        "arguments": {
+            "global_cluster_identifier": {
+                "description": "The global cluster identifier.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "database_name": {
+                "description": "Name for an automatically created database on cluster creation.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "deletion_protection": {
+                "description": "If the Global Cluster should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine": {
+                "description": "Name of the database engine to be used for this DB cluster. Valid values: `aurora`, `aurora-mysql`, `aurora-postgresql`. Defaults to `aurora`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_version": {
+                "description": "Engine version of the Aurora global database.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_encrypted": {
+                "description": "Specifies whether the DB cluster is encrypted. The default is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

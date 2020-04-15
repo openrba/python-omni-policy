@@ -1,0 +1,82 @@
+azurerm_cosmosdb_cassandra_keyspace:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_cassandra_keyspace'
+    description: Manages a Cassandra KeySpace within a Cosmos DB Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cosmos DB Cassandra KeySpace. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cosmos DB Cassandra
+                KeySpace is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the Cosmos DB Cassandra KeySpace to create the
+                table within. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        throughput:
+            description: The throughput of Cassandra keyspace (RU/s). Must be set
+                in increments of `100`. The minimum value is `400`. This must be set
+                upon database creation otherwise it cannot be updated without a manual
+                terraform destroy-apply.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: the ID of the CosmosDB Cassandra KeySpace.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB Cassandra KeySpace.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CosmosDB Cassandra KeySpace.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CosmosDB Cassandra KeySpace.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB Cassandra KeySpace.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQTlJQ0owWm14bGVDMWpiM050YjNOa1lpMWhZMk52ZFc1MExYSm5JZ3A5Q2dweVpY
+        TnZkWEpqWlNBaVlYcDFjbVZ5YlY5amIzTnRiM05rWWw5aFkyTnZkVzUwSWlBaVpYaGhiWEJzWlNJ
+        Z2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHWmxlQzFqYjNOdGIzTmtZaTFo
+        WTJOdmRXNTBJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmtZWFJoTG1GNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lD
+        QWdJQ0FnSUNBZ0lDQTlJR1JoZEdFdVlYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdG
+        dGNHeGxMbXh2WTJGMGFXOXVDaUFnYjJabVpYSmZkSGx3WlNBZ0lDQWdJQ0FnSUNBOUlDSlRkR0Z1
+        WkdGeVpDSUtDaUFnWTJGd1lXSnBiR2wwYVdWeklIc0tJQ0FnSUc1aGJXVWdQU0FpUlc1aFlteGxR
+        MkZ6YzJGdVpISmhJZ29nSUgwS0NpQWdZMjl1YzJsemRHVnVZM2xmY0c5c2FXTjVJSHNLSUNBZ0lH
+        TnZibk5wYzNSbGJtTjVYMnhsZG1Wc0lEMGdJbE4wY205dVp5SUtJQ0I5Q2dvZ0lHZGxiMTlzYjJO
+        aGRHbHZiaUI3Q2lBZ0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQTlJQ0pYWlhOMElGVlRJZ29n
+        SUNBZ1ptRnBiRzkyWlhKZmNISnBiM0pwZEhrZ1BTQXdDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZ
+        WHAxY21WeWJWOWpiM050YjNOa1lsOWpZWE56WVc1a2NtRmZhMlY1YzNCaFkyVWlJQ0psZUdGdGNH
+        eGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0owWm1WNExXTnZjMjF2Y3kx
+        allYTnpZVzVrY21FdGEyVjVjM0JoWTJVaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5
+        SUdSaGRHRXVZWHAxY21WeWJWOWpiM050YjNOa1lsOWhZMk52ZFc1MExtVjRZVzF3YkdVdWNtVnpi
+        M1Z5WTJWZlozSnZkWEJmYm1GdFpRb2dJR0ZqWTI5MWJuUmZibUZ0WlNBZ0lDQWdJQ0FnUFNCaGVu
+        VnlaWEp0WDJOdmMyMXZjMlJpWDJGalkyOTFiblF1WlhoaGJYQnNaUzV1WVcxbENpQWdkR2h5YjNW
+        bmFIQjFkQ0FnSUNBZ0lDQWdJQ0E5SURRd01BcDlDZz09
+    import: !!binary |
+        Q2dwRGIzTnRiM01nUTJGemMyRnVaSEpoSUV0bGVWTndZV05sSUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZlkyRnpjMkZ1WkhKaFgydGxlWE53WVdObExtaDBiV3d1YldG
+        eWEyUnZkMjQ9

@@ -1,0 +1,66 @@
+azurerm_log_analytics_solution:
+    status: HOLD
+    subcategory: Log Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_log_analytics_solution'
+    description: Manages a Log Analytics (formally Operational Insights) Solution.
+    arguments:
+        solution_name:
+            description: Specifies the name of the solution to be deployed. See [here
+                for options](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-add-solutions).Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: 'The name of the resource group in which the Log Analytics
+                solution is created. Changing this forces a new resource to be created.
+                Note: The solution and it''s related workspace can only exist in the
+                same resource group.'
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        workspace_resource_id:
+            description: The full resource ID of the Log Analytics workspace with
+                which the solution will be linked. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        workspace_name:
+            description: The full name of the Log Analytics workspace with which the
+                solution will be linked. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        plan:
+            description: A `plan` block as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        publisher:
+            description: The publisher of the solution. For example `Microsoft`. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        product:
+            description: The product name of the solution. For example `OMSGallery/Containers`.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        promotion_code:
+            description: A promotion code to be used with the solution.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

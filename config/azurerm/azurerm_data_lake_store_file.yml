@@ -1,0 +1,66 @@
+azurerm_data_lake_store_file:
+    status: HOLD
+    subcategory: Data Lake
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_data_lake_store_file'
+    description: Manages a Azure Data Lake Store File.
+    arguments:
+        account_name:
+            description: Specifies the name of the Data Lake Store for which the File
+                should created.
+            required: true
+            policy: ''
+            notes: ''
+        local_file_path:
+            description: The path to the local file to be added to the Data Lake Store.
+            required: true
+            policy: ''
+            notes: ''
+        remote_file_path:
+            description: The path created for the file on the Data Lake Store.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Lake Store File.
+    timeouts:
+        create:
+            description: Used when creating the Data Lake Store File.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Lake Store File.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Lake Store File.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Lake Store File.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        a1lYUmhYMnhoYTJWZmMzUnZjbVVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKamIyNXpkVzF3ZEdsdmJtUmhkR0ZzWVd0bElnb2dJSEpsYzI5MWNtTmxY
+        MmR5YjNWd1gyNWhiV1VnUFNBaUpIdGhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlX
+        MXdiR1V1Ym1GdFpYMGlDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlDSWtlMkY2ZFhK
+        bGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2Ym4waUNuMEtDbkps
+        YzI5MWNtTmxJQ0poZW5WeVpYSnRYMlJoZEdGZmJHRnJaVjl6ZEc5eVpWOW1hV3hsSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNBaUpIdGhlblZ5WlhKdFgz
+        SmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpYMGlDaUFnYkc5allXeGZabWxzWlY5
+        d1lYUm9JQ0FnSUNBOUlDSXZjR0YwYUM5MGJ5OXNiMk5oYkM5bWFXeGxJZ29nSUhKbGJXOTBaVjlt
+        YVd4bFgzQmhkR2dnSUNBZ1BTQWlMM0JoZEdndlkzSmxZWFJsWkM5bWIzSXZjbVZ0YjNSbEwyWnBi
+        R1VpQ24wSw==
+    import: !!binary |
+        Q2dwRVlYUmhJRXhoYTJVZ1UzUnZjbVVnUm1sc1pTZHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjlzWVd0bFgzTjBiM0psWDJacGJHVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

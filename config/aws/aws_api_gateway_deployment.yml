@@ -1,0 +1,36 @@
+aws_api_gateway_deployment:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_deployment'
+    description: Provides an API Gateway REST Deployment.
+    arguments:
+        rest_api_id:
+            description: The ID of the associated REST API
+            required: true
+            policy: ''
+            notes: ''
+        stage_name:
+            description: The name of the stage. If the specified stage already exists,
+                it will be updated to point to the new deployment. If the stage does
+                not exist, a new one will be created and point to this deployment.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the deployment
+            required: false
+            policy: ''
+            notes: ''
+        stage_description:
+            description: The description of the stage
+            required: false
+            policy: ''
+            notes: ''
+        variables:
+            description: A map that defines variables for the stage
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

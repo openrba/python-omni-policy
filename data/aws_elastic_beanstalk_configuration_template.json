@@ -1,0 +1,49 @@
+{
+    "aws_elastic_beanstalk_configuration_template": {
+        "status": "HOLD",
+        "subcategory": "Elastic Beanstalk",
+        "layout": "aws",
+        "page_title": "AWS: aws_elastic_beanstalk_configuration_template",
+        "description": "Provides an Elastic Beanstalk Configuration Template",
+        "arguments": {
+            "name": {
+                "description": "A unique name for this Template.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "application": {
+                "description": "name of the application to associate with this configuration template",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Short description of the Template",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment_id": {
+                "description": "The ID of the environment used with this configuration template",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "setting": {
+                "description": "Option settings to configure the new Environment. These",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "solution_stack_name": {
+                "description": "A solution stack to base your Template",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

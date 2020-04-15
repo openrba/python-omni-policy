@@ -1,0 +1,67 @@
+aws_fsx_lustre_file_system:
+    status: HOLD
+    subcategory: File System (FSx)
+    layout: aws
+    page_title: 'AWS: aws_fsx_lustre_file_system'
+    description: Manages a FSx Lustre File System.
+    arguments:
+        storage_capacity:
+            description: The storage capacity (GiB
+            required: true
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: A list of IDs for the subnets that the file system will be
+                accessible from. File systems currently support only one subnet. The
+                file server is also launched in that subnet's Availability Zone.
+            required: true
+            policy: ''
+            notes: ''
+        export_path:
+            description: S3 URI (with optional prefix
+            required: false
+            policy: ''
+            notes: ''
+        import_path:
+            description: S3 URI (with optional prefix
+            required: false
+            policy: ''
+            notes: ''
+        imported_file_chunk_size:
+            description: For files imported from a data repository, this value determines
+                the stripe count and maximum amount of data per file (in MiB
+            required: false
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: A list of IDs for the security groups that apply to the specified
+                network interfaces created for file system access. These security
+                groups will apply to all network interfaces.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the file system.
+            required: false
+            policy: ''
+            notes: ''
+        weekly_maintenance_start_time:
+            description: The preferred start time (in `d:HH:MM` format
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: Amazon Resource Name of the file system.
+        dns_name:
+            description: DNS name for the file system, e.g. `fs-12345678.fsx.us-west-2.amazonaws.com`
+        id:
+            description: Identifier of the file system, e.g. `fs-12345678`
+        network_interface_ids:
+            description: Set of Elastic Network Interface identifiers from which the
+                file system is accessible.
+        owner_id:
+            description: AWS account identifier that created the file system.
+        vpc_id:
+            description: Identifier of the Virtual Private Cloud for the file system.
+    timeouts: {}

@@ -1,0 +1,74 @@
+{
+    "azurerm_express_route_gateway": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_express_route_gateway",
+        "description": "Manages an ExpressRoute gateway.",
+        "arguments": {
+            "name": {
+                "description": "The name of the ExpressRoute gateway. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the ExpressRoute gateway. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_hub_id": {
+                "description": "The ID of a Virtual HUB within which the ExpressRoute gateway should be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "scale_units": {
+                "description": "The number of scale units with which to provision the ExpressRoute gateway. Each scale unit is equal to 2Gbps, with support for up to 10 scale units (20Gbps).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the ExpressRoute gateway."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the ExpressRoute Gateway.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the ExpressRoute Gateway.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the ExpressRoute Gateway.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the ExpressRoute Gateway.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

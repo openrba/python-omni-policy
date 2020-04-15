@@ -1,0 +1,31 @@
+{
+    "aws_elasticache_subnet_group": {
+        "status": "HOLD",
+        "subcategory": "ElastiCache",
+        "layout": "aws",
+        "page_title": "AWS: aws_elasticache_subnet_group",
+        "description": "Provides an ElastiCache Subnet Group resource.",
+        "arguments": {
+            "name": {
+                "description": "Name for the cache subnet group. Elasticache converts this name to lowercase.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description for the cache subnet group. Defaults to \"Managed by Terraform\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_ids": {
+                "description": "List of VPC Subnet IDs for the cache subnet group",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "azurerm_storage_container": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_container",
+        "description": "Manages a Container within an Azure Storage Account.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Container which should be created within the Storage Account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_name": {
+                "description": "The name of the Storage Account where the Container should be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "container_access_type": {
+                "description": "The Access Level configured for this Container. Possible values are `blob`, `container` or `private`. Defaults to `private`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "A mapping of MetaData for this Container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Storage Container."
+            },
+            "has_immutability_policy": {
+                "description": "Is there an Immutability Policy configured on this Storage Container?"
+            },
+            "has_legal_hold": {
+                "description": "Is there a Legal Hold configured on this Storage Container?"
+            },
+            "resource_manager_id": {
+                "description": "The Resource Manager ID of this Storage Container."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Container.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Container.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Container.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Container.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

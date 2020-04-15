@@ -1,0 +1,142 @@
+azurerm_stream_analytics_output_eventhub:
+    status: HOLD
+    subcategory: Stream Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_stream_analytics_output_eventhub'
+    description: Manages a Stream Analytics Output to an EventHub.
+    arguments:
+        name:
+            description: The name of the Stream Output. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Stream Analytics
+                Job exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        stream_analytics_job_name:
+            description: The name of the Stream Analytics Job. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        eventhub_name:
+            description: The name of the Event Hub.
+            required: true
+            policy: ''
+            notes: ''
+        servicebus_namespace:
+            description: The namespace that is associated with the desired Event Hub,
+                Service Bus Queue, Service Bus Topic, etc.
+            required: true
+            policy: ''
+            notes: ''
+        shared_access_policy_key:
+            description: The shared access policy key for the specified shared access
+                policy.
+            required: true
+            policy: ''
+            notes: ''
+        shared_access_policy_name:
+            description: The shared access policy name for the Event Hub, Service
+                Bus Queue, Service Bus Topic, etc.
+            required: true
+            policy: ''
+            notes: ''
+        serialization:
+            description: A `serialization` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The serialization format used for outgoing data streams.
+                Possible values are `Avro`, `Csv` and `Json`.
+            required: true
+            policy: ''
+            notes: ''
+        encoding:
+            description: The encoding of the incoming data in the case of input and
+                the encoding of outgoing data in the case of output. It currently
+                can only be set to `UTF8`.
+            required: false
+            policy: ''
+            notes: This is required when `type` is set to `Csv` or `Json`.
+        field_delimiter:
+            description: The delimiter that will be used to separate comma-separated
+                value (CSV
+            required: false
+            policy: ''
+            notes: This is required when `type` is set to `Csv`.
+        format:
+            description: Specifies the format of the JSON the output will be written
+                in. Possible values are `Array` and `LineSeparated`.
+            required: false
+            policy: ''
+            notes: This is Required and can only be specified when `type` is set to
+                `Json`.
+    attributes:
+        id:
+            description: The ID of the Stream Analytics Output EventHub.
+    timeouts:
+        create:
+            description: Used when creating the Stream Analytics Output EventHub.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Stream Analytics Output EventHub.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Stream Analytics Output EventHub.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Stream Analytics Output EventHub.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQTlJQ0psZUdGdGNHeGxMWEpsYzI5MWNtTmxjeUlLZlFvS1pHRjBZU0FpWVhwMWNt
+        VnliVjl6ZEhKbFlXMWZZVzVoYkhsMGFXTnpYMnB2WWlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGFtOWlJZ29nSUhKbGMyOTFjbU5s
+        WDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlsZG1WdWRHaDFZbDl1WVcxbGMz
+        QmhZMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNK
+        bGVHRnRjR3hsTFdWb2JtRnRaWE53WVdObElnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNCa1lYUmhMbUY2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhk
+        R2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JrWVhSaExtRjZkWEpsY20xZmNt
+        VnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjMnQxSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS0lDQmpZWEJoWTJsMGVTQWdJQ0FnSUNBZ0lDQWdJRDBn
+        TVFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWxkbVZ1ZEdoMVlpSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVXRaWFpsYm5Sb2RX
+        SWlDaUFnYm1GdFpYTndZV05sWDI1aGJXVWdJQ0FnSUNBOUlHRjZkWEpsY20xZlpYWmxiblJvZFdK
+        ZmJtRnRaWE53WVdObExtVjRZVzF3YkdVdWJtRnRaUW9nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVo
+        YldVZ1BTQmtZWFJoTG1GNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZ
+        VzFsQ2lBZ2NHRnlkR2wwYVc5dVgyTnZkVzUwSUNBZ0lDQTlJRElLSUNCdFpYTnpZV2RsWDNKbGRH
+        VnVkR2x2YmlBZ0lEMGdNUXA5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5emRISmxZVzFmWVc1
+        aGJIbDBhV056WDI5MWRIQjFkRjlsZG1WdWRHaDFZaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbTkxZEhCMWRDMTBieTFsZG1WdWRHaDFZ
+        aUlLSUNCemRISmxZVzFmWVc1aGJIbDBhV056WDJwdllsOXVZVzFsSUQwZ1pHRjBZUzVoZW5WeVpY
+        SnRYM04wY21WaGJWOWhibUZzZVhScFkzTmZhbTlpTG1WNFlXMXdiR1V1Ym1GdFpRb2dJSEpsYzI5
+        MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNBZ0lDQWdQU0JrWVhSaExtRjZkWEpsY20xZmMzUnlaV0Z0
+        WDJGdVlXeDVkR2xqYzE5cWIySXVaWGhoYlhCc1pTNXlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxD
+        aUFnWlhabGJuUm9kV0pmYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmWlhabGJu
+        Um9kV0l1WlhoaGJYQnNaUzV1WVcxbENpQWdjMlZ5ZG1salpXSjFjMTl1WVcxbGMzQmhZMlVnSUNB
+        Z0lDQTlJR0Y2ZFhKbGNtMWZaWFpsYm5Sb2RXSmZibUZ0WlhOd1lXTmxMbVY0WVcxd2JHVXVibUZ0
+        WlFvZ0lITm9ZWEpsWkY5aFkyTmxjM05mY0c5c2FXTjVYMnRsZVNBZ1BTQmhlblZ5WlhKdFgyVjJa
+        VzUwYUhWaVgyNWhiV1Z6Y0dGalpTNWxlR0Z0Y0d4bExtUmxabUYxYkhSZmNISnBiV0Z5ZVY5clpY
+        a0tJQ0J6YUdGeVpXUmZZV05qWlhOelgzQnZiR2xqZVY5dVlXMWxJRDBnSWxKdmIzUk5ZVzVoWjJW
+        VGFHRnlaV1JCWTJObGMzTkxaWGtpQ2dvZ0lITmxjbWxoYkdsNllYUnBiMjRnZXdvZ0lDQWdkSGx3
+        WlNBOUlDSkJkbkp2SWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwVGRISmxZVzBnUVc1aGJIbDBhV056SUU5MWRIQjFkSE1nZEc4Z1lXNGdSWFpsYm5SSWRXSWdZ
+        MkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnlaV0Z0WDJGdVlXeDVkR2xqYzE5dmRYUndkWFJmWlhabGJuUm9kV0l1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

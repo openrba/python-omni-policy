@@ -1,0 +1,27 @@
+aws_accessanalyzer_analyzer:
+    status: HOLD
+    subcategory: Access Analyzer
+    layout: aws
+    page_title: 'AWS: aws_accessanalyzer_analyzer'
+    description: Manages an Access Analyzer Analyzer
+    arguments:
+        analyzer_name:
+            description: Name of the Analyzer.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Type of Analyzer. Valid value is currently only `ACCOUNT`.
+                Defaults to `ACCOUNT`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: Analyzer name.
+    timeouts: {}

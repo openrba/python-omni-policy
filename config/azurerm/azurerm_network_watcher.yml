@@ -1,0 +1,66 @@
+azurerm_network_watcher:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_watcher'
+    description: Manages a Network Watcher.
+    arguments:
+        name:
+            description: The name of the Network Watcher. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Network
+                Watcher. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Network Watcher.
+    timeouts:
+        create:
+            description: Used when creating the Network Watcher.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Network Watcher.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Network Watcher.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Network Watcher.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkJ5YjJSMVkzUnBiMjR0Ym5kM1lYUmphR1Z5SWdvZ0lH
+        eHZZMkYwYVc5dUlEMGdJbGRsYzNRZ1ZWTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDI1
+        bGRIZHZjbXRmZDJGMFkyaGxjaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW5CeWIyUjFZM1JwYjI0dGJuZDNZWFJqYUdWeUlnb2dJR3h2WTJGMGFXOXVJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JH
+        VXViRzlqWVhScGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5
+        eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRbz0=
+    import: !!binary |
+        Q2dwT1pYUjNiM0pySUZkaGRHTm9aWEp6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5M1lYUmphR1Z5TG1oMGJXd3ViV0Z5YTJSdmQyND0=

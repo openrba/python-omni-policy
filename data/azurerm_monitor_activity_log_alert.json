@@ -1,0 +1,158 @@
+{
+    "azurerm_monitor_activity_log_alert": {
+        "status": "HOLD",
+        "subcategory": "Monitor",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_monitor_activity_log_alert",
+        "description": "Manages an Activity Log Alert within Azure Monitor",
+        "arguments": {
+            "name": {
+                "description": "The name of the activity log alert. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the activity log alert instance.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "scopes": {
+                "description": "The Scope at which the Activity Log should be applied, for example a the Resource ID of a Subscription or a Resource (such as a Storage Account).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "criteria": {
+                "description": "A `criteria` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "One or more `action` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Should this Activity Log Alert be enabled? Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of this activity log alert.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "action_group_id": {
+                "description": "The ID of the Action Group can be sourced from [the `azurerm_monitor_action_group` resource](./monitor_action_group.html).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "webhook_properties": {
+                "description": "The map of custom string properties to include with the post operation. These data are appended to the webhook payload.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "category": {
+                "description": "The category of the operation. Possible values are `Administrative`, `Autoscale`, `Policy`, `Recommendation`, `ResourceHealth`, `Security` and `ServiceHealth`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "operation_name": {
+                "description": "The Resource Manager Role-Based Access Control operation name. Supported operation should be of the form: `<resourceProvider>/<resourceType>/<operation>`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_provider": {
+                "description": "The name of the resource provider monitored by the activity log alert.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_type": {
+                "description": "The resource type monitored by the activity log alert.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group": {
+                "description": "The name of resource group monitored by the activity log alert.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_id": {
+                "description": "The specific resource monitored by the activity log alert. It should be within one of the `scopes`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "caller": {
+                "description": "The email address or Azure Active Directory identifier of the user who performed the operation.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "level": {
+                "description": "The severity level of the event. Possible values are `Verbose`, `Informational`, `Warning`, `Error`, and `Critical`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "status": {
+                "description": "The status of the event. For example, `Started`, `Failed`, or `Succeeded`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sub_status": {
+                "description": "The sub status of the event.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the activity log alert."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Activity Log Alert.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Activity Log Alert.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Activity Log Alert.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Activity Log Alert.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

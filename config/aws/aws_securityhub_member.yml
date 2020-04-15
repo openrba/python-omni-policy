@@ -1,0 +1,32 @@
+aws_securityhub_member:
+    status: HOLD
+    subcategory: Security Hub
+    layout: aws
+    page_title: 'AWS: aws_securityhub_member'
+    description: Provides a Security Hub member resource.
+    arguments:
+        account_id:
+            description: The ID of the member AWS account.
+            required: true
+            policy: ''
+            notes: ''
+        email:
+            description: The email of the member AWS account.
+            required: true
+            policy: ''
+            notes: ''
+        invite:
+            description: Boolean whether to invite the account to Security Hub as
+                a member. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the member AWS account (matches `account_id`).
+        master_id:
+            description: The ID of the master Security Hub AWS account.
+        member_status:
+            description: The status of the relationship between the member account
+                and its master account.
+    timeouts: {}

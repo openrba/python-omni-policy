@@ -1,0 +1,84 @@
+aws_globalaccelerator_endpoint_group:
+    status: HOLD
+    subcategory: Global Accelerator
+    layout: aws
+    page_title: 'AWS: aws_globalaccelerator_endpoint_group'
+    description: Provides a Global Accelerator endpoint group.
+    arguments:
+        listener_arn:
+            description: The Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+        endpoint_group_region:
+            description: '- The name of the AWS Region where the endpoint group is
+                located.'
+            required: false
+            policy: ''
+            notes: ''
+        health_check_interval_seconds:
+            description: "The time\u201410 seconds or 30 seconds\u2014between each\
+                \ health check for an endpoint. The default value is 30."
+            required: false
+            policy: ''
+            notes: ''
+        health_check_path:
+            description: If the protocol is HTTP/S, then this specifies the path that
+                is the destination for health check targets. The default value is
+                slash (/).
+            required: false
+            policy: ''
+            notes: ''
+        health_check_port:
+            description: The port that AWS Global Accelerator uses to check the health
+                of endpoints that are part of this endpoint group. The default port
+                is the listener port that this endpoint group is associated with.
+                If listener port is a list of ports, Global Accelerator uses the first
+                port in the list.
+            required: false
+            policy: ''
+            notes: ''
+        health_check_protocol:
+            description: The protocol that AWS Global Accelerator uses to check the
+                health of endpoints that are part of this endpoint group. The default
+                value is TCP.
+            required: false
+            policy: ''
+            notes: ''
+        threshold_count:
+            description: The number of consecutive health checks required to set the
+                state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint
+                to healthy. The default value is 3.
+            required: false
+            policy: ''
+            notes: ''
+        traffic_dial_percentage:
+            description: The percentage of traffic to send to an AWS Region. Additional
+                traffic is distributed to other endpoint groups for this listener.
+                The default value is 100.
+            required: false
+            policy: ''
+            notes: ''
+        endpoint_configuration:
+            description: The list of endpoint objects. Fields documented below.
+            required: false
+            policy: ''
+            notes: ''
+        endpoint_id:
+            description: An ID for the endpoint. If the endpoint is a Network Load
+                Balancer or Application Load Balancer, this is the Amazon Resource
+                Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        weight:
+            description: 'The weight associated with the endpoint. When you add weights
+                to endpoints, you configure AWS Global Accelerator to route traffic
+                based on proportions that you specify. '
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Amazon Resource Name (ARN) of the endpoint group.
+    timeouts: {}

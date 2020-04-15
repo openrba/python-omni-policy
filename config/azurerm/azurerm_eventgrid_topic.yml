@@ -1,0 +1,75 @@
+azurerm_eventgrid_topic:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_eventgrid_topic'
+    description: Manages an EventGrid Topic
+    arguments:
+        name:
+            description: Specifies the name of the EventGrid Topic resource. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the EventGrid Topic
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The EventGrid Topic ID.
+        endpoint:
+            description: The Endpoint associated with the EventGrid Topic.
+        primary_access_key:
+            description: The Primary Shared Access Key associated with the EventGrid
+                Topic.
+        secondary_access_key:
+            description: The Secondary Shared Access Key associated with the EventGrid
+                Topic.
+    timeouts:
+        create:
+            description: Used when creating the EventGrid Topic.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the EventGrid Topic.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the EventGrid Topic.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the EventGrid Topic.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1nTWlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZaWFpsYm5S
+        bmNtbGtYM1J2Y0dsaklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWliWGt0WlhabGJuUm5jbWxrTFhSdmNHbGpJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allY
+        UnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhK
+        alpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lHVnVkbWx5
+        YjI1dFpXNTBJRDBnSWxCeWIyUjFZM1JwYjI0aUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRmRtVnVkRWR5YVdRZ1ZHOXdhV01uY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYWmxiblJuY21sa1gzUnZjR2xqTG1oMGJXd3ViV0Z5YTJSdmQyND0=

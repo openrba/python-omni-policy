@@ -1,0 +1,124 @@
+azurerm_iothub_endpoint_storage_container:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_iothub_endpoint_storage_container'
+    description: Manages an IotHub Storage Container Endpoint
+    arguments:
+        name:
+            description: 'The name of the endpoint. The name must be unique across
+                endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`,
+                `fileNotifications` and `$default`.'
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group under which the IotHub Storage
+                Container Endpoint resource has to be created. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        iothub_name:
+            description: The name of the IoTHub to which this Storage Container Endpoint
+                belongs. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        connection_string:
+            description: The connection string for the endpoint.
+            required: true
+            policy: ''
+            notes: ''
+        batch_frequency_in_seconds:
+            description: Time interval at which blobs are written to storage. Value
+                should be between 60 and 720 seconds. Default value is 300 seconds.
+            required: false
+            policy: ''
+            notes: ''
+        max_chunk_size_in_bytes:
+            description: Maximum number of bytes for each blob written to storage.
+                Value should be between 10485760(10MB
+            required: false
+            policy: ''
+            notes: ''
+        container_name:
+            description: The name of storage container in the storage account.
+            required: true
+            policy: ''
+            notes: ''
+        encoding:
+            description: Encoding that is used to serialize messages to blobs. Supported
+                values are 'avro' and 'avrodeflate'. Default value is 'avro'.
+            required: false
+            policy: ''
+            notes: ''
+        file_name_format:
+            description: File name format for the blob. Default format is ``{iothub}/{partition}/{YYYY}/{MM}/{DD}/{HH}/{mm}``.
+                All parameters are mandatory but can be reordered.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the IoTHub Storage Container Endpoint.
+    timeouts:
+        create:
+            description: Used when creating the IotHub Storage Container Endpoint.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the IotHub Storage Container Endpoint.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the IotHub Storage Container Endpoint.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the IotHub Storage Container Endpoint.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjBiM0poWjJW
+        ZllXTmpiM1Z1ZENJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpWlhoaGJYQnNaU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQWdJ
+        Q0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lH
+        eHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzVzYjJOaGRHbHZiZ29nSUdGalkyOTFiblJmZEdsbGNpQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS0lDQmhZMk52ZFc1MFgzSmxjR3hwWTJGMGFXOXVY
+        M1I1Y0dVZ1BTQWlURkpUSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXpkRzl5WVdkbFgy
+        TnZiblJoYVc1bGNpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0FpWVdOamRHVnpkR052Ym5RaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0Fn
+        SUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnpk
+        Rzl5WVdkbFgyRmpZMjkxYm5SZmJtRnRaU0FnUFNCaGVuVnlaWEp0WDNOMGIzSmhaMlZmWVdOamIz
+        VnVkQzVsZUdGdGNHeGxMbTVoYldVS0lDQmpiMjUwWVdsdVpYSmZZV05qWlhOelgzUjVjR1VnUFNB
+        aWNISnBkbUYwWlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZhVzkwYUhWaUlpQWlaWGho
+        YlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTSUtJ
+        Q0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNt
+        OTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNnb2dJSE5y
+        ZFNCN0NpQWdJQ0J1WVcxbElDQWdJQ0E5SUNKVE1TSUtJQ0FnSUdOaGNHRmphWFI1SUQwZ0lqRWlD
+        aUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXBiM1JvZFdKZlpXNWtjRzlwYm5SZmMz
+        UnZjbUZuWlY5amIyNTBZV2x1WlhJaUlDSmxlR0Z0Y0d4bElpQjdDaUFnY21WemIzVnlZMlZmWjNK
+        dmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1
+        WVcxbENpQWdhVzkwYUhWaVgyNWhiV1VnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYVc5MGFIVmlM
+        bVY0WVcxd2JHVXVibUZ0WlFvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWVdOamRH
+        VnpkQ0lLQ2lBZ1kyOXVkR0ZwYm1WeVgyNWhiV1VnSUNBZ1BTQWlZV05qZEdWemRHTnZiblFpQ2lB
+        Z1kyOXVibVZqZEdsdmJsOXpkSEpwYm1jZ1BTQmhlblZ5WlhKdFgzTjBiM0poWjJWZllXTmpiM1Z1
+        ZEM1bGVHRnRjR3hsTG5CeWFXMWhjbmxmWW14dllsOWpiMjV1WldOMGFXOXVYM04wY21sdVp3b0tJ
+        Q0JtYVd4bFgyNWhiV1ZmWm05eWJXRjBJQ0FnSUNBZ0lDQWdJQ0E5SUNKN2FXOTBhSFZpZlM5N2NH
+        RnlkR2wwYVc5dWZWOTdXVmxaV1gxZmUwMU5mVjk3UkVSOVgzdElTSDFmZTIxdGZTSUtJQ0JpWVhS
+        amFGOW1jbVZ4ZFdWdVkzbGZhVzVmYzJWamIyNWtjeUE5SURZd0NpQWdiV0Y0WDJOb2RXNXJYM05w
+        ZW1WZmFXNWZZbmwwWlhNZ0lDQWdQU0F4TURRNE5UYzJNQW9nSUdWdVkyOWthVzVuSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0lrcFRUMDRpQ24wSw==
+    import: !!binary |
+        Q2dwSmIxUklkV0lnVTNSdmNtRm5aU0JEYjI1MFlXbHVaWElnUlc1a2NHOXBiblFnWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXOTBhSFZpWDJWdVpIQnZhVzUwWDNOMGIzSmhaMlZmWTI5dWRHRnBibVZ5TG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

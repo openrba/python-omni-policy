@@ -1,0 +1,74 @@
+{
+    "azurerm_eventhub_namespace_disaster_recovery_config": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_eventhub_namespace_disaster_recovery_config",
+        "description": "Manages an Disaster Recovery Config for an Event Hub Namespace.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Disaster Recovery Config. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace_name": {
+                "description": "Specifies the name of the primary EventHub Namespace to replicate. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the Disaster Recovery Config exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "partner_namespace_id": {
+                "description": "The ID of the EventHub Namespace to replicate to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "alternate_name": {
+                "description": "An alternate name to use when the Disaster Recovery Config's name is the same as the replicated namespace's name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wait_for_replication": {
+                "description": "Should the resource wait for replication upon creation? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The EventHub Namespace Disaster Recovery Config ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the EventHub Namespace Disaster Recovery Config.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the EventHub Namespace Disaster Recovery Config.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the EventHub Namespace Disaster Recovery Config.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the EventHub Namespace Disaster Recovery Config.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+aws_dms_replication_instance:
+    status: HOLD
+    subcategory: Database Migration Service (DMS)
+    layout: aws
+    page_title: 'AWS: aws_dms_replication_instance'
+    description: Provides a DMS (Data Migration Service) replication instance resource.
+    arguments:
+        allocated_storage:
+            description: The amount of storage (in gigabytes
+            required: false
+            policy: ''
+            notes: ''
+        apply_immediately:
+            description: Indicates whether the changes should be applied immediately
+                or during the next maintenance window. Only used when updating an
+                existing resource.
+            required: false
+            policy: ''
+            notes: ''
+        auto_minor_version_upgrade:
+            description: Indicates that minor engine upgrades will be applied automatically
+                to the replication instance during the maintenance window.
+            required: false
+            policy: ''
+            notes: ''
+        availability_zone:
+            description: The EC2 Availability Zone that the replication instance will
+                be created in.
+            required: false
+            policy: ''
+            notes: ''
+        engine_version:
+            description: The engine version number of the replication instance.
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_arn:
+            description: The Amazon Resource Name (ARN
+            required: false
+            policy: ''
+            notes: ''
+        multi_az:
+            description: Specifies if the replication instance is a multi-az deployment.
+                You cannot set the `availability_zone` parameter if the `multi_az`
+                parameter is set to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        preferred_maintenance_window:
+            description: The weekly time range during which system maintenance can
+                occur, in Universal Coordinated Time (UTC).
+            required: false
+            policy: ''
+            notes: ''
+        publicly_accessible:
+            description: Specifies the accessibility options for the replication instance.
+                A value of true represents an instance with a public IP address. A
+                value of false represents an instance with a private IP address.
+            required: false
+            policy: ''
+            notes: ''
+        replication_instance_class:
+            description: The compute and memory capacity of the replication instance
+                as specified by the replication instance class. Can be one of `dms.t2.micro
+                | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge
+                | dms.c4.2xlarge | dms.c4.4xlarge`
+            required: true
+            policy: ''
+            notes: ''
+        replication_instance_id:
+            description: The replication instance identifier. This parameter is stored
+                as a lowercase string.
+            required: true
+            policy: ''
+            notes: ''
+        replication_subnet_group_id:
+            description: A subnet group to associate with the replication instance.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        vpc_security_group_ids:
+            description: A list of VPC security group IDs to be used with the replication
+                instance. The VPC security groups must work with the VPC containing
+                the replication instance.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        replication_instance_arn:
+            description: The Amazon Resource Name (ARN) of the replication instance.
+        replication_instance_private_ips:
+            description: ' A list of the private IP addresses of the replication instance.'
+        replication_instance_public_ips:
+            description: A list of the public IP addresses of the replication instance.
+    timeouts: {}
+    usage: !!binary |
+        Q2lNZ1JHRjBZV0poYzJVZ1RXbG5jbUYwYVc5dUlGTmxjblpwWTJVZ2NtVnhkV2x5WlhNZ2RHaGxJ
+        R0psYkc5M0lFbEJUU0JTYjJ4bGN5QjBieUJpWlNCamNtVmhkR1ZrSUdKbFptOXlaUW9qSUhKbGNH
+        eHBZMkYwYVc5dUlHbHVjM1JoYm1ObGN5QmpZVzRnWW1VZ1kzSmxZWFJsWkM0Z1UyVmxJSFJvWlNC
+        RVRWTWdSRzlqZFcxbGJuUmhkR2x2YmlCbWIzSUtJeUJoWkdScGRHbHZibUZzSUdsdVptOXliV0Yw
+        YVc5dU9pQm9kSFJ3Y3pvdkwyUnZZM011WVhkekxtRnRZWHB2Ymk1amIyMHZaRzF6TDJ4aGRHVnpk
+        QzkxYzJWeVozVnBaR1V2UTBoQlVGOVRaV04xY21sMGVTNUJVRWxTYjJ4bExtaDBiV3dLSXlBZ0tp
+        QmtiWE10ZG5CakxYSnZiR1VLSXlBZ0tpQmtiWE10WTJ4dmRXUjNZWFJqYUMxc2IyZHpMWEp2YkdV
+        S0l5QWdLaUJrYlhNdFlXTmpaWE56TFdadmNpMWxibVJ3YjJsdWRBb0taR0YwWVNBaVlYZHpYMmxo
+        YlY5d2IyeHBZM2xmWkc5amRXMWxiblFpSUNKa2JYTmZZWE56ZFcxbFgzSnZiR1VpSUhzS0lDQnpk
+        R0YwWlcxbGJuUWdld29nSUNBZ1lXTjBhVzl1Y3lBOUlGc2ljM1J6T2tGemMzVnRaVkp2YkdVaVhR
+        b0tJQ0FnSUhCeWFXNWphWEJoYkhNZ2V3b2dJQ0FnSUNCcFpHVnVkR2xtYVdWeWN5QTlJRnNpWkcx
+        ekxtRnRZWHB2Ym1GM2N5NWpiMjBpWFFvZ0lDQWdJQ0IwZVhCbElDQWdJQ0FnSUNBOUlDSlRaWEoy
+        YVdObElnb2dJQ0FnZlFvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXBZVzFmY205c1pTSWdJ
+        bVJ0Y3kxaFkyTmxjM010Wm05eUxXVnVaSEJ2YVc1MElpQjdDaUFnWVhOemRXMWxYM0p2YkdWZmNH
+        OXNhV041SUQwZ0lpUjdaR0YwWVM1aGQzTmZhV0Z0WDNCdmJHbGplVjlrYjJOMWJXVnVkQzVrYlhO
+        ZllYTnpkVzFsWDNKdmJHVXVhbk52Ym4waUNpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SW1SdGN5MWhZMk5sYzNNdFptOXlMV1Z1WkhCdmFXNTBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpY
+        MmxoYlY5eWIyeGxYM0J2YkdsamVWOWhkSFJoWTJodFpXNTBJaUFpWkcxekxXRmpZMlZ6Y3kxbWIz
+        SXRaVzVrY0c5cGJuUXRRVzFoZW05dVJFMVRVbVZrYzJocFpuUlRNMUp2YkdVaUlIc0tJQ0J3YjJ4
+        cFkzbGZZWEp1SUQwZ0ltRnlianBoZDNNNmFXRnRPanBoZDNNNmNHOXNhV041TDNObGNuWnBZMlV0
+        Y205c1pTOUJiV0Y2YjI1RVRWTlNaV1J6YUdsbWRGTXpVbTlzWlNJS0lDQnliMnhsSUNBZ0lDQWdJ
+        RDBnSWlSN1lYZHpYMmxoYlY5eWIyeGxMbVJ0Y3kxaFkyTmxjM010Wm05eUxXVnVaSEJ2YVc1MExt
+        NWhiV1Y5SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJsaGJWOXliMnhsSWlBaVpHMXpMV05zYjNW
+        a2QyRjBZMmd0Ykc5bmN5MXliMnhsSWlCN0NpQWdZWE56ZFcxbFgzSnZiR1ZmY0c5c2FXTjVJRDBn
+        SWlSN1pHRjBZUzVoZDNOZmFXRnRYM0J2YkdsamVWOWtiMk4xYldWdWRDNWtiWE5mWVhOemRXMWxY
+        M0p2YkdVdWFuTnZibjBpQ2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVJ0Y3kxamJH
+        OTFaSGRoZEdOb0xXeHZaM010Y205c1pTSUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXBZVzFmY205
+        c1pWOXdiMnhwWTNsZllYUjBZV05vYldWdWRDSWdJbVJ0Y3kxamJHOTFaSGRoZEdOb0xXeHZaM010
+        Y205c1pTMUJiV0Y2YjI1RVRWTkRiRzkxWkZkaGRHTm9URzluYzFKdmJHVWlJSHNLSUNCd2IyeHBZ
+        M2xmWVhKdUlEMGdJbUZ5YmpwaGQzTTZhV0Z0T2pwaGQzTTZjRzlzYVdONUwzTmxjblpwWTJVdGNt
+        OXNaUzlCYldGNmIyNUVUVk5EYkc5MVpGZGhkR05vVEc5bmMxSnZiR1VpQ2lBZ2NtOXNaU0FnSUNB
+        Z0lDQTlJQ0lrZTJGM2MxOXBZVzFmY205c1pTNWtiWE10WTJ4dmRXUjNZWFJqYUMxc2IyZHpMWEp2
+        YkdVdWJtRnRaWDBpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mYVdGdFgzSnZiR1VpSUNKa2JYTXRk
+        bkJqTFhKdmJHVWlJSHNLSUNCaGMzTjFiV1ZmY205c1pWOXdiMnhwWTNrZ1BTQWlKSHRrWVhSaExt
+        RjNjMTlwWVcxZmNHOXNhV041WDJSdlkzVnRaVzUwTG1SdGMxOWhjM04xYldWZmNtOXNaUzVxYzI5
+        dWZTSUtJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpHMXpMWFp3WXkxeWIyeGxJZ3A5
+        Q2dweVpYTnZkWEpqWlNBaVlYZHpYMmxoYlY5eWIyeGxYM0J2YkdsamVWOWhkSFJoWTJodFpXNTBJ
+        aUFpWkcxekxYWndZeTF5YjJ4bExVRnRZWHB2YmtSTlUxWlFRMDFoYm1GblpXMWxiblJTYjJ4bElp
+        QjdDaUFnY0c5c2FXTjVYMkZ5YmlBOUlDSmhjbTQ2WVhkek9tbGhiVG82WVhkek9uQnZiR2xqZVM5
+        elpYSjJhV05sTFhKdmJHVXZRVzFoZW05dVJFMVRWbEJEVFdGdVlXZGxiV1Z1ZEZKdmJHVWlDaUFn
+        Y205c1pTQWdJQ0FnSUNBOUlDSWtlMkYzYzE5cFlXMWZjbTlzWlM1a2JYTXRkbkJqTFhKdmJHVXVi
+        bUZ0WlgwaUNuMEtDaU1nUTNKbFlYUmxJR0VnYm1WM0lISmxjR3hwWTJGMGFXOXVJR2x1YzNSaGJt
+        TmxDbkpsYzI5MWNtTmxJQ0poZDNOZlpHMXpYM0psY0d4cFkyRjBhVzl1WDJsdWMzUmhibU5sSWlB
+        aWRHVnpkQ0lnZXdvZ0lHRnNiRzlqWVhSbFpGOXpkRzl5WVdkbElDQWdJQ0FnSUNBZ0lDQWdQU0F5
+        TUFvZ0lHRndjR3g1WDJsdGJXVmthV0YwWld4NUlDQWdJQ0FnSUNBZ0lDQWdQU0IwY25WbENpQWdZ
+        WFYwYjE5dGFXNXZjbDkyWlhKemFXOXVYM1Z3WjNKaFpHVWdJQ0E5SUhSeWRXVUtJQ0JoZG1GcGJH
+        RmlhV3hwZEhsZmVtOXVaU0FnSUNBZ0lDQWdJQ0FnSUQwZ0luVnpMWGRsYzNRdE1tTWlDaUFnWlc1
+        bmFXNWxYM1psY25OcGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSXpMakV1TkNJS0lDQnJiWE5m
+        YTJWNVgyRnliaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1GeWJqcGhkM002YTIxek9uVnpM
+        V1ZoYzNRdE1Ub3hNak0wTlRZM09Ea3dNVEk2YTJWNUx6RXlNelExTmpjNExURXlNelF0TVRJek5D
+        MHhNak0wTFRFeU16UTFOamM0T1RBeE1pSUtJQ0J0ZFd4MGFWOWhlaUFnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ1ptRnNjMlVLSUNCd2NtVm1aWEp5WldSZmJXRnBiblJsYm1GdVkyVmZkMmx1
+        Wkc5M0lEMGdJbk4xYmpveE1Eb3pNQzF6ZFc0Nk1UUTZNekFpQ2lBZ2NIVmliR2xqYkhsZllXTmpa
+        WE56YVdKc1pTQWdJQ0FnSUNBZ0lDQTlJSFJ5ZFdVS0lDQnlaWEJzYVdOaGRHbHZibDlwYm5OMFlX
+        NWpaVjlqYkdGemN5QWdJRDBnSW1SdGN5NTBNaTV0YVdOeWJ5SUtJQ0J5WlhCc2FXTmhkR2x2Ymw5
+        cGJuTjBZVzVqWlY5cFpDQWdJQ0FnSUQwZ0luUmxjM1F0WkcxekxYSmxjR3hwWTJGMGFXOXVMV2x1
+        YzNSaGJtTmxMWFJtSWdvZ0lISmxjR3hwWTJGMGFXOXVYM04xWW01bGRGOW5jbTkxY0Y5cFpDQWdQ
+        U0FpSkh0aGQzTmZaRzF6WDNKbGNHeHBZMkYwYVc5dVgzTjFZbTVsZEY5bmNtOTFjQzUwWlhOMExX
+        UnRjeTF5WlhCc2FXTmhkR2x2YmkxemRXSnVaWFF0WjNKdmRYQXRkR1l1YVdSOUlnb0tJQ0IwWVdk
+        eklEMGdld29nSUNBZ1RtRnRaU0E5SUNKMFpYTjBJZ29nSUgwS0NpQWdkbkJqWDNObFkzVnlhWFI1
+        WDJkeWIzVndYMmxrY3lBOUlGc0tJQ0FnSUNKelp5MHhNak0wTlRZM09DSXNDaUFnWFFwOUNnPT0=
+    import: !!binary |
+        Q2dwU1pYQnNhV05oZEdsdmJpQnBibk4wWVc1alpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ3YkdsallYUnBiMjVmYVc1emRHRnVZMlZmYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYlhOZmNtVndiR2xqWVhScGIyNWZhVzV6ZEdGdVkyVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

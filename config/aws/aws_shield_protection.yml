@@ -1,0 +1,22 @@
+aws_shield_protection:
+    status: HOLD
+    subcategory: Shield
+    layout: aws
+    page_title: 'AWS: aws_shield_protection'
+    description: Enables AWS Shield Advanced for a specific AWS resource.
+    arguments:
+        name:
+            description: A friendly name for the Protection you are creating.
+            required: true
+            policy: ''
+            notes: ''
+        resource_arn:
+            description: The ARN (Amazon Resource Name
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique identifier (ID) for the Protection object that
+                is created.
+    timeouts: {}

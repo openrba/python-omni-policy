@@ -1,0 +1,129 @@
+azurerm_data_factory_dataset_postgresql:
+    status: HOLD
+    subcategory: Data Factory
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_data_factory_dataset_postgresql'
+    description: Manages a PostgreSQL Dataset inside a Azure Data Factory.
+    arguments:
+        name:
+            description: The name of the column.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Data
+                Factory Dataset PostgreSQL. Changing this forces a new resource
+            required: true
+            policy: ''
+            notes: ''
+        data_factory_name:
+            description: The Data Factory name in which to associate the Dataset with.
+                Changing this forces a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        linked_service_name:
+            description: The Data Factory Linked Service name in which to associate
+                the Dataset with.
+            required: true
+            policy: ''
+            notes: ''
+        table_name:
+            description: The table name of the Data Factory Dataset PostgreSQL.
+            required: false
+            policy: ''
+            notes: ''
+        folder:
+            description: The folder that this Dataset is in. If not specified, the
+                Dataset will appear at the root level.
+            required: false
+            policy: ''
+            notes: ''
+        schema_column:
+            description: A `schema_column` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the column.
+            required: false
+            policy: ''
+            notes: ''
+        annotations:
+            description: List of tags that can be used for describing the Data Factory
+                Dataset PostgreSQL.
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: A map of parameters to associate with the Data Factory Dataset
+                PostgreSQL.
+            required: false
+            policy: ''
+            notes: ''
+        additional_properties:
+            description: A map of additional properties to associate with the Data
+                Factory Dataset PostgreSQL.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Type of the column. Valid values are `Byte`, `Byte[]`, `Boolean`,
+                `Date`, `DateTime`,`DateTimeOffset`, `Decimal`, `Double`, `Guid`,
+                `Int16`, `Int32`, `Int64`, `Single`, `String`, `TimeSpan`. Please
+                note these values are case sensitive.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Data Factory PostgreSQL Dataset.
+    timeouts:
+        create:
+            description: Used when creating the Data Factory PostgreSQL Dataset.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Data Factory PostgreSQL Dataset.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Data Factory PostgreSQL Dataset.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Data Factory PostgreSQL Dataset.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        a1lYUmhYMlpoWTNSdmNua2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWkdGMFlWOW1ZV04w
+        YjNKNVgyeHBibXRsWkY5elpYSjJhV05sWDNCdmMzUm5jbVZ6Y1d3aUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb2dJSEpsYzI5MWNt
+        TmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcx
+        d2JHVXVibUZ0WlFvZ0lHUmhkR0ZmWm1GamRHOXllVjl1WVcxbElDQWdQU0JoZW5WeVpYSnRYMlJo
+        ZEdGZlptRmpkRzl5ZVM1bGVHRnRjR3hsTG01aGJXVUtJQ0JqYjI1dVpXTjBhVzl1WDNOMGNtbHVa
+        eUFnSUQwZ0lraHZjM1E5WlhoaGJYQnNaVHRRYjNKMFBUVTBNekk3UkdGMFlXSmhjMlU5WlhoaGJY
+        QnNaVHRWU1VROVpYaGhiWEJzWlR0RmJtTnllWEIwYVc5dVRXVjBhRzlrUFRBN1VHRnpjM2R2Y21R
+        OVpYaGhiWEJzWlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZaR0YwWVY5bVlXTjBiM0o1
+        WDJSaGRHRnpaWFJmY0c5emRHZHlaWE54YkNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJt
+        RnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lB
+        Z1pHRjBZVjltWVdOMGIzSjVYMjVoYldVZ0lDQTlJR0Y2ZFhKbGNtMWZaR0YwWVY5bVlXTjBiM0o1
+        TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3hwYm10bFpGOXpaWEoyYVdObFgyNWhiV1VnUFNCaGVuVnla
+        WEp0WDJSaGRHRmZabUZqZEc5eWVWOXNhVzVyWldSZmMyVnlkbWxqWlY5d2IzTjBaM0psYzNGc0xt
+        VjRZVzF3YkdVdWJtRnRaUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRVlYUmhJRVpoWTNSdmNua2dVRzl6ZEdkeVpWTlJUQ0JFWVhSaGMyVjBjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjltWVdOMGIzSjVYMlJoZEdGelpYUmZjRzl6ZEdkeVpYTnhiQzVvZEcx
+        c0xtMWhjbXRrYjNkdQ==

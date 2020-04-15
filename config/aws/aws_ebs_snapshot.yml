@@ -1,0 +1,49 @@
+aws_ebs_snapshot:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_ebs_snapshot'
+    description: Provides an elastic block storage snapshot resource.
+    arguments:
+        volume_id:
+            description: The Volume ID of which to make a snapshot.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of what the snapshot is.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the snapshot
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The snapshot ID (e.g. snap-59fcb34e).
+        owner_id:
+            description: The AWS account ID of the EBS snapshot owner.
+        owner_alias:
+            description: Value from an Amazon-maintained list (`amazon`, `aws-marketplace`,
+                `microsoft`) of snapshot owners.
+        encrypted:
+            description: Whether the snapshot is encrypted.
+        volume_size:
+            description: The size of the drive in GiBs.
+        kms_key_id:
+            description: The ARN for the KMS encryption key.
+        data_encryption_key_id:
+            description: The data encryption key identifier for the snapshot.
+        tags:
+            description: A mapping of tags for the snapshot.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV0p6WDNadmJIVnRaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQmhk
+        bUZwYkdGaWFXeHBkSGxmZW05dVpTQTlJQ0oxY3kxM1pYTjBMVEpoSWdvZ0lITnBlbVVnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdOREFLQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJRTVoYldVZ1BTQWlTR1ZzYkc5
+        WGIzSnNaQ0lLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZlpXSnpYM051WVhCemFHOTBJaUFp
+        WlhoaGJYQnNaVjl6Ym1Gd2MyaHZkQ0lnZXdvZ0lIWnZiSFZ0WlY5cFpDQTlJQ0lrZTJGM2MxOWxZ
+        bk5mZG05c2RXMWxMbVY0WVcxd2JHVXVhV1I5SWdvS0lDQjBZV2R6SUQwZ2V3b2dJQ0FnVG1GdFpT
+        QTlJQ0pJWld4c2IxZHZjbXhrWDNOdVlYQWlDaUFnZlFwOUNnPT0=

@@ -1,0 +1,68 @@
+{
+    "azurerm_eventhub_consumer_group": {
+        "status": "HOLD",
+        "subcategory": "Messaging",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_eventhub_consumer_group",
+        "description": "Manages a Event Hubs Consumer Group as a nested resource within an Event Hub.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the EventHub Consumer Group resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace_name": {
+                "description": "Specifies the name of the grandparent EventHub Namespace. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "eventhub_name": {
+                "description": "Specifies the name of the EventHub. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the EventHub Consumer Group's grandparent Namespace exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "user_metadata": {
+                "description": "Specifies the user metadata.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the EventHub Consumer Group."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the EventHub Consumer Group.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the EventHub Consumer Group.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the EventHub Consumer Group.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the EventHub Consumer Group.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

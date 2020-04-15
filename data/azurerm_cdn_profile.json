@@ -1,0 +1,68 @@
+{
+    "azurerm_cdn_profile": {
+        "status": "HOLD",
+        "subcategory": "CDN",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_cdn_profile",
+        "description": "Manages a CDN Profile to create a collection of CDN Endpoints.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the CDN Profile. Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "The pricing related information of current CDN profile. Accepted values are `Standard_Akamai`, `Standard_ChinaCdn`, `Standard_Microsoft`, `Standard_Verizon` or `Premium_Verizon`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the CDN Profile."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the CDN Profile.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the CDN Profile.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the CDN Profile.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the CDN Profile.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

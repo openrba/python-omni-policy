@@ -1,0 +1,83 @@
+azurerm_site_recovery_replication_policy:
+    status: HOLD
+    subcategory: Recovery Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_site_recovery_replication_policy'
+    description: Manages an Azure Site Recovery replication policy on Azure.
+    arguments:
+        name:
+            description: The name of the network mapping.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Name of the resource group where the vault that should be
+                updated is located.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_vault_name:
+            description: The name of the vault that should be updated.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_point_retention_in_minutes:
+            description: The duration in minutes for which the recovery points need
+                to be stored.
+            required: true
+            policy: ''
+            notes: ''
+        application_consistent_snapshot_frequency_in_minutes:
+            description: Specifies the frequency(in minutes
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Site Recovery Replication Policy.
+    timeouts:
+        create:
+            description: Used when creating the Site Recovery Replication Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Site Recovery Replication Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Site Recovery Replication Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Site Recovery Replication Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpYzJWamIyNWtZ
+        WEo1SWlCN0NpQWdibUZ0WlNBZ0lDQWdQU0FpZEdabGVDMXVaWFIzYjNKckxXMWhjSEJwYm1jdGMy
+        VmpiMjVrWVhKNUlnb2dJR3h2WTJGMGFXOXVJRDBnSWtWaGMzUWdWVk1pQ24wS0NuSmxjMjkxY21O
+        bElDSmhlblZ5WlhKdFgzSmxZMjkyWlhKNVgzTmxjblpwWTJWelgzWmhkV3gwSWlBaWRtRjFiSFFp
+        SUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0Y21WamIzWmxj
+        bmt0ZG1GMWJIUWlDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNt
+        VnpiM1Z5WTJWZlozSnZkWEF1YzJWamIyNWtZWEo1TG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJW
+        ZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWMyVmpiMjVr
+        WVhKNUxtNWhiV1VLSUNCemEzVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lYSmtJ
+        Z3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5emFYUmxYM0psWTI5MlpYSjVYM0psY0d4cFky
+        RjBhVzl1WDNCdmJHbGplU0lnSW5CdmJHbGplU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWljRzlz
+        YVdONUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xu
+        TmxZMjl1WkdGeWVTNXVZVzFsQ2lBZ2NtVmpiM1psY25sZmRtRjFiSFJmYm1GdFpTQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVmpiM1ps
+        Y25sZmMyVnlkbWxqWlhOZmRtRjFiSFF1ZG1GMWJIUXVibUZ0WlFvZ0lISmxZMjkyWlhKNVgzQnZh
+        VzUwWDNKbGRHVnVkR2x2Ymw5cGJsOXRhVzUxZEdWeklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QXlOQ0FxSURZd0NpQWdZWEJ3YkdsallYUnBiMjVmWTI5dWMybHpkR1Z1ZEY5emJtRndjMmh2ZEY5
+        bWNtVnhkV1Z1WTNsZmFXNWZiV2x1ZFhSbGN5QTlJRFFnS2lBMk1BcDlDZz09
+    import: !!binary |
+        Q2dwVGFYUmxJRkpsWTI5MlpYSjVJRkpsY0d4cFkyRjBhVzl1SUZCdmJHbGphV1Z6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMybDBaVjl5WldOdmRtVnllVjl5WlhCc2FXTmhkR2x2Ymw5d2IyeHBZM2t1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

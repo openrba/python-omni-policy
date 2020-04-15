@@ -1,0 +1,86 @@
+{
+    "azurerm_devspace_controller": {
+        "status": "HOLD",
+        "subcategory": "DevSpace",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_devspace_controller",
+        "description": "Manages a DevSpace Controller.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the DevSpace Controller. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group under which the DevSpace Controller resource has to be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported location where the DevSpace Controller should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "Specifies the SKU Name for this DevSpace Controller. Possible values are `S1`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_container_host_resource_id": {
+                "description": "The resource id of Azure Kubernetes Service cluster. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_container_host_credentials_base64": {
+                "description": "Base64 encoding of `kube_config_raw` of Azure Kubernetes Service cluster. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the DevSpace Controller."
+            },
+            "data_plane_fqdn": {
+                "description": "DNS name for accessing DataPlane services."
+            },
+            "host_suffix": {
+                "description": "The host suffix for the DevSpace Controller."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the DevSpace Controller.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the DevSpace Controller.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the DevSpace Controller.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the DevSpace Controller.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

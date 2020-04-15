@@ -1,0 +1,149 @@
+azurerm_healthcare_service:
+    status: HOLD
+    subcategory: Healthcare
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_healthcare_service'
+    description: Manages a Healthcare Service.
+    arguments:
+        name:
+            description: The name of the service instance. Used for service endpoint,
+                must be unique within the audience.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which to create the Service.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure Region where the Service should
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        access_policy_ids:
+            description: A set of Azure object id's that are allowed to access the
+                Service. If not configured, the default value is the object id of
+                the service principal or user that is running Terraform.
+            required: false
+            policy: ''
+            notes: ''
+        authentication_configuration:
+            description: An `authentication_configuration` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        cosmosdb_throughput:
+            description: The provisioned throughput for the backing database. Range
+                of `400`-`1000`. Defaults to `400`.
+            required: false
+            policy: ''
+            notes: ''
+        cors_configuration:
+            description: A `cors_configuration` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        kind:
+            description: 'The type of the service. Values at time of publication are:
+                `fhir`, `fhir-Stu3` and `fhir-R4`. Default value is `fhir`.'
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        authority:
+            description: The Azure Active Directory (tenant
+            required: false
+            policy: ''
+            notes: ''
+        audience:
+            description: The intended audience to receive authentication tokens for
+                the service. The default value is https://azurehealthcareapis.com
+            required: false
+            policy: ''
+            notes: ''
+        smart_proxy_enabled:
+            description: Enables the 'SMART on FHIR' option for mobile and web implementations.
+            required: false
+            policy: ''
+            notes: ''
+        allowed_origins:
+            description: A set of origins to be allowed via CORS.
+            required: true
+            policy: ''
+            notes: ''
+        allowed_headers:
+            description: A set of headers to be allowed via CORS.
+            required: true
+            policy: ''
+            notes: ''
+        allowed_methods:
+            description: The methods to be allowed via CORS.
+            required: true
+            policy: ''
+            notes: ''
+        max_age_in_seconds:
+            description: The max age to be allowed via CORS.
+            required: true
+            policy: ''
+            notes: ''
+        allow_credentials:
+            description: If credentials are allowed via CORS.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Healthcare Service.
+    timeouts:
+        create:
+            description: Used when creating the Healthcare Service.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Healthcare Service.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Healthcare Service.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Healthcare Service.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJobFlXeDBhR05oY21WZmMyVnlkbWxqWlNJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luVnVhWEYxWldab2FY
+        SnVZVzFsSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0FpYzJGdGNHeGxMWEpsYzI5
+        MWNtTmxMV2R5YjNWd0lnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWQyVnpkSFZ6
+        TWlJS0lDQnJhVzVrSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1ab2FYSXRValFpQ2lBZ1kyOXpi
+        Vzl6WkdKZmRHaHliM1ZuYUhCMWRDQTlJQ0l5TURBd0lnb0tJQ0JoWTJObGMzTmZjRzlzYVdONVgy
+        OWlhbVZqZEY5cFpITWdQU0JiSW5oNGVIaDRlSGg0TFhoNGVIZ3RlSGg0ZUMxNGVIaDRMWGg0ZUho
+        NGVIaDRlSGg0ZUNKZENnb2dJSFJoWjNNZ1BTQjdDaUFnSUNBaVpXNTJhWEp2Ym0xbGJuUWlJRDBn
+        SW5SbGMzUmxibllpQ2lBZ0lDQWljSFZ5Y0c5elpTSWdJQ0FnSUQwZ0lrRmpZMlZ3ZEdGdVkyVlVa
+        WE4wY3lJS0lDQjlDZ29nSUdGMWRHaGxiblJwWTJGMGFXOXVYMk52Ym1acFozVnlZWFJwYjI0Z2V3
+        b2dJQ0FnWVhWMGFHOXlhWFI1SUNBZ0lDQWdJQ0FnSUNBOUlDSm9kSFJ3Y3pvdkwyeHZaMmx1TG0x
+        cFkzSnZjMjltZEc5dWJHbHVaUzVqYjIwdkpDVTNRbVJoZEdFdVlYcDFjbVZ5YlY5amJHbGxiblJm
+        WTI5dVptbG5MbU4xY25KbGJuUXVkR1Z1WVc1MFgybGtKVGRFSWdvZ0lDQWdZWFZrYVdWdVkyVWdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNKb2RIUndjem92TDJGNmRYSmxhR1ZoYkhSb1kyRnlaV0Z3YVhNdVky
+        OXRMeUlLSUNBZ0lITnRZWEowWDNCeWIzaDVYMlZ1WVdKc1pXUWdQU0FpZEhKMVpTSUtJQ0I5Q2dv
+        Z0lHTnZjbk5mWTI5dVptbG5kWEpoZEdsdmJpQjdDaUFnSUNCaGJHeHZkMlZrWDI5eWFXZHBibk1n
+        SUNBZ1BTQmJJbWgwZEhBNkx5OTNkM2N1WlhoaGJYQnNaUzVqYjIwaUxDQWlhSFIwY0RvdkwzZDNk
+        eTVsZUdGdGNHeGxNaTVqYjIwaVhRb2dJQ0FnWVd4c2IzZGxaRjlvWldGa1pYSnpJQ0FnSUQwZ1d5
+        SjRMWFJsYlhCdkxTb2lMQ0FpZUMxMFpXMXdiekl0S2lKZENpQWdJQ0JoYkd4dmQyVmtYMjFsZEdo
+        dlpITWdJQ0FnUFNCYklrZEZWQ0lzSUNKUVZWUWlYUW9nSUNBZ2JXRjRYMkZuWlY5cGJsOXpaV052
+        Ym1SeklEMGdJalV3TUNJS0lDQWdJR0ZzYkc5M1gyTnlaV1JsYm5ScFlXeHpJQ0E5SUNKMGNuVmxJ
+        Z29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwSVpXRnNkR2hqWVhKbElGTmxjblpwWTJVZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCeVpYTnZkWEpqWldCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFHVmhiSFJvWTJGeVpWOXpaWEoyYVdObExtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -1,0 +1,24 @@
+azurerm_backup_container_storage_account:
+    status: HOLD
+    subcategory: Recovery Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_backup_container_storage_account'
+    description: Manages a storage account container in an Azure Recovery Vault
+    arguments:
+        resource_group_name:
+            description: Name of the resource group where the vault is located.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_vault_name:
+            description: The name of the vault where the storage account will be registered.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: Azure Resource ID of the storage account to be registered
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

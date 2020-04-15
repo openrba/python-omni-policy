@@ -1,0 +1,93 @@
+azurerm_batch_application:
+    status: HOLD
+    subcategory: Batch
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_batch_application'
+    description: Manages Azure Batch Application instance.
+    arguments:
+        name:
+            description: The name of the application. This must be unique within the
+                account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group that contains the Batch account.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the Batch account. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        allow_updates:
+            description: A value indicating whether packages within the application
+                may be overwritten using the same version string. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        default_version:
+            description: The package to use if a client requests the application but
+                does not specify a version. This property can only be set to the name
+                of an existing package.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name for the application.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Batch Application.
+    timeouts:
+        create:
+            description: Used when creating the Batch Application.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Batch Application.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Batch Application.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Batch Application.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbWNpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNSdmNtRm5aVjloWTJO
+        dmRXNTBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlDSmxlR0Z0Y0d4bGMyRWlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ0lDQWdJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCc2Iy
+        TmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJk
+        eWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0JoWTJOdmRXNTBYM1JwWlhJZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpVTNSaGJtUmhjbVFpQ2lBZ1lXTmpiM1Z1ZEY5eVpYQnNhV05oZEdsdmJsOTBl
+        WEJsSUQwZ0lreFNVeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlltRjBZMmhmWVdOamIz
+        VnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNK
+        bGVHRnRjR3hsWW1FaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNCaGVuVnlaWEp0
+        WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHeHZZMkYwYVc5dUlDQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExt
+        eHZZMkYwYVc5dUNpQWdjRzl2YkY5aGJHeHZZMkYwYVc5dVgyMXZaR1VnUFNBaVFtRjBZMmhUWlhK
+        MmFXTmxJZ29nSUhOMGIzSmhaMlZmWVdOamIzVnVkRjlwWkNBZ0lEMGdZWHAxY21WeWJWOXpkRzl5
+        WVdkbFgyRmpZMjkxYm5RdVpYaGhiWEJzWlM1cFpBcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnli
+        VjlpWVhSamFGOWhjSEJzYVdOaGRHbHZiaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WW1GMFkyZ3RZWEJ3YkdsallYUnBiMjRpQ2lB
+        Z2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2
+        ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWVdOamIzVnVkRjl1WVcxbElDQWdJQ0FnSUNBOUlHRjZk
+        WEpsY20xZlltRjBZMmhmWVdOamIzVnVkQzVsZUdGdGNHeGxMbTVoYldVS2ZRbz0=
+    import: !!binary |
+        Q2dwQ1lYUmphQ0JCY0hCc2FXTmhkR2x2Ym5NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRjBZMmhmWVhCd2JHbGpZWFJwYjI0dWFIUnRiQzV0WVhKclpHOTNiZz09

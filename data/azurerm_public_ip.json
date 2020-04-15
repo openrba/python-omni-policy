@@ -1,0 +1,37 @@
+{
+    "azurerm_public_ip": {
+        "status": "HOLD",
+        "subcategory": "Network",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_public_ip",
+        "description": "Manages a Public IP Address.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Public IP resource . Changing this forces a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "The SKU of the Public IP. Accepted values are `Basic` and `Standard`. Defaults to `Basic`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,58 @@
+aws_api_gateway_authorizer:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_authorizer'
+    description: Provides an API Gateway Authorizer.
+    arguments:
+        authorizer_uri:
+            description: The authorizer's Uniform Resource Identifier (URI).
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the authorizer
+            required: true
+            policy: ''
+            notes: ''
+        rest_api_id:
+            description: The ID of the associated REST API
+            required: true
+            policy: ''
+            notes: ''
+        identity_source:
+            description: The source of the identity in an incoming request.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of the authorizer. Possible values are `TOKEN` for
+                a Lambda function using a single authorization token submitted in
+                a custom header, `REQUEST` for a Lambda function using incoming request
+                parameters, or `COGNITO_USER_POOLS` for using an Amazon Cognito user
+                pool.
+            required: false
+            policy: ''
+            notes: ''
+        authorizer_credentials:
+            description: The credentials required for the authorizer.
+            required: false
+            policy: ''
+            notes: ''
+        authorizer_result_ttl_in_seconds:
+            description: The TTL of cached authorizer results in seconds.
+            required: false
+            policy: ''
+            notes: ''
+        identity_validation_expression:
+            description: A validation expression for the incoming identity.
+            required: false
+            policy: ''
+            notes: ''
+        provider_arns:
+            description: A list of the Amazon Cognito user pool ARNs.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

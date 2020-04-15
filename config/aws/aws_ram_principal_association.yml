@@ -1,0 +1,24 @@
+aws_ram_principal_association:
+    status: HOLD
+    subcategory: RAM
+    layout: aws
+    page_title: 'AWS: aws_ram_principal_association'
+    description: Provides a Resource Access Manager (RAM) principal association.
+    arguments:
+        principal:
+            description: The principal to associate with the resource share. Possible
+                values are an AWS account ID, an AWS Organizations Organization ARN,
+                or an AWS Organizations Organization Unit ARN.
+            required: true
+            policy: ''
+            notes: ''
+        resource_share_arn:
+            description: The Amazon Resource Name (ARN
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Amazon Resource Name (ARN) of the Resource Share and
+                the principal, separated by a comma.
+    timeouts: {}

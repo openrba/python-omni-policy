@@ -1,0 +1,251 @@
+azurerm_hdinsight_ml_services_cluster:
+    status: HOLD
+    subcategory: HDInsight
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_hdinsight_ml_services_cluster'
+    description: Manages a HDInsight ML Services Cluster.
+    arguments:
+        name:
+            description: Specifies the name for this HDInsight ML Services Cluster.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the Resource Group in which this HDInsight
+                ML Services Cluster should exist. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the Azure Region which this HDInsight ML Services
+                Cluster should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cluster_version:
+            description: Specifies the Version of HDInsights which should be used
+                for this Cluster. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        gateway:
+            description: A `gateway` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        roles:
+            description: A `roles` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        rstudio:
+            description: Should R Studio community edition for ML Services be installed?
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_account:
+            description: One or more `storage_account` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        tier:
+            description: Specifies the Tier which should be used for this HDInsight
+                ML Services Cluster. Possible values are `Standard` or `Premium`.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        min_tls_version:
+            description: The minimal supported TLS version. Possible values are 1.0,
+                1.1 or 1.2. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A map of Tags which should be assigned to this HDInsight
+                ML Services Cluster.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Is the Ambari portal enabled? Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The Password associated with the local administrator for
+                the Zookeeper Nodes. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        username:
+            description: The Username of the local administrator for the Zookeeper
+                Nodes. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        vm_size:
+            description: The Size of the Virtual Machine which should be used as the
+                Zookeeper Nodes. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ssh_keys:
+            description: A list of SSH Keys which should be used for the local administrator
+                on the Zookeeper Nodes. Changing this forces a new resource to be
+                created.
+            required: false
+            policy: ''
+            notes: Either a `password` or one or more `ssh_keys` must be specified
+                - but not both.
+        subnet_id:
+            description: The ID of the Subnet within the Virtual Network where the
+                Zookeeper Nodes should be provisioned within. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network_id:
+            description: The ID of the Virtual Network where the Zookeeper Nodes should
+                be provisioned within. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        edge_node:
+            description: A `edge_node` block as defined above.
+            required: true
+            policy: ''
+            notes: ''
+        head_node:
+            description: A `head_node` block as defined above.
+            required: true
+            policy: ''
+            notes: ''
+        worker_node:
+            description: A `worker_node` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        zookeeper_node:
+            description: A `zookeeper_node` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        is_default:
+            description: Is this the Default Storage Account for the HDInsight ML
+                Services Cluster? Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: One of the `storage_account` blocks must be marked as the default.
+        storage_account_key:
+            description: The Access Key which should be used to connect to the Storage
+                Account. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        storage_container_id:
+            description: The ID of the Storage Container. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: This can be obtained from the `id` of the `azurerm_storage_container`
+                resource.
+        min_instance_count:
+            description: The minimum number of instances which should be run for the
+                Worker Nodes. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        target_instance_count:
+            description: The number of instances which should be run for the Worker
+                Nodes.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the HDInsight ML Services Cluster.
+        edge_ssh_endpoint:
+            description: The SSH Connectivity Endpoint for the Edge Node of the HDInsight
+                ML Cluster.
+        https_endpoint:
+            description: The HTTPS Connectivity Endpoint for this HDInsight ML Services
+                Cluster.
+        ssh_endpoint:
+            description: The SSH Connectivity Endpoint for this HDInsight ML Services
+                Cluster.
+    timeouts:
+        create:
+            description: Used when creating the MLServices HDInsight Cluster.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the MLServices HDInsight Cluster.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the MLServices HDInsight Cluster.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MLServices HDInsight Cluster.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emRHOXlZV2RsWDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbWhrYVc1emFXZG9kSE4wYjNJaUNpQWdjbVZ6YjNWeVkyVmZa
+        M0p2ZFhCZmJtRnRaU0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVH
+        RnRjR3hsTG01aGJXVUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5W
+        eVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lDQmhZMk52
+        ZFc1MFgzUnBaWElnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDaUFnWVdOamIzVnVk
+        Rjl5WlhCc2FXTmhkR2x2Ymw5MGVYQmxJRDBnSWt4U1V5SUtmUW9LY21WemIzVnlZMlVnSW1GNmRY
+        SmxjbTFmYzNSdmNtRm5aVjlqYjI1MFlXbHVaWElpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltaGthVzV6YVdkb2RDSUtJQ0J5WlhOdmRYSmpaVjlu
+        Y205MWNGOXVZVzFsSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJSE4wYjNKaFoyVmZZV05qYjNWdWRGOXVZVzFsSUNBOUlHRjZkWEpsY20xZmMz
+        UnZjbUZuWlY5aFkyTnZkVzUwTG1WNFlXMXdiR1V1Ym1GdFpRb2dJR052Ym5SaGFXNWxjbDloWTJO
+        bGMzTmZkSGx3WlNBOUlDSndjbWwyWVhSbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlv
+        WkdsdWMybG5hSFJmYld4ZmMyVnlkbWxqWlhOZlkyeDFjM1JsY2lJZ0ltVjRZVzF3YkdVaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGFHUnBZMngxYzNSbGNp
+        SUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5
+        bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBn
+        WVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdZ
+        MngxYzNSbGNsOTJaWEp6YVc5dUlDQWdJQ0E5SUNJekxqWWlDaUFnZEdsbGNpQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBOUlDSlRkR0Z1WkdGeVpDSUtJQ0J5YzNSMVpHbHZJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z2RISjFaUW9LSUNCbllYUmxkMkY1SUhzS0lDQWdJR1Z1WVdKc1pXUWdJRDBnZEhKMVpRb2dJQ0Fn
+        ZFhObGNtNWhiV1VnUFNBaVlXTmpkR1Z6ZEhWemNtZDNJZ29nSUNBZ2NHRnpjM2R2Y21RZ1BTQWlW
+        R1Z5Y2tGbWIzSnRNVEl6SVNJS0lDQjlDZ29nSUhOMGIzSmhaMlZmWVdOamIzVnVkQ0I3Q2lBZ0lD
+        QnpkRzl5WVdkbFgyTnZiblJoYVc1bGNsOXBaQ0E5SUdGNmRYSmxjbTFmYzNSdmNtRm5aVjlqYjI1
+        MFlXbHVaWEl1WlhoaGJYQnNaUzVwWkFvZ0lDQWdjM1J2Y21GblpWOWhZMk52ZFc1MFgydGxlU0Fn
+        UFNCaGVuVnlaWEp0WDNOMGIzSmhaMlZmWVdOamIzVnVkQzVsZUdGdGNHeGxMbkJ5YVcxaGNubGZZ
+        V05qWlhOelgydGxlUW9nSUNBZ2FYTmZaR1ZtWVhWc2RDQWdJQ0FnSUNBZ0lDQWdQU0IwY25WbENp
+        QWdmUW9LSUNCeWIyeGxjeUI3Q2lBZ0lDQm9aV0ZrWDI1dlpHVWdld29nSUNBZ0lDQjJiVjl6YVhw
+        bElDQTlJQ0pUZEdGdVpHRnlaRjlFTTE5Mk1pSUtJQ0FnSUNBZ2RYTmxjbTVoYldVZ1BTQWlZV05q
+        ZEdWemRIVnpjblp0SWdvZ0lDQWdJQ0J3WVhOemQyOXlaQ0E5SUNKQlkyTlVaWE4wZG1SVFF6UmtZ
+        V1k1T0RZaElnb2dJQ0FnZlFvS0lDQWdJSGR2Y210bGNsOXViMlJsSUhzS0lDQWdJQ0FnZG0xZmMy
+        bDZaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lYSmtYMFEwWDFZeUlnb2dJQ0FnSUNC
+        MWMyVnlibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWVdOamRHVnpkSFZ6Y25adElnb2dJQ0Fn
+        SUNCd1lYTnpkMjl5WkNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpUVdOalZHVnpkSFprVTBNMFpHRm1P
+        VGcySVNJS0lDQWdJQ0FnZEdGeVoyVjBYMmx1YzNSaGJtTmxYMk52ZFc1MElEMGdNd29nSUNBZ2ZR
+        b0tJQ0FnSUhwdmIydGxaWEJsY2w5dWIyUmxJSHNLSUNBZ0lDQWdkbTFmYzJsNlpTQWdQU0FpVTNS
+        aGJtUmhjbVJmUkROZmRqSWlDaUFnSUNBZ0lIVnpaWEp1WVcxbElEMGdJbUZqWTNSbGMzUjFjM0oy
+        YlNJS0lDQWdJQ0FnY0dGemMzZHZjbVFnUFNBaVFXTmpWR1Z6ZEhaa1UwTTBaR0ZtT1RnMklTSUtJ
+        Q0FnSUgwS0NpQWdJQ0JsWkdkbFgyNXZaR1VnZXdvZ0lDQWdJQ0IyYlY5emFYcGxJQ0E5SUNKVGRH
+        RnVaR0Z5WkY5RU0xOTJNaUlLSUNBZ0lDQWdkWE5sY201aGJXVWdQU0FpWVdOamRHVnpkSFZ6Y25a
+        dElnb2dJQ0FnSUNCd1lYTnpkMjl5WkNBOUlDSkJZMk5VWlhOMGRtUlRRelJrWVdZNU9EWWhJZ29n
+        SUNBZ2ZRb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwSVJFbHVjMmxuYUhRZ1RVd2dVMlZ5ZG1salpYTWdRMngxYzNSbGNuTWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFHUnBibk5wWjJoMFgyMXNYM05sY25acFkyVnpYMk5zZFhOMFpYSXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

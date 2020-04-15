@@ -1,0 +1,62 @@
+{
+    "aws_dx_bgp_peer": {
+        "status": "HOLD",
+        "subcategory": "Direct Connect",
+        "layout": "aws",
+        "page_title": "AWS: aws_dx_bgp_peer",
+        "description": "Provides a Direct Connect BGP peer resource.",
+        "arguments": {
+            "address_family": {
+                "description": "The address family for the BGP peer. `ipv4 ` or `ipv6`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bgp_asn": {
+                "description": "The autonomous system (AS",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_interface_id": {
+                "description": "The ID of the Direct Connect virtual interface on which to create the BGP peer.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "amazon_address": {
+                "description": "The IPv4 CIDR address to use to send traffic to Amazon.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bgp_auth_key": {
+                "description": "The authentication key for BGP configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "customer_address": {
+                "description": "The IPv4 CIDR destination address to which Amazon should send traffic.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the BGP peer resource."
+            },
+            "bgp_status": {
+                "description": "The Up/Down state of the BGP peer."
+            },
+            "bgp_peer_id": {
+                "description": "The ID of the BGP peer."
+            },
+            "aws_device": {
+                "description": "The Direct Connect endpoint on which the BGP peer terminates."
+            }
+        },
+        "timeouts": {}
+    }
+}

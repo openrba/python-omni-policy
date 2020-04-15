@@ -1,0 +1,138 @@
+azurerm_container_registry:
+    status: HOLD
+    subcategory: Container
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_container_registry'
+    description: Manages an Azure Container Registry.
+    arguments:
+        name:
+            description: Specifies the name of the Container Registry. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Container
+                Registry. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        admin_enabled:
+            description: Specifies whether the admin user is enabled. Defaults to
+                `false`.
+            required: false
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: The ID of a Storage Account which must be located in the
+                same Azure Region as the Container Registry.
+            required: false
+            policy: ''
+            notes: ''
+        sku:
+            description: The SKU name of the container registry. Possible values are  `Basic`,
+                `Standard` and `Premium`. `Classic` (which was previously `Basic`
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        georeplication_locations:
+            description: A list of Azure locations where the container registry should
+                be geo-replicated.
+            required: false
+            policy: ''
+            notes: ''
+        network_rule_set:
+            description: A `network_rule_set` block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        default_action:
+            description: The behaviour for requests matching no rules. Either `Allow`
+                or `Deny`. Defaults to `Allow`
+            required: false
+            policy: ''
+            notes: ''
+        ip_rule:
+            description: One or more `ip_rule` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network:
+            description: One or more `virtual_network` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        action:
+            description: The behaviour for requests matching this rule. At this time
+                the only supported value is `Allow`
+            required: true
+            policy: ''
+            notes: ''
+        ip_range:
+            description: The CIDR block from which requests will match the rule.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The subnet id from which requests will match the rule.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Container Registry.
+        login_server:
+            description: The URL that can be used to log into the container registry.
+        admin_username:
+            description: 'The Username associated with the Container Registry Admin
+                account '
+        admin_password:
+            description: 'The Password associated with the Container Registry Admin
+                account '
+    timeouts:
+        create:
+            description: Used when creating the Container Registry.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Container Registry.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Container Registry.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Container Registry.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKeVpYTnZkWEpqWlVkeWIzVndNU0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SlhaWE4wSUZWVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlqYjI1MFlXbHVaWEpmY21W
+        bmFYTjBjbmtpSUNKaFkzSWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaVkyOXVkR0ZwYm1WeVVtVm5hWE4wY25reElnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhi
+        V1VnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWNtY3VibUZ0WlFvZ0lH
+        eHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1Y21jdWJHOWpZWFJwYjI0S0lDQnphM1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlVSEpsYldsMWJTSUtJQ0JoWkcxcGJsOWxibUZpYkdWa0lDQWdJQ0FnSUNBZ0lDQWdQ
+        U0JtWVd4elpRb2dJR2RsYjNKbGNHeHBZMkYwYVc5dVgyeHZZMkYwYVc5dWN5QTlJRnNpUldGemRD
+        QlZVeUlzSUNKWFpYTjBJRVYxY205d1pTSmRDbjBL
+    import: !!binary |
+        Q2dwRGIyNTBZV2x1WlhJZ1VtVm5hWE4wY21sbGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXVkR0ZwYm1WeVgzSmxaMmx6ZEhKNUxtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -1,0 +1,44 @@
+{
+    "aws_cognito_identity_pool_roles_attachment": {
+        "status": "HOLD",
+        "subcategory": "Cognito",
+        "layout": "aws",
+        "page_title": "AWS: aws_cognito_identity_pool_roles_attachment",
+        "description": "Provides an AWS Cognito Identity Pool Roles Attachment.",
+        "arguments": {
+            "identity_pool_id": {
+                "description": "- An identity pool ID in the format REGION:GUID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_mapping": {
+                "description": "- A List of [Role Mapping](#role-mappings).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "roles": {
+                "description": "- The map of roles associated with this pool. For a given role, the key will be either \"authenticated\" or \"unauthenticated\" and the value will be the Role ARN.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The identity pool ID."
+            },
+            "identity_pool_id": {
+                "description": "An identity pool ID in the format REGION:GUID."
+            },
+            "role_mapping": {
+                "description": "The List of [Role Mapping](#role-mappings)."
+            },
+            "roles": {
+                "description": "The map of roles associated with this pool. For a given role, the key will be either \"authenticated\" or \"unauthenticated\" and the value will be the Role ARN."
+            }
+        },
+        "timeouts": {}
+    }
+}

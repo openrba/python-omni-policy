@@ -1,0 +1,147 @@
+azurerm_site_recovery_protection_container_mapping:
+    status: HOLD
+    subcategory: Recovery Services
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_site_recovery_protection_container_mapping'
+    description: Manages a Site Recovery protection container mapping on Azure.
+    arguments:
+        name:
+            description: The name of the network mapping.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Name of the resource group where the vault that should be
+                updated is located.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_vault_name:
+            description: The name of the vault that should be updated.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_fabric_name:
+            description: Name of fabric that should contains the protection container
+                to map.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_source_protection_container_name:
+            description: Name of the source protection container to map.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_target_protection_container_id:
+            description: Id of target protection container to map to.
+            required: true
+            policy: ''
+            notes: ''
+        recovery_replication_policy_id:
+            description: Id of the policy to use for this mapping.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Site Recovery Protection Container Mapping.
+    timeouts:
+        create:
+            description: Used when creating the Site Recovery Protection Container
+                Mapping.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Site Recovery Protection Container
+                Mapping.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Site Recovery Protection Container
+                Mapping.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Site Recovery Protection Container
+                Mapping.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY0hKcGJXRnll
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtWlhndGJtVjBkMjl5YXkxdFlYQndhVzVuTFhCeWFX
+        MWhjbmtpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQWlJQ0p6WldOdmJtUmhjbmtpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQTlJQ0owWm1WNExXNWxkSGR2Y21zdGJXRndjR2x1WnkxelpXTnZibVJoY25raUNpQWdi
+        RzlqWVhScGIyNGdQU0FpUldGemRDQlZVeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmNt
+        VmpiM1psY25sZmMyVnlkbWxqWlhOZmRtRjFiSFFpSUNKMllYVnNkQ0lnZXdvZ0lHNWhiV1VnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WldOdmRtVnllUzEyWVhWc2RDSUtJQ0Jz
+        YjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFj
+        QzV6WldOdmJtUmhjbmt1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElE
+        MGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1elpXTnZibVJoY25rdWJtRnRaUW9nSUhO
+        cmRTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDbjBLQ25KbGMyOTFjbU5s
+        SUNKaGVuVnlaWEp0WDNOcGRHVmZjbVZqYjNabGNubGZabUZpY21saklpQWljSEpwYldGeWVTSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWljSEpwYldGeWVTMW1ZV0p5YVdNaUNp
+        QWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNK
+        dmRYQXVjMlZqYjI1a1lYSjVMbTVoYldVS0lDQnlaV052ZG1WeWVWOTJZWFZzZEY5dVlXMWxJRDBn
+        WVhwMWNtVnliVjl5WldOdmRtVnllVjl6WlhKMmFXTmxjMTkyWVhWc2RDNTJZWFZzZEM1dVlXMWxD
+        aUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZloz
+        SnZkWEF1Y0hKcGJXRnllUzVzYjJOaGRHbHZiZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emFYUmxYM0psWTI5MlpYSjVYMlpoWW5KcFl5SWdJbk5sWTI5dVpHRnllU0lnZXdvZ0lHNWhiV1Vn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYzJWamIyNWtZWEo1TFdaaFluSnBZeUlLSUNCeVpYTnZk
+        WEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1elpX
+        TnZibVJoY25rdWJtRnRaUW9nSUhKbFkyOTJaWEo1WDNaaGRXeDBYMjVoYldVZ1BTQmhlblZ5WlhK
+        dFgzSmxZMjkyWlhKNVgzTmxjblpwWTJWelgzWmhkV3gwTG5aaGRXeDBMbTVoYldVS0lDQnNiMk5o
+        ZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNXpa
+        V052Ym1SaGNua3ViRzlqWVhScGIyNEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzJsMFpW
+        OXlaV052ZG1WeWVWOXdjbTkwWldOMGFXOXVYMk52Ym5SaGFXNWxjaUlnSW5CeWFXMWhjbmtpSUhz
+        S0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKd2NtbHRZWEo1TFhCeWIzUmxZM1Jw
+        YjI0dFkyOXVkR0ZwYm1WeUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUQwZ1lYcDFj
+        bVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzV6WldOdmJtUmhjbmt1Ym1GdFpRb2dJSEpsWTI5MlpY
+        SjVYM1poZFd4MFgyNWhiV1VnSUQwZ1lYcDFjbVZ5YlY5eVpXTnZkbVZ5ZVY5elpYSjJhV05sYzE5
+        MllYVnNkQzUyWVhWc2RDNXVZVzFsQ2lBZ2NtVmpiM1psY25sZlptRmljbWxqWDI1aGJXVWdQU0Jo
+        ZW5WeVpYSnRYM05wZEdWZmNtVmpiM1psY25sZlptRmljbWxqTG5CeWFXMWhjbmt1Ym1GdFpRcDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6YVhSbFgzSmxZMjkyWlhKNVgzQnliM1JsWTNScGIy
+        NWZZMjl1ZEdGcGJtVnlJaUFpYzJWamIyNWtZWEo1SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNBaWMyVmpiMjVrWVhKNUxYQnliM1JsWTNScGIyNHRZMjl1ZEdGcGJtVnlJZ29n
+        SUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1elpXTnZibVJoY25rdWJtRnRaUW9nSUhKbFkyOTJaWEo1WDNaaGRXeDBYMjVoYldVZ0lE
+        MGdZWHAxY21WeWJWOXlaV052ZG1WeWVWOXpaWEoyYVdObGMxOTJZWFZzZEM1MllYVnNkQzV1WVcx
+        bENpQWdjbVZqYjNabGNubGZabUZpY21salgyNWhiV1VnUFNCaGVuVnlaWEp0WDNOcGRHVmZjbVZq
+        YjNabGNubGZabUZpY21sakxuTmxZMjl1WkdGeWVTNXVZVzFsQ24wS0NuSmxjMjkxY21ObElDSmhl
+        blZ5WlhKdFgzTnBkR1ZmY21WamIzWmxjbmxmY21Wd2JHbGpZWFJwYjI1ZmNHOXNhV041SWlBaWNH
+        OXNhV041SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0p3YjJ4cFkza2lDaUFnY21WemIzVnlZMlZm
+        WjNKdmRYQmZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVjMlZqYjI1a1lYSjVMbTVoYldVS0lD
+        QnlaV052ZG1WeWVWOTJZWFZzZEY5dVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaV052ZG1WeWVWOXpaWEoyYVdObGMxOTJZWFZz
+        ZEM1MllYVnNkQzV1WVcxbENpQWdjbVZqYjNabGNubGZjRzlwYm5SZmNtVjBaVzUwYVc5dVgybHVY
+        MjFwYm5WMFpYTWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJREkwSUNvZ05qQUtJQ0JoY0hCc2FX
+        TmhkR2x2Ymw5amIyNXphWE4wWlc1MFgzTnVZWEJ6YUc5MFgyWnlaWEYxWlc1amVWOXBibDl0YVc1
+        MWRHVnpJRDBnTkNBcUlEWXdDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNOcGRHVmZjbVZq
+        YjNabGNubGZjSEp2ZEdWamRHbHZibDlqYjI1MFlXbHVaWEpmYldGd2NHbHVaeUlnSW1OdmJuUmhh
+        VzVsY2kxdFlYQndhVzVuSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlZMjl1ZEdGcGJtVnlMVzFoY0hCcGJtY2lDaUFnY21W
+        emIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Jo
+        ZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xuTmxZMjl1WkdGeWVTNXVZVzFsQ2lBZ2NtVmpi
+        M1psY25sZmRtRjFiSFJmYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVu
+        VnlaWEp0WDNKbFkyOTJaWEo1WDNObGNuWnBZMlZ6WDNaaGRXeDBMblpoZFd4MExtNWhiV1VLSUNC
+        eVpXTnZkbVZ5ZVY5bVlXSnlhV05mYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5
+        SUdGNmRYSmxjbTFmYzJsMFpWOXlaV052ZG1WeWVWOW1ZV0p5YVdNdWNISnBiV0Z5ZVM1dVlXMWxD
+        aUFnY21WamIzWmxjbmxmYzI5MWNtTmxYM0J5YjNSbFkzUnBiMjVmWTI5dWRHRnBibVZ5WDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYM05wZEdWZmNtVmpiM1psY25sZmNISnZkR1ZqZEdsdmJsOWpiMjUwWVds
+        dVpYSXVjSEpwYldGeWVTNXVZVzFsQ2lBZ2NtVmpiM1psY25sZmRHRnlaMlYwWDNCeWIzUmxZM1Jw
+        YjI1ZlkyOXVkR0ZwYm1WeVgybGtJQ0FnUFNCaGVuVnlaWEp0WDNOcGRHVmZjbVZqYjNabGNubGZj
+        SEp2ZEdWamRHbHZibDlqYjI1MFlXbHVaWEl1YzJWamIyNWtZWEo1TG1sa0NpQWdjbVZqYjNabGNu
+        bGZjbVZ3YkdsallYUnBiMjVmY0c5c2FXTjVYMmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhK
+        dFgzTnBkR1ZmY21WamIzWmxjbmxmY21Wd2JHbGpZWFJwYjI1ZmNHOXNhV041TG5CdmJHbGplUzVw
+        WkFwOUNnPT0=
+    import: !!binary |
+        Q2dwVGFYUmxJRkpsWTI5MlpYSjVJRkJ5YjNSbFkzUnBiMjRnUTI5dWRHRnBibVZ5SUUxaGNIQnBi
+        bWR6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lD
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMybDBaVjl5WldOdmRtVnllVjl3Y205MFpXTjBhVzl1WDJOdmJuUmhhVzVsY2w5
+        dFlYQndhVzVuTG1oMGJXd3ViV0Z5YTJSdmQyND0=

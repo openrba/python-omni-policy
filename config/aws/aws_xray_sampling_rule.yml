@@ -1,0 +1,79 @@
+aws_xray_sampling_rule:
+    status: HOLD
+    subcategory: XRay
+    layout: aws
+    page_title: 'AWS: aws_xray_sampling_rule'
+    description: Creates and manages an AWS XRay Sampling Rule.
+    arguments:
+        rule_name:
+            description: The name of the sampling rule.
+            required: true
+            policy: ''
+            notes: ''
+        resource_arn:
+            description: Matches the ARN of the AWS resource on which the service
+                runs.
+            required: true
+            policy: ''
+            notes: ''
+        priority:
+            description: The priority of the sampling rule.
+            required: true
+            policy: ''
+            notes: ''
+        fixed_rate:
+            description: The percentage of matching requests to instrument, after
+                the reservoir is exhausted.
+            required: true
+            policy: ''
+            notes: ''
+        reservoir_size:
+            description: A fixed number of matching requests to instrument per second,
+                prior to applying the fixed rate. The reservoir is not used directly
+                by services, but applies to all services using the rule collectively.
+            required: true
+            policy: ''
+            notes: ''
+        service_name:
+            description: Matches the `name` that the service uses to identify itself
+                in segments.
+            required: true
+            policy: ''
+            notes: ''
+        service_type:
+            description: Matches the `origin` that the service uses to identify its
+                type in segments.
+            required: true
+            policy: ''
+            notes: ''
+        host:
+            description: Matches the hostname from a request URL.
+            required: true
+            policy: ''
+            notes: ''
+        http_method:
+            description: Matches the HTTP method of a request.
+            required: true
+            policy: ''
+            notes: ''
+        url_path:
+            description: Matches the path from a request URL.
+            required: true
+            policy: ''
+            notes: ''
+        version:
+            description: The version of the sampling rule format (`1` )
+            required: true
+            policy: ''
+            notes: ''
+        attributes:
+            description: Matches attributes derived from the request.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The name of the sampling rule.
+        arn:
+            description: The ARN of the sampling rule.
+    timeouts: {}

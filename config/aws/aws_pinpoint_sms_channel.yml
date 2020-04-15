@@ -1,0 +1,33 @@
+aws_pinpoint_sms_channel:
+    status: HOLD
+    subcategory: Pinpoint
+    layout: aws
+    page_title: 'AWS: aws_pinpoint_sms_channel'
+    description: Provides a Pinpoint SMS Channel resource.
+    arguments:
+        application_id:
+            description: The application ID.
+            required: true
+            policy: ''
+            notes: ''
+        enabled:
+            description: Whether the channel is enabled or disabled. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        sender_id:
+            description: Sender identifier of your messages.
+            required: false
+            policy: ''
+            notes: ''
+        short_code:
+            description: The Short Code registered with the phone provider.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        promotional_messages_per_second:
+            description: Promotional messages per second that can be sent.
+        transactional_messages_per_second:
+            description: Transactional messages per second that can be sent.
+    timeouts: {}

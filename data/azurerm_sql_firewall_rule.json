@@ -1,0 +1,68 @@
+{
+    "azurerm_sql_firewall_rule": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_sql_firewall_rule",
+        "description": "Manages a SQL Firewall Rule.",
+        "arguments": {
+            "name": {
+                "description": "The name of the firewall rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "The name of the SQL Server on which to create the Firewall Rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "start_ip_address": {
+                "description": "The starting IP address to allow through the firewall for this rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "end_ip_address": {
+                "description": "The ending IP address to allow through the firewall for this rule.",
+                "required": true,
+                "policy": "",
+                "notes": "The Azure feature `Allow access to Azure services` can be enabled by setting `start_ip_address` and `end_ip_address` to `0.0.0.0` which ([is documented in the Azure API Docs](https://docs.microsoft.com/en-us/rest/api/sql/firewallrules/createorupdate))."
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The SQL Firewall Rule ID."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the SQL Firewall Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the SQL Firewall Rule.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the SQL Firewall Rule.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the SQL Firewall Rule.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

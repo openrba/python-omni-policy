@@ -1,0 +1,118 @@
+azurerm_express_route_circuit:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_express_route_circuit'
+    description: Manages an ExpressRoute circuit.
+    arguments:
+        name:
+            description: The name of the ExpressRoute circuit. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the ExpressRoute
+                circuit. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        service_provider_name:
+            description: The name of the ExpressRoute Service Provider.
+            required: true
+            policy: ''
+            notes: ''
+        peering_location:
+            description: The name of the peering location and **not** the Azure resource
+                location.
+            required: true
+            policy: ''
+            notes: ''
+        bandwidth_in_mbps:
+            description: The bandwidth in Mbps of the circuit being created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: A `sku` block for the ExpressRoute circuit as documented
+                below.
+            required: true
+            policy: ''
+            notes: ''
+        allow_classic_operations:
+            description: Allow the circuit to interact with classic (RDFE
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        tier:
+            description: The service tier. Possible values are `Basic`, `Local`, `Standard`
+                or `Premium`.
+            required: true
+            policy: ''
+            notes: ''
+        family:
+            description: The billing mode for bandwidth. Possible values are `MeteredData`
+                or `UnlimitedData`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Resource ID of the ExpressRoute circuit.
+        service_provider_provisioning_state:
+            description: The ExpressRoute circuit provisioning state from your chosen
+                service provider. Possible values are "NotProvisioned", "Provisioning",
+                "Provisioned", and "Deprovisioning".
+        service_key:
+            description: The string needed by the service provider to provision the
+                ExpressRoute circuit.
+    timeouts:
+        create:
+            description: Used when creating the ExpressRoute Circuit.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ExpressRoute Circuit.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ExpressRoute Circuit.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ExpressRoute Circuit.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0Y0hKMFZHVnpkQ0lLSUNCc2IyTmhkR2x2YmlBOUlD
+        SlhaWE4wSUZWVElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlsZUhCeVpYTnpYM0p2ZFhS
+        bFgyTnBjbU4xYVhRaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJbVY0Y0hKbGMzTlNiM1YwWlRFaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRa
+        U0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lD
+        QnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJk
+        eWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J6WlhKMmFXTmxYM0J5YjNacFpHVnlYMjVo
+        YldVZ1BTQWlSWEYxYVc1cGVDSUtJQ0J3WldWeWFXNW5YMnh2WTJGMGFXOXVJQ0FnSUNBZ1BTQWlV
+        MmxzYVdOdmJpQldZV3hzWlhraUNpQWdZbUZ1WkhkcFpIUm9YMmx1WDIxaWNITWdJQ0FnSUQwZ05U
+        QUtDaUFnYzJ0MUlIc0tJQ0FnSUhScFpYSWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS0lDQWdJR1poYlds
+        c2VTQTlJQ0pOWlhSbGNtVmtSR0YwWVNJS0lDQjlDZ29nSUhSaFozTWdQU0I3Q2lBZ0lDQmxiblpw
+        Y205dWJXVnVkQ0E5SUNKUWNtOWtkV04wYVc5dUlnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwRmVIQnlaWE56VW05MWRHVWdZMmx5WTNWcGRITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpYaHdjbVZ6YzE5eWIzVjBaVjlqYVhKamRXbDBMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

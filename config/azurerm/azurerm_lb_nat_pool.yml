@@ -1,0 +1,106 @@
+azurerm_lb_nat_pool:
+    status: HOLD
+    subcategory: Load Balancer
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_lb_nat_pool'
+    description: Manages a Load Balancer NAT Pool.
+    arguments:
+        name:
+            description: Specifies the name of the NAT pool.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the resource.
+            required: true
+            policy: ''
+            notes: ''
+        loadbalancer_id:
+            description: The ID of the Load Balancer in which to create the NAT pool.
+            required: true
+            policy: ''
+            notes: ''
+        frontend_ip_configuration_name:
+            description: The name of the frontend IP configuration exposing this rule.
+            required: true
+            policy: ''
+            notes: ''
+        protocol:
+            description: The transport protocol for the external endpoint. Possible
+                values are `Udp` or `Tcp`.
+            required: true
+            policy: ''
+            notes: ''
+        frontend_port_start:
+            description: The first port number in the range of external ports that
+                will be used to provide Inbound Nat to NICs associated with this Load
+                Balancer. Possible values range between 1 and 65534, inclusive.
+            required: true
+            policy: ''
+            notes: ''
+        frontend_port_end:
+            description: The last port number in the range of external ports that
+                will be used to provide Inbound Nat to NICs associated with this Load
+                Balancer. Possible values range between 1 and 65534, inclusive.
+            required: true
+            policy: ''
+            notes: ''
+        backend_port:
+            description: The port used for the internal endpoint. Possible values
+                range between 1 and 65535, inclusive.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Load Balancer NAT pool.
+    timeouts:
+        create:
+            description: Used when creating the Load Balancer NAT Pool.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Load Balancer NAT Pool.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Load Balancer NAT Pool.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Load Balancer NAT Pool.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJa3h2WVdSQ1lXeGhibU5sY2xKSElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzQjFZbXhwWTE5
+        cGNDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbEIx
+        WW14cFkwbFFSbTl5VEVJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJ
+        RlZUSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNt
+        TmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdGc2JHOWpZWFJwYjI1ZmJXVjBhRzlrSUNB
+        Z1BTQWlVM1JoZEdsaklncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzWWlJZ0ltVjRZVzF3
+        YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsUmxjM1JNYjJGa1FtRnNZ
+        VzVqWlhJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJRlZUSWdvZ0lI
+        SmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xtVjRZVzF3YkdVdWJtRnRaUW9LSUNCbWNtOXVkR1Z1WkY5cGNGOWpiMjVtYVdkMWNtRjBhVzl1
+        SUhzS0lDQWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsQjFZbXhwWTBsUVFXUmtj
+        bVZ6Y3lJS0lDQWdJSEIxWW14cFkxOXBjRjloWkdSeVpYTnpYMmxrSUQwZ1lYcDFjbVZ5YlY5d2RX
+        SnNhV05mYVhBdVpYaGhiWEJzWlM1cFpBb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmJHSmZibUYwWDNCdmIyd2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJm
+        Ym1GdFpTQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxl
+        R0Z0Y0d4bExtNWhiV1VLSUNCc2IyRmtZbUZzWVc1alpYSmZhV1FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0JoZW5WeVpYSnRYMnhpTG1WNFlXMXdiR1V1YVdRS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVUyRnRjR3hsUVhCd2JHbGpZWFJwYjI1UWIyOXNJZ29n
+        SUhCeWIzUnZZMjlzSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pVWTNBaUNpQWda
+        bkp2Ym5SbGJtUmZjRzl5ZEY5emRHRnlkQ0FnSUNBZ0lDQWdJQ0FnSUQwZ09EQUtJQ0JtY205dWRH
+        VnVaRjl3YjNKMFgyVnVaQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQTRNUW9nSUdKaFkydGxibVJmY0c5
+        eWRDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJRGd3T0RBS0lDQm1jbTl1ZEdWdVpGOXBjRjlq
+        YjI1bWFXZDFjbUYwYVc5dVgyNWhiV1VnUFNBaVVIVmliR2xqU1ZCQlpHUnlaWE56SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRTVCVkNCUWIyOXNjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHSmZibUYwWDNCdmIyd3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

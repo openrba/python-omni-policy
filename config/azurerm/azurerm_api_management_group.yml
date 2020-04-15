@@ -1,0 +1,94 @@
+azurerm_api_management_group:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_group'
+    description: Manages an API Management Group.
+    arguments:
+        name:
+            description: The name of the API Management Group. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Group should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the [API Management Service](api_management.html
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name of this API Management Group.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of this API Management Group.
+            required: false
+            policy: ''
+            notes: ''
+        external_id:
+            description: The identifier of the external Group. For example, an Azure
+                Active Directory group `aad://<tenant>.onmicrosoft.com/groups/<group
+                object id>`.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of this API Management Group. Possible values are
+                `custom` and `external`. Default is `custom`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Group.
+    timeouts:
+        create:
+            description: Used when creating the API Management Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3YVY5
+        dFlXNWhaMlZ0Wlc1MElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pTMWhjR2x0SWdvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQ
+        U0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lD
+        QnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205
+        MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCd2RXSnNhWE5vWlhKZmJtRnRaU0FnSUNBZ0lEMGdJbkIx
+        WWpFaUNpQWdjSFZpYkdsemFHVnlYMlZ0WVdsc0lDQWdJQ0E5SUNKd2RXSXhRR1Z0WVdsc0xtTnZi
+        U0lLQ2lBZ2MydDFYMjVoYldVZ1BTQWlSR1YyWld4dmNHVnlYekVpQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgyRndhVjl0WVc1aFoyVnRaVzUwWDJkeWIzVndJaUFpWlhoaGJYQnNaU0lnZXdv
+        Z0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzFoY0dsdFp5SUtJQ0J5
+        WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFj
+        QzVsZUdGdGNHeGxMbTVoYldVS0lDQmhjR2xmYldGdVlXZGxiV1Z1ZEY5dVlXMWxJRDBnWVhwMWNt
+        VnliVjloY0dsZmJXRnVZV2RsYldWdWRDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCa2FYTndiR0Y1WDI1
+        aGJXVWdJQ0FnSUNBZ0lEMGdJa1Y0WVcxd2JHVWdSM0p2ZFhBaUNpQWdaR1Z6WTNKcGNIUnBiMjRn
+        SUNBZ0lDQWdJQ0E5SUNKVWFHbHpJR2x6SUdGdUlHVjRZVzF3YkdVZ1FWQkpJRzFoYm1GblpXMWxi
+        blFnWjNKdmRYQXVJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JIY205MWNITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

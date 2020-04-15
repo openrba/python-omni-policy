@@ -1,0 +1,56 @@
+{
+    "aws_waf_web_acl": {
+        "status": "HOLD",
+        "subcategory": "WAF",
+        "layout": "aws",
+        "page_title": "AWS: aws_waf_web_acl",
+        "description": "Provides a AWS WAF web access control group (ACL) resource.",
+        "arguments": {
+            "default_action": {
+                "description": "Configuration block with action that you want AWS WAF to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL. Detailed below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metric_name": {
+                "description": "The name or description for the Amazon CloudWatch metric of this web ACL.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name or description of the web ACL.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rules": {
+                "description": "Configuration blocks containing rules to associate with the web ACL and the settings for each rule. Detailed below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logging_configuration": {
+                "description": "Configuration block to enable WAF logging. Detailed below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Key-value mapping of resource tags",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the WAF WebACL."
+            },
+            "arn": {
+                "description": "The ARN of the WAF WebACL."
+            }
+        },
+        "timeouts": {}
+    }
+}

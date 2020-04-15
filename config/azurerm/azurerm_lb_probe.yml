@@ -1,0 +1,106 @@
+azurerm_lb_probe:
+    status: HOLD
+    subcategory: Load Balancer
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_lb_probe'
+    description: Manages a Load Balancer Probe Resource.
+    arguments:
+        name:
+            description: Specifies the name of the Probe.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the resource.
+            required: true
+            policy: ''
+            notes: ''
+        loadbalancer_id:
+            description: The ID of the LoadBalancer in which to create the NAT Rule.
+            required: true
+            policy: ''
+            notes: ''
+        protocol:
+            description: Specifies the protocol of the end point. Possible values
+                are `Http`, `Https` or `Tcp`. If Tcp is specified, a received ACK
+                is required for the probe to be successful. If Http is specified,
+                a 200 OK response from the specified URI is required for the probe
+                to be successful.
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: Port on which the Probe queries the backend endpoint. Possible
+                values range from 1 to 65535, inclusive.
+            required: true
+            policy: ''
+            notes: ''
+        request_path:
+            description: The URI used for requesting health status from the backend
+                endpoint. Required if protocol is set to Http. Otherwise, it is not
+                allowed.
+            required: false
+            policy: ''
+            notes: ''
+        interval_in_seconds:
+            description: The interval, in seconds between probes to the backend endpoint
+                for health status. The default value is 15, the minimum value is 5.
+            required: false
+            policy: ''
+            notes: ''
+        number_of_probes:
+            description: The number of failed probe attempts after which the backend
+                endpoint is removed from rotation. The default value is 2. NumberOfProbes
+                multiplied by intervalInSeconds value must be greater or equal to
+                10.Endpoints are returned to rotation when at least one probe is successful.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Load Balancer Probe.
+    timeouts:
+        create:
+            description: Used when creating the Load Balancer Probe.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Load Balancer Probe.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Load Balancer Probe.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Load Balancer Probe.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJa3h2WVdSQ1lXeGhibU5sY2xKSElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzQjFZbXhwWTE5
+        cGNDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbEIx
+        WW14cFkwbFFSbTl5VEVJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJ
+        RlZUSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNt
+        TmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdGc2JHOWpZWFJwYjI1ZmJXVjBhRzlrSUNB
+        Z1BTQWlVM1JoZEdsaklncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzWWlJZ0ltVjRZVzF3
+        YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsUmxjM1JNYjJGa1FtRnNZ
+        VzVqWlhJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJRlZUSWdvZ0lI
+        SmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xtVjRZVzF3YkdVdWJtRnRaUW9LSUNCbWNtOXVkR1Z1WkY5cGNGOWpiMjVtYVdkMWNtRjBhVzl1
+        SUhzS0lDQWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsQjFZbXhwWTBsUVFXUmtj
+        bVZ6Y3lJS0lDQWdJSEIxWW14cFkxOXBjRjloWkdSeVpYTnpYMmxrSUQwZ1lYcDFjbVZ5YlY5d2RX
+        SnNhV05mYVhBdVpYaGhiWEJzWlM1cFpBb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmJHSmZjSEp2WW1VaUlDSmxlR0Z0Y0d4bElpQjdDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0
+        WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdi
+        RzloWkdKaGJHRnVZMlZ5WDJsa0lDQWdJQ0E5SUdGNmRYSmxjbTFmYkdJdVpYaGhiWEJzWlM1cFpB
+        b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWMzTm9MWEoxYm01cGJtY3RjSEp2WW1V
+        aUNpQWdjRzl5ZENBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURJeUNuMEs=
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRkJ5YjJKbGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHSmZjSEp2WW1VdWFIUnRiQzV0WVhKclpHOTNiZz09

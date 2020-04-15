@@ -1,0 +1,23 @@
+aws_waf_regex_pattern_set:
+    status: HOLD
+    subcategory: WAF
+    layout: aws
+    page_title: 'AWS: aws_waf_regex_pattern_set'
+    description: Provides a AWS WAF Regex Pattern Set resource.
+    arguments:
+        name:
+            description: The name or description of the Regex Pattern Set.
+            required: true
+            policy: ''
+            notes: ''
+        regex_pattern_strings:
+            description: A list of regular expression (regex
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the WAF Regex Pattern Set.
+        arn:
+            description: Amazon Resource Name (ARN)
+    timeouts: {}

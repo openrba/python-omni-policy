@@ -1,0 +1,83 @@
+azurerm_subnet_network_security_group_association:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_subnet_network_security_group_association'
+    description: Associates a [Network Security Group](network_security_group.html)
+        with a [Subnet](subnet.html) within a [Virtual Network](virtual_network.html).
+    arguments:
+        network_security_group_id:
+            description: The ID of the Network Security Group which should be associated
+                with the Subnet. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the Subnet. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Subnet.
+    timeouts:
+        create:
+            description: Used when creating the Subnet Network Security Group Association.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Subnet Network Security Group Association.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Subnet Network Security Group Association.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Subnet Network Security Group Association.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMakF2TVRZaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbVp5YjI1MFpXNWtJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0IyYVhKMGRXRnNYMjVs
+        ZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lqRXdMakF1TWk0d0x6
+        STBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5dVpYUjNiM0pyWDNObFkzVnlhWFI1WDJk
+        eWIzVndJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Fp
+        WlhoaGJYQnNaUzF1YzJjaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNt
+        TmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcx
+        d2JHVXVibUZ0WlFvS0lDQnpaV04xY21sMGVWOXlkV3hsSUhzS0lDQWdJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGMzUXhNak1pQ2lBZ0lDQndjbWx2Y21sMGVTQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJREV3TUFvZ0lDQWdaR2x5WldOMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdQU0FpU1c1aWIzVnVaQ0lLSUNBZ0lHRmpZMlZ6Y3lBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lEMGdJa0ZzYkc5M0lnb2dJQ0FnY0hKdmRHOWpiMndnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVZHTndJZ29nSUNBZ2MyOTFjbU5sWDNCdmNuUmZjbUZ1WjJVZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlLaUlLSUNBZ0lHUmxjM1JwYm1GMGFXOXVYM0J2Y25SZmNtRnVaMlVnSUNBZ0lE
+        MGdJaW9pQ2lBZ0lDQnpiM1Z5WTJWZllXUmtjbVZ6YzE5d2NtVm1hWGdnSUNBZ0lDQTlJQ0lxSWdv
+        Z0lDQWdaR1Z6ZEdsdVlYUnBiMjVmWVdSa2NtVnpjMTl3Y21WbWFYZ2dQU0FpS2lJS0lDQjlDbjBL
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNOMVltNWxkRjl1WlhSM2IzSnJYM05sWTNWeWFYUjVY
+        MmR5YjNWd1gyRnpjMjlqYVdGMGFXOXVJaUFpWlhoaGJYQnNaU0lnZXdvZ0lITjFZbTVsZEY5cFpD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzTjFZbTVsZEM1bGVHRnRjR3hsTG1s
+        a0NpQWdibVYwZDI5eWExOXpaV04xY21sMGVWOW5jbTkxY0Y5cFpDQTlJR0Y2ZFhKbGNtMWZibVYw
+        ZDI5eWExOXpaV04xY21sMGVWOW5jbTkxY0M1bGVHRnRjR3hsTG1sa0NuMEs=
+    import: !!binary |
+        Q2dwVGRXSnVaWFFnWUR3dFBtQWdUbVYwZDI5eWF5QlRaV04xY21sMGVTQkhjbTkxY0NCQmMzTnZZ
+        MmxoZEdsdmJuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVky
+        VWdhV1JnSUc5bUlIUm9aU0JUZFdKdVpYUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzVmlibVYwWDI1bGRIZHZjbXRmYzJWamRYSnBkSGxmWjNKdmRYQmZZWE56YjJO
+        cFlYUnBiMjR1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

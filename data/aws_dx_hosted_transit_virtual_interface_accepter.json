@@ -1,0 +1,38 @@
+{
+    "aws_dx_hosted_transit_virtual_interface_accepter": {
+        "status": "HOLD",
+        "subcategory": "Direct Connect",
+        "layout": "aws",
+        "page_title": "AWS: aws_dx_hosted_transit_virtual_interface_accepter",
+        "description": "Provides a resource to manage the accepter's side of a Direct Connect hosted transit virtual interface.",
+        "arguments": {
+            "dx_gateway_id": {
+                "description": "The ID of the [Direct Connect gateway](dx_gateway.html",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "virtual_interface_id": {
+                "description": "The ID of the Direct Connect virtual interface to accept.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the virtual interface."
+            },
+            "arn": {
+                "description": "The ARN of the virtual interface."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,99 @@
+azurerm_api_management_api_version_set:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_api_version_set'
+    description: Manages an API Version Set within an API Management Service.
+    arguments:
+        name:
+            description: The name of the API Version Set. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the [API Management Service](api_management.html
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the parent API Management
+                Service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name of this API Version Set.
+            required: true
+            policy: ''
+            notes: ''
+        versioning_scheme:
+            description: Specifies where in an Inbound HTTP Request that the API Version
+                should be read from. Possible values are `Header`, `Query` and `Segment`.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of API Version Set.
+            required: false
+            policy: ''
+            notes: ''
+        version_header_name:
+            description: The name of the Header which should be read from Inbound
+                Requests which defines the API Version.
+            required: false
+            policy: ''
+            notes: This must be specified when `versioning_scheme` is set to `Header`.
+        version_query_name:
+            description: The name of the Query String which should be read from Inbound
+                Requests which defines the API Version.
+            required: false
+            policy: ''
+            notes: This must be specified when `versioning_scheme` is set to `Query`.
+    attributes:
+        id:
+            description: The ID of the API Version Set.
+    timeouts:
+        create:
+            description: Used when creating the API Management API Version Set.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management API Version Set.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management API Version Set.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management API Version Set.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3YVY5
+        dFlXNWhaMlZ0Wlc1MElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pTMWhjR2x0SWdvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQ
+        U0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lD
+        QnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205
+        MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCd2RXSnNhWE5vWlhKZmJtRnRaU0FnSUNBZ0lEMGdJbkIx
+        WWpFaUNpQWdjSFZpYkdsemFHVnlYMlZ0WVdsc0lDQWdJQ0E5SUNKd2RXSXhRR1Z0WVdsc0xtTnZi
+        U0lLQ2lBZ2MydDFYMjVoYldVZ1BTQWlSR1YyWld4dmNHVnlYekVpQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgyRndhVjl0WVc1aFoyVnRaVzUwWDJGd2FWOTJaWEp6YVc5dVgzTmxkQ0lnSW1W
+        NFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0
+        WVhCcGJXRndhUzB4TGpBdU1DSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFj
+        bVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQmhjR2xmYldGdVlX
+        ZGxiV1Z1ZEY5dVlXMWxJRDBnWVhwMWNtVnliVjloY0dsZmJXRnVZV2RsYldWdWRDNWxlR0Z0Y0d4
+        bExtNWhiV1VLSUNCa2FYTndiR0Y1WDI1aGJXVWdJQ0FnSUNBZ0lEMGdJa1Y0WVcxd2JHVkJVRWxX
+        WlhKemFXOXVVMlYwSWdvZ0lIWmxjbk5wYjI1cGJtZGZjMk5vWlcxbElDQWdQU0FpVTJWbmJXVnVk
+        Q0lLZlFvPQ==
+    import: !!binary |
+        Q2dwQlVFa2dWbVZ5YzJsdmJpQlRaWFFnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWVhCcFgzWmxjbk5wYjI1ZmMyVjBMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

@@ -1,0 +1,96 @@
+azurerm_log_analytics_linked_service:
+    status: HOLD
+    subcategory: Log Analytics
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_log_analytics_linked_service'
+    description: Manages a Log Analytics (formally Operational Insights) Linked Service.
+    arguments:
+        resource_group_name:
+            description: The name of the resource group in which the Log Analytics
+                Linked Service is created. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        workspace_name:
+            description: Name of the Log Analytics Workspace that will contain the
+                linkedServices resource. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        linked_service_name:
+            description: Name of the type of linkedServices resource to connect to
+                the Log Analytics Workspace specified in `workspace_name`. Currently
+                it defaults to and only supports `automation` as a value. Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        resource_id:
+            description: The ID of the Resource that will be linked to the workspace.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Log Analytics Linked Service ID.
+        name:
+            description: The automatically generated name of the Linked Service. This
+                cannot be specified. The format is always `<workspace_name>/<linked_service_name>`
+                e.g. `workspace1/Automation`
+    timeouts:
+        create:
+            description: Used when creating the Log Analytics Workspace.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Log Analytics Workspace.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Log Analytics Workspace.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Log Analytics Workspace.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxaM0p2ZFhBdE1ERWlDaUFnYkc5allY
+        UnBiMjRnUFNBaVYyVnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJG
+        MWRHOXRZWFJwYjI1ZllXTmpiM1Z1ZENJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0ltRjFkRzl0WVhScGIyNHRNREVpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJ
+        Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2Iy
+        TmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5
+        MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9LSUNCemEzVWdld29nSUNBZ2JtRnRaU0E5
+        SUNKQ1lYTnBZeUlLSUNCOUNnb2dJSFJoWjNNZ1BTQjdDaUFnSUNCbGJuWnBjbTl1YldWdWRDQTlJ
+        Q0prWlhabGJHOXdiV1Z1ZENJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJ4dlox
+        OWhibUZzZVhScFkzTmZkMjl5YTNOd1lXTmxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZDI5eWEzTndZV05sTFRBeElnb2dJR3h2WTJGMGFXOXVJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVi
+        RzlqWVhScGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpY
+        TnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnphM1VnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSWxCbGNrZENNakF4T0NJS0lDQnlaWFJsYm5ScGIyNWZhVzVmWkdGNWN5QWdJRDBn
+        TXpBS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZiRzluWDJGdVlXeDVkR2xqYzE5c2FXNXJa
+        V1JmYzJWeWRtbGpaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlX
+        MWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNC
+        M2IzSnJjM0JoWTJWZmJtRnRaU0FnSUNBZ0lEMGdZWHAxY21WeWJWOXNiMmRmWVc1aGJIbDBhV056
+        WDNkdmNtdHpjR0ZqWlM1bGVHRnRjR3hsTG01aGJXVUtJQ0J5WlhOdmRYSmpaVjlwWkNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5aGRYUnZiV0YwYVc5dVgyRmpZMjkxYm5RdVpYaGhiWEJzWlM1cFpB
+        cDlDZz09
+    import: !!binary |
+        Q2dwTWIyY2dRVzVoYkhsMGFXTnpJRmR2Y210emNHRmpaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5YMkZ1WVd4NWRHbGpjMTlzYVc1clpXUmZjMlZ5ZG1salpTNW9kRzFzTG0x
+        aGNtdGtiM2R1

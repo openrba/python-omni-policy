@@ -1,0 +1,29 @@
+{
+    "aws_vpc_ipv4_cidr_block_association": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_vpc_ipv4_cidr_block_association",
+        "description": "Associate additional IPv4 CIDR blocks with a VPC",
+        "arguments": {
+            "cidr_block": {
+                "description": "The additional IPv4 CIDR block to associate with the VPC.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_id": {
+                "description": "The ID of the VPC to make the association with.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the VPC CIDR association"
+            }
+        },
+        "timeouts": {}
+    }
+}

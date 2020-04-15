@@ -1,0 +1,125 @@
+azurerm_automation_runbook:
+    status: HOLD
+    subcategory: Automation
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_automation_runbook'
+    description: Manages a Automation Runbook.
+    arguments:
+        name:
+            description: Specifies the name of the Runbook. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Runbook is created.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        automation_account_name:
+            description: The name of the automation account in which the Runbook is
+                created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        runbook_type:
+            description: The type of the runbook - can be either `Graph`, `GraphPowerShell`,
+                `GraphPowerShellWorkflow`, `PowerShellWorkflow`, `PowerShell` or `Script`.
+            required: true
+            policy: ''
+            notes: ''
+        log_progress:
+            description: Progress log option.
+            required: true
+            policy: ''
+            notes: ''
+        log_verbose:
+            description: Verbose log option.
+            required: true
+            policy: ''
+            notes: ''
+        publish_content_link:
+            description: The published runbook content link.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description for this credential.
+            required: false
+            policy: ''
+            notes: ''
+        content:
+            description: The desired content of the runbook.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        uri:
+            description: The uri of the runbook content.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Automation Runbook ID.
+    timeouts:
+        create:
+            description: Used when creating the Automation Runbook.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Automation Runbook.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Automation Runbook.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Automation Runbook.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjloZFhS
+        dmJXRjBhVzl1WDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKaFkyTnZkVzUwTVNJS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNp
+        QWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNK
+        dmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lITnJkU0I3Q2lBZ0lDQnVZVzFsSUQwZ0lrSmhjMmxq
+        SWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWVhWMGIyMWhkR2x2Ymw5eWRXNWli
+        MjlySWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJa2RsZEMxQmVuVnlaVlpOVkhWMGIzSnBZV3dpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlq
+        WVhScGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZj
+        bVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnWVhWMGIyMWhkR2x2Ymw5aFky
+        TnZkVzUwWDI1aGJXVWdQU0JoZW5WeVpYSnRYMkYxZEc5dFlYUnBiMjVmWVdOamIzVnVkQzVsZUdG
+        dGNHeGxMbTVoYldVS0lDQnNiMmRmZG1WeVltOXpaU0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBjblZs
+        SWdvZ0lHeHZaMTl3Y205bmNtVnpjeUFnSUNBZ0lDQWdJQ0FnSUQwZ0luUnlkV1VpQ2lBZ1pHVnpZ
+        M0pwY0hScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVZHaHBjeUJwY3lCaGJpQmxlR0Z0Y0d4bElI
+        SjFibUp2YjJzaUNpQWdjblZ1WW05dmExOTBlWEJsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVRzkzWlhK
+        VGFHVnNiRmR2Y210bWJHOTNJZ29LSUNCd2RXSnNhWE5vWDJOdmJuUmxiblJmYkdsdWF5QjdDaUFn
+        SUNCMWNta2dQU0FpYUhSMGNITTZMeTl5WVhjdVoybDBhSFZpZFhObGNtTnZiblJsYm5RdVkyOXRM
+        MEY2ZFhKbEwyRjZkWEpsTFhGMWFXTnJjM1JoY25RdGRHVnRjR3hoZEdWekwyTTBPVE0xWm1aaU5q
+        a3lORFpoTmpBMU9HVmlNalJtTlRRMk5EQm1OVE5tTmpsa00yRmpPV1l2TVRBeExXRjFkRzl0WVhS
+        cGIyNHRjblZ1WW05dmF5MW5aWFIyYlhNdlVuVnVZbTl2YTNNdlIyVjBMVUY2ZFhKbFZrMVVkWFJ2
+        Y21saGJDNXdjekVpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwQmRYUnZiV0YwYVc5dUlGSjFibUp2YjJ0eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYVjBiMjFoZEdsdmJsOXlkVzVpYjI5ckxtaDBiV3d1YldGeWEyUnZkMjQ9

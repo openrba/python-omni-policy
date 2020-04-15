@@ -1,0 +1,50 @@
+{
+    "aws_iam_policy_attachment": {
+        "status": "HOLD",
+        "subcategory": "IAM",
+        "layout": "aws",
+        "page_title": "AWS: aws_iam_policy_attachment",
+        "description": "Attaches a Managed IAM Policy to user(s), role(s), and/or group(s)",
+        "arguments": {
+            "name": {
+                "description": "- The name of the attachment. This cannot be an empty string.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "users": {
+                "description": "- The user(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "roles": {
+                "description": "- The role(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "groups": {
+                "description": "- The group(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_arn": {
+                "description": "- The ARN of the policy you want to apply",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The policy's ID."
+            },
+            "name": {
+                "description": "The name of the attachment."
+            }
+        },
+        "timeouts": {}
+    }
+}

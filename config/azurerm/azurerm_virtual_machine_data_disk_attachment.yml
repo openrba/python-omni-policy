@@ -1,0 +1,134 @@
+azurerm_virtual_machine_data_disk_attachment:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_machine_data_disk_attachment'
+    description: Manages attaching a Disk to a Virtual Machine.
+    arguments:
+        virtual_machine_id:
+            description: The ID of the Virtual Machine to which the Data Disk should
+                be attached. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        managed_disk_id:
+            description: The ID of an existing Managed Disk which should be attached.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        lun:
+            description: The Logical Unit Number of the Data Disk, which needs to
+                be unique within the Virtual Machine. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        caching:
+            description: Specifies the caching requirements for this Data Disk. Possible
+                values include `None`, `ReadOnly` and `ReadWrite`.
+            required: true
+            policy: ''
+            notes: ''
+        create_option:
+            description: The Create Option of the Data Disk, such as `Empty` or `Attach`.
+                Defaults to `Attach`. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        write_accelerator_enabled:
+            description: Specifies if Write Accelerator is enabled on the disk. This
+                can only be enabled on `Premium_LRS` managed disks with no caching
+                and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator).
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Machine Data Disk attachment.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Machine Data Disk Attachment.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Virtual Machine Data Disk Attachment.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Virtual Machine Data Disk Attachment.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Machine Data Disk Attachment.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25aaGNtbGhZbXhsSUNKd2NtVm1hWGdpSUhzS0lDQmtaV1poZFd4MElEMGdJbVY0WVcxd2JHVWlD
+        bjBLQ214dlkyRnNjeUI3Q2lBZ2RtMWZibUZ0WlNBOUlDSWtlM1poY2k1d2NtVm1hWGg5TFhadEln
+        cDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDSWdJbTFoYVc0
+        aUlIc0tJQ0J1WVcxbElDQWdJQ0E5SUNJa2UzWmhjaTV3Y21WbWFYaDlMWEpsYzI5MWNtTmxjeUlL
+        SUNCc2IyTmhkR2x2YmlBOUlDSlhaWE4wSUVWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZk
+        WEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pySWlBaWJXRnBiaUlnZXdvZ0lHNWhiV1VnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdQU0FpSkh0MllYSXVjSEpsWm1sNGZTMXVaWFIzYjNKcklnb2dJR0ZrWkhK
+        bGMzTmZjM0JoWTJVZ0lDQWdJQ0FnUFNCYklqRXdMakF1TUM0d0x6RTJJbDBLSUNCc2IyTmhkR2x2
+        YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1dFlXbHVM
+        bXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNt
+        VnpiM1Z5WTJWZlozSnZkWEF1YldGcGJpNXVZVzFsQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhK
+        dFgzTjFZbTVsZENJZ0ltbHVkR1Z5Ym1Gc0lpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlhVzUwWlhKdVlXd2lDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ1BTQmhl
+        blZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG0xaGFXNHVibUZ0WlFvZ0lIWnBjblIxWVd4ZmJt
+        VjBkMjl5YTE5dVlXMWxJRDBnWVhwMWNtVnliVjkyYVhKMGRXRnNYMjVsZEhkdmNtc3ViV0ZwYmk1
+        dVlXMWxDaUFnWVdSa2NtVnpjMTl3Y21WbWFYZ2dJQ0FnSUNBZ1BTQWlNVEF1TUM0eUxqQXZNalFp
+        Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyNWxkSGR2Y210ZmFXNTBaWEptWVdObElpQWli
+        V0ZwYmlJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaUpIdDJZWEl1Y0hKbFpt
+        bDRmUzF1YVdNaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21W
+        emIzVnlZMlZmWjNKdmRYQXViV0ZwYmk1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3
+        WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtMWhhVzR1Ym1GdFpRb0tJ
+        Q0JwY0Y5amIyNW1hV2QxY21GMGFXOXVJSHNLSUNBZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJRDBnSW1sdWRHVnlibUZzSWdvZ0lDQWdjM1ZpYm1WMFgybGtJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNOMVltNWxkQzVwYm5SbGNtNWhiQzVw
+        WkFvZ0lDQWdjSEpwZG1GMFpWOXBjRjloWkdSeVpYTnpYMkZzYkc5allYUnBiMjRnUFNBaVJIbHVZ
+        VzFwWXlJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNacGNuUjFZV3hmYldGamFH
+        bHVaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNC
+        c2IyTmhiQzUyYlY5dVlXMWxDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAx
+        Y21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1dFlXbHVMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZ
+        MlZmWjNKdmRYQmZibUZ0WlNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1dFlX
+        bHVMbTVoYldVS0lDQnVaWFIzYjNKclgybHVkR1Z5Wm1GalpWOXBaSE1nUFNCYllYcDFjbVZ5YlY5
+        dVpYUjNiM0pyWDJsdWRHVnlabUZqWlM1dFlXbHVMbWxrWFFvZ0lIWnRYM05wZW1VZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkY5R01pSUtDaUFnYzNSdmNtRm5aVjlwYldGblpWOXla
+        V1psY21WdVkyVWdld29nSUNBZ2NIVmliR2x6YUdWeUlEMGdJa05oYm05dWFXTmhiQ0lLSUNBZ0lH
+        OW1abVZ5SUNBZ0lDQTlJQ0pWWW5WdWRIVlRaWEoyWlhJaUNpQWdJQ0J6YTNVZ0lDQWdJQ0FnUFNB
+        aU1UWXVNRFF0VEZSVElnb2dJQ0FnZG1WeWMybHZiaUFnSUQwZ0lteGhkR1Z6ZENJS0lDQjlDZ29n
+        SUhOMGIzSmhaMlZmYjNOZlpHbHpheUI3Q2lBZ0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0p0ZVc5elpHbHphekVpQ2lBZ0lDQmpZV05vYVc1bklDQWdJQ0FnSUNBZ0lDQTlJQ0pTWldGa1Yz
+        SnBkR1VpQ2lBZ0lDQmpjbVZoZEdWZmIzQjBhVzl1SUNBZ0lDQTlJQ0pHY205dFNXMWhaMlVpQ2lB
+        Z0lDQnRZVzVoWjJWa1gyUnBjMnRmZEhsd1pTQTlJQ0pUZEdGdVpHRnlaRjlNVWxNaUNpQWdmUW9L
+        SUNCdmMxOXdjbTltYVd4bElIc0tJQ0FnSUdOdmJYQjFkR1Z5WDI1aGJXVWdJRDBnYkc5allXd3Vk
+        bTFmYm1GdFpRb2dJQ0FnWVdSdGFXNWZkWE5sY201aGJXVWdQU0FpZEdWemRHRmtiV2x1SWdvZ0lD
+        QWdZV1J0YVc1ZmNHRnpjM2R2Y21RZ1BTQWlVR0Z6YzNkdmNtUXhNak0wSVNJS0lDQjlDZ29nSUc5
+        elgzQnliMlpwYkdWZmJHbHVkWGhmWTI5dVptbG5JSHNLSUNBZ0lHUnBjMkZpYkdWZmNHRnpjM2R2
+        Y21SZllYVjBhR1Z1ZEdsallYUnBiMjRnUFNCbVlXeHpaUW9nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bUY2ZFhKbGNtMWZiV0Z1WVdkbFpGOWthWE5ySWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lpUjdiRzlqWVd3dWRtMWZibUZ0WlgwdFpHbHphekVpQ2lB
+        Z2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5
+        YjNWd0xtMWhhVzR1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQTlJ
+        R0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWJXRnBiaTV1WVcxbENpQWdjM1J2Y21GblpW
+        OWhZMk52ZFc1MFgzUjVjR1VnUFNBaVUzUmhibVJoY21SZlRGSlRJZ29nSUdOeVpXRjBaVjl2Y0hS
+        cGIyNGdJQ0FnSUNBZ0lEMGdJa1Z0Y0hSNUlnb2dJR1JwYzJ0ZmMybDZaVjluWWlBZ0lDQWdJQ0Fn
+        SUQwZ01UQUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmZG1seWRIVmhiRjl0WVdOb2FXNWxY
+        MlJoZEdGZlpHbHphMTloZEhSaFkyaHRaVzUwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzFoYm1GblpX
+        UmZaR2x6YTE5cFpDQWdJQ0E5SUdGNmRYSmxjbTFmYldGdVlXZGxaRjlrYVhOckxtVjRZVzF3YkdV
+        dWFXUUtJQ0IyYVhKMGRXRnNYMjFoWTJocGJtVmZhV1FnUFNCaGVuVnlaWEp0WDNacGNuUjFZV3hm
+        YldGamFHbHVaUzVsZUdGdGNHeGxMbWxrQ2lBZ2JIVnVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJ
+        akV3SWdvZ0lHTmhZMmhwYm1jZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pTWldGa1YzSnBkR1VpQ24wSw==
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUUxaFkyaHBibVZ6SUVSaGRHRWdSR2x6YXlCQmRIUmhZMmh0Wlc1MGN5QmpZ
+        VzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5
+        NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5dFlXTm9hVzVsWDJSaGRHRmZaR2x6YTE5aGRIUmhZMmh0Wlc1
+        MExtaDBiV3d1YldGeWEyUnZkMjQ9

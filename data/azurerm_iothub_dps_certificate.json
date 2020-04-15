@@ -1,0 +1,62 @@
+{
+    "azurerm_iothub_dps_certificate": {
+        "status": "HOLD",
+        "subcategory": "IoT Hub",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_iothub_dps_certificate",
+        "description": "Manages an IoT Device Provisioning Service Certificate.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Iot Device Provisioning Service Certificate resource. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group under which the Iot Device Provisioning Service Certificate resource has to be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "iot_dps_name": {
+                "description": "The name of the IoT Device Provisioning Service that this certificate will be attached to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_content": {
+                "description": "The Base-64 representation of the X509 leaf certificate .cer file or just a .pem file content.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the IoTHub Device Provisioning Service Certificate."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the IotHub Device Provisioning Service Certificate.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the IotHub Device Provisioning Service Certificate.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the IotHub Device Provisioning Service Certificate.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the IotHub Device Provisioning Service Certificate.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

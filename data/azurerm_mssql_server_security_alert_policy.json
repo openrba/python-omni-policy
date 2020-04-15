@@ -1,0 +1,92 @@
+{
+    "azurerm_mssql_server_security_alert_policy": {
+        "status": "HOLD",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_mssql_server_security_alert_policy",
+        "description": "Manages a Security Alert Policy for a MS SQL Server.",
+        "arguments": {
+            "resource_group_name": {
+                "description": "The name of the resource group that contains the MS SQL Server. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "Specifies the name of the MS SQL Server. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "state": {
+                "description": "Specifies the state of the policy, whether it is enabled or disabled or a policy has not been applied yet on the specific database server. Allowed values are: `Disabled`, `Enabled`, `New`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disabled_alerts": {
+                "description": "Specifies an array of alerts that are disabled. Allowed values are: `Sql_Injection`, `Sql_Injection_Vulnerability`, `Access_Anomaly`, `Data_Exfiltration`, `Unsafe_Action`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "email_account_admins": {
+                "description": "Boolean flag which specifies if the alert is sent to the account administrators or not. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "email_addresses": {
+                "description": "Specifies an array of e-mail addresses to which the alert is sent.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_days": {
+                "description": "Specifies the number of days to keep in the Threat Detection audit logs. Defaults to `0`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_access_key": {
+                "description": "Specifies the identifier key of the Threat Detection audit storage account.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_endpoint": {
+                "description": "Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net). This blob storage will hold all Threat Detection audit logs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the MS SQL Server Security Alert Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the MSSQL Server Security Alert Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the MSSQL Server Security Alert Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the MSSQL Server Security Alert Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the MSSQL Server Security Alert Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

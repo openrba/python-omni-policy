@@ -1,0 +1,130 @@
+azurerm_cost_management_export_resource_group:
+    status: HOLD
+    subcategory: Cost Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cost_management_export_resource_group'
+    description: Manages an Azure Cost Management Export for a Resource Group.
+    arguments:
+        name:
+            description: Specifies the name of the Cost Management Export. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_id:
+            description: The id of the resource group in which to export information.
+            required: true
+            policy: ''
+            notes: ''
+        recurrence_type:
+            description: How often the requested information will be exported. Valid
+                values include `Annually`, `Daily`, `Monthly`, `Weekly`.
+            required: true
+            policy: ''
+            notes: ''
+        recurrence_period_start:
+            description: The date the export will start capturing information.
+            required: true
+            policy: ''
+            notes: ''
+        recurrence_period_end:
+            description: 'The date the export will stop capturing information. '
+            required: true
+            policy: ''
+            notes: ''
+        delivery_info:
+            description: A `delivery_info` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        query:
+            description: A `query` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        active:
+            description: Is the cost management export active? Default is `true`.
+            required: false
+            policy: ''
+            notes: ''
+        storage_account_id:
+            description: The storage account id where exports will be delivered.
+            required: true
+            policy: ''
+            notes: ''
+        container_name:
+            description: The name of the container where exports will be uploaded.
+            required: true
+            policy: ''
+            notes: ''
+        root_folder_path:
+            description: The path of the directory where exports will be uploaded.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type of the query.
+            required: true
+            policy: ''
+            notes: ''
+        time_frame:
+            description: 'The time frame for pulling data for the query. If custom,
+                then a specific time period must be provided. Possible values include:
+                `WeekToDate`, `MonthToDate`, `YearToDate`, `TheLastWeek`, `TheLastMonth`,
+                `TheLastYear`, `Custom`.'
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Cost Management Export.
+    timeouts:
+        create:
+            description: Used when creating the resource.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the resource.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the resource.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the resource.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0ltNXZjblJvWlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        emRHOXlZV2RsWDJGalkyOTFiblFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFhOMGIzSmhaMlV0WVdOamIzVnVkQ0lLSUNCeVpYTnZk
+        WEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVH
+        RnRjR3hsTG01aGJXVUtDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdZV05q
+        YjNWdWRGOTBhV1Z5SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbE4wWVc1a1lYSmtJZ29nSUdGalkyOTFi
+        blJmY21Wd2JHbGpZWFJwYjI1ZmRIbHdaU0E5SUNKTVVsTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVu
+        VnlaWEp0WDJOdmMzUmZiV0Z1WVdkbGJXVnVkRjlsZUhCdmNuUmZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        aUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Fp
+        WlhoaGJYQnNaU0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjlwWkNBZ0lDQWdJQ0E5SUdGNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXBaQW9nSUhKbFkzVnljbVZ1WTJWZmRI
+        bHdaU0FnSUNBZ0lDQWdJRDBnSWsxdmJuUm9iSGtpQ2lBZ2NtVmpkWEp5Wlc1alpWOXdaWEpwYjJS
+        ZmMzUmhjblFnUFNBaU1qQXlNQzB3T0MweE9GUXdNRG93TURvd01Gb2lDaUFnY21WamRYSnlaVzVq
+        WlY5d1pYSnBiMlJmWlc1a0lDQWdQU0FpTWpBeU1DMHdPUzB4T0ZRd01Eb3dNRG93TUZvaUNnb2dJ
+        R1JsYkdsMlpYSjVYMmx1Wm04Z2V3b2dJQ0FnYzNSdmNtRm5aVjloWTJOdmRXNTBYMmxrSUQwZ1lY
+        cDFjbVZ5YlY5emRHOXlZV2RsWDJGalkyOTFiblF1WlhoaGJYQnNaUzVwWkFvZ0lDQWdZMjl1ZEdG
+        cGJtVnlYMjVoYldVZ0lDQWdJRDBnSW1WNFlXMXdiR1ZqYjI1MFlXbHVaWElpQ2lBZ0lDQnliMjkw
+        WDJadmJHUmxjbDl3WVhSb0lDQWdQU0FpTDNKdmIzUXZkWEJrWVhSbFpDSUtJQ0I5Q2dvZ0lIRjFa
+        WEo1SUhzS0lDQWdJSFI1Y0dVZ0lDQWdJQ0FnUFNBaVZYTmhaMlVpQ2lBZ0lDQjBhVzFsWDJaeVlX
+        MWxJRDBnSWxkbFpXdFViMFJoZEdVaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRGIzTjBJRTFoYm1GblpXMWxiblFnUlhod2IzSjBJR1p2Y2lCaElGSmxjMjkxY21ObElFZHli
+        M1Z3SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lD
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpkRjl0WVc1aFoyVnRaVzUwWDJWNGNHOXlkRjl5WlhOdmRYSmpaVjluY205
+        MWNDNW9kRzFzTG0xaGNtdGtiM2R1

@@ -1,0 +1,25 @@
+{
+    "aws_spot_datafeed_subscription": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_spot_datafeed_subscription",
+        "description": "Provides a Spot Datafeed Subscription resource.",
+        "arguments": {
+            "bucket": {
+                "description": "The Amazon S3 bucket in which to store the Spot instance data feed.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix": {
+                "description": "Path of folder inside bucket to place spot pricing data.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

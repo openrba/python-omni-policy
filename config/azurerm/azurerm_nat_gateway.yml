@@ -1,0 +1,119 @@
+azurerm_nat_gateway:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_nat_gateway'
+    description: Manages a Azure NAT Gateway.
+    arguments:
+        name:
+            description: Specifies the name of the NAT Gateway. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the Resource Group in which the NAT
+                Gateway should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the NAT Gateway
+                should exist. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        idle_timeout_in_minutes:
+            description: The idle timeout which should be used in minutes. Defaults
+                to `4`.
+            required: false
+            policy: ''
+            notes: ''
+        public_ip_address_ids:
+            description: A list of Public IP Address ID's which should be associated
+                with the NAT Gateway resource.
+            required: false
+            policy: ''
+            notes: ''
+        public_ip_prefix_ids:
+            description: A list of Public IP Prefix ID's which should be associated
+                with the NAT Gateway resource.
+            required: false
+            policy: ''
+            notes: ''
+        sku_name:
+            description: The SKU which should be used. At this time the only supported
+                value is `Standard`. Defaults to `Standard`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource. Changing this
+                forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        zones:
+            description: A list of availability zones where the NAT Gateway should
+                be provisioned. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the NAT Gateway.
+        resource_guid:
+            description: The resource GUID property of the NAT Gateway.
+    timeouts:
+        create:
+            description: Used when creating the NAT Gateway.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the NAT Gateway.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the NAT Gateway.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the NAT Gateway.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbTVoZEMxbllYUmxkMkY1TFdWNFlXMXdiR1V0Y21jaUNp
+        QWdiRzlqWVhScGIyNGdQU0FpWldGemRIVnpNaUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmNIVmliR2xqWDJsd0lpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlibUYwTFdkaGRHVjNZWGt0Y0hWaWJHbGpTVkFpQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJ
+        Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2Iy
+        TmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5
+        MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdGc2JHOWpZWFJwYjI1ZmJXVjBhRzlr
+        SUNBZ1BTQWlVM1JoZEdsaklnb2dJSE5yZFNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVUzUmhi
+        bVJoY21RaUNpQWdlbTl1WlhNZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUZzaU1TSmRDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGVuVnlaWEp0WDNCMVlteHBZMTlwY0Y5d2NtVm1hWGdpSUNKbGVHRnRjR3hsSWlC
+        N0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdVlYUXRaMkYwWlhkaGVTMXdkV0pz
+        YVdOSlVGQnlaV1pwZUNJS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnli
+        Vjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNWeVky
+        VmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhC
+        c1pTNXVZVzFsQ2lBZ2NISmxabWw0WDJ4bGJtZDBhQ0FnSUNBZ0lDQTlJRE13Q2lBZ2VtOXVaWE1n
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJRnNpTVNKZENuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRY
+        MjVoZEY5bllYUmxkMkY1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdJbTVoZEMxSFlYUmxkMkY1SWdvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2
+        WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ0lDQWdQU0JoZW5WeVpYSnRY
+        M0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUhCMVlteHBZMTlwY0Y5aFpH
+        UnlaWE56WDJsa2N5QWdJRDBnVzJGNmRYSmxjbTFmY0hWaWJHbGpYMmx3TG1WNFlXMXdiR1V1YVdS
+        ZENpQWdjSFZpYkdsalgybHdYM0J5WldacGVGOXBaSE1nSUNBZ1BTQmJZWHAxY21WeWJWOXdkV0pz
+        YVdOZmFYQmZjSEpsWm1sNExtVjRZVzF3YkdVdWFXUmRDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpVTNSaGJtUmhjbVFpQ2lBZ2FXUnNaVjkwYVcxbGIzVjBYMmx1WDIxcGJu
+        VjBaWE1nUFNBeE1Bb2dJSHB2Ym1WeklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdXeUl4SWww
+        S2ZRbz0=
+    import: !!binary |
+        Q2dwT1FWUWdSMkYwWlhkaGVTQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnla
+        WE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtRjBYMmRoZEdWM1lYa3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

@@ -1,0 +1,168 @@
+aws_appmesh_virtual_node:
+    status: HOLD
+    subcategory: AppMesh
+    layout: aws
+    page_title: 'AWS: aws_appmesh_virtual_node'
+    description: Provides an AWS App Mesh virtual node resource.
+    arguments:
+        name:
+            description: The name to use for the virtual node.
+            required: true
+            policy: ''
+            notes: ''
+        mesh_name:
+            description: The name of the service mesh in which to create the virtual
+                node.
+            required: true
+            policy: ''
+            notes: ''
+        spec:
+            description: The virtual node specification to apply.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        backend:
+            description: The backends to which the virtual node is expected to send
+                outbound traffic.
+            required: false
+            policy: ''
+            notes: ''
+        listener:
+            description: The listeners from which the virtual node is expected to
+                receive inbound traffic.
+            required: false
+            policy: ''
+            notes: ''
+        logging:
+            description: The inbound and outbound access logging information for the
+                virtual node.
+            required: false
+            policy: ''
+            notes: ''
+        service_discovery:
+            description: The service discovery information for the virtual node.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_service:
+            description: Specifies a virtual service to use as a backend for a virtual
+                node.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_service_name:
+            description: The name of the virtual service that is acting as a virtual
+                node backend.
+            required: true
+            policy: ''
+            notes: ''
+        port_mapping:
+            description: The port mapping information for the listener.
+            required: true
+            policy: ''
+            notes: ''
+        health_check:
+            description: The health check information for the listener.
+            required: false
+            policy: ''
+            notes: ''
+        access_log:
+            description: The access log configuration for a virtual node.
+            required: false
+            policy: ''
+            notes: ''
+        file:
+            description: The file object to send virtual node access logs to.
+            required: false
+            policy: ''
+            notes: ''
+        path:
+            description: The destination path for the health check request. This is
+                only required if the specified protocol is `http`.
+            required: false
+            policy: ''
+            notes: ''
+        aws_cloud_map:
+            description: Specifies any AWS Cloud Map information for the virtual node.
+            required: false
+            policy: ''
+            notes: ''
+        dns:
+            description: Specifies the DNS service name for the virtual node.
+            required: false
+            policy: ''
+            notes: ''
+        attributes:
+            description: A string map that contains attributes with values that you
+                can use to filter instances by any custom attribute that you specified
+                when you registered the instance. Only instances that match all of
+                the specified key/value pairs will be returned.
+            required: false
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: The name of the AWS Cloud Map namespace to use.
+            required: true
+            policy: ''
+            notes: ''
+        service_name:
+            description: The name of the AWS Cloud Map service to use. Use the [`aws_service_discovery_service`](/docs/providers/aws/r/service_discovery_service.html
+            required: true
+            policy: ''
+            notes: ''
+        hostname:
+            description: The DNS host name for your virtual node.
+            required: true
+            policy: ''
+            notes: ''
+        port:
+            description: The destination port for the health check request. This port
+                must match the port defined in the `port_mapping` for the listener.
+            required: false
+            policy: ''
+            notes: ''
+        protocol:
+            description: The protocol for the health check request. Valid values are
+                `http` and `tcp`.
+            required: true
+            policy: ''
+            notes: ''
+        healthy_threshold:
+            description: The number of consecutive successful health checks that must
+                occur before declaring listener healthy.
+            required: true
+            policy: ''
+            notes: ''
+        interval_millis:
+            description: The time period in milliseconds between each health check
+                execution.
+            required: true
+            policy: ''
+            notes: ''
+        timeout_millis:
+            description: The amount of time to wait when receiving a response from
+                the health check, in milliseconds.
+            required: true
+            policy: ''
+            notes: ''
+        unhealthy_threshold:
+            description: The number of consecutive failed health checks that must
+                occur before declaring a virtual node unhealthy.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the virtual node.
+        arn:
+            description: The ARN of the virtual node.
+        created_date:
+            description: The creation date of the virtual node.
+        last_updated_date:
+            description: The last update date of the virtual node.
+    timeouts: {}

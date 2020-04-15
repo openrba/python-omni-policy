@@ -1,0 +1,79 @@
+azurerm_postgresql_firewall_rule:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_postgresql_firewall_rule'
+    description: Manages a Firewall Rule for a PostgreSQL Server.
+    arguments:
+        name:
+            description: Specifies the name of the PostgreSQL Firewall Rule. Changing
+                this forces a
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: Specifies the name of the PostgreSQL Server. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the PostgreSQL Server
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        start_ip_address:
+            description: Specifies the Start IP Address associated with this Firewall
+                Rule. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        end_ip_address:
+            description: Specifies the End IP Address associated with this Firewall
+                Rule. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: The Azure feature `Allow access to Azure services` can be enabled
+                by setting `start_ip_address` and `end_ip_address` to `0.0.0.0` which
+                ([is documented in the Azure API Docs](https://docs.microsoft.com/en-us/rest/api/sql/firewallrules/createorupdate)).
+    attributes:
+        id:
+            description: The ID of the PostgreSQL Firewall Rule.
+    timeouts:
+        create:
+            description: Used when creating the PostgreSQL Firewall Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the PostgreSQL Firewall Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the PostgreSQL Firewall Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the PostgreSQL Firewall Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZ3YVMxeVp5MXdjbThpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzQnZjM1JuY21W
+        emNXeGZjMlZ5ZG1WeUlpQWlaWGhoYlhCc1pTSWdld29nSUNNZ0xpNHVDbjBLQ25KbGMyOTFjbU5s
+        SUNKaGVuVnlaWEp0WDNCdmMzUm5jbVZ6Y1d4ZlptbHlaWGRoYkd4ZmNuVnNaU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW05bVptbGpaU0lLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtJQ0J6WlhKMlpYSmZibUZ0WlNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5
+        YlY5d2IzTjBaM0psYzNGc1gzTmxjblpsY2k1bGVHRnRjR3hsTG01aGJXVUtJQ0J6ZEdGeWRGOXBj
+        RjloWkdSeVpYTnpJQ0FnSUQwZ0lqUXdMakV4TWk0NExqRXlJZ29nSUdWdVpGOXBjRjloWkdSeVpY
+        TnpJQ0FnSUNBZ1BTQWlOREF1TVRFeUxqZ3VNVElpQ24wSw==
+    import: !!binary |
+        Q2dwUWIzTjBaM0psVTFGTUlFWnBjbVYzWVd4c0lGSjFiR1VuY3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNHOXpkR2R5WlhOeGJGOW1hWEpsZDJGc2JGOXlkV3hsTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

@@ -1,0 +1,110 @@
+{
+    "aws_default_network_acl": {
+        "status": "HOLD",
+        "subcategory": "VPC",
+        "layout": "aws",
+        "page_title": "AWS: aws_default_network_acl",
+        "description": "Manage the default Network ACL resource.",
+        "arguments": {
+            "default_network_acl_id": {
+                "description": "The Network ACL ID to manage. This",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_ids": {
+                "description": "A list of Subnet IDs to apply the ACL to. See the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ingress": {
+                "description": "Specifies an ingress rule. Parameters defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "egress": {
+                "description": "Specifies an egress rule. Parameters defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "from_port": {
+                "description": "The from port to match.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "to_port": {
+                "description": "The to port to match.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_no": {
+                "description": "The rule number. Used for ordering.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "The action to take.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": "The protocol to match. If using the -1 'all'",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cidr_block": {
+                "description": "The CIDR block to match. This must be a",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipv6_cidr_block": {
+                "description": "The IPv6 CIDR block.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "icmp_type": {
+                "description": "The ICMP type to be used. Default 0.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "icmp_code": {
+                "description": "The ICMP type code to be used. Default 0.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Default Network ACL"
+            },
+            "vpc_id": {
+                "description": " The ID of the associated VPC"
+            },
+            "ingress": {
+                "description": "Set of ingress rules"
+            },
+            "egress": {
+                "description": "Set of egress rules"
+            }
+        },
+        "timeouts": {}
+    }
+}

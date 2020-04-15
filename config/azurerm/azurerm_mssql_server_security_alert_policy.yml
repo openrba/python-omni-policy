@@ -1,0 +1,124 @@
+azurerm_mssql_server_security_alert_policy:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mssql_server_security_alert_policy'
+    description: Manages a Security Alert Policy for a MS SQL Server.
+    arguments:
+        resource_group_name:
+            description: The name of the resource group that contains the MS SQL Server.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: Specifies the name of the MS SQL Server. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        state:
+            description: 'Specifies the state of the policy, whether it is enabled
+                or disabled or a policy has not been applied yet on the specific database
+                server. Allowed values are: `Disabled`, `Enabled`, `New`.'
+            required: true
+            policy: ''
+            notes: ''
+        disabled_alerts:
+            description: 'Specifies an array of alerts that are disabled. Allowed
+                values are: `Sql_Injection`, `Sql_Injection_Vulnerability`, `Access_Anomaly`,
+                `Data_Exfiltration`, `Unsafe_Action`.'
+            required: false
+            policy: ''
+            notes: ''
+        email_account_admins:
+            description: Boolean flag which specifies if the alert is sent to the
+                account administrators or not. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        email_addresses:
+            description: Specifies an array of e-mail addresses to which the alert
+                is sent.
+            required: false
+            policy: ''
+            notes: ''
+        retention_days:
+            description: Specifies the number of days to keep in the Threat Detection
+                audit logs. Defaults to `0`.
+            required: false
+            policy: ''
+            notes: ''
+        storage_account_access_key:
+            description: Specifies the identifier key of the Threat Detection audit
+                storage account.
+            required: false
+            policy: ''
+            notes: ''
+        storage_endpoint:
+            description: Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net).
+                This blob storage will hold all Threat Detection audit logs.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the MS SQL Server Security Alert Policy.
+    timeouts:
+        create:
+            description: Used when creating the MSSQL Server Security Alert Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the MSSQL Server Security Alert Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the MSSQL Server Security Alert Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MSSQL Server Security Alert Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZqWTJWd2RHRnVZMlZVWlhOMFVtVnpiM1Z5WTJWSGNt
+        OTFjREVpQ2lBZ2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5SUtmUW9LY21WemIzVnlZMlVnSW1G
+        NmRYSmxjbTFmYzNGc1gzTmxjblpsY2lJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltMTVjM0ZzYzJWeWRtVnlJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgy
+        ZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlq
+        WVhScGIyNEtJQ0IyWlhKemFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lqRXlM
+        akFpQ2lBZ1lXUnRhVzVwYzNSeVlYUnZjbDlzYjJkcGJpQWdJQ0FnSUNBZ0lDQTlJQ0kwWkcweGJq
+        RTFOM0kwTnpCeUlnb2dJR0ZrYldsdWFYTjBjbUYwYjNKZmJHOW5hVzVmY0dGemMzZHZjbVFnUFNB
+        aU5DMTJNM0o1TFRVelkzSXpOeTF3TkRVMWR6QnlaQ0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEps
+        Y20xZmMzUnZjbUZuWlY5aFkyTnZkVzUwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0poWTJOMFpYTjBjM1J2Y21GblpXRmpZMjkxYm5RaUNp
+        QWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhK
+        alpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZ
+        WFJwYjI0S0lDQmhZMk52ZFc1MFgzUnBaWElnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNt
+        UWlDaUFnWVdOamIzVnVkRjl5WlhCc2FXTmhkR2x2Ymw5MGVYQmxJRDBnSWtkU1V5SUtmUW9LY21W
+        emIzVnlZMlVnSW1GNmRYSmxjbTFmYlhOemNXeGZjMlZ5ZG1WeVgzTmxZM1Z5YVhSNVgyRnNaWEow
+        WDNCdmJHbGplU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJ
+        Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnYzJWeWRtVnlYMjVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNO
+        eGJGOXpaWEoyWlhJdVpYaGhiWEJzWlM1dVlXMWxDaUFnYzNSaGRHVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVJXNWhZbXhsWkNJS0lDQnpkRzl5WVdkbFgyVnVaSEJ2YVc1MElDQWdJ
+        Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWhZMk52ZFc1MExtVjRZVzF3YkdVdWNI
+        SnBiV0Z5ZVY5aWJHOWlYMlZ1WkhCdmFXNTBDaUFnYzNSdmNtRm5aVjloWTJOdmRXNTBYMkZqWTJW
+        emMxOXJaWGtnUFNCaGVuVnlaWEp0WDNOMGIzSmhaMlZmWVdOamIzVnVkQzVsZUdGdGNHeGxMbkJ5
+        YVcxaGNubGZZV05qWlhOelgydGxlUW9nSUdScGMyRmliR1ZrWDJGc1pYSjBjeUE5SUZzS0lDQWdJ
+        Q0pUY1d4ZlNXNXFaV04wYVc5dUlpd0tJQ0FnSUNKRVlYUmhYMFY0Wm1sc2RISmhkR2x2YmlJS0lD
+        QmRDaUFnY21WMFpXNTBhVzl1WDJSaGVYTWdQU0F5TUFwOUNnPT0=
+    import: !!binary |
+        Q2dwTlV5QlRVVXdnVTJWeWRtVnlJRk5sWTNWeWFYUjVJRUZzWlhKMElGQnZiR2xqZVNCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJYTnpjV3hmYzJWeWRtVnlYM05sWTNWeWFYUjVYMkZzWlhKMFgzQnZiR2xqZVM1
+        b2RHMXNMbTFoY210a2IzZHU=

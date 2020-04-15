@@ -1,0 +1,165 @@
+azurerm_virtual_machine_scale_set:
+    status: HOLD
+    subcategory: Compute
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_virtual_machine_scale_set'
+    description: Manages a Virtual Machine scale set.
+    arguments:
+        name:
+            description: Specifies the name of the virtual machine scale set resource.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the virtual
+                machine scale set. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        network_profile:
+            description: A collection of network profile block as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        os_profile:
+            description: A Virtual Machine OS Profile block as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        os_profile_windows_config:
+            description: A Windows config block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        os_profile_linux_config:
+            description: A Linux config block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        proximity_placement_group_id:
+            description: The ID of the Proximity Placement Group to which this Virtual
+                Machine should be assigned. Changing this forces a new resource to
+                be created
+            required: false
+            policy: ''
+            notes: ''
+        sku:
+            description: A sku block as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        storage_profile_os_disk:
+            description: A storage profile os disk block as documented below
+            required: true
+            policy: ''
+            notes: ''
+        upgrade_policy_mode:
+            description: Specifies the mode of an upgrade to virtual machines in the
+                scale set. Possible values, `Rolling`, `Manual`, or `Automatic`. When
+                choosing `Rolling`, you will need to set a health probe.
+            required: true
+            policy: ''
+            notes: ''
+        automatic_os_upgrade:
+            description: Automatic OS patches can be applied by Azure to your scaleset.
+                This is particularly useful when `upgrade_policy_mode` is set to `Rolling`.
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        boot_diagnostics:
+            description: A boot diagnostics profile block as referenced below.
+            required: false
+            policy: ''
+            notes: ''
+        extension:
+            description: Can be specified multiple times to add extension profiles
+                to the scale set. Each `extension` block supports the fields documented
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        eviction_policy:
+            description: Specifies the eviction policy for Virtual Machines in this
+                Scale Set. Possible values are `Deallocate` and `Delete`.
+            required: false
+            policy: ''
+            notes: '`eviction_policy` can only be set when `priority` is set to `Low`.'
+        health_probe_id:
+            description: Specifies the identifier for the load balancer health probe.
+                Required when using `Rolling` as your `upgrade_policy_mode`.
+            required: false
+            policy: ''
+            notes: ''
+        license_type:
+            description: Specifies the Windows OS license type. If supplied, the only
+                allowed values are `Windows_Client` and `Windows_Server`.
+            required: false
+            policy: ''
+            notes: ''
+        os_profile_secrets:
+            description: A collection of Secret blocks as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        overprovision:
+            description: Specifies whether the virtual machine scale set should be
+                overprovisioned.
+            required: false
+            policy: ''
+            notes: ''
+        plan:
+            description: A plan block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        priority:
+            description: Specifies the priority for the Virtual Machines in the Scale
+                Set. Defaults to `Regular`. Possible values are `Low` and `Regular`.
+            required: false
+            policy: ''
+            notes: ''
+        rolling_upgrade_policy:
+            description: A `rolling_upgrade_policy` block as defined below. This is
+                only applicable when the `upgrade_policy_mode` is `Rolling`.
+            required: false
+            policy: ''
+            notes: ''
+        single_placement_group:
+            description: Specifies whether the scale set is limited to a single placement
+                group with a maximum size of 100 virtual machines. If set to false,
+                managed disks must be used. Default is true. Changing this forces
+                a new resource to be created. See [documentation](http://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups
+            required: false
+            policy: ''
+            notes: ''
+        storage_profile_data_disk:
+            description: A storage profile data disk block as documented below
+            required: false
+            policy: ''
+            notes: ''
+        storage_profile_image_reference:
+            description: A storage profile image reference block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        zones:
+            description: A collection of availability zones to spread the Virtual
+                Machines over.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

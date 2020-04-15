@@ -1,0 +1,104 @@
+{
+    "azurerm_storage_share": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_share",
+        "description": "Manages a File Share within Azure Storage.",
+        "arguments": {
+            "name": {
+                "description": "The name of the share. Must be unique within the storage account where the share is located.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_name": {
+                "description": "Specifies the storage account in which to create the share.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "acl": {
+                "description": "One or more `acl` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "quota": {
+                "description": "The maximum size of the share, in gigabytes. For Standard storage accounts, this must be greater than 0 and less than 5120 GB (5 TB). For Premium FileStorage storage accounts, this must be greater than 100 GB and less than 102400 GB (100 TB). Default is 5120.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "A mapping of MetaData for this File Share.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "id": {
+                "description": "The ID which should be used for this Shared Identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_policy": {
+                "description": "An `access_policy` block as defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "expiry": {
+                "description": "The ISO8061 UTC time at which this Access Policy should be valid until.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "permissions": {
+                "description": "The permissions which should associated with this Shared Identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "start": {
+                "description": "The ISO8061 UTC time at which this Access Policy should be valid from.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the File Share."
+            },
+            "resource_manager_id": {
+                "description": "The Resource Manager ID of this File Share."
+            },
+            "url": {
+                "description": "The URL of the File Share"
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Share.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Share.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Share.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Share.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

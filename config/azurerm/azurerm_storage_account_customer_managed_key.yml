@@ -1,0 +1,116 @@
+azurerm_storage_account_customer_managed_key:
+    status: HOLD
+    subcategory: Storage
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_storage_account_customer_managed_key'
+    description: Manages a Customer Managed Key for a Storage Account.
+    arguments:
+        storage_account_id:
+            description: The ID of the Storage Account. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        key_vault_id:
+            description: The ID of the Key Vault. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        key_name:
+            description: The name of Key Vault Key.
+            required: true
+            policy: ''
+            notes: ''
+        key_version:
+            description: The version of Key Vault Key.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Storage Account.
+    timeouts:
+        create:
+            description: Used when creating the Storage Account Customer Managed Keys.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Storage Account Customer Managed Keys.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Storage Account Customer Managed
+                Keys.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Storage Account Customer Managed Keys.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q2dwa1lYUmhJQ0poZW5WeVpYSnRYMk5zYVdWdWRGOWpiMjVtYVdjaUlDSmpkWEp5Wlc1MElpQjdm
+        UW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQWlJQ0psZUdGdGNH
+        eGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ1BTQWlaWGhoYlhCc1pTMXlaWE52ZFhKalpYTWlDaUFnYkc5
+        allYUnBiMjRnUFNBaVYyVnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0
+        WDJ0bGVWOTJZWFZzZENJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUQwZ0ltVjRZVzF3YkdWcmRpSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lY
+        cDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21W
+        emIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1
+        WlhoaGJYQnNaUzV1WVcxbENpQWdkR1Z1WVc1MFgybGtJQ0FnSUNBZ0lDQWdJQ0E5SUdSaGRHRXVZ
+        WHAxY21WeWJWOWpiR2xsYm5SZlkyOXVabWxuTG1OMWNuSmxiblF1ZEdWdVlXNTBYMmxrQ2lBZ2My
+        dDFYMjVoYldVZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0p6ZEdGdVpHRnlaQ0lLQ2lBZ2MyOW1kRjlrWld4
+        bGRHVmZaVzVoWW14bFpDQWdJQ0FnSUQwZ2RISjFaUW9nSUhCMWNtZGxYM0J5YjNSbFkzUnBiMjVm
+        Wlc1aFlteGxaQ0E5SUhSeWRXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYTJWNVgzWmhk
+        V3gwWDJGalkyVnpjMTl3YjJ4cFkza2lJQ0p6ZEc5eVlXZGxJaUI3Q2lBZ2EyVjVYM1poZFd4MFgy
+        bGtJRDBnWVhwMWNtVnliVjlyWlhsZmRtRjFiSFF1WlhoaGJYQnNaUzVwWkFvZ0lIUmxibUZ1ZEY5
+        cFpDQWdJQ0E5SUdSaGRHRXVZWHAxY21WeWJWOWpiR2xsYm5SZlkyOXVabWxuTG1OMWNuSmxiblF1
+        ZEdWdVlXNTBYMmxrQ2lBZ2IySnFaV04wWDJsa0lDQWdJRDBnWVhwMWNtVnliVjl6ZEc5eVlXZGxY
+        MkZqWTI5MWJuUXVaWGhoYlhCc1pTNXBaR1Z1ZEdsMGVTNHdMbkJ5YVc1amFYQmhiRjlwWkFvS0lD
+        QnJaWGxmY0dWeWJXbHpjMmx2Ym5NZ0lDQWdQU0JiSW1kbGRDSXNJQ0pqY21WaGRHVWlMQ0FpYkds
+        emRDSXNJQ0p5WlhOMGIzSmxJaXdnSW5KbFkyOTJaWElpTENBaWRXNTNjbUZ3YTJWNUlpd2dJbmR5
+        WVhCclpYa2lMQ0FpY0hWeVoyVWlMQ0FpWlc1amNubHdkQ0lzSUNKa1pXTnllWEIwSWl3Z0luTnBa
+        MjRpTENBaWRtVnlhV1o1SWwwS0lDQnpaV055WlhSZmNHVnliV2x6YzJsdmJuTWdQU0JiSW1kbGRD
+        SmRDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJ0bGVWOTJZWFZzZEY5aFkyTmxjM05mY0c5
+        c2FXTjVJaUFpWTJ4cFpXNTBJaUI3Q2lBZ2EyVjVYM1poZFd4MFgybGtJRDBnWVhwMWNtVnliVjly
+        WlhsZmRtRjFiSFF1WlhoaGJYQnNaUzVwWkFvZ0lIUmxibUZ1ZEY5cFpDQWdJQ0E5SUdSaGRHRXVZ
+        WHAxY21WeWJWOWpiR2xsYm5SZlkyOXVabWxuTG1OMWNuSmxiblF1ZEdWdVlXNTBYMmxrQ2lBZ2Iy
+        SnFaV04wWDJsa0lDQWdJRDBnWkdGMFlTNWhlblZ5WlhKdFgyTnNhV1Z1ZEY5amIyNW1hV2N1WTNW
+        eWNtVnVkQzV2WW1wbFkzUmZhV1FLQ2lBZ2EyVjVYM0JsY20xcGMzTnBiMjV6SUNBZ0lEMGdXeUpu
+        WlhRaUxDQWlZM0psWVhSbElpd2dJbVJsYkdWMFpTSXNJQ0pzYVhOMElpd2dJbkpsYzNSdmNtVWlM
+        Q0FpY21WamIzWmxjaUlzSUNKMWJuZHlZWEJyWlhraUxDQWlkM0poY0d0bGVTSXNJQ0p3ZFhKblpT
+        SXNJQ0psYm1OeWVYQjBJaXdnSW1SbFkzSjVjSFFpTENBaWMybG5iaUlzSUNKMlpYSnBabmtpWFFv
+        Z0lITmxZM0psZEY5d1pYSnRhWE56YVc5dWN5QTlJRnNpWjJWMElsMEtmUW9LQ25KbGMyOTFjbU5s
+        SUNKaGVuVnlaWEp0WDJ0bGVWOTJZWFZzZEY5clpYa2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdJRDBnSW5SbVpYZ3RhMlY1SWdvZ0lHdGxlVjkyWVhWc2RGOXBaQ0E5SUdGNmRY
+        SmxjbTFmYTJWNVgzWmhkV3gwTG1WNFlXMXdiR1V1YVdRS0lDQnJaWGxmZEhsd1pTQWdJQ0FnUFNB
+        aVVsTkJJZ29nSUd0bGVWOXphWHBsSUNBZ0lDQTlJREl3TkRnS0lDQnJaWGxmYjNCMGN5QWdJQ0Fn
+        UFNCYkltUmxZM0o1Y0hRaUxDQWlaVzVqY25sd2RDSXNJQ0p6YVdkdUlpd2dJblZ1ZDNKaGNFdGxl
+        U0lzSUNKMlpYSnBabmtpTENBaWQzSmhjRXRsZVNKZENnb2dJR1JsY0dWdVpITmZiMjRnUFNCYkNp
+        QWdJQ0JoZW5WeVpYSnRYMnRsZVY5MllYVnNkRjloWTJObGMzTmZjRzlzYVdONUxtTnNhV1Z1ZEN3
+        S0lDQWdJR0Y2ZFhKbGNtMWZhMlY1WDNaaGRXeDBYMkZqWTJWemMxOXdiMnhwWTNrdWMzUnZjbUZu
+        WlN3S0lDQmRDbjBLQ2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5emRHOXlZV2RsWDJGalkyOTFi
+        blFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbVY0WVcxd2JHVnpkRzl5SWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdJQ0FnSUNB
+        OUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdiRzlq
+        WVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ1lXTmpiM1Z1ZEY5MGFXVnlJQ0FnSUNBZ0lD
+        QWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb2dJR0ZqWTI5MWJuUmZjbVZ3YkdsallYUnBiMjVmZEhs
+        d1pTQTlJQ0pIVWxNaUNnb2dJR2xrWlc1MGFYUjVJSHNLSUNBZ0lIUjVjR1VnUFNBaVUzbHpkR1Z0
+        UVhOemFXZHVaV1FpQ2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZEc5eVlXZGxY
+        MkZqWTI5MWJuUmZZM1Z6ZEc5dFpYSmZiV0Z1WVdkbFpGOXJaWGtpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdjM1J2Y21GblpWOWhZMk52ZFc1MFgybGtJRDBnWVhwMWNtVnliVjl6ZEc5eVlXZGxYMkZqWTI5
+        MWJuUXVaWGhoYlhCc1pTNXBaQW9nSUd0bGVWOTJZWFZzZEY5cFpDQWdJQ0FnSUNBOUlHRjZkWEps
+        Y20xZmEyVjVYM1poZFd4MExtVjRZVzF3YkdVdWFXUUtJQ0JyWlhsZmJtRnRaU0FnSUNBZ0lDQWdJ
+        Q0FnUFNCaGVuVnlaWEp0WDJ0bGVWOTJZWFZzZEY5clpYa3VaWGhoYlhCc1pTNXVZVzFsQ2lBZ2Ey
+        VjVYM1psY25OcGIyNGdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXJaWGxmZG1GMWJIUmZhMlY1TG1W
+        NFlXMXdiR1V1ZG1WeWMybHZiZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwRGRYTjBiMjFsY2lCTllXNWhaMlZrSUV0bGVYTWdabTl5SUdFZ1UzUnZjbUZuWlNCQlkyTnZk
+        VzUwSUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lD
+        QnZaaUIwYUdVZ1UzUnZjbUZuWlNCQlkyTnZkVzUwTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUnZjbUZuWlY5aFkyTnZkVzUwWDJOMWMzUnZiV1Z5WDIxaGJtRm5aV1JmYTJW
+        NUxtaDBiV3d1YldGeWEyUnZkMjQ9

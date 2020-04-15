@@ -1,0 +1,14 @@
+aws_ses_configuration_set:
+    status: HOLD
+    subcategory: SES
+    layout: aws
+    page_title: 'AWS: aws_ses_configuration_set'
+    description: Provides an SES configuration set
+    arguments:
+        name:
+            description: The name of the configuration set
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

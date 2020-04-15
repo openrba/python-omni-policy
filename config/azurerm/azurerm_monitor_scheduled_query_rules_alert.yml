@@ -1,0 +1,241 @@
+azurerm_monitor_scheduled_query_rules_alert:
+    status: HOLD
+    subcategory: Monitor
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_monitor_scheduled_query_rules_alert'
+    description: Manages an AlertingAction Scheduled Query Rules resource within Azure
+        Monitor
+    arguments:
+        name:
+            description: The name of the scheduled query rule. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the scheduled
+                query rule instance.
+            required: true
+            policy: ''
+            notes: ''
+        data_source_id:
+            description: The resource URI over which log search query is to be run.
+            required: true
+            policy: ''
+            notes: ''
+        frequency:
+            description: Frequency (in minutes
+            required: true
+            policy: ''
+            notes: ''
+        query:
+            description: Log search query.
+            required: true
+            policy: ''
+            notes: ''
+        time_window:
+            description: Time window for which data needs to be fetched for query
+                (must be greater than or equal to `frequency`).  Values must be between
+                5 and 2880 (inclusive).
+            required: true
+            policy: ''
+            notes: ''
+        trigger:
+            description: The condition that results in the alert rule being run.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: An `action` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        authorized_resource_ids:
+            description: List of Resource IDs referred into query.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the scheduled query rule.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Whether this scheduled query rule is enabled.  Default is
+                `true`.
+            required: false
+            policy: ''
+            notes: ''
+        severity:
+            description: 'Severity of the alert. Possible values include: 0, 1, 2,
+                3, or 4.'
+            required: false
+            policy: ''
+            notes: ''
+        throttling:
+            description: Time (in minutes
+            required: false
+            policy: ''
+            notes: ''
+        action_group:
+            description: List of action group reference resource IDs.
+            required: true
+            policy: ''
+            notes: ''
+        custom_webhook_payload:
+            description: Custom payload to be sent for all webhook payloads in alerting
+                action.
+            required: false
+            policy: ''
+            notes: ''
+        email_subject:
+            description: Custom subject override for all email ids in Azure action
+                group.
+            required: false
+            policy: ''
+            notes: ''
+        metricColumn:
+            description: Evaluation of metric on a particular column.
+            required: true
+            policy: ''
+            notes: ''
+        metricTriggerType:
+            description: Metric Trigger Type - 'Consecutive' or 'Total'.
+            required: true
+            policy: ''
+            notes: ''
+        operator:
+            description: Evaluation operation for rule - 'Equal', 'GreaterThan' or
+                'LessThan'.
+            required: true
+            policy: ''
+            notes: ''
+        threshold:
+            description: Result or count threshold based on which rule should be triggered.  Values
+                must be between 0 and 10000 inclusive.
+            required: true
+            policy: ''
+            notes: ''
+        metricTrigger:
+            description: A `metricTrigger` block as defined above. Trigger condition
+                for metric query rule.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the scheduled query rule.
+    timeouts:
+        create:
+            description: Used when creating the Scheduled Query Rule Alert.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Scheduled Query Rule Alert.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Scheduled Query Rule Alert.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Scheduled Query Rule Alert.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbTF2Ym1sMGIzSnBibWN0Y21WemIzVnlZMlZ6SWdvZ0lH
+        eHZZMkYwYVc5dUlEMGdJbGRsYzNRZ1ZWTWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJG
+        d2NHeHBZMkYwYVc5dVgybHVjMmxuYUhSeklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ1BTQWlZWEJ3YVc1emFXZG9kSE1pQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJ
+        Q0FnSUNBZ0lDQTlJSFpoY2k1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdG
+        d2NHeHBZMkYwYVc5dVgzUjVjR1VnSUNBZ1BTQWlkMlZpSWdwOUNncHlaWE52ZFhKalpTQWlZWHAx
+        Y21WeWJWOWhjSEJzYVdOaGRHbHZibDlwYm5OcFoyaDBjeUlnSW1WNFlXMXdiR1V5SWlCN0NpQWdi
+        bUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKaGNIQnBibk5wWjJoMGN6SWlDaUFnYkc5allY
+        UnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlIWmhjaTVzYjJOaGRHbHZiZ29nSUhKbGMyOTFjbU5sWDJk
+        eWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1
+        Ym1GdFpRb2dJR0Z3Y0d4cFkyRjBhVzl1WDNSNWNHVWdJQ0FnUFNBaWQyVmlJZ3A5Q2dvaklFVjRZ
+        VzF3YkdVNklFRnNaWEowYVc1bklFRmpkR2x2YmlCM2FYUm9JSEpsYzNWc2RDQmpiM1Z1ZENCMGNt
+        bG5aMlZ5Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDIxdmJtbDBiM0pmYzJOb1pXUjFiR1ZrWDNG
+        MVpYSjVYM0oxYkdWelgyRnNaWEowSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNCbWIzSnRZWFFvSWlWekxYRjFaWEo1Y25Wc1pTSXNJSFpoY2k1d2NtVm1h
+        WGdwQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVky
+        VmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1
+        aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9L
+        SUNCaFkzUnBiMjRnZXdvZ0lDQWdZV04wYVc5dVgyZHliM1Z3SUNBZ0lDQWdJQ0FnSUNBOUlGdGRD
+        aUFnSUNCbGJXRnBiRjl6ZFdKcVpXTjBJQ0FnSUNBZ0lDQWdJRDBnSWtWdFlXbHNJRWhsWVdSbGNp
+        SUtJQ0FnSUdOMWMzUnZiVjkzWldKb2IyOXJYM0JoZVd4dllXUWdQU0FpZTMwaUNpQWdmUW9nSUdS
+        aGRHRmZjMjkxY21ObFgybGtJRDBnWVhwMWNtVnliVjloY0hCc2FXTmhkR2x2Ymw5cGJuTnBaMmgw
+        Y3k1bGVHRnRjR3hsTG1sa0NpQWdaR1Z6WTNKcGNIUnBiMjRnSUNBZ1BTQWlRV3hsY25RZ2QyaGxi
+        aUIwYjNSaGJDQnlaWE4xYkhSeklHTnliM056SUhSb2NtVnphRzlzWkNJS0lDQmxibUZpYkdWa0lD
+        QWdJQ0FnSUNBOUlIUnlkV1VLSUNBaklFTnZkVzUwSUdGc2JDQnlaWEYxWlhOMGN5QjNhWFJvSUhO
+        bGNuWmxjaUJsY25KdmNpQnlaWE4xYkhRZ1kyOWtaU0JuY205MWNHVmtJR2x1ZEc4Z05TMXRhVzUx
+        ZEdVZ1ltbHVjd29nSUhGMVpYSjVJQ0FnSUNBZ0lEMGdQRHd0VVZWRlVsa0tJQ0J5WlhGMVpYTjBj
+        d29nSUNBZ2ZDQjNhR1Z5WlNCMGIyeHZibWNvY21WemRXeDBRMjlrWlNrZ1BqMGdOVEF3Q2lBZ0lD
+        QjhJSE4xYlcxaGNtbDZaU0JqYjNWdWRDZ3BJR0o1SUdKcGJpaDBhVzFsYzNSaGJYQXNJRFZ0S1Fv
+        Z0lGRlZSVkpaQ2lBZ2MyVjJaWEpwZEhrZ0lDQWdQU0F4Q2lBZ1puSmxjWFZsYm1ONUlDQWdQU0Ex
+        Q2lBZ2RHbHRaVjkzYVc1a2IzY2dQU0F6TUFvZ0lIUnlhV2RuWlhJZ2V3b2dJQ0FnYjNCbGNtRjBi
+        M0lnSUQwZ0lrZHlaV0YwWlhKVWFHRnVJZ29nSUNBZ2RHaHlaWE5vYjJ4a0lEMGdNd29nSUgwS2ZR
+        b0tJeUJGZUdGdGNHeGxPaUJCYkdWeWRHbHVaeUJCWTNScGIyNGdkMmwwYUNCdFpYUnlhV01nZEhK
+        cFoyZGxjZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl0YjI1cGRHOXlYM05qYUdWa2RXeGxaRjl4
+        ZFdWeWVWOXlkV3hsYzE5aGJHVnlkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnWm05eWJXRjBLQ0lsY3kxeGRXVnllWEoxYkdVaUxDQjJZWEl1Y0hKbFpt
+        bDRLUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21O
+        bFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1
+        WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtD
+        aUFnWVdOMGFXOXVJSHNLSUNBZ0lHRmpkR2x2Ymw5bmNtOTFjQ0FnSUNBZ0lDQWdJQ0FnUFNCYlhR
+        b2dJQ0FnWlcxaGFXeGZjM1ZpYW1WamRDQWdJQ0FnSUNBZ0lDQTlJQ0pGYldGcGJDQklaV0ZrWlhJ
+        aUNpQWdJQ0JqZFhOMGIyMWZkMlZpYUc5dmExOXdZWGxzYjJGa0lEMGdJbnQ5SWdvZ0lIMEtJQ0Jr
+        WVhSaFgzTnZkWEpqWlY5cFpDQTlJR0Y2ZFhKbGNtMWZZWEJ3YkdsallYUnBiMjVmYVc1emFXZG9k
+        SE11WlhoaGJYQnNaUzVwWkFvZ0lHUmxjMk55YVhCMGFXOXVJQ0FnSUQwZ0lsRjFaWEo1SUhKbGMz
+        VnNkSE1nWjNKdmRYQmxaQ0JwYm5SdklFRm5aM0psWjJGMFpXUldZV3gxWlRzZ1lXeGxjblFnZDJo
+        bGJpQnlaWE4xYkhSeklHTnliM056SUhSb2NtVnphRzlzWkNJS0lDQmxibUZpYkdWa0lDQWdJQ0Fn
+        SUNBOUlIUnlkV1VLSUNBaklFTnZkVzUwSUdGc2JDQnlaWEYxWlhOMGN5QjNhWFJvSUhObGNuWmxj
+        aUJsY25KdmNpQnlaWE4xYkhRZ1kyOWtaU0JuY205MWNHVmtJR2x1ZEc4Z05TMXRhVzUxZEdVZ1lt
+        bHVjeUJpZVNCSVZGUlFJRzl3WlhKaGRHbHZiZ29nSUhGMVpYSjVJQ0FnSUNBZ0lEMGdQRHd0VVZW
+        RlVsa0tJQ0J5WlhGMVpYTjBjd29nSUNBZ2ZDQjNhR1Z5WlNCMGIyeHZibWNvY21WemRXeDBRMjlr
+        WlNrZ1BqMGdOVEF3Q2lBZ0lDQjhJSE4xYlcxaGNtbDZaU0JCWjJkeVpXZGhkR1ZrVm1Gc2RXVWdQ
+        U0JqYjNWdWRDZ3BJR0o1SUc5d1pYSmhkR2x2Ymw5T1lXMWxMQ0JpYVc0b2RHbHRaWE4wWVcxd0xD
+        QTFiU2tLVVZWRlVsa0tJQ0J6WlhabGNtbDBlU0FnSUNBOUlERUtJQ0JtY21WeGRXVnVZM2tnSUNB
+        OUlEVUtJQ0IwYVcxbFgzZHBibVJ2ZHlBOUlETXdDaUFnZEhKcFoyZGxjaUI3Q2lBZ0lDQnZjR1Z5
+        WVhSdmNpQWdQU0FpUjNKbFlYUmxjbFJvWVc0aUNpQWdJQ0IwYUhKbGMyaHZiR1FnUFNBekNpQWdJ
+        Q0J0WlhSeWFXTmZkSEpwWjJkbGNpQjdDaUFnSUNBZ0lHOXdaWEpoZEc5eUlDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpUjNKbFlYUmxjbFJvWVc0aUNpQWdJQ0FnSUhSb2NtVnphRzlzWkNBZ0lDQWdJQ0FnSUNB
+        Z1BTQXhDaUFnSUNBZ0lHMWxkSEpwWTE5MGNtbG5aMlZ5WDNSNWNHVWdQU0FpVkc5MFlXd2lDaUFn
+        SUNBZ0lHMWxkSEpwWTE5amIyeDFiVzRnSUNBZ0lDQWdQU0FpYjNCbGNtRjBhVzl1WDA1aGJXVWlD
+        aUFnSUNCOUNpQWdmUXA5Q2dvaklFVjRZVzF3YkdVNklFRnNaWEowYVc1bklFRmpkR2x2YmlCRGNt
+        OXpjeTFTWlhOdmRYSmpaUXB5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl0YjI1cGRHOXlYM05qYUdW
+        a2RXeGxaRjl4ZFdWeWVWOXlkV3hsYzE5aGJHVnlkQ0lnSW1WNFlXMXdiR1V5SWlCN0NpQWdibUZ0
+        WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUdadmNtMWhkQ2dpSlhNdGNYVmxjbmx5ZFd4bE1pSXNJ
+        SFpoY2k1d2NtVm1hWGdwQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNt
+        MWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21O
+        bFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3
+        YkdVdWJtRnRaUW9LSUNCaGRYUm9iM0pwZW1Wa1gzSmxjMjkxY21ObFgybGtjeUE5SUZ0aGVuVnla
+        WEp0WDJGd2NHeHBZMkYwYVc5dVgybHVjMmxuYUhSekxtVjRZVzF3YkdVeUxtbGtYUW9nSUdGamRH
+        bHZiaUI3Q2lBZ0lDQmhZM1JwYjI1ZlozSnZkWEFnSUNBZ0lDQWdJQ0FnSUQwZ1cxMEtJQ0FnSUdW
+        dFlXbHNYM04xWW1wbFkzUWdJQ0FnSUNBZ0lDQWdQU0FpUlcxaGFXd2dTR1ZoWkdWeUlnb2dJQ0Fn
+        WTNWemRHOXRYM2RsWW1odmIydGZjR0Y1Ykc5aFpDQTlJQ0o3ZlNJS0lDQjlDaUFnWkdGMFlWOXpi
+        M1Z5WTJWZmFXUWdQU0JoZW5WeVpYSnRYMkZ3Y0d4cFkyRjBhVzl1WDJsdWMybG5hSFJ6TG1WNFlX
+        MXdiR1V1YVdRS0lDQmtaWE5qY21sd2RHbHZiaUFnSUNBOUlDSlJkV1Z5ZVNCdFlYa2dZV05qWlhO
+        eklHUmhkR0VnZDJsMGFHbHVJRzExYkhScGNHeGxJSEpsYzI5MWNtTmxjeUlLSUNCbGJtRmliR1Zr
+        SUNBZ0lDQWdJQ0E5SUhSeWRXVUtJQ0FqSUVOdmRXNTBJSEpsY1hWbGMzUnpJR2x1SUcxMWJIUnBj
+        R3hsSUd4dlp5QnlaWE52ZFhKalpYTWdZVzVrSUdkeWIzVndJR2x1ZEc4Z05TMXRhVzUxZEdVZ1lt
+        bHVjeUJpZVNCSVZGUlFJRzl3WlhKaGRHbHZiZ29nSUhGMVpYSjVJRDBnWm05eWJXRjBLRHc4TFZG
+        VlJWSlpDaUFnYkdWMElHRTljbVZ4ZFdWemRITUtJQ0FnSUh3Z2QyaGxjbVVnZEc5cGJuUW9jbVZ6
+        ZFd4MFEyOWtaU2tnUGowZ05UQXdDaUFnSUNCOElHVjRkR1Z1WkNCbVlXbHNQVEU3SUd4bGRDQmlQ
+        V0Z3Y0NnbkpYTW5LUzV5WlhGMVpYTjBjd29nSUNBZ2ZDQjNhR1Z5WlNCMGIybHVkQ2h5WlhOMWJI
+        UkRiMlJsS1NBK1BTQTFNREFnZkNCbGVIUmxibVFnWm1GcGJEMHhPeUJoQ2lBZ0lDQjhJR3B2YVc0
+        Z1lpQnZiaUJtWVdsc0NsRlZSVkpaQ2lBZ0xDQmhlblZ5WlhKdFgyRndjR3hwWTJGMGFXOXVYMmx1
+        YzJsbmFIUnpMbVY0WVcxd2JHVXlMbWxrS1FvZ0lITmxkbVZ5YVhSNUlDQWdJRDBnTVFvZ0lHWnla
+        WEYxWlc1amVTQWdJRDBnTlFvZ0lIUnBiV1ZmZDJsdVpHOTNJRDBnTXpBS0lDQjBjbWxuWjJWeUlI
+        c0tJQ0FnSUc5d1pYSmhkRzl5SUNBOUlDSkhjbVZoZEdWeVZHaGhiaUlLSUNBZ0lIUm9jbVZ6YUc5
+        c1pDQTlJRE1LSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwVFkyaGxaSFZzWldRZ1VYVmxjbmtnVW5Wc1pTQkJiR1Z5ZEhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXOXVhWFJ2Y2w5elkyaGxaSFZzWldSZmNYVmxjbmxmY25Wc1pYTmZZV3hsY25R
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

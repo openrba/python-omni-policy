@@ -1,0 +1,41 @@
+aws_lb_ssl_negotiation_policy:
+    status: HOLD
+    subcategory: Elastic Load Balancing (ELB Classic)
+    layout: aws
+    page_title: 'AWS: aws_lb_ssl_negotiation_policy'
+    description: Provides a load balancer SSL negotiation policy, which allows an
+        ELB to control which ciphers and protocols are supported during SSL negotiations
+        between a client and a load balancer.
+    arguments:
+        name:
+            description: The name of the SSL negotiation policy.
+            required: true
+            policy: ''
+            notes: ''
+        load_balancer:
+            description: The load balancer to which the policy
+            required: true
+            policy: ''
+            notes: ''
+        lb_port:
+            description: The load balancer port to which the policy
+            required: true
+            policy: ''
+            notes: ''
+        attribute:
+            description: 'An SSL Negotiation policy attribute. Each has two properties:'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the policy.
+        name:
+            description: The name of the stickiness policy.
+        load_balancer:
+            description: The load balancer to which the policy is attached.
+        lb_port:
+            description: The load balancer port to which the policy is applied.
+        attribute:
+            description: The SSL Negotiation policy attributes.
+    timeouts: {}

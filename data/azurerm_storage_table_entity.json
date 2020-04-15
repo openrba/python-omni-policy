@@ -1,0 +1,68 @@
+{
+    "azurerm_storage_table_entity": {
+        "status": "HOLD",
+        "subcategory": "Storage",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_storage_table_entity",
+        "description": "Manages an Entity within a Table in an Azure Storage Account.",
+        "arguments": {
+            "storage_account_name": {
+                "description": "Specifies the storage account in which to create the storage table entity.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "table_name": {
+                "description": "The name of the storage table in which to create the storage table entity.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "partition_key": {
+                "description": "The key for the partition where the entity will be inserted/merged. Changing this forces a new resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "row_key": {
+                "description": "The key for the row where the entity will be inserted/merged. Changing this forces a new resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "entity": {
+                "description": "A map of key/value pairs that describe the entity to be inserted/merged in to the storage table.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Entity within the Table in the Storage Account."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Storage Table Entity.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Storage Table Entity.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Storage Table Entity.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Storage Table Entity.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

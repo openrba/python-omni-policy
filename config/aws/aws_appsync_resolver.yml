@@ -1,0 +1,59 @@
+aws_appsync_resolver:
+    status: HOLD
+    subcategory: AppSync
+    layout: aws
+    page_title: 'AWS: aws_appsync_resolver'
+    description: Provides an AppSync Resolver.
+    arguments:
+        api_id:
+            description: The API ID for the GraphQL API.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: The type name from the schema defined in the GraphQL API.
+            required: true
+            policy: ''
+            notes: ''
+        field:
+            description: The field name from the schema defined in the GraphQL API.
+            required: true
+            policy: ''
+            notes: ''
+        request_template:
+            description: The request mapping template for UNIT resolver or 'before
+                mapping template' for PIPELINE resolver.
+            required: true
+            policy: ''
+            notes: ''
+        response_template:
+            description: The response mapping template for UNIT resolver or 'after
+                mapping template' for PIPELINE resolver.
+            required: true
+            policy: ''
+            notes: ''
+        data_source:
+            description: The DataSource name.
+            required: false
+            policy: ''
+            notes: ''
+        kind:
+            description: The resolver type. Valid values are `UNIT` and `PIPELINE`.
+            required: false
+            policy: ''
+            notes: ''
+        pipeline_config:
+            description: The PipelineConfig. A `pipeline_config` block is documented
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        functions:
+            description: The list of Function ID.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The ARN
+    timeouts: {}

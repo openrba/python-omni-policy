@@ -1,0 +1,27 @@
+aws_worklink_website_certificate_authority_association:
+    status: HOLD
+    subcategory: WorkLink
+    layout: aws
+    page_title: 'AWS: aws_worklink_website_certificate_authority_association'
+    description: Provides a AWS WorkLink Website Certificate Authority Association
+        resource.
+    arguments:
+        fleet_arn:
+            description: The ARN of the fleet.
+            required: false
+            policy: ''
+            notes: ''
+        certificate:
+            description: The root certificate of the Certificate Authority.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: The certificate name to display.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        website_ca_id:
+            description: A unique identifier for the Certificate Authority.
+    timeouts: {}

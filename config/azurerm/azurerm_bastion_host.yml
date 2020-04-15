@@ -1,0 +1,106 @@
+azurerm_bastion_host:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_bastion_host'
+    description: Manages a Bastion Host.
+    arguments:
+        name:
+            description: The name of the IP configuration.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Bastion
+                Host.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ip_configuration:
+            description: A `ip_configuration` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: Reference to a subnet in which this Bastion Host has been
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        public_ip_address_id:
+            description: ' Reference to a Public IP Address to associate with this
+                Bastion Host.'
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Bastion Host.
+        dns_name:
+            description: The FQDN for the Bastion Host.
+    timeouts:
+        create:
+            description: Used when creating the Bastion Host.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Bastion Host.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Bastion Host.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Bastion Host.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsZG01bGRDSUtJQ0JoWkdSeVpYTnpYM053WVdObElDQWdJ
+        Q0FnSUQwZ1d5SXhPVEl1TVRZNExqRXVNQzh5TkNKZENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEds
+        dmJnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5s
+        WDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXpk
+        V0p1WlhRaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QWlRWHAxY21WQ1lYTjBhVzl1VTNWaWJtVjBJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldV
+        Z0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0Iy
+        YVhKMGRXRnNYMjVsZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNi
+        M0pyTG1WNFlXMXdiR1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lq
+        RTVNaTR4TmpndU1TNHlNalF2TWpjaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0IxWW14
+        cFkxOXBjQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBn
+        SW1WNFlXMXdiR1Z3YVhBaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNt
+        TmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcx
+        d2JHVXVibUZ0WlFvZ0lHRnNiRzlqWVhScGIyNWZiV1YwYUc5a0lDQWdQU0FpVTNSaGRHbGpJZ29n
+        SUhOcmRTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDbjBLQ25KbGMyOTFj
+        bU5sSUNKaGVuVnlaWEp0WDJKaGMzUnBiMjVmYUc5emRDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlX
+        MWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVmlZWE4wYVc5dUlnb2dJR3h2WTJG
+        MGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0
+        WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFj
+        bVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0NpQWdhWEJmWTI5dVpt
+        bG5kWEpoZEdsdmJpQjdDaUFnSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pqYjI1
+        bWFXZDFjbUYwYVc5dUlnb2dJQ0FnYzNWaWJtVjBYMmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5
+        WlhKdFgzTjFZbTVsZEM1bGVHRnRjR3hsTG1sa0NpQWdJQ0J3ZFdKc2FXTmZhWEJmWVdSa2NtVnpj
+        MTlwWkNBOUlHRjZkWEpsY20xZmNIVmliR2xqWDJsd0xtVjRZVzF3YkdVdWFXUUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwQ1lYTjBhVzl1SUVodmMzUnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRnpkR2x2Ymw5b2IzTjBMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

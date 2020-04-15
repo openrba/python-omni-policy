@@ -1,0 +1,122 @@
+azurerm_signalr_service:
+    status: HOLD
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_signalr_service'
+    description: Manages an Azure SignalR service.
+    arguments:
+        name:
+            description: Specifies which tier to use. Valid values are `Free_F1` and
+                `Standard_S1`.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the SignalR
+                service. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the SignalR
+                service exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        cors:
+            description: A `cors` block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        features:
+            description: A `features` block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        allowed_origins:
+            description: A list of origins which should be able to make cross-origin
+                calls. `*` can be used to allow all calls.
+            required: true
+            policy: ''
+            notes: ''
+        flag:
+            description: The kind of Feature. Possible values are `EnableConnectivityLogs`
+                and `ServiceMode`.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: A value of a feature flag. Possible values are `Classic`,
+                `Default` and `Serverless`.
+            required: true
+            policy: ''
+            notes: ''
+        capacity:
+            description: Specifies the number of units associated with this SignalR
+                service. Valid values are `1`, `2`, `5`, `10`, `20`, `50` and `100`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the SignalR service.
+        hostname:
+            description: The FQDN of the SignalR service.
+        ip_address:
+            description: The publicly accessible IP of the SignalR service.
+        public_port:
+            description: The publicly accessible port of the SignalR service which
+                is designed for browser/client use.
+        server_port:
+            description: The publicly accessible port of the SignalR service which
+                is designed for customer server side use.
+        primary_access_key:
+            description: The primary access key for the SignalR service.
+        primary_connection_string:
+            description: The primary connection string for the SignalR service.
+        secondary_access_key:
+            description: The secondary access key for the SignalR service.
+        secondary_connection_string:
+            description: The secondary connection string for the SignalR service.
+    timeouts:
+        create:
+            description: Used when creating the SignalR Service.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the SignalR Service.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the SignalR Service.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the SignalR Service.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJsY25KaFptOXliUzF6YVdkdVlXeHlJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM05wWjI1
+        aGJISmZjMlZ5ZG1salpTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdJblJtWlhndGMybG5ibUZzY2lJS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNp
+        QWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNK
+        dmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2dvZ0lITnJkU0I3Q2lBZ0lDQnVZVzFsSUNBZ0lDQTlJQ0pH
+        Y21WbFgwWXhJZ29nSUNBZ1kyRndZV05wZEhrZ1BTQXhDaUFnZlFvS0lDQmpiM0p6SUhzS0lDQWdJ
+        R0ZzYkc5M1pXUmZiM0pwWjJsdWN5QTlJRnNpYUhSMGNEb3ZMM2QzZHk1bGVHRnRjR3hsTG1OdmJT
+        SmRDaUFnZlFvS0lDQm1aV0YwZFhKbGN5QjdDaUFnSUNCbWJHRm5JQ0E5SUNKVFpYSjJhV05sVFc5
+        a1pTSUtJQ0FnSUhaaGJIVmxJRDBnSWtSbFptRjFiSFFpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwVGFXZHVZV3hTSUhObGNuWnBZMlZ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMybG5ibUZzY2w5elpYSjJhV05sTG1oMGJXd3ViV0Z5YTJSdmQyND0=

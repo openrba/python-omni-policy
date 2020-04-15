@@ -1,0 +1,37 @@
+{
+    "aws_ec2_transit_gateway_route": {
+        "status": "HOLD",
+        "subcategory": "EC2",
+        "layout": "aws",
+        "page_title": "AWS: aws_ec2_transit_gateway_route",
+        "description": "Manages an EC2 Transit Gateway Route",
+        "arguments": {
+            "destination_cidr_block": {
+                "description": "IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "transit_gateway_attachment_id": {
+                "description": "Identifier of EC2 Transit Gateway Attachment (required if `blackhole` is set to false).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "blackhole": {
+                "description": "Indicates whether to drop traffic that matches this route (default to `false`).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "transit_gateway_route_table_id": {
+                "description": "Identifier of EC2 Transit Gateway Route Table.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

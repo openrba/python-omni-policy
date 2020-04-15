@@ -1,0 +1,105 @@
+azurerm_cosmosdb_sql_container:
+    status: HOLD
+    subcategory: CosmosDB (DocumentDB)
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_cosmosdb_sql_container'
+    description: Manages a SQL Container within a Cosmos DB Account.
+    arguments:
+        name:
+            description: Specifies the name of the Cosmos DB SQL Database. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the Cosmos DB SQL
+                Database is created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        account_name:
+            description: The name of the Cosmos DB Account to create the container
+                within. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        database_name:
+            description: The name of the Cosmos DB SQL Database to create the container
+                within. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        partition_key_path:
+            description: Define a partition key. Changing this forces a new resource
+                to be created.
+            required: false
+            policy: ''
+            notes: ''
+        unique_key:
+            description: One or more `unique_key` blocks as defined below. Changing
+                this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        throughput:
+            description: The throughput of SQL container (RU/s). Must be set in increments
+                of `100`. The minimum value is `400`. This must be set upon container
+                creation otherwise it cannot be updated without a manual terraform
+                destroy-apply.
+            required: false
+            policy: ''
+            notes: ''
+        default_ttl:
+            description: "The default time to live of SQL container. If missing, items\
+                \ are not expired automatically. If present and the value is set to\
+                \ `-1`, it is equal to infinity, and items don\u2019t expire by default.\
+                \ If present and the value is set to some number `n` \u2013 items\
+                \ will expire `n` seconds after their last modified time."
+            required: false
+            policy: ''
+            notes: ''
+        paths:
+            description: A list of paths to use for this unique key.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the CosmosDB SQL Container.
+    timeouts:
+        create:
+            description: Used when creating the CosmosDB SQL Container.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the CosmosDB SQL Container.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the CosmosDB SQL Container.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the CosmosDB SQL Container.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJOdmMyMXZjMlJpWDNOeGJGOWpiMjUwWVdsdVpYSWlJ
+        Q0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNH
+        eGxMV052Ym5SaGFXNWxjaUlLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21W
+        eWJWOWpiM050YjNOa1lsOWhZMk52ZFc1MExtVjRZVzF3YkdVdWNtVnpiM1Z5WTJWZlozSnZkWEJm
+        Ym1GdFpRb2dJR0ZqWTI5MWJuUmZibUZ0WlNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDJOdmMyMXZj
+        MlJpWDJGalkyOTFiblF1WlhoaGJYQnNaUzV1WVcxbENpQWdaR0YwWVdKaGMyVmZibUZ0WlNBZ0lD
+        QWdJQ0E5SUdGNmRYSmxjbTFmWTI5emJXOXpaR0pmYzNGc1gyUmhkR0ZpWVhObExtVjRZVzF3YkdV
+        dWJtRnRaUW9nSUhCaGNuUnBkR2x2Ymw5clpYbGZjR0YwYUNBZ1BTQWlMMlJsWm1sdWFYUnBiMjR2
+        YVdRaUNpQWdkR2h5YjNWbmFIQjFkQ0FnSUNBZ0lDQWdJQ0E5SURRd01Bb0tJQ0IxYm1seGRXVmZh
+        MlY1SUhzS0lDQWdJSEJoZEdoeklEMGdXeUl2WkdWbWFXNXBkR2x2Ymk5cFpHeHZibWNpTENBaUwy
+        UmxabWx1YVhScGIyNHZhV1J6YUc5eWRDSmRDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwRGIzTnRiM01nVTFGTUlFTnZiblJoYVc1bGNuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyOXpiVzl6WkdKZmMzRnNYMk52Ym5SaGFXNWxjaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

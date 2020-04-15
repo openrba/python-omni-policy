@@ -1,0 +1,85 @@
+azurerm_api_management_identity_provider_aad:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_identity_provider_aad'
+    description: Manages an API Management AAD Identity Provider.
+    arguments:
+        api_management_name:
+            description: The Name of the API Management Service where this AAD Identity
+                Provider should be created. Changing this forces a new resource to
+                be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group where the API Management Service
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        client_id:
+            description: Client Id of the Application in the AAD Identity Provider.
+            required: true
+            policy: ''
+            notes: ''
+        client_secret:
+            description: Client secret of the Application in the AAD Identity Provider.
+            required: true
+            policy: ''
+            notes: ''
+        allowed_tenants:
+            description: List of allowed AAD Tenants.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management AAD Identity Provider.
+    timeouts:
+        create:
+            description: Used when creating the API Management AAD Identity Provider.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management AAD Identity Provider.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management AAD Identity Provider.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management AAD Identity Provider.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SkVaWFpsYkc5d1pYSmZNU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZllYQnBYMjFoYm1G
+        blpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmWVdGa0lpQWlaWGhoYlhCc1pTSWdld29n
+        SUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHli
+        M1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR0Z3YVY5dFlXNWhaMlZ0Wlc1MFgyNWhiV1VnUFNCaGVu
+        VnlaWEp0WDJGd2FWOXRZVzVoWjJWdFpXNTBMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHTnNhV1Z1ZEY5
+        cFpDQWdJQ0FnSUNBZ0lDQWdQU0FpTURBd01EQXdNREF0TURBd01DMHdNREF3TFRBd01EQXRNREF3
+        TURBd01EQXdNREF3SWdvZ0lHTnNhV1Z1ZEY5elpXTnlaWFFnSUNBZ0lDQWdQU0FpTURBd01EQXdN
+        REF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQWlDaUFnWVd4c2IzZGxaRjkwWlc1aGJu
+        UnpJQ0FnSUNBOUlGc2lNREF3TURBd01EQXRNREF3TUMwd01EQXdMVEF3TURBdE1EQXdNREF3TURB
+        d01EQXdJbDBLZlFvPQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JCUVVRZ1NXUmxiblJwZEhrZ1VISnZkbWxrWlhJZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEpmWVdG
+        a0xtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -1,0 +1,120 @@
+azurerm_bot_web_app:
+    status: HOLD
+    subcategory: Bot
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_bot_web_app'
+    description: Manages a Web App Bot.
+    arguments:
+        name:
+            description: Specifies the name of the Web App Bot. Changing this forces
+                a new resource to be created. Must be globally unique.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Web
+                App Bot. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The supported Azure location where the resource exists. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: The SKU of the Web App Bot. Valid values include `F0` or
+                `S1`. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        microsoft_app_id:
+            description: The Microsoft Application ID for the Web App Bot. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The name of the Web App Bot will be displayed as. This defaults
+                to `name` if not specified.
+            required: false
+            policy: ''
+            notes: ''
+        endpoint:
+            description: The Web App Bot endpoint.
+            required: false
+            policy: ''
+            notes: ''
+        developer_app_insights_key:
+            description: The Application Insights Key to associate with the Web App
+                Bot.
+            required: false
+            policy: ''
+            notes: ''
+        developer_app_insights_api_key:
+            description: The Application Insights API Key to associate with the Web
+                App Bot.
+            required: false
+            policy: ''
+            notes: ''
+        developer_app_insights_application_id:
+            description: The Application Insights Application ID to associate with
+                the Web App Bot.
+            required: false
+            policy: ''
+            notes: ''
+        luis_app_ids:
+            description: A list of LUIS App IDs to associate with the Web App Bot.
+            required: false
+            policy: ''
+            notes: ''
+        luis_key:
+            description: The LUIS key to associate with the Web App Bot.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Bot Web App.
+    timeouts:
+        create:
+            description: Used when creating the Bot Web App.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Bot Web App.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Bot Web App.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Bot Web App.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q21SaGRHRWdJbUY2ZFhKbGNtMWZZMnhwWlc1MFgyTnZibVpwWnlJZ0ltTjFjbkpsYm5RaUlIdDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYSmxjMjkxY21ObGN5SUtJQ0JzYjJO
+        aGRHbHZiaUE5SUNKdWIzSjBhR1YxY205d1pTSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFm
+        WW05MFgzZGxZbDloY0hBaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBOUlDSmxlR0Z0Y0d4bElnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVoy
+        eHZZbUZzSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0FpSkh0aGVuVnlaWEp0WDNK
+        bGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlgwaUNpQWdjMnQxSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKR01DSUtJQ0J0YVdOeWIzTnZablJmWVhCd1gybGtJQ0FnSUQwZ0lpUjda
+        R0YwWVM1aGVuVnlaWEp0WDJOc2FXVnVkRjlqYjI1bWFXY3VZM1Z5Y21WdWRDNWpiR2xsYm5SZmFX
+        UjlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwQ2IzUWdWMlZpSUVGd2NDZHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltOTBYM2RsWWw5aGNIQXViV0Z5YTJSdmQyND0=

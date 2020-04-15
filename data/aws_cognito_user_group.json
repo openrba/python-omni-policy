@@ -1,0 +1,43 @@
+{
+    "aws_cognito_user_group": {
+        "status": "HOLD",
+        "subcategory": "Cognito",
+        "layout": "aws",
+        "page_title": "AWS: aws_cognito_user_group",
+        "description": "Provides a Cognito User Group resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the user group.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "user_pool_id": {
+                "description": "The user pool ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the user group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "precedence": {
+                "description": "The precedence of the user group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role_arn": {
+                "description": "The ARN of the IAM role to be associated with the user group.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

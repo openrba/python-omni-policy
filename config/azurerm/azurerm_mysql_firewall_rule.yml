@@ -1,0 +1,78 @@
+azurerm_mysql_firewall_rule:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mysql_firewall_rule'
+    description: Manages a Firewall Rule for a MySQL Server.
+    arguments:
+        name:
+            description: Specifies the name of the MySQL Firewall Rule. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_name:
+            description: Specifies the name of the MySQL Server. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which the MySQL Server
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        start_ip_address:
+            description: Specifies the Start IP Address associated with this Firewall
+                Rule. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        end_ip_address:
+            description: Specifies the End IP Address associated with this Firewall
+                Rule. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: The Azure feature `Allow access to Azure services` can be enabled
+                by setting `start_ip_address` and `end_ip_address` to `0.0.0.0` which
+                ([is documented in the Azure API Docs](https://docs.microsoft.com/en-us/rest/api/sql/firewallrules/createorupdate)).
+    attributes:
+        id:
+            description: The ID of the MySQL Firewall Rule.
+    timeouts:
+        create:
+            description: Used when creating the MySQL Firewall Rule.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the MySQL Firewall Rule.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the MySQL Firewall Rule.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MySQL Firewall Rule.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbUZ3YVMxeVp5MXdjbThpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyMTVjM0ZzWDNO
+        bGNuWmxjaUlnSW1WNFlXMXdiR1VpSUhzS0lDQWpJQzR1TGdwOUNncHlaWE52ZFhKalpTQWlZWHAx
+        Y21WeWJWOXRlWE54YkY5bWFYSmxkMkZzYkY5eWRXeGxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhi
+        V1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYjJabWFXTmxJZ29nSUhKbGMyOTFjbU5sWDJkeWIz
+        VndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1G
+        dFpRb2dJSE5sY25abGNsOXVZVzFsSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDIxNWMzRnNYM05s
+        Y25abGNpNWxlR0Z0Y0d4bExtNWhiV1VLSUNCemRHRnlkRjlwY0Y5aFpHUnlaWE56SUNBZ0lEMGdJ
+        alF3TGpFeE1pNDRMakV5SWdvZ0lHVnVaRjlwY0Y5aFpHUnlaWE56SUNBZ0lDQWdQU0FpTkRBdU1U
+        RXlMamd1TVRJaUNuMEs=
+    import: !!binary |
+        Q2dwTmVWTlJUQ0JHYVhKbGQyRnNiQ0JTZFd4bEozTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJYbHpjV3hmWm1seVpYZGhiR3hmY25Wc1pTNW9kRzFzTG0xaGNtdGtiM2R1

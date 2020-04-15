@@ -1,0 +1,68 @@
+{
+    "azurerm_bot_channel_ms_teams": {
+        "status": "HOLD",
+        "subcategory": "Bot",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_bot_channel_ms_teams",
+        "description": "Manages an MS Teams integration for a Bot Channel",
+        "arguments": {
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the Bot Channel. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "The supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bot_name": {
+                "description": "The name of the Bot Resource this channel will be associated with. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "calling_web_hook": {
+                "description": "Specifies the webhook for Microsoft Teams channel calls.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_calling": {
+                "description": "Specifies whether to enable Microsoft Teams channel calls. This defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Microsoft Teams Integration for a Bot Channel."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Microsoft Teams Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Microsoft Teams Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Microsoft Teams Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Microsoft Teams Integration for a Bot Channel.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

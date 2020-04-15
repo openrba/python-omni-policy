@@ -1,0 +1,157 @@
+azurerm_network_interface_application_gateway_backend_address_pool_association:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_network_interface_application_gateway_backend_address_pool_association'
+    description: Manages the association between a Network Interface and a Application
+        Gateway's Backend Address Pool.
+    arguments:
+        network_interface_id:
+            description: The ID of the Network Interface. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        ip_configuration_name:
+            description: The Name of the IP Configuration within the Network Interface
+                which should be connected to the Backend Address Pool. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        backend_address_pool_id:
+            description: The ID of the Application Gateway's Backend Address Pool
+                which this Network Interface which should be connected to. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The (Terraform specific) ID of the Association between the
+                Network Interface and the Application Gateway Backend Address Pool.
+    timeouts:
+        create:
+            description: Used when creating the association between the Network Interface
+                and the Application Gateway Backend Address Pool.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the association between the Network Interface
+                and the Application Gateway Backend Address Pool.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the association between the Network
+                Interface and the Application Gateway Backend Address Pool.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the association between the Network Interface
+                and the Application Gateway Backend Address Pool.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMakF2TVRZaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlabkp2Ym5SbGJtUWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0ptY205dWRHVnVaQ0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQTlJR0Y2ZFhK
+        bGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnZG1seWRIVmhiRjl1
+        WlhSM2IzSnJYMjVoYldVZ1BTQmhlblZ5WlhKdFgzWnBjblIxWVd4ZmJtVjBkMjl5YXk1bGVHRnRj
+        R3hsTG01aGJXVUtJQ0JoWkdSeVpYTnpYM0J5WldacGVDQWdJQ0FnSUNBOUlDSXhNQzR3TGpFdU1D
+        OHlOQ0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmMzVmlibVYwSWlBaVltRmphMlZ1WkNJ
+        Z2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltSmhZMnRsYm1RaUNpQWdjbVZ6
+        YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndM
+        bVY0WVcxd2JHVXVibUZ0WlFvZ0lIWnBjblIxWVd4ZmJtVjBkMjl5YTE5dVlXMWxJRDBnWVhwMWNt
+        VnliVjkyYVhKMGRXRnNYMjVsZEhkdmNtc3VaWGhoYlhCc1pTNXVZVzFsQ2lBZ1lXUmtjbVZ6YzE5
+        d2NtVm1hWGdnSUNBZ0lDQWdQU0FpTVRBdU1DNHlMakF2TWpRaUNuMEtDbkpsYzI5MWNtTmxJQ0po
+        ZW5WeVpYSnRYM0IxWW14cFkxOXBjQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0Y0dsd0lnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQmhiR3h2WTJGMGFXOXVYMjFsZEdodlpDQWdJ
+        RDBnSWtSNWJtRnRhV01pQ24wS0NpTWdjMmx1WTJVZ2RHaGxjMlVnZG1GeWFXRmliR1Z6SUdGeVpT
+        QnlaUzExYzJWa0lDMGdZU0JzYjJOaGJITWdZbXh2WTJzZ2JXRnJaWE1nZEdocGN5QnRiM0psSUcx
+        aGFXNTBZV2x1WVdKc1pRcHNiMk5oYkhNZ2V3b2dJR0poWTJ0bGJtUmZZV1JrY21WemMxOXdiMjlz
+        WDI1aGJXVWdJQ0FnSUNBOUlDSWtlMkY2ZFhKbGNtMWZkbWx5ZEhWaGJGOXVaWFIzYjNKckxtVjRZ
+        VzF3YkdVdWJtRnRaWDB0WW1WaGNDSUtJQ0JtY205dWRHVnVaRjl3YjNKMFgyNWhiV1VnSUNBZ0lD
+        QWdJQ0FnSUNBZ1BTQWlKSHRoZW5WeVpYSnRYM1pwY25SMVlXeGZibVYwZDI5eWF5NWxlR0Z0Y0d4
+        bExtNWhiV1Y5TFdabGNHOXlkQ0lLSUNCbWNtOXVkR1Z1WkY5cGNGOWpiMjVtYVdkMWNtRjBhVzl1
+        WDI1aGJXVWdQU0FpSkh0aGVuVnlaWEp0WDNacGNuUjFZV3hmYm1WMGQyOXlheTVsZUdGdGNHeGxM
+        bTVoYldWOUxXWmxhWEFpQ2lBZ2FIUjBjRjl6WlhSMGFXNW5YMjVoYldVZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSWlSN1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXN1WlhoaGJYQnNaUzV1WVcx
+        bGZTMWlaUzFvZEhOMElnb2dJR3hwYzNSbGJtVnlYMjVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlDSWtlMkY2ZFhKbGNtMWZkbWx5ZEhWaGJGOXVaWFIzYjNKckxtVjRZVzF3YkdVdWJtRnRa
+        WDB0YUhSMGNHeHpkRzRpQ2lBZ2NtVnhkV1Z6ZEY5eWIzVjBhVzVuWDNKMWJHVmZibUZ0WlNBZ0lD
+        QWdJRDBnSWlSN1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXN1WlhoaGJYQnNaUzV1WVcx
+        bGZTMXljWEowSWdwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOWhjSEJzYVdOaGRHbHZibDlu
+        WVhSbGQyRjVJaUFpYm1WMGQyOXlheUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQ
+        U0FpWlhoaGJYQnNaUzFoY0hCbllYUmxkMkY1SWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUd4
+        dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3
+        TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLQ2lBZ2MydDFJSHNLSUNBZ0lHNWhiV1VnSUNBZ0lEMGdJ
+        bE4wWVc1a1lYSmtYMU50WVd4c0lnb2dJQ0FnZEdsbGNpQWdJQ0FnUFNBaVUzUmhibVJoY21RaUNp
+        QWdJQ0JqWVhCaFkybDBlU0E5SURJS0lDQjlDZ29nSUdkaGRHVjNZWGxmYVhCZlkyOXVabWxuZFhK
+        aGRHbHZiaUI3Q2lBZ0lDQnVZVzFsSUNBZ0lDQWdQU0FpYlhrdFoyRjBaWGRoZVMxcGNDMWpiMjVt
+        YVdkMWNtRjBhVzl1SWdvZ0lDQWdjM1ZpYm1WMFgybGtJRDBnWVhwMWNtVnliVjl6ZFdKdVpYUXVa
+        bkp2Ym5SbGJtUXVhV1FLSUNCOUNnb2dJR1p5YjI1MFpXNWtYM0J2Y25RZ2V3b2dJQ0FnYm1GdFpT
+        QTlJR3h2WTJGc0xtWnliMjUwWlc1a1gzQnZjblJmYm1GdFpRb2dJQ0FnY0c5eWRDQTlJRGd3Q2lB
+        Z2ZRb0tJQ0JtY205dWRHVnVaRjlwY0Y5amIyNW1hV2QxY21GMGFXOXVJSHNLSUNBZ0lHNWhiV1Vn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnYkc5allXd3Vabkp2Ym5SbGJtUmZhWEJmWTI5dVptbG5k
+        WEpoZEdsdmJsOXVZVzFsQ2lBZ0lDQndkV0pzYVdOZmFYQmZZV1JrY21WemMxOXBaQ0E5SUdGNmRY
+        SmxjbTFmY0hWaWJHbGpYMmx3TG1WNFlXMXdiR1V1YVdRS0lDQjlDZ29nSUdKaFkydGxibVJmWVdS
+        a2NtVnpjMTl3YjI5c0lIc0tJQ0FnSUc1aGJXVWdQU0JzYjJOaGJDNWlZV05yWlc1a1gyRmtaSEps
+        YzNOZmNHOXZiRjl1WVcxbENpQWdmUW9LSUNCaVlXTnJaVzVrWDJoMGRIQmZjMlYwZEdsdVozTWdl
+        d29nSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnYkc5allXd3VhSFIwY0Y5elpY
+        UjBhVzVuWDI1aGJXVUtJQ0FnSUdOdmIydHBaVjlpWVhObFpGOWhabVpwYm1sMGVTQTlJQ0pFYVhO
+        aFlteGxaQ0lLSUNBZ0lIQnZjblFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURnd0NpQWdJQ0J3
+        Y205MGIyTnZiQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlTSFIwY0NJS0lDQWdJSEpsY1hWbGMzUmZk
+        R2x0Wlc5MWRDQWdJQ0FnSUNBOUlERUtJQ0I5Q2dvZ0lHaDBkSEJmYkdsemRHVnVaWElnZXdvZ0lD
+        QWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ2JHOWpZV3d1Ykds
+        emRHVnVaWEpmYm1GdFpRb2dJQ0FnWm5KdmJuUmxibVJmYVhCZlkyOXVabWxuZFhKaGRHbHZibDl1
+        WVcxbElEMGdiRzlqWVd3dVpuSnZiblJsYm1SZmFYQmZZMjl1Wm1sbmRYSmhkR2x2Ymw5dVlXMWxD
+        aUFnSUNCbWNtOXVkR1Z1WkY5d2IzSjBYMjVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JzYjJOaGJD
+        NW1jbTl1ZEdWdVpGOXdiM0owWDI1aGJXVUtJQ0FnSUhCeWIzUnZZMjlzSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQTlJQ0pJZEhSd0lnb2dJSDBLQ2lBZ2NtVnhkV1Z6ZEY5eWIzVjBhVzVu
+        WDNKMWJHVWdld29nSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQnNi
+        Mk5oYkM1eVpYRjFaWE4wWDNKdmRYUnBibWRmY25Wc1pWOXVZVzFsQ2lBZ0lDQnlkV3hsWDNSNWNH
+        VWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pDWVhOcFl5SUtJQ0FnSUdoMGRIQmZiR2x6ZEdW
+        dVpYSmZibUZ0WlNBZ0lDQWdJQ0FnSUQwZ2JHOWpZV3d1YkdsemRHVnVaWEpmYm1GdFpRb2dJQ0Fn
+        WW1GamEyVnVaRjloWkdSeVpYTnpYM0J2YjJ4ZmJtRnRaU0FnUFNCc2IyTmhiQzVpWVdOclpXNWtY
+        MkZrWkhKbGMzTmZjRzl2YkY5dVlXMWxDaUFnSUNCaVlXTnJaVzVrWDJoMGRIQmZjMlYwZEdsdVoz
+        TmZibUZ0WlNBOUlHeHZZMkZzTG1oMGRIQmZjMlYwZEdsdVoxOXVZVzFsQ2lBZ2ZRcDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhwMWNtVnliVjl1WlhSM2IzSnJYMmx1ZEdWeVptRmpaU0lnSW1WNFlXMXdiR1Vp
+        SUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0Ym1saklnb2dJ
+        R3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIz
+        VndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0NpQWdhWEJm
+        WTI5dVptbG5kWEpoZEdsdmJpQjdDaUFnSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQTlJQ0owWlhOMFkyOXVabWxuZFhKaGRHbHZiakVpQ2lBZ0lDQnpkV0p1WlhSZmFX
+        UWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzNWaWJtVjBMbVp5YjI1
+        MFpXNWtMbWxrQ2lBZ0lDQndjbWwyWVhSbFgybHdYMkZrWkhKbGMzTmZZV3hzYjJOaGRHbHZiaUE5
+        SUNKRWVXNWhiV2xqSWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYm1WMGQyOXlh
+        MTlwYm5SbGNtWmhZMlZmWVhCd2JHbGpZWFJwYjI1ZloyRjBaWGRoZVY5aVlXTnJaVzVrWDJGa1pI
+        SmxjM05mY0c5dmJGOWhjM052WTJsaGRHbHZiaUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVaWFIzYjNK
+        clgybHVkR1Z5Wm1GalpWOXBaQ0FnSUNBOUlHRjZkWEpsY20xZmJtVjBkMjl5YTE5cGJuUmxjbVpo
+        WTJVdVpYaGhiWEJzWlM1cFpBb2dJR2x3WDJOdmJtWnBaM1Z5WVhScGIyNWZibUZ0WlNBZ0lEMGdJ
+        blJsYzNSamIyNW1hV2QxY21GMGFXOXVNU0lLSUNCaVlXTnJaVzVrWDJGa1pISmxjM05mY0c5dmJG
+        OXBaQ0E5SUdGNmRYSmxjbTFmWVhCd2JHbGpZWFJwYjI1ZloyRjBaWGRoZVM1dVpYUjNiM0pyTG1K
+        aFkydGxibVJmWVdSa2NtVnpjMTl3YjI5c1d6QmRMbWxrQ24wSw==
+    import: !!binary |
+        Q2dwQmMzTnZZMmxoZEdsdmJuTWdZbVYwZDJWbGJpQk9aWFIzYjNKcklFbHVkR1Z5Wm1GalpYTWdZ
+        VzVrSUVGd2NHeHBZMkYwYVc5dUlFZGhkR1YzWVhrZ1FtRmphMlZ1WkNCQlpHUnlaWE56SUZCdmIy
+        eHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3
+        Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5cGJuUmxjbVpoWTJWZllYQndiR2xqWVhScGIyNWZaMkYwWlhk
+        aGVWOWlZV05yWlc1a1gyRmtaSEpsYzNOZmNHOXZiRjloYzNOdlkybGhkR2x2Ymk1b2RHMXNMbTFo
+        Y210a2IzZHU=

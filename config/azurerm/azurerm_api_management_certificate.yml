@@ -1,0 +1,90 @@
+azurerm_api_management_certificate:
+    status: HOLD
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_certificate'
+    description: Manages an Certificate within an API Management Service.
+    arguments:
+        name:
+            description: The name of the API Management Certificate. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The Name of the API Management Service where this Service
+                should be created. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The Name of the Resource Group where the API Management Service
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        data:
+            description: The base-64 encoded certificate data, which must be a PFX
+                file. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The password used for this certificate. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Certificate.
+        expiration:
+            description: The Expiration Date of this Certificate, formatted as an
+                RFC3339 string.
+        subject:
+            description: The Subject of this Certificate.
+        thumbprint:
+            description: The Thumbprint of this Certificate.
+    timeouts:
+        create:
+            description: Used when creating the API Management Certificate.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Certificate.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Certificate.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Certificate.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDZ29nSUhOcmRWOXVZVzFsSUQwZ0lrUmxkbVZzYjNCbGNs
+        OHhJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5aGNHbGZiV0Z1WVdkbGJXVnVkRjlqWlhK
+        MGFXWnBZMkYwWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltVjRZVzF3YkdVdFkyVnlkQ0lLSUNCaGNHbGZiV0Z1WVdkbGJXVnVkRjl1WVcxbElEMGdZ
+        WHAxY21WeWJWOWhjR2xmYldGdVlXZGxiV1Z1ZEM1bGVHRnRjR3hsTG01aGJXVUtJQ0J5WlhOdmRY
+        SmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdG
+        dGNHeGxMbTVoYldVS0lDQmtZWFJoSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWm1sc1pXSmhjMlUy
+        TkNnaVpYaGhiWEJzWlM1d1puZ2lLUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JEWlhKMGFXWnBZMkYwWlhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmWTJWeWRHbG1hV05oZEdVdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

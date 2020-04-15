@@ -1,0 +1,74 @@
+{
+    "azurerm_database_migration_service": {
+        "status": "HOLD",
+        "subcategory": "Database Migration",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_database_migration_service",
+        "description": "Manage a Azure Database Migration Service.",
+        "arguments": {
+            "name": {
+                "description": "Specify the name of the database migration service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Name of the resource group in which to create the database migration service. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the virtual subnet resource to which the database migration service should be joined. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sku_name": {
+                "description": "The sku name of the database migration service. Possible values are `Premium_4vCores`, `Standard_1vCores`, `Standard_2vCores` and `Standard_4vCores`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assigned to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of Database Migration Service."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management API.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management API.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management API.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management API.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

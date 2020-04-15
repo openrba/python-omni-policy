@@ -1,0 +1,68 @@
+azurerm_application_security_group:
+    status: HOLD
+    subcategory: Network
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_application_security_group'
+    description: Manages an Application Security Group.
+    arguments:
+        name:
+            description: Specifies the name of the Application Security Group. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the Application
+                Security Group.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specifies the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Application Security Group.
+    timeouts:
+        create:
+            description: Used when creating the Application Security Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Application Security Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Application Security Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Application Security Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtTFhSbGMzUWlDaUFnYkc5allYUnBiMjRnUFNBaVYy
+        VnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJGd2NHeHBZMkYwYVc5
+        dVgzTmxZM1Z5YVhSNVgyZHliM1Z3SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaWRHWXRZWEJ3YzJWamRYSnBkSGxuY205MWNDSUtJQ0JzYjJOaGRHbHZi
+        aUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNH
+        eGxMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20x
+        ZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENnb2dJSFJoWjNNZ1BTQjdDaUFn
+        SUNCSVpXeHNieUE5SUNKWGIzSnNaQ0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQmNIQnNhV05oZEdsdmJpQlRaV04xY21sMGVTQkhjbTkxY0hNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndiR2xqWVhScGIyNWZjMlZqZFhKcGRIbGZaM0p2ZFhBdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

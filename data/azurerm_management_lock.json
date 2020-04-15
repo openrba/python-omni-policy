@@ -1,0 +1,62 @@
+{
+    "azurerm_management_lock": {
+        "status": "HOLD",
+        "subcategory": "Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_management_lock",
+        "description": "Manages a Management Lock which is scoped to a Subscription, Resource Group or Resource.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Management Lock. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "Specifies the scope at which the Management Lock should be created. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lock_level": {
+                "description": "Specifies the Level to be used for this Lock. Possible values are `CanNotDelete` and `ReadOnly`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "notes": {
+                "description": "Specifies some notes about the lock. Maximum of 512 characters. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Management Lock"
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Management Lock.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Management Lock.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Management Lock.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Management Lock.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

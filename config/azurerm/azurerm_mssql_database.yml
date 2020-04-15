@@ -1,0 +1,220 @@
+azurerm_mssql_database:
+    status: HOLD
+    subcategory: Database
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_mssql_database'
+    description: Manages a MS SQL Database.
+    arguments:
+        name:
+            description: The name of the Ms SQL Database. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        server_id:
+            description: The id of the Ms SQL Server on which to create the database.
+                Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        auto_pause_delay_in_minutes:
+            description: Time in minutes after which database is automatically paused.
+                A value of `-1` means that automatic pause is disabled. This property
+                is only settable for General Purpose Serverless databases.
+            required: false
+            policy: ''
+            notes: ''
+        create_mode:
+            description: 'The create mode of the database. Possible values are `Copy`,
+                `Default`, `OnlineSecondary`, `PointInTimeRestore`, `Restore`, `RestoreExternalBackup`,
+                `RestoreExternalBackupSecondary`, `RestoreLongTermRetentionBackup`
+                and `Secondary`. '
+            required: false
+            policy: ''
+            notes: ''
+        creation_source_database_id:
+            description: The id of the source database to be referred to create the
+                new database. This should only be used for databases with `create_mode`
+                values that use another database as reference. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        collation:
+            description: Specifies the collation of the database. Changing this forces
+                a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        elastic_pool_id:
+            description: Specifies the ID of the elastic pool containing this database.
+                Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        license_type:
+            description: Specifies the license type applied to this database. Possible
+                values are `LicenseIncluded` and `BasePrice`.
+            required: false
+            policy: ''
+            notes: ''
+        max_size_gb:
+            description: 'The max size of the database in gigabytes. '
+            required: false
+            policy: ''
+            notes: ''
+        min_capacity:
+            description: Minimal capacity that database will always have allocated,
+                if not paused. This property is only settable for General Purpose
+                Serverless databases.
+            required: false
+            policy: ''
+            notes: ''
+        restore_point_in_time:
+            description: Specifies the point in time (ISO8601 format
+            required: true
+            policy: ''
+            notes: ''
+        read_replica_count:
+            description: The number of readonly secondary replicas associated with
+                the database to which readonly application intent connections may
+                be routed. This property is only settable for Hyperscale edition databases.
+            required: false
+            policy: ''
+            notes: ''
+        read_scale:
+            description: If enabled, connections that have application intent set
+                to readonly in their connection string may be routed to a readonly
+                secondary replica. This property is only settable for Premium and
+                Business Critical databases.
+            required: false
+            policy: ''
+            notes: ''
+        sample_name:
+            description: Specifies the name of the sample schema to apply when creating
+                this database. Possible value is `AdventureWorksLT`.
+            required: false
+            policy: ''
+            notes: ''
+        sku_name:
+            description: Specifies the name of the sku used by the database. Changing
+                this forces a new resource to be created. For example, `GP_S_Gen5_2`,`HS_Gen4_1`,`BC_Gen5_2`,
+                `ElasticPool`, `Basic`,`S0`, `P2` ,`DW100c`, `DS100`.
+            required: false
+            policy: ''
+            notes: ''
+        threat_detection_policy:
+            description: Threat detection policy configuration. The `threat_detection_policy`
+                block supports fields documented below.
+            required: false
+            policy: ''
+            notes: ''
+        zone_redundant:
+            description: Whether or not this database is zone redundant, which means
+                the replicas of this database will be spread across multiple availability
+                zones. This property is only settable for Premium and Business Critical
+                databases.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        state:
+            description: The State of the Policy. Possible values are `Enabled`, `Disabled`
+                or `New`.
+            required: true
+            policy: ''
+            notes: ''
+        disabled_alerts:
+            description: Specifies a list of alerts which should be disabled. Possible
+                values include `Access_Anomaly`, `Sql_Injection` and `Sql_Injection_Vulnerability`.
+            required: false
+            policy: ''
+            notes: ''
+        email_account_admins:
+            description: Should the account administrators be emailed when this alert
+                is triggered?
+            required: false
+            policy: ''
+            notes: ''
+        email_addresses:
+            description: A list of email addresses which alerts should be sent to.
+            required: false
+            policy: ''
+            notes: ''
+        retention_days:
+            description: Specifies the number of days to keep in the Threat Detection
+                audit logs.
+            required: false
+            policy: ''
+            notes: ''
+        storage_account_access_key:
+            description: Specifies the identifier key of the Threat Detection audit
+                storage account. Required if `state` is `Enabled`.
+            required: false
+            policy: ''
+            notes: ''
+        storage_endpoint:
+            description: Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net).
+                This blob storage will hold all Threat Detection audit logs. Required
+                if `state` is `Enabled`.
+            required: false
+            policy: ''
+            notes: ''
+        use_server_default:
+            description: Should the default server policy be used? Defaults to `Disabled`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the MS SQL Database.
+    timeouts:
+        create:
+            description: Used when creating the MS SQL Database.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the MS SQL Database.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the MS SQL Database.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the MS SQL Database.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WlhOdmRYSmpaWE1pQ2lBZ2JHOWpZWFJwYjI0
+        Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTnhiRjl6
+        WlhKMlpYSWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMWE54YkhObGNuWmxjaUlLSUNCeVpYTnZkWEpqWlY5bmNt
+        OTFjRjl1WVcxbElDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
+        bGVHRnRjR3hsTG01aGJXVUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVD
+        aUFnZG1WeWMybHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSXhNaTR3SWdvZ0lH
+        RmtiV2x1YVhOMGNtRjBiM0pmYkc5bmFXNGdJQ0FnSUNBZ0lDQWdQU0FpTkdSdE1XNHhOVGR5TkRj
+        d2NpSUtJQ0JoWkcxcGJtbHpkSEpoZEc5eVgyeHZaMmx1WDNCaGMzTjNiM0prSUQwZ0lqUXRkak55
+        ZVMwMU0yTnlNemN0Y0RRMU5YY3djbVFpQ24wS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmJYTnpj
+        V3hmWkdGMFlXSmhjMlVpSUNKMFpYTjBJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnUFNBaVlX
+        TmpkR1Z6ZEMxa1lpMGxaQ0lLSUNCelpYSjJaWEpmYVdRZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzNG
+        c1gzTmxjblpsY2k1MFpYTjBMbWxrQ2lBZ1kyOXNiR0YwYVc5dUlDQWdJQ0FnUFNBaVUxRk1YMHho
+        ZEdsdU1WOUhaVzVsY21Gc1gwTlFNVjlEU1Y5QlV5SUtJQ0JzYVdObGJuTmxYM1I1Y0dVZ0lDQTlJ
+        Q0pNYVdObGJuTmxTVzVqYkhWa1pXUWlDaUFnYldGNFgzTnBlbVZmWjJJZ0lDQWdQU0EwQ2lBZ2Nt
+        VmhaRjl6WTJGc1pTQWdJQ0FnUFNCMGNuVmxDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdQU0FpUWtO
+        ZlIyVnVOVjh5SWdvZ0lIcHZibVZmY21Wa2RXNWtZVzUwSUQwZ2RISjFaUW9LSUNCMFlXZHpJRDBn
+        ZXdvZ0lDQWdabTl2SUQwZ0ltSmhjaUlLSUNCOUNncDlDZz09
+    import: !!binary |
+        Q2dwVFVVd2dSR0YwWVdKaGMyVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdj
+        bVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJYTnpjV3hmWkdGMFlXSmhjMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

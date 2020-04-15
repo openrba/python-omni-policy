@@ -1,0 +1,16 @@
+aws_devicefarm_project:
+    status: HOLD
+    subcategory: Device Farm
+    layout: aws
+    page_title: 'AWS: aws_devicefarm_project'
+    description: Provides a Devicefarm project
+    arguments:
+        name:
+            description: The name of the project
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        arn:
+            description: The Amazon Resource Name of this project
+    timeouts: {}

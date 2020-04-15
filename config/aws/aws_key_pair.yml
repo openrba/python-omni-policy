@@ -1,0 +1,38 @@
+aws_key_pair:
+    status: HOLD
+    subcategory: EC2
+    layout: aws
+    page_title: 'AWS: aws_key_pair'
+    description: Provides a Key Pair resource. Currently this supports importing an
+        existing key pair but not creating a new key pair.
+    arguments:
+        key_name:
+            description: The name for the key pair.
+            required: false
+            policy: ''
+            notes: ''
+        key_name_prefix:
+            description: Creates a unique name beginning with the specified prefix.
+                Conflicts with `key_name`.
+            required: false
+            policy: ''
+            notes: ''
+        public_key:
+            description: The public key material.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: Key-value mapping of resource tags
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        key_name:
+            description: The key pair name.
+        key_pair_id:
+            description: The key pair ID.
+        fingerprint:
+            description: The MD5 public key fingerprint as specified in section 4
+                of RFC 4716.
+    timeouts: {}

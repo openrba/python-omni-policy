@@ -1,0 +1,92 @@
+{
+    "azurerm_kusto_database_principal": {
+        "status": "HOLD",
+        "subcategory": "Data Explorer",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_kusto_database_principal",
+        "description": "Manages Kusto / Data Explorer Database Principal",
+        "arguments": {
+            "resource_group_name": {
+                "description": "Specifies the Resource Group where the Kusto Database Principal should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_name": {
+                "description": "Specifies the name of the Kusto Cluster this database principal will be added to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "database_name": {
+                "description": "Specified the name of the Kusto Database this principal will be added to. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "Specifies the permissions the Principal will have. Valid values include `Admin`, `Ingestor`, `Monitor`, `UnrestrictedViewers`, `User`, `Viewer`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "Specifies the type of object the principal is. Valid values include `App`, `Group`, `User`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object_id": {
+                "description": "An Object ID of a User, Group, or App. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_id": {
+                "description": "The Client ID that owns the specified `object_id`. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The Kusto Database Principal ID."
+            },
+            "app_id": {
+                "description": "The app id, if not empty, of the principal."
+            },
+            "email": {
+                "description": "The email, if not empty, of the principal."
+            },
+            "fully_qualified_name": {
+                "description": "The fully qualified name of the principal."
+            },
+            "name": {
+                "description": "The name of the Kusto Database Principal."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Kusto Database Principal.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Kusto Database Principal.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Kusto Database Principal.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Kusto Database Principal.",
+                "required": false,
+                "timeout": 60
+            }
+        }
+    }
+}

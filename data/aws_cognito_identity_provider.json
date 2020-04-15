@@ -1,0 +1,50 @@
+{
+    "aws_cognito_identity_provider": {
+        "status": "HOLD",
+        "subcategory": "Cognito",
+        "layout": "aws",
+        "page_title": "AWS: aws_cognito_identity_provider",
+        "side_bar_current": "docs-aws-resource-cognito-identity-provider",
+        "description": "Provides a Cognito User Identity Provider resource.",
+        "arguments": {
+            "user_pool_id": {
+                "description": "- The user pool id",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "provider_name": {
+                "description": "- The provider name",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "provider_type": {
+                "description": "- The provider type.  [See AWS API for valid values](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-ProviderType)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "attribute_mapping": {
+                "description": "- The map of attribute mapping of user pool attributes. [AttributeMapping in AWS API documentation](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-AttributeMapping)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "idp_identifiers": {
+                "description": "- The list of identity providers.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "provider_details": {
+                "description": "- The map of identity details, such as access token",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

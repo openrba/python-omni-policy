@@ -1,0 +1,50 @@
+{
+    "azurerm_app_service_virtual_network_swift_connection": {
+        "status": "HOLD",
+        "subcategory": "App Service (Web Apps)",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_app_service_virtual_network_swift_connection",
+        "description": "Manages an App Service Virtual Network Association.",
+        "arguments": {
+            "app_service_id": {
+                "description": "The ID of the App Service to associate to the VNet. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the subnet the app service will be associated to (the subnet must have a `service_delegation` configured for `Microsoft.Web/serverFarms`).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the App Service Virtual Network Association"
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the App Service Virtual Network Association.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the App Service Virtual Network Association.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the App Service Virtual Network Association.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the App Service Virtual Network Association.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+aws_api_gateway_gateway_response:
+    status: HOLD
+    subcategory: API Gateway (REST APIs)
+    layout: aws
+    page_title: 'AWS: aws_api_gateway_gateway_response'
+    description: Provides an API Gateway Gateway Response for a REST API Gateway.
+    arguments:
+        rest_api_id:
+            description: The string identifier of the associated REST API.
+            required: true
+            policy: ''
+            notes: ''
+        response_type:
+            description: The response type of the associated GatewayResponse.
+            required: true
+            policy: ''
+            notes: ''
+        status_code:
+            description: The HTTP status code of the Gateway Response.
+            required: false
+            policy: ''
+            notes: ''
+        response_templates:
+            description: A map specifying the templates used to transform the response
+                body.
+            required: false
+            policy: ''
+            notes: ''
+        response_parameters:
+            description: A map specifying the parameters (paths, query strings and
+                headers
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

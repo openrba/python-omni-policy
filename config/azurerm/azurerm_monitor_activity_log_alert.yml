@@ -1,0 +1,182 @@
+azurerm_monitor_activity_log_alert:
+    status: HOLD
+    subcategory: Monitor
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_monitor_activity_log_alert'
+    description: Manages an Activity Log Alert within Azure Monitor
+    arguments:
+        name:
+            description: The name of the activity log alert. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the resource group in which to create the activity
+                log alert instance.
+            required: true
+            policy: ''
+            notes: ''
+        scopes:
+            description: The Scope at which the Activity Log should be applied, for
+                example a the Resource ID of a Subscription or a Resource (such as
+                a Storage Account).
+            required: true
+            policy: ''
+            notes: ''
+        criteria:
+            description: A `criteria` block as defined below.
+            required: true
+            policy: ''
+            notes: ''
+        action:
+            description: One or more `action` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Should this Activity Log Alert be enabled? Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The description of this activity log alert.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        action_group_id:
+            description: The ID of the Action Group can be sourced from [the `azurerm_monitor_action_group`
+                resource](./monitor_action_group.html).
+            required: true
+            policy: ''
+            notes: ''
+        webhook_properties:
+            description: The map of custom string properties to include with the post
+                operation. These data are appended to the webhook payload.
+            required: false
+            policy: ''
+            notes: ''
+        category:
+            description: The category of the operation. Possible values are `Administrative`,
+                `Autoscale`, `Policy`, `Recommendation`, `ResourceHealth`, `Security`
+                and `ServiceHealth`.
+            required: true
+            policy: ''
+            notes: ''
+        operation_name:
+            description: 'The Resource Manager Role-Based Access Control operation
+                name. Supported operation should be of the form: `<resourceProvider>/<resourceType>/<operation>`.'
+            required: false
+            policy: ''
+            notes: ''
+        resource_provider:
+            description: The name of the resource provider monitored by the activity
+                log alert.
+            required: false
+            policy: ''
+            notes: ''
+        resource_type:
+            description: The resource type monitored by the activity log alert.
+            required: false
+            policy: ''
+            notes: ''
+        resource_group:
+            description: The name of resource group monitored by the activity log
+                alert.
+            required: false
+            policy: ''
+            notes: ''
+        resource_id:
+            description: The specific resource monitored by the activity log alert.
+                It should be within one of the `scopes`.
+            required: false
+            policy: ''
+            notes: ''
+        caller:
+            description: The email address or Azure Active Directory identifier of
+                the user who performed the operation.
+            required: false
+            policy: ''
+            notes: ''
+        level:
+            description: The severity level of the event. Possible values are `Verbose`,
+                `Informational`, `Warning`, `Error`, and `Critical`.
+            required: false
+            policy: ''
+            notes: ''
+        status:
+            description: The status of the event. For example, `Started`, `Failed`,
+                or `Succeeded`.
+            required: false
+            policy: ''
+            notes: ''
+        sub_status:
+            description: The sub status of the event.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the activity log alert.
+    timeouts:
+        create:
+            description: Used when creating the Activity Log Alert.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Activity Log Alert.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Activity Log Alert.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Activity Log Alert.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpYldGcGJpSWdl
+        d29nSUc1aGJXVWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdGNtVnpiM1Z5WTJWeklnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyMXZibWwwYjNK
+        ZllXTjBhVzl1WDJkeWIzVndJaUFpYldGcGJpSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pTMWhZM1JwYjI1bmNtOTFjQ0lLSUNCeVpYTnZkWEpqWlY5bmNtOTFj
+        Rjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1dFlXbHVMbTVoYldVS0lD
+        QnphRzl5ZEY5dVlXMWxJQ0FnSUNBZ0lDQWdJRDBnSW5Bd1lXTjBhVzl1SWdvS0lDQjNaV0pvYjI5
+        clgzSmxZMlZwZG1WeUlIc0tJQ0FnSUc1aGJXVWdJQ0FnSUNBZ0lEMGdJbU5oYkd4dGVXRndhU0lL
+        SUNBZ0lITmxjblpwWTJWZmRYSnBJRDBnSW1oMGRIQTZMeTlsZUdGdGNHeGxMbU52YlM5aGJHVnlk
+        Q0lLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRD
+        SWdJblJ2WDIxdmJtbDBiM0lpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z1BTQWlaWGhoYlhCc1pYTmhJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0E5
+        SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXViV0ZwYmk1dVlXMWxDaUFnYkc5allYUnBi
+        MjRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWND
+        NXRZV2x1TG14dlkyRjBhVzl1Q2lBZ1lXTmpiM1Z1ZEY5MGFXVnlJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0lsTjBZVzVrWVhKa0lnb2dJR0ZqWTI5MWJuUmZjbVZ3YkdsallYUnBiMjVmZEhsd1pTQTlJQ0pI
+        VWxNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMjF2Ym1sMGIzSmZZV04wYVhacGRIbGZi
+        RzluWDJGc1pYSjBJaUFpYldGcGJpSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QWlaWGhoYlhCc1pTMWhZM1JwZG1sMGVXeHZaMkZzWlhKMElnb2dJSEpsYzI5MWNtTmxYMmR5YjNW
+        d1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbTFoYVc0dWJtRnRaUW9n
+        SUhOamIzQmxjeUFnSUNBZ0lDQWdJQ0FnSUNBZ1BTQmJZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5j
+        bTkxY0M1dFlXbHVMbWxrWFFvZ0lHUmxjMk55YVhCMGFXOXVJQ0FnSUNBZ0lDQWdQU0FpVkdocGN5
+        QmhiR1Z5ZENCM2FXeHNJRzF2Ym1sMGIzSWdZU0J6Y0dWamFXWnBZeUJ6ZEc5eVlXZGxJR0ZqWTI5
+        MWJuUWdkWEJrWVhSbGN5NGlDZ29nSUdOeWFYUmxjbWxoSUhzS0lDQWdJSEpsYzI5MWNtTmxYMmxr
+        SUNBZ0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RdWRHOWZiVzl1YVhSdmNpNXBa
+        QW9nSUNBZ2IzQmxjbUYwYVc5dVgyNWhiV1VnUFNBaVRXbGpjbTl6YjJaMExsTjBiM0poWjJVdmMz
+        UnZjbUZuWlVGalkyOTFiblJ6TDNkeWFYUmxJZ29nSUNBZ1kyRjBaV2R2Y25rZ0lDQWdJQ0FnUFNB
+        aVVtVmpiMjF0Wlc1a1lYUnBiMjRpQ2lBZ2ZRb0tJQ0JoWTNScGIyNGdld29nSUNBZ1lXTjBhVzl1
+        WDJkeWIzVndYMmxrSUQwZ1lYcDFjbVZ5YlY5dGIyNXBkRzl5WDJGamRHbHZibDluY205MWNDNXRZ
+        V2x1TG1sa0Nnb2dJQ0FnZDJWaWFHOXZhMTl3Y205d1pYSjBhV1Z6SUQwZ2V3b2dJQ0FnSUNCbWNt
+        OXRJRDBnSW5SbGNuSmhabTl5YlNJS0lDQWdJSDBLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQlkzUnBkbWwwZVNCc2IyY2dZV3hsY25SeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXOXVhWFJ2Y2w5aFkzUnBkbWwwZVY5c2IyZGZZV3hsY25RdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

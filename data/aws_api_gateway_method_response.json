@@ -1,0 +1,49 @@
+{
+    "aws_api_gateway_method_response": {
+        "status": "HOLD",
+        "subcategory": "API Gateway (REST APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_api_gateway_method_response",
+        "description": "Provides an HTTP Method Response for an API Gateway Resource.",
+        "arguments": {
+            "rest_api_id": {
+                "description": "The ID of the associated REST API",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_id": {
+                "description": "The API resource ID",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "http_method": {
+                "description": "The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "status_code": {
+                "description": "The HTTP status code",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "response_models": {
+                "description": "A map of the API models used for the response's content type",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "response_parameters": {
+                "description": "A map of response parameters that can be sent to the caller.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}
