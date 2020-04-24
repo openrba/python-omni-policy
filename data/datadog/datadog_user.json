@@ -1,0 +1,65 @@
+{
+    "datadog_user": {
+        "status": "ASSESS",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_user",
+        "sidebar_current": "docs-datadog-resource-user",
+        "description": "Provides a Datadog user resource. This can be used to create and manage users.",
+        "arguments": {
+            "access_role": {
+                "description": "Role description for user. Can be `st` (standard user), `adm` (admin user",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disabled": {
+                "description": "Whether the user is disabled",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "email": {
+                "description": "Email address for user",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "handle": {
+                "description": "The user handle, must be a valid email.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "is_admin": {
+                "description": "(Optional",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "Name for user",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "Role description for user. **Warning**: the corresponding query parameter is ignored by the Datadog API, thus the argument would always trigger an execution plan.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "disabled": {
+                "description": "Returns true if Datadog user is disabled (NOTE: Datadog does not actually delete users so this will be true for those as well)"
+            },
+            "id": {
+                "description": "ID of the Datadog user"
+            },
+            "verified": {
+                "description": "Returns true if Datadog user is verified"
+            }
+        },
+        "timeouts": {}
+    }
+}

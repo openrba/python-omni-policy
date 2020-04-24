@@ -1,0 +1,319 @@
+{
+    "docker_container": {
+        "status": "ASSESS",
+        "layout": "docker",
+        "page_title": "Docker: docker_container",
+        "sidebar_current": "docs-docker-resource-container",
+        "description": "Manages the lifecycle of a Docker container.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Docker container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "image": {
+                "description": "The ID of the image to back this container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "command": {
+                "description": "The command to use to start the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "entrypoint": {
+                "description": "The command to use as the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user": {
+                "description": "User used for run the first process. Format is",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns": {
+                "description": "Set of DNS servers.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_opts": {
+                "description": "Set of DNS options used by the DNS provider(s), see `resolv.conf` documentation for valid list of options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_search": {
+                "description": "Set of DNS search domains that are used when bare unqualified hostnames are used inside of the container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "env": {
+                "description": "Environment variables to set.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "See [Labels](#labels-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "links": {
+                "description": "Set of links for link based",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hostname": {
+                "description": "Hostname of the container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domainname": {
+                "description": "Domain name of the container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "restart": {
+                "description": "The restart policy for the container. Must be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_retry_count": {
+                "description": "The maximum amount of times to an attempt",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "working_dir": {
+                "description": "The working directory for commands to run in",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rm": {
+                "description": "If true, then the container will be automatically removed after his execution. Terraform",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "read_only": {
+                "description": "If true, the container will be started as readonly.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "start": {
+                "description": "If true, then the Docker container will be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "attach": {
+                "description": "If true attach to the container after its creation and waits the end of his execution.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logs": {
+                "description": "Save the container logs (`attach` must be enabled).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "must_run": {
+                "description": "If true, then the Docker container will be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "capabilities": {
+                "description": "See [Capabilities](#capabilities-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mounts": {
+                "description": "See [Mounts](#mounts-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tmpfs": {
+                "description": "A map of container directories which should be replaced by `tmpfs mounts`, and their corresponding mount options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ports": {
+                "description": "See [Ports](#ports-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "host": {
+                "description": "See [Extra Hosts](#extra_hosts-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "privileged": {
+                "description": "Run container in privileged mode.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "devices": {
+                "description": "See [Devices](#devices-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "publish_all_ports": {
+                "description": "Publish all ports of the container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "volumes": {
+                "description": "See [Volumes](#volumes-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "memory": {
+                "description": "The memory limit for the container in MBs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "memory_swap": {
+                "description": "The total memory limit (memory + swap",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shm_size": {
+                "description": "Size of `/dev/shm` in MBs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cpu_shares": {
+                "description": "CPU shares (relative weight",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cpu_set": {
+                "description": "A comma-separated list or hyphen-separated range of CPUs a container can use, e.g. `0-1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_driver": {
+                "description": "The logging driver to use for the container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_opts": {
+                "description": "Key/value pairs to use as options for",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_alias": {
+                "description": "Network aliases of the container for user-defined networks only. *Deprecated:* use `networks_advanced` instead.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_mode": {
+                "description": "Network mode of the container.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "networks": {
+                "description": "Id of the networks in which the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "networks_advanced": {
+                "description": "See [Networks Advanced](#networks_advanced-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "destroy_grace_seconds": {
+                "description": "If defined will attempt to stop the container before destroying. Container will be destroyed after `n` seconds or on successful stop.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "upload": {
+                "description": "See [File Upload](#upload-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ulimit": {
+                "description": "See [Ulimits](#ulimits-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pid_mode": {
+                "description": "The PID (Process",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "userns_mode": {
+                "description": "Sets the usernamespace mode for the container when usernamespace remapping option is enabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "healthcheck": {
+                "description": "See [Healthcheck](#healthcheck-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sysctls": {
+                "description": "A map of kernel parameters (sysctls",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipc_mode": {
+                "description": "IPC sharing mode for the container. Possible values are: `none`, `private`, `shareable`, `container:<name|id>` or `host`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "group_add": {
+                "description": "Add additional groups to run as.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,19 @@
+tfe_team:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_team'
+    sidebar_current: docs-resource-tfe-team-x
+    description: Manages teams.
+    arguments:
+        name:
+            description: Name of the team.
+            required: true
+            policy: ''
+            notes: ''
+        organization:
+            description: Name of the organization.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

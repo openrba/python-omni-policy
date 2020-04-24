@@ -1,0 +1,34 @@
+google_compute_attached_disk:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_attached_disk'
+    sidebar_current: docs-google-compute-attached-disk
+    description: Resource that allows attaching existing persistent disks to compute
+        instances.
+    arguments: {}
+    attributes:
+        id:
+            description: an identifier for the resource with format `projects/{{project}}/zones/{{zone}}/disks/{{disk.name}}`
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjloZEhSaFkyaGxaRjlrYVhOcklpQWla
+        R1ZtWVhWc2RDSWdld29nSUdScGMyc2dJQ0FnSUQwZ1oyOXZaMnhsWDJOdmJYQjFkR1ZmWkdsemF5
+        NWtaV1poZFd4MExtbGtDaUFnYVc1emRHRnVZMlVnUFNCbmIyOW5iR1ZmWTI5dGNIVjBaVjlwYm5O
+        MFlXNWpaUzVrWldaaGRXeDBMbWxrQ24wS0NuSmxjMjkxY21ObElDSm5iMjluYkdWZlkyOXRjSFYw
+        WlY5cGJuTjBZVzVqWlNJZ0ltUmxabUYxYkhRaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ1BTQWlZ
+        WFIwWVdOb1pXUXRaR2x6YXkxcGJuTjBZVzVqWlNJS0lDQnRZV05vYVc1bFgzUjVjR1VnUFNBaWJq
+        RXRjM1JoYm1SaGNtUXRNU0lLSUNCNmIyNWxJQ0FnSUNBZ0lDQWdQU0FpZFhNdGQyVnpkREV0WVNJ
+        S0NpQWdZbTl2ZEY5a2FYTnJJSHNLSUNBZ0lHbHVhWFJwWVd4cGVtVmZjR0Z5WVcxeklIc0tJQ0Fn
+        SUNBZ2FXMWhaMlVnUFNBaVpHVmlhV0Z1TFdOc2IzVmtMMlJsWW1saGJpMDVJZ29nSUNBZ2ZRb2dJ
+        SDBLQ2lBZ2JtVjBkMjl5YTE5cGJuUmxjbVpoWTJVZ2V3b2dJQ0FnYm1WMGQyOXlheUE5SUNKa1pX
+        WmhkV3gwSWdvZ0lIMEtDaUFnYkdsbVpXTjVZMnhsSUhzS0lDQWdJR2xuYm05eVpWOWphR0Z1WjJW
+        eklEMGdXMkYwZEdGamFHVmtYMlJwYzJ0ZENpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQmRIUmhZMmhsWkNCRWFYTnJJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjBhR1VnWm05c2JHOTNh
+        VzVuSUhkaGVYTTZDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDJGMGRHRmphR1ZrWDJScGMyc3VhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

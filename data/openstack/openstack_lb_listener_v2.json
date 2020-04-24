@@ -1,0 +1,164 @@
+{
+    "openstack_lb_listener_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_lb_listener_v2",
+        "sidebar_current": "docs-openstack-resource-lb-listener-v2",
+        "description": "Manages a V2 listener resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": "The protocol - can either be TCP, HTTP, HTTPS,",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol_port": {
+                "description": "The port on which to listen for client traffic.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "Required for admins. The UUID of the tenant who owns",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "loadbalancer_id": {
+                "description": "The load balancer on which to provision this",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "Human-readable name for the Listener. Does not have",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_pool_id": {
+                "description": "The ID of the default pool with which the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Human-readable description for the Listener.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_limit": {
+                "description": "The maximum number of connections allowed",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout_client_data": {
+                "description": "The client inactivity timeout in milliseconds.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout_member_connect": {
+                "description": "The member connection timeout in milliseconds.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout_member_data": {
+                "description": "The member inactivity timeout in milliseconds.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout_tcp_inspect": {
+                "description": "The time in milliseconds, to wait for additional",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_tls_container_ref": {
+                "description": "A reference to a Barbican Secrets",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sni_container_refs": {
+                "description": "A list of references to Barbican Secrets",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_state_up": {
+                "description": "The administrative state of the Listener.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "insert_headers": {
+                "description": "The list of key value pairs representing headers to insert",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique ID for the Listener."
+            },
+            "protocol": {
+                "description": "See Argument Reference above."
+            },
+            "protocol_port": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "default_port_id": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "connection_limit": {
+                "description": "See Argument Reference above."
+            },
+            "timeout_client_data": {
+                "description": "See Argument Reference above."
+            },
+            "timeout_member_connect": {
+                "description": "See Argument Reference above."
+            },
+            "timeout_member_data": {
+                "description": "See Argument Reference above."
+            },
+            "timeout_tcp_inspect": {
+                "description": "See Argument Reference above."
+            },
+            "default_tls_container_ref": {
+                "description": "See Argument Reference above."
+            },
+            "sni_container_refs": {
+                "description": "See Argument Reference above."
+            },
+            "admin_state_up": {
+                "description": "See Argument Reference above."
+            },
+            "insert_headers": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

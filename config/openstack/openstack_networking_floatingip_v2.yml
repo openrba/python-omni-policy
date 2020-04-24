@@ -1,0 +1,87 @@
+openstack_networking_floatingip_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_networking_floatingip_v2'
+    sidebar_current: docs-openstack-resource-networking-floatingip-v2
+    description: Manages a V2 floating IP resource within OpenStack Neutron (networking).
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Human-readable description for the floating IP.
+            required: false
+            policy: ''
+            notes: ''
+        pool:
+            description: The name of the pool from which to obtain the floating
+            required: true
+            policy: ''
+            notes: ''
+        port_id:
+            description: ID of an existing port with at least one IP address to
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: The target tenant ID in which to allocate the floating
+            required: false
+            policy: ''
+            notes: ''
+        address:
+            description: The actual/specific floating IP to obtain. By default,
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The subnet ID of the floating IP pool. Specify this if
+            required: false
+            policy: ''
+            notes: ''
+        value_specs:
+            description: Map of additional options.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A set of string tags for the floating IP.
+            required: false
+            policy: ''
+            notes: ''
+        dns_name:
+            description: The floating IP DNS name. Available, when Neutron DNS
+            required: false
+            policy: ''
+            notes: ''
+        dns_domain:
+            description: The floating IP DNS domain. Available, when Neutron
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        pool:
+            description: See Argument Reference above.
+        address:
+            description: The actual floating IP address itself.
+        port_id:
+            description: ID of associated port.
+        tenant_id:
+            description: the ID of the tenant in which to create the floating IP.
+        fixed_ip:
+            description: The fixed IP which the floating IP maps to.
+        tags:
+            description: See Argument Reference above.
+        all_tags:
+            description: The collection of tags assigned on the floating IP, which
+                have
+        dns_name:
+            description: See Argument Reference above.
+        dns_domain:
+            description: See Argument Reference above.
+    timeouts: {}

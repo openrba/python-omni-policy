@@ -1,0 +1,36 @@
+kubernetes_priority_class:
+    status: ASSESS
+    layout: kubernetes
+    page_title: 'Kubernetes: kubernetes_priority_class'
+    sidebar_current: docs-kubernetes-resource-priority-class
+    description: A PriorityClass is a non-namespaced object that defines a mapping
+        from a priority class name to the integer value of the priority.
+    arguments:
+        metadata:
+            description: Standard resource quota's metadata. For more info see [Kubernetes
+                reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The value of this priority class. This is the actual priority
+                that pods receive when they have the name of this class in their pod
+                spec.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: An arbitrary string that usually provides guidelines on when
+                this priority class should be used.
+            required: false
+            policy: ''
+            notes: ''
+        global_default:
+            description: Boolean that specifies whether this PriorityClass should
+                be considered as the default priority for pods that do not have any
+                priority class.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,42 @@
+openstack_compute_floatingip_associate_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_compute_floatingip_associate_v2'
+    sidebar_current: docs-openstack-resource-compute-floatingip-associate-v2
+    description: Associate a floating IP to an instance
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Compute client.
+            required: false
+            policy: ''
+            notes: ''
+        floating_ip:
+            description: The floating IP to associate.
+            required: true
+            policy: ''
+            notes: ''
+        instance_id:
+            description: The instance to associte the floating IP with.
+            required: true
+            policy: ''
+            notes: ''
+        fixed_ip:
+            description: The specific IP address to direct traffic to.
+            required: false
+            policy: ''
+            notes: ''
+        wait_until_associated:
+            description: In cases where the OpenStack environment
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        floating_ip:
+            description: See Argument Reference above.
+        instance_id:
+            description: See Argument Reference above.
+        fixed_ip:
+            description: See Argument Reference above.
+    timeouts: {}

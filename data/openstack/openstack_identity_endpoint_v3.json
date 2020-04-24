@@ -1,0 +1,74 @@
+{
+    "openstack_identity_endpoint_v3": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_identity_endpoint_v3",
+        "sidebar_current": "docs-openstack-resource-identity-endpoint-v3",
+        "description": "Manages a V3 Endpoint resource within OpenStack Keystone.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V3 Keystone client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The endpoint name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint_region": {
+                "description": "The endpoint region. The `region` and",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The endpoint url.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "interface": {
+                "description": "The endpoint interface. Valid values are `public`,",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "service_id": {
+                "description": "The endpoint service ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "endpoint_region": {
+                "description": "See Argument Reference above."
+            },
+            "url": {
+                "description": "See Argument Reference above."
+            },
+            "interface": {
+                "description": "See Argument Reference above."
+            },
+            "service_id": {
+                "description": "See Argument Reference above."
+            },
+            "service_name": {
+                "description": "The service name of the endpoint."
+            },
+            "service_type": {
+                "description": "The service type of the endpoint."
+            }
+        },
+        "timeouts": {}
+    }
+}

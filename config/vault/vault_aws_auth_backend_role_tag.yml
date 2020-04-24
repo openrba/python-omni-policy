@@ -1,0 +1,52 @@
+vault_aws_auth_backend_role_tag:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_aws_auth_backend_role_tag resource'
+    sidebar_current: docs-vault-resource-aws-auth-backend-role-tag
+    description: Reads role tags from a Vault AWS auth backend.
+    arguments:
+        role:
+            description: The name of the AWS auth backend role to read
+            required: true
+            policy: ''
+            notes: ''
+        backend:
+            description: The path to the AWS auth backend to
+            required: false
+            policy: ''
+            notes: ''
+        policies:
+            description: The policies to be associated with the tag. Must be a subset
+                of the policies associated with the role.
+            required: false
+            policy: ''
+            notes: ''
+        max_ttl:
+            description: The maximum TTL of the tokens issued using this role.
+            required: false
+            policy: ''
+            notes: ''
+        instance_id:
+            description: Instance ID for which this tag is intended for. If set, the
+                created tag can only be used by the instance with the given ID.
+            required: false
+            policy: ''
+            notes: ''
+        allow_instance_migration:
+            description: If set, allows migration of the underlying instances where
+                the client resides. Use with caution.
+            required: false
+            policy: ''
+            notes: ''
+        disallow_reauthentication:
+            description: If set, only allows a single token to be granted per instance
+                ID.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        tag_key:
+            description: The key of the role tag.
+        tag_value:
+            description: The value to set the role key.
+    timeouts: {}

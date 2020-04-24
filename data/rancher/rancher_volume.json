@@ -1,0 +1,37 @@
+{
+    "rancher_volume": {
+        "status": "ASSESS",
+        "layout": "rancher",
+        "page_title": "Rancher: rancher_volume",
+        "sidebar_current": "docs-rancher-resource-volume",
+        "description": "Provides a Rancher Volume resource. This can be used to create volumes for rancher environments and retrieve their information.",
+        "arguments": {
+            "name": {
+                "description": "The name of the volume.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the volume.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment_id": {
+                "description": "The ID of the environment to create the volume for.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "driver": {
+                "description": "The volume driver.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

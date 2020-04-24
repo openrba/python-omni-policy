@@ -1,0 +1,162 @@
+{
+    "google_dataproc_job": {
+        "status": "ASSESS",
+        "subcategory": "Dataproc",
+        "layout": "google",
+        "page_title": "Google: google_dataproc_job",
+        "sidebar_current": "docs-google-dataproc-job",
+        "description": "Manages a job resource within a Dataproc cluster.",
+        "arguments": {
+            "placement.cluster_name": {
+                "description": "The name of the cluster where the job ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "xxx_config": {
+                "description": "Exactly one of the specific job types to run on the",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project in which the `cluster` can be found and jobs",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "The Cloud Dataproc region. This essentially determines which clusters are available",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "force_delete": {
+                "description": "By default, you can only delete inactive jobs within",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "The list of labels (key/value pairs",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scheduling.max_failures_per_hour": {
+                "description": "Maximum number of times per hour a driver may be restarted as a result of driver terminating with non-zero code before job is reported failed.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "main_python_file_uri": {
+                "description": "The HCFS URI of the main Python file to use as the driver. Must be a .py file.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "args": {
+                "description": "The arguments to pass to the driver. Do not include arguments, such as -libjars or -Dfoo=bar, that can be set as job properties, since a collision may occur that causes an incorrect job submission.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "python_file_uris": {
+                "description": "HCFS file URIs of Python files to pass to the PySpark framework. Supported file types: .py, .egg, and .zip.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "jar_file_uris": {
+                "description": "HCFS URIs of jar files to be added to the Spark CLASSPATH.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "file_uris": {
+                "description": "HCFS URIs of files to be copied to the working directory of Hadoop drivers and distributed tasks. Useful for naively parallel tasks.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "archive_uris": {
+                "description": "HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "properties": {
+                "description": "A mapping of property names to values, used to configure Spark SQL's SparkConf. Properties that conflict with values set by the Cloud Dataproc API may be overwritten.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logging_config.driver_log_levels": {
+                "description": "The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "main_class": {
+                "description": "The name of the driver's main class. The jar file containing the class must be in the default CLASSPATH or specified in `jar_file_uris`. Conflicts with `main_jar_file_uri`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "main_jar_file_uri": {
+                "description": "The HCFS URI of the jar file containing the main class. Examples: 'gs://foo-bucket/analytics-binaries/extract-useful-metrics-mr.jar' 'hdfs:/tmp/test-samples/custom-wordcount.jar' 'file:///home/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar'. Conflicts with `main_class`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "query_list": {
+                "description": "The list of SQL queries or statements to execute as part of the job.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "query_file_uri": {
+                "description": "The HCFS URI of the script that contains SQL queries.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "continue_on_failure": {
+                "description": "Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "script_variables": {
+                "description": "Mapping of query variable names to values (equivalent to the Spark SQL command: `SET name=\"value\";`).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "reference.0.cluster_uuid": {
+                "description": "A cluster UUID generated by the Cloud Dataproc service when the job is submitted."
+            },
+            "status.0.state": {
+                "description": "A state message specifying the overall job state."
+            },
+            "status.0.details": {
+                "description": "Optional job state details, such as an error description if the state is ERROR."
+            },
+            "status.0.state_start_time": {
+                "description": "The time when this state was entered."
+            },
+            "status.0.substate": {
+                "description": "Additional state information, which includes status reported by the agent."
+            },
+            "driver_output_resource_uri": {
+                "description": "A URI pointing to the location of the stdout of the job's driver program."
+            },
+            "driver_controls_files_uri": {
+                "description": "If present, the location of miscellaneous control files which may be used as part of job setup and handling. If not present, control files may be placed in the same location as driver_output_uri."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,155 @@
+{
+    "openstack_networking_subnetpool_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_subnetpool_v2",
+        "sidebar_current": "docs-openstack-resource-networking-subnetpool-v2",
+        "description": "Manages a V2 Neutron subnetpool resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the subnetpool. Changing this updates the name of",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "default_quota": {
+                "description": "The per-project quota on the prefix space that can be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project_id": {
+                "description": "The owner of the subnetpool. Required if admin wants to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "prefixes": {
+                "description": "A list of subnet prefixes to assign to the subnetpool.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "default_prefixlen": {
+                "description": "The size of the prefix to allocate when the cidr",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "min_prefixlen": {
+                "description": "The smallest prefix that can be allocated from a",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_prefixlen": {
+                "description": "The maximum prefix size that can be allocated from",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "address_scope_id": {
+                "description": "The Neutron address scope to assign to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shared": {
+                "description": "Indicates whether this subnetpool is shared across",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The human-readable description for the subnetpool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "is_default": {
+                "description": "Indicates whether the subnetpool is default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value_specs": {
+                "description": "Map of additional options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A set of string tags for the subnetpool.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "default_quota": {
+                "description": "See Argument Reference above."
+            },
+            "project_id": {
+                "description": "See Argument Reference above."
+            },
+            "created_at": {
+                "description": "The time at which subnetpool was created."
+            },
+            "updated_at": {
+                "description": "The time at which subnetpool was created."
+            },
+            "prefixes": {
+                "description": "See Argument Reference above."
+            },
+            "default_prefixlen": {
+                "description": "See Argument Reference above."
+            },
+            "min_prefixlen": {
+                "description": "See Argument Reference above."
+            },
+            "max_prefixlen": {
+                "description": "See Argument Reference above."
+            },
+            "address_scope_id": {
+                "description": "See Argument Reference above."
+            },
+            "ip_version": {
+                "description": "The IP protocol version."
+            },
+            "shared": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "is_default": {
+                "description": "See Argument Reference above."
+            },
+            "revision_number": {
+                "description": "The revision number of the subnetpool."
+            },
+            "value_specs": {
+                "description": "See Argument Reference above."
+            },
+            "tags": {
+                "description": "See Argument Reference above."
+            },
+            "all_tags": {
+                "description": "The collection of tags assigned on the subnetpool, which have been"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "vault_okta_auth_backend_user": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_auth_backend_user resource",
+        "sidebar_current": "docs-vault-resource-okta-auth-backend-user",
+        "description": "Managing users in an Okta auth backend in Vault",
+        "arguments": {
+            "path": {
+                "description": "The path where the Okta auth backend is mounted",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "username": {
+                "description": "Name of the user within Okta",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "groups": {
+                "description": "List of Okta groups to associate with this user",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policies": {
+                "description": "List of Vault policies to associate with this user",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

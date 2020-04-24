@@ -1,0 +1,30 @@
+{
+    "github_team_membership": {
+        "status": "ASSESS",
+        "layout": "github",
+        "page_title": "GitHub: github_team_membership",
+        "description": "Provides a GitHub team membership resource.",
+        "arguments": {
+            "team_id": {
+                "description": "The GitHub team id",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "username": {
+                "description": "The user to add to the team.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "The role of the user within the team.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

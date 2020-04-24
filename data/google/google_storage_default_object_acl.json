@@ -1,0 +1,26 @@
+{
+    "google_storage_default_object_acl": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Storage",
+        "layout": "google",
+        "page_title": "Google: google_storage_default_object_acl",
+        "sidebar_current": "docs-google-storage-default-object-acl",
+        "description": "Authoritatively manages the default object ACLs for a Google Cloud Storage bucket",
+        "arguments": {
+            "bucket": {
+                "description": "The name of the bucket it applies to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_entity": {
+                "description": "List of role/entity pairs in the form `ROLE:entity`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

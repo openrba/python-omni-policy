@@ -1,0 +1,30 @@
+openstack_compute_floatingip_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_compute_floatingip_v2'
+    sidebar_current: docs-openstack-resource-compute-floatingip-v2
+    description: Manages a V2 floating IP resource within OpenStack Nova (compute).
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Compute client.
+            required: false
+            policy: ''
+            notes: ''
+        pool:
+            description: The name of the pool from which to obtain the floating
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        pool:
+            description: See Argument Reference above.
+        address:
+            description: The actual floating IP address itself.
+        fixed_ip:
+            description: The fixed IP address corresponding to the floating IP.
+        instance_id:
+            description: UUID of the compute instance associated with the floating
+                IP.
+    timeouts: {}

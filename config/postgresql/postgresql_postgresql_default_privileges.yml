@@ -1,0 +1,43 @@
+postgresql_postgresql_default_privileges:
+    status: ASSESS
+    layout: postgresql
+    page_title: 'PostgreSQL: postgresql_default_privileges'
+    sidebar_current: docs-postgresql-resource-postgresql_default_privileges
+    description: Creates and manages default privileges given to a user for a database
+        schema.
+    arguments:
+        role:
+            description: The name of the role to which grant default privileges on.
+            required: true
+            policy: ''
+            notes: ''
+        database:
+            description: The database to grant default privileges for this role.
+            required: true
+            policy: ''
+            notes: ''
+        owner:
+            description: Role for which apply default privileges (You can change default
+                privileges only for objects that will be created by yourself or by
+                roles that you are a member of).
+            required: true
+            policy: ''
+            notes: ''
+        schema:
+            description: The database schema to set default privileges for this role.
+            required: true
+            policy: ''
+            notes: ''
+        object_type:
+            description: 'The PostgreSQL object type to set the default privileges
+                on (one of: table, sequence).'
+            required: true
+            policy: ''
+            notes: ''
+        privileges:
+            description: The list of privileges to apply as default privileges.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

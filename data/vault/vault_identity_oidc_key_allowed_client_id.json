@@ -1,0 +1,25 @@
+{
+    "vault_identity_oidc_key_allowed_client_id": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_identity_oidc_key_allowed_client_id resource",
+        "sidebar_current": "docs-vault-identity-oidc-key-allowed-client-id",
+        "description": "Allows an Identity OIDC Role to use an OIDC Named key.",
+        "arguments": {
+            "key_name": {
+                "description": "Name of the OIDC Key allow the Client ID.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_client_id": {
+                "description": "Client ID to allow usage with the OIDC named key",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

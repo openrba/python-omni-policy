@@ -1,0 +1,45 @@
+openstack_compute_volume_attach_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_compute_volume_attach_v2'
+    sidebar_current: docs-openstack-resource-compute-volume-attach-v2
+    description: Attaches a Block Storage Volume to an Instance.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Compute client.
+            required: false
+            policy: ''
+            notes: ''
+        instance_id:
+            description: The ID of the Instance to attach the Volume to.
+            required: true
+            policy: ''
+            notes: ''
+        volume_id:
+            description: The ID of the Volume to attach to an Instance.
+            required: true
+            policy: ''
+            notes: ''
+        device:
+            description: 'The device of the volume attachment (ex: `/dev/vdc`).'
+            required: false
+            policy: ''
+            notes: ''
+        multiattach:
+            description: Enable attachment of multiattach-capable volumes.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        instance_id:
+            description: See Argument Reference above.
+        volume_id:
+            description: See Argument Reference above.
+        device:
+            description: 'See Argument Reference above. _NOTE_: The correctness of
+                this'
+        multiattach:
+            description: See Argument Reference above.
+    timeouts: {}

@@ -1,0 +1,26 @@
+{
+    "google_compute_project_default_network_tier": {
+        "status": "ASSESS",
+        "subcategory": "Compute Engine",
+        "layout": "google",
+        "page_title": "Google: google_compute_project_default_network_tier",
+        "sidebar_current": "docs-google-compute-project-default-network-tier",
+        "description": "Configures the default network tier for a project.",
+        "arguments": {
+            "network_tier": {
+                "description": "The default network tier to be configured for the project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The ID of the project in which the resource belongs. If it",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,41 @@
+vault_gcp_auth_backend_role:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_gcp_auth_backend_role resource'
+    sidebar_current: docs-vault-resource-gcp-auth-backend-role
+    description: Managing roles in an GCP auth backend in Vault
+    arguments:
+        role:
+            description: Name of the GCP role
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: Type of GCP authentication role (either `gce` or `iam`)
+            required: true
+            policy: ''
+            notes: ''
+        project_id:
+            description: GCP Project that the role exists within
+            required: false
+            policy: ''
+            notes: ''
+        bound_projects:
+            description: An array of GCP project IDs. Only entities belonging to this
+                project can authenticate under the role.
+            required: false
+            policy: ''
+            notes: ''
+        backend:
+            description: Path to the mounted GCP auth backend
+            required: false
+            policy: ''
+            notes: ''
+        bound_service_accounts:
+            description: 'GCP Service Accounts allowed to issue tokens under this
+                role. (Note: **Required** if role is `iam`)'
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

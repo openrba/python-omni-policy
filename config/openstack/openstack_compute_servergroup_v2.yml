@@ -1,0 +1,37 @@
+openstack_compute_servergroup_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_compute_servergroup_v2'
+    sidebar_current: docs-openstack-resource-compute-servergroup-v2
+    description: Manages a V2 Server Group resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Compute client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the server group. Changing this creates
+            required: true
+            policy: ''
+            notes: ''
+        policies:
+            description: The set of policies for the server group. All policies
+            required: true
+            policy: ''
+            notes: ''
+        value_specs:
+            description: Map of additional options.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        policies:
+            description: See Argument Reference above.
+        members:
+            description: The instances that are part of this server group.
+    timeouts: {}

@@ -1,0 +1,32 @@
+{
+    "google_service_networking_connection": {
+        "status": "ASSESS",
+        "subcategory": "Service Networking",
+        "layout": "google",
+        "page_title": "Google: google_service_networking_connection",
+        "sidebar_current": "docs-google-service-networking-connection",
+        "description": "Manages creating a private VPC connection to a service provider.",
+        "arguments": {
+            "network": {
+                "description": "Name of VPC network connected with service producers using VPC peering.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service": {
+                "description": "Provider peering service that is managing peering connectivity for a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "reserved_peering_ranges": {
+                "description": "Named IP address range(s",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

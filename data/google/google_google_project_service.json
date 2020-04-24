@@ -1,0 +1,38 @@
+{
+    "google_google_project_service": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_project_service",
+        "sidebar_current": "docs-google-project-service-x",
+        "description": "Allows management of a single API service for a Google Cloud Platform project.",
+        "arguments": {
+            "service": {
+                "description": "The service to enable.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project ID. If not provided, the provider project is used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disable_dependent_services": {
+                "description": "If `true`, services that are enabled and which depend on this service should also be disabled when this service is destroyed.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disable_on_destroy": {
+                "description": "If true, disable the service when the terraform resource is destroyed.  Defaults to true.  May be useful in the event that a project is long-lived but the infrastructure running in that project changes frequently.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

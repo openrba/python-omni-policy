@@ -1,0 +1,39 @@
+vault_identity_entity:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_identity_entity resource'
+    sidebar_current: docs-vault-resource-identity-entity
+    description: Creates an Identity Entity for Vault.
+    arguments:
+        name:
+            description: Name of the identity entity to create.
+            required: true
+            policy: ''
+            notes: ''
+        policies:
+            description: A list of policies to apply to the entity.
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: A Map of additional metadata to associate with the user.
+            required: false
+            policy: ''
+            notes: ''
+        disabled:
+            description: True/false Is this entity currently disabled. Defaults to
+                `false`
+            required: false
+            policy: ''
+            notes: ''
+        external_policies:
+            description: '`false` by default. If set to `true`, this resource will
+                ignore any policies return from Vault or specified in the resource.
+                You can use [`vault_identity_entity_policies`](identity_entity_policies.html'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The `id` of the created entity.
+    timeouts: {}

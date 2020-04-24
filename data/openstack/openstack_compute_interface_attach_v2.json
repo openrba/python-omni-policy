@@ -1,0 +1,59 @@
+{
+    "openstack_compute_interface_attach_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_compute_interface_attach_v2",
+        "sidebar_current": "docs-openstack-resource-compute-interface-attach-v2",
+        "description": "Attaches a Network Interface to an Instance.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to create the interface attachment.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_id": {
+                "description": "The ID of the Instance to attach the Port or Network to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "port_id": {
+                "description": "The ID of the Port to attach to an Instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_id": {
+                "description": "The ID of the Network to attach to an Instance. A port will be created automatically.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fixed_ip": {
+                "description": "An IP address to assosciate with the port.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "instance_id": {
+                "description": "See Argument Reference above."
+            },
+            "port_id": {
+                "description": "See Argument Reference above."
+            },
+            "network_id": {
+                "description": "See Argument Reference above."
+            },
+            "fixed_ip": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

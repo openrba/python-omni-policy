@@ -1,0 +1,112 @@
+openstack_lb_vip_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_lb_vip_v1'
+    sidebar_current: docs-openstack-resource-lb-vip-v1
+    description: Manages a V1 load balancer vip resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the vip. Changing this updates the name of
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The network on which to allocate the vip's address. A
+            required: true
+            policy: ''
+            notes: ''
+        protocol:
+            description: ' The protocol - can be either ''TCP, ''HTTP'', or'
+            required: true
+            policy: ''
+            notes: ''
+        port:
+            description: The port on which to listen for client traffic. Changing
+            required: true
+            policy: ''
+            notes: ''
+        pool_id:
+            description: The ID of the pool with which the vip is associated.
+            required: true
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: The owner of the vip. Required if admin wants to
+            required: false
+            policy: ''
+            notes: ''
+        address:
+            description: ' The IP address of the vip. Changing this creates a new'
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Human-readable description for the vip. Changing
+            required: false
+            policy: ''
+            notes: ''
+        persistence:
+            description: Omit this field to prevent session persistence.
+            required: false
+            policy: ''
+            notes: ''
+        conn_limit:
+            description: The maximum number of connections allowed for the
+            required: false
+            policy: ''
+            notes: ''
+        floating_ip:
+            description: A *Networking* Floating IP that will be associated
+            required: false
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: The administrative state of the vip.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of persistence mode. Valid values are "SOURCE_IP",
+            required: true
+            policy: ''
+            notes: ''
+        cookie_name:
+            description: The name of the cookie if persistence mode is set
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        subnet_id:
+            description: See Argument Reference above.
+        protocol:
+            description: See Argument Reference above.
+        port:
+            description: See Argument Reference above.
+        pool_id:
+            description: See Argument Reference above.
+        tenant_id:
+            description: See Argument Reference above.
+        address:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        persistence:
+            description: See Argument Reference above.
+        conn_limit:
+            description: See Argument Reference above.
+        floating_ip:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+        port_id:
+            description: Port UUID for this VIP at associated floating IP (if any).
+    timeouts: {}

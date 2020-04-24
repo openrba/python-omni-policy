@@ -1,0 +1,71 @@
+{
+    "openstack_objectstorage_tempurl_v1": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_objectstorage_tempurl_v1",
+        "sidebar_current": "docs-openstack-resource-objectstorage-tempurl-v1",
+        "description": "Generate a TempURL for a Swift container and object.",
+        "arguments": {
+            "region": {
+                "description": "The region the tempurl is located in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "container": {
+                "description": "The container name the object belongs to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object": {
+                "description": "The object name the tempurl is for.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ttl": {
+                "description": "The TTL, in seconds, for the URL. For how long it should",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "method": {
+                "description": "The method allowed when accessing this URL.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "regenerate": {
+                "description": "Whether to automatically regenerate the URL when",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Computed md5 hash based on the generated url"
+            },
+            "container": {
+                "description": "See Argument Reference above."
+            },
+            "object": {
+                "description": "See Argument Reference above."
+            },
+            "ttl": {
+                "description": "See Argument Reference above."
+            },
+            "method": {
+                "description": "See Argument Reference above."
+            },
+            "url": {
+                "description": "The URL"
+            },
+            "region": {
+                "description": "The region the endpoint is located in."
+            }
+        },
+        "timeouts": {}
+    }
+}

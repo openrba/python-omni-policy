@@ -1,0 +1,41 @@
+tfe_organization:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_organization'
+    sidebar_current: docs-resource-tfe-organization-x
+    description: Manages organizations.
+    arguments:
+        name:
+            description: Name of the organization.
+            required: true
+            policy: ''
+            notes: ''
+        email:
+            description: Admin email address.
+            required: true
+            policy: ''
+            notes: ''
+        session_timeout_minutes:
+            description: Session timeout after inactivity.
+            required: false
+            policy: ''
+            notes: ''
+        session_remember_minutes:
+            description: Session expiration. Defaults to
+            required: false
+            policy: ''
+            notes: ''
+        collaborator_auth_policy:
+            description: Authentication policy (`password`
+            required: false
+            policy: ''
+            notes: ''
+        owners_team_saml_role_id:
+            description: The name of the "owners" team.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The name of the organization.
+    timeouts: {}

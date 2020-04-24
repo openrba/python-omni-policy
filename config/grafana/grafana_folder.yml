@@ -1,0 +1,20 @@
+grafana_folder:
+    status: ASSESS
+    layout: grafana
+    page_title: 'Grafana: grafana_folder'
+    sidebar_current: docs-grafana-resource-folder
+    description: The grafana_folder resource allows a Grafana folder to be created.
+    arguments:
+        title:
+            description: The title of the folder.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The internal id of the folder in Grafana (only guaranteed
+                to be unique
+        uid:
+            description: An external id of the folder in Grafana (stable when folders
+                are migrated
+    timeouts: {}

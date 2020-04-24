@@ -176,13 +176,17 @@ def parse_markdown(markdown_dct,metadata_dct):
     markdown = markdown_dct.get('markdown')
 
     # Create a temporary dictionary from header.
-    tmp_dct = yaml.load(markdown.split("---")[1],
-                    Loader=yaml.FullLoader)
+    try:
+        tmp_dct = yaml.load(markdown.split("---")[1],
+                        Loader=yaml.FullLoader)
 
-    # Prefix the name with the provider.
-    name = tmp_dct.get('layout') + '_' + name
+        # Prefix the name with the provider.
+        name = tmp_dct.get('layout') + '_' + name
+    except:
+        tmp_dct = {}
+        dct = {}
 
-    # Give default status of HOLD.
+    # Give default status of ASSESS.
     dct = {name: {'status': 'ASSESS'}}
     
     # Add all fields in tmp_dict to dct.
@@ -293,16 +297,18 @@ def get_markdown(url):
     Returns:
         dct (dict): dictionary containing name & markdown kv.
     """
-
-    name = url.split("/")[-1].split(".")[0]
-    request = requests.get(url)
-    markdown = request.content.decode('utf8').strip('\n')
+    try:
+        name = url.split("/")[-1].split(".")[0]
+        request = requests.get(url)
+        markdown = request.content.decode('utf8').strip('\n')
     
-    dct = {'name': name,
-           'markdown' : markdown
-          }
-    
-    return dct
+        dct = {'name': name,
+               'markdown' : markdown
+            }
+    except:
+        dct = {}
+    finally:
+        return dct
 
 def process_resource(resource_dct):
     """ Process resource dictionary and create files
@@ -315,37 +321,39 @@ def process_resource(resource_dct):
         resource_dct (dict): dictionary of info about the resource
 
     """
-
-    # Fetch markdown from url
-    markdown_dct = get_markdown(
-                    resource_dct.get("download_url"))
+    try:
+        # Fetch markdown from url
+        markdown_dct = get_markdown(
+                        resource_dct.get("download_url"))
     
-    # Parse the markdown into fields
-    dct = parse_markdown(markdown_dct,resource_dct)
+        # Parse the markdown into fields
+        dct = parse_markdown(markdown_dct,resource_dct)
     
-    # Should only be one key but we don't know what it is
-    # so lets loop and get a name.
-    for name in dct.keys():
+        # Should only be one key but we don't know what it is
+        # so lets loop and get a name.
+        for name in dct.keys():
 
-        # Get the provider from the 'layout field'
-        provider = dct[name].get('layout')
+            # Get the provider from the 'layout field'
+            provider = dct[name].get('layout')
         
-        # Create the filenames for the yaml & json
-        yaml_file = 'config/'+provider+'/'+name+'.yml'
-        json_file = 'data/'+provider+'/'+name+'.json'
+            # Create the filenames for the yaml & json
+            yaml_file = 'config/'+provider+'/'+name+'.yml'
+            json_file = 'data/'+provider+'/'+name+'.json'
         
-        # Do the open / merge / write op with the yaml.
-        yaml_dct = open_yaml(yaml_file)
-        merged_dct = merge_dictionaries(dct,yaml_dct)
-        write_yaml(yaml_file,merged_dct)
+            # Do the open / merge / write op with the yaml.
+            yaml_dct = open_yaml(yaml_file)
+            merged_dct = merge_dictionaries(dct,yaml_dct)
+            write_yaml(yaml_file,merged_dct)
         
-        # Now remove the binary fields and write the json.
-        delete_keys_from_dict(merged_dct,
-                             ['usage',
-                              'import',
-                              'hcl_url'
-                              ])
-        write_json(json_file,merged_dct)
+            # Now remove the binary fields and write the json.
+            delete_keys_from_dict(merged_dct,
+                                  ['usage',
+                                  'import',
+                                  'hcl_url'
+                                ])
+            write_json(json_file,merged_dct)
+    except:
+        tmp = {}
 
 def get_resources(provider_lst):
     """ Grabs a json blob from the github API for each provider in list

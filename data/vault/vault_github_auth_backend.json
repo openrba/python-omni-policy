@@ -1,0 +1,89 @@
+{
+    "vault_github_auth_backend": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_github_auth_backend resource",
+        "sidebar_current": "docs-vault-github-auth-backend",
+        "description": "Manages Github Auth mounts in Vault.",
+        "arguments": {
+            "path": {
+                "description": "Path where the auth backend is mounted. Defaults to `auth/github`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "organization": {
+                "description": "The organization configured users must be part of.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "base_url": {
+                "description": "The API endpoint to use. Useful if you",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Specifies the description of the mount.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_lease_ttl": {
+                "description": "Specifies the default time-to-live.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_lease_ttl": {
+                "description": "Specifies the maximum time-to-live.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audit_non_hmac_response_keys": {
+                "description": "Specifies the list of keys that will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audit_non_hmac_request_keys": {
+                "description": "Specifies the list of keys that will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "listing_visibility": {
+                "description": "Specifies whether to show this mount in",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "passthrough_request_headers": {
+                "description": "List of headers to whitelist and",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_response_headers": {
+                "description": "List of headers to whitelist and allowing",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "token_type": {
+                "description": "Specifies the type of tokens that should be returned by",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "accessor": {
+                "description": "The mount accessor related to the auth mount. It is useful for integration with [Identity Secrets Engine](https://www.vaultproject.io/docs/secrets/identity/index.html)."
+            }
+        },
+        "timeouts": {}
+    }
+}

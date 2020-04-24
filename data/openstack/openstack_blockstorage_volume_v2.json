@@ -1,0 +1,119 @@
+{
+    "openstack_blockstorage_volume_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_blockstorage_volume_v2",
+        "sidebar_current": "docs-openstack-resource-blockstorage-volume-v2",
+        "description": "Manages a V2 volume resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to create the volume. If",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "size": {
+                "description": "The size of the volume to create (in gigabytes). Changing",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The availability zone for the volume.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "consistency_group_id": {
+                "description": "The consistency group to place the volume",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the volume. Changing this updates",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "image_id": {
+                "description": "The image ID from which to create the volume.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "Metadata key/value pairs to associate with the volume.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "A unique name for the volume. Changing this updates the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_id": {
+                "description": "The snapshot ID from which to create the volume.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_replica": {
+                "description": "The volume ID to replicate with.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_vol_id": {
+                "description": "The volume ID from which to create the volume.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "volume_type": {
+                "description": "The type of volume to create.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "size": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "availability_zone": {
+                "description": "See Argument Reference above."
+            },
+            "image_id": {
+                "description": "See Argument Reference above."
+            },
+            "source_vol_id": {
+                "description": "See Argument Reference above."
+            },
+            "snapshot_id": {
+                "description": "See Argument Reference above."
+            },
+            "metadata": {
+                "description": "See Argument Reference above."
+            },
+            "volume_type": {
+                "description": "See Argument Reference above."
+            },
+            "attachment": {
+                "description": "If a volume is attached to an instance, this attribute will"
+            }
+        },
+        "timeouts": {}
+    }
+}

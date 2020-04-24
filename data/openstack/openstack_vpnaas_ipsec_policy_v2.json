@@ -1,0 +1,113 @@
+{
+    "openstack_vpnaas_ipsec_policy_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_vpnaas_ipsec_policy_v2",
+        "sidebar_current": "docs-openstack-resource-vpnaas-ipsec-policy-v2",
+        "description": "Manages a V2 Neutron IPSec policy resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the policy. Changing this updates the name of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The owner of the policy. Required if admin wants to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The human-readable description for the policy.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auth_algorithm": {
+                "description": "The authentication hash algorithm. Valid values are sha1, sha256, sha384, sha512.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encapsulation_mode": {
+                "description": "The encapsulation mode. Valid values are tunnel and transport. Default is tunnel.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_algorithm": {
+                "description": "The encryption algorithm. Valid values are 3des, aes-128, aes-192 and so on.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pfs": {
+                "description": "The perfect forward secrecy mode. Valid values are Group2, Group5 and Group14. Default is Group5.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "transform_protocol": {
+                "description": "The transform protocol. Valid values are ESP, AH and AH-ESP.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lifetime": {
+                "description": "The lifetime of the security association. Consists of Unit and Value.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value_specs": {
+                "description": "Map of additional options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "auth_algorithm": {
+                "description": "See Argument Reference above."
+            },
+            "encapsulation_mode": {
+                "description": "See Argument Reference above."
+            },
+            "encryption_algorithm": {
+                "description": "See Argument Reference above."
+            },
+            "pfs": {
+                "description": "See Argument Reference above."
+            },
+            "transform_protocol": {
+                "description": "See Argument Reference above."
+            },
+            "lifetime": {
+                "description": "See Argument Reference above."
+            },
+            "value_specs": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

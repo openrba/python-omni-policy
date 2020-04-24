@@ -1,0 +1,29 @@
+gitlab_branch_protection:
+    status: ASSESS
+    layout: gitlab
+    page_title: 'GitLab: gitlab_branch_protection'
+    sidebar_current: docs-gitlab-resource-branch_protection
+    description: Protects a branch by assigning access levels to it
+    arguments:
+        project:
+            description: The id of the project.
+            required: true
+            policy: ''
+            notes: ''
+        branch:
+            description: Name of the branch.
+            required: true
+            policy: ''
+            notes: ''
+        push_access_level:
+            description: One of five levels of access to the project.
+            required: true
+            policy: ''
+            notes: ''
+        merge_access_level:
+            description: One of five levels of access to the project.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

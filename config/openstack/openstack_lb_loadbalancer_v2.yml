@@ -1,0 +1,81 @@
+openstack_lb_loadbalancer_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_lb_loadbalancer_v2'
+    sidebar_current: docs-openstack-resource-lb-loadbalancer-v2
+    description: Manages a V2 loadbalancer resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        vip_subnet_id:
+            description: The network on which to allocate the
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Human-readable name for the Loadbalancer. Does not have
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Human-readable description for the Loadbalancer.
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: Required for admins. The UUID of the tenant who owns
+            required: false
+            policy: ''
+            notes: ''
+        vip_address:
+            description: The ip address of the load balancer.
+            required: false
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: The administrative state of the Loadbalancer.
+            required: false
+            policy: ''
+            notes: ''
+        flavor_id:
+            description: The UUID of a flavor. Changing this creates a new
+            required: false
+            policy: ''
+            notes: ''
+        loadbalancer_provider:
+            description: The name of the provider. Changing this
+            required: false
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: A list of security group IDs to apply to the
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        vip_subnet_id:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        tenant_id:
+            description: See Argument Reference above.
+        vip_address:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+        flavor_id:
+            description: See Argument Reference above.
+        loadbalancer_provider:
+            description: See Argument Reference above.
+        security_group_ids:
+            description: See Argument Reference above.
+        vip_port_id:
+            description: The Port ID of the Load Balancer IP.
+    timeouts: {}

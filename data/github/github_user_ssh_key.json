@@ -1,0 +1,31 @@
+{
+    "github_user_ssh_key": {
+        "status": "ASSESS",
+        "layout": "github",
+        "page_title": "GitHub: github_user_ssh_key",
+        "description": "Provides a GitHub user's SSH key resource.",
+        "arguments": {
+            "title": {
+                "description": "A descriptive name for the new key. e.g. `Personal MacBook Air`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "The public SSH key to add to your GitHub account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the SSH key"
+            },
+            "url": {
+                "description": "The URL of the SSH key"
+            }
+        },
+        "timeouts": {}
+    }
+}

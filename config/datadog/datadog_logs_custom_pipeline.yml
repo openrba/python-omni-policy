@@ -1,0 +1,31 @@
+datadog_logs_custom_pipeline:
+    status: ASSESS
+    layout: datadog
+    page_title: 'Datadog: datadog_logs_custom_pipeline'
+    sidebar_current: docs-datadog-resource-logs-custom-pipeline
+    description: Provides a Datadog logs custom pipeline resource, which is used to
+        create and manage logs custom pipelines.
+    arguments:
+        filter:
+            description: Defines your pipeline filter. Only logs that match the filter
+                criteria are processed by this pipeline.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Your pipeline name.
+            required: true
+            policy: ''
+            notes: ''
+        is_enabled:
+            description: Boolean value to enable your pipeline.
+            required: false
+            policy: ''
+            notes: ''
+        processor:
+            description: Processors or nested pipelines. See [below](logs_custom_pipeline.html#Processors
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

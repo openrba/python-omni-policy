@@ -1,0 +1,182 @@
+{
+    "openstack_vpnaas_site_connection_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_vpnaas_site_connection_v2",
+        "sidebar_current": "docs-openstack-resource-vpnaas-site-connection-v2",
+        "description": "Manages a V2 Neutron IPSec site connection resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the connection. Changing this updates the name of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The owner of the connection. Required if admin wants to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The human-readable description for the connection.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_state_up": {
+                "description": "The administrative state of the resource. Can either be up(true",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ikepolicy_id": {
+                "description": "The ID of the IKE policy. Changing this creates a new connection.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "vpnservice_id": {
+                "description": "The ID of the VPN service. Changing this creates a new connection.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "local_ep_group_id": {
+                "description": "The ID for the endpoint group that contains private subnets for the local side of the connection.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipsecpolicy_id": {
+                "description": "The ID of the IPsec policy. Changing this creates a new connection.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "peer_id": {
+                "description": "The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "peer_ep_group_id": {
+                "description": "The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "local_id": {
+                "description": "An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "peer_address": {
+                "description": "The peer gateway public IPv4 or IPv6 address or FQDN.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "psk": {
+                "description": "The pre-shared key. A valid value is any string.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "initiator": {
+                "description": "A valid value is response-only or bi-directional. Default is bi-directional.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "peer_cidrs": {
+                "description": "Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dpd": {
+                "description": "A dictionary with dead peer detection (DPD",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mtu": {
+                "description": "The maximum transmission unit (MTU",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value_specs": {
+                "description": "Map of additional options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "admin_state_up": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "dpd": {
+                "description": "See Argument Reference above."
+            },
+            "psk": {
+                "description": "See Argument Reference above."
+            },
+            "initiator": {
+                "description": "See Argument Reference above."
+            },
+            "peer_address": {
+                "description": "See Argument Reference above."
+            },
+            "peer_id": {
+                "description": "See Argument Reference above."
+            },
+            "peer_cidrs": {
+                "description": "See Argument Reference above."
+            },
+            "mtu": {
+                "description": "See Argument Reference above."
+            },
+            "local_id": {
+                "description": "See Argument Reference above."
+            },
+            "peer_ep_group_id": {
+                "description": "See Argument Reference above."
+            },
+            "ipsecpolicy_id": {
+                "description": "See Argument Reference above."
+            },
+            "vpnservice_id": {
+                "description": "See Argument Reference above."
+            },
+            "ikepolicy_id": {
+                "description": "See Argument Reference above."
+            },
+            "value_specs": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

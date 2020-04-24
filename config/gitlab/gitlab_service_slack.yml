@@ -1,0 +1,127 @@
+gitlab_service_slack:
+    status: ASSESS
+    layout: gitlab
+    page_title: 'GitLab: gitlab_service_slack'
+    sidebar_current: docs-gitlab-resource-service_slack
+    description: Manage Slack notifications integration that allows to receive event
+        notifications in Slack
+    arguments:
+        project:
+            description: ID of the project you want to activate integration on.
+            required: true
+            policy: ''
+            notes: ''
+        webhook:
+            description: 'Webhook URL (ex.: https://hooks.slack.com/services/...)'
+            required: true
+            policy: ''
+            notes: ''
+        username:
+            description: Username to use.
+            required: false
+            policy: ''
+            notes: ''
+        notify_only_broken_pipelines:
+            description: Send notifications for broken pipelines.
+            required: false
+            policy: ''
+            notes: ''
+        notify_only_default_branch:
+            description: 'DEPRECATED: This parameter has been replaced with `branches_to_be_notified`.'
+            required: false
+            policy: ''
+            notes: ''
+        branches_to_be_notified:
+            description: Branches to send notifications for. Valid options are "all",
+                "default", "protected", and "default_and_protected".
+            required: false
+            policy: ''
+            notes: ''
+        push_events:
+            description: Enable notifications for push events.
+            required: false
+            policy: ''
+            notes: ''
+        push_channel:
+            description: The name of the channel to receive push events notifications.
+            required: false
+            policy: ''
+            notes: ''
+        issues_events:
+            description: Enable notifications for issues events.
+            required: false
+            policy: ''
+            notes: ''
+        issue_channel:
+            description: The name of the channel to receive issue events notifications.
+            required: false
+            policy: ''
+            notes: ''
+        confidential_issues_events:
+            description: Enable notifications for confidential issues events.
+            required: false
+            policy: ''
+            notes: ''
+        confidential_issue_channel:
+            description: The name of the channel to receive confidential issue events
+                notifications.
+            required: false
+            policy: ''
+            notes: ''
+        merge_requests_events:
+            description: Enable notifications for merge requests events.
+            required: false
+            policy: ''
+            notes: ''
+        merge_request_channel:
+            description: The name of the channel to receive merge request events notifications.
+            required: false
+            policy: ''
+            notes: ''
+        tag_push_events:
+            description: Enable notifications for tag push events.
+            required: false
+            policy: ''
+            notes: ''
+        tag_push_channel:
+            description: The name of the channel to receive tag push events notifications.
+            required: false
+            policy: ''
+            notes: ''
+        note_events:
+            description: Enable notifications for note events.
+            required: false
+            policy: ''
+            notes: ''
+        note_channel:
+            description: The name of the channel to receive note events notifications.
+            required: false
+            policy: ''
+            notes: ''
+        confidential_note_events:
+            description: Enable notifications for confidential note events.
+            required: false
+            policy: ''
+            notes: ''
+        pipeline_events:
+            description: Enable notifications for pipeline events.
+            required: false
+            policy: ''
+            notes: ''
+        pipeline_channel:
+            description: The name of the channel to receive pipeline events notifications.
+            required: false
+            policy: ''
+            notes: ''
+        wiki_page_events:
+            description: Enable notifications for wiki page events.
+            required: false
+            policy: ''
+            notes: ''
+        wiki_page_channel:
+            description: The name of the channel to receive wiki page events notifications.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

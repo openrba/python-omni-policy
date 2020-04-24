@@ -1,0 +1,36 @@
+{
+    "google_google_folder": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_folder",
+        "sidebar_current": "docs-google-folder-x",
+        "description": "Allows management of a Google Cloud Platform folder.",
+        "arguments": {
+            "display_name": {
+                "description": "The folder\u2019s display name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parent": {
+                "description": "The resource name of the parent Folder or Organization.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "name": {
+                "description": "The resource name of the Folder. Its format is folders/{folder_id}."
+            },
+            "lifecycle_state": {
+                "description": "The lifecycle state of the folder such as `ACTIVE` or `DELETE_REQUESTED`."
+            },
+            "create_time": {
+                "description": "Timestamp when the Folder was created. Assigned by the server."
+            }
+        },
+        "timeouts": {}
+    }
+}

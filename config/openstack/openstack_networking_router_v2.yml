@@ -1,0 +1,123 @@
+openstack_networking_router_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_networking_router_v2'
+    sidebar_current: docs-openstack-resource-networking-router-v2
+    description: Manages a V2 router resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 networking client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the router. Changing this
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Human-readable description for the router.
+            required: false
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: Administrative up/down status for the router
+            required: false
+            policy: ''
+            notes: ''
+        distributed:
+            description: Indicates whether or not to create a
+            required: false
+            policy: ''
+            notes: ''
+        external_gateway:
+            description: The
+            required: false
+            policy: ''
+            notes: ''
+        external_network_id:
+            description: The network UUID of an external gateway
+            required: false
+            policy: ''
+            notes: ''
+        enable_snat:
+            description: Enable Source NAT for the router. Valid values are
+            required: false
+            policy: ''
+            notes: ''
+        external_fixed_ip:
+            description: An external fixed IP for the router. This
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: The owner of the floating IP. Required if admin wants
+            required: false
+            policy: ''
+            notes: ''
+        value_specs:
+            description: Map of additional driver-specific options.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A set of string tags for the router.
+            required: false
+            policy: ''
+            notes: ''
+        vendor_options:
+            description: Map of additional vendor-specific options.
+            required: false
+            policy: ''
+            notes: ''
+        availability_zone_hints:
+            description: 'An availability zone is used to make '
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: Subnet in which the fixed IP belongs to.
+            required: false
+            policy: ''
+            notes: ''
+        ip_address:
+            description: The IP address to set on the router.
+            required: false
+            policy: ''
+            notes: ''
+        set_router_gateway_after_create:
+            description: Boolean to control whether
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: ID of the router.
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+        external_gateway:
+            description: See Argument Reference above.
+        external_network_id:
+            description: See Argument Reference above.
+        enable_snat:
+            description: See Argument Reference above.
+        external_fixed_ip:
+            description: See Argument Reference above.
+        tenant_id:
+            description: See Argument Reference above.
+        value_specs:
+            description: See Argument Reference above.
+        availability_zone_hints:
+            description: See Argument Reference above.
+        tags:
+            description: See Argument Reference above.
+        all_tags:
+            description: The collection of tags assigned on the router, which have
+                been
+    timeouts: {}

@@ -1,0 +1,19 @@
+docker_config:
+    status: ASSESS
+    layout: docker
+    page_title: 'Docker: docker_config'
+    sidebar_current: docs-docker-resource-config
+    description: Manages the configs of a Docker service in a swarm.
+    arguments:
+        name:
+            description: The name of the Docker config.
+            required: false
+            policy: ''
+            notes: ''
+        data:
+            description: The base64 encoded data of the config.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

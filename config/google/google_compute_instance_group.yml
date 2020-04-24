@@ -1,0 +1,70 @@
+google_compute_instance_group:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_instance_group'
+    sidebar_current: docs-google-compute-instance-group-x
+    description: Manages an Instance Group within GCE.
+    arguments:
+        name:
+            description: The name which the port will be mapped to.
+            required: true
+            policy: ''
+            notes: ''
+        zone:
+            description: The zone that this instance group should be created in.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: An optional textual description of the instance
+            required: false
+            policy: ''
+            notes: ''
+        instances:
+            description: List of instances in the group. They should be given
+            required: false
+            policy: ''
+            notes: ''
+        named_port:
+            description: The named port configuration. See the section below
+            required: false
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the resource belongs. If it
+            required: false
+            policy: ''
+            notes: ''
+        network:
+            description: The URL of the network the instance group is in. If
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: The port number to map the name to.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        self_link:
+            description: The URI of the created resource.
+        size:
+            description: The number of instances in the group.
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjlwYm5OMFlXNWpaVjluY205MWNDSWdJ
+        blJsYzNRaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSjBaWEp5WVdadmNtMHRkR1Z6ZENJS0lD
+        QmtaWE5qY21sd2RHbHZiaUE5SUNKVVpYSnlZV1p2Y20wZ2RHVnpkQ0JwYm5OMFlXNWpaU0JuY205
+        MWNDSUtJQ0I2YjI1bElDQWdJQ0FnSUNBOUlDSjFjeTFqWlc1MGNtRnNNUzFoSWdvZ0lHNWxkSGR2
+        Y21zZ0lDQWdJRDBnWjI5dloyeGxYMk52YlhCMWRHVmZibVYwZDI5eWF5NWtaV1poZFd4MExuTmxi
+        R1pmYkdsdWF3cDlDZz09
+    import: !!binary |
+        Q2dwSmJuTjBZVzVqWlNCbmNtOTFjQ0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0I2YjI1bFlDQmhibVFnWUc1aGJXVmdJSGRwZEdnZ1lXNGdiM0IwYVc5dVlXd2dZSEJ5YjJwbFkz
+        UmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDJsdWMzUmhibU5sWDJkeWIzVndMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

@@ -1,0 +1,46 @@
+tfe_variable:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_variable'
+    sidebar_current: docs-resource-tfe-variable
+    description: Manages variables.
+    arguments:
+        key:
+            description: Name of the variable.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: Value of the variable.
+            required: true
+            policy: ''
+            notes: ''
+        category:
+            description: Whether this is a Terraform or environment variable.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the variable.
+            required: false
+            policy: ''
+            notes: ''
+        hcl:
+            description: Whether to evaluate the value of the variable as a string
+            required: false
+            policy: ''
+            notes: ''
+        sensitive:
+            description: Whether the value is sensitive. If true then the
+            required: false
+            policy: ''
+            notes: ''
+        workspace_id:
+            description: ID of the workspace that owns the variable.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the variable.
+    timeouts: {}

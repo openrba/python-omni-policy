@@ -1,0 +1,35 @@
+{
+    "vault_identity_group_alias": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_identity_group_alias resource",
+        "sidebar_current": "docs-vault-resource-identity-group-alias",
+        "description": "Creates an Identity Group Alias for Vault.",
+        "arguments": {
+            "name": {
+                "description": "Name of the group alias to create.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mount_accessor": {
+                "description": "Mount accessor of the authentication backend to which this alias belongs to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "canonical_id": {
+                "description": "ID of the group to which this is an alias.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The `id` of the created group alias."
+            }
+        },
+        "timeouts": {}
+    }
+}

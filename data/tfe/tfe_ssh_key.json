@@ -1,0 +1,31 @@
+{
+    "tfe_ssh_key": {
+        "status": "ASSESS",
+        "layout": "tfe",
+        "page_title": "Terraform Enterprise: tfe_ssh_key",
+        "sidebar_current": "docs-resource-tfe-ssh-key",
+        "description": "Manages SSH keys.",
+        "arguments": {
+            "name": {
+                "description": "Name to identify the SSH key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "organization": {
+                "description": "Name of the organization.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "The text of the SSH private key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

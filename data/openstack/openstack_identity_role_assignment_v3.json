@@ -1,0 +1,59 @@
+{
+    "openstack_identity_role_assignment_v3": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_identity_role_assignment_v3",
+        "sidebar_current": "docs-openstack-resource-identity-role-assignment-v3",
+        "description": "Manages a V3 Role assignment within OpenStack Keystone.",
+        "arguments": {
+            "domain_id": {
+                "description": "The domain to assign the role in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "group_id": {
+                "description": "The group to assign the role to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project_id": {
+                "description": "The project to assign the role in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_id": {
+                "description": "The user to assign the role to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role_id": {
+                "description": "The role to assign.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "domain_id": {
+                "description": "See Argument Reference above."
+            },
+            "project_id": {
+                "description": "See Argument Reference above."
+            },
+            "group_id": {
+                "description": "See Argument Reference above."
+            },
+            "user_id": {
+                "description": "See Argument Reference above."
+            },
+            "role_id": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

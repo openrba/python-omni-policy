@@ -1,0 +1,66 @@
+vault_okta_auth_backend:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_auth_backend resource'
+    sidebar_current: docs-vault-resource-okta-auth-backend
+    description: Managing Okta auth backends in Vault
+    arguments:
+        path:
+            description: Path to mount the Okta auth backend
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the auth backend
+            required: false
+            policy: ''
+            notes: ''
+        organization:
+            description: The Okta organization. This will be the first part of the
+                url `https://XXX.okta.com`
+            required: true
+            policy: ''
+            notes: ''
+        token:
+            description: The Okta API token. This is required to query Okta for user
+                group membership.
+            required: false
+            policy: ''
+            notes: ''
+        base_url:
+            description: 'The Okta url. Examples: oktapreview.com, okta.com'
+            required: false
+            policy: ''
+            notes: ''
+        bypass_okta_mfa:
+            description: When true, requests by Okta for a MFA check will be bypassed.
+                This also disallows certain status checks on the account, such as
+                whether the password is expired.
+            required: false
+            policy: ''
+            notes: ''
+        ttl:
+            description: Duration after which authentication will be expired.
+            required: false
+            policy: ''
+            notes: ''
+        max_ttl:
+            description: Maximum duration after which authentication will be expired
+            required: false
+            policy: ''
+            notes: ''
+        group:
+            description: Associate Okta groups with policies within Vault.
+            required: false
+            policy: ''
+            notes: ''
+        user:
+            description: Associate Okta users with groups or policies within Vault.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        accessor:
+            description: The mount accessor related to the auth mount. It is useful
+                for integration with [Identity Secrets Engine](https://www.vaultproject.io/docs/secrets/identity/index.html).
+    timeouts: {}

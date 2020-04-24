@@ -1,0 +1,55 @@
+gitlab_group:
+    status: ASSESS
+    layout: gitlab
+    page_title: 'GitLab: gitlab_group'
+    sidebar_current: docs-gitlab-resource-group
+    description: Creates and manages GitLab groups
+    arguments:
+        name:
+            description: The name of this group.
+            required: true
+            policy: ''
+            notes: ''
+        path:
+            description: The path of the group.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the group.
+            required: false
+            policy: ''
+            notes: ''
+        lfs_enabled:
+            description: Boolean, defaults to true.  Whether to enable LFS
+            required: false
+            policy: ''
+            notes: ''
+        request_access_enabled:
+            description: Boolean, defaults to false.  Whether to
+            required: false
+            policy: ''
+            notes: ''
+        visibility_level:
+            description: Set to `public` to create a public group.
+            required: false
+            policy: ''
+            notes: ''
+        parent_id:
+            description: Integer, id of the parent group (creates a nested group).
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique id assigned to the group by the GitLab server.  Serves
+                as a
+        full_path:
+            description: The full path of the group.
+        full_name:
+            description: The full name of the group.
+        web_url:
+            description: Web URL of the group.
+        runners_token:
+            description: The group level registration token to use during runner setup.
+    timeouts: {}

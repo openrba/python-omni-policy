@@ -1,0 +1,232 @@
+{
+    "market": {
+        "category": "Custom",
+        "entity": "market",
+        "scope": "global",
+        "maxlength": "2",
+        "rule": "az",
+        "allowed_values": {
+            "us": "United States",
+            "uk": "United Kingdom",
+            "in": "India",
+            "br": "Brazil",
+            "cn": "China"
+        }
+    },
+    "businessUnit": {
+        "category": "Custom",
+        "entity": "businessUnit",
+        "scope": "global",
+        "maxlength": "12",
+        "rule": "az",
+        "allowed_values": {
+            "businesssvc": "Business Services",
+            "insurance": "Insurance",
+            "healthcare": "Healthcare",
+            "government": "Government",
+            "iog": "Infrastructure & Operations",
+            "backoffice": "Back Office",
+            "datasci": "Data Science",
+            "linking": "Linking",
+            "dataeng": "Data Engineering",
+            "security": "Security",
+            "hpccplat": "HPCC Platform",
+            "hpccsyst": "HPCC Systems"
+        }
+    },
+    "environment": {
+        "category": "Custom",
+        "entity": "environment",
+        "scope": "global",
+        "maxlength": "7",
+        "rule": "az",
+        "allowed_values": {
+            "sandbox": "Sandbox",
+            "dev": "Development",
+            "test": "Testing (QA CERT)",
+            "staging": "Staging",
+            "uat": "UAT (CT)",
+            "prod": "Production",
+            "dr": "Disaster Recovery"
+        }
+    },
+    "onPrem": {
+        "category": "Custom",
+        "entity": "onPrem",
+        "scope": "global",
+        "maxlength": "16",
+        "rule": "az",
+        "allowed_values": {
+            "bocadc1": "Boca Raton, FL, USA Datacenter 1",
+            "alphadc1": "Alpharetta GA, USA Datacenter 1",
+            "kingofprussia1": "King of Prussia, PA USA Office 1"
+        }
+    },
+    "azureRegion": {
+        "category": "Custom",
+        "entity": "azureRegion",
+        "scope": "global",
+        "maxlength": "7",
+        "rule": "az",
+        "allowed_values": {
+            "uscent1": "Central US",
+            "useast1": "East US",
+            "useast2": "East US 2",
+            "usnoce1": "North Central US",
+            "ussoce1": "South Central US",
+            "uswest2": "West US 2",
+            "uswece1": "West Central US",
+            "uswest1": "West US",
+            "docent1": "US DoD Central",
+            "doeast1": "US DoD East",
+            "gvariz1": "US Gov Arizona",
+            "gvvirg1": "US Gov Virginia",
+            "gvtexs1": "US Gov Texas",
+            "gviowa1": "US Gov Iowa",
+            "sceast1": "US Sec East",
+            "scwest1": "US Sec West",
+            "cacent1": "Canada Central",
+            "caeast1": "Canada East",
+            "brsout1": "Brazil South",
+            "mxcent1": "Mexico Central",
+            "eunort1": "North Europe",
+            "euwest1": "West Europe",
+            "frcent1": "France Central",
+            "frsout1": "France South",
+            "gbsout1": "UK South",
+            "gbwest1": "UK West",
+            "denort1": "Germany North",
+            "dewece1": "Germany West Central",
+            "denoea1": "Germany Northeast",
+            "decent1": "Germany Central",
+            "chnort1": "Switzerland North",
+            "chwest1": "Switzerland West",
+            "nowest1": "Norway West",
+            "noeast1": "\u00e2\u20ac\u2039Norway East",
+            "escent1": "Spain Central",
+            "aseast1": "East Asia",
+            "assoea1": "Southeast Asia",
+            "aucent1": "Australia Central",
+            "aucent2": "Australia Central 2",
+            "aueast1": "Australia East",
+            "ausoea1": "Australia Southeast",
+            "cneast1": "China East 2",
+            "cnnort1": "China North 2",
+            "incent1": "Central India",
+            "inwest1": "West India",
+            "insout1": "South India",
+            "jpeast1": "Japan East",
+            "jpwest1": "Japan West",
+            "krcent1": "Korea Central",
+            "krsout1": "Korea South",
+            "zanort1": "South Africa North",
+            "zawest1": "South Africa West",
+            "ilcent1": "Israel Central",
+            "aecent1": "UAE Central",
+            "aenort1": "UAE North",
+            "qacent1": "Qatar Central"
+        }
+    },
+    "subscriptionType": {
+        "category": "Custom",
+        "entity": "subscriptionType",
+        "scope": "global",
+        "maxlength": "12",
+        "rule": "az",
+        "allowed_values": {
+            "production": "Production",
+            "nonprod": "Non-Production"
+        }
+    },
+    "resourceGroupType": {
+        "category": "Custom",
+        "entity": "resourceGroupType",
+        "scope": "global",
+        "maxlength": "12",
+        "rule": "az",
+        "allowed_values": {
+            "shared": "Shared Services",
+            "app": "Application"
+        }
+    },
+    "subnetType": {
+        "category": "Custom",
+        "entity": "subnetType",
+        "scope": "global",
+        "maxlength": "24",
+        "rule": "a-z",
+        "allowed_values": {
+            "azure-appgateway": "Application Gateway",
+            "azure-vpngateway": "VPN Gateway",
+            "azure-firewall": "Azure Firewall",
+            "azure-rediscache": "Redis Cache",
+            "azure-sqldatabase": "Azure SQL Database",
+            "azure-containers": "Azure Container Instance",
+            "azure-apimanagement": "API Management",
+            "azure-appservice": "App Service Environment",
+            "azure-logicapps": "Azure Logic Apps",
+            "azure-dedicatedhsm": "Azure Dedicated HSM",
+            "azure-netappfiles": "Azure Netapp Files",
+            "iaas-public": "IaaS Public",
+            "iaas-outbound": "IaaS Outbound",
+            "iaas-private": "IaaS Private"
+        }
+    },
+    "virtualNetGwType": {
+        "category": "Custom",
+        "entity": "virtualNetworkGatewayType",
+        "scope": "global",
+        "maxlength": "12",
+        "rule": "az",
+        "allowed_values": {
+            "expressroute": "Express Route Connection",
+            "vpn": "Virtual Private Network"
+        }
+    },
+    "productGroup": {
+        "category": "Custom",
+        "entity": "productGroup",
+        "scope": "global",
+        "maxlength": "12",
+        "rule": "az",
+        "allowed_values": {
+            "accurint": "Accurint Delivery Platform",
+            "bridger": "Bridger Delivery Platform",
+            "iyetek": "Iyetek Delivery Platform",
+            "core": "Core Services Platform"
+        }
+    },
+    "serviceName": {
+        "category": "Custom",
+        "entity": "serviceName",
+        "scope": "global",
+        "maxlength": "12",
+        "rule": "az",
+        "allowed_values": {
+            "webesp": "Esp for Accurint Web"
+        }
+    },
+    "productName": {
+        "category": "Custom",
+        "entity": "productName",
+        "scope": "global",
+        "maxlength": "16",
+        "rule": "az",
+        "allowed_values": {
+            "accurintweb": "Accurint Web Product",
+            "accurintapi": "Accurint API Product",
+            "accurintle": "Accurint for Law Enforcement"
+        }
+    },
+    "tagName": {
+        "category": "Custom",
+        "entity": "tagName",
+        "scope": "global",
+        "maxlength": "24",
+        "rule": "a-z",
+        "allowed_values": {
+            "environment": "Environment",
+            "business-unit": "Business Unit"
+        }
+    }
+}

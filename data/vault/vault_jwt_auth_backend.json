@@ -1,0 +1,139 @@
+{
+    "vault_jwt_auth_backend": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_jwt_auth_backend resource",
+        "sidebar_current": "docs-vault-resource-jwt-auth-backend",
+        "description": "Managing JWT/OIDC auth backends in Vault",
+        "arguments": {
+            "path": {
+                "description": "Path to mount the JWT/OIDC auth backend",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "Type of auth backend. Should be one of `jwt` or `oidc`. Default - `jwt`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the auth backend",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "oidc_discovery_url": {
+                "description": "The OIDC Discovery URL, without any .well-known component (base path). Cannot be used in combination with `jwt_validation_pubkeys`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "oidc_discovery_ca_pem": {
+                "description": "The CA certificate or chain of certificates, in PEM format, to use to validate connections to the OIDC Discovery URL. If not set, system certificates are used",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "oidc_client_id": {
+                "description": "Client ID used for OIDC backends",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "oidc_client_secret": {
+                "description": "Client Secret used for OIDC backends",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "jwks_url": {
+                "description": "JWKS URL to use to authenticate signatures. Cannot be used with \"oidc_discovery_url\" or \"jwt_validation_pubkeys\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "jwks_ca_pem": {
+                "description": "The CA certificate or chain of certificates, in PEM format, to use to validate connections to the JWKS URL. If not set, system certificates are used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "jwt_validation_pubkeys": {
+                "description": "A list of PEM-encoded public keys to use to authenticate signatures locally. Cannot be used in combination with `oidc_discovery_url`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_issuer": {
+                "description": "The value against which to match the iss claim in a JWT",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "jwt_supported_algs": {
+                "description": "A list of supported signing algorithms. Vault 1.1.0 defaults to [RS256] but future or past versions of Vault may differ",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_role": {
+                "description": "The default role to use if none is provided during login",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_lease_ttl": {
+                "description": "Specifies the default time-to-live.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_lease_ttl": {
+                "description": "Specifies the maximum time-to-live.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audit_non_hmac_response_keys": {
+                "description": "Specifies the list of keys that will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audit_non_hmac_request_keys": {
+                "description": "Specifies the list of keys that will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "listing_visibility": {
+                "description": "Specifies whether to show this mount in",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "passthrough_request_headers": {
+                "description": "List of headers to whitelist and",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_response_headers": {
+                "description": "List of headers to whitelist and allowing",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "token_type": {
+                "description": "Specifies the type of tokens that should be returned by",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

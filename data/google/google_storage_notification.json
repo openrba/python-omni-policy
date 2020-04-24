@@ -1,0 +1,57 @@
+{
+    "google_storage_notification": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Storage",
+        "layout": "google",
+        "page_title": "Google: google_storage_notification",
+        "sidebar_current": "docs-google-storage-notification",
+        "description": "Creates a new notification configuration on a specified bucket.",
+        "arguments": {
+            "bucket": {
+                "description": "The name of the bucket.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "payload_format": {
+                "description": "The desired content of the Payload. One of `\"JSON_API_V1\"` or `\"NONE\"`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "topic": {
+                "description": "The Cloud PubSub topic to which this subscription publishes. Expects either the ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "custom_attributes": {
+                "description": " A set of key/value attribute pairs to attach to each Cloud PubSub message published for this notification subscription",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "event_types": {
+                "description": "List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: `\"OBJECT_FINALIZE\"`, `\"OBJECT_METADATA_UPDATE\"`, `\"OBJECT_DELETE\"`, `\"OBJECT_ARCHIVE\"`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "object_name_prefix": {
+                "description": "Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "notification_id": {
+                "description": "The ID of the created notification."
+            },
+            "self_link": {
+                "description": "The URI of the created resource."
+            }
+        },
+        "timeouts": {}
+    }
+}

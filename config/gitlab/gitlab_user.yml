@@ -1,0 +1,65 @@
+gitlab_user:
+    status: ASSESS
+    layout: gitlab
+    page_title: 'GitLab: gitlab_user'
+    sidebar_current: docs-gitlab-resource-user
+    description: Creates and manages GitLab users
+    arguments:
+        name:
+            description: The name of the user.
+            required: true
+            policy: ''
+            notes: ''
+        username:
+            description: The username of the user.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The password of the user.
+            required: true
+            policy: ''
+            notes: ''
+        email:
+            description: The e-mail address of the user.
+            required: true
+            policy: ''
+            notes: ''
+        is_admin:
+            description: Boolean, defaults to false.  Whether to enable administrative
+                priviledges
+            required: false
+            policy: ''
+            notes: ''
+        projects_limit:
+            description: Integer, defaults to 0.  Number of projects user can create.
+            required: false
+            policy: ''
+            notes: ''
+        can_create_group:
+            description: Boolean, defaults to false. Whether to allow the user to
+                create groups.
+            required: false
+            policy: ''
+            notes: ''
+        skip_confirmation:
+            description: Boolean, defaults to true. Whether to skip confirmation.
+            required: false
+            policy: ''
+            notes: ''
+        is_external:
+            description: Boolean, defaults to false. Whether a user has access only
+                to some internal or private projects. External users can only access
+                projects to which they are explicitly granted access.
+            required: false
+            policy: ''
+            notes: ''
+        reset_password:
+            description: Boolean, defaults to false. Send user password reset link.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique id assigned to the user by the GitLab server.
+    timeouts: {}

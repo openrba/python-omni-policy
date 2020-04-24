@@ -1,0 +1,32 @@
+rancher_registry:
+    status: ASSESS
+    layout: rancher
+    page_title: 'Rancher: rancher_registry'
+    sidebar_current: docs-rancher-resource-registry
+    description: Provides a Rancher Registy resource. This can be used to create registries
+        for rancher environments and retrieve their information.
+    arguments:
+        name:
+            description: The name of the registry.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A registry description.
+            required: false
+            policy: ''
+            notes: ''
+        environment_id:
+            description: The ID of the environment to create the registry for.
+            required: true
+            policy: ''
+            notes: ''
+        server_address:
+            description: The server address for the registry.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: (Computed) The ID of the resource.
+    timeouts: {}

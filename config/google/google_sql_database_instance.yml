@@ -1,0 +1,263 @@
+google_sql_database_instance:
+    status: ASSESS
+    subcategory: Cloud SQL
+    layout: google
+    page_title: 'Google: google_sql_database_instance'
+    sidebar_current: docs-google-sql-database-instance
+    description: Creates a new SQL database instance in Google Cloud SQL.
+    arguments:
+        region:
+            description: The region the instance will sit in. Note, Cloud SQL is not
+            required: false
+            policy: ''
+            notes: ''
+        settings:
+            description: The settings to use for the database. The
+            required: true
+            policy: ''
+            notes: ''
+        database_version:
+            description: The MySQL, PostgreSQL or
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A name for this whitelist entry.
+            required: false
+            policy: ''
+            notes: ''
+        master_instance_name:
+            description: The name of the instance that will act as
+            required: false
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the resource belongs. If it
+            required: false
+            policy: ''
+            notes: ''
+        replica_configuration:
+            description: The configuration for replication. The
+            required: false
+            policy: ''
+            notes: ''
+        root_password:
+            description: Initial root password. Required for MS SQL Server, ignored
+                by MySQL and PostgreSQL.
+            required: false
+            policy: ''
+            notes: ''
+        tier:
+            description: The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
+            required: true
+            policy: ''
+            notes: ''
+        activation_policy:
+            description: This specifies when the instance should be
+            required: false
+            policy: ''
+            notes: ''
+        authorized_gae_applications:
+            description: This property is only applicable to First Generation instances.
+            required: false
+            policy: ''
+            notes: ''
+        availability_type:
+            description: This specifies whether a PostgreSQL instance
+            required: false
+            policy: ''
+            notes: ''
+        crash_safe_replication:
+            description: This property is only applicable to First Generation instances.
+            required: false
+            policy: ''
+            notes: ''
+        disk_autoresize:
+            description: Configuration to increase storage size automatically.  Note
+                that future `terraform apply` calls will attempt to resize the disk
+                to the value specified in `disk_size` - if this is set, do not set
+                `disk_size`.
+            required: false
+            policy: ''
+            notes: ''
+        disk_size:
+            description: The size of data disk, in GB. Size of a running instance
+                cannot be reduced but can be increased.
+            required: false
+            policy: ''
+            notes: ''
+        disk_type:
+            description: 'The type of data disk: PD_SSD or PD_HDD.'
+            required: false
+            policy: ''
+            notes: ''
+        pricing_plan:
+            description: Pricing plan for this instance, can only be `PER_USE`.
+            required: false
+            policy: ''
+            notes: ''
+        replication_type:
+            description: This property is only applicable to First Generation instances.
+            required: false
+            policy: ''
+            notes: ''
+        user_labels:
+            description: A set of key/value user label pairs to assign to the instance.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: A CIDR notation IPv4 or IPv6 address that is allowed to
+            required: true
+            policy: ''
+            notes: ''
+        binary_log_enabled:
+            description: True if binary logging is enabled. If
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: True if backup configuration is enabled.
+            required: false
+            policy: ''
+            notes: ''
+        start_time:
+            description: '`HH:MM` format time indicating when backup'
+            required: false
+            policy: ''
+            notes: ''
+        ipv4_enabled:
+            description: Whether this Cloud SQL instance should be assigned
+            required: false
+            policy: ''
+            notes: ''
+        private_network:
+            description: The VPC network from which the Cloud SQL
+            required: false
+            policy: ''
+            notes: ''
+        require_ssl:
+            description: True if mysqld should default to `REQUIRE X509`
+            required: false
+            policy: ''
+            notes: ''
+        expiration_time:
+            description: The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+            required: false
+            policy: ''
+            notes: ''
+        follow_gae_application:
+            description: A GAE application whose zone to remain
+            required: false
+            policy: ''
+            notes: ''
+        zone:
+            description: The preferred compute engine
+            required: false
+            policy: ''
+            notes: ''
+        day:
+            description: Day of week (`1-7`), starting on Monday
+            required: false
+            policy: ''
+            notes: ''
+        hour:
+            description: Hour of day (`0-23`), ignored if `day` not set
+            required: false
+            policy: ''
+            notes: ''
+        update_track:
+            description: Receive updates earlier (`canary`
+            required: false
+            policy: ''
+            notes: ''
+        ca_certificate:
+            description: PEM representation of the trusted CA's x509
+            required: false
+            policy: ''
+            notes: ''
+        client_certificate:
+            description: PEM representation of the slave's x509
+            required: false
+            policy: ''
+            notes: ''
+        client_key:
+            description: PEM representation of the slave's private key. The
+            required: false
+            policy: ''
+            notes: ''
+        connect_retry_interval:
+            description: The number of seconds
+            required: false
+            policy: ''
+            notes: ''
+        dump_file_path:
+            description: Path to a SQL file in GCS from which slave
+            required: false
+            policy: ''
+            notes: ''
+        failover_target:
+            description: Specifies if the replica is the failover target.
+            required: false
+            policy: ''
+            notes: ''
+        master_heartbeat_period:
+            description: Time in ms between replication
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: Password for the replication connection.
+            required: false
+            policy: ''
+            notes: ''
+        sslCipher:
+            description: Permissible ciphers for use in SSL encryption.
+            required: false
+            policy: ''
+            notes: ''
+        username:
+            description: Username for replication connection.
+            required: false
+            policy: ''
+            notes: ''
+        verify_server_certificate:
+            description: True if the master's common name
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        self_link:
+            description: The URI of the created resource.
+        connection_name:
+            description: The connection name of the instance to be used in
+        service_account_email_address:
+            description: The service account email address assigned to the
+        ip_address.0.ip_address:
+            description: The IPv4 address assigned.
+        ip_address.0.time_to_retire:
+            description: The time this IP address will be retired, in RFC
+        ip_address.0.type:
+            description: The type of this IP address.
+        first_ip_address:
+            description: The first IPv4 address of any type assigned. This is to
+        public_ip_address:
+            description: The first public (`PRIMARY`) IPv4 address assigned. This
+                is
+        private_ip_address:
+            description: The first private (`PRIVATE`) IPv4 address assigned. This
+                is
+        settings.version:
+            description: Used to make sure changes to the `settings` block are
+        server_ca_cert.0.cert:
+            description: The CA Certificate used to connect to the SQL Instance via
+                SSL.
+        server_ca_cert.0.common_name:
+            description: The CN valid for the CA Cert.
+        server_ca_cert.0.create_time:
+            description: Creation time of the CA Cert.
+        server_ca_cert.0.expiration_time:
+            description: Expiration time of the CA Cert.
+        server_ca_cert.0.sha1_fingerprint:
+            description: SHA Fingerprint of the CA Cert.
+    timeouts: {}

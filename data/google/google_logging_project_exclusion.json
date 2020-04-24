@@ -1,0 +1,44 @@
+{
+    "google_logging_project_exclusion": {
+        "status": "ASSESS",
+        "subcategory": "Cloud (Stackdriver) Logging",
+        "layout": "google",
+        "page_title": "Google: google_logging_project_exclusion",
+        "sidebar_current": "docs-google-logging-project-exclusion",
+        "description": "Manages a project-level logging exclusion.",
+        "arguments": {
+            "filter": {
+                "description": "The filter to apply when excluding logs. Only log entries that match the filter are excluded.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the logging exclusion.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A human-readable description.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disabled": {
+                "description": "Whether this exclusion rule should be disabled or not. This defaults to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project to create the exclusion in. If omitted, the project associated with the provider is",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

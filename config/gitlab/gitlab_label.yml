@@ -1,0 +1,33 @@
+gitlab_label:
+    status: ASSESS
+    layout: gitlab
+    page_title: 'GitLab: gitlab_label'
+    sidebar_current: docs-gitlab-resource-label
+    description: Creates and manages labels for GitLab projects
+    arguments:
+        project:
+            description: The name or id of the project to add the label to.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the label.
+            required: true
+            policy: ''
+            notes: ''
+        color:
+            description: 'The color of the label given in 6-digit hex notation with
+                leading ''#'' sign (e.g. #FFAABB'
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: The description of the label.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique id assigned to the label by the GitLab server
+                (the name of the label).
+    timeouts: {}

@@ -1,0 +1,20 @@
+github_organization_project:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_organization_project'
+    description: Creates and manages projects for GitHub organizations
+    arguments:
+        name:
+            description: The name of the project.
+            required: true
+            policy: ''
+            notes: ''
+        body:
+            description: The body of the project.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        url:
+            description: URL of the project
+    timeouts: {}

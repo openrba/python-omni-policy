@@ -1,0 +1,43 @@
+{
+    "postgresql_postgresql_grant": {
+        "status": "ASSESS",
+        "layout": "postgresql",
+        "page_title": "PostgreSQL: postgresql_grant",
+        "sidebar_current": "docs-postgresql-resource-postgresql_grant",
+        "description": "Creates and manages privileges given to a user for a database schema.",
+        "arguments": {
+            "role": {
+                "description": "The name of the role to grant privileges on.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "database": {
+                "description": "The database to grant privileges on for this role.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "schema": {
+                "description": "The database schema to grant privileges on for this role.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object_type": {
+                "description": "The PostgreSQL object type to grant the privileges on (one of: table, sequence).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "privileges": {
+                "description": "The list of privileges to grant.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

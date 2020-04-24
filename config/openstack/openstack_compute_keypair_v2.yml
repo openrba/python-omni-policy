@@ -1,0 +1,39 @@
+openstack_compute_keypair_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_compute_keypair_v2'
+    sidebar_current: docs-openstack-resource-compute-keypair-v2
+    description: Manages a V2 keypair resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Compute client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the keypair. Changing this creates a new
+            required: true
+            policy: ''
+            notes: ''
+        public_key:
+            description: A pregenerated OpenSSH-formatted public key.
+            required: false
+            policy: ''
+            notes: ''
+        value_specs:
+            description: Map of additional options.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        public_key:
+            description: See Argument Reference above.
+        fingerprint:
+            description: The fingerprint of the public key.
+        private_key:
+            description: The generated private key when no public key is specified.
+    timeouts: {}

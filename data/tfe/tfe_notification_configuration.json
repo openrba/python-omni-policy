@@ -1,0 +1,59 @@
+{
+    "tfe_notification_configuration": {
+        "status": "ASSESS",
+        "layout": "tfe",
+        "page_title": "Terraform Enterprise: tfe_notification_configuration",
+        "sidebar_current": "docs-resource-tfe-notification-configuration",
+        "description": "Manages notifications configurations.",
+        "arguments": {
+            "name": {
+                "description": "Name of the notification configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "destination_type": {
+                "description": "The type of notification configuration payload to send. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Whether the notification configuration should be enabled or not.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "token": {
+                "description": "A write-only secure token for the notification configuration, which can",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "triggers": {
+                "description": "The array of triggers for which this notification configuration will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The HTTP or HTTPS URL of the notification configuration where notification",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "workspace_external_id": {
+                "description": "The external id of the workspace that owns the notification configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the notification configuration."
+            }
+        },
+        "timeouts": {}
+    }
+}

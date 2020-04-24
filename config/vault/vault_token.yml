@@ -1,0 +1,85 @@
+vault_token:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_token resource'
+    sidebar_current: docs-vault-resource-token
+    description: Writes token for Vault
+    arguments:
+        role_name:
+            description: The token role name
+            required: false
+            policy: ''
+            notes: ''
+        policies:
+            description: List of policies to attach to this token
+            required: false
+            policy: ''
+            notes: ''
+        no_parent:
+            description: Flag to create a token without parent
+            required: false
+            policy: ''
+            notes: ''
+        no_default_policy:
+            description: Flag to not attach the default policy to this token
+            required: false
+            policy: ''
+            notes: ''
+        renewable:
+            description: Flag to allow to renew this token
+            required: false
+            policy: ''
+            notes: ''
+        ttl:
+            description: The TTL period of this token
+            required: false
+            policy: ''
+            notes: ''
+        explicit_max_ttl:
+            description: The explicit max TTL of this token
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: String containing the token display name
+            required: false
+            policy: ''
+            notes: ''
+        num_uses:
+            description: The number of allowed uses of this token
+            required: false
+            policy: ''
+            notes: ''
+        period:
+            description: The period of this token
+            required: false
+            policy: ''
+            notes: ''
+        renew_min_lease:
+            description: The minimal lease to renew this token
+            required: false
+            policy: ''
+            notes: ''
+        renew_increment:
+            description: The renew increment
+            required: false
+            policy: ''
+            notes: ''
+        pgp_key:
+            description: The PGP key with which the `client_token` will be encrypted.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        lease_duration:
+            description: String containing the token lease duration if present in
+                state file
+        lease_started:
+            description: String containing the token lease started time if present
+                in state file
+        client_token:
+            description: String containing the client token if stored in present file
+        encrypted_client_token:
+            description: String containing the client token encrypted with the given
+                `pgp_key` if stored in present file
+    timeouts: {}

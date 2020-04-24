@@ -1,0 +1,119 @@
+{
+    "openstack_lb_monitor_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_lb_monitor_v2",
+        "sidebar_current": "docs-openstack-resource-lb-monitor-v2",
+        "description": "Manages a V2 monitor resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pool_id": {
+                "description": "The id of the pool that this monitor will be assigned to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The Name of the Monitor.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "Required for admins. The UUID of the tenant who owns",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of probe, which is PING, TCP, HTTP, HTTPS,",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "delay": {
+                "description": "The time, in seconds, between sending probes to members.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout": {
+                "description": "Maximum number of seconds for a monitor to wait for a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_retries": {
+                "description": "Number of permissible ping failures before",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_retries_down": {
+                "description": "Number of permissible ping failures befor changing the member's",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "url_path": {
+                "description": "Required for HTTP(S",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expected_codes": {
+                "description": "Required for HTTP(S",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_state_up": {
+                "description": "The administrative state of the monitor.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique ID for the monitor."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "type": {
+                "description": "See Argument Reference above."
+            },
+            "delay": {
+                "description": "See Argument Reference above."
+            },
+            "timeout": {
+                "description": "See Argument Reference above."
+            },
+            "max_retries": {
+                "description": "See Argument Reference above."
+            },
+            "max_retries_down": {
+                "description": "See Argument Reference above."
+            },
+            "url_path": {
+                "description": "See Argument Reference above."
+            },
+            "http_method": {
+                "description": "See Argument Reference above."
+            },
+            "expected_codes": {
+                "description": "See Argument Reference above."
+            },
+            "admin_state_up": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,25 @@
+vault_rgp_policy:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_rgp_policy resource'
+    sidebar_current: docs-vault-resource-rgp-policy
+    description: Writes Sentinel role governing policies for Vault
+    arguments:
+        name:
+            description: The name of the policy
+            required: true
+            policy: ''
+            notes: ''
+        enforcement_level:
+            description: Enforcement level of Sentinel policy. Can be either `advisory`
+                or `soft-mandatory` or `hard-mandatory`
+            required: true
+            policy: ''
+            notes: ''
+        policy:
+            description: String containing a Sentinel policy
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

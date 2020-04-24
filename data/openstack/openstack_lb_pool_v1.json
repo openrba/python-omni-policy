@@ -1,0 +1,113 @@
+{
+    "openstack_lb_pool_v1": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_lb_pool_v1",
+        "sidebar_current": "docs-openstack-resource-lb-pool-v1",
+        "description": "Manages a V1 load balancer pool resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the pool. Changing this updates the name of",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": " The protocol used by the pool members, you can use",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The network on which the members of the pool will be",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lb_method": {
+                "description": "The algorithm used to distribute load between the",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "lb_provider": {
+                "description": "The backend load balancing provider. For example:",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The owner of the member. Required if admin wants to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "monitor_ids": {
+                "description": "A list of IDs of monitors to associate with the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "member": {
+                "description": "An existing node to add to the pool. Changing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "address": {
+                "description": "The IP address of the member. Changing this creates a",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "An integer representing the port on which the member is",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_state_up": {
+                "description": "The administrative state of the member.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "protocol": {
+                "description": "See Argument Reference above."
+            },
+            "subnet_id": {
+                "description": "See Argument Reference above."
+            },
+            "lb_method": {
+                "description": "See Argument Reference above."
+            },
+            "lb_provider": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "monitor_id": {
+                "description": "See Argument Reference above."
+            },
+            "member": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

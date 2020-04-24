@@ -1,0 +1,40 @@
+github_repository_webhook:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_repository_webhook'
+    description: Creates and manages repository webhooks within GitHub organizations
+    arguments:
+        repository:
+            description: The repository of the webhook.
+            required: true
+            policy: ''
+            notes: ''
+        events:
+            description: A list of events which should trigger the webhook. See a
+                list of [available events](https://developer.github.com/v3/activity/events/types/).
+            required: true
+            policy: ''
+            notes: ''
+        configuration:
+            description: key/value pair of configuration for this webhook. Available
+                keys are `url`, `content_type`, `secret` and `insecure_ssl`. `secret`
+                is [the shared secret, see API documentation](https://developer.github.com/v3/repos/hooks/#create-a-hook).
+            required: true
+            policy: ''
+            notes: ''
+        active:
+            description: Indicate of the webhook should receive events. Defaults to
+                `true`.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The type of the webhook. `web` is the default and the only
+                option.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        url:
+            description: URL of the webhook
+    timeouts: {}

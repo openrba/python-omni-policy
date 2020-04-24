@@ -1,0 +1,317 @@
+{
+    "openstack_compute_instance_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_compute_instance_v2",
+        "sidebar_current": "docs-openstack-resource-compute-instance-v2",
+        "description": "Manages a V2 VM instance resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to create the server instance. If",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The human-readable",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "flavor_id": {
+                "description": "The flavor ID of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "flavor_name": {
+                "description": "The name of the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_data": {
+                "description": "The user data to provide when launching the instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_groups": {
+                "description": "An array of one or more security group names",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The availability zone in which to create",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network": {
+                "description": "An array of one or more networks to attach to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "Metadata key/value pairs to make available from",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "config_drive": {
+                "description": "Whether to use the config_drive feature to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_pass": {
+                "description": "The administrative password to assign to the server.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_pair": {
+                "description": "The name of a key pair to put on the server. The key",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "block_device": {
+                "description": "Configuration of block devices. The block_device",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scheduler_hints": {
+                "description": "Provide the Nova scheduler with hints on how",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "personality": {
+                "description": "Customize the personality of an instance by",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "stop_before_destroy": {
+                "description": "Whether to try stop instance gracefully",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "force_delete": {
+                "description": "Whether to force the OpenStack instance to be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "power_state": {
+                "description": "Provide the VM state. Only 'active' and 'shutoff'",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A set of string tags for the instance. Changing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vendor_options": {
+                "description": "Map of additional vendor-specific options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "uuid": {
+                "description": "The UUID of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The port UUID of a",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fixed_ip_v4": {
+                "description": "Specifies a fixed IPv4 address to be used on this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "access_network": {
+                "description": "Specifies if this network should be used for",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_type": {
+                "description": "The source type of the device. Must be one of",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "boot_index": {
+                "description": "The boot index of the volume. It defaults to 0.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "destination_type": {
+                "description": "The type that gets created. Possible values",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "delete_on_termination": {
+                "description": "Delete the volume / block device upon",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "volume_type": {
+                "description": "The volume type that will be used, for example SSD",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "device_type": {
+                "description": "The low-level device type that will be used. Most",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_bus": {
+                "description": "The low-level disk bus that will be used. Most common",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "group": {
+                "description": "A UUID of a Server Group. The instance will be placed",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "different_host": {
+                "description": "A list of instance UUIDs. The instance will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "same_host": {
+                "description": "A list of instance UUIDs. The instance will be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "query": {
+                "description": "A conditional query that a compute node must pass in",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_cell": {
+                "description": "The name of a cell to host the instance.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "build_near_host_ip": {
+                "description": "An IP Address in CIDR form. The instance",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "additional_properties": {
+                "description": "Arbitrary key/value pairs of additional",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "file": {
+                "description": "The absolute path of the destination file.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "content": {
+                "description": "The contents of the file. Limited to 255 bytes.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ignore_resize_confirmation": {
+                "description": "Boolean to control whether",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "detach_ports_before_destroy": {
+                "description": "Whether to try to detach all attached",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "access_ip_v4": {
+                "description": "The first detected Fixed IPv4 address."
+            },
+            "access_ip_v6": {
+                "description": "The first detected Fixed IPv6 address."
+            },
+            "metadata": {
+                "description": "See Argument Reference above."
+            },
+            "security_groups": {
+                "description": "See Argument Reference above."
+            },
+            "flavor_id": {
+                "description": "See Argument Reference above."
+            },
+            "flavor_name": {
+                "description": "See Argument Reference above."
+            },
+            "network/uuid": {
+                "description": "See Argument Reference above."
+            },
+            "network/name": {
+                "description": "See Argument Reference above."
+            },
+            "network/port": {
+                "description": "See Argument Reference above."
+            },
+            "network/fixed_ip_v4": {
+                "description": "The Fixed IPv4 address of the Instance on that"
+            },
+            "network/fixed_ip_v6": {
+                "description": "The Fixed IPv6 address of the Instance on that"
+            },
+            "network/mac": {
+                "description": "The MAC address of the NIC on that network."
+            },
+            "all_metadata": {
+                "description": "Contains all instance metadata, even metadata not set"
+            },
+            "tags": {
+                "description": "See Argument Reference above."
+            },
+            "all_tags": {
+                "description": "The collection of tags assigned on the instance, which have"
+            }
+        },
+        "timeouts": {}
+    }
+}

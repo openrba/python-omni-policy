@@ -1,0 +1,83 @@
+openstack_keymanager_order_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_keymanager_order_v1'
+    sidebar_current: docs-openstack-resource-keymanager-order-v1
+    description: Manages a V1 Barbican order resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V1 KeyManager client.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of key to be generated. Must be one of `asymmetric`,
+                `key`.
+            required: true
+            policy: ''
+            notes: ''
+        meta:
+            description: Dictionary containing the order metadata used to generate
+                the order. The structure is described below.
+            required: true
+            policy: ''
+            notes: ''
+        algorithm:
+            description: Algorithm to use for key generation.
+            required: true
+            policy: ''
+            notes: ''
+        bit_length:
+            description: '- Bit lenght of key to be generated.'
+            required: true
+            policy: ''
+            notes: ''
+        expiration:
+            description: This is a UTC timestamp in ISO 8601 format YYYY-MM-DDTHH:MM:SSZ.
+                If set, the secret will not be available after this time.
+            required: false
+            policy: ''
+            notes: ''
+        mode:
+            description: The mode to use for key generation.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the secret set by the user.
+            required: false
+            policy: ''
+            notes: ''
+        payload_content_type:
+            description: The media type for the content of the secrets payload. Must
+                be one of `text/plain`, `text/plain;charset=utf-8`, `text/plain; charset=utf-8`,
+                `application/octet-stream`, `application/pkcs8`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        container_ref:
+            description: The container reference / where to find the container.
+        created:
+            description: The date the order was created.
+        creator_id:
+            description: The creator of the order.
+        meta:
+            description: See Argument Reference above.
+        order_ref:
+            description: The order reference / where to find the order.
+        region:
+            description: See Argument Reference above.
+        secret_ref:
+            description: The secret reference / where to find the secret.
+        status:
+            description: The status of the order.
+        sub_status:
+            description: The sub status of the order.
+        sub_status_message:
+            description: The sub status message of the order.
+        type:
+            description: The type of the order.
+        updated:
+            description: The date the order was last updated.
+    timeouts: {}

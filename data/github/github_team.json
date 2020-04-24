@@ -1,0 +1,49 @@
+{
+    "github_team": {
+        "status": "ASSESS",
+        "layout": "github",
+        "page_title": "GitHub: github_team",
+        "description": "Provides a GitHub team resource.",
+        "arguments": {
+            "name": {
+                "description": "The name of the team.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the team.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "privacy": {
+                "description": "The level of privacy for the team. Must be one of `secret` or `closed`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parent_team_id": {
+                "description": "The ID of the parent team, if this is a nested team.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ldap_dn": {
+                "description": "The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the created team."
+            },
+            "slug": {
+                "description": "The slug of the created team, which may or may not differ from `name`,"
+            }
+        },
+        "timeouts": {}
+    }
+}

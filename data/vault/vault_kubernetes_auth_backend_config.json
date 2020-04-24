@@ -1,0 +1,37 @@
+{
+    "vault_kubernetes_auth_backend_config": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_kubernetes_auth_backend_config resource",
+        "sidebar_current": "docs-vault-resource-kubernetes-auth-backend-config",
+        "description": "Manages Kubernetes auth backend configs in Vault.",
+        "arguments": {
+            "kubernetes_host": {
+                "description": "Host must be a host string, a host:port pair, or a URL to the base of the Kubernetes API server.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "kubernetes_ca_cert": {
+                "description": "PEM encoded CA cert for use by the TLS client used to talk with the Kubernetes API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "token_reviewer_jwt": {
+                "description": "A service account JWT used to access the TokenReview API to validate other JWTs during login. If not set the JWT used for login will be used to access the API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pem_keys": {
+                "description": "List of PEM-formatted public keys or certificates used to verify the signatures of Kubernetes service account JWTs. If a certificate is given, its public key will be extracted. Not every installation of Kubernetes exposes these keys.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

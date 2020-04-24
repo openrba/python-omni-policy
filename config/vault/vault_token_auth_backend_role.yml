@@ -1,0 +1,42 @@
+vault_token_auth_backend_role:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_token_auth_backend_role resource'
+    sidebar_current: docs-vault-resource-token-auth-backend-role
+    description: Manages Token auth backend roles in Vault.
+    arguments:
+        role_name:
+            description: The name of the role.
+            required: true
+            policy: ''
+            notes: ''
+        allowed_policies:
+            description: List of allowed policies for given role.
+            required: false
+            policy: ''
+            notes: ''
+        disallowed_policies:
+            description: List of disallowed policies for given role.
+            required: false
+            policy: ''
+            notes: ''
+        orphan:
+            description: If true, tokens created against this policy will be orphan
+                tokens.
+            required: false
+            policy: ''
+            notes: ''
+        renewable:
+            description: Wether to disable the ability of the token to be renewed
+                past its initial TTL.
+            required: false
+            policy: ''
+            notes: ''
+        path_suffix:
+            description: Tokens created against this role will have the given suffix
+                as part of their path in addition to the role name.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

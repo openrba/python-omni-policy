@@ -1,0 +1,164 @@
+{
+    "gitlab_project": {
+        "status": "ASSESS",
+        "layout": "gitlab",
+        "page_title": "GitLab: gitlab_project",
+        "sidebar_current": "docs-gitlab-resource-project-x",
+        "description": "Creates and manages projects within GitLab groups or within your user",
+        "arguments": {
+            "name": {
+                "description": "The name of the project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "path": {
+                "description": "The path of the repository.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace_id": {
+                "description": "The namespace (group or user",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Tags (topics",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_branch": {
+                "description": "The default branch for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "issues_enabled": {
+                "description": "Enable issue tracking for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "merge_requests_enabled": {
+                "description": "Enable merge requests for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pipelines_enabled": {
+                "description": "Enable pipelines for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "approvals_before_merge": {
+                "description": "Number of merge request approvals required for merging. Default is 0.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wiki_enabled": {
+                "description": "Enable wiki for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snippets_enabled": {
+                "description": "Enable snippets for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "container_registry_enabled": {
+                "description": "Enable container registry for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lfs_enabled": {
+                "description": "Enable LFS for the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "visibility_level": {
+                "description": "Set to `public` to create a public project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "merge_method": {
+                "description": "Set to `ff` to create fast-forward merges",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "only_allow_merge_if_pipeline_succeeds": {
+                "description": "Set to true if you want allow merges only if a pipeline succeeds.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "only_allow_merge_if_all_discussions_are_resolved": {
+                "description": "Set to true if you want allow merges only if all discussions are resolved.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shared_runners_enabled": {
+                "description": "Enable shared runners for this project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shared_with_groups": {
+                "description": "Enable sharing the project with a list of groups (maps).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "archived": {
+                "description": "Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "initialize_with_readme": {
+                "description": "Create master branch with first commit containing a README.md file.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Integer that uniquely identifies the project within the gitlab install."
+            },
+            "ssh_url_to_repo": {
+                "description": "URL that can be provided to `git clone` to clone the"
+            },
+            "http_url_to_repo": {
+                "description": "URL that can be provided to `git clone` to clone the"
+            },
+            "web_url": {
+                "description": "URL that can be used to find the project in a browser."
+            },
+            "runners_token": {
+                "description": "Registration token to use during runner setup."
+            },
+            "shared_with_groups": {
+                "description": "List of the groups the project is shared with."
+            }
+        },
+        "timeouts": {}
+    }
+}

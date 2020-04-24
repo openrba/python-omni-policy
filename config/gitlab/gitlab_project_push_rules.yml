@@ -1,0 +1,62 @@
+gitlab_project_push_rules:
+    status: ASSESS
+    layout: gitlab
+    page_title: 'GitLab: gitlab_project_push_rules'
+    sidebar_current: docs-gitlab-resource-project-push-rules
+    description: Creates and manages push rules for GitLab projects
+    arguments:
+        project:
+            description: The name or id of the project to add the push rules to.
+            required: false
+            policy: ''
+            notes: ''
+        commit_message_regex:
+            description: All commit messages must match this regex, e.g. "Fixed \d+\..*"
+            required: false
+            policy: ''
+            notes: ''
+        deny_delete_tag:
+            description: Deny deleting a tag
+            required: false
+            policy: ''
+            notes: ''
+        member_check:
+            description: Restrict commits by author (email
+            required: false
+            policy: ''
+            notes: ''
+        prevent_secrets:
+            description: GitLab will reject any files that are likely to contain secrets
+            required: false
+            policy: ''
+            notes: ''
+        branch_name_regex:
+            description: All branch names must match this regex, e.g. "(feature|hotfix)\/*"
+            required: false
+            policy: ''
+            notes: ''
+        author_email_regex:
+            description: All commit author emails must match this regex, e.g. "@my-company.com$"
+            required: false
+            policy: ''
+            notes: ''
+        file_name_regex:
+            description: All commited filenames must not match this regex, e.g. "(jar|exe)$"
+            required: false
+            policy: ''
+            notes: ''
+        max_file_size:
+            description: Maximum file size (MB)
+            required: false
+            policy: ''
+            notes: ''
+        commit_committer_check:
+            description: Users can only push commits to this repository that were
+                committed with one of their own verified emails
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique id assigned to the push rules by the GitLab server.
+    timeouts: {}

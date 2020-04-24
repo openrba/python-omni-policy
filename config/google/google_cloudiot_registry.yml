@@ -1,0 +1,91 @@
+google_cloudiot_registry:
+    status: ASSESS
+    subcategory: Cloud IoT Core
+    layout: google
+    page_title: 'Google: google_cloudiot_registry'
+    sidebar_current: docs-google-cloudiot-registry-x
+    description: Creates a device registry in Google's Cloud IoT Core platform
+    arguments:
+        name:
+            description: A unique name for the resource, required by device registry.
+            required: true
+            policy: ''
+            notes: ''
+        project:
+            description: The project in which the resource belongs. If it is not provided,
+                the provider project is used.
+            required: false
+            policy: ''
+            notes: ''
+        region:
+            description: The Region in which the created address should reside. If
+                it is not provided, the provider region is used.
+            required: false
+            policy: ''
+            notes: ''
+        event_notification_configs:
+            description: List of configurations for event notification, such as
+            required: false
+            policy: ''
+            notes: ''
+        state_notification_config:
+            description: A PubSub topic to publish device state updates. Structure
+                is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        mqtt_config:
+            description: Activate or deactivate MQTT. Structure is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        http_config:
+            description: Activate or deactivate HTTP. Structure is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        credentials:
+            description: 'List of public key certificates to authenticate devices.
+                Structure is documented below. '
+            required: false
+            policy: ''
+            notes: ''
+        pubsub_topic_name:
+            description: PubSub topic name to publish device state updates.
+            required: true
+            policy: ''
+            notes: ''
+        subfolder_matches:
+            description: If the subfolder name matches this string
+            required: false
+            policy: ''
+            notes: ''
+        mqtt_enabled_state:
+            description: The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
+            required: true
+            policy: ''
+            notes: ''
+        http_enabled_state:
+            description: The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
+            required: true
+            policy: ''
+            notes: ''
+        public_key_certificate:
+            description: The certificate format and data.
+            required: true
+            policy: ''
+            notes: ''
+        format:
+            description: The field allows only  `X509_CERTIFICATE_PEM`.
+            required: true
+            policy: ''
+            notes: ''
+        certificate:
+            description: The certificate data.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: an identifier for the resource with format `projects/{{project}}/locations/{{region}}/registries/{{name}}`
+    timeouts: {}

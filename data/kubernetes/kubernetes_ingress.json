@@ -1,0 +1,25 @@
+{
+    "kubernetes_ingress": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: kubernetes_ingress",
+        "sidebar_current": "docs-kubernetes-resource-ingress-x",
+        "description": "Ingress is a collection of rules that allow inbound connections to reach the endpoints defined by a backend. An Ingress can be configured to give services externally-reachable urls, load balance traffic, terminate SSL, offer name based virtual hosting etc.",
+        "arguments": {
+            "metadata": {
+                "description": "Standard ingress's metadata. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "spec": {
+                "description": "Spec defines the behavior of a ingress. https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,31 @@
+docker_volume:
+    status: ASSESS
+    layout: docker
+    page_title: 'Docker: docker_volume'
+    sidebar_current: docs-docker-resource-volume
+    description: Creates and destroys docker volumes.
+    arguments:
+        name:
+            description: The name of the Docker volume (generated if not
+            required: false
+            policy: ''
+            notes: ''
+        labels:
+            description: User-defined key/value metadata.
+            required: false
+            policy: ''
+            notes: ''
+        driver:
+            description: Driver type for the volume (defaults to local).
+            required: false
+            policy: ''
+            notes: ''
+        driver_opts:
+            description: Options specific to the driver.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        mountpoint:
+            description: The mountpoint of the volume.
+    timeouts: {}

@@ -1,0 +1,25 @@
+{
+    "kubernetes_cron_job": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: kubernetes_cron_job",
+        "sidebar_current": "docs-kubernetes-resource-cron-job",
+        "description": "A Cron Job creates Jobs on a time-based schedule. One CronJob object is like one line of a crontab (cron table) file.",
+        "arguments": {
+            "metadata": {
+                "description": "Standard resource's metadata. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "spec": {
+                "description": "Spec defines the behavior of a CronJob. https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

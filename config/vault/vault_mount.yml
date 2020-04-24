@@ -1,0 +1,56 @@
+vault_mount:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_mount resource'
+    sidebar_current: docs-vault-resource-mount
+    description: Managing the mounting of secret backends in Vault
+    arguments:
+        path:
+            description: Where the secret backend will be mounted
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: Type of the backend, such as "aws"
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: Human-friendly description of the mount
+            required: false
+            policy: ''
+            notes: ''
+        default_lease_ttl_seconds:
+            description: Default lease duration for tokens and secrets in seconds
+            required: false
+            policy: ''
+            notes: ''
+        max_lease_ttl_seconds:
+            description: Maximum possible lease duration for tokens and secrets in
+                seconds
+            required: false
+            policy: ''
+            notes: ''
+        local:
+            description: Boolean flag that can be explicitly set to true to enforce
+                local mount in HA environment
+            required: false
+            policy: ''
+            notes: ''
+        options:
+            description: Specifies mount type specific options that are passed to
+                the backend
+            required: false
+            policy: ''
+            notes: ''
+        seal_wrap:
+            description: Boolean flag that can be explicitly set to true to enable
+                seal wrapping for the mount, causing values stored by the mount to
+                be wrapped by the seal's encryption capability
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        accessor:
+            description: The accessor for this mount.
+    timeouts: {}

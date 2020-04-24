@@ -1,0 +1,47 @@
+{
+    "datadog_integration_aws": {
+        "status": "ASSESS",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_integration_aws",
+        "sidebar_current": "docs-datadog-resource-integration_aws",
+        "description": "Provides a Datadog - Amazon Web Services integration resource. This can be used to create and manage the integrations.",
+        "arguments": {
+            "account_id": {
+                "description": "Your AWS Account ID without dashes.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role_name": {
+                "description": "Your Datadog role delegation name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "filter_tags": {
+                "description": "Array of EC2 tags (in the form `key:value`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "host_tags": {
+                "description": "Array of tags (in the form key:value",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "account_specific_namespace_rules": {
+                "description": "Enables or disables metric collection for specific AWS namespaces for this AWS account only. A list of namespaces can be found at the [available namespace rules API endpoint](https://docs.datadoghq.com/api/?lang=bash#list-namespace-rules).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "external_id": {
+                "description": "AWS External ID"
+            }
+        },
+        "timeouts": {}
+    }
+}

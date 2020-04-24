@@ -1,0 +1,43 @@
+rancher_environment:
+    status: ASSESS
+    layout: rancher
+    page_title: 'Rancher: rancher_environment'
+    sidebar_current: docs-rancher-resource-environment
+    description: Provides a Rancher Environment resource. This can be used to create
+        and manage environments on rancher.
+    arguments:
+        name:
+            description: The name of the environment.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: An environment description.
+            required: false
+            policy: ''
+            notes: ''
+        orchestration:
+            description: Must be one of **cattle**, **swarm**, **mesos**, **windows**
+                or **kubernetes**. This is a helper for setting the project_template_ids
+                for the included Rancher templates. This will conflict with project_template_id
+                setting. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        project_template_id:
+            description: This can be any valid project template ID. If this is set,
+                then orchestration can not be. Changing this forces a new resource
+                to be created.
+            required: false
+            policy: ''
+            notes: ''
+        member:
+            description: Members to add to the environment.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the environment (ie `1a11`) that can be used in
+                other Terraform resources such as Rancher Stack definitions.
+    timeouts: {}

@@ -1,0 +1,72 @@
+openstack_compute_flavor_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_compute_flavor_v2'
+    sidebar_current: docs-openstack-resource-compute-flavor-v2
+    description: Manages a V2 flavor resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Compute client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the flavor. Changing this creates a new
+            required: true
+            policy: ''
+            notes: ''
+        ram:
+            description: The amount of RAM to use, in megabytes. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        vcpus:
+            description: The number of virtual CPUs to use. Changing this creates
+            required: true
+            policy: ''
+            notes: ''
+        disk:
+            description: The amount of disk space in gigabytes to use for the root
+            required: true
+            policy: ''
+            notes: ''
+        swap:
+            description: The amount of disk space in megabytes to use. If
+            required: false
+            policy: ''
+            notes: ''
+        rx_tx_factor:
+            description: RX/TX bandwith factor. The default is 1. Changing
+            required: false
+            policy: ''
+            notes: ''
+        is_public:
+            description: Whether the flavor is public. Changing this creates
+            required: false
+            policy: ''
+            notes: ''
+        extra_specs:
+            description: Key/Value pairs of metadata for the flavor.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        ram:
+            description: See Argument Reference above.
+        vcpus:
+            description: See Argument Reference above.
+        disk:
+            description: See Argument Reference above.
+        swap:
+            description: See Argument Reference above.
+        rx_tx_factor:
+            description: See Argument Reference above.
+        is_public:
+            description: See Argument Reference above.
+        extra_specs:
+            description: See Argument Reference above.
+    timeouts: {}

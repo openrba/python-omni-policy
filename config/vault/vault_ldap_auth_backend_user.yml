@@ -1,0 +1,29 @@
+vault_ldap_auth_backend_user:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_auth_backend resource'
+    sidebar_current: docs-vault-resource-ldap-auth-backend-user
+    description: Managing users in an LDAP auth backend in Vault
+    arguments:
+        username:
+            description: The LDAP username
+            required: true
+            policy: ''
+            notes: ''
+        policies:
+            description: Policies which should be granted to user
+            required: false
+            policy: ''
+            notes: ''
+        groups:
+            description: Override LDAP groups which should be granted to user
+            required: false
+            policy: ''
+            notes: ''
+        backend:
+            description: Path to the authentication backend
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,79 @@
+{
+    "docker_network": {
+        "status": "ASSESS",
+        "layout": "docker",
+        "page_title": "Docker: docker_network",
+        "sidebar_current": "docs-docker-resource-network",
+        "description": "Manages a Docker Network.",
+        "arguments": {
+            "name": {
+                "description": "The name of the Docker network.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "See [Labels](#labels-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "check_duplicate": {
+                "description": "Requests daemon to check for networks",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "driver": {
+                "description": "Name of the network driver to use. Defaults to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "options": {
+                "description": "Network specific options to be used by",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "internal": {
+                "description": "Restrict external access to the network.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "attachable": {
+                "description": "Enable manual container attachment to the network.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ingress": {
+                "description": "Create swarm routing-mesh network.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipv6": {
+                "description": "Enable IPv6 networking.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipam_driver": {
+                "description": "Driver used by the custom IP scheme of the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipam_config": {
+                "description": "See [IPAM config](#ipam_config-1",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

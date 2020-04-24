@@ -1,0 +1,43 @@
+{
+    "vault_kubernetes_auth_backend_role": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_kubernetes_auth_backend_role resource",
+        "sidebar_current": "docs-vault-resource-kubernetes-auth-backend-role",
+        "description": "Manages Kubernetes auth backend roles in Vault.",
+        "arguments": {
+            "role_name": {
+                "description": "Name of the role.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_service_account_names": {
+                "description": "List of service account names able to access this role. If set to `[\"*\"]` all names are allowed, both this and bound_service_account_namespaces can not be \"*\".",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_service_account_namespaces": {
+                "description": "List of namespaces allowed to access this role. If set to `[\"*\"]` all namespaces are allowed, both this and bound_service_account_names can not be set to \"*\".",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend": {
+                "description": "Unique name of the kubernetes backend to configure.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audience": {
+                "description": "Audience claim to verify in the JWT.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

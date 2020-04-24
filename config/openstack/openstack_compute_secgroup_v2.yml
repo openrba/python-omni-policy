@@ -1,0 +1,67 @@
+openstack_compute_secgroup_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_compute_secgroup_v2'
+    sidebar_current: docs-openstack-resource-compute-secgroup-v2
+    description: Manages a V2 security group resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Compute client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the security group. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description for the security group. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        rule:
+            description: A rule describing how the security group operates. The
+            required: false
+            policy: ''
+            notes: ''
+        from_port:
+            description: An integer representing the lower bound of the port
+            required: true
+            policy: ''
+            notes: ''
+        to_port:
+            description: An integer representing the upper bound of the port
+            required: true
+            policy: ''
+            notes: ''
+        ip_protocol:
+            description: The protocol type that will be allowed. Changing
+            required: true
+            policy: ''
+            notes: ''
+        cidr:
+            description: Required if `from_group_id` or `self` is empty. The IP range
+            required: false
+            policy: ''
+            notes: ''
+        from_group_id:
+            description: Required if `cidr` or `self` is empty. The ID of a
+            required: false
+            policy: ''
+            notes: ''
+        self:
+            description: Required if `cidr` and `from_group_id` is empty. If true,
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        rule:
+            description: See Argument Reference above.
+    timeouts: {}

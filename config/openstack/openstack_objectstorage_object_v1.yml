@@ -1,0 +1,127 @@
+openstack_objectstorage_object_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_objectstorage_object_v1'
+    sidebar_current: docs-openstack-resource-objectstorage-object-v1
+    description: Manages a V1 container object resource within OpenStack.
+    arguments:
+        container_name:
+            description: A unique (within an account
+            required: true
+            policy: ''
+            notes: ''
+        content:
+            description: A string representing the content of the object. Conflicts
+                with
+            required: false
+            policy: ''
+            notes: ''
+        content_disposition:
+            description: 'A string which specifies the override behavior for '
+            required: false
+            policy: ''
+            notes: ''
+        content_encoding:
+            description: A string representing the value of the Content-Encoding
+            required: false
+            policy: ''
+            notes: ''
+        content_type:
+            description: A string which sets the MIME type for the object.
+            required: false
+            policy: ''
+            notes: ''
+        copy_from:
+            description: 'A string representing the name of an object '
+            required: false
+            policy: ''
+            notes: ''
+        delete_after:
+            description: An integer representing the number of seconds after which
+                the
+            required: false
+            policy: ''
+            notes: ''
+        delete_at:
+            description: 'An string representing the date when the system removes
+                the object. '
+            required: false
+            policy: ''
+            notes: ''
+        detect_content_type:
+            description: 'If set to true, Object Storage guesses the content '
+            required: false
+            policy: ''
+            notes: ''
+        etag:
+            description: Used to trigger updates. The only meaningful value is ${md5(file("path/to/file"))}.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the object.
+            required: true
+            policy: ''
+            notes: ''
+        object_manifest:
+            description: 'A string set to specify that this is a dynamic large '
+            required: false
+            policy: ''
+            notes: ''
+        region:
+            description: The region in which to create the container. If
+            required: false
+            policy: ''
+            notes: ''
+        source:
+            description: A string representing the local path of a file which will
+                be used
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        content_length:
+            description: 'If the operation succeeds, this value is zero (0) or the '
+        content_type:
+            description: 'If the operation succeeds, this value is the MIME type of
+                the object. '
+        date:
+            description: 'The date and time the system responded to the request, using
+                the preferred '
+        etag:
+            description: 'Whatever the value given in argument, will be overriden
+                by the MD5 checksum of the uploaded object content. The value is not
+                quoted. '
+        last_modified:
+            description: 'The date and time when the object was last modified. The
+                date and time '
+        static_large_object:
+            description: True if object is a multipart_manifest.
+        trans_id:
+            description: 'A unique transaction ID for this request. Your service provider
+                might '
+        container_name:
+            description: See Argument Reference above.
+        content:
+            description: See Argument Reference above.
+        content_disposition:
+            description: See Argument Reference above.
+        content_encoding:
+            description: See Argument Reference above.
+        copy_from:
+            description: See Argument Reference above.
+        delete_after:
+            description: See Argument Reference above.
+        delete_at:
+            description: See Argument Reference above.
+        detect_content_type:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        object_manifest:
+            description: See Argument Reference above.
+        region:
+            description: See Argument Reference above.
+        source:
+            description: See Argument Reference above.
+    timeouts: {}

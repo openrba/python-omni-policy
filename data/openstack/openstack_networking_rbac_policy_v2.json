@@ -1,0 +1,62 @@
+{
+    "openstack_networking_rbac_policy_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_rbac_policy_v2",
+        "sidebar_current": "docs-openstack-resource-networking-rbac-policy-v2",
+        "description": "Creates an RBAC policy for an OpenStack V2 resource.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "Action for the RBAC policy. Can either be",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object_id": {
+                "description": "The ID of the `object_type` resource. An",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object_type": {
+                "description": "The type of the object that the RBAC policy",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "target_tenant": {
+                "description": "The ID of the tenant to which the RBAC policy",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "action": {
+                "description": "See Argument Reference above."
+            },
+            "object_id": {
+                "description": "See Argument Reference above."
+            },
+            "object_type": {
+                "description": "See Argument Reference above."
+            },
+            "target_tenant": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "The owner of the RBAC policy."
+            }
+        },
+        "timeouts": {}
+    }
+}

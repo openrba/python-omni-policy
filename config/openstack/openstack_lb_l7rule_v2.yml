@@ -1,0 +1,85 @@
+openstack_lb_l7rule_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_lb_l7rule_v2'
+    sidebar_current: docs-openstack-resource-lb-l7rule-v2
+    description: Manages a V2 l7rule resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: Required for admins. The UUID of the tenant who owns
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Human-readable description for the L7 Rule.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The L7 Rule type - can either be COOKIE, FILE\_TYPE, HEADER,
+            required: true
+            policy: ''
+            notes: ''
+        compare_type:
+            description: The comparison type for the L7 rule - can either be
+            required: true
+            policy: ''
+            notes: ''
+        l7policy_id:
+            description: The ID of the L7 Policy to query. Changing this creates a
+                new
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The value to use for the comparison. For example, the file
+                type to
+            required: true
+            policy: ''
+            notes: ''
+        key:
+            description: The key to use for the comparison. For example, the name
+                of the cookie to
+            required: false
+            policy: ''
+            notes: ''
+        invert:
+            description: When true the logic of the rule is inverted. For example,
+                with invert
+            required: false
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: The administrative state of the L7 Rule.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique ID for the L7 Rule.
+        region:
+            description: See Argument Reference above.
+        tenant_id:
+            description: See Argument Reference above.
+        type:
+            description: See Argument Reference above.
+        compare_type:
+            description: See Argument Reference above.
+        l7policy_id:
+            description: See Argument Reference above.
+        value:
+            description: See Argument Reference above.
+        key:
+            description: See Argument Reference above.
+        invert:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+        listener_id:
+            description: The ID of the Listener owning this resource.
+    timeouts: {}

@@ -1,0 +1,83 @@
+{
+    "rancher_stack": {
+        "status": "ASSESS",
+        "layout": "rancher",
+        "page_title": "Rancher: rancher_stack",
+        "sidebar_current": "docs-rancher-resource-stack",
+        "description": "Provides a Rancher Stack resource. This can be used to create and manage stacks on rancher.",
+        "arguments": {
+            "name": {
+                "description": "The name of the stack.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A stack description.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment_id": {
+                "description": "The ID of the environment to create the stack for.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "docker_compose": {
+                "description": "The `docker-compose.yml` content to apply for the stack.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rancher_compose": {
+                "description": "The `rancher-compose.yml` content to apply for the stack.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment": {
+                "description": "The environment to apply to interpret the docker-compose and rancher-compose files.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "catalog_id": {
+                "description": "The catalog ID to link this stack to. When provided, `docker_compose` and `rancher_compose` will be retrieved from the catalog unless they are overridden.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "The scope to attach the stack to. Must be one of **user** or **system**. Defaults to **user**.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "start_on_create": {
+                "description": "Whether to start the stack automatically.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "finish_upgrade": {
+                "description": "Whether to automatically finish upgrades to this stack.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "(Computed) The ID of the resource."
+            },
+            "rendered_docker_compose": {
+                "description": "The interpolated `docker_compose` applied to the stack."
+            },
+            "rendered_rancher_compose": {
+                "description": "The interpolated `rancher_compose` applied to the stack."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "vault_aws_auth_backend_login": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_aws_auth_backend_login resource",
+        "sidebar_current": "docs-vault-resource-aws-auth-backend-login",
+        "description": "Manages Vault tokens acquired using the AWS auth backend.",
+        "arguments": {
+            "backend": {
+                "description": "The unique name of the AWS auth backend. Defaults to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "The name of the AWS auth backend role to create tokens",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identity": {
+                "description": "The base64-encoded EC2 instance identity document to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "signature": {
+                "description": "The base64-encoded SHA256 RSA signature of the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pkcs7": {
+                "description": "The PKCS#7 signature of the identity document to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "nonce": {
+                "description": "The unique nonce to be used for login requests. Can be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_http_request_method": {
+                "description": "The HTTP method used in the signed IAM",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_request_url": {
+                "description": "The base64-encoded HTTP URL used in the signed",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_request_body": {
+                "description": "The base64-encoded body of the signed",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_request_headers": {
+                "description": "The base64-encoded, JSON serialized",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "lease_duration": {
+                "description": "The duration in seconds the token will be valid, relative"
+            },
+            "lease_start_time": {
+                "description": "The approximate time at which the token was created,"
+            },
+            "renewable": {
+                "description": "Set to true if the token can be extended through renewal."
+            },
+            "metadata": {
+                "description": "A map of information returned by the Vault server about the"
+            },
+            "auth_type": {
+                "description": "The authentication type used to generate this token."
+            },
+            "policies": {
+                "description": "The Vault policies assigned to this token."
+            },
+            "accessor": {
+                "description": "The token's accessor."
+            },
+            "client_token": {
+                "description": "The token returned by Vault."
+            }
+        },
+        "timeouts": {}
+    }
+}

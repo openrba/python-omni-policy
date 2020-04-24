@@ -1,0 +1,73 @@
+{
+    "postgresql_postgresql_database": {
+        "status": "ASSESS",
+        "layout": "postgresql",
+        "page_title": "PostgreSQL: postgresql_database",
+        "sidebar_current": "docs-postgresql-resource-postgresql_database",
+        "description": "Creates and manages a database on a PostgreSQL server.",
+        "arguments": {
+            "name": {
+                "description": "The name of the database. Must be unique on the PostgreSQL",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "owner": {
+                "description": "The role name of the user who will own the database, or",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tablespace_name": {
+                "description": "The name of the tablespace that will be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "connection_limit": {
+                "description": "How many concurrent connections can be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_connections": {
+                "description": "If `false` then no one can connect to this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "is_template": {
+                "description": "If `true`, then this database can be cloned by any",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "template": {
+                "description": "The name of the template database from which to create",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encoding": {
+                "description": "Character set encoding to use in the database.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lc_collate": {
+                "description": "Collation order (`LC_COLLATE`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "lc_ctype": {
+                "description": "Character classification (`LC_CTYPE`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

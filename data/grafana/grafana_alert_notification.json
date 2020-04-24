@@ -1,0 +1,41 @@
+{
+    "grafana_alert_notification": {
+        "status": "ASSESS",
+        "layout": "grafana",
+        "page_title": "Grafana: grafana_alert_notification",
+        "sidebar_current": "docs-grafana-alert-notification",
+        "description": "The grafana_alert_notification resource allows a Grafana Alert Notification channel to be created.",
+        "arguments": {
+            "name": {
+                "description": "The name of the alert notification channel.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of the alert notification channel.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "is_default": {
+                "description": "Is this the default channel for all your alerts.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "settings": {
+                "description": "Additional settings, for full reference lookup [Grafana HTTP API documentation](http://docs.grafana.org/http_api/alerting).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the resource"
+            }
+        },
+        "timeouts": {}
+    }
+}

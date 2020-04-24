@@ -1,0 +1,77 @@
+vault_auth_backend:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_auth_backend resource'
+    sidebar_current: docs-vault-resource-auth-backend
+    description: Writes auth methods for Vault
+    arguments:
+        type:
+            description: The name of the auth method type
+            required: true
+            policy: ''
+            notes: ''
+        path:
+            description: "The path to mount the auth method \u2014 this defaults to\
+                \ the name of the type"
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the auth method
+            required: false
+            policy: ''
+            notes: ''
+        local:
+            description: Specifies if the auth method is local only.
+            required: false
+            policy: ''
+            notes: ''
+        tune:
+            description: Extra configuration block. Structure is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        default_lease_ttl:
+            description: Specifies the default time-to-live.
+            required: false
+            policy: ''
+            notes: ''
+        max_lease_ttl:
+            description: Specifies the maximum time-to-live.
+            required: false
+            policy: ''
+            notes: ''
+        audit_non_hmac_response_keys:
+            description: Specifies the list of keys that will
+            required: false
+            policy: ''
+            notes: ''
+        audit_non_hmac_request_keys:
+            description: Specifies the list of keys that will
+            required: false
+            policy: ''
+            notes: ''
+        listing_visibility:
+            description: Specifies whether to show this mount in
+            required: false
+            policy: ''
+            notes: ''
+        passthrough_request_headers:
+            description: List of headers to whitelist and
+            required: false
+            policy: ''
+            notes: ''
+        allowed_response_headers:
+            description: List of headers to whitelist and allowing
+            required: false
+            policy: ''
+            notes: ''
+        token_type:
+            description: Specifies the type of tokens that should be returned by
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        accessor:
+            description: The accessor for this auth method
+    timeouts: {}

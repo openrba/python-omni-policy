@@ -1,0 +1,146 @@
+{
+    "google_compute_region_instance_group_manager": {
+        "status": "ASSESS",
+        "subcategory": "Compute Engine",
+        "layout": "google",
+        "page_title": "Google: google_compute_region_instance_group_manager",
+        "sidebar_current": "docs-google-compute-region_instance-group-manager",
+        "description": "Manages an Regional Instance Group within GCE.",
+        "arguments": {
+            "base_instance_name": {
+                "description": "The base instance name to use for",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "Application versions managed by this instance group. Each",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "- Version name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "The region where the managed instance group resides.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "An optional textual description of the instance",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "named_port": {
+                "description": "The named port configuration. See the section below",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The ID of the project in which the resource belongs. If it",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_size": {
+                "description": "- The number of instances calculated as a fixed number or a percentage depending on the settings. Structure is documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_pools": {
+                "description": "The full URL of all target pools to which new",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wait_for_instances": {
+                "description": "Whether to wait for all instances to be created/updated before",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_healing_policies": {
+                "description": "The autohealing policies for this managed instance",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "update_policy": {
+                "description": "The update policy for this managed instance group. Structure is documented below. For more information, see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/updating-managed-instance-groups",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "distribution_policy_zones": {
+                "description": "The distribution policy for this managed instance",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "minimal_action": {
+                "description": "- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "- The type of update process. You can specify either `PROACTIVE` so that the instance group manager proactively executes actions in order to bring instances to their target versions or `OPPORTUNISTIC` so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_redistribution_type": {
+                "description": "- The instance redistribution policy for regional managed instance groups. Valid values are: `\"PROACTIVE\"`, `\"NONE\"`. If `PROACTIVE` (default), the group attempts to maintain an even distribution of VM instances across zones in the region. If `NONE`, proactive redistribution is disabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_surge_percent": {
+                "description": "that can be created above the specified targetSize during the update process. Conflicts with `max_surge_fixed`. Percent value is only allowed for regional managed instance groups with size at least 10.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_unavailable_percent": {
+                "description": "that can be unavailable during the update process. Conflicts with `max_unavailable_fixed`. Percent value is only allowed for regional managed instance groups with size at least 10.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port": {
+                "description": "The port number.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "health_check": {
+                "description": "The health check resource that signals autohealing.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "initial_delay_sec": {
+                "description": "The number of seconds that the managed instance group waits before",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "instance_template": {
+                "description": "- The full URL to an instance template from which all new instances of this version will be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "google_usage_export_bucket": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_project_usage_export_bucket",
+        "sidebar_current": "docs-google-project-usage-export-bucket",
+        "description": "Manages a project's usage export bucket.",
+        "arguments": {
+            "bucket_name": {
+                "description": "The bucket to store reports in.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix": {
+                "description": "A prefix for the reports, for instance, the project name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project to set the export bucket on. If it is not provided, the provider project is used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

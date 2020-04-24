@@ -1,0 +1,25 @@
+{
+    "gitlab_pipeline_trigger": {
+        "status": "ASSESS",
+        "layout": "gitlab",
+        "page_title": "GitLab: gitlab_pipeline_trigger",
+        "sidebar_current": "docs-gitlab-resource-pipeline-trigger",
+        "description": "Creates and manages pipeline triggers for GitLab projects",
+        "arguments": {
+            "project": {
+                "description": "The name or id of the project to add the trigger to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the pipeline trigger.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,26 @@
+vault_identity_entity_policies:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_identity_entity_policies resource'
+    sidebar_current: docs-vault-resource-identity-entity-policies
+    description: Manages policies for an Identity Entity for Vault.
+    arguments:
+        policies:
+            description: List of policies to assign to the entity
+            required: true
+            policy: ''
+            notes: ''
+        entity_id:
+            description: Entity ID to assign policies to.
+            required: true
+            policy: ''
+            notes: ''
+        exclusive:
+            description: Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        entity_name:
+            description: The name of the entity that are assigned the policies.
+    timeouts: {}

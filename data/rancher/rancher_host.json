@@ -1,0 +1,49 @@
+{
+    "rancher_host": {
+        "status": "ASSESS",
+        "layout": "rancher",
+        "page_title": "Rancher: rancher_host",
+        "sidebar_current": "docs-rancher-resource-host",
+        "description": "Provides a Rancher Host resource. This can be used to manage and delete hosts on Rancher.",
+        "arguments": {
+            "id": {
+                "description": "The ID of the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the host.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A host description.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment_id": {
+                "description": "The ID of the environment the host is associated to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "hostname": {
+                "description": "The host name. Used as the primary key to detect the host ID.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "A dictionary of labels to apply to the host. Computed internal labels are excluded from that list.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

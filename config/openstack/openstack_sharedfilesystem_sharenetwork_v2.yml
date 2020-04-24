@@ -1,0 +1,65 @@
+openstack_sharedfilesystem_sharenetwork_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: sharedfilesystem_sharenetwork_v2'
+    sidebar_current: docs-openstack-resource-sharedfilesystem-sharenetwork-v2
+    description: Configure a Shared File System share network.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Shared File System client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name for the share network. Changing this updates the
+                name
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: The human-readable description for the share network.
+            required: false
+            policy: ''
+            notes: ''
+        neutron_net_id:
+            description: The UUID of a neutron network when setting up or updating
+            required: true
+            policy: ''
+            notes: ''
+        neutron_subnet_id:
+            description: The UUID of the neutron subnet when setting up or
+            required: true
+            policy: ''
+            notes: ''
+        security_service_ids:
+            description: The list of security service IDs to associate with
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique ID for the Share Network.
+        region:
+            description: See Argument Reference above.
+        project_id:
+            description: The owner of the Share Network.
+        name:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        neutron_net_id:
+            description: See Argument Reference above.
+        neutron_subnet_id:
+            description: See Argument Reference above.
+        security_service_ids:
+            description: See Argument Reference above.
+        network_type:
+            description: The share network type. Can either be VLAN, VXLAN, GRE, or
+                flat.
+        segmentation_id:
+            description: The share network segmentation ID.
+        cidr:
+            description: The share network CIDR.
+        ip_version:
+            description: The IP version of the share network. Can either be 4 or 6.
+    timeouts: {}

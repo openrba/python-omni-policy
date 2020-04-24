@@ -1,0 +1,77 @@
+openstack_orchestration_stack_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_orchestration_stack_v1'
+    sidebar_current: docs-openstack-resource-orchestration-stack-v1
+    description: Manages a V1 stack resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to create the stack. If
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the stack. It must start with an
+            required: true
+            policy: ''
+            notes: ''
+        template_opts:
+            description: Template key/value pairs to associate with the
+            required: true
+            policy: ''
+            notes: ''
+        environment_opts:
+            description: Environment key/value pairs to associate with
+            required: false
+            policy: ''
+            notes: ''
+        disable_rollback:
+            description: Enables or disables deletion of all stack
+            required: false
+            policy: ''
+            notes: ''
+        parameters:
+            description: User-defined key/value pairs as parameters to pass
+            required: false
+            policy: ''
+            notes: ''
+        timeout:
+            description: The timeout for stack action in minutes.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A list of tags to assosciate with the Stack
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        name:
+            description: See Argument Reference above.
+        disable_rollback:
+            description: See Argument Reference above.
+        timeout:
+            description: See Argument Reference above.
+        parameters:
+            description: See Argument Reference above.
+        tags:
+            description: See Argument Reference above.
+        capabilities:
+            description: List of stack capabilities for stack.
+        description:
+            description: The description of the stack resource.
+        notification_topics:
+            description: List of notification topics for stack.
+        status:
+            description: The status of the stack.
+        status_reason:
+            description: The reason for the current status of the stack.
+        template_description:
+            description: The description of the stack template.
+        outputs:
+            description: A list of stack outputs.
+        creation_time:
+            description: The date and time when the resource was created. The date
+        updated_time:
+            description: The date and time when the resource was updated. The date
+    timeouts: {}

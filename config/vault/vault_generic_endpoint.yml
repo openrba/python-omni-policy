@@ -1,0 +1,38 @@
+vault_generic_endpoint:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_generic_endpoint resource'
+    sidebar_current: docs-vault-resource-generic-endpoint
+    description: Writes arbitrary data to a given path in Vault
+    arguments:
+        path:
+            description: The full logical path at which to write the given
+            required: true
+            policy: ''
+            notes: ''
+        data_json:
+            description: String containing a JSON-encoded object that will be
+            required: true
+            policy: ''
+            notes: ''
+        disable_read:
+            description: True/false. Set this to true if your vault
+            required: false
+            policy: ''
+            notes: ''
+        disable_delete:
+            description: True/false. Set this to true if your
+            required: false
+            policy: ''
+            notes: ''
+        ignore_absent_fields:
+            description: True/false. If set to true,
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        write_data_json:
+            description: The JSON data returned by the write operation.
+        write_data:
+            description: A map whose keys are the top-level data keys
+    timeouts: {}

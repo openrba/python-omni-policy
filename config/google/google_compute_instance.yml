@@ -1,0 +1,90 @@
+google_compute_instance:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_instance'
+    sidebar_current: docs-google-compute-instance-x
+    description: Manages a VM instance resource within GCE.
+    arguments:
+        boot_disk:
+            description: The boot disk for the instance.
+            required: true
+            policy: ''
+            notes: ''
+        machine_type:
+            description: The machine type to create.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the resource, required by GCE.
+            required: true
+            policy: ''
+            notes: ''
+        zone:
+            description: The zone that the machine should be created in.
+            required: true
+            policy: ''
+            notes: ''
+        network_interface:
+            description: Networks to attach to the instance. This can
+            required: true
+            policy: ''
+            notes: ''
+        allow_stopping_for_update:
+            description: If true, allows Terraform to stop the instance to update
+                its properties.
+            required: false
+            policy: ''
+            notes: ''
+        attached_disk:
+            description: Additional disks to attach to the instance. Can be repeated
+                multiple times for multiple disks. Structure is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        can_ip_forward:
+            description: Whether to allow sending and receiving of
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A brief description of this resource.
+            required: false
+            policy: ''
+            notes: ''
+        desired_status:
+            description: Desired status of the instance. Either
+            required: false
+            policy: ''
+            notes: ''
+        deletion_protection:
+            description: Enable deletion protection on this instance. Defaults to
+                false.
+            required: false
+            policy: ''
+            notes: ''
+        hostname:
+            description: A custom hostname for the instance. Must be a fully qualified
+                DNS name and RFC-1035-valid.
+            required: false
+            policy: ''
+            notes: ''
+        guest_accelerator:
+            description: List of the type and count of accelerator cards attached
+                to the instance. Structure documented below.
+            required: false
+            policy: ''
+            notes: ''
+        labels:
+            description: A map of key/value label pairs to assign to the instance.
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: Metadata key/value pairs to make available from
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,28 @@
+github_repository_deploy_key:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_repository_deploy_key'
+    description: Provides a GitHub repository deploy key resource.
+    arguments:
+        key:
+            description: A SSH key.
+            required: true
+            policy: ''
+            notes: ''
+        read_only:
+            description: A boolean qualifying the key to be either read only or read/write.
+            required: true
+            policy: ''
+            notes: ''
+        repository:
+            description: Name of the GitHub repository.
+            required: true
+            policy: ''
+            notes: ''
+        title:
+            description: A title.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

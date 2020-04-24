@@ -1,0 +1,49 @@
+docker_service:
+    status: ASSESS
+    layout: docker
+    page_title: 'Docker: docker_service'
+    sidebar_current: docs-docker-resource-service
+    description: Manages the lifecycle of a Docker service.
+    arguments:
+        auth:
+            description: See [Auth](#auth-1
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the Docker service.
+            required: false
+            policy: ''
+            notes: ''
+        task_spec:
+            description: See [TaskSpec](#task-spec-1
+            required: false
+            policy: ''
+            notes: ''
+        mode:
+            description: See [Mode](#mode-1
+            required: false
+            policy: ''
+            notes: ''
+        update_config:
+            description: See [UpdateConfig](#update-rollback-config-1
+            required: false
+            policy: ''
+            notes: ''
+        rollback_config:
+            description: See [RollbackConfig](#update-rollback-config-1
+            required: false
+            policy: ''
+            notes: ''
+        endpoint_spec:
+            description: See [EndpointSpec](#endpoint-spec-1
+            required: false
+            policy: ''
+            notes: ''
+        converge_config:
+            description: See [Converge Config](#converge-config-1
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

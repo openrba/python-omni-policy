@@ -1,0 +1,17 @@
+github_user_gpg_key:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_user_gpg_key'
+    description: Provides a GitHub user's GPG key resource.
+    arguments:
+        armored_public_key:
+            description: Your public GPG key, generated in ASCII-armored format.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The GitHub ID of the GPG key, e.g. `401586`
+        key_id:
+            description: The key ID of the GPG key, e.g. `3262EFF25BA0D270`
+    timeouts: {}

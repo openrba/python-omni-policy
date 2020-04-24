@@ -1,0 +1,30 @@
+vault_egp_policy:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_egp_policy resource'
+    sidebar_current: docs-vault-resource-egp-policy
+    description: Writes Sentinel endpoint governing policies for Vault
+    arguments:
+        name:
+            description: The name of the policy
+            required: true
+            policy: ''
+            notes: ''
+        paths:
+            description: List of paths to which the policy will be applied to
+            required: true
+            policy: ''
+            notes: ''
+        enforcement_level:
+            description: Enforcement level of Sentinel policy. Can be either `advisory`
+                or `soft-mandatory` or `hard-mandatory`
+            required: true
+            policy: ''
+            notes: ''
+        policy:
+            description: String containing a Sentinel policy
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

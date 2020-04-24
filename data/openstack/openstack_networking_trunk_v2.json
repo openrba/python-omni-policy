@@ -1,0 +1,101 @@
+{
+    "openstack_networking_trunk_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_trunk_v2",
+        "sidebar_current": "docs-openstack-resource-networking-trunk-v2",
+        "description": "Manages a networking V2 trunk resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "A unique name for the trunk. Changing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Human-readable description of the trunk. Changing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port_id": {
+                "description": "The ID of the port to be made a subport of the trunk.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_state_up": {
+                "description": "Administrative up/down status for the trunk",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The owner of the Trunk. Required if admin wants",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sub_port": {
+                "description": "The set of ports that will be made subports of the trunk.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A set of string tags for the port.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "segmentation_type": {
+                "description": "The segmentation technology to use, e.g., \"vlan\".",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "segmentation_id": {
+                "description": "The numeric id of the subport segment.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "port_id": {
+                "description": "See Argument Reference above."
+            },
+            "admin_state_up": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "sub_port": {
+                "description": "See Argument Reference above."
+            },
+            "tags": {
+                "description": "See Argument Reference above."
+            },
+            "all_tags": {
+                "description": "The collection of tags assigned on the trunk, which have been"
+            }
+        },
+        "timeouts": {}
+    }
+}

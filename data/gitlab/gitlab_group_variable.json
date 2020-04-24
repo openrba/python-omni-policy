@@ -1,0 +1,43 @@
+{
+    "gitlab_group_variable": {
+        "status": "ASSESS",
+        "layout": "gitlab",
+        "page_title": "GitLab: gitlab_group_variable",
+        "sidebar_current": "docs-gitlab-resource-group-variable",
+        "description": "Creates and manages CI/CD variables for GitLab groups",
+        "arguments": {
+            "group": {
+                "description": "The name or id of the group to add the hook to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "The name of the variable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The value of the variable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "variable_type": {
+                "description": " The type of a variable. Available types are: env_var (default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "protected": {
+                "description": "If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

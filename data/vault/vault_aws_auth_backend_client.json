@@ -1,0 +1,55 @@
+{
+    "vault_aws_auth_backend_client": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_aws_auth_backend_client resource",
+        "sidebar_current": "docs-vault-resource-aws-auth-backend-client",
+        "description": "Configures the client used by an AWS Auth Backend in Vault.",
+        "arguments": {
+            "backend": {
+                "description": "The path the AWS auth backend being configured was",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "access_key": {
+                "description": "The AWS access key that Vault should use for the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "secret_key": {
+                "description": "The AWS secret key that Vault should use for the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ec2_endpoint": {
+                "description": "Override the URL Vault uses when making EC2 API",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_endpoint": {
+                "description": "Override the URL Vault uses when making IAM API",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sts_endpoint": {
+                "description": "Override the URL Vault uses when making STS API",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "iam_server_id_header_value": {
+                "description": "The value to require in the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

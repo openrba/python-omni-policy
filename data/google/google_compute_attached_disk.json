@@ -1,0 +1,17 @@
+{
+    "google_compute_attached_disk": {
+        "status": "ASSESS",
+        "subcategory": "Compute Engine",
+        "layout": "google",
+        "page_title": "Google: google_compute_attached_disk",
+        "sidebar_current": "docs-google-compute-attached-disk",
+        "description": "Resource that allows attaching existing persistent disks to compute instances.",
+        "arguments": {},
+        "attributes": {
+            "id": {
+                "description": "an identifier for the resource with format `projects/{{project}}/zones/{{zone}}/disks/{{disk.name}}`"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "google_google_folder_iam_policy": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_folder_iam_policy",
+        "sidebar_current": "docs-google-folders-iam-policy",
+        "description": "Allows management of the IAM policy for a Google Cloud Platform folders.",
+        "arguments": {
+            "folder": {
+                "description": "The resource name of the folder the policy is attached to. Its format is folders/{folder_id}.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_data": {
+                "description": "The `google_iam_policy` data source that represents",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "etag": {
+                "description": "(Computed) The etag of the folder's IAM policy. `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a policy from overwriting each other."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "google_google_organization_iam_binding": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_organization_iam_binding",
+        "sidebar_current": "docs-google-organization-iam-binding",
+        "description": "Allows management of a single binding with an IAM policy for a Google Cloud Platform Organization.",
+        "arguments": {
+            "org_id": {
+                "description": "The numeric ID of the organization in which you want to create a custom role.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "The role that should be applied. Only one",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "members": {
+                "description": "A list of users that the role should apply to. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "etag": {
+                "description": "(Computed) The etag of the organization's IAM policy."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "tfe_team_member": {
+        "status": "ASSESS",
+        "layout": "tfe",
+        "page_title": "Terraform Enterprise: tfe_team_member",
+        "sidebar_current": "docs-resource-tfe-team-member-x",
+        "description": "Add or remove a user from a team.",
+        "arguments": {
+            "team_id": {
+                "description": "ID of the team.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "username": {
+                "description": "Name of the user to add.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

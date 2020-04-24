@@ -1,0 +1,48 @@
+openstack_networking_qos_bandwidth_limit_rule_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_networking_qos_bandwidth_limit_rule_v2'
+    sidebar_current: docs-openstack-resource-networking-qos-bandwidth-limit-rule-v2
+    description: Manages a V2 Neutron QoS bandwidth limit rule resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        qos_policy_id:
+            description: The QoS policy reference. Changing this creates a new QoS
+                bandwidth limit rule.
+            required: true
+            policy: ''
+            notes: ''
+        max_kbps:
+            description: The maximum kilobits per second of a QoS bandwidth limit
+                rule. Changing this updates the
+            required: true
+            policy: ''
+            notes: ''
+        max_burst_kbps:
+            description: The maximum burst size in kilobits of a QoS bandwidth limit
+                rule. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        direction:
+            description: The direction of traffic. Defaults to "egress". Changing
+                this updates the direction of the
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        qos_policy_id:
+            description: See Argument Reference above.
+        max_kbps:
+            description: See Argument Reference above.
+        max_burst_kbps:
+            description: See Argument Reference above.
+        direction:
+            description: See Argument Reference above.
+    timeouts: {}

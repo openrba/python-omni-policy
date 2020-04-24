@@ -1,0 +1,38 @@
+{
+    "google_storage_object_acl": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Storage",
+        "layout": "google",
+        "page_title": "Google: google_storage_object_acl",
+        "sidebar_current": "docs-google-storage-object-acl",
+        "description": "Creates a new object ACL in Google Cloud Storage.",
+        "arguments": {
+            "bucket": {
+                "description": "The name of the bucket the object is stored in.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "object": {
+                "description": "The name of the object to apply the acl to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "predefined_acl": {
+                "description": "The \"canned\" [predefined ACL](https://cloud.google.com/storage/docs/access-control#predefined-acl",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role_entity": {
+                "description": "List of role/entity pairs in the form `ROLE:entity`. See [GCS Object ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

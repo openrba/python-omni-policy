@@ -1,0 +1,25 @@
+{
+    "kubernetes_service": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: kubernetes_service",
+        "sidebar_current": "docs-kubernetes-resource-service-x",
+        "description": "A Service is an abstraction which defines a logical set of pods and a policy by which to access them - sometimes called a micro-service.",
+        "arguments": {
+            "metadata": {
+                "description": "Standard service's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "spec": {
+                "description": "Spec defines the behavior of a service. [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

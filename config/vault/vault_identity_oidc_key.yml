@@ -1,0 +1,32 @@
+vault_identity_oidc_key:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_identity_oidc_key resource'
+    sidebar_current: docs-vault-identity-oidc-key
+    description: Creates an Identity OIDC Named Key for Vault
+    arguments:
+        name:
+            description: Name of the OIDC Key to create.
+            required: false
+            policy: ''
+            notes: ''
+        rotation_period:
+            description: How often to generate a new signing key in number of seconds
+            required: false
+            policy: ''
+            notes: ''
+        verification_ttl:
+            description: '"Controls how long the public portion of a signing key will
+                be'
+            required: false
+            policy: ''
+            notes: ''
+        algorithm:
+            description: Signing algorithm to use. Signing algorithm to use.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The name of the created key.
+    timeouts: {}

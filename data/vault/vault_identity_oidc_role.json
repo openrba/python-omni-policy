@@ -1,0 +1,44 @@
+{
+    "vault_identity_oidc_role": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_identity_oidc_role resource",
+        "sidebar_current": "docs-vault-identity-oidc-role",
+        "description": "Creates an Identity OIDC Role for Vault",
+        "arguments": {
+            "name": {
+                "description": "Name of the OIDC Role to create.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "A configured named key, the key must already exist",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "template": {
+                "description": "The template string to use for generating tokens. This may be in",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ttl": {
+                "description": "TTL of the tokens generated against the role in number of seconds.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The name of the created role."
+            },
+            "client_id": {
+                "description": "The value that will be included in the `aud` field of all the OIDC identity"
+            }
+        },
+        "timeouts": {}
+    }
+}

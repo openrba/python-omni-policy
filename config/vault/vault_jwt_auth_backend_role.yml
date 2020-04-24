@@ -1,0 +1,85 @@
+vault_jwt_auth_backend_role:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_jwt_auth_backend_role resource'
+    sidebar_current: docs-vault-resource-jwt-auth-backend-role
+    description: Manages JWT/OIDC auth backend roles in Vault.
+    arguments:
+        role_name:
+            description: The name of the role.
+            required: true
+            policy: ''
+            notes: ''
+        role_type:
+            description: Type of role, either "oidc" (default
+            required: false
+            policy: ''
+            notes: ''
+        bound_audiences:
+            description: List of `aud` claims to match
+            required: true
+            policy: ''
+            notes: ''
+        user_claim:
+            description: The claim to use to uniquely identify
+            required: true
+            policy: ''
+            notes: ''
+        bound_subject:
+            description: If set, requires that the `sub` claim matches
+            required: false
+            policy: ''
+            notes: ''
+        bound_claims:
+            description: If set, a map of claims/values to match against.
+            required: false
+            policy: ''
+            notes: ''
+        claim_mappings:
+            description: If set, a map of claims (keys
+            required: false
+            policy: ''
+            notes: ''
+        oidc_scopes:
+            description: If set, a list of OIDC scopes to be used with an OIDC role.
+            required: false
+            policy: ''
+            notes: ''
+        groups_claim:
+            description: The claim to use to uniquely identify
+            required: false
+            policy: ''
+            notes: ''
+        backend:
+            description: The unique name of the auth backend to configure.
+            required: false
+            policy: ''
+            notes: ''
+        allowed_redirect_uris:
+            description: The list of allowed values for redirect_uri during OIDC logins.
+            required: false
+            policy: ''
+            notes: ''
+        clock_skew_leeway:
+            description: The amount of leeway to add to all claims to account for
+                clock skew, in
+            required: false
+            policy: ''
+            notes: ''
+        expiration_leeway:
+            description: The amount of leeway to add to expiration (`exp`
+            required: false
+            policy: ''
+            notes: ''
+        not_before_leeway:
+            description: The amount of leeway to add to not before (`nbf`
+            required: false
+            policy: ''
+            notes: ''
+        verbose_oidc_logging:
+            description: Log received OIDC tokens and claims when debug-level
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,43 @@
+openstack_sharedfilesystem_share_access_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: sharedfilesystem_share_access_v2'
+    sidebar_current: docs-openstack-resource-sharedfilesystem-share-access-v2
+    description: Configure a Shared File System share access list.
+    arguments:
+        share_id:
+            description: The UUID of the share to which you are granted access.
+            required: true
+            policy: ''
+            notes: ''
+        access_type:
+            description: The access rule type. Can either be an ip, user,
+            required: true
+            policy: ''
+            notes: ''
+        access_to:
+            description: The value that defines the access. Can either be an IP
+            required: true
+            policy: ''
+            notes: ''
+        access_level:
+            description: The access level to the share. Can either be `rw` or `ro`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique ID for the Share Access.
+        region:
+            description: See Argument Reference above.
+        share_id:
+            description: See Argument Reference above.
+        access_type:
+            description: See Argument Reference above.
+        access_to:
+            description: See Argument Reference above.
+        access_level:
+            description: See Argument Reference above.
+        access_key:
+            description: The access credential of the entity granted access.
+    timeouts: {}

@@ -1,0 +1,47 @@
+google_compute_router_interface:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_router_interface'
+    sidebar_current: docs-google-compute-router-interface
+    description: Manages a Cloud Router interface.
+    arguments:
+        name:
+            description: A unique name for the interface, required by GCE. Changing
+            required: true
+            policy: ''
+            notes: ''
+        router:
+            description: The name of the router this interface will be attached to.
+            required: true
+            policy: ''
+            notes: ''
+        ip_range:
+            description: IP address and range of the interface. The IP range must
+                be
+            required: false
+            policy: ''
+            notes: ''
+        vpn_tunnel:
+            description: The name or resource link to the VPN tunnel this
+            required: false
+            policy: ''
+            notes: ''
+        interconnect_attachment:
+            description: The name or resource link to the
+            required: false
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which this interface's router belongs.
+                If it
+            required: false
+            policy: ''
+            notes: ''
+        region:
+            description: The region this interface's router sits in. If not specified,
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

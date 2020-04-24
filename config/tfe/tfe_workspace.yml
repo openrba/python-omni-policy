@@ -1,0 +1,91 @@
+tfe_workspace:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_workspace'
+    sidebar_current: docs-resource-tfe-workspace
+    description: Manages workspaces.
+    arguments:
+        name:
+            description: Name of the workspace.
+            required: true
+            policy: ''
+            notes: ''
+        organization:
+            description: Name of the organization.
+            required: true
+            policy: ''
+            notes: ''
+        auto_apply:
+            description: Whether to automatically apply changes when a
+            required: false
+            policy: ''
+            notes: ''
+        file_triggers_enabled:
+            description: Whether to filter runs based on the changed files in a VCS
+                push. If enabled, the working directory and trigger prefixes describe
+                a set of paths which must contain changes for a VCS push to trigger
+                a run. If disabled, any push will trigger a run. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        operations:
+            description: Whether to use remote execution mode. When set
+            required: false
+            policy: ''
+            notes: ''
+        queue_all_runs:
+            description: Whether all runs should be queued. When set
+            required: false
+            policy: ''
+            notes: ''
+        ssh_key_id:
+            description: The ID of an SSH key to assign to the workspace.
+            required: false
+            policy: ''
+            notes: ''
+        terraform_version:
+            description: The version of Terraform to use for this workspace. Defaults
+                to the latest available version.
+            required: false
+            policy: ''
+            notes: ''
+        trigger_prefixes:
+            description: List of repository-root-relative paths which describe all
+                locations to be tracked for changes.
+            required: false
+            policy: ''
+            notes: ''
+        working_directory:
+            description: A relative path that Terraform will execute
+            required: false
+            policy: ''
+            notes: ''
+        vcs_repo:
+            description: Settings for the workspace's VCS repository.
+            required: false
+            policy: ''
+            notes: ''
+        identifier:
+            description: A reference to your VCS repository in the format
+            required: true
+            policy: ''
+            notes: ''
+        branch:
+            description: The repository branch that Terraform will execute from.
+            required: false
+            policy: ''
+            notes: ''
+        ingress_submodules:
+            description: Whether submodules should be fetched when
+            required: false
+            policy: ''
+            notes: ''
+        oauth_token_id:
+            description: Token ID of the VCS Connection (OAuth Conection Token)
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The workspace ID.
+    timeouts: {}

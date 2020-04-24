@@ -1,0 +1,48 @@
+github_branch_protection:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_branch_protection'
+    description: Protects a GitHub branch.
+    arguments:
+        repository:
+            description: The GitHub repository name.
+            required: true
+            policy: ''
+            notes: ''
+        branch:
+            description: The Git branch to protect.
+            required: true
+            policy: ''
+            notes: ''
+        enforce_admins:
+            description: Boolean, setting this to `true` enforces status checks for
+                repository administrators.
+            required: false
+            policy: ''
+            notes: ''
+        require_signed_commits:
+            description: Boolean, setting this to `true` requires all commits to be
+                signed with GPG.
+            required: false
+            policy: ''
+            notes: ''
+        required_status_checks:
+            description: Enforce restrictions for required status checks. See [Required
+                Status Checks](#required-status-checks
+            required: false
+            policy: ''
+            notes: ''
+        required_pull_request_reviews:
+            description: Enforce restrictions for pull request reviews. See [Required
+                Pull Request Reviews](#required-pull-request-reviews
+            required: false
+            policy: ''
+            notes: ''
+        restrictions:
+            description: Enforce restrictions for the users and teams that may push
+                to the branch. See [Restrictions](#restrictions
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

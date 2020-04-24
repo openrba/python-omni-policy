@@ -1,0 +1,13 @@
+github_user_invitation_accepter:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_user_invitation_accepter'
+    description: Provides a resource to manage GitHub repository collaborator invitations.
+    arguments:
+        invitation_id:
+            description: ID of the invitation to accept
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,37 @@
+google_logging_billing_account_exclusion:
+    status: ASSESS
+    subcategory: Cloud (Stackdriver) Logging
+    layout: google
+    page_title: 'Google: google_logging_billing_account_exclusion'
+    sidebar_current: docs-google-logging-billing_account-exclusion
+    description: Manages a billing_account-level logging exclusion.
+    arguments:
+        billing_account:
+            description: The billing account to create the exclusion for.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the logging exclusion.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A human-readable description.
+            required: false
+            policy: ''
+            notes: ''
+        disabled:
+            description: Whether this exclusion rule should be disabled or not. This
+                defaults to
+            required: false
+            policy: ''
+            notes: ''
+        filter:
+            description: The filter to apply when excluding logs. Only log entries
+                that match the filter are excluded.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

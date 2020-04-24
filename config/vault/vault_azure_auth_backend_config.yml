@@ -1,0 +1,39 @@
+vault_azure_auth_backend_config:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_azure_auth_backend_config resource'
+    sidebar_current: docs-vault-resource-azure-auth-backend-config
+    description: Configures the Azure Auth Backend in Vault.
+    arguments:
+        tenant_id:
+            description: The tenant id for the Azure Active Directory
+            required: true
+            policy: ''
+            notes: ''
+        resource:
+            description: The configured URL for the application registered in
+            required: true
+            policy: ''
+            notes: ''
+        backend:
+            description: The path the Azure auth backend being configured was
+            required: false
+            policy: ''
+            notes: ''
+        client_id:
+            description: The client id for credentials to query the Azure APIs.
+            required: false
+            policy: ''
+            notes: ''
+        client_secret:
+            description: The client secret for credentials to query the
+            required: false
+            policy: ''
+            notes: ''
+        environment:
+            description: 'The Azure cloud environment. Valid values:'
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

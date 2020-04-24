@@ -1,0 +1,89 @@
+{
+    "gitlab_project_hook": {
+        "status": "ASSESS",
+        "layout": "gitlab",
+        "page_title": "GitLab: gitlab_project_hook",
+        "sidebar_current": "docs-gitlab-resource-project-hook",
+        "description": "Creates and manages hooks for GitLab projects",
+        "arguments": {
+            "project": {
+                "description": "The name or id of the project to add the hook to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The url of the hook to invoke.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "token": {
+                "description": "A token to present when invoking the hook.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_ssl_verification": {
+                "description": "Enable ssl verification when invoking",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "push_events": {
+                "description": "Invoke the hook for push events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "issues_events": {
+                "description": "Invoke the hook for issues events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "merge_requests_events": {
+                "description": "Invoke the hook for merge requests.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tag_push_events": {
+                "description": "Invoke the hook for tag push events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "note_events": {
+                "description": "Invoke the hook for notes events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "job_events": {
+                "description": "Invoke the hook for job events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pipeline_events": {
+                "description": "Invoke the hook for pipeline events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "wiki_page_events": {
+                "description": "Invoke the hook for wiki page events.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique id assigned to the hook by the GitLab server."
+            }
+        },
+        "timeouts": {}
+    }
+}

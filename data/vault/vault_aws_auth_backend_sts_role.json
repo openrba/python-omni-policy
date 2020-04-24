@@ -1,0 +1,31 @@
+{
+    "vault_aws_auth_backend_sts_role": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_aws_auth_backend_sts_role resource",
+        "sidebar_current": "docs-vault-resource-aws-auth-backend-sts-role",
+        "description": "Configures an STS role in the Vault AWS Auth backend.",
+        "arguments": {
+            "account_id": {
+                "description": "The AWS account ID to configure the STS role for.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sts_role": {
+                "description": "The STS role to assume when verifying requests made",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backend": {
+                "description": "The path the AWS auth backend being configured was",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

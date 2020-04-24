@@ -1,0 +1,120 @@
+openstack_networking_network_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_networking_network_v2'
+    sidebar_current: docs-openstack-resource-networking-network-v2
+    description: Manages a V2 Neutron network resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the network. Changing this updates the name of
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Human-readable description of the network. Changing this
+            required: false
+            policy: ''
+            notes: ''
+        shared:
+            description: Specifies whether the network resource can be accessed
+            required: false
+            policy: ''
+            notes: ''
+        external:
+            description: Specifies whether the network resource has the
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: The owner of the network. Required if admin wants to
+            required: false
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: The administrative state of the network.
+            required: false
+            policy: ''
+            notes: ''
+        segments:
+            description: An array of one or more provider segment objects.
+            required: false
+            policy: ''
+            notes: ''
+        value_specs:
+            description: Map of additional options.
+            required: false
+            policy: ''
+            notes: ''
+        availability_zone_hints:
+            description: An availability zone is used to make
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A set of string tags for the network.
+            required: false
+            policy: ''
+            notes: ''
+        transparent_vlan:
+            description: Specifies whether the network resource has the
+            required: false
+            policy: ''
+            notes: ''
+        port_security_enabled:
+            description: Whether to explicitly enable or disable
+            required: false
+            policy: ''
+            notes: ''
+        mtu:
+            description: The network MTU. Available for read-only, when Neutron
+            required: false
+            policy: ''
+            notes: ''
+        dns_domain:
+            description: The network DNS domain. Available, when Neutron DNS
+            required: false
+            policy: ''
+            notes: ''
+        qos_policy_id:
+            description: Reference to the associated QoS policy.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        shared:
+            description: See Argument Reference above.
+        external:
+            description: See Argument Reference above.
+        tenant_id:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+        availability_zone_hints:
+            description: See Argument Reference above.
+        tags:
+            description: See Argument Reference above.
+        all_tags:
+            description: The collection of tags assigned on the network, which have
+                been
+        transparent_vlan:
+            description: See Argument Reference above.
+        port_security_enabled:
+            description: See Argument Reference above.
+        mtu:
+            description: See Argument Reference above.
+        dns_domain:
+            description: See Argument Reference above.
+        qos_policy_id:
+            description: See Argument Reference above.
+    timeouts: {}

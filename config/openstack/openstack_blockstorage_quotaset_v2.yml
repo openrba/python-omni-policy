@@ -1,0 +1,72 @@
+openstack_blockstorage_quotaset_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_blockstorage_quotaset_v2'
+    sidebar_current: docs-openstack-resource-blockstorage-quotaset-v2
+    description: Manages a V2 quotaset resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to create the volume. If
+            required: false
+            policy: ''
+            notes: ''
+        project_id:
+            description: ID of the project to manage quotas. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        volumes:
+            description: Quota value for volumes. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        snapshots:
+            description: Quota value for snapshots. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        gigabytes:
+            description: Quota value for gigabytes. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        per_volume_gigabytes:
+            description: Quota value for gigabytes per volume .
+            required: false
+            policy: ''
+            notes: ''
+        backups:
+            description: Quota value for backups. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        backup_gigabytes:
+            description: Quota value for backup gigabytes. Changing
+            required: false
+            policy: ''
+            notes: ''
+        groups:
+            description: Quota value for groups. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        project_id:
+            description: See Argument Reference above.
+        volumes:
+            description: See Argument Reference above.
+        snapshots:
+            description: See Argument Reference above.
+        gigabytes:
+            description: See Argument Reference above.
+        per_volume_gigabytes:
+            description: See Argument Reference above.
+        backups:
+            description: See Argument Reference above.
+        backup_gigabytes:
+            description: See Argument Reference above.
+        groups:
+            description: See Argument Reference above.
+    timeouts: {}

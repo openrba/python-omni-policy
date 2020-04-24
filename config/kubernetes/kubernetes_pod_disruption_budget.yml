@@ -1,0 +1,24 @@
+kubernetes_pod_disruption_budget:
+    status: ASSESS
+    layout: kubernetes
+    page_title: 'Kubernetes: kubernetes_pod_disruption_budget'
+    sidebar_current: docs-kubernetes-resource-pod-disruption-budget
+    description: A Pod Disruption Budget limits the number of pods of a replicated
+        application that are down simultaneously from voluntary disruptions. For example,
+        a quorum-based application would like to ensure that the number of replicas
+        running is never brought below the number needed for a quorum. A web front
+        end might want to ensure that the number of replicas serving load never falls
+        below a certain percentage of the total.
+    arguments:
+        metadata:
+            description: 'Standard resource''s metadata. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status'
+            required: true
+            policy: ''
+            notes: ''
+        spec:
+            description: Spec defines the behavior of a Pod Disruption Budget. https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

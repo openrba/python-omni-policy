@@ -1,0 +1,17 @@
+google_compute_shared_vpc_host_project:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_shared_vpc_host_project'
+    sidebar_current: docs-google-compute-shared-vpc-host-project
+    description: Enables the Google Compute Engine Shared VPC feature for a project,
+        assigning it as a host project.
+    arguments:
+        project:
+            description: The ID of the project that will serve as a Shared VPC host
+                project
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

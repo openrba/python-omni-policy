@@ -1,0 +1,55 @@
+{
+    "vault_azure_auth_backend_role": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_azure_auth_backend_role resource",
+        "sidebar_current": "docs-vault-resource-azure-auth-backend-role",
+        "description": "Manages Azure auth backend roles in Vault.",
+        "arguments": {
+            "role": {
+                "description": "The name of the role.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_service_principal_ids": {
+                "description": "If set, defines a constraint on the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_group_ids": {
+                "description": "If set, defines a constraint on the groups",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_locations": {
+                "description": "If set, defines a constraint on the virtual machines",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_subscription_ids": {
+                "description": "If set, defines a constraint on the subscriptions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_resource_groups": {
+                "description": "If set, defines a constraint on the virtual",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_scale_sets": {
+                "description": "If set, defines a constraint on the virtual",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

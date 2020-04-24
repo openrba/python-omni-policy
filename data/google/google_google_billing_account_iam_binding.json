@@ -1,0 +1,36 @@
+{
+    "google_google_billing_account_iam_binding": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_billing_account_iam_binding",
+        "sidebar_current": "docs-google-billing-account-iam-binding",
+        "description": "Allows management of a single binding with an IAM policy for a Google Cloud Platform Billing Account.",
+        "arguments": {
+            "billing_account_id": {
+                "description": "The billing account id.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "The role that should be applied.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "members": {
+                "description": "A list of users that the role should apply to. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "etag": {
+                "description": "(Computed) The etag of the billing account's IAM policy."
+            }
+        },
+        "timeouts": {}
+    }
+}

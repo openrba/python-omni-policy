@@ -1,0 +1,21 @@
+kubernetes_role:
+    status: ASSESS
+    layout: kubernetes
+    page_title: 'Kubernetes: kubernetes_role'
+    sidebar_current: docs-kubernetes-resource-role
+    description: "A role contains rules that represent a set of permissions. Permissions\
+        \ are purely additive (there are no \u201Cdeny\u201D rules)."
+    arguments:
+        metadata:
+            description: Standard role's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
+            required: true
+            policy: ''
+            notes: ''
+        rule:
+            description: List of rules that define the set of permissions for this
+                role. For more info see [Kubernetes reference](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,0 +1,108 @@
+{
+    "google_dataflow_job": {
+        "status": "ASSESS",
+        "subcategory": "Dataflow",
+        "layout": "google",
+        "page_title": "Google: google_dataflow_job",
+        "sidebar_current": "docs-google-dataflow-job",
+        "description": "Creates a job in Dataflow according to a provided config file.",
+        "arguments": {
+            "name": {
+                "description": "A unique name for the resource, required by Dataflow.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "template_gcs_path": {
+                "description": "The GCS path to the Dataflow job template.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "temp_gcs_location": {
+                "description": "A writeable location on GCS for the Dataflow job to dump its temporary data.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "Key/Value pairs to be passed to the Dataflow job (as used in the template).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "User labels to be specified for the job. Keys and values should follow the restrictions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_workers": {
+                "description": "The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "on_delete": {
+                "description": "One of \"drain\" or \"cancel\".  Specifies behavior of deletion during `terraform destroy`.  See above note.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project in which the resource belongs. If it is not provided, the provider project is used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zone": {
+                "description": "The zone in which the created job should run. If it is not provided, the provider zone is used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "service_account_email": {
+                "description": "The Service Account email used to create the job.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network": {
+                "description": "The network to which VMs will be assigned. If it is not provided, \"default\" will be used.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnetwork": {
+                "description": "The subnetwork to which VMs will be assigned. Should be of the form \"regions/REGION/subnetworks/SUBNETWORK\".",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "machine_type": {
+                "description": "The machine type to use for the job.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_configuration": {
+                "description": "The configuration for VM IPs.  Options are `\"WORKER_IP_PUBLIC\"` or `\"WORKER_IP_PRIVATE\"`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "job_id": {
+                "description": "The unique ID of this job."
+            },
+            "type": {
+                "description": "The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)"
+            },
+            "state": {
+                "description": "The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)"
+            }
+        },
+        "timeouts": {}
+    }
+}

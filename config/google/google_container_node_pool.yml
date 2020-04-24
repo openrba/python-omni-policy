@@ -1,0 +1,41 @@
+google_container_node_pool:
+    status: ASSESS
+    subcategory: Kubernetes (Container) Engine
+    layout: google
+    page_title: 'Google: google_container_node_pool'
+    sidebar_current: docs-google-container-node-pool
+    description: Manages a GKE NodePool resource.
+    arguments:
+        cluster:
+            description: The cluster to create the node pool for. Cluster must be
+                present in `location` provided for zonal clusters.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: The location (region or zone
+            required: false
+            policy: ''
+            notes: ''
+        autoscaling:
+            description: Configuration required by cluster autoscaler to adjust
+            required: false
+            policy: ''
+            notes: ''
+        initial_node_count:
+            description: The initial number of nodes for the pool. In
+            required: false
+            policy: ''
+            notes: ''
+        management:
+            description: Node management configuration, wherein auto-repair and
+            required: false
+            policy: ''
+            notes: ''
+        max_pods_per_node:
+            description: The maximum number of pods per node in this node pool.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

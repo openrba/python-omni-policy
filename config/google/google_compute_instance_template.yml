@@ -1,0 +1,305 @@
+google_compute_instance_template:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_instance_template'
+    sidebar_current: docs-google-compute-instance-template
+    description: Manages a VM instance template resource within GCE.
+    arguments:
+        disk:
+            description: Disks to attach to instances created from this template.
+            required: true
+            policy: ''
+            notes: ''
+        machine_type:
+            description: The machine type to create.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the instance template. If you leave
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name beginning with the specified
+            required: false
+            policy: ''
+            notes: ''
+        can_ip_forward:
+            description: Whether to allow sending and receiving of
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A brief description of this resource.
+            required: false
+            policy: ''
+            notes: ''
+        instance_description:
+            description: A brief description to use for instances
+            required: false
+            policy: ''
+            notes: ''
+        labels:
+            description: A set of key/value label pairs to assign to instances
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: Metadata key/value pairs to make available from
+            required: false
+            policy: ''
+            notes: ''
+        metadata_startup_script:
+            description: An alternative to using the
+            required: false
+            policy: ''
+            notes: ''
+        network_interface:
+            description: Networks to attach to instances created from
+            required: true
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the resource belongs. If it
+            required: false
+            policy: ''
+            notes: ''
+        region:
+            description: An instance template is a global resource that is not
+            required: false
+            policy: ''
+            notes: ''
+        scheduling:
+            description: The scheduling strategy to use. More details about
+            required: false
+            policy: ''
+            notes: ''
+        service_account:
+            description: Service account to attach to the instance. Structure is documented
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: Tags to attach to the instance.
+            required: false
+            policy: ''
+            notes: ''
+        guest_accelerator:
+            description: List of the type and count of accelerator cards attached
+                to the instance. Structure documented below.
+            required: false
+            policy: ''
+            notes: ''
+        min_cpu_platform:
+            description: Specifies a minimum CPU platform. Applicable values are the
+                friendly names of CPU platforms, such as
+            required: false
+            policy: ''
+            notes: ''
+        shielded_instance_config:
+            description: Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm
+            required: false
+            policy: ''
+            notes: ''
+        enable_display:
+            description: Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver
+            required: false
+            policy: ''
+            notes: ''
+        auto_delete:
+            description: Whether or not the disk should be auto-deleted.
+            required: false
+            policy: ''
+            notes: ''
+        boot:
+            description: Indicates that this is a boot disk.
+            required: false
+            policy: ''
+            notes: ''
+        device_name:
+            description: A unique device name that is reflected into the
+            required: false
+            policy: ''
+            notes: ''
+        disk_name:
+            description: Name of the disk. When not provided, this defaults
+            required: false
+            policy: ''
+            notes: ''
+        source_image:
+            description: The image from which to
+            required: false
+            policy: ''
+            notes: ''
+        interface:
+            description: Specifies the disk interface to use for attaching
+            required: false
+            policy: ''
+            notes: ''
+        mode:
+            description: The mode in which to attach this disk, either READ_WRITE
+            required: false
+            policy: ''
+            notes: ''
+        source:
+            description: The name (**not self_link**)
+            required: false
+            policy: ''
+            notes: ''
+        disk_type:
+            description: The GCE disk type. Can be either `"pd-ssd"`,
+            required: false
+            policy: ''
+            notes: ''
+        disk_size_gb:
+            description: The size of the image in gigabytes. If not
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: '- The accelerator type resource to expose to this instance.
+                E.g. `nvidia-tesla-k80`.'
+            required: true
+            policy: ''
+            notes: ''
+        disk_encryption_key:
+            description: Encrypts or decrypts a disk using a customer-supplied encryption
+                key.
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_self_link:
+            description: The self link of the encryption key that is stored in Google
+                Cloud KMS
+            required: true
+            policy: ''
+            notes: ''
+        network:
+            description: The name or self_link of the network to attach this interface
+                to.
+            required: false
+            policy: ''
+            notes: ''
+        subnetwork:
+            description: the name of the subnetwork to attach this interface
+            required: false
+            policy: ''
+            notes: ''
+        subnetwork_project:
+            description: The ID of the project in which the subnetwork belongs.
+            required: false
+            policy: ''
+            notes: ''
+        network_ip:
+            description: The private IP address to assign to the instance. If
+            required: false
+            policy: ''
+            notes: ''
+        access_config:
+            description: Access configurations, i.e. IPs via which this
+            required: false
+            policy: ''
+            notes: ''
+        alias_ip_range:
+            description: An
+            required: false
+            policy: ''
+            notes: ''
+        nat_ip:
+            description: The IP address that will be 1:1 mapped to the instance's
+            required: false
+            policy: ''
+            notes: ''
+        network_tier:
+            description: The [networking tier][network-tier] used for configuring
+            required: false
+            policy: ''
+            notes: ''
+        subnetwork_range_name:
+            description: The subnetwork secondary range name specifying
+            required: false
+            policy: ''
+            notes: ''
+        email:
+            description: The service account e-mail address. If not given, the
+            required: false
+            policy: ''
+            notes: ''
+        scopes:
+            description: A list of service scopes. Both OAuth2 URLs and gcloud
+            required: true
+            policy: ''
+            notes: ''
+        automatic_restart:
+            description: Specifies whether the instance should be
+            required: false
+            policy: ''
+            notes: ''
+        on_host_maintenance:
+            description: Defines the maintenance behavior for this
+            required: false
+            policy: ''
+            notes: ''
+        preemptible:
+            description: Allows instance to be preempted. This defaults to
+            required: false
+            policy: ''
+            notes: ''
+        node_affinities:
+            description: Specifies node affinities or anti-affinities
+            required: false
+            policy: ''
+            notes: ''
+        count:
+            description: '- The number of the guest accelerator cards exposed to this
+                instance.'
+            required: true
+            policy: ''
+            notes: ''
+        key:
+            description: '- The key for the node affinity label.'
+            required: true
+            policy: ''
+            notes: ''
+        operator:
+            description: '- The operator. Can be `IN` for node-affinities'
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: '- The values for the node affinity label.'
+            required: true
+            policy: ''
+            notes: ''
+        enable_secure_boot:
+            description: -- Verify the digital signature of all boot components, and
+                halt the boot process if signature verification fails. Defaults to
+                false.
+            required: false
+            policy: ''
+            notes: ''
+        enable_vtpm:
+            description: -- Use a virtualized trusted platform module, which is a
+                specialized computer chip you can use to encrypt objects like keys
+                and certificates. Defaults to true.
+            required: false
+            policy: ''
+            notes: ''
+        enable_integrity_monitoring:
+            description: -- Compare the most recent boot measurements to the integrity
+                policy baseline and return a pair of pass/fail results depending on
+                whether they match or not. Defaults to true.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        metadata_fingerprint:
+            description: The unique fingerprint of the metadata.
+        self_link:
+            description: The URI of the created resource.
+        tags_fingerprint:
+            description: The unique fingerprint of the tags.
+    timeouts: {}

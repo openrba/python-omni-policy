@@ -1,0 +1,95 @@
+{
+    "openstack_lb_member_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_lb_member_v2",
+        "sidebar_current": "docs-openstack-resource-lb-member-v2",
+        "description": "Manages a V2 member resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pool_id": {
+                "description": "The id of the pool that this member will be assigned",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The subnet in which to access the member. Changing",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "Human-readable name for the member.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "Required for admins. The UUID of the tenant who owns",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "address": {
+                "description": "The IP address of the member to receive traffic from",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol_port": {
+                "description": "The port on which to listen for client traffic.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "weight": {
+                "description": " A positive integer value that indicates the relative",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_state_up": {
+                "description": "The administrative state of the member.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique ID for the member."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "weight": {
+                "description": "See Argument Reference above."
+            },
+            "admin_state_up": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "subnet_id": {
+                "description": "See Argument Reference above."
+            },
+            "pool_id": {
+                "description": "See Argument Reference above."
+            },
+            "address": {
+                "description": "See Argument Reference above."
+            },
+            "protocol_port": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

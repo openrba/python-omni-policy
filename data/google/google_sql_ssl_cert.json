@@ -1,0 +1,54 @@
+{
+    "google_sql_ssl_cert": {
+        "status": "ASSESS",
+        "subcategory": "Cloud SQL",
+        "layout": "google",
+        "page_title": "Google: google_sql_ssl_cert",
+        "sidebar_current": "docs-google-sql-ssl-cert",
+        "description": "Creates a new SQL Ssl Cert in Google Cloud SQL.",
+        "arguments": {
+            "instance": {
+                "description": "The name of the Cloud SQL instance. Changing this",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "common_name": {
+                "description": "The common name to be used in the certificate to identify the",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The ID of the project in which the resource belongs. If it",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "sha1_fingerprint": {
+                "description": "The SHA1 Fingerprint of the certificate."
+            },
+            "private_key": {
+                "description": "The private key associated with the client certificate."
+            },
+            "server_ca_cert": {
+                "description": "The CA cert of the server this client cert was generated from."
+            },
+            "cert": {
+                "description": "The actual certificate data for this client certificate."
+            },
+            "cert_serial_number": {
+                "description": "The serial number extracted from the certificate data."
+            },
+            "create_time": {
+                "description": "The time when the certificate was created in RFC 3339 format,"
+            },
+            "expiration_time": {
+                "description": "The time when the certificate expires in RFC 3339 format,"
+            }
+        },
+        "timeouts": {}
+    }
+}

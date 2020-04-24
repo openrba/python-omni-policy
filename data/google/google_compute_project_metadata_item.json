@@ -1,0 +1,32 @@
+{
+    "google_compute_project_metadata_item": {
+        "status": "ASSESS",
+        "subcategory": "Compute Engine",
+        "layout": "google",
+        "page_title": "Google: google_compute_project_metadata_item",
+        "sidebar_current": "docs-google-compute-project-metadata-item",
+        "description": "Manages a single key/value pair on common instance metadata",
+        "arguments": {
+            "key": {
+                "description": "The metadata key to set.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The value to set for the given metadata key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The ID of the project in which the resource belongs. If it",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

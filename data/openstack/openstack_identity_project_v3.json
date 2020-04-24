@@ -1,0 +1,62 @@
+{
+    "openstack_identity_project_v3": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_identity_project_v3",
+        "sidebar_current": "docs-openstack-resource-identity-project-v3",
+        "description": "Manages a V3 Project resource within OpenStack Keystone.",
+        "arguments": {
+            "description": {
+                "description": "A description of the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain_id": {
+                "description": "The domain this project belongs to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Whether the project is enabled or disabled. Valid",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "is_domain": {
+                "description": "Whether this project is a domain. Valid values",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parent_id": {
+                "description": "The parent of this project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "The region in which to obtain the V3 Keystone client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "domain_id": {
+                "description": "See Argument Reference above."
+            },
+            "parent_id": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

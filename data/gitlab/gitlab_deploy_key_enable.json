@@ -1,0 +1,25 @@
+{
+    "gitlab_deploy_key_enable": {
+        "status": "ASSESS",
+        "layout": "gitlab",
+        "page_title": "GitLab: gitlab_deploy_key_enable",
+        "sidebar_current": "docs-gitlab-resource-deploy_key_enable",
+        "description": "Enable a pre-existing deploy key in the project",
+        "arguments": {
+            "project": {
+                "description": "The name or id of the project to add the deploy key to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_id": {
+                "description": "The Gitlab key id for the pre-existing deploy key",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

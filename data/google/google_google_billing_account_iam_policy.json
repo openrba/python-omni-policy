@@ -1,0 +1,26 @@
+{
+    "google_google_billing_account_iam_policy": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_billing_account_iam_policy",
+        "sidebar_current": "docs-google-billing-account-iam-policy",
+        "description": "Allows management of the entire IAM policy for a Google Cloud Platform Billing Account.",
+        "arguments": {
+            "billing_account_id": {
+                "description": "The billing account id.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_data": {
+                "description": "The `google_iam_policy` data source that represents",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

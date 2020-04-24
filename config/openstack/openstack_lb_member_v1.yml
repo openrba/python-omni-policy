@@ -1,0 +1,52 @@
+openstack_lb_member_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_lb_member_v1'
+    sidebar_current: docs-openstack-resource-lb-member-v1
+    description: Manages a V1 load balancer member resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        pool_id:
+            description: ' The ID of the LB pool. Changing this creates a new'
+            required: true
+            policy: ''
+            notes: ''
+        address:
+            description: The IP address of the member. Changing this creates a
+            required: true
+            policy: ''
+            notes: ''
+        port:
+            description: An integer representing the port on which the member is
+            required: true
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: The administrative state of the member.
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: The owner of the member. Required if admin wants to
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        pool_id:
+            description: See Argument Reference above.
+        address:
+            description: See Argument Reference above.
+        port:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+        weight:
+            description: The load balancing weight of the member. This is currently
+                unable
+    timeouts: {}

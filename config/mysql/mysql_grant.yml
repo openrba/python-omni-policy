@@ -1,0 +1,61 @@
+mysql_grant:
+    status: ASSESS
+    layout: mysql
+    page_title: 'MySQL: mysql_grant'
+    sidebar_current: docs-mysql-resource-grant
+    description: Creates and manages privileges given to a user on a MySQL server
+    arguments:
+        user:
+            description: The name of the user. Conflicts with `role`.
+            required: false
+            policy: ''
+            notes: ''
+        host:
+            description: The source host of the user. Defaults to "localhost". Conflicts
+                with `role`.
+            required: false
+            policy: ''
+            notes: ''
+        role:
+            description: The role to grant `privileges` to. Conflicts with `user`
+                and `host`.
+            required: false
+            policy: ''
+            notes: ''
+        database:
+            description: The database to grant privileges on.
+            required: true
+            policy: ''
+            notes: ''
+        table:
+            description: Which table to grant `privileges` on. Defaults to `*`, which
+                is all tables.
+            required: false
+            policy: ''
+            notes: ''
+        privileges:
+            description: A list of privileges to grant to the user. Refer to a list
+                of privileges (such as [here](https://dev.mysql.com/doc/refman/5.5/en/grant.html)
+            required: false
+            policy: ''
+            notes: ''
+        roles:
+            description: A list of roles to grant to the user. Conflicts with `privileges`.
+            required: false
+            policy: ''
+            notes: ''
+        tls_option:
+            description: An TLS-Option for the `GRANT` statement. The value is suffixed
+                to `REQUIRE`. A value of 'SSL' will generate a `GRANT ... REQUIRE
+                SSL` statement. See the [MYSQL `GRANT` documentation](https://dev.mysql.com/doc/refman/5.7/en/grant.html
+            required: false
+            policy: ''
+            notes: ''
+        grant:
+            description: Whether to also give the user privileges to grant the same
+                privileges to other users.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

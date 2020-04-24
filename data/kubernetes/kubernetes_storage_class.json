@@ -1,0 +1,49 @@
+{
+    "kubernetes_storage_class": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: kubernetes_storage_class",
+        "sidebar_current": "docs-kubernetes-resource-storage-class",
+        "description": "Storage class is the foundation of dynamic provisioning, allowing cluster administrators to define abstractions for the underlying storage platform.",
+        "arguments": {
+            "metadata": {
+                "description": "Standard storage class's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "parameters": {
+                "description": "The parameters for the provisioner that should create volumes of this storage class.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_provisioner": {
+                "description": "Indicates the type of the provisioner",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "reclaim_policy": {
+                "description": "Indicates the reclaim policy to use.  If no reclaimPolicy is specified when a StorageClass object is created, it will default to Delete.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_volume_expansion": {
+                "description": "Indicates whether the storage class allow volume expand, default true.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "mount_options": {
+                "description": "Persistent Volumes that are dynamically created by a storage class will have the mount options specified.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

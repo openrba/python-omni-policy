@@ -1,0 +1,37 @@
+{
+    "vault_audit": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_audit resource",
+        "sidebar_current": "docs-vault-audit",
+        "description": "Writes audit backends for Vault",
+        "arguments": {
+            "type": {
+                "description": "Type of the audit device, such as 'file'.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "path": {
+                "description": "The path to mount the audit device. This defaults to the type.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Human-friendly description of the audit device.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "options": {
+                "description": "Configuration options to pass to the audit device itself.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

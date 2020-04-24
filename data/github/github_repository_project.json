@@ -1,0 +1,34 @@
+{
+    "github_repository_project": {
+        "status": "ASSESS",
+        "layout": "github",
+        "page_title": "GitHub: github_repository_project",
+        "description": "Creates and manages projects for GitHub repositories",
+        "arguments": {
+            "name": {
+                "description": "The name of the project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "repository": {
+                "description": "The repository of the project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "body": {
+                "description": "The body of the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "url": {
+                "description": "URL of the project"
+            }
+        },
+        "timeouts": {}
+    }
+}

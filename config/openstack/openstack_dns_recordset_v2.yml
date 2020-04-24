@@ -1,0 +1,66 @@
+openstack_dns_recordset_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_dns_recordset_v2'
+    sidebar_current: docs-openstack-resource-dns-recordset-v2
+    description: Manages a DNS record set in the OpenStack DNS Service
+    arguments:
+        region:
+            description: The region in which to obtain the V2 DNS client.
+            required: false
+            policy: ''
+            notes: ''
+        zone_id:
+            description: The ID of the zone in which to create the record set.
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the record set. Note the `.` at the end of the
+                name.
+            required: true
+            policy: ''
+            notes: ''
+        type:
+            description: 'The type of record set. Examples: "A", "MX".'
+            required: false
+            policy: ''
+            notes: ''
+        ttl:
+            description: The time to live (TTL
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the  record set.
+            required: false
+            policy: ''
+            notes: ''
+        records:
+            description: An array of DNS records. _Note:_ if an IPv6 address
+            required: false
+            policy: ''
+            notes: ''
+        value_specs:
+            description: Map of additional options. Changing this creates a
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        type:
+            description: See Argument Reference above.
+        ttl:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        records:
+            description: See Argument Reference above.
+        zone_id:
+            description: See Argument Reference above.
+        value_specs:
+            description: See Argument Reference above.
+    timeouts: {}

@@ -1,0 +1,90 @@
+{
+    "google_google_project_iam": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_project_iam",
+        "sidebar_current": "docs-google-project-iam-x",
+        "description": "Collection of resources to manage IAM policy for a project.",
+        "arguments": {
+            "member/members": {
+                "description": "Identities that will be granted the privilege in `role`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role": {
+                "description": "The role that should be applied. Only one",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_data": {
+                "description": "The `google_iam_policy` data source that represents",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project ID. If not specified for `google_project_iam_binding`, `google_project_iam_member`, or `google_project_iam_audit_config`, uses the ID of the project configured with the provider.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "service": {
+                "description": "Service which will be enabled for audit logging.  The special value `allServices` covers all services.  Note that if there are google\\_project\\_iam\\_audit\\_config resources covering both `allServices` and a specific service then the union of the two AuditConfigs is used for that service: the `log_types` specified in each `audit_log_config` are enabled, and the `exempted_members` in each `audit_log_config` are exempted.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audit_log_config": {
+                "description": "The configuration for logging of each type of permission.  This can be specified multiple times.  Structure is documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "condition": {
+                "description": "An [IAM Condition](https://cloud.google.com/iam/docs/conditions-overview",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_type": {
+                "description": "Permission type for which logging is to be configured.  Must be one of `DATA_READ`, `DATA_WRITE`, or `ADMIN_READ`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "exempted_members": {
+                "description": "Identities that do not cause logging for this type of permission.  The format is the same as that for `members`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expression": {
+                "description": "Textual representation of an expression in Common Expression Language syntax.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "title": {
+                "description": "A title for the expression, i.e. a short string describing its purpose.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "An optional description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "etag": {
+                "description": "(Computed) The etag of the project's IAM policy."
+            }
+        },
+        "timeouts": {}
+    }
+}

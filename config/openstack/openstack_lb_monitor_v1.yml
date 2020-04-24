@@ -1,0 +1,79 @@
+openstack_lb_monitor_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_lb_monitor_v1'
+    sidebar_current: docs-openstack-resource-lb-monitor-v1
+    description: Manages a V1 load balancer monitor resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of probe, which is PING, TCP, HTTP, or HTTPS,
+            required: true
+            policy: ''
+            notes: ''
+        delay:
+            description: The time, in seconds, between sending probes to members.
+            required: true
+            policy: ''
+            notes: ''
+        timeout:
+            description: Maximum number of seconds for a monitor to wait for a
+            required: true
+            policy: ''
+            notes: ''
+        max_retries:
+            description: Number of permissible ping failures before changing
+            required: true
+            policy: ''
+            notes: ''
+        url_path:
+            description: Required for HTTP(S
+            required: false
+            policy: ''
+            notes: ''
+        http_method:
+            description: Required for HTTP(S
+            required: false
+            policy: ''
+            notes: ''
+        expected_codes:
+            description: Required for HTTP(S
+            required: false
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: The administrative state of the monitor.
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: The owner of the monitor. Required if admin wants to
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        type:
+            description: See Argument Reference above.
+        delay:
+            description: See Argument Reference above.
+        timeout:
+            description: See Argument Reference above.
+        max_retries:
+            description: See Argument Reference above.
+        url_path:
+            description: See Argument Reference above.
+        http_method:
+            description: See Argument Reference above.
+        expected_codes:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+        tenant_id:
+            description: See Argument Reference above.
+    timeouts: {}

@@ -1,0 +1,30 @@
+{
+    "github_team_repository": {
+        "status": "ASSESS",
+        "layout": "github",
+        "page_title": "GitHub: github_team_repository",
+        "description": "Manages the associations between teams and repositories.",
+        "arguments": {
+            "team_id": {
+                "description": "The GitHub team id",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "repository": {
+                "description": "The repository to add to the team.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "permission": {
+                "description": "The permissions of team members regarding the repository.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

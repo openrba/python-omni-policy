@@ -1,0 +1,27 @@
+openstack_networking_router_interface_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_networking_router_interface_v2'
+    sidebar_current: docs-openstack-resource-networking-router-interface-v2
+    description: Manages a V2 router interface resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 networking client.
+            required: false
+            policy: ''
+            notes: ''
+        router_id:
+            description: ID of the router this interface belongs to. Changing
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        router_id:
+            description: See Argument Reference above.
+        subnet_id:
+            description: See Argument Reference above.
+        port_id:
+            description: See Argument Reference above.
+    timeouts: {}

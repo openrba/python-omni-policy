@@ -1,0 +1,46 @@
+google_logging_billing_account_sink:
+    status: ASSESS
+    subcategory: Cloud (Stackdriver) Logging
+    layout: google
+    page_title: 'Google: google_logging_billing_account_sink'
+    sidebar_current: docs-google-logging-billing-account-sink
+    description: Manages a billing account logging sink.
+    arguments:
+        name:
+            description: The name of the logging sink.
+            required: true
+            policy: ''
+            notes: ''
+        billing_account:
+            description: The billing account exported to the sink.
+            required: true
+            policy: ''
+            notes: ''
+        destination:
+            description: The destination of the sink (or, in other words, where logs
+                are written to). Can be a
+            required: true
+            policy: ''
+            notes: ''
+        filter:
+            description: The filter to apply when exporting logs. Only log entries
+                that match the filter are exported.
+            required: false
+            policy: ''
+            notes: ''
+        bigquery_options:
+            description: Options that affect sinks exporting data to BigQuery. Structure
+                documented below.
+            required: false
+            policy: ''
+            notes: ''
+        use_partitioned_tables:
+            description: Whether to use [BigQuery's partition tables](https://cloud.google.com/bigquery/docs/partitioned-tables).
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        writer_identity:
+            description: The identity associated with this sink. This identity must
+                be granted write access to the
+    timeouts: {}

@@ -1,0 +1,41 @@
+google_bigtable_table:
+    status: ASSESS
+    subcategory: Cloud Bigtable
+    layout: google
+    page_title: 'Google: google_bigtable_table'
+    sidebar_current: docs-google-bigtable-table
+    description: Creates a Google Cloud Bigtable table inside an instance.
+    arguments:
+        name:
+            description: The name of the table.
+            required: true
+            policy: ''
+            notes: ''
+        instance_name:
+            description: The name of the Bigtable instance.
+            required: true
+            policy: ''
+            notes: ''
+        split_keys:
+            description: A list of predefined keys to split the table on.
+            required: false
+            policy: ''
+            notes: ''
+        column_family:
+            description: A group of columns within a table which share a common configuration.
+                This can be specified multiple times. Structure is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the resource belongs. If it
+            required: false
+            policy: ''
+            notes: ''
+        family:
+            description: The name of the column family.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

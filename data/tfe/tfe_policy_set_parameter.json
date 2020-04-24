@@ -1,0 +1,41 @@
+{
+    "tfe_policy_set_parameter": {
+        "status": "ASSESS",
+        "layout": "tfe",
+        "page_title": "Terraform Enterprise: tfe_policy_set_parameter",
+        "sidebar_current": "docs-resource-tfe-policy-set-parameter",
+        "description": "Manages policy set parameters.",
+        "arguments": {
+            "key": {
+                "description": "Name of the parameter.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "Value of the parameter.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sensitive": {
+                "description": "Whether the value is sensitive. If true then the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "policy_set_id": {
+                "description": "The ID of the policy set that owns the parameter.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the parameter."
+            }
+        },
+        "timeouts": {}
+    }
+}

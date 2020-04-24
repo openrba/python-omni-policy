@@ -1,0 +1,86 @@
+openstack_networking_quota_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_networking_quota_v2'
+    sidebar_current: docs-openstack-resource-networking-quota-v2
+    description: Manages a V2 networking quota resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to create the quota. If
+            required: false
+            policy: ''
+            notes: ''
+        project_id:
+            description: ID of the project to manage quota. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        floatingip:
+            description: Quota value for floating IPs. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        network:
+            description: Quota value for networks. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: Quota value for ports. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        rbac_policy:
+            description: Quota value for RBAC policies.
+            required: false
+            policy: ''
+            notes: ''
+        router:
+            description: Quota value for routers. Changing this updates the
+            required: false
+            policy: ''
+            notes: ''
+        security_group:
+            description: Quota value for security groups. Changing
+            required: false
+            policy: ''
+            notes: ''
+        security_group_rule:
+            description: Quota value for security group rules.
+            required: false
+            policy: ''
+            notes: ''
+        subnet:
+            description: Quota value for subnets. Changing
+            required: false
+            policy: ''
+            notes: ''
+        subnetpool:
+            description: Quota value for subnetpools.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        project_id:
+            description: See Argument Reference above.
+        floatingip:
+            description: See Argument Reference above.
+        network:
+            description: See Argument Reference above.
+        port:
+            description: See Argument Reference above.
+        rbac_policy:
+            description: See Argument Reference above.
+        router:
+            description: See Argument Reference above.
+        security_group:
+            description: See Argument Reference above.
+        security_group_rule:
+            description: See Argument Reference above.
+        subnet:
+            description: See Argument Reference above.
+        subnetpool:
+            description: See Argument Reference above.
+    timeouts: {}

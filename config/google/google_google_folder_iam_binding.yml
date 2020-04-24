@@ -1,0 +1,30 @@
+google_google_folder_iam_binding:
+    status: ASSESS
+    subcategory: Cloud Platform
+    layout: google
+    page_title: 'Google: google_folder_iam_binding'
+    sidebar_current: docs-google-folder-iam-binding
+    description: Allows management of a single binding with an IAM policy for a Google
+        Cloud Platform folder.
+    arguments:
+        folder:
+            description: The resource name of the folder the policy is attached to.
+                Its format is folders/{folder_id}.
+            required: true
+            policy: ''
+            notes: ''
+        members:
+            description: '- An array of identities that will be granted the privilege
+                in the `role`.'
+            required: true
+            policy: ''
+            notes: ''
+        role:
+            description: The role that should be applied. Only one
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        etag:
+            description: (Computed) The etag of the folder's IAM policy.
+    timeouts: {}

@@ -1,0 +1,25 @@
+{
+    "kubernetes_limit_range": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: kubernetes_limit_range",
+        "sidebar_current": "docs-kubernetes-resource-limit-range",
+        "description": "Limit Range sets resource usage limits (e.g. memory, cpu, storage) for supported kinds of resources in a namespace.",
+        "arguments": {
+            "metadata": {
+                "description": "Standard limit range's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "spec": {
+                "description": "Spec defines the limits enforced. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

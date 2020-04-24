@@ -1,0 +1,43 @@
+{
+    "datadog_integration_pagerduty": {
+        "status": "ASSESS",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_integration_pagerduty",
+        "sidebar_current": "docs-datadog-resource-integration_pagerduty",
+        "description": "Provides a Datadog - PagerDuty integration resource. This can be used to create and manage the integration.",
+        "arguments": {
+            "individual_services": {
+                "description": "Boolean to specify whether or not individual service objects specified by [datadog_integration_pagerduty_service_object](/docs/providers/datadog/r/integration_pagerduty_service_object.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "services": {
+                "description": "Array of PagerDuty service objects. **Deprecated** The `services` list is now deprecated in favour of [datadog_integration_pagerduty_service_object](/docs/providers/datadog/r/integration_pagerduty_service_object.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "schedules": {
+                "description": " Array of your schedule URLs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subdomain": {
+                "description": "Your PagerDuty account\u2019s personalized subdomain name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_token": {
+                "description": "Your PagerDuty API token.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

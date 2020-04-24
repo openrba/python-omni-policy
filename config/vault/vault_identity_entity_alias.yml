@@ -1,0 +1,29 @@
+vault_identity_entity_alias:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_identity_entity_alias resource'
+    sidebar_current: docs-vault-resource-identity-entity-alias
+    description: Creates an Identity Entity Alias for Vault.
+    arguments:
+        name:
+            description: Name of the alias. Name should be the identifier of the client
+                in the authentication source. For example, if the alias belongs to
+                userpass backend, the name should be a valid username within userpass
+                backend. If alias belongs to GitHub, it should be the GitHub username.
+            required: true
+            policy: ''
+            notes: ''
+        mount_accessor:
+            description: Accessor of the mount to which the alias should belong to.
+            required: true
+            policy: ''
+            notes: ''
+        canonical_id:
+            description: Entity ID to which this alias belongs to.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: ID of the entity alias.
+    timeouts: {}

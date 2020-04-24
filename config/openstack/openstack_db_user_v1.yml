@@ -1,0 +1,39 @@
+openstack_db_user_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_db_user_v1'
+    sidebar_current: docs-openstack-resource-db-user-v1
+    description: Manages a V1 database user resource within OpenStack.
+    arguments:
+        name:
+            description: A unique name for the resource.
+            required: true
+            policy: ''
+            notes: ''
+        instance:
+            description: The ID for the database instance.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: User's password.
+            required: true
+            policy: ''
+            notes: ''
+        databases:
+            description: A list of database user should have access to.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: Openstack region resource is created in.
+        name:
+            description: See Argument Reference above.
+        instance:
+            description: See Argument Reference above.
+        password:
+            description: See Argument Reference above.
+        databases:
+            description: See Argument Reference above.
+    timeouts: {}

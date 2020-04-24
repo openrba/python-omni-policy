@@ -1,0 +1,49 @@
+{
+    "datadog_metric_metadata": {
+        "status": "ASSESS",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_metric_metadata",
+        "sidebar_current": "docs-datadog-resource-metric_metadata",
+        "description": "Provides a Datadog metric metadata resource. This can be used to manage a metric's metadata.",
+        "arguments": {
+            "metric": {
+                "description": "The name of the metric.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the metric.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "short_name": {
+                "description": "A short name of the metric.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "unit": {
+                "description": "Primary unit of the metric such as 'byte' or 'operation'.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "per_unit": {
+                "description": "'Per' unit of the metric such as 'second' in 'bytes per second'.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "statsd_interval": {
+                "description": "If applicable, stasd flush interval in seconds for the metric.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

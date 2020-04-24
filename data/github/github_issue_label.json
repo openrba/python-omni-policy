@@ -1,0 +1,42 @@
+{
+    "github_issue_label": {
+        "status": "ASSESS",
+        "layout": "github",
+        "page_title": "GitHub: github_issue_label",
+        "description": "Provides a GitHub issue label resource.",
+        "arguments": {
+            "repository": {
+                "description": "The GitHub repository",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the label.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "color": {
+                "description": "A 6 character hex code, **without the leading #**, identifying the color of the label.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A short description of the label.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The URL to the issue label",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

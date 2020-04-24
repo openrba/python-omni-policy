@@ -1,0 +1,35 @@
+openstack_images_image_access_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_images_image_access_v2'
+    sidebar_current: docs-openstack-resource-images-image-access-v2
+    description: Manages a V2 Image member resource within OpenStack Glance.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Glance client.
+            required: false
+            policy: ''
+            notes: ''
+        image_id:
+            description: The image ID.
+            required: true
+            policy: ''
+            notes: ''
+        member_id:
+            description: The member ID, e.g. the target project ID.
+            required: true
+            policy: ''
+            notes: ''
+        status:
+            description: The member proposal status. Optional if admin wants to
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        created_at:
+            description: The date the image access was created.
+        updated_at:
+            description: The date the image access was last updated.
+        schema:
+            description: The member schema.
+    timeouts: {}

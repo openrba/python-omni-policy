@@ -1,0 +1,36 @@
+tfe_sentinel_policy:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_sentinel_policy'
+    sidebar_current: docs-resource-tfe-sentinel-policy
+    description: Manages Sentinel policies.
+    arguments:
+        name:
+            description: Name of the policy.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the policy's purpose.
+            required: false
+            policy: ''
+            notes: ''
+        organization:
+            description: Name of the organization.
+            required: true
+            policy: ''
+            notes: ''
+        policy:
+            description: The actual policy itself.
+            required: true
+            policy: ''
+            notes: ''
+        enforce_mode:
+            description: The enforcement level of the policy. Valid
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the policy.
+    timeouts: {}

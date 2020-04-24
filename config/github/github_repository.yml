@@ -1,0 +1,129 @@
+github_repository:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_repository'
+    description: Creates and manages repositories within GitHub organizations
+    arguments:
+        name:
+            description: The name of the repository.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the repository.
+            required: false
+            policy: ''
+            notes: ''
+        homepage_url:
+            description: URL of a page describing the project.
+            required: false
+            policy: ''
+            notes: ''
+        private:
+            description: Set to `true` to create a private repository.
+            required: false
+            policy: ''
+            notes: ''
+        has_issues:
+            description: Set to `true` to enable the GitHub Issues features
+            required: false
+            policy: ''
+            notes: ''
+        has_projects:
+            description: Set to `true` to enable the GitHub Projects features on the
+                repository. Per the GitHub [documentation](https://developer.github.com/v3/repos/#create
+            required: false
+            policy: ''
+            notes: ''
+        has_wiki:
+            description: Set to `true` to enable the GitHub Wiki features on
+            required: false
+            policy: ''
+            notes: ''
+        is_template:
+            description: Set to `true` to tell GitHub that this is a template repository.
+            required: false
+            policy: ''
+            notes: ''
+        allow_merge_commit:
+            description: Set to `false` to disable merge commits on the repository.
+            required: false
+            policy: ''
+            notes: ''
+        allow_squash_merge:
+            description: Set to `false` to disable squash merges on the repository.
+            required: false
+            policy: ''
+            notes: ''
+        allow_rebase_merge:
+            description: Set to `false` to disable rebase merges on the repository.
+            required: false
+            policy: ''
+            notes: ''
+        delete_branch_on_merge:
+            description: Automatically delete head branch after a pull request is
+                merged. Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        has_downloads:
+            description: Set to `true` to enable the (deprecated
+            required: false
+            policy: ''
+            notes: ''
+        auto_init:
+            description: Set to `true` to produce an initial commit in the repository.
+            required: false
+            policy: ''
+            notes: ''
+        gitignore_template:
+            description: Use the [name of the template](https://github.com/github/gitignore
+            required: false
+            policy: ''
+            notes: ''
+        license_template:
+            description: Use the [name of the template](https://github.com/github/choosealicense.com/tree/gh-pages/_licenses
+            required: false
+            policy: ''
+            notes: ''
+        default_branch:
+            description: The name of the default branch of the repository. **NOTE:**
+                This can only be set after a repository has already been created,
+            required: false
+            policy: ''
+            notes: ''
+        archived:
+            description: Specifies if the repository should be archived. Defaults
+                to `false`. **NOTE** Currently, the API does not support unarchiving.
+            required: false
+            policy: ''
+            notes: ''
+        topics:
+            description: The list of topics of the repository.
+            required: false
+            policy: ''
+            notes: ''
+        template:
+            description: Use a template repository to create this resource. See [Template
+                Repositories](#template-repositories
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        full_name:
+            description: A string of the form "orgname/reponame".
+        html_url:
+            description: URL to the repository on the web.
+        ssh_clone_url:
+            description: URL that can be provided to `git clone` to clone the repository
+                via SSH.
+        http_clone_url:
+            description: URL that can be provided to `git clone` to clone the repository
+                via HTTPS.
+        git_clone_url:
+            description: URL that can be provided to `git clone` to clone the repository
+                anonymously via the git protocol.
+        svn_url:
+            description: URL that can be provided to `svn checkout` to check out the
+                repository via GitHub's Subversion protocol emulation.
+    timeouts: {}

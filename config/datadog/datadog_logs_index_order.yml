@@ -1,0 +1,21 @@
+datadog_logs_index_order:
+    status: ASSESS
+    layout: datadog
+    page_title: 'Datadog: datadog_logs_index_order'
+    sidebar_current: docs-datadog-resource-logs-index-order
+    description: Provides a Datadog logs index order resource. This can be used to
+        manage the order of logs indexes.
+    arguments:
+        name:
+            description: 'The unique name of the index order resource. '
+            required: true
+            policy: ''
+            notes: ''
+        indexes:
+            description: The index resource list. Logs are tested against the query
+                filter of each index one by one following the order of the list.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

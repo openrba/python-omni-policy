@@ -1,0 +1,109 @@
+{
+    "vault_aws_auth_backend_role": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_aws_auth_backend_role resource",
+        "sidebar_current": "docs-vault-resource-aws-auth-backend-role",
+        "description": "Manages AWS auth backend roles in Vault.",
+        "arguments": {
+            "role": {
+                "description": "The name of the role.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "auth_type": {
+                "description": "The auth type permitted for this role. Valid choices",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_ami_ids": {
+                "description": "If set, defines a constraint on the EC2 instances",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_account_ids": {
+                "description": "If set, defines a constraint on the EC2",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_regions": {
+                "description": "If set, defines a constraint on the EC2 instances",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_vpc_ids": {
+                "description": "If set, defines a constraint on the EC2 instances",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_subnet_ids": {
+                "description": "If set, defines a constraint on the EC2",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_iam_role_arns": {
+                "description": "If set, defines a constraint on the EC2",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_iam_instance_profile_arns": {
+                "description": "If set, defines a constraint on",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "role_tag": {
+                "description": "If set, enable role tags for this role. The value set",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bound_iam_principal_arns": {
+                "description": "If set, defines the IAM principal that",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "inferred_entity_type": {
+                "description": "If set, instructs Vault to turn on",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "inferred_aws_region": {
+                "description": "When `inferred_entity_type` is set, this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resolve_aws_unique_ids": {
+                "description": "If set to `true`, the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_instance_migration": {
+                "description": "If set to `true`, allows migration of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disallow_reauthentication": {
+                "description": "IF set to `true`, only allows a",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

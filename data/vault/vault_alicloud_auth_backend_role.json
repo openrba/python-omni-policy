@@ -1,0 +1,31 @@
+{
+    "vault_alicloud_auth_backend_role": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_alicloud_auth_backend_role resource",
+        "sidebar_current": "docs-vault-resource-alicloud-auth-backend-role",
+        "description": "Managing roles in an AliCloud auth backend in Vault",
+        "arguments": {
+            "role": {
+                "description": "Name of the role. Must correspond with the name of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "arn": {
+                "description": "The role's arn.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backend": {
+                "description": "Path to the mounted AliCloud auth backend.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

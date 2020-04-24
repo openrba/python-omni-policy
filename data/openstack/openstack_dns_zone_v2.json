@@ -1,0 +1,95 @@
+{
+    "openstack_dns_zone_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_dns_zone_v2",
+        "sidebar_current": "docs-openstack-resource-dns-zone-v2",
+        "description": "Manages a DNS zone in the OpenStack DNS Service",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Compute client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the zone. Note the `.` at the end of the name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "email": {
+                "description": "The email contact for the zone record.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The type of zone. Can either be `PRIMARY` or `SECONDARY`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "attributes": {
+                "description": "Attributes for the DNS Service scheduler.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ttl": {
+                "description": "The time to live (TTL",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the zone.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "masters": {
+                "description": "An array of master DNS servers. For when `type` is",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value_specs": {
+                "description": "Map of additional options. Changing this creates a",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "email": {
+                "description": "See Argument Reference above."
+            },
+            "type": {
+                "description": "See Argument Reference above."
+            },
+            "attributes": {
+                "description": "See Argument Reference above."
+            },
+            "ttl": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "masters": {
+                "description": "See Argument Reference above."
+            },
+            "value_specs": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

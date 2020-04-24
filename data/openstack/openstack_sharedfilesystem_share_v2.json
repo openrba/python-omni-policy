@@ -1,0 +1,131 @@
+{
+    "openstack_sharedfilesystem_share_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: sharedfilesystem_share_v2",
+        "sidebar_current": "docs-openstack-resource-sharedfilesystem-share-v2",
+        "description": "Configure a Shared File System share.",
+        "arguments": {
+            "name": {
+                "description": "The name of the share. Changing this updates the name",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The human-readable description for the share.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "share_proto": {
+                "description": "The share protocol - can either be NFS, CIFS,",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "size": {
+                "description": "The share size, in GBs. The requested share size cannot be greater",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "share_type": {
+                "description": "The share type name. If you omit this parameter, the default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "snapshot_id": {
+                "description": "The UUID of the share's base snapshot. Changing this creates",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "is_public": {
+                "description": "The level of visibility for the share. Set to true to make",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "One or more metadata key and value pairs as a dictionary of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "share_network_id": {
+                "description": "The UUID of a share network where the share server exists",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "availability_zone": {
+                "description": "The share availability zone. Changing this creates a",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique ID for the Share."
+            },
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "project_id": {
+                "description": "The owner of the Share."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "share_proto": {
+                "description": "See Argument Reference above."
+            },
+            "size": {
+                "description": "See Argument Reference above."
+            },
+            "share_type": {
+                "description": "See Argument Reference above."
+            },
+            "snapshot_id": {
+                "description": "See Argument Reference above."
+            },
+            "is_public": {
+                "description": "See Argument Reference above."
+            },
+            "metadata": {
+                "description": "See Argument Reference above."
+            },
+            "share_network_id": {
+                "description": "See Argument Reference above."
+            },
+            "availability_zone": {
+                "description": "See Argument Reference above."
+            },
+            "export_locations": {
+                "description": "A list of export locations. For example, when a share server"
+            },
+            "has_replicas": {
+                "description": "Indicates whether a share has replicas or not."
+            },
+            "host": {
+                "description": "The share host name."
+            },
+            "replication_type": {
+                "description": "The share replication type."
+            },
+            "share_server_id": {
+                "description": "The UUID of the share server."
+            },
+            "all_metadata": {
+                "description": "The map of metadata, assigned on the share, which has been"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,16 @@
+vault_namespace:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_namespace resource'
+    sidebar_current: docs-vault-resource-namespace
+    description: Writes namespaces for Vault
+    arguments:
+        path:
+            description: The path of the namespace. Must not have a trailing `/`
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: ID of the namespace.
+    timeouts: {}

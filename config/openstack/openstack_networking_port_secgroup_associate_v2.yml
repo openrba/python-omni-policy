@@ -1,0 +1,37 @@
+openstack_networking_port_secgroup_associate_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_networking_port_secgroup_associate_v2'
+    sidebar_current: docs-openstack-resource-networking-port-secgroup-associate-v2
+    description: Manages a V2 port's security groups within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 networking client.
+            required: false
+            policy: ''
+            notes: ''
+        port_id:
+            description: An UUID of the port to apply security groups to.
+            required: true
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: A list of security group IDs to apply to
+            required: true
+            policy: ''
+            notes: ''
+        enforce:
+            description: Whether to replace or append the list of security
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        port_id:
+            description: See Argument Reference above.
+        security_group_ids:
+            description: See Argument Reference above.
+        all_security_group_ids:
+            description: The collection of Security Group IDs on the port
+    timeouts: {}

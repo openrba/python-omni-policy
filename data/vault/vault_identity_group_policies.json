@@ -1,0 +1,35 @@
+{
+    "vault_identity_group_policies": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_identity_group_policies resource",
+        "sidebar_current": "docs-vault-resource-identity-group-policies",
+        "description": "Manages policies for an Identity Group for Vault.",
+        "arguments": {
+            "policies": {
+                "description": "List of policies to assign to the group",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "group_id": {
+                "description": "Group ID to assign policies to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "exclusive": {
+                "description": "Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "group_name": {
+                "description": "The name of the group that are assigned the policies."
+            }
+        },
+        "timeouts": {}
+    }
+}

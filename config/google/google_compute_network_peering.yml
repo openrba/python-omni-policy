@@ -1,0 +1,30 @@
+google_compute_network_peering:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_network_peering'
+    sidebar_current: docs-google-compute-network-peering
+    description: Manages a network peering within GCE.
+    arguments:
+        name:
+            description: Name of the peering.
+            required: true
+            policy: ''
+            notes: ''
+        network:
+            description: The primary network of the peering.
+            required: true
+            policy: ''
+            notes: ''
+        peer_network:
+            description: The peer network in the peering. The peer network
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        state:
+            description: State for the peering, either `ACTIVE` or `INACTIVE`. The
+                peering is
+        state_details:
+            description: Details about the current state of the peering.
+    timeouts: {}

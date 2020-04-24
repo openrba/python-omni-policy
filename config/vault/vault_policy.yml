@@ -1,0 +1,19 @@
+vault_policy:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_policy resource'
+    sidebar_current: docs-vault-resource-policy
+    description: Writes arbitrary policies for Vault
+    arguments:
+        name:
+            description: The name of the policy
+            required: true
+            policy: ''
+            notes: ''
+        policy:
+            description: String containing a Vault policy
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

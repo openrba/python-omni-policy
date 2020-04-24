@@ -1,0 +1,59 @@
+{
+    "openstack_identity_service_v3": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_identity_service_v3",
+        "sidebar_current": "docs-openstack-resource-identity-service-v3",
+        "description": "Manages a V3 Service resource within OpenStack Keystone.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V3 Keystone client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The service name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The service description.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The service type.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "The service status. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "type": {
+                "description": "See Argument Reference above."
+            },
+            "enabled": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

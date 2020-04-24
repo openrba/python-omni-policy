@@ -1,0 +1,167 @@
+{
+    "openstack_images_image_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_images_image_v2",
+        "sidebar_current": "docs-openstack-resource-images-image-v2",
+        "description": "Manages a V2 Image resource within OpenStack Glance.",
+        "arguments": {
+            "container_format": {
+                "description": "The container format. Must be one of",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_format": {
+                "description": "The disk format. Must be one of",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "local_file_path": {
+                "description": "This is the filepath of the raw image file",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "image_cache_path": {
+                "description": "This is the directory where the images will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "image_source_url": {
+                "description": "This is the url of the raw image. If `web_download`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "min_disk_gb": {
+                "description": "Amount of disk space (in GB",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "min_ram_mb": {
+                "description": "Amount of ram (in MB",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the image.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "properties": {
+                "description": "A map of key/value pairs to set freeform",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "protected": {
+                "description": "If true, image will not be deletable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "The region in which to obtain the V2 Glance client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "The tags of the image. It must be a list of strings.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "verify_checksum": {
+                "description": "If false, the checksum will not be verified",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "visibility": {
+                "description": "The visibility of the image. Must be one of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "web_download": {
+                "description": "If true, the \"web-download\" import method will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "checksum": {
+                "description": "The checksum of the data associated with the image."
+            },
+            "container_format": {
+                "description": "See Argument Reference above."
+            },
+            "created_at": {
+                "description": "The date the image was created."
+            },
+            "disk_format": {
+                "description": "See Argument Reference above."
+            },
+            "file": {
+                "description": "the trailing path after the glance"
+            },
+            "id": {
+                "description": "A unique ID assigned by Glance."
+            },
+            "metadata": {
+                "description": "The metadata associated with the image."
+            },
+            "min_disk_gb": {
+                "description": "See Argument Reference above."
+            },
+            "min_ram_mb": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "owner": {
+                "description": "The id of the openstack user who owns the image."
+            },
+            "properties": {
+                "description": "See Argument Reference above."
+            },
+            "protected": {
+                "description": "See Argument Reference above."
+            },
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "schema": {
+                "description": "The path to the JSON-schema that represent"
+            },
+            "size_bytes": {
+                "description": "The size in bytes of the data associated with the image."
+            },
+            "status": {
+                "description": "The status of the image. It can be \"queued\", \"active\""
+            },
+            "tags": {
+                "description": "See Argument Reference above."
+            },
+            "updated_at": {
+                "description": "The date the image was last updated."
+            },
+            "update_at": {
+                "description": "(**Deprecated** "
+            },
+            "visibility": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

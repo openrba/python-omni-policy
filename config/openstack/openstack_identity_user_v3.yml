@@ -1,0 +1,81 @@
+openstack_identity_user_v3:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_identity_user_v3'
+    sidebar_current: docs-openstack-resource-identity-user-v3
+    description: Manages a V3 User resource within OpenStack Keystone.
+    arguments:
+        description:
+            description: A description of the user.
+            required: false
+            policy: ''
+            notes: ''
+        default_project_id:
+            description: The default project this user belongs to.
+            required: false
+            policy: ''
+            notes: ''
+        domain_id:
+            description: The domain this user belongs to.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Whether the user is enabled or disabled. Valid
+            required: false
+            policy: ''
+            notes: ''
+        extra:
+            description: Free-form key/value pairs of extra information.
+            required: false
+            policy: ''
+            notes: ''
+        ignore_change_password_upon_first_use:
+            description: User will not have to
+            required: false
+            policy: ''
+            notes: ''
+        ignore_password_expiry:
+            description: User's password will not expire.
+            required: false
+            policy: ''
+            notes: ''
+        ignore_lockout_failure_attempts:
+            description: User will not have a failure
+            required: false
+            policy: ''
+            notes: ''
+        multi_factor_auth_enabled:
+            description: Whether to enable multi-factor
+            required: false
+            policy: ''
+            notes: ''
+        multi_factor_auth_rule:
+            description: A multi-factor authentication rule.
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: The name of the user.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The password for the user.
+            required: false
+            policy: ''
+            notes: ''
+        region:
+            description: The region in which to obtain the V3 Keystone client.
+            required: false
+            policy: ''
+            notes: ''
+        rule:
+            description: A list of authentication plugins that the user must
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        domain_id:
+            description: See Argument Reference above.
+    timeouts: {}

@@ -1,0 +1,110 @@
+{
+    "openstack_sharedfilesystem_securityservice_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: sharedfilesystem_securityservice_v2",
+        "sidebar_current": "docs-openstack-resource-sharedfilesystem-securityservice-v2",
+        "description": "Configure a Shared File System security service.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Shared File System client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the security service. Changing this updates the name",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The human-readable description for the security service.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The security service type - can either be active\\_directory,",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_ip": {
+                "description": "The security service DNS IP address that is used inside the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ou": {
+                "description": "The security service ou. An organizational unit can be added to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user": {
+                "description": "The security service user or group name that is used by the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "password": {
+                "description": "The user password, if you specify a user.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain": {
+                "description": "The security service domain.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server": {
+                "description": "The security service host name or IP address.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique ID for the Security Service."
+            },
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "project_id": {
+                "description": "The owner of the Security Service."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "type": {
+                "description": "See Argument Reference above."
+            },
+            "dns_ip": {
+                "description": "See Argument Reference above."
+            },
+            "ou": {
+                "description": "See Argument Reference above."
+            },
+            "user": {
+                "description": "See Argument Reference above."
+            },
+            "password": {
+                "description": "See Argument Reference above."
+            },
+            "domain": {
+                "description": "See Argument Reference above."
+            },
+            "server": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

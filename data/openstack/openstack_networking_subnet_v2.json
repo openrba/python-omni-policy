@@ -1,0 +1,191 @@
+{
+    "openstack_networking_subnet_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_subnet_v2",
+        "sidebar_current": "docs-openstack-resource-networking-subnet-v2",
+        "description": "Manages a V2 Neutron subnet resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_id": {
+                "description": "The UUID of the parent network. Changing this",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cidr": {
+                "description": "CIDR representing IP range for this subnet, based on IP",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix_length": {
+                "description": "The prefix length to use when creating a subnet",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_version": {
+                "description": "IP version, either 4 (default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipv6_address_mode": {
+                "description": "The IPv6 address mode. Valid values are",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ipv6_ra_mode": {
+                "description": "The IPv6 Router Advertisement mode. Valid values",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the subnet. Changing this updates the name of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Human-readable description of the subnet. Changing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The owner of the subnet. Required if admin wants to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allocation_pool": {
+                "description": "A block declaring the start and end range of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "gateway_ip": {
+                "description": " Default gateway used by devices in this subnet.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "no_gateway": {
+                "description": "Do not set a gateway IP on this subnet. Changing",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_dhcp": {
+                "description": "The administrative state of the network.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_nameservers": {
+                "description": "An array of DNS name server names used by hosts",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnetpool_id": {
+                "description": "The ID of the subnetpool associated with the subnet.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value_specs": {
+                "description": "Map of additional options.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A set of string tags for the subnet.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "start": {
+                "description": "The starting address.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "end": {
+                "description": "The ending address.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "destination_cidr": {
+                "description": "The destination CIDR.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "next_hop": {
+                "description": "The next hop in the route.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "network_id": {
+                "description": "See Argument Reference above."
+            },
+            "cidr": {
+                "description": "See Argument Reference above."
+            },
+            "ip_version": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            },
+            "allocation_pools": {
+                "description": "See Argument Reference above."
+            },
+            "gateway_ip": {
+                "description": "See Argument Reference above."
+            },
+            "enable_dhcp": {
+                "description": "See Argument Reference above."
+            },
+            "dns_nameservers": {
+                "description": "See Argument Reference above."
+            },
+            "host_routes": {
+                "description": "See Argument Reference above."
+            },
+            "subnetpool_id": {
+                "description": "See Argument Reference above."
+            },
+            "tags": {
+                "description": "See Argument Reference above."
+            },
+            "all_tags": {
+                "description": "The collection of ags assigned on the subnet, which have been"
+            }
+        },
+        "timeouts": {}
+    }
+}

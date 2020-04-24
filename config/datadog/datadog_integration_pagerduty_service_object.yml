@@ -1,0 +1,24 @@
+datadog_integration_pagerduty_service_object:
+    status: ASSESS
+    layout: datadog
+    page_title: 'Datadog: datadog_integration_pagerduty_service_object'
+    sidebar_current: docs-datadog-resource-integration_pagerduty_service_object
+    description: Provides a Datadog - PagerDuty integration resource. This can be
+        used to create and manage the integration.
+    arguments:
+        service_name:
+            description: Your Service name in PagerDuty.
+            required: true
+            policy: ''
+            notes: ''
+        service_key:
+            description: 'Your Service name associated service key in PagerDuty. Note:
+                Since the Datadog API never returns service keys, it is impossible
+                to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform).
+                The best way to solve a drift is to manually mark the Service Object
+                resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html'
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

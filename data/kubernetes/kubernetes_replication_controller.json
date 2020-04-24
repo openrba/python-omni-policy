@@ -1,0 +1,25 @@
+{
+    "kubernetes_replication_controller": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: kubernetes_replication_controller",
+        "sidebar_current": "docs-kubernetes-resource-replication-controller",
+        "description": "A Replication Controller ensures that a specified number of pod \u201creplicas\u201d are running at any one time. In other words, a Replication Controller makes sure that a pod or homogeneous set of pods are always up and available. If there are too many pods, it will kill some. If there are too few, the Replication Controller will start more.",
+        "arguments": {
+            "metadata": {
+                "description": "Standard replication controller's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "spec": {
+                "description": "Spec defines the specification of the desired behavior of the replication controller. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status)",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

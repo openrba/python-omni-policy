@@ -1,0 +1,23 @@
+tfe_run_trigger:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_notification_configuration'
+    sidebar_current: docs-resource-tfe-run-trigger
+    description: Manages run triggers
+    arguments:
+        workspace_external_id:
+            description: The external id of the workspace that owns the run trigger.
+                This is the workspace where runs will be triggered.
+            required: true
+            policy: ''
+            notes: ''
+        sourceable_id:
+            description: The external id of the sourceable. The sourceable must be
+                a workspace.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the run trigger.
+    timeouts: {}

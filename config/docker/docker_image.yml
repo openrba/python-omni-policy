@@ -1,0 +1,27 @@
+docker_image:
+    status: ASSESS
+    layout: docker
+    page_title: 'Docker: docker_image'
+    sidebar_current: docs-docker-resource-image
+    description: Pulls a Docker image to a given Docker host.
+    arguments:
+        name:
+            description: The name of the Docker image, including any tags or SHA256
+                repo digests.
+            required: false
+            policy: ''
+            notes: ''
+        keep_locally:
+            description: If true, then the Docker image won't be
+            required: false
+            policy: ''
+            notes: ''
+        pull_triggers:
+            description: List of values which cause an
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        latest:
+            description: The ID of the image.
+    timeouts: {}

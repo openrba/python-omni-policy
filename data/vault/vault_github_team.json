@@ -1,0 +1,31 @@
+{
+    "vault_github_team": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_github_team resource",
+        "sidebar_current": "docs-vault-github-team",
+        "description": "Manages Team mappings for Github Auth backend mounts in Vault.",
+        "arguments": {
+            "backend": {
+                "description": "Path where the github auth backend is mounted. Defaults to `github`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "team": {
+                "description": "GitHub team name in \"slugified\" format, for example: Terraform",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policies": {
+                "description": "An array of strings specifying the policies to be set on tokens",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

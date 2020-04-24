@@ -1,0 +1,99 @@
+{
+    "google_compute_security_policy": {
+        "status": "ASSESS",
+        "subcategory": "Compute Engine",
+        "layout": "google",
+        "page_title": "Google: google_compute_security_policy",
+        "sidebar_current": "docs-google-compute-security-policy",
+        "description": "Creates a Security Policy resource for Google Compute Engine.",
+        "arguments": {
+            "name": {
+                "description": "The name of the security policy.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "An optional description of this rule. Max size is 64.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project in which the resource belongs. If it",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rule": {
+                "description": "The set of rules that belong to this policy. There must always be a default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "action": {
+                "description": "Action to take when `match` matches the request. Valid values:",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "An unique positive integer indicating the priority of evaluation for a rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "match": {
+                "description": "A match condition that incoming traffic is evaluated against.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "preview": {
+                "description": "When set to true, the `action` specified above is not enforced.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "config": {
+                "description": "The configuration options available when specifying `versioned_expr`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "versioned_expr": {
+                "description": "Predefined rule expression. If this field is specified, `config` must also be specified.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expr": {
+                "description": "User defined CEVAL expression. A CEVAL expression is used to specify match criteria",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "src_ip_ranges": {
+                "description": "Set of IP addresses or ranges (IPV4 or IPV6",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "expression": {
+                "description": "Textual representation of an expression in Common Expression Language syntax.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "fingerprint": {
+                "description": "Fingerprint of this resource."
+            },
+            "self_link": {
+                "description": "The URI of the created resource."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "vault_github_user": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_github_user resource",
+        "sidebar_current": "docs-vault-github-user",
+        "description": "Manages User mappings for Github Auth backend mounts in Vault.",
+        "arguments": {
+            "backend": {
+                "description": "Path where the github auth backend is mounted. Defaults to `github`",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "user": {
+                "description": "GitHub user name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policies": {
+                "description": "An array of strings specifying the policies to be set on tokens issued",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

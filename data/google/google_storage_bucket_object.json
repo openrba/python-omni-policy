@@ -1,0 +1,93 @@
+{
+    "google_storage_bucket_object": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Storage",
+        "layout": "google",
+        "page_title": "Google: google_storage_bucket_object",
+        "sidebar_current": "docs-google-storage-bucket-object",
+        "description": "Creates a new object inside a specified bucket",
+        "arguments": {
+            "bucket": {
+                "description": "The name of the containing bucket.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the object. If you're interpolating the name of this object, see `output_name` instead.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "metadata": {
+                "description": "User-provided metadata, in key/value pairs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content": {
+                "description": "Data as `string` to be uploaded. Must be defined if `source` is not. **Note**: The `content` field is marked as sensitive. To view the raw contents of the object, please define an [output](/docs/configuration/outputs.html).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source": {
+                "description": "A path to the data you want to upload. Must be defined",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cache_control": {
+                "description": "[Cache-Control](https://tools.ietf.org/html/rfc7234#section-5.2)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_disposition": {
+                "description": "[Content-Disposition](https://tools.ietf.org/html/rfc6266",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_encoding": {
+                "description": "[Content-Encoding](https://tools.ietf.org/html/rfc7231#section-3.1.2.2",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_language": {
+                "description": "[Content-Language](https://tools.ietf.org/html/rfc7231#section-3.1.3.2",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_type": {
+                "description": "[Content-Type](https://tools.ietf.org/html/rfc7231#section-3.1.1.5",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_class": {
+                "description": "The [StorageClass](https://cloud.google.com/storage/docs/storage-classes",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "crc32c": {
+                "description": "(Computed) Base 64 CRC32 hash of the uploaded data."
+            },
+            "md5hash": {
+                "description": "(Computed) Base 64 MD5 hash of the uploaded data."
+            },
+            "self_link": {
+                "description": "(Computed) A url reference to this object."
+            },
+            "output_name": {
+                "description": "(Computed) The name of the object. Use this field in interpolations with `google_storage_object_acl` to recreate"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,73 @@
+postgresql_postgresql_schema:
+    status: ASSESS
+    layout: postgresql
+    page_title: 'PostgreSQL: postgresql_schema'
+    sidebar_current: docs-postgresql-resource-postgresql_schema
+    description: Creates and manages a schema within a PostgreSQL database.
+    arguments:
+        name:
+            description: The name of the schema. Must be unique in the PostgreSQL
+            required: true
+            policy: ''
+            notes: ''
+        database:
+            description: 'The DATABASE in which where this schema will be created.
+                (Default: The database used by your `provider` configuration)'
+            required: false
+            policy: ''
+            notes: ''
+        owner:
+            description: The ROLE who owns the schema.
+            required: false
+            policy: ''
+            notes: ''
+        if_not_exists:
+            description: 'When true, use the existing schema if it exists. (Default:
+                true)'
+            required: false
+            policy: ''
+            notes: ''
+        drop_cascade:
+            description: 'When true, will also drop all the objects that are contained
+                in the schema. (Default: false)'
+            required: false
+            policy: ''
+            notes: ''
+        policy:
+            description: Can be specified multiple times for each policy.  Each
+            required: false
+            policy: ''
+            notes: ''
+        create:
+            description: Should the specified ROLE have CREATE privileges to the specified
+                SCHEMA.
+            required: false
+            policy: ''
+            notes: ''
+        create_with_grant:
+            description: Should the specified ROLE have CREATE privileges to the specified
+                SCHEMA and the ability to GRANT the CREATE privilege to other ROLEs.
+            required: false
+            policy: ''
+            notes: ''
+        role:
+            description: The ROLE who is receiving the policy.  If this value is empty
+                or not specified it implies the policy is referring to the [`PUBLIC`
+                role](https://www.postgresql.org/docs/current/static/sql-grant.html).
+            required: false
+            policy: ''
+            notes: ''
+        usage:
+            description: Should the specified ROLE have USAGE privileges to the specified
+                SCHEMA.
+            required: false
+            policy: ''
+            notes: ''
+        usage_with_grant:
+            description: Should the specified ROLE have USAGE privileges to the specified
+                SCHEMA and the ability to GRANT the USAGE privilege to other ROLEs.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

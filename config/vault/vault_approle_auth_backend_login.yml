@@ -1,0 +1,33 @@
+vault_approle_auth_backend_login:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_approle_auth_backend_login resource'
+    sidebar_current: docs-vault-resource-approle-auth-backend-login
+    description: Log into Vault using the AppRole auth backend.
+    arguments:
+        role_id:
+            description: The ID of the role to log in with.
+            required: true
+            policy: ''
+            notes: ''
+        secret_id:
+            description: The secret ID of the role to log in with. Required
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        policies:
+            description: A list of policies applied to the token.
+        renewable:
+            description: Whether the token is renewable or not.
+        lease_duration:
+            description: How long the token is valid for, in seconds.
+        lease_started:
+            description: The date and time the lease started, in RFC 3339 format.
+        accessor:
+            description: The accessor for the token.
+        client_token:
+            description: The Vault token created.
+        metadata:
+            description: The metadata associated with the token.
+    timeouts: {}

@@ -1,0 +1,15 @@
+datadog_logs_integration_pipeline:
+    status: ASSESS
+    layout: datadog
+    page_title: 'Datadog: datadog_logs_integration_pipeline'
+    sidebar_current: docs-datadog-resource-logs-integration-pipeline
+    description: Provides a Datadog logs integration pipeline resource, which is used
+        to create and manage logs integration pipelines.
+    arguments:
+        is_enabled:
+            description: Boolean value to enable your pipeline.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

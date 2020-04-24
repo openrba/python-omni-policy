@@ -1,0 +1,31 @@
+{
+    "gitlab_project_membership": {
+        "status": "ASSESS",
+        "layout": "gitlab",
+        "page_title": "GitLab: gitlab_project_membership",
+        "sidebar_current": "docs-gitlab-resource-project_membership",
+        "description": "Adds a user to a project as a member",
+        "arguments": {
+            "project_id": {
+                "description": "The id of the project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "user_id": {
+                "description": "The id of the user.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_level": {
+                "description": "One of five levels of access to the project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

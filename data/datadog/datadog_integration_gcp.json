@@ -1,0 +1,59 @@
+{
+    "datadog_integration_gcp": {
+        "status": "ASSESS",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_integration_gcp",
+        "sidebar_current": "docs-datadog-resource-integration_gcp",
+        "description": "Provides a Datadog - Google Cloud Platform integration resource. This can be used to create and manage the integrations.",
+        "arguments": {
+            "project_id": {
+                "description": "Your Google Cloud project ID found in your JSON service account key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "private_key_id": {
+                "description": "Your private key ID found in your JSON service account key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "private_key": {
+                "description": "Your private key name found in your JSON service account key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_email": {
+                "description": "Your email found in your JSON service account key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "client_id": {
+                "description": "Your ID found in your JSON service account key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "host_filters": {
+                "description": "Limit the GCE instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "project_id": {
+                "description": "Google Cloud project ID"
+            },
+            "client_email": {
+                "description": "Google Cloud project service account email"
+            },
+            "host_filters": {
+                "description": "Host filters"
+            }
+        },
+        "timeouts": {}
+    }
+}

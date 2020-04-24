@@ -1,0 +1,102 @@
+grafana_data_source:
+    status: ASSESS
+    layout: grafana
+    page_title: 'Grafana: grafana_data_source'
+    sidebar_current: docs-grafana-resource-data-source
+    description: The grafana_data_source resource allows a Grafana data source to
+        be created.
+    arguments:
+        type:
+            description: The data source type. Must be one of the data source
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: A unique name for the data source within the Grafana
+            required: true
+            policy: ''
+            notes: ''
+        url:
+            description: The URL for the data source. The type of URL required
+            required: false
+            policy: ''
+            notes: ''
+        is_default:
+            description: If true, the data source will be the default
+            required: false
+            policy: ''
+            notes: ''
+        basic_auth_enabled:
+            description: '- If true, HTTP basic authentication will'
+            required: false
+            policy: ''
+            notes: ''
+        basic_auth_username:
+            description: The
+            required: false
+            policy: ''
+            notes: ''
+        basic_auth_password:
+            description: The
+            required: false
+            policy: ''
+            notes: ''
+        username:
+            description: The username to use to
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The password to use to
+            required: false
+            policy: ''
+            notes: ''
+        json_data:
+            description: The default region
+            required: false
+            policy: ''
+            notes: ''
+        secure_json_data:
+            description: The access and
+            required: false
+            policy: ''
+            notes: ''
+        database_name:
+            description: The name of the
+            required: false
+            policy: ''
+            notes: ''
+        access_mode:
+            description: The method by which the browser-based Grafana
+            required: false
+            policy: ''
+            notes: ''
+        auth_type:
+            description: The authentication type
+            required: false
+            policy: ''
+            notes: ''
+        default:
+            description: The default region for
+            required: false
+            policy: ''
+            notes: ''
+        assume_role_arn:
+            description: The role
+            required: false
+            policy: ''
+            notes: ''
+        access_key:
+            description: The access key required
+            required: false
+            policy: ''
+            notes: ''
+        secret_key:
+            description: The secret key required
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The opaque unique id assigned to the data source by the Grafana
+    timeouts: {}

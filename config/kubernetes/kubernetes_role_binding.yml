@@ -1,0 +1,27 @@
+kubernetes_role_binding:
+    status: ASSESS
+    layout: kubernetes
+    page_title: 'Kubernetes: kubernetes_role_binding'
+    sidebar_current: docs-kubernetes-resource-role-binding
+    description: A RoleBinding may be used to grant permission at the namespace level.
+    arguments:
+        metadata:
+            description: Standard kubernetes metadata. For more info see [Kubernetes
+                reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
+            required: true
+            policy: ''
+            notes: ''
+        role_ref:
+            description: The Role to bind Subjects to. For more info see [Kubernetes
+                reference](https://kubernetes.io/docs/admin/authorization/rbac/#rolebinding-and-clusterrolebinding)
+            required: true
+            policy: ''
+            notes: ''
+        subject:
+            description: The Users, Groups, or ServiceAccounts to grand permissions
+                to. For more info see [Kubernetes reference](https://kubernetes.io/docs/admin/authorization/rbac/#referring-to-subjects)
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

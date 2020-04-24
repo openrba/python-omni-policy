@@ -1,0 +1,37 @@
+{
+    "vault_aws_auth_backend_cert": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_aws_auth_backend_cert resource",
+        "sidebar_current": "docs-vault-resource-aws-auth-backend-cert",
+        "description": "Manages a certificate for an AWS Auth Backend in Vault.",
+        "arguments": {
+            "cert_name": {
+                "description": "The name of the certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "aws_public_cert": {
+                "description": "The  Base64 encoded AWS Public key required to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "Either \"pkcs7\" or \"identity\", indicating the type of",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backend": {
+                "description": "The path the AWS auth backend being configured was",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

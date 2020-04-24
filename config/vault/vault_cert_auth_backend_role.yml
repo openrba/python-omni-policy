@@ -1,0 +1,64 @@
+vault_cert_auth_backend_role:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_auth_backend resource'
+    sidebar_current: docs-vault-resource-cert-auth-backend-role
+    description: Managing roles in an Cert auth backend in Vault
+    arguments:
+        name:
+            description: Name of the role
+            required: true
+            policy: ''
+            notes: ''
+        certificate:
+            description: CA certificate used to validate client certificates
+            required: true
+            policy: ''
+            notes: ''
+        allowed_names:
+            description: Allowed subject names for authenticated client certificates
+            required: false
+            policy: ''
+            notes: ''
+        allowed_common_names:
+            description: Allowed the common names for authenticated client certificates
+            required: false
+            policy: ''
+            notes: ''
+        allowed_dns_sans:
+            description: Allowed alternative dns names for authenticated client certificates
+            required: false
+            policy: ''
+            notes: ''
+        allowed_email_sans:
+            description: Allowed emails for authenticated client certificates
+            required: false
+            policy: ''
+            notes: ''
+        allowed_uri_sans:
+            description: Allowed URIs for authenticated client certificates
+            required: false
+            policy: ''
+            notes: ''
+        allowed_organization_units:
+            description: Allowed organization units for authenticated client certificates
+            required: false
+            policy: ''
+            notes: ''
+        required_extensions:
+            description: TLS extensions required on client certificates
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: The name to display on tokens issued under this role.
+            required: false
+            policy: ''
+            notes: ''
+        backend:
+            description: Path to the mounted Cert auth backend
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

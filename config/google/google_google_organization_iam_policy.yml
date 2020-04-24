@@ -1,0 +1,22 @@
+google_google_organization_iam_policy:
+    status: ASSESS
+    subcategory: Cloud Platform
+    layout: google
+    page_title: 'Google: google_organization_iam_policy'
+    sidebar_current: docs-google-organization-iam-policy
+    description: Allows management of the entire IAM policy for a Google Cloud Platform
+        Organization.
+    arguments:
+        org_id:
+            description: The numeric ID of the organization in which you want to create
+                a custom role.
+            required: true
+            policy: ''
+            notes: ''
+        policy_data:
+            description: The `google_iam_policy` data source that represents
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

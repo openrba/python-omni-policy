@@ -1,0 +1,29 @@
+{
+    "datadog_logs_pipeline_order": {
+        "status": "ASSESS",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_logs_pipeline_order",
+        "sidebar_current": "docs-datadog-resource-logs-pipeline-order",
+        "description": "Provides a Datadog logs pipeline order resource, which is used to manage the order of log pipelines.",
+        "arguments": {
+            "name": {
+                "description": "The name attribute in the resource `datadog_logs_pipeline_order` needs to be unique. It's recommended to use the same value as the resource `NAME`. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "pipelines": {
+                "description": "The pipeline IDs list. The order of pipeline IDs in this attribute defines the overall pipeline order for logs.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "pipelines": {
+                "description": "The `pipelines` list contains the IDs of resources created and imported by the "
+            }
+        },
+        "timeouts": {}
+    }
+}

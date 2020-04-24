@@ -1,0 +1,29 @@
+gitlab_pipeline_schedule_variable:
+    status: ASSESS
+    layout: gitlab
+    page_title: 'GitLab: gitlab_pipeline_schedule_variable'
+    sidebar_current: docs-gitlab-resource-pipeline-schedule-variable
+    description: Creates and manages pipeline schedule variables for GitLab projects
+    arguments:
+        project:
+            description: The id of the project to add the schedule to.
+            required: false
+            policy: ''
+            notes: ''
+        pipeline_schedule_id:
+            description: The id of the pipeline schedule.
+            required: false
+            policy: ''
+            notes: ''
+        key:
+            description: Name of the variable.
+            required: false
+            policy: ''
+            notes: ''
+        value:
+            description: "\tValue of the variable."
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

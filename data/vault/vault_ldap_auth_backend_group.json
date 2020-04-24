@@ -1,0 +1,31 @@
+{
+    "vault_ldap_auth_backend_group": {
+        "status": "ASSESS",
+        "layout": "vault",
+        "page_title": "Vault: vault_auth_backend resource",
+        "sidebar_current": "docs-vault-resource-ldap-auth-backend-group",
+        "description": "Managing groups in an LDAP auth backend in Vault",
+        "arguments": {
+            "groupname": {
+                "description": "The LDAP groupname",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "policies": {
+                "description": "Policies which should be granted to members of the group",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backend": {
+                "description": "Path to the authentication backend",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

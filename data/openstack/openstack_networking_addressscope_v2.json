@@ -1,0 +1,59 @@
+{
+    "openstack_networking_addressscope_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_addressscope_v2",
+        "sidebar_current": "docs-openstack-resource-networking-addressscope-v2",
+        "description": "Manages a V2 Neutron addressscope resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the address-scope. Changing this updates the",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_version": {
+                "description": "IP version, either 4 (default",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "shared": {
+                "description": "Indicates whether this address-scope is shared across",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project_id": {
+                "description": "The owner of the address-scope. Required if admin",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "name": {
+                "description": "See Argument Reference above."
+            },
+            "ip_version": {
+                "description": "See Argument Reference above."
+            },
+            "shared": {
+                "description": "See Argument Reference above."
+            },
+            "project_id": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

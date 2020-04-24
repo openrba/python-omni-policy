@@ -1,0 +1,25 @@
+vault_aws_auth_backend_roletag_blacklist:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_aws_auth_backend_roletag_blacklist resource'
+    sidebar_current: docs-vault-resource-aws-auth-backend-roletag-blacklist
+    description: Configures the periodic tidying operation of the blacklisted role
+        tag entries.
+    arguments:
+        backend:
+            description: The path the AWS auth backend being configured was
+            required: true
+            policy: ''
+            notes: ''
+        safety_buffer:
+            description: The amount of extra time that must have passed
+            required: false
+            policy: ''
+            notes: ''
+        disable_periodic_tidy:
+            description: If set to true, disables the periodic
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

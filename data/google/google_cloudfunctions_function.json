@@ -1,0 +1,168 @@
+{
+    "google_cloudfunctions_function": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Functions",
+        "layout": "google",
+        "page_title": "Google: google_cloudfunctions_function",
+        "sidebar_current": "docs-google-cloudfunctions-function",
+        "description": "Creates a new Cloud Function.",
+        "arguments": {
+            "name": {
+                "description": "A user-defined name of the function. Function names must be unique globally.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "runtime": {
+                "description": "The runtime in which the function is going to run.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description of the function.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "available_memory_mb": {
+                "description": "Memory (in MB), available to the function. Default value is 256MB. Allowed values are: 128MB, 256MB, 512MB, 1024MB, and 2048MB.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout": {
+                "description": "Timeout (in seconds",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "entry_point": {
+                "description": "Name of the function that will be executed when the Google Cloud Function is triggered.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "event_trigger": {
+                "description": "A source that fires events in response to a condition in another service. Structure is documented below. Cannot be used with `trigger_http`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "trigger_http": {
+                "description": "Boolean variable. Any HTTP request (of a supported type",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ingress_settings": {
+                "description": "String value that controls what traffic can reach the function. Allowed values are ALLOW_ALL and ALLOW_INTERNAL_ONLY. Changes to this field will recreate the cloud function.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "A set of key/value label pairs to assign to the function.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "service_account_email": {
+                "description": "If provided, the self-provided service account to run the function with.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment_variables": {
+                "description": "A set of key/value environment variable pairs to assign to the function.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_connector": {
+                "description": "The VPC Network Connector that this cloud function can connect to. It can be either the fully-qualified URI, or the short name of the network connector resource. The format of this field is `projects/*/locations/*/connectors/*`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "vpc_connector_egress_settings": {
+                "description": "The egress settings for the connector, controlling what traffic is diverted through it. Allowed values are `ALL_TRAFFIC` and `PRIVATE_RANGES_ONLY`. Defaults to `PRIVATE_RANGES_ONLY`. If unset, this field preserves the previously set value.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_archive_bucket": {
+                "description": "The GCS bucket containing the zip archive which contains the function.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_archive_object": {
+                "description": "The source archive object (file",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_repository": {
+                "description": "Represents parameters related to source repository where a function is hosted.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_instances": {
+                "description": "The limit on the maximum number of function instances that may coexist at a given time.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "event_type": {
+                "description": "The type of event to observe. For example: `\"google.storage.object.finalize\"`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource": {
+                "description": "Required. The name or partial URI of the resource from",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "failure_policy": {
+                "description": "Specifies policy for failed executions. Structure is documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retry": {
+                "description": "Whether the function should be retried on failure. Defaults to `false`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The URL pointing to the hosted repository where the function is defined. There are supported Cloud Source Repository URLs in the following formats:",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "an identifier for the resource with format `{{name}}`"
+            },
+            "https_trigger_url": {
+                "description": "URL which triggers function execution. Returned only if `trigger_http` is used."
+            },
+            "source_repository.0.deployed_url": {
+                "description": "The URL pointing to the hosted repository where the function was defined at the time of deployment."
+            },
+            "project": {
+                "description": "Project of the function. If it is not provided, the provider project is used."
+            },
+            "region": {
+                "description": "Region of function. Currently can be only \"us-central1\". If it is not provided, the provider region is used."
+            }
+        },
+        "timeouts": {}
+    }
+}

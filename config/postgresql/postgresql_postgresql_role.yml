@@ -1,0 +1,94 @@
+postgresql_postgresql_role:
+    status: ASSESS
+    layout: postgresql
+    page_title: 'PostgreSQL: postgresql_role'
+    sidebar_current: docs-postgresql-resource-postgresql_role
+    description: Creates and manages a role on a PostgreSQL server.
+    arguments:
+        name:
+            description: The name of the role. Must be unique on the PostgreSQL
+            required: true
+            policy: ''
+            notes: ''
+        superuser:
+            description: Defines whether the role is a "superuser", and
+            required: false
+            policy: ''
+            notes: ''
+        create_database:
+            description: Defines a role's ability to execute `CREATE
+            required: false
+            policy: ''
+            notes: ''
+        create_role:
+            description: Defines a role's ability to execute `CREATE ROLE`.
+            required: false
+            policy: ''
+            notes: ''
+        inherit:
+            description: Defines whether a role "inherits" the privileges of
+            required: false
+            policy: ''
+            notes: ''
+        login:
+            description: Defines whether role is allowed to log in.  Roles without
+            required: false
+            policy: ''
+            notes: ''
+        replication:
+            description: Defines whether a role is allowed to initiate
+            required: false
+            policy: ''
+            notes: ''
+        bypass_row_level_security:
+            description: Defines whether a role bypasses every
+            required: false
+            policy: ''
+            notes: ''
+        connection_limit:
+            description: If this role can log in, this specifies how
+            required: false
+            policy: ''
+            notes: ''
+        encrypted_password:
+            description: Defines whether the password is stored
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: Sets the role's password. A password is only of use
+            required: false
+            policy: ''
+            notes: ''
+        roles:
+            description: Defines list of roles which will be granted to this new role.
+            required: false
+            policy: ''
+            notes: ''
+        search_path:
+            description: Alters the search path of this new role. Note that
+            required: false
+            policy: ''
+            notes: ''
+        valid_until:
+            description: Defines the date and time after which the role's
+            required: false
+            policy: ''
+            notes: ''
+        skip_drop_role:
+            description: When a PostgreSQL ROLE exists in multiple
+            required: false
+            policy: ''
+            notes: ''
+        skip_reassign_owned:
+            description: When a PostgreSQL ROLE exists in multiple
+            required: false
+            policy: ''
+            notes: ''
+        statement_timeout:
+            description: Defines [`statement_timeout`](https://www.postgresql.org/docs/current/runtime-config-client.html#RUNTIME-CONFIG-CLIENT-STATEMENT
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

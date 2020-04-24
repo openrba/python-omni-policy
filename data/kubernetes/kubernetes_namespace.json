@@ -1,0 +1,19 @@
+{
+    "kubernetes_namespace": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: kubernetes_namespace",
+        "sidebar_current": "docs-kubernetes-resource-namespace",
+        "description": "Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces.",
+        "arguments": {
+            "metadata": {
+                "description": "Standard namespace's [metadata](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

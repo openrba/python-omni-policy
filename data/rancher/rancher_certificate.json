@@ -1,0 +1,83 @@
+{
+    "rancher_certificate": {
+        "status": "ASSESS",
+        "layout": "rancher",
+        "page_title": "Rancher: rancher_certificate",
+        "sidebar_current": "docs-rancher-resource-certificate",
+        "description": "Provides a Rancher Certificate resource. This can be used to create certificates for rancher environments and retrieve their information.",
+        "arguments": {
+            "name": {
+                "description": "The name of the certificate.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A certificate description.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "environment_id": {
+                "description": "The ID of the environment to create the certificate for.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cert": {
+                "description": "The certificate content.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "cert_chain": {
+                "description": "The certificate chain.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key": {
+                "description": "The certificate key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "(Computed) The ID of the resource."
+            },
+            "cn": {
+                "description": "The certificate CN."
+            },
+            "algorithm": {
+                "description": "The certificate algorithm."
+            },
+            "cert_fingerprint": {
+                "description": "The certificate fingerprint."
+            },
+            "expires_at": {
+                "description": "The certificate expiration date."
+            },
+            "issued_at": {
+                "description": "The certificate creation date."
+            },
+            "issuer": {
+                "description": "The certificate issuer."
+            },
+            "key_size": {
+                "description": "The certificate key size."
+            },
+            "serial_number": {
+                "description": "The certificate serial number."
+            },
+            "subject_alternative_names": {
+                "description": "The list of certificate Subject Alternative Names."
+            },
+            "version": {
+                "description": "The certificate version."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "openstack_networking_floatingip_associate_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_floatingip_associate_v2",
+        "sidebar_current": "docs-openstack-resource-networking-floatingip-associate-v2",
+        "description": "Associates a Floating IP to a Port",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "floating_ip": {
+                "description": "IP Address of an existing floating IP.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "port_id": {
+                "description": "ID of an existing port with at least one IP address to",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "floating_ip": {
+                "description": "See Argument Reference above."
+            },
+            "port_id": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

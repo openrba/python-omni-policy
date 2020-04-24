@@ -1,0 +1,50 @@
+{
+    "google_google_project_iam_custom_role": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_project_iam_custom_role",
+        "sidebar_current": "docs-google-project-iam-custom-role",
+        "description": "Allows management of a customized Cloud IAM project role.",
+        "arguments": {
+            "role_id": {
+                "description": "The camel case role id to use for this role. Cannot contain `-` characters.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "title": {
+                "description": "A human-readable title for the role.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "permissions": {
+                "description": "The names of the permissions this role grants when bound in an IAM policy. At least one permission must be specified.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The project that the service account will be created in.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "stage": {
+                "description": "The current launch stage of the role.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A human-readable description for the role.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

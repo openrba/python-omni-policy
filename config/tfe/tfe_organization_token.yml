@@ -1,0 +1,23 @@
+tfe_organization_token:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_organization_token'
+    sidebar_current: docs-resource-tfe-organization-token
+    description: Generates a new organization token, replacing any existing token.
+    arguments:
+        organization:
+            description: Name of the organization.
+            required: true
+            policy: ''
+            notes: ''
+        force_regenerate:
+            description: If set to `true`, a new token will be
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the token.
+        token:
+            description: The generated token.
+    timeouts: {}

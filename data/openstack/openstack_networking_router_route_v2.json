@@ -1,0 +1,50 @@
+{
+    "openstack_networking_router_route_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_router_route_v2",
+        "sidebar_current": "docs-openstack-resource-networking-router-route-v2",
+        "description": "Creates a routing entry on a OpenStack V2 router.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "router_id": {
+                "description": "ID of the router this routing entry belongs to. Changing",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "destination_cidr": {
+                "description": "CIDR block to match on the packet\u2019s destination IP. Changing",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "next_hop": {
+                "description": "IP address of the next hop gateway.  Changing",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "router_id": {
+                "description": "See Argument Reference above."
+            },
+            "destination_cidr": {
+                "description": "See Argument Reference above."
+            },
+            "next_hop": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

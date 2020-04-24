@@ -1,0 +1,24 @@
+vault_okta_auth_backend_group:
+    status: ASSESS
+    layout: vault
+    page_title: 'Vault: vault_auth_backend_group resource'
+    sidebar_current: docs-vault-resource-okta-auth-backend-group
+    description: Managing groups in an Okta auth backend in Vault
+    arguments:
+        path:
+            description: The path where the Okta auth backend is mounted
+            required: true
+            policy: ''
+            notes: ''
+        group_name:
+            description: Name of the group within the Okta
+            required: true
+            policy: ''
+            notes: ''
+        policies:
+            description: Vault policies to associate with this group
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

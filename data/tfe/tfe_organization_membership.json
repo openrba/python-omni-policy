@@ -1,0 +1,25 @@
+{
+    "tfe_organization_membership": {
+        "status": "ASSESS",
+        "layout": "tfe",
+        "page_title": "Terraform Enterprise: tfe_organization_membership",
+        "sidebar_current": "docs-resource-tfe-organization-membership",
+        "description": "Add or remove a user from an organization.",
+        "arguments": {
+            "organization": {
+                "description": "Name of the organization.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "email": {
+                "description": "Email of the user to add.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

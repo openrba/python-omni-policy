@@ -1,0 +1,42 @@
+grafana_organization:
+    status: ASSESS
+    layout: grafana
+    page_title: 'Grafana: grafana_organization'
+    sidebar_current: docs-grafana-resource-organization
+    description: The grafana_organization resource allows a Grafana organization to
+        be created.
+    arguments:
+        name:
+            description: The display name for the Grafana organization created.
+            required: true
+            policy: ''
+            notes: ''
+        admin_user:
+            description: The login name of the configured
+            required: false
+            policy: ''
+            notes: ''
+        create_users:
+            description: Whether or not to create Grafana users specified
+            required: false
+            policy: ''
+            notes: ''
+        admins:
+            description: A list of email addresses corresponding to users who
+            required: false
+            policy: ''
+            notes: ''
+        editors:
+            description: A list of email addresses corresponding to users who
+            required: false
+            policy: ''
+            notes: ''
+        viewers:
+            description: A list of email addresses corresponding to users who
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        org_id:
+            description: The organization id assigned to this organization by Grafana.
+    timeouts: {}

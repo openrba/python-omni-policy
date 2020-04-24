@@ -1,0 +1,25 @@
+openstack_db_database_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_db_database_v1'
+    sidebar_current: docs-openstack-resource-db-database-v1
+    description: Manages a V1 database resource within OpenStack.
+    arguments:
+        name:
+            description: A unique name for the resource.
+            required: true
+            policy: ''
+            notes: ''
+        instance_id:
+            description: The ID for the database instance.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: Openstack region resource is created in.
+        name:
+            description: See Argument Reference above.
+        instance_id:
+            description: See Argument Reference above.
+    timeouts: {}

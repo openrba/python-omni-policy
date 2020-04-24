@@ -1,0 +1,14 @@
+mysql_role:
+    status: ASSESS
+    layout: mysql
+    page_title: 'MySQL: mysql_role'
+    sidebar_current: docs-mysql-resource-role
+    description: Creates and manages a role  on a MySQL server.
+    arguments:
+        name:
+            description: The name of the role.
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

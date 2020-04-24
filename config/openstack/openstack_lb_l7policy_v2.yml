@@ -1,0 +1,83 @@
+openstack_lb_l7policy_v2:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_lb_l7policy_v2'
+    sidebar_current: docs-openstack-resource-lb-l7policy-v2
+    description: Manages a V2 L7 Policy resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to obtain the V2 Networking client.
+            required: false
+            policy: ''
+            notes: ''
+        tenant_id:
+            description: Required for admins. The UUID of the tenant who owns
+            required: false
+            policy: ''
+            notes: ''
+        name:
+            description: Human-readable name for the L7 Policy. Does not have
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Human-readable description for the L7 Policy.
+            required: false
+            policy: ''
+            notes: ''
+        action:
+            description: The L7 Policy action - can either be REDIRECT\_TO\_POOL,
+            required: true
+            policy: ''
+            notes: ''
+        listener_id:
+            description: The Listener on which the L7 Policy will be associated with.
+            required: true
+            policy: ''
+            notes: ''
+        position:
+            description: The position of this policy on the listener. Positions start
+                at 1.
+            required: false
+            policy: ''
+            notes: ''
+        redirect_pool_id:
+            description: Requests matching this policy will be redirected to the
+            required: false
+            policy: ''
+            notes: ''
+        redirect_url:
+            description: Requests matching this policy will be redirected to this
+                URL.
+            required: false
+            policy: ''
+            notes: ''
+        admin_state_up:
+            description: The administrative state of the L7 Policy.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The unique ID for the L7 Policy.
+        region:
+            description: See Argument Reference above.
+        tenant_id:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        action:
+            description: See Argument Reference above.
+        listener_id:
+            description: See Argument Reference above.
+        position:
+            description: See Argument Reference above.
+        redirect_pool_id:
+            description: See Argument Reference above.
+        redirect_url:
+            description: See Argument Reference above.
+        admin_state_up:
+            description: See Argument Reference above.
+    timeouts: {}

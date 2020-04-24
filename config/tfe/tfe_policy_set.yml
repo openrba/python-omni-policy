@@ -1,0 +1,50 @@
+tfe_policy_set:
+    status: ASSESS
+    layout: tfe
+    page_title: 'Terraform Enterprise: tfe_policy_set'
+    sidebar_current: docs-resource-tfe-tfe_policy_set
+    description: Manages policy sets.
+    arguments:
+        name:
+            description: Name of the policy set.
+            required: true
+            policy: ''
+            notes: ''
+        description:
+            description: A description of the policy set's purpose.
+            required: false
+            policy: ''
+            notes: ''
+        global:
+            description: Whether or not policies in this set will apply to
+            required: false
+            policy: ''
+            notes: ''
+        organization:
+            description: Name of the organization.
+            required: true
+            policy: ''
+            notes: ''
+        policies_path:
+            description: The sub-path within the attached VCS repository
+            required: false
+            policy: ''
+            notes: ''
+        policy_ids:
+            description: A list of Sentinel policy IDs. This value _must not_ be provided
+                if `vcs_repo` is provided.
+            required: false
+            policy: ''
+            notes: ''
+        vcs_repo:
+            description: Settings for the policy sets VCS repository. Forces a
+            required: false
+            policy: ''
+            notes: ''
+        workspace_external_ids:
+            description: A list of workspace external IDs. This
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

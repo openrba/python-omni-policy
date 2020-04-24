@@ -1,0 +1,235 @@
+google_dataproc_cluster:
+    status: ASSESS
+    subcategory: Dataproc
+    layout: google
+    page_title: 'Google: google_dataproc_cluster'
+    sidebar_current: docs-google-dataproc-cluster
+    description: Manages a Cloud Dataproc cluster resource.
+    arguments:
+        name:
+            description: The name of the cluster, unique within the project and
+            required: true
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the `cluster` will exist.
+                If it
+            required: false
+            policy: ''
+            notes: ''
+        region:
+            description: The region in which the cluster and associated nodes will
+                be created in.
+            required: false
+            policy: ''
+            notes: ''
+        labels:
+            description: The list of labels (key/value pairs
+            required: false
+            policy: ''
+            notes: ''
+        cluster_config:
+            description: Allows you to configure various aspects of the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        staging_bucket:
+            description: The Cloud Storage staging bucket used to stage files,
+            required: false
+            policy: ''
+            notes: ''
+        gce_cluster_config:
+            description: Common config settings for resources of Google Compute Engine
+                cluster
+            required: false
+            policy: ''
+            notes: ''
+        master_config:
+            description: The Google Compute Engine config settings for the master
+                instances
+            required: false
+            policy: ''
+            notes: ''
+        worker_config:
+            description: The Google Compute Engine config settings for the worker
+                instances
+            required: false
+            policy: ''
+            notes: ''
+        preemptible_worker_config:
+            description: The Google Compute Engine config settings for the additional
+                (aka
+            required: false
+            policy: ''
+            notes: ''
+        software_config:
+            description: The config settings for software inside the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        security_config:
+            description: Security related configuration. Structure defined below.
+            required: false
+            policy: ''
+            notes: ''
+        autoscaling_config:
+            description: ' The autoscaling policy config associated with the cluster.'
+            required: false
+            policy: ''
+            notes: ''
+        initialization_action:
+            description: Commands to execute on each node after config is completed.
+            required: false
+            policy: ''
+            notes: ''
+        encryption_config:
+            description: The Customer managed encryption keys settings for the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        lifecycle_config:
+            description: The settings for auto deletion cluster schedule.
+            required: false
+            policy: ''
+            notes: ''
+        zone:
+            description: The GCP zone where your data is stored and used (i.e. where
+            required: false
+            policy: ''
+            notes: ''
+        network:
+            description: The name or self_link of the Google Compute Engine
+            required: false
+            policy: ''
+            notes: ''
+        subnetwork:
+            description: The name or self_link of the Google Compute Engine
+            required: false
+            policy: ''
+            notes: ''
+        service_account:
+            description: The service account to be used by the Node VMs.
+            required: false
+            policy: ''
+            notes: ''
+        service_account_scopes:
+            description: The set of Google API scopes
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: The list of instance tags applied to instances in the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        internal_ip_only:
+            description: 'By default, clusters are not restricted to internal IP addresses, '
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: A map of the Compute Engine metadata entries to add to all
+                instances
+            required: false
+            policy: ''
+            notes: ''
+        num_instances:
+            description: Specifies the number of preemptible nodes to create.
+            required: false
+            policy: ''
+            notes: ''
+        machine_type:
+            description: The name of a Google Compute Engine machine type
+            required: false
+            policy: ''
+            notes: ''
+        min_cpu_platform:
+            description: The name of a minimum generation of CPU family
+            required: false
+            policy: ''
+            notes: ''
+        image_uri:
+            description: The URI for the image to use for this worker.  See [the guide](https://cloud.google.com/dataproc/docs/guides/dataproc-images)
+            required: false
+            policy: ''
+            notes: ''
+        disk_config:
+            description: Disk Config
+            required: false
+            policy: ''
+            notes: ''
+        accelerators:
+            description: The Compute Engine accelerator configuration for these instances.
+                Can be specified multiple times.
+            required: false
+            policy: ''
+            notes: ''
+        image_version:
+            description: The Cloud Dataproc image version to use
+            required: false
+            policy: ''
+            notes: ''
+        override_properties:
+            description: A list of override and additional properties (key/value pairs)
+            required: false
+            policy: ''
+            notes: ''
+        optional_components:
+            description: 'The set of optional components to activate on the cluster. '
+            required: false
+            policy: ''
+            notes: ''
+        kerberos_config:
+            description: Kerberos Configuration
+            required: true
+            policy: ''
+            notes: ''
+        policy_uri:
+            description: The autoscaling policy used by the cluster.
+            required: true
+            policy: ''
+            notes: ''
+        script:
+            description: The script to be executed during initialization of the cluster.
+            required: true
+            policy: ''
+            notes: ''
+        timeout_sec:
+            description: The maximum duration (in seconds
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_name:
+            description: The Cloud KMS key name to use for PD disk encryption for
+            required: true
+            policy: ''
+            notes: ''
+        idle_delete_ttl:
+            description: The duration to keep the cluster alive while idling
+            required: false
+            policy: ''
+            notes: ''
+        auto_delete_time:
+            description: The time when cluster will be auto-deleted.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        cluster_config.0.master_config.0.instance_names:
+            description: List of master instance names which
+        cluster_config.0.worker_config.0.instance_names:
+            description: List of worker instance names which have been assigned
+        cluster_config.0.preemptible_worker_config.0.instance_names:
+            description: List of preemptible instance names which have been assigned
+        cluster_config.0.bucket:
+            description: The name of the cloud storage bucket ultimately used to house
+                the staging data
+        cluster_config.0.software_config.0.properties:
+            description: A list of the properties used to set the daemon config files.
+        cluster_config.0.lifecycle_config.0.idle_start_time:
+            description: Time when the cluster became idle
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWkdGMFlYQnliMk5mWTJ4MWMzUmxjaUlnSW5OcGJYQnNa
+        V05zZFhOMFpYSWlJSHNLSUNCdVlXMWxJQ0FnUFNBaWMybHRjR3hsWTJ4MWMzUmxjaUlLSUNCeVpX
+        ZHBiMjRnUFNBaWRYTXRZMlZ1ZEhKaGJERWlDbjBL

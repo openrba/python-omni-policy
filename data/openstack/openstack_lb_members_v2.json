@@ -1,0 +1,77 @@
+{
+    "openstack_lb_members_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_lb_members_v2",
+        "sidebar_current": "docs-openstack-resource-lb-members-v2",
+        "description": "Manages a V2 members resource within OpenStack (batch members update).",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 Networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "pool_id": {
+                "description": "The id of the pool that members will be assigned to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "member": {
+                "description": "A set of dictionaries containing member parameters. The",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The subnet in which to access the member.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "Human-readable name for the member.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "address": {
+                "description": "The IP address of the members to receive traffic from",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol_port": {
+                "description": "The port on which to listen for client traffic.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "weight": {
+                "description": " A positive integer value that indicates the relative",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "admin_state_up": {
+                "description": "The administrative state of the member.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique ID for the members."
+            },
+            "pool_id": {
+                "description": "See Argument Reference above."
+            },
+            "member": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,69 @@
+openstack_db_configuration_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_db_configuration_v1'
+    sidebar_current: docs-openstack-resource-db-configuration-v1
+    description: Manages a V1 DB configuration resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to create the db instance. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Configuration parameter name. Changing this creates a new
+                resource.
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the resource.
+            required: false
+            policy: ''
+            notes: ''
+        datastore:
+            description: An array of database engine type and version. The datastore
+            required: true
+            policy: ''
+            notes: ''
+        configuration:
+            description: An array of configuration parameter name and value. Can be
+                specified multiple times. The configuration object structure is documented
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Database engine type to be used with this configuration.
+                Changing this creates a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        version:
+            description: Version of database engine type to be used with this configuration.
+                Changing this creates a new resource.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: Configuration parameter value. Changing this creates a new
+                resource.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        description:
+            description: See Argument Reference above.
+        datastore/type:
+            description: See Argument Reference above.
+        datastore/version:
+            description: See Argument Reference above.
+        configuration/name:
+            description: See Argument Reference above.
+        configuration/value:
+            description: See Argument Reference above.
+    timeouts: {}

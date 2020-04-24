@@ -1,0 +1,27 @@
+google_composer_environment:
+    status: ASSESS
+    subcategory: Cloud Composer
+    layout: google
+    page_title: 'Google: google_composer_environment'
+    sidebar_current: docs-google-composer-environment
+    description: An environment for running orchestration tasks.
+    arguments:
+        project:
+            description: The ID of the project in which the resource belongs.
+            required: false
+            policy: ''
+            notes: ''
+        image_version:
+            description: '-'
+            required: false
+            policy: ''
+            notes: ''
+        python_version:
+            description: '-'
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: an identifier for the resource with format `projects/{{project}}/locations/{{region}}/environments/{{name}}`
+    timeouts: {}

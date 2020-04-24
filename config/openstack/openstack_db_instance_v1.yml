@@ -1,0 +1,151 @@
+openstack_db_instance_v1:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_db_instance_v1'
+    sidebar_current: docs-openstack-resource-db-instance-v1
+    description: Manages a V1 DB instance resource within OpenStack.
+    arguments:
+        region:
+            description: The region in which to create the db instance. Changing this
+            required: true
+            policy: ''
+            notes: ''
+        name:
+            description: Database to be created on new instance. Changing this creates
+                a
+            required: false
+            policy: ''
+            notes: ''
+        flavor_id:
+            description: The flavor ID of the desired flavor for the instance.
+            required: true
+            policy: ''
+            notes: ''
+        configuration_id:
+            description: Configuration ID to be attached to the instance. Database
+                instance
+            required: false
+            policy: ''
+            notes: ''
+        size:
+            description: Specifies the volume size in GB. Changing this creates new
+                instance.
+            required: true
+            policy: ''
+            notes: ''
+        datastore:
+            description: An array of database engine type and version. The datastore
+            required: true
+            policy: ''
+            notes: ''
+        network:
+            description: An array of one or more networks to attach to the
+            required: false
+            policy: ''
+            notes: ''
+        user:
+            description: An array of username, password, host and databases. The user
+            required: false
+            policy: ''
+            notes: ''
+        database:
+            description: An array of database name, charset and collate. The database
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: Database engine type to be used in new instance. Changing
+                this
+            required: true
+            policy: ''
+            notes: ''
+        version:
+            description: Version of database engine type to be used in new instance.
+            required: true
+            policy: ''
+            notes: ''
+        uuid:
+            description: The network UUID to
+            required: false
+            policy: ''
+            notes: ''
+        port:
+            description: The port UUID of a
+            required: false
+            policy: ''
+            notes: ''
+        fixed_ip_v4:
+            description: Specifies a fixed IPv4 address to be used on this
+            required: false
+            policy: ''
+            notes: ''
+        fixed_ip_v6:
+            description: Specifies a fixed IPv6 address to be used on this
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: User's password. Changing this creates a
+            required: false
+            policy: ''
+            notes: ''
+        host:
+            description: An ip address or % sign indicating what ip addresses can
+                connect with
+            required: false
+            policy: ''
+            notes: ''
+        databases:
+            description: 'A list of databases that user will have access to. If not
+                specified, '
+            required: false
+            policy: ''
+            notes: ''
+        collate:
+            description: Database collation. Changing this creates a new instance.
+            required: false
+            policy: ''
+            notes: ''
+        charset:
+            description: Database character set. Changing this creates a
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        region:
+            description: See Argument Reference above.
+        name:
+            description: See Argument Reference above.
+        size:
+            description: See Argument Reference above.
+        flavor_id:
+            description: See Argument Reference above.
+        configuration_id:
+            description: See Argument Reference above.
+        datastore/type:
+            description: See Argument Reference above.
+        datastore/version:
+            description: See Argument Reference above.
+        network/uuid:
+            description: See Argument Reference above.
+        network/port:
+            description: See Argument Reference above.
+        network/fixed_ip_v4:
+            description: The Fixed IPv4 address of the Instance on that
+        network/fixed_ip_v6:
+            description: The Fixed IPv6 address of the Instance on that
+        database/name:
+            description: See Argument Reference above.
+        database/collate:
+            description: See Argument Reference above.
+        database/charset:
+            description: See Argument Reference above.
+        user/name:
+            description: See Argument Reference above.
+        user/password:
+            description: See Argument Reference above.
+        user/databases:
+            description: See Argument Reference above.
+        user/host:
+            description: See Argument Reference above.
+    timeouts: {}

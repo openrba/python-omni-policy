@@ -1,0 +1,23 @@
+github_repository_collaborator:
+    status: ASSESS
+    layout: github
+    page_title: 'GitHub: github_repository_collaborator'
+    description: Provides a GitHub repository collaborator resource.
+    arguments:
+        repository:
+            description: The GitHub repository
+            required: true
+            policy: ''
+            notes: ''
+        username:
+            description: The user to add to the repository as a collaborator.
+            required: true
+            policy: ''
+            notes: ''
+        permission:
+            description: The permission of the outside collaborator for the repository.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

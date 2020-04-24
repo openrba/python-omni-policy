@@ -1,0 +1,31 @@
+google_google_folder_iam_member:
+    status: ASSESS
+    subcategory: Cloud Platform
+    layout: google
+    page_title: 'Google: google_folder_iam_member'
+    sidebar_current: docs-google-folder-iam-member
+    description: Allows management of a single member for a single binding on the
+        IAM policy for a Google Cloud Platform folder.
+    arguments:
+        folder:
+            description: The resource name of the folder the policy is attached to.
+                Its format is folders/{folder_id}.
+            required: true
+            policy: ''
+            notes: ''
+        member:
+            description: The identity that will be granted the privilege in the `role`.
+                For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding
+            required: true
+            policy: ''
+            notes: ''
+        role:
+            description: The role that should be applied. Note that custom roles must
+                be of the format
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        etag:
+            description: (Computed) The etag of the folder's IAM policy.
+    timeouts: {}

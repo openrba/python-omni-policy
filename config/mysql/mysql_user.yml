@@ -1,0 +1,58 @@
+mysql_user:
+    status: ASSESS
+    layout: mysql
+    page_title: 'MySQL: mysql_user'
+    sidebar_current: docs-mysql-resource-user
+    description: Creates and manages a user on a MySQL server.
+    arguments:
+        user:
+            description: The name of the user.
+            required: true
+            policy: ''
+            notes: ''
+        host:
+            description: The source host of the user. Defaults to "localhost".
+            required: false
+            policy: ''
+            notes: ''
+        plaintext_password:
+            description: The password for the user. This must be provided in plain
+                text, so the data source for it must be secured. An _unsalted_ hash
+                of the provided password is stored in state. Conflicts with `auth_plugin`.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: Deprecated alias of `plaintext_password`, whose value is
+                *stored as plaintext in state*. Prefer to use `plaintext_password`
+                instead, which stores the password as an unsalted hash. Conflicts
+                with `auth_plugin`.
+            required: false
+            policy: ''
+            notes: ''
+        auth_plugin:
+            description: 'Use an [authentication plugin][ref-auth-plugins] to authenticate
+                the user instead of using password authentication.  Description of
+                the fields allowed in the block below. Conflicts with `password` and
+                `plaintext_password`.  '
+            required: false
+            policy: ''
+            notes: ''
+        tls_option:
+            description: An TLS-Option for the `CREATE USER` or `ALTER USER` statement.
+                The value is suffixed to `REQUIRE`. A value of 'SSL' will generate
+                a `CREATE USER ... REQUIRE SSL` statement. See the [MYSQL `CREATE
+                USER` documentation](https://dev.mysql.com/doc/refman/5.7/en/create-user.html
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        user:
+            description: The name of the user.
+        password:
+            description: The password of the user.
+        id:
+            description: The id of the user created, composed as "username@host".
+        host:
+            description: The host where the user was created.
+    timeouts: {}

@@ -1,0 +1,113 @@
+{
+    "openstack_networking_secgroup_rule_v2": {
+        "status": "ASSESS",
+        "layout": "openstack",
+        "page_title": "OpenStack: openstack_networking_secgroup_rule_v2",
+        "sidebar_current": "docs-openstack-resource-networking-secgroup-rule-v2",
+        "description": "Manages a V2 Neutron security group rule resource within OpenStack.",
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V2 networking client.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "A description of the rule. Changing this creates a new security group rule.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "direction": {
+                "description": "The direction of the rule, valid values are __ingress__",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ethertype": {
+                "description": "The layer 3 protocol type, valid values are __IPv4__",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocol": {
+                "description": "The layer 4 protocol type, valid values are following. Changing this creates a new security group rule. This is required if you want to specify a port range.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port_range_min": {
+                "description": "The lower part of the allowed port range, valid",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "port_range_max": {
+                "description": "The higher part of the allowed port range, valid",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "remote_ip_prefix": {
+                "description": "The remote CIDR, the value needs to be a valid",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "remote_group_id": {
+                "description": "The remote group id, the value needs to be an",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "security_group_id": {
+                "description": "The security group id the rule should belong",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "The owner of the security group. Required if admin",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "region": {
+                "description": "See Argument Reference above."
+            },
+            "description": {
+                "description": "See Argument Reference above."
+            },
+            "direction": {
+                "description": "See Argument Reference above."
+            },
+            "ethertype": {
+                "description": "See Argument Reference above."
+            },
+            "protocol": {
+                "description": "See Argument Reference above."
+            },
+            "port_range_min": {
+                "description": "See Argument Reference above."
+            },
+            "port_range_max": {
+                "description": "See Argument Reference above."
+            },
+            "remote_ip_prefix": {
+                "description": "See Argument Reference above."
+            },
+            "remote_group_id": {
+                "description": "See Argument Reference above."
+            },
+            "security_group_id": {
+                "description": "See Argument Reference above."
+            },
+            "tenant_id": {
+                "description": "See Argument Reference above."
+            }
+        },
+        "timeouts": {}
+    }
+}

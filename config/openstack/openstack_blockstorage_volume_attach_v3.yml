@@ -1,0 +1,75 @@
+openstack_blockstorage_volume_attach_v3:
+    status: ASSESS
+    layout: openstack
+    page_title: 'OpenStack: openstack_blockstorage_volume_attach_v3'
+    sidebar_current: docs-openstack-resource-blockstorage-volume-attach-v3
+    description: Creates an attachment connection to a Block Storage volume
+    arguments:
+        region:
+            description: The region in which to obtain the V3 Block Storage
+            required: false
+            policy: ''
+            notes: ''
+        attach_mode:
+            description: Specify whether to attach the volume as Read-Only
+            required: false
+            policy: ''
+            notes: ''
+        device:
+            description: The device to tell the Block Storage service this
+            required: false
+            policy: ''
+            notes: ''
+        host_name:
+            description: The host to attach the volume to.
+            required: true
+            policy: ''
+            notes: ''
+        initiator:
+            description: The iSCSI initiator string to make the connection.
+            required: false
+            policy: ''
+            notes: ''
+        ip_address:
+            description: The IP address of the `host_name` above.
+            required: false
+            policy: ''
+            notes: ''
+        multipath:
+            description: Whether to connect to this volume via multipath.
+            required: false
+            policy: ''
+            notes: ''
+        os_type:
+            description: The iSCSI initiator OS type.
+            required: false
+            policy: ''
+            notes: ''
+        platform:
+            description: The iSCSI initiator platform.
+            required: false
+            policy: ''
+            notes: ''
+        volume_id:
+            description: The ID of the Volume to attach to an Instance.
+            required: true
+            policy: ''
+            notes: ''
+        wwpn:
+            description: An array of wwpn strings. Used for Fibre Channel
+            required: false
+            policy: ''
+            notes: ''
+        wwnn:
+            description: A wwnn name. Used for Fibre Channel connections.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        data:
+            description: This is a map of key/value pairs that contain the connection
+        driver_volume_type:
+            description: The storage driver that the volume is based on.
+        mount_point_base:
+            description: A mount point base name for shared storage.
+    timeouts: {}

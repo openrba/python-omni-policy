@@ -1,0 +1,66 @@
+{
+    "google_google_project": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_project",
+        "sidebar_current": "docs-google-project-x",
+        "description": "Allows management of a Google Cloud Platform project.",
+        "arguments": {
+            "name": {
+                "description": "The display name of the project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project_id": {
+                "description": "The project ID. Changing this forces a new project to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "org_id": {
+                "description": "The numeric ID of the organization this project belongs to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "folder_id": {
+                "description": "The numeric ID of the folder this project should be",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "billing_account": {
+                "description": "The alphanumeric ID of the billing account this project",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "skip_delete": {
+                "description": "If true, the Terraform resource can be deleted",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "A set of key/value label pairs to assign to the project.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_create_network": {
+                "description": "Create the 'default' network automatically.  Default `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "number": {
+                "description": "The numeric identifier of the project."
+            }
+        },
+        "timeouts": {}
+    }
+}

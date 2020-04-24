@@ -1,0 +1,18 @@
+kubernetes_network_policy:
+    status: ASSESS
+    layout: kubernetes
+    page_title: 'Kubernetes: kubernetes_network_policy'
+    sidebar_current: docs-kubernetes-resource-network-policy
+    description: 'Kubernetes supports network policies to specificy of how groups
+        of pods are allowed to communicate with each other and other network endpoints.
+
+        NetworkPolicy resources use labels to select pods and define rules which specify
+        what traffic is allowed to the selected pods.'
+    arguments:
+        metadata:
+            description: Standard network policy's [metadata](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata).
+            required: true
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

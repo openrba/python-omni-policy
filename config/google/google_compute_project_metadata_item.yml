@@ -1,0 +1,37 @@
+google_compute_project_metadata_item:
+    status: ASSESS
+    subcategory: Compute Engine
+    layout: google
+    page_title: 'Google: google_compute_project_metadata_item'
+    sidebar_current: docs-google-compute-project-metadata-item
+    description: Manages a single key/value pair on common instance metadata
+    arguments:
+        key:
+            description: The metadata key to set.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The value to set for the given metadata key.
+            required: true
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the resource belongs. If it
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjl3Y205cVpXTjBYMjFsZEdGa1lYUmhY
+        MmwwWlcwaUlDSmtaV1poZFd4MElpQjdDaUFnYTJWNUlDQWdQU0FpYlhsZmJXVjBZV1JoZEdFaUNp
+        QWdkbUZzZFdVZ1BTQWliWGxmZG1Gc2RXVWlDbjBL
+    import: !!binary |
+        Q2dwUWNtOXFaV04wSUcxbGRHRmtZWFJoSUdsMFpXMXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZR3RsZVdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDNCeWIycGxZM1JmYldWMFlXUmhkR0ZmYVhSbGJTNW9kRzFzTG0x
+        aGNtdGtiM2R1
