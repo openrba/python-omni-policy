@@ -10,7 +10,7 @@ Declarative data store, API, and documentation for the sentinel-omni-policy for 
 This repository contains a complete data snapshot of all Hashicorp Terraform providers, resources and resource attributes.  This data has been extended by key/value pairs that allow for policy to be declared in an easy YAML format.  The sentinel-omni-policy repository contains the sentinel policy that reads this data and applies the policy in real time to Terraform Enterprise.  This allows non-developer security personnel to manage the policy in a more comprehensive and natural way.
 
 ## Example Usage
-Configuration YAML files are provided for all Terrafrom 'providers' that have been enabled in the providers.yaml file.  Within the config directory the resource type is in a config/$provider/$resource_name.yaml format.  Those yaml files look like the following.
+Configuration YAML files are provided for all Terraform 'providers' that have been enabled in the providers.yaml file.  Within the config directory the resource type is in a config/$provider/$resource_name.yaml format.  Those yaml files look like the following.
 
 ```
 aws_iot_thing:
