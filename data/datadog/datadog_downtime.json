@@ -1,0 +1,95 @@
+{
+    "datadog_downtime": {
+        "status": "HOLD",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_downtime",
+        "sidebar_current": "docs-datadog-resource-downtime",
+        "description": "Provides a Datadog downtime resource. This can be used to create and manage downtimes.",
+        "arguments": {
+            "scope": {
+                "description": " The scope(s",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "active": {
+                "description": "A flag indicating if the downtime is active now.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disabled": {
+                "description": "A flag indicating if the downtime was disabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "start": {
+                "description": "POSIX timestamp to start the downtime.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "start_date": {
+                "description": "String representing date and time to start the downtime in RFC3339 format.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "end": {
+                "description": "POSIX timestamp to end the downtime.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "end_date": {
+                "description": "String representing date and time to end the downtime in RFC3339 format.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "timezone": {
+                "description": "The timezone for the downtime, default UTC. It must be a valid IANA Time Zone.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "recurrence": {
+                "description": "A dictionary to configure the downtime to be recurring.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "message": {
+                "description": "A message to include with notifications for this downtime.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "monitor_tags": {
+                "description": "A list of monitor tags to match. The resulting downtime applies to monitors that match **all** provided monitor tags. This option conflicts with `monitor_id` as it will match all monitors that match these tags.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "monitor_id": {
+                "description": "Reference to which monitor this downtime is applied. When scheduling downtime for a given monitor, datadog changes `silenced` property of the monitor to match the `end` POSIX timestamp. **Note:** this will effectively change the `silenced` attribute of the referenced monitor. If that monitor is also tracked by Terraform and you don't want it to be unmuted on the next `terraform apply`, see [details](/docs/providers/datadog/r/monitor.html#silencing-by-hand-and-by-downtimes",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "ID of the Datadog downtime. On updates this can sometime change based on API logic. For recurring downtimes it would be recommended to `ignore_changes` on this field."
+            },
+            "active": {
+                "description": "If true this indicates the downtime is currently active."
+            },
+            "disabled": {
+                "description": "If true this indicates the downtime is currently disabled."
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "aws_apigatewayv2_route": {
+        "status": "HOLD",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_route",
+        "description": "Manages an Amazon API Gateway Version 2 route.",
+        "arguments": {
+            "api_id": {
+                "description": "The API identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "route_key": {
+                "description": "The route key for the route.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_key_required": {
+                "description": "Boolean whether an API key is required for the route. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "authorization_scopes": {
+                "description": "The authorization scopes supported by this route. The scopes are used with a JWT authorizer to authorize the method invocation.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "authorization_type": {
+                "description": "The authorization type for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "authorizer_id": {
+                "description": "The identifier of the [`aws_apigatewayv2_authorizer`](/docs/providers/aws/r/apigatewayv2_authorizer.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "model_selection_expression": {
+                "description": "The [model selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-model-selection-expressions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "operation_name": {
+                "description": "The operation name for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "request_models": {
+                "description": "The request models for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route_response_selection_expression": {
+                "description": "The [route response selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-response-selection-expressions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target": {
+                "description": "The target for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

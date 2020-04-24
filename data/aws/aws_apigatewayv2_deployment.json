@@ -1,0 +1,25 @@
+{
+    "aws_apigatewayv2_deployment": {
+        "status": "HOLD",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_deployment",
+        "description": "Manages an Amazon API Gateway Version 2 deployment.",
+        "arguments": {
+            "api_id": {
+                "description": "The API identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description for the deployment resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

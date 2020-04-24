@@ -1,0 +1,49 @@
+{
+    "aws_dms_event_subscription": {
+        "status": "HOLD",
+        "subcategory": "Database Migration Service (DMS)",
+        "layout": "aws",
+        "page_title": "AWS: aws_dms_event_subscription",
+        "description": "Provides a DMS (Data Migration Service) event subscription resource.",
+        "arguments": {
+            "name": {
+                "description": "Name of event subscription.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Whether the event subscription should be enabled.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "event_categories": {
+                "description": "List of event categories to listen for, see `DescribeEventCategories` for a canonical list.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_type": {
+                "description": "Type of source for events. Valid values: `replication-instance` or `replication-task`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_ids": {
+                "description": "Ids of sources to listen to.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "sns_topic_arn": {
+                "description": "SNS topic arn to send events on.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

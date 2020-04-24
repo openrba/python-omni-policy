@@ -1,0 +1,43 @@
+{
+    "aws_apigatewayv2_route_response": {
+        "status": "HOLD",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_route_response",
+        "description": "Manages an Amazon API Gateway Version 2 route response.",
+        "arguments": {
+            "api_id": {
+                "description": "The API identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "route_id": {
+                "description": "The identifier of the [`aws_apigatewayv2_route`](/docs/providers/aws/r/apigatewayv2_route.html).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "route_response_key": {
+                "description": "The route response key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "model_selection_expression": {
+                "description": "The [model selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-model-selection-expressions",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "response_models": {
+                "description": "The response models for the route response.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

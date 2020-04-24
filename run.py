@@ -332,7 +332,7 @@ def process_resource(resource_dct):
         
         # Create the filenames for the yaml & json
         yaml_file = 'config/'+provider+'/'+name+'.yml'
-        json_file = 'data/'+name+'.json'
+        json_file = 'data/'+provider+'/'+name+'.json'
         
         # Do the open / merge / write op with the yaml.
         yaml_dct = open_yaml(yaml_file)

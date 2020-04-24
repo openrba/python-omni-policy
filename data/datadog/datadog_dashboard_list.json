@@ -1,0 +1,25 @@
+{
+    "datadog_dashboard_list": {
+        "status": "HOLD",
+        "layout": "datadog",
+        "page_title": "Datadog: datadog_dashboard_list",
+        "sidebar_current": "docs-datadog-resource-dashboard-list",
+        "description": "Provides a Datadog dashboard list resource. This can be used to create and manage dashboard lists and their sub elements.",
+        "arguments": {
+            "name": {
+                "description": "The name of this Dashbaord List.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dash_item": {
+                "description": "An individual dashboard object to add to this Dashboard List. If present, must contain the following:",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

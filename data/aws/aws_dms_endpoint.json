@@ -101,6 +101,18 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "elasticsearch_settings": {
+                "description": "Settings for the target Elasticsearch. Available settings are `service_access_role_arn`, `endpoint_uri`, `error_retry_duration` (default: `300`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "kinesis_settings": {
+                "description": "Settings for the target Kinesis endpoint. Available settings are `message_format`, `service_access_role_arn`, and `stream_arn`. For more details, see [Using Amazon Kinesis Data Streams as a Target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Kinesis.html).",
+                "required": false,
+                "policy": "",
+                "notes": ""
             }
         },
         "attributes": {
