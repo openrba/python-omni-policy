@@ -58,4 +58,5 @@ aws_iot_thing:
     - **regex-match** - A regex match of an argument's value against a specific regex expression.  This value must start with a `^` or a string-match will occur.  Example: `^[a-z].` would validate that the argument must contain any number of lowercase alpha characters.
     - **convention-match** - A match that expects a naming convention that includes lookup fields.  Fields will be looked up against the custom.json map in [python-omni-policy](https://github.com/openrba/python-omni-policy) that contains allowed_values for a particular field.  Example: the value of `<market>-<businessUnit>-[0-9][0-9]` will match to `us-core-01` assuming `us` is an allowed_value for market and `core` is allowed_value for businessUnit in your custom.json.
 
+-> **NOTE:** Any modification to an existing YAML file currently requires a run of the omni-policy cli tool to update, merge and generate the json data in the API.  It is expected that this process get put in a simple CI engine such as GitHub actions to perform this automatically on merge.  Until then, you may run this tool manually on your clone after updating any YAML configuration.
  
