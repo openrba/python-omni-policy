@@ -4,6 +4,7 @@ Declarative data store, API, and documentation for the sentinel-omni-policy for 
 - **The omni-policy cli tool** (executable) - for fetching, creating, merging, extending and bulk updating all data pertaining to Hashicorp Terraform providers and resources.
 - **/config** (directory) - contains folders and associated resources in YAML format for all Terrafrom providers with a status of "enabled" in providers.yaml
 - **config/providers.yaml** (configuration) - YAML file containing a merged map of all Terraform providers, descriptions, url and status.  New providers merged by the cli tool will get a default value of "disabled".  If using the sentinel-omni-policy and you want to permit use of a provider by Terraform, change the status of that provider to "enabled".
+- **config/custom.yaml** (configuration) - YAML file containing a merged map of custom variables that are used in naming conventions and tags.  Each variable contains a map of allowed_values that are the permissible values for this field in the policy.
 - **/data** (directory) - contains folders and associated resources in JSON format for easier consumption through github API and sentinel.  All data in this directory will update when the omni-policy cli tool is envoked.
 
 ## What is the purpose
