@@ -1,5 +1,5 @@
 aws_cloudhsm_v2_cluster:
-    status: HOLD
+    status: ASSESS
     subcategory: CloudHSM v2
     layout: aws
     page_title: 'AWS: aws_cloudhsm_v2_cluster'
@@ -22,7 +22,7 @@ aws_cloudhsm_v2_cluster:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

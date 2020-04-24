@@ -1,0 +1,118 @@
+azurerm_servicebus_namespace_network_rule_set:
+    status: ASSESS
+    subcategory: Messaging
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_servicebus_namespace_network_rule_set'
+    description: Manages a ServiceBus Namespace Network Rule Set Set.
+    arguments:
+        resource_group_name:
+            description: Specifies the name of the Resource Group where the ServiceBus
+                Namespace Network Rule Set should exist. Changing this forces a new
+                resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        namespace_name:
+            description: Specifies the ServiceBus Namespace name to which to attach
+                the ServiceBus Namespace Network Rule Set. Changing this forces a
+                new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        default_action:
+            description: Specifies the default action for the ServiceBus Namespace
+                Network Rule Set. Possible values are `Allow` and `Deny`. Defaults
+                to `Deny`.
+            required: false
+            policy: ''
+            notes: ''
+        ip_rules:
+            description: One or more IP Addresses, or CIDR Blocks which should be
+                able to access the ServiceBus Namespace.
+            required: false
+            policy: ''
+            notes: ''
+        network_rules:
+            description: One or more `network_rules` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The Subnet ID which should be able to access this ServiceBus
+                Namespace.
+            required: true
+            policy: ''
+            notes: ''
+        ignore_missing_vnet_service_endpoint:
+            description: Should the ServiceBus Namespace Network Rule Set ignore missing
+                Virtual Network Service Endpoint option in the Subnet? Defaults to
+                `false`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the ServiceBus Namespace Network Rule Set.
+    timeouts:
+        create:
+            description: Used when creating the ServiceBus Namespace Network Rule
+                Set.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the ServiceBus Namespace Network Rule
+                Set.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the ServiceBus Namespace Network Rule
+                Set.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the ServiceBus Namespace Network Rule
+                Set.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WlhOdmRYSmpaWE1pQ2lBZ2JHOWpZWFJwYjI0
+        Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTmxjblpw
+        WTJWaWRYTmZibUZ0WlhOd1lXTmxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF6WWkxdVlXMWxjM0JoWTJVaUNpQWdiRzlqWVhScGIy
+        NGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhC
+        c1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0
+        WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lITnJkU0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpVUhKbGJXbDFiU0lLQ2lBZ1kyRndZV05wZEhrZ1BTQXhDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGVuVnlaWEp0WDNacGNuUjFZV3hmYm1WMGQyOXlheUlnSW1WNFlXMXdiR1VpSUhz
+        S0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0ZG01bGRDSUtJQ0Jz
+        YjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFj
+        QzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlH
+        RjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdZV1JrY21W
+        emMxOXpjR0ZqWlNBZ0lDQWdJQ0E5SUZzaU1UY3lMakUzTGpBdU1DOHhOaUpkQ2lBZ1pHNXpYM05s
+        Y25abGNuTWdJQ0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMalFpTENBaU1UQXVNQzR3TGpVaVhRcDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZFdKdVpYUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2Jt
+        RnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWkdWbVlYVnNkQ0lLSUNCeVpYTnZkWEpqWlY5
+        bmNtOTFjRjl1WVcxbElDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJz
+        WlM1dVlXMWxDaUFnZG1seWRIVmhiRjl1WlhSM2IzSnJYMjVoYldVZ1BTQmhlblZ5WlhKdFgzWnBj
+        blIxWVd4ZmJtVjBkMjl5YXk1bGVHRnRjR3hsTG01aGJXVUtJQ0JoWkdSeVpYTnpYM0J5WldacGVD
+        QWdJQ0FnSUNBOUlDSXhOekl1TVRjdU1DNHdMekkwSWdvS0lDQnpaWEoyYVdObFgyVnVaSEJ2YVc1
+        MGN5QTlJRnNpVFdsamNtOXpiMlowTGxObGNuWnBZMlZDZFhNaVhRcDlDZ3B5WlhOdmRYSmpaU0Fp
+        WVhwMWNtVnliVjl6WlhKMmFXTmxZblZ6WDI1aGJXVnpjR0ZqWlY5dVpYUjNiM0pyWDNKMWJHVmZj
+        MlYwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldWemNHRmpaVjl1WVcxbElDQWdJQ0FnUFNCaGVu
+        VnlaWEp0WDNObGNuWnBZMlZpZFhOZmJtRnRaWE53WVdObExtVjRZVzF3YkdVdWJtRnRaUW9nSUhK
+        bGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3
+        TG1WNFlXMXdiR1V1Ym1GdFpRb0tJQ0JrWldaaGRXeDBYMkZqZEdsdmJpQTlJQ0pFWlc1NUlnb0tJ
+        Q0J1WlhSM2IzSnJYM0oxYkdWeklIc0tJQ0FnSUhOMVltNWxkRjlwWkNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmMzVmlibVYwTG1WNFlXMXdiR1V1YVdR
+        S0lDQWdJR2xuYm05eVpWOXRhWE56YVc1blgzWnVaWFJmYzJWeWRtbGpaVjlsYm1Sd2IybHVkQ0E5
+        SUdaaGJITmxDaUFnZlFvS0lDQnBjRjl5ZFd4bGN5QTlJRnNpTVM0eExqRXVNU0pkQ24wSw==
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVKMWN5Qk9ZVzFsYzNCaFkyVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWldKMWMxOXVZVzFsYzNCaFkyVmZibVYwZDI5eWExOXlkV3hsWDNO
+        bGRDNW9kRzFzTG0xaGNtdGtiM2R1

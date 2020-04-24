@@ -1,13 +1,13 @@
 {
     "aws_acm_certificate": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "ACM",
         "layout": "aws",
         "page_title": "AWS: aws_acm_certificate",
         "description": "Requests and manages a certificate from Amazon Certificate Manager (ACM).",
         "arguments": {
             "tags": {
-                "description": "A mapping of tags to assign to the resource.",
+                "description": "A map of tags to assign to the resource.",
                 "required": false,
                 "policy": "",
                 "notes": ""

@@ -1,5 +1,5 @@
 aws_kms_key:
-    status: HOLD
+    status: ASSESS
     subcategory: KMS
     layout: aws
     page_title: 'AWS: aws_kms_key'
@@ -46,7 +46,7 @@ aws_kms_key:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the object.
+            description: A map of tags to assign to the object.
             required: false
             policy: ''
             notes: ''

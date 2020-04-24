@@ -1,6 +1,6 @@
 {
     "aws_codepipeline": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "CodePipeline",
         "layout": "aws",
         "page_title": "AWS: aws_codepipeline",
@@ -31,7 +31,7 @@
                 "notes": ""
             },
             "tags": {
-                "description": "A mapping of tags to assign to the resource.",
+                "description": "A map of tags to assign to the resource.",
                 "required": false,
                 "policy": "",
                 "notes": ""
@@ -116,6 +116,12 @@
             },
             "run_order": {
                 "description": "The order in which actions are run.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "namespace": {
+                "description": "The namespace all output variables will be accessed from.",
                 "required": false,
                 "policy": "",
                 "notes": ""

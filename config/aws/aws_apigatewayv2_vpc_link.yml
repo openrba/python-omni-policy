@@ -1,0 +1,29 @@
+aws_apigatewayv2_vpc_link:
+    status: ASSESS
+    subcategory: API Gateway v2 (WebSocket and HTTP APIs)
+    layout: aws
+    page_title: 'AWS: aws_apigatewayv2_vpc_link'
+    description: Manages an Amazon API Gateway Version 2 VPC Link.
+    arguments:
+        name:
+            description: The name of the VPC Link.
+            required: true
+            policy: ''
+            notes: ''
+        security_group_ids:
+            description: Security group IDs for the VPC Link.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_ids:
+            description: Subnet IDs for the VPC Link.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A map of tags to assign to the VPC Link.
+            required: false
+            policy: ''
+            notes: ''
+    attributes: {}
+    timeouts: {}

@@ -1,5 +1,5 @@
 aws_glacier_vault:
-    status: HOLD
+    status: ASSESS
     subcategory: Glacier
     layout: aws
     page_title: 'AWS: aws_glacier_vault'
@@ -23,7 +23,7 @@ aws_glacier_vault:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

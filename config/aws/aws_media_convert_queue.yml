@@ -1,5 +1,5 @@
 aws_media_convert_queue:
-    status: HOLD
+    status: ASSESS
     subcategory: MediaConvert
     layout: aws
     page_title: 'AWS: aws_media_convert_queue'
@@ -34,7 +34,7 @@ aws_media_convert_queue:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

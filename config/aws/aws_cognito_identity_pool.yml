@@ -1,5 +1,5 @@
 aws_cognito_identity_pool:
-    status: HOLD
+    status: ASSESS
     subcategory: Cognito
     layout: aws
     page_title: 'AWS: aws_cognito_identity_pool'
@@ -44,7 +44,7 @@ aws_cognito_identity_pool:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the Identity Pool.
+            description: A map of tags to assign to the Identity Pool.
             required: false
             policy: ''
             notes: ''

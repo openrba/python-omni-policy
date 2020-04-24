@@ -1,5 +1,5 @@
 azurerm_kubernetes_cluster:
-    status: HOLD
+    status: ASSESS
     subcategory: Container
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_kubernetes_cluster'
@@ -86,9 +86,8 @@ azurerm_kubernetes_cluster:
                 should exist. Changing this forces a new resource to be created.
             required: false
             policy: ''
-            notes: ' At this time Private Link is in Public Preview. For an example
-                of how to enable a Preview feature, please visit [Private Azure Kubernetes
-                Service cluster](https://docs.microsoft.com/en-gb/azure/aks/private-clusters)'
+            notes: Azure requires that a new, non-existent Resource Group is used,
+                as otherwise the provisioning of the Kubernetes Service will fail.
         role_based_access_control:
             description: A `role_based_access_control` block. Changing this forces
                 a new resource to be created.

@@ -1,5 +1,5 @@
 aws_elasticache_cluster:
-    status: HOLD
+    status: ASSESS
     subcategory: ElastiCache
     layout: aws
     page_title: 'AWS: aws_elasticache_cluster'
@@ -134,7 +134,7 @@ aws_elasticache_cluster:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource
+            description: A map of tags to assign to the resource
             required: false
             policy: ''
             notes: ''

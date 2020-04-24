@@ -1,0 +1,65 @@
+azurerm_spring_cloud_app:
+    status: ASSESS
+    subcategory: Spring Cloud
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_spring_cloud_app'
+    description: Manage an Azure Spring Cloud Application.
+    arguments:
+        name:
+            description: Specifies the name of the Spring Cloud Application. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: Specifies the name of the resource group in which to create
+                the Spring Cloud Application. Changing this forces a new resource
+                to be created.
+            required: true
+            policy: ''
+            notes: ''
+        service_name:
+            description: 'Specifies the name of the Spring Cloud Service resource.
+                Changing this forces a new resource to be created. '
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Spring Cloud Application.
+    timeouts:
+        create:
+            description: Used when creating the Spring Cloud Application.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Spring Cloud Application.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Spring Cloud Application.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WlhOdmRYSmpaWE1pQ2lBZ2JHOWpZWFJwYjI0
+        Z1BTQWlVMjkxZEdobFlYTjBJRUZ6YVdFaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM053
+        Y21sdVoxOWpiRzkxWkY5elpYSjJhV05sSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlMxemNISnBibWRqYkc5MVpDSUtJQ0J5WlhOdmRY
+        SmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdG
+        dGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5
+        WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNuMEtDbkpsYzI5MWNtTmxJ
+        Q0poZW5WeVpYSnRYM053Y21sdVoxOWpiRzkxWkY5aGNIQWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2Jt
+        RnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMWE53Y21sdVoyTnNiM1ZrWVhC
+        d0lnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5s
+        WDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lITmxjblpwWTJWZmJtRnRaU0FnSUNBZ0lDQWdQ
+        U0JoZW5WeVpYSnRYM053Y21sdVoxOWpiRzkxWkY5elpYSjJhV05sTG1WNFlXMXdiR1V1Ym1GdFpR
+        cDlDZz09
+    import: !!binary |
+        Q2dwVGNISnBibWNnUTJ4dmRXUWdRWEJ3YkdsallYUnBiMjRnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzQnlhVzVuWDJOc2IzVmtYMkZ3Y0M1b2RHMXNMbTFoY210a2IzZHU=

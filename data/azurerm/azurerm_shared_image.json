@@ -1,6 +1,6 @@
 {
     "azurerm_shared_image": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "Compute",
         "layout": "azurerm",
         "page_title": "Azure Resource Manager: azurerm_shared_image",
@@ -50,6 +50,12 @@
             },
             "eula": {
                 "description": "The End User Licence Agreement for the Shared Image.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "hyper_v_generation": {
+                "description": "The generation of HyperV that the Virtual Machine used to create the Shared Image is based on. Possible values are `V1` and `V2`. Defaults to `V1`. Changing this forces a new resource to be created.",
                 "required": false,
                 "policy": "",
                 "notes": ""

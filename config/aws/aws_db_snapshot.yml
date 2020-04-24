@@ -1,5 +1,5 @@
 aws_db_snapshot:
-    status: HOLD
+    status: ASSESS
     subcategory: RDS
     layout: aws
     page_title: 'AWS: aws_db_snapshot'
@@ -16,7 +16,7 @@ aws_db_snapshot:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

@@ -1,5 +1,5 @@
 aws_storagegateway_gateway:
-    status: HOLD
+    status: ASSESS
     subcategory: Storage Gateway
     layout: aws
     page_title: 'AWS: aws_storagegateway_gateway'
@@ -69,7 +69,7 @@ aws_storagegateway_gateway:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

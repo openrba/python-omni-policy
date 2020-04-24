@@ -1,0 +1,51 @@
+{
+    "azurerm_spring_cloud_app": {
+        "status": "ASSESS",
+        "subcategory": "Spring Cloud",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_spring_cloud_app",
+        "description": "Manage an Azure Spring Cloud Application.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Spring Cloud Application. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "Specifies the name of the resource group in which to create the Spring Cloud Application. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "service_name": {
+                "description": "Specifies the name of the Spring Cloud Service resource. Changing this forces a new resource to be created. ",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Spring Cloud Application."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Spring Cloud Application.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Spring Cloud Application.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Spring Cloud Application.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

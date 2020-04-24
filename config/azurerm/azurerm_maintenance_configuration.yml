@@ -1,0 +1,77 @@
+azurerm_maintenance_configuration:
+    status: ASSESS
+    subcategory: Maintenance
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_maintenance_configuration'
+    description: Manages a Maintenance Configuration.
+    arguments:
+        name:
+            description: Specifies the name of the Maintenance Configuration. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group where the Maintenance Configuration
+                should exist. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        location:
+            description: Specified the supported Azure location where the resource
+                exists. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        scope:
+            description: The scope of the Maintenance Configuration. Possible values
+                are `All`, `Host`, `Resource` or `InResource`. Default to `All`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource. The key could
+                not contain upper case letter.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Maintenance Configuration.
+    timeouts:
+        create:
+            description: Used when creating the Maintenance Configuration.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Maintenance Configuration.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Maintenance Configuration.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Maintenance Configuration.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WlhOdmRYSmpaWE1pQ2lBZ2JHOWpZWFJwYjI0
+        Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyMWhhVzUw
+        Wlc1aGJtTmxYMk52Ym1acFozVnlZWFJwYjI0aUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXMWpJZ29nSUhKbGMyOTFjbU5sWDJkeWIz
+        VndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1G
+        dFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5s
+        WDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J6WTI5d1pTQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUQwZ0lrRnNiQ0lLQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJRVZ1ZGlBOUlDSndjbTlrSWdvZ0lI
+        MEtmUW89
+    import: !!binary |
+        Q2dwTllXbHVkR1Z1WVc1alpTQkRiMjVtYVdkMWNtRjBhVzl1SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXRnBiblJsYm1GdVkyVmZZMjl1Wm1sbmRYSmhkR2x2Ymk1b2RHMXNMbTFoY210
+        a2IzZHU=

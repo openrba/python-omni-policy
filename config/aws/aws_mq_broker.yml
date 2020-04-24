@@ -1,5 +1,5 @@
 aws_mq_broker:
-    status: HOLD
+    status: ASSESS
     subcategory: MQ
     layout: aws
     page_title: 'AWS: aws_mq_broker'
@@ -89,7 +89,7 @@ aws_mq_broker:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

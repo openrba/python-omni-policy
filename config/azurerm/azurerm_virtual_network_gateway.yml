@@ -1,5 +1,5 @@
 azurerm_virtual_network_gateway:
-    status: HOLD
+    status: ASSESS
     subcategory: Network
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_virtual_network_gateway'
@@ -86,7 +86,7 @@ azurerm_virtual_network_gateway:
             notes: ''
         public_ip_address_id:
             description: The ID of the public ip address to associate
-            required: false
+            required: true
             policy: ''
             notes: ''
         address_space:

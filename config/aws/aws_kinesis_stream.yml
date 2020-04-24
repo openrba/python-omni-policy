@@ -1,5 +1,5 @@
 aws_kinesis_stream:
-    status: HOLD
+    status: ASSESS
     subcategory: Kinesis
     layout: aws
     page_title: 'AWS: aws_kinesis_stream'
@@ -52,7 +52,7 @@ aws_kinesis_stream:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

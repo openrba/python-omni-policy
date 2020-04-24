@@ -1,0 +1,93 @@
+azurerm_api_management_named_value:
+    status: ASSESS
+    subcategory: API Management
+    layout: azurerm
+    page_title: 'Azure Resource Manager: azurerm_api_management_named_value'
+    description: Manages an API Management Named Value.
+    arguments:
+        name:
+            description: The name of the API Management Named Value. Changing this
+                forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        resource_group_name:
+            description: The name of the Resource Group in which the API Management
+                Named Value should exist. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes: ''
+        api_management_name:
+            description: The name of the [API Management Service](api_management.html
+            required: true
+            policy: ''
+            notes: ''
+        display_name:
+            description: The display name of this API Management Named Value.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: The value of this API Management Named Value.
+            required: true
+            policy: ''
+            notes: ''
+        secret:
+            description: Specifies whether the API Management Named Value is secret.
+                Valid values are `true` or `false`. The default value is `false`.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A list of tags to be applied to the API Management Named
+                Value.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Named Value.
+    timeouts:
+        create:
+            description: Used when creating the API Management Named Value.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the API Management Named Value.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the API Management Named Value.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Named Value.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3YVY5
+        dFlXNWhaMlZ0Wlc1MElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pTMWhjR2x0SWdvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdQ
+        U0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lD
+        QnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205
+        MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCd2RXSnNhWE5vWlhKZmJtRnRaU0FnSUNBZ0lEMGdJbkIx
+        WWpFaUNpQWdjSFZpYkdsemFHVnlYMlZ0WVdsc0lDQWdJQ0E5SUNKd2RXSXhRR1Z0WVdsc0xtTnZi
+        U0lLQ2lBZ2MydDFYMjVoYldVZ1BTQWlSR1YyWld4dmNHVnlYekVpQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgyRndhVjl0WVc1aFoyVnRaVzUwWDI1aGJXVmtYM1poYkhWbElpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTMWhjR2x0
+        WnlJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpa
+        VjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCaGNHbGZiV0Z1WVdkbGJXVnVkRjl1WVcxbElE
+        MGdZWHAxY21WeWJWOWhjR2xmYldGdVlXZGxiV1Z1ZEM1bGVHRnRjR3hsTG01aGJXVUtJQ0JrYVhO
+        d2JHRjVYMjVoYldVZ0lDQWdJQ0FnSUQwZ0lrVjRZVzF3YkdWUWNtOXdaWEowZVNJS0lDQjJZV3gx
+        WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtWNFlXMXdiR1VnVm1Gc2RXVWlDbjBL
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JRY205d1pYSjBhV1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblJmYm1GdFpXUmZkbUZzZFdVdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

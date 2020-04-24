@@ -1,5 +1,5 @@
 aws_codestarnotifications_notification_rule:
-    status: HOLD
+    status: ASSESS
     subcategory: CodeStar Notifications
     layout: aws
     page_title: 'AWS: aws_codestarnotifications_notification_rule'
@@ -34,7 +34,7 @@ aws_codestarnotifications_notification_rule:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

@@ -183,7 +183,7 @@ def parse_markdown(markdown_dct,metadata_dct):
     name = tmp_dct.get('layout') + '_' + name
 
     # Give default status of HOLD.
-    dct = {name: {'status': 'HOLD'}}
+    dct = {name: {'status': 'ASSESS'}}
     
     # Add all fields in tmp_dict to dct.
     dct[name].update(tmp_dct)
@@ -383,7 +383,7 @@ def get_providers():
                 name = provider_dct.get("name").split('-')[2]
                 description = provider_dct.get("description")
                 html_url = provider_dct.get("url")
-                status = "HOLD"
+                status = "disabled"
                 dct.update({name: 
                                 {'description': description,
                                  'status' : status,
@@ -410,8 +410,7 @@ def process_provider(provider_dct):
     # Create a list of active providers
     lst = []
     for provider in merged_dct:
-        if (merged_dct[provider].get('status') != 'HOLD' and 
-            merged_dct[provider].get('status') != 'REJECT'):
+        if (merged_dct[provider].get('status') == 'enabled'):
             lst.append(provider)
     
     return lst

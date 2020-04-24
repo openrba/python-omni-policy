@@ -1,6 +1,6 @@
 {
     "aws_efs_file_system": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "EFS",
         "layout": "aws",
         "page_title": "AWS: aws_efs_file_system",
@@ -43,7 +43,7 @@
                 "notes": ""
             },
             "tags": {
-                "description": "A mapping of tags to assign to the file system.",
+                "description": "A map of tags to assign to the file system.",
                 "required": false,
                 "policy": "",
                 "notes": ""

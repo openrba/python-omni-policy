@@ -1,0 +1,80 @@
+{
+    "azurerm_api_management_named_value": {
+        "status": "ASSESS",
+        "subcategory": "API Management",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_api_management_named_value",
+        "description": "Manages an API Management Named Value.",
+        "arguments": {
+            "name": {
+                "description": "The name of the API Management Named Value. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group in which the API Management Named Value should exist. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "api_management_name": {
+                "description": "The name of the [API Management Service](api_management.html",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "display_name": {
+                "description": "The display name of this API Management Named Value.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "The value of this API Management Named Value.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "secret": {
+                "description": "Specifies whether the API Management Named Value is secret. Valid values are `true` or `false`. The default value is `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A list of tags to be applied to the API Management Named Value.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the API Management Named Value."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the API Management Named Value.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the API Management Named Value.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the API Management Named Value.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the API Management Named Value.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

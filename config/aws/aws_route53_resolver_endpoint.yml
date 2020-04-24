@@ -1,5 +1,5 @@
 aws_route53_resolver_endpoint:
-    status: HOLD
+    status: ASSESS
     subcategory: Route53 Resolver
     layout: aws
     page_title: 'AWS: aws_route53_resolver_endpoint'
@@ -29,7 +29,7 @@ aws_route53_resolver_endpoint:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

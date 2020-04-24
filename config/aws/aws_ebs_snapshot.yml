@@ -1,5 +1,5 @@
 aws_ebs_snapshot:
-    status: HOLD
+    status: ASSESS
     subcategory: EC2
     layout: aws
     page_title: 'AWS: aws_ebs_snapshot'
@@ -16,7 +16,7 @@ aws_ebs_snapshot:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the snapshot
+            description: A map of tags to assign to the snapshot
             required: false
             policy: ''
             notes: ''
@@ -37,7 +37,7 @@ aws_ebs_snapshot:
         data_encryption_key_id:
             description: The data encryption key identifier for the snapshot.
         tags:
-            description: A mapping of tags for the snapshot.
+            description: A map of tags for the snapshot.
     timeouts: {}
     usage: !!binary |
         Q25KbGMyOTFjbU5sSUNKaGQzTmZaV0p6WDNadmJIVnRaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQmhk

@@ -1,5 +1,5 @@
 azurerm_notification_hub:
-    status: HOLD
+    status: ASSESS
     subcategory: Messaging
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_notification_hub'
@@ -36,6 +36,11 @@ azurerm_notification_hub:
             notes: ''
         gcm_credential:
             description: A `gcm_credential` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

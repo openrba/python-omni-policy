@@ -1,5 +1,5 @@
 aws_db_subnet_group:
-    status: HOLD
+    status: ASSESS
     subcategory: RDS
     layout: aws
     page_title: 'AWS: aws_db_subnet_group'
@@ -29,7 +29,7 @@ aws_db_subnet_group:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

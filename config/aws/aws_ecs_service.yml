@@ -1,5 +1,5 @@
 aws_ecs_service:
-    status: HOLD
+    status: ASSESS
     subcategory: ECS
     layout: aws
     page_title: 'AWS: aws_ecs_service'
@@ -130,7 +130,7 @@ aws_ecs_service:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

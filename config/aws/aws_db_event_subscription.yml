@@ -1,5 +1,5 @@
 aws_db_event_subscription:
-    status: HOLD
+    status: ASSESS
     subcategory: RDS
     layout: aws
     page_title: 'AWS: aws_db_event_subscription'
@@ -50,7 +50,7 @@ aws_db_event_subscription:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

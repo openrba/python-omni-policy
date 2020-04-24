@@ -1,5 +1,5 @@
 aws_wafregional_rule_group:
-    status: HOLD
+    status: ASSESS
     subcategory: WAF Regional
     layout: aws
     page_title: 'AWS: aws_wafregional_rule_group'
@@ -21,7 +21,7 @@ aws_wafregional_rule_group:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

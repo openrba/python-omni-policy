@@ -1,6 +1,6 @@
 {
     "aws_eks_node_group": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "EKS",
         "layout": "aws",
         "page_title": "AWS: aws_eks_node_group",
@@ -55,7 +55,7 @@
                 "notes": ""
             },
             "labels": {
-                "description": "Key-value mapping of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.",
+                "description": "Key-value map of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.",
                 "required": false,
                 "policy": "",
                 "notes": ""
@@ -73,7 +73,7 @@
                 "notes": ""
             },
             "tags": {
-                "description": "Key-value mapping of resource tags.",
+                "description": "Key-value map of resource tags.",
                 "required": false,
                 "policy": "",
                 "notes": ""

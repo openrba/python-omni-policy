@@ -1,6 +1,6 @@
 {
     "aws_msk_cluster": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "Managed Streaming for Kafka (MSK)",
         "layout": "aws",
         "page_title": "AWS: aws_msk_cluster",
@@ -67,7 +67,7 @@
                 "notes": ""
             },
             "tags": {
-                "description": "A mapping of tags to assign to the resource",
+                "description": "A map of tags to assign to the resource",
                 "required": false,
                 "policy": "",
                 "notes": ""

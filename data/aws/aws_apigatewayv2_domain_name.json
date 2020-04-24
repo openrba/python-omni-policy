@@ -1,0 +1,61 @@
+{
+    "aws_apigatewayv2_domain_name": {
+        "status": "ASSESS",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_domain_name",
+        "description": "Manages an Amazon API Gateway Version 2 domain name.",
+        "arguments": {
+            "domain_name": {
+                "description": "The domain name.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "domain_name_configuration": {
+                "description": "The domain name configuration.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A map of tags to assign to the domain name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate_arn": {
+                "description": "The ARN of an AWS-managed certificate that will be used by the endpoint for the domain name. AWS Certificate Manager is the only supported source.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "endpoint_type": {
+                "description": "The endpoint type. Valid values: `REGIONAL`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "security_policy": {
+                "description": "The Transport Layer Security (TLS",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "hosted_zone_id": {
+                "description": "The Amazon Route 53 Hosted Zone ID of the endpoint.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target_domain_name": {
+                "description": "The target domain name.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

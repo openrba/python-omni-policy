@@ -1,5 +1,5 @@
 aws_sfn_state_machine:
-    status: HOLD
+    status: ASSESS
     subcategory: Step Function (SFN)
     layout: aws
     page_title: 'AWS: aws_sfn_state_machine'
@@ -21,7 +21,7 @@ aws_sfn_state_machine:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

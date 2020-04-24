@@ -1,5 +1,5 @@
 azurerm_cosmosdb_mongo_collection:
-    status: HOLD
+    status: ASSESS
     subcategory: CosmosDB (DocumentDB)
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_cosmosdb_mongo_collection'
@@ -36,6 +36,11 @@ azurerm_cosmosdb_mongo_collection:
             required: true
             policy: ''
             notes: ''
+        index:
+            description: One or more `index` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
         throughput:
             description: The throughput of the MongoDB collection (RU/s). Must be
                 set in increments of `100`. The minimum value is `400`. This must
@@ -44,9 +49,27 @@ azurerm_cosmosdb_mongo_collection:
             required: false
             policy: ''
             notes: ''
+        keys:
+            description: Specifies the list of user settable keys for each Cosmos
+                DB Mongo Collection.
+            required: true
+            policy: ''
+            notes: ''
+        unique:
+            description: Is the index unique or not? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
     attributes:
         id:
             description: The ID of the Cosmos DB Mongo Collection.
+        system_indexes:
+            description: One or more `system_indexes` blocks as defined below.
+        keys:
+            description: The list of system keys which are not settable for each Cosmos
+                DB Mongo Collection.
+        unique:
+            description: Identifies whether the table contains no duplicate values.
     timeouts:
         create:
             description: Used when creating the CosmosDB Mongo Collection.

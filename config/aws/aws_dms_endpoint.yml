@@ -1,5 +1,5 @@
 aws_dms_endpoint:
-    status: HOLD
+    status: ASSESS
     subcategory: Database Migration Service (DMS)
     layout: aws
     page_title: 'AWS: aws_dms_endpoint'
@@ -27,8 +27,9 @@ aws_dms_endpoint:
             notes: ''
         engine_name:
             description: The type of engine for the endpoint. Can be one of `aurora
-                | azuredb | db2 | docdb | dynamodb | mariadb | mongodb | mysql | oracle
-                | postgres | redshift | s3 | sqlserver | sybase`.
+                | aurora-postgresql| azuredb | db2 | docdb | dynamodb | elasticsearch
+                | kinesis | mariadb | mongodb | mysql | oracle | postgres | redshift
+                | s3 | sqlserver | sybase`.
             required: true
             policy: ''
             notes: ''
@@ -66,7 +67,7 @@ aws_dms_endpoint:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

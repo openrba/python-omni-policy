@@ -1,5 +1,5 @@
 aws_neptune_cluster_instance:
-    status: HOLD
+    status: ASSESS
     subcategory: Neptune
     layout: aws
     page_title: 'AWS: aws_neptune_cluster_instance'
@@ -97,7 +97,7 @@ aws_neptune_cluster_instance:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the instance.
+            description: A map of tags to assign to the instance.
             required: false
             policy: ''
             notes: ''

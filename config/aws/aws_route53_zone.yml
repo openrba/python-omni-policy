@@ -1,5 +1,5 @@
 aws_route53_zone:
-    status: HOLD
+    status: ASSESS
     subcategory: Route53
     layout: aws
     page_title: 'AWS: aws_route53_zone'
@@ -29,7 +29,7 @@ aws_route53_zone:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the zone.
+            description: A map of tags to assign to the zone.
             required: false
             policy: ''
             notes: ''

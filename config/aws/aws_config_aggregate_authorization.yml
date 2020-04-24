@@ -1,5 +1,5 @@
 aws_config_aggregate_authorization:
-    status: HOLD
+    status: ASSESS
     subcategory: Config
     layout: aws
     page_title: 'AWS: aws_config_aggregate_authorization'
@@ -16,7 +16,7 @@ aws_config_aggregate_authorization:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

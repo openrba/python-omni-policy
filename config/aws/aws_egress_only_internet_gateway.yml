@@ -1,5 +1,5 @@
 aws_egress_only_internet_gateway:
-    status: HOLD
+    status: ASSESS
     subcategory: VPC
     layout: aws
     page_title: 'AWS: aws_egress_only_internet_gateway'
@@ -11,7 +11,7 @@ aws_egress_only_internet_gateway:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

@@ -1,5 +1,5 @@
 aws_cloudtrail:
-    status: HOLD
+    status: ASSESS
     subcategory: CloudTrail
     layout: aws
     page_title: 'AWS: aws_cloudtrail'
@@ -78,7 +78,7 @@ aws_cloudtrail:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the trail
+            description: A map of tags to assign to the trail
             required: false
             policy: ''
             notes: ''

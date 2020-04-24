@@ -1,5 +1,5 @@
 aws_default_subnet:
-    status: HOLD
+    status: ASSESS
     subcategory: VPC
     layout: aws
     page_title: 'AWS: aws_default_subnet'
@@ -11,7 +11,7 @@ aws_default_subnet:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

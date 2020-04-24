@@ -1,5 +1,5 @@
 azurerm_mysql_server:
-    status: HOLD
+    status: ASSESS
     subcategory: Database
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_mysql_server'
@@ -58,6 +58,12 @@ azurerm_mysql_server:
             description: Specifies if SSL should be enforced on connections. Possible
                 values are `Enabled` and `Disabled`.
             required: true
+            policy: ''
+            notes: ''
+        public_network_access_enabled:
+            description: Should public network access be allowed for this server?
+                Defaults to `true`.
+            required: false
             policy: ''
             notes: ''
         tags:

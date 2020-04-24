@@ -1,5 +1,5 @@
 aws_elastic_beanstalk_application:
-    status: HOLD
+    status: ASSESS
     subcategory: Elastic Beanstalk
     layout: aws
     page_title: 'AWS: aws_elastic_beanstalk_application'
@@ -16,7 +16,7 @@ aws_elastic_beanstalk_application:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of tags for the Elastic Beanstalk Application.
+            description: Key-value map of tags for the Elastic Beanstalk Application.
             required: false
             policy: ''
             notes: ''

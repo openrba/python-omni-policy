@@ -1,0 +1,127 @@
+{
+    "aws_apigatewayv2_stage": {
+        "status": "ASSESS",
+        "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
+        "layout": "aws",
+        "page_title": "AWS: aws_apigatewayv2_stage",
+        "description": "Manages an Amazon API Gateway Version 2 stage.",
+        "arguments": {
+            "api_id": {
+                "description": "The API identifier.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the stage.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "access_log_settings": {
+                "description": "Settings for logging access in this stage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "auto_deploy": {
+                "description": "Whether updates to an API automatically trigger a new deployment. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "client_certificate_id": {
+                "description": "The identifier of a client certificate for the stage. Use the [`aws_api_gateway_client_certificate`](/docs/providers/aws/r/api_gateway_client_certificate.html",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "default_route_settings": {
+                "description": "The default route settings for the stage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "deployment_id": {
+                "description": "The deployment identifier of the stage. Use the `aws_apigatewayv2_deployment` resource to configure a deployment.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description for the stage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route_settings": {
+                "description": "Route settings for the stage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "stage_variables": {
+                "description": "A map that defines the stage variables for the stage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A map of tags to assign to the stage.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "destination_arn": {
+                "description": "The ARN of the CloudWatch Logs log group to receive access logs. Any trailing `:*` is trimmed from the ARN.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "format": {
+                "description": "A single line [format](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html#apigateway-cloudwatch-log-formats",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "data_trace_enabled": {
+                "description": "Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "detailed_metrics_enabled": {
+                "description": "Whether detailed metrics are enabled for the route. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "logging_level": {
+                "description": "The logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "throttling_burst_limit": {
+                "description": "The throttling burst limit for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "throttling_rate_limit": {
+                "description": "The throttling rate limit for the route.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route_key": {
+                "description": "Route key.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

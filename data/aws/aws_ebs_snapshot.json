@@ -1,6 +1,6 @@
 {
     "aws_ebs_snapshot": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "EC2",
         "layout": "aws",
         "page_title": "AWS: aws_ebs_snapshot",
@@ -19,7 +19,7 @@
                 "notes": ""
             },
             "tags": {
-                "description": "A mapping of tags to assign to the snapshot",
+                "description": "A map of tags to assign to the snapshot",
                 "required": false,
                 "policy": "",
                 "notes": ""
@@ -48,7 +48,7 @@
                 "description": "The data encryption key identifier for the snapshot."
             },
             "tags": {
-                "description": "A mapping of tags for the snapshot."
+                "description": "A map of tags for the snapshot."
             }
         },
         "timeouts": {}

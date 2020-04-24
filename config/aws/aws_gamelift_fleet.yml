@@ -1,5 +1,5 @@
 aws_gamelift_fleet:
-    status: HOLD
+    status: ASSESS
     subcategory: Gamelift
     layout: aws
     page_title: 'AWS: aws_gamelift_fleet'
@@ -67,7 +67,7 @@ aws_gamelift_fleet:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

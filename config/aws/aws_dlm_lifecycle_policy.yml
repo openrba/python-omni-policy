@@ -1,5 +1,5 @@
 aws_dlm_lifecycle_policy:
-    status: HOLD
+    status: ASSESS
     subcategory: Data Lifecycle Manager (DLM)
     layout: aws
     page_title: 'AWS: aws_dlm_lifecycle_policy'
@@ -29,7 +29,7 @@ aws_dlm_lifecycle_policy:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags.
+            description: Key-value map of resource tags.
             required: false
             policy: ''
             notes: ''

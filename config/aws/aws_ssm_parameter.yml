@@ -1,5 +1,5 @@
 aws_ssm_parameter:
-    status: HOLD
+    status: ASSESS
     subcategory: SSM
     layout: aws
     page_title: 'AWS: aws_ssm_parameter'
@@ -57,7 +57,7 @@ aws_ssm_parameter:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the object.
+            description: A map of tags to assign to the object.
             required: false
             policy: ''
             notes: ''

@@ -1,5 +1,5 @@
 aws_waf_web_acl:
-    status: HOLD
+    status: ASSESS
     subcategory: WAF
     layout: aws
     page_title: 'AWS: aws_waf_web_acl'
@@ -35,7 +35,7 @@ aws_waf_web_acl:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

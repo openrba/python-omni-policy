@@ -1,5 +1,5 @@
 aws_cloudwatch_metric_alarm:
-    status: HOLD
+    status: ASSESS
     subcategory: CloudWatch
     layout: aws
     page_title: 'AWS: aws_cloudwatch_metric_alarm'
@@ -137,7 +137,7 @@ aws_cloudwatch_metric_alarm:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

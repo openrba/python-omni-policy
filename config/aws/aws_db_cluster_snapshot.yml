@@ -1,5 +1,5 @@
 aws_db_cluster_snapshot:
-    status: HOLD
+    status: ASSESS
     subcategory: RDS
     layout: aws
     page_title: 'AWS: aws_db_cluster_snapshot'
@@ -16,7 +16,7 @@ aws_db_cluster_snapshot:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the DB cluster.
+            description: A map of tags to assign to the DB cluster.
             required: false
             policy: ''
             notes: ''

@@ -1,6 +1,6 @@
 {
     "azurerm_function_app": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "App Service (Web Apps)",
         "layout": "azurerm",
         "page_title": "Azure Resource Manager: azurerm_function_app",
@@ -30,8 +30,14 @@
                 "policy": "",
                 "notes": ""
             },
-            "storage_connection_string": {
-                "description": "The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).",
+            "storage_account_name": {
+                "description": "The backend storage account name which will be used by this Function App (such as the dashboard, logs).",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_access_key": {
+                "description": "The access key which will be used to access the backend storage account for the Function App.",
                 "required": true,
                 "policy": "",
                 "notes": ""

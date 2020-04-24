@@ -1,5 +1,5 @@
 aws_sagemaker_notebook_instance:
-    status: HOLD
+    status: ASSESS
     subcategory: Sagemaker
     layout: aws
     page_title: 'AWS: aws_sagemaker_notebook_instance'
@@ -50,7 +50,7 @@ aws_sagemaker_notebook_instance:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''

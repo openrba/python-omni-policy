@@ -1,5 +1,5 @@
 azurerm_postgresql_server:
-    status: HOLD
+    status: ASSESS
     subcategory: Database
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_postgresql_server'
@@ -30,45 +30,40 @@ azurerm_postgresql_server:
             required: true
             policy: ''
             notes: ''
-        storage_profile:
-            description: A `storage_profile` block as defined below.
-            required: true
-            policy: ''
-            notes: ''
-        administrator_login:
-            description: The Administrator Login for the PostgreSQL Server. Changing
-                this forces a new resource to be created.
-            required: true
-            policy: ''
-            notes: ''
-        administrator_login_password:
-            description: The Password associated with the `administrator_login` for
-                the PostgreSQL Server.
-            required: true
-            policy: ''
-            notes: ''
-        version:
-            description: Specifies the version of PostgreSQL to use. Valid values
-                are `9.5`, `9.6`, `10`, `10.0`, and `11`. Changing this forces a new
-                resource to be created.
-            required: true
-            policy: ''
-            notes: ''
         ssl_enforcement:
             description: Specifies if SSL should be enforced on connections. Possible
                 values are `Enabled` and `Disabled`.
             required: true
             policy: ''
             notes: ''
-        tags:
-            description: A mapping of tags to assign to the resource.
+        administrator_login:
+            description: The Administrator Login for the PostgreSQL Server. Required
+                when `create_mode` is `Default`. Changing this forces a new resource
+                to be created.
             required: false
             policy: ''
             notes: ''
-        storage_mb:
-            description: Max storage allowed for a server. Possible values are between
-                `5120` MB(5GB
-            required: true
+        administrator_login_password:
+            description: The Password associated with the `administrator_login` for
+                the PostgreSQL Server. Required when `create_mode` is `Default`.
+            required: false
+            policy: ''
+            notes: ''
+        version:
+            description: Specifies the version of PostgreSQL to use. Valid values
+                are `9.5`, `9.6`, `10`, `10.0`, and `11`. Changing this forces a new
+                resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        auto_grow_enbled:
+            description: Enable/Disable auto-growing of the storage. Valid values
+                for this property are `Enabled` or `Disabled`. Storage auto-grow prevents
+                your server from running out of storage and becoming read-only. If
+                storage auto grow is enabled, the storage automatically grows without
+                impacting the workload. The default value if not explicitly specified
+                is `true`.
+            required: false
             policy: ''
             notes: ''
         backup_retention_days:
@@ -77,27 +72,64 @@ azurerm_postgresql_server:
             required: false
             policy: ''
             notes: ''
-        geo_redundant_backup:
-            description: Enable/Disable Geo-redundant for server backup. Valid values
-                for this property are `Enabled` or `Disabled`, not supported for the
-                `basic` tier.  This allows you to choose between locally redundant
-                or geo-redundant backup storage in the General Purpose and Memory
-                Optimized tiers. When the backups are stored in geo-redundant backup
-                storage, they are not only stored within the region in which your
-                server is hosted, but are also replicated to a paired data center.
-                This provides better protection and ability to restore your server
-                in a different region in the event of a disaster. The Basic tier only
-                offers locally redundant backup storage.
+        geo_redundant_backup_enabled:
+            description: Turn Geo-redundant server backups on/off. This allows you
+                to choose between locally redundant or geo-redundant backup storage
+                in the General Purpose and Memory Optimized tiers. When the backups
+                are stored in geo-redundant backup storage, they are not only stored
+                within the region in which your server is hosted, but are also replicated
+                to a paired data center. This provides better protection and ability
+                to restore your server in a different region in the event of a disaster.
+                This is not support for the Basic tier.
             required: false
             policy: ''
             notes: ''
-        auto_grow:
-            description: 'Enable/Disable auto-growing of the storage. Valid values
-                for this property are `Enabled` or `Disabled`. Storage auto-grow prevents
-                your server from running out of storage and becoming read-only. If
-                storage auto grow is enabled, the storage automatically grows without
-                impacting the workload. The default value if not explicitly specified
-                is `Enabled`.  '
+        create_mode:
+            description: The creation mode. Can be used to restore or replicate existing
+                servers. Possible values are `Default`, `Replica`, `GeoRestore`, and
+                `PointInTimeRestore`. Defaults to `Default.`
+            required: false
+            policy: ''
+            notes: ''
+        creation_source_server_id:
+            description: For creation modes other then default the source server ID
+                to use.
+            required: false
+            policy: ''
+            notes: ''
+        infrastructure_encryption_enabled:
+            description: Whether or not infrastructure is encrypted for this server.
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        public_network_access_enabled:
+            description: Whether or not public network access is allowed for this
+                server. Defaults to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        restore_point_in_time:
+            description: 'When `create_mode` is `PointInTimeRestore` the point in
+                time to restore from `creation_source_server_id`. '
+            required: false
+            policy: ''
+            notes: ''
+        ssl_minimal_tls_version_enforced:
+            description: The mimimun TLS version to support on the sever. Possible
+                values are `TLSEnforcementDisabled`, `TLS1_0`, `TLS1_1`, and `TLS1_2`.
+                Defaults to `TLSEnforcementDisabled`.
+            required: false
+            policy: ''
+            notes: ''
+        storage_mb:
+            description: Max storage allowed for a server. Possible values are between
+                `5120` MB(5GB
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: 'A mapping of tags to assign to the resource.  '
             required: false
             policy: ''
             notes: ''

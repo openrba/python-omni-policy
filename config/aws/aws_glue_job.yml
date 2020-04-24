@@ -1,5 +1,5 @@
 aws_glue_job:
-    status: HOLD
+    status: ASSESS
     subcategory: Glue
     layout: aws
     page_title: 'AWS: aws_glue_job'
@@ -72,7 +72,7 @@ aws_glue_job:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

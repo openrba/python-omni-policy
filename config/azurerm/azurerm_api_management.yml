@@ -1,5 +1,5 @@
 azurerm_api_management:
-    status: HOLD
+    status: ASSESS
     subcategory: API Management
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_api_management'
@@ -90,6 +90,18 @@ azurerm_api_management:
             notes: ''
         sign_up:
             description: A `sign_up` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network_type:
+            description: 'The type of virtual network you want to use, valid values
+                include: `None`, `External`, `Internal`.'
+            required: false
+            policy: ''
+            notes: ''
+        virtual_network_configuration:
+            description: A `virtual_network_configuration` block as defined below.
+                Required when `virtual_network_type` is `External` or `Internal`.
             required: false
             policy: ''
             notes: ''

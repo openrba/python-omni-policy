@@ -1,6 +1,6 @@
 {
     "azurerm_notification_hub_namespace": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "Messaging",
         "layout": "azurerm",
         "page_title": "Azure Resource Manager: azurerm_notification_hub_namespace",
@@ -38,6 +38,12 @@
             },
             "enabled": {
                 "description": "Is this Notification Hub Namespace enabled? Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
                 "required": false,
                 "policy": "",
                 "notes": ""

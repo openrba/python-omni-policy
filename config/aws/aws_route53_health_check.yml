@@ -1,5 +1,5 @@
 aws_route53_health_check:
-    status: HOLD
+    status: ASSESS
     subcategory: Route53
     layout: aws
     page_title: 'AWS: aws_route53_health_check'
@@ -121,7 +121,7 @@ aws_route53_health_check:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the health check.
+            description: A map of tags to assign to the health check.
             required: false
             policy: ''
             notes: ''

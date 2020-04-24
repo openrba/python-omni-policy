@@ -1,6 +1,6 @@
 {
     "aws_apigatewayv2_api": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "API Gateway v2 (WebSocket and HTTP APIs)",
         "layout": "aws",
         "page_title": "AWS: aws_apigatewayv2_api",
@@ -24,8 +24,26 @@
                 "policy": "",
                 "notes": ""
             },
+            "cors_configuration": {
+                "description": "The cross-origin resource sharing (CORS",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "credentials_arn": {
+                "description": "Part of _quick create_. Specifies any credentials required for the integration. Applicable for HTTP APIs.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
             "description": {
                 "description": "The description of the API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "route_key": {
+                "description": "Part of _quick create_. Specifies any [route key](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html). Applicable for HTTP APIs.",
                 "required": false,
                 "policy": "",
                 "notes": ""
@@ -37,13 +55,55 @@
                 "notes": ""
             },
             "tags": {
-                "description": "A mapping of tags to assign to the API.",
+                "description": "A map of tags to assign to the API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "target": {
+                "description": "Part of _quick create_. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.",
                 "required": false,
                 "policy": "",
                 "notes": ""
             },
             "version": {
                 "description": "A version identifier for the API.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_credentials": {
+                "description": "Whether credentials are included in the CORS request.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_headers": {
+                "description": "The set of allowed HTTP headers.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_methods": {
+                "description": "The set of allowed HTTP methods.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "allow_origins": {
+                "description": "The set of allowed origins.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "expose_headers": {
+                "description": "The set of exposed HTTP headers.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_age": {
+                "description": "The number of seconds that the browser should cache preflight request results.",
                 "required": false,
                 "policy": "",
                 "notes": ""

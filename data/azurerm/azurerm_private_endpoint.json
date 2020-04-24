@@ -1,6 +1,6 @@
 {
     "azurerm_private_endpoint": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "Network",
         "layout": "azurerm",
         "page_title": "Azure Resource Manager: azurerm_private_endpoint",
@@ -33,6 +33,12 @@
             "private_service_connection": {
                 "description": "A `private_service_connection` block as defined below.",
                 "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

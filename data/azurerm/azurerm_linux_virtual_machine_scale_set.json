@@ -1,6 +1,6 @@
 {
     "azurerm_linux_virtual_machine_scale_set": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "Compute",
         "layout": "azurerm",
         "page_title": "Azure Resource Manager: azurerm_linux_virtual_machine_scale_set",
@@ -74,6 +74,12 @@
             },
             "automatic_os_upgrade_policy": {
                 "description": "A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automatic_instance_repair": {
+                "description": "A `automatic_instance_repair` block as defined below. To enable the automatic instance repair, this Virtual Machine Scale Set must have a valid `health_probe_id` or an [Application Health Extension](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension).",
                 "required": false,
                 "policy": "",
                 "notes": ""

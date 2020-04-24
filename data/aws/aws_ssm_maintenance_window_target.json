@@ -1,6 +1,6 @@
 {
     "aws_ssm_maintenance_window_target": {
-        "status": "HOLD",
+        "status": "ASSESS",
         "subcategory": "SSM",
         "layout": "aws",
         "page_title": "AWS: aws_ssm_maintenance_window_target",
@@ -25,13 +25,13 @@
                 "notes": ""
             },
             "resource_type": {
-                "description": "The type of target being registered with the Maintenance Window. Possible values `INSTANCE`.",
+                "description": "The type of target being registered with the Maintenance Window. Possible values are `INSTANCE` and `RESOURCE_GROUP`.",
                 "required": true,
                 "policy": "",
                 "notes": ""
             },
             "targets": {
-                "description": "The targets (either instances or tags). Instances are specified using Key=InstanceIds,Values=InstanceId1,InstanceId2. Tags are specified using Key=tag name,Values=tag value.",
+                "description": "The targets to register with the maintenance window. In other words, the instances to run commands on when the maintenance window runs. You can specify targets using instance IDs, resource group names, or tags that have been applied to instances. For more information about these examples formats see",
                 "required": true,
                 "policy": "",
                 "notes": ""

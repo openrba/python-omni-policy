@@ -1,5 +1,5 @@
 azurerm_function_app:
-    status: HOLD
+    status: ASSESS
     subcategory: App Service (Web Apps)
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_function_app'
@@ -28,9 +28,15 @@ azurerm_function_app:
             required: true
             policy: ''
             notes: ''
-        storage_connection_string:
-            description: The connection string of the backend storage account which
-                will be used by this Function App (such as the dashboard, logs).
+        storage_account_name:
+            description: The backend storage account name which will be used by this
+                Function App (such as the dashboard, logs).
+            required: true
+            policy: ''
+            notes: ''
+        storage_account_access_key:
+            description: The access key which will be used to access the backend storage
+                account for the Function App.
             required: true
             policy: ''
             notes: ''
@@ -379,14 +385,16 @@ azurerm_function_app:
         NFlXMXdiR1V1Ym1GdFpRb0tJQ0J6YTNVZ2V3b2dJQ0FnZEdsbGNpQTlJQ0pUZEdGdVpHRnlaQ0lL
         SUNBZ0lITnBlbVVnUFNBaVV6RWlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOW1k
         VzVqZEdsdmJsOWhjSEFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lD
-        QWdJQ0FnSUNBZ0lDQTlJQ0owWlhOMExXRjZkWEpsTFdaMWJtTjBhVzl1Y3lJS0lDQnNiMk5oZEds
-        dmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
-        Y0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQWdJ
-        Q0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENp
-        QWdZWEJ3WDNObGNuWnBZMlZmY0d4aGJsOXBaQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZZWEJ3WDNO
-        bGNuWnBZMlZmY0d4aGJpNWxlR0Z0Y0d4bExtbGtDaUFnYzNSdmNtRm5aVjlqYjI1dVpXTjBhVzl1
-        WDNOMGNtbHVaeUE5SUdGNmRYSmxjbTFmYzNSdmNtRm5aVjloWTJOdmRXNTBMbVY0WVcxd2JHVXVj
-        SEpwYldGeWVWOWpiMjV1WldOMGFXOXVYM04wY21sdVp3cDlDZz09
+        QWdJQ0FnSUNBZ0lDQWdQU0FpZEdWemRDMWhlblZ5WlMxbWRXNWpkR2x2Ym5NaUNpQWdiRzlqWVhS
+        cGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5
+        YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJwYjI0S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJ
+        Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
+        MWxDaUFnWVhCd1gzTmxjblpwWTJWZmNHeGhibDlwWkNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDJG
+        d2NGOXpaWEoyYVdObFgzQnNZVzR1WlhoaGJYQnNaUzVwWkFvZ0lITjBiM0poWjJWZllXTmpiM1Z1
+        ZEY5dVlXMWxJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RdWRHVnpk
+        QzVwWkFvZ0lITjBiM0poWjJWZllXTmpiM1Z1ZEY5aFkyTmxjM05mYTJWNUlEMGdZWHAxY21WeWJW
+        OXpkRzl5WVdkbFgyRmpZMjkxYm5RdWRHVnpkQzV3Y21sdFlYSjVYMkZqWTJWemMxOXJaWGtLZlFv
+        PQ==
     import: !!binary |
         Q2dwR2RXNWpkR2x2YmlCQmNIQnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
         SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L

@@ -1,5 +1,5 @@
 aws_resourcegroups_group:
-    status: HOLD
+    status: ASSESS
     subcategory: Resource Groups
     layout: aws
     page_title: 'AWS: aws_resourcegroups_group'
@@ -24,7 +24,7 @@ aws_resourcegroups_group:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

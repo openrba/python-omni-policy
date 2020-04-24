@@ -1,5 +1,5 @@
 aws_waf_rule:
-    status: HOLD
+    status: ASSESS
     subcategory: WAF
     layout: aws
     page_title: 'AWS: aws_waf_rule'
@@ -23,7 +23,7 @@ aws_waf_rule:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

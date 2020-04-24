@@ -1,5 +1,5 @@
 aws_wafregional_rate_based_rule:
-    status: HOLD
+    status: ASSESS
     subcategory: WAF Regional
     layout: aws
     page_title: 'AWS: aws_wafregional_rate_based_rule'
@@ -34,7 +34,7 @@ aws_wafregional_rate_based_rule:
             policy: ''
             notes: ''
         tags:
-            description: Key-value mapping of resource tags
+            description: Key-value map of resource tags
             required: false
             policy: ''
             notes: ''

@@ -1,5 +1,5 @@
 aws_licensemanager_license_configuration:
-    status: HOLD
+    status: ASSESS
     subcategory: License Manager
     layout: aws
     page_title: 'AWS: aws_licensemanager_license_configuration'
@@ -37,7 +37,7 @@ aws_licensemanager_license_configuration:
             policy: ''
             notes: ''
         tags:
-            description: A mapping of tags to assign to the resource.
+            description: A map of tags to assign to the resource.
             required: false
             policy: ''
             notes: ''
