@@ -218,6 +218,16 @@
             "accurintle": "Accurint for Law Enforcement"
         }
     },
+    "costCenter": {
+        "category": "Custom",
+        "entity": "tagName",
+        "scope": "global",
+        "maxlength": "24",
+        "rule": "a-z",
+        "allowed_values": {
+            "CT607": "Unknown"
+        }
+    },
     "tagName": {
         "category": "Custom",
         "entity": "tagName",
