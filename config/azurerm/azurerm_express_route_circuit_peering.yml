@@ -60,6 +60,16 @@ azurerm_express_route_circuit_peering:
             required: true
             policy: ''
             notes: ''
+        customer_asn:
+            description: The CustomerASN of the peering
+            required: false
+            policy: ''
+            notes: ''
+        routing_registry_name:
+            description: The RoutingRegistryName of the configuration
+            required: false
+            policy: ''
+            notes: ''
     attributes:
         id:
             description: The Resource ID of the ExpressRoute Circuit Peering.

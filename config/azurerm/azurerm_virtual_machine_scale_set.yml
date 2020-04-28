@@ -161,5 +161,518 @@ azurerm_virtual_machine_scale_set:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        tier:
+            description: Specifies the tier of virtual machines in a scale set. Possible
+                values, `standard` or `basic`.
+            required: false
+            policy: ''
+            notes: ''
+        capacity:
+            description: Specifies the number of virtual machines in the scale set.
+            required: true
+            policy: ''
+            notes: ''
+        max_batch_instance_percent:
+            description: The maximum percent of total virtual machine instances that
+                will be upgraded simultaneously by the rolling upgrade in one batch.
+                As this is a maximum, unhealthy instances in previous or future batches
+                can cause the percentage of instances in a batch to decrease to ensure
+                higher reliability. Defaults to `20`.
+            required: false
+            policy: ''
+            notes: ''
+        max_unhealthy_instance_percent:
+            description: The maximum percentage of the total virtual machine instances
+                in the scale set that can be simultaneously unhealthy, either as a
+                result of being upgraded, or by being found in an unhealthy state
+                by the virtual machine health checks before the rolling upgrade aborts.
+                This constraint will be checked prior to starting any batch. Defaults
+                to `20`.
+            required: false
+            policy: ''
+            notes: ''
+        max_unhealthy_upgraded_instance_percent:
+            description: The maximum percentage of upgraded virtual machine instances
+                that can be found to be in an unhealthy state. This check will happen
+                after each batch is upgraded. If this percentage is ever exceeded,
+                the rolling update aborts. Defaults to `20`.
+            required: false
+            policy: ''
+            notes: ''
+        pause_time_between_batches:
+            description: The wait time between completing the update for all virtual
+                machines in one batch and starting the next batch. The time duration
+                should be specified in ISO 8601 format for duration (https://en.wikipedia.org/wiki/ISO_8601#Durations).
+                Defaults to `0` seconds represented as `PT0S`.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The type of extension, available types for a publisher can
+                be found using the Azure CLI.
+            required: true
+            policy: ''
+            notes: ''
+        identity_ids:
+            description: Specifies a list of user managed identity ids to be assigned
+                to the VMSS. Required if `type` is `UserAssigned`.
+            required: false
+            policy: ''
+            notes: ''
+        computer_name_prefix:
+            description: Specifies the computer name prefix for all of the virtual
+                machines in the scale set. Computer name prefixes must be 1 to 9 characters
+                long for windows images and 1 - 58 for linux. Changing this forces
+                a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        admin_username:
+            description: Specifies the administrator account name to use for all the
+                instances of virtual machines in the scale set.
+            required: true
+            policy: ''
+            notes: ''
+        admin_password:
+            description: Specifies the administrator password to use for all the instances
+                of virtual machines in a scale set.
+            required: true
+            policy: ''
+            notes: ''
+        custom_data:
+            description: Specifies custom data to supply to the machine. On linux-based
+                systems, this can be used as a cloud-init script. On other systems,
+                this will be copied as a file on disk. Internally, Terraform will
+                base64 encode this value before sending it to the API. The maximum
+                length of the binary array is 65535 bytes.
+            required: false
+            policy: ''
+            notes: ''
+        source_vault_id:
+            description: Specifies the key vault to use.
+            required: true
+            policy: ''
+            notes: ''
+        vault_certificates:
+            description: A collection of Vault Certificates as documented below
+            required: false
+            policy: ''
+            notes: ''
+        certificate_url:
+            description: Specifies URL of the certificate with which new Virtual Machines
+                is provisioned.
+            required: false
+            policy: ''
+            notes: ''
+        certificate_store:
+            description: Specifies the certificate store on the Virtual Machine where
+                the certificate should be added to.
+            required: false
+            policy: ''
+            notes: ''
+        provision_vm_agent:
+            description: Indicates whether virtual machine agent should be provisioned
+                on the virtual machines in the scale set.
+            required: false
+            policy: ''
+            notes: ''
+        enable_automatic_upgrades:
+            description: Indicates whether virtual machines in the scale set are enabled
+                for automatic updates.
+            required: false
+            policy: ''
+            notes: ''
+        winrm:
+            description: A collection of WinRM configuration blocks as documented
+                below.
+            required: false
+            policy: ''
+            notes: ''
+        additional_unattend_config:
+            description: An Additional Unattended Config block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        protocol:
+            description: Specifies the protocol of listener
+            required: true
+            policy: ''
+            notes: ''
+        pass:
+            description: Specifies the name of the pass that the content applies to.
+                The only allowable value is `oobeSystem`.
+            required: true
+            policy: ''
+            notes: ''
+        component:
+            description: Specifies the name of the component to configure with the
+                added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+            required: true
+            policy: ''
+            notes: ''
+        setting_name:
+            description: 'Specifies the name of the setting to which the content applies.
+                Possible values are: `FirstLogonCommands` and `AutoLogon`.'
+            required: true
+            policy: ''
+            notes: ''
+        content:
+            description: Specifies the base-64 encoded XML formatted content that
+                is added to the unattend.xml file for the specified path and component.
+            required: false
+            policy: ''
+            notes: ''
+        disable_password_authentication:
+            description: Specifies whether password authentication should be disabled.
+                Defaults to `false`. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        ssh_keys:
+            description: Specifies a collection of `path` and `key_data` to be placed
+                on the virtual machine.
+            required: false
+            policy: ''
+            notes: ''
+        primary:
+            description: Specifies if this ip_configuration is the primary one.
+            required: true
+            policy: ''
+            notes: ''
+        ip_configuration:
+            description: An ip_configuration block as documented below.
+            required: true
+            policy: ''
+            notes: ''
+        accelerated_networking:
+            description: Specifies whether to enable accelerated networking or not.
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        dns_settings:
+            description: A dns_settings block as documented below.
+            required: false
+            policy: ''
+            notes: ''
+        ip_forwarding:
+            description: Whether IP forwarding is enabled on this NIC. Defaults to
+                `false`.
+            required: false
+            policy: ''
+            notes: ''
+        network_security_group_id:
+            description: Specifies the identifier for the network security group.
+            required: false
+            policy: ''
+            notes: ''
+        dns_servers:
+            description: Specifies an array of dns servers.
+            required: true
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: Specifies the identifier of the subnet.
+            required: true
+            policy: ''
+            notes: ''
+        application_gateway_backend_address_pool_ids:
+            description: Specifies an array of references to backend address pools
+                of application gateways. A scale set can reference backend address
+                pools of multiple application gateways. Multiple scale sets can use
+                the same application gateway.
+            required: false
+            policy: ''
+            notes: ''
+        load_balancer_backend_address_pool_ids:
+            description: Specifies an array of references to backend address pools
+                of load balancers. A scale set can reference backend address pools
+                of one public and one internal load balancer. Multiple scale sets
+                cannot use the same load balancer.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' When using this field you''ll also need to configure a Rule for the
+                Load Balancer, and use a `depends_on` between this resource and the
+                Load Balancer Rule.'
+        load_balancer_inbound_nat_rules_ids:
+            description: Specifies an array of references to inbound NAT pools for
+                load balancers. A scale set can reference inbound nat pools of one
+                public and one internal load balancer. Multiple scale sets cannot
+                use the same load balancer.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' When using this field you''ll also need to configure a Rule for the
+                Load Balancer, and use a `depends_on` between this resource and the
+                Load Balancer Rule.'
+        application_security_group_ids:
+            description: Specifies up to `20` application security group IDs.
+            required: false
+            policy: ''
+            notes: ''
+        public_ip_address_configuration:
+            description: Describes a virtual machines scale set IP Configuration's
+                PublicIPAddress configuration. The public_ip_address_configuration
+                is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        idle_timeout:
+            description: The idle timeout in minutes. This value must be between 4
+                and 30.
+            required: true
+            policy: ''
+            notes: ''
+        domain_name_label:
+            description: The domain name label for the dns settings.
+            required: true
+            policy: ''
+            notes: ''
+        vhd_containers:
+            description: Specifies the vhd uri. Cannot be used when `image` or `managed_disk_type`
+                is specified.
+            required: false
+            policy: ''
+            notes: ''
+        managed_disk_type:
+            description: Specifies the type of managed disk to create. Value must
+                be either `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
+            required: false
+            policy: ''
+            notes: ''
+        create_option:
+            description: Specifies how the data disk should be created. The only possible
+                options are `FromImage` and `Empty`.
+            required: false
+            policy: ''
+            notes: ''
+        caching:
+            description: 'Specifies the caching requirements. Possible values include:
+                `None` (default), `ReadOnly`, `ReadWrite`.'
+            required: false
+            policy: ''
+            notes: ''
+        image:
+            description: Specifies the blob uri for user image. A virtual machine
+                scale set creates an os disk in the same container as the user image.
+            required: false
+            policy: ''
+            notes: ''
+        os_type:
+            description: Specifies the operating system Type, valid values are windows,
+                linux.
+            required: false
+            policy: ''
+            notes: ''
+        lun:
+            description: Specifies the Logical Unit Number of the disk in each virtual
+                machine in the scale set.
+            required: true
+            policy: ''
+            notes: ''
+        disk_size_gb:
+            description: Specifies the size of the disk in GB. This element is required
+                when creating an empty disk.
+            required: false
+            policy: ''
+            notes: ''
+        id:
+            description: Specifies the ID of the (custom
+            required: false
+            policy: ''
+            notes: ''
+        publisher:
+            description: Specifies the publisher of the image.
+            required: true
+            policy: ''
+            notes: ''
+        offer:
+            description: Specifies the offer of the image used to create the virtual
+                machines.
+            required: false
+            policy: ''
+            notes: ''
+        version:
+            description: Specifies the version of the image used to create the virtual
+                machines.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Whether to enable boot diagnostics for the virtual machine.
+            required: true
+            policy: ''
+            notes: ''
+        storage_uri:
+            description: Blob endpoint for the storage account to hold the virtual
+                machine's diagnostic files. This must be the root of a storage account,
+                and not a storage container.
+            required: true
+            policy: ''
+            notes: ''
+        type_handler_version:
+            description: Specifies the version of the extension to use, available
+                versions can be found using the Azure CLI.
+            required: true
+            policy: ''
+            notes: ''
+        auto_upgrade_minor_version:
+            description: Specifies whether or not to use the latest minor version
+                available.
+            required: false
+            policy: ''
+            notes: ''
+        provision_after_extensions:
+            description: Specifies a dependency array of extensions required to be
+                executed before, the array stores the name of each extension.
+            required: false
+            policy: ''
+            notes: ''
+        settings:
+            description: The settings passed to the extension, these are specified
+                as a JSON object in a string.
+            required: true
+            policy: ''
+            notes: ''
+        protected_settings:
+            description: The protected_settings passed to the extension, like settings,
+                these are specified as a JSON object in a string.
+            required: false
+            policy: ''
+            notes: ''
+        product:
+            description: Specifies the product of the image from the marketplace.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The virtual machine scale set ID.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Machine Scale Set.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Virtual Machine Scale Set.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Virtual Machine Scale Set.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Machine Scale Set.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnVlZNZ01pSUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmZG1s
+        eWRIVmhiRjl1WlhSM2IzSnJJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpWVdOamRIWnVJZ29nSUdGa1pISmxjM05mYzNCaFkyVWdJQ0FnSUNBZ1BTQmJJ
+        akV3TGpBdU1DNHdMekUySWwwS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNt
+        VnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdjbVZ6YjNW
+        eVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGho
+        YlhCc1pTNXVZVzFsQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjFZbTVsZENJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmhZMk4wYzNWaUln
+        b2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5
+        bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQjJhWEowZFdGc1gyNWxkSGR2Y210ZmJtRnRaU0E5
+        SUdGNmRYSmxjbTFmZG1seWRIVmhiRjl1WlhSM2IzSnJMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHRmta
+        SEpsYzNOZmNISmxabWw0SUNBZ0lDQWdJRDBnSWpFd0xqQXVNaTR3THpJMElncDlDZ3B5WlhOdmRY
+        SmpaU0FpWVhwMWNtVnliVjl3ZFdKc2FXTmZhWEFpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBi
+        MjRLSUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpW
+        OW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0JoYkd4dlkyRjBhVzl1WDIxbGRHaHZaQ0FnSUQw
+        Z0lsTjBZWFJwWXlJS0lDQmtiMjFoYVc1ZmJtRnRaVjlzWVdKbGJDQWdJRDBnWVhwMWNtVnliVjl5
+        WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJ
+        R1Z1ZG1seWIyNXRaVzUwSUQwZ0luTjBZV2RwYm1jaUNpQWdmUXA5Q2dweVpYTnZkWEpqWlNBaVlY
+        cDFjbVZ5YlY5c1lpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdJblJsYzNRaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFm
+        Y21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNtTmxY
+        MmR5YjNWd1gyNWhiV1VnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JH
+        VXVibUZ0WlFvS0lDQm1jbTl1ZEdWdVpGOXBjRjlqYjI1bWFXZDFjbUYwYVc5dUlIc0tJQ0FnSUc1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbEIxWW14cFkwbFFRV1JrY21WemN5SUtJQ0Fn
+        SUhCMVlteHBZMTlwY0Y5aFpHUnlaWE56WDJsa0lEMGdZWHAxY21WeWJWOXdkV0pzYVdOZmFYQXVa
+        WGhoYlhCc1pTNXBaQW9nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZiR0pmWW1GamEy
+        VnVaRjloWkdSeVpYTnpYM0J2YjJ3aUlDSmljR1Z3YjI5c0lpQjdDaUFnY21WemIzVnlZMlZmWjNK
+        dmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1
+        WVcxbENpQWdiRzloWkdKaGJHRnVZMlZ5WDJsa0lDQWdJQ0E5SUdGNmRYSmxjbTFmYkdJdVpYaGhi
+        WEJzWlM1cFpBb2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVFtRmphMFZ1WkVGa1pI
+        SmxjM05RYjI5c0lncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzWWw5dVlYUmZjRzl2YkNJ
+        Z0lteGlibUYwY0c5dmJDSWdld29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbk56YUNJS0lD
+        QnNiMkZrWW1Gc1lXNWpaWEpmYVdRZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDJ4
+        aUxtVjRZVzF3YkdVdWFXUUtJQ0J3Y205MGIyTnZiQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlWR053SWdvZ0lHWnliMjUwWlc1a1gzQnZjblJmYzNSaGNuUWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SURVd01EQXdDaUFnWm5KdmJuUmxibVJmY0c5eWRGOWxibVFnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdOVEF4TVRrS0lDQmlZV05yWlc1a1gzQnZjblFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNB
+        eU1nb2dJR1p5YjI1MFpXNWtYMmx3WDJOdmJtWnBaM1Z5WVhScGIyNWZibUZ0WlNBOUlDSlFkV0pz
+        YVdOSlVFRmtaSEpsYzNNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMnhpWDNCeWIySmxJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpY
+        SnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUd4dllXUmlZV3hoYm1O
+        bGNsOXBaQ0FnSUNBZ1BTQmhlblZ5WlhKdFgyeGlMbVY0WVcxd2JHVXVhV1FLSUNCdVlXMWxJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbWgwZEhBdGNISnZZbVVpQ2lBZ2NISnZkRzlqYjJ3Z0lDQWdJ
+        Q0FnSUNBZ0lDQTlJQ0pJZEhSd0lnb2dJSEpsY1hWbGMzUmZjR0YwYUNBZ0lDQWdJQ0FnUFNBaUwy
+        aGxZV3gwYUNJS0lDQndiM0owSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnT0RBNE1BcDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhwMWNtVnliVjkyYVhKMGRXRnNYMjFoWTJocGJtVmZjMk5oYkdWZmMyVjBJaUFp
+        WlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYlhsMFpYTjBj
+        Mk5oYkdWelpYUXRNU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJW
+        OXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJW
+        ZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJz
+        WlM1dVlXMWxDZ29nSUNNZ1lYVjBiMjFoZEdsaklISnZiR3hwYm1jZ2RYQm5jbUZrWlFvZ0lHRjFk
+        Rzl0WVhScFkxOXZjMTkxY0dkeVlXUmxJRDBnZEhKMVpRb2dJSFZ3WjNKaFpHVmZjRzlzYVdONVgy
+        MXZaR1VnSUQwZ0lsSnZiR3hwYm1jaUNnb2dJSEp2Ykd4cGJtZGZkWEJuY21Ga1pWOXdiMnhwWTNr
+        Z2V3b2dJQ0FnYldGNFgySmhkR05vWDJsdWMzUmhibU5sWDNCbGNtTmxiblFnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdNakFLSUNBZ0lHMWhlRjkxYm1obFlXeDBhSGxmYVc1emRHRnVZMlZmY0dWeVkyVnVk
+        Q0FnSUNBZ0lDQWdJQ0E5SURJd0NpQWdJQ0J0WVhoZmRXNW9aV0ZzZEdoNVgzVndaM0poWkdWa1gy
+        bHVjM1JoYm1ObFgzQmxjbU5sYm5RZ1BTQTFDaUFnSUNCd1lYVnpaVjkwYVcxbFgySmxkSGRsWlc1
+        ZlltRjBZMmhsY3lBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpVUZRd1V5SUtJQ0I5Q2dvZ0lDTWdjbVZ4
+        ZFdseVpXUWdkMmhsYmlCMWMybHVaeUJ5YjJ4c2FXNW5JSFZ3WjNKaFpHVWdjRzlzYVdONUNpQWdh
+        R1ZoYkhSb1gzQnliMkpsWDJsa0lEMGdZWHAxY21WeWJWOXNZbDl3Y205aVpTNWxlR0Z0Y0d4bExt
+        bGtDZ29nSUhOcmRTQjdDaUFnSUNCdVlXMWxJQ0FnSUNBOUlDSlRkR0Z1WkdGeVpGOUdNaUlLSUNB
+        Z0lIUnBaWElnSUNBZ0lEMGdJbE4wWVc1a1lYSmtJZ29nSUNBZ1kyRndZV05wZEhrZ1BTQXlDaUFn
+        ZlFvS0lDQnpkRzl5WVdkbFgzQnliMlpwYkdWZmFXMWhaMlZmY21WbVpYSmxibU5sSUhzS0lDQWdJ
+        SEIxWW14cGMyaGxjaUE5SUNKRFlXNXZibWxqWVd3aUNpQWdJQ0J2Wm1abGNpQWdJQ0FnUFNBaVZX
+        SjFiblIxVTJWeWRtVnlJZ29nSUNBZ2MydDFJQ0FnSUNBZ0lEMGdJakUyTGpBMExVeFVVeUlLSUNB
+        Z0lIWmxjbk5wYjI0Z0lDQTlJQ0pzWVhSbGMzUWlDaUFnZlFvS0lDQnpkRzl5WVdkbFgzQnliMlpw
+        YkdWZmIzTmZaR2x6YXlCN0NpQWdJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJaUNpQWdJ
+        Q0JqWVdOb2FXNW5JQ0FnSUNBZ0lDQWdJQ0E5SUNKU1pXRmtWM0pwZEdVaUNpQWdJQ0JqY21WaGRH
+        VmZiM0IwYVc5dUlDQWdJQ0E5SUNKR2NtOXRTVzFoWjJVaUNpQWdJQ0J0WVc1aFoyVmtYMlJwYzJ0
+        ZmRIbHdaU0E5SUNKVGRHRnVaR0Z5WkY5TVVsTWlDaUFnZlFvS0lDQnpkRzl5WVdkbFgzQnliMlpw
+        YkdWZlpHRjBZVjlrYVhOcklIc0tJQ0FnSUd4MWJpQWdJQ0FnSUNBZ0lDQWdQU0F3Q2lBZ0lDQmpZ
+        V05vYVc1bklDQWdJQ0FnSUQwZ0lsSmxZV1JYY21sMFpTSUtJQ0FnSUdOeVpXRjBaVjl2Y0hScGIy
+        NGdQU0FpUlcxd2RIa2lDaUFnSUNCa2FYTnJYM05wZW1WZloySWdJRDBnTVRBS0lDQjlDZ29nSUc5
+        elgzQnliMlpwYkdVZ2V3b2dJQ0FnWTI5dGNIVjBaWEpmYm1GdFpWOXdjbVZtYVhnZ1BTQWlkR1Z6
+        ZEhadElnb2dJQ0FnWVdSdGFXNWZkWE5sY201aGJXVWdJQ0FnSUNBZ1BTQWliWGxoWkcxcGJpSUtJ
+        Q0I5Q2dvZ0lHOXpYM0J5YjJacGJHVmZiR2x1ZFhoZlkyOXVabWxuSUhzS0lDQWdJR1JwYzJGaWJH
+        VmZjR0Z6YzNkdmNtUmZZWFYwYUdWdWRHbGpZWFJwYjI0Z1BTQjBjblZsQ2dvZ0lDQWdjM05vWDJ0
+        bGVYTWdld29nSUNBZ0lDQndZWFJvSUNBZ0lDQTlJQ0l2YUc5dFpTOXRlV0ZrYldsdUx5NXpjMmd2
+        WVhWMGFHOXlhWHBsWkY5clpYbHpJZ29nSUNBZ0lDQnJaWGxmWkdGMFlTQTlJR1pwYkdVb0luNHZM
+        bk56YUM5a1pXMXZYMnRsZVM1d2RXSWlLUW9nSUNBZ2ZRb2dJSDBLQ2lBZ2JtVjBkMjl5YTE5d2Nt
+        OW1hV3hsSUhzS0lDQWdJRzVoYldVZ0lDQWdQU0FpZEdWeWNtRm1iM0p0Ym1WMGQyOXlhM0J5YjJa
+        cGJHVWlDaUFnSUNCd2NtbHRZWEo1SUQwZ2RISjFaUW9LSUNBZ0lHbHdYMk52Ym1acFozVnlZWFJw
+        YjI0Z2V3b2dJQ0FnSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQTlJQ0pVWlhOMFNWQkRiMjVtYVdkMWNtRjBhVzl1SWdvZ0lDQWdJQ0J3Y21sdFlY
+        SjVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlIUnlkV1VLSUNB
+        Z0lDQWdjM1ZpYm1WMFgybGtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNCaGVuVnlaWEp0WDNOMVltNWxkQzVsZUdGdGNHeGxMbWxrQ2lBZ0lDQWdJR3h2WVdSZlltRnNZ
+        VzVqWlhKZlltRmphMlZ1WkY5aFpHUnlaWE56WDNCdmIyeGZhV1J6SUQwZ1cyRjZkWEpsY20xZmJH
+        SmZZbUZqYTJWdVpGOWhaR1J5WlhOelgzQnZiMnd1WW5CbGNHOXZiQzVwWkYwS0lDQWdJQ0FnYkc5
+        aFpGOWlZV3hoYm1ObGNsOXBibUp2ZFc1a1gyNWhkRjl5ZFd4bGMxOXBaSE1nSUNBZ1BTQmJZWHAx
+        Y21WeWJWOXNZbDl1WVhSZmNHOXZiQzVzWW01aGRIQnZiMnd1YVdSZENpQWdJQ0I5Q2lBZ2ZRb0tJ
+        Q0IwWVdkeklEMGdld29nSUNBZ1pXNTJhWEp2Ym0xbGJuUWdQU0FpYzNSaFoybHVaeUlLSUNCOUNu
+        MEs=
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUUxaFkyaHBibVVnVTJOaGJHVWdVMlYwY3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5dFlXTm9hVzVsWDNOallXeGxYM05sZEM1b2RHMXNMbTFoY210
+        a2IzZHU=

@@ -77,9 +77,61 @@
                 "required": true,
                 "policy": "",
                 "notes": ""
+            },
+            "type": {
+                "description": "Specifies the identity type of the Data Factory. At this time the only allowed value is `SystemAssigned`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "project_name": {
+                "description": "Specifies the name of the VSTS project.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tenant_id": {
+                "description": "Specifies the Tenant ID associated with the VSTS account.",
+                "required": true,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Data Factory."
+            },
+            "identity": {
+                "description": "An `identity` block as defined below."
+            },
+            "principal_id": {
+                "description": "The ID of the Principal (Client) in Azure Active Directory"
+            },
+            "tenant_id": {
+                "description": "The ID of the Azure Active Directory Tenant."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Data Factory.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Data Factory.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Data Factory.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Data Factory.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

@@ -35,5 +35,88 @@ azurerm_hpc_cache_blob_target:
             required: true
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+    attributes:
+        id:
+            description: The ID of the HPC Cache Blob Target.
+    timeouts:
+        create:
+            description: Used when creating the HPC Cache Blob Target.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the HPC Cache Blob Target.
+            required: false
+            timeout: 5
+        update:
+            description: Used when updating the HPC Cache Blob Target.
+            required: false
+            timeout: 30
+        delete:
+            description: Used when deleting the HPC Cache Blob Target.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsZG00aUNpQWdZV1JrY21WemMxOXpjR0ZqWlNBZ0lDQWdJ
+        Q0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNWaWJtVjBJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlX
+        MXdiR1Z6ZFdKdVpYUWlDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBZ1BTQmhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSFpwY25SMVlXeGZibVYw
+        ZDI5eWExOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXN1WlhoaGJYQnNa
+        UzV1WVcxbENpQWdZV1JrY21WemMxOXdjbVZtYVhnZ0lDQWdJQ0FnUFNBaU1UQXVNQzR4TGpBdk1q
+        UWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJod1kxOWpZV05vWlNJZ0ltVjRZVzF3YkdV
+        aUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWb2NHTmpZV05v
+        WlNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpa
+        VjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lB
+        Z1kyRmphR1ZmYzJsNlpWOXBibDluWWlBZ0lDQTlJRE13TnpJS0lDQnpkV0p1WlhSZmFXUWdJQ0Fn
+        SUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl6ZFdKdVpYUXVaWGhoYlhCc1pTNXBaQW9nSUhOcmRWOXVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUmZNa2NpQ24wS0NuSmxjMjkxY21ObElD
+        SmhlblZ5WlhKdFgzTjBiM0poWjJWZllXTmpiM1Z1ZENJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaWE4wYjNKbllXTmpiM1Z1
+        ZENJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxj
+        MjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1
+        c2IyTmhkR2x2YmdvZ0lHRmpZMjkxYm5SZmRHbGxjaUFnSUNBZ0lDQWdJQ0FnSUNBOUlDSlRkR0Z1
+        WkdGeVpDSUtJQ0JoWTJOdmRXNTBYM0psY0d4cFkyRjBhVzl1WDNSNWNHVWdQU0FpVEZKVElncDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZEc5eVlXZGxYMk52Ym5SaGFXNWxjaUlnSW1WNFlX
+        MXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsYzNS
+        dmNtRm5aV052Ym5SaGFXNWxjaUlLSUNCemRHOXlZV2RsWDJGalkyOTFiblJmYm1GdFpTQTlJR0Y2
+        ZFhKbGNtMWZjM1J2Y21GblpWOWhZMk52ZFc1MExtVjRZVzF3YkdVdWJtRnRaUXA5Q2dwa1lYUmhJ
+        Q0poZW5WeVpXRmtYM05sY25acFkyVmZjSEpwYm1OcGNHRnNJaUFpWlhoaGJYQnNaU0lnZXdvZ0lH
+        UnBjM0JzWVhsZmJtRnRaU0E5SUNKSVVFTWdRMkZqYUdVZ1VtVnpiM1Z5WTJVZ1VISnZkbWxrWlhJ
+        aUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0p2YkdWZllYTnphV2R1YldWdWRDSWdJbVY0
+        WVcxd2JHVmZjM1J2Y21GblpWOWhZMk52ZFc1MFgyTnZiblJ5YVdJaUlIc0tJQ0J6WTI5d1pTQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmMzUnZjbUZuWlY5aFkyTnZkVzUwTG1WNFlX
+        MXdiR1V1YVdRS0lDQnliMnhsWDJSbFptbHVhWFJwYjI1ZmJtRnRaU0E5SUNKVGRHOXlZV2RsSUVG
+        alkyOTFiblFnUTI5dWRISnBZblYwYjNJaUNpQWdjSEpwYm1OcGNHRnNYMmxrSUNBZ0lDQWdJQ0Fn
+        UFNCa1lYUmhMbUY2ZFhKbFlXUmZjMlZ5ZG1salpWOXdjbWx1WTJsd1lXd3VaWGhoYlhCc1pTNXZZ
+        bXBsWTNSZmFXUUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmY205c1pWOWhjM05wWjI1dFpX
+        NTBJaUFpWlhoaGJYQnNaVjl6ZEc5eVlXZGxYMkpzYjJKZlpHRjBZVjlqYjI1MGNtbGlJaUI3Q2lB
+        Z2MyTnZjR1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0JoZW5WeVpYSnRYM04wYjNKaFoyVmZZV05q
+        YjNWdWRDNWxlR0Z0Y0d4bExtbGtDaUFnY205c1pWOWtaV1pwYm1sMGFXOXVYMjVoYldVZ1BTQWlV
+        M1J2Y21GblpTQkNiRzlpSUVSaGRHRWdRMjl1ZEhKcFluVjBiM0lpQ2lBZ2NISnBibU5wY0dGc1gy
+        bGtJQ0FnSUNBZ0lDQWdQU0JrWVhSaExtRjZkWEpsWVdSZmMyVnlkbWxqWlY5d2NtbHVZMmx3WVd3
+        dVpYaGhiWEJzWlM1dlltcGxZM1JmYVdRS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZhSEJq
+        WDJOaFkyaGxYMkpzYjJKZmRHRnlaMlYwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWb2NHTmpZbXh2WW5SaGNtZGxkQ0lLSUNCeVpY
+        TnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        dVpYaGhiWEJzWlM1dVlXMWxDaUFnWTJGamFHVmZibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5
+        WlhKdFgyaHdZMTlqWVdOb1pTNWxlR0Z0Y0d4bExtNWhiV1VLSUNCemRHOXlZV2RsWDJOdmJuUmhh
+        VzVsY2w5cFpDQTlJR0Y2ZFhKbGNtMWZjM1J2Y21GblpWOWpiMjUwWVdsdVpYSXVaWGhoYlhCc1pT
+        NXlaWE52ZFhKalpWOXRZVzVoWjJWeVgybGtDaUFnYm1GdFpYTndZV05sWDNCaGRHZ2dJQ0FnSUNB
+        Z1BTQWlMMkpzYjJKZmMzUnZjbUZuWlNJS2ZRbz0=
+    import: !!binary |
+        Q2dwQ2JHOWlJRlJoY21kbGRITWdkMmwwYUdsdUlHRnVJRWhRUXlCRFlXTm9aU0JqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFIQmpYMk5oWTJobFgySnNiMkpmZEdGeVoyVjBMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

@@ -30,6 +30,15 @@
                 "policy": "",
                 "notes": ""
             },
+            "address_prefixes": {
+                "description": "The address prefixes to use for the subnet.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " One of `address_prefix` or `address_prefixes` is required."
+                ]
+            },
             "delegation": {
                 "description": "One or more `delegation` blocks as defined below.",
                 "required": false,
@@ -82,6 +91,9 @@
             },
             "address_prefix": {
                 "description": "The address prefix for the subnet"
+            },
+            "address_prefixes": {
+                "description": "The address prefixes for the subnet"
             }
         },
         "timeouts": {

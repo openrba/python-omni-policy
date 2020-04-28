@@ -59,9 +59,46 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "request_message": {
+                "description": "A message passed to the owner of the remote resource when the private endpoint attempts to establish the connection to the remote resource. The request message can be a maximum of `140` characters in length. Only valid if `is_manual_connection` is set to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "private_ip_address": {
+                "description": "The private IP address associated with the private endpoint, note that you will have a private IP address assigned to the private endpoint even if the connection request was `Rejected`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Private Endpoint."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Private Endpoint.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Private Endpoint.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Private Endpoint.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Private Endpoint.",
+                "required": false,
+                "timeout": 60
+            }
+        }
     }
 }

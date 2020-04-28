@@ -77,9 +77,82 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "rule_index": {
+                "description": "The index number of the rule.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "allowed_clients": {
+                "description": "A list of allowed clients IPv4 addresses.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "protocols_enabled": {
+                "description": "A list of allowed protocols. Valid values include `CIFS`, `NFSv3`, or `NFSv4.1`. Only one value is supported at this time. This replaces the previous arguments: `cifs_enabled`, `nfsv3_enabled` and `nfsv4_enabled`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cifs_enabled": {
+                "description": "Is the CIFS protocol allowed?",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "nfsv3_enabled": {
+                "description": "Is the NFSv3 protocol allowed?",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "nfsv4_enabled": {
+                "description": " Is the NFSv4 protocol allowed?",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "unix_read_only": {
+                "description": "Is the file system on unix read only?",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "unix_read_write": {
+                "description": "Is the file system on unix read and write?",
+                "required": false,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the NetApp Volume."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the NetApp Volume.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the NetApp Volume.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the NetApp Volume.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the NetApp Volume.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

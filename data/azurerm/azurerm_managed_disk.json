@@ -29,9 +29,153 @@
                 "required": true,
                 "policy": "",
                 "notes": ""
+            },
+            "create_option": {
+                "description": "The method to use when creating the managed disk. Changing this forces a new resource to be created. Possible values include:",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_encryption_set_id": {
+                "description": "The ID of a Disk Encryption Set which should be used to encrypt this Managed Disk.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " The Disk Encryption Set must have the `Reader` Role Assignment scoped on the Key Vault - in addition to an Access Policy to the Key Vault"
+                ]
+            },
+            "disk_iops_read_write": {
+                "description": "The number of IOPS allowed for this disk; only settable for UltraSSD disks. One operation can transfer between 4k and 256k bytes.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_mbps_read_write": {
+                "description": "The bandwidth allowed for this disk; only settable for UltraSSD disks. MBps means millions of bytes per second.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_size_gb": {
+                "description": "Specifies the size of the managed disk to create in gigabytes. If `create_option` is `Copy` or `FromImage`, then the value must be equal to or greater than the source's size. The size can only be increased.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "encryption_settings": {
+                "description": "A `encryption_settings` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "image_reference_id": {
+                "description": "ID of an existing platform/marketplace disk image to copy when `create_option` is `FromImage`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "os_type": {
+                "description": "Specify a value when the source of an `Import` or `Copy` operation targets a source that contains an operating system. Valid values are `Linux` or `Windows`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_resource_id": {
+                "description": "The ID of an existing Managed Disk to copy `create_option` is `Copy` or the recovery point to restore when `create_option` is `Restore`",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_uri": {
+                "description": "URI to a valid VHD file to be used when `create_option` is `Import`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "The ID of the Storage Account where the `source_uri` is located. Required when `create_option` is set to `Import`.  Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zones": {
+                "description": "A collection containing the availability zone to allocate the Managed Disk in.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> **Note**: Availability Zones are [only supported in select regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)."
+                ]
+            },
+            "secret_url": {
+                "description": "The URL to the Key Vault Secret used as the Disk Encryption Key. This can be found as `id` on the `azurerm_key_vault_secret` resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "source_vault_id": {
+                "description": "The ID of the source Key Vault.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Is Encryption enabled on this Managed Disk? Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_encryption_key": {
+                "description": "A `disk_encryption_key` block as defined above.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_encryption_key": {
+                "description": "A `key_encryption_key` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "key_url": {
+                "description": "The URL to the Key Vault Key used as the Key Encryption Key. This can be found as `id` on the `azurerm_key_vault_key` resource.",
+                "required": true,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Managed Disk."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Managed Disk.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Managed Disk.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Managed Disk.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Managed Disk.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

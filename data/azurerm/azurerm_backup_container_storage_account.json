@@ -25,7 +25,32 @@
                 "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Backup Storage Account Container."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Backup Storage Account Container.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Backup Storage Account Container.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Backup Storage Account Container.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Backup Storage Account Container.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

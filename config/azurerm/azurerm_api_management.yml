@@ -204,5 +204,215 @@ azurerm_api_management:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        enable_backend_tls10:
+            description: Should TLS 1.0 be enabled on the backend of the gateway?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - -> **info:** This maps to the `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls10`
+                field
+        enable_backend_tls11:
+            description: Should TLS 1.1 be enabled on the backend of the gateway?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - -> **info:** This maps to the `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls11`
+                field
+        enable_frontend_ssl30:
+            description: Should SSL 3.0 be enabled on the frontend of the gateway?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - -> **info:** This maps to the `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Ssl30`
+                field
+        enable_frontend_tls10:
+            description: Should TLS 1.0 be enabled on the frontend of the gateway?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - -> **info:** This maps to the `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls10`
+                field
+        enable_frontend_tls11:
+            description: Should TLS 1.1 be enabled on the frontend of the gateway?
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - -> **info:** This maps to the `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls11`
+                field
+        enable_triple_des_ciphers:
+            description: Should the `TLS_RSA_WITH_3DES_EDE_CBC_SHA` cipher be enabled
+                for alL TLS versions (1.0, 1.1 and 1.2)? Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - -> **info:** This maps to the `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TripleDes168`
+                field
+        disable_backend_ssl30:
+            description: Should SSL 3.0 be disabled on the backend of the gateway?
+                This property was mistakenly inverted and `true` actually enables
+                it. Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This property has been deprecated in favour of the `enable_backend_ssl30`
+                property and will be removed in version 2.0 of the provider.'
+        disable_backend_tls10:
+            description: Should TLS 1.0 be disabled on the backend of the gateway?
+                This property was mistakenly inverted and `true` actually enables
+                it. Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This property has been deprecated in favour of the `enable_backend_tls10`
+                property and will be removed in version 2.0 of the provider.'
+        disable_backend_tls11:
+            description: Should TLS 1.1 be disabled on the backend of the gateway?
+                This property was mistakenly inverted and `true` actually enables
+                it. Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This property has been deprecated in favour of the `enable_backend_tls11`
+                property and will be removed in version 2.0 of the provider.'
+        disable_frontend_ssl30:
+            description: Should SSL 3.0 be disabled on the frontend of the gateway?
+                This property was mistakenly inverted and `true` actually enables
+                it. Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This property has been deprecated in favour of the `enable_frontend_ssl30`
+                property and will be removed in version 2.0 of the provider.'
+        disable_frontend_tls10:
+            description: Should TLS 1.0 be disabled on the frontend of the gateway?
+                This property was mistakenly inverted and `true` actually enables
+                it. Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This property has been deprecated in favour of the `enable_frontend_tls10`
+                property and will be removed in version 2.0 of the provider.'
+        disable_frontend_tls11:
+            description: Should TLS 1.1 be disabled on the frontend of the gateway?
+                This property was mistakenly inverted and `true` actually enables
+                it. Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This property has been deprecated in favour of the `enable_frontend_tls11`
+                property and will be removed in version 2.0 of the provider.'
+        disable_triple_des_ciphers:
+            description: Should the `TLS_RSA_WITH_3DES_EDE_CBC_SHA` cipher be disabled
+                for alL TLS versions (1.0, 1.1 and 1.2)? This property was mistakenly
+                inverted and `true` actually enables it. Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This property has been deprecated in favour of the `enable_triple_des_ciphers`
+                property and will be removed in version 2.0 of the provider.'
+        enabled:
+            description: Should Terms of Service be displayed during sign up?.
+            required: true
+            policy: ''
+            notes: ''
+        terms_of_service:
+            description: A `terms_of_service` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The id of the subnet that will be used for the API Management.
+            required: true
+            policy: ''
+            notes: ''
+        consent_required:
+            description: Should the user be asked for consent during sign up?
+            required: true
+            policy: ''
+            notes: ''
+        text:
+            description: The Terms of Service which users are required to agree to
+                in order to sign up.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the API Management Service.
+        additional_location:
+            description: One or more `additional_location` blocks as documented below.
+        gateway_url:
+            description: The URL of the Gateway for the API Management Service.
+        gateway_regional_url:
+            description: The URL of the Regional Gateway for the API Management Service
+                in the specified region.
+        identity:
+            description: An `identity` block as defined below.
+        management_api_url:
+            description: The URL for the Management API associated with this API Management
+                service.
+        portal_url:
+            description: The URL for the Publisher Portal associated with this API
+                Management service.
+        public_ip_addresses:
+            description: Public Static Load Balanced IP addresses of the API Management
+                service in the additional location. Available only for Basic, Standard
+                and Premium SKU.
+        scm_url:
+            description: The URL for the SCM (Source Code Management) Endpoint associated
+                with this API Management service.
+        principal_id:
+            description: The Principal ID associated with this Managed Service Identity.
+        tenant_id:
+            description: The Tenant ID associated with this Managed Service Identity.
+    timeouts:
+        create:
+            description: Used when creating the API Management Service.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the API Management Service.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the API Management Service.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the API Management Service.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        aGNHbGZiV0Z1WVdkbGJXVnVkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0WVhCcGJTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJ
+        Q0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFX
+        OXVDaUFnY21WemIzVnlZMlZmWjNKdmRYQmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJW
+        ZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdjSFZpYkdsemFHVnlYMjVoYldVZ0lDQWdJQ0E5
+        SUNKTmVTQkRiMjF3WVc1NUlnb2dJSEIxWW14cGMyaGxjbDlsYldGcGJDQWdJQ0FnUFNBaVkyOXRj
+        R0Z1ZVVCMFpYSnlZV1p2Y20wdWFXOGlDZ29nSUhOcmRWOXVZVzFsSUQwZ0lrUmxkbVZzYjNCbGNs
+        OHhJZ29LSUNCd2IyeHBZM2tnZXdvZ0lDQWdlRzFzWDJOdmJuUmxiblFnUFNBOFBGaE5UQW9nSUNB
+        Z1BIQnZiR2xqYVdWelBnb2dJQ0FnSUNBOGFXNWliM1Z1WkNBdlBnb2dJQ0FnSUNBOFltRmphMlZ1
+        WkNBdlBnb2dJQ0FnSUNBOGIzVjBZbTkxYm1RZ0x6NEtJQ0FnSUNBZ1BHOXVMV1Z5Y205eUlDOCtD
+        aUFnSUNBOEwzQnZiR2xqYVdWelBncFlUVXdLQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwQlVFa2dUV0Z1WVdkbGJXVnVkQ0JUWlhKMmFXTmxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQnBYMjFoYm1GblpXMWxiblF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

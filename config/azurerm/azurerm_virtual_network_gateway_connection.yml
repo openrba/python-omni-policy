@@ -65,5 +65,89 @@ azurerm_virtual_network_gateway_connection:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        enable_bgp:
+            description: If `true`, BGP (Border Gateway Protocol
+            required: false
+            policy: ''
+            notes: ''
+        express_route_gateway_bypass:
+            description: If `true`, data packets will bypass ExpressRoute Gateway
+                for data forwarding This is only valid for ExpressRoute connections.
+            required: false
+            policy: ''
+            notes: ''
+        use_policy_based_traffic_selectors:
+            description: If `true`, policy-based traffic
+            required: false
+            policy: ''
+            notes: ''
+        ipsec_policy:
+            description: A `ipsec_policy` block which is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        dh_group:
+            description: The DH group used in IKE phase 1 for initial SA. Valid
+            required: true
+            policy: ''
+            notes: ''
+        ike_encryption:
+            description: The IKE encryption algorithm. Valid
+            required: true
+            policy: ''
+            notes: ''
+        ike_integrity:
+            description: The IKE integrity algorithm. Valid
+            required: true
+            policy: ''
+            notes: ''
+        ipsec_encryption:
+            description: The IPSec encryption algorithm. Valid
+            required: true
+            policy: ''
+            notes: ''
+        ipsec_integrity:
+            description: The IPSec integrity algorithm. Valid
+            required: true
+            policy: ''
+            notes: ''
+        pfs_group:
+            description: The DH group used in IKE phase 2 for new child SA.
+            required: true
+            policy: ''
+            notes: ''
+        sa_datasize:
+            description: The IPSec SA payload size in KB. Must be at least
+            required: false
+            policy: ''
+            notes: ''
+        sa_lifetime:
+            description: The IPSec SA lifetime in seconds. Must be at least
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Network Gateway Connection.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Network Gateway Connection.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Virtual Network Gateway Connection.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Virtual Network Gateway Connection.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Network Gateway Connection.
+            required: false
+            timeout: 30

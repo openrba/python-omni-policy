@@ -73,7 +73,62 @@
                 "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The id of the Frontend IP Configuration."
+            },
+            "frontend_ip_configuration": {
+                "description": "A `frontend_ip_configuration` block as documented below."
+            },
+            "private_ip_address": {
+                "description": "Private IP Address to assign to the Load Balancer."
+            },
+            "private_ip_addresses": {
+                "description": "The list of private IP address assigned to the load balancer in `frontend_ip_configuration` blocks, if any."
+            },
+            "inbound_nat_rules": {
+                "description": "The list of IDs of inbound rules that use this frontend IP."
+            },
+            "load_balancer_rules": {
+                "description": "The list of IDs of load balancing rules that use this frontend IP."
+            },
+            "outbound_rules": {
+                "description": "The list of IDs outbound rules that use this frontend IP."
+            },
+            "private_ip_address_allocation": {
+                "description": "The allocation method for the Private IP Address used by this Load Balancer."
+            },
+            "public_ip_address_id": {
+                "description": "The ID of a  Public IP Address which is associated with this Load Balancer."
+            },
+            "public_ip_prefix_id": {
+                "description": "The ID of a Public IP Prefix which is associated with the Load Balancer."
+            },
+            "subnet_id": {
+                "description": "The ID of the Subnet which is associated with the IP Configuration."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Load Balancer.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Load Balancer.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Load Balancer.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Load Balancer.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

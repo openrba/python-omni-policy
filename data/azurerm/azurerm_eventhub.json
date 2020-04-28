@@ -77,9 +77,55 @@
                 "required": true,
                 "policy": "",
                 "notes": ""
+            },
+            "archive_name_format": {
+                "description": "are mandatory irrespective of order",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "blob_container_name": {
+                "description": "The name of the Container within the Blob Storage Account where messages should be archived.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_id": {
+                "description": "The ID of the Blob Storage Account where messages should be archived.",
+                "required": true,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the EventHub."
+            },
+            "partition_ids": {
+                "description": "The identifiers for partitions created for Event Hubs."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the EventHub.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the EventHub.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the EventHub.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the EventHub.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@ import os
 import base64
 import json
 import yaml
+import re
 
 def merge_dictionaries(dct, merge_dct, add_keys=True):
     """ Recursive dict merge. Inspired by :meth:``dict.update()``, instead of
@@ -232,7 +233,7 @@ def parse_markdown(markdown_dct,metadata_dct):
                 
                 # Parse the note line into fields and add to dictionary.
                 dct[name]['arguments'][arg_name]['notes'] \
-                    = arg.split("**NOTE:** ")[1]
+                    = re.split("\*\*NOTE:\*\*", arg, flags=re.IGNORECASE)
 
         # Extract Attributes
         for attr in markdown.split("## Attributes Reference")[1].\

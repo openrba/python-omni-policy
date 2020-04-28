@@ -15,5 +15,9 @@ aws_internet_gateway:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The ID of the Internet Gateway.
+        owner_id:
+            description: The ID of the AWS account that owns the internet gateway.
     timeouts: {}

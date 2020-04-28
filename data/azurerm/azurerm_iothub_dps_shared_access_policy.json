@@ -29,9 +29,76 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "enrollment_write": {
+                "description": "Adds `EnrollmentWrite` permission to this Shared Access Account. It allows write access to enrollment data.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> **NOTE** When `registration_write` is set to `true`, `enrollment_read`, `registration_read`, and `registration_write` must also be set to true. This is a requirement of the Azure API."
+                ]
+            },
+            "registration_read": {
+                "description": "Adds `RegistrationStatusRead` permission to this Shared Access Account. It allows read access to device registrations.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "registration_write": {
+                "description": "Adds `RegistrationStatusWrite` permission to this Shared Access Account. It allows write access to device registrations.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> **NOTE** When `registration_write` is set to `true`, `registration_read` must also be set to true. This is a requirement of the Azure API."
+                ]
+            },
+            "service_config": {
+                "description": "Adds `ServiceConfig` permission to this Shared Access Account. It allows configuration of the Device Provisioning Service.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> **NOTE** At least one of `registration_read`, `registration_write`, `service_config`, `enrollment_read`, `enrollment_write` permissions must be set to `true`."
+                ]
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the IoTHub Device Provisioning Service Shared Access Policy."
+            },
+            "primary_key": {
+                "description": "The primary key used to create the authentication token."
+            },
+            "primary_connection_string": {
+                "description": "The primary connection string of the Shared Access Policy."
+            },
+            "secondary_key": {
+                "description": "The secondary key used to create the authentication token."
+            },
+            "secondary_connection_string": {
+                "description": "The secondary connection string of the Shared Access Policy."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the IotHub Device Provisioning Service Shared Access Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the IotHub Device Provisioning Service Shared Access Policy.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the IotHub Device Provisioning Service Shared Access Policy.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the IotHub Device Provisioning Service Shared Access Policy.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

@@ -35,9 +35,62 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "Reference to the subnet associated with the IP Configuration.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> **NOTE** At least one and only one `ip_configuration` block may contain a `subnet_id`."
+                ]
+            },
+            "public_ip_address_id": {
+                "description": "The Resource ID of the Public IP Address associated with the firewall.",
+                "required": true,
+                "policy": "",
+                "notes": [
+                    "-> **NOTE** The Public IP must have a `Static` allocation and `Standard` sku."
+                ]
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The Resource ID of the Azure Firewall."
+            },
+            "ip_configuration": {
+                "description": "A `ip_configuration` block as defined below."
+            },
+            "private_ip_address": {
+                "description": "The private IP address of the Azure Firewall."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Firewall.",
+                "required": false,
+                "timeout": 90
+            },
+            "update": {
+                "description": "Used when updating the Firewall.",
+                "required": false,
+                "timeout": 90
+            },
+            "read": {
+                "description": "Used when retrieving the Firewall.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Firewall.",
+                "required": false,
+                "timeout": 90
+            }
+        }
     }
 }

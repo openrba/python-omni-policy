@@ -36,5 +36,69 @@ azurerm_iothub_shared_access_policy:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        service_connect:
+            description: Adds `ServiceConnect` permission to this Shared Access Account.
+                It allows sending and receiving on the cloud-side endpoints.
+            required: false
+            policy: ''
+            notes: ''
+        device_connect:
+            description: Adds `DeviceConnect` permission to this Shared Access Account.
+                It allows sending and receiving on the device-side endpoints.
+            required: false
+            policy: ''
+            notes:
+            - -> **NOTE** At least one of `registry_read`, `registry_write`, `service_connect`,
+                `device_connect` permissions must be set to `true`.
+    attributes:
+        id:
+            description: The ID of the IoTHub Shared Access Policy.
+        primary_key:
+            description: The primary key used to create the authentication token.
+        primary_connection_string:
+            description: The primary connection string of the Shared Access Policy.
+        secondary_key:
+            description: The secondary key used to create the authentication token.
+        secondary_connection_string:
+            description: The secondary connection string of the Shared Access Policy.
+    timeouts:
+        create:
+            description: Used when creating the IotHub Shared Access Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the IotHub Shared Access Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the IotHub Shared Access Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the IotHub Shared Access Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgybHZkR2gxWWlJ
+        Z0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3
+        YkdVaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0E5SUdGNmRYSmxjbTFmY21WemIzVnlZ
+        MlZmWjNKdmRYQXVaWGhoYlhCc1pTNXVZVzFsQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lD
+        QTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2Ymdv
+        S0lDQnphM1VnZXdvZ0lDQWdibUZ0WlNBZ0lDQWdQU0FpVXpFaUNpQWdJQ0JqWVhCaFkybDBlU0E5
+        SUNJeElnb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmFXOTBhSFZpWDNOb1lYSmxa
+        RjloWTJObGMzTmZjRzlzYVdONUlpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQw
+        Z1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnBiM1Jv
+        ZFdKZmJtRnRaU0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjlwYjNSb2RXSXVaWGhoYlhCc1pTNXVZ
+        VzFsQ2dvZ0lISmxaMmx6ZEhKNVgzSmxZV1FnSUQwZ2RISjFaUW9nSUhKbFoybHpkSEo1WDNkeWFY
+        UmxJRDBnZEhKMVpRcDlDZz09
+    import: !!binary |
+        Q2dwSmIxUklkV0lnVTJoaGNtVmtJRUZqWTJWemN5QlFiMnhwWTJsbGN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXOTBhSFZpWDNOb1lYSmxaRjloWTJObGMzTmZjRzlzYVdONUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

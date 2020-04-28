@@ -32,5 +32,81 @@ azurerm_application_insights_api_key:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+    attributes:
+        id:
+            description: The ID of the Application Insights API key.
+        api_key:
+            description: The API Key secret (Sensitive).
+    timeouts:
+        create:
+            description: Used when creating the Application Insights API Key.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Application Insights API Key.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Application Insights API Key.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Application Insights API Key.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtTFhSbGMzUWlDaUFnYkc5allYUnBiMjRnUFNBaVYy
+        VnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJGd2NHeHBZMkYwYVc5
+        dVgybHVjMmxuYUhSeklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlkR1l0ZEdWemRDMWhjSEJwYm5OcFoyaDBjeUlLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdJbGRsYzNRZ1JYVnliM0JsSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdG
+        d2NHeHBZMkYwYVc5dVgzUjVjR1VnSUNBZ1BTQWlkMlZpSWdwOUNncHlaWE52ZFhKalpTQWlZWHAx
+        Y21WeWJWOWhjSEJzYVdOaGRHbHZibDlwYm5OcFoyaDBjMTloY0dsZmEyVjVJaUFpY21WaFpGOTBa
+        V3hsYldWMGNua2lJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpp
+        MTBaWE4wTFdGd2NHbHVjMmxuYUhSekxYSmxZV1F0ZEdWc1pXMWxkSEo1TFdGd2FTMXJaWGtpQ2lB
+        Z1lYQndiR2xqWVhScGIyNWZhVzV6YVdkb2RITmZhV1FnUFNCaGVuVnlaWEp0WDJGd2NHeHBZMkYw
+        YVc5dVgybHVjMmxuYUhSekxtVjRZVzF3YkdVdWFXUUtJQ0J5WldGa1gzQmxjbTFwYzNOcGIyNXpJ
+        Q0FnSUNBZ0lDQTlJRnNpWVdkbmNtVm5ZWFJsSWl3Z0ltRndhU0lzSUNKa2NtRm1kQ0lzSUNKbGVI
+        UmxibVJ4ZFdWeWFXVnpJaXdnSW5ObFlYSmphQ0pkQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhK
+        dFgyRndjR3hwWTJGMGFXOXVYMmx1YzJsbmFIUnpYMkZ3YVY5clpYa2lJQ0ozY21sMFpWOWhibTV2
+        ZEdGMGFXOXVjeUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUm1M
+        WFJsYzNRdFlYQndhVzV6YVdkb2RITXRkM0pwZEdVdFlXNXViM1JoZEdsdmJuTXRZWEJwTFd0bGVT
+        SUtJQ0JoY0hCc2FXTmhkR2x2Ymw5cGJuTnBaMmgwYzE5cFpDQTlJR0Y2ZFhKbGNtMWZZWEJ3Ykds
+        allYUnBiMjVmYVc1emFXZG9kSE11WlhoaGJYQnNaUzVwWkFvZ0lIZHlhWFJsWDNCbGNtMXBjM05w
+        YjI1eklDQWdJQ0FnSUQwZ1d5SmhibTV2ZEdGMGFXOXVjeUpkQ24wS0NuSmxjMjkxY21ObElDSmhl
+        blZ5WlhKdFgyRndjR3hwWTJGMGFXOXVYMmx1YzJsbmFIUnpYMkZ3YVY5clpYa2lJQ0poZFhSb1pX
+        NTBhV05oZEdWZmMyUnJYMk52Ym5SeWIyeGZZMmhoYm01bGJDSWdld29nSUc1aGJXVWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbUxYUmxjM1F0WVhCd2FXNXphV2RvZEhNdFlYVjBhR1Z1
+        ZEdsallYUmxMWE5rYXkxamIyNTBjbTlzTFdOb1lXNXVaV3d0WVhCcExXdGxlU0lLSUNCaGNIQnNh
+        V05oZEdsdmJsOXBibk5wWjJoMGMxOXBaQ0E5SUdGNmRYSmxjbTFmWVhCd2JHbGpZWFJwYjI1ZmFX
+        NXphV2RvZEhNdVpYaGhiWEJzWlM1cFpBb2dJSEpsWVdSZmNHVnliV2x6YzJsdmJuTWdJQ0FnSUNB
+        Z0lEMGdXeUpoWjJWdWRHTnZibVpwWnlKZENuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3
+        Y0d4cFkyRjBhVzl1WDJsdWMybG5hSFJ6WDJGd2FWOXJaWGtpSUNKbWRXeHNYM0JsY20xcGMzTnBi
+        MjV6SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1l0ZEdWemRD
+        MWhjSEJwYm5OcFoyaDBjeTFtZFd4c0xYQmxjbTFwYzNOcGIyNXpMV0Z3YVMxclpYa2lDaUFnWVhC
+        d2JHbGpZWFJwYjI1ZmFXNXphV2RvZEhOZmFXUWdQU0JoZW5WeVpYSnRYMkZ3Y0d4cFkyRjBhVzl1
+        WDJsdWMybG5hSFJ6TG1WNFlXMXdiR1V1YVdRS0lDQnlaV0ZrWDNCbGNtMXBjM05wYjI1eklDQWdJ
+        Q0FnSUNBOUlGc2lZV2RsYm5SamIyNW1hV2NpTENBaVlXZG5jbVZuWVhSbElpd2dJbUZ3YVNJc0lD
+        SmtjbUZtZENJc0lDSmxlSFJsYm1SeGRXVnlhV1Z6SWl3Z0luTmxZWEpqYUNKZENpQWdkM0pwZEdW
+        ZmNHVnliV2x6YzJsdmJuTWdJQ0FnSUNBZ1BTQmJJbUZ1Ym05MFlYUnBiMjV6SWwwS2ZRb0tiM1Yw
+        Y0hWMElDSnlaV0ZrWDNSbGJHVnRaWFJ5ZVY5aGNHbGZhMlY1SWlCN0NpQWdkbUZzZFdVZ1BTQmhl
+        blZ5WlhKdFgyRndjR3hwWTJGMGFXOXVYMmx1YzJsbmFIUnpYMkZ3YVY5clpYa3VjbVZoWkY5MFpX
+        eGxiV1YwY25rdVlYQnBYMnRsZVFwOUNncHZkWFJ3ZFhRZ0luZHlhWFJsWDJGdWJtOTBZWFJwYjI1
+        elgyRndhVjlyWlhraUlIc0tJQ0IyWVd4MVpTQTlJR0Y2ZFhKbGNtMWZZWEJ3YkdsallYUnBiMjVm
+        YVc1emFXZG9kSE5mWVhCcFgydGxlUzUzY21sMFpWOWhibTV2ZEdGMGFXOXVjeTVoY0dsZmEyVjVD
+        bjBLQ205MWRIQjFkQ0FpWVhWMGFHVnVkR2xqWVhSbFgzTmthMTlqYjI1MGNtOXNYMk5vWVc1dVpX
+        d2lJSHNLSUNCMllXeDFaU0E5SUdGNmRYSmxjbTFmWVhCd2JHbGpZWFJwYjI1ZmFXNXphV2RvZEhO
+        ZllYQnBYMnRsZVM1aGRYUm9aVzUwYVdOaGRHVmZjMlJyWDJOdmJuUnliMnhmWTJoaGJtNWxiQzVo
+        Y0dsZmEyVjVDbjBLQ205MWRIQjFkQ0FpWm5Wc2JGOXdaWEp0YVhOemFXOXVjMTloY0dsZmEyVjVJ
+        aUI3Q2lBZ2RtRnNkV1VnUFNCaGVuVnlaWEp0WDJGd2NHeHBZMkYwYVc5dVgybHVjMmxuYUhSelgy
+        RndhVjlyWlhrdVpuVnNiRjl3WlhKdGFYTnphVzl1Y3k1aGNHbGZhMlY1Q24wSw==
+    import: !!binary |
+        Q2dwQmNIQnNhV05oZEdsdmJpQkpibk5wWjJoMGN5QkJVRWtnYTJWNWN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndiR2xqWVhScGIyNWZhVzV6YVdkb2RITmZZWEJwWDJ0bGVTNW9kRzFzTG0x
+        aGNtdGtiM2R1

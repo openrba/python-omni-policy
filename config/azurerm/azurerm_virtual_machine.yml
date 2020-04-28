@@ -70,5 +70,446 @@ azurerm_virtual_machine:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        identity:
+            description: A `identity` block.
+            required: false
+            policy: ''
+            notes: ''
+        license_type:
+            description: Specifies the BYOL Type for this Virtual Machine. This is
+                only applicable to Windows Virtual Machines. Possible values are `Windows_Client`
+                and `Windows_Server`.
+            required: false
+            policy: ''
+            notes: ''
+        os_profile:
+            description: An `os_profile` block. Required when `create_option` in the
+                `storage_os_disk` block is set to `FromImage`.
+            required: false
+            policy: ''
+            notes: ''
+        os_profile_secrets:
+            description: One or more `os_profile_secrets` blocks.
+            required: false
+            policy: ''
+            notes: ''
+        plan:
+            description: A `plan` block.
+            required: false
+            policy: ''
+            notes: ''
+        primary_network_interface_id:
+            description: The ID of the Network Interface (which must be attached to
+                the Virtual Machine
+            required: false
+            policy: ''
+            notes: ''
+        proximity_placement_group_id:
+            description: The ID of the Proximity Placement Group to which this Virtual
+                Machine should be assigned. Changing this forces a new resource to
+                be created
+            required: false
+            policy: ''
+            notes: ''
+        storage_data_disk:
+            description: One or more `storage_data_disk` blocks.
+            required: false
+            policy: ''
+            notes: ''
+        storage_image_reference:
+            description: A `storage_image_reference` block.
+            required: false
+            policy: ''
+            notes: ''
+        storage_os_disk:
+            description: A `storage_os_disk` block.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the Virtual Machine.
+            required: false
+            policy: ''
+            notes: ''
+        zones:
+            description: A list of a single item of the Availability Zone which the
+                Virtual Machine should be allocated in.
+            required: false
+            policy: ''
+            notes:
+            - '-> **Please Note**: Availability Zones are [only supported in several
+                regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview).'
+        pass:
+            description: Specifies the name of the pass that the content applies to.
+                The only allowable value is `oobeSystem`.
+            required: true
+            policy: ''
+            notes: ''
+        component:
+            description: Specifies the name of the component to configure with the
+                added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.
+            required: true
+            policy: ''
+            notes: ''
+        setting_name:
+            description: 'Specifies the name of the setting to which the content applies.
+                Possible values are: `FirstLogonCommands` and `AutoLogon`.'
+            required: true
+            policy: ''
+            notes: ''
+        content:
+            description: Specifies the base-64 encoded XML formatted content that
+                is added to the unattend.xml file for the specified path and component.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: Should Boot Diagnostics be enabled for this Virtual Machine?
+            required: true
+            policy: ''
+            notes: ''
+        storage_uri:
+            description: The Storage Account's Blob Endpoint which should hold the
+                virtual machine's diagnostic files.
+            required: true
+            policy: ''
+            notes: ''
+        ultra_ssd_enabled:
+            description: Should Ultra SSD disk be enabled for this Virtual Machine?
+            required: true
+            policy: ''
+            notes:
+            - '-> **Note**: Azure Ultra Disk Storage is currently in preview and are
+                not available to subscriptions that have not [requested](https://aka.ms/UltraSSDPreviewSignUp)
+                onboarding to `Azure Ultra Disk Storage` preview. `Azure Ultra Disk
+                Storage` is only available in `East US 2`, `North Europe`, and `Southeast
+                Asia` regions. For more information see the `Azure Ultra Disk Storage`
+                [product documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd),
+                [product blog](https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-ultra-disk-storage/)
+                and [FAQ](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq-for-disks#ultra-disks).'
+        type:
+            description: The Managed Service Identity Type of this Virtual Machine.
+                Possible values are `SystemAssigned` (where Azure will generate a
+                Service Principal for you), `UserAssigned` (where you can specify
+                the Service Principal ID's
+            required: true
+            policy: ''
+            notes:
+            - '-> '
+            - ' Managed Service Identity previously required the installation of a
+                VM Extension, but this information [is now available via the Azure
+                Instance Metadata Service](https://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/overview#how-does-it-work).'
+        identity_ids:
+            description: Specifies a list of user managed identity ids to be assigned
+                to the VM. Required if `type` is `UserAssigned`.
+            required: false
+            policy: ''
+            notes: ''
+        computer_name:
+            description: Specifies the name of the Virtual Machine.
+            required: true
+            policy: ''
+            notes: ''
+        admin_username:
+            description: Specifies the name of the local administrator account.
+            required: true
+            policy: ''
+            notes: ''
+        admin_password:
+            description: The password associated with the local administrator account.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' If using Linux, it may be preferable to use SSH Key authentication
+                (available in the `os_profile_linux_config` block) instead of password
+                authentication.'
+        custom_data:
+            description: Specifies custom data to supply to the machine. On Linux-based
+                systems, this can be used as a cloud-init script. On other systems,
+                this will be copied as a file on disk. Internally, Terraform will
+                base64 encode this value before sending it to the API. The maximum
+                length of the binary array is 65535 bytes.
+            required: false
+            policy: ''
+            notes: ''
+        disable_password_authentication:
+            description: Specifies whether password authentication should be disabled.
+                If set to `false`, an `admin_password` must be specified.
+            required: true
+            policy: ''
+            notes: ''
+        ssh_keys:
+            description: One or more `ssh_keys` blocks. This field is required if
+                `disable_password_authentication` is set to `true`.
+            required: false
+            policy: ''
+            notes: ''
+        source_vault_id:
+            description: Specifies the ID of the Key Vault to use.
+            required: true
+            policy: ''
+            notes: ''
+        vault_certificates:
+            description: One or more `vault_certificates` blocks.
+            required: true
+            policy: ''
+            notes: ''
+        provision_vm_agent:
+            description: Should the Azure Virtual Machine Guest Agent be installed
+                on this Virtual Machine? Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This is different from the Default value used for this field within
+                Azure.'
+        enable_automatic_upgrades:
+            description: Are automatic updates enabled on this Virtual Machine? Defaults
+                to `false.`
+            required: false
+            policy: ''
+            notes: ''
+        timezone:
+            description: Specifies the time zone of the virtual machine, [the possible
+                values are defined here](http://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+            required: false
+            policy: ''
+            notes: ''
+        winrm:
+            description: One or more `winrm` block.
+            required: false
+            policy: ''
+            notes: ''
+        additional_unattend_config:
+            description: A `additional_unattend_config` block.
+            required: false
+            policy: ''
+            notes: ''
+        publisher:
+            description: Specifies the publisher of the image used to create the virtual
+                machine. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        product:
+            description: Specifies the product of the image from the marketplace.
+            required: true
+            policy: ''
+            notes: ''
+        key_data:
+            description: The Public SSH Key which should be written to the `path`
+                defined above.
+            required: true
+            policy: ''
+            notes:
+            - '-> '
+            - ' Rather than defining this in-line you can source this from a local
+                file using [the `file` function](https://www.terraform.io/docs/configuration/functions/file.html)
+                - for example `key_data = file("~/.ssh/id_rsa.pub")`.'
+        path:
+            description: The path of the destination file on the virtual machine
+            required: true
+            policy: ''
+            notes:
+            - '-> '
+            - ' Due to a limitation in the Azure VM Agent the only allowed `path`
+                is `/home/{username}/.ssh/authorized_keys`.'
+        offer:
+            description: Specifies the offer of the image used to create the virtual
+                machine. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        sku:
+            description: Specifies the SKU of the image used to create the virtual
+                machine. Changing this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        version:
+            description: Specifies the version of the image used to create the virtual
+                machine. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        id:
+            description: Specifies the ID of the Custom Image which the Virtual Machine
+                should be created from. Changing this forces a new resource to be
+                created.
+            required: true
+            policy: ''
+            notes:
+            - '-> '
+            - ' An example of how to use this is available within [the `./examples/virtual-machines/managed-disks/from-custom-image`
+                directory within the Github Repository](https://github.com/terraform-providers/terraform-provider-azurerm/tree/master/examples/virtual-machines/managed-disks/from-custom-image)'
+        caching:
+            description: Specifies the caching requirements for the OS Disk. Possible
+                values include `None`, `ReadOnly` and `ReadWrite`.
+            required: false
+            policy: ''
+            notes: ''
+        create_option:
+            description: Specifies how the OS Disk should be created. Possible values
+                are `Attach` (managed disks only
+            required: true
+            policy: ''
+            notes: ''
+        disk_size_gb:
+            description: Specifies the size of the OS Disk in gigabytes.
+            required: false
+            policy: ''
+            notes: ''
+        lun:
+            description: Specifies the logical unit number of the data disk. This
+                needs to be unique within all the Data Disks on the Virtual Machine.
+            required: true
+            policy: ''
+            notes: ''
+        write_accelerator_enabled:
+            description: Specifies if Write Accelerator is enabled on the disk. This
+                can only be enabled on `Premium_LRS` managed disks with no caching
+                and [M-Series VMs](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/how-to-enable-write-accelerator).
+                Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        managed_disk_type:
+            description: Specifies the type of Managed Disk which should be created.
+                Possible values are `Standard_LRS`, `StandardSSD_LRS` or `Premium_LRS`.
+            required: false
+            policy: ''
+            notes: ''
+        managed_disk_id:
+            description: Specifies the ID of an existing Managed Disk which should
+                be attached as the OS Disk of this Virtual Machine. If this is set
+                then the `create_option` must be set to `Attach`.
+            required: false
+            policy: ''
+            notes: ''
+        vhd_uri:
+            description: Specifies the URI of the VHD file backing this Unmanaged
+                OS Disk. Changing this forces a new resource to be created.
+            required: false
+            policy: ''
+            notes: ''
+        image_uri:
+            description: Specifies the Image URI in the format `publisherName:offer:skus:version`.
+                This field can also specify the [VHD uri](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-cli-deploy-templates/#create-a-custom-vm-image
+            required: false
+            policy: ''
+            notes: ''
+        os_type:
+            description: Specifies the Operating System on the OS Disk. Possible values
+                are `Linux` and `Windows`.
+            required: false
+            policy: ''
+            notes: ''
+        certificate_url:
+            description: The ID of the Key Vault Secret which contains the encrypted
+                Certificate which should be installed on the Virtual Machine. This
+                certificate must also be specified in the `vault_certificates` block
+                within the `os_profile_secrets` block.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' This can be sourced from the `secret_id` field on the `azurerm_key_vault_certificate`
+                resource.'
+        certificate_store:
+            description: Specifies the certificate store on the Virtual Machine where
+                the certificate should be added to, such as `My`.
+            required: false
+            policy: ''
+            notes: ''
+        protocol:
+            description: Specifies the protocol of listener. Possible values are `HTTP`
+                or `HTTPS`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Virtual Machine.
+        identity:
+            description: An `identity` block as defined below, which contains the
+                Managed Service Identity information for this Virtual Machine.
+        principal_id:
+            description: The Principal ID for the Service Principal associated with
+                the Managed Service Identity of this Virtual Machine.
+    timeouts:
+        create:
+            description: Used when creating the Virtual Machine.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Virtual Machine.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Virtual Machine.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Virtual Machine.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25aaGNtbGhZbXhsSUNKd2NtVm1hWGdpSUhzS0lDQmtaV1poZFd4MElEMGdJblJtZG0xbGVDSUtm
+        UW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQWlJQ0p0WVdsdUlp
+        QjdDaUFnYm1GdFpTQWdJQ0FnUFNBaUpIdDJZWEl1Y0hKbFptbDRmUzF5WlhOdmRYSmpaWE1pQ2lB
+        Z2JHOWpZWFJwYjI0Z1BTQWlWMlZ6ZENCVlV5QXlJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5
+        YlY5MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKdFlXbHVJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQTlJQ0lrZTNaaGNpNXdjbVZtYVhoOUxXNWxkSGR2Y21zaUNpQWdZV1JrY21WemMx
+        OXpjR0ZqWlNBZ0lDQWdJQ0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNB
+        Z0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG0xaGFXNHViRzlq
+        WVhScGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZk
+        WEpqWlY5bmNtOTFjQzV0WVdsdUxtNWhiV1VLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmMz
+        VmlibVYwSWlBaWFXNTBaWEp1WVd3aUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        OUlDSnBiblJsY201aGJDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBOUlHRjZkWEps
+        Y20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1YldGcGJpNXVZVzFsQ2lBZ2RtbHlkSFZoYkY5dVpYUjNi
+        M0pyWDI1aGJXVWdQU0JoZW5WeVpYSnRYM1pwY25SMVlXeGZibVYwZDI5eWF5NXRZV2x1TG01aGJX
+        VUtJQ0JoWkdSeVpYTnpYM0J5WldacGVDQWdJQ0FnSUNBOUlDSXhNQzR3TGpJdU1DOHlOQ0lLZlFv
+        S2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmJtVjBkMjl5YTE5cGJuUmxjbVpoWTJVaUlDSnRZV2x1
+        SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJa2UzWmhjaTV3Y21WbWFYaDlM
+        VzVwWXlJS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRY
+        SmpaVjluY205MWNDNXRZV2x1TG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1G
+        dFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdWJXRnBiaTV1WVcxbENnb2dJR2x3
+        WDJOdmJtWnBaM1Z5WVhScGIyNGdld29nSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpZEdWemRHTnZibVpwWjNWeVlYUnBiMjR4SWdvZ0lDQWdjM1ZpYm1WMFgy
+        bGtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNOMVltNWxkQzVwYm5S
+        bGNtNWhiQzVwWkFvZ0lDQWdjSEpwZG1GMFpWOXBjRjloWkdSeVpYTnpYMkZzYkc5allYUnBiMjRn
+        UFNBaVJIbHVZVzFwWXlJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNacGNuUjFZ
+        V3hmYldGamFHbHVaU0lnSW0xaGFXNGlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpSkh0MllYSXVjSEpsWm1sNGZTMTJiU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtMWhhVzR1Ykc5allYUnBiMjRL
+        SUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxY
+        MmR5YjNWd0xtMWhhVzR1Ym1GdFpRb2dJRzVsZEhkdmNtdGZhVzUwWlhKbVlXTmxYMmxrY3lBOUlG
+        dGhlblZ5WlhKdFgyNWxkSGR2Y210ZmFXNTBaWEptWVdObExtMWhhVzR1YVdSZENpQWdkbTFmYzJs
+        NlpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa1gwUlRNVjkyTWlJS0NpQWdJeUJW
+        Ym1OdmJXMWxiblFnZEdocGN5QnNhVzVsSUhSdklHUmxiR1YwWlNCMGFHVWdUMU1nWkdsemF5Qmhk
+        WFJ2YldGMGFXTmhiR3g1SUhkb1pXNGdaR1ZzWlhScGJtY2dkR2hsSUZaTkNpQWdJeUJrWld4bGRH
+        VmZiM05mWkdsemExOXZibDkwWlhKdGFXNWhkR2x2YmlBOUlIUnlkV1VLQ2lBZ0l5QlZibU52Ylcx
+        bGJuUWdkR2hwY3lCc2FXNWxJSFJ2SUdSbGJHVjBaU0IwYUdVZ1pHRjBZU0JrYVhOcmN5QmhkWFJ2
+        YldGMGFXTmhiR3g1SUhkb1pXNGdaR1ZzWlhScGJtY2dkR2hsSUZaTkNpQWdJeUJrWld4bGRHVmZa
+        R0YwWVY5a2FYTnJjMTl2Ymw5MFpYSnRhVzVoZEdsdmJpQTlJSFJ5ZFdVS0NpQWdjM1J2Y21GblpW
+        OXBiV0ZuWlY5eVpXWmxjbVZ1WTJVZ2V3b2dJQ0FnY0hWaWJHbHphR1Z5SUQwZ0lrTmhibTl1YVdO
+        aGJDSUtJQ0FnSUc5bVptVnlJQ0FnSUNBOUlDSlZZblZ1ZEhWVFpYSjJaWElpQ2lBZ0lDQnphM1Vn
+        SUNBZ0lDQWdQU0FpTVRZdU1EUXRURlJUSWdvZ0lDQWdkbVZ5YzJsdmJpQWdJRDBnSW14aGRHVnpk
+        Q0lLSUNCOUNpQWdjM1J2Y21GblpWOXZjMTlrYVhOcklIc0tJQ0FnSUc1aGJXVWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUQwZ0ltMTViM05rYVhOck1TSUtJQ0FnSUdOaFkyaHBibWNnSUNBZ0lDQWdJQ0FnSUQw
+        Z0lsSmxZV1JYY21sMFpTSUtJQ0FnSUdOeVpXRjBaVjl2Y0hScGIyNGdJQ0FnSUQwZ0lrWnliMjFK
+        YldGblpTSUtJQ0FnSUcxaGJtRm5aV1JmWkdsemExOTBlWEJsSUQwZ0lsTjBZVzVrWVhKa1gweFNV
+        eUlLSUNCOUNpQWdiM05mY0hKdlptbHNaU0I3Q2lBZ0lDQmpiMjF3ZFhSbGNsOXVZVzFsSUNBOUlD
+        Sm9iM04wYm1GdFpTSUtJQ0FnSUdGa2JXbHVYM1Z6WlhKdVlXMWxJRDBnSW5SbGMzUmhaRzFwYmlJ
+        S0lDQWdJR0ZrYldsdVgzQmhjM04zYjNKa0lEMGdJbEJoYzNOM2IzSmtNVEl6TkNFaUNpQWdmUW9n
+        SUc5elgzQnliMlpwYkdWZmJHbHVkWGhmWTI5dVptbG5JSHNLSUNBZ0lHUnBjMkZpYkdWZmNHRnpj
+        M2R2Y21SZllYVjBhR1Z1ZEdsallYUnBiMjRnUFNCbVlXeHpaUW9nSUgwS0lDQjBZV2R6SUQwZ2V3
+        b2dJQ0FnWlc1MmFYSnZibTFsYm5RZ1BTQWljM1JoWjJsdVp5SUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUUxaFkyaHBibVZ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5dFlXTm9hVzVsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

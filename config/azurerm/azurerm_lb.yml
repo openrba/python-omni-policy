@@ -71,5 +71,71 @@ azurerm_lb:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+    attributes:
+        id:
+            description: The id of the Frontend IP Configuration.
+        frontend_ip_configuration:
+            description: A `frontend_ip_configuration` block as documented below.
+        private_ip_address:
+            description: Private IP Address to assign to the Load Balancer.
+        private_ip_addresses:
+            description: The list of private IP address assigned to the load balancer
+                in `frontend_ip_configuration` blocks, if any.
+        inbound_nat_rules:
+            description: The list of IDs of inbound rules that use this frontend IP.
+        load_balancer_rules:
+            description: The list of IDs of load balancing rules that use this frontend
+                IP.
+        outbound_rules:
+            description: The list of IDs outbound rules that use this frontend IP.
+        private_ip_address_allocation:
+            description: The allocation method for the Private IP Address used by
+                this Load Balancer.
+        public_ip_address_id:
+            description: The ID of a  Public IP Address which is associated with this
+                Load Balancer.
+        public_ip_prefix_id:
+            description: The ID of a Public IP Prefix which is associated with the
+                Load Balancer.
+        subnet_id:
+            description: The ID of the Subnet which is associated with the IP Configuration.
+    timeouts:
+        create:
+            description: Used when creating the Load Balancer.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Load Balancer.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Load Balancer.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Load Balancer.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJa3h2WVdSQ1lXeGhibU5sY2xKSElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzQjFZbXhwWTE5
+        cGNDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbEIx
+        WW14cFkwbFFSbTl5VEVJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJ
+        RlZUSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNt
+        TmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdGc2JHOWpZWFJwYjI1ZmJXVjBhRzlrSUNB
+        Z1BTQWlVM1JoZEdsaklncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjlzWWlJZ0ltVjRZVzF3
+        YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsUmxjM1JNYjJGa1FtRnNZ
+        VzVqWlhJaUNpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUNKWFpYTjBJRlZUSWdvZ0lI
+        SmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNW
+        d0xtVjRZVzF3YkdVdWJtRnRaUW9LSUNCbWNtOXVkR1Z1WkY5cGNGOWpiMjVtYVdkMWNtRjBhVzl1
+        SUhzS0lDQWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsQjFZbXhwWTBsUVFXUmtj
+        bVZ6Y3lJS0lDQWdJSEIxWW14cFkxOXBjRjloWkdSeVpYTnpYMmxrSUQwZ1lYcDFjbVZ5YlY5d2RX
+        SnNhV05mYVhBdVpYaGhiWEJzWlM1cFpBb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnljeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHSXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

@@ -48,6 +48,12 @@
                 "policy": "",
                 "notes": ""
             },
+            "extended_auditing_policy": {
+                "description": "A `extended_auditing_policy` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
             "license_type": {
                 "description": "Specifies the license type applied to this database. Possible values are `LicenseIncluded` and `BasePrice`.",
                 "required": false,
@@ -158,6 +164,18 @@
             },
             "use_server_default": {
                 "description": "Should the default server policy be used? Defaults to `Disabled`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_access_key_is_secondary": {
+                "description": "Specifies whether `storage_account_access_key` value is the storage's secondary key.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "retention_in_days": {
+                "description": "Specifies the number of days to retain logs for in the storage account.",
                 "required": false,
                 "policy": "",
                 "notes": ""

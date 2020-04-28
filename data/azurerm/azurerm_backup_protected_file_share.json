@@ -23,9 +23,46 @@
                 "required": true,
                 "policy": "",
                 "notes": ""
+            },
+            "source_file_share_name": {
+                "description": "Specifies the name of the file share to backup. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "backup_policy_id": {
+                "description": "Specifies the ID of the backup policy to use. The policy must be an Azure File Share backup policy. Other types are not supported.",
+                "required": true,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Backup File Share."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Backup File Share.",
+                "required": false,
+                "timeout": 80
+            },
+            "update": {
+                "description": "Used when updating the Backup File Share.",
+                "required": false,
+                "timeout": 80
+            },
+            "read": {
+                "description": "Used when retrieving the Backup File Share.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Backup File Share.",
+                "required": false,
+                "timeout": 80
+            }
+        }
     }
 }

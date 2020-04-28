@@ -20,5 +20,17 @@ aws_nat_gateway:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The ID of the NAT Gateway.
+        allocation_id:
+            description: The Allocation ID of the Elastic IP address for the gateway.
+        subnet_id:
+            description: The Subnet ID of the subnet in which the NAT gateway is placed.
+        network_interface_id:
+            description: The ENI ID of the network interface created by the NAT gateway.
+        private_ip:
+            description: The private IP address of the NAT Gateway.
+        public_ip:
+            description: The public IP address of the NAT Gateway.
     timeouts: {}

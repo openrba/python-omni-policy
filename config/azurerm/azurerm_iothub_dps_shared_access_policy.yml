@@ -31,5 +31,93 @@ azurerm_iothub_dps_shared_access_policy:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        enrollment_write:
+            description: Adds `EnrollmentWrite` permission to this Shared Access Account.
+                It allows write access to enrollment data.
+            required: false
+            policy: ''
+            notes:
+            - -> **NOTE** When `registration_write` is set to `true`, `enrollment_read`,
+                `registration_read`, and `registration_write` must also be set to
+                true. This is a requirement of the Azure API.
+        registration_read:
+            description: Adds `RegistrationStatusRead` permission to this Shared Access
+                Account. It allows read access to device registrations.
+            required: false
+            policy: ''
+            notes: ''
+        registration_write:
+            description: Adds `RegistrationStatusWrite` permission to this Shared
+                Access Account. It allows write access to device registrations.
+            required: false
+            policy: ''
+            notes:
+            - -> **NOTE** When `registration_write` is set to `true`, `registration_read`
+                must also be set to true. This is a requirement of the Azure API.
+        service_config:
+            description: Adds `ServiceConfig` permission to this Shared Access Account.
+                It allows configuration of the Device Provisioning Service.
+            required: false
+            policy: ''
+            notes:
+            - -> **NOTE** At least one of `registration_read`, `registration_write`,
+                `service_config`, `enrollment_read`, `enrollment_write` permissions
+                must be set to `true`.
+    attributes:
+        id:
+            description: The ID of the IoTHub Device Provisioning Service Shared Access
+                Policy.
+        primary_key:
+            description: The primary key used to create the authentication token.
+        primary_connection_string:
+            description: The primary connection string of the Shared Access Policy.
+        secondary_key:
+            description: The secondary key used to create the authentication token.
+        secondary_connection_string:
+            description: The secondary connection string of the Shared Access Policy.
+    timeouts:
+        create:
+            description: Used when creating the IotHub Device Provisioning Service
+                Shared Access Policy.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the IotHub Device Provisioning Service
+                Shared Access Policy.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the IotHub Device Provisioning Service
+                Shared Access Policy.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the IotHub Device Provisioning Service
+                Shared Access Policy.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        cGIzUm9kV0pmWkhCeklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlaWGhoYlhCc1pTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFj
+        bVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJp
+        QWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4
+        bExteHZZMkYwYVc5dUNnb2dJSE5yZFNCN0NpQWdJQ0J1WVcxbElDQWdJQ0E5SUNKVE1TSUtJQ0Fn
+        SUdOaGNHRmphWFI1SUQwZ0lqRWlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXBi
+        M1JvZFdKZlpIQnpYM05vWVhKbFpGOWhZMk5sYzNOZmNHOXNhV041SWlBaVpYaGhiWEJzWlNJZ2V3
+        b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQnlaWE52ZFhK
+        alpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0
+        Y0d4bExtNWhiV1VLSUNCcGIzUm9kV0pmWkhCelgyNWhiV1VnSUNBZ0lEMGdZWHAxY21WeWJWOXBi
+        M1JvZFdKZlpIQnpMbVY0WVcxd2JHVXVibUZ0WlFvS0lDQmxibkp2Ykd4dFpXNTBYM2R5YVhSbElE
+        MGdkSEoxWlFvZ0lHVnVjbTlzYkcxbGJuUmZjbVZoWkNBZ1BTQjBjblZsQ24wSw==
+    import: !!binary |
+        Q2dwSmIxUklkV0lnUkdWMmFXTmxJRkJ5YjNacGMybHZibWx1WnlCVFpYSjJhV05sSUZOb1lYSmxa
+        Q0JCWTJObGMzTWdVRzlzYVdOcFpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pT
+        QmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXOTBhSFZpWDJSd2MxOXphR0Z5WldSZllXTmpaWE56WDNCdmJHbGplUzVvZEcx
+        c0xtMWhjbXRrYjNkdQ==

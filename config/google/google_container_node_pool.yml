@@ -37,5 +37,108 @@ google_container_node_pool:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+        name:
+            description: The name of the node pool. If left blank, Terraform will
+            required: false
+            policy: ''
+            notes: ''
+        name_prefix:
+            description: Creates a unique name for the node pool beginning
+            required: false
+            policy: ''
+            notes: ''
+        node_config:
+            description: The node configuration of the pool. See
+            required: false
+            policy: ''
+            notes: ''
+        node_count:
+            description: The number of nodes per instance group. This field can be
+                used to
+            required: false
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which to create the node pool. If
+                blank,
+            required: false
+            policy: ''
+            notes: ''
+        upgrade_settings:
+            description: Specify node upgrade settings to change how many nodes GKE
+                attempts to
+            required: false
+            policy: ''
+            notes: ''
+        version:
+            description: The Kubernetes version for the nodes in this pool. Note that
+                if this field
+            required: false
+            policy: ''
+            notes: ''
+        min_node_count:
+            description: Minimum number of nodes in the NodePool. Must be >=0 and
+            required: true
+            policy: ''
+            notes: ''
+        max_node_count:
+            description: Maximum number of nodes in the NodePool. Must be >= min_node_count.
+            required: true
+            policy: ''
+            notes: ''
+        auto_repair:
+            description: Whether the nodes will be automatically repaired.
+            required: false
+            policy: ''
+            notes: ''
+        auto_upgrade:
+            description: Whether the nodes will be automatically upgraded.
+            required: false
+            policy: ''
+            notes: ''
+        max_surge:
+            description: The number of additional nodes that can be added to the node
+                pool during
+            required: true
+            policy: ''
+            notes: ''
+        max_unavailable:
+            description: The number of nodes that can be simultaneously unavailable
+                during
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        instance_group_urls:
+            description: The resource URLs of the managed instance groups associated
+                with this node pool.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dWRHRnBibVZ5WDJOc2RYTjBaWElpSUNKd2NtbHRZ
+        WEo1SWlCN0NpQWdibUZ0WlNBZ0lDQWdQU0FpYlhrdFoydGxMV05zZFhOMFpYSWlDaUFnYkc5allY
+        UnBiMjRnUFNBaWRYTXRZMlZ1ZEhKaGJERWlDZ29nSUNNZ1YyVWdZMkZ1SjNRZ1kzSmxZWFJsSUdF
+        Z1kyeDFjM1JsY2lCM2FYUm9JRzV2SUc1dlpHVWdjRzl2YkNCa1pXWnBibVZrTENCaWRYUWdkMlVn
+        ZDJGdWRDQjBieUJ2Ym14NUlIVnpaUW9nSUNNZ2MyVndZWEpoZEdWc2VTQnRZVzVoWjJWa0lHNXZa
+        R1VnY0c5dmJITXVJRk52SUhkbElHTnlaV0YwWlNCMGFHVWdjMjFoYkd4bGMzUWdjRzl6YzJsaWJH
+        VWdaR1ZtWVhWc2RBb2dJQ01nYm05a1pTQndiMjlzSUdGdVpDQnBiVzFsWkdsaGRHVnNlU0JrWld4
+        bGRHVWdhWFF1Q2lBZ2NtVnRiM1psWDJSbFptRjFiSFJmYm05a1pWOXdiMjlzSUQwZ2RISjFaUW9n
+        SUdsdWFYUnBZV3hmYm05a1pWOWpiM1Z1ZENBZ0lDQWdJQ0E5SURFS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bWR2YjJkc1pWOWpiMjUwWVdsdVpYSmZibTlrWlY5d2IyOXNJaUFpY0hKcGJXRnllVjl3Y21WbGJY
+        QjBhV0pzWlY5dWIyUmxjeUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpYlhrdGJtOWtaUzF3YjI5
+        c0lnb2dJR3h2WTJGMGFXOXVJQ0FnUFNBaWRYTXRZMlZ1ZEhKaGJERWlDaUFnWTJ4MWMzUmxjaUFn
+        SUNBOUlHZHZiMmRzWlY5amIyNTBZV2x1WlhKZlkyeDFjM1JsY2k1d2NtbHRZWEo1TG01aGJXVUtJ
+        Q0J1YjJSbFgyTnZkVzUwSUQwZ01Rb0tJQ0J1YjJSbFgyTnZibVpwWnlCN0NpQWdJQ0J3Y21WbGJY
+        QjBhV0pzWlNBZ1BTQjBjblZsQ2lBZ0lDQnRZV05vYVc1bFgzUjVjR1VnUFNBaWJqRXRjM1JoYm1S
+        aGNtUXRNU0lLQ2lBZ0lDQnZZWFYwYUY5elkyOXdaWE1nUFNCYkNpQWdJQ0FnSUNKb2RIUndjem92
+        TDNkM2R5NW5iMjluYkdWaGNHbHpMbU52YlM5aGRYUm9MMnh2WjJkcGJtY3VkM0pwZEdVaUxBb2dJ
+        Q0FnSUNBaWFIUjBjSE02THk5M2QzY3VaMjl2WjJ4bFlYQnBjeTVqYjIwdllYVjBhQzl0YjI1cGRH
+        OXlhVzVuSWl3S0lDQWdJRjBLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwT2IyUmxJSEJ2YjJ4eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lIQnli
+        MnBsWTNSZ0xDQmdlbTl1WldBc0lHQmpiSFZ6ZEdWeVlDQmhibVFnWUc1aGJXVmdMaUJKWmdwMGFH
+        VWdjSEp2YW1WamRDQnBjeUJ2YldsMGRHVmtMQ0IwYUdVZ1pHVm1ZWFZzZENCd2NtOTJhV1JsY2lC
+        MllXeDFaU0IzYVd4c0lHSmxJSFZ6WldRdUlFVjRZVzF3YkdWek9nb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyNTBZV2x1WlhKZmJtOWtaVjl3YjI5c0xtaDBiV3d1YldGeWEyUnZkMjQ9

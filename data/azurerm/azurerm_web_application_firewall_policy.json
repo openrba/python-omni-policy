@@ -36,6 +36,12 @@
                 "policy": "",
                 "notes": ""
             },
+            "managed_rules": {
+                "description": "A `managed_rules` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
             "tags": {
                 "description": "A mapping of tags to assign to the Web Application Firewall Policy.",
                 "required": false,
@@ -110,6 +116,54 @@
             },
             "mode": {
                 "description": "Describes if it is in detection mode  or prevention mode at the policy level Defaults to `Prevention`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "exclusion": {
+                "description": "One or more `exclusion` block defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "managed_rule_set": {
+                "description": "One or more `managed_rule_set` block defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "selector_match_operator": {
+                "description": "Describes operator to be matched. Possible values: `Contains`, `EndsWith`, `Equals`, `EqualsAny`, `StartsWith`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The rule set type.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "The rule set version.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_group_override": {
+                "description": "One or more `rule_group_override` block defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rule_group_name": {
+                "description": "The name of the Rule Group",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disabled_rules": {
+                "description": "One or more Rule ID's",
                 "required": false,
                 "policy": "",
                 "notes": ""

@@ -34,5 +34,131 @@ azurerm_network_interface:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        enable_ip_forwarding:
+            description: Should IP Forwarding be enabled? Defaults to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        enable_accelerated_networking:
+            description: Should Accelerated Networking be enabled? Defaults to `false`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' To use Accelerated Networking in an Availability Set, the Availability
+                Set must be deployed onto an Accelerated Networking enabled cluster.'
+        internal_dns_name_label:
+            description: The (relative
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: The ID of the Subnet where this Network Interface should
+                be located in.
+            required: true
+            policy: ''
+            notes: ''
+        private_ip_address_version:
+            description: The IP Version to use. Possible values are `IPv4` or `IPv6`.
+                Defaults to `IPv4`.
+            required: false
+            policy: ''
+            notes: ''
+        private_ip_address_allocation:
+            description: The allocation method used for the Private IP Address. Possible
+                values are `Dynamic` and `Static`.
+            required: true
+            policy: ''
+            notes: ''
+        public_ip_address_id:
+            description: Reference to a Public IP Address to associate with this NIC
+            required: false
+            policy: ''
+            notes: ''
+        primary:
+            description: Is this the Primary IP Configuration? Must be `true` for
+                the first `ip_configuration` when multiple are specified. Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        private_ip_address:
+            description: The Static IP Address which should be used.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        applied_dns_servers:
+            description: If the Virtual Machine using this Network Interface is part
+                of an Availability Set, then this list will have the union of all
+                DNS servers from all Network Interfaces that are part of the Availability
+                Set.
+        id:
+            description: The ID of the Network Interface.
+        internal_domain_name_suffix:
+            description: Even if `internal_dns_name_label` is not specified, a DNS
+                entry is created for the primary NIC of the VM. This DNS name can
+                be constructed by concatenating the VM name with the value of `internal_domain_name_suffix`.
+        mac_address:
+            description: The Media Access Control (MAC) Address of the Network Interface.
+        private_ip_address:
+            description: The first private IP address of the network interface.
+        private_ip_addresses:
+            description: The private IP addresses of the network interface.
+        virtual_machine_id:
+            description: The ID of the Virtual Machine which this Network Interface
+                is connected to.
+    timeouts:
+        create:
+            description: Used when creating the Network Interface.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Network Interface.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Network Interface.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Network Interface.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5
+        MmFYSjBkV0ZzWDI1bGRIZHZjbXNpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFc1bGRIZHZjbXNpQ2lBZ1lXUmtjbVZ6YzE5emNHRmpa
+        U0FnSUNBZ0lDQTlJRnNpTVRBdU1DNHdMakF2TVRZaVhRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhS
+        cGIyNEtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpq
+        WlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbWx1ZEdWeWJtRnNJZ29nSUhKbGMyOTFjbU5sWDJkeWIzVndYMjVoYldVZ0lEMGdZWHAxY21W
+        eWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVUtJQ0IyYVhKMGRXRnNYMjVs
+        ZEhkdmNtdGZibUZ0WlNBOUlHRjZkWEpsY20xZmRtbHlkSFZoYkY5dVpYUjNiM0pyTG1WNFlXMXdi
+        R1V1Ym1GdFpRb2dJR0ZrWkhKbGMzTmZjSEpsWm1sNElDQWdJQ0FnSUQwZ0lqRXdMakF1TWk0d0x6
+        STBJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5dVpYUjNiM0pyWDJsdWRHVnlabUZqWlNJ
+        Z0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3
+        YkdVdGJtbGpJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxj
+        MjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCeVpYTnZkWEpqWlY5bmNt
+        OTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG01
+        aGJXVUtDaUFnYVhCZlkyOXVabWxuZFhKaGRHbHZiaUI3Q2lBZ0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKcGJuUmxjbTVoYkNJS0lDQWdJSE4xWW01bGRGOXBa
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5emRXSnVaWFF1WlhoaGJY
+        QnNaUzVwWkFvZ0lDQWdjSEpwZG1GMFpWOXBjRjloWkdSeVpYTnpYMkZzYkc5allYUnBiMjRnUFNB
+        aVJIbHVZVzFwWXlJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwT1pYUjNiM0pySUVsdWRHVnlabUZqWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBkMjl5YTE5cGJuUmxjbVpoWTJVdWFIUnRiQzV0WVhKclpHOTNiZz09

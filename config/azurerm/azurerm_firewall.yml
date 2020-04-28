@@ -34,5 +34,85 @@ azurerm_firewall:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        subnet_id:
+            description: Reference to the subnet associated with the IP Configuration.
+            required: false
+            policy: ''
+            notes:
+            - -> **NOTE** At least one and only one `ip_configuration` block may contain
+                a `subnet_id`.
+        public_ip_address_id:
+            description: The Resource ID of the Public IP Address associated with
+                the firewall.
+            required: true
+            policy: ''
+            notes:
+            - -> **NOTE** The Public IP must have a `Static` allocation and `Standard`
+                sku.
+    attributes:
+        id:
+            description: The Resource ID of the Azure Firewall.
+        ip_configuration:
+            description: A `ip_configuration` block as defined below.
+        private_ip_address:
+            description: The private IP address of the Azure Firewall.
+    timeouts:
+        create:
+            description: Used when creating the Firewall.
+            required: false
+            timeout: 90
+        update:
+            description: Used when updating the Firewall.
+            required: false
+            timeout: 90
+        read:
+            description: Used when retrieving the Firewall.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Firewall.
+            required: false
+            timeout: 90
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lrNXZjblJvSUVWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmRtbHlkSFZoYkY5dVpYUjNiM0pySWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaWRHVnpkSFp1WlhRaUNpQWdZV1JrY21WemMxOXpjR0ZqWlNBZ0lDQWdJ
+        Q0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNWaWJtVjBJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtGNmRY
+        SmxSbWx5WlhkaGJHeFRkV0p1WlhRaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNC
+        aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lIWnBjblIx
+        WVd4ZmJtVjBkMjl5YTE5dVlXMWxJRDBnWVhwMWNtVnliVjkyYVhKMGRXRnNYMjVsZEhkdmNtc3Va
+        WGhoYlhCc1pTNXVZVzFsQ2lBZ1lXUmtjbVZ6YzE5d2NtVm1hWGdnSUNBZ0lDQWdQU0FpTVRBdU1D
+        NHhMakF2TWpRaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0IxWW14cFkxOXBjQ0lnSW1W
+        NFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGMzUndhWEFp
+        Q2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZa
+        M0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdG
+        c2JHOWpZWFJwYjI1ZmJXVjBhRzlrSUNBZ1BTQWlVM1JoZEdsaklnb2dJSE5yZFNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVUzUmhibVJoY21RaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRY
+        MlpwY21WM1lXeHNJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpZEdWemRHWnBjbVYzWVd4c0lnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNC
+        aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J5
+        WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFj
+        QzVsZUdGdGNHeGxMbTVoYldVS0NpQWdhWEJmWTI5dVptbG5kWEpoZEdsdmJpQjdDaUFnSUNCdVlX
+        MWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pqYjI1bWFXZDFjbUYwYVc5dUlnb2dJQ0FnYzNW
+        aWJtVjBYMmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzTjFZbTVsZEM1bGVHRnRjR3hs
+        TG1sa0NpQWdJQ0J3ZFdKc2FXTmZhWEJmWVdSa2NtVnpjMTlwWkNBOUlHRjZkWEpsY20xZmNIVmli
+        R2xqWDJsd0xtVjRZVzF3YkdVdWFXUUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwQmVuVnlaU0JHYVhKbGQyRnNiSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlptbHlaWGRoYkd3dWFIUnRiQzV0WVhKclpHOTNiZz09

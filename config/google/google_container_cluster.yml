@@ -21,5 +21,561 @@ google_container_cluster:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+        addons_config:
+            description: The configuration for addons supported by GKE.
+            required: false
+            policy: ''
+            notes: ''
+        cluster_ipv4_cidr:
+            description: The IP address range of the Kubernetes pods
+            required: false
+            policy: ''
+            notes: ''
+        description:
+            description: Description of the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        default_max_pods_per_node:
+            description: The default maximum number of pods
+            required: false
+            policy: ''
+            notes: ''
+        enable_binary_authorization:
+            description: Enable Binary Authorization for this cluster.
+            required: false
+            policy: ''
+            notes: ''
+        enable_kubernetes_alpha:
+            description: Whether to enable Kubernetes Alpha features for
+            required: false
+            policy: ''
+            notes: ''
+        enable_tpu:
+            description: Whether to enable Cloud TPU resources in this cluster.
+            required: false
+            policy: ''
+            notes: ''
+        enable_legacy_abac:
+            description: Whether the ABAC authorizer is enabled for this cluster.
+            required: false
+            policy: ''
+            notes: ''
+        enable_shielded_nodes:
+            description: Enable Shielded Nodes features on all nodes in this cluster.  Defaults
+                to `false`.
+            required: false
+            policy: ''
+            notes: ''
+        initial_node_count:
+            description: The number of nodes to create in this
+            required: false
+            policy: ''
+            notes: ''
+        ip_allocation_policy:
+            description: Configuration of cluster IP allocation for
+            required: false
+            policy: ''
+            notes: ''
+        logging_service:
+            description: The logging service that the cluster should
+            required: false
+            policy: ''
+            notes: ''
+        maintenance_policy:
+            description: The maintenance policy to use for the cluster. Structure
+                is
+            required: false
+            policy: ''
+            notes: ''
+        master_auth:
+            description: The authentication information for accessing the
+            required: false
+            policy: ''
+            notes: ''
+        master_authorized_networks_config:
+            description: The desired configuration options
+            required: false
+            policy: ''
+            notes: ''
+        min_master_version:
+            description: The minimum version of the master. GKE
+            required: false
+            policy: ''
+            notes:
+            - -> If you are using the `google_container_engine_versions` datasource
+                with a regional cluster, ensure that you have provided a `location`
+        monitoring_service:
+            description: The monitoring service that the cluster
+            required: false
+            policy: ''
+            notes: ''
+        network:
+            description: The name or self_link of the Google Compute Engine
+            required: false
+            policy: ''
+            notes: ''
+        network_policy:
+            description: Configuration options for the
+            required: false
+            policy: ''
+            notes: ''
+        node_config:
+            description: Parameters used in creating the default node pool.
+            required: false
+            policy: ''
+            notes: ''
+        node_pool:
+            description: List of node pools associated with this cluster.
+            required: false
+            policy: ''
+            notes: ''
+        node_version:
+            description: The Kubernetes version on the nodes. Must either be unset
+            required: false
+            policy: ''
+            notes: ''
+        pod_security_policy_config:
+            description: Configuration for the
+            required: false
+            policy: ''
+            notes: ''
+        authenticator_groups_config:
+            description: Configuration for the
+            required: false
+            policy: ''
+            notes: ''
+        private_cluster_config:
+            description: Configuration for [private clusters](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters),
+            required: false
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the resource belongs. If it
+            required: false
+            policy: ''
+            notes: ''
+        release_channel:
+            description: Configuration options for the
+            required: false
+            policy: ''
+            notes: ''
+        remove_default_node_pool:
+            description: If `true`, deletes the default node
+            required: false
+            policy: ''
+            notes: ''
+        resource_labels:
+            description: The GCE resource labels (a map of key/value pairs
+            required: false
+            policy: ''
+            notes: ''
+        resource_usage_export_config:
+            description: Configuration for the
+            required: false
+            policy: ''
+            notes: ''
+        subnetwork:
+            description: The name or self_link of the Google Compute Engine
+            required: false
+            policy: ''
+            notes: ''
+        horizontal_pod_autoscaling:
+            description: The status of the Horizontal Pod Autoscaling
+            required: false
+            policy: ''
+            notes: ''
+        http_load_balancing:
+            description: The status of the HTTP (L7
+            required: false
+            policy: ''
+            notes: ''
+        network_policy_config:
+            description: Whether we should enable the network policy addon
+            required: false
+            policy: ''
+            notes: ''
+        state:
+            description: '`ENCRYPTED` or `DECRYPTED`'
+            required: true
+            policy: ''
+            notes: ''
+        key_name:
+            description: the key to use to encrypt/decrypt secrets.  See the [DatabaseEncryption
+                definition](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#Cluster.DatabaseEncryption
+            required: true
+            policy: ''
+            notes: ''
+        disabled:
+            description: The status of the Istio addon, which makes it easy to set
+                up Istio for services in a
+            required: false
+            policy: ''
+            notes: ''
+        auth:
+            description: The authentication type between services in Istio. Available
+                options include `AUTH_MUTUAL_TLS`.
+            required: false
+            policy: ''
+            notes: ''
+        enabled:
+            description: '- Enables vertical pod autoscaling'
+            required: true
+            policy: ''
+            notes: ''
+        resource_limits:
+            description: Global constraints for machine resources in the
+            required: false
+            policy: ''
+            notes: ''
+        auto_provisioning_defaults:
+            description: Contains defaults for a node pool created by NAP.
+            required: false
+            policy: ''
+            notes: ''
+        autoscaling_profile:
+            description: Configuration
+            required: false
+            policy: ''
+            notes: ''
+        resource_type:
+            description: The type of the resource. For example, `cpu` and
+            required: true
+            policy: ''
+            notes: ''
+        minimum:
+            description: Minimum amount of the resource in the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        maximum:
+            description: Maximum amount of the resource in the cluster.
+            required: false
+            policy: ''
+            notes: ''
+        oauth_scopes:
+            description: The set of Google API scopes to be made available
+            required: false
+            policy: ''
+            notes: ''
+        service_account:
+            description: The service account to be used by the Node VMs.
+            required: false
+            policy: ''
+            notes: ''
+        security_group:
+            description: The name of the RBAC security group for use with Google security
+                groups in Kubernetes RBAC. Group name must be in format `gke-security-groups@yourdomain.com`.
+            required: true
+            policy: ''
+            notes: ''
+        daily_maintenance_window:
+            description: Time window specified for daily maintenance operations.
+            required: false
+            policy: ''
+            notes: ''
+        recurring_window:
+            description: Time window for
+            required: false
+            policy: ''
+            notes: ''
+        cluster_secondary_range_name:
+            description: The name of the existing secondary
+            required: false
+            policy: ''
+            notes: ''
+        services_secondary_range_name:
+            description: The name of the existing
+            required: false
+            policy: ''
+            notes: ''
+        cluster_ipv4_cidr_block:
+            description: The IP address range for the cluster pod IPs.
+            required: false
+            policy: ''
+            notes: ''
+        services_ipv4_cidr_block:
+            description: The IP address range of the services IPs in this cluster.
+            required: false
+            policy: ''
+            notes: ''
+        password:
+            description: The password to use for HTTP basic authentication when accessing
+            required: false
+            policy: ''
+            notes: ''
+        username:
+            description: The username to use for HTTP basic authentication when accessing
+            required: false
+            policy: ''
+            notes: ''
+        client_certificate_config:
+            description: 'Whether client certificate authorization is enabled for
+                this cluster.  For example:'
+            required: false
+            policy: ''
+            notes: ''
+        cidr_blocks:
+            description: External networks that can access the
+            required: false
+            policy: ''
+            notes: ''
+        cidr_block:
+            description: External network that can access Kubernetes master through
+                HTTPS.
+            required: false
+            policy: ''
+            notes: ''
+        display_name:
+            description: Field for users to identify CIDR blocks.
+            required: false
+            policy: ''
+            notes: ''
+        provider:
+            description: The selected network policy provider. Defaults to PROVIDER_UNSPECIFIED.
+            required: false
+            policy: ''
+            notes: ''
+        disk_size_gb:
+            description: Size of the disk attached to each node, specified
+            required: false
+            policy: ''
+            notes: ''
+        disk_type:
+            description: Type of the disk attached to each node
+            required: false
+            policy: ''
+            notes: ''
+        guest_accelerator:
+            description: List of the type and count of accelerator cards attached
+                to the instance.
+            required: false
+            policy: ''
+            notes: ''
+        image_type:
+            description: The image type to use for this node. Note that changing the
+                image type
+            required: false
+            policy: ''
+            notes: ''
+        labels:
+            description: The Kubernetes labels (key/value pairs
+            required: false
+            policy: ''
+            notes: ''
+        local_ssd_count:
+            description: The amount of local SSD disks that will be
+            required: false
+            policy: ''
+            notes: ''
+        machine_type:
+            description: The name of a Google Compute Engine machine type.
+            required: false
+            policy: ''
+            notes: ''
+        metadata:
+            description: The metadata key/value pairs assigned to instances in
+            required: false
+            policy: ''
+            notes: ''
+        min_cpu_platform:
+            description: Minimum CPU platform to be used by this instance.
+            required: false
+            policy: ''
+            notes: ''
+        preemptible:
+            description: A boolean that represents whether or not the underlying node
+                VMs
+            required: false
+            policy: ''
+            notes: ''
+        sandbox_config:
+            description: '[GKE Sandbox](https://cloud.google.com/kubernetes-engine/docs/how-to/sandbox-pods'
+            required: false
+            policy: ''
+            notes: ''
+        boot_disk_kms_key:
+            description: 'The Customer Managed Encryption Key used to encrypt the
+                boot disk attached to each node in the node pool. This should be of
+                the form projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME].
+                For more information about protecting resources with Cloud KMS Keys
+                please see: https://cloud.google.com/compute/docs/disks/customer-managed-encryption'
+            required: false
+            policy: ''
+            notes: ''
+        shielded_instance_config:
+            description: Shielded Instance options. Structure is documented below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: The list of instance tags applied to all nodes. Tags are
+                used to identify
+            required: false
+            policy: ''
+            notes: ''
+        taint:
+            description: A list of [Kubernetes taints](https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/)
+            required: false
+            policy: ''
+            notes: ''
+        workload_metadata_config:
+            description: Metadata configuration to expose to workloads on the node
+                pool.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: '- The accelerator type resource to expose to this instance.
+                E.g. `nvidia-tesla-k80`.'
+            required: true
+            policy: ''
+            notes: ''
+        count:
+            description: '- The number of the guest accelerator cards exposed to this
+                instance.'
+            required: true
+            policy: ''
+            notes: ''
+        identity_namespace:
+            description: '- Currently, the only supported identity namespace is the
+                project''s default.'
+            required: true
+            policy: ''
+            notes: ''
+        enable_private_nodes:
+            description: '- Enables the private cluster feature,'
+            required: false
+            policy: ''
+            notes: ''
+        enable_private_endpoint:
+            description: '- When `true`, the cluster''s private'
+            required: false
+            policy: ''
+            notes: ''
+        master_ipv4_cidr_block:
+            description: '- The IP range in CIDR notation to use for'
+            required: false
+            policy: ''
+            notes: ''
+        sandbox_type:
+            description: Which sandbox to use for pods in the node pool.
+            required: true
+            policy: ''
+            notes: ''
+        channel:
+            description: The selected release channel.
+            required: true
+            policy: ''
+            notes: ''
+        enable_network_egress_metering:
+            description: '- Whether to enable network egress metering for this cluster.
+                If enabled, a daemonset will be created'
+            required: false
+            policy: ''
+            notes: ''
+        enable_resource_consumption_metering:
+            description: '- Whether to enable resource'
+            required: false
+            policy: ''
+            notes: ''
+        bigquery_destination:
+            description: '- Parameters for using BigQuery as the destination of resource
+                usage export.'
+            required: true
+            policy: ''
+            notes: ''
+        bigquery_destination.dataset_id:
+            description: '- The ID of a BigQuery Dataset. For Example:'
+            required: true
+            policy: ''
+            notes: ''
+        enable_secure_boot:
+            description: '- Defines if the instance has Secure Boot enabled.'
+            required: false
+            policy: ''
+            notes: ''
+        enable_integrity_monitoring:
+            description: '- Defines if the instance has integrity monitoring enabled.'
+            required: false
+            policy: ''
+            notes: ''
+        key:
+            description: Key for taint.
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: Value for taint.
+            required: true
+            policy: ''
+            notes: ''
+        effect:
+            description: Effect for taint. Accepted values are `NO_SCHEDULE`, `PREFER_NO_SCHEDULE`,
+                and `NO_EXECUTE`.
+            required: true
+            policy: ''
+            notes: ''
+        node_metadata:
+            description: How to expose the node metadata to the workload running on
+                the node.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        endpoint:
+            description: The IP address of this cluster's Kubernetes master.
+        instance_group_urls:
+            description: List of instance group URLs which have been assigned
+        label_fingerprint:
+            description: The fingerprint of the set of labels for this cluster.
+        maintenance_policy.0.daily_maintenance_window.0.duration:
+            description: Duration of the time window, automatically chosen to be
+        master_auth.0.client_certificate:
+            description: Base64 encoded public certificate
+        master_auth.0.client_key:
+            description: Base64 encoded private key used by clients
+        master_auth.0.cluster_ca_certificate:
+            description: Base64 encoded public certificate
+        master_version:
+            description: The current version of the master in the cluster. This may
+        tpu_ipv4_cidr_block:
+            description: ([Beta](https://terraform.io/docs/providers/google/guides/provider_versions.html))
+                The IP address range of the Cloud TPUs in this cluster, in
+        services_ipv4_cidr:
+            description: The IP address range of the Kubernetes services in this
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dWRHRnBibVZ5WDJOc2RYTjBaWElpSUNKd2NtbHRZ
+        WEo1SWlCN0NpQWdibUZ0WlNBZ0lDQWdQU0FpYlhrdFoydGxMV05zZFhOMFpYSWlDaUFnYkc5allY
+        UnBiMjRnUFNBaWRYTXRZMlZ1ZEhKaGJERWlDZ29nSUNNZ1YyVWdZMkZ1SjNRZ1kzSmxZWFJsSUdF
+        Z1kyeDFjM1JsY2lCM2FYUm9JRzV2SUc1dlpHVWdjRzl2YkNCa1pXWnBibVZrTENCaWRYUWdkMlVn
+        ZDJGdWRDQjBieUJ2Ym14NUlIVnpaUW9nSUNNZ2MyVndZWEpoZEdWc2VTQnRZVzVoWjJWa0lHNXZa
+        R1VnY0c5dmJITXVJRk52SUhkbElHTnlaV0YwWlNCMGFHVWdjMjFoYkd4bGMzUWdjRzl6YzJsaWJH
+        VWdaR1ZtWVhWc2RBb2dJQ01nYm05a1pTQndiMjlzSUdGdVpDQnBiVzFsWkdsaGRHVnNlU0JrWld4
+        bGRHVWdhWFF1Q2lBZ2NtVnRiM1psWDJSbFptRjFiSFJmYm05a1pWOXdiMjlzSUQwZ2RISjFaUW9n
+        SUdsdWFYUnBZV3hmYm05a1pWOWpiM1Z1ZENBZ0lDQWdJQ0E5SURFS0NpQWdiV0Z6ZEdWeVgyRjFk
+        R2dnZXdvZ0lDQWdkWE5sY201aGJXVWdQU0FpSWdvZ0lDQWdjR0Z6YzNkdmNtUWdQU0FpSWdvS0lD
+        QWdJR05zYVdWdWRGOWpaWEowYVdacFkyRjBaVjlqYjI1bWFXY2dld29nSUNBZ0lDQnBjM04xWlY5
+        amJHbGxiblJmWTJWeWRHbG1hV05oZEdVZ1BTQm1ZV3h6WlFvZ0lDQWdmUW9nSUgwS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbWR2YjJkc1pWOWpiMjUwWVdsdVpYSmZibTlrWlY5d2IyOXNJaUFpY0hKcGJXRnll
+        Vjl3Y21WbGJYQjBhV0pzWlY5dWIyUmxjeUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpYlhrdGJt
+        OWtaUzF3YjI5c0lnb2dJR3h2WTJGMGFXOXVJQ0FnUFNBaWRYTXRZMlZ1ZEhKaGJERWlDaUFnWTJ4
+        MWMzUmxjaUFnSUNBOUlHZHZiMmRzWlY5amIyNTBZV2x1WlhKZlkyeDFjM1JsY2k1d2NtbHRZWEo1
+        TG01aGJXVUtJQ0J1YjJSbFgyTnZkVzUwSUQwZ01Rb0tJQ0J1YjJSbFgyTnZibVpwWnlCN0NpQWdJ
+        Q0J3Y21WbGJYQjBhV0pzWlNBZ1BTQjBjblZsQ2lBZ0lDQnRZV05vYVc1bFgzUjVjR1VnUFNBaWJq
+        RXRjM1JoYm1SaGNtUXRNU0lLQ2lBZ0lDQnRaWFJoWkdGMFlTQTlJSHNLSUNBZ0lDQWdaR2x6WVdK
+        c1pTMXNaV2RoWTNrdFpXNWtjRzlwYm5SeklEMGdJblJ5ZFdVaUNpQWdJQ0I5Q2dvZ0lDQWdiMkYx
+        ZEdoZmMyTnZjR1Z6SUQwZ1d3b2dJQ0FnSUNBaWFIUjBjSE02THk5M2QzY3VaMjl2WjJ4bFlYQnBj
+        eTVqYjIwdllYVjBhQzlzYjJkbmFXNW5MbmR5YVhSbElpd0tJQ0FnSUNBZ0ltaDBkSEJ6T2k4dmQz
+        ZDNMbWR2YjJkc1pXRndhWE11WTI5dEwyRjFkR2d2Ylc5dWFYUnZjbWx1WnlJc0NpQWdJQ0JkQ2lB
+        Z2ZRcDlDZz09
+    import: !!binary |
+        Q2dwSFMwVWdZMngxYzNSbGNuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdj
+        SEp2YW1WamRHQWdMQ0JnYkc5allYUnBiMjVnTENCaGJtUWdZRzVoYldWZ0xpQkpaaUIwYUdVZ2NI
+        SnZhbVZqZENCcGN5QnZiV2wwZEdWa0xDQjBhR1VnWkdWbVlYVnNkQXB3Y205MmFXUmxjaUIyWVd4
+        MVpTQjNhV3hzSUdKbElIVnpaV1F1SUVWNFlXMXdiR1Z6T2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyNTBZV2x1WlhKZlkyeDFjM1JsY2k1b2RHMXNMbTFoY210a2IzZHU=

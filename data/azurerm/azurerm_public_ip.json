@@ -29,9 +29,92 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "allocation_method": {
+                "description": " Defines the allocation method for this IP address. Possible values are `Static` or `Dynamic`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_version": {
+                "description": "The IP Version to use, IPv6 or IPv4.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> **Note** Only `dynamic` IP address allocation is supported for IPv6."
+                ]
+            },
+            "idle_timeout_in_minutes": {
+                "description": "Specifies the timeout for the TCP idle connection. The value can be set between 4 and 30 minutes.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain_name_label": {
+                "description": "Label for the Domain Name. Will be used to make up the FQDN.  If a domain name label is specified, an A DNS record is created for the public IP in the Microsoft Azure DNS system.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "reverse_fqdn": {
+                "description": "A fully qualified domain name that resolves to this public IP address. If the reverseFqdn is specified, then a PTR DNS record is created pointing from the IP address in the in-addr.arpa domain to the reverse FQDN.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_ip_prefix_id": {
+                "description": "If specified then public IP address allocated will be provided from the public IP prefix resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zones": {
+                "description": "A collection containing the availability zone to allocate the Public IP in.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> **Please Note**: Availability Zones are [only supported in several regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)."
+                ]
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The Public IP ID."
+            },
+            "ip_address": {
+                "description": "The IP address value that was allocated."
+            },
+            "fqdn": {
+                "description": "Fully qualified domain name of the A DNS record associated with the public IP. `domain_name_label` must be specified to get the `fqdn`. This is the concatenation of the `domain_name_label` and the regionalized DNS zone"
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Public IP.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Public IP.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Public IP.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Public IP.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

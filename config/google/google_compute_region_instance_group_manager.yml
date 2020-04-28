@@ -73,6 +73,16 @@ google_compute_region_instance_group_manager:
             required: false
             policy: ''
             notes: ''
+        stateful_disk:
+            description: Disks created on the instances that will be preserved on
+                instance delete, update, etc. Structure is documented below. For more
+                information see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/configuring-stateful-disks-in-migs).
+                Proactive cross zone instance redistribution must be disabled before
+                you can update stateful disks on existing instance group managers.
+                This can be controlled via the `update_policy`.
+            required: false
+            policy: ''
+            notes: ''
         minimal_action:
             description: '- Minimal action to be taken on an instance. You can specify
                 either `RESTART` to restart existing instances or `REPLACE` to delete
@@ -140,5 +150,47 @@ google_compute_region_instance_group_manager:
             required: true
             policy: ''
             notes: ''
-    attributes: {}
+        percent:
+            description: which are managed for this version. Conflicts with `fixed`.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        fingerprint:
+            description: The fingerprint of the instance group manager.
+        instance_group:
+            description: The full URL of the instance group created by the manager.
+        self_link:
+            description: The URL of the created resource.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjlvWldGc2RHaGZZMmhsWTJzaUlDSmhk
+        WFJ2YUdWaGJHbHVaeUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWVhWMGIy
+        aGxZV3hwYm1jdGFHVmhiSFJvTFdOb1pXTnJJZ29nSUdOb1pXTnJYMmx1ZEdWeWRtRnNYM05sWXlB
+        Z1BTQTFDaUFnZEdsdFpXOTFkRjl6WldNZ0lDQWdJQ0FnSUNBOUlEVUtJQ0JvWldGc2RHaDVYM1Jv
+        Y21WemFHOXNaQ0FnSUQwZ01nb2dJSFZ1YUdWaGJIUm9lVjkwYUhKbGMyaHZiR1FnUFNBeE1DQWpJ
+        RFV3SUhObFkyOXVaSE1LQ2lBZ2FIUjBjRjlvWldGc2RHaGZZMmhsWTJzZ2V3b2dJQ0FnY21WeGRX
+        VnpkRjl3WVhSb0lEMGdJaTlvWldGc2RHaDZJZ29nSUNBZ2NHOXlkQ0FnSUNBZ0lDQWdJRDBnSWpn
+        d09EQWlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlaMjl2WjJ4bFgyTnZiWEIxZEdWZmNtVm5hVzl1
+        WDJsdWMzUmhibU5sWDJkeWIzVndYMjFoYm1GblpYSWlJQ0poY0hCelpYSjJaWElpSUhzS0lDQnVZ
+        VzFsSUQwZ0ltRndjSE5sY25abGNpMXBaMjBpQ2dvZ0lHSmhjMlZmYVc1emRHRnVZMlZmYm1GdFpT
+        QWdJQ0FnSUNBZ0lEMGdJbUZ3Y0NJS0lDQnlaV2RwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQTlJQ0oxY3kxalpXNTBjbUZzTVNJS0lDQmthWE4wY21saWRYUnBiMjVmY0c5c2FXTjVYM3B2
+        Ym1WeklDQTlJRnNpZFhNdFkyVnVkSEpoYkRFdFlTSXNJQ0oxY3kxalpXNTBjbUZzTVMxbUlsMEtD
+        aUFnZG1WeWMybHZiaUI3Q2lBZ0lDQnBibk4wWVc1alpWOTBaVzF3YkdGMFpTQTlJR2R2YjJkc1pW
+        OWpiMjF3ZFhSbFgybHVjM1JoYm1ObFgzUmxiWEJzWVhSbExtRndjSE5sY25abGNpNXpaV3htWDJ4
+        cGJtc0tJQ0I5Q2dvZ0lIUmhjbWRsZEY5d2IyOXNjeUE5SUZ0bmIyOW5iR1ZmWTI5dGNIVjBaVjkw
+        WVhKblpYUmZjRzl2YkM1aGNIQnpaWEoyWlhJdWMyVnNabDlzYVc1clhRb2dJSFJoY21kbGRGOXph
+        WHBsSUNBOUlESUtDaUFnYm1GdFpXUmZjRzl5ZENCN0NpQWdJQ0J1WVcxbElEMGdJbU4xYzNSdmJT
+        SUtJQ0FnSUhCdmNuUWdQU0E0T0RnNENpQWdmUW9LSUNCaGRYUnZYMmhsWVd4cGJtZGZjRzlzYVdO
+        cFpYTWdld29nSUNBZ2FHVmhiSFJvWDJOb1pXTnJJQ0FnSUNBZ1BTQm5iMjluYkdWZlkyOXRjSFYw
+        WlY5b1pXRnNkR2hmWTJobFkyc3VZWFYwYjJobFlXeHBibWN1YzJWc1psOXNhVzVyQ2lBZ0lDQnBi
+        bWwwYVdGc1gyUmxiR0Y1WDNObFl5QTlJRE13TUFvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwSmJuTjBZVzVqWlNCbmNtOTFjQ0J0WVc1aFoyVnljeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J1WVcxbFlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDNKbFoybHZibDlwYm5OMFlXNWpaVjluY205MWNGOXRZVzVoWjJW
+        eUxtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -20,5 +20,53 @@ azurerm_backup_container_storage_account:
             required: true
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+    attributes:
+        id:
+            description: The ID of the Backup Storage Account Container.
+    timeouts:
+        create:
+            description: Used when creating the Backup Storage Account Container.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Backup Storage Account Container.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Backup Storage Account Container.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Backup Storage Account Container.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKMFptVjRMVzVsZEhkdmNtc3RiV0Z3Y0dsdVp5MXdjbWx0WVhKNUln
+        b2dJR3h2WTJGMGFXOXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhK
+        dFgzSmxZMjkyWlhKNVgzTmxjblpwWTJWelgzWmhkV3gwSWlBaWRtRjFiSFFpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0Y21WamIzWmxjbmt0ZG1GMWJIUWlD
+        aUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZloz
+        SnZkWEF1Y21jdWJHOWpZWFJwYjI0S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNXlaeTV1WVcxbENpQWdjMnQxSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKVGRHRnVaR0Z5WkNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1J2Y21GblpWOWhZMk52ZFc1MElpQWljMkVpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pYTmhJZ29nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRYQXVjbWN1Ykc5allYUnBiMjRL
+        SUNCeVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElDQWdJQ0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFj
+        bU5sWDJkeWIzVndMbkpuTG01aGJXVUtJQ0JoWTJOdmRXNTBYM1JwWlhJZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpVTNSaGJtUmhjbVFpQ2lBZ1lXTmpiM1Z1ZEY5eVpYQnNhV05oZEdsdmJsOTBlWEJsSUQw
+        Z0lreFNVeUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZlltRmphM1Z3WDJOdmJuUmhhVzVs
+        Y2w5emRHOXlZV2RsWDJGalkyOTFiblFpSUNKamIyNTBZV2x1WlhJaUlIc0tJQ0J5WlhOdmRYSmpa
+        VjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzV5Wnk1dVlX
+        MWxDaUFnY21WamIzWmxjbmxmZG1GMWJIUmZibUZ0WlNBOUlHRjZkWEpsY20xZmNtVmpiM1psY25s
+        ZmMyVnlkbWxqWlhOZmRtRjFiSFF1ZG1GMWJIUXVibUZ0WlFvZ0lITjBiM0poWjJWZllXTmpiM1Z1
+        ZEY5cFpDQWdQU0JoZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRDNXpZUzVwWkFwOUNnPT0=
+    import: !!binary |
+        Q2dwQ1lXTnJkWEFnVTNSdmNtRm5aU0JCWTJOdmRXNTBJRU52Ym5SaGFXNWxjbk1nWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRmphM1Z3WDJOdmJuUmhhVzVsY2w5emRHOXlZV2RsWDJGalkyOTFiblF1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

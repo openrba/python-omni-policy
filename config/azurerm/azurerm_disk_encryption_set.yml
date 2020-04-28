@@ -29,5 +29,85 @@ azurerm_disk_encryption_set:
             required: true
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        identity:
+            description: A `identity` block defined below.
+            required: true
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the Disk Encryption Set.
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: The Type of Identity which should be used for this Disk Encryption
+                Set. At this time the only possible value is `SystemAssigned`.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Disk Encryption Set.
+        principal_id:
+            description: The (Client) ID of the Service Principal.
+        tenant_id:
+            description: The ID of the Tenant the Service Principal is assigned in.
+    timeouts:
+        create:
+            description: Used when creating the Disk Encryption Set.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Disk Encryption Set.
+            required: false
+            timeout: 60
+        read:
+            description: Used when retrieving the Disk Encryption Set.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Disk Encryption Set.
+            required: false
+            timeout: 60
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS1pHRjBZ
+        U0FpWVhwMWNtVnliVjlqYkdsbGJuUmZZMjl1Wm1sbklpQWlZM1Z5Y21WdWRDSWdlMzBLQ25KbGMy
+        OTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNaU0lnZXdv
+        Z0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlkyRjBhVzl1
+        SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5clpYbGZk
+        bUYxYkhRaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SmtaWE10WlhoaGJYQnNaUzFyWlhsMllYVnNkQ0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1
+        Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZa
+        M0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxDaUFnZEdWdVlXNTBYMmxrSUNBZ0lDQWdJQ0FnSUNBOUlH
+        UmhkR0V1WVhwMWNtVnliVjlqYkdsbGJuUmZZMjl1Wm1sbkxtTjFjbkpsYm5RdWRHVnVZVzUwWDJs
+        a0NpQWdjMnQxWDI1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKd2NtVnRhWFZ0SWdvS0lDQmhZMk5s
+        YzNOZmNHOXNhV041SUhzS0lDQWdJSFJsYm1GdWRGOXBaQ0E5SUdSaGRHRXVZWHAxY21WeWJWOWpi
+        R2xsYm5SZlkyOXVabWxuTG1OMWNuSmxiblF1ZEdWdVlXNTBYMmxrQ2lBZ0lDQnZZbXBsWTNSZmFX
+        UWdQU0JrWVhSaExtRjZkWEpsY20xZlkyeHBaVzUwWDJOdmJtWnBaeTVqZFhKeVpXNTBMbTlpYW1W
+        amRGOXBaQW9LSUNBZ0lHdGxlVjl3WlhKdGFYTnphVzl1Y3lBOUlGc0tJQ0FnSUNBZ0ltTnlaV0Yw
+        WlNJc0NpQWdJQ0FnSUNKblpYUWlMQW9nSUNBZ0lDQWlaR1ZzWlhSbElpd0tJQ0FnSUNBZ0lteHBj
+        M1FpTEFvZ0lDQWdJQ0FpZDNKaGNHdGxlU0lzQ2lBZ0lDQWdJQ0oxYm5keVlYQnJaWGtpTEFvZ0lD
+        QWdJQ0FpWjJWMElpd0tJQ0FnSUYwS0NpQWdJQ0J6WldOeVpYUmZjR1Z5YldsemMybHZibk1nUFNC
+        YkNpQWdJQ0FnSUNKblpYUWlMQW9nSUNBZ0lDQWlaR1ZzWlhSbElpd0tJQ0FnSUNBZ0luTmxkQ0lz
+        Q2lBZ0lDQmRDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWHAxY21WeWJWOXJaWGxmZG1GMWJIUmZh
+        MlY1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBOUlDSmtaWE10WlhoaGJY
+        QnNaUzFyWlhraUNpQWdhMlY1WDNaaGRXeDBYMmxrSUQwZ1lYcDFjbVZ5YlY5clpYbGZkbUYxYkhR
+        dVpYaGhiWEJzWlM1cFpBb2dJR3RsZVY5MGVYQmxJQ0FnSUNBOUlDSlNVMEVpQ2lBZ2EyVjVYM05w
+        ZW1VZ0lDQWdJRDBnTWpBME9Bb0tJQ0JyWlhsZmIzQjBjeUE5SUZzS0lDQWdJQ0prWldOeWVYQjBJ
+        aXdLSUNBZ0lDSmxibU55ZVhCMElpd0tJQ0FnSUNKemFXZHVJaXdLSUNBZ0lDSjFibmR5WVhCTFpY
+        a2lMQW9nSUNBZ0luWmxjbWxtZVNJc0NpQWdJQ0FpZDNKaGNFdGxlU0lzQ2lBZ1hRcDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhwMWNtVnliVjlrYVhOclgyVnVZM0o1Y0hScGIyNWZjMlYwSWlBaVpYaGhiWEJz
+        WlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpHVnpJZ29nSUhKbGMyOTFj
+        bU5sWDJkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlX
+        MXdiR1V1Ym1GdFpRb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNK
+        bGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0JyWlhsZmRtRjFiSFJm
+        YTJWNVgybGtJQ0FnSUQwZ1lYcDFjbVZ5YlY5clpYbGZkbUYxYkhSZmEyVjVMbVY0WVcxd2JHVXVh
+        V1FLZlFvPQ==
+    import: !!binary |
+        Q2dwRWFYTnJJRVZ1WTNKNWNIUnBiMjRnVTJWMGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnlaWE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHbHphMTlsYm1OeWVYQjBhVzl1WDNObGRDNW9kRzFzTG0xaGNtdGtiM2R1

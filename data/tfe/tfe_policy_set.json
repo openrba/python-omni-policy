@@ -53,9 +53,37 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "identifier": {
+                "description": "A reference to your VCS repository in the format",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "branch": {
+                "description": "The repository branch that Terraform will execute from.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ingress_submodules": {
+                "description": "Whether submodules should be fetched when",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "oauth_token_id": {
+                "description": "Token ID of the VCS Connection (OAuth Conection Token)",
+                "required": true,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The ID of the policy set."
+            }
+        },
         "timeouts": {}
     }
 }

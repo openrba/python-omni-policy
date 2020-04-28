@@ -24,5 +24,133 @@ azurerm_spring_cloud_service:
             required: true
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        config_server_git_setting:
+            description: A `config_server_git_setting` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        uri:
+            description: The URI of the Git repository that's used as the Config Server
+                back end should be started with `http://`, `https://`, `git@`, or
+                `ssh://`.
+            required: true
+            policy: ''
+            notes: ''
+        label:
+            description: The default label of the Git repository, should be the branch
+                name, tag name, or commit-id of the repository.
+            required: false
+            policy: ''
+            notes: ''
+        search_paths:
+            description: An array of strings used to search subdirectories of the
+                Git repository.
+            required: false
+            policy: ''
+            notes: ''
+        http_basic_auth:
+            description: A `http_basic_auth` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        ssh_auth:
+            description: A `ssh_auth` block as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        repository:
+            description: One or more `repository` blocks as defined below.
+            required: false
+            policy: ''
+            notes: ''
+        pattern:
+            description: An array of strings used to match an application name. For
+                each pattern, use the `{application}/{profile}` format with wildcards.
+            required: false
+            policy: ''
+            notes: ''
+        username:
+            description: The username that's used to access the Git repository server,
+                required when the Git repository server supports Http Basic Authentication.
+            required: true
+            policy: ''
+            notes: ''
+        password:
+            description: The password used to access the Git repository server, required
+                when the Git repository server supports Http Basic Authentication.
+            required: true
+            policy: ''
+            notes: ''
+        private_key:
+            description: The SSH private key to access the Git repository, required
+                when the URI starts with `git@` or `ssh://`.
+            required: true
+            policy: ''
+            notes: ''
+        host_key:
+            description: The host key of the Git repository server, should not include
+                the algorithm prefix as covered by `host-key-algorithm`.
+            required: false
+            policy: ''
+            notes: ''
+        host_key_algorithm:
+            description: The host key algorithm, should be `ssh-dss`, `ssh-rsa`, `ecdsa-sha2-nistp256`,
+                `ecdsa-sha2-nistp384`, or `ecdsa-sha2-nistp521`. Required only if
+                `host-key` exists.
+            required: false
+            policy: ''
+            notes: ''
+        strict_host_key_checking_enabled:
+            description: Indicates whether the Config Server instance will fail to
+                start if the host_key does not match.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Spring Cloud Service.
+    timeouts:
+        create:
+            description: Used when creating the Spring Cloud Service.
+            required: false
+            timeout: 60
+        update:
+            description: Used when updating the Spring Cloud Service.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Spring Cloud Service.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Spring Cloud Service.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WlhOdmRYSmpaWE1pQ2lBZ2JHOWpZWFJwYjI0
+        Z1BTQWlVMjkxZEdobFlYTjBJRUZ6YVdFaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM053
+        Y21sdVoxOWpiRzkxWkY5elpYSjJhV05sSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlMxemNISnBibWRqYkc5MVpDSUtJQ0J5WlhOdmRY
+        SmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdG
+        dGNHeGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5
+        WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNnb2dJR052Ym1acFoxOXpa
+        WEoyWlhKZloybDBYM05sZEhScGJtY2dld29nSUNBZ2RYSnBJQ0FnSUNBZ0lDQWdJRDBnSW1oMGRI
+        QnpPaTh2WjJsMGFIVmlMbU52YlM5QmVuVnlaUzFUWVcxd2JHVnpMM0JwWjJkNWJXVjBjbWxqY3lJ
+        S0lDQWdJR3hoWW1Wc0lDQWdJQ0FnSUNBOUlDSmpiMjVtYVdjaUNpQWdJQ0J6WldGeVkyaGZjR0Yw
+        YUhNZ1BTQmJJbVJwY2pFaUxDQWlaR2x5TWlKZENpQWdmUW9LSUNCMFlXZHpJRDBnZXdvZ0lDQWdS
+        VzUySUQwZ0luTjBZV2RwYm1jaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwVGNISnBibWNnUTJ4dmRXUWdjMlZ5ZG1salpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzQnlhVzVuWDJOc2IzVmtYM05sY25acFkyVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

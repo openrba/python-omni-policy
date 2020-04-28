@@ -29,9 +29,58 @@
                 "required": true,
                 "policy": "",
                 "notes": ""
+            },
+            "identity": {
+                "description": "A `identity` block defined below.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the Disk Encryption Set.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "type": {
+                "description": "The Type of Identity which should be used for this Disk Encryption Set. At this time the only possible value is `SystemAssigned`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Disk Encryption Set."
+            },
+            "principal_id": {
+                "description": "The (Client) ID of the Service Principal."
+            },
+            "tenant_id": {
+                "description": "The ID of the Tenant the Service Principal is assigned in."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Disk Encryption Set.",
+                "required": false,
+                "timeout": 60
+            },
+            "update": {
+                "description": "Used when updating the Disk Encryption Set.",
+                "required": false,
+                "timeout": 60
+            },
+            "read": {
+                "description": "Used when retrieving the Disk Encryption Set.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Disk Encryption Set.",
+                "required": false,
+                "timeout": 60
+            }
+        }
     }
 }

@@ -24,5 +24,89 @@ azurerm_backup_protected_file_share:
             required: true
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        source_file_share_name:
+            description: Specifies the name of the file share to backup. Changing
+                this forces a new resource to be created.
+            required: true
+            policy: ''
+            notes: ''
+        backup_policy_id:
+            description: Specifies the ID of the backup policy to use. The policy
+                must be an Azure File Share backup policy. Other types are not supported.
+            required: true
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The ID of the Backup File Share.
+    timeouts:
+        create:
+            description: Used when creating the Backup File Share.
+            required: false
+            timeout: 80
+        update:
+            description: Used when updating the Backup File Share.
+            required: false
+            timeout: 80
+        read:
+            description: Used when retrieving the Backup File Share.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Backup File Share.
+            required: false
+            timeout: 80
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpY21jaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0E5SUNKMFptVjRMWEpsWTI5MlpYSjVYM1poZFd4MElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdWVk1pQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzSmxZMjkyWlhK
+        NVgzTmxjblpwWTJWelgzWmhkV3gwSWlBaWRtRjFiSFFpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW5SbVpYZ3RjbVZqYjNabGNua3RkbUYxYkhRaUNpQWdiRzlqWVhScGIyNGdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNJa2UyRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1Y21jdWJH
+        OWpZWFJwYjI1OUlnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNBaUpIdGhlblZ5WlhK
+        dFgzSmxjMjkxY21ObFgyZHliM1Z3TG5KbkxtNWhiV1Y5SWdvZ0lITnJkU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpVTNSaGJtUmhjbVFpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjBi
+        M0poWjJWZllXTmpiM1Z1ZENJZ0luTmhJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUQwZ0ltVjRZVzF3YkdWellTSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0FpSkh0aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbkpuTG14dlkyRjBhVzl1
+        ZlNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJQ0FnSUNBZ1BTQWlKSHRoZW5WeVpYSnRY
+        M0psYzI5MWNtTmxYMmR5YjNWd0xuSm5MbTVoYldWOUlnb2dJR0ZqWTI5MWJuUmZkR2xsY2lBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0pUZEdGdVpHRnlaQ0lLSUNCaFkyTnZkVzUwWDNKbGNHeHBZMkYwYVc5
+        dVgzUjVjR1VnUFNBaVRGSlRJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5emRHOXlZV2Rs
+        WDNOb1lYSmxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnSW1WNFlXMXdiR1V0YzJoaGNtVWlDaUFnYzNSdmNtRm5aVjloWTJOdmRXNTBYMjVoYldVZ1BT
+        QWlKSHRoZW5WeVpYSnRYM04wYjNKaFoyVmZZV05qYjNWdWRDNXpZUzV1WVcxbGZTSUtmUW9LY21W
+        emIzVnlZMlVnSW1GNmRYSmxjbTFmWW1GamEzVndYMk52Ym5SaGFXNWxjbDl6ZEc5eVlXZGxYMkZq
+        WTI5MWJuUWlJQ0p3Y205MFpXTjBhVzl1TFdOdmJuUmhhVzVsY2lJZ2V3b2dJSEpsYzI5MWNtTmxY
+        MmR5YjNWd1gyNWhiV1VnUFNBaUpIdGhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG5Kbkxt
+        NWhiV1Y5SWdvZ0lISmxZMjkyWlhKNVgzWmhkV3gwWDI1aGJXVWdQU0FpSkh0aGVuVnlaWEp0WDNK
+        bFkyOTJaWEo1WDNObGNuWnBZMlZ6WDNaaGRXeDBMblpoZFd4MExtNWhiV1Y5SWdvZ0lITjBiM0po
+        WjJWZllXTmpiM1Z1ZEY5cFpDQWdQU0FpSkh0aGVuVnlaWEp0WDNOMGIzSmhaMlZmWVdOamIzVnVk
+        QzV6WVM1cFpIMGlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJKaFkydDFjRjl3YjJ4cFkz
+        bGZabWxzWlY5emFHRnlaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSW5SbVpYZ3RjbVZqYjNabGNua3RkbUYxYkhRdGNHOXNhV041SWdvZ0lISmxjMjkx
+        Y21ObFgyZHliM1Z3WDI1aGJXVWdQU0FpSkh0aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndM
+        bkpuTG01aGJXVjlJZ29nSUhKbFkyOTJaWEo1WDNaaGRXeDBYMjVoYldVZ1BTQWlKSHRoZW5WeVpY
+        SnRYM0psWTI5MlpYSjVYM05sY25acFkyVnpYM1poZFd4MExuWmhkV3gwTG01aGJXVjlJZ29LSUNC
+        aVlXTnJkWEFnZXdvZ0lDQWdabkpsY1hWbGJtTjVJRDBnSWtSaGFXeDVJZ29nSUNBZ2RHbHRaU0Fn
+        SUNBZ0lEMGdJakl6T2pBd0lnb2dJSDBLSUNBS0lDQnlaWFJsYm5ScGIyNWZaR0ZwYkhrZ2V3b2dJ
+        Q0FnWTI5MWJuUWdQU0F4TUFvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmWW1GamEz
+        VndYM0J5YjNSbFkzUmxaRjltYVd4bFgzTm9ZWEpsSWlBaWMyaGhjbVV4SWlCN0NpQWdjbVZ6YjNW
+        eVkyVmZaM0p2ZFhCZmJtRnRaU0FnSUNBZ0lDQTlJQ0lrZTJGNmRYSmxjbTFmY21WemIzVnlZMlZm
+        WjNKdmRYQXVjbWN1Ym1GdFpYMGlDaUFnY21WamIzWmxjbmxmZG1GMWJIUmZibUZ0WlNBZ0lDQWdJ
+        Q0E5SUNJa2UyRjZkWEpsY20xZmNtVmpiM1psY25sZmMyVnlkbWxqWlhOZmRtRjFiSFF1ZG1GMWJI
+        UXVibUZ0WlgwaUNpQWdjMjkxY21ObFgzTjBiM0poWjJWZllXTmpiM1Z1ZEY5cFpDQTlJQ0lrZTJG
+        NmRYSmxjbTFmWW1GamEzVndYMk52Ym5SaGFXNWxjbDl6ZEc5eVlXZGxYMkZqWTI5MWJuUXVjSEp2
+        ZEdWamRHbHZiaTFqYjI1MFlXbHVaWEl1YzNSdmNtRm5aVjloWTJOdmRXNTBYMmxrZlNJS0lDQnpi
+        M1Z5WTJWZlptbHNaVjl6YUdGeVpWOXVZVzFsSUNBZ0lEMGdJaVI3WVhwMWNtVnliVjl6ZEc5eVlX
+        ZGxYM05vWVhKbExtVjRZVzF3YkdVdWJtRnRaWDBpQ2lBZ1ltRmphM1Z3WDNCdmJHbGplVjlwWkNB
+        Z0lDQWdJQ0FnSUNBOUlDSWtlMkY2ZFhKbGNtMWZZbUZqYTNWd1gzQnZiR2xqZVY5bWFXeGxYM05v
+        WVhKbExtVjRZVzF3YkdVdWFXUjlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwQmVuVnlaU0JDWVdOcmRYQWdVSEp2ZEdWamRHVmtJRVpwYkdVZ1UyaGhjbVZ6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlltRmphM1Z3WDNCeWIzUmxZM1JsWkY5bWFXeGxYM05vWVhKbExtMWhjbXRrYjNk
+        dQ==

@@ -107,9 +107,452 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "do_not_run_extensions_on_overprovisioned_machines": {
+                "description": "Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "eviction_policy": {
+                "description": "The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " This can only be configured when `priority` is set to `Spot`."
+                ]
+            },
+            "health_probe_id": {
+                "description": "The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "identity": {
+                "description": "A `identity` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_bid_price": {
+                "description": "The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in this Scale Set should not be evicted for price reasons.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " This can only be configured when `priority` is set to `Spot`."
+                ]
+            },
+            "overprovision": {
+                "description": "Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "priority": {
+                "description": "The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " When `priority` is set to `Spot` an `eviction_policy` must be specified."
+                ]
+            },
+            "provision_vm_agent": {
+                "description": "Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "proximity_placement_group_id": {
+                "description": "The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "rolling_upgrade_policy": {
+                "description": "A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scale_in_policy": {
+                "description": "The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "secret": {
+                "description": "One or more `secret` blocks as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "single_placement_group": {
+                "description": "Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "source_image_id": {
+                "description": "The ID of an Image which each Virtual Machine in this Scale Set should be based on.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " One of either `source_image_id` or `source_image_reference` must be set."
+                ]
+            },
+            "source_image_reference": {
+                "description": "A `source_image_reference` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " One of either `source_image_id` or `source_image_reference` must be set."
+                ]
+            },
+            "tags": {
+                "description": "A mapping of tags which should be assigned to this Virtual Machine Scale Set.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "terminate_notification": {
+                "description": "A `terminate_notification` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "upgrade_mode": {
+                "description": "Specifies how Upgrades (e.g. changing the Image/SKU",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "zone_balance": {
+                "description": "Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " This can only be set to `true` when one or more `zones` are configured."
+                ]
+            },
+            "zones": {
+                "description": "A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ultra_ssd_enabled": {
+                "description": "Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_key": {
+                "description": "The Public Key which should be used for authentication, which needs to be at least 2048-bit and in `ssh-rsa` format.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "username": {
+                "description": "The Username for which this Public SSH Key should be configured.",
+                "required": true,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " The Azure VM Agent only allows creating SSH Keys at the path `/home/{username}/.ssh/authorized_keys` - as such this public key will be added/appended to the authorized keys file."
+                ]
+            },
+            "disable_automatic_rollback": {
+                "description": "Should automatic rollbacks be disabled? Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_automatic_os_upgrade": {
+                "description": "Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "enabled": {
+                "description": "Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "grace_period": {
+                "description": "Amount of time (in minutes, between 30 and 90, defaults to 30 minutes",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_uri": {
+                "description": "The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "url": {
+                "description": "The Secret URL of a Key Vault Certificate.",
+                "required": true,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate` Resource."
+                ]
+            },
+            "caching": {
+                "description": "The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_size_gb": {
+                "description": "The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " If specified this must be equal to or larger than the size of the Image the VM Scale Set is based on. When creating a larger disk than exists in the image you'll need to repartition the disk to use the remaining space."
+                ]
+            },
+            "lun": {
+                "description": "The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_account_type": {
+                "description": "The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "disk_encryption_set_id": {
+                "description": "The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " The Disk Encryption Set must have the `Reader` Role Assignment scoped on the Key Vault - in addition to an Access Policy to the Key Vault"
+                ]
+            },
+            "write_accelerator_enabled": {
+                "description": "Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " This requires that the `storage_account_type` is set to `Premium_LRS` and that `caching` is set to `None`."
+                ]
+            },
+            "type": {
+                "description": "The type of Managed Identity which should be assigned to the Linux Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "identity_ids": {
+                "description": "A list of User Managed Identity ID's which should be assigned to the Linux Virtual Machine Scale Set.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "application_gateway_backend_address_pool_ids": {
+                "description": "A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "application_security_group_ids": {
+                "description": "A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "load_balancer_backend_address_pool_ids": {
+                "description": "A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " When using this field you'll also need to configure a Rule for the Load Balancer, and use a `depends_on` between this resource and the Load Balancer Rule."
+                ]
+            },
+            "load_balancer_inbound_nat_rules_ids": {
+                "description": "A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " When using this field you'll also need to configure a Rule for the Load Balancer, and use a `depends_on` between this resource and the Load Balancer Rule."
+                ]
+            },
+            "primary": {
+                "description": "Is this the Primary IP Configuration?",
+                "required": false,
+                "policy": "",
+                "notes": [
+                    "-> ",
+                    " If multiple `network_interface` blocks are specified, one must be set to `primary`."
+                ]
+            },
+            "public_ip_address": {
+                "description": "A `public_ip_address` block as defined below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "subnet_id": {
+                "description": "The ID of the Subnet which this IP Configuration should be connected to.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "version": {
+                "description": "The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_configuration": {
+                "description": "One or more `ip_configuration` blocks as defined above.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_servers": {
+                "description": "A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_accelerated_networking": {
+                "description": "Does this Network Interface support Accelerated Networking? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "enable_ip_forwarding": {
+                "description": "Does this Network Interface support IP Forwarding? Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_security_group_id": {
+                "description": "The ID of a Network Security Group which should be assigned to this Network Interface.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "diff_disk_settings": {
+                "description": "A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "domain_name_label": {
+                "description": "The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "idle_timeout_in_minutes": {
+                "description": "The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "ip_tag": {
+                "description": "One or more `ip_tag` blocks as defined above.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public_ip_prefix_id": {
+                "description": "The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "max_batch_instance_percent": {
+                "description": "The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_unhealthy_instance_percent": {
+                "description": "The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "max_unhealthy_upgraded_instance_percent": {
+                "description": "The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "pause_time_between_batches": {
+                "description": "The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "certificate": {
+                "description": "One or more `certificate` blocks as defined above.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "key_vault_id": {
+                "description": "The ID of the Key Vault from which all Secrets should be sourced.",
+                "required": true,
+                "policy": "",
+                "notes": ""
+            },
+            "timeout": {
+                "description": "Length of time (in minutes, between 5 and 15",
+                "required": false,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Linux Virtual Machine Scale Set."
+            },
+            "identity": {
+                "description": "An `identity` block as defined below."
+            },
+            "unique_id": {
+                "description": "The Unique ID for this Linux Virtual Machine Scale Set."
+            },
+            "principal_id": {
+                "description": "The ID of the System Managed Service Principal."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Linux Virtual Machine Scale Set.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating (and rolling the instances of",
+                "required": false,
+                "timeout": 60
+            },
+            "delete": {
+                "description": "Used when deleting the Linux Virtual Machine Scale Set.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

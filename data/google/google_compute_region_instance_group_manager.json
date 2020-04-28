@@ -85,6 +85,12 @@
                 "policy": "",
                 "notes": ""
             },
+            "stateful_disk": {
+                "description": "Disks created on the instances that will be preserved on instance delete, update, etc. Structure is documented below. For more information see the [official documentation](https://cloud.google.com/compute/docs/instance-groups/configuring-stateful-disks-in-migs). Proactive cross zone instance redistribution must be disabled before you can update stateful disks on existing instance group managers. This can be controlled via the `update_policy`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
             "minimal_action": {
                 "description": "- Minimal action to be taken on an instance. You can specify either `RESTART` to restart existing instances or `REPLACE` to delete and create new instances from the target template. If you specify a `RESTART`, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.",
                 "required": true,
@@ -138,9 +144,25 @@
                 "required": true,
                 "policy": "",
                 "notes": ""
+            },
+            "percent": {
+                "description": "which are managed for this version. Conflicts with `fixed`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "fingerprint": {
+                "description": "The fingerprint of the instance group manager."
+            },
+            "instance_group": {
+                "description": "The full URL of the instance group created by the manager."
+            },
+            "self_link": {
+                "description": "The URL of the created resource."
+            }
+        },
         "timeouts": {}
     }
 }

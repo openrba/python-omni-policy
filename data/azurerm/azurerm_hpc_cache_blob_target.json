@@ -37,7 +37,32 @@
                 "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the HPC Cache Blob Target."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the HPC Cache Blob Target.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the HPC Cache Blob Target.",
+                "required": false,
+                "timeout": 5
+            },
+            "update": {
+                "description": "Used when updating the HPC Cache Blob Target.",
+                "required": false,
+                "timeout": 30
+            },
+            "delete": {
+                "description": "Used when deleting the HPC Cache Blob Target.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

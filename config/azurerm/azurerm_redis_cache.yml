@@ -92,5 +92,111 @@ azurerm_redis_cache:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+        enable_authentication:
+            description: If set to `false`, the Redis instance will be accessible
+                without authentication. Defaults to `true`.
+            required: false
+            policy: ''
+            notes:
+            - '-> '
+            - ' `enable_authentication` can only be set to `false` if a `subnet_id`
+                is specified; and only works if there aren''t existing instances within
+                the subnet with `enable_authentication` set to `true`.'
+        maxmemory_reserved:
+            description: Value in megabytes reserved for non-cache usage e.g. failover.
+                Defaults are shown below.
+            required: false
+            policy: ''
+            notes: ''
+        maxmemory_delta:
+            description: The max-memory delta for this Redis instance. Defaults are
+                shown below.
+            required: false
+            policy: ''
+            notes: ''
+        maxmemory_policy:
+            description: How Redis will select what to remove when `maxmemory` is
+                reached. Defaults are shown below.
+            required: false
+            policy: ''
+            notes: ''
+        maxfragmentationmemory_reserved:
+            description: Value in megabytes reserved to accommodate for memory fragmentation.
+                Defaults are shown below.
+            required: false
+            policy: ''
+            notes: ''
+        rdb_backup_enabled:
+            description: Is Backup Enabled? Only supported on Premium SKU's.
+            required: false
+            policy: ''
+            notes: ''
+        rdb_backup_frequency:
+            description: 'The Backup Frequency in Minutes. Only supported on Premium
+                SKU''s. Possible values are: `15`, `30`, `60`, `360`, `720` and `1440`.'
+            required: false
+            policy: ''
+            notes: ''
+        rdb_backup_max_snapshot_count:
+            description: The maximum number of snapshots to create as a backup. Only
+                supported for Premium SKU's.
+            required: false
+            policy: ''
+            notes: ''
+        rdb_storage_connection_string:
+            description: 'The Connection String to the Storage Account. Only supported
+                for Premium SKU''s. In the format: `DefaultEndpointsProtocol=https;BlobEndpoint=${azurerm_storage_account.example.primary_blob_endpoint};AccountName=${azurerm_storage_account.example.name};AccountKey=${azurerm_storage_account.example.primary_access_key}`.'
+            required: false
+            policy: ''
+            notes: ''
+        notify_keyspace_events:
+            description: Keyspace notifications allows clients to subscribe to Pub/Sub
+                channels in order to receive events affecting the Redis data set in
+                some way. [Reference](https://redis.io/topics/notifications#configuration)
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        id:
+            description: The Route ID.
+        hostname:
+            description: The Hostname of the Redis Instance
+        ssl_port:
+            description: The SSL Port of the Redis Instance
+        port:
+            description: The non-SSL Port of the Redis Instance
+        primary_access_key:
+            description: The Primary Access Key for the Redis Instance
+        secondary_access_key:
+            description: The Secondary Access Key for the Redis Instance
+        primary_connection_string:
+            description: The primary connection string of the Redis Instance.
+        secondary_connection_string:
+            description: The secondary connection string of the Redis Instance.
+        redis_configuration:
+            description: 'A `redis_configuration` block as defined below:'
+        maxclients:
+            description: Returns the max number of connected clients at the same time.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lsZGxjM1FnUlhWeWIzQmxJZ3A5Q2dvaklFNVBWRVU2SUhSb1pTQk9ZVzFsSUhW
+        elpXUWdabTl5SUZKbFpHbHpJRzVsWldSeklIUnZJR0psSUdkc2IySmhiR3g1SUhWdWFYRjFaUXB5
+        WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WldScGMxOWpZV05vWlNJZ0ltVjRZVzF3YkdVaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdFkyRmphR1VpQ2lBZ2JH
+        OWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhB
+        dVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJXVWdQU0Jo
+        ZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdOaGNHRmph
+        WFI1SUNBZ0lDQWdJQ0FnSUNBZ1BTQXlDaUFnWm1GdGFXeDVJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SkRJZ29nSUhOcmRWOXVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlVM1JoYm1SaGNtUWlDaUFnWlc1
+        aFlteGxYMjV2Ymw5emMyeGZjRzl5ZENBOUlHWmhiSE5sQ2lBZ2JXbHVhVzExYlY5MGJITmZkbVZ5
+        YzJsdmJpQTlJQ0l4TGpJaUNnb2dJSEpsWkdselgyTnZibVpwWjNWeVlYUnBiMjRnZXdvZ0lIMEtm
+        UW89
+    import: !!binary |
+        Q2dwU1pXUnBjeUJEWVdOb1pTZHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtVmthWE5mWTJGamFHVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

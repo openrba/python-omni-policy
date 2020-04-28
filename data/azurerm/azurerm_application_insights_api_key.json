@@ -31,7 +31,35 @@
                 "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the Application Insights API key."
+            },
+            "api_key": {
+                "description": "The API Key secret (Sensitive)."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Application Insights API Key.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Application Insights API Key.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Application Insights API Key.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Application Insights API Key.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

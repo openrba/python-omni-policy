@@ -90,6 +90,12 @@
                 "required": false,
                 "policy": "",
                 "notes": ""
+            },
+            "additional_experiments": {
+                "description": "List of experiments that should be used by the job. An example value is `[\"enable_stackdriver_agent_metrics\"]`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
             }
         },
         "attributes": {

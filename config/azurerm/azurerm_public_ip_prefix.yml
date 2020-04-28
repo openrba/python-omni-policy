@@ -30,5 +30,64 @@ azurerm_public_ip_prefix:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+        prefix_length:
+            description: Specifies the number of bits of the prefix. The value can
+                be set between 0 (4,294,967,296 addresses
+            required: false
+            policy: ''
+            notes:
+            - '-> **Please Note**: There may be Public IP address limits on the subscription
+                . [More information available here](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#publicip-address)'
+        tags:
+            description: A mapping of tags to assign to the resource.
+            required: false
+            policy: ''
+            notes: ''
+        zones:
+            description: A collection containing the availability zone to allocate
+                the Public IP Prefix in.
+            required: false
+            policy: ''
+            notes:
+            - '-> **Please Note**: Availability Zones are [only supported in several
+                regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview).'
+    attributes:
+        id:
+            description: The Public IP Prefix ID.
+        ip_prefix:
+            description: The IP address prefix value that was allocated.
+    timeouts:
+        create:
+            description: Used when creating the Public IP Prefix.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Public IP Prefix.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Public IP Prefix.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Public IP Prefix.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbkpsYzI5MWNtTmxSM0p2ZFhBeElnb2dJR3h2WTJGMGFX
+        OXVJRDBnSWxkbGMzUWdSWFZ5YjNCbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl3ZFdK
+        c2FXTmZhWEJmY0hKbFptbDRJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpWVdOalpYQjBZVzVqWlZSbGMzUlFkV0pzYVdOSmNGQnlaV1pwZURFaUNpQWdi
+        RzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmY21WemIzVnlZMlZmWjNKdmRY
+        QXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnUFNC
+        aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvS0lDQndjbVZt
+        YVhoZmJHVnVaM1JvSUQwZ016RUtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lHVnVkbWx5YjI1dFpXNTBJ
+        RDBnSWxCeWIyUjFZM1JwYjI0aUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwUWRXSnNhV01nU1ZBZ1VISmxabWw0WlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNIVmliR2xqWDJsd1gzQnlaV1pwZUM1b2RHMXNMbTFoY210a2IzZHU=

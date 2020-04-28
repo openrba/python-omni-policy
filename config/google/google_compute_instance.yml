@@ -86,5 +86,288 @@ google_compute_instance:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+        metadata_startup_script:
+            description: An alternative to using the
+            required: false
+            policy: ''
+            notes: ''
+        min_cpu_platform:
+            description: Specifies a minimum CPU platform for the VM instance. Applicable
+                values are the friendly names of CPU platforms, such as
+            required: false
+            policy: ''
+            notes: ''
+        project:
+            description: The ID of the project in which the resource belongs. If it
+            required: false
+            policy: ''
+            notes: ''
+        scheduling:
+            description: The scheduling strategy to use. More details about
+            required: false
+            policy: ''
+            notes: ''
+        scratch_disk:
+            description: Scratch disks to attach to the instance. This can be
+            required: false
+            policy: ''
+            notes: ''
+        service_account:
+            description: Service account to attach to the instance.
+            required: false
+            policy: ''
+            notes: ''
+        tags:
+            description: A list of tags to attach to the instance.
+            required: false
+            policy: ''
+            notes: ''
+        shielded_instance_config:
+            description: Enable [Shielded VM](https://cloud.google.com/security/shielded-cloud/shielded-vm
+            required: false
+            policy: ''
+            notes: ''
+        enable_display:
+            description: Enable [Virtual Displays](https://cloud.google.com/compute/docs/instances/enable-instance-virtual-display#verify_display_driver
+            required: false
+            policy: ''
+            notes: ''
+        resource_policies:
+            description: -- A list of short names or self_links of resource policies
+                to attach to the instance. Modifying this list will cause the instance
+                to recreate. Currently a max of 1 resource policy is supported.
+            required: false
+            policy: ''
+            notes: ''
+        auto_delete:
+            description: Whether the disk will be auto-deleted when the instance
+            required: false
+            policy: ''
+            notes: ''
+        device_name:
+            description: Name with which the attached disk will be accessible
+            required: false
+            policy: ''
+            notes: ''
+        mode:
+            description: Either "READ_ONLY" or "READ_WRITE", defaults to "READ_WRITE"
+            required: false
+            policy: ''
+            notes: ''
+        disk_encryption_key_raw:
+            description: A 256-bit [customer-supplied encryption key]
+            required: false
+            policy: ''
+            notes: ''
+        kms_key_self_link:
+            description: The self_link of the encryption key that is
+            required: false
+            policy: ''
+            notes: ''
+        initialize_params:
+            description: Parameters for a new disk that will be created
+            required: false
+            policy: ''
+            notes: ''
+        source:
+            description: The name or self_link of the disk to attach to this instance.
+            required: true
+            policy: ''
+            notes: ''
+        size:
+            description: The size of the image in gigabytes. If not specified, it
+            required: false
+            policy: ''
+            notes: ''
+        type:
+            description: '- The accelerator type resource to expose to this instance.
+                E.g. `nvidia-tesla-k80`.'
+            required: true
+            policy: ''
+            notes: ''
+        image:
+            description: The image from which to initialize this disk. This can be
+            required: false
+            policy: ''
+            notes: ''
+        interface:
+            description: The disk interface to use for attaching this disk; either
+                SCSI or NVME.
+            required: true
+            policy: ''
+            notes: ''
+        network:
+            description: The name or self_link of the network to attach this interface
+                to.
+            required: false
+            policy: ''
+            notes: ''
+        network_ip:
+            description: The private IP address to assign to the instance. If
+            required: false
+            policy: ''
+            notes: ''
+        access_config:
+            description: Access configurations, i.e. IPs via which this
+            required: false
+            policy: ''
+            notes: ''
+        alias_ip_range:
+            description: An
+            required: false
+            policy: ''
+            notes: ''
+        nat_ip:
+            description: The IP address that will be 1:1 mapped to the instance's
+            required: false
+            policy: ''
+            notes: ''
+        public_ptr_domain_name:
+            description: The DNS domain name for the public PTR record.
+            required: false
+            policy: ''
+            notes: ''
+        network_tier:
+            description: The [networking tier][network-tier] used for configuring
+                this instance.
+            required: false
+            policy: ''
+            notes: ''
+        subnetwork_range_name:
+            description: The subnetwork secondary range name specifying
+            required: false
+            policy: ''
+            notes: ''
+        email:
+            description: The service account e-mail address. If not given, the
+            required: false
+            policy: ''
+            notes: ''
+        scopes:
+            description: A list of service scopes. Both OAuth2 URLs and gcloud
+            required: true
+            policy: ''
+            notes: ''
+        preemptible:
+            description: Specifies if the instance is preemptible.
+            required: false
+            policy: ''
+            notes: ''
+        on_host_maintenance:
+            description: Describes maintenance behavior for the
+            required: false
+            policy: ''
+            notes: ''
+        automatic_restart:
+            description: Specifies if the instance should be
+            required: false
+            policy: ''
+            notes: ''
+        node_affinities:
+            description: Specifies node affinities or anti-affinities
+            required: false
+            policy: ''
+            notes: ''
+        count:
+            description: '- The number of the guest accelerator cards exposed to this
+                instance.'
+            required: true
+            policy: ''
+            notes: ''
+        key:
+            description: '- The key for the node affinity label.'
+            required: true
+            policy: ''
+            notes: ''
+        operator:
+            description: '- The operator. Can be `IN` for node-affinities'
+            required: true
+            policy: ''
+            notes: ''
+        value:
+            description: '- The values for the node affinity label.'
+            required: true
+            policy: ''
+            notes: ''
+        enable_secure_boot:
+            description: -- Verify the digital signature of all boot components, and
+                halt the boot process if signature verification fails. Defaults to
+                false.
+            required: false
+            policy: ''
+            notes: ''
+        enable_vtpm:
+            description: -- Use a virtualized trusted platform module, which is a
+                specialized computer chip you can use to encrypt objects like keys
+                and certificates. Defaults to true.
+            required: false
+            policy: ''
+            notes: ''
+        enable_integrity_monitoring:
+            description: -- Compare the most recent boot measurements to the integrity
+                policy baseline and return a pair of pass/fail results depending on
+                whether they match or not. Defaults to true.
+            required: false
+            policy: ''
+            notes: ''
+    attributes:
+        instance_id:
+            description: The server-assigned unique identifier of this instance.
+        metadata_fingerprint:
+            description: The unique fingerprint of the metadata.
+        self_link:
+            description: The URI of the created resource.
+        tags_fingerprint:
+            description: The unique fingerprint of the tags.
+        label_fingerprint:
+            description: The unique fingerprint of the labels.
+        cpu_platform:
+            description: The CPU platform used by this instance.
+        network_interface.0.network_ip:
+            description: The internal ip address of the instance, either manually
+                or dynamically assigned.
+        network_interface.0.access_config.0.nat_ip:
+            description: If the instance has an access config, either the given external
+                ip (in the `nat_ip` field) or the ephemeral (generated) ip (if you
+                didn't provide one).
+        attached_disk.0.disk_encryption_key_sha256:
+            description: The [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
+        boot_disk.disk_encryption_key_sha256:
+            description: The [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
+        disk.0.disk_encryption_key_sha256:
+            description: The [RFC 4648 base64](https://tools.ietf.org/html/rfc4648#section-4)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjlwYm5OMFlXNWpaU0lnSW1SbFptRjFi
+        SFFpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnUFNBaWRHVnpkQ0lLSUNCdFlXTm9hVzVsWDNSNWNH
+        VWdQU0FpYmpFdGMzUmhibVJoY21RdE1TSUtJQ0I2YjI1bElDQWdJQ0FnSUNBZ1BTQWlkWE10WTJW
+        dWRISmhiREV0WVNJS0NpQWdkR0ZuY3lBOUlGc2labTl2SWl3Z0ltSmhjaUpkQ2dvZ0lHSnZiM1Jm
+        WkdsemF5QjdDaUFnSUNCcGJtbDBhV0ZzYVhwbFgzQmhjbUZ0Y3lCN0NpQWdJQ0FnSUdsdFlXZGxJ
+        RDBnSW1SbFltbGhiaTFqYkc5MVpDOWtaV0pwWVc0dE9TSUtJQ0FnSUgwS0lDQjlDZ29nSUM4dklF
+        eHZZMkZzSUZOVFJDQmthWE5yQ2lBZ2MyTnlZWFJqYUY5a2FYTnJJSHNLSUNBZ0lHbHVkR1Z5Wm1G
+        alpTQTlJQ0pUUTFOSklnb2dJSDBLQ2lBZ2JtVjBkMjl5YTE5cGJuUmxjbVpoWTJVZ2V3b2dJQ0Fn
+        Ym1WMGQyOXlheUE5SUNKa1pXWmhkV3gwSWdvS0lDQWdJR0ZqWTJWemMxOWpiMjVtYVdjZ2V3b2dJ
+        Q0FnSUNBdkx5QkZjR2hsYldWeVlXd2dTVkFLSUNBZ0lIMEtJQ0I5Q2dvZ0lHMWxkR0ZrWVhSaElE
+        MGdld29nSUNBZ1ptOXZJRDBnSW1KaGNpSUtJQ0I5Q2dvZ0lHMWxkR0ZrWVhSaFgzTjBZWEowZFhC
+        ZmMyTnlhWEIwSUQwZ0ltVmphRzhnYUdrZ1BpQXZkR1Z6ZEM1MGVIUWlDZ29nSUhObGNuWnBZMlZm
+        WVdOamIzVnVkQ0I3Q2lBZ0lDQnpZMjl3WlhNZ1BTQmJJblZ6WlhKcGJtWnZMV1Z0WVdsc0lpd2dJ
+        bU52YlhCMWRHVXRjbThpTENBaWMzUnZjbUZuWlMxeWJ5SmRDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwK1BpQXFLazV2ZEdVNktpb2dWR2hsSUdacFpXeGtjeUJnWW05dmRGOWthWE5yTGpBdVpHbHph
+        MTlsYm1OeWVYQjBhVzl1WDNKaGQyQWdZVzVrSUdCaGRIUmhZMmhsWkY5a2FYTnJMaW91WkdsemEx
+        OWxibU55ZVhCMGFXOXVYMnRsZVY5eVlYZGdJR05oYm01dmRDQmlaU0JwYlhCdmNuUmxaQ0JoZFhS
+        dmJXRjBhV05oYkd4NUxpQlVhR1VnUVZCSklHUnZaWE51SjNRZ2NtVjBkWEp1SUhSb2FYTWdhVzVt
+        YjNKdFlYUnBiMjR1SUVsbUlIbHZkU0JoY21VZ2MyVjBkR2x1WnlCdmJtVWdiMllnZEdobGMyVWda
+        bWxsYkdSeklHbHVJSGx2ZFhJZ1kyOXVabWxuTENCNWIzVWdkMmxzYkNCdVpXVmtJSFJ2SUhWd1pH
+        RjBaU0I1YjNWeUlITjBZWFJsSUcxaGJuVmhiR3g1SUdGbWRHVnlJR2x0Y0c5eWRHbHVaeUIwYUdV
+        Z2NtVnpiM1Z5WTJVdUNnb3RQaUFxS2s1dmRHVTZLaW9nVkdobElHQmtaWE5wY21Wa1gzTjBZWFIx
+        YzJBZ1ptbGxiR1FnZDJsc2JDQnViM1FnWW1VZ2MyVjBJRzl1SUdsdGNHOXlkQzRnU1dZZ2VXOTFJ
+        R2hoZG1VZ2FYUWdjMlYwTENCVVpYSnlZV1p2Y20wZ2QybHNiQ0IxY0dSaGRHVWdkR2hsSUdacFpX
+        eGtJRzl1SUhSb1pTQnVaWGgwSUdCMFpYSnlZV1p2Y20wZ1lYQndiSGxnTENCaWNtbHVaMmx1WnlC
+        NWIzVnlJR2x1YzNSaGJtTmxJSFJ2SUhSb1pTQmtaWE5wY21Wa0lITjBZWFIxY3k0S0NncEpibk4w
+        WVc1alpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUdGdWVTQnZaaUIwYUdWelpTQmhZ
+        Mk5sY0hSbFpDQm1iM0p0WVhSek9nb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDJsdWMzUmhibU5sTG1oMGJXd3ViV0Z5YTJSdmQyND0=
