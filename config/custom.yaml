@@ -195,6 +195,14 @@ productName:
     accurintweb: 'Accurint Web Product'
     accurintapi: 'Accurint API Product'
     accurintle: 'Accurint for Law Enforcement'
+costCenter:
+  category: Custom
+  entity: costCenter
+  scope: global
+  maxlength: 8
+  rule: 'az'
+  allowed_values:
+      CT607: unknown
 tagName:
   category: Custom
   entity: tagName
@@ -202,5 +210,9 @@ tagName:
   maxlength: '24'
   rule: 'a-z'
   allowed_values:
-    environment: 'Environment'
-    business-unit: 'Business Unit'
+    environment: 'environment'
+    business-unit: 'businessUnit'
+    market: 'market'
+    product: 'productName'
+    cost-center: 'costCenter'
+
