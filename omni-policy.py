@@ -9,6 +9,8 @@ import base64
 import json
 import yaml
 import re
+import traceback
+import sys
 
 def merge_dictionaries(dct, merge_dct, add_keys=True):
     """ Recursive dict merge. Inspired by :meth:``dict.update()``, instead of
@@ -184,6 +186,7 @@ def parse_markdown(markdown_dct,metadata_dct):
         # Prefix the name with the provider.
         name = tmp_dct.get('layout') + '_' + name
     except:
+        logger(traceback.print_exc())
         tmp_dct = {}
         dct = {}
 
@@ -201,9 +204,12 @@ def parse_markdown(markdown_dct,metadata_dct):
     # Process the text in the markdown
     try:
         # Extract Arguments
-        for arg in markdown.split("## Argument Reference")[1].\
-                    split("##")[0].\
-                    split("\n"):
+        
+        for arg in re.split("## Argument* Reference", 
+                            markdown, 
+                            flags=re.IGNORECASE)[1].\
+                                split("##")[0].\
+                                split("\n"):
             
             # Look for lines that denote bullets
             if arg.startswith('* `'): 
@@ -283,7 +289,9 @@ def parse_markdown(markdown_dct,metadata_dct):
         dct[name].update({'hcl_url': base64.b64encode(html_url.encode())})
 
         return dct
-    except:
+    except Exception:
+        logger(markdown)
+        logger(traceback.print_exc())
         return dct
 
 def get_markdown(url):
@@ -377,6 +385,7 @@ def get_resources(provider_lst):
         # Loop through all resources at url
         for resource_dct in requests.get(url).json():
             process_resource(resource_dct)
+
         
 def get_providers():
     
@@ -424,7 +433,21 @@ def process_provider(provider_dct):
     
     return lst
 
+def logger(msg):
+    global debug
+    if debug:
+        print(msg)
+
+debug=True
 
 providers_lst = get_providers()
 
 get_resources(providers_lst)
+
+# This section is for debugging markdown processing failures by referencing markdown files directly.
+
+#debug_dct = {
+# 'download_url': 'https://raw.githubusercontent.com/terraform-providers/terraform-provider-azurerm/master/website/docs/r/resource_group.html.markdown'
+# 'html_url': 'www.google.com'
+# }
+#process_resource(debug_dct)
