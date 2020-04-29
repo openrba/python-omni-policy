@@ -66,8 +66,8 @@ azurerm_virtual_machine:
             notes: ''
         delete_data_disks_on_termination:
             description: Should the Data Disks (either the Managed Disks / VHD Blobs
-            required: false
-            policy: ''
+            required: true
+            policy: true
             notes:
             - '-> '
             - ' This setting works when instance is deleted via Terraform only and
