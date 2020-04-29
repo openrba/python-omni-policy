@@ -215,8 +215,8 @@ azurerm_virtual_machine:
             notes: ''
         admin_username:
             description: Specifies the name of the local administrator account.
-            required: false
-            policy: ''
+            required: true
+            policy: 'superadmin'
             notes: ''
         admin_password:
             description: The password associated with the local administrator account.

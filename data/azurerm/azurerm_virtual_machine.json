@@ -222,8 +222,8 @@
             },
             "admin_username": {
                 "description": "Specifies the name of the local administrator account.",
-                "required": false,
-                "policy": "",
+                "required": true,
+                "policy": "superadmin",
                 "notes": ""
             },
             "admin_password": {
