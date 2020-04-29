@@ -14,25 +14,25 @@
             },
             "name": {
                 "description": "A unique name for the flavor. Changing this creates a new",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ram": {
                 "description": "The amount of RAM to use, in megabytes. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vcpus": {
                 "description": "The number of virtual CPUs to use. Changing this creates",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "disk": {
                 "description": "The amount of disk space in gigabytes to use for the root",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -61,35 +61,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "ram": {
-                "description": "See Argument Reference above."
-            },
-            "vcpus": {
-                "description": "See Argument Reference above."
-            },
-            "disk": {
-                "description": "See Argument Reference above."
-            },
-            "swap": {
-                "description": "See Argument Reference above."
-            },
-            "rx_tx_factor": {
-                "description": "See Argument Reference above."
-            },
-            "is_public": {
-                "description": "See Argument Reference above."
-            },
-            "extra_specs": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

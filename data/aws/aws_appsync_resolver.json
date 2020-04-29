@@ -8,31 +8,31 @@
         "arguments": {
             "api_id": {
                 "description": "The API ID for the GraphQL API.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type name from the schema defined in the GraphQL API.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "field": {
                 "description": "The field name from the schema defined in the GraphQL API.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "request_template": {
                 "description": "The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "response_template": {
                 "description": "The response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,7 +56,7 @@
             },
             "functions": {
                 "description": "The list of Function ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

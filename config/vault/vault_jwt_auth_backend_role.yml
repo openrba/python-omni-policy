@@ -7,7 +7,7 @@ vault_jwt_auth_backend_role:
     arguments:
         role_name:
             description: The name of the role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_type:
@@ -17,12 +17,12 @@ vault_jwt_auth_backend_role:
             notes: ''
         bound_audiences:
             description: List of `aud` claims to match
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_claim:
             description: The claim to use to uniquely identify
-            required: true
+            required: false
             policy: ''
             notes: ''
         bound_subject:
@@ -83,3 +83,20 @@ vault_jwt_auth_backend_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjlxZDNSZllYVjBhRjlpWVdOclpXNWtJaUFpYW5kMElpQjdD
+        aUFnY0dGMGFDQTlJQ0pxZDNRaUNuMEtDbkpsYzI5MWNtTmxJQ0oyWVhWc2RGOXFkM1JmWVhWMGFG
+        OWlZV05yWlc1a1gzSnZiR1VpSUNKbGVHRnRjR3hsSWlCN0NpQWdZbUZqYTJWdVpDQWdJQ0FnSUNB
+        Z0lEMGdkbUYxYkhSZmFuZDBYMkYxZEdoZlltRmphMlZ1WkM1cWQzUXVjR0YwYUFvZ0lISnZiR1Zm
+        Ym1GdFpTQWdJQ0FnSUNBOUlDSjBaWE4wTFhKdmJHVWlDaUFnZEc5clpXNWZjRzlzYVdOcFpYTWdJ
+        RDBnV3lKa1pXWmhkV3gwSWl3Z0ltUmxkaUlzSUNKd2NtOWtJbDBLQ2lBZ1ltOTFibVJmWVhWa2FX
+        VnVZMlZ6SUQwZ1d5Sm9kSFJ3Y3pvdkwyMTVZMjh1ZEdWemRDSmRDaUFnZFhObGNsOWpiR0ZwYlNB
+        Z0lDQWdJRDBnSW1oMGRIQnpPaTh2ZG1GMWJIUXZkWE5sY2lJS0lDQnliMnhsWDNSNWNHVWdJQ0Fn
+        SUNBZ1BTQWlhbmQwSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwS1YxUWdZWFYwYUdWdWRHbGpZWFJwYjI0Z1ltRmphMlZ1WkNCeWIyeGxjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J3WVhSb1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJwM2RGOWhkWFJvWDJKaFkydGxibVJmY205c1pTNW9kRzFzTG0xaw==

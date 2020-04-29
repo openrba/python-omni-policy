@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the filter",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "cidr": {
                 "description": "The IP address or address range to filter, in CIDR notation",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy": {
                 "description": "Block or Allow",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

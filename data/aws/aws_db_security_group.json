@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the DB security group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "ingress": {
                 "description": "A list of ingress rules.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

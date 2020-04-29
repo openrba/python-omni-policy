@@ -7,13 +7,31 @@ aws_iam_user_policy_attachment:
     arguments:
         user:
             description: '- The user the policy should be applied to'
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_arn:
             description: '- The ARN of the policy you want to apply'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNWelpYSWlJQ0oxYzJWeUlpQjdDaUFnYm1GdFpTQTlJ
+        Q0owWlhOMExYVnpaWElpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mYVdGdFgzQnZiR2xqZVNJZ0lu
+        QnZiR2xqZVNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUQwZ0luUmxjM1F0Y0c5c2FXTjVJZ29nSUdS
+        bGMyTnlhWEIwYVc5dUlEMGdJa0VnZEdWemRDQndiMnhwWTNraUNpQWdjRzlzYVdONUlDQWdJQ0Fn
+        UFNBaUlpQWpJR2x1YzJWeWRDQndiMnhwWTNrZ2FHVnlaUXA5Q2dweVpYTnZkWEpqWlNBaVlYZHpY
+        MmxoYlY5MWMyVnlYM0J2YkdsamVWOWhkSFJoWTJodFpXNTBJaUFpZEdWemRDMWhkSFJoWTJnaUlI
+        c0tJQ0IxYzJWeUlDQWdJQ0FnSUQwZ0lpUjdZWGR6WDJsaGJWOTFjMlZ5TG5WelpYSXVibUZ0Wlgw
+        aUNpQWdjRzlzYVdONVgyRnliaUE5SUNJa2UyRjNjMTlwWVcxZmNHOXNhV041TG5CdmJHbGplUzVo
+        Y201OUlncDlDZz09
+    import: !!binary |
+        Q2dwSlFVMGdkWE5sY2lCd2IyeHBZM2tnWVhSMFlXTm9iV1Z1ZEhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCMWMyVnlJRzVoYldVZ1lXNWtJSEJ2YkdsamVTQmhjbTRnYzJWd1lY
+        SmhkR1ZrSUdKNUlHQXZZQzRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmRYTmxjbDl3YjJ4cFkzbGZZWFIwWVdOb2JXVnVkQzV0WVhKclpHOTNiZz09

@@ -8,7 +8,7 @@
         "arguments": {
             "actions": {
                 "description": "List of actions initiated by this trigger when it fires. Defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "name": {
                 "description": "The name of the trigger.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "type": {
                 "description": "The type of trigger. Valid values are `CONDITIONAL`, `ON_DEMAND`, and `SCHEDULED`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

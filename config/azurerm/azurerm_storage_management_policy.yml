@@ -8,7 +8,7 @@ azurerm_storage_management_policy:
         storage_account_id:
             description: Specifies the id of the storage account to apply the management
                 policy to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule:
@@ -20,12 +20,12 @@ azurerm_storage_management_policy:
             description: A rule name can contain any combination of alpha numeric
                 characters. Rule name is case-sensitive. It must be unique within
                 a policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
             description: ' Boolean to specify whether the rule is enabled.'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

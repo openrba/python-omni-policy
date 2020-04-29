@@ -7,12 +7,12 @@ aws_shield_protection:
     arguments:
         name:
             description: A friendly name for the Protection you are creating.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_arn:
             description: The ARN (Amazon Resource Name
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -20,3 +20,11 @@ aws_shield_protection:
             description: The unique identifier (ID) for the Protection object that
                 is created.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVGFHbGxiR1FnY0hKdmRHVmpkR2x2YmlCeVpYTnZkWEpqWlhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUdKNUlITndaV05wWm5scGJtY2dkR2hsYVhJZ1NVUWdaUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YUdsbGJHUmZjSEp2ZEdWamRHbHZiaTVvZEcxc0xtMWhjbXRrYjNkdQ==

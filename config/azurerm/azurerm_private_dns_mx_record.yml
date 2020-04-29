@@ -14,23 +14,23 @@ azurerm_private_dns_mx_record:
         resource_group_name:
             description: Specifies the resource group where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone_name:
             description: Specifies the Private DNS Zone where the resource exists.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         record:
             description: One or more `record` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         'ttl ':
             description: The Time To Live (TTL
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -40,12 +40,12 @@ azurerm_private_dns_mx_record:
             notes: ''
         preference:
             description: The preference of the MX record.
-            required: true
+            required: false
             policy: ''
             notes: ''
         exchange:
             description: The FQDN of the exchange to MX record points to.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

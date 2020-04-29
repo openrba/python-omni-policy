@@ -7,18 +7,42 @@ aws_autoscaling_notification:
     arguments:
         group_names:
             description: A list of AutoScaling Group Names
-            required: true
+            required: false
             policy: ''
             notes: ''
         notifications:
             description: A list of Notification Types that trigger
-            required: true
+            required: false
             policy: ''
             notes: ''
         topic_arn:
             description: The Topic ARN for notifications to be sent through
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWFYwYjNOallXeHBibWRmYm05MGFXWnBZMkYwYVc5dUlpQWla
+        WGhoYlhCc1pWOXViM1JwWm1sallYUnBiMjV6SWlCN0NpQWdaM0p2ZFhCZmJtRnRaWE1nUFNCYkNp
+        QWdJQ0FpSkh0aGQzTmZZWFYwYjNOallXeHBibWRmWjNKdmRYQXVZbUZ5TG01aGJXVjlJaXdLSUNB
+        Z0lDSWtlMkYzYzE5aGRYUnZjMk5oYkdsdVoxOW5jbTkxY0M1bWIyOHVibUZ0WlgwaUxBb2dJRjBL
+        Q2lBZ2JtOTBhV1pwWTJGMGFXOXVjeUE5SUZzS0lDQWdJQ0poZFhSdmMyTmhiR2x1WnpwRlF6SmZT
+        VTVUVkVGT1EwVmZURUZWVGtOSUlpd0tJQ0FnSUNKaGRYUnZjMk5oYkdsdVp6cEZRekpmU1U1VFZF
+        Rk9RMFZmVkVWU1RVbE9RVlJGSWl3S0lDQWdJQ0poZFhSdmMyTmhiR2x1WnpwRlF6SmZTVTVUVkVG
+        T1EwVmZURUZWVGtOSVgwVlNVazlTSWl3S0lDQWdJQ0poZFhSdmMyTmhiR2x1WnpwRlF6SmZTVTVU
+        VkVGT1EwVmZWRVZTVFVsT1FWUkZYMFZTVWs5U0lpd0tJQ0JkQ2dvZ0lIUnZjR2xqWDJGeWJpQTlJ
+        Q0lrZTJGM2MxOXpibk5mZEc5d2FXTXVaWGhoYlhCc1pTNWhjbTU5SWdwOUNncHlaWE52ZFhKalpT
+        QWlZWGR6WDNOdWMxOTBiM0JwWXlJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElEMGdJbVY0WVcx
+        d2JHVXRkRzl3YVdNaUNnb2dJQ01nWVhKdUlHbHpJR0Z1SUdWNGNHOXlkR1ZrSUdGMGRISnBZblYw
+        WlFwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJGMWRHOXpZMkZzYVc1blgyZHliM1Z3SWlBaVltRnlJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKbWIyOWlZWEl4TFhSbGNuSmhabTl5YlMxMFpYTjBJZ29LSUNBaklD
+        NHVMZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMkYxZEc5elkyRnNhVzVuWDJkeWIzVndJaUFpWm05
+        dklpQjdDaUFnYm1GdFpTQTlJQ0ppWVhKbWIyOHRkR1Z5Y21GbWIzSnRMWFJsYzNRaUNnb2dJQ01n
+        TGk0dUNuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZFhSdmMyTmhiR2x1WjE5dWIzUnBabWxqWVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

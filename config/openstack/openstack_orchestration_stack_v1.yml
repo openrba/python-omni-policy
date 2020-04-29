@@ -12,12 +12,12 @@ openstack_orchestration_stack_v1:
             notes: ''
         name:
             description: A unique name for the stack. It must start with an
-            required: true
+            required: false
             policy: ''
             notes: ''
         template_opts:
             description: Template key/value pairs to associate with the
-            required: true
+            required: false
             policy: ''
             notes: ''
         environment_opts:
@@ -45,33 +45,25 @@ openstack_orchestration_stack_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        name:
-            description: See Argument Reference above.
-        disable_rollback:
-            description: See Argument Reference above.
-        timeout:
-            description: See Argument Reference above.
-        parameters:
-            description: See Argument Reference above.
-        tags:
-            description: See Argument Reference above.
-        capabilities:
-            description: List of stack capabilities for stack.
-        description:
-            description: The description of the stack resource.
-        notification_topics:
-            description: List of notification topics for stack.
-        status:
-            description: The status of the stack.
-        status_reason:
-            description: The reason for the current status of the stack.
-        template_description:
-            description: The description of the stack template.
-        outputs:
-            description: A list of stack outputs.
-        creation_time:
-            description: The date and time when the resource was created. The date
-        updated_time:
-            description: The date and time when the resource was updated. The date
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmIzSmphR1Z6ZEhKaGRHbHZibDl6ZEdGamExOTJN
+        U0lnSW5OMFlXTnJYekVpSUhzS0lDQnVZVzFsSUQwZ0luTjBZV05yWHpFaUNpQWdjR0Z5WVcxbGRH
+        VnljeUE5SUhzS0NXeGxibWQwYUNBOUlEUUtJQ0I5Q2lBZ2RHVnRjR3hoZEdWZmIzQjBjeUE5SUhz
+        S0NVSnBiaUE5SUNKb1pXRjBYM1JsYlhCc1lYUmxYM1psY25OcGIyNDZJREl3TVRNdE1EVXRNak5j
+        Ym5CaGNtRnRaWFJsY25NNlhHNGdJR3hsYm1kMGFEcGNiaUFnSUNCMGVYQmxPaUJ1ZFcxaVpYSmNi
+        bkpsYzI5MWNtTmxjenBjYmlBZ2RHVnpkRjl5WlhNNlhHNGdJQ0FnZEhsd1pUb2dUMU02T2tobFlY
+        UTZPbFJsYzNSU1pYTnZkWEpqWlZ4dUlDQnlZVzVrYjIwNlhHNGdJQ0FnZEhsd1pUb2dUMU02T2to
+        bFlYUTZPbEpoYm1SdmJWTjBjbWx1WjF4dUlDQWdJSEJ5YjNCbGNuUnBaWE02WEc0Z0lDQWdJQ0Jz
+        Wlc1bmRHZzZJSHRuWlhSZmNHRnlZVzA2SUd4bGJtZDBhSDFjYmlJS0lDQjlDaUFnWlc1MmFYSnZi
+        bTFsYm5SZmIzQjBjeUE5SUhzS0NVSnBiaUE5SUNKY2JpSUtJQ0I5Q2lBZ1pHbHpZV0pzWlY5eWIy
+        eHNZbUZqYXlBOUlIUnlkV1VLSUNCMGFXMWxiM1YwSUQwZ016QUtmUW89
+    import: !!binary |
+        Q2dwemRHRmphM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnYVdSZ0xDQmxM
+        bWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXZjbU5vWlhOMGNtRjBhVzl1WDNOMFlXTnJYM1l4TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

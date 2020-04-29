@@ -8,31 +8,31 @@
         "arguments": {
             "activate": {
                 "description": "Specifies whether GuardDuty is to start using the uploaded IPSet.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "detector_id": {
                 "description": "The detector ID of the GuardDuty.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "format": {
                 "description": "The format of the file that contains the IPSet. Valid values: `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT` | `FIRE_EYE`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The URI of the file that contains the IPSet.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The friendly name to identify the IPSet.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,25 +8,25 @@
         "arguments": {
             "ip_configuration": {
                 "description": "One or more `ip_configuration` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The location where the Network Interface should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
-                "description": "The name of the Network Interface. Changing this forces a new resource to be created.",
-                "required": true,
+                "description": "A name used for this IP Configuration.",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group in which to create the Network Interface. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -34,7 +34,10 @@
                 "description": "A list of IP Addresses defining the DNS Servers which should be used for this Network Interface.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> ",
+                    " Configuring DNS Servers on the Network Interface will override the DNS Servers defined on the Virtual Network."
+                ]
             },
             "enable_ip_forwarding": {
                 "description": "Should IP Forwarding be enabled? Defaults to `false`.",
@@ -65,7 +68,7 @@
             },
             "subnet_id": {
                 "description": "The ID of the Subnet where this Network Interface should be located in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -77,7 +80,7 @@
             },
             "private_ip_address_allocation": {
                 "description": "The allocation method used for the Private IP Address. Possible values are `Dynamic` and `Static`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

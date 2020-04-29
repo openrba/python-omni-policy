@@ -6,12 +6,12 @@ github_repository_project:
     arguments:
         name:
             description: The name of the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         repository:
             description: The repository of the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         body:
@@ -23,3 +23,17 @@ github_repository_project:
         url:
             description: URL of the project
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUm9kV0pmY21Wd2IzTnBkRzl5ZVNJZ0ltVjRZVzF3YkdVaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTSUtJQ0JrWlhOamNtbHdkR2x2YmlBZ1BT
+        QWlUWGtnWVhkbGMyOXRaU0JqYjJSbFltRnpaU0lLSUNCb1lYTmZjSEp2YW1WamRITWdQU0IwY25W
+        bENuMEtDbkpsYzI5MWNtTmxJQ0puYVhSb2RXSmZjbVZ3YjNOcGRHOXllVjl3Y205cVpXTjBJaUFp
+        Y0hKdmFtVmpkQ0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpUVNCU1pYQnZjMmwwYjNKNUlGQnli
+        MnBsWTNRaUNpQWdjbVZ3YjNOcGRHOXllU0E5SUNJa2UyZHBkR2gxWWw5eVpYQnZjMmwwYjNKNUxt
+        VjRZVzF3YkdVdWJtRnRaWDBpQ2lBZ1ltOWtlU0FnSUNBZ0lDQTlJQ0pVYUdseklHbHpJR0VnY21W
+        d2IzTnBkRzl5ZVNCd2NtOXFaV04wTGlJS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5eVpYQnZjMmwwYjNKNVgzQnliMnBsWTNRdWFIUnRiQzV0WVhKclpHOTNiZz09

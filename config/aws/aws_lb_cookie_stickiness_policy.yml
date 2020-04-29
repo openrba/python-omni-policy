@@ -8,17 +8,17 @@ aws_lb_cookie_stickiness_policy:
     arguments:
         name:
             description: The name of the stickiness policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         load_balancer:
             description: The load balancer to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         lb_port:
             description: The load balancer port to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         cookie_expiration_period:
@@ -39,3 +39,21 @@ aws_lb_cookie_stickiness_policy:
             description: The time period after which the session cookie is considered
                 stale, expressed in seconds.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hpSWlBaWJHSWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlkR1Z6ZEMxc1lpSUtJQ0JoZG1GcGJHRmlhV3hwZEhsZmVtOXVaWE1nUFNCYklu
+        VnpMV1ZoYzNRdE1XRWlYUW9LSUNCc2FYTjBaVzVsY2lCN0NpQWdJQ0JwYm5OMFlXNWpaVjl3YjNK
+        MElDQWdJQ0E5SURnd01EQUtJQ0FnSUdsdWMzUmhibU5sWDNCeWIzUnZZMjlzSUQwZ0ltaDBkSEFp
+        Q2lBZ0lDQnNZbDl3YjNKMElDQWdJQ0FnSUNBZ0lDQTlJRGd3Q2lBZ0lDQnNZbDl3Y205MGIyTnZi
+        Q0FnSUNBZ0lDQTlJQ0pvZEhSd0lnb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTlzWWw5amIy
+        OXJhV1ZmYzNScFkydHBibVZ6YzE5d2IyeHBZM2tpSUNKbWIyOGlJSHNLSUNCdVlXMWxJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVptOXZMWEJ2YkdsamVTSUtJQ0JzYjJGa1gySmhiR0Z1
+        WTJWeUlDQWdJQ0FnSUNBZ0lDQWdQU0FpSkh0aGQzTmZaV3hpTG14aUxtbGtmU0lLSUNCc1lsOXdi
+        M0owSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBNE1Bb2dJR052YjJ0cFpWOWxlSEJwY21GMGFX
+        OXVYM0JsY21sdlpDQTlJRFl3TUFwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWWw5amIyOXJhV1ZmYzNScFkydHBibVZ6YzE5d2IyeHBZM2t1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

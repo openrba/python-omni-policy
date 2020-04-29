@@ -25,7 +25,7 @@ aws_db_subnet_group:
             notes: ''
         subnet_ids:
             description: A list of VPC subnet IDs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -39,3 +39,16 @@ aws_db_subnet_group:
         arn:
             description: The ARN of the db subnet group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0pmYzNWaWJtVjBYMmR5YjNWd0lpQWlaR1ZtWVhWc2RDSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ1BTQWliV0ZwYmlJS0lDQnpkV0p1WlhSZmFXUnpJRDBnV3lJa2Uy
+        RjNjMTl6ZFdKdVpYUXVabkp2Ym5SbGJtUXVhV1I5SWl3Z0lpUjdZWGR6WDNOMVltNWxkQzVpWVdO
+        clpXNWtMbWxrZlNKZENnb2dJSFJoWjNNZ1BTQjdDaUFnSUNCT1lXMWxJRDBnSWsxNUlFUkNJSE4x
+        WW01bGRDQm5jbTkxY0NJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwRVFpQlRkV0p1WlhRZ1ozSnZkWEJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5emRXSnVaWFJmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

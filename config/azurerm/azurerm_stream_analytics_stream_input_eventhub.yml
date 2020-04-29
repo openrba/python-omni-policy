@@ -8,19 +8,19 @@ azurerm_stream_analytics_stream_input_eventhub:
         name:
             description: The name of the Stream Input EventHub. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group where the Stream Analytics
                 Job exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         stream_analytics_job_name:
             description: The name of the Stream Analytics Job. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         eventhub_consumer_group_name:
@@ -28,41 +28,41 @@ azurerm_stream_analytics_stream_input_eventhub:
                 to read events from the Event Hub. Specifying distinct consumer group
                 names for multiple inputs allows each of those inputs to receive the
                 same events from the Event Hub.
-            required: true
+            required: false
             policy: ''
             notes: ''
         eventhub_name:
             description: The name of the Event Hub.
-            required: true
+            required: false
             policy: ''
             notes: ''
         servicebus_namespace:
             description: The namespace that is associated with the desired Event Hub,
                 Service Bus Queue, Service Bus Topic, etc.
-            required: true
+            required: false
             policy: ''
             notes: ''
         shared_access_policy_key:
             description: The shared access policy key for the specified shared access
                 policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         shared_access_policy_name:
             description: The shared access policy name for the Event Hub, Service
                 Bus Queue, Service Bus Topic, etc.
-            required: true
+            required: false
             policy: ''
             notes: ''
         serialization:
             description: A `serialization` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The serialization format used for incoming data streams.
                 Possible values are `Avro`, `Csv` and `Json`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         encoding:
@@ -71,13 +71,17 @@ azurerm_stream_analytics_stream_input_eventhub:
                 can only be set to `UTF8`.
             required: false
             policy: ''
-            notes: This is required when `type` is set to `Csv` or `Json`.
+            notes:
+            - '-> '
+            - ' This is required when `type` is set to `Csv` or `Json`.'
         field_delimiter:
             description: The delimiter that will be used to separate comma-separated
                 value (CSV
             required: false
             policy: ''
-            notes: This is required when `type` is set to `Csv`.
+            notes:
+            - '-> '
+            - ' This is required when `type` is set to `Csv`.'
     attributes:
         id:
             description: The ID of the Stream Analytics Stream Input EventHub.

@@ -8,13 +8,13 @@
         "arguments": {
             "backend": {
                 "description": "Path where the github auth backend is mounted. Defaults to `github`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "user": {
                 "description": "GitHub user name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

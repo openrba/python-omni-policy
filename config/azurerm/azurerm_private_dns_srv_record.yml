@@ -8,29 +8,29 @@ azurerm_private_dns_srv_record:
         name:
             description: The name of the DNS SRV Record. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the resource group where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone_name:
             description: Specifies the Private DNS Zone where the resource exists.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         record:
             description: One or more `record` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         'ttl ':
             description: The Time To Live (TTL
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -40,22 +40,22 @@ azurerm_private_dns_srv_record:
             notes: ''
         priority:
             description: The priority of the SRV record.
-            required: true
+            required: false
             policy: ''
             notes: ''
         weight:
             description: The Weight of the SRV record.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
             description: The Port the service is listening on.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target:
             description: The FQDN of the service.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

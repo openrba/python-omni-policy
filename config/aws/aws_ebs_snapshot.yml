@@ -7,7 +7,7 @@ aws_ebs_snapshot:
     arguments:
         volume_id:
             description: The Volume ID of which to make a snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -47,3 +47,8 @@ aws_ebs_snapshot:
         WlhoaGJYQnNaVjl6Ym1Gd2MyaHZkQ0lnZXdvZ0lIWnZiSFZ0WlY5cFpDQTlJQ0lrZTJGM2MxOWxZ
         bk5mZG05c2RXMWxMbVY0WVcxd2JHVXVhV1I5SWdvS0lDQjBZV2R6SUQwZ2V3b2dJQ0FnVG1GdFpT
         QTlJQ0pJWld4c2IxZHZjbXhrWDNOdVlYQWlDaUFnZlFwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWW5OZmMyNWhjSE5vYjNRdWFIUnRiQzV0WVhKclpHOTNiZz09

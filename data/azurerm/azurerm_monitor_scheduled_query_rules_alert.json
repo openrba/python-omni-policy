@@ -8,49 +8,49 @@
         "arguments": {
             "name": {
                 "description": "The name of the scheduled query rule. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the scheduled query rule instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "data_source_id": {
                 "description": "The resource URI over which log search query is to be run.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "frequency": {
                 "description": "Frequency (in minutes",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "query": {
                 "description": "Log search query.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "time_window": {
                 "description": "Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "trigger": {
                 "description": "The condition that results in the alert rule being run.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "action": {
                 "description": "An `action` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -86,7 +86,7 @@
             },
             "action_group": {
                 "description": "List of action group reference resource IDs.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -104,25 +104,25 @@
             },
             "metricColumn": {
                 "description": "Evaluation of metric on a particular column.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "metricTriggerType": {
                 "description": "Metric Trigger Type - 'Consecutive' or 'Total'.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "operator": {
                 "description": "Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "threshold": {
                 "description": "Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

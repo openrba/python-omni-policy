@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name to use for this Packet Capture. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_watcher_name": {
                 "description": "The name of the Network Watcher. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which the Network Watcher exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_resource_id": {
                 "description": "The ID of the Resource to capture packets from. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "storage_location": {
                 "description": "A `storage_location` block as defined below. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -86,7 +86,7 @@
             },
             "protocol": {
                 "description": "The Protocol to be filtered on. Possible values include `Any`, `TCP` and `UDP`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,7 +7,7 @@ aws_workspaces_directory:
     arguments:
         directory_id:
             description: The directory identifier for registration in WorkSpaces service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
@@ -59,3 +59,31 @@ aws_workspaces_directory:
         id:
             description: The WorkSpaces directory identifier.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaWJXRnBiaUlnZXdvZ0lHTnBaSEpmWW14dlkyc2dQ
+        U0FpTVRBdU1DNHdMakF2TVRZaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmMzVmlibVYwSWlBaWNI
+        SnBkbUYwWlMxaElpQjdDaUFnZG5CalgybGtJQ0FnSUNBZ0lDQWdJQ0FnUFNBaUpIdGhkM05mZG5C
+        akxtMWhhVzR1YVdSOUlnb2dJR0YyWVdsc1lXSnBiR2wwZVY5NmIyNWxJRDBnSW5WekxXVmhjM1F0
+        TVdFaUNpQWdZMmxrY2w5aWJHOWpheUFnSUNBZ0lDQWdQU0FpTVRBdU1DNHdMakF2TWpRaUNuMEtD
+        bkpsYzI5MWNtTmxJQ0poZDNOZmMzVmlibVYwSWlBaWNISnBkbUYwWlMxaUlpQjdDaUFnZG5Calgy
+        bGtJQ0FnSUNBZ0lDQWdJQ0FnUFNBaUpIdGhkM05mZG5CakxtMWhhVzR1YVdSOUlnb2dJR0YyWVds
+        c1lXSnBiR2wwZVY5NmIyNWxJRDBnSW5WekxXVmhjM1F0TVdJaUNpQWdZMmxrY2w5aWJHOWpheUFn
+        SUNBZ0lDQWdQU0FpTVRBdU1DNHhMakF2TWpRaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZlpHbHla
+        V04wYjNKNVgzTmxjblpwWTJWZlpHbHlaV04wYjNKNUlpQWliV0ZwYmlJZ2V3b2dJRzVoYldVZ0lD
+        QWdJRDBnSW1OdmNuQXVaWGhoYlhCc1pTNWpiMjBpQ2lBZ2NHRnpjM2R2Y21RZ1BTQWlJMU14Ym1O
+        bGNtVnNlU0lLSUNCemFYcGxJQ0FnSUNBOUlDSlRiV0ZzYkNJS0lDQjJjR05mYzJWMGRHbHVaM01n
+        ZXdvZ0lDQWdkbkJqWDJsa0lDQWdJQ0E5SUNJa2UyRjNjMTkyY0dNdWJXRnBiaTVwWkgwaUNpQWdJ
+        Q0J6ZFdKdVpYUmZhV1J6SUQwZ1d5SWtlMkYzYzE5emRXSnVaWFF1Y0hKcGRtRjBaUzFoTG1sa2ZT
+        SXNJQ0lrZTJGM2MxOXpkV0p1WlhRdWNISnBkbUYwWlMxaUxtbGtmU0pkQ2lBZ2ZRcDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhkelgzZHZjbXR6Y0dGalpYTmZaR2x5WldOMGIzSjVJaUFpYldGcGJpSWdld29n
+        SUdScGNtVmpkRzl5ZVY5cFpDQTlJQ0lrZTJGM2MxOWthWEpsWTNSdmNubGZjMlZ5ZG1salpWOWth
+        WEpsWTNSdmNua3ViV0ZwYmk1cFpIMGlDZ29nSUhObGJHWmZjMlZ5ZG1salpWOXdaWEp0YVhOemFX
+        OXVjeUE5SUhzS0lDQWdJR2x1WTNKbFlYTmxYM1p2YkhWdFpWOXphWHBsSUQwZ2RISjFaUW9nSUNB
+        Z2NtVmlkV2xzWkY5M2IzSnJjM0JoWTJVZ0lDQWdQU0IwY25WbENpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwWGIzSnJjM0JoWTJWeklHUnBjbVZqZEc5eWVTQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHUnBjbVZqZEc5eWVTQkpSQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzYjNKcmMzQmhZMlZ6WDJScGNtVmpkRzl5ZVM1b2RHMXNMbTFoY210a2IzZHU=

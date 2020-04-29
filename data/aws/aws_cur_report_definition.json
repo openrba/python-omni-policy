@@ -8,37 +8,37 @@
         "arguments": {
             "report_name": {
                 "description": "Unique name for the report. Must start with a number/letter and is case sensitive. Limited to 256 characters.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "time_unit": {
                 "description": "The frequency on which report data are measured and displayed.  Valid values are: HOURLY, DAILY.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "format": {
                 "description": "Format for report. Valid values are: textORcsv.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "compression": {
                 "description": "Compression format for report. Valid values are: GZIP, ZIP.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "additional_schema_elements": {
                 "description": "A list of schema elements. Valid values are: RESOURCES.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "s3_bucket": {
                 "description": "Name of the existing S3 bucket to hold generated reports.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,13 +50,13 @@
             },
             "s3_region": {
                 "description": "Region of the existing S3 bucket to hold generated reports.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "additional_artifacts": {
                 "description": " A list of additional artifacts. Valid values are: REDSHIFT, QUICKSIGHT.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

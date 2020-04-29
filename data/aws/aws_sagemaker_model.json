@@ -20,7 +20,7 @@
             },
             "execution_role_arn": {
                 "description": "A role that SageMaker can assume to access model artifacts and docker images for deployment.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "image": {
                 "description": "The registry path where the inference code image is stored in Amazon ECR.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

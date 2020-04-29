@@ -7,7 +7,7 @@ aws_athena_workgroup:
     arguments:
         name:
             description: Name of the workgroup.
-            required: true
+            required: false
             policy: ''
             notes: ''
         configuration:
@@ -44,3 +44,21 @@ aws_athena_workgroup:
         id:
             description: The workgroup name
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWFJvWlc1aFgzZHZjbXRuY205MWNDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJRDBnSW1WNFlXMXdiR1VpQ2dvZ0lHTnZibVpwWjNWeVlYUnBiMjRnZXdvZ0lD
+        QWdaVzVtYjNKalpWOTNiM0pyWjNKdmRYQmZZMjl1Wm1sbmRYSmhkR2x2YmlBZ0lDQTlJSFJ5ZFdV
+        S0lDQWdJSEIxWW14cGMyaGZZMnh2ZFdSM1lYUmphRjl0WlhSeWFXTnpYMlZ1WVdKc1pXUWdQU0Iw
+        Y25WbENnb2dJQ0FnY21WemRXeDBYMk52Ym1acFozVnlZWFJwYjI0Z2V3b2dJQ0FnSUNCdmRYUndk
+        WFJmYkc5allYUnBiMjRnUFNBaWN6TTZMeTk3WVhkelgzTXpYMkoxWTJ0bGRDNWxlR0Z0Y0d4bExt
+        SjFZMnRsZEgwdmIzVjBjSFYwTHlJS0NpQWdJQ0FnSUdWdVkzSjVjSFJwYjI1ZlkyOXVabWxuZFhK
+        aGRHbHZiaUI3Q2lBZ0lDQWdJQ0FnWlc1amNubHdkR2x2Ymw5dmNIUnBiMjRnUFNBaVUxTkZYMHRO
+        VXlJS0lDQWdJQ0FnSUNCcmJYTmZhMlY1WDJGeWJpQWdJQ0FnSUNBOUlDSWtlMkYzYzE5cmJYTmZh
+        MlY1TG1WNFlXMXdiR1V1WVhKdWZTSUtJQ0FnSUNBZ2ZRb2dJQ0FnZlFvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwQmRHaGxibUVnVjI5eWEyZHliM1Z3Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsYVhJZ2JtRnRaU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZEdobGJtRmZkMjl5YTJkeWIzVndMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

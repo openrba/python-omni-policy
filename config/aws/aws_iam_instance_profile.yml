@@ -27,5 +27,41 @@ aws_iam_instance_profile:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The instance profile's ID.
+        arn:
+            description: The ARN assigned by AWS to the instance profile.
+        create_date:
+            description: The creation timestamp of the instance profile.
+        name:
+            description: The instance profile's name.
+        path:
+            description: The path of the instance profile in IAM.
+        role:
+            description: The role assigned to the instance profile.
+        roles:
+            description: The list of roles assigned to the instance profile. (**Deprecated**)
+        unique_id:
+            description: The [unique ID][1] assigned by AWS.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDJsdWMzUmhibU5sWDNCeWIyWnBiR1VpSUNKMFpYTjBY
+        M0J5YjJacGJHVWlJSHNLSUNCdVlXMWxJRDBnSW5SbGMzUmZjSEp2Wm1sc1pTSUtJQ0J5YjJ4bElE
+        MGdJaVI3WVhkelgybGhiVjl5YjJ4bExuSnZiR1V1Ym1GdFpYMGlDbjBLQ25KbGMyOTFjbU5sSUNK
+        aGQzTmZhV0Z0WDNKdmJHVWlJQ0p5YjJ4bElpQjdDaUFnYm1GdFpTQTlJQ0owWlhOMFgzSnZiR1Vp
+        Q2lBZ2NHRjBhQ0E5SUNJdklnb0tJQ0JoYzNOMWJXVmZjbTlzWlY5d2IyeHBZM2tnUFNBOFBFVlBS
+        Z3A3Q2lBZ0lDQWlWbVZ5YzJsdmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWdJQ0pUZEdGMFpX
+        MWxiblFpT2lCYkNpQWdJQ0FnSUNBZ2V3b2dJQ0FnSUNBZ0lDQWdJQ0FpUVdOMGFXOXVJam9nSW5O
+        MGN6cEJjM04xYldWU2IyeGxJaXdLSUNBZ0lDQWdJQ0FnSUNBZ0lsQnlhVzVqYVhCaGJDSTZJSHNL
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJbE5sY25acFkyVWlPaUFpWldNeUxtRnRZWHB2Ym1GM2N5NWpi
+        MjBpQ2lBZ0lDQWdJQ0FnSUNBZ0lIMHNDaUFnSUNBZ0lDQWdJQ0FnSUNKRlptWmxZM1FpT2lBaVFX
+        eHNiM2NpTEFvZ0lDQWdJQ0FnSUNBZ0lDQWlVMmxrSWpvZ0lpSUtJQ0FnSUNBZ0lDQjlDaUFnSUNC
+        ZENuMEtSVTlHQ24wSw==
+    import: !!binary |
+        Q2dwSmJuTjBZVzVqWlNCUWNtOW1hV3hsY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCdVlXMWxZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmFXNXpkR0Z1WTJWZmNISnZabWxzWlM1b2RHMXNMbTFoY210a2IzZHU=

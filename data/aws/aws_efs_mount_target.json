@@ -8,13 +8,13 @@
         "arguments": {
             "file_system_id": {
                 "description": "The ID of the file system for which the mount target is intended.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "The ID of the subnet to add the mount target in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

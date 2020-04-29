@@ -7,24 +7,24 @@ azurerm_monitor_metric_alert:
     arguments:
         name:
             description: One of the dimension names.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Metric
                 Alert instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         scopes:
             description: A set of strings of resource IDs at which the metric criteria
                 should be applied.
-            required: true
+            required: false
             policy: ''
             notes: ''
         criteria:
             description: One or more `criteria` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         action:
@@ -77,7 +77,7 @@ azurerm_monitor_metric_alert:
         action_group_id:
             description: The ID of the Action Group can be sourced from [the `azurerm_monitor_action_group`
                 resource](./monitor_action_group.html)
-            required: true
+            required: false
             policy: ''
             notes: ''
         webhook_properties:
@@ -88,29 +88,29 @@ azurerm_monitor_metric_alert:
             notes: ''
         metric_namespace:
             description: One of the metric namespaces to be monitored.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_name:
             description: One of the metric names to be monitored.
-            required: true
+            required: false
             policy: ''
             notes: ''
         aggregation:
             description: The statistic that runs over the metric values. Possible
                 values are `Average`, `Count`, `Minimum`, `Maximum` and `Total`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         operator:
             description: The dimension operator. Possible values are `Include` and
                 `Exclude`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         threshold:
             description: The criteria threshold value that activates the alert.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dimension:
@@ -120,7 +120,7 @@ azurerm_monitor_metric_alert:
             notes: ''
         values:
             description: The list of dimension values.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

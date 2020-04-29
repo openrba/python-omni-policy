@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the IP configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the Bastion Host.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ip_configuration": {
                 "description": "A `ip_configuration` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,13 +38,13 @@
             },
             "subnet_id": {
                 "description": "Reference to a subnet in which this Bastion Host has been created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "public_ip_address_id": {
                 "description": " Reference to a Public IP Address to associate with this Bastion Host.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

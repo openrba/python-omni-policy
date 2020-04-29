@@ -7,7 +7,7 @@ aws_cognito_identity_pool_roles_attachment:
     arguments:
         identity_pool_id:
             description: '- An identity pool ID in the format REGION:GUID.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_mapping:
@@ -19,7 +19,7 @@ aws_cognito_identity_pool_roles_attachment:
             description: '- The map of roles associated with this pool. For a given
                 role, the key will be either "authenticated" or "unauthenticated"
                 and the value will be the Role ARN.'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -34,3 +34,52 @@ aws_cognito_identity_pool_roles_attachment:
                 the key will be either "authenticated" or "unauthenticated" and the
                 value will be the Role ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjluYm1sMGIxOXBaR1Z1ZEdsMGVWOXdiMjlzSWlBaWJXRnBi
+        aUlnZXdvZ0lHbGtaVzUwYVhSNVgzQnZiMnhmYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lt
+        bGtaVzUwYVhSNUlIQnZiMndpQ2lBZ1lXeHNiM2RmZFc1aGRYUm9aVzUwYVdOaGRHVmtYMmxrWlc1
+        MGFYUnBaWE1nUFNCbVlXeHpaUW9LSUNCemRYQndiM0owWldSZmJHOW5hVzVmY0hKdmRtbGtaWEp6
+        SUQwZ2V3b2dJQ0FnSW1keVlYQm9MbVpoWTJWaWIyOXJMbU52YlNJZ1BTQWlOek0wTmpJME1UVTVP
+        RGt6TlRVMU5TSUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhkM05mYVdGdFgzSnZiR1VpSUNKaGRY
+        Um9aVzUwYVdOaGRHVmtJaUI3Q2lBZ2JtRnRaU0E5SUNKamIyZHVhWFJ2WDJGMWRHaGxiblJwWTJG
+        MFpXUWlDZ29nSUdGemMzVnRaVjl5YjJ4bFgzQnZiR2xqZVNBOUlEdzhSVTlHQ25zS0lDQWlWbVZ5
+        YzJsdmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWlVM1JoZEdWdFpXNTBJam9nV3dvZ0lDQWdl
+        d29nSUNBZ0lDQWlSV1ptWldOMElqb2dJa0ZzYkc5M0lpd0tJQ0FnSUNBZ0lsQnlhVzVqYVhCaGJD
+        STZJSHNLSUNBZ0lDQWdJQ0FpUm1Wa1pYSmhkR1ZrSWpvZ0ltTnZaMjVwZEc4dGFXUmxiblJwZEhr
+        dVlXMWhlbTl1WVhkekxtTnZiU0lLSUNBZ0lDQWdmU3dLSUNBZ0lDQWdJa0ZqZEdsdmJpSTZJQ0p6
+        ZEhNNlFYTnpkVzFsVW05c1pWZHBkR2hYWldKSlpHVnVkR2wwZVNJc0NpQWdJQ0FnSUNKRGIyNWth
+        WFJwYjI0aU9pQjdDaUFnSUNBZ0lDQWdJbE4wY21sdVowVnhkV0ZzY3lJNklIc0tJQ0FnSUNBZ0lD
+        QWdJQ0pqYjJkdWFYUnZMV2xrWlc1MGFYUjVMbUZ0WVhwdmJtRjNjeTVqYjIwNllYVmtJam9nSWlS
+        N1lYZHpYMk52WjI1cGRHOWZhV1JsYm5ScGRIbGZjRzl2YkM1dFlXbHVMbWxrZlNJS0lDQWdJQ0Fn
+        SUNCOUxBb2dJQ0FnSUNBZ0lDSkdiM0pCYm5sV1lXeDFaVHBUZEhKcGJtZE1hV3RsSWpvZ2V3b2dJ
+        Q0FnSUNBZ0lDQWdJbU52WjI1cGRHOHRhV1JsYm5ScGRIa3VZVzFoZW05dVlYZHpMbU52YlRwaGJY
+        SWlPaUFpWVhWMGFHVnVkR2xqWVhSbFpDSUtJQ0FnSUNBZ0lDQjlDaUFnSUNBZ0lIMEtJQ0FnSUgw
+        S0lDQmRDbjBLUlU5R0NuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXRnRYM0p2YkdWZmNHOXNhV041
+        SWlBaVlYVjBhR1Z1ZEdsallYUmxaQ0lnZXdvZ0lHNWhiV1VnUFNBaVlYVjBhR1Z1ZEdsallYUmxa
+        Rjl3YjJ4cFkza2lDaUFnY205c1pTQTlJQ0lrZTJGM2MxOXBZVzFmY205c1pTNWhkWFJvWlc1MGFX
+        TmhkR1ZrTG1sa2ZTSUtDaUFnY0c5c2FXTjVJRDBnUER4RlQwWUtld29nSUNKV1pYSnphVzl1SWpv
+        Z0lqSXdNVEl0TVRBdE1UY2lMQW9nSUNKVGRHRjBaVzFsYm5RaU9pQmJDaUFnSUNCN0NpQWdJQ0Fn
+        SUNKRlptWmxZM1FpT2lBaVFXeHNiM2NpTEFvZ0lDQWdJQ0FpUVdOMGFXOXVJam9nV3dvZ0lDQWdJ
+        Q0FnSUNKdGIySnBiR1ZoYm1Gc2VYUnBZM002VUhWMFJYWmxiblJ6SWl3S0lDQWdJQ0FnSUNBaVky
+        OW5ibWwwYnkxemVXNWpPaW9pTEFvZ0lDQWdJQ0FnSUNKamIyZHVhWFJ2TFdsa1pXNTBhWFI1T2lv
+        aUNpQWdJQ0FnSUYwc0NpQWdJQ0FnSUNKU1pYTnZkWEpqWlNJNklGc0tJQ0FnSUNBZ0lDQWlLaUlL
+        SUNBZ0lDQWdYUW9nSUNBZ2ZRb2dJRjBLZlFwRlQwWUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOWpi
+        MmR1YVhSdlgybGtaVzUwYVhSNVgzQnZiMnhmY205c1pYTmZZWFIwWVdOb2JXVnVkQ0lnSW0xaGFX
+        NGlJSHNLSUNCcFpHVnVkR2wwZVY5d2IyOXNYMmxrSUQwZ0lpUjdZWGR6WDJOdloyNXBkRzlmYVdS
+        bGJuUnBkSGxmY0c5dmJDNXRZV2x1TG1sa2ZTSUtDaUFnY205c1pWOXRZWEJ3YVc1bklIc0tJQ0Fn
+        SUdsa1pXNTBhWFI1WDNCeWIzWnBaR1Z5SUNBZ0lDQWdJQ0FnUFNBaVozSmhjR2d1Wm1GalpXSnZi
+        MnN1WTI5dElnb2dJQ0FnWVcxaWFXZDFiM1Z6WDNKdmJHVmZjbVZ6YjJ4MWRHbHZiaUE5SUNKQmRY
+        Um9aVzUwYVdOaGRHVmtVbTlzWlNJS0lDQWdJSFI1Y0dVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0FpVW5Wc1pYTWlDZ29nSUNBZ2JXRndjR2x1WjE5eWRXeGxJSHNLSUNBZ0lDQWdZMnho
+        YVcwZ0lDQWdJQ0E5SUNKcGMwRmtiV2x1SWdvZ0lDQWdJQ0J0WVhSamFGOTBlWEJsSUQwZ0lrVnhk
+        V0ZzY3lJS0lDQWdJQ0FnY205c1pWOWhjbTRnSUNBOUlDSWtlMkYzYzE5cFlXMWZjbTlzWlM1aGRY
+        Um9aVzUwYVdOaGRHVmtMbUZ5Ym4waUNpQWdJQ0FnSUhaaGJIVmxJQ0FnSUNBZ1BTQWljR0ZwWkNJ
+        S0lDQWdJSDBLSUNCOUNnb2dJSEp2YkdWeklEMGdld29nSUNBZ0ltRjFkR2hsYm5ScFkyRjBaV1Fp
+        SUQwZ0lpUjdZWGR6WDJsaGJWOXliMnhsTG1GMWRHaGxiblJwWTJGMFpXUXVZWEp1ZlNJS0lDQjlD
+        bjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJkdWFYUnZYMmxrWlc1MGFYUjVYM0J2YjJ4ZmNtOXNaWE5mWVhSMFlXTm9iV1Z1ZEM1
+        dFlYSnJaRzkzYmc9PQ==

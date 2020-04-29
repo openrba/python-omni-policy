@@ -14,13 +14,13 @@
             },
             "name": {
                 "description": "A unique name for the stack. It must start with an",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "template_opts": {
                 "description": "Template key/value pairs to associate with the",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,50 +55,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "disable_rollback": {
-                "description": "See Argument Reference above."
-            },
-            "timeout": {
-                "description": "See Argument Reference above."
-            },
-            "parameters": {
-                "description": "See Argument Reference above."
-            },
-            "tags": {
-                "description": "See Argument Reference above."
-            },
-            "capabilities": {
-                "description": "List of stack capabilities for stack."
-            },
-            "description": {
-                "description": "The description of the stack resource."
-            },
-            "notification_topics": {
-                "description": "List of notification topics for stack."
-            },
-            "status": {
-                "description": "The status of the stack."
-            },
-            "status_reason": {
-                "description": "The reason for the current status of the stack."
-            },
-            "template_description": {
-                "description": "The description of the stack template."
-            },
-            "outputs": {
-                "description": "A list of stack outputs."
-            },
-            "creation_time": {
-                "description": "The date and time when the resource was created. The date"
-            },
-            "updated_time": {
-                "description": "The date and time when the resource was updated. The date"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

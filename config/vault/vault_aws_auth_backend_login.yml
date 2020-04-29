@@ -55,21 +55,40 @@ vault_aws_auth_backend_login:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        lease_duration:
-            description: The duration in seconds the token will be valid, relative
-        lease_start_time:
-            description: The approximate time at which the token was created,
-        renewable:
-            description: Set to true if the token can be extended through renewal.
-        metadata:
-            description: A map of information returned by the Vault server about the
-        auth_type:
-            description: The authentication type used to generate this token.
-        policies:
-            description: The Vault policies assigned to this token.
-        accessor:
-            description: The token's accessor.
-        client_token:
-            description: The token returned by Vault.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmhkM01pSUhzS0lDQjBl
+        WEJsSUQwZ0ltRjNjeUlLZlFvS2NtVnpiM1Z5WTJVZ0luWmhkV3gwWDJGM2MxOWhkWFJvWDJKaFky
+        dGxibVJmWTJ4cFpXNTBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHSmhZMnRsYm1RZ0lDQWdQU0FpSkh0
+        MllYVnNkRjloZFhSb1gySmhZMnRsYm1RdVlYZHpMbkJoZEdoOUlnb2dJR0ZqWTJWemMxOXJaWGtn
+        UFNBaU1USXpORFUyTnpnNU1ERXlJZ29nSUhObFkzSmxkRjlyWlhrZ1BTQWlRVmRUVTBWRFVrVlVT
+        MFZaUjA5RlUwaEZVa1VpQ24wS0NuSmxjMjkxY21ObElDSjJZWFZzZEY5aGQzTmZZWFYwYUY5aVlX
+        TnJaVzVrWDNKdmJHVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ1ltRmphMlZ1WkNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWlSN2RtRjFiSFJmWVhWMGFGOWlZV05yWlc1a0xtRjNjeTV3
+        WVhSb2ZTSUtJQ0J5YjJ4bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlk
+        R1Z6ZEMxeWIyeGxJZ29nSUdGMWRHaGZkSGx3WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0psWXpJaUNpQWdZbTkxYm1SZllXMXBYMmxrSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0ltRnRhUzA0WXpGaVpUVm1OaUlLSUNCaWIzVnVaRjloWTJOdmRXNTBYMmxrSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdQU0FpTVRJek5EVTJOemc1TURFeUlnb2dJR0p2ZFc1a1gzWndZMTlwWkNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjJjR010WWpZeE1UQTJaRFFpQ2lBZ1ltOTFibVJmYzNWaWJt
+        VjBYMmxrSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5ad1l5MHhNek14TWpobU1TSUtJQ0JpYjNW
+        dVpGOXBZVzFmYVc1emRHRnVZMlZmY0hKdlptbHNaVjloY200Z1BTQWlZWEp1T21GM2N6cHBZVzA2
+        T2pFeU16UTFOamM0T1RBeE1qcHBibk4wWVc1alpTMXdjbTltYVd4bEwwMTVVSEp2Wm1sc1pTSUtJ
+        Q0IwZEd3Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQTJNQW9nSUcxaGVG
+        OTBkR3dnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJREV5TUFvZ0lIUnZhMlZ1WDNC
+        dmJHbGphV1Z6SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUZzaVpHVm1ZWFZzZENJc0lDSmtaWFlp
+        TENBaWNISnZaQ0pkQ2dvZ0lHUmxjR1Z1WkhOZmIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUZzaWRtRjFiSFJmWVhkelgyRjFkR2hmWW1GamEyVnVaRjlqYkdsbGJuUXVaWGhoYlhCc1pT
+        SmRDbjBLQ25KbGMyOTFjbU5sSUNKMllYVnNkRjloZDNOZllYVjBhRjlpWVdOclpXNWtYMnh2WjJs
+        dUlpQWlaWGhoYlhCc1pTSWdld29nSUdKaFkydGxibVFnSUNBOUlDSWtlM1poZFd4MFgyRjFkR2hm
+        WW1GamEyVnVaQzVsZUdGdGNHeGxMbkJoZEdoOUlnb2dJSEp2YkdVZ0lDQWdJQ0E5SUNJa2UzWmhk
+        V3gwWDJGM2MxOWhkWFJvWDJKaFkydGxibVJmY205c1pTNWxlR0Z0Y0d4bExuSnZiR1Y5SWdvZ0lH
+        bGtaVzUwYVhSNUlDQTlJQ0pDUVZORk5qUkZUa05QUkVWRVNVUkZUbFJKVkZsRVQwTlZUVVZPVkNJ
+        S0lDQnphV2R1WVhSMWNtVWdQU0FpUWtGVFJUWTBSVTVEVDBSRlJGTklRVEkxTmtsRVJVNVVTVlJa
+        UkU5RFZVMUZUbFJUU1VkT1FWUlZVa1VpQ24wSw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGM2MxOWhkWFJvWDJKaFkydGxibVJmYkc5bmFXNHVhSFJ0YkM1dFpBPT0=

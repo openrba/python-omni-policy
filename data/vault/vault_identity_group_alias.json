@@ -14,22 +14,18 @@
             },
             "mount_accessor": {
                 "description": "Mount accessor of the authentication backend to which this alias belongs to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "canonical_id": {
                 "description": "ID of the group to which this is an alias.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The `id` of the created group alias."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

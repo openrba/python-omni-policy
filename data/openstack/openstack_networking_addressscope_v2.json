@@ -14,7 +14,7 @@
             },
             "name": {
                 "description": "The name of the address-scope. Changing this updates the",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,23 +37,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "ip_version": {
-                "description": "See Argument Reference above."
-            },
-            "shared": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

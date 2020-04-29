@@ -8,25 +8,25 @@
         "arguments": {
             "gateway_arn": {
                 "description": "The Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_interface_id": {
                 "description": "The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_name": {
                 "description": "The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "volume_size_in_bytes": {
                 "description": "The size of the volume in bytes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -49,7 +49,32 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`."
+            },
+            "chap_enabled": {
+                "description": "Whether mutual CHAP is enabled for the iSCSI target."
+            },
+            "id": {
+                "description": "Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`."
+            },
+            "lun_number": {
+                "description": "Logical disk number."
+            },
+            "network_interface_port": {
+                "description": "The port used to communicate with iSCSI targets."
+            },
+            "target_arn": {
+                "description": "Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`."
+            },
+            "volume_arn": {
+                "description": "Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`."
+            },
+            "volume_id": {
+                "description": "Volume ID, e.g. `vol-12345678`."
+            }
+        },
         "timeouts": {}
     }
 }

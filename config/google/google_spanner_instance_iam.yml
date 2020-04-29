@@ -8,17 +8,17 @@ google_spanner_instance_iam:
     arguments:
         instance:
             description: The name of the instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member/members:
             description: Identities that will be granted the privilege in `role`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Only one
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
@@ -31,7 +31,18 @@ google_spanner_instance_iam:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        etag:
-            description: (Computed) The etag of the instance's IAM policy.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwR2IzSWdZV3hzSUdsdGNHOXlkQ0J6ZVc1MFlYaGxjeXdnZEdobElDSnlaWE52ZFhKalpTQnBi
+        aUJ4ZFdWemRHbHZiaUlnWTJGdUlIUmhhMlVnWVc1NUlHOW1JSFJvWlNCbWIyeHNiM2RwYm1jZ1pt
+        OXliWE02Q2dvcUlIdDdjSEp2YW1WamRIMTlMM3Q3Ym1GdFpYMTlDaW9nZTN0dVlXMWxmWDBnS0hC
+        eWIycGxZM1FnYVhNZ2RHRnJaVzRnWm5KdmJTQndjbTkyYVdSbGNpQndjbTlxWldOMEtRb0tTVUZO
+        SUcxbGJXSmxjaUJwYlhCdmNuUnpJSFZ6WlNCemNHRmpaUzFrWld4cGJXbDBaV1FnYVdSbGJuUnBa
+        bWxsY25NN0lIUm9aU0J5WlhOdmRYSmpaU0JwYmlCeGRXVnpkR2x2Yml3Z2RHaGxJSEp2YkdVc0lH
+        RnVaQ0IwYUdVZ1lXTmpiM1Z1ZEN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emNHRnVibVZ5WDJsdWMzUmhibU5sWDJsaGJTNW9kRzFzTG0xaGNtdGtiM2R1

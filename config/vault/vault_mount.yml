@@ -7,12 +7,12 @@ vault_mount:
     arguments:
         path:
             description: Where the secret backend will be mounted
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: Type of the backend, such as "aws"
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -50,7 +50,17 @@ vault_mount:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        accessor:
-            description: The accessor for this mount.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjl0YjNWdWRDSWdJbVY0WVcxd2JHVWlJSHNLSUNCd1lYUm9J
+        Q0FnSUNBZ0lDQTlJQ0prZFcxdGVTSUtJQ0IwZVhCbElDQWdJQ0FnSUNBOUlDSm5aVzVsY21sakln
+        b2dJR1JsYzJOeWFYQjBhVzl1SUQwZ0lsUm9hWE1nYVhNZ1lXNGdaWGhoYlhCc1pTQnRiM1Z1ZENJ
+        S2ZRbz0=
+    import: !!binary |
+        Q2dwTmIzVnVkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY0dGMGFHQXNJ
+        R1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDIxdmRXNTBMbWgwYld3dWJXUT0=

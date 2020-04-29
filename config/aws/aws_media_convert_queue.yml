@@ -7,7 +7,7 @@ aws_media_convert_queue:
     arguments:
         name:
             description: A unique identifier describing the queue
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -44,3 +44,13 @@ aws_media_convert_queue:
         arn:
             description: The Arn of the queue
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiV1ZrYVdGZlkyOXVkbVZ5ZEY5eGRXVjFaU0lnSW5SbGMzUWlJ
+        SHNLSUNCdVlXMWxJRDBnSW5SbUxYUmxjM1F0Y1hWbGRXVWlDbjBL
+    import: !!binary |
+        Q2dwTlpXUnBZU0JEYjI1MlpYSjBJRkYxWlhWbElHTmhiaUJpWlNCcGJYQnZjblJsWkNCMmFXRWdk
+        R2hsSUhGMVpYVmxJRzVoYldVc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0WldScFlWOWpiMjUyWlhKMFgzRjFaWFZsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

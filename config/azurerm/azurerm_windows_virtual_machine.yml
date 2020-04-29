@@ -9,44 +9,44 @@ azurerm_windows_virtual_machine:
             description: The Password which should be used for the local-administrator
                 on this Virtual Machine. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_username:
             description: The username of the local administrator used for the Virtual
                 Machine. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The Azure location where the Windows Virtual Machine should
                 exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Specifies the Name of the Marketplace Image this Virtual
                 Machine should be created from. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         os_disk:
             description: A `os_disk` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the Windows Virtual
                 Machine should be exist. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size:
             description: The SKU which should be used for this Virtual Machine, such
                 as `Standard_F2`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         additional_capabilities:
@@ -109,7 +109,9 @@ azurerm_windows_virtual_machine:
                 resource to be created.
             required: false
             policy: ''
-            notes: This can only be configured when `priority` is set to `Spot`.
+            notes:
+            - '-> '
+            - ' This can only be configured when `priority` is set to `Spot`.'
         identity:
             description: An `identity` block as defined below.
             required: false
@@ -130,7 +132,9 @@ azurerm_windows_virtual_machine:
                 reasons.
             required: false
             policy: ''
-            notes: This can only be configured when `priority` is set to `Spot`.
+            notes:
+            - '-> '
+            - ' This can only be configured when `priority` is set to `Spot`.'
         plan:
             description: A `plan` block as defined below. Changing this forces a new
                 resource to be created.
@@ -168,15 +172,19 @@ azurerm_windows_virtual_machine:
                 created from. Changing this forces a new resource to be created.
             required: false
             policy: ''
-            notes: One of either `source_image_id` or `source_image_reference` must
-                be set.
+            notes:
+            - '-> '
+            - ' One of either `source_image_id` or `source_image_reference` must be
+                set.'
         source_image_reference:
             description: A `source_image_reference` block as defined below. Changing
                 this forces a new resource to be created.
             required: false
             policy: ''
-            notes: One of either `source_image_id` or `source_image_reference` must
-                be set.
+            notes:
+            - '-> '
+            - ' One of either `source_image_id` or `source_image_reference` must be
+                set.'
         tags:
             description: A mapping of tags which should be assigned to this Virtual
                 Machine.
@@ -211,47 +219,49 @@ azurerm_windows_virtual_machine:
             description: The XML formatted content that is added to the unattend.xml
                 file for the specified path and component. Changing this forces a
                 new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         setting:
             description: The name of the setting to which the content applies. Possible
                 values are `AutoLogon` and `FirstLogonCommands`. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_uri:
             description: The Primary/Secondary Endpoint for the Azure Storage Account
                 which should be used to store Boot Diagnostics, including Console
                 Output and Screenshots from the Hypervisor.
-            required: true
+            required: false
             policy: ''
             notes: ''
         store:
             description: The certificate store on the Virtual Machine where the certificate
                 should be added.
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
             description: The Secret URL of a Key Vault Certificate.
-            required: true
+            required: false
             policy: ''
-            notes: This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
-                Resource.
+            notes:
+            - '-> '
+            - ' This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
+                Resource.'
         option:
             description: Specifies the Ephemeral Disk Settings for the OS Disk. At
                 this time the only possible value is `Local`. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of Managed Identity which should be assigned to
                 the Windows Virtual Machine. Possible values are `SystemAssigned`,
                 `UserAssigned` and `SystemAssigned, UserAssigned`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity_ids:
@@ -263,14 +273,14 @@ azurerm_windows_virtual_machine:
         caching:
             description: The Type of Caching which should be used for the Internal
                 OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_type:
             description: The Type of Storage Account which should back this the Internal
                 OS Disk. Possible values are `Standard_LRS`, `StandardSSD_LRS` and
                 `Premium_LRS`. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         diff_disk_settings:
@@ -283,54 +293,59 @@ azurerm_windows_virtual_machine:
                 Encrypt this OS Disk.
             required: false
             policy: ''
-            notes: The Disk Encryption Set must have the `Reader` Role Assignment
-                scoped on the Key Vault - in addition to an Access Policy to the Key
-                Vault
+            notes:
+            - '-> '
+            - ' The Disk Encryption Set must have the `Reader` Role Assignment scoped
+                on the Key Vault - in addition to an Access Policy to the Key Vault'
         disk_size_gb:
             description: The Size of the Internal OS Disk in GB, if you wish to vary
                 from the size used in the image this Virtual Machine is sourced from.
             required: false
             policy: ''
-            notes: If specified this must be equal to or larger than the size of the
+            notes:
+            - '-> '
+            - ' If specified this must be equal to or larger than the size of the
                 Image the Virtual Machine is based on. When creating a larger disk
-                than exists in the image you'll need to repartition the disk to use
-                the remaining space.
+                than exists in the image you''ll need to repartition the disk to use
+                the remaining space.'
         write_accelerator_enabled:
             description: Should Write Accelerator be Enabled for this OS Disk? Defaults
                 to `false`.
             required: false
             policy: ''
-            notes: This requires that the `storage_account_type` is set to `Premium_LRS`
-                and that `caching` is set to `None`.
+            notes:
+            - '-> '
+            - ' This requires that the `storage_account_type` is set to `Premium_LRS`
+                and that `caching` is set to `None`.'
         product:
             description: Specifies the Product of the Marketplace Image this Virtual
                 Machine should be created from. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         publisher:
             description: Specifies the Publisher of the Marketplace Image this Virtual
                 Machine should be created from. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate:
             description: One or more `certificate` blocks as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key_vault_id:
             description: The ID of the Key Vault from which all Secrets should be
                 sourced.
-            required: true
+            required: false
             policy: ''
             notes: ''
         Protocol:
             description: Specifies Specifies the protocol of listener. Possible values
                 are `Http` or `Https`
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate_url:

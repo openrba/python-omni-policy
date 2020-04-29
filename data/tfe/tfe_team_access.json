@@ -8,19 +8,19 @@
         "arguments": {
             "access": {
                 "description": "Type of access to grant. Valid values are `admin`,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "team_id": {
                 "description": "ID of the team to add to the workspace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_id": {
                 "description": "ID of the workspace to which the team will be added.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

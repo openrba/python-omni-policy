@@ -8,37 +8,37 @@
         "arguments": {
             "admin_username": {
                 "description": "The username of the local administrator used for the Virtual Machine. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The Azure location where the Linux Virtual Machine should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
-                "description": "The name of the Linux Virtual Machine. Changing this forces a new resource to be created.",
-                "required": true,
+                "description": "Specifies the Name of the Marketplace Image this Virtual Machine should be created from. Changing this forces a new resource to be created.",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "os_disk": {
                 "description": "A `os_disk` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group in which the Linux Virtual Machine should be exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "size": {
                 "description": "The SKU which should be used for this Virtual Machine, such as `Standard_F2`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -52,7 +52,10 @@
                 "description": "The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.",
                 "required": false,
                 "policy": "",
-                "notes": "When an `admin_password` is specified `disable_password_authentication` must be set to `false`."
+                "notes": [
+                    "-> ",
+                    " When an `admin_password` is specified `disable_password_authentication` must be set to `false`."
+                ]
             },
             "admin_ssh_key": {
                 "description": "One or more `admin_ssh_key` blocks as defined below.",
@@ -100,7 +103,10 @@
                 "description": "Should Password Authentication be disabled on this Virtual Machine? Defaults to `true`. Changing this forces a new resource to be created.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> ",
+                    " When an `admin_password` is specified `disable_password_authentication` must be set to `false`."
+                ]
             },
             "eviction_policy": {
                 "description": "Specifies what should happen when the Virtual Machine is evicted for price reasons when using a Spot instance. At this time the only supported value is `Deallocate`. Changing this forces a new resource to be created.",
@@ -194,13 +200,13 @@
             },
             "public_key": {
                 "description": "The Public Key which should be used for authentication, which needs to be at least 2048-bit and in `ssh-rsa` format. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "username": {
                 "description": "The Username for which this Public SSH Key should be configured. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": [
                     "-> ",
@@ -209,13 +215,13 @@
             },
             "storage_account_uri": {
                 "description": "The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "url": {
                 "description": "The Secret URL of a Key Vault Certificate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": [
                     "-> ",
@@ -224,13 +230,13 @@
             },
             "option": {
                 "description": "Specifies the Ephemeral Disk Settings for the OS Disk. At this time the only possible value is `Local`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of Managed Identity which should be assigned to the Linux Virtual Machine. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -242,13 +248,13 @@
             },
             "caching": {
                 "description": "The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_type": {
                 "description": "The Type of Storage Account which should back this the Internal OS Disk. Possible values are `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -287,25 +293,25 @@
             },
             "product": {
                 "description": "Specifies the Product of the Marketplace Image this Virtual Machine should be created from. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "publisher": {
                 "description": "Specifies the Publisher of the Marketplace Image this Virtual Machine should be created from. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "certificate": {
                 "description": "One or more `certificate` blocks as defined above.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_vault_id": {
                 "description": "The ID of the Key Vault from which all Secrets should be sourced.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

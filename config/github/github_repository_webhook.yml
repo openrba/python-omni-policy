@@ -6,20 +6,20 @@ github_repository_webhook:
     arguments:
         repository:
             description: The repository of the webhook.
-            required: true
+            required: false
             policy: ''
             notes: ''
         events:
             description: A list of events which should trigger the webhook. See a
                 list of [available events](https://developer.github.com/v3/activity/events/types/).
-            required: true
+            required: false
             policy: ''
             notes: ''
         configuration:
             description: key/value pair of configuration for this webhook. Available
                 keys are `url`, `content_type`, `secret` and `insecure_ssl`. `secret`
                 is [the shared secret, see API documentation](https://developer.github.com/v3/repos/hooks/#create-a-hook).
-            required: true
+            required: false
             policy: ''
             notes: ''
         active:
@@ -38,3 +38,29 @@ github_repository_webhook:
         url:
             description: URL of the webhook
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUm9kV0pmY21Wd2IzTnBkRzl5ZVNJZ0luSmxjRzhpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0FnUFNBaVptOXZJZ29nSUdSbGMyTnlhWEIwYVc5dUlDQTlJQ0pVWlhKeVlX
+        WnZjbTBnWVdOalpYQjBZVzVqWlNCMFpYTjBjeUlLSUNCb2IyMWxjR0ZuWlY5MWNtd2dQU0FpYUhS
+        MGNEb3ZMMlY0WVcxd2JHVXVZMjl0THlJS0NpQWdjSEpwZG1GMFpTQTlJR1poYkhObENuMEtDbkps
+        YzI5MWNtTmxJQ0puYVhSb2RXSmZjbVZ3YjNOcGRHOXllVjkzWldKb2IyOXJJaUFpWm05dklpQjdD
+        aUFnY21Wd2IzTnBkRzl5ZVNBOUlDSWtlMmRwZEdoMVlsOXlaWEJ2YzJsMGIzSjVMbkpsY0c4dWJt
+        RnRaWDBpQ2dvZ0lHNWhiV1VnUFNBaWQyVmlJZ29LSUNCamIyNW1hV2QxY21GMGFXOXVJSHNLSUNB
+        Z0lIVnliQ0FnSUNBZ0lDQWdJQ0E5SUNKb2RIUndjem92TDJkdmIyZHNaUzVrWlM4aUNpQWdJQ0Jq
+        YjI1MFpXNTBYM1I1Y0dVZ1BTQWlabTl5YlNJS0lDQWdJR2x1YzJWamRYSmxYM056YkNBOUlHWmhi
+        SE5sQ2lBZ2ZRb0tJQ0JoWTNScGRtVWdQU0JtWVd4elpRb0tJQ0JsZG1WdWRITWdQU0JiSW1semMz
+        VmxjeUpkQ24wSw==
+    import: !!binary |
+        Q2dwU1pYQnZjMmwwYjNKNUlIZGxZbWh2YjJ0eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lHNWhiV1ZnSUc5bUlIUm9aU0J5WlhCdmMybDBiM0o1TENCamIyMWlhVzVsWkNCM2FY
+        Um9JSFJvWlNCZ2FXUmdJRzltSUhSb1pTQjNaV0pvYjI5ckxDQnpaWEJoY21GMFpXUWdZbmtnWVNC
+        Z0wyQWdZMmhoY21GamRHVnlMZ3BVYUdVZ1lHbGtZQ0J2WmlCMGFHVWdkMlZpYUc5dmF5QmpZVzRn
+        WW1VZ1ptOTFibVFnYVc0Z2RHaGxJRlZTVENCdlppQjBhR1VnZDJWaWFHOXZheTRnUm05eUlHVjRZ
+        VzF3YkdVNklHQWlhSFIwY0hNNkx5OW5hWFJvZFdJdVkyOXRMMlp2YnkxdmNtY3ZabTl2TFhKbGNH
+        OHZjMlYwZEdsdVozTXZhRzl2YTNNdk1UUTNNVEUwTlRJaVlDNEtDa2x0Y0c5eWRHbHVaeUIxYzJW
+        eklIUm9aU0J1WVcxbElHOW1JSFJvWlNCeVpYQnZjMmwwYjNKNUxDQmhjeUIzWld4c0lHRnpJSFJv
+        WlNCSlJDQnZaaUIwYUdVZ2QyVmlhRzl2YXl3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5eVpYQnZjMmwwYjNKNVgzZGxZbWh2YjJzdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -8,23 +8,23 @@ aws_msk_cluster:
     arguments:
         broker_node_group_info:
             description: Configuration block for the broker nodes of the Kafka cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cluster_name:
             description: Name of the MSK cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         kafka_version:
             description: Specify the desired Kafka software version.
-            required: true
+            required: false
             policy: ''
             notes: ''
         number_of_broker_nodes:
             description: The desired total number of broker nodes in the kafka cluster.  It
                 must be a multiple of the number of specified client subnets.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_authentication:
@@ -90,3 +90,88 @@ aws_msk_cluster:
             description: A comma separated list of one or more hostname:port pairs
                 to use to connect to the Apache Zookeeper cluster.
     timeouts: {}
+    usage: !!binary |
+        Q2dweVpYTnZkWEpqWlNBaVlYZHpYM1p3WXlJZ0luWndZeUlnZXdvZ0lHTnBaSEpmWW14dlkyc2dQ
+        U0FpTVRreUxqRTJPQzR3TGpBdk1qSWlDbjBLQ21SaGRHRWdJbUYzYzE5aGRtRnBiR0ZpYVd4cGRI
+        bGZlbTl1WlhNaUlDSmhlbk1pSUhzS0lDQnpkR0YwWlNBOUlDSmhkbUZwYkdGaWJHVWlDbjBLQ25K
+        bGMyOTFjbU5sSUNKaGQzTmZjM1ZpYm1WMElpQWljM1ZpYm1WMFgyRjZNU0lnZXdvZ0lHRjJZV2xz
+        WVdKcGJHbDBlVjk2YjI1bElEMGdJaVI3WkdGMFlTNWhkM05mWVhaaGFXeGhZbWxzYVhSNVgzcHZi
+        bVZ6TG1GNmN5NXVZVzFsYzFzd1hYMGlDaUFnWTJsa2NsOWliRzlqYXlBZ0lDQWdJQ0FnUFNBaU1U
+        a3lMakUyT0M0d0xqQXZNalFpQ2lBZ2RuQmpYMmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlKSHRoZDNO
+        ZmRuQmpMblp3WXk1cFpIMGlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZjM1ZpYm1WMElpQWljM1Zp
+        Ym1WMFgyRjZNaUlnZXdvZ0lHRjJZV2xzWVdKcGJHbDBlVjk2YjI1bElEMGdJaVI3WkdGMFlTNWhk
+        M05mWVhaaGFXeGhZbWxzYVhSNVgzcHZibVZ6TG1GNmN5NXVZVzFsYzFzeFhYMGlDaUFnWTJsa2Ns
+        OWliRzlqYXlBZ0lDQWdJQ0FnUFNBaU1Ua3lMakUyT0M0eExqQXZNalFpQ2lBZ2RuQmpYMmxrSUNB
+        Z0lDQWdJQ0FnSUNBZ1BTQWlKSHRoZDNOZmRuQmpMblp3WXk1cFpIMGlDbjBLQ25KbGMyOTFjbU5s
+        SUNKaGQzTmZjM1ZpYm1WMElpQWljM1ZpYm1WMFgyRjZNeUlnZXdvZ0lHRjJZV2xzWVdKcGJHbDBl
+        Vjk2YjI1bElEMGdJaVI3WkdGMFlTNWhkM05mWVhaaGFXeGhZbWxzYVhSNVgzcHZibVZ6TG1GNmN5
+        NXVZVzFsYzFzeVhYMGlDaUFnWTJsa2NsOWliRzlqYXlBZ0lDQWdJQ0FnUFNBaU1Ua3lMakUyT0M0
+        eUxqQXZNalFpQ2lBZ2RuQmpYMmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlKSHRoZDNOZmRuQmpMblp3
+        WXk1cFpIMGlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbGZaM0p2ZFhBaUlDSnpa
+        eUlnZXdvZ0lIWndZMTlwWkNBOUlDSWtlMkYzYzE5MmNHTXVkbkJqTG1sa2ZTSUtmUW9LY21WemIz
+        VnlZMlVnSW1GM2MxOXJiWE5mYTJWNUlpQWlhMjF6SWlCN0NpQWdaR1Z6WTNKcGNIUnBiMjRnUFNB
+        aVpYaGhiWEJzWlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5amJHOTFaSGRoZEdOb1gyeHZaMTlu
+        Y205MWNDSWdJblJsYzNRaUlIc0tJQ0J1WVcxbElEMGdJbTF6YTE5aWNtOXJaWEpmYkc5bmN5SUtm
+        UW9LY21WemIzVnlZMlVnSW1GM2MxOXpNMTlpZFdOclpYUWlJQ0ppZFdOclpYUWlJSHNLSUNCaWRX
+        TnJaWFFnUFNBaWJYTnJMV0p5YjJ0bGNpMXNiMmR6TFdKMVkydGxkQ0lLSUNCaFkyd2dJQ0FnUFNB
+        aWNISnBkbUYwWlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cFlXMWZjbTlzWlNJZ0ltWnBjbVZv
+        YjNObFgzSnZiR1VpSUhzS0lDQnVZVzFsSUQwZ0ltWnBjbVZvYjNObFgzUmxjM1JmY205c1pTSUtD
+        aUFnWVhOemRXMWxYM0p2YkdWZmNHOXNhV041SUQwZ1BEeEZUMFlLZXdvaVZtVnljMmx2YmlJNklD
+        SXlNREV5TFRFd0xURTNJaXdLSWxOMFlYUmxiV1Z1ZENJNklGc0tJQ0I3Q2lBZ0lDQWlRV04wYVc5
+        dUlqb2dJbk4wY3pwQmMzTjFiV1ZTYjJ4bElpd0tJQ0FnSUNKUWNtbHVZMmx3WVd3aU9pQjdDaUFn
+        SUNBZ0lDSlRaWEoyYVdObElqb2dJbVpwY21Wb2IzTmxMbUZ0WVhwdmJtRjNjeTVqYjIwaUNpQWdJ
+        Q0I5TEFvZ0lDQWdJa1ZtWm1WamRDSTZJQ0pCYkd4dmR5SXNDaUFnSUNBaVUybGtJam9nSWlJS0lD
+        QjlDaUFnWFFwOUNrVlBSZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMnRwYm1WemFYTmZabWx5Wldo
+        dmMyVmZaR1ZzYVhabGNubGZjM1J5WldGdElpQWlkR1Z6ZEY5emRISmxZVzBpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQWdJQ0E5SUNKMFpYSnlZV1p2Y20wdGEybHVaWE5wY3kxbWFYSmxhRzl6WlMxdGMyc3RZ
+        bkp2YTJWeUxXeHZaM010YzNSeVpXRnRJZ29nSUdSbGMzUnBibUYwYVc5dUlEMGdJbk16SWdvS0lD
+        QnpNMTlqYjI1bWFXZDFjbUYwYVc5dUlIc0tJQ0FnSUhKdmJHVmZZWEp1SUNBZ1BTQWlKSHRoZDNO
+        ZmFXRnRYM0p2YkdVdVptbHlaV2h2YzJWZmNtOXNaUzVoY201OUlnb2dJQ0FnWW5WamEyVjBYMkZ5
+        YmlBOUlDSWtlMkYzYzE5ek0xOWlkV05yWlhRdVluVmphMlYwTG1GeWJuMGlDaUFnZlFvS0lDQjBZ
+        V2R6SUQwZ2V3b2dJQ0FnVEc5blJHVnNhWFpsY25sRmJtRmliR1ZrSUQwZ0luQnNZV05sYUc5c1pH
+        VnlJZ29nSUgwS0NpQWdiR2xtWldONVkyeGxJSHNLSUNBZ0lHbG5ibTl5WlY5amFHRnVaMlZ6SUQw
+        Z1d3b2dJQ0FnSUNCMFlXZHpXeUpNYjJkRVpXeHBkbVZ5ZVVWdVlXSnNaV1FpWFN3S0lDQWdJRjBL
+        SUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmJYTnJYMk5zZFhOMFpYSWlJQ0psZUdGdGNHeGxJ
+        aUI3Q2lBZ1kyeDFjM1JsY2w5dVlXMWxJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsSWdvZ0lH
+        dGhabXRoWDNabGNuTnBiMjRnSUNBZ0lDQWdJQ0FnUFNBaU1pNHhMakFpQ2lBZ2JuVnRZbVZ5WDI5
+        bVgySnliMnRsY2w5dWIyUmxjeUE5SURNS0NpQWdZbkp2YTJWeVgyNXZaR1ZmWjNKdmRYQmZhVzVt
+        YnlCN0NpQWdJQ0JwYm5OMFlXNWpaVjkwZVhCbElDQWdQU0FpYTJGbWEyRXViVFV1YkdGeVoyVWlD
+        aUFnSUNCbFluTmZkbTlzZFcxbFgzTnBlbVVnUFNBeE1EQXdDaUFnSUNCamJHbGxiblJmYzNWaWJt
+        VjBjeUE5SUZzS0lDQWdJQ0FnSWlSN1lYZHpYM04xWW01bGRDNXpkV0p1WlhSZllYb3hMbWxrZlNJ
+        c0NpQWdJQ0FnSUNJa2UyRjNjMTl6ZFdKdVpYUXVjM1ZpYm1WMFgyRjZNaTVwWkgwaUxBb2dJQ0Fn
+        SUNBaUpIdGhkM05mYzNWaWJtVjBMbk4xWW01bGRGOWhlak11YVdSOUlpd0tJQ0FnSUYwS0lDQWdJ
+        SE5sWTNWeWFYUjVYMmR5YjNWd2N5QTlJRnNpSkh0aGQzTmZjMlZqZFhKcGRIbGZaM0p2ZFhBdWMy
+        Y3VhV1I5SWwwS0lDQjlDZ29nSUdWdVkzSjVjSFJwYjI1ZmFXNW1ieUI3Q2lBZ0lDQmxibU55ZVhC
+        MGFXOXVYMkYwWDNKbGMzUmZhMjF6WDJ0bGVWOWhjbTRnUFNBaUpIdGhkM05mYTIxelgydGxlUzVy
+        YlhNdVlYSnVmU0lLSUNCOUNnb2dJRzl3Wlc1ZmJXOXVhWFJ2Y21sdVp5QjdDaUFnSUNCd2NtOXRa
+        WFJvWlhWeklIc0tJQ0FnSUNBZ2FtMTRYMlY0Y0c5eWRHVnlJSHNLSUNBZ0lDQWdJQ0JsYm1GaWJH
+        VmtYMmx1WDJKeWIydGxjaUE5SUhSeWRXVUtJQ0FnSUNBZ2ZRb2dJQ0FnSUNCdWIyUmxYMlY0Y0c5
+        eWRHVnlJSHNLSUNBZ0lDQWdJQ0JsYm1GaWJHVmtYMmx1WDJKeWIydGxjaUE5SUhSeWRXVUtJQ0Fn
+        SUNBZ2ZRb2dJQ0FnZlFvZ0lIMEtDaUFnYkc5bloybHVaMTlwYm1adklIc0tJQ0FnSUdKeWIydGxj
+        bDlzYjJkeklIc0tJQ0FnSUNBZ1kyeHZkV1IzWVhSamFGOXNiMmR6SUhzS0lDQWdJQ0FnSUNCbGJt
+        RmliR1ZrSUNBZ1BTQjBjblZsQ2lBZ0lDQWdJQ0FnYkc5blgyZHliM1Z3SUQwZ0lpUjdZWGR6WDJO
+        c2IzVmtkMkYwWTJoZmJHOW5YMmR5YjNWd0xuUmxjM1F1Ym1GdFpYMGlDaUFnSUNBZ0lIMEtJQ0Fn
+        SUNBZ1ptbHlaV2h2YzJVZ2V3b2dJQ0FnSUNBZ0lHVnVZV0pzWldRZ0lDQWdJQ0FnSUNBOUlIUnlk
+        V1VLSUNBZ0lDQWdJQ0JrWld4cGRtVnllVjl6ZEhKbFlXMGdQU0FpSkh0aGQzTmZhMmx1WlhOcGMx
+        OW1hWEpsYUc5elpWOWtaV3hwZG1WeWVWOXpkSEpsWVcwdWRHVnpkRjl6ZEhKbFlXMHVibUZ0Wlgw
+        aUNpQWdJQ0FnSUgwS0lDQWdJQ0FnY3pNZ2V3b2dJQ0FnSUNBZ0lHVnVZV0pzWldRZ1BTQjBjblZs
+        Q2lBZ0lDQWdJQ0FnWW5WamEyVjBJQ0E5SUNJa2UyRjNjMTl6TTE5aWRXTnJaWFF1WW5WamEyVjBM
+        bWxrZlNJS0lDQWdJQ0FnSUNCd2NtVm1hWGdnSUQwZ0lteHZaM012YlhOckxTSUtJQ0FnSUNBZ2ZR
+        b2dJQ0FnZlFvZ0lIMEtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lHWnZieUE5SUNKaVlYSWlDaUFnZlFw
+        OUNncHZkWFJ3ZFhRZ0lucHZiMnRsWlhCbGNsOWpiMjV1WldOMFgzTjBjbWx1WnlJZ2V3b2dJSFpo
+        YkhWbElEMGdJaVI3WVhkelgyMXphMTlqYkhWemRHVnlMbVY0WVcxd2JHVXVlbTl2YTJWbGNHVnlY
+        Mk52Ym01bFkzUmZjM1J5YVc1bmZTSUtmUW9LYjNWMGNIVjBJQ0ppYjI5MGMzUnlZWEJmWW5KdmEy
+        VnljeUlnZXdvZ0lHUmxjMk55YVhCMGFXOXVJRDBnSWxCc1lXbHVkR1Y0ZENCamIyNXVaV04wYVc5
+        dUlHaHZjM1E2Y0c5eWRDQndZV2x5Y3lJS0lDQjJZV3gxWlNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTl0
+        YzJ0ZlkyeDFjM1JsY2k1bGVHRnRjR3hsTG1KdmIzUnpkSEpoY0Y5aWNtOXJaWEp6ZlNJS2ZRb0ti
+        M1YwY0hWMElDSmliMjkwYzNSeVlYQmZZbkp2YTJWeWMxOTBiSE1pSUhzS0lDQmtaWE5qY21sd2RH
+        bHZiaUE5SUNKVVRGTWdZMjl1Ym1WamRHbHZiaUJvYjNOME9uQnZjblFnY0dGcGNuTWlDaUFnZG1G
+        c2RXVWdJQ0FnSUNBZ1BTQWlKSHRoZDNOZmJYTnJYMk5zZFhOMFpYSXVaWGhoYlhCc1pTNWliMjkw
+        YzNSeVlYQmZZbkp2YTJWeWMxOTBiSE45SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwTlUwc2dZMngxYzNSbGNuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmpi
+        SFZ6ZEdWeUlHQmhjbTVnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0YzJ0ZlkyeDFjM1JsY2k1b2RHMXNMbTFoY210a2IzZHU=

@@ -7,12 +7,12 @@ aws_apigatewayv2_stage:
     arguments:
         api_id:
             description: The API identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the stage.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_log_settings:
@@ -66,12 +66,12 @@ aws_apigatewayv2_stage:
         destination_arn:
             description: The ARN of the CloudWatch Logs log group to receive access
                 logs. Any trailing `:*` is trimmed from the ARN.
-            required: true
+            required: false
             policy: ''
             notes: ''
         format:
             description: A single line [format](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html#apigateway-cloudwatch-log-formats
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_trace_enabled:
@@ -104,8 +104,26 @@ aws_apigatewayv2_stage:
             notes: ''
         route_key:
             description: Route key.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The stage identifier.
+        arn:
+            description: The ARN of the stage.
+        execution_arn:
+            description: The ARN prefix to be used in an [`aws_lambda_permission`](/docs/providers/aws/r/lambda_permission.html)'s
+                `source_arn` attribute
+        invoke_url:
+            description: The URL to invoke the API pointing to the stage,
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5emRHRm5aV0FnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        R0o1SUhWemFXNW5JSFJvWlNCQlVFa2dhV1JsYm5ScFptbGxjaUJoYm1RZ2MzUmhaMlVnYm1GdFpT
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZmMzUmhaMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

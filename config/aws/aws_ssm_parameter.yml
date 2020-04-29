@@ -10,18 +10,18 @@ aws_ssm_parameter:
                 any forward slashes (`/`)), it must be fully qualified with a leading
                 forward slash (`/`). For additional requirements and constraints,
                 see the [AWS SSM User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-parameter-name-constraints.html).
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of the parameter. Valid types are `String`, `StringList`
                 and `SecureString`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: The value of the parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -76,3 +76,14 @@ aws_ssm_parameter:
         version:
             description: The version of the parameter.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM050WDNCaGNtRnRaWFJsY2lJZ0ltWnZieUlnZXdvZ0lHNWhi
+        V1VnSUQwZ0ltWnZieUlLSUNCMGVYQmxJQ0E5SUNKVGRISnBibWNpQ2lBZ2RtRnNkV1VnUFNBaVlt
+        RnlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwVFUwMGdVR0Z5WVcxbGRHVnljeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J3WVhKaGJXVjBaWElnYzNSdmNtVWdibUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZmNHRnlZVzFsZEdWeUxtaDBiV3d1YldGeWEyUnZkMjQ9

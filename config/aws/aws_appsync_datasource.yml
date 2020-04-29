@@ -7,18 +7,18 @@ aws_appsync_datasource:
     arguments:
         api_id:
             description: The API ID for the GraphQL API for the DataSource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: A user-supplied name for the DataSource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: 'The type of the DataSource. Valid values: `AWS_LAMBDA`,
                 `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -55,3 +55,42 @@ aws_appsync_datasource:
         arn:
             description: The ARN
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaSGx1WVcxdlpHSmZkR0ZpYkdVaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaU0lLSUNCeVpXRmtYMk5oY0dGamFY
+        UjVJQ0E5SURFS0lDQjNjbWwwWlY5allYQmhZMmwwZVNBOUlERUtJQ0JvWVhOb1gydGxlU0FnSUNB
+        Z0lDQTlJQ0pWYzJWeVNXUWlDZ29nSUdGMGRISnBZblYwWlNCN0NpQWdJQ0J1WVcxbElEMGdJbFZ6
+        WlhKSlpDSUtJQ0FnSUhSNWNHVWdQU0FpVXlJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZh
+        V0Z0WDNKdmJHVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0E5SUNKbGVHRnRjR3hsSWdvS0lD
+        QmhjM04xYldWZmNtOXNaVjl3YjJ4cFkza2dQU0E4UEVWUFJncDdDaUFnSWxabGNuTnBiMjRpT2lB
+        aU1qQXhNaTB4TUMweE55SXNDaUFnSWxOMFlYUmxiV1Z1ZENJNklGc0tJQ0FnSUhzS0lDQWdJQ0Fn
+        SWtGamRHbHZiaUk2SUNKemRITTZRWE56ZFcxbFVtOXNaU0lzQ2lBZ0lDQWdJQ0pRY21sdVkybHdZ
+        V3dpT2lCN0NpQWdJQ0FnSUNBZ0lsTmxjblpwWTJVaU9pQWlZWEJ3YzNsdVl5NWhiV0Y2YjI1aGQz
+        TXVZMjl0SWdvZ0lDQWdJQ0I5TEFvZ0lDQWdJQ0FpUldabVpXTjBJam9nSWtGc2JHOTNJZ29nSUNB
+        Z2ZRb2dJRjBLZlFwRlQwWUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXBZVzFmY205c1pWOXdiMnhw
+        WTNraUlDSmxlR0Z0Y0d4bElpQjdDaUFnYm1GdFpTQTlJQ0psZUdGdGNHeGxJZ29nSUhKdmJHVWdQ
+        U0FpSkh0aGQzTmZhV0Z0WDNKdmJHVXVaWGhoYlhCc1pTNXBaSDBpQ2dvZ0lIQnZiR2xqZVNBOUlE
+        dzhSVTlHQ25zS0lDQWlWbVZ5YzJsdmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWlVM1JoZEdW
+        dFpXNTBJam9nV3dvZ0lDQWdld29nSUNBZ0lDQWlRV04wYVc5dUlqb2dXd29nSUNBZ0lDQWdJQ0pr
+        ZVc1aGJXOWtZam9xSWdvZ0lDQWdJQ0JkTEFvZ0lDQWdJQ0FpUldabVpXTjBJam9nSWtGc2JHOTNJ
+        aXdLSUNBZ0lDQWdJbEpsYzI5MWNtTmxJam9nV3dvZ0lDQWdJQ0FnSUNJa2UyRjNjMTlrZVc1aGJX
+        OWtZbDkwWVdKc1pTNWxlR0Z0Y0d4bExtRnlibjBpQ2lBZ0lDQWdJRjBLSUNBZ0lIMEtJQ0JkQ24w
+        S1JVOUdDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZWEJ3YzNsdVkxOW5jbUZ3YUhGc1gyRndhU0ln
+        SW1WNFlXMXdiR1VpSUhzS0lDQmhkWFJvWlc1MGFXTmhkR2x2Ymw5MGVYQmxJRDBnSWtGUVNWOUxS
+        VmtpQ2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0owWmw5aGNIQnplVzVqWDJWNFlX
+        MXdiR1VpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mWVhCd2MzbHVZMTlrWVhSaGMyOTFjbU5sSWlB
+        aVpYaGhiWEJzWlNJZ2V3b2dJR0Z3YVY5cFpDQWdJQ0FnSUNBZ0lDQWdQU0FpSkh0aGQzTmZZWEJ3
+        YzNsdVkxOW5jbUZ3YUhGc1gyRndhUzVsZUdGdGNHeGxMbWxrZlNJS0lDQnVZVzFsSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdJblJtWDJGd2NITjVibU5mWlhoaGJYQnNaU0lLSUNCelpYSjJhV05sWDNKdmJH
+        VmZZWEp1SUQwZ0lpUjdZWGR6WDJsaGJWOXliMnhsTG1WNFlXMXdiR1V1WVhKdWZTSUtJQ0IwZVhC
+        bElDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtGTlFWcFBUbDlFV1U1QlRVOUVRaUlLQ2lBZ1pIbHVZVzF2
+        WkdKZlkyOXVabWxuSUhzS0lDQWdJSFJoWW14bFgyNWhiV1VnUFNBaUpIdGhkM05mWkhsdVlXMXZa
+        R0pmZEdGaWJHVXVaWGhoYlhCc1pTNXVZVzFsZlNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3Y0hONWJtTmZaR0YwWVhOdmRYSmpaV0FnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SGRwZEdnZ2RHaGxhWElnWUdGd2FWOXBaR0FzSUdFZ2FIbHdhR1Z1TENCaGJtUWdZRzVoYldWZ0xD
+        QmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCemVXNWpYMlJoZEdGemIzVnlZMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

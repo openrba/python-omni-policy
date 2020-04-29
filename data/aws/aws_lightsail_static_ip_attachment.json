@@ -8,13 +8,13 @@
         "arguments": {
             "static_ip_name": {
                 "description": "The name of the allocated static IP",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_name": {
                 "description": "The name of the Lightsail instance to attach the IP to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

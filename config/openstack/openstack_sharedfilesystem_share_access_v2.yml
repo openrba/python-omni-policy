@@ -7,37 +7,34 @@ openstack_sharedfilesystem_share_access_v2:
     arguments:
         share_id:
             description: The UUID of the share to which you are granted access.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_type:
             description: The access rule type. Can either be an ip, user,
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_to:
             description: The value that defines the access. Can either be an IP
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_level:
             description: The access level to the share. Can either be `rw` or `ro`.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the Share Access.
-        region:
-            description: See Argument Reference above.
-        share_id:
-            description: See Argument Reference above.
-        access_type:
-            description: See Argument Reference above.
-        access_to:
-            description: See Argument Reference above.
-        access_level:
-            description: See Argument Reference above.
-        access_key:
-            description: The access credential of the entity granted access.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUhSb1pTQkpSQ0J2WmlCMGFHVWdjMmhoY21VZ1lXNWtJSFJvWlNCSlJDQnZaaUIwYUdVS2My
+        aGhjbVVnWVdOalpYTnpMQ0J6WlhCaGNtRjBaV1FnWW5rZ1lTQnpiR0Z6YUN3Z1pTNW5Mam9LQ2c9
+        PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXphR0Z5WldSbWFXeGxjM2x6ZEdWdFgzTm9ZWEpsWDJGalkyVnpjMTkyTWk1
+        b2RHMXNMbTFoY210a2IzZHU=

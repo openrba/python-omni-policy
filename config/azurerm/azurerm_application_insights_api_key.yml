@@ -8,13 +8,13 @@ azurerm_application_insights_api_key:
         name:
             description: Specifies the name of the Application Insights API key. Changing
                 this forces a
-            required: true
+            required: false
             policy: ''
             notes: ''
         application_insights_id:
             description: The ID of the Application Insights component on which the
                 API key operates. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         read_permissions:
@@ -31,7 +31,9 @@ azurerm_application_insights_api_key:
                 case sensitive. Changing this forces a new resource to be created.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> '
+            - ' At least one read or write permission must be defined.'
     attributes:
         id:
             description: The ID of the Application Insights API key.

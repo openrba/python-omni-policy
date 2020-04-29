@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Dev Test Lab. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group under which the Dev Test Lab resource has to be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the Dev Test Lab should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

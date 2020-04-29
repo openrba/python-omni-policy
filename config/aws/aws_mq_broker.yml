@@ -18,7 +18,7 @@ aws_mq_broker:
             notes: ''
         broker_name:
             description: The name of the broker.
-            required: true
+            required: false
             policy: ''
             notes: ''
         configuration:
@@ -40,18 +40,18 @@ aws_mq_broker:
         engine_type:
             description: The type of broker engine. Currently, Amazon MQ supports
                 only `ActiveMQ`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         engine_version:
             description: The version of the broker engine. See the [AmazonMQ Broker
                 Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         host_instance_type:
             description: The broker's instance type. e.g. `mq.t2.micro` or `mq.m4.large`
-            required: true
+            required: false
             policy: ''
             notes: ''
         publicly_accessible:
@@ -62,7 +62,7 @@ aws_mq_broker:
             notes: ''
         security_groups:
             description: The list of security group IDs assigned to the broker.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
@@ -102,3 +102,22 @@ aws_mq_broker:
             description: A list of information about allocated brokers (both active
                 & standby).
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiWEZmWW5KdmEyVnlJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHSnli
+        MnRsY2w5dVlXMWxJRDBnSW1WNFlXMXdiR1VpQ2dvZ0lHTnZibVpwWjNWeVlYUnBiMjRnZXdvZ0lD
+        QWdhV1FnSUNBZ0lDQWdQU0FpSkh0aGQzTmZiWEZmWTI5dVptbG5kWEpoZEdsdmJpNTBaWE4wTG1s
+        a2ZTSUtJQ0FnSUhKbGRtbHphVzl1SUQwZ0lpUjdZWGR6WDIxeFgyTnZibVpwWjNWeVlYUnBiMjR1
+        ZEdWemRDNXNZWFJsYzNSZmNtVjJhWE5wYjI1OUlnb2dJSDBLQ2lBZ1pXNW5hVzVsWDNSNWNHVWdJ
+        Q0FnSUNBZ0lEMGdJa0ZqZEdsMlpVMVJJZ29nSUdWdVoybHVaVjkyWlhKemFXOXVJQ0FnSUNBOUlD
+        STFMakUxTGpBaUNpQWdhRzl6ZEY5cGJuTjBZVzVqWlY5MGVYQmxJRDBnSW0xeExuUXlMbTFwWTNK
+        dklnb2dJSE5sWTNWeWFYUjVYMmR5YjNWd2N5QWdJQ0E5SUZzaUpIdGhkM05mYzJWamRYSnBkSGxm
+        WjNKdmRYQXVkR1Z6ZEM1cFpIMGlYUW9LSUNCMWMyVnlJSHNLSUNBZ0lIVnpaWEp1WVcxbElEMGdJ
+        a1Y0WVcxd2JHVlZjMlZ5SWdvZ0lDQWdjR0Z6YzNkdmNtUWdQU0FpVFdsdVpGUm9aVWRoY0NJS0lD
+        QjlDbjBL
+    import: !!binary |
+        Q2dwTlVTQkNjbTlyWlhKeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdWcGNpQmlj
+        bTlyWlhJZ2FXUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0Y1Y5aWNtOXJaWEl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

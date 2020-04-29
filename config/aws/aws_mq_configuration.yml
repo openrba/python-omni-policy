@@ -7,7 +7,7 @@ aws_mq_configuration:
     arguments:
         data:
             description: The broker configuration in XML format.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -17,17 +17,17 @@ aws_mq_configuration:
             notes: ''
         engine_type:
             description: The type of broker engine.
-            required: true
+            required: false
             policy: ''
             notes: ''
         engine_version:
             description: The version of the broker engine.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the configuration
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -43,3 +43,24 @@ aws_mq_configuration:
         latest_revision:
             description: The latest revision of the configuration.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiWEZmWTI5dVptbG5kWEpoZEdsdmJpSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCa1pYTmpjbWx3ZEdsdmJpQWdJQ0E5SUNKRmVHRnRjR3hsSUVOdmJtWnBaM1Z5WVhScGIy
+        NGlDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaU0lLSUNCbGJtZHBibVZmZEhs
+        d1pTQWdJQ0E5SUNKQlkzUnBkbVZOVVNJS0lDQmxibWRwYm1WZmRtVnljMmx2YmlBOUlDSTFMakUx
+        TGpBaUNnb2dJR1JoZEdFZ1BTQThQRVJCVkVFS1BEOTRiV3dnZG1WeWMybHZiajBpTVM0d0lpQmxi
+        bU52WkdsdVp6MGlWVlJHTFRnaUlITjBZVzVrWVd4dmJtVTlJbmxsY3lJL1BnbzhZbkp2YTJWeUlI
+        aHRiRzV6UFNKb2RIUndPaTh2WVdOMGFYWmxiWEV1WVhCaFkyaGxMbTl5Wnk5elkyaGxiV0V2WTI5
+        eVpTSStDaUFnUEhCc2RXZHBibk0rQ2lBZ0lDQThabTl5WTJWUVpYSnphWE4wWlc1amVVMXZaR1ZD
+        Y205clpYSlFiSFZuYVc0Z2NHVnljMmx6ZEdWdVkyVkdiR0ZuUFNKMGNuVmxJaTgrQ2lBZ0lDQThj
+        M1JoZEdsemRHbGpjMEp5YjJ0bGNsQnNkV2RwYmk4K0NpQWdJQ0E4ZEdsdFpWTjBZVzF3YVc1blFu
+        SnZhMlZ5VUd4MVoybHVJSFIwYkVObGFXeHBibWM5SWpnMk5EQXdNREF3SWlCNlpYSnZSWGh3YVhK
+        aGRHbHZiazkyWlhKeWFXUmxQU0k0TmpRd01EQXdNQ0l2UGdvZ0lEd3ZjR3gxWjJsdWN6NEtQQzlp
+        Y205clpYSStDa1JCVkVFS2ZRbz0=
+    import: !!binary |
+        Q2dwTlVTQkRiMjVtYVdkMWNtRjBhVzl1Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdOdmJtWnBaM1Z5WVhScGIyNGdTVVFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0Y1Y5amIyNW1hV2QxY21GMGFXOXVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

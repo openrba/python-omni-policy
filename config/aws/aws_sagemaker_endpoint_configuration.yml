@@ -7,7 +7,7 @@ aws_sagemaker_endpoint_configuration:
     arguments:
         production_variants:
             description: Fields are documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         kms_key_arn:
@@ -28,12 +28,12 @@ aws_sagemaker_endpoint_configuration:
             notes: ''
         initial_instance_count:
             description: Initial number of instances used for auto-scaling.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_type:
             description: '- The type of instance to start.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         accelerator_type:
@@ -50,7 +50,7 @@ aws_sagemaker_endpoint_configuration:
             notes: ''
         model_name:
             description: The name of the model to use.
-            required: true
+            required: false
             policy: ''
             notes: ''
         variant_name:
@@ -66,3 +66,20 @@ aws_sagemaker_endpoint_configuration:
         name:
             description: The name of the endpoint configuration.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMkZuWlcxaGEyVnlYMlZ1WkhCdmFXNTBYMk52Ym1acFozVnlZ
+        WFJwYjI0aUlDSmxZeUlnZXdvZ0lHNWhiV1VnUFNBaWJYa3RaVzVrY0c5cGJuUXRZMjl1Wm1sbkln
+        b0tJQ0J3Y205a2RXTjBhVzl1WDNaaGNtbGhiblJ6SUhzS0lDQWdJSFpoY21saGJuUmZibUZ0WlNB
+        Z0lDQWdJQ0FnSUNBZ1BTQWlkbUZ5YVdGdWRDMHhJZ29nSUNBZ2JXOWtaV3hmYm1GdFpTQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTl6WVdkbGJXRnJaWEpmYlc5a1pXd3ViUzV1WVcxbGZTSUtJ
+        Q0FnSUdsdWFYUnBZV3hmYVc1emRHRnVZMlZmWTI5MWJuUWdQU0F4Q2lBZ0lDQnBibk4wWVc1alpW
+        OTBlWEJsSUNBZ0lDQWdJQ0FnSUQwZ0ltMXNMblF5TG0xbFpHbDFiU0lLSUNCOUNnb2dJSFJoWjNN
+        Z2V3b2dJQ0FnVG1GdFpTQTlJQ0ptYjI4aUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRmJtUndiMmx1ZENCamIyNW1hV2QxY21GMGFXOXVjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J1WVcxbFlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WVdkbGJXRnJaWEpmWlc1a2NHOXBiblJmWTI5dVptbG5kWEpoZEdsdmJpNW9kRzFzTG0x
+        aGNtdGtiM2R1

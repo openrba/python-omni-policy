@@ -8,27 +8,27 @@ google_dns_record_set:
     arguments:
         managed_zone:
             description: The name of the zone in which this record set will
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The DNS name this record set will apply to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rrdatas:
             description: The string data for the records in this record set
-            required: true
+            required: false
             policy: ''
             notes: ''
         ttl:
             description: The time-to-live of this record set (seconds).
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The DNS record set type.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -38,3 +38,11 @@ google_dns_record_set:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRVRsTWdjbVZqYjNKa0lITmxkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklHVnBk
+        R2hsY2lCdlppQjBhR1Z6WlNCaFkyTmxjSFJsWkNCbWIzSnRZWFJ6T2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5a2JuTmZjbVZqYjNKa1gzTmxkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

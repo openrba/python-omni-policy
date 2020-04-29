@@ -8,31 +8,54 @@ aws_guardduty_ipset:
         activate:
             description: Specifies whether GuardDuty is to start using the uploaded
                 IPSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         detector_id:
             description: The detector ID of the GuardDuty.
-            required: true
+            required: false
             policy: ''
             notes: ''
         format:
             description: 'The format of the file that contains the IPSet. Valid values:
                 `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT` | `FIRE_EYE`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The URI of the file that contains the IPSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The friendly name to identify the IPSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the GuardDuty IPSet.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaM1ZoY21Sa2RYUjVYMlJsZEdWamRHOXlJaUFpYldGemRHVnlJ
+        aUI3Q2lBZ1pXNWhZbXhsSUQwZ2RISjFaUXA5Q2dweVpYTnZkWEpqWlNBaVlYZHpYM016WDJKMVky
+        dGxkQ0lnSW1KMVkydGxkQ0lnZXdvZ0lHRmpiQ0E5SUNKd2NtbDJZWFJsSWdwOUNncHlaWE52ZFhK
+        alpTQWlZWGR6WDNNelgySjFZMnRsZEY5dlltcGxZM1FpSUNKTmVVbFFVMlYwSWlCN0NpQWdZV05z
+        SUNBZ0lDQTlJQ0p3ZFdKc2FXTXRjbVZoWkNJS0lDQmpiMjUwWlc1MElEMGdJakV3TGpBdU1DNHdM
+        emhjYmlJS0lDQmlkV05yWlhRZ0lEMGdJaVI3WVhkelgzTXpYMkoxWTJ0bGRDNWlkV05yWlhRdWFX
+        UjlJZ29nSUd0bGVTQWdJQ0FnUFNBaVRYbEpVRk5sZENJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5
+        bmRXRnlaR1IxZEhsZmFYQnpaWFFpSUNKTmVVbFFVMlYwSWlCN0NpQWdZV04wYVhaaGRHVWdJQ0Fn
+        UFNCMGNuVmxDaUFnWkdWMFpXTjBiM0pmYVdRZ1BTQWlKSHRoZDNOZlozVmhjbVJrZFhSNVgyUmxk
+        R1ZqZEc5eUxtMWhjM1JsY2k1cFpIMGlDaUFnWm05eWJXRjBJQ0FnSUNBZ1BTQWlWRmhVSWdvZ0lH
+        eHZZMkYwYVc5dUlDQWdJRDBnSW1oMGRIQnpPaTh2Y3pNdVlXMWhlbTl1WVhkekxtTnZiUzhrZTJG
+        M2MxOXpNMTlpZFdOclpYUmZiMkpxWldOMExrMTVTVkJUWlhRdVluVmphMlYwZlM4a2UyRjNjMTl6
+        TTE5aWRXTnJaWFJmYjJKcVpXTjBMazE1U1ZCVFpYUXVhMlY1ZlNJS0lDQnVZVzFsSUNBZ0lDQWdJ
+        Q0E5SUNKTmVVbFFVMlYwSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwSGRXRnlaRVIxZEhrZ1NWQlRaWFFnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0IwYUdVZ2JXRnpkR1Z5SUVkMVlYSmtSSFYwZVNCa1pYUmxZM1J2Y2lCSlJDQmhibVFnU1ZCVFpY
+        UWdTVVFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluZFdGeVpHUjFkSGxmYVhCelpYUXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

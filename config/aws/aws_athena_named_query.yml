@@ -8,7 +8,7 @@ aws_athena_named_query:
         name:
             description: The plain language name for the query. Maximum length of
                 128.
-            required: true
+            required: false
             policy: ''
             notes: ''
         workgroup:
@@ -18,13 +18,13 @@ aws_athena_named_query:
             notes: ''
         database:
             description: The database to which the query belongs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         query:
             description: The text of the query itself. In other words, all query statements.
                 Maximum length of 262144.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -36,3 +36,29 @@ aws_athena_named_query:
         id:
             description: The unique ID of the query.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpYUc5blpTSWdld29nSUdKMVkydGxk
+        Q0E5SUNKMFppMTBaWE4wSWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJ0dGMxOXJaWGtpSUNKMFpY
+        TjBJaUI3Q2lBZ1pHVnNaWFJwYjI1ZmQybHVaRzkzWDJsdVgyUmhlWE1nUFNBM0NpQWdaR1Z6WTNK
+        cGNIUnBiMjRnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlRWFJvWlc1aElFdE5VeUJMWlhraUNuMEtDbkps
+        YzI5MWNtTmxJQ0poZDNOZllYUm9aVzVoWDNkdmNtdG5jbTkxY0NJZ0luUmxjM1FpSUhzS0lDQnVZ
+        VzFsSUQwZ0ltVjRZVzF3YkdVaUNnb2dJR052Ym1acFozVnlZWFJwYjI0Z2V3b2dJQ0FnY21WemRX
+        eDBYMk52Ym1acFozVnlZWFJwYjI0Z2V3b2dJQ0FnSUNCbGJtTnllWEIwYVc5dVgyTnZibVpwWjNW
+        eVlYUnBiMjRnZXdvZ0lDQWdJQ0FnSUdWdVkzSjVjSFJwYjI1ZmIzQjBhVzl1SUQwZ0lsTlRSVjlM
+        VFZNaUNpQWdJQ0FnSUNBZ2EyMXpYMnRsZVY5aGNtNGdJQ0FnSUNBZ1BTQWlKSHRoZDNOZmEyMXpY
+        MnRsZVM1MFpYTjBMbUZ5Ym4waUNpQWdJQ0FnSUgwS0lDQWdJSDBLSUNCOUNuMEtDbkpsYzI5MWNt
+        TmxJQ0poZDNOZllYUm9aVzVoWDJSaGRHRmlZWE5sSWlBaWFHOW5aU0lnZXdvZ0lHNWhiV1VnSUNB
+        OUlDSjFjMlZ5Y3lJS0lDQmlkV05yWlhRZ1BTQWlKSHRoZDNOZmN6TmZZblZqYTJWMExtaHZaMlV1
+        YVdSOUlncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgyRjBhR1Z1WVY5dVlXMWxaRjl4ZFdWeWVTSWdJ
+        bVp2YnlJZ2V3b2dJRzVoYldVZ0lDQWdJQ0E5SUNKaVlYSWlDaUFnZDI5eWEyZHliM1Z3SUQwZ0lp
+        UjdZWGR6WDJGMGFHVnVZVjkzYjNKclozSnZkWEF1ZEdWemRDNXBaSDBpQ2lBZ1pHRjBZV0poYzJV
+        Z0lEMGdJaVI3WVhkelgyRjBhR1Z1WVY5a1lYUmhZbUZ6WlM1b2IyZGxMbTVoYldWOUlnb2dJSEYx
+        WlhKNUlDQWdJQ0E5SUNKVFJVeEZRMVFnS2lCR1VrOU5JQ1I3WVhkelgyRjBhR1Z1WVY5a1lYUmhZ
+        bUZ6WlM1b2IyZGxMbTVoYldWOUlHeHBiV2wwSURFd095SUtmUW89
+    import: !!binary |
+        Q2dwQmRHaGxibUVnVG1GdFpXUWdVWFZsY25rZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCeGRXVnllU0JKUkN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZEdobGJtRmZibUZ0WldSZmNYVmxjbmt1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

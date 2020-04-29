@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "A name for the log destination",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The ARN of an IAM role that grants Amazon CloudWatch Logs permissions to put data into the target",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_arn": {
                 "description": "The ARN of the target Amazon Kinesis stream resource for the destination",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

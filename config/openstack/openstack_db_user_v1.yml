@@ -7,17 +7,17 @@ openstack_db_user_v1:
     arguments:
         name:
             description: A unique name for the resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance:
             description: The ID for the database instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
             description: User's password.
-            required: true
+            required: false
             policy: ''
             notes: ''
         databases:
@@ -25,15 +25,11 @@ openstack_db_user_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: Openstack region resource is created in.
-        name:
-            description: See Argument Reference above.
-        instance:
-            description: See Argument Reference above.
-        password:
-            description: See Argument Reference above.
-        databases:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWtZbDkxYzJWeVgzWXhMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

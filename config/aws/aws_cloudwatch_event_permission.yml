@@ -10,13 +10,13 @@ aws_cloudwatch_event_permission:
             description: The 12-digit AWS account ID that you are permitting to put
                 events to your default event bus. Specify `*` to permit any account
                 to put events to your default event bus, optionally limited by `condition`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         statement_id:
             description: An identifier string for the external account that you are
                 granting permissions to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         action:
@@ -36,3 +36,12 @@ aws_cloudwatch_event_permission:
         id:
             description: The statement ID of the CloudWatch Events permission.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRGJHOTFaRmRoZEdOb0lFVjJaVzUwY3lCd1pYSnRhWE56YVc5dWN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElITjBZWFJsYldWdWRDQkpSQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDJWMlpXNTBYM0JsY20xcGMzTnBiMjR1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

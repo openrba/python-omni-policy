@@ -14,7 +14,7 @@
             },
             "image_id": {
                 "description": "The proposed image ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,22 +26,12 @@
             },
             "status": {
                 "description": "The membership proposal status. Can either be",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "created_at": {
-                "description": "The date the image membership was created."
-            },
-            "updated_at": {
-                "description": "The date the image membership was last updated."
-            },
-            "schema": {
-                "description": "The membership schema."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

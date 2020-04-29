@@ -17,7 +17,7 @@ aws_iam_server_certificate:
             notes: ''
         certificate_body:
             description: The contents of the public key certificate in
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate_chain:
@@ -27,7 +27,7 @@ aws_iam_server_certificate:
             notes: ''
         private_key:
             description: The contents of the private key in PEM-encoded format.
-            required: true
+            required: false
             policy: ''
             notes: ''
         path:
@@ -43,3 +43,16 @@ aws_iam_server_certificate:
         arn:
             description: The Amazon Resource Name (ARN) specifying the server certificate.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNObGNuWmxjbDlqWlhKMGFXWnBZMkYwWlNJZ0luUmxj
+        M1JmWTJWeWRDSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWMyOXRaVjkwWlhOMFgy
+        TmxjblFpQ2lBZ1kyVnlkR2xtYVdOaGRHVmZZbTlrZVNBOUlDSWtlMlpwYkdVb0luTmxiR1l0WTJF
+        dFkyVnlkQzV3WlcwaUtYMGlDaUFnY0hKcGRtRjBaVjlyWlhrZ0lDQWdJQ0E5SUNJa2UyWnBiR1Vv
+        SW5SbGMzUXRhMlY1TG5CbGJTSXBmU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwSlFVMGdVMlZ5ZG1WeUlFTmxjblJwWm1sallYUmxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J1WVcxbFlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmMyVnlkbVZ5WDJObGNuUnBabWxqWVhSbExtaDBiV3d1YldGeWEyUnZkMjQ9

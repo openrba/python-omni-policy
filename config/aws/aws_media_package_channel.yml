@@ -7,7 +7,7 @@ aws_media_package_channel:
     arguments:
         channel_id:
             description: A unique identifier describing the channel
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -28,3 +28,15 @@ aws_media_package_channel:
         hls_ingest:
             description: A single item list of HLS ingest information
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiV1ZrYVdGZmNHRmphMkZuWlY5amFHRnVibVZzSWlBaWEybDBk
+        R1Z1Y3lJZ2V3b2dJR05vWVc1dVpXeGZhV1FnSUQwZ0ltdHBkSFJsYmkxamFHRnVibVZzSWdvZ0lH
+        UmxjMk55YVhCMGFXOXVJRDBnSWtFZ1kyaGhibTVsYkNCa1pXUnBZMkYwWldRZ2RHOGdZVzExYzJs
+        dVp5QjJhV1JsYjNNZ2IyWWdhMmwwZEdWdWN5NGlDbjBL
+    import: !!binary |
+        Q2dwTlpXUnBZU0JRWVdOcllXZGxJRU5vWVc1dVpXeHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjJh
+        V0VnZEdobElHTm9ZVzV1Wld3Z1NVUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0WldScFlWOXdZV05yWVdkbFgyTm9ZVzV1Wld3dWFIUnRiQzV0WVhKclpHOTNiZz09

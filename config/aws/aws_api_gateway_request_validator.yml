@@ -7,12 +7,12 @@ aws_api_gateway_request_validator:
     arguments:
         name:
             description: The name of the request validator
-            required: true
+            required: false
             policy: ''
             notes: ''
         rest_api_id:
             description: The ID of the associated Rest API
-            required: true
+            required: false
             policy: ''
             notes: ''
         validate_request_body:
@@ -26,5 +26,23 @@ aws_api_gateway_request_validator:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The unique ID of the request validator
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WeGRXVnpkRjkyWVd4cFpHRjBi
+        M0lpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSW1WNFlXMXdiR1VpQ2lBZ2NtVnpkRjloY0dsZmFXUWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdJaVI3WVhkelgyRndhVjluWVhSbGQyRjVYM0psYzNSZllYQnBMbVY0WVcxd2JHVXVhV1I5
+        SWdvZ0lIWmhiR2xrWVhSbFgzSmxjWFZsYzNSZlltOWtlU0FnSUNBZ0lDQTlJSFJ5ZFdVS0lDQjJZ
+        V3hwWkdGMFpWOXlaWEYxWlhOMFgzQmhjbUZ0WlhSbGNuTWdQU0IwY25WbENuMEs=
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVY5bllYUmxkMkY1WDNKbGNYVmxjM1JmZG1Gc2FXUmhkRzl5WUNCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dZRkpGVTFRdFFWQkpMVWxFTDFKRlVWVkZVMVF0VmtGTVNV
+        UkJWRTlTTFVsRVlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5eVpYRjFaWE4wWDNaaGJHbGtZWFJ2Y2k1b2RHMXNMbTFoY210
+        a2IzZHU=

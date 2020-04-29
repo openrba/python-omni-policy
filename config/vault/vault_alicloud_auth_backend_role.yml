@@ -12,7 +12,7 @@ vault_alicloud_auth_backend_role:
             notes: ''
         arn:
             description: The role's arn.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend:
@@ -22,3 +22,18 @@ vault_alicloud_auth_backend_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmhiR2xqYkc5MVpDSWdl
+        d29nSUNBZ2RIbHdaU0E5SUNKaGJHbGpiRzkxWkNJS0lDQWdJSEJoZEdnZ1BTQWlZV3hwWTJ4dmRX
+        UWlDbjBLQ25KbGMyOTFjbU5sSUNKMllYVnNkRjloYkdsamJHOTFaRjloZFhSb1gySmhZMnRsYm1S
+        ZmNtOXNaU0lnSW1Gc2FXTnNiM1ZrSWlCN0NpQWdJQ0JpWVdOclpXNWtJRDBnZG1GMWJIUmZZWFYw
+        YUY5aVlXTnJaVzVrTG1Gc2FXTnNiM1ZrTG5CaGRHZ0tJQ0FnSUhKdmJHVWdJQ0FnUFNBaVpYaGhi
+        WEJzWlNJS0lDQWdJR0Z5YmlBZ0lDQWdQU0FpWVdOek9uSmhiVG94TWpNME5UWTZkR1k2Y205c1pT
+        OW1iMjlpWVhJaUNncDlDZz09
+    import: !!binary |
+        Q2dwQmJHbGpiRzkxWkNCaGRYUm9aVzUwYVdOaGRHbHZiaUJ5YjJ4bGN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQndZWFJvWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGc2FXTnNiM1ZrWDJGMWRHaGZZbUZqYTJWdVpGOXliMnhsTG0xaw==

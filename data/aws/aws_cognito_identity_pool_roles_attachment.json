@@ -8,7 +8,7 @@
         "arguments": {
             "identity_pool_id": {
                 "description": "- An identity pool ID in the format REGION:GUID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "roles": {
                 "description": "- The map of roles associated with this pool. For a given role, the key will be either \"authenticated\" or \"unauthenticated\" and the value will be the Role ARN.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

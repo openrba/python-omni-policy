@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,55 +20,55 @@
             },
             "enabled": {
                 "description": "Specifies whether the rule is enabled.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sql": {
                 "description": "The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sql_version": {
                 "description": "The version of the SQL rules engine to use when evaluating the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "alarm_name": {
                 "description": "The CloudWatch alarm name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The ARN of the IAM role that grants access.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "state_reason": {
                 "description": "The reason for the alarm change.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "state_value": {
                 "description": "The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "metric_name": {
                 "description": "The CloudWatch metric name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "metric_namespace": {
                 "description": "The CloudWatch metric namespace name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,19 +80,19 @@
             },
             "metric_unit": {
                 "description": "The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "metric_value": {
                 "description": "The CloudWatch metric value.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "hash_key_field": {
                 "description": "The hash key name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -104,7 +104,7 @@
             },
             "hash_key_value": {
                 "description": "The hash key value.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -134,37 +134,37 @@
             },
             "table_name": {
                 "description": "The name of the DynamoDB table.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "endpoint": {
                 "description": "The endpoint of your Elasticsearch domain.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "id": {
                 "description": "The unique identifier for the document you are storing.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "index": {
                 "description": "The Elasticsearch index where you want to store your data.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of document you are storing.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "delivery_stream_name": {
                 "description": "The delivery stream name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -182,55 +182,55 @@
             },
             "stream_name": {
                 "description": "The name of the Amazon Kinesis stream.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "function_arn": {
                 "description": "The ARN of the Lambda function.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "topic": {
                 "description": "The name of the MQTT topic the message should be republished to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bucket_name": {
                 "description": "The Amazon S3 bucket name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key": {
                 "description": "The object key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "message_format": {
                 "description": "The message format of the message to publish. Accepted values are \"JSON\" and \"RAW\".",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_arn": {
                 "description": "The ARN of the SNS topic.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "queue_url": {
                 "description": "The URL of the Amazon SQS queue.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "use_base64": {
                 "description": "Specifies whether to use Base64 encoding.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

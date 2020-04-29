@@ -8,31 +8,31 @@
         "arguments": {
             "name": {
                 "description": "The name of the virtual machine extension peering. Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "virtual_machine_id": {
                 "description": "The ID of the Virtual Machine. Changing this forces a new resource to be created",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "publisher": {
                 "description": "The publisher of the extension, available publishers",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of extension, available types for a publisher can",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type_handler_version": {
                 "description": "Specifies the version of the extension to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,7 +44,7 @@
             },
             "settings": {
                 "description": "The settings passed to the extension, these are",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

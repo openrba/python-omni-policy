@@ -8,19 +8,19 @@ azurerm_netapp_account:
         name:
             description: The name of the NetApp Account. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group where the NetApp Account should
                 be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         active_directory:
@@ -36,29 +36,29 @@ azurerm_netapp_account:
         dns_servers:
             description: A list of DNS server IP addresses for the Active Directory
                 domain. Only allows `IPv4` address.
-            required: true
+            required: false
             policy: ''
             notes: ''
         domain:
             description: The name of the Active Directory domain.
-            required: true
+            required: false
             policy: ''
             notes: ''
         smb_server_name:
             description: The NetBIOS name which should be used for the NetApp SMB
                 Server, which will be registered as a computer account in the AD and
                 used to mount volumes.
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
             description: The Username of Active Directory Domain Administrator.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
             description: The password associated with the `username`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         organizational_unit:
@@ -86,3 +86,11 @@ azurerm_netapp_account:
             description: Used when deleting the NetApp Account.
             required: false
             timeout: 30
+    usage: {}
+    import: !!binary |
+        Q2dwT1pYUkJjSEFnUVdOamIzVnVkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBZWEJ3WDJGalkyOTFiblF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

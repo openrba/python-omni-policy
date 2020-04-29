@@ -6,53 +6,52 @@ azurerm_application_gateway:
     description: Manages an Application Gateway.
     arguments:
         name:
-            description: The name of the Application Gateway. Changing this forces
-                a new resource to be created.
-            required: true
+            description: Unique name of the rewrite rule block
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to the Application
                 Gateway should exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The Azure region where the Application Gateway should exist.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend_address_pool:
             description: One or more `backend_address_pool` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend_http_settings:
             description: One or more `backend_http_settings` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         frontend_ip_configuration:
             description: One or more `frontend_ip_configuration` blocks as defined
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         frontend_port:
             description: One or more `frontend_port` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         gateway_ip_configuration:
             description: One or more `gateway_ip_configuration` blocks as defined
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_listener:
             description: One or more `http_listener` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity:
@@ -62,12 +61,12 @@ azurerm_application_gateway:
             notes: ''
         request_routing_rule:
             description: One or more `request_routing_rule` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku:
             description: A `sku` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zones:
@@ -75,7 +74,10 @@ azurerm_application_gateway:
                 Gateway over.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> **Please Note**: Availability Zones are [only supported in several
+                regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview).  They
+                are also only supported for [v2 SKUs](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant)'
         authentication_certificate:
             description: One or more `authentication_certificate` blocks.
             required: false
@@ -166,7 +168,7 @@ azurerm_application_gateway:
         cookie_based_affinity:
             description: Is Cookie-Based Affinity enabled? Possible values are `Enabled`
                 and `Disabled`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         affinity_cookie_name:
@@ -176,12 +178,12 @@ azurerm_application_gateway:
             notes: ''
         path:
             description: The Path used for this Probe.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
             description: The port used for this Frontend Port.
-            required: true
+            required: false
             policy: ''
             notes: ''
         probe_name:
@@ -192,13 +194,13 @@ azurerm_application_gateway:
         protocol:
             description: The Protocol used for this Probe. Possible values are `Http`
                 and `Https`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         request_timeout:
             description: The request timeout in seconds, which must be between 1 and
                 86400 seconds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host_name:
@@ -224,18 +226,18 @@ azurerm_application_gateway:
             notes: ''
         enabled:
             description: Is the Web Application Firewall be enabled?
-            required: true
+            required: false
             policy: ''
             notes: ''
         drain_timeout_sec:
             description: The number of seconds connection draining is active. Acceptable
                 values are from `1` second to `3600` seconds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The ID of a Subnet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_ip_address:
@@ -261,12 +263,12 @@ azurerm_application_gateway:
         frontend_ip_configuration_name:
             description: The Name of the Frontend IP Configuration used for this HTTP
                 Listener.
-            required: true
+            required: false
             policy: ''
             notes: ''
         frontend_port_name:
             description: The Name of the Frontend Port use for this HTTP Listener.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host_names:
@@ -296,7 +298,7 @@ azurerm_application_gateway:
         identity_ids:
             description: Specifies a list with a single user managed identity id to
                 be assigned to the Application Gateway.
-            required: true
+            required: false
             policy: ''
             notes: ''
         body:
@@ -308,12 +310,12 @@ azurerm_application_gateway:
         status_code:
             description: Status code of the application gateway customer error. Possible
                 values are `HttpStatus403` and `HttpStatus502`
-            required: true
+            required: false
             policy: ''
             notes: ''
         paths:
             description: A list of Paths used in this Path Rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend_address_pool_name:
@@ -355,21 +357,21 @@ azurerm_application_gateway:
         interval:
             description: The Interval between two consecutive probes in seconds. Possible
                 values range from 1 second to a maximum of 86,400 seconds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout:
             description: The Timeout used for this Probe, which indicates when a probe
                 becomes unhealthy. Possible values range from 1 second to a maximum
                 of 86,400 seconds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         unhealthy_threshold:
             description: The Unhealthy Threshold for this Probe, which indicates the
                 amount of retries which should be attempted before a node is deemed
                 unhealthy. Possible values are from 1 - 20 seconds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pick_host_name_from_backend_http_settings:
@@ -392,13 +394,13 @@ azurerm_application_gateway:
         rule_type:
             description: The Type of Routing that should be used for this Rule. Possible
                 values are `Basic` and `PathBasedRouting`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_listener_name:
             description: The Name of the HTTP Listener which should be used for this
                 Routing Rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         url_path_map_name:
@@ -410,7 +412,7 @@ azurerm_application_gateway:
         tier:
             description: The Tier of the SKU to use for this Application Gateway.
                 Possible values are `Standard`, `Standard_v2`, `WAF` and `WAF_v2`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         capacity:
@@ -418,7 +420,7 @@ azurerm_application_gateway:
                 When using a V1 SKU this value must be between 1 and 32, and 1 to
                 125 for a V2 SKU. This property is optional if `autoscale_configuration`
                 is set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
@@ -461,7 +463,7 @@ azurerm_application_gateway:
             notes: ''
         path_rule:
             description: One or more `path_rule` blocks as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disabled_protocols:
@@ -510,18 +512,18 @@ azurerm_application_gateway:
         firewall_mode:
             description: The Web Application Firewall Mode. Possible values are `Detection`
                 and `Prevention`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_set_type:
             description: The Type of the Rule Set used for this Web Application Firewall.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_set_version:
             description: The Version of the Rule Set used for this Web Application
                 Firewall. Possible values are `2.2.9`, `3.0`, and `3.1`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disabled_rule_group:
@@ -562,7 +564,7 @@ azurerm_application_gateway:
                 `REQUEST-931-APPLICATION-ATTACK-RFI`, `REQUEST-932-APPLICATION-ATTACK-RCE`,
                 `REQUEST-933-APPLICATION-ATTACK-PHP`, `REQUEST-941-APPLICATION-ATTACK-XSS`,
                 `REQUEST-942-APPLICATION-ATTACK-SQLI`, `REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         rules:
@@ -575,7 +577,7 @@ azurerm_application_gateway:
             description: Match variable of the exclusion rule to exclude header, cookie
                 or GET arguments. Possible values are `RequestHeaderNames`, `RequestArgNames`
                 and `RequestCookieNames`
-            required: true
+            required: false
             policy: ''
             notes: ''
         selector_match_operator:
@@ -593,13 +595,13 @@ azurerm_application_gateway:
             notes: ''
         custom_error_page_url:
             description: Error page URL of the application gateway customer error.
-            required: true
+            required: false
             policy: ''
             notes: ''
         redirect_type:
             description: The type of redirect. Possible values are `Permanent`, `Temporary`,
                 `Found` and `SeeOther`
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_listener_name:
@@ -629,7 +631,7 @@ azurerm_application_gateway:
         min_capacity:
             description: Minimum capacity for autoscaling. Accepted values are in
                 the range `0` to `100`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_capacity:
@@ -640,13 +642,13 @@ azurerm_application_gateway:
             notes: ''
         rewrite_rule:
             description: One or more `rewrite_rule` blocks as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_sequence:
             description: Rule sequence of the rewrite rule that determines the order
                 of execution in a set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         condition:
@@ -668,13 +670,13 @@ azurerm_application_gateway:
             notes: ''
         variable:
             description: The [variable](https://docs.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers#server-variables
-            required: true
+            required: false
             policy: ''
             notes: ''
         pattern:
             description: The pattern, either fixed string or regular expression, that
                 evaluates the truthfulness of the condition.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ignore_case:
@@ -690,13 +692,13 @@ azurerm_application_gateway:
             notes: ''
         header_name:
             description: Header name of the header configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         header_value:
             description: Header value of the header configuration. To delete a response
                 header set this property to an empty string.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

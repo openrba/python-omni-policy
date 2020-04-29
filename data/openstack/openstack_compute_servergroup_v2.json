@@ -14,13 +14,13 @@
             },
             "name": {
                 "description": "A unique name for the server group. Changing this creates",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policies": {
                 "description": "The set of policies for the server group. All policies",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,20 +31,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "policies": {
-                "description": "See Argument Reference above."
-            },
-            "members": {
-                "description": "The instances that are part of this server group."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

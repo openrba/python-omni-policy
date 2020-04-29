@@ -8,7 +8,7 @@ rancher_volume:
     arguments:
         name:
             description: The name of the volume.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,13 +18,27 @@ rancher_volume:
             notes: ''
         environment_id:
             description: The ID of the environment to create the volume for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         driver:
             description: The volume driver.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRkpoYm1Ob1pYSWdWbTlzZFcxbENuSmxjMjkxY21ObElISmhi
+        bU5vWlhKZmRtOXNkVzFsSUNKbWIyOGlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0E5SUNKbWIy
+        OGlDaUFnWlc1MmFYSnZibTFsYm5SZmFXUWdQU0FpSkh0eVlXNWphR1Z5WDJWdWRtbHliMjV0Wlc1
+        MExuUmxjM1F1YVdSOUlnb2dJR1J5YVhabGNpQWdJQ0FnSUNBZ0lEMGdJbkpoYm1Ob1pYSXRibVp6
+        SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwV2IyeDFiV1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnVm05c2RXMWxJ
+        RWxFSUdsdUlIUm9aU0JtYjNKdFlYUUtZRHhsYm5acGNtOXViV1Z1ZEY5cFpENHZQSFp2YkhWdFpW
+        OXBaRDVnQ2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYSmhibU5vWlhJdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtOXNkVzFsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

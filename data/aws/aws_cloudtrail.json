@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the trail.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "s3_bucket_name": {
                 "description": "Specifies the name of the S3 bucket designated for publishing log files.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -91,7 +91,17 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The name of the trail."
+            },
+            "home_region": {
+                "description": "The region in which the trail was created."
+            },
+            "arn": {
+                "description": "The Amazon Resource Name of the trail."
+            }
+        },
         "timeouts": {}
     }
 }

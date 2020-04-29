@@ -13,13 +13,13 @@ openstack_networking_qos_minimum_bandwidth_rule_v2:
         qos_policy_id:
             description: The QoS policy reference. Changing this creates a new QoS
                 minimum bandwidth rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         min_kbps:
             description: The minimum kilobits per second. Changing this updates the
                 min kbps value of the existing
-            required: true
+            required: false
             policy: ''
             notes: ''
         direction:
@@ -28,13 +28,15 @@ openstack_networking_qos_minimum_bandwidth_rule_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        qos_policy_id:
-            description: See Argument Reference above.
-        min_kbps:
-            description: See Argument Reference above.
-        direction:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwUmIxTWdiV2x1YVcxMWJTQmlZVzVrZDJsa2RHZ2djblZzWlhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NXOXpYM0J2YkdsamVWOXBaQzl0YVc1cGJYVnRYMkpoYm1SM2FX
+        UjBhRjl5ZFd4bFgybGtZQ0JtYjNKdFlYUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0Z2YzE5dGFXNXBiWFZ0WDJKaGJtUjNhV1IwYUY5
+        eWRXeGxYM1l5TG1oMGJXd3ViV0Z5YTJSdmQyND0=

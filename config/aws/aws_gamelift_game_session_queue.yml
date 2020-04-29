@@ -7,12 +7,12 @@ aws_gamelift_game_session_queue:
     arguments:
         name:
             description: Name of the session queue.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout_in_seconds:
             description: Maximum time a game session request can remain in the queue.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destinations:
@@ -36,3 +36,24 @@ aws_gamelift_game_session_queue:
         arn:
             description: Game Session Queue ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaMkZ0Wld4cFpuUmZaMkZ0WlY5elpYTnphVzl1WDNGMVpYVmxJ
+        aUFpZEdWemRDSWdld29nSUc1aGJXVWdQU0FpWlhoaGJYQnNaUzF6WlhOemFXOXVMWEYxWlhWbEln
+        b0tJQ0JrWlhOMGFXNWhkR2x2Ym5NZ1BTQmJDaUFnSUNBaUpIdGhkM05mWjJGdFpXeHBablJmWm14
+        bFpYUXVkWE5mZDJWemRGOHlYMlpzWldWMExtRnlibjBpTEFvZ0lDQWdJaVI3WVhkelgyZGhiV1Zz
+        YVdaMFgyWnNaV1YwTG1WMVgyTmxiblJ5WVd4Zk1WOW1iR1ZsZEM1aGNtNTlJaXdLSUNCZENnb2dJ
+        SEJzWVhsbGNsOXNZWFJsYm1ONVgzQnZiR2xqZVNCN0NpQWdJQ0J0WVhocGJYVnRYMmx1WkdsMmFX
+        UjFZV3hmY0d4aGVXVnlYMnhoZEdWdVkzbGZiV2xzYkdselpXTnZibVJ6SUQwZ01UQXdDaUFnSUNC
+        d2IyeHBZM2xmWkhWeVlYUnBiMjVmYzJWamIyNWtjeUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lEMGdOUW9nSUgwS0NpQWdjR3hoZVdWeVgyeGhkR1Z1WTNsZmNHOXNhV041SUhzS0lDQWdJ
+        RzFoZUdsdGRXMWZhVzVrYVhacFpIVmhiRjl3YkdGNVpYSmZiR0YwWlc1amVWOXRhV3hzYVhObFky
+        OXVaSE1nUFNBeU1EQUtJQ0I5Q2dvZ0lIUnBiV1Z2ZFhSZmFXNWZjMlZqYjI1a2N5QTlJRFl3Q24w
+        Sw==
+    import: !!binary |
+        Q2dwSFlXMWxiR2xtZENCSFlXMWxJRk5sYzNOcGIyNGdVWFZsZFdWeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCaWVTQjBhR1ZwY2lCZ2JtRnRaV0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluWVcxbGJHbG1kRjluWVcxbFgzTmxjM05wYjI1ZmNYVmxkV1V1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

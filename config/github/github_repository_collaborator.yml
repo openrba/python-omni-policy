@@ -6,12 +6,12 @@ github_repository_collaborator:
     arguments:
         repository:
             description: The GitHub repository
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
             description: The user to add to the repository as a collaborator.
-            required: true
+            required: false
             policy: ''
             notes: ''
         permission:
@@ -19,5 +19,22 @@ github_repository_collaborator:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        invitation_id:
+            description: ID of the invitation to be used in [`github_user_invitation_accepter`](./user_invitation_accepter.html)
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1FXUmtJR0VnWTI5c2JHRmliM0poZEc5eUlIUnZJR0VnY21Wd2IzTnBkRzl5ZVFweVpYTnZk
+        WEpqWlNBaVoybDBhSFZpWDNKbGNHOXphWFJ2Y25sZlkyOXNiR0ZpYjNKaGRHOXlJaUFpWVY5eVpY
+        QnZYMk52Ykd4aFltOXlZWFJ2Y2lJZ2V3b2dJSEpsY0c5emFYUnZjbmtnUFNBaWIzVnlMV052YjJ3
+        dGNtVndieUlLSUNCMWMyVnlibUZ0WlNBZ0lEMGdJbE52YldWVmMyVnlJZ29nSUhCbGNtMXBjM05w
+        YjI0Z1BTQWlZV1J0YVc0aUNuMEs=
+    import: !!binary |
+        Q2dwSGFYUklkV0lnVW1Wd2IzTnBkRzl5ZVNCRGIyeHNZV0p2Y21GMGIzSnpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCaGJpQkpSQ0J0WVdSbElIVndJRzltSUdCeVpYQnZjMmwwYjNKNU9u
+        VnpaWEp1WVcxbFlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5eVpYQnZjMmwwYjNKNVgyTnZiR3hoWW05eVlYUnZjaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

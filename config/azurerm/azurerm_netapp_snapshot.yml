@@ -8,37 +8,37 @@ azurerm_netapp_snapshot:
         name:
             description: The name of the NetApp Snapshot. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group where the NetApp Snapshot
                 should be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_name:
             description: The name of the NetApp account in which the NetApp Pool should
                 be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pool_name:
             description: The name of the NetApp pool in which the NetApp Volume should
                 be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         volume_name:
             description: The name of the NetApp volume in which the NetApp Snapshot
                 should be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -46,9 +46,7 @@ azurerm_netapp_snapshot:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The ID of the NetApp Snapshot.
+    attributes: {}
     timeouts:
         create:
             description: Used when creating the NetApp Snapshot.
@@ -66,3 +64,11 @@ azurerm_netapp_snapshot:
             description: Used when deleting the NetApp Snapshot.
             required: false
             timeout: 30
+    usage: {}
+    import: !!binary |
+        Q2dwT1pYUkJjSEFnVTI1aGNITm9iM1FnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBZWEJ3WDNOdVlYQnphRzkwTG1oMGJXd3ViV0Z5YTJSdmQyND0=

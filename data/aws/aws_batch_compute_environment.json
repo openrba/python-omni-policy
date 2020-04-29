@@ -26,7 +26,7 @@
             },
             "service_role": {
                 "description": "The full Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "type": {
                 "description": "The type of compute environment. Valid items are `EC2` or `SPOT`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,13 +74,13 @@
             },
             "instance_role": {
                 "description": "The Amazon ECS instance role applied to Amazon EC2 instances in a compute environment.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_type": {
                 "description": "A list of instance types that may be launched.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -92,19 +92,19 @@
             },
             "max_vcpus": {
                 "description": "The maximum number of EC2 vCPUs that an environment can reach.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "min_vcpus": {
                 "description": "The minimum number of EC2 vCPUs that an environment should maintain.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "security_group_ids": {
                 "description": "A list of EC2 security group that are associated with instances launched in the compute environment.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -116,7 +116,7 @@
             },
             "subnets": {
                 "description": "A list of VPC subnets into which the compute resources are launched.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

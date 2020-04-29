@@ -8,7 +8,7 @@
         "arguments": {
             "default_network_acl_id": {
                 "description": "The Network ACL ID to manage. This",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,31 +38,31 @@
             },
             "from_port": {
                 "description": "The from port to match.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "to_port": {
                 "description": "The to port to match.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_no": {
                 "description": "The rule number. Used for ordering.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "action": {
                 "description": "The action to take.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol": {
                 "description": "The protocol to match. If using the -1 'all'",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

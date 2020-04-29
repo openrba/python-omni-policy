@@ -8,13 +8,13 @@
         "arguments": {
             "domain_name": {
                 "description": "DNS queries for this domain name are forwarded to the IP addresses that are specified using `target_ip`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_type": {
                 "description": "The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,7 +44,7 @@
             },
             "ip": {
                 "description": "One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

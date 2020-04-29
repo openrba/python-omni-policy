@@ -14,19 +14,19 @@
             },
             "pool_id": {
                 "description": " The ID of the LB pool. Changing this creates a new",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "address": {
                 "description": "The IP address of the member. Changing this creates a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "port": {
                 "description": "An integer representing the port on which the member is",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,26 +43,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "pool_id": {
-                "description": "See Argument Reference above."
-            },
-            "address": {
-                "description": "See Argument Reference above."
-            },
-            "port": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "weight": {
-                "description": "The load balancing weight of the member. This is currently unable"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

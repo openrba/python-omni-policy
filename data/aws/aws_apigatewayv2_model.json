@@ -8,25 +8,25 @@
         "arguments": {
             "api_id": {
                 "description": "The API identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "content_type": {
                 "description": " The content-type for the model, for example, `application/json`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of the model. Must be alphanumeric.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "schema": {
                 "description": "The schema for the model. This should be a [JSON schema draft 4](https://tools.ietf.org/html/draft-zyp-json-schema-04",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,7 +37,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The model identifier."
+            }
+        },
         "timeouts": {}
     }
 }

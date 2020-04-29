@@ -12,14 +12,48 @@ kubernetes_replication_controller:
         metadata:
             description: Standard replication controller's metadata. For more info
                 see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec defines the specification of the desired behavior of
                 the replication controller. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status)
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzSmxjR3hwWTJGMGFXOXVYMk52Ym5SeWIyeHNa
+        WElpSUNKbGVHRnRjR3hsSWlCN0NpQWdiV1YwWVdSaGRHRWdld29nSUNBZ2JtRnRaU0E5SUNKMFpY
+        SnlZV1p2Y20wdFpYaGhiWEJzWlNJS0lDQWdJR3hoWW1Wc2N5QTlJSHNLSUNBZ0lDQWdkR1Z6ZENB
+        OUlDSk5lVVY0WVcxd2JHVkJjSEFpQ2lBZ0lDQjlDaUFnZlFvS0lDQnpjR1ZqSUhzS0lDQWdJSE5s
+        YkdWamRHOXlJRDBnZXdvZ0lDQWdJQ0IwWlhOMElEMGdJazE1UlhoaGJYQnNaVUZ3Y0NJS0lDQWdJ
+        SDBLSUNBZ0lIUmxiWEJzWVhSbElIc0tJQ0FnSUNBZ2JXVjBZV1JoZEdFZ2V3b2dJQ0FnSUNBZ0lH
+        eGhZbVZzY3lBOUlIc0tJQ0FnSUNBZ0lDQWdJSFJsYzNRZ1BTQWlUWGxGZUdGdGNHeGxRWEJ3SWdv
+        Z0lDQWdJQ0FnSUgwS0lDQWdJQ0FnSUNCaGJtNXZkR0YwYVc5dWN5QTlJSHNLSUNBZ0lDQWdJQ0Fn
+        SUNKclpYa3hJaUE5SUNKMllXeDFaVEVpQ2lBZ0lDQWdJQ0FnZlFvZ0lDQWdJQ0I5Q2dvZ0lDQWdJ
+        Q0J6Y0dWaklIc0tJQ0FnSUNBZ0lDQmpiMjUwWVdsdVpYSWdld29nSUNBZ0lDQWdJQ0FnYVcxaFoy
+        VWdQU0FpYm1kcGJuZzZNUzQzTGpnaUNpQWdJQ0FnSUNBZ0lDQnVZVzFsSUNBOUlDSmxlR0Z0Y0d4
+        bElnb0tJQ0FnSUNBZ0lDQWdJR3hwZG1WdVpYTnpYM0J5YjJKbElIc0tJQ0FnSUNBZ0lDQWdJQ0Fn
+        YUhSMGNGOW5aWFFnZXdvZ0lDQWdJQ0FnSUNBZ0lDQWdJSEJoZEdnZ1BTQWlMMjVuYVc1NFgzTjBZ
+        WFIxY3lJS0lDQWdJQ0FnSUNBZ0lDQWdJQ0J3YjNKMElEMGdPREE0TUFvS0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0JvZEhSd1gyaGxZV1JsY2lCN0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNCdVlXMWxJQ0E5SUNK
+        WUxVTjFjM1J2YlMxSVpXRmtaWElpQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0IyWVd4MVpTQTlJQ0pC
+        ZDJWemIyMWxJZ29nSUNBZ0lDQWdJQ0FnSUNBZ0lIMEtJQ0FnSUNBZ0lDQWdJQ0FnZlFvS0lDQWdJ
+        Q0FnSUNBZ0lDQWdhVzVwZEdsaGJGOWtaV3hoZVY5elpXTnZibVJ6SUQwZ013b2dJQ0FnSUNBZ0lD
+        QWdJQ0J3WlhKcGIyUmZjMlZqYjI1a2N5QWdJQ0FnSUNBZ1BTQXpDaUFnSUNBZ0lDQWdJQ0I5Q2dv
+        Z0lDQWdJQ0FnSUNBZ2NtVnpiM1Z5WTJWeklIc0tJQ0FnSUNBZ0lDQWdJQ0FnYkdsdGFYUnpJSHNL
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQmpjSFVnSUNBZ1BTQWlNQzQxSWdvZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        RzFsYlc5eWVTQTlJQ0kxTVRKTmFTSUtJQ0FnSUNBZ0lDQWdJQ0FnZlFvZ0lDQWdJQ0FnSUNBZ0lD
+        QnlaWEYxWlhOMGN5QjdDaUFnSUNBZ0lDQWdJQ0FnSUNBZ1kzQjFJQ0FnSUQwZ0lqSTFNRzBpQ2lB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdiV1Z0YjNKNUlEMGdJalV3VFdraUNpQWdJQ0FnSUNBZ0lDQWdJSDBL
+        SUNBZ0lDQWdJQ0FnSUgwS0lDQWdJQ0FnSUNCOUNpQWdJQ0FnSUgwS0lDQWdJSDBLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwU1pYQnNhV05oZEdsdmJpQkRiMjUwY205c2JHVnlJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdibUZ0WlhOd1lXTmxJR0Z1WkNCdVlXMWxMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjbVZ3YkdsallYUnBiMjVmWTI5dWRISnZiR3hsY2k1b2RHMXNMbTFoY210
+        a2IzZHU=

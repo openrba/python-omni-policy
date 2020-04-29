@@ -7,7 +7,7 @@ vault_ldap_auth_backend:
     arguments:
         url:
             description: The URL of the LDAP server
-            required: true
+            required: false
             policy: ''
             notes: ''
         starttls:
@@ -103,7 +103,23 @@ vault_ldap_auth_backend:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        accessor:
-            description: The accessor for this auth mount.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjlzWkdGd1gyRjFkR2hmWW1GamEyVnVaQ0lnSW14a1lYQWlJ
+        SHNLSUNBZ0lIQmhkR2dnSUNBZ0lDQWdJRDBnSW14a1lYQWlDaUFnSUNCMWNtd2dJQ0FnSUNBZ0lD
+        QTlJQ0pzWkdGd2N6b3ZMMlJqTFRBeExtVjRZVzF3YkdVdWIzSm5JZ29nSUNBZ2RYTmxjbVJ1SUNB
+        Z0lDQWdQU0FpVDFVOVZYTmxjbk1zVDFVOVFXTmpiM1Z1ZEhNc1JFTTlaWGhoYlhCc1pTeEVRejF2
+        Y21jaUNpQWdJQ0IxYzJWeVlYUjBjaUFnSUNBOUlDSnpRVTFCWTJOdmRXNTBUbUZ0WlNJS0lDQWdJ
+        SFZ3Ym1SdmJXRnBiaUFnSUQwZ0lrVllRVTFRVEVVdVQxSkhJZ29nSUNBZ1pHbHpZMjkyWlhKa2Jp
+        QWdQU0JtWVd4elpRb2dJQ0FnWjNKdmRYQmtiaUFnSUNBZ1BTQWlUMVU5UjNKdmRYQnpMRVJEUFdW
+        NFlXMXdiR1VzUkVNOWIzSm5JZ29nSUNBZ1ozSnZkWEJtYVd4MFpYSWdQU0FpS0NZb2IySnFaV04w
+        UTJ4aGMzTTlaM0p2ZFhBcEtHMWxiV0psY2pveExqSXVPRFF3TGpFeE16VTFOaTR4TGpRdU1UazBN
+        VG85ZTNzdVZYTmxja1JPZlgwcEtTSUtmUW89
+    import: !!binary |
+        Q2dwTVJFRlFJR0YxZEdobGJuUnBZMkYwYVc5dUlHSmhZMnRsYm1SeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lIQmhkR2hnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJ4a1lYQmZZWFYwYUY5aVlXTnJaVzVrTG1oMGJXd3ViV1E9

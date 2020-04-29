@@ -7,12 +7,12 @@ aws_s3_bucket_metric:
     arguments:
         bucket:
             description: The name of the bucket to put metric configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Unique identifier of the metrics configuration for the bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter:
@@ -32,3 +32,11 @@ aws_s3_bucket_metric:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVE15QmlkV05yWlhRZ2JXVjBjbWxqSUdOdmJtWnBaM1Z5WVhScGIyNXpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCZ1luVmphMlYwT20xbGRISnBZMkFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6TTE5aWRXTnJaWFJmYldWMGNtbGpMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

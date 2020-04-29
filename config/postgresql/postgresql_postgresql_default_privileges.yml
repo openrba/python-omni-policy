@@ -8,36 +8,43 @@ postgresql_postgresql_default_privileges:
     arguments:
         role:
             description: The name of the role to which grant default privileges on.
-            required: true
+            required: false
             policy: ''
             notes: ''
         database:
             description: The database to grant default privileges for this role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         owner:
             description: Role for which apply default privileges (You can change default
                 privileges only for objects that will be created by yourself or by
                 roles that you are a member of).
-            required: true
+            required: false
             policy: ''
             notes: ''
         schema:
             description: The database schema to set default privileges for this role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         object_type:
             description: 'The PostgreSQL object type to set the default privileges
                 on (one of: table, sequence).'
-            required: true
+            required: false
             policy: ''
             notes: ''
         privileges:
             description: The list of privileges to apply as default privileges.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYQnZjM1JuY21WemNXd3ZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjRzl6ZEdkeVpYTnhiRjlrWldaaGRXeDBYM0J5YVhacGJHVm5aWE11YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

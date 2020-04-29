@@ -8,7 +8,7 @@ datadog_downtime:
     arguments:
         scope:
             description: ' The scope(s'
-            required: true
+            required: false
             policy: ''
             notes: ''
         active:
@@ -87,3 +87,11 @@ datadog_downtime:
         disabled:
             description: If true this indicates the downtime is currently disabled.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRWIzZHVkR2x0WlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWldseUlHNTFi
+        V1Z5YVdNZ1NVUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHOTNiblJwYldVdWFIUnRiQzV0WVhKclpHOTNiZz09

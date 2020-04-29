@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the template deployment. Changing this forces a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "deployment_mode": {
                 "description": "Specifies the mode that is used to deploy resources. This value could be either `Incremental` or `Complete`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

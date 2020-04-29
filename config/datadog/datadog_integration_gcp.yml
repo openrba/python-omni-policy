@@ -9,28 +9,28 @@ datadog_integration_gcp:
         project_id:
             description: Your Google Cloud project ID found in your JSON service account
                 key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_key_id:
             description: Your private key ID found in your JSON service account key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_key:
             description: Your private key name found in your JSON service account
                 key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_email:
             description: Your email found in your JSON service account key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_id:
             description: Your ID found in your JSON service account key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host_filters:
@@ -48,3 +48,23 @@ datadog_integration_gcp:
         host_filters:
             description: Host filters
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRVJoZEdGa2IyY2dMU0JIYjI5bmJHVWdRMnh2ZFdRZ1VHeGhk
+        R1p2Y20wZ2FXNTBaV2R5WVhScGIyNEtjbVZ6YjNWeVkyVWdJbVJoZEdGa2IyZGZhVzUwWldkeVlY
+        UnBiMjVmWjJOd0lpQWlZWGRsYzI5dFpWOW5ZM0JmY0hKdmFtVmpkRjlwYm5SbFozSmhkR2x2YmlJ
+        Z2V3b2dJSEJ5YjJwbFkzUmZhV1FnSUNBZ0lEMGdJbUYzWlhOdmJXVXRjSEp2YW1WamRDMXBaQ0lL
+        SUNCd2NtbDJZWFJsWDJ0bGVWOXBaQ0E5SUNJeE1qTTBOVFkzT0Rrd01USXpORFUyTnpnNU1ERXlN
+        elExTmpjNE9UQXhNak0wTlRZM09Ea3dJZ29nSUhCeWFYWmhkR1ZmYTJWNUlDQWdJRDBnSWkwdExT
+        MHRRa1ZIU1U0Z1VGSkpWa0ZVUlNCTFJWa3RMUzB0TFZ4dUxpNHVYRzR0TFMwdExVVk9SQ0JRVWts
+        V1FWUkZJRXRGV1MwdExTMHRYRzRpQ2lBZ1kyeHBaVzUwWDJWdFlXbHNJQ0FnUFNBaVlYZGxjMjl0
+        WlMxelpYSjJhV05sTFdGalkyOTFiblJBWVhkbGMyOXRaUzF3Y205cVpXTjBMV2xrTG1saGJTNW5j
+        MlZ5ZG1salpXRmpZMjkxYm5RdVkyOXRJZ29nSUdOc2FXVnVkRjlwWkNBZ0lDQWdJRDBnSWpFeU16
+        UTFOamM0T1RBeE1qTTBOVFkzT0Rrd01TSUtJQ0JvYjNOMFgyWnBiSFJsY25NZ0lDQTlJQ0ptYjI4
+        NlltRnlMR0oxZW5vNmJHbG5hSFI1WldGeUlncDlDZz09
+    import: !!binary |
+        Q2dwSGIyOW5iR1VnUTJ4dmRXUWdVR3hoZEdadmNtMGdhVzUwWldkeVlYUnBiMjV6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1ZwY2lCd2NtOXFaV04wSUVsRUxDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXNTBaV2R5WVhScGIyNWZaMk53TG1oMGJXd3ViV0Z5YTJSdmQyND0=

@@ -7,15 +7,39 @@ aws_licensemanager_association:
     arguments:
         license_configuration_arn:
             description: ARN of the license configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_arn:
             description: ARN of the resource associated with the license configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The license configuration ARN.
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbUYzYzE5aGJXa2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JXOXpkRjl5WldObGJuUWdQ
+        U0IwY25WbENpQWdiM2R1WlhKeklDQWdJQ0FnUFNCYkltRnRZWHB2YmlKZENnb2dJR1pwYkhSbGNp
+        QjdDaUFnSUNCdVlXMWxJQ0FnUFNBaWJtRnRaU0lLSUNBZ0lIWmhiSFZsY3lBOUlGc2lZVzE2Ymkx
+        aGJXa3RkbkJqTFc1aGRDb2lYUW9nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cGJuTjBZVzVq
+        WlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JoYldrZ0lDQWdJQ0FnSUNBZ0lEMGdJaVI3WkdGMFlTNWhk
+        M05mWVcxcExtVjRZVzF3YkdVdWFXUjlJZ29nSUdsdWMzUmhibU5sWDNSNWNHVWdQU0FpZERJdWJX
+        bGpjbThpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mYkdsalpXNXpaVzFoYm1GblpYSmZiR2xqWlc1
+        elpWOWpiMjVtYVdkMWNtRjBhVzl1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSkZlR0Z0Y0d4bElnb2dJR3hwWTJWdWMyVmZZMjkxYm5ScGJtZGZk
+        SGx3WlNBOUlDSkpibk4wWVc1alpTSUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXNhV05sYm5ObGJX
+        RnVZV2RsY2w5aGMzTnZZMmxoZEdsdmJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCc2FXTmxibk5sWDJO
+        dmJtWnBaM1Z5WVhScGIyNWZZWEp1SUQwZ0lpUjdZWGR6WDJ4cFkyVnVjMlZ0WVc1aFoyVnlYMnhw
+        WTJWdWMyVmZZMjl1Wm1sbmRYSmhkR2x2Ymk1bGVHRnRjR3hsTG1GeWJuMGlDaUFnY21WemIzVnlZ
+        MlZmWVhKdUlDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTlwYm5OMFlXNWpaUzVsZUdGdGNH
+        eGxMbUZ5Ym4waUNuMEs=
+    import: !!binary |
+        Q2dwTWFXTmxibk5sSUdOdmJtWnBaM1Z5WVhScGIyNXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQnBi
+        aUIwYUdVZ1ptOXliU0JnY21WemIzVnlZMlZmWVhKdUxHeHBZMlZ1YzJWZlkyOXVabWxuZFhKaGRH
+        bHZibDloY201Z0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzYVdObGJuTmxiV0Z1WVdkbGNsOWhjM052WTJsaGRHbHZiaTV0WVhKclpHOTNiZz09

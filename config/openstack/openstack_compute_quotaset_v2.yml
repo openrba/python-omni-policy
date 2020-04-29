@@ -12,7 +12,7 @@ openstack_compute_quotaset_v2:
             notes: ''
         project_id:
             description: ID of the project to manage quotas.
-            required: true
+            required: false
             policy: ''
             notes: ''
         fixed_ips:
@@ -85,37 +85,23 @@ openstack_compute_quotaset_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        project_id:
-            description: See Argument Reference above.
-        fixed_ips:
-            description: See Argument Reference above.
-        floating_ips:
-            description: See Argument Reference above.
-        injected_file_content_bytes:
-            description: See Argument Reference above.
-        injected_file_path_bytes:
-            description: See Argument Reference above.
-        injected_files:
-            description: See Argument Reference above.
-        key_pairs:
-            description: See Argument Reference above.
-        metadata_items:
-            description: See Argument Reference above.
-        ram:
-            description: See Argument Reference above.
-        security_group_rules:
-            description: See Argument Reference above.
-        security_groups:
-            description: See Argument Reference above.
-        cores:
-            description: See Argument Reference above.
-        instances:
-            description: See Argument Reference above.
-        server_groups:
-            description: See Argument Reference above.
-        server_group_members:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXUmxiblJwZEhsZmNISnZhbVZqZEY5Mk15SWdJ
+        bkJ5YjJwbFkzUmZNU0lnZXdvZ0lHNWhiV1VnUFNCd2NtOXFaV04wWHpFS2ZRb0tjbVZ6YjNWeVky
+        VWdJbTl3Wlc1emRHRmphMTlqYjIxd2RYUmxYM0YxYjNSaGMyVjBYM1l5SWlBaWNYVnZkR0Z6WlhS
+        Zk1TSWdld29nSUhCeWIycGxZM1JmYVdRZ0lDQWdJQ0FnSUNBZ0lEMGdJaVI3YjNCbGJuTjBZV05y
+        WDJsa1pXNTBhWFI1WDNCeWIycGxZM1JmZGpNdWNISnZhbVZqZEY4eExtbGtmU0lLSUNCclpYbGZj
+        R0ZwY25NZ0lDQWdJQ0FnSUNBZ0lDQTlJREV3Q2lBZ2NtRnRJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0EwTURrMk1Bb2dJR052Y21WeklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ016SUtJQ0JwYm5O
+        MFlXNWpaWE1nSUNBZ0lDQWdJQ0FnSUNBOUlESXdDaUFnYzJWeWRtVnlYMmR5YjNWd2N5QWdJQ0Fn
+        SUNBZ1BTQTBDaUFnYzJWeWRtVnlYMmR5YjNWd1gyMWxiV0psY25NZ1BTQTRDbjBL
+    import: !!binary |
+        Q2dwUmRXOTBZWE5sZEhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NISnZh
+        bVZqZEY5cFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgzRjFiM1JoYzJWMFgzWXlMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

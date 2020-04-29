@@ -13,15 +13,29 @@ vault_identity_group_alias:
         mount_accessor:
             description: Mount accessor of the authentication backend to which this
                 alias belongs to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         canonical_id:
             description: ID of the group to which this is an alias.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The `id` of the created group alias.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjlwWkdWdWRHbDBlVjluY205MWNDSWdJbWR5YjNWd0lpQjdD
+        aUFnYm1GdFpTQWdJQ0FnUFNBaWRHVnpkQ0lLSUNCMGVYQmxJQ0FnSUNBOUlDSmxlSFJsY201aGJD
+        SUtJQ0J3YjJ4cFkybGxjeUE5SUZzaWRHVnpkQ0pkQ24wS0NuSmxjMjkxY21ObElDSjJZWFZzZEY5
+        aGRYUm9YMkpoWTJ0bGJtUWlJQ0puYVhSb2RXSWlJSHNLSUNCMGVYQmxJRDBnSW1kcGRHaDFZaUlL
+        SUNCd1lYUm9JRDBnSW1kcGRHaDFZaUlLZlFvS2NtVnpiM1Z5WTJVZ0luWmhkV3gwWDJsa1pXNTBh
+        WFI1WDJkeWIzVndYMkZzYVdGeklpQWlaM0p2ZFhBdFlXeHBZWE1pSUhzS0lDQnVZVzFsSUNBZ0lD
+        QWdJQ0FnSUNBOUlDSkhhWFJvZFdKZlZHVmhiVjlUYkhWbklnb2dJRzF2ZFc1MFgyRmpZMlZ6YzI5
+        eUlEMGdJaVI3ZG1GMWJIUmZZWFYwYUY5aVlXTnJaVzVrTG1kcGRHaDFZaTVoWTJObGMzTnZjbjBp
+        Q2lBZ1kyRnViMjVwWTJGc1gybGtJQ0FnUFNBaUpIdDJZWFZzZEY5cFpHVnVkR2wwZVY5bmNtOTFj
+        QzVuY205MWNDNXBaSDBpQ24wSw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJsa1pXNTBhWFI1WDJkeWIzVndYMkZzYVdGekxtaDBiV3d1YldRPQ==

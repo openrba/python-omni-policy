@@ -8,7 +8,7 @@
         "arguments": {
             "role": {
                 "description": "The name of the AWS auth backend role to read",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -49,14 +49,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "tag_key": {
-                "description": "The key of the role tag."
-            },
-            "tag_value": {
-                "description": "The value to set the role key."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

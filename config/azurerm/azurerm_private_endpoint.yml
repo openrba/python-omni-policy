@@ -8,32 +8,32 @@ azurerm_private_endpoint:
         name:
             description: Specifies the Name of the Private Service Connection. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the Name of the Resource Group within which the
                 Private Endpoint should exist. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The supported Azure location where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The ID of the Subnet from which Private IP Addresses will
                 be allocated for this Private Endpoint. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_service_connection:
             description: A `private_service_connection` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -44,16 +44,18 @@ azurerm_private_endpoint:
         is_manual_connection:
             description: Does the Private Endpoint require Manual Approval from the
                 remote resource owner? Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: If you are trying to connect the Private Endpoint to a remote resource
+            notes:
+            - '-> '
+            - ' If you are trying to connect the Private Endpoint to a remote resource
                 without having the correct RBAC permissions on the remote resource
-                set this value to `true`.
+                set this value to `true`.'
         private_connection_resource_id:
             description: The ID of the Private Link Enabled Remote Resource which
                 this Private Endpoint should be connected to. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subresource_names:
@@ -62,7 +64,9 @@ azurerm_private_endpoint:
                 Changing this forces a new resource to be created.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> Several possible values for this field are shown below, however
+                this is not extensive:'
         request_message:
             description: A message passed to the owner of the remote resource when
                 the private endpoint attempts to establish the connection to the remote

@@ -8,7 +8,7 @@ azuread_group:
         name:
             description: The display name for the Group. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -28,9 +28,21 @@ azuread_group:
                 are Users or Service Principals.
             required: false
             policy: ''
-            notes: Do not use `azuread_group_owner` at the same time as the `owners`
-                argument.
+            notes:
+            - '-> '
+            - ' Do not use `azuread_group_owner` at the same time as the `owners`
+                argument.'
     attributes:
         id:
             description: The Object ID of the Group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaV0ZrWDJkeWIzVndJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhi
+        V1VnUFNBaVFTMUJSQzFIY205MWNDSUtmUW89
+    import: !!binary |
+        Q2dwQmVuVnlaU0JCWTNScGRtVWdSR2x5WldOMGIzSjVJRWR5YjNWd2N5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnZZbXBsWTNRZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsWVdRdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlozSnZkWEF1YldGeWEyUnZkMjQ9

@@ -14,49 +14,30 @@
             },
             "action": {
                 "description": "Action for the RBAC policy. Can either be",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "object_id": {
                 "description": "The ID of the `object_type` resource. An",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "object_type": {
                 "description": "The type of the object that the RBAC policy",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_tenant": {
                 "description": "The ID of the tenant to which the RBAC policy",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "action": {
-                "description": "See Argument Reference above."
-            },
-            "object_id": {
-                "description": "See Argument Reference above."
-            },
-            "object_type": {
-                "description": "See Argument Reference above."
-            },
-            "target_tenant": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "The owner of the RBAC policy."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

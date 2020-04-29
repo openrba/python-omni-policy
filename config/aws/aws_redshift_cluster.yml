@@ -7,7 +7,7 @@ aws_redshift_cluster:
     arguments:
         cluster_identifier:
             description: The Cluster Identifier. Must be a lower case
-            required: true
+            required: false
             policy: ''
             notes: ''
         database_name:
@@ -18,7 +18,7 @@ aws_redshift_cluster:
             notes: ''
         node_type:
             description: The node type to be provisioned for the cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cluster_type:

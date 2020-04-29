@@ -74,13 +74,13 @@
             },
             "from_port": {
                 "description": "The start port (or ICMP type number if protocol is \"icmp\")",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol": {
                 "description": "The protocol. If you select a protocol of",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -98,7 +98,7 @@
             },
             "to_port": {
                 "description": "The end range port (or ICMP code if protocol is \"icmp\").",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

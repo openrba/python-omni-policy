@@ -8,7 +8,7 @@
         "arguments": {
             "user_arn": {
                 "description": "The user's IAM ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "ssh_username": {
                 "description": "The ssh username, with witch this user wants to log in",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

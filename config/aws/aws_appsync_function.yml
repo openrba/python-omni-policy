@@ -7,29 +7,29 @@ aws_appsync_function:
     arguments:
         api_id:
             description: The ID of the associated AppSync API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_source:
             description: The Function DataSource name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The Function name. The function name does not have to be
                 unique.
-            required: true
+            required: false
             policy: ''
             notes: ''
         request_mapping_template:
             description: The Function request mapping template. Functions support
                 only the 2018-05-29 version of the request mapping template.
-            required: true
+            required: false
             policy: ''
             notes: ''
         response_mapping_template:
             description: The Function response mapping template.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -51,3 +51,39 @@ aws_appsync_function:
         function_id:
             description: A unique ID representing the Function object.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJ3YzNsdVkxOW5jbUZ3YUhGc1gyRndhU0lnSW5SbGMzUWlJ
+        SHNLSUNCaGRYUm9aVzUwYVdOaGRHbHZibDkwZVhCbElEMGdJa0ZRU1Y5TFJWa2lDaUFnYm1GdFpT
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBaaTFsZUdGdGNHeGxJZ29nSUhOamFHVnRZU0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ1BTQThQRVZQUmdwMGVYQmxJRTExZEdGMGFXOXVJSHNLSUNBZ0lIQjFkRkJ2
+        YzNRb2FXUTZJRWxFSVN3Z2RHbDBiR1U2SUZOMGNtbHVaeUVwT2lCUWIzTjBDbjBLQ25SNWNHVWdV
+        Rzl6ZENCN0NpQWdJQ0JwWkRvZ1NVUWhDaUFnSUNCMGFYUnNaVG9nVTNSeWFXNW5JUXA5Q2dwMGVY
+        QmxJRkYxWlhKNUlIc0tJQ0FnSUhOcGJtZHNaVkJ2YzNRb2FXUTZJRWxFSVNrNklGQnZjM1FLZlFv
+        S2MyTm9aVzFoSUhzS0lDQWdJSEYxWlhKNU9pQlJkV1Z5ZVFvZ0lDQWdiWFYwWVhScGIyNDZJRTEx
+        ZEdGMGFXOXVDbjBLUlU5R0NuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZllYQndjM2x1WTE5a1lYUmhj
+        MjkxY21ObElpQWlkR1Z6ZENJZ2V3b2dJR0Z3YVY5cFpDQTlJQ0lrZTJGM2MxOWhjSEJ6ZVc1algy
+        ZHlZWEJvY1d4ZllYQnBMblJsYzNRdWFXUjlJZ29nSUc1aGJXVWdJQ0E5SUNKMFppMWxlR0Z0Y0d4
+        bElnb2dJSFI1Y0dVZ0lDQTlJQ0pJVkZSUUlnb0tJQ0JvZEhSd1gyTnZibVpwWnlCN0NpQWdJQ0Js
+        Ym1Sd2IybHVkQ0E5SUNKb2RIUndPaTh2WlhoaGJYQnNaUzVqYjIwaUNpQWdmUXA5Q2dweVpYTnZk
+        WEpqWlNBaVlYZHpYMkZ3Y0hONWJtTmZablZ1WTNScGIyNGlJQ0owWlhOMElpQjdDaUFnWVhCcFgy
+        bGtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTloY0hCemVXNWpYMmR5WVhC
+        b2NXeGZZWEJwTG5SbGMzUXVhV1I5SWdvZ0lHUmhkR0ZmYzI5MWNtTmxJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlKSHRoZDNOZllYQndjM2x1WTE5a1lYUmhjMjkxY21ObExuUmxjM1F1Ym1GdFpYMGlD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpsOWxlR0Z0Y0d4bEln
+        b2dJSEpsY1hWbGMzUmZiV0Z3Y0dsdVoxOTBaVzF3YkdGMFpTQWdQU0E4UEVWUFJncDdDaUFnSUNB
+        aWRtVnljMmx2YmlJNklDSXlNREU0TFRBMUxUSTVJaXdLSUNBZ0lDSnRaWFJvYjJRaU9pQWlSMFZV
+        SWl3S0lDQWdJQ0p5WlhOdmRYSmpaVkJoZEdnaU9pQWlMeUlzQ2lBZ0lDQWljR0Z5WVcxeklqcDdD
+        aUFnSUNBZ0lDQWdJbWhsWVdSbGNuTWlPaUFrZFhScGJITXVhSFIwY0M1amIzQjVhR1ZoWkdWeWN5
+        Z2tZM1I0TG5KbGNYVmxjM1F1YUdWaFpHVnljeWtLSUNBZ0lIMEtmUXBGVDBZS0lDQnlaWE53YjI1
+        elpWOXRZWEJ3YVc1blgzUmxiWEJzWVhSbElEMGdQRHhGVDBZS0kybG1LQ1JqZEhndWNtVnpkV3gw
+        TG5OMFlYUjFjME52WkdVZ1BUMGdNakF3S1FvZ0lDQWdKR04wZUM1eVpYTjFiSFF1WW05a2VRb2pa
+        V3h6WlFvZ0lDQWdKSFYwYVd4ekxtRndjR1Z1WkVWeWNtOXlLQ1JqZEhndWNtVnpkV3gwTG1KdlpI
+        a3NJQ1JqZEhndWNtVnpkV3gwTG5OMFlYUjFjME52WkdVcENpTmxibVFLUlU5R0NuMEtDZz09
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3Y0hONWJtTmZablZ1WTNScGIyNWdJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdRWEJ3VTNsdVl5QkJVRWtnU1VRZ1lXNWtJRVoxYm1OMGFXOXVJRWxFSUhObGNH
+        RnlZWFJsWkNCaWVTQmdMV0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCemVXNWpYMloxYm1OMGFXOXVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

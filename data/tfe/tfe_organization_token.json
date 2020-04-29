@@ -8,7 +8,7 @@
         "arguments": {
             "organization": {
                 "description": "Name of the organization.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -19,14 +19,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the token."
-            },
-            "token": {
-                "description": "The generated token."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

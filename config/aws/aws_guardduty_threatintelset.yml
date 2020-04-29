@@ -8,29 +8,29 @@ aws_guardduty_threatintelset:
         activate:
             description: Specifies whether GuardDuty is to start using the uploaded
                 ThreatIntelSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         detector_id:
             description: The detector ID of the GuardDuty.
-            required: true
+            required: false
             policy: ''
             notes: ''
         format:
             description: 'The format of the file that contains the ThreatIntelSet.
                 Valid values: `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT`
                 | `FIRE_EYE`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The URI of the file that contains the ThreatIntelSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The friendly name to identify the ThreatIntelSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -38,3 +38,28 @@ aws_guardduty_threatintelset:
             description: 'The ID of the GuardDuty ThreatIntelSet and the detector
                 ID. Format: `<DetectorID>:<ThreatIntelSetID>`'
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaM1ZoY21Sa2RYUjVYMlJsZEdWamRHOXlJaUFpYldGemRHVnlJ
+        aUI3Q2lBZ1pXNWhZbXhsSUQwZ2RISjFaUXA5Q2dweVpYTnZkWEpqWlNBaVlYZHpYM016WDJKMVky
+        dGxkQ0lnSW1KMVkydGxkQ0lnZXdvZ0lHRmpiQ0E5SUNKd2NtbDJZWFJsSWdwOUNncHlaWE52ZFhK
+        alpTQWlZWGR6WDNNelgySjFZMnRsZEY5dlltcGxZM1FpSUNKTmVWUm9jbVZoZEVsdWRHVnNVMlYw
+        SWlCN0NpQWdZV05zSUNBZ0lDQTlJQ0p3ZFdKc2FXTXRjbVZoWkNJS0lDQmpiMjUwWlc1MElEMGdJ
+        akV3TGpBdU1DNHdMemhjYmlJS0lDQmlkV05yWlhRZ0lEMGdJaVI3WVhkelgzTXpYMkoxWTJ0bGRD
+        NWlkV05yWlhRdWFXUjlJZ29nSUd0bGVTQWdJQ0FnUFNBaVRYbFVhSEpsWVhSSmJuUmxiRk5sZENJ
+        S2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5bmRXRnlaR1IxZEhsZmRHaHlaV0YwYVc1MFpXeHpaWFFp
+        SUNKTmVWUm9jbVZoZEVsdWRHVnNVMlYwSWlCN0NpQWdZV04wYVhaaGRHVWdJQ0FnUFNCMGNuVmxD
+        aUFnWkdWMFpXTjBiM0pmYVdRZ1BTQWlKSHRoZDNOZlozVmhjbVJrZFhSNVgyUmxkR1ZqZEc5eUxt
+        MWhjM1JsY2k1cFpIMGlDaUFnWm05eWJXRjBJQ0FnSUNBZ1BTQWlWRmhVSWdvZ0lHeHZZMkYwYVc5
+        dUlDQWdJRDBnSW1oMGRIQnpPaTh2Y3pNdVlXMWhlbTl1WVhkekxtTnZiUzhrZTJGM2MxOXpNMTlp
+        ZFdOclpYUmZiMkpxWldOMExrMTVWR2h5WldGMFNXNTBaV3hUWlhRdVluVmphMlYwZlM4a2UyRjNj
+        MTl6TTE5aWRXTnJaWFJmYjJKcVpXTjBMazE1VkdoeVpXRjBTVzUwWld4VFpYUXVhMlY1ZlNJS0lD
+        QnVZVzFsSUNBZ0lDQWdJQ0E5SUNKTmVWUm9jbVZoZEVsdWRHVnNVMlYwSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwSGRXRnlaRVIxZEhrZ1ZHaHlaV0YwU1c1MFpXeFRaWFFnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0IwYUdVZ2JXRnpkR1Z5SUVkMVlYSmtSSFYwZVNCa1pYUmxZM1J2Y2lCSlJD
+        QmhibVFnVkdoeVpXRjBTVzUwWld4VFpYUkpSQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluZFdGeVpHUjFkSGxmZEdoeVpXRjBhVzUwWld4elpYUXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

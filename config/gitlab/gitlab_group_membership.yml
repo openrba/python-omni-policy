@@ -7,18 +7,18 @@ gitlab_group_membership:
     arguments:
         group_id:
             description: The id of the group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_id:
             description: The id of the user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_level:
             description: ' Acceptable values are: guest, reporter, developer, maintainer,
                 owner.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         expires_at:
@@ -28,3 +28,16 @@ gitlab_group_membership:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmWjNKdmRYQmZiV1Z0WW1WeWMyaHBjQ0lnSW5SbGMzUWlJ
+        SHNLSUNCbmNtOTFjRjlwWkNBZ0lDQWdQU0FpTVRJek5EVWlDaUFnZFhObGNsOXBaQ0FnSUNBZ0lE
+        MGdNVE16TndvZ0lHRmpZMlZ6YzE5c1pYWmxiQ0E5SUNKbmRXVnpkQ0lLSUNCbGVIQnBjbVZ6WDJG
+        MElDQWdQU0FpTWpBeU1DMHhNaTB6TVNJS2ZRbz0=
+    import: !!binary |
+        Q2dwSGFYUk1ZV0lnWjNKdmRYQWdiV1Z0WW1WeWMyaHBjQ0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ1lXNGdhV1FnYldGa1pTQjFjQ0J2WmlCZ1ozSnZkWEJmYVdRNmRYTmxjbDlwWkdBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmNtOTFjRjl0WlcxaVpYSnphR2x3TG1oMGJXd3ViV0Z5YTJSdmQyND0=

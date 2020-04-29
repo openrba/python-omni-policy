@@ -13,7 +13,7 @@ openstack_images_image_access_accept_v2:
             notes: ''
         image_id:
             description: The proposed image ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member_id:
@@ -23,14 +23,24 @@ openstack_images_image_access_accept_v2:
             notes: ''
         status:
             description: The membership proposal status. Can either be
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        created_at:
-            description: The date the image membership was created.
-        updated_at:
-            description: The date the image membership was last updated.
-        schema:
-            description: The membership schema.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbTl3Wlc1emRHRmphMTlwYldGblpYTmZhVzFoWjJWZmRqSWlJQ0p5WVc1amFHVnli
+        M01pSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUQwZ0lsSmhibU5vWlhKUFV5SUtJQ0IyYVhOcFlt
+        bHNhWFI1SUNBZ0lEMGdJbk5vWVhKbFpDSUtJQ0J0WlcxaVpYSmZjM1JoZEhWeklEMGdJbUZzYkNJ
+        S2ZRb0tjbVZ6YjNWeVkyVWdJbTl3Wlc1emRHRmphMTlwYldGblpYTmZhVzFoWjJWZllXTmpaWE56
+        WDJGalkyVndkRjkyTWlJZ0luSmhibU5vWlhKdmMxOXRaVzFpWlhJaUlIc0tJQ0JwYldGblpWOXBa
+        Q0E5SUNJa2UyUmhkR0V1YjNCbGJuTjBZV05yWDJsdFlXZGxjMTlwYldGblpWOTJNaTV5WVc1amFH
+        VnliM011YVdSOUlnb2dJSE4wWVhSMWN5QWdJRDBnSW1GalkyVndkR1ZrSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwSmJXRm5aU0JoWTJObGMzTWdZV05qWlhCMFlXNWpaU0J6ZEdGMGRYTWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdhVzFoWjJWZmFXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXBiV0ZuWlhOZmFXMWhaMlZmWVdOalpYTnpYMkZqWTJWd2RGOTJNaTVvZEcx
+        c0xtMWhjbXRrYjNkdQ==

@@ -15,7 +15,7 @@ azurerm_role_definition:
         name:
             description: The name of the Role Definition. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         scope:
@@ -24,7 +24,7 @@ azurerm_role_definition:
                 or `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup/providers/Microsoft.Compute/virtualMachines/myVM`.
                 It is recommended to use the first entry of the `assignable_scopes`.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -34,14 +34,14 @@ azurerm_role_definition:
             notes: ''
         permissions:
             description: A `permissions` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         assignable_scopes:
             description: One or more assignable scopes for this Role Definition, such
                 as `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333`, `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup`,
                 or `/subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup/providers/Microsoft.Compute/virtualMachines/myVM`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         actions:

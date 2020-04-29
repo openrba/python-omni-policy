@@ -7,7 +7,7 @@ aws_route:
     arguments:
         route_table_id:
             description: The ID of the routing table.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_cidr_block:

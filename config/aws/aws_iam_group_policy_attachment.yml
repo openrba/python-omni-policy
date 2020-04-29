@@ -7,13 +7,31 @@ aws_iam_group_policy_attachment:
     arguments:
         group:
             description: '- The group the policy should be applied to'
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_arn:
             description: '- The ARN of the policy you want to apply'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDJkeWIzVndJaUFpWjNKdmRYQWlJSHNLSUNCdVlXMWxJ
+        RDBnSW5SbGMzUXRaM0p2ZFhBaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXRnRYM0J2YkdsamVT
+        SWdJbkJ2YkdsamVTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lEMGdJblJsYzNRdGNHOXNhV041SWdv
+        Z0lHUmxjMk55YVhCMGFXOXVJRDBnSWtFZ2RHVnpkQ0J3YjJ4cFkza2lDaUFnY0c5c2FXTjVJQ0Fn
+        SUNBZ1BTQWlJaUFqSUdsdWMyVnlkQ0J3YjJ4cFkza2dhR1Z5WlFwOUNncHlaWE52ZFhKalpTQWlZ
+        WGR6WDJsaGJWOW5jbTkxY0Y5d2IyeHBZM2xmWVhSMFlXTm9iV1Z1ZENJZ0luUmxjM1F0WVhSMFlX
+        Tm9JaUI3Q2lBZ1ozSnZkWEFnSUNBZ0lDQTlJQ0lrZTJGM2MxOXBZVzFmWjNKdmRYQXVaM0p2ZFhB
+        dWJtRnRaWDBpQ2lBZ2NHOXNhV041WDJGeWJpQTlJQ0lrZTJGM2MxOXBZVzFmY0c5c2FXTjVMbkJ2
+        YkdsamVTNWhjbTU5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwSlFVMGdaM0p2ZFhBZ2NHOXNhV041SUdGMGRHRmphRzFsYm5SeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1ozSnZkWEFnYm1GdFpTQmhibVFnY0c5c2FXTjVJR0Z5YmlCelpY
+        QmhjbUYwWldRZ1lua2dZQzlnTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZlozSnZkWEJmY0c5c2FXTjVYMkYwZEdGamFHMWxiblF1YldGeWEyUnZkMjQ9

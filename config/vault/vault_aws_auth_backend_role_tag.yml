@@ -7,7 +7,7 @@ vault_aws_auth_backend_role_tag:
     arguments:
         role:
             description: The name of the AWS auth backend role to read
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend:
@@ -44,9 +44,26 @@ vault_aws_auth_backend_role_tag:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        tag_key:
-            description: The key of the role tag.
-        tag_value:
-            description: The value to set the role key.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmhkM01pSUhzS0lDQndZ
+        WFJvSUQwZ0lpVnpJZ29nSUhSNWNHVWdQU0FpWVhkeklncDlDZ3B5WlhOdmRYSmpaU0FpZG1GMWJI
+        UmZZWGR6WDJGMWRHaGZZbUZqYTJWdVpGOXliMnhsSWlBaWNtOXNaU0lnZXdvZ0lHSmhZMnRsYm1R
+        Z0lDQWdJQ0FnSUNBZ1BTQWlKSHQyWVhWc2RGOWhkWFJvWDJKaFkydGxibVF1WVhkekxuQmhkR2g5
+        SWdvZ0lISnZiR1VnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlKWE1pQ2lBZ1lYVjBhRjkwZVhCbElDQWdJ
+        Q0FnSUNBOUlDSmxZeklpQ2lBZ1ltOTFibVJmWVdOamIzVnVkRjlwWkNBOUlDSXhNak0wTlRZM09E
+        a3dNVElpQ2lBZ2NHOXNhV05wWlhNZ0lDQWdJQ0FnSUNBOUlGc2laR1YySWl3Z0luQnliMlFpTENB
+        aWNXRWlMQ0FpZEdWemRDSmRDaUFnY205c1pWOTBZV2NnSUNBZ0lDQWdJQ0E5SUNKV1lYVnNkRkp2
+        YkdWVVlXY2lDbjBLQ25KbGMyOTFjbU5sSUNKMllYVnNkRjloZDNOZllYVjBhRjlpWVdOclpXNWtY
+        M0p2YkdWZmRHRm5JaUFpZEdWemRDSWdld29nSUdKaFkydGxibVFnSUNBZ0lEMGdJaVI3ZG1GMWJI
+        UmZZWFYwYUY5aVlXTnJaVzVrTG1GM2N5NXdZWFJvZlNJS0lDQnliMnhsSUNBZ0lDQWdJQ0E5SUNJ
+        a2UzWmhkV3gwWDJGM2MxOWhkWFJvWDJKaFkydGxibVJmY205c1pTNXliMnhsTG5KdmJHVjlJZ29n
+        SUhCdmJHbGphV1Z6SUNBZ0lEMGdXeUp3Y205a0lpd2dJbVJsZGlJc0lDSjBaWE4wSWwwS0lDQnRZ
+        WGhmZEhSc0lDQWdJQ0E5SUNJeGFDSUtJQ0JwYm5OMFlXNWpaVjlwWkNBOUlDSnBMVEV5TXpRMU5q
+        Y2lDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGM2MxOWhkWFJvWDJKaFkydGxibVJmY205c1pWOTBZV2N1YUhSdGJDNXRaQT09

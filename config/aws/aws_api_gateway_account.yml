@@ -11,5 +11,45 @@ aws_api_gateway_account:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        throttle_settings:
+            description: Account-Level throttle settings. See exported fields below.
+        burst_limit:
+            description: The absolute maximum number of times API Gateway allows the
+                API to be called per second (RPS).
+        rate_limit:
+            description: The number of times API Gateway allows the API to be called
+                per second on average (RPS).
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmWVdOamIzVnVkQ0lnSW1SbGJXOGlJ
+        SHNLSUNCamJHOTFaSGRoZEdOb1gzSnZiR1ZmWVhKdUlEMGdJaVI3WVhkelgybGhiVjl5YjJ4bExt
+        TnNiM1ZrZDJGMFkyZ3VZWEp1ZlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cFlXMWZjbTlzWlNJ
+        Z0ltTnNiM1ZrZDJGMFkyZ2lJSHNLSUNCdVlXMWxJRDBnSW1Gd2FWOW5ZWFJsZDJGNVgyTnNiM1Zr
+        ZDJGMFkyaGZaMnh2WW1Gc0lnb0tJQ0JoYzNOMWJXVmZjbTlzWlY5d2IyeHBZM2tnUFNBOFBFVlBS
+        Z3A3Q2lBZ0lsWmxjbk5wYjI0aU9pQWlNakF4TWkweE1DMHhOeUlzQ2lBZ0lsTjBZWFJsYldWdWRD
+        STZJRnNLSUNBZ0lIc0tJQ0FnSUNBZ0lsTnBaQ0k2SUNJaUxBb2dJQ0FnSUNBaVJXWm1aV04wSWpv
+        Z0lrRnNiRzkzSWl3S0lDQWdJQ0FnSWxCeWFXNWphWEJoYkNJNklIc0tJQ0FnSUNBZ0lDQWlVMlZ5
+        ZG1salpTSTZJQ0poY0dsbllYUmxkMkY1TG1GdFlYcHZibUYzY3k1amIyMGlDaUFnSUNBZ0lIMHND
+        aUFnSUNBZ0lDSkJZM1JwYjI0aU9pQWljM1J6T2tGemMzVnRaVkp2YkdVaUNpQWdJQ0I5Q2lBZ1hR
+        cDlDa1ZQUmdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJsaGJWOXliMnhsWDNCdmJHbGplU0lnSW1O
+        c2IzVmtkMkYwWTJnaUlIc0tJQ0J1WVcxbElEMGdJbVJsWm1GMWJIUWlDaUFnY205c1pTQTlJQ0lr
+        ZTJGM2MxOXBZVzFmY205c1pTNWpiRzkxWkhkaGRHTm9MbWxrZlNJS0NpQWdjRzlzYVdONUlEMGdQ
+        RHhGVDBZS2V3b2dJQ0FnSWxabGNuTnBiMjRpT2lBaU1qQXhNaTB4TUMweE55SXNDaUFnSUNBaVUz
+        UmhkR1Z0Wlc1MElqb2dXd29nSUNBZ0lDQWdJSHNLSUNBZ0lDQWdJQ0FnSUNBZ0lrVm1abVZqZENJ
+        NklDSkJiR3h2ZHlJc0NpQWdJQ0FnSUNBZ0lDQWdJQ0pCWTNScGIyNGlPaUJiQ2lBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FpYkc5bmN6cERjbVZoZEdWTWIyZEhjbTkxY0NJc0NpQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBaWJHOW5jenBEY21WaGRHVk1iMmRUZEhKbFlXMGlMQW9nSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJbXh2WjNNNlJHVnpZM0pwWW1WTWIyZEhjbTkxY0hNaUxBb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lteHZaM002UkdWelkzSnBZbVZNYjJkVGRISmxZVzF6SWl3S0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNKc2IyZHpPbEIxZEV4dlowVjJaVzUwY3lJc0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBaWJHOW5j
+        enBIWlhSTWIyZEZkbVZ1ZEhNaUxBb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lteHZaM002Um1sc2RH
+        VnlURzluUlhabGJuUnpJZ29nSUNBZ0lDQWdJQ0FnSUNCZExBb2dJQ0FnSUNBZ0lDQWdJQ0FpVW1W
+        emIzVnlZMlVpT2lBaUtpSUtJQ0FnSUNBZ0lDQjlDaUFnSUNCZENuMEtSVTlHQ24wSw==
+    import: !!binary |
+        Q2dwQlVFa2dSMkYwWlhkaGVTQkJZMk52ZFc1MGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElIZHZjbVFnWUdGd2FTMW5ZWFJsZDJGNUxXRmpZMjkxYm5SZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5aFkyTnZkVzUwTG1oMGJXd3ViV0Z5YTJSdmQyND0=

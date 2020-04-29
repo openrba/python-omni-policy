@@ -8,7 +8,7 @@
         "arguments": {
             "destination_cidr_block": {
                 "description": "IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,12 +26,16 @@
             },
             "transit_gateway_route_table_id": {
                 "description": "Identifier of EC2 Transit Gateway Route Table.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "EC2 Transit Gateway Route Table identifier combined with destination"
+            }
+        },
         "timeouts": {}
     }
 }

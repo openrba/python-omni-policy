@@ -8,7 +8,7 @@ aws_directory_service_log_subscription:
     arguments:
         directory_id:
             description: The id of directory.
-            required: true
+            required: false
             policy: ''
             notes: ''
         log_group_name:
@@ -18,8 +18,38 @@ aws_directory_service_log_subscription:
                 stream and publish logs. Changing this value would delete the current
                 subscription and create a new one. A directory can only have one log
                 subscription at a time.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lYUmphRjlzYjJkZlozSnZkWEFpSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpTDJGM2N5OWthWEpsWTNSdmNu
+        bHpaWEoyYVdObEx5UjdZWGR6WDJScGNtVmpkRzl5ZVY5elpYSjJhV05sWDJScGNtVmpkRzl5ZVM1
+        bGVHRnRjR3hsTG1sa2ZTSUtJQ0J5WlhSbGJuUnBiMjVmYVc1ZlpHRjVjeUE5SURFMENuMEtDbVJo
+        ZEdFZ0ltRjNjMTlwWVcxZmNHOXNhV041WDJSdlkzVnRaVzUwSWlBaVlXUXRiRzluTFhCdmJHbGpl
+        U0lnZXdvZ0lITjBZWFJsYldWdWRDQjdDaUFnSUNCaFkzUnBiMjV6SUQwZ1d3b2dJQ0FnSUNBaWJH
+        OW5jenBEY21WaGRHVk1iMmRUZEhKbFlXMGlMQW9nSUNBZ0lDQWliRzluY3pwUWRYUk1iMmRGZG1W
+        dWRITWlDaUFnSUNCZENnb2dJQ0FnY0hKcGJtTnBjR0ZzY3lCN0NpQWdJQ0FnSUdsa1pXNTBhV1pw
+        WlhKeklEMGdXeUprY3k1aGJXRjZiMjVoZDNNdVkyOXRJbDBLSUNBZ0lDQWdkSGx3WlNBZ0lDQWdJ
+        Q0FnUFNBaVUyVnlkbWxqWlNJS0lDQWdJSDBLQ2lBZ0lDQnlaWE52ZFhKalpYTWdQU0JiSWlSN1lY
+        ZHpYMk5zYjNWa2QyRjBZMmhmYkc5blgyZHliM1Z3TG1WNFlXMXdiR1V1WVhKdWZTSmRDZ29nSUNB
+        Z1pXWm1aV04wSUQwZ0lrRnNiRzkzSWdvZ0lIMEtmUW9LY21WemIzVnlZMlVnSW1GM2MxOWpiRzkx
+        WkhkaGRHTm9YMnh2WjE5eVpYTnZkWEpqWlY5d2IyeHBZM2tpSUNKaFpDMXNiMmN0Y0c5c2FXTjVJ
+        aUI3Q2lBZ2NHOXNhV041WDJSdlkzVnRaVzUwSUQwZ0lpUjdaR0YwWVM1aGQzTmZhV0Z0WDNCdmJH
+        bGplVjlrYjJOMWJXVnVkQzVoWkMxc2IyY3RjRzlzYVdONUxtcHpiMjU5SWdvZ0lIQnZiR2xqZVY5
+        dVlXMWxJQ0FnSUNBOUlDSmhaQzFzYjJjdGNHOXNhV041SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6
+        WDJScGNtVmpkRzl5ZVY5elpYSjJhV05sWDJ4dloxOXpkV0p6WTNKcGNIUnBiMjRpSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdaR2x5WldOMGIzSjVYMmxrSUNBZ1BTQWlKSHRoZDNOZlpHbHlaV04wYjNKNVgz
+        TmxjblpwWTJWZlpHbHlaV04wYjNKNUxtVjRZVzF3YkdVdWFXUjlJZ29nSUd4dloxOW5jbTkxY0Y5
+        dVlXMWxJRDBnSWlSN1lYZHpYMk5zYjNWa2QyRjBZMmhmYkc5blgyZHliM1Z3TG1WNFlXMXdiR1V1
+        Ym1GdFpYMGlDbjBL
+    import: !!binary |
+        Q2dwRWFYSmxZM1J2Y25rZ1UyVnlkbWxqWlNCTWIyY2dVM1ZpYzJOeWFYQjBhVzl1Y3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdScGNtVmpkRzl5ZVNCcFpDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYVhKbFkzUnZjbmxmYzJWeWRtbGpaVjlzYjJkZmMzVmljMk55YVhCMGFXOXVMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

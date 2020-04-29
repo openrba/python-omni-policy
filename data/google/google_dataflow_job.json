@@ -9,19 +9,19 @@
         "arguments": {
             "name": {
                 "description": "A unique name for the resource, required by Dataflow.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "template_gcs_path": {
                 "description": "The GCS path to the Dataflow job template.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "temp_gcs_location": {
                 "description": "A writeable location on GCS for the Dataflow job to dump its temporary data.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

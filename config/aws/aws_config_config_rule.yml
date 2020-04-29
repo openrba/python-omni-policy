@@ -7,7 +7,7 @@ aws_config_config_rule:
     arguments:
         name:
             description: The name of the rule
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -36,7 +36,7 @@ aws_config_config_rule:
         source:
             description: Source specifies the rule owner, the rule identifier, and
                 the notifications that cause
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -50,3 +50,11 @@ aws_config_config_rule:
         rule_id:
             description: The ID of the config rule
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRGIyNW1hV2NnVW5Wc1pTQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHNWhi
+        V1VzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZZMjl1Wm1sblgzSjFiR1V1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

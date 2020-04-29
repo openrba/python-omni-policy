@@ -12,7 +12,7 @@ openstack_blockstorage_quotaset_v3:
             notes: ''
         project_id:
             description: ID of the project to manage quotas. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         volumes:
@@ -50,23 +50,22 @@ openstack_blockstorage_quotaset_v3:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        project_id:
-            description: See Argument Reference above.
-        volumes:
-            description: See Argument Reference above.
-        snapshots:
-            description: See Argument Reference above.
-        gigabytes:
-            description: See Argument Reference above.
-        per_volume_gigabytes:
-            description: See Argument Reference above.
-        backups:
-            description: See Argument Reference above.
-        backup_gigabytes:
-            description: See Argument Reference above.
-        groups:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXUmxiblJwZEhsZmNISnZhbVZqZEY5Mk15SWdJ
+        bkJ5YjJwbFkzUmZNU0lnZXdvZ0lHNWhiV1VnUFNCd2NtOXFaV04wWHpFS2ZRb0tjbVZ6YjNWeVky
+        VWdJbTl3Wlc1emRHRmphMTlpYkc5amEzTjBiM0poWjJWZmNYVnZkR0Z6WlhSZmRqTWlJQ0p4ZFc5
+        MFlYTmxkRjh4SWlCN0NpQWdjSEp2YW1WamRGOXBaQ0E5SUNJa2UyOXdaVzV6ZEdGamExOXBaR1Z1
+        ZEdsMGVWOXdjbTlxWldOMFgzWXpMbkJ5YjJwbFkzUmZNUzVwWkgwaUNpQWdkbTlzZFcxbGN5QWdJ
+        RDBnTVRBS0lDQnpibUZ3YzJodmRITWdQU0EwQ2lBZ1oybG5ZV0o1ZEdWeklEMGdNVEF3Q2lBZ2NH
+        VnlYM1p2YkhWdFpWOW5hV2RoWW5sMFpYTWdQU0F4TUFvZ0lHSmhZMnQxY0hNZ1BTQTBDaUFnWW1G
+        amEzVndYMmRwWjJGaWVYUmxjeUE5SURFd0NpQWdaM0p2ZFhCeklEMGdNVEF3Q24wSw==
+    import: !!binary |
+        Q2dwUmRXOTBZWE5sZEhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NISnZh
+        bVZqZEY5cFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWliRzlqYTNOMGIzSmhaMlZmY1hWdmRHRnpaWFJmZGpNdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

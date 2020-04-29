@@ -8,49 +8,49 @@
         "arguments": {
             "solution_name": {
                 "description": "Specifies the name of the solution to be deployed. See [here for options](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-add-solutions).Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which the Log Analytics solution is created. Changing this forces a new resource to be created. Note: The solution and it's related workspace can only exist in the same resource group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_resource_id": {
                 "description": "The full resource ID of the Log Analytics workspace with which the solution will be linked. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_name": {
                 "description": "The full name of the Log Analytics workspace with which the solution will be linked. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "plan": {
                 "description": "A `plan` block as documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "publisher": {
                 "description": "The publisher of the solution. For example `Microsoft`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "product": {
                 "description": "The product name of the solution. For example `OMSGallery/Containers`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,6 +62,27 @@
             }
         },
         "attributes": {},
-        "timeouts": {}
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Log Analytics Solution.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Log Analytics Solution.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Log Analytics Solution.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Log Analytics Solution.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

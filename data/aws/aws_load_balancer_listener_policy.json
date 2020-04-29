@@ -8,19 +8,19 @@
         "arguments": {
             "load_balancer_name": {
                 "description": "The load balancer to attach the policy to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "load_balancer_port": {
                 "description": "The load balancer listener port to apply the policy to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy_names": {
                 "description": "List of Policy Names to apply to the backend server.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

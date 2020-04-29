@@ -69,6 +69,17 @@
                 "description": "The current [bid"
             }
         },
-        "timeouts": {}
+        "timeouts": {
+            "create": {
+                "description": "Used when requesting the spot instance (only valid if `wait_for_fulfillment = true`)",
+                "required": false,
+                "timeout": 10
+            },
+            "delete": {
+                "description": "Used when terminating all instances launched via the given spot instance request",
+                "required": false,
+                "timeout": 20
+            }
+        }
     }
 }

@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the DevSpace Controller. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group under which the DevSpace Controller resource has to be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported location where the DevSpace Controller should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku_name": {
                 "description": "Specifies the SKU Name for this DevSpace Controller. Possible values are `S1`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_container_host_resource_id": {
                 "description": "The resource id of Azure Kubernetes Service cluster. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_container_host_credentials_base64": {
                 "description": "Base64 encoding of `kube_config_raw` of Azure Kubernetes Service cluster. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

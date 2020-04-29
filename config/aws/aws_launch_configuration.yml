@@ -18,12 +18,12 @@ aws_launch_configuration:
             notes: ''
         image_id:
             description: The EC2 image ID to launch.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_type:
             description: The size of instance to launch.
-            required: true
+            required: false
             policy: ''
             notes: ''
         iam_instance_profile:
@@ -118,3 +118,22 @@ aws_launch_configuration:
         name:
             description: The name of the launch configuration.
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbUYzYzE5aGJXa2lJQ0oxWW5WdWRIVWlJSHNLSUNCdGIzTjBYM0psWTJWdWRDQTlJ
+        SFJ5ZFdVS0NpQWdabWxzZEdWeUlIc0tJQ0FnSUc1aGJXVWdJQ0E5SUNKdVlXMWxJZ29nSUNBZ2Rt
+        RnNkV1Z6SUQwZ1d5SjFZblZ1ZEhVdmFXMWhaMlZ6TDJoMmJTMXpjMlF2ZFdKMWJuUjFMWFJ5ZFhO
+        MGVTMHhOQzR3TkMxaGJXUTJOQzF6WlhKMlpYSXRLaUpkQ2lBZ2ZRb0tJQ0JtYVd4MFpYSWdld29n
+        SUNBZ2JtRnRaU0FnSUQwZ0luWnBjblIxWVd4cGVtRjBhVzl1TFhSNWNHVWlDaUFnSUNCMllXeDFa
+        WE1nUFNCYkltaDJiU0pkQ2lBZ2ZRb0tJQ0J2ZDI1bGNuTWdQU0JiSWpBNU9UY3lNREV3T1RRM055
+        SmRJQ01nUTJGdWIyNXBZMkZzQ24wS0NuSmxjMjkxY21ObElDSmhkM05mYkdGMWJtTm9YMk52Ym1a
+        cFozVnlZWFJwYjI0aUlDSmhjMTlqYjI1bUlpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQTlJQ0oz
+        WldKZlkyOXVabWxuSWdvZ0lHbHRZV2RsWDJsa0lDQWdJQ0FnUFNBaUpIdGtZWFJoTG1GM2MxOWhi
+        V2t1ZFdKMWJuUjFMbWxrZlNJS0lDQnBibk4wWVc1alpWOTBlWEJsSUQwZ0luUXlMbTFwWTNKdkln
+        cDlDZz09
+    import: !!binary |
+        Q2dwTVlYVnVZMmdnWTI5dVptbG5kWEpoZEdsdmJuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdibUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWVhWdVkyaGZZMjl1Wm1sbmRYSmhkR2x2Ymk1b2RHMXNMbTFoY210a2IzZHU=

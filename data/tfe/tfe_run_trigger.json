@@ -8,22 +8,18 @@
         "arguments": {
             "workspace_external_id": {
                 "description": "The external id of the workspace that owns the run trigger. This is the workspace where runs will be triggered.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sourceable_id": {
                 "description": "The external id of the sourceable. The sourceable must be a workspace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the run trigger."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

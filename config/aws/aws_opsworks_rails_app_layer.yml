@@ -7,7 +7,7 @@ aws_opsworks_rails_app_layer:
     arguments:
         stack_id:
             description: The id of the stack the layer will belong to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -126,22 +126,22 @@ aws_opsworks_rails_app_layer:
             notes: ''
         mount_point:
             description: The path to mount the EBS volume on the layer's instances.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size:
             description: The size of the volume in gigabytes.
-            required: true
+            required: false
             policy: ''
             notes: ''
         number_of_disks:
             description: The number of disks to use for the EBS volume.
-            required: true
+            required: false
             policy: ''
             notes: ''
         raid_level:
             description: The RAID level to use for the volume.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
@@ -161,3 +161,13 @@ aws_opsworks_rails_app_layer:
         arn:
             description: The Amazon Resource Name(ARN) of the layer.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0J6ZDI5eWEzTmZjbUZwYkhOZllYQndYMnhoZVdWeUlpQWlZ
+        WEJ3SWlCN0NpQWdjM1JoWTJ0ZmFXUWdQU0FpSkh0aGQzTmZiM0J6ZDI5eWEzTmZjM1JoWTJzdWJX
+        RnBiaTVwWkgwaUNuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y0hOM2IzSnJjMTl5WVdsc2MxOWhjSEJmYkdGNVpYSXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

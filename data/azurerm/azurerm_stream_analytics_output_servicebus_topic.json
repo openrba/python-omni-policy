@@ -8,55 +8,55 @@
         "arguments": {
             "name": {
                 "description": "The name of the Stream Output. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "stream_analytics_job_name": {
                 "description": "The name of the Stream Analytics Job. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "topic_name": {
                 "description": "The name of the Service Bus Topic.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "servicebus_namespace": {
                 "description": "The namespace that is associated with the desired Event Hub, Service Bus Topic, Service Bus Topic, etc.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "shared_access_policy_key": {
                 "description": "The shared access policy key for the specified shared access policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "shared_access_policy_name": {
                 "description": "The shared access policy name for the Event Hub, Service Bus Queue, Service Bus Topic, etc.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "serialization": {
                 "description": "A `serialization` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The serialization format used for outgoing data streams. Possible values are `Avro`, `Csv` and `Json`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -64,19 +64,28 @@
                 "description": "The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.",
                 "required": false,
                 "policy": "",
-                "notes": "This is required when `type` is set to `Csv` or `Json`."
+                "notes": [
+                    "-> ",
+                    " This is required when `type` is set to `Csv` or `Json`."
+                ]
             },
             "field_delimiter": {
                 "description": "The delimiter that will be used to separate comma-separated value (CSV",
                 "required": false,
                 "policy": "",
-                "notes": "This is required when `type` is set to `Csv`."
+                "notes": [
+                    "-> ",
+                    " This is required when `type` is set to `Csv`."
+                ]
             },
             "format": {
                 "description": "Specifies the format of the JSON the output will be written in. Possible values are `Array` and `LineSeparated`.",
                 "required": false,
                 "policy": "",
-                "notes": "This is Required and can only be specified when `type` is set to `Json`."
+                "notes": [
+                    "-> ",
+                    " This is Required and can only be specified when `type` is set to `Json`."
+                ]
             }
         },
         "attributes": {

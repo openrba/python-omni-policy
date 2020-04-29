@@ -8,13 +8,13 @@ google_logging_project_sink:
     arguments:
         name:
             description: The name of the logging sink.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination:
             description: The destination of the sink (or, in other words, where logs
                 are written to). Can be a
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter:
@@ -43,7 +43,7 @@ google_logging_project_sink:
             notes: ''
         use_partitioned_tables:
             description: Whether to use [BigQuery's partition tables](https://cloud.google.com/bigquery/docs/partitioned-tables).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -51,3 +51,22 @@ google_logging_project_sink:
             description: The identity associated with this sink. This identity must
                 be granted write access to the
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYkc5bloybHVaMTl3Y205cVpXTjBYM05wYm1zaUlDSnRl
+        UzF6YVc1cklpQjdDaUFnYm1GdFpTQTlJQ0p0ZVMxd2RXSnpkV0l0YVc1emRHRnVZMlV0YzJsdWF5
+        SUtDaUFnSXlCRFlXNGdaWGh3YjNKMElIUnZJSEIxWW5OMVlpd2dZMnh2ZFdRZ2MzUnZjbUZuWlN3
+        Z2IzSWdZbWxuY1hWbGNua0tJQ0JrWlhOMGFXNWhkR2x2YmlBOUlDSndkV0p6ZFdJdVoyOXZaMnhs
+        WVhCcGN5NWpiMjB2Y0hKdmFtVmpkSE12YlhrdGNISnZhbVZqZEM5MGIzQnBZM012YVc1emRHRnVZ
+        MlV0WVdOMGFYWnBkSGtpQ2dvZ0lDTWdURzluSUdGc2JDQlhRVkpPSUc5eUlHaHBaMmhsY2lCelpY
+        WmxjbWwwZVNCdFpYTnpZV2RsY3lCeVpXeGhkR2x1WnlCMGJ5QnBibk4wWVc1alpYTUtJQ0JtYVd4
+        MFpYSWdQU0FpY21WemIzVnlZMlV1ZEhsd1pTQTlJR2RqWlY5cGJuTjBZVzVqWlNCQlRrUWdjMlYy
+        WlhKcGRIa2dQajBnVjBGU1RpSUtDaUFnSXlCVmMyVWdZU0IxYm1seGRXVWdkM0pwZEdWeUlDaGpj
+        bVZoZEdWeklHRWdkVzVwY1hWbElITmxjblpwWTJVZ1lXTmpiM1Z1ZENCMWMyVmtJR1p2Y2lCM2Nt
+        bDBhVzVuS1FvZ0lIVnVhWEYxWlY5M2NtbDBaWEpmYVdSbGJuUnBkSGtnUFNCMGNuVmxDbjBL
+    import: !!binary |
+        Q2dwUWNtOXFaV04wTFd4bGRtVnNJR3h2WjJkcGJtY2djMmx1YTNNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWldseUlGVlNTU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5c2IyZG5hVzVuWDNCeWIycGxZM1JmYzJsdWF5NW9kRzFzTG0xaGNtdGtiM2R1

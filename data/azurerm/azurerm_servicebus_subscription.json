@@ -8,31 +8,31 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the ServiceBus Subscription resource. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "namespace_name": {
                 "description": "The name of the ServiceBus Namespace to create this Subscription in. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "topic_name": {
                 "description": "The name of the ServiceBus Topic to create this Subscription in. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the namespace. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "max_delivery_count": {
                 "description": "The maximum number of deliveries.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,25 +8,25 @@ azurerm_backup_policy_file_share:
         name:
             description: Specifies the name of the policy. Changing this forces a
                 new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the policy.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         recovery_vault_name:
             description: Specifies the name of the Recovery Services Vault to use.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backup:
             description: Configures the Policy backup frequency and times as documented
                 in the `backup` block below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timezone:
@@ -37,30 +37,34 @@ azurerm_backup_policy_file_share:
         retention_daily:
             description: Configures the policy daily retention as documented in the
                 `retention_daily` block below.
-            required: true
+            required: false
             policy: ''
-            notes: During the public preview, only daily retentions are supported.
-                This argument is made available in this format for consistency with
-                VM backup policies and to allow for potential future support of additional
-                retention policies
+            notes:
+            - '-> '
+            - ' During the public preview, only daily retentions are supported. This
+                argument is made available in this format for consistency with VM
+                backup policies and to allow for potential future support of additional
+                retention policies'
         frequency:
             description: Sets the backup frequency. Currently, only `Daily` is supported
-            required: true
+            required: false
             policy: ''
-            notes: During the public preview, only daily backups are supported. This
+            notes:
+            - '-> '
+            - ' During the public preview, only daily backups are supported. This
                 argument is made available for consistency with VM backup policies
-                and to allow for potential future support of weekly backups
+                and to allow for potential future support of weekly backups'
         times:
             description: The time of day to perform the backup in 24-hour format.
                 Times must be either on the hour or half hour (e.g. 12:00, 12:30,
                 13:00, etc.)
-            required: true
+            required: false
             policy: ''
             notes: ''
         count:
             description: The number of daily backups to keep. Must be between `1`
                 and `180` (inclusive)
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

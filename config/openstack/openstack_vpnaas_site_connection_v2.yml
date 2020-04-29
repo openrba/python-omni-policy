@@ -33,12 +33,12 @@ openstack_vpnaas_site_connection_v2:
             notes: ''
         ikepolicy_id:
             description: The ID of the IKE policy. Changing this creates a new connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpnservice_id:
             description: The ID of the VPN service. Changing this creates a new connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         local_ep_group_id:
@@ -49,13 +49,13 @@ openstack_vpnaas_site_connection_v2:
             notes: ''
         ipsecpolicy_id:
             description: The ID of the IPsec policy. Changing this creates a new connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         peer_id:
             description: The peer router identity for authentication. A valid value
                 is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
-            required: true
+            required: false
             policy: ''
             notes: ''
         peer_ep_group_id:
@@ -74,12 +74,12 @@ openstack_vpnaas_site_connection_v2:
             notes: ''
         peer_address:
             description: The peer gateway public IPv4 or IPv6 address or FQDN.
-            required: true
+            required: false
             policy: ''
             notes: ''
         psk:
             description: The pre-shared key. A valid value is any string.
-            required: true
+            required: false
             policy: ''
             notes: ''
         initiator:
@@ -109,41 +109,27 @@ openstack_vpnaas_site_connection_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        dpd:
-            description: See Argument Reference above.
-        psk:
-            description: See Argument Reference above.
-        initiator:
-            description: See Argument Reference above.
-        peer_address:
-            description: See Argument Reference above.
-        peer_id:
-            description: See Argument Reference above.
-        peer_cidrs:
-            description: See Argument Reference above.
-        mtu:
-            description: See Argument Reference above.
-        local_id:
-            description: See Argument Reference above.
-        peer_ep_group_id:
-            description: See Argument Reference above.
-        ipsecpolicy_id:
-            description: See Argument Reference above.
-        vpnservice_id:
-            description: See Argument Reference above.
-        ikepolicy_id:
-            description: See Argument Reference above.
-        value_specs:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmRuQnVZV0Z6WDNOcGRHVmZZMjl1Ym1WamRHbHZi
+        bDkyTWlJZ0ltTnZibTVmTVNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1OdmJt
+        NWxZM1JwYjI1Zk1TSUtJQ0JwYTJWd2IyeHBZM2xmYVdRZ0lDQWdJQ0E5SUNJa2UyOXdaVzV6ZEdG
+        amExOTJjRzVoWVhOZmFXdGxYM0J2YkdsamVWOTJNaTV3YjJ4cFkzbGZNaTVwWkgwaUNpQWdhWEJ6
+        WldOd2IyeHBZM2xmYVdRZ0lDQWdQU0FpSkh0dmNHVnVjM1JoWTJ0ZmRuQnVZV0Z6WDJsd2MyVmpY
+        M0J2YkdsamVWOTJNaTV3YjJ4cFkzbGZNUzVwWkgwaUNpQWdkbkJ1YzJWeWRtbGpaVjlwWkNBZ0lD
+        QWdQU0FpSkh0dmNHVnVjM1JoWTJ0ZmRuQnVZV0Z6WDNObGNuWnBZMlZmZGpJdWMyVnlkbWxqWlY4
+        eExtbGtmU0lLSUNCd2Myc2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSnpaV055WlhRaUNpQWdjR1Zs
+        Y2w5aFpHUnlaWE56SUNBZ0lDQWdQU0FpTVRreUxqRTJPQzR4TUM0eElnb2dJR3h2WTJGc1gyVndY
+        MmR5YjNWd1gybGtJRDBnSWlSN2IzQmxibk4wWVdOclgzWndibUZoYzE5bGJtUndiMmx1ZEY5bmNt
+        OTFjRjkyTWk1bmNtOTFjRjh5TG1sa2ZTSUtJQ0J3WldWeVgyVndYMmR5YjNWd1gybGtJQ0E5SUNJ
+        a2UyOXdaVzV6ZEdGamExOTJjRzVoWVhOZlpXNWtjRzlwYm5SZlozSnZkWEJmZGpJdVozSnZkWEJm
+        TVM1cFpIMGlDbjBL
+    import: !!binary |
+        Q2dwVGFYUmxJRU52Ym01bFkzUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOTJjRzVoWVhOZmMybDBaVjlqYjI1dVpXTjBhVzl1WDNZeUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

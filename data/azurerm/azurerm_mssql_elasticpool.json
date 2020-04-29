@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "Specifies the SKU Name for this Elasticpool. The name of the SKU, will be either `vCore` based `tier` + `family` pattern (e.g. GP_Gen4, BC_Gen5",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the elastic pool. This must be the same as the resource group of the underlying SQL server.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "server_name": {
                 "description": "The name of the SQL Server on which to create the elastic pool. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "A `sku` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "per_database_settings": {
                 "description": "A `per_database_settings` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -66,15 +66,21 @@
                 "policy": "",
                 "notes": ""
             },
+            "license_type": {
+                "description": "Specifies the license type applied to this database. Possible values are `LicenseIncluded` and `BasePrice`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
             "capacity": {
                 "description": "The scale up/out capacity, representing server's compute units. For more information see the documentation for your Elasticpool configuration: [vCore-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "tier": {
                 "description": "The tier of the particular SKU. Possible values are `GeneralPurpose`, `BusinessCritical`, `Basic`, `Standard`, or `Premium`. For more information see the documentation for your Elasticpool configuration: [vCore-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -86,13 +92,13 @@
             },
             "min_capacity": {
                 "description": "The minimum capacity all databases are guaranteed.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "max_capacity": {
                 "description": "The maximum capacity any one database can consume.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

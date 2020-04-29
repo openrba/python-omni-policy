@@ -14,13 +14,13 @@
             },
             "floating_ip": {
                 "description": "The floating IP to associate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_id": {
                 "description": "The instance to associte the floating IP with.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,20 +37,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "floating_ip": {
-                "description": "See Argument Reference above."
-            },
-            "instance_id": {
-                "description": "See Argument Reference above."
-            },
-            "fixed_ip": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

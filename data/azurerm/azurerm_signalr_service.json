@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies which tier to use. Valid values are `Free_F1` and `Standard_S1`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the SignalR service. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the SignalR service exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,25 +44,25 @@
             },
             "allowed_origins": {
                 "description": "A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "flag": {
                 "description": "The kind of Feature. Possible values are `EnableConnectivityLogs` and `ServiceMode`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "A value of a feature flag. Possible values are `Classic`, `Default` and `Serverless`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "capacity": {
                 "description": "Specifies the number of units associated with this SignalR service. Valid values are `1`, `2`, `5`, `10`, `20`, `50` and `100`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

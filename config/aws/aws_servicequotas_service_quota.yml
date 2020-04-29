@@ -9,14 +9,14 @@ aws_servicequotas_service_quota:
             description: 'Code of the service quota to track. For example: `L-F678F1CE`.
                 Available values can be found with the [AWS CLI service-quotas list-service-quotas
                 command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html).'
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_code:
             description: 'Code of the service to track. For example: `vpc`. Available
                 values can be found with the [AWS CLI service-quotas list-services
                 command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).'
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
@@ -24,8 +24,38 @@ aws_servicequotas_service_quota:
                 If the desired value is higher than the current value, a quota increase
                 request is submitted. When a known request is submitted and pending,
                 the value reflects the desired value of the pending request.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        adjustable:
+            description: Whether the service quota can be increased.
+        arn:
+            description: Amazon Resource Name (ARN) of the service quota.
+        default_value:
+            description: Default value of the service quota.
+        id:
+            description: Service code and quota code, separated by a front slash (`/`)
+        quota_name:
+            description: Name of the quota.
+        service_name:
+            description: Name of the service.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ5ZG1salpYRjFiM1JoYzE5elpYSjJhV05sWDNGMWIzUmhJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lIRjFiM1JoWDJOdlpHVWdJQ0E5SUNKTUxVWTJOemhHTVVORkln
+        b2dJSE5sY25acFkyVmZZMjlrWlNBOUlDSjJjR01pQ2lBZ2RtRnNkV1VnSUNBZ0lDQWdJRDBnTnpV
+        S2ZRbz0=
+    import: !!binary |
+        Q2dwK1BpQXFUazlVUlNvZ1ZHaHBjeUJ5WlhOdmRYSmpaU0JrYjJWeklHNXZkQ0J5WlhGMWFYSmxJ
+        R1Y0Y0d4cFkybDBJR2x0Y0c5eWRDQmhibVFnZDJsc2JDQmhjM04xYldVZ2JXRnVZV2RsYldWdWRD
+        QnZaaUJoYmlCbGVHbHpkR2x1WnlCelpYSjJhV05sSUhGMWIzUmhJRzl1SUZSbGNuSmhabTl5YlNC
+        eVpYTnZkWEpqWlNCamNtVmhkR2x2Ymk0S0NtQmhkM05mYzJWeWRtbGpaWEYxYjNSaGMxOXpaWEoy
+        YVdObFgzRjFiM1JoWUNCallXNGdZbVVnYVcxd2IzSjBaV1FnWW5rZ2RYTnBibWNnZEdobElITmxj
+        blpwWTJVZ1kyOWtaU0JoYm1RZ2NYVnZkR0VnWTI5a1pTd2djMlZ3WVhKaGRHVmtJR0o1SUdFZ1pu
+        SnZiblFnYzJ4aGMyZ2dLR0F2WUNrc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhKMmFXTmxjWFZ2ZEdGelgzTmxjblpwWTJWZmNYVnZkR0V1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

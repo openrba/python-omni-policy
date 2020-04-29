@@ -8,12 +8,12 @@ google_compute_instance_template:
     arguments:
         disk:
             description: Disks to attach to instances created from this template.
-            required: true
+            required: false
             policy: ''
             notes: ''
         machine_type:
             description: The machine type to create.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -58,7 +58,7 @@ google_compute_instance_template:
             notes: ''
         network_interface:
             description: Networks to attach to instances created from
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -162,7 +162,7 @@ google_compute_instance_template:
         type:
             description: '- The accelerator type resource to expose to this instance.
                 E.g. `nvidia-tesla-k80`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         disk_encryption_key:
@@ -174,7 +174,7 @@ google_compute_instance_template:
         kms_key_self_link:
             description: The self link of the encryption key that is stored in Google
                 Cloud KMS
-            required: true
+            required: false
             policy: ''
             notes: ''
         network:
@@ -230,7 +230,7 @@ google_compute_instance_template:
             notes: ''
         scopes:
             description: A list of service scopes. Both OAuth2 URLs and gcloud
-            required: true
+            required: false
             policy: ''
             notes: ''
         automatic_restart:
@@ -256,22 +256,22 @@ google_compute_instance_template:
         count:
             description: '- The number of the guest accelerator cards exposed to this
                 instance.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
             description: '- The key for the node affinity label.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         operator:
             description: '- The operator. Can be `IN` for node-affinities'
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: '- The values for the node affinity label.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         enable_secure_boot:

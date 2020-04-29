@@ -7,7 +7,7 @@ aws_pinpoint_baidu_channel:
     arguments:
         application_id:
             description: The application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -17,13 +17,26 @@ aws_pinpoint_baidu_channel:
             notes: ''
         api_key:
             description: Platform credential API key from Baidu.
-            required: true
+            required: false
             policy: ''
             notes: ''
         secret_key:
             description: Platform credential Secret key from Baidu.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR2x1Y0c5cGJuUmZZWEJ3SWlBaVlYQndJaUI3ZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjNjMTl3YVc1d2IybHVkRjlpWVdsa2RWOWphR0Z1Ym1Wc0lpQWlZMmhoYm01bGJD
+        SWdld29nSUdGd2NHeHBZMkYwYVc5dVgybGtJRDBnSWlSN1lYZHpYM0JwYm5CdmFXNTBYMkZ3Y0M1
+        aGNIQXVZWEJ3YkdsallYUnBiMjVmYVdSOUlnb2dJR0Z3YVY5clpYa2dJQ0FnSUNBZ0lEMGdJaUlL
+        SUNCelpXTnlaWFJmYTJWNUlDQWdJQ0E5SUNJaUNuMEs=
+    import: !!binary |
+        Q2dwUWFXNXdiMmx1ZENCQ1lXbGtkU0JEYUdGdWJtVnNJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZR0Z3Y0d4cFkyRjBhVzl1TFdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YVc1d2IybHVkRjlpWVdsa2RWOWphR0Z1Ym1Wc0xtMWhjbXRrYjNkdQ==

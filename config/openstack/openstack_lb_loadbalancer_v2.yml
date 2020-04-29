@@ -12,7 +12,7 @@ openstack_lb_loadbalancer_v2:
             notes: ''
         vip_subnet_id:
             description: The network on which to allocate the
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -55,27 +55,17 @@ openstack_lb_loadbalancer_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        vip_subnet_id:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        vip_address:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        flavor_id:
-            description: See Argument Reference above.
-        loadbalancer_provider:
-            description: See Argument Reference above.
-        security_group_ids:
-            description: See Argument Reference above.
-        vip_port_id:
-            description: The Port ID of the Load Balancer IP.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiRzloWkdKaGJHRnVZMlZ5WDNZeUlpQWli
+        R0pmTVNJZ2V3b2dJSFpwY0Y5emRXSnVaWFJmYVdRZ1BTQWlaRGswTVRVM09EWXROV1l4WVMwME1q
+        aGlMV0l6TldZdE1tWXhOVEl6WlRFME5tUXlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdU
+        RzloWkNCQ1lXeGhibU5sY2lCSlJDd2daUzVuTGpvS0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDlzYjJGa1ltRnNZVzVqWlhKZmRqSXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

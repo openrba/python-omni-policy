@@ -7,12 +7,12 @@ aws_efs_mount_target:
     arguments:
         file_system_id:
             description: The ID of the file system for which the mount target is intended.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The ID of the subnet to add the mount target in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_address:
@@ -36,3 +36,20 @@ aws_efs_mount_target:
             description: The ID of the network interface that Amazon EFS created when
                 it created the mount target.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV1p6WDIxdmRXNTBYM1JoY21kbGRDSWdJbUZzY0doaElpQjdD
+        aUFnWm1sc1pWOXplWE4wWlcxZmFXUWdQU0FpSkh0aGQzTmZaV1p6WDJacGJHVmZjM2x6ZEdWdExt
+        WnZieTVwWkgwaUNpQWdjM1ZpYm1WMFgybGtJQ0FnSUNBZ1BTQWlKSHRoZDNOZmMzVmlibVYwTG1G
+        c2NHaGhMbWxrZlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5MmNHTWlJQ0ptYjI4aUlIc0tJQ0Jq
+        YVdSeVgySnNiMk5ySUQwZ0lqRXdMakF1TUM0d0x6RTJJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpY
+        M04xWW01bGRDSWdJbUZzY0doaElpQjdDaUFnZG5CalgybGtJQ0FnSUNBZ0lDQWdJQ0FnUFNBaUpI
+        dGhkM05mZG5CakxtWnZieTVwWkgwaUNpQWdZWFpoYVd4aFltbHNhWFI1WDNwdmJtVWdQU0FpZFhN
+        dGQyVnpkQzB5WVNJS0lDQmphV1J5WDJKc2IyTnJJQ0FnSUNBZ0lDQTlJQ0l4TUM0d0xqRXVNQzh5
+        TkNJS2ZRbz0=
+    import: !!binary |
+        Q2dwVWFHVWdSVVpUSUcxdmRXNTBJSFJoY21kbGRITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWm5OZmJXOTFiblJmZEdGeVoyVjBMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

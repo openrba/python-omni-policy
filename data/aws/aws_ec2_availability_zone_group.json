@@ -8,13 +8,13 @@
         "arguments": {
             "group_name": {
                 "description": "Name of the Availability Zone Group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "opt_in_status": {
                 "description": "Indicates whether to enable or disable Availability Zone Group. Valid values: `opted-in` or `not-opted-in`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

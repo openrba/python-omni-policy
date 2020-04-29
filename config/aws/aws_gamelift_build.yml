@@ -7,19 +7,19 @@ aws_gamelift_build:
     arguments:
         name:
             description: Name of the build
-            required: true
+            required: false
             policy: ''
             notes: ''
         operating_system:
             description: Operating system that the game server binaries are built
                 to run on. e.g. `WINDOWS_2012` or `AMAZON_LINUX`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_location:
             description: Information indicating where your game build files are stored.
                 See below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
@@ -38,3 +38,19 @@ aws_gamelift_build:
         arn:
             description: Gamelift Build ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaMkZ0Wld4cFpuUmZZblZwYkdRaUlDSjBaWE4wSWlCN0NpQWdi
+        bUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMV0oxYVd4a0lnb2dJRzl3WlhKaGRH
+        bHVaMTl6ZVhOMFpXMGdQU0FpVjBsT1JFOVhVMTh5TURFeUlnb0tJQ0J6ZEc5eVlXZGxYMnh2WTJG
+        MGFXOXVJSHNLSUNBZ0lHSjFZMnRsZENBZ0lEMGdJaVI3WVhkelgzTXpYMkoxWTJ0bGRDNTBaWE4w
+        TG1KMVkydGxkSDBpQ2lBZ0lDQnJaWGtnSUNBZ0lDQTlJQ0lrZTJGM2MxOXpNMTlpZFdOclpYUmZi
+        MkpxWldOMExuUmxjM1F1YTJWNWZTSUtJQ0FnSUhKdmJHVmZZWEp1SUQwZ0lpUjdZWGR6WDJsaGJW
+        OXliMnhsTG5SbGMzUXVZWEp1ZlNJS0lDQjlDZ29nSUdSbGNHVnVaSE5mYjI0Z1BTQmJJbUYzYzE5
+        cFlXMWZjbTlzWlY5d2IyeHBZM2t1ZEdWemRDSmRDbjBL
+    import: !!binary |
+        Q2dwSFlXMWxiR2xtZENCQ2RXbHNaSE1nWTJGdWJtOTBJR0psSUdsdGNHOXlkR1ZrSUdGMElIUm9h
+        WE1nZEdsdFpTND0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluWVcxbGJHbG1kRjlpZFdsc1pDNW9kRzFzTG0xaGNtdGtiM2R1

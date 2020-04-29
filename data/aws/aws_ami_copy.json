@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "A region-unique name for the AMI.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_ami_id": {
                 "description": "The id of the AMI to copy. This id must be valid in the region",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_ami_region": {
                 "description": "The region from which the AMI will be copied. This may be the",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,12 +7,12 @@ aws_main_route_table_association:
     arguments:
         vpc_id:
             description: The ID of the VPC whose main route table should be set
-            required: true
+            required: false
             policy: ''
             notes: ''
         route_table_id:
             description: The ID of the Route Table to set as the new
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -21,3 +21,14 @@ aws_main_route_table_association:
         original_route_table_id:
             description: Used internally, see __Notes__ below
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiV0ZwYmw5eWIzVjBaVjkwWVdKc1pWOWhjM052WTJsaGRHbHZi
+        aUlnSW1FaUlIc0tJQ0IyY0dOZmFXUWdJQ0FnSUNBZ0lDQTlJQ0lrZTJGM2MxOTJjR011Wm05dkxt
+        bGtmU0lLSUNCeWIzVjBaVjkwWVdKc1pWOXBaQ0E5SUNJa2UyRjNjMTl5YjNWMFpWOTBZV0pzWlM1
+        aVlYSXVhV1I5SWdwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0WVdsdVgzSnZkWFJsWDNSaFlteGxYMkZ6YzI5amFXRjBhVzl1TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

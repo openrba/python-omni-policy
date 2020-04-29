@@ -7,21 +7,32 @@ aws_lambda_provisioned_concurrency_config:
     arguments:
         function_name:
             description: Name or Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         provisioned_concurrent_executions:
             description: Amount of capacity to allocate. Must be greater than or equal
                 to `1`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         qualifier:
             description: Lambda Function version or Lambda Alias name.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: Lambda Function name and qualifier separated by a colon (`:`).
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwTVlXMWlaR0VnVUhKdmRtbHphVzl1WldRZ1EyOXVZM1Z5Y21WdVkza2dRMjl1Wm1sbmN5QmpZ
+        VzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQm1kVzVqZEdsdmJsOXVZVzFsWUNCaGJt
+        UWdZSEYxWVd4cFptbGxjbUFnYzJWd1lYSmhkR1ZrSUdKNUlHRWdZMjlzYjI0Z0tHQTZZQ2tzSUdV
+        dVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWVcxaVpHRmZjSEp2ZG1semFXOXVaV1JmWTI5dVkzVnljbVZ1WTNsZlkyOXVabWxuTG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

@@ -7,12 +7,12 @@ aws_autoscaling_schedule:
     arguments:
         autoscaling_group_name:
             description: The name or Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         scheduled_action_name:
             description: The name of this scaling action.
-            required: true
+            required: false
             policy: ''
             notes: ''
         start_time:
@@ -50,5 +50,33 @@ aws_autoscaling_schedule:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: The ARN assigned by AWS to the autoscaling schedule.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWFYwYjNOallXeHBibWRmWjNKdmRYQWlJQ0ptYjI5aVlYSWlJ
+        SHNLSUNCaGRtRnBiR0ZpYVd4cGRIbGZlbTl1WlhNZ0lDQWdJQ0FnSUQwZ1d5SjFjeTEzWlhOMExU
+        SmhJbDBLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luUmxjbkpoWm05
+        eWJTMTBaWE4wTFdadmIySmhjalVpQ2lBZ2JXRjRYM05wZW1VZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlERUtJQ0J0YVc1ZmMybDZaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnTVFvZ0lHaGxZ
+        V3gwYUY5amFHVmphMTluY21GalpWOXdaWEpwYjJRZ1BTQXpNREFLSUNCb1pXRnNkR2hmWTJobFky
+        dGZkSGx3WlNBZ0lDQWdJQ0FnSUQwZ0lrVk1RaUlLSUNCbWIzSmpaVjlrWld4bGRHVWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUQwZ2RISjFaUW9nSUhSbGNtMXBibUYwYVc5dVgzQnZiR2xqYVdWeklDQWdJQ0Fn
+        UFNCYklrOXNaR1Z6ZEVsdWMzUmhibU5sSWwwS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5aGRYUnZj
+        Mk5oYkdsdVoxOXpZMmhsWkhWc1pTSWdJbVp2YjJKaGNpSWdld29nSUhOamFHVmtkV3hsWkY5aFkz
+        UnBiMjVmYm1GdFpTQWdQU0FpWm05dlltRnlJZ29nSUcxcGJsOXphWHBsSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0F3Q2lBZ2JXRjRYM05wZW1VZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURFS0lDQmtaWE5w
+        Y21Wa1gyTmhjR0ZqYVhSNUlDQWdJQ0FnSUQwZ01Bb2dJSE4wWVhKMFgzUnBiV1VnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlNakF4TmkweE1pMHhNVlF4T0Rvd01Eb3dNRm9pQ2lBZ1pXNWtYM1JwYldVZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJeU1ERTJMVEV5TFRFeVZEQTJPakF3T2pBd1dpSUtJQ0JoZFhS
+        dmMyTmhiR2x1WjE5bmNtOTFjRjl1WVcxbElEMGdJaVI3WVhkelgyRjFkRzl6WTJGc2FXNW5YMmR5
+        YjNWd0xtWnZiMkpoY2k1dVlXMWxmU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwQmRYUnZVMk5oYkdsdVp5QlRZMmhsWkhWc1pXUkJZM1JwYjI0Z1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ1lYVjBieTF6WTJGc2FXNW5MV2R5YjNWd0xXNWhiV1ZnSUdGdVpD
+        QmdjMk5vWldSMWJHVmtMV0ZqZEdsdmJpMXVZVzFsWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZFhSdmMyTmhiR2x1WjE5elkyaGxaSFZzWlM1b2RHMXNMbTFoY210a2IzZHU=

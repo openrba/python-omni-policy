@@ -12,12 +12,12 @@ openstack_compute_volume_attach_v2:
             notes: ''
         instance_id:
             description: The ID of the Instance to attach the Volume to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         volume_id:
             description: The ID of the Volume to attach to an Instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         device:
@@ -30,16 +30,15 @@ openstack_compute_volume_attach_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        instance_id:
-            description: See Argument Reference above.
-        volume_id:
-            description: See Argument Reference above.
-        device:
-            description: 'See Argument Reference above. _NOTE_: The correctness of
-                this'
-        multiattach:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwV2IyeDFiV1VnUVhSMFlXTm9iV1Z1ZEhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCSmJuTjBZVzVqWlNCSlJDQmhibVFnVm05c2RXMWxJRWxFQ25ObGNHRnlZWFJsWkNCaWVT
+        QmhJSE5zWVhOb0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgzWnZiSFZ0WlY5aGRIUmhZMmhmZGpJdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

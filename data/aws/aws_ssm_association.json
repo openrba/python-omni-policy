@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the SSM document to apply.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,7 +80,7 @@
             },
             "s3_bucket_name": {
                 "description": "The S3 bucket name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -92,13 +92,13 @@
             },
             "key": {
                 "description": "Either `InstanceIds` or `tag:Tag Name` to specify an EC2 tag.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "values": {
                 "description": "A list of instance IDs or tag values. AWS currently limits this list size to one value.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

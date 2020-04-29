@@ -10,12 +10,12 @@ datadog_service_level_objective:
             description: The type of the service level objective. The mapping from
                 these types to the types found in the Datadog Web UI can be found
                 in the Datadog API [documentation](https://docs.datadoghq.com/api/?lang=python#create-a-service-level-objective
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Name of Datadog service level objective
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -34,10 +34,19 @@ datadog_service_level_objective:
         thresholds:
             description: '- A list of thresholds and targets that define the service
                 level objectives from the provided SLIs.'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: ID of the Datadog service level objective
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUV4bGRtVnNJRTlpYW1WamRHbDJaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aV2x5SUhOMGNtbHVaeUJKUkN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWlY5c1pYWmxiRjl2WW1wbFkzUnBkbVV1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

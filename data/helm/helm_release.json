@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "full name of the variable to be set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "chart": {
                 "description": "Chart name to be installed. A path may be used.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -210,45 +210,26 @@
                 "policy": "",
                 "notes": ""
             },
+            "create_namespace": {
+                "description": "Create the namespace if it does not yet exist. Defaults to `false`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
             "value": {
                 "description": "value of the variable to be set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "binary_path": {
                 "description": "relative or full path to command binary.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "metadata": {
-                "description": "Block status of the deployed release."
-            },
-            "chart": {
-                "description": "The name of the chart."
-            },
-            "name": {
-                "description": "Name is the name of the release."
-            },
-            "namespace": {
-                "description": "Namespace is the kubernetes namespace of the release."
-            },
-            "revision": {
-                "description": "Version is an int32 which represents the version of the release."
-            },
-            "status": {
-                "description": "Status of the release."
-            },
-            "version": {
-                "description": "A SemVer 2 conformant version string of the chart."
-            },
-            "values": {
-                "description": "The compounded values from `values` and `set*` attributes."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

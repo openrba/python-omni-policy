@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the firewall rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The Azure location where the Analysis Services Server exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group in which the Analysis Services Server should be exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "SKU for the Analysis Services Server. Possible values are: `D1`, `B1`, `B2`, `S0`, `S1`, `S2`, `S4`, `S8` and `S9`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,13 +62,13 @@
             },
             "range_start": {
                 "description": "Start of the firewall rule range as IPv4 address.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "range_end": {
                 "description": "End of the firewall rule range as IPv4 address.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

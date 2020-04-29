@@ -7,12 +7,12 @@ vault_generic_endpoint:
     arguments:
         path:
             description: The full logical path at which to write the given
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_json:
             description: String containing a JSON-encoded object that will be
-            required: true
+            required: false
             policy: ''
             notes: ''
         disable_read:
@@ -30,9 +30,38 @@ vault_generic_endpoint:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        write_data_json:
-            description: The JSON data returned by the write operation.
-        write_data:
-            description: A map whose keys are the top-level data keys
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSjFjMlZ5Y0dGemN5SWdl
+        d29nSUhSNWNHVWdQU0FpZFhObGNuQmhjM01pQ24wS0NuSmxjMjkxY21ObElDSjJZWFZzZEY5blpX
+        NWxjbWxqWDJWdVpIQnZhVzUwSWlBaWRURWlJSHNLSUNCa1pYQmxibVJ6WDI5dUlDQWdJQ0FnSUNB
+        Z0lDQTlJRnNpZG1GMWJIUmZZWFYwYUY5aVlXTnJaVzVrTG5WelpYSndZWE56SWwwS0lDQndZWFJv
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKaGRYUm9MM1Z6WlhKd1lYTnpMM1Z6WlhKekwzVXhJ
+        Z29nSUdsbmJtOXlaVjloWW5ObGJuUmZabWxsYkdSeklEMGdkSEoxWlFvS0lDQmtZWFJoWDJwemIy
+        NGdQU0E4UEVWUFZBcDdDaUFnSW5CdmJHbGphV1Z6SWpvZ1d5SndNU0pkTEFvZ0lDSndZWE56ZDI5
+        eVpDSTZJQ0pqYUdGdVoyVnRaU0lLZlFwRlQxUUtmUW9LY21WemIzVnlZMlVnSW5aaGRXeDBYMmRs
+        Ym1WeWFXTmZaVzVrY0c5cGJuUWlJQ0oxTVY5MGIydGxiaUlnZXdvZ0lHUmxjR1Z1WkhOZmIyNGdJ
+        Q0FnSUQwZ1d5SjJZWFZzZEY5blpXNWxjbWxqWDJWdVpIQnZhVzUwTG5VeElsMEtJQ0J3WVhSb0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0poZFhSb0wzVnpaWEp3WVhOekwyeHZaMmx1TDNVeElnb2dJR1JwYzJG
+        aWJHVmZjbVZoWkNBZ0lEMGdkSEoxWlFvZ0lHUnBjMkZpYkdWZlpHVnNaWFJsSUQwZ2RISjFaUW9L
+        SUNCa1lYUmhYMnB6YjI0Z1BTQThQRVZQVkFwN0NpQWdJbkJoYzNOM2IzSmtJam9nSW1Ob1lXNW5a
+        VzFsSWdwOUNrVlBWQXA5Q2dweVpYTnZkWEpqWlNBaWRtRjFiSFJmWjJWdVpYSnBZMTlsYm1Sd2Iy
+        bHVkQ0lnSW5VeFgyVnVkR2wwZVNJZ2V3b2dJR1JsY0dWdVpITmZiMjRnSUNBZ0lDQWdJQ0FnSUQw
+        Z1d5SjJZWFZzZEY5blpXNWxjbWxqWDJWdVpIQnZhVzUwTG5VeFgzUnZhMlZ1SWwwS0lDQmthWE5o
+        WW14bFgzSmxZV1FnSUNBZ0lDQWdJQ0E5SUhSeWRXVUtJQ0JrYVhOaFlteGxYMlJsYkdWMFpTQWdJ
+        Q0FnSUNBOUlIUnlkV1VLSUNCd1lYUm9JQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pwWkdWdWRH
+        bDBlUzlzYjI5cmRYQXZaVzUwYVhSNUlnb2dJR2xuYm05eVpWOWhZbk5sYm5SZlptbGxiR1J6SUQw
+        Z2RISjFaUW9nSUhkeWFYUmxYMlpwWld4a2N5QWdJQ0FnSUNBZ0lEMGdXeUpwWkNKZENnb2dJR1Jo
+        ZEdGZmFuTnZiaUE5SUR3OFJVOVVDbnNLSUNBaVlXeHBZWE5mYm1GdFpTSTZJQ0oxTVNJc0NpQWdJ
+        bUZzYVdGelgyMXZkVzUwWDJGalkyVnpjMjl5SWpvZ0lpUjdkbUYxYkhSZllYVjBhRjlpWVdOclpX
+        NWtMblZ6WlhKd1lYTnpMbUZqWTJWemMyOXlmU0lLZlFwRlQxUUtmUW9LYjNWMGNIVjBJQ0oxTVY5
+        cFpDSWdld29nSUhaaGJIVmxJRDBnSWlSN2RtRjFiSFJmWjJWdVpYSnBZMTlsYm1Sd2IybHVkQzUx
+        TVY5bGJuUnBkSGt1ZDNKcGRHVmZaR0YwWVZzaWFXUWlYWDBpQ24wSw==
+    import: !!binary |
+        Q2dwSmJYQnZjblFnYVhNZ2JtOTBJSE4xY0hCdmNuUmxaQ0JtYjNJZ2RHaHBjeUJ5WlhOdmRYSmpa
+        UzQ9
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJkbGJtVnlhV05mWlc1a2NHOXBiblF1YUhSdGJDNXRaQT09

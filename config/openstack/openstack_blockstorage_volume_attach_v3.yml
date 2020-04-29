@@ -22,7 +22,7 @@ openstack_blockstorage_volume_attach_v3:
             notes: ''
         host_name:
             description: The host to attach the volume to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         initiator:
@@ -52,7 +52,7 @@ openstack_blockstorage_volume_attach_v3:
             notes: ''
         volume_id:
             description: The ID of the Volume to attach to an Instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         wwpn:
@@ -65,11 +65,24 @@ openstack_blockstorage_volume_attach_v3:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        data:
-            description: This is a map of key/value pairs that contain the connection
-        driver_volume_type:
-            description: The storage driver that the volume is based on.
-        mount_point_base:
-            description: A mount point base name for shared storage.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZllteHZZMnR6ZEc5eVlXZGxYM1p2YkhWdFpWOTJN
+        eUlnSW5admJIVnRaVjh4SWlCN0NpQWdibUZ0WlNBOUlDSjJiMngxYldWZk1TSUtJQ0J6YVhwbElE
+        MGdNUXA5Q2dweVpYTnZkWEpqWlNBaWIzQmxibk4wWVdOclgySnNiMk5yYzNSdmNtRm5aVjkyYjJ4
+        MWJXVmZZWFIwWVdOb1gzWXpJaUFpZG1GZk1TSWdld29nSUhadmJIVnRaVjlwWkNBZ1BTQWlKSHR2
+        Y0dWdWMzUmhZMnRmWW14dlkydHpkRzl5WVdkbFgzWnZiSFZ0WlY5Mk15NTJiMngxYldWZk1TNXBa
+        SDBpQ2lBZ1pHVjJhV05sSUNBZ0lDQTlJQ0poZFhSdklnb2dJR2h2YzNSZmJtRnRaU0FnUFNBaVpH
+        VjJjM1JoWTJzaUNpQWdhWEJmWVdSa2NtVnpjeUE5SUNJeE9USXVNVFk0TGpJMU5TNHhNQ0lLSUNC
+        cGJtbDBhV0YwYjNJZ0lEMGdJbWx4Ymk0eE9Ua3pMVEE0TG05eVp5NWtaV0pwWVc0Nk1ERTZaVGs0
+        TmpGbVlqRTROVGtpQ2lBZ2IzTmZkSGx3WlNBZ0lDQTlJQ0pzYVc1MWVESWlDaUFnY0d4aGRHWnZj
+        bTBnSUNBOUlDSjRPRFpmTmpRaUNuMEs=
+    import: !!binary |
+        Q2dwSmRDQnBjeUJ1YjNRZ2NHOXpjMmxpYkdVZ2RHOGdhVzF3YjNKMElIUm9hWE1nY21WemIzVnlZ
+        MlV1
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWliRzlqYTNOMGIzSmhaMlZmZG05c2RXMWxYMkYwZEdGamFGOTJNeTVvZEcx
+        c0xtMWhjbXRrYjNkdQ==

@@ -186,7 +186,7 @@ def parse_markdown(markdown_dct,metadata_dct):
         # Prefix the name with the provider.
         name = tmp_dct.get('layout') + '_' + name
     except:
-        logger(traceback.print_exc())
+        logger(traceback.format_exc())
         tmp_dct = {}
         dct = {}
 
@@ -200,6 +200,9 @@ def parse_markdown(markdown_dct,metadata_dct):
     dct[name].update({'arguments': {}})
     dct[name].update({'attributes': {}})
     dct[name].update({'timeouts': {}})
+    dct[name].update({'usage': {}})
+    dct[name].update({'import': {}})
+    dct[name].update({'hcl_url': {}})
 
     # Process the text in the markdown
     try:
@@ -223,6 +226,11 @@ def parse_markdown(markdown_dct,metadata_dct):
                                         == 'Required') \
                                else False
                     
+                    # Override the hashicorp data, it isnt reliable.
+                    # The above code works if they ever get a correct
+                    # list of what is required and not.  Until then ...
+                    required = False
+                    
                     # Parse the line and add to dictionary
                     dct[name]['arguments'].update({arg.split("`")[1] : {
                                     "description" : arg.split(") ")[1],
@@ -240,9 +248,17 @@ def parse_markdown(markdown_dct,metadata_dct):
                 # Parse the note line into fields and add to dictionary.
                 dct[name]['arguments'][arg_name]['notes'] \
                     = re.split("\*\*NOTE:\*\*", arg, flags=re.IGNORECASE)
+        
+    except Exception:
+        logger(markdown)
+        logger(repr(traceback.format_exc()))
+        return dct
 
+    try:
         # Extract Attributes
-        for attr in markdown.split("## Attributes Reference")[1].\
+        for attr in re.split("## Attribute* Reference", 
+                            markdown, 
+                            flags=re.IGNORECASE)[1].\
                     split("##")[0].\
                     split("\n"):
             
@@ -253,9 +269,15 @@ def parse_markdown(markdown_dct,metadata_dct):
                 dct[name]['attributes'].update({attr.split("`")[1] : {
                     "description" : attr.split("- ")[1]
                     }})
+    except Exception:
+        logger(markdown)
+        logger(repr(traceback.format_exc()))
 
+    try:
         # Extract Timeouts
-        for timeouts in markdown.split("## Timeouts")[1].\
+        for timeouts in re.split("## Timeout*", 
+                            markdown, 
+                            flags=re.IGNORECASE)[1].\
                     split("##")[0].\
                     split("\n"):
             
@@ -268,31 +290,46 @@ def parse_markdown(markdown_dct,metadata_dct):
                                     "timeout" : int(timeouts.split("(")[1].
                                                 split(")")[0].split()[2]),
                                     }})
-
+    except Exception:
+        logger(markdown)
+        logger(repr(traceback.format_exc()))
+    
+    try:
         # Extract Usage
-        usage = markdown.split('## Example Usage')[1].\
+        usage = re.split("## Example* Usage", 
+                            markdown, 
+                            flags=re.IGNORECASE)[1].\
                     split("##")[0].\
                     split("```hcl")[1].\
                     split("```")[0]
 
         dct[name].update({'usage': base64.b64encode(usage.encode())})
+    except Exception:
+        logger(markdown)
+        logger(repr(traceback.format_exc()))
 
+    try:
         # Extract Import
-        imports = markdown.split("## Import")[1].\
+        imports = re.split("## Import*", 
+                            markdown, 
+                            flags=re.IGNORECASE)[1].\
                     split("```shell")[0].\
                     split("```")[0]
         
         dct[name].update({'import':base64.b64encode(imports.encode())})
-
+    except Exception:
+        logger(markdown)
+        logger(repr(traceback.format_exc()))
+    
+    try:
         # Add Hashicorp Url
         html_url = metadata_dct.get('html_url')
         dct[name].update({'hcl_url': base64.b64encode(html_url.encode())})
-
-        return dct
-    except Exception:
+    except:
         logger(markdown)
-        logger(traceback.print_exc())
-        return dct
+        logger(repr(traceback.format_exc()))
+
+    return dct
 
 def get_markdown(url):
     """ Get and return markdown from url
@@ -436,7 +473,22 @@ def process_provider(provider_dct):
 def logger(msg):
     global debug
     if debug:
-        print(msg)
+        #print(msg)
+        with open("debug.log", "a") as myfile:
+            myfile.write(msg)
+
+def yaml_to_json():
+    import os
+    directory = os.path.join("/","path")
+    for root,dirs,files in os.walk(directory):
+        for file in files:
+            if file.endswith(".log") or file.endswith(".txt"):
+                f=open(file, 'r')
+                for line in f:
+                    if userstring in line:
+                        print("file: " + os.path.join(root,file))             
+                        break
+                f.close()
 
 debug=True
 

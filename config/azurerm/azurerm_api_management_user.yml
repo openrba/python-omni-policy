@@ -8,35 +8,35 @@ azurerm_api_management_user:
         api_management_name:
             description: The name of the API Management Service in which the User
                 should be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the API Management
                 Service exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email:
             description: The email address associated with this user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         first_name:
             description: The first name for this user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         last_name:
             description: The last name for this user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_id:
             description: The Identifier for this User, which must be unique within
                 the API Management Service. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         confirmation:
@@ -61,8 +61,10 @@ azurerm_api_management_user:
                 and `pending`.
             required: false
             policy: ''
-            notes: the State can be changed from Pending -> Active/Blocked but not
-                from Active/Blocked -> Pending.
+            notes:
+            - '-> '
+            - ' the State can be changed from Pending -> Active/Blocked but not from
+                Active/Blocked -> Pending.'
     attributes:
         id:
             description: The ID of the API Management User.

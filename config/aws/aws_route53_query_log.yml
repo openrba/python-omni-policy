@@ -7,15 +7,56 @@ aws_route53_query_log:
     arguments:
         cloudwatch_log_group_arn:
             description: CloudWatch log group ARN to send query logs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone_id:
             description: Route53 hosted zone ID to enable query logs.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The query logging configuration ID
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1JYaGhiWEJzWlNCRGJHOTFaRmRoZEdOb0lHeHZaeUJuY205MWNDQnBiaUIxY3kxbFlYTjBM
+        VEVLQ25CeWIzWnBaR1Z5SUNKaGQzTWlJSHNLSUNCaGJHbGhjeUFnUFNBaWRYTXRaV0Z6ZEMweEln
+        b2dJSEpsWjJsdmJpQTlJQ0oxY3kxbFlYTjBMVEVpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mWTJ4
+        dmRXUjNZWFJqYUY5c2IyZGZaM0p2ZFhBaUlDSmhkM05mY205MWRHVTFNMTlsZUdGdGNHeGxYMk52
+        YlNJZ2V3b2dJSEJ5YjNacFpHVnlJRDBnSW1GM2N5NTFjeTFsWVhOMExURWlDZ29nSUc1aGJXVWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0lpOWhkM012Y205MWRHVTFNeThrZTJGM2MxOXliM1YwWlRVelgz
+        cHZibVV1WlhoaGJYQnNaVjlqYjIwdWJtRnRaWDBpQ2lBZ2NtVjBaVzUwYVc5dVgybHVYMlJoZVhN
+        Z1BTQXpNQXA5Q2dvaklFVjRZVzF3YkdVZ1EyeHZkV1JYWVhSamFDQnNiMmNnY21WemIzVnlZMlVn
+        Y0c5c2FXTjVJSFJ2SUdGc2JHOTNJRkp2ZFhSbE5UTWdkRzhnZDNKcGRHVWdiRzluY3dvaklIUnZJ
+        R0Z1ZVNCc2IyY2daM0p2ZFhBZ2RXNWtaWElnTDJGM2N5OXliM1YwWlRVekx5b0tDbVJoZEdFZ0lt
+        RjNjMTlwWVcxZmNHOXNhV041WDJSdlkzVnRaVzUwSWlBaWNtOTFkR1UxTXkxeGRXVnllUzFzYjJk
+        bmFXNW5MWEJ2YkdsamVTSWdld29nSUhOMFlYUmxiV1Z1ZENCN0NpQWdJQ0JoWTNScGIyNXpJRDBn
+        V3dvZ0lDQWdJQ0FpYkc5bmN6cERjbVZoZEdWTWIyZFRkSEpsWVcwaUxBb2dJQ0FnSUNBaWJHOW5j
+        enBRZFhSTWIyZEZkbVZ1ZEhNaUxBb2dJQ0FnWFFvS0lDQWdJSEpsYzI5MWNtTmxjeUE5SUZzaVlY
+        SnVPbUYzY3pwc2IyZHpPaW82S2pwc2IyY3RaM0p2ZFhBNkwyRjNjeTl5YjNWMFpUVXpMeW9pWFFv
+        S0lDQWdJSEJ5YVc1amFYQmhiSE1nZXdvZ0lDQWdJQ0JwWkdWdWRHbG1hV1Z5Y3lBOUlGc2ljbTkx
+        ZEdVMU15NWhiV0Y2YjI1aGQzTXVZMjl0SWwwS0lDQWdJQ0FnZEhsd1pTQWdJQ0FnSUNBZ1BTQWlV
+        MlZ5ZG1salpTSUtJQ0FnSUgwS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lY
+        UmphRjlzYjJkZmNtVnpiM1Z5WTJWZmNHOXNhV041SWlBaWNtOTFkR1UxTXkxeGRXVnllUzFzYjJk
+        bmFXNW5MWEJ2YkdsamVTSWdld29nSUhCeWIzWnBaR1Z5SUQwZ0ltRjNjeTUxY3kxbFlYTjBMVEVp
+        Q2dvZ0lIQnZiR2xqZVY5a2IyTjFiV1Z1ZENBOUlDSWtlMlJoZEdFdVlYZHpYMmxoYlY5d2IyeHBZ
+        M2xmWkc5amRXMWxiblF1Y205MWRHVTFNeTF4ZFdWeWVTMXNiMmRuYVc1bkxYQnZiR2xqZVM1cWMy
+        OXVmU0lLSUNCd2IyeHBZM2xmYm1GdFpTQWdJQ0FnUFNBaWNtOTFkR1UxTXkxeGRXVnllUzFzYjJk
+        bmFXNW5MWEJ2YkdsamVTSUtmUW9LSXlCRmVHRnRjR3hsSUZKdmRYUmxOVE1nZW05dVpTQjNhWFJv
+        SUhGMVpYSjVJR3h2WjJkcGJtY0tDbkpsYzI5MWNtTmxJQ0poZDNOZmNtOTFkR1UxTTE5NmIyNWxJ
+        aUFpWlhoaGJYQnNaVjlqYjIwaUlIc0tJQ0J1WVcxbElEMGdJbVY0WVcxd2JHVXVZMjl0SWdwOUNn
+        cHlaWE52ZFhKalpTQWlZWGR6WDNKdmRYUmxOVE5mY1hWbGNubGZiRzluSWlBaVpYaGhiWEJzWlY5
+        amIyMGlJSHNLSUNCa1pYQmxibVJ6WDI5dUlEMGdXeUpoZDNOZlkyeHZkV1IzWVhSamFGOXNiMmRm
+        Y21WemIzVnlZMlZmY0c5c2FXTjVMbkp2ZFhSbE5UTXRjWFZsY25rdGJHOW5aMmx1Wnkxd2IyeHBZ
+        M2tpWFFvS0lDQmpiRzkxWkhkaGRHTm9YMnh2WjE5bmNtOTFjRjloY200Z1BTQWlKSHRoZDNOZlky
+        eHZkV1IzWVhSamFGOXNiMmRmWjNKdmRYQXVZWGR6WDNKdmRYUmxOVE5mWlhoaGJYQnNaVjlqYjIw
+        dVlYSnVmU0lLSUNCNmIyNWxYMmxrSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaUpIdGhkM05m
+        Y205MWRHVTFNMTk2YjI1bExtVjRZVzF3YkdWZlkyOXRMbnB2Ym1WZmFXUjlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwU2IzVjBaVFV6SUhGMVpYSjVJR3h2WjJkcGJtY2dZMjl1Wm1sbmRYSmhkR2x2Ym5NZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWldseUlFbEVMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpUVXpYM0YxWlhKNVgyeHZaeTVvZEcxc0xtMWhjbXRrYjNkdQ==

@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the frontend ip configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group in which to create the Load Balancer.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure Region where the Load Balancer should be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -70,7 +70,9 @@
                 "description": "A list of Availability Zones which the Load Balancer's IP Addresses should be created in.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> **Please Note**: Availability Zones are [only supported in several regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)."
+                ]
             }
         },
         "attributes": {

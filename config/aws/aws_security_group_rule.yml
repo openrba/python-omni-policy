@@ -8,7 +8,7 @@ aws_security_group_rule:
         type:
             description: The type of rule being created. Valid options are `ingress`
                 (inbound)
-            required: true
+            required: false
             policy: ''
             notes: ''
         cidr_blocks:
@@ -29,18 +29,18 @@ aws_security_group_rule:
         from_port:
             description: The start port (or ICMP type number if protocol is "icmp"
                 or "icmpv6").
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: The protocol. If not icmp, icmpv6, tcp, udp, or all use the
                 [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
-            required: true
+            required: false
             policy: ''
             notes: ''
         security_group_id:
             description: The security group to apply this rule to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_security_group_id:
@@ -55,7 +55,7 @@ aws_security_group_rule:
             notes: ''
         to_port:
             description: The end port (or ICMP code if protocol is "icmp").
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -73,3 +73,33 @@ aws_security_group_rule:
         to_port:
             description: The end port (or ICMP code if protocol is "icmp")
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbGZaM0p2ZFhCZmNuVnNaU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQjBlWEJsSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pwYm1keVpYTnpJZ29nSUdaeWIy
+        MWZjRzl5ZENBZ0lDQWdJQ0FnSUQwZ01Bb2dJSFJ2WDNCdmNuUWdJQ0FnSUNBZ0lDQWdJRDBnTmpV
+        MU16VUtJQ0J3Y205MGIyTnZiQ0FnSUNBZ0lDQWdJQ0E5SUNKMFkzQWlDaUFnWTJsa2NsOWliRzlq
+        YTNNZ0lDQWdJQ0FnUFNCaGQzTmZkbkJqTG1WNFlXMXdiR1V1WTJsa2NsOWliRzlqYXdvZ0lITmxZ
+        M1Z5YVhSNVgyZHliM1Z3WDJsa0lEMGdJbk5uTFRFeU16UTFOaUlLZlFvPQ==
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSGNtOTFjQ0JTZFd4bGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnpaV04xY21sMGVWOW5jbTkxY0Y5cFpHQXNJR0IwZVhCbFlDd2dZSEJ5YjNSdlky
+        OXNZQ3dnWUdaeWIyMWZjRzl5ZEdBc0lHQjBiMTl3YjNKMFlDd2dZVzVrSUhOdmRYSmpaU2h6S1M5
+        a1pYTjBhVzVoZEdsdmJpaHpLU0FvWlM1bkxpQmdZMmxrY2w5aWJHOWphMkFwSUhObGNHRnlZWFJs
+        WkNCaWVTQjFibVJsY25OamIzSmxjeUFvWUY5Z0tTNGdRV3hzSUhCaGNuUnpJR0Z5WlNCeVpYRjFh
+        WEpsWkM0S0NrNXZkQ0JoYkd3Z2NuVnNaU0J3WlhKdGFYTnphVzl1Y3lBb1pTNW5MaXdnYm05MElH
+        RnNiQ0J2WmlCaElISjFiR1VuY3lCRFNVUlNJR0pzYjJOcmN5a2dibVZsWkNCMGJ5QmlaU0JwYlhC
+        dmNuUmxaQ0JtYjNJZ1ZHVnljbUZtYjNKdElIUnZJRzFoYm1GblpTQnlkV3hsSUhCbGNtMXBjM05w
+        YjI1ekxpQkliM2RsZG1WeUxDQnBiWEJ2Y25ScGJtY2djMjl0WlNCdlppQmhJSEoxYkdVbmN5Qnda
+        WEp0YVhOemFXOXVjeUJpZFhRZ2JtOTBJRzkwYUdWeWN5d2dZVzVrSUhSb1pXNGdiV0ZyYVc1bklH
+        Tm9ZVzVuWlhNZ2RHOGdkR2hsSUhKMWJHVWdkMmxzYkNCeVpYTjFiSFFnYVc0Z2RHaGxJR055WldG
+        MGFXOXVJRzltSUdGdUlHRmtaR2wwYVc5dVlXd2djblZzWlNCMGJ5QmpZWEIwZFhKbElIUm9aU0Ix
+        Y0dSaGRHVmtJSEJsY20xcGMzTnBiMjV6TGlCU2RXeGxJSEJsY20xcGMzTnBiMjV6SUhSb1lYUWdk
+        MlZ5WlNCdWIzUWdhVzF3YjNKMFpXUWdZWEpsSUd4bFpuUWdhVzUwWVdOMElHbHVJSFJvWlNCdmNt
+        bG5hVzVoYkNCeWRXeGxMZ29LSXlNaklFVjRZVzF3YkdWekNncEpiWEJ2Y25RZ1lXNGdhVzVuY21W
+        emN5QnlkV3hsSUdsdUlITmxZM1Z5YVhSNUlHZHliM1Z3SUdCelp5MDJaVFl4Tm1ZMlpEWTVZQ0Jt
+        YjNJZ1ZFTlFJSEJ2Y25RZ09EQXdNQ0IzYVhSb0lHRnVJRWxRZGpRZ1pHVnpkR2x1WVhScGIyNGdR
+        MGxFVWlCdlppQmdNVEF1TUM0ekxqQXZNalJnT2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WldOMWNtbDBlVjluY205MWNGOXlkV3hsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

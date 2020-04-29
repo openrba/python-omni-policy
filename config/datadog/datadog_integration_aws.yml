@@ -8,12 +8,12 @@ datadog_integration_aws:
     arguments:
         account_id:
             description: Your AWS Account ID without dashes.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_name:
             description: Your Datadog role delegation name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter_tags:
@@ -37,3 +37,24 @@ datadog_integration_aws:
         external_id:
             description: AWS External ID
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRVJoZEdGa2IyY2dMU0JCYldGNmIyNGdWMlZpSUZObGNuWnBZ
+        MlZ6SUdsdWRHVm5jbUYwYVc5dUNuSmxjMjkxY21ObElDSmtZWFJoWkc5blgybHVkR1ZuY21GMGFX
+        OXVYMkYzY3lJZ0luTmhibVJpYjNnaUlIc0tJQ0FnSUdGalkyOTFiblJmYVdRZ1BTQWlNVEl6TkRV
+        Mk56ZzVNQ0lLSUNBZ0lISnZiR1ZmYm1GdFpTQTlJQ0pFWVhSaFpHOW5RVmRUU1c1MFpXZHlZWFJw
+        YjI1U2IyeGxJZ29nSUNBZ1ptbHNkR1Z5WDNSaFozTWdQU0JiSW10bGVUcDJZV3gxWlNKZENpQWdJ
+        Q0JvYjNOMFgzUmhaM01nUFNCYkltdGxlVHAyWVd4MVpTSXNJQ0pyWlhreU9uWmhiSFZsTWlKZENp
+        QWdJQ0JoWTJOdmRXNTBYM053WldOcFptbGpYMjVoYldWemNHRmpaVjl5ZFd4bGN5QTlJSHNLSUNB
+        Z0lDQWdJQ0JoZFhSdlgzTmpZV3hwYm1jZ1BTQm1ZV3h6WlFvZ0lDQWdJQ0FnSUc5d2MzZHZjbXR6
+        SUQwZ1ptRnNjMlVLSUNBZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwQmJXRjZiMjRnVjJWaUlGTmxjblpwWTJWeklHbHVkR1ZuY21GMGFXOXVjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxhWElnWUdGalkyOTFiblFnU1VSZ0lHRnVaQ0JnY205c1pT
+        QnVZVzFsWUNCelpYQmhjbUYwWldRZ2QybDBhQ0JoSUdOdmJHOXVJQ2hnT21BcExDQjNhR2xzWlNC
+        MGFHVWdZR1Y0ZEdWeWJtRnNYMmxrWUNCemFHOTFiR1FnWW1VZ2NHRnpjMlZrSUdKNUlITmxkSFJw
+        Ym1jZ1lXNGdaVzUyYVhKdmJtMWxiblFnZG1GeWFXRmliR1VnWTJGc2JHVmtJR0JGV0ZSRlVrNUJU
+        RjlKUkdBS0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXNTBaV2R5WVhScGIyNWZZWGR6TG1oMGJXd3ViV0Z5YTJSdmQyND0=

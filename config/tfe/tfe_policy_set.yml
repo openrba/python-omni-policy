@@ -7,7 +7,7 @@ tfe_policy_set:
     arguments:
         name:
             description: Name of the policy set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -22,7 +22,7 @@ tfe_policy_set:
             notes: ''
         organization:
             description: Name of the organization.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policies_path:
@@ -45,10 +45,12 @@ tfe_policy_set:
             description: A list of workspace external IDs. This
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> '
+            - ' When neither `vcs_repo` or `policy_ids` is not specified, the current'
         identifier:
             description: A reference to your VCS repository in the format
-            required: true
+            required: false
             policy: ''
             notes: ''
         branch:
@@ -63,10 +65,29 @@ tfe_policy_set:
             notes: ''
         oauth_token_id:
             description: Token ID of the VCS Connection (OAuth Conection Token)
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The ID of the policy set.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMFptVmZjRzlzYVdONVgzTmxkQ0lnSW5SbGMzUWlJSHNLSUNCdVlXMWxJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW0xNUxYQnZiR2xqZVMxelpYUWlDaUFnWkdWelkz
+        SnBjSFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJQ0pCSUdKeVlXNWtJRzVsZHlCd2IyeHBZM2tnYzJW
+        MElnb2dJRzl5WjJGdWFYcGhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ1BTQWliWGt0YjNKbkxXNWhiV1Vp
+        Q2lBZ2NHOXNhV05wWlhOZmNHRjBhQ0FnSUNBZ0lDQWdJQ0E5SUNKd2IyeHBZMmxsY3k5dGVTMXdi
+        MnhwWTNrdGMyVjBJZ29nSUhkdmNtdHpjR0ZqWlY5bGVIUmxjbTVoYkY5cFpITWdQU0JiSWlSN2RH
+        WmxYM2R2Y210emNHRmpaUzUwWlhOMExtVjRkR1Z5Ym1Gc1gybGtmU0pkQ2dvZ0lIWmpjMTl5WlhC
+        dklIc0tJQ0FnSUdsa1pXNTBhV1pwWlhJZ0lDQWdJQ0FnSUNBOUlDSnRlUzF2Y21jdGJtRnRaUzl0
+        ZVMxd2IyeHBZM2t0YzJWMExYSmxjRzl6YVhSdmNua2lDaUFnSUNCaWNtRnVZMmdnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWliV0Z6ZEdWeUlnb2dJQ0FnYVc1bmNtVnpjMTl6ZFdKdGIyUjFiR1Z6SUQwZ1pt
+        RnNjMlVLSUNBZ0lHOWhkWFJvWDNSdmEyVnVYMmxrSUNBZ0lDQTlJQ0lrZTNSbVpWOXZZWFYwYUY5
+        amJHbGxiblF1ZEdWemRDNXZZWFYwYUY5MGIydGxibDlwWkgwaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwUWIyeHBZM2tnYzJWMGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRN0lIVnpaU0JnUEZCUFRFbERX
+        U0JUUlZRZ1NVUStZQ0JoY3lCMGFHVWdhVzF3YjNKMElFbEVMaUJHYjNJZ1pYaGhiWEJzWlRvS0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYUm1aUzlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YjJ4cFkzbGZjMlYwTG1oMGJXd3ViV0Z5YTJSdmQyND0=

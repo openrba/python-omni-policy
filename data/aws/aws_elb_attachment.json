@@ -8,13 +8,13 @@
         "arguments": {
             "elb": {
                 "description": "The name of the ELB.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance": {
                 "description": "Instance ID to place in the ELB pool.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

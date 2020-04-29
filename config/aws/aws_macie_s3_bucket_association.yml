@@ -9,7 +9,7 @@ aws_macie_s3_bucket_association:
         bucket_name:
             description: The name of the S3 bucket that you want to associate with
                 Amazon Macie.
-            required: true
+            required: false
             policy: ''
             notes: ''
         classification_type:
@@ -47,3 +47,14 @@ aws_macie_s3_bucket_association:
         id:
             description: The ID of the association.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiV0ZqYVdWZmN6TmZZblZqYTJWMFgyRnpjMjlqYVdGMGFXOXVJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHSjFZMnRsZEY5dVlXMWxJRDBnSW5SbUxXMWhZMmxsTFdWNFlX
+        MXdiR1VpQ2lBZ2NISmxabWw0SUNBZ0lDQWdQU0FpWkdGMFlTSUtDaUFnWTJ4aGMzTnBabWxqWVhS
+        cGIyNWZkSGx3WlNCN0NpQWdJQ0J2Ym1WZmRHbHRaU0E5SUNKR1ZVeE1JZ29nSUgwS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0WVdOcFpWOXpNMTlpZFdOclpYUmZZWE56YjJOcFlYUnBiMjR1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

@@ -9,19 +9,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the variable to manage. Note that variable",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "parent": {
                 "description": "The name of the RuntimeConfig resource containing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "text": {
                 "description": "The content to associate with the variable.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,11 +32,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "update_time": {
-                "description": "(Computed) The timestamp in RFC3339 UTC \"Zulu\" format,"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

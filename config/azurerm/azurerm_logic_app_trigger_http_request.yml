@@ -9,24 +9,28 @@ azurerm_logic_app_trigger_http_request:
             description: Specifies the name of the HTTP Request Trigger to be created
                 within the Logic App Workflow. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
-            notes: This name must be unique across all Triggers within the Logic App
-                Workflow.
+            notes:
+            - '-> '
+            - ' This name must be unique across all Triggers within the Logic App
+                Workflow.'
         logic_app_id:
             description: Specifies the ID of the Logic App Workflow. Changing this
                 forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         schema:
             description: A JSON Blob defining the Schema of the incoming request.
                 This needs to be valid JSON.
-            required: true
+            required: false
             policy: ''
-            notes: To make the Trigger more readable, you may wish to consider using
+            notes:
+            - '-> '
+            - ' To make the Trigger more readable, you may wish to consider using
                 HEREDOC syntax (as shown above) or [the `local_file` resource](https://www.terraform.io/docs/providers/local/d/file.html)
-                to load the schema from a file on disk.
+                to load the schema from a file on disk.'
         method:
             description: Specifies the HTTP Method which the request be using. Possible
                 values include `DELETE`, `GET`, `PATCH`, `POST` or `PUT`.
@@ -37,7 +41,9 @@ azurerm_logic_app_trigger_http_request:
             description: Specifies the Relative Path used for this Request.
             required: false
             policy: ''
-            notes: When `relative_path` is set a `method` must also be set.
+            notes:
+            - '-> '
+            - ' When `relative_path` is set a `method` must also be set.'
     attributes:
         id:
             description: The ID of the HTTP Request Trigger within the Logic App Workflow.

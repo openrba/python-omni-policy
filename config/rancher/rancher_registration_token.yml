@@ -9,7 +9,7 @@ rancher_registration_token:
     arguments:
         name:
             description: The name of the registration token.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -19,7 +19,7 @@ rancher_registration_token:
             notes: ''
         environment_id:
             description: The ID of the environment to create the token for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host_labels:
@@ -33,15 +33,25 @@ rancher_registration_token:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: (Computed) The ID of the resource.
-        image:
-            description: (Computed)
-        command:
-            description: The command used to start a rancher agent for this environment.
-        registration_url:
-            description: The URL to use to register new nodes to the environment.
-        token:
-            description: The token to use to register new nodes to the environment.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRkpoYm1Ob1pYSWdjbVZuYVhOMGNtRjBhVzl1SUhSdmEyVnVD
+        bkpsYzI5MWNtTmxJQ0p5WVc1amFHVnlYM0psWjJsemRISmhkR2x2Ymw5MGIydGxiaUlnSW1SbFpt
+        RjFiSFFpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBOUlDSnpkR0ZuYVc1blgzUnZhMlZ1SWdv
+        Z0lHUmxjMk55YVhCMGFXOXVJQ0FnSUQwZ0lsSmxaMmx6ZEhKaGRHbHZiaUIwYjJ0bGJpQm1iM0ln
+        ZEdobElITjBZV2RwYm1jZ1pXNTJhWEp2Ym0xbGJuUWlDaUFnWlc1MmFYSnZibTFsYm5SZmFXUWdQ
+        U0FpSkh0eVlXNWphR1Z5WDJWdWRtbHliMjV0Wlc1MExtUmxabUYxYkhRdWFXUjlJZ29nSUdGblpX
+        NTBYMmx3SUNBZ0lDQWdJRDBnSWpFdU1pNHpMalFpQ2dvZ0lHaHZjM1JmYkdGaVpXeHpJQ0FnSUhz
+        S0lDQWdJRzl5WTJobGMzUnlZWFJwYjI0Z1BTQWlkSEoxWlNJc0NpQWdJQ0JsZEdOa0lDQWdJQ0Fn
+        SUNBZ0lEMGdJblJ5ZFdVaUxBb2dJQ0FnWTI5dGNIVjBaU0FnSUNBZ0lDQTlJQ0owY25WbElnb2dJ
+        SDBLZlFvPQ==
+    import: !!binary |
+        Q2dwU1pXZHBjM1J5WVhScGIyNGdkRzlyWlc1eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1JXNTJhWEp2Ym0xbGJuUWdZVzVrSUZKbFoybHpkSEpoZEdsdmJpQjBiMnRsYmdwSlJI
+        TWdhVzRnZEdobElHWnZjbTBnWUR4bGJuWnBjbTl1YldWdWRGOXBaRDR2UEhKbFoybHpkSEpoZEds
+        dmJsOTBiMnRsYmw5cFpENWdMZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYSmhibU5vWlhJdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtVm5hWE4wY21GMGFXOXVYM1J2YTJWdUxtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -8,12 +8,12 @@ google_compute_instance_from_template:
     arguments:
         name:
             description: A unique name for the resource, required by GCE.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_instance_template:
             description: Name or self link of an instance
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone:
@@ -23,3 +23,26 @@ google_compute_instance_from_template:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjlwYm5OMFlXNWpaVjkwWlcxd2JHRjBa
+        U0lnSW5Sd2JDSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQTlJQ0owWlcxd2JHRjBaU0lLSUNCdFlX
+        Tm9hVzVsWDNSNWNHVWdQU0FpYmpFdGMzUmhibVJoY21RdE1TSUtDaUFnWkdsemF5QjdDaUFnSUNC
+        emIzVnlZMlZmYVcxaFoyVWdQU0FpWkdWaWFXRnVMV05zYjNWa0wyUmxZbWxoYmkwNUlnb2dJQ0Fn
+        WVhWMGIxOWtaV3hsZEdVZ0lEMGdkSEoxWlFvZ0lDQWdaR2x6YTE5emFYcGxYMmRpSUQwZ01UQXdD
+        aUFnSUNCaWIyOTBJQ0FnSUNBZ0lDQWdQU0IwY25WbENpQWdmUW9LSUNCdVpYUjNiM0pyWDJsdWRH
+        VnlabUZqWlNCN0NpQWdJQ0J1WlhSM2IzSnJJRDBnSW1SbFptRjFiSFFpQ2lBZ2ZRb0tJQ0J0WlhS
+        aFpHRjBZU0E5SUhzS0lDQWdJR1p2YnlBOUlDSmlZWElpQ2lBZ2ZRb0tJQ0JqWVc1ZmFYQmZabTl5
+        ZDJGeVpDQTlJSFJ5ZFdVS2ZRb0tjbVZ6YjNWeVkyVWdJbWR2YjJkc1pWOWpiMjF3ZFhSbFgybHVj
+        M1JoYm1ObFgyWnliMjFmZEdWdGNHeGhkR1VpSUNKMGNHd2lJSHNLSUNCdVlXMWxJRDBnSW1sdWMz
+        UmhibU5sTFdaeWIyMHRkR1Z0Y0d4aGRHVWlDaUFnZW05dVpTQTlJQ0oxY3kxalpXNTBjbUZzTVMx
+        aElnb0tJQ0J6YjNWeVkyVmZhVzV6ZEdGdVkyVmZkR1Z0Y0d4aGRHVWdQU0JuYjI5bmJHVmZZMjl0
+        Y0hWMFpWOXBibk4wWVc1alpWOTBaVzF3YkdGMFpTNTBjR3d1YzJWc1psOXNhVzVyQ2dvZ0lDOHZJ
+        RTkyWlhKeWFXUmxJR1pwWld4a2N5Qm1jbTl0SUdsdWMzUmhibU5sSUhSbGJYQnNZWFJsQ2lBZ1ky
+        RnVYMmx3WDJadmNuZGhjbVFnUFNCbVlXeHpaUW9nSUd4aFltVnNjeUE5SUhzS0lDQWdJRzE1WDJ0
+        bGVTQTlJQ0p0ZVY5MllXeDFaU0lLSUNCOUNuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDJsdWMzUmhibU5sWDJaeWIyMWZkR1Z0Y0d4aGRHVXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

@@ -8,29 +8,29 @@ azurerm_private_dns_txt_record:
         name:
             description: The name of the DNS TXT Record. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the resource group where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone_name:
             description: Specifies the Private DNS Zone where the resource exists.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         record:
             description: One or more `record` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         'ttl ':
             description: The Time To Live (TTL
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -40,7 +40,7 @@ azurerm_private_dns_txt_record:
             notes: ''
         value:
             description: 'The value of the TXT record. Max length: 1024 characters'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

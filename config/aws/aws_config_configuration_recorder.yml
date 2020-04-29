@@ -13,7 +13,7 @@ aws_config_configuration_recorder:
             notes: ''
         role_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         recording_group:
@@ -25,3 +25,23 @@ aws_config_configuration_recorder:
         id:
             description: Name of the recorder
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjl1Wm1sblgyTnZibVpwWjNWeVlYUnBiMjVmY21WamIzSmta
+        WElpSUNKbWIyOGlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb2dJSEp2YkdWZllY
+        SnVJRDBnSWlSN1lYZHpYMmxoYlY5eWIyeGxMbkl1WVhKdWZTSUtmUW9LY21WemIzVnlZMlVnSW1G
+        M2MxOXBZVzFmY205c1pTSWdJbklpSUhzS0lDQnVZVzFsSUQwZ0ltRjNjMk52Ym1acFp5MWxlR0Z0
+        Y0d4bElnb0tJQ0JoYzNOMWJXVmZjbTlzWlY5d2IyeHBZM2tnUFNBOFBGQlBURWxEV1FwN0NpQWdJ
+        bFpsY25OcGIyNGlPaUFpTWpBeE1pMHhNQzB4TnlJc0NpQWdJbE4wWVhSbGJXVnVkQ0k2SUZzS0lD
+        QWdJSHNLSUNBZ0lDQWdJa0ZqZEdsdmJpSTZJQ0p6ZEhNNlFYTnpkVzFsVW05c1pTSXNDaUFnSUNB
+        Z0lDSlFjbWx1WTJsd1lXd2lPaUI3Q2lBZ0lDQWdJQ0FnSWxObGNuWnBZMlVpT2lBaVkyOXVabWxu
+        TG1GdFlYcHZibUYzY3k1amIyMGlDaUFnSUNBZ0lIMHNDaUFnSUNBZ0lDSkZabVpsWTNRaU9pQWlR
+        V3hzYjNjaUxBb2dJQ0FnSUNBaVUybGtJam9nSWlJS0lDQWdJSDBLSUNCZENuMEtVRTlNU1VOWkNu
+        MEs=
+    import: !!binary |
+        Q2dwRGIyNW1hV2QxY21GMGFXOXVJRkpsWTI5eVpHVnlJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdibUZ0WlN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZZMjl1Wm1sbmRYSmhkR2x2Ymw5eVpXTnZjbVJsY2k1b2RHMXNMbTFoY210
+        a2IzZHU=

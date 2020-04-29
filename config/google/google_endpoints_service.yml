@@ -8,7 +8,7 @@ google_endpoints_service:
     arguments:
         service_name:
             description: The name of the service.  Usually of the form `$apiname.endpoints.$projectid.cloud.goog`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         openapi_config:
@@ -37,3 +37,21 @@ google_endpoints_service:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWlc1a2NHOXBiblJ6WDNObGNuWnBZMlVpSUNKdmNHVnVZ
+        WEJwWDNObGNuWnBZMlVpSUhzS0lDQnpaWEoyYVdObFgyNWhiV1VnSUNBOUlDSmhjR2t0Ym1GdFpT
+        NWxibVJ3YjJsdWRITXVjSEp2YW1WamRDMXBaQzVqYkc5MVpDNW5iMjluSWdvZ0lIQnliMnBsWTNR
+        Z0lDQWdJQ0FnSUQwZ0luQnliMnBsWTNRdGFXUWlDaUFnYjNCbGJtRndhVjlqYjI1bWFXY2dQU0Jt
+        YVd4bEtDSnZjR1Z1WVhCcFgzTndaV011ZVcxc0lpa0tmUW9LY21WemIzVnlZMlVnSW1kdmIyZHNa
+        VjlsYm1Sd2IybHVkSE5mYzJWeWRtbGpaU0lnSW1keWNHTmZjMlZ5ZG1salpTSWdld29nSUhObGNu
+        WnBZMlZmYm1GdFpTQWdJQ0FnSUNBZ0lEMGdJbUZ3YVMxdVlXMWxMbVZ1WkhCdmFXNTBjeTV3Y205
+        cVpXTjBMV2xrTG1Oc2IzVmtMbWR2YjJjaUNpQWdjSEp2YW1WamRDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaWNISnZhbVZqZEMxcFpDSUtJQ0JuY25CalgyTnZibVpwWnlBZ0lDQWdJQ0FnSUNBOUlHWnBi
+        R1VvSW5ObGNuWnBZMlZmYzNCbFl5NTViV3dpS1FvZ0lIQnliM1J2WTE5dmRYUndkWFJmWW1GelpU
+        WTBJRDBnWW1GelpUWTBaVzVqYjJSbEtHWnBiR1VvSW1OdmJYQnBiR1ZrWDJSbGMyTnlhWEIwYjNK
+        ZlptbHNaUzV3WWlJcEtRcDlDZz09
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bGJtUndiMmx1ZEhOZmMyVnlkbWxqWlM1b2RHMXNMbTFoY210a2IzZHU=

@@ -8,24 +8,28 @@
         "arguments": {
             "location": {
                 "description": "The location of the targeted API entity of the to-be-created documentation part. See below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "properties": {
                 "description": "A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., \"{ \\\"description\\\": \\\"The API does ...\\\" }\". Only Swagger-compliant key-value pairs can be exported and, hence, published.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rest_api_id": {
                 "description": "The ID of the associated Rest API",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The unique ID of the Documentation Part"
+            }
+        },
         "timeouts": {}
     }
 }

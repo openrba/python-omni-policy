@@ -14,7 +14,7 @@
             },
             "size": {
                 "description": "The size of the volume to create (in gigabytes).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -91,44 +91,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "size": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "availability_zone": {
-                "description": "See Argument Reference above."
-            },
-            "image_id": {
-                "description": "See Argument Reference above."
-            },
-            "source_vol_id": {
-                "description": "See Argument Reference above."
-            },
-            "snapshot_id": {
-                "description": "See Argument Reference above."
-            },
-            "metadata": {
-                "description": "See Argument Reference above."
-            },
-            "volume_type": {
-                "description": "See Argument Reference above."
-            },
-            "attachment": {
-                "description": "If a volume is attached to an instance, this attribute will"
-            },
-            "multiattach": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

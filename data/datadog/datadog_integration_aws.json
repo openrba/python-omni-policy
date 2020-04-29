@@ -8,13 +8,13 @@
         "arguments": {
             "account_id": {
                 "description": "Your AWS Account ID without dashes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_name": {
                 "description": "Your Datadog role delegation name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

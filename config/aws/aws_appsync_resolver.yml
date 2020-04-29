@@ -7,29 +7,29 @@ aws_appsync_resolver:
     arguments:
         api_id:
             description: The API ID for the GraphQL API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type name from the schema defined in the GraphQL API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         field:
             description: The field name from the schema defined in the GraphQL API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         request_template:
             description: The request mapping template for UNIT resolver or 'before
                 mapping template' for PIPELINE resolver.
-            required: true
+            required: false
             policy: ''
             notes: ''
         response_template:
             description: The response mapping template for UNIT resolver or 'after
                 mapping template' for PIPELINE resolver.
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_source:
@@ -50,10 +50,58 @@ aws_appsync_resolver:
             notes: ''
         functions:
             description: The list of Function ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         arn:
             description: The ARN
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJ3YzNsdVkxOW5jbUZ3YUhGc1gyRndhU0lnSW5SbGMzUWlJ
+        SHNLSUNCaGRYUm9aVzUwYVdOaGRHbHZibDkwZVhCbElEMGdJa0ZRU1Y5TFJWa2lDaUFnYm1GdFpT
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBaaTFsZUdGdGNHeGxJZ29LSUNCelkyaGxiV0VnUFNB
+        OFBFVlBSZ3AwZVhCbElFMTFkR0YwYVc5dUlIc0tDWEIxZEZCdmMzUW9hV1E2SUVsRUlTd2dkR2ww
+        YkdVNklGTjBjbWx1WnlFcE9pQlFiM04wQ24wS0NuUjVjR1VnVUc5emRDQjdDZ2xwWkRvZ1NVUWhD
+        Z2wwYVhSc1pUb2dVM1J5YVc1bklRcDlDZ3AwZVhCbElGRjFaWEo1SUhzS0NYTnBibWRzWlZCdmMz
+        UW9hV1E2SUVsRUlTazZJRkJ2YzNRS2ZRb0tjMk5vWlcxaElIc0tDWEYxWlhKNU9pQlJkV1Z5ZVFv
+        SmJYVjBZWFJwYjI0NklFMTFkR0YwYVc5dUNuMEtSVTlHQ24wS0NuSmxjMjkxY21ObElDSmhkM05m
+        WVhCd2MzbHVZMTlrWVhSaGMyOTFjbU5sSWlBaWRHVnpkQ0lnZXdvZ0lHRndhVjlwWkNBOUlDSWtl
+        MkYzYzE5aGNIQnplVzVqWDJkeVlYQm9jV3hmWVhCcExuUmxjM1F1YVdSOUlnb2dJRzVoYldVZ0lD
+        QTlJQ0owWmw5bGVHRnRjR3hsSWdvZ0lIUjVjR1VnSUNBOUlDSklWRlJRSWdvS0lDQm9kSFJ3WDJO
+        dmJtWnBaeUI3Q2lBZ0lDQmxibVJ3YjJsdWRDQTlJQ0pvZEhSd09pOHZaWGhoYlhCc1pTNWpiMjBp
+        Q2lBZ2ZRcDlDZ29qSUZWT1NWUWdkSGx3WlNCeVpYTnZiSFpsY2lBb1pHVm1ZWFZzZENrS2NtVnpi
+        M1Z5WTJVZ0ltRjNjMTloY0hCemVXNWpYM0psYzI5c2RtVnlJaUFpZEdWemRDSWdld29nSUdGd2FW
+        OXBaQ0FnSUNBZ0lEMGdJaVI3WVhkelgyRndjSE41Ym1OZlozSmhjR2h4YkY5aGNHa3VkR1Z6ZEM1
+        cFpIMGlDaUFnWm1sbGJHUWdJQ0FnSUNBZ1BTQWljMmx1WjJ4bFVHOXpkQ0lLSUNCMGVYQmxJQ0Fn
+        SUNBZ0lDQTlJQ0pSZFdWeWVTSUtJQ0JrWVhSaFgzTnZkWEpqWlNBOUlDSWtlMkYzYzE5aGNIQnpl
+        VzVqWDJSaGRHRnpiM1Z5WTJVdWRHVnpkQzV1WVcxbGZTSUtDaUFnY21WeGRXVnpkRjkwWlcxd2JH
+        RjBaU0E5SUR3OFJVOUdDbnNLSUNBZ0lDSjJaWEp6YVc5dUlqb2dJakl3TVRndE1EVXRNamtpTEFv
+        Z0lDQWdJbTFsZEdodlpDSTZJQ0pIUlZRaUxBb2dJQ0FnSW5KbGMyOTFjbU5sVUdGMGFDSTZJQ0l2
+        SWl3S0lDQWdJQ0p3WVhKaGJYTWlPbnNLSUNBZ0lDQWdJQ0FpYUdWaFpHVnljeUk2SUNSMWRHbHNj
+        eTVvZEhSd0xtTnZjSGxvWldGa1pYSnpLQ1JqZEhndWNtVnhkV1Z6ZEM1b1pXRmtaWEp6S1FvZ0lD
+        QWdmUXA5Q2tWUFJnb0tJQ0J5WlhOd2IyNXpaVjkwWlcxd2JHRjBaU0E5SUR3OFJVOUdDaU5wWmln
+        a1kzUjRMbkpsYzNWc2RDNXpkR0YwZFhORGIyUmxJRDA5SURJd01Da0tJQ0FnSUNSamRIZ3VjbVZ6
+        ZFd4MExtSnZaSGtLSTJWc2MyVUtJQ0FnSUNSMWRHbHNjeTVoY0hCbGJtUkZjbkp2Y2lna1kzUjRM
+        bkpsYzNWc2RDNWliMlI1TENBa1kzUjRMbkpsYzNWc2RDNXpkR0YwZFhORGIyUmxLUW9qWlc1a0Nr
+        VlBSZ3A5Q2dvaklGQkpVRVZNU1U1RklIUjVjR1VnY21WemIyeDJaWElLY21WemIzVnlZMlVnSW1G
+        M2MxOWhjSEJ6ZVc1algzSmxjMjlzZG1WeUlpQWlUWFYwWVhScGIyNWZjR2x3Wld4cGJtVlVaWE4w
+        SWlCN0NpQWdkSGx3WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpVFhWMFlYUnBiMjRpQ2lBZ1lYQnBY
+        MmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlKSHRoZDNOZllYQndjM2x1WTE5bmNtRndhSEZzWDJGd2FT
+        NTBaWE4wTG1sa2ZTSUtJQ0JtYVdWc1pDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKd2FYQmxiR2x1WlZS
+        bGMzUWlDaUFnY21WeGRXVnpkRjkwWlcxd2JHRjBaU0FnUFNBaWUzMGlDaUFnY21WemNHOXVjMlZm
+        ZEdWdGNHeGhkR1VnUFNBaUpIVjBhV3d1ZEc5S2MyOXVLQ1JqZEhndWNtVnpkV3gwS1NJS0lDQnJh
+        VzVrSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pRU1ZCRlRFbE9SU0lLSUNCd2FYQmxiR2x1WlY5amIy
+        NW1hV2NnZXdvZ0lDQWdablZ1WTNScGIyNXpJRDBnV3dvZ0lDQWdJQ0FpSkh0aGQzTmZZWEJ3YzNs
+        dVkxOW1kVzVqZEdsdmJpNTBaWE4wTVM1bWRXNWpkR2x2Ymw5cFpIMGlMQW9nSUNBZ0lDQWlKSHRo
+        ZDNOZllYQndjM2x1WTE5bWRXNWpkR2x2Ymk1MFpYTjBNaTVtZFc1amRHbHZibDlwWkgwaUxBb2dJ
+        Q0FnSUNBaUpIdGhkM05mWVhCd2MzbHVZMTltZFc1amRHbHZiaTUwWlhOME15NW1kVzVqZEdsdmJs
+        OXBaSDBpQ2lBZ0lDQmRDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3Y0hONWJtTmZjbVZ6YjJ4MlpYSmdJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjNh
+        WFJvSUhSb1pXbHlJR0JoY0dsZmFXUmdMQ0JoSUdoNWNHaGxiaXdnWUhSNWNHVmdMQ0JoSUdoNWNH
+        VnVJR0Z1WkNCZ1ptbGxiR1JnSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCemVXNWpYM0psYzI5c2RtVnlMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

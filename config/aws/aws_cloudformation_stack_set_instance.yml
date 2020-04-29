@@ -7,7 +7,7 @@ aws_cloudformation_stack_set_instance:
     arguments:
         stack_set_name:
             description: Name of the StackSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_id:
@@ -44,3 +44,19 @@ aws_cloudformation_stack_set_instance:
         stack_id:
             description: Stack identifier
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSbWIzSnRZWFJwYjI1ZmMzUmhZMnRmYzJWMFgybHVj
+        M1JoYm1ObElpQWlaWGhoYlhCc1pTSWdld29nSUdGalkyOTFiblJmYVdRZ0lDQWdJRDBnSWpFeU16
+        UTFOamM0T1RBeE1pSUtJQ0J5WldkcGIyNGdJQ0FnSUNBZ0lDQTlJQ0oxY3kxbFlYTjBMVEVpQ2lB
+        Z2MzUmhZMnRmYzJWMFgyNWhiV1VnUFNBaUpIdGhkM05mWTJ4dmRXUm1iM0p0WVhScGIyNWZjM1Jo
+        WTJ0ZmMyVjBMbVY0WVcxd2JHVXVibUZ0WlgwaUNuMEs=
+    import: !!binary |
+        Q2dwRGJHOTFaRVp2Y20xaGRHbHZiaUJUZEdGamExTmxkQ0JKYm5OMFlXNWpaWE1nWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JUZEdGamExTmxkQ0J1WVcxbExDQjBZWEpuWlhRZ1FW
+        ZFRJR0ZqWTI5MWJuUWdTVVFzSUdGdVpDQjBZWEpuWlhRZ1FWZFRJSEpsWjJsdmJpQnpaWEJoY21G
+        MFpXUWdZbmtnWTI5dGJXRnpJQ2hnTEdBcElHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpHWnZjbTFoZEdsdmJsOXpkR0ZqYTE5elpYUmZhVzV6ZEdGdVkyVXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

@@ -7,17 +7,17 @@ aws_servicecatalog_portfolio:
     arguments:
         name:
             description: The name of the portfolio.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
             description: Description of the portfolio
-            required: true
+            required: false
             policy: ''
             notes: ''
         provider_name:
             description: Name of the person or organization who owns the portfolio.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -29,3 +29,17 @@ aws_servicecatalog_portfolio:
         id:
             description: The ID of the Service Catalog Portfolio.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ5ZG1salpXTmhkR0ZzYjJkZmNHOXlkR1p2YkdsdklpQWlj
+        Rzl5ZEdadmJHbHZJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0E5SUNKTmVTQkJjSEFnVUc5eWRH
+        WnZiR2x2SWdvZ0lHUmxjMk55YVhCMGFXOXVJQ0FnUFNBaVRHbHpkQ0J2WmlCdGVTQnZjbWRoYm1s
+        NllYUnBiMjV6SUdGd2NITWlDaUFnY0hKdmRtbGtaWEpmYm1GdFpTQTlJQ0pDY21WMGRDSUtmUW89
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVOaGRHRnNiMmNnVUc5eWRHWnZiR2x2Y3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCelpYSjJhV05sSUdOaGRHRnNiMmNnY0c5eWRHWnZiR2x2SUdsa1lD
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhKMmFXTmxZMkYwWVd4dloxOXdiM0owWm05c2FXOHVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

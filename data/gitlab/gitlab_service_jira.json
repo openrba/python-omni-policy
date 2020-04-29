@@ -8,31 +8,31 @@
         "arguments": {
             "project": {
                 "description": "ID of the project you want to activate integration on.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "url": {
                 "description": "The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "username": {
                 "description": "The username of the user created to be used with GitLab/JIRA.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "password": {
                 "description": "The password of the user created to be used with GitLab/JIRA.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "project_key": {
                 "description": "The short identifier for your JIRA project, all uppercase, e.g., PROJ.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

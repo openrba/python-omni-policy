@@ -8,13 +8,13 @@
         "arguments": {
             "filter": {
                 "description": "Defines your pipeline filter. Only logs that match the filter criteria are processed by this pipeline.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "Your pipeline name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,30 +7,30 @@ aws_ssm_maintenance_window_task:
     arguments:
         window_id:
             description: The Id of the maintenance window to register the task with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_concurrency:
             description: The maximum number of targets this task can be run for in
                 parallel.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_errors:
             description: The maximum number of errors allowed before this task stops
                 being scheduled.
-            required: true
+            required: false
             policy: ''
             notes: ''
         task_type:
             description: The type of task being registered. The only allowed value
                 is `RUN_COMMAND`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         task_arn:
             description: The ARN of the task to execute.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_role_arn:
@@ -40,7 +40,7 @@ aws_ssm_maintenance_window_task:
             notes: ''
         name:
             description: The parameter name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -53,7 +53,7 @@ aws_ssm_maintenance_window_task:
                 are specified using Key=InstanceIds,Values=instanceid1,instanceid2.
                 Window target ids are specified using Key=WindowTargetIds,Values=window
                 target id1, window target id2.
-            required: true
+            required: false
             policy: ''
             notes: ''
         priority:
@@ -203,10 +203,20 @@ aws_ssm_maintenance_window_task:
             notes: ''
         values:
             description: The array of strings.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the maintenance window task.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQlYxTWdUV0ZwYm5SbGJtRnVZMlVnVjJsdVpHOTNJRlJoYzJzZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2QybHVaRzkzWDJsa1lDQmhibVFnWUhkcGJtUnZkMTkwWVhOclgy
+        bGtZQ0J6WlhCaGNtRjBaV1FnWW5rZ1lDOWdMZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZmJXRnBiblJsYm1GdVkyVmZkMmx1Wkc5M1gzUmhjMnN1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

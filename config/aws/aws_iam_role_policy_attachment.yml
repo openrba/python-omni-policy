@@ -7,13 +7,41 @@ aws_iam_role_policy_attachment:
     arguments:
         role:
             description: '- The role the policy should be applied to'
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_arn:
             description: '- The ARN of the policy you want to apply'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNKdmJHVWlJQ0p5YjJ4bElpQjdDaUFnYm1GdFpTQTlJ
+        Q0owWlhOMExYSnZiR1VpQ2dvZ0lHRnpjM1Z0WlY5eWIyeGxYM0J2YkdsamVTQTlJRHc4UlU5R0Np
+        QWdJQ0I3Q2lBZ0lDQWdJQ0pXWlhKemFXOXVJam9nSWpJd01USXRNVEF0TVRjaUxBb2dJQ0FnSUNB
+        aVUzUmhkR1Z0Wlc1MElqb2dXd29nSUNBZ0lDQWdJSHNLSUNBZ0lDQWdJQ0FnSUNKQlkzUnBiMjRp
+        T2lBaWMzUnpPa0Z6YzNWdFpWSnZiR1VpTEFvZ0lDQWdJQ0FnSUNBZ0lsQnlhVzVqYVhCaGJDSTZJ
+        SHNLSUNBZ0lDQWdJQ0FnSUNBZ0lsTmxjblpwWTJVaU9pQWlaV015TG1GdFlYcHZibUYzY3k1amIy
+        MGlDaUFnSUNBZ0lDQWdJQ0I5TEFvZ0lDQWdJQ0FnSUNBZ0lrVm1abVZqZENJNklDSkJiR3h2ZHlJ
+        c0NpQWdJQ0FnSUNBZ0lDQWlVMmxrSWpvZ0lpSUtJQ0FnSUNBZ0lDQjlDaUFnSUNBZ0lGMEtJQ0Fn
+        SUgwS1JVOUdDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNCdmJHbGplU0lnSW5CdmJHbGpl
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJRDBnSW5SbGMzUXRjRzlzYVdONUlnb2dJR1JsYzJOeWFY
+        QjBhVzl1SUQwZ0lrRWdkR1Z6ZENCd2IyeHBZM2tpQ2dvZ0lIQnZiR2xqZVNBOUlEdzhSVTlHQ25z
+        S0lDQWlWbVZ5YzJsdmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWlVM1JoZEdWdFpXNTBJam9n
+        V3dvZ0lDQWdld29nSUNBZ0lDQWlRV04wYVc5dUlqb2dXd29nSUNBZ0lDQWdJQ0psWXpJNlJHVnpZ
+        M0pwWW1VcUlnb2dJQ0FnSUNCZExBb2dJQ0FnSUNBaVJXWm1aV04wSWpvZ0lrRnNiRzkzSWl3S0lD
+        QWdJQ0FnSWxKbGMyOTFjbU5sSWpvZ0lpb2lDaUFnSUNCOUNpQWdYUXA5Q2tWUFJncDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhkelgybGhiVjl5YjJ4bFgzQnZiR2xqZVY5aGRIUmhZMmh0Wlc1MElpQWlkR1Z6
+        ZEMxaGRIUmhZMmdpSUhzS0lDQnliMnhsSUNBZ0lDQWdJRDBnSWlSN1lYZHpYMmxoYlY5eWIyeGxM
+        bkp2YkdVdWJtRnRaWDBpQ2lBZ2NHOXNhV041WDJGeWJpQTlJQ0lrZTJGM2MxOXBZVzFmY0c5c2FX
+        TjVMbkJ2YkdsamVTNWhjbTU5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwSlFVMGdjbTlzWlNCd2IyeHBZM2tnWVhSMFlXTm9iV1Z1ZEhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCeWIyeGxJRzVoYldVZ1lXNWtJSEJ2YkdsamVTQmhjbTRnYzJWd1lY
+        SmhkR1ZrSUdKNUlHQXZZQzRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmNtOXNaVjl3YjJ4cFkzbGZZWFIwWVdOb2JXVnVkQzV0WVhKclpHOTNiZz09

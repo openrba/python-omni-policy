@@ -8,37 +8,37 @@ azurerm_api_management_api_schema:
         schema_id:
             description: A unique identifier for this API Schema. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_name:
             description: The name of the API within the API Management Service where
                 this API Schema should be created. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_management_name:
             description: The Name of the API Management Service where the API exists.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The Name of the Resource Group in which the API Management
                 Service exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         content_type:
             description: The content type of the API Schema.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: The JSON escaped string defining the document representing
                 the Schema.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

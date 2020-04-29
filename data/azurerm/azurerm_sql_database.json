@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the database.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the database.  This must be the same as Database Server resource group currently.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "server_name": {
                 "description": "The name of the SQL Server on which to create the database.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -122,37 +122,37 @@
             },
             "storage_uri": {
                 "description": "Specifies the blob URI of the .bacpac file.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_key": {
                 "description": "Specifies the access key for the storage account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_key_type": {
                 "description": "Specifies the type of access key for the storage account. Valid values are `StorageAccessKey` or `SharedAccessKey`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "administrator_login": {
                 "description": "Specifies the name of the SQL administrator.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "administrator_login_password": {
                 "description": "Specifies the password of the SQL administrator.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "authentication_type": {
                 "description": "Specifies the type of authentication used to access the server. Valid values are `SQL` or `ADPassword`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -164,7 +164,7 @@
             },
             "state": {
                 "description": "The State of the Policy. Possible values are `Enabled`, `Disabled` or `New`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -194,13 +194,13 @@
             },
             "storage_account_access_key": {
                 "description": " Specifies the access key to use for the auditing storage account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_endpoint": {
                 "description": "Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,14 +8,33 @@ datadog_logs_index_order:
     arguments:
         name:
             description: 'The unique name of the index order resource. '
-            required: true
+            required: false
             policy: ''
             notes: ''
         indexes:
             description: The index resource list. Logs are tested against the query
                 filter of each index one by one following the order of the list.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKa1lYUmhaRzluWDJ4dlozTmZhVzVrWlhoZmIzSmtaWElpSUNKellXMXdi
+        R1ZmYVc1a1pYaGZiM0prWlhJaUlIc0tJQ0FnSUc1aGJXVWdQU0FpYzJGdGNHeGxYMmx1WkdWNFgy
+        OXlaR1Z5SWdvZ0lDQWdaR1Z3Wlc1a2MxOXZiaUE5SUZzS0lDQWdJQ0FnSUNBaVpHRjBZV1J2WjE5
+        c2IyZHpYMmx1WkdWNExuTmhiWEJzWlY5cGJtUmxlQ0lLSUNBZ0lGMEtJQ0FnSUdsdVpHVjRaWE1n
+        UFNCYkNpQWdJQ0FnSUNBZ0lpUjdaR0YwWVdSdloxOXNiMmR6WDJsdVpHVjRMbk5oYlhCc1pWOXBi
+        bVJsZUM1cFpIMGlDaUFnSUNCZENuMEs=
+    import: !!binary |
+        Q2dwVWFHVWdZM1Z5Y21WdWRDQkVZWFJoWkc5bklGUmxjbkpoWm05eWJTQndjbTkyYVdSbGNpQjJa
+        WEp6YVc5dUlHUnZaWE1nYm05MElITjFjSEJ2Y25RZ2RHaGxJR055WldGMGFXOXVJR0Z1WkNCa1pX
+        eGxkR2x2YmlCdlppQnBibVJsZUNCdmNtUmxjbk11SUFwRWJ5QmdkR1Z5Y21GbWIzSnRJR2x0Y0c5
+        eWRDQThaR0YwWVdSdloxOXNiMmR6WDJsdVpHVjRYMjl5WkdWeUxtNWhiV1UrSUR4dVlXMWxQbUFn
+        ZEc4Z2FXMXdiM0owSUdsdVpHVjRJRzl5WkdWeUlIUnZJRlJsY25KaFptOXliUzRnVkdobGNtVWdi
+        WFZ6ZENCaVpTQmhkQXB0YjNOMElHOXVaU0JnWkdGMFlXUnZaMTlzYjJkelgybHVaR1Y0WDI5eVpH
+        VnlZQ0J5WlhOdmRYSmpaUzQ9
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5jMTlwYm1SbGVGOXZjbVJsY2k1b2RHMXNMbTFoY210a2IzZHU=

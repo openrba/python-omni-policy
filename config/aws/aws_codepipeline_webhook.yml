@@ -7,13 +7,13 @@ aws_codepipeline_webhook:
     arguments:
         name:
             description: The name of the webhook.
-            required: true
+            required: false
             policy: ''
             notes: ''
         authentication:
             description: The type of authentication  to use. One of `IP`, `GITHUB_HMAC`,
                 or `UNAUTHENTICATED`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         authentication_configuration:
@@ -25,18 +25,18 @@ aws_codepipeline_webhook:
         filter:
             description: One or more `filter` blocks. Filter blocks are documented
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_action:
             description: The name of the action in a pipeline you want to connect
                 to the webhook. The action must be from the source (first
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_pipeline:
             description: The name of the pipeline.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -58,13 +58,13 @@ aws_codepipeline_webhook:
             notes: ''
         json_path:
             description: The [JSON path](https://github.com/json-path/JsonPath
-            required: true
+            required: false
             policy: ''
             notes: ''
         match_equals:
             description: The value to match on (e.g. `refs/heads/{Branch}`). See [AWS
                 docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -74,3 +74,58 @@ aws_codepipeline_webhook:
             description: The CodePipeline webhook's URL. POST events to this endpoint
                 to trigger the target.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjlrWlhCcGNHVnNhVzVsSWlBaVltRnlJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ1BTQWlkR1l0ZEdWemRDMXdhWEJsYkdsdVpTSUtJQ0J5YjJ4bFgyRnliaUE5SUNJa2Uy
+        RjNjMTlwWVcxZmNtOXNaUzVpWVhJdVlYSnVmU0lLQ2lBZ1lYSjBhV1poWTNSZmMzUnZjbVVnZXdv
+        Z0lDQWdiRzlqWVhScGIyNGdQU0FpSkh0aGQzTmZjek5mWW5WamEyVjBMbUpoY2k1aWRXTnJaWFI5
+        SWdvZ0lDQWdkSGx3WlNBZ0lDQWdQU0FpVXpNaUNnb2dJQ0FnWlc1amNubHdkR2x2Ymw5clpYa2dl
+        d29nSUNBZ0lDQnBaQ0FnSUQwZ0lpUjdaR0YwWVM1aGQzTmZhMjF6WDJGc2FXRnpMbk16YTIxemEy
+        VjVMbUZ5Ym4waUNpQWdJQ0FnSUhSNWNHVWdQU0FpUzAxVElnb2dJQ0FnZlFvZ0lIMEtDaUFnYzNS
+        aFoyVWdld29nSUNBZ2JtRnRaU0E5SUNKVGIzVnlZMlVpQ2dvZ0lDQWdZV04wYVc5dUlIc0tJQ0Fn
+        SUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSlRiM1Z5WTJVaUNpQWdJQ0FnSUdOaGRHVm5i
+        M0o1SUNBZ0lDQWdJQ0FnUFNBaVUyOTFjbU5sSWdvZ0lDQWdJQ0J2ZDI1bGNpQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSWxSb2FYSmtVR0Z5ZEhraUNpQWdJQ0FnSUhCeWIzWnBaR1Z5SUNBZ0lDQWdJQ0FnUFNB
+        aVIybDBTSFZpSWdvZ0lDQWdJQ0IyWlhKemFXOXVJQ0FnSUNBZ0lDQWdJRDBnSWpFaUNpQWdJQ0Fn
+        SUc5MWRIQjFkRjloY25ScFptRmpkSE1nUFNCYkluUmxjM1FpWFFvS0lDQWdJQ0FnWTI5dVptbG5k
+        WEpoZEdsdmJpQTlJSHNLSUNBZ0lDQWdJQ0JQZDI1bGNpQWdQU0FpYlhrdGIzSm5ZVzVwZW1GMGFX
+        OXVJZ29nSUNBZ0lDQWdJRkpsY0c4Z0lDQTlJQ0owWlhOMElnb2dJQ0FnSUNBZ0lFSnlZVzVqYUNB
+        OUlDSnRZWE4wWlhJaUNpQWdJQ0FnSUgwS0lDQWdJSDBLSUNCOUNnb2dJSE4wWVdkbElIc0tJQ0Fn
+        SUc1aGJXVWdQU0FpUW5WcGJHUWlDZ29nSUNBZ1lXTjBhVzl1SUhzS0lDQWdJQ0FnYm1GdFpTQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnSWtKMWFXeGtJZ29nSUNBZ0lDQmpZWFJsWjI5eWVTQWdJQ0FnSUNBZ1BT
+        QWlRblZwYkdRaUNpQWdJQ0FnSUc5M2JtVnlJQ0FnSUNBZ0lDQWdJQ0E5SUNKQlYxTWlDaUFnSUNB
+        Z0lIQnliM1pwWkdWeUlDQWdJQ0FnSUNBOUlDSkRiMlJsUW5WcGJHUWlDaUFnSUNBZ0lHbHVjSFYw
+        WDJGeWRHbG1ZV04wY3lBOUlGc2lkR1Z6ZENKZENpQWdJQ0FnSUhabGNuTnBiMjRnSUNBZ0lDQWdJ
+        Q0E5SUNJeElnb0tJQ0FnSUNBZ1kyOXVabWxuZFhKaGRHbHZiaUE5SUhzS0lDQWdJQ0FnSUNCUWNt
+        OXFaV04wVG1GdFpTQTlJQ0owWlhOMElnb2dJQ0FnSUNCOUNpQWdJQ0I5Q2lBZ2ZRcDlDZ29qSUVF
+        Z2MyaGhjbVZrSUhObFkzSmxkQ0JpWlhSM1pXVnVJRWRwZEVoMVlpQmhibVFnUVZkVElIUm9ZWFFn
+        WVd4c2IzZHpJRUZYVXdvaklFTnZaR1ZRYVhCbGJHbHVaU0IwYnlCaGRYUm9aVzUwYVdOaGRHVWdk
+        R2hsSUhKbGNYVmxjM1FnWTJGdFpTQm1jbTl0SUVkcGRFaDFZaTRLSXlCWGIzVnNaQ0J3Y205aVlX
+        SnNlU0JpWlNCaVpYUjBaWElnZEc4Z2NIVnNiQ0IwYUdseklHWnliMjBnZEdobElHVnVkbWx5YjI1
+        dFpXNTBDaU1nYjNJZ2MyOXRaWFJvYVc1bklHeHBhMlVnVTFOTklGQmhjbUZ0WlhSbGNpQlRkRzl5
+        WlM0S2JHOWpZV3h6SUhzS0lDQjNaV0pvYjI5clgzTmxZM0psZENBOUlDSnpkWEJsY2kxelpXTnla
+        WFFpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mWTI5a1pYQnBjR1ZzYVc1bFgzZGxZbWh2YjJzaUlD
+        SmlZWElpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1Z6ZEMxM1pXSm9iMjlyTFdk
+        cGRHaDFZaTFpWVhJaUNpQWdZWFYwYUdWdWRHbGpZWFJwYjI0Z0lEMGdJa2RKVkVoVlFsOUlUVUZE
+        SWdvZ0lIUmhjbWRsZEY5aFkzUnBiMjRnSUNBOUlDSlRiM1Z5WTJVaUNpQWdkR0Z5WjJWMFgzQnBj
+        R1ZzYVc1bElEMGdJaVI3WVhkelgyTnZaR1Z3YVhCbGJHbHVaUzVpWVhJdWJtRnRaWDBpQ2dvZ0lH
+        RjFkR2hsYm5ScFkyRjBhVzl1WDJOdmJtWnBaM1Z5WVhScGIyNGdld29nSUNBZ2MyVmpjbVYwWDNS
+        dmEyVnVJRDBnSWlSN2JHOWpZV3d1ZDJWaWFHOXZhMTl6WldOeVpYUjlJZ29nSUgwS0NpQWdabWxz
+        ZEdWeUlIc0tJQ0FnSUdwemIyNWZjR0YwYUNBZ0lDQTlJQ0lrTG5KbFppSUtJQ0FnSUcxaGRHTm9Y
+        MlZ4ZFdGc2N5QTlJQ0p5WldaekwyaGxZV1J6TDN0Q2NtRnVZMmg5SWdvZ0lIMEtmUW9LSXlCWGFY
+        SmxJSFJvWlNCRGIyUmxVR2x3Wld4cGJtVWdkMlZpYUc5dmF5QnBiblJ2SUdFZ1IybDBTSFZpSUhK
+        bGNHOXphWFJ2Y25rdUNuSmxjMjkxY21ObElDSm5hWFJvZFdKZmNtVndiM05wZEc5eWVWOTNaV0pv
+        YjI5cklpQWlZbUZ5SWlCN0NpQWdjbVZ3YjNOcGRHOXllU0E5SUNJa2UyZHBkR2gxWWw5eVpYQnZj
+        MmwwYjNKNUxuSmxjRzh1Ym1GdFpYMGlDZ29nSUc1aGJXVWdQU0FpZDJWaUlnb0tJQ0JqYjI1bWFX
+        ZDFjbUYwYVc5dUlIc0tJQ0FnSUhWeWJDQWdJQ0FnSUNBZ0lDQTlJQ0lrZTJGM2MxOWpiMlJsY0ds
+        d1pXeHBibVZmZDJWaWFHOXZheTVpWVhJdWRYSnNmU0lLSUNBZ0lHTnZiblJsYm5SZmRIbHdaU0E5
+        SUNKcWMyOXVJZ29nSUNBZ2FXNXpaV04xY21WZmMzTnNJRDBnZEhKMVpRb2dJQ0FnYzJWamNtVjBJ
+        Q0FnSUNBZ0lEMGdJaVI3Ykc5allXd3VkMlZpYUc5dmExOXpaV055WlhSOUlnb2dJSDBLQ2lBZ1pY
+        WmxiblJ6SUQwZ1d5SndkWE5vSWwwS2ZRbz0=
+    import: !!binary |
+        Q2dwRGIyUmxVR2x3Wld4cGJtVWdWMlZpYUc5dmEzTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lHSjVJ
+        SFJvWldseUlFRlNUaXdnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJSbGNHbHdaV3hwYm1WZmQyVmlhRzl2YXk1dFlYSnJaRzkzYmc9PQ==

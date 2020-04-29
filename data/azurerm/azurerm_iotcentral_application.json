@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the IotHub resource. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource has to be create. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sub_domain": {
                 "description": "A `sub_domain` name. Subdomain for the IoT Central URL. Each application must have a unique subdomain.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

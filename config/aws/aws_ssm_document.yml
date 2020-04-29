@@ -7,7 +7,7 @@ aws_ssm_document:
     arguments:
         name:
             description: The name of the document.
-            required: true
+            required: false
             policy: ''
             notes: ''
         attachments_source:
@@ -18,7 +18,7 @@ aws_ssm_document:
             notes: ''
         content:
             description: The JSON or YAML content of the document.
-            required: true
+            required: false
             policy: ''
             notes: ''
         document_format:
@@ -30,7 +30,7 @@ aws_ssm_document:
         document_type:
             description: 'The type of the document. Valid document types include:
                 `Automation`, `Command`, `Package`, `Policy`, and `Session`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         permissions:
@@ -77,3 +77,22 @@ aws_ssm_document:
             description: A list of OS platforms compatible with this SSM document,
                 either "Windows" or "Linux".
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM050WDJSdlkzVnRaVzUwSWlBaVptOXZJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBYMlJ2WTNWdFpXNTBJZ29nSUdSdlkzVnRaVzUwWDNSNWNH
+        VWdQU0FpUTI5dGJXRnVaQ0lLQ2lBZ1kyOXVkR1Z1ZENBOUlEdzhSRTlEQ2lBZ2V3b2dJQ0FnSW5O
+        amFHVnRZVlpsY25OcGIyNGlPaUFpTVM0eUlpd0tJQ0FnSUNKa1pYTmpjbWx3ZEdsdmJpSTZJQ0pE
+        YUdWamF5QnBjQ0JqYjI1bWFXZDFjbUYwYVc5dUlHOW1JR0VnVEdsdWRYZ2dhVzV6ZEdGdVkyVXVJ
+        aXdLSUNBZ0lDSndZWEpoYldWMFpYSnpJam9nZXdvS0lDQWdJSDBzQ2lBZ0lDQWljblZ1ZEdsdFpV
+        TnZibVpwWnlJNklIc0tJQ0FnSUNBZ0ltRjNjenB5ZFc1VGFHVnNiRk5qY21sd2RDSTZJSHNLSUNB
+        Z0lDQWdJQ0FpY0hKdmNHVnlkR2xsY3lJNklGc0tJQ0FnSUNBZ0lDQWdJSHNLSUNBZ0lDQWdJQ0Fn
+        SUNBZ0ltbGtJam9nSWpBdVlYZHpPbkoxYmxOb1pXeHNVMk55YVhCMElpd0tJQ0FnSUNBZ0lDQWdJ
+        Q0FnSW5KMWJrTnZiVzFoYm1RaU9pQmJJbWxtWTI5dVptbG5JbDBLSUNBZ0lDQWdJQ0FnSUgwS0lD
+        QWdJQ0FnSUNCZENpQWdJQ0FnSUgwS0lDQWdJSDBLSUNCOUNrUlBRd3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwVFUwMGdSRzlqZFcxbGJuUnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdi
+        bUZ0WlN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZlpHOWpkVzFsYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

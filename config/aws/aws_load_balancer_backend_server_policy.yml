@@ -7,17 +7,17 @@ aws_load_balancer_backend_server_policy:
     arguments:
         load_balancer_name:
             description: The load balancer to attach the policy to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_names:
             description: List of Policy Names to apply to the backend server.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_port:
             description: The instance port to apply the policy to.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -28,3 +28,42 @@ aws_load_balancer_backend_server_policy:
         instance_port:
             description: The backend port the policies are applied to
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hpSWlBaWQzVXRkR0Z1WnlJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNKM2RTMTBZVzVuSWdvZ0lHRjJZV2xzWVdKcGJHbDBlVjk2YjI1bGN5
+        QTlJRnNpZFhNdFpXRnpkQzB4WVNKZENnb2dJR3hwYzNSbGJtVnlJSHNLSUNBZ0lHbHVjM1JoYm1O
+        bFgzQnZjblFnSUNBZ0lDQTlJRFEwTXdvZ0lDQWdhVzV6ZEdGdVkyVmZjSEp2ZEc5amIyd2dJRDBn
+        SW1oMGRIQWlDaUFnSUNCc1lsOXdiM0owSUNBZ0lDQWdJQ0FnSUNBZ1BTQTBORE1LSUNBZ0lHeGlY
+        M0J5YjNSdlkyOXNJQ0FnSUNBZ0lDQTlJQ0pvZEhSd2N5SUtJQ0FnSUhOemJGOWpaWEowYVdacFky
+        RjBaVjlwWkNBOUlDSmhjbTQ2WVhkek9tbGhiVG82TURBd01EQXdNREF3TURBd09uTmxjblpsY2kx
+        alpYSjBhV1pwWTJGMFpTOTNkUzEwWVc1bkxtNWxkQ0lLSUNCOUNnb2dJSFJoWjNNZ1BTQjdDaUFn
+        SUNCT1lXMWxJRDBnSW5kMUxYUmhibWNpQ2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgyeHZZ
+        V1JmWW1Gc1lXNWpaWEpmY0c5c2FXTjVJaUFpZDNVdGRHRnVaeTFqWVMxd2RXSnJaWGt0Y0c5c2FX
+        TjVJaUI3Q2lBZ2JHOWhaRjlpWVd4aGJtTmxjbDl1WVcxbElEMGdJaVI3WVhkelgyVnNZaTUzZFMx
+        MFlXNW5MbTVoYldWOUlnb2dJSEJ2YkdsamVWOXVZVzFsSUNBZ0lDQWdJQ0E5SUNKM2RTMTBZVzVu
+        TFdOaExYQjFZbXRsZVMxd2IyeHBZM2tpQ2lBZ2NHOXNhV041WDNSNWNHVmZibUZ0WlNBZ0lEMGdJ
+        bEIxWW14cFkwdGxlVkJ2YkdsamVWUjVjR1VpQ2dvZ0lIQnZiR2xqZVY5aGRIUnlhV0oxZEdVZ2V3
+        b2dJQ0FnYm1GdFpTQWdQU0FpVUhWaWJHbGpTMlY1SWdvZ0lDQWdkbUZzZFdVZ1BTQWlKSHRtYVd4
+        bEtDSjNkUzEwWVc1bkxYQjFZbXRsZVNJcGZTSUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhkM05m
+        Ykc5aFpGOWlZV3hoYm1ObGNsOXdiMnhwWTNraUlDSjNkUzEwWVc1bkxYSnZiM1F0WTJFdFltRmph
+        MlZ1WkMxaGRYUm9MWEJ2YkdsamVTSWdld29nSUd4dllXUmZZbUZzWVc1alpYSmZibUZ0WlNBOUlD
+        SWtlMkYzYzE5bGJHSXVkM1V0ZEdGdVp5NXVZVzFsZlNJS0lDQndiMnhwWTNsZmJtRnRaU0FnSUNB
+        Z0lDQWdQU0FpZDNVdGRHRnVaeTF5YjI5MExXTmhMV0poWTJ0bGJtUXRZWFYwYUMxd2IyeHBZM2tp
+        Q2lBZ2NHOXNhV041WDNSNWNHVmZibUZ0WlNBZ0lEMGdJa0poWTJ0bGJtUlRaWEoyWlhKQmRYUm9a
+        VzUwYVdOaGRHbHZibEJ2YkdsamVWUjVjR1VpQ2dvZ0lIQnZiR2xqZVY5aGRIUnlhV0oxZEdVZ2V3
+        b2dJQ0FnYm1GdFpTQWdQU0FpVUhWaWJHbGpTMlY1VUc5c2FXTjVUbUZ0WlNJS0lDQWdJSFpoYkhW
+        bElEMGdJaVI3WVhkelgyeHZZV1JmWW1Gc1lXNWpaWEpmY0c5c2FXTjVMbmQxTFhSaGJtY3RjbTl2
+        ZEMxallTMXdkV0pyWlhrdGNHOXNhV041TG5CdmJHbGplVjl1WVcxbGZTSUtJQ0I5Q24wS0NuSmxj
+        MjkxY21ObElDSmhkM05mYkc5aFpGOWlZV3hoYm1ObGNsOWlZV05yWlc1a1gzTmxjblpsY2w5d2Iy
+        eHBZM2tpSUNKM2RTMTBZVzVuTFdKaFkydGxibVF0WVhWMGFDMXdiMnhwWTJsbGN5MDBORE1pSUhz
+        S0lDQnNiMkZrWDJKaGJHRnVZMlZ5WDI1aGJXVWdQU0FpSkh0aGQzTmZaV3hpTG5kMUxYUmhibWN1
+        Ym1GdFpYMGlDaUFnYVc1emRHRnVZMlZmY0c5eWRDQWdJQ0FnSUQwZ05EUXpDZ29nSUhCdmJHbGpl
+        Vjl1WVcxbGN5QTlJRnNLSUNBZ0lDSWtlMkYzYzE5c2IyRmtYMkpoYkdGdVkyVnlYM0J2YkdsamVT
+        NTNkUzEwWVc1bkxYSnZiM1F0WTJFdFltRmphMlZ1WkMxaGRYUm9MWEJ2YkdsamVTNXdiMnhwWTNs
+        ZmJtRnRaWDBpTEFvZ0lGMEtmUW89
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzYjJGa1gySmhiR0Z1WTJWeVgySmhZMnRsYm1SZmMyVnlkbVZ5WDNCdmJHbGplUzVvZEcx
+        c0xtMWhjbXRrYjNkdQ==

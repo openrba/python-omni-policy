@@ -24,7 +24,7 @@ mysql_grant:
             notes: ''
         database:
             description: The database to grant privileges on.
-            required: true
+            required: false
             policy: ''
             notes: ''
         table:
@@ -59,3 +59,9 @@ mysql_grant:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXMTVjM0ZzTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJkeVlXNTBMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

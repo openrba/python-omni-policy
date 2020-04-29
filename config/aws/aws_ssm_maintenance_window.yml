@@ -7,23 +7,23 @@ aws_ssm_maintenance_window:
     arguments:
         name:
             description: The name of the maintenance window.
-            required: true
+            required: false
             policy: ''
             notes: ''
         schedule:
             description: The schedule of the Maintenance Window in the form of a [cron](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         cutoff:
             description: The number of hours before the end of the Maintenance Window
                 that Systems Manager stops scheduling new tasks for execution.
-            required: true
+            required: false
             policy: ''
             notes: ''
         duration:
             description: The duration of the Maintenance Window in hours.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -67,3 +67,15 @@ aws_ssm_maintenance_window:
         id:
             description: The ID of the maintenance window.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM050WDIxaGFXNTBaVzVoYm1ObFgzZHBibVJ2ZHlJZ0luQnli
+        MlIxWTNScGIyNGlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSnRZV2x1ZEdWdVlXNWpaUzEzYVc1a2Iz
+        Y3RZWEJ3YkdsallYUnBiMjRpQ2lBZ2MyTm9aV1IxYkdVZ1BTQWlZM0p2Ymlnd0lERTJJRDhnS2lC
+        VVZVVWdLaWtpQ2lBZ1pIVnlZWFJwYjI0Z1BTQXpDaUFnWTNWMGIyWm1JQ0FnUFNBeENuMEs=
+    import: !!binary |
+        Q2dwVFUwMGdJRTFoYVc1MFpXNWhibU5sSUZkcGJtUnZkM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYldGcGJuUmxibUZ1WTJVZ2QybHVaRzkzSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZmJXRnBiblJsYm1GdVkyVmZkMmx1Wkc5M0xtaDBiV3d1YldGeWEyUnZkMjQ9

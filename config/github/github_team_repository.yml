@@ -6,12 +6,12 @@ github_team_repository:
     arguments:
         team_id:
             description: The GitHub team id
-            required: true
+            required: false
             policy: ''
             notes: ''
         repository:
             description: The repository to add to the team.
-            required: true
+            required: false
             policy: ''
             notes: ''
         permission:
@@ -21,3 +21,21 @@ github_team_repository:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1FXUmtJR0VnY21Wd2IzTnBkRzl5ZVNCMGJ5QjBhR1VnZEdWaGJRcHlaWE52ZFhKalpTQWla
+        MmwwYUhWaVgzUmxZVzBpSUNKemIyMWxYM1JsWVcwaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlD
+        SlRiMjFsVkdWaGJTSUtJQ0JrWlhOamNtbHdkR2x2YmlBOUlDSlRiMjFsSUdOdmIyd2dkR1ZoYlNJ
+        S2ZRb0tjbVZ6YjNWeVkyVWdJbWRwZEdoMVlsOXlaWEJ2YzJsMGIzSjVJaUFpYzI5dFpWOXlaWEJ2
+        SWlCN0NpQWdibUZ0WlNBOUlDSnpiMjFsTFhKbGNHOGlDbjBLQ25KbGMyOTFjbU5sSUNKbmFYUm9k
+        V0pmZEdWaGJWOXlaWEJ2YzJsMGIzSjVJaUFpYzI5dFpWOTBaV0Z0WDNKbGNHOGlJSHNLSUNCMFpX
+        RnRYMmxrSUNBZ0lEMGdJaVI3WjJsMGFIVmlYM1JsWVcwdWMyOXRaVjkwWldGdExtbGtmU0lLSUNC
+        eVpYQnZjMmwwYjNKNUlEMGdJaVI3WjJsMGFIVmlYM0psY0c5emFYUnZjbmt1YzI5dFpWOXlaWEJ2
+        TG01aGJXVjlJZ29nSUhCbGNtMXBjM05wYjI0Z1BTQWljSFZzYkNJS2ZRbz0=
+    import: !!binary |
+        Q2dwSGFYUklkV0lnVkdWaGJTQlNaWEJ2YzJsMGIzSjVJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCaGJpQkpSQ0J0WVdSbElIVndJRzltSUdCMFpXRnRhV1E2Y21Wd2IzTnBkRzl5ZVdBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5MFpXRnRYM0psY0c5emFYUnZjbmt1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

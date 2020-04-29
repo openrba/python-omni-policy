@@ -7,7 +7,7 @@ aws_route53_zone:
     arguments:
         name:
             description: This is the name of the hosted zone.
-            required: true
+            required: false
             policy: ''
             notes: ''
         comment:
@@ -45,3 +45,11 @@ aws_route53_zone:
             description: A list of name servers in associated (or default) delegation
                 set.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwU2IzVjBaVFV6SUZwdmJtVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SHB2Ym1VZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpUVXpYM3B2Ym1VdWFIUnRiQzV0WVhKclpHOTNiZz09

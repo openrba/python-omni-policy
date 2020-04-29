@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Container Registry. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,19 +80,19 @@
             },
             "action": {
                 "description": "The behaviour for requests matching this rule. At this time the only supported value is `Allow`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ip_range": {
                 "description": "The CIDR block from which requests will match the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "The subnet id from which requests will match the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

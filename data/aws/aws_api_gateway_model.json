@@ -8,13 +8,13 @@
         "arguments": {
             "rest_api_id": {
                 "description": "The ID of the associated REST API",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of the model",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,13 +26,13 @@
             },
             "content_type": {
                 "description": "The content type of the model",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "schema": {
                 "description": "The schema of the model in a JSON form",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

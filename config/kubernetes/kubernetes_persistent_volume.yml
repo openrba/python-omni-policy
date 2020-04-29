@@ -9,13 +9,30 @@ kubernetes_persistent_volume:
         metadata:
             description: Standard persistent volume's metadata. For more info see
                 [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec of the persistent volume owned by the cluster. See below.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzQmxjbk5wYzNSbGJuUmZkbTlzZFcxbElpQWla
+        WGhoYlhCc1pTSWdld29nSUcxbGRHRmtZWFJoSUhzS0lDQWdJRzVoYldVZ1BTQWlkR1Z5Y21GbWIz
+        SnRMV1Y0WVcxd2JHVWlDaUFnZlFvZ0lITndaV01nZXdvZ0lDQWdZMkZ3WVdOcGRIa2dQU0I3Q2lB
+        Z0lDQWdJSE4wYjNKaFoyVWdQU0FpTWtkcElnb2dJQ0FnZlFvZ0lDQWdZV05qWlhOelgyMXZaR1Z6
+        SUQwZ1d5SlNaV0ZrVjNKcGRHVk5ZVzU1SWwwS0lDQWdJSEJsY25OcGMzUmxiblJmZG05c2RXMWxY
+        M052ZFhKalpTQjdDaUFnSUNBZ0lIWnpjR2hsY21WZmRtOXNkVzFsSUhzS0lDQWdJQ0FnSUNCMmIy
+        eDFiV1ZmY0dGMGFDQTlJQ0l2WVdKemIyeDFkR1V2Y0dGMGFDSUtJQ0FnSUNBZ2ZRb2dJQ0FnZlFv
+        Z0lIMEtmUW89
+    import: !!binary |
+        Q2dwUVpYSnphWE4wWlc1MElGWnZiSFZ0WlNCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dh
+        WFJ6SUc1aGJXVXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjR1Z5YzJsemRHVnVkRjkyYjJ4MWJXVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

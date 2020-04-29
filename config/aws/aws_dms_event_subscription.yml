@@ -7,7 +7,7 @@ aws_dms_event_subscription:
     arguments:
         name:
             description: Name of event subscription.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -29,13 +29,30 @@ aws_dms_event_subscription:
             notes: ''
         source_ids:
             description: Ids of sources to listen to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sns_topic_arn:
             description: SNS topic arn to send events on.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaRzF6WDJWMlpXNTBYM04xWW5OamNtbHdkR2x2YmlJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0JsYm1GaWJHVmtJQ0FnSUNBZ0lDQWdJRDBnZEhKMVpRb2dJR1YyWlc1MFgy
+        TmhkR1ZuYjNKcFpYTWdQU0JiSW1OeVpXRjBhVzl1SWl3Z0ltWmhhV3gxY21VaVhRb2dJRzVoYldV
+        Z0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYlhrdFptRjJiM0pwZEdVdFpYWmxiblF0YzNWaWMyTnlhWEIw
+        YVc5dUlnb2dJSE51YzE5MGIzQnBZMTloY200Z0lDQWdQU0JoZDNOZmMyNXpYM1J2Y0dsakxtVjRZ
+        VzF3YkdVdVlYSnVDaUFnYzI5MWNtTmxYMmxrY3lBZ0lDQWdJQ0E5SUZ0aGQzTmZaRzF6WDNKbGNH
+        eHBZMkYwYVc5dVgzUmhjMnN1WlhoaGJYQnNaUzV5WlhCc2FXTmhkR2x2Ymw5MFlYTnJYMmxrWFFv
+        Z0lITnZkWEpqWlY5MGVYQmxJQ0FnSUNBZ1BTQWljbVZ3YkdsallYUnBiMjR0ZEdGemF5SUtDaUFn
+        ZEdGbmN5QTlJSHNLSUNBZ0lFNWhiV1VnUFNBaVpYaGhiWEJzWlNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwRmRtVnVkQ0J6ZFdKelkzSnBjSFJwYjI1eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lHNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYlhOZlpYWmxiblJmYzNWaWMyTnlhWEIwYVc5dUxtaDBiV3d1YldGeWEyUnZkMjQ9

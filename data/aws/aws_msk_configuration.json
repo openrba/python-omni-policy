@@ -8,19 +8,19 @@
         "arguments": {
             "server_properties": {
                 "description": "Contents of the server.properties file. Supported properties are documented in the [MSK Developer Guide](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "kafka_versions": {
                 "description": "List of Apache Kafka versions which can use this configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "Name of the configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

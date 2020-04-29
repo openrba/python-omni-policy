@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The display name of a resource selection document.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "plan_id": {
                 "description": "The backup plan ID to be associated with the selection of resources.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "iam_role_arn": {
                 "description": "The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the [AWS Backup Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#managed-policies",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,19 +38,19 @@
             },
             "type": {
                 "description": "An operation, such as `StringEquals`, that is applied to a key-value pair used to filter resources in a selection.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key": {
                 "description": "The key in a key-value pair.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "The value in a key-value pair.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

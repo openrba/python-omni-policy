@@ -12,7 +12,7 @@ aws_glue_job:
             notes: ''
         command:
             description: The command of the job. Defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connections:
@@ -58,7 +58,7 @@ aws_glue_job:
         name:
             description: The name you assign to this job. It must be unique in your
                 account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         notification_property:
@@ -68,7 +68,7 @@ aws_glue_job:
             notes: ''
         role_arn:
             description: The ARN of the IAM role associated with this job.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -106,3 +106,11 @@ aws_glue_job:
         id:
             description: Job name
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSGJIVmxJRXB2WW5NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JR0J1WVcxbFlDd2da
+        UzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkhWbFgycHZZaTVvZEcxc0xtMWhjbXRrYjNkdQ==

@@ -7,7 +7,7 @@ vault_token_auth_backend_role:
     arguments:
         role_name:
             description: The name of the role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_policies:
@@ -37,6 +37,29 @@ vault_token_auth_backend_role:
                 as part of their path in addition to the role name.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - -> Due to a [bug](https://github.com/hashicorp/vault/issues/6296) with
+                Vault, updating `path_suffix` or `bound_cidrs` to an empty string
+                or list respectively will not actually update the value in Vault.
+                Upgrade to Vault 1.1 and above to fix this, or [`taint`](https://www.terraform.io/docs/commands/taint.html)
+                the resource. This *will* cause all existing tokens issued by this
+                role to be revoked.
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjkwYjJ0bGJsOWhkWFJvWDJKaFkydGxibVJmY205c1pTSWdJ
+        bVY0WVcxd2JHVWlJSHNLSUNCeWIyeGxYMjVoYldVZ0lDQWdJQ0FnSUNBZ0lEMGdJbTE1TFhKdmJH
+        VWlDaUFnWVd4c2IzZGxaRjl3YjJ4cFkybGxjeUFnSUNBOUlGc2laR1YySWl3Z0luUmxjM1FpWFFv
+        Z0lHUnBjMkZzYkc5M1pXUmZjRzlzYVdOcFpYTWdQU0JiSW1SbFptRjFiSFFpWFFvZ0lHOXljR2ho
+        YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0IwY25WbENpQWdjR1Z5YVc5a0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNJNE5qUXdNQ0lLSUNCeVpXNWxkMkZpYkdVZ0lDQWdJQ0FnSUNBZ0lEMGdkSEoxWlFvZ0lH
+        VjRjR3hwWTJsMFgyMWhlRjkwZEd3Z0lDQWdQU0FpTVRFMU1qQXdJZ29nSUhCaGRHaGZjM1ZtWm1s
+        NElDQWdJQ0FnSUNBZ1BTQWljR0YwYUMxemRXWm1hWGdpQ24wSw==
+    import: !!binary |
+        Q2dwVWIydGxiaUJoZFhSb0lHSmhZMnRsYm1RZ2NtOXNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SGRwZEdnZ1lHRjFkR2d2ZEc5clpXNHZjbTlzWlhNdllDQm1iMnhzYjNkbFpDQmllU0IwYUdVZ1lI
+        SnZiR1ZmYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDNSdmEyVnVYMkYxZEdoZlltRmphMlZ1WkY5eWIyeGxMbWgwYld3dWJXUT0=

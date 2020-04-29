@@ -14,7 +14,7 @@
             },
             "project_id": {
                 "description": "ID of the project to manage quota. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -73,41 +73,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "See Argument Reference above."
-            },
-            "floatingip": {
-                "description": "See Argument Reference above."
-            },
-            "network": {
-                "description": "See Argument Reference above."
-            },
-            "port": {
-                "description": "See Argument Reference above."
-            },
-            "rbac_policy": {
-                "description": "See Argument Reference above."
-            },
-            "router": {
-                "description": "See Argument Reference above."
-            },
-            "security_group": {
-                "description": "See Argument Reference above."
-            },
-            "security_group_rule": {
-                "description": "See Argument Reference above."
-            },
-            "subnet": {
-                "description": "See Argument Reference above."
-            },
-            "subnetpool": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -8,43 +8,43 @@
         "arguments": {
             "name": {
                 "description": "The name of the Stream Output. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "stream_analytics_job_name": {
                 "description": "The name of the Stream Analytics Job. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "server": {
                 "description": "The SQL server url. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "user": {
                 "description": "Username used to login to the Microsoft SQL Server. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "password": {
                 "description": "Password used together with username, to login to the Microsoft SQL Server. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "table": {
                 "description": "Table in the database that the output points to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

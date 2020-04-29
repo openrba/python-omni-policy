@@ -8,7 +8,7 @@
         "arguments": {
             "user": {
                 "description": "The name of the user.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,20 +43,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "user": {
-                "description": "The name of the user."
-            },
-            "password": {
-                "description": "The password of the user."
-            },
-            "id": {
-                "description": "The id of the user created, composed as \"username@host\"."
-            },
-            "host": {
-                "description": "The host where the user was created."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

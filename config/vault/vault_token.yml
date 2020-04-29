@@ -70,16 +70,19 @@ vault_token:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        lease_duration:
-            description: String containing the token lease duration if present in
-                state file
-        lease_started:
-            description: String containing the token lease started time if present
-                in state file
-        client_token:
-            description: String containing the client token if stored in present file
-        encrypted_client_token:
-            description: String containing the client token encrypted with the given
-                `pgp_key` if stored in present file
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjkwYjJ0bGJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCeWIyeGxY
+        MjVoYldVZ1BTQWlZWEJ3SWdvS0lDQndiMnhwWTJsbGN5QTlJRnNpY0c5c2FXTjVNU0lzSUNKd2Iy
+        eHBZM2t5SWwwS0NpQWdjbVZ1WlhkaFlteGxJRDBnZEhKMVpRb2dJSFIwYkNBOUlDSXlOR2dpQ2dv
+        Z0lISmxibVYzWDIxcGJsOXNaV0Z6WlNBOUlEUXpNakF3Q2lBZ2NtVnVaWGRmYVc1amNtVnRaVzUw
+        SUQwZ09EWTBNREFLQ2lBZ1ozQm5YMnRsZVNBOUlDSnJaWGxpWVhObE9tMTVYM1Z6WlhKdVlXMWxJ
+        Z3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwVWIydGxibk1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklHbDBjeUJnYVdSZ0lHRnpJ
+        R0ZqWTJWemMyOXlJR2xrTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDNSdmEyVnVMbWgwYld3dWJXUT0=

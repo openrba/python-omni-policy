@@ -9,19 +9,19 @@
         "arguments": {
             "name": {
                 "description": "Name of the peering.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network": {
                 "description": "The primary network of the peering.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "peer_network": {
                 "description": "The peer network in the peering. The peer network",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

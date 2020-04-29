@@ -8,19 +8,19 @@
         "arguments": {
             "instance_id": {
                 "description": "Instance ID to attach.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_interface_id": {
                 "description": "ENI ID to attach.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "device_index": {
                 "description": "Network interface index (int).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

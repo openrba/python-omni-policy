@@ -26,7 +26,7 @@
             },
             "host_name": {
                 "description": "The host to attach the volume to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,7 +62,7 @@
             },
             "volume_id": {
                 "description": "The ID of the Volume to attach to an Instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -79,17 +79,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "data": {
-                "description": "This is a map of key/value pairs that contain the connection"
-            },
-            "driver_volume_type": {
-                "description": "The storage driver that the volume is based on."
-            },
-            "mount_point_base": {
-                "description": "A mount point base name for shared storage."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

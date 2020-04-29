@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "azure_firewall_name": {
                 "description": "Specifies the name of the Firewall in which the Network Rule Collection should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Specifies the name of the Resource Group in which the Firewall exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "priority": {
                 "description": "Specifies the priority of the rule collection. Possible values are between `100` - `65000`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "action": {
                 "description": "Specifies the action the rule will apply to matching traffic. Possible values are `Allow` and `Deny`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule": {
                 "description": "One or more `rule` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,30 +50,51 @@
             },
             "source_addresses": {
                 "description": "A list of source IP addresses and/or IP ranges.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_addresses": {
                 "description": "A list of destination IP addresses and/or IP ranges.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_ports": {
                 "description": "A list of destination ports.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocols": {
                 "description": "A list of protocols. Possible values are `Any`, `ICMP`, `TCP` and `UDP`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
         "attributes": {},
-        "timeouts": {}
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Firewall Network Rule Collection.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Firewall Network Rule Collection.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Firewall Network Rule Collection.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Firewall Network Rule Collection.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

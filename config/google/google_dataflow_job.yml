@@ -8,18 +8,18 @@ google_dataflow_job:
     arguments:
         name:
             description: A unique name for the resource, required by Dataflow.
-            required: true
+            required: false
             policy: ''
             notes: ''
         template_gcs_path:
             description: The GCS path to the Dataflow job template.
-            required: true
+            required: false
             policy: ''
             notes: ''
         temp_gcs_location:
             description: A writeable location on GCS for the Dataflow job to dump
                 its temporary data.
-            required: true
+            required: false
             policy: ''
             notes: ''
         parameters:
@@ -101,3 +101,15 @@ google_dataflow_job:
             description: The current state of the resource, selected from the [JobState
                 enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWkdGMFlXWnNiM2RmYW05aUlpQWlZbWxuWDJSaGRHRmZh
+        bTlpSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWkdGMFlXWnNiM2N0YW05aUln
+        b2dJSFJsYlhCc1lYUmxYMmRqYzE5d1lYUm9JRDBnSW1kek9pOHZiWGt0WW5WamEyVjBMM1JsYlhC
+        c1lYUmxjeTkwWlcxd2JHRjBaVjltYVd4bElnb2dJSFJsYlhCZloyTnpYMnh2WTJGMGFXOXVJRDBn
+        SW1kek9pOHZiWGt0WW5WamEyVjBMM1J0Y0Y5a2FYSWlDaUFnY0dGeVlXMWxkR1Z5Y3lBOUlIc0tJ
+        Q0FnSUdadmJ5QTlJQ0ppWVhJaUNpQWdJQ0JpWVhvZ1BTQWljWFY0SWdvZ0lIMEtmUW89
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5a1lYUmhabXh2ZDE5cWIySXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

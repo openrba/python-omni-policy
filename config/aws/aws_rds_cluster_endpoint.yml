@@ -18,7 +18,7 @@ aws_rds_cluster_endpoint:
             notes: ''
         custom_endpoint_type:
             description: 'The type of the endpoint. One of: READER , ANY .'
-            required: true
+            required: false
             policy: ''
             notes: ''
         static_members:
@@ -48,3 +48,49 @@ aws_rds_cluster_endpoint:
         endpoint:
             description: A custom endpoint for the Aurora cluster
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbVJ6WDJOc2RYTjBaWElpSUNKa1pXWmhkV3gwSWlCN0NpQWdZ
+        MngxYzNSbGNsOXBaR1Z1ZEdsbWFXVnlJQ0FnSUNBZ1BTQWlZWFZ5YjNKaExXTnNkWE4wWlhJdFpH
+        VnRieUlLSUNCaGRtRnBiR0ZpYVd4cGRIbGZlbTl1WlhNZ0lDQWdJQ0E5SUZzaWRYTXRkMlZ6ZEMw
+        eVlTSXNJQ0oxY3kxM1pYTjBMVEppSWl3Z0luVnpMWGRsYzNRdE1tTWlYUW9nSUdSaGRHRmlZWE5s
+        WDI1aGJXVWdJQ0FnSUNBZ0lDQWdJRDBnSW0xNVpHSWlDaUFnYldGemRHVnlYM1Z6WlhKdVlXMWxJ
+        Q0FnSUNBZ0lDQWdQU0FpWm05dklnb2dJRzFoYzNSbGNsOXdZWE56ZDI5eVpDQWdJQ0FnSUNBZ0lE
+        MGdJbUpoY2lJS0lDQmlZV05yZFhCZmNtVjBaVzUwYVc5dVgzQmxjbWx2WkNBOUlEVUtJQ0J3Y21W
+        bVpYSnlaV1JmWW1GamEzVndYM2RwYm1SdmR5QTlJQ0l3Tnpvd01DMHdPVG93TUNJS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbUYzYzE5eVpITmZZMngxYzNSbGNsOXBibk4wWVc1alpTSWdJblJsYzNReElpQjdD
+        aUFnWVhCd2JIbGZhVzF0WldScFlYUmxiSGtnSUQwZ2RISjFaUW9nSUdOc2RYTjBaWEpmYVdSbGJu
+        UnBabWxsY2lBOUlDSWtlMkYzYzE5eVpITmZZMngxYzNSbGNpNWtaV1poZFd4MExtbGtmU0lLSUNC
+        cFpHVnVkR2xtYVdWeUlDQWdJQ0FnSUNBZ1BTQWlkR1Z6ZERFaUNpQWdhVzV6ZEdGdVkyVmZZMnho
+        YzNNZ0lDQWdJRDBnSW1SaUxuUXlMbk50WVd4c0lncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzSmtj
+        MTlqYkhWemRHVnlYMmx1YzNSaGJtTmxJaUFpZEdWemRESWlJSHNLSUNCaGNIQnNlVjlwYlcxbFpH
+        bGhkR1ZzZVNBZ1BTQjBjblZsQ2lBZ1kyeDFjM1JsY2w5cFpHVnVkR2xtYVdWeUlEMGdJaVI3WVhk
+        elgzSmtjMTlqYkhWemRHVnlMbVJsWm1GMWJIUXVhV1I5SWdvZ0lHbGtaVzUwYVdacFpYSWdJQ0Fn
+        SUNBZ0lDQTlJQ0owWlhOME1pSUtJQ0JwYm5OMFlXNWpaVjlqYkdGemN5QWdJQ0FnUFNBaVpHSXVk
+        REl1YzIxaGJHd2lDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZjbVJ6WDJOc2RYTjBaWEpmYVc1emRH
+        RnVZMlVpSUNKMFpYTjBNeUlnZXdvZ0lHRndjR3g1WDJsdGJXVmthV0YwWld4NUlDQTlJSFJ5ZFdV
+        S0lDQmpiSFZ6ZEdWeVgybGtaVzUwYVdacFpYSWdQU0FpSkh0aGQzTmZjbVJ6WDJOc2RYTjBaWEl1
+        WkdWbVlYVnNkQzVwWkgwaUNpQWdhV1JsYm5ScFptbGxjaUFnSUNBZ0lDQWdJRDBnSW5SbGMzUXpJ
+        Z29nSUdsdWMzUmhibU5sWDJOc1lYTnpJQ0FnSUNBOUlDSmtZaTUwTWk1emJXRnNiQ0lLZlFvS2Nt
+        VnpiM1Z5WTJVZ0ltRjNjMTl5WkhOZlkyeDFjM1JsY2w5bGJtUndiMmx1ZENJZ0ltVnNhV2RwWW14
+        bElpQjdDaUFnWTJ4MWMzUmxjbDlwWkdWdWRHbG1hV1Z5SUNBZ0lDQWdJQ0FnSUQwZ0lpUjdZWGR6
+        WDNKa2MxOWpiSFZ6ZEdWeUxtUmxabUYxYkhRdWFXUjlJZ29nSUdOc2RYTjBaWEpmWlc1a2NHOXBi
+        blJmYVdSbGJuUnBabWxsY2lBOUlDSnlaV0ZrWlhJaUNpQWdZM1Z6ZEc5dFgyVnVaSEJ2YVc1MFgz
+        UjVjR1VnSUNBZ0lDQWdJRDBnSWxKRlFVUkZVaUlLQ2lBZ1pYaGpiSFZrWldSZmJXVnRZbVZ5Y3lB
+        OUlGc0tJQ0FnSUNJa2UyRjNjMTl5WkhOZlkyeDFjM1JsY2w5cGJuTjBZVzVqWlM1MFpYTjBNUzVw
+        WkgwaUxBb2dJQ0FnSWlSN1lYZHpYM0prYzE5amJIVnpkR1Z5WDJsdWMzUmhibU5sTG5SbGMzUXlM
+        bWxrZlNJc0NpQWdYUXA5Q2dweVpYTnZkWEpqWlNBaVlYZHpYM0prYzE5amJIVnpkR1Z5WDJWdVpI
+        QnZhVzUwSWlBaWMzUmhkR2xqSWlCN0NpQWdZMngxYzNSbGNsOXBaR1Z1ZEdsbWFXVnlJQ0FnSUNB
+        Z0lDQWdJRDBnSWlSN1lYZHpYM0prYzE5amJIVnpkR1Z5TG1SbFptRjFiSFF1YVdSOUlnb2dJR05z
+        ZFhOMFpYSmZaVzVrY0c5cGJuUmZhV1JsYm5ScFptbGxjaUE5SUNKemRHRjBhV01pQ2lBZ1kzVnpk
+        Rzl0WDJWdVpIQnZhVzUwWDNSNWNHVWdJQ0FnSUNBZ0lEMGdJbEpGUVVSRlVpSUtDaUFnYzNSaGRH
+        bGpYMjFsYldKbGNuTWdQU0JiQ2lBZ0lDQWlKSHRoZDNOZmNtUnpYMk5zZFhOMFpYSmZhVzV6ZEdG
+        dVkyVXVkR1Z6ZERFdWFXUjlJaXdLSUNBZ0lDSWtlMkYzYzE5eVpITmZZMngxYzNSbGNsOXBibk4w
+        WVc1alpTNTBaWE4wTXk1cFpIMGlMQW9nSUYwS2ZRbz0=
+    import: !!binary |
+        Q2dwU1JGTWdRMngxYzNSbGNuTWdSVzVrY0c5cGJuUWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdZMngxYzNSbGNsOWxibVJ3YjJsdWRGOXBaR1Z1ZEdsbWFXVnlZQ3dnWlM1bkxn
+        b0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WkhOZlkyeDFjM1JsY2w5bGJtUndiMmx1ZEM1b2RHMXNMbTFoY210a2IzZHU=

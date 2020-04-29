@@ -8,7 +8,7 @@
         "arguments": {
             "path": {
                 "description": "Path to mount the Okta auth backend",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "organization": {
                 "description": "The Okta organization. This will be the first part of the url `https://XXX.okta.com`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,11 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "accessor": {
-                "description": "The mount accessor related to the auth mount. It is useful for integration with [Identity Secrets Engine](https://www.vaultproject.io/docs/secrets/identity/index.html)."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

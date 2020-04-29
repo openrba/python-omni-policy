@@ -14,23 +14,23 @@ azurerm_dns_mx_record:
         resource_group_name:
             description: Specifies the resource group where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone_name:
             description: Specifies the DNS Zone where the DNS Zone (parent resource
-            required: true
+            required: false
             policy: ''
             notes: ''
         ttl:
             description: The Time To Live (TTL
-            required: true
+            required: false
             policy: ''
             notes: ''
         record:
             description: A list of values that make up the MX record. Each `record`
                 block supports fields documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -41,13 +41,13 @@ azurerm_dns_mx_record:
         preference:
             description: "String representing the \"preference\u201D value of the\
                 \ MX records. Records with lower preference value take priority."
-            required: true
+            required: false
             policy: ''
             notes: ''
         exchange:
             description: The mail server responsible for the domain covered by the
                 MX record.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

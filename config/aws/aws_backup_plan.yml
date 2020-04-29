@@ -7,13 +7,13 @@ aws_backup_plan:
     arguments:
         name:
             description: The display name of a backup plan.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule:
             description: A rule object that specifies a scheduled task that is used
                 to back up a selection of resources.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -31,3 +31,17 @@ aws_backup_plan:
             description: Unique, randomly generated, Unicode, UTF-8 encoded string
                 that serves as the version ID of the backup plan.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZbUZqYTNWd1gzQnNZVzRpSUNKbGVHRnRjR3hsSWlCN0NpQWdi
+        bUZ0WlNBOUlDSjBabDlsZUdGdGNHeGxYMkpoWTJ0MWNGOXdiR0Z1SWdvS0lDQnlkV3hsSUhzS0lD
+        QWdJSEoxYkdWZmJtRnRaU0FnSUNBZ0lDQWdJRDBnSW5SbVgyVjRZVzF3YkdWZlltRmphM1Z3WDNK
+        MWJHVWlDaUFnSUNCMFlYSm5aWFJmZG1GMWJIUmZibUZ0WlNBOUlDSWtlMkYzYzE5aVlXTnJkWEJm
+        ZG1GMWJIUXVkR1Z6ZEM1dVlXMWxmU0lLSUNBZ0lITmphR1ZrZFd4bElDQWdJQ0FnSUNBZ0lEMGdJ
+        bU55YjI0b01DQXhNaUFxSUNvZ1B5QXFLU0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQ1lXTnJkWEFnVUd4aGJpQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnBa
+        R0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlpWVdOcmRYQmZjR3hoYmk1b2RHMXNMbTFoY210a2IzZHU=

@@ -44,7 +44,7 @@
             },
             "router_id": {
                 "description": "The ID of the router. Changing this creates a new service.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,41 +55,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "router_id": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "subnet_id": {
-                "description": "See Argument Reference above."
-            },
-            "status": {
-                "description": "Indicates whether IPsec VPN service is currently operational. Values are ACTIVE, DOWN, BUILD, ERROR, PENDING_CREATE, PENDING_UPDATE, or PENDING_DELETE."
-            },
-            "external_v6_ip": {
-                "description": "The read-only external (public) IPv6 address that is used for the VPN service."
-            },
-            "external_v4_ip": {
-                "description": "The read-only external (public) IPv4 address that is used for the VPN service."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "value_specs": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

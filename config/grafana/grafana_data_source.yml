@@ -8,12 +8,12 @@ grafana_data_source:
     arguments:
         type:
             description: The data source type. Must be one of the data source
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: A unique name for the data source within the Grafana
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
@@ -96,7 +96,18 @@ grafana_data_source:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The opaque unique id assigned to the data source by the Grafana
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmNtRm1ZVzVoWDJSaGRHRmZjMjkxY21ObElpQWliV1YwY21samN5SWdl
+        d29nSUhSNWNHVWdJQ0FnSUNBZ0lDQWdQU0FpYVc1bWJIVjRaR0lpQ2lBZ2JtRnRaU0FnSUNBZ0lD
+        QWdJQ0E5SUNKdGVXRndjQzF0WlhSeWFXTnpJZ29nSUhWeWJDQWdJQ0FnSUNBZ0lDQWdQU0FpYUhS
+        MGNEb3ZMMmx1Wm14MWVHUmlMbVY0WVcxd2JHVXVibVYwT2pnd09EWXZJZ29nSUhWelpYSnVZVzFs
+        SUNBZ0lDQWdQU0FpYlhsaGNIQWlDaUFnY0dGemMzZHZjbVFnSUNBZ0lDQTlJQ0ptYjI5aVlYSmlZ
+        WG9pQ2lBZ1pHRjBZV0poYzJWZmJtRnRaU0E5SUNJa2UybHVabXgxZUdSaVgyUmhkR0ZpWVhObExt
+        MWxkSEpwWTNNdWJtRnRaWDBpQ24wSw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHlZV1poYm1FdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpHRjBZVjl6YjNWeVkyVXVhSFJ0YkM1dFpBPT0=

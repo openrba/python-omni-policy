@@ -8,13 +8,13 @@
         "arguments": {
             "path": {
                 "description": "The full logical path at which to write the given",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "data_json": {
                 "description": "String containing a JSON-encoded object that will be",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,14 +37,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "write_data_json": {
-                "description": "The JSON data returned by the write operation."
-            },
-            "write_data": {
-                "description": "A map whose keys are the top-level data keys"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

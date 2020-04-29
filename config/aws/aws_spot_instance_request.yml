@@ -59,4 +59,26 @@ aws_spot_instance_request:
             description: The Spot Instance Request ID.
         spot_bid_status:
             description: The current [bid
-    timeouts: {}
+    timeouts:
+        create:
+            description: Used when requesting the spot instance (only valid if `wait_for_fulfillment
+                = true`)
+            required: false
+            timeout: 10
+        delete:
+            description: Used when terminating all instances launched via the given
+                spot instance request
+            required: false
+            timeout: 20
+    usage: !!binary |
+        Q2lNZ1VtVnhkV1Z6ZENCaElITndiM1FnYVc1emRHRnVZMlVnWVhRZ0pEQXVNRE1LY21WemIzVnlZ
+        MlVnSW1GM2MxOXpjRzkwWDJsdWMzUmhibU5sWDNKbGNYVmxjM1FpSUNKamFHVmhjRjkzYjNKclpY
+        SWlJSHNLSUNCaGJXa2dJQ0FnSUNBZ0lDQWdJRDBnSW1GdGFTMHhNak0wSWdvZ0lITndiM1JmY0hK
+        cFkyVWdJQ0FnUFNBaU1DNHdNeUlLSUNCcGJuTjBZVzVqWlY5MGVYQmxJRDBnSW1NMExuaHNZWEpu
+        WlNJS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUU1aGJXVWdQU0FpUTJobFlYQlhiM0pyWlhJaUNpQWdm
+        UXA5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Y0c5MFgybHVjM1JoYm1ObFgzSmxjWFZsYzNRdWFIUnRiQzV0WVhKclpHOTNiZz09

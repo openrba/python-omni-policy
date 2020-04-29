@@ -8,7 +8,7 @@ grafana_organization:
     arguments:
         name:
             description: The display name for the Grafana organization created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_user:
@@ -36,7 +36,26 @@ grafana_organization:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        org_id:
-            description: The organization id assigned to this organization by Grafana.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ1IzSmhabUZ1WVNCdmNtZGhibWw2WVhScGIyNGdkMmwwYUNCa1pXWnBi
+        bVZrSUcxbGJXSmxjbk5vYVhBc0lHTnlaV0YwYVc1bklIQnNZV05sYUc5c1pHVnlDaU1nWVdOamIz
+        VnVkSE1nWm05eUlIVnpaWEp6SUhSb1lYUWdaRzl1SjNRZ1pYaHBjM1F1Q25KbGMyOTFjbU5sSUNK
+        bmNtRm1ZVzVoWDI5eVoyRnVhWHBoZEdsdmJpSWdJblJsYzNRdGIzSm5JaUI3Q2lBZ0lDQnVZVzFs
+        SUNBZ0lDQWdJQ0FnUFNBaVZHVnpkQ0JQY21kaGJtbDZZWFJwYjI0aUNpQWdJQ0JoWkcxcGJsOTFj
+        MlZ5SUNBZ1BTQWlZV1J0YVc0aUNpQWdJQ0JqY21WaGRHVmZkWE5sY25NZ1BTQjBjblZsQ2lBZ0lD
+        QmhaRzFwYm5NZ0lDQWdJQ0FnUFNCYkNpQWdJQ0FnSUNBZ0ltRmtiV2x1UUdWNFlXMXdiR1V1WTI5
+        dElnb2dJQ0FnWFFvZ0lDQWdaV1JwZEc5eWN5QWdJQ0FnSUQwZ1d3b2dJQ0FnSUNBZ0lDSmxaR2ww
+        YjNJdE1ERkFaWGhoYlhCc1pTNWpiMjBpTEFvZ0lDQWdJQ0FnSUNKbFpHbDBiM0l0TURKQVpYaGhi
+        WEJzWlM1amIyMGlDaUFnSUNCZENpQWdJQ0IyYVdWM1pYSnpJQ0FnSUNBZ1BTQmJDaUFnSUNBZ0lD
+        QWdJblpwWlhkbGNpMHdNVUJsZUdGdGNHeGxMbU52YlNJc0NpQWdJQ0FnSUNBZ0luWnBaWGRsY2kw
+        d01rQmxlR0Z0Y0d4bExtTnZiU0lLSUNBZ0lGMEtmUW89
+    import: !!binary |
+        Q2dwRmVHbHpkR2x1WnlCdmNtZGhibWw2WVhScGIyNXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdiM0puWVc1cGVtRjBhVzl1SUdsa0lHOWlkR0ZwYm1Wa0lHWnliMjBLZEdobElF
+        ZHlZV1poYm1FZ1YyVmlJRlZKSUhWdVpHVnlJQ2RUWlhKMlpYSWdRV1J0YVc0bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHlZV1poYm1FdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmIzSm5ZVzVwZW1GMGFXOXVMbWgwYld3dWJXUT0=

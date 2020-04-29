@@ -8,16 +8,31 @@ aws_vpc_endpoint_route_table_association:
         route_table_id:
             description: Identifier of the EC2 Route Table to be associated with the
                 VPC Endpoint.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_endpoint_id:
             description: Identifier of the VPC Endpoint with which the EC2 Route Table
                 will be associated.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: A hash of the EC2 Route Table and VPC Endpoint identifiers.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqWDJWdVpIQnZhVzUwWDNKdmRYUmxYM1JoWW14bFgyRnpj
+        MjlqYVdGMGFXOXVJaUFpWlhoaGJYQnNaU0lnZXdvZ0lISnZkWFJsWDNSaFlteGxYMmxrSUNBOUlD
+        SWtlMkYzYzE5eWIzVjBaVjkwWVdKc1pTNWxlR0Z0Y0d4bExtbGtmU0lLSUNCMmNHTmZaVzVrY0c5
+        cGJuUmZhV1FnUFNBaUpIdGhkM05mZG5CalgyVnVaSEJ2YVc1MExtVjRZVzF3YkdVdWFXUjlJZ3A5
+        Q2c9PQ==
+    import: !!binary |
+        Q2dwV1VFTWdSVzVrY0c5cGJuUWdVbTkxZEdVZ1ZHRmliR1VnUVhOemIyTnBZWFJwYjI1eklHTmhi
+        aUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUJnZG5CalgyVnVaSEJ2YVc1MFgybGtZQ0IwYjJkbGRH
+        aGxjaUIzYVhSb0lHQnliM1YwWlY5MFlXSnNaVjlwWkdBc0NtVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZlpXNWtjRzlwYm5SZmNtOTFkR1ZmZEdGaWJHVmZZWE56YjJOcFlYUnBiMjR1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

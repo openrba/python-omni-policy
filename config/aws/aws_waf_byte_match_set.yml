@@ -7,10 +7,25 @@ aws_waf_byte_match_set:
     arguments:
         name:
             description: The name or description of the Byte Match Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the WAF Byte Match Set.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDJKNWRHVmZiV0YwWTJoZmMyVjBJaUFpWW5sMFpWOXpa
+        WFFpSUhzS0lDQnVZVzFsSUQwZ0luUm1YM2RoWmw5aWVYUmxYMjFoZEdOb1gzTmxkQ0lLQ2lBZ1lu
+        bDBaVjl0WVhSamFGOTBkWEJzWlhNZ2V3b2dJQ0FnZEdWNGRGOTBjbUZ1YzJadmNtMWhkR2x2YmlB
+        Z0lEMGdJazVQVGtVaUNpQWdJQ0IwWVhKblpYUmZjM1J5YVc1bklDQWdJQ0FnSUNBZ1BTQWlZbUZr
+        Y21WbVpYSXhJZ29nSUNBZ2NHOXphWFJwYjI1aGJGOWpiMjV6ZEhKaGFXNTBJRDBnSWtOUFRsUkJT
+        VTVUSWdvS0lDQWdJR1pwWld4a1gzUnZYMjFoZEdOb0lIc0tJQ0FnSUNBZ2RIbHdaU0E5SUNKSVJV
+        RkVSVklpQ2lBZ0lDQWdJR1JoZEdFZ1BTQWljbVZtWlhKbGNpSUtJQ0FnSUgwS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwWFFVWWdRbmwwWlNCTllYUmphQ0JUWlhRZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCcFpDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZllubDBaVjl0WVhSamFGOXpaWFF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

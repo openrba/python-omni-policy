@@ -7,7 +7,7 @@ aws_waf_geo_match_set:
     arguments:
         name:
             description: The name or description of the GeoMatchSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         geo_match_constraint:
@@ -22,3 +22,17 @@ aws_waf_geo_match_set:
         arn:
             description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDJkbGIxOXRZWFJqYUY5elpYUWlJQ0puWlc5ZmJXRjBZ
+        MmhmYzJWMElpQjdDaUFnYm1GdFpTQTlJQ0puWlc5ZmJXRjBZMmhmYzJWMElnb0tJQ0JuWlc5ZmJX
+        RjBZMmhmWTI5dWMzUnlZV2x1ZENCN0NpQWdJQ0IwZVhCbElDQTlJQ0pEYjNWdWRISjVJZ29nSUNB
+        Z2RtRnNkV1VnUFNBaVZWTWlDaUFnZlFvS0lDQm5aVzlmYldGMFkyaGZZMjl1YzNSeVlXbHVkQ0I3
+        Q2lBZ0lDQjBlWEJsSUNBOUlDSkRiM1Z1ZEhKNUlnb2dJQ0FnZG1Gc2RXVWdQU0FpUTBFaUNpQWdm
+        UXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwWFFVWWdSMlZ2SUUxaGRHTm9JRk5sZENCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsYVhJZ1NVUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZloyVnZYMjFoZEdOb1gzTmxkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

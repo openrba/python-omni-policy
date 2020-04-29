@@ -7,7 +7,7 @@ aws_pinpoint_sms_channel:
     arguments:
         application_id:
             description: The application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -31,3 +31,15 @@ aws_pinpoint_sms_channel:
         transactional_messages_per_second:
             description: Transactional messages per second that can be sent.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR2x1Y0c5cGJuUmZjMjF6WDJOb1lXNXVaV3dpSUNKemJYTWlJ
+        SHNLSUNCaGNIQnNhV05oZEdsdmJsOXBaQ0E5SUNJa2UyRjNjMTl3YVc1d2IybHVkRjloY0hBdVlY
+        QndMbUZ3Y0d4cFkyRjBhVzl1WDJsa2ZTSUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXdhVzV3YjJs
+        dWRGOWhjSEFpSUNKaGNIQWlJSHQ5Q2c9PQ==
+    import: !!binary |
+        Q2dwUWFXNXdiMmx1ZENCVFRWTWdRMmhoYm01bGJDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQmhjSEJzYVdOaGRHbHZiaTFwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YVc1d2IybHVkRjl6YlhOZlkyaGhibTVsYkM1dFlYSnJaRzkzYmc9PQ==

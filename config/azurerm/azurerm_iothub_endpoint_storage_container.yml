@@ -9,25 +9,25 @@ azurerm_iothub_endpoint_storage_container:
             description: 'The name of the endpoint. The name must be unique across
                 endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`,
                 `fileNotifications` and `$default`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group under which the IotHub Storage
                 Container Endpoint resource has to be created. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         iothub_name:
             description: The name of the IoTHub to which this Storage Container Endpoint
                 belongs. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_string:
             description: The connection string for the endpoint.
-            required: true
+            required: false
             policy: ''
             notes: ''
         batch_frequency_in_seconds:
@@ -44,7 +44,7 @@ azurerm_iothub_endpoint_storage_container:
             notes: ''
         container_name:
             description: The name of storage container in the storage account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         encoding:

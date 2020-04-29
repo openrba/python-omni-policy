@@ -8,13 +8,13 @@
         "arguments": {
             "policies": {
                 "description": "List of policies to assign to the entity",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "entity_id": {
                 "description": "Entity ID to assign policies to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -25,11 +25,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "entity_name": {
-                "description": "The name of the entity that are assigned the policies."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

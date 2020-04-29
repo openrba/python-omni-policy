@@ -12,13 +12,13 @@ openstack_dns_recordset_v2:
             notes: ''
         zone_id:
             description: The ID of the zone in which to create the record set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the record set. Note the `.` at the end of the
                 name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
@@ -46,21 +46,14 @@ openstack_dns_recordset_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        type:
-            description: See Argument Reference above.
-        ttl:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        records:
-            description: See Argument Reference above.
-        zone_id:
-            description: See Argument Reference above.
-        value_specs:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUhSb1pTQjZiMjVsSUVsRUlHRnVaQ0J5WldOdmNtUnpaWFFnU1VRc0NuTmxjR0Z5WVhSbFpD
+        QmllU0JoSUdadmNuZGhjbVFnYzJ4aGMyZ3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWtibk5mY21WamIzSmtjMlYwWDNZeUxtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -7,7 +7,7 @@ aws_elastic_beanstalk_application:
     arguments:
         name:
             description: The name of the application, must be unique within your account
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -24,7 +24,7 @@ aws_elastic_beanstalk_application:
             description: The ARN of an IAM service role under which the application
                 version is deleted.  Elastic Beanstalk must have permission to assume
                 this role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_count:
@@ -49,3 +49,19 @@ aws_elastic_beanstalk_application:
         arn:
             description: The ARN assigned by AWS for this Elastic Beanstalk Application.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hoYzNScFkxOWlaV0Z1YzNSaGJHdGZZWEJ3YkdsallYUnBi
+        MjRpSUNKMFpuUmxjM1FpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0E5SUNKMFppMTBaWE4wTFc1aGJX
+        VWlDaUFnWkdWelkzSnBjSFJwYjI0Z1BTQWlkR1l0ZEdWemRDMWtaWE5qSWdvS0lDQmhjSEIyWlhK
+        emFXOXVYMnhwWm1WamVXTnNaU0I3Q2lBZ0lDQnpaWEoyYVdObFgzSnZiR1VnSUNBZ0lDQWdJQ0Fn
+        UFNBaUpIdGhkM05mYVdGdFgzSnZiR1V1WW1WaGJuTjBZV3hyWDNObGNuWnBZMlV1WVhKdWZTSUtJ
+        Q0FnSUcxaGVGOWpiM1Z1ZENBZ0lDQWdJQ0FnSUNBZ0lDQTlJREV5T0FvZ0lDQWdaR1ZzWlhSbFgz
+        TnZkWEpqWlY5bWNtOXRYM016SUQwZ2RISjFaUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwRmJHRnpkR2xqSUVKbFlXNXpkR0ZzYXlCQmNIQnNhV05oZEdsdmJuTWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdibUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpYMkpsWVc1emRHRnNhMTloY0hCc2FXTmhkR2x2Ymk1b2RHMXNMbTFoY210
+        a2IzZHU=

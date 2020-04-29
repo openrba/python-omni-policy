@@ -7,7 +7,7 @@ vault_approle_auth_backend_role:
     arguments:
         role_name:
             description: The name of the role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_id:
@@ -42,3 +42,17 @@ vault_approle_auth_backend_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmhjSEJ5YjJ4bElpQjdD
+        aUFnZEhsd1pTQTlJQ0poY0hCeWIyeGxJZ3A5Q2dweVpYTnZkWEpqWlNBaWRtRjFiSFJmWVhCd2Nt
+        OXNaVjloZFhSb1gySmhZMnRsYm1SZmNtOXNaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQmlZV05yWlc1
+        a0lDQWdJQ0FnSUNBOUlIWmhkV3gwWDJGMWRHaGZZbUZqYTJWdVpDNWhjSEJ5YjJ4bExuQmhkR2dL
+        SUNCeWIyeGxYMjVoYldVZ0lDQWdJQ0E5SUNKMFpYTjBMWEp2YkdVaUNpQWdkRzlyWlc1ZmNHOXNh
+        V05wWlhNZ1BTQmJJbVJsWm1GMWJIUWlMQ0FpWkdWMklpd2dJbkJ5YjJRaVhRcDlDZz09
+    import: !!binary |
+        Q2dwQmNIQlNiMnhsSUdGMWRHaGxiblJwWTJGMGFXOXVJR0poWTJ0bGJtUWdjbTlzWlhNZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2NHRjBhR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGd2NISnZiR1ZmWVhWMGFGOWlZV05yWlc1a1gzSnZiR1V1YUhSdGJDNXRaQT09

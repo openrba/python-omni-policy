@@ -8,53 +8,53 @@ azurerm_hdinsight_storm_cluster:
         name:
             description: Specifies the name for this HDInsight Storm Cluster. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the name of the Resource Group in which this HDInsight
                 Storm Cluster should exist. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the Azure Region which this HDInsight Storm Cluster
                 should exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cluster_version:
             description: Specifies the Version of HDInsights which should be used
                 for this Cluster. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         component_version:
             description: A `component_version` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         gateway:
             description: A `gateway` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         roles:
             description: A `roles` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account:
             description: One or more `storage_account` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tier:
             description: Specifies the Tier which should be used for this HDInsight
                 Storm Cluster. Possible values are `Standard` or `Premium`. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         min_tls_version:
@@ -72,13 +72,13 @@ azurerm_hdinsight_storm_cluster:
         storm:
             description: The version of Storm which should be used for this HDInsight
                 Storm Cluster. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
             description: Is the Ambari portal enabled? Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
@@ -86,19 +86,21 @@ azurerm_hdinsight_storm_cluster:
                 the Zookeeper Nodes. Changing this forces a new resource to be created.
             required: false
             policy: ''
-            notes: If specified, this password must be at least 10 characters in length
+            notes:
+            - '-> '
+            - ' If specified, this password must be at least 10 characters in length
                 and must contain at least one digit, one uppercase and one lower case
-                letter, one non-alphanumeric character (except characters ' " ` \).
+                letter, one non-alphanumeric character (except characters '' " ` \).'
         username:
             description: The Username of the local administrator for the Zookeeper
                 Nodes. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vm_size:
             description: The Size of the Virtual Machine which should be used as the
                 Zookeeper Nodes. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ssh_keys:
@@ -107,8 +109,10 @@ azurerm_hdinsight_storm_cluster:
                 created.
             required: false
             policy: ''
-            notes: Either a `password` or one or more `ssh_keys` must be specified
-                - but not both.
+            notes:
+            - '-> '
+            - ' Either a `password` or one or more `ssh_keys` must be specified -
+                but not both.'
         subnet_id:
             description: The ID of the Subnet within the Virtual Network where the
                 Zookeeper Nodes should be provisioned within. Changing this forces
@@ -124,37 +128,41 @@ azurerm_hdinsight_storm_cluster:
             notes: ''
         head_node:
             description: A `head_node` block as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         worker_node:
             description: A `worker_node` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zookeeper_node:
             description: A `zookeeper_node` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_default:
             description: Is this the Default Storage Account for the HDInsight Storm
                 Cluster? Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: One of the `storage_account` blocks must be marked as the default.
+            notes:
+            - '-> '
+            - ' One of the `storage_account` blocks must be marked as the default.'
         storage_account_key:
             description: The Access Key which should be used to connect to the Storage
                 Account. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_container_id:
             description: The ID of the Storage Container. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: This is also known as the `supervisor` node.
+            notes:
+            - '-> '
+            - ' This is also known as the `supervisor` node.'
         min_instance_count:
             description: The minimum number of instances which should be run for the
                 Worker Nodes. Changing this forces a new resource to be created.

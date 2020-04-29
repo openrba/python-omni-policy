@@ -37,7 +37,7 @@ openstack_vpnaas_service_v2:
             notes: ''
         router_id:
             description: The ID of the router. Changing this creates a new service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value_specs:
@@ -45,31 +45,18 @@ openstack_vpnaas_service_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        router_id:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        subnet_id:
-            description: See Argument Reference above.
-        status:
-            description: Indicates whether IPsec VPN service is currently operational.
-                Values are ACTIVE, DOWN, BUILD, ERROR, PENDING_CREATE, PENDING_UPDATE,
-                or PENDING_DELETE.
-        external_v6_ip:
-            description: The read-only external (public) IPv6 address that is used
-                for the VPN service.
-        external_v4_ip:
-            description: The read-only external (public) IPv4 address that is used
-                for the VPN service.
-        description:
-            description: See Argument Reference above.
-        value_specs:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmRuQnVZV0Z6WDNObGNuWnBZMlZmZGpJaUlDSnpa
+        WEoyYVdObFh6RWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0E5SUNKdGVWOXpaWEoyYVdObEln
+        b2dJSEp2ZFhSbGNsOXBaQ0FnSUNBZ0lEMGdJakUwWVRjMU56QXdMV1pqTURNdE5EWXdNaTA1TWpr
+        MExUSTJaV1UwTkdZek5qWmlNeUlLSUNCaFpHMXBibDl6ZEdGMFpWOTFjQ0E5SUNKMGNuVmxJZ3A5
+        Q2c9PQ==
+    import: !!binary |
+        Q2dwVFpYSjJhV05sY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCcFpHQXNJ
+        R1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOTJjRzVoWVhOZmMyVnlkbWxqWlY5Mk1pNW9kRzFzTG0xaGNtdGtiM2R1

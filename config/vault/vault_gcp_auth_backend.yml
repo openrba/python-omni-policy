@@ -5,5 +5,24 @@ vault_gcp_auth_backend:
     sidebar_current: docs-vault-resource-gcp-auth-backend-role
     description: Managing roles in an GCP auth backend in Vault
     arguments: {}
-    attributes: {}
+    attributes:
+        client_id:
+            description: The Client ID of the credentials
+        private_key_id:
+            description: The ID of the private key from the credentials
+        project_id:
+            description: The GCP Project ID
+        client_email:
+            description: The clients email associated with the credentials
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjluWTNCZllYVjBhRjlpWVdOclpXNWtJaUFpWjJOd0lpQjdD
+        aUFnSUNCamNtVmtaVzUwYVdGc2N5QWdQU0FpSkh0bWFXeGxLQ0oyWVhWc2RDMW5ZM0F0WTNKbFpH
+        VnVkR2xoYkhNdWFuTnZiaUlwZlNJS2ZRbz0=
+    import: !!binary |
+        Q2dwSFExQWdZWFYwYUdWdWRHbGpZWFJwYjI0Z1ltRmphMlZ1WkhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCaVlXTnJaVzVrSUc1aGJXVXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJkamNGOWhkWFJvWDJKaFkydGxibVF1YUhSdGJDNXRaQT09

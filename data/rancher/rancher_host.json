@@ -14,7 +14,7 @@
             },
             "name": {
                 "description": "The name of the host.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,13 +26,13 @@
             },
             "environment_id": {
                 "description": "The ID of the environment the host is associated to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "hostname": {
                 "description": "The host name. Used as the primary key to detect the host ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

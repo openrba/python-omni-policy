@@ -8,16 +8,12 @@
         "arguments": {
             "path": {
                 "description": "The path of the namespace. Must not have a trailing `/`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "ID of the namespace."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

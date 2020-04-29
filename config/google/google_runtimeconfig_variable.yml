@@ -8,17 +8,17 @@ google_runtimeconfig_variable:
     arguments:
         name:
             description: The name of the variable to manage. Note that variable
-            required: true
+            required: false
             policy: ''
             notes: ''
         parent:
             description: The name of the RuntimeConfig resource containing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         text:
             description: The content to associate with the variable.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -26,7 +26,24 @@ google_runtimeconfig_variable:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        update_time:
-            description: (Computed) The timestamp in RFC3339 UTC "Zulu" format,
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmY25WdWRHbHRaV052Ym1acFoxOWpiMjVtYVdjaUlDSnRl
+        UzF5ZFc1MGFXMWxMV052Ym1acFp5SWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lEMGdJbTE1TFhObGNu
+        WnBZMlV0Y25WdWRHbHRaUzFqYjI1bWFXY2lDaUFnWkdWelkzSnBjSFJwYjI0Z1BTQWlVblZ1ZEds
+        dFpTQmpiMjVtYVdkMWNtRjBhVzl1SUhaaGJIVmxjeUJtYjNJZ2JYa2djMlZ5ZG1salpTSUtmUW9L
+        Y21WemIzVnlZMlVnSW1kdmIyZHNaVjl5ZFc1MGFXMWxZMjl1Wm1sblgzWmhjbWxoWW14bElpQWla
+        VzUyYVhKdmJtMWxiblFpSUhzS0lDQndZWEpsYm5RZ1BTQm5iMjluYkdWZmNuVnVkR2x0WldOdmJt
+        WnBaMTlqYjI1bWFXY3ViWGt0Y25WdWRHbHRaUzFqYjI1bWFXY3VibUZ0WlFvZ0lHNWhiV1VnSUNB
+        OUlDSndjbTlrTFhaaGNtbGhZbXhsY3k5b2IzTjBibUZ0WlNJS0lDQjBaWGgwSUNBZ1BTQWlaWGho
+        YlhCc1pTNWpiMjBpQ24wSw==
+    import: !!binary |
+        Q2dwU2RXNTBhVzFsSUVOdmJtWnBaeUJXWVhKcFlXSnNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYm1GdFpXQWdiM0lnWm5Wc2JDQjJZWEpwWVdKc1pTQnVZVzFsTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5eWRXNTBhVzFsWTI5dVptbG5YM1poY21saFlteGxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

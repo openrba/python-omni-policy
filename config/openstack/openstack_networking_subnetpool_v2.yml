@@ -13,7 +13,7 @@ openstack_networking_subnetpool_v2:
         name:
             description: The name of the subnetpool. Changing this updates the name
                 of
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_quota:
@@ -28,7 +28,7 @@ openstack_networking_subnetpool_v2:
             notes: ''
         prefixes:
             description: A list of subnet prefixes to assign to the subnetpool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_prefixlen:
@@ -76,44 +76,14 @@ openstack_networking_subnetpool_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        default_quota:
-            description: See Argument Reference above.
-        project_id:
-            description: See Argument Reference above.
-        created_at:
-            description: The time at which subnetpool was created.
-        updated_at:
-            description: The time at which subnetpool was created.
-        prefixes:
-            description: See Argument Reference above.
-        default_prefixlen:
-            description: See Argument Reference above.
-        min_prefixlen:
-            description: See Argument Reference above.
-        max_prefixlen:
-            description: See Argument Reference above.
-        address_scope_id:
-            description: See Argument Reference above.
-        ip_version:
-            description: The IP protocol version.
-        shared:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        is_default:
-            description: See Argument Reference above.
-        revision_number:
-            description: The revision number of the subnetpool.
-        value_specs:
-            description: See Argument Reference above.
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of tags assigned on the subnetpool, which
-                have been
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVGRXSnVaWFJ3YjI5c2N5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnBa
+        R0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM04xWW01bGRIQnZiMnhmZGpJdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

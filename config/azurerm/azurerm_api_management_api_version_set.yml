@@ -8,29 +8,29 @@ azurerm_api_management_api_version_set:
         name:
             description: The name of the API Version Set. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_management_name:
             description: The name of the [API Management Service](api_management.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the parent API Management
                 Service exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         display_name:
             description: The display name of this API Version Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         versioning_scheme:
             description: Specifies where in an Inbound HTTP Request that the API Version
                 should be read from. Possible values are `Header`, `Query` and `Segment`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -43,13 +43,17 @@ azurerm_api_management_api_version_set:
                 Requests which defines the API Version.
             required: false
             policy: ''
-            notes: This must be specified when `versioning_scheme` is set to `Header`.
+            notes:
+            - '-> '
+            - ' This must be specified when `versioning_scheme` is set to `Header`.'
         version_query_name:
             description: The name of the Query String which should be read from Inbound
                 Requests which defines the API Version.
             required: false
             policy: ''
-            notes: This must be specified when `versioning_scheme` is set to `Query`.
+            notes:
+            - '-> '
+            - ' This must be specified when `versioning_scheme` is set to `Query`.'
     attributes:
         id:
             description: The ID of the API Version Set.

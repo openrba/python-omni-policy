@@ -7,13 +7,13 @@ aws_ecs_capacity_provider:
     arguments:
         name:
             description: The name of the capacity provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         auto_scaling_group_provider:
             description: Nested argument defining the provider for the ECS auto scaling
                 group. Defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -29,3 +29,21 @@ aws_ecs_capacity_provider:
             description: The Amazon Resource Name (ARN) that identifies the capacity
                 provider.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV056WDJOaGNHRmphWFI1WDNCeWIzWnBaR1Z5SWlBaWRHVnpk
+        Q0lnZXdvZ0lHNWhiV1VnUFNBaWRHVnpkQ0lLQ2lBZ1lYVjBiMTl6WTJGc2FXNW5YMmR5YjNWd1gz
+        QnliM1pwWkdWeUlIc0tJQ0FnSUdGMWRHOWZjMk5oYkdsdVoxOW5jbTkxY0Y5aGNtNGdJQ0FnSUNB
+        Z0lDQTlJR0YzYzE5aGRYUnZjMk5oYkdsdVoxOW5jbTkxY0M1MFpYTjBMbUZ5YmdvZ0lDQWdiV0Z1
+        WVdkbFpGOTBaWEp0YVc1aGRHbHZibDl3Y205MFpXTjBhVzl1SUQwZ0lrVk9RVUpNUlVRaUNnb2dJ
+        Q0FnYldGdVlXZGxaRjl6WTJGc2FXNW5JSHNLSUNBZ0lDQWdiV0Y0YVcxMWJWOXpZMkZzYVc1blgz
+        TjBaWEJmYzJsNlpTQTlJREV3TURBS0lDQWdJQ0FnYldsdWFXMTFiVjl6WTJGc2FXNW5YM04wWlhC
+        ZmMybDZaU0E5SURFS0lDQWdJQ0FnYzNSaGRIVnpJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5
+        SUNKRlRrRkNURVZFSWdvZ0lDQWdJQ0IwWVhKblpYUmZZMkZ3WVdOcGRIa2dJQ0FnSUNBZ0lDQWdJ
+        RDBnTVRBS0lDQWdJSDBLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRlExTWdRMkZ3WVdOcGRIa2dVSEp2ZG1sa1pYSnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZRzVoYldWZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWTNOZlkyRndZV05wZEhsZmNISnZkbWxrWlhJdWFIUnRiQzV0WVhKclpHOTNiZz09

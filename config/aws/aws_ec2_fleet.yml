@@ -8,13 +8,13 @@ aws_ec2_fleet:
         launch_template_config:
             description: Nested argument containing EC2 Launch Template configurations.
                 Defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_capacity_specification:
             description: Nested argument containing target capacity configurations.
                 Defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         excess_capacity_termination_policy:
@@ -67,5 +67,24 @@ aws_ec2_fleet:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Fleet identifier
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDJac1pXVjBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHeGhk
+        VzVqYUY5MFpXMXdiR0YwWlY5amIyNW1hV2NnZXdvZ0lDQWdiR0YxYm1Ob1gzUmxiWEJzWVhSbFgz
+        TndaV05wWm1sallYUnBiMjRnZXdvZ0lDQWdJQ0JzWVhWdVkyaGZkR1Z0Y0d4aGRHVmZhV1FnUFNB
+        aUpIdGhkM05mYkdGMWJtTm9YM1JsYlhCc1lYUmxMbVY0WVcxd2JHVXVhV1I5SWdvZ0lDQWdJQ0Iy
+        WlhKemFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNBaUpIdGhkM05mYkdGMWJtTm9YM1JsYlhCc1lYUmxM
+        bVY0WVcxd2JHVXViR0YwWlhOMFgzWmxjbk5wYjI1OUlnb2dJQ0FnZlFvZ0lIMEtDaUFnZEdGeVoy
+        VjBYMk5oY0dGamFYUjVYM053WldOcFptbGpZWFJwYjI0Z2V3b2dJQ0FnWkdWbVlYVnNkRjkwWVhK
+        blpYUmZZMkZ3WVdOcGRIbGZkSGx3WlNBOUlDSnpjRzkwSWdvZ0lDQWdkRzkwWVd4ZmRHRnlaMlYw
+        WDJOaGNHRmphWFI1SUNBZ0lDQWdJQ0E5SURVS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwZ1lYZHpYMlZqTWw5bWJHVmxkR0FnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJR0o1SUhWemFXNW5J
+        SFJvWlNCR2JHVmxkQ0JwWkdWdWRHbG1hV1Z5TENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZlpteGxaWFF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

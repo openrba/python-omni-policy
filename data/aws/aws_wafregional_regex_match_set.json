@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name or description of the Regex Match Set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "regex_match_tuple": {
                 "description": "The regular expression pattern that you want AWS WAF to search for in web requests,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

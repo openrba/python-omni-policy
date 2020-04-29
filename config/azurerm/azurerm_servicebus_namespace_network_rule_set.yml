@@ -9,14 +9,14 @@ azurerm_servicebus_namespace_network_rule_set:
             description: Specifies the name of the Resource Group where the ServiceBus
                 Namespace Network Rule Set should exist. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         namespace_name:
             description: Specifies the ServiceBus Namespace name to which to attach
                 the ServiceBus Namespace Network Rule Set. Changing this forces a
                 new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_action:
@@ -40,7 +40,7 @@ azurerm_servicebus_namespace_network_rule_set:
         subnet_id:
             description: The Subnet ID which should be able to access this ServiceBus
                 Namespace.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ignore_missing_vnet_service_endpoint:

@@ -7,13 +7,13 @@ aws_ecr_lifecycle_policy:
     arguments:
         repository:
             description: Name of the repository to apply the policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: The policy document. This is a JSON formatted string. See
                 more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -22,3 +22,11 @@ aws_ecr_lifecycle_policy:
         registry_id:
             description: The registry ID where the repository was created.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRlExSWdUR2xtWldONVkyeGxJRkJ2YkdsamVTQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHNWhiV1VnYjJZZ2RHaGxJSEpsY0c5emFYUnZjbmtzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWTNKZmJHbG1aV041WTJ4bFgzQnZiR2xqZVM1b2RHMXNMbTFoY210a2IzZHU=

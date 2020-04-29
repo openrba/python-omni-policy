@@ -8,33 +8,37 @@ azurerm_hpc_cache_blob_target:
         cache_name:
             description: The name HPC Cache, which the HPC Cache Blob Target will
                 be added to. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the HPC Cache Blob Target. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which to create the HPC
                 Cache Blob Target. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         namespace_path:
             description: The client-facing file path of the HPC Cache Blob Target.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_container_id:
             description: The Resource Manager ID of the Storage Container used as
                 the HPC Cache Blob Target. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> '
+            - ' This is the Resource Manager ID of the Storage Container, rather than
+                the regular ID - and can be accessed on the `azurerm_storage_container`
+                Data Source/Resource as `resource_manager_id`.'
     attributes:
         id:
             description: The ID of the HPC Cache Blob Target.

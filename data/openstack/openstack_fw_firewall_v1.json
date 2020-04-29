@@ -14,7 +14,7 @@
             },
             "policy_id": {
                 "description": "The policy resource id for the firewall. Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "description": {
                 "description": "A description for the firewall. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -61,32 +61,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "policy_id": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "associated_routers": {
-                "description": "See Argument Reference above."
-            },
-            "no_routers": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

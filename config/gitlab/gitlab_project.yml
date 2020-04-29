@@ -8,7 +8,7 @@ gitlab_project:
     arguments:
         name:
             description: The name of the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         path:
@@ -135,3 +135,24 @@ gitlab_project:
         shared_with_groups:
             description: List of the groups the project is shared with.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmY0hKdmFtVmpkQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsSWdvZ0lHUmxjMk55YVhCMGFXOXVJRDBnSWsxNUlH
+        RjNaWE52YldVZ1kyOWtaV0poYzJVaUNnb2dJSFpwYzJsaWFXeHBkSGxmYkdWMlpXd2dQU0FpY0hW
+        aWJHbGpJZ3A5Q2c9PQ==
+    import: !!binary |
+        YVc1bklIQnliMnBsWTNSekNncFpiM1VnWTJGdUlHbHRjRzl5ZENCaElIQnliMnBsWTNRZ2MzUmhk
+        R1VnZFhOcGJtY2dZSFJsY25KaFptOXliU0JwYlhCdmNuUWdQSEpsYzI5MWNtTmxQaUE4YVdRK1lD
+        NGdJRlJvWlFwZ2FXUmdJR05oYmlCaVpTQjNhR0YwWlhabGNpQjBhR1VnVzJkbGRDQnphVzVuYkdV
+        Z2NISnZhbVZqZENCaGNHbGRXMmRsZEY5emFXNW5iR1ZmY0hKdmFtVmpkRjBnZEdGclpYTWdabTl5
+        Q21sMGN5QmdPbWxrWUNCMllXeDFaU3dnYzI4Z1ptOXlJR1Y0WVcxd2JHVTZDZ29nSUNBZ2RHVnlj
+        bUZtYjNKdElHbHRjRzl5ZENCbmFYUnNZV0pmY0hKdmFtVmpkQzVsZUdGdGNHeGxJSEpwWTJoaGNt
+        UmpMMlY0WVcxd2JHVUtDbHRuWlhSZmMybHVaMnhsWDNCeWIycGxZM1JkT2lCb2RIUndjem92TDJS
+        dlkzTXVaMmwwYkdGaUxtTnZiUzlsWlM5aGNHa3ZjSEp2YW1WamRITXVhSFJ0YkNOblpYUXRjMmx1
+        WjJ4bExYQnliMnBsWTNRS1cyZHliM1Z3WDIxbGJXSmxjbk5mY0dWeWJXbHpjMmx2Ym5OZE9pQm9k
+        SFJ3Y3pvdkwyUnZZM011WjJsMGJHRmlMbU52YlM5alpTOTFjMlZ5TDNCbGNtMXBjM05wYjI1ekxt
+        aDBiV3dqWjNKdmRYQXRiV1Z0WW1WeWN5MXdaWEp0YVhOemFXOXVjdz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5d2NtOXFaV04wTG1oMGJXd3ViV0Z5YTJSdmQyND0=

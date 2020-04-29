@@ -7,20 +7,20 @@ aws_sns_topic_subscription:
     arguments:
         topic_arn:
             description: The ARN of the SNS topic to subscribe to
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: 'The protocol to use. The possible values for this are: `sqs`,
                 `sms`, `lambda`, `application`. (`http` or `https` are partially supported,
                 see below'
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint:
             description: The endpoint to send data to, the contents will vary with
                 the protocol. (see below for more information)
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint_auto_confirms:
@@ -69,3 +69,17 @@ aws_sns_topic_subscription:
             description: The ARN of the subscription stored as a more user-friendly
                 property
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMjV6WDNSdmNHbGpYM04xWW5OamNtbHdkR2x2YmlJZ0luVnpa
+        WEpmZFhCa1lYUmxjMTl6Y1hOZmRHRnlaMlYwSWlCN0NpQWdkRzl3YVdOZllYSnVJRDBnSW1GeWJq
+        cGhkM002YzI1ek9uVnpMWGRsYzNRdE1qbzBNekk1T0RFeE5EWTVNVFk2ZFhObGNpMTFjR1JoZEdW
+        ekxYUnZjR2xqSWdvZ0lIQnliM1J2WTI5c0lDQTlJQ0p6Y1hNaUNpQWdaVzVrY0c5cGJuUWdJRDBn
+        SW1GeWJqcGhkM002YzNGek9uVnpMWGRsYzNRdE1qbzBNekk1T0RFeE5EWTVNVFk2ZEdWeWNtRm1i
+        M0p0TFhGMVpYVmxMWFJ2YnlJS2ZRbz0=
+    import: !!binary |
+        Q2dwVFRsTWdWRzl3YVdNZ1UzVmljMk55YVhCMGFXOXVjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J6ZFdKelkzSnBjSFJwYjI0Z1lYSnVZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Ym5OZmRHOXdhV05mYzNWaWMyTnlhWEIwYVc5dUxtaDBiV3d1YldGeWEyUnZkMjQ9

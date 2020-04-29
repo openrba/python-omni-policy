@@ -9,21 +9,38 @@ google_google_billing_account_iam_member:
     arguments:
         billing_account_id:
             description: The billing account id.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member:
             description: The user that the role should apply to. For more details
                 on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         etag:
             description: (Computed) The etag of the billing account's IAM policy.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWW1sc2JHbHVaMTloWTJOdmRXNTBYMmxoYlY5dFpXMWla
+        WElpSUNKaWFXNWthVzVuSWlCN0NpQWdZbWxzYkdsdVoxOWhZMk52ZFc1MFgybGtJRDBnSWpBd1FV
+        RXdNQzB3TURCQlFVRXRNREJCUVRCQklnb2dJSEp2YkdVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNK
+        eWIyeGxjeTlpYVd4c2FXNW5MblpwWlhkbGNpSUtJQ0J0WlcxaVpYSWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaWRYTmxjanBoYkdsalpVQm5iV0ZwYkM1amIyMGlDbjBL
+    import: !!binary |
+        Q2dwSlFVMGdiV1Z0WW1WeUlHbHRjRzl5ZEhNZ2RYTmxJSE53WVdObExXUmxiR2x0YVhSbFpDQnBa
+        R1Z1ZEdsbWFXVnljenNnZEdobElISmxjMjkxY21ObElHbHVJSEYxWlhOMGFXOXVMQ0IwYUdVZ2Nt
+        OXNaU3dnWVc1a0lIUm9aU0JoWTJOdmRXNTBMaUFnVkdocGN5QnRaVzFpWlhJZ2NtVnpiM1Z5WTJV
+        Z1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ1ltbHNiR2x1WjE5aFkyTnZkVzUw
+        WDJsa1lDd2djbTlzWlN3Z1lXNWtJRzFsYldKbGNpQnBaR1Z1ZEdsMGVTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWW1sc2JHbHVaMTloWTJOdmRXNTBYMmxoYlY5dFpXMWlaWEl1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

@@ -9,13 +9,13 @@
         "arguments": {
             "name": {
                 "description": "A unique name for the interface, required by GCE. Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "router": {
                 "description": "The name of the router this interface will be attached to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

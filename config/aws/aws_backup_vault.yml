@@ -7,7 +7,7 @@ aws_backup_vault:
     arguments:
         name:
             description: Name of the backup vault to create.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -31,3 +31,15 @@ aws_backup_vault:
             description: The number of recovery points that are stored in a backup
                 vault.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZbUZqYTNWd1gzWmhkV3gwSWlBaVpYaGhiWEJzWlNJZ2V3b2dJ
+        RzVoYldVZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWZlltRmphM1Z3WDNaaGRXeDBJZ29nSUd0dGMx
+        OXJaWGxmWVhKdUlEMGdJaVI3WVhkelgydHRjMTlyWlhrdVpYaGhiWEJzWlM1aGNtNTlJZ3A5Q2c9
+        PQ==
+    import: !!binary |
+        Q2dwQ1lXTnJkWEFnZG1GMWJIUWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdi
+        bUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlpWVdOcmRYQmZkbUYxYkhRdWFIUnRiQzV0WVhKclpHOTNiZz09

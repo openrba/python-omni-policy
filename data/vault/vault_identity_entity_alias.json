@@ -8,28 +8,24 @@
         "arguments": {
             "name": {
                 "description": "Name of the alias. Name should be the identifier of the client in the authentication source. For example, if the alias belongs to userpass backend, the name should be a valid username within userpass backend. If alias belongs to GitHub, it should be the GitHub username.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "mount_accessor": {
                 "description": "Accessor of the mount to which the alias should belong to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "canonical_id": {
                 "description": "Entity ID to which this alias belongs to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "ID of the entity alias."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

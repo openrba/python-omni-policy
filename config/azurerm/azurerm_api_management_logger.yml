@@ -7,19 +7,19 @@ azurerm_api_management_logger:
     arguments:
         name:
             description: The name of an EventHub.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the API Management
                 Service exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_management_name:
             description: The name of the API Management Service. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         application_insights:
@@ -46,12 +46,12 @@ azurerm_api_management_logger:
         instrumentation_key:
             description: The instrumentation key used to push data to Application
                 Insights.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_string:
             description: The connection string of an EventHub Namespace.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

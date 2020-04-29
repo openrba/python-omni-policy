@@ -7,12 +7,12 @@ aws_apigatewayv2_domain_name:
     arguments:
         domain_name:
             description: The domain name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         domain_name_configuration:
             description: The domain name configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -24,17 +24,17 @@ aws_apigatewayv2_domain_name:
             description: The ARN of an AWS-managed certificate that will be used by
                 the endpoint for the domain name. AWS Certificate Manager is the only
                 supported source.
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint_type:
             description: 'The endpoint type. Valid values: `REGIONAL`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         security_policy:
             description: The Transport Layer Security (TLS
-            required: true
+            required: false
             policy: ''
             notes: ''
         hosted_zone_id:
@@ -47,5 +47,21 @@ aws_apigatewayv2_domain_name:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The domain name identifier.
+        api_mapping_selection_expression:
+            description: The [API mapping selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-mapping-selection-expressions)
+                for the domain name.
+        arn:
+            description: The ARN of the domain name.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5a2IyMWhhVzVmYm1GdFpXQWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lHSjVJSFZ6YVc1bklIUm9aU0JrYjIxaGFXNGdibUZ0WlN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZlpHOXRZV2x1WDI1aGJXVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

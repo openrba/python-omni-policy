@@ -7,7 +7,7 @@ aws_vpc:
     arguments:
         cidr_block:
             description: The CIDR block for the VPC.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_tenancy:
@@ -78,3 +78,13 @@ aws_vpc:
         owner_id:
             description: The ID of the AWS account that owns the VPC.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaWJXRnBiaUlnZXdvZ0lHTnBaSEpmWW14dlkyc2dQ
+        U0FpTVRBdU1DNHdMakF2TVRZaUNuMEs=
+    import: !!binary |
+        Q2dwV1VFTnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSFp3WXlCcFpHQXNJ
+        R1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dNdWFIUnRiQzV0WVhKclpHOTNiZz09

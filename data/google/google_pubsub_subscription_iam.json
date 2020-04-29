@@ -9,19 +9,19 @@
         "arguments": {
             "subscription": {
                 "description": "The subscription name or id to bind to attach IAM policy to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "member/members": {
                 "description": "Identities that will be granted the privilege in `role`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The role that should be applied. Only one",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,11 +38,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "etag": {
-                "description": "(Computed) The etag of the subscription's IAM policy."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

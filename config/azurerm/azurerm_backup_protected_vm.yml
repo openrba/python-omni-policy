@@ -8,24 +8,24 @@ azurerm_backup_protected_vm:
         resource_group_name:
             description: The name of the resource group in which to create the Recovery
                 Services Protected VM. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         recovery_vault_name:
             description: Specifies the name of the Recovery Services Vault to use.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_vm_id:
             description: Specifies the ID of the VM to backup. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backup_policy_id:
             description: Specifies the id of the backup policy to use.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:

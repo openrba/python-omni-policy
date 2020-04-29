@@ -8,19 +8,19 @@
         "arguments": {
             "db_instance_identifier": {
                 "description": "DB Instance Identifier to associate with the IAM Role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "feature_name": {
                 "description": "Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the `SupportedFeatureNames` list returned by [AWS CLI rds describe-db-engine-versions](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

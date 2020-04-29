@@ -7,14 +7,14 @@ aws_cloudformation_stack_set:
     arguments:
         administration_role_arn:
             description: Amazon Resource Number (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Name of the StackSet. The name must be unique in the region
                 where you create your StackSet. The name can contain only alphanumeric
                 characters (case-sensitive
-            required: true
+            required: false
             policy: ''
             notes: ''
         capabilities:
@@ -73,3 +73,56 @@ aws_cloudformation_stack_set:
         stack_set_id:
             description: Unique identifier of the StackSet.
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbUYzYzE5cFlXMWZjRzlzYVdONVgyUnZZM1Z0Wlc1MElpQWlRVmRUUTJ4dmRXUkdi
+        M0p0WVhScGIyNVRkR0ZqYTFObGRFRmtiV2x1YVhOMGNtRjBhVzl1VW05c1pWOWhjM04xYldWZmNt
+        OXNaVjl3YjJ4cFkza2lJSHNLSUNCemRHRjBaVzFsYm5RZ2V3b2dJQ0FnWVdOMGFXOXVjeUE5SUZz
+        aWMzUnpPa0Z6YzNWdFpWSnZiR1VpWFFvZ0lDQWdaV1ptWldOMElDQTlJQ0pCYkd4dmR5SUtDaUFn
+        SUNCd2NtbHVZMmx3WVd4eklIc0tJQ0FnSUNBZ2FXUmxiblJwWm1sbGNuTWdQU0JiSW1Oc2IzVmta
+        bTl5YldGMGFXOXVMbUZ0WVhwdmJtRjNjeTVqYjIwaVhRb2dJQ0FnSUNCMGVYQmxJQ0FnSUNBZ0lD
+        QTlJQ0pUWlhKMmFXTmxJZ29nSUNBZ2ZRb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTlwWVcx
+        ZmNtOXNaU0lnSWtGWFUwTnNiM1ZrUm05eWJXRjBhVzl1VTNSaFkydFRaWFJCWkcxcGJtbHpkSEpo
+        ZEdsdmJsSnZiR1VpSUhzS0lDQmhjM04xYldWZmNtOXNaVjl3YjJ4cFkza2dQU0FpSkh0a1lYUmhM
+        bUYzYzE5cFlXMWZjRzlzYVdONVgyUnZZM1Z0Wlc1MExrRlhVME5zYjNWa1JtOXliV0YwYVc5dVUz
+        UmhZMnRUWlhSQlpHMXBibWx6ZEhKaGRHbHZibEp2YkdWZllYTnpkVzFsWDNKdmJHVmZjRzlzYVdO
+        NUxtcHpiMjU5SWdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pCVjFORGJHOTFaRVp2
+        Y20xaGRHbHZibE4wWVdOclUyVjBRV1J0YVc1cGMzUnlZWFJwYjI1U2IyeGxJZ3A5Q2dweVpYTnZk
+        WEpqWlNBaVlYZHpYMk5zYjNWa1ptOXliV0YwYVc5dVgzTjBZV05yWDNObGRDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCaFpHMXBibWx6ZEhKaGRHbHZibDl5YjJ4bFgyRnliaUE5SUNJa2UyRjNjMTlwWVcx
+        ZmNtOXNaUzVCVjFORGJHOTFaRVp2Y20xaGRHbHZibE4wWVdOclUyVjBRV1J0YVc1cGMzUnlZWFJw
+        YjI1U2IyeGxMbUZ5Ym4waUNpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWla
+        WGhoYlhCc1pTSUtDaUFnY0dGeVlXMWxkR1Z5Y3lBOUlIc0tJQ0FnSUZaUVEwTnBaSElnUFNBaU1U
+        QXVNQzR3TGpBdk1UWWlDaUFnZlFvS0lDQjBaVzF3YkdGMFpWOWliMlI1SUQwZ1BEeFVSVTFRVEVG
+        VVJRcDdDaUFnSWxCaGNtRnRaWFJsY25NaUlEb2dld29nSUNBZ0lsWlFRME5wWkhJaUlEb2dld29n
+        SUNBZ0lDQWlWSGx3WlNJZ09pQWlVM1J5YVc1bklpd0tJQ0FnSUNBZ0lrUmxabUYxYkhRaUlEb2dJ
+        akV3TGpBdU1DNHdMekUySWl3S0lDQWdJQ0FnSWtSbGMyTnlhWEIwYVc5dUlpQTZJQ0pGYm5SbGNp
+        QjBhR1VnUTBsRVVpQmliRzlqYXlCbWIzSWdkR2hsSUZaUVF5NGdSR1ZtWVhWc2RDQnBjeUF4TUM0
+        d0xqQXVNQzh4Tmk0aUNpQWdJQ0I5Q2lBZ2ZTd0tJQ0FpVW1WemIzVnlZMlZ6SWlBNklIc0tJQ0Fn
+        SUNKdGVWWndZeUk2SUhzS0lDQWdJQ0FnSWxSNWNHVWlJRG9nSWtGWFV6bzZSVU15T2pwV1VFTWlM
+        QW9nSUNBZ0lDQWlVSEp2Y0dWeWRHbGxjeUlnT2lCN0NpQWdJQ0FnSUNBZ0lrTnBaSEpDYkc5amF5
+        SWdPaUI3SUNKU1pXWWlJRG9nSWxaUVEwTnBaSElpSUgwc0NpQWdJQ0FnSUNBZ0lsUmhaM01pSURv
+        Z1d3b2dJQ0FnSUNBZ0lDQWdleUpMWlhraU9pQWlUbUZ0WlNJc0lDSldZV3gxWlNJNklDSlFjbWx0
+        WVhKNVgwTkdYMVpRUXlKOUNpQWdJQ0FnSUNBZ1hRb2dJQ0FnSUNCOUNpQWdJQ0I5Q2lBZ2ZRcDlD
+        bFJGVFZCTVFWUkZDbjBLQ21SaGRHRWdJbUYzYzE5cFlXMWZjRzlzYVdONVgyUnZZM1Z0Wlc1MElp
+        QWlRVmRUUTJ4dmRXUkdiM0p0WVhScGIyNVRkR0ZqYTFObGRFRmtiV2x1YVhOMGNtRjBhVzl1VW05
+        c1pWOUZlR1ZqZFhScGIyNVFiMnhwWTNraUlIc0tJQ0J6ZEdGMFpXMWxiblFnZXdvZ0lDQWdZV04w
+        YVc5dWN5QWdJRDBnV3lKemRITTZRWE56ZFcxbFVtOXNaU0pkQ2lBZ0lDQmxabVpsWTNRZ0lDQWdQ
+        U0FpUVd4c2IzY2lDaUFnSUNCeVpYTnZkWEpqWlhNZ1BTQmJJbUZ5YmpwaGQzTTZhV0Z0T2pvcU9u
+        SnZiR1V2Skh0aGQzTmZZMnh2ZFdSbWIzSnRZWFJwYjI1ZmMzUmhZMnRmYzJWMExtVjRZVzF3YkdV
+        dVpYaGxZM1YwYVc5dVgzSnZiR1ZmYm1GdFpYMGlYUW9nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUYz
+        YzE5cFlXMWZjbTlzWlY5d2IyeHBZM2tpSUNKQlYxTkRiRzkxWkVadmNtMWhkR2x2YmxOMFlXTnJV
+        MlYwUVdSdGFXNXBjM1J5WVhScGIyNVNiMnhsWDBWNFpXTjFkR2x2YmxCdmJHbGplU0lnZXdvZ0lH
+        NWhiV1VnSUNBOUlDSkZlR1ZqZFhScGIyNVFiMnhwWTNraUNpQWdjRzlzYVdONUlEMGdJaVI3WkdG
+        MFlTNWhkM05mYVdGdFgzQnZiR2xqZVY5a2IyTjFiV1Z1ZEM1QlYxTkRiRzkxWkVadmNtMWhkR2x2
+        YmxOMFlXTnJVMlYwUVdSdGFXNXBjM1J5WVhScGIyNVNiMnhsWDBWNFpXTjFkR2x2YmxCdmJHbGpl
+        UzVxYzI5dWZTSUtJQ0J5YjJ4bElDQWdQU0FpSkh0aGQzTmZhV0Z0WDNKdmJHVXVRVmRUUTJ4dmRX
+        UkdiM0p0WVhScGIyNVRkR0ZqYTFObGRFRmtiV2x1YVhOMGNtRjBhVzl1VW05c1pTNXVZVzFsZlNJ
+        S2ZRbz0=
+    import: !!binary |
+        Q2dwRGJHOTFaRVp2Y20xaGRHbHZiaUJUZEdGamExTmxkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpHWnZjbTFoZEdsdmJsOXpkR0ZqYTE5elpYUXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

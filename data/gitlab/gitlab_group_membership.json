@@ -8,19 +8,19 @@
         "arguments": {
             "group_id": {
                 "description": "The id of the group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "user_id": {
                 "description": "The id of the user.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "access_level": {
                 "description": " Acceptable values are: guest, reporter, developer, maintainer, owner.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

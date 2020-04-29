@@ -8,25 +8,25 @@
         "arguments": {
             "type": {
                 "description": "The type of the monitor. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation](https://docs.datadoghq.com/api/?lang=python#create-a-monitor",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "Name of Datadog monitor",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "query": {
                 "description": "The monitor query to notify on. Note this is not the same query you see in the UI and",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "message": {
                 "description": "A message to include with notifications for this monitor.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -14,25 +14,25 @@
             },
             "type": {
                 "description": "The type of probe, which is PING, TCP, HTTP, or HTTPS,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "delay": {
                 "description": "The time, in seconds, between sending probes to members.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "timeout": {
                 "description": "Maximum number of seconds for a monitor to wait for a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "max_retries": {
                 "description": "Number of permissible ping failures before changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,38 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "type": {
-                "description": "See Argument Reference above."
-            },
-            "delay": {
-                "description": "See Argument Reference above."
-            },
-            "timeout": {
-                "description": "See Argument Reference above."
-            },
-            "max_retries": {
-                "description": "See Argument Reference above."
-            },
-            "url_path": {
-                "description": "See Argument Reference above."
-            },
-            "http_method": {
-                "description": "See Argument Reference above."
-            },
-            "expected_codes": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

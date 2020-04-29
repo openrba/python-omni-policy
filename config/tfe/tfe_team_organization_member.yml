@@ -7,13 +7,32 @@ tfe_team_organization_member:
     arguments:
         team_id:
             description: ID of the team.
-            required: true
+            required: false
             policy: ''
             notes: ''
         organization_membership_id:
             description: ID of the organization membership.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMFptVmZkR1ZoYlNJZ0luUmxjM1FpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJ
+        Q0FnUFNBaWJYa3RkR1ZoYlMxdVlXMWxJZ29nSUc5eVoyRnVhWHBoZEdsdmJpQTlJQ0p0ZVMxdmNt
+        Y3RibUZ0WlNJS2ZRb0tjbVZ6YjNWeVkyVWdJblJtWlY5dmNtZGhibWw2WVhScGIyNWZiV1Z0WW1W
+        eWMyaHBjQ0FpZEdWemRDSWdld29nSUc5eVoyRnVhWHBoZEdsdmJpQTlJQ0p0ZVMxdmNtY3RibUZ0
+        WlNJS0lDQmxiV0ZwYkNBOUlDSmxlR0Z0Y0d4bFFHaGhjMmhwWTI5eWNDNWpiMjBpQ24wS0NuSmxj
+        MjkxY21ObElDSjBabVZmZEdWaGJWOXZjbWRoYm1sNllYUnBiMjVmYldWdFltVnlJaUFpZEdWemRD
+        SWdld29nSUhSbFlXMWZhV1FnUFNBaUpIdDBabVZmZEdWaGJTNTBaWE4wTG1sa2ZTSUtJQ0J2Y21k
+        aGJtbDZZWFJwYjI1ZmJXVnRZbVZ5YzJocGNGOXBaQ0E5SUNJa2UzUm1aVjl2Y21kaGJtbDZZWFJw
+        YjI1ZmJXVnRZbVZ5YzJocGNDNTBaWE4wTG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwQklIUmxZVzBnYldWdFltVnlJR05oYmlCaVpTQnBiWEJ2Y25SbFpEc2dkWE5sSUdBOFZFVkJU
+        U0JKUkQ0dlBFOVNSMEZPU1ZwQlZFbFBUaUJOUlUxQ1JWSlRTRWxRSUVsRVBtQUtZWE1nZEdobElH
+        bHRjRzl5ZENCSlJDNGdSbTl5SUdWNFlXMXdiR1U2Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYUm1aUzlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkwWldGdFgyOXlaMkZ1YVhwaGRHbHZibDl0WlcxaVpYSXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

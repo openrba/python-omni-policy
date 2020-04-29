@@ -8,7 +8,7 @@ aws_lambda_function_event_invoke_config:
     arguments:
         function_name:
             description: Name or Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_config:
@@ -40,3 +40,15 @@ aws_lambda_function_event_invoke_config:
             description: Fully qualified Lambda Function name or Amazon Resource Name
                 (ARN)
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwTVlXMWlaR0VnUm5WdVkzUnBiMjRnUlhabGJuUWdTVzUyYjJ0bElFTnZibVpwWjNNZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCbWRXeHNlU0J4ZFdGc2FXWnBaV1FnUm5WdVkz
+        UnBiMjRnYm1GdFpTQnZjaUJCYldGNmIyNGdVbVZ6YjNWeVkyVWdUbUZ0WlNBb1FWSk9LU3dnWlM1
+        bkxnb0tRVkpPSUhkcGRHaHZkWFFnY1hWaGJHbG1hV1Z5SUNoaGJHd2dkbVZ5YzJsdmJuTWdZVzVr
+        SUdGc2FXRnpaWE1wT2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWVcxaVpHRmZablZ1WTNScGIyNWZaWFpsYm5SZmFXNTJiMnRsWDJOdmJtWnBaeTVvZEcx
+        c0xtMWhjbXRrYjNkdQ==

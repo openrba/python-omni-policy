@@ -7,7 +7,7 @@ aws_elasticsearch_domain:
     arguments:
         domain_name:
             description: Name of the domain.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_policies:
@@ -79,7 +79,7 @@ aws_elasticsearch_domain:
             notes: ''
         ebs_enabled:
             description: Whether EBS volumes are attached to data nodes in the domain.
-            required: true
+            required: false
             policy: ''
             notes: ''
         volume_type:
@@ -107,7 +107,7 @@ aws_elasticsearch_domain:
             notes: ''
         enforce_https:
             description: Whether or not to require HTTPS
-            required: true
+            required: false
             policy: ''
             notes: ''
         tls_security_policy:
@@ -174,40 +174,40 @@ aws_elasticsearch_domain:
         subnet_ids:
             description: List of VPC Subnet IDs for the Elasticsearch domain endpoints
                 to be created in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automated_snapshot_start_hour:
             description: Hour during which the service takes an automated daily
-            required: true
+            required: false
             policy: ''
             notes: ''
         log_type:
             description: 'A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS,
                 SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS'
-            required: true
+            required: false
             policy: ''
             notes: ''
         cloudwatch_log_group_arn:
             description: ARN of the Cloudwatch log group to which log needs to be
                 published.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_pool_id:
             description: ID of the Cognito User Pool to use
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity_pool_id:
             description: ID of the Cognito Identity Pool to use
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: ARN of the IAM role that has the AmazonESCognitoAccess policy
                 attached
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -228,3 +228,11 @@ aws_elasticsearch_domain:
         vpc_options.0.vpc_id:
             description: If the domain was created inside a VPC, the ID of the VPC.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRmJHRnpkR2xqYzJWaGNtTm9JR1J2YldGcGJuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdaRzl0WVdsdVgyNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpjMlZoY21Ob1gyUnZiV0ZwYmk1b2RHMXNMbTFoY210a2IzZHU=

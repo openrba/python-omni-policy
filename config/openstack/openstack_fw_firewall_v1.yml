@@ -12,7 +12,7 @@ openstack_fw_firewall_v1:
             notes: ''
         policy_id:
             description: The policy resource id for the firewall. Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -22,7 +22,7 @@ openstack_fw_firewall_v1:
             notes: ''
         description:
             description: A description for the firewall. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_state_up:
@@ -50,21 +50,31 @@ openstack_fw_firewall_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        policy_id:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        associated_routers:
-            description: See Argument Reference above.
-        no_routers:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZlpuZGZjblZzWlY5Mk1TSWdJbkoxYkdWZk1TSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWJYa3RjblZzWlMweElnb2dJR1JsYzJOeWFY
+        QjBhVzl1SUNBZ0lDQWdQU0FpWkhKdmNDQlVSVXhPUlZRZ2RISmhabVpwWXlJS0lDQmhZM1JwYjI0
+        Z0lDQWdJQ0FnSUNBZ0lEMGdJbVJsYm5raUNpQWdjSEp2ZEc5amIyd2dJQ0FnSUNBZ0lDQTlJQ0ow
+        WTNBaUNpQWdaR1Z6ZEdsdVlYUnBiMjVmY0c5eWRDQTlJQ0l5TXlJS0lDQmxibUZpYkdWa0lDQWdJ
+        Q0FnSUNBZ0lEMGdJblJ5ZFdVaUNuMEtDbkpsYzI5MWNtTmxJQ0p2Y0dWdWMzUmhZMnRmWm5kZmNu
+        VnNaVjkyTVNJZ0luSjFiR1ZmTWlJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYlhr
+        dGNuVnNaUzB5SWdvZ0lHUmxjMk55YVhCMGFXOXVJQ0FnSUNBZ1BTQWlaSEp2Y0NCT1ZGQWdkSEpo
+        Wm1acFl5SUtJQ0JoWTNScGIyNGdJQ0FnSUNBZ0lDQWdJRDBnSW1SbGJua2lDaUFnY0hKdmRHOWpi
+        MndnSUNBZ0lDQWdJQ0E5SUNKMVpIQWlDaUFnWkdWemRHbHVZWFJwYjI1ZmNHOXlkQ0E5SUNJeE1q
+        TWlDaUFnWlc1aFlteGxaQ0FnSUNBZ0lDQWdJQ0E5SUNKbVlXeHpaU0lLZlFvS2NtVnpiM1Z5WTJV
+        Z0ltOXdaVzV6ZEdGamExOW1kMTl3YjJ4cFkzbGZkakVpSUNKd2IyeHBZM2xmTVNJZ2V3b2dJRzVo
+        YldVZ1BTQWliWGt0Y0c5c2FXTjVJZ29LSUNCeWRXeGxjeUE5SUZzaUpIdHZjR1Z1YzNSaFkydGZa
+        bmRmY25Wc1pWOTJNUzV5ZFd4bFh6RXVhV1I5SWl3S0lDQWdJQ0lrZTI5d1pXNXpkR0ZqYTE5bWQx
+        OXlkV3hsWDNZeExuSjFiR1ZmTWk1cFpIMGlMQW9nSUYwS2ZRb0tjbVZ6YjNWeVkyVWdJbTl3Wlc1
+        emRHRmphMTltZDE5bWFYSmxkMkZzYkY5Mk1TSWdJbVpwY21WM1lXeHNYekVpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQWdQU0FpYlhrdFptbHlaWGRoYkd3aUNpQWdjRzlzYVdONVgybGtJRDBnSWlSN2IzQmxi
+        bk4wWVdOclgyWjNYM0J2YkdsamVWOTJNUzV3YjJ4cFkzbGZNUzVwWkgwaUNuMEs=
+    import: !!binary |
+        Q2dwR2FYSmxkMkZzYkhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2FXUmdM
+        Q0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOW1kMTltYVhKbGQyRnNiRjkyTVM1b2RHMXNMbTFoY210a2IzZHU=

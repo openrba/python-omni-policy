@@ -8,19 +8,19 @@
         "arguments": {
             "database_name": {
                 "description": "Glue database where results are written.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "Name of the crawler.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

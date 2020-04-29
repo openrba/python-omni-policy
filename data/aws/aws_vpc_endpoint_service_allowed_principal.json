@@ -8,13 +8,13 @@
         "arguments": {
             "vpc_endpoint_service_id": {
                 "description": "The ID of the VPC endpoint service to allow permission.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "principal_arn": {
                 "description": "The ARN of the principal to allow permissions.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

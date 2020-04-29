@@ -6,18 +6,18 @@ github_issue_label:
     arguments:
         repository:
             description: The GitHub repository
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the label.
-            required: true
+            required: false
             policy: ''
             notes: ''
         color:
             description: 'A 6 character hex code, **without the leading #**, identifying
                 the color of the label.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -32,3 +32,16 @@ github_issue_label:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNMQ0J5WldRZ1kyOXNiM0psWkNCc1lXSmxiQXB5WlhOdmRYSmpa
+        U0FpWjJsMGFIVmlYMmx6YzNWbFgyeGhZbVZzSWlBaWRHVnpkRjl5WlhCdklpQjdDaUFnY21Wd2Iz
+        TnBkRzl5ZVNBOUlDSjBaWE4wTFhKbGNHOGlDaUFnYm1GdFpTQWdJQ0FnSUNBOUlDSlZjbWRsYm5R
+        aUNpQWdZMjlzYjNJZ0lDQWdJQ0E5SUNKR1JqQXdNREFpQ24wSw==
+    import: !!binary |
+        Q2dwSGFYUklkV0lnU1hOemRXVWdUR0ZpWld4eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUJoYmlCSlJDQnRZV1JsSUhWd0lHOW1JR0J5WlhCdmMybDBiM0o1T201aGJXVmdMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5cGMzTjFaVjlzWVdKbGJDNW9kRzFzTG0xaGNtdGtiM2R1

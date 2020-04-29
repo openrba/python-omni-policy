@@ -8,7 +8,7 @@
         "arguments": {
             "email": {
                 "description": "The email of the Security Center Contact.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,13 +20,13 @@
             },
             "alert_notifications": {
                 "description": "Whether to send security alerts notifications to the security contact.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "alerts_to_admins": {
                 "description": "Whether to send security alerts notifications to subscription admins.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

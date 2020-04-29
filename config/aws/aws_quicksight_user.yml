@@ -7,19 +7,19 @@ aws_quicksight_user:
     arguments:
         email:
             description: The email address of the user that you want to register.
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity_type:
             description: Amazon QuickSight supports several ways of managing the identity
                 of users. This parameter accepts either  `IAM` or `QUICKSIGHT`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_role:
             description: 'The Amazon QuickSight role of the user. The user role can
                 be one of the following: `READER`, `AUTHOR`, or `ADMIN`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_name:
@@ -56,3 +56,15 @@ aws_quicksight_user:
         arn:
             description: Amazon Resource Name (ARN) of the user
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjWFZwWTJ0emFXZG9kRjkxYzJWeUlpQWlaWGhoYlhCc1pTSWdl
+        d29nSUhWelpYSmZibUZ0WlNBZ0lDQWdQU0FpWVc0dFlYVjBhRzl5SWdvZ0lHVnRZV2xzSUNBZ0lD
+        QWdJQ0FnUFNBaVlYVjBhRzl5UUdWNFlXMXdiR1V1WTI5dElnb2dJR2xrWlc1MGFYUjVYM1I1Y0dV
+        Z1BTQWlTVUZOSWdvZ0lIVnpaWEpmY205c1pTQWdJQ0FnUFNBaVFWVlVTRTlTSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwSmJYQnZjblJwYm1jZ2FYTWdZM1Z5Y21WdWRHeDVJRzV2ZENCemRYQndiM0owWldRZ2IyNGdk
+        R2hwY3lCeVpYTnZkWEpqWlM0PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl4ZFdsamEzTnBaMmgwWDNWelpYSXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

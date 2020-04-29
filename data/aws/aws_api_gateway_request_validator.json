@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the request validator",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rest_api_id": {
                 "description": "The ID of the associated Rest API",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The unique ID of the request validator"
+            }
+        },
         "timeouts": {}
     }
 }

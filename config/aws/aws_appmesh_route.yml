@@ -8,22 +8,22 @@ aws_appmesh_route:
         name:
             description: A name for the HTTP header in the client request that will
                 be matched on.
-            required: true
+            required: false
             policy: ''
             notes: ''
         mesh_name:
             description: The name of the service mesh in which to create the route.
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_router_name:
             description: The name of the virtual router in which to create the route.
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: The route specification to apply.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -48,7 +48,7 @@ aws_appmesh_route:
             notes: ''
         action:
             description: The action to take if a match is determined.
-            required: true
+            required: false
             policy: ''
             notes: ''
         match:
@@ -60,7 +60,7 @@ aws_appmesh_route:
         weighted_target:
             description: The targets that traffic is routed to when a request matches
                 the route.
-            required: true
+            required: false
             policy: ''
             notes: ''
         prefix:
@@ -89,13 +89,13 @@ aws_appmesh_route:
             notes: ''
         virtual_node:
             description: The virtual node to associate with the weighted target.
-            required: true
+            required: false
             policy: ''
             notes: ''
         weight:
             description: The relative weight of the weighted target. An integer between
                 0 and 100.
-            required: true
+            required: false
             policy: ''
             notes: ''
         invert:
@@ -130,7 +130,7 @@ aws_appmesh_route:
             notes: ''
         end:
             description: The end of the range.
-            required: true
+            required: false
             policy: ''
             notes: ''
         start:
@@ -148,3 +148,12 @@ aws_appmesh_route:
         last_updated_date:
             description: The last update date of the route.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQmNIQWdUV1Z6YUNCMmFYSjBkV0ZzSUhKdmRYUmxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ1lHMWxjMmhmYm1GdFpXQWdZVzVrSUdCMmFYSjBkV0ZzWDNKdmRYUmxjbDl1WVcxbFlD
+        QjBiMmRsZEdobGNpQjNhWFJvSUhSb1pTQnliM1YwWlNkeklHQnVZVzFsWUN3S1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCdFpYTm9YM0p2ZFhSbExtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -7,7 +7,7 @@ vault_identity_entity:
     arguments:
         name:
             description: Name of the identity entity to create.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policies:
@@ -33,7 +33,15 @@ vault_identity_entity:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The `id` of the created entity.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjlwWkdWdWRHbDBlVjlsYm5ScGRIa2lJQ0owWlhOMElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUQwZ0luUmxjM1JsY2pFaUNpQWdjRzlzYVdOcFpYTWdJRDBnV3lKMFpY
+        TjBJbDBLSUNCdFpYUmhaR0YwWVNBZ1BTQjdDaUFnSUNCbWIyOGdQU0FpWW1GeUlnb2dJSDBLZlFv
+        PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJsa1pXNTBhWFI1WDJWdWRHbDBlUzVvZEcxc0xtMWs=

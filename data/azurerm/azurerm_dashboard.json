@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Shared Dashboard. This should be be 64 chars max, only alphanumeric and hyphens (no spaces). For a more friendly display name, add the `hidden-title` tag.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "dashboard_properties": {
                 "description": "JSON data representing dashboard body. See above for details on how to obtain this from the Portal.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

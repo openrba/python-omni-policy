@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Probe.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "loadbalancer_id": {
                 "description": "The ID of the LoadBalancer in which to create the NAT Rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "port": {
                 "description": "Port on which the Probe queries the backend endpoint. Possible values range from 1 to 65535, inclusive.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,14 +7,20 @@ grafana_folder:
     arguments:
         title:
             description: The title of the folder.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The internal id of the folder in Grafana (only guaranteed
-                to be unique
-        uid:
-            description: An external id of the folder in Grafana (stable when folders
-                are migrated
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmNtRm1ZVzVoWDJadmJHUmxjaUlnSW1OdmJHeGxZM1JwYjI0aUlIc0tJ
+        Q0IwYVhSc1pTQTlJQ0pHYjJ4a1pYSWdWR2wwYkdVaUNuMEtDbkpsYzI5MWNtTmxJQ0puY21GbVlX
+        NWhYMlJoYzJoaWIyRnlaQ0lnSW1SaGMyaGliMkZ5WkY5cGJsOW1iMnhrWlhJaUlIc0tJQ0JtYjJ4
+        a1pYSWdQU0FpSkh0bmNtRm1ZVzVoWDJadmJHUmxjaTVqYjJ4c1pXTjBhVzl1TG1sa2ZTSUtJQ0F1
+        TGk0S2ZRbz0=
+    import: !!binary |
+        Q2dwR2IyeGtaWEp6SUdOaGJtNXZkQ0JpWlNCcGJYQnZjblJsWkM0PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHlZV1poYm1FdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlptOXNaR1Z5TG1oMGJXd3ViV1E9

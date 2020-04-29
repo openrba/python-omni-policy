@@ -7,19 +7,52 @@ aws_pinpoint_event_stream:
     arguments:
         application_id:
             description: The application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_stream_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The IAM role that authorizes Amazon Pinpoint to publish events
                 to the stream in your account.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR2x1Y0c5cGJuUmZaWFpsYm5SZmMzUnlaV0Z0SWlBaWMzUnla
+        V0Z0SWlCN0NpQWdZWEJ3YkdsallYUnBiMjVmYVdRZ0lDQWdJQ0FnSUNBOUlDSWtlMkYzYzE5d2FX
+        NXdiMmx1ZEY5aGNIQXVZWEJ3TG1Gd2NHeHBZMkYwYVc5dVgybGtmU0lLSUNCa1pYTjBhVzVoZEds
+        dmJsOXpkSEpsWVcxZllYSnVJRDBnSWlSN1lYZHpYMnRwYm1WemFYTmZjM1J5WldGdExuUmxjM1Jm
+        YzNSeVpXRnRMbUZ5Ym4waUNpQWdjbTlzWlY5aGNtNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSWtl
+        MkYzYzE5cFlXMWZjbTlzWlM1MFpYTjBYM0p2YkdVdVlYSnVmU0lLZlFvS2NtVnpiM1Z5WTJVZ0lt
+        RjNjMTl3YVc1d2IybHVkRjloY0hBaUlDSmhjSEFpSUh0OUNncHlaWE52ZFhKalpTQWlZWGR6WDJ0
+        cGJtVnphWE5mYzNSeVpXRnRJaUFpZEdWemRGOXpkSEpsWVcwaUlIc0tJQ0J1WVcxbElDQWdJQ0Fn
+        SUNBOUlDSndhVzV3YjJsdWRDMXJhVzVsYzJsekxYUmxjM1FpQ2lBZ2MyaGhjbVJmWTI5MWJuUWdQ
+        U0F4Q24wS0NuSmxjMjkxY21ObElDSmhkM05mYVdGdFgzSnZiR1VpSUNKMFpYTjBYM0p2YkdVaUlI
+        c0tJQ0JoYzNOMWJXVmZjbTlzWlY5d2IyeHBZM2tnUFNBOFBFVlBSZ3A3Q2lBZ0lsWmxjbk5wYjI0
+        aU9pQWlNakF4TWkweE1DMHhOeUlzQ2lBZ0lsTjBZWFJsYldWdWRDSTZJRnNLSUNBZ0lIc0tJQ0Fn
+        SUNBZ0lrRmpkR2x2YmlJNklDSnpkSE02UVhOemRXMWxVbTlzWlNJc0NpQWdJQ0FnSUNKUWNtbHVZ
+        Mmx3WVd3aU9pQjdDaUFnSUNBZ0lDQWdJbE5sY25acFkyVWlPaUFpY0dsdWNHOXBiblF1ZFhNdFpX
+        RnpkQzB4TG1GdFlYcHZibUYzY3k1amIyMGlDaUFnSUNBZ0lIMHNDaUFnSUNBZ0lDSkZabVpsWTNR
+        aU9pQWlRV3hzYjNjaUxBb2dJQ0FnSUNBaVUybGtJam9nSWlJS0lDQWdJSDBLSUNCZENuMEtSVTlH
+        Q24wS0NuSmxjMjkxY21ObElDSmhkM05mYVdGdFgzSnZiR1ZmY0c5c2FXTjVJaUFpZEdWemRGOXli
+        MnhsWDNCdmJHbGplU0lnZXdvZ0lHNWhiV1VnUFNBaWRHVnpkRjl3YjJ4cFkza2lDaUFnY205c1pT
+        QTlJQ0lrZTJGM2MxOXBZVzFmY205c1pTNTBaWE4wWDNKdmJHVXVhV1I5SWdvS0lDQndiMnhwWTNr
+        Z1BTQThQRVZQUmdwN0NpQWdJbFpsY25OcGIyNGlPaUFpTWpBeE1pMHhNQzB4TnlJc0NpQWdJbE4w
+        WVhSbGJXVnVkQ0k2SUhzS0lDQWdJQ0pCWTNScGIyNGlPaUJiQ2lBZ0lDQWdJQ0pyYVc1bGMybHpP
+        bEIxZEZKbFkyOXlaSE1pTEFvZ0lDQWdJQ0FpYTJsdVpYTnBjenBFWlhOamNtbGlaVk4wY21WaGJT
+        SUtJQ0FnSUYwc0NpQWdJQ0FpUldabVpXTjBJam9nSWtGc2JHOTNJaXdLSUNBZ0lDSlNaWE52ZFhK
+        alpTSTZJRnNLSUNBZ0lDQWdJbUZ5YmpwaGQzTTZhMmx1WlhOcGN6cDFjeTFsWVhOMExURTZLam9x
+        THlvaUNpQWdJQ0JkQ2lBZ2ZRcDlDa1ZQUmdwOUNnPT0=
+    import: !!binary |
+        Q2dwUWFXNXdiMmx1ZENCRmRtVnVkQ0JUZEhKbFlXMGdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdZWEJ3YkdsallYUnBiMjR0YVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YVc1d2IybHVkRjlsZG1WdWRGOXpkSEpsWVcwdWJXRnlhMlJ2ZDI0PQ==

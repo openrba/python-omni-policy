@@ -8,19 +8,19 @@ google_storage_notification:
     arguments:
         bucket:
             description: The name of the bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         payload_format:
             description: The desired content of the Payload. One of `"JSON_API_V1"`
                 or `"NONE"`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         topic:
             description: 'The Cloud PubSub topic to which this subscription publishes.
                 Expects either the '
-            required: true
+            required: false
             policy: ''
             notes: ''
         custom_attributes:
@@ -44,9 +44,38 @@ google_storage_notification:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        notification_id:
-            description: The ID of the created notification.
-        self_link:
-            description: The URI of the created resource.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYzNSdmNtRm5aVjl1YjNScFptbGpZWFJwYjI0aUlDSnVi
+        M1JwWm1sallYUnBiMjRpSUhzS0lDQmlkV05yWlhRZ0lDQWdJQ0FnSUNBOUlHZHZiMmRzWlY5emRH
+        OXlZV2RsWDJKMVkydGxkQzVpZFdOclpYUXVibUZ0WlFvZ0lIQmhlV3h2WVdSZlptOXliV0YwSUQw
+        Z0lrcFRUMDVmUVZCSlgxWXhJZ29nSUhSdmNHbGpJQ0FnSUNBZ0lDQWdJRDBnWjI5dloyeGxYM0Ix
+        WW5OMVlsOTBiM0JwWXk1MGIzQnBZeTVwWkFvZ0lHVjJaVzUwWDNSNWNHVnpJQ0FnSUQwZ1d5SlBR
+        a3BGUTFSZlJrbE9RVXhKV2tVaUxDQWlUMEpLUlVOVVgwMUZWRUZFUVZSQlgxVlFSRUZVUlNKZENp
+        QWdZM1Z6ZEc5dFgyRjBkSEpwWW5WMFpYTWdQU0I3Q2lBZ0lDQnVaWGN0WVhSMGNtbGlkWFJsSUQw
+        Z0ltNWxkeTFoZEhSeWFXSjFkR1V0ZG1Gc2RXVWlDaUFnZlFvZ0lHUmxjR1Z1WkhOZmIyNGdQU0Ji
+        WjI5dloyeGxYM0IxWW5OMVlsOTBiM0JwWTE5cFlXMWZZbWx1WkdsdVp5NWlhVzVrYVc1blhRcDlD
+        Z292THlCRmJtRmliR1VnYm05MGFXWnBZMkYwYVc5dWN5QmllU0JuYVhacGJtY2dkR2hsSUdOdmNu
+        SmxZM1FnU1VGTklIQmxjbTFwYzNOcGIyNGdkRzhnZEdobElIVnVhWEYxWlNCelpYSjJhV05sSUdG
+        alkyOTFiblF1Q2dwa1lYUmhJQ0puYjI5bmJHVmZjM1J2Y21GblpWOXdjbTlxWldOMFgzTmxjblpw
+        WTJWZllXTmpiM1Z1ZENJZ0ltZGpjMTloWTJOdmRXNTBJaUI3Q24wS0NuSmxjMjkxY21ObElDSm5i
+        MjluYkdWZmNIVmljM1ZpWDNSdmNHbGpYMmxoYlY5aWFXNWthVzVuSWlBaVltbHVaR2x1WnlJZ2V3
+        b2dJSFJ2Y0dsaklDQWdQU0JuYjI5bmJHVmZjSFZpYzNWaVgzUnZjR2xqTG5SdmNHbGpMbWxrQ2lB
+        Z2NtOXNaU0FnSUNBOUlDSnliMnhsY3k5d2RXSnpkV0l1Y0hWaWJHbHphR1Z5SWdvZ0lHMWxiV0ps
+        Y25NZ1BTQmJJbk5sY25acFkyVkJZMk52ZFc1ME9pUjdaR0YwWVM1bmIyOW5iR1ZmYzNSdmNtRm5a
+        Vjl3Y205cVpXTjBYM05sY25acFkyVmZZV05qYjNWdWRDNW5ZM05mWVdOamIzVnVkQzVsYldGcGJG
+        OWhaR1J5WlhOemZTSmRDbjBLQ2k4dklFVnVaQ0JsYm1GaWJHbHVaeUJ1YjNScFptbGpZWFJwYjI1
+        ekNncHlaWE52ZFhKalpTQWlaMjl2WjJ4bFgzTjBiM0poWjJWZlluVmphMlYwSWlBaVluVmphMlYw
+        SWlCN0NpQWdibUZ0WlNBOUlDSmtaV1poZFd4MFgySjFZMnRsZENJS2ZRb0tjbVZ6YjNWeVkyVWdJ
+        bWR2YjJkc1pWOXdkV0p6ZFdKZmRHOXdhV01pSUNKMGIzQnBZeUlnZXdvZ0lHNWhiV1VnUFNBaVpH
+        Vm1ZWFZzZEY5MGIzQnBZeUlLZlFvPQ==
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUc1dmRHbG1hV05oZEdsdmJuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQnViM1JwWm1sallYUnBiMjRnWUdsa1lDQnBiaUIwYUdVZ1ptOXliV0YwSUdBOFlu
+        VmphMlYwWDI1aGJXVStMMjV2ZEdsbWFXTmhkR2x2YmtOdmJtWnBaM012UEdsa1BtQWdaUzVuTGdv
+        Sw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emRHOXlZV2RsWDI1dmRHbG1hV05oZEdsdmJpNW9kRzFzTG0xaGNtdGtiM2R1

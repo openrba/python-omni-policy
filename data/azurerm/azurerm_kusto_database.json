@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the Kusto Database to create. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The location where the Kusto Database should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Specifies the Resource Group where the Kusto Database should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "cluster_name": {
                 "description": "Specifies the name of the Kusto Cluster this database will be added to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

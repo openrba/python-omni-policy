@@ -9,19 +9,19 @@
         "arguments": {
             "user_pool_id": {
                 "description": "- The user pool id",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "provider_name": {
                 "description": "- The provider name",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "provider_type": {
                 "description": "- The provider type.  [See AWS API for valid values](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-ProviderType)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

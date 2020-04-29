@@ -14,14 +14,14 @@ aws_ses_identity_notification_topic:
             description: 'The type of notifications that will be published to the
                 specified Amazon SNS topic. Valid Values: *Bounce*, *Complaint* or
                 *Delivery*.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity:
             description: The identity for which the Amazon SNS topic will be set.
                 You can specify an identity by using its name or by using its Amazon
                 Resource Name (ARN).
-            required: true
+            required: false
             policy: ''
             notes: ''
         include_original_headers:
@@ -32,3 +32,22 @@ aws_ses_identity_notification_topic:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDJsa1pXNTBhWFI1WDI1dmRHbG1hV05oZEdsdmJsOTBi
+        M0JwWXlJZ0luUmxjM1FpSUhzS0lDQjBiM0JwWTE5aGNtNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QWlKSHRoZDNOZmMyNXpYM1J2Y0dsakxtVjRZVzF3YkdVdVlYSnVmU0lLSUNCdWIzUnBabWxqWVhS
+        cGIyNWZkSGx3WlNBZ0lDQWdJQ0FnUFNBaVFtOTFibU5sSWdvZ0lHbGtaVzUwYVhSNUlDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSWtlMkYzYzE5elpYTmZaRzl0WVdsdVgybGtaVzUwYVhSNUxtVjRZ
+        VzF3YkdVdVpHOXRZV2x1ZlNJS0lDQnBibU5zZFdSbFgyOXlhV2RwYm1Gc1gyaGxZV1JsY25NZ1BT
+        QjBjblZsQ24wSw==
+    import: !!binary |
+        Q2dwSlpHVnVkR2wwZVNCT2IzUnBabWxqWVhScGIyNGdWRzl3YVdOeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUJKUkNCdlppQjBhR1VnY21WamIzSmtMaUJVYUdVZ1NVUWdhWE1nYldGa1pT
+        QjFjQ0JoY3lCSlJFVk9WRWxVV1h4VVdWQkZJSGRvWlhKbElFbEVSVTVVU1ZSWklHbHpJSFJvWlNC
+        VFJWTWdTV1JsYm5ScGRIa2dZVzVrSUZSWlVFVWdhWE1nZEdobElFNXZkR2xtYVdOaGRHbHZiaUJV
+        ZVhCbExnb0taUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZmFXUmxiblJwZEhsZmJtOTBhV1pwWTJGMGFXOXVYM1J2Y0dsakxtMWhjbXRrYjNk
+        dQ==

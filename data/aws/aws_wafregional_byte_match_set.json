@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name or description of the ByteMatchSet.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,25 +20,25 @@
             },
             "field_to_match": {
                 "description": "Settings for the ByteMatchTuple. FieldToMatch documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "positional_constraint": {
                 "description": "Within the portion of a web request that you want to search.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_string": {
                 "description": "The value that you want AWS WAF to search for. The maximum length of the value is 50 bytes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "text_transformation": {
                 "description": "The formatting way for web request.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "type": {
                 "description": "The part of the web request that you want AWS WAF to search for a specified string.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

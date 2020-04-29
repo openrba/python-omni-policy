@@ -20,7 +20,7 @@
             },
             "event_source_arn": {
                 "description": "The event source ARN - can be a Kinesis stream, DynamoDB stream, or SQS queue.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "function_name": {
                 "description": "The name or the ARN of the Lambda function that will be subscribing to events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

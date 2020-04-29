@@ -8,13 +8,13 @@ aws_codebuild_project:
         artifacts:
             description: Information about the project's build output artifacts. Artifact
                 blocks are documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         environment:
             description: Information about the project's build environment. Environment
                 blocks are documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -26,7 +26,7 @@ aws_codebuild_project:
         source:
             description: Information about the project's input source code. Source
                 blocks are documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         badge_enabled:
@@ -72,7 +72,7 @@ aws_codebuild_project:
             notes: ''
         service_role:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_version:
@@ -108,13 +108,13 @@ aws_codebuild_project:
             description: 'The type of repository that contains the source code to
                 be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`,
                 `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         artifact_identifier:
             description: The artifact identifier. Must be the same specified inside
                 AWS CodeBuild buildspec.
-            required: true
+            required: false
             policy: ''
             notes: ''
         encryption_disabled:
@@ -168,13 +168,13 @@ aws_codebuild_project:
                 `BUILD_GENERAL1_SMALL` is only valid if `type` is set to `LINUX_CONTAINER`.
                 When `type` is set to `LINUX_GPU_CONTAINER`, `compute_type` need to
                 be `BUILD_GENERAL1_LARGE`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         image:
             description: The Docker image to use for this build project. Valid values
                 include [Docker images provided by CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         image_pull_credentials_type:
@@ -213,7 +213,7 @@ aws_codebuild_project:
             notes: ''
         value:
             description: The environment variable's value.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cloudwatch_logs:
@@ -288,40 +288,40 @@ aws_codebuild_project:
         fetch_submodules:
             description: If set to true, fetches Git submodules for the AWS CodeBuild
                 build project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         security_group_ids:
             description: The security group IDs to assign to running builds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnets:
             description: The subnet IDs within which to run builds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_id:
             description: The ID of the VPC within which to run builds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         credential:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         credential_provider:
             description: The service that created the credentials to access a private
                 Docker registry. The valid value, SECRETS_MANAGER, is for AWS Secrets
                 Manager.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_identifier:
             description: The source identifier. Source data will be put inside a folder
                 named as this parameter inside AWS CodeBuild source directory
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -333,3 +333,108 @@ aws_codebuild_project:
         badge_url:
             description: The URL of the build badge when `badge_enabled` is enabled.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHSjFZ
+        MnRsZENBOUlDSmxlR0Z0Y0d4bElnb2dJR0ZqYkNBZ0lDQTlJQ0p3Y21sMllYUmxJZ3A5Q2dweVpY
+        TnZkWEpqWlNBaVlYZHpYMmxoYlY5eWIyeGxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnUFNB
+        aVpYaGhiWEJzWlNJS0NpQWdZWE56ZFcxbFgzSnZiR1ZmY0c5c2FXTjVJRDBnUER4RlQwWUtld29n
+        SUNKV1pYSnphVzl1SWpvZ0lqSXdNVEl0TVRBdE1UY2lMQW9nSUNKVGRHRjBaVzFsYm5RaU9pQmJD
+        aUFnSUNCN0NpQWdJQ0FnSUNKRlptWmxZM1FpT2lBaVFXeHNiM2NpTEFvZ0lDQWdJQ0FpVUhKcGJt
+        TnBjR0ZzSWpvZ2V3b2dJQ0FnSUNBZ0lDSlRaWEoyYVdObElqb2dJbU52WkdWaWRXbHNaQzVoYldG
+        NmIyNWhkM011WTI5dElnb2dJQ0FnSUNCOUxBb2dJQ0FnSUNBaVFXTjBhVzl1SWpvZ0luTjBjenBC
+        YzNOMWJXVlNiMnhsSWdvZ0lDQWdmUW9nSUYwS2ZRcEZUMFlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNj
+        MTlwWVcxZmNtOXNaVjl3YjJ4cFkza2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2NtOXNaU0E5SUNJa2Uy
+        RjNjMTlwWVcxZmNtOXNaUzVsZUdGdGNHeGxMbTVoYldWOUlnb0tJQ0J3YjJ4cFkza2dQU0E4UEZC
+        UFRFbERXUXA3Q2lBZ0lsWmxjbk5wYjI0aU9pQWlNakF4TWkweE1DMHhOeUlzQ2lBZ0lsTjBZWFJs
+        YldWdWRDSTZJRnNLSUNBZ0lIc0tJQ0FnSUNBZ0lrVm1abVZqZENJNklDSkJiR3h2ZHlJc0NpQWdJ
+        Q0FnSUNKU1pYTnZkWEpqWlNJNklGc0tJQ0FnSUNBZ0lDQWlLaUlLSUNBZ0lDQWdYU3dLSUNBZ0lD
+        QWdJa0ZqZEdsdmJpSTZJRnNLSUNBZ0lDQWdJQ0FpYkc5bmN6cERjbVZoZEdWTWIyZEhjbTkxY0NJ
+        c0NpQWdJQ0FnSUNBZ0lteHZaM002UTNKbFlYUmxURzluVTNSeVpXRnRJaXdLSUNBZ0lDQWdJQ0Fp
+        Ykc5bmN6cFFkWFJNYjJkRmRtVnVkSE1pQ2lBZ0lDQWdJRjBLSUNBZ0lIMHNDaUFnSUNCN0NpQWdJ
+        Q0FnSUNKRlptWmxZM1FpT2lBaVFXeHNiM2NpTEFvZ0lDQWdJQ0FpUVdOMGFXOXVJam9nV3dvZ0lD
+        QWdJQ0FnSUNKbFl6STZRM0psWVhSbFRtVjBkMjl5YTBsdWRHVnlabUZqWlNJc0NpQWdJQ0FnSUNB
+        Z0ltVmpNanBFWlhOamNtbGlaVVJvWTNCUGNIUnBiMjV6SWl3S0lDQWdJQ0FnSUNBaVpXTXlPa1Js
+        YzJOeWFXSmxUbVYwZDI5eWEwbHVkR1Z5Wm1GalpYTWlMQW9nSUNBZ0lDQWdJQ0psWXpJNlJHVnNa
+        WFJsVG1WMGQyOXlhMGx1ZEdWeVptRmpaU0lzQ2lBZ0lDQWdJQ0FnSW1Wak1qcEVaWE5qY21saVpW
+        TjFZbTVsZEhNaUxBb2dJQ0FnSUNBZ0lDSmxZekk2UkdWelkzSnBZbVZUWldOMWNtbDBlVWR5YjNW
+        d2N5SXNDaUFnSUNBZ0lDQWdJbVZqTWpwRVpYTmpjbWxpWlZad1kzTWlDaUFnSUNBZ0lGMHNDaUFn
+        SUNBZ0lDSlNaWE52ZFhKalpTSTZJQ0lxSWdvZ0lDQWdmU3dLSUNBZ0lIc0tJQ0FnSUNBZ0lrVm1a
+        bVZqZENJNklDSkJiR3h2ZHlJc0NpQWdJQ0FnSUNKQlkzUnBiMjRpT2lCYkNpQWdJQ0FnSUNBZ0lt
+        VmpNanBEY21WaGRHVk9aWFIzYjNKclNXNTBaWEptWVdObFVHVnliV2x6YzJsdmJpSUtJQ0FnSUNB
+        Z1hTd0tJQ0FnSUNBZ0lsSmxjMjkxY21ObElqb2dXd29nSUNBZ0lDQWdJQ0poY200NllYZHpPbVZq
+        TWpwMWN5MWxZWE4wTFRFNk1USXpORFUyTnpnNU1ERXlPbTVsZEhkdmNtc3RhVzUwWlhKbVlXTmxM
+        eW9pQ2lBZ0lDQWdJRjBzQ2lBZ0lDQWdJQ0pEYjI1a2FYUnBiMjRpT2lCN0NpQWdJQ0FnSUNBZ0ls
+        TjBjbWx1WjBWeGRXRnNjeUk2SUhzS0lDQWdJQ0FnSUNBZ0lDSmxZekk2VTNWaWJtVjBJam9nV3dv
+        Z0lDQWdJQ0FnSUNBZ0lDQWlKSHRoZDNOZmMzVmlibVYwTG1WNFlXMXdiR1V4TG1GeWJuMGlMQW9n
+        SUNBZ0lDQWdJQ0FnSUNBaUpIdGhkM05mYzNWaWJtVjBMbVY0WVcxd2JHVXlMbUZ5Ym4waUNpQWdJ
+        Q0FnSUNBZ0lDQmRMQW9nSUNBZ0lDQWdJQ0FnSW1Wak1qcEJkWFJvYjNKcGVtVmtVMlZ5ZG1salpT
+        STZJQ0pqYjJSbFluVnBiR1F1WVcxaGVtOXVZWGR6TG1OdmJTSUtJQ0FnSUNBZ0lDQjlDaUFnSUNB
+        Z0lIMEtJQ0FnSUgwc0NpQWdJQ0I3Q2lBZ0lDQWdJQ0pGWm1abFkzUWlPaUFpUVd4c2IzY2lMQW9n
+        SUNBZ0lDQWlRV04wYVc5dUlqb2dXd29nSUNBZ0lDQWdJQ0p6TXpvcUlnb2dJQ0FnSUNCZExBb2dJ
+        Q0FnSUNBaVVtVnpiM1Z5WTJVaU9pQmJDaUFnSUNBZ0lDQWdJaVI3WVhkelgzTXpYMkoxWTJ0bGRD
+        NWxlR0Z0Y0d4bExtRnlibjBpTEFvZ0lDQWdJQ0FnSUNJa2UyRjNjMTl6TTE5aWRXTnJaWFF1Wlho
+        aGJYQnNaUzVoY201OUx5b2lDaUFnSUNBZ0lGMEtJQ0FnSUgwS0lDQmRDbjBLVUU5TVNVTlpDbjBL
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjlrWldKMWFXeGtYM0J5YjJwbFkzUWlJQ0psZUdGdGNHeGxJ
+        aUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBMWEJ5YjJwbFkzUWlDaUFnWkdWelkz
+        SnBjSFJwYjI0Z0lDQTlJQ0owWlhOMFgyTnZaR1ZpZFdsc1pGOXdjbTlxWldOMElnb2dJR0oxYVd4
+        a1gzUnBiV1Z2ZFhRZ1BTQWlOU0lLSUNCelpYSjJhV05sWDNKdmJHVWdJRDBnSWlSN1lYZHpYMmxo
+        YlY5eWIyeGxMbVY0WVcxd2JHVXVZWEp1ZlNJS0NpQWdZWEowYVdaaFkzUnpJSHNLSUNBZ0lIUjVj
+        R1VnUFNBaVRrOWZRVkpVU1VaQlExUlRJZ29nSUgwS0NpQWdZMkZqYUdVZ2V3b2dJQ0FnZEhsd1pT
+        QWdJQ0FnUFNBaVV6TWlDaUFnSUNCc2IyTmhkR2x2YmlBOUlDSWtlMkYzYzE5ek0xOWlkV05yWlhR
+        dVpYaGhiWEJzWlM1aWRXTnJaWFI5SWdvZ0lIMEtDaUFnWlc1MmFYSnZibTFsYm5RZ2V3b2dJQ0Fn
+        WTI5dGNIVjBaVjkwZVhCbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lrSlZTVXhFWDBkRlRrVlNR
+        VXd4WDFOTlFVeE1JZ29nSUNBZ2FXMWhaMlVnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lE
+        MGdJbUYzY3k5amIyUmxZblZwYkdRdmMzUmhibVJoY21RNk1TNHdJZ29nSUNBZ2RIbHdaU0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa3hKVGxWWVgwTlBUbFJCU1U1RlVpSUtJQ0Fn
+        SUdsdFlXZGxYM0IxYkd4ZlkzSmxaR1Z1ZEdsaGJITmZkSGx3WlNBOUlDSkRUMFJGUWxWSlRFUWlD
+        Z29nSUNBZ1pXNTJhWEp2Ym0xbGJuUmZkbUZ5YVdGaWJHVWdld29nSUNBZ0lDQnVZVzFsSUNBOUlD
+        SlRUMDFGWDB0RldURWlDaUFnSUNBZ0lIWmhiSFZsSUQwZ0lsTlBUVVZmVmtGTVZVVXhJZ29nSUNB
+        Z2ZRb0tJQ0FnSUdWdWRtbHliMjV0Wlc1MFgzWmhjbWxoWW14bElIc0tJQ0FnSUNBZ2JtRnRaU0Fn
+        UFNBaVUwOU5SVjlMUlZreUlnb2dJQ0FnSUNCMllXeDFaU0E5SUNKVFQwMUZYMVpCVEZWRk1pSUtJ
+        Q0FnSUNBZ2RIbHdaU0FnUFNBaVVFRlNRVTFGVkVWU1gxTlVUMUpGSWdvZ0lDQWdmUW9nSUgwS0Np
+        QWdiRzluYzE5amIyNW1hV2NnZXdvZ0lDQWdZMnh2ZFdSM1lYUmphRjlzYjJkeklIc0tJQ0FnSUNB
+        Z1ozSnZkWEJmYm1GdFpTQWdQU0FpYkc5bkxXZHliM1Z3SWdvZ0lDQWdJQ0J6ZEhKbFlXMWZibUZ0
+        WlNBOUlDSnNiMmN0YzNSeVpXRnRJZ29nSUNBZ2ZRb0tJQ0FnSUhNelgyeHZaM01nZXdvZ0lDQWdJ
+        Q0J6ZEdGMGRYTWdJQ0E5SUNKRlRrRkNURVZFSWdvZ0lDQWdJQ0JzYjJOaGRHbHZiaUE5SUNJa2Uy
+        RjNjMTl6TTE5aWRXTnJaWFF1WlhoaGJYQnNaUzVwWkgwdlluVnBiR1F0Ykc5bklnb2dJQ0FnZlFv
+        Z0lIMEtDaUFnYzI5MWNtTmxJSHNLSUNBZ0lIUjVjR1VnSUNBZ0lDQWdJQ0FnSUNBOUlDSkhTVlJJ
+        VlVJaUNpQWdJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdQU0FpYUhSMGNITTZMeTluYVhSb2RXSXVZ
+        Mjl0TDIxcGRHTm9aV3hzYUM5d1lXTnJaWEl1WjJsMElnb2dJQ0FnWjJsMFgyTnNiMjVsWDJSbGNI
+        Um9JRDBnTVFvS0lDQWdJR2RwZEY5emRXSnRiMlIxYkdWelgyTnZibVpwWnlCN0NpQWdJQ0FnSUda
+        bGRHTm9YM04xWW0xdlpIVnNaWE1nUFNCMGNuVmxDaUFnSUNCOUNpQWdmUW9LSUNCemIzVnlZMlZm
+        ZG1WeWMybHZiaUE5SUNKdFlYTjBaWElpQ2dvZ0lIWndZMTlqYjI1bWFXY2dld29nSUNBZ2RuQmpY
+        MmxrSUQwZ0lpUjdZWGR6WDNad1l5NWxlR0Z0Y0d4bExtbGtmU0lLQ2lBZ0lDQnpkV0p1WlhSeklE
+        MGdXd29nSUNBZ0lDQWlKSHRoZDNOZmMzVmlibVYwTG1WNFlXMXdiR1V4TG1sa2ZTSXNDaUFnSUNB
+        Z0lDSWtlMkYzYzE5emRXSnVaWFF1WlhoaGJYQnNaVEl1YVdSOUlpd0tJQ0FnSUYwS0NpQWdJQ0J6
+        WldOMWNtbDBlVjluY205MWNGOXBaSE1nUFNCYkNpQWdJQ0FnSUNJa2UyRjNjMTl6WldOMWNtbDBl
+        VjluY205MWNDNWxlR0Z0Y0d4bE1TNXBaSDBpTEFvZ0lDQWdJQ0FpSkh0aGQzTmZjMlZqZFhKcGRI
+        bGZaM0p2ZFhBdVpYaGhiWEJzWlRJdWFXUjlJaXdLSUNBZ0lGMEtJQ0I5Q2dvZ0lIUmhaM01nUFNC
+        N0NpQWdJQ0JGYm5acGNtOXViV1Z1ZENBOUlDSlVaWE4wSWdvZ0lIMEtmUW9LY21WemIzVnlZMlVn
+        SW1GM2MxOWpiMlJsWW5WcGJHUmZjSEp2YW1WamRDSWdJbkJ5YjJwbFkzUXRkMmwwYUMxallXTm9a
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUQwZ0luUmxjM1F0Y0hKdmFtVmpkQzFqWVdOb1pT
+        SUtJQ0JrWlhOamNtbHdkR2x2YmlBZ0lDQTlJQ0owWlhOMFgyTnZaR1ZpZFdsc1pGOXdjbTlxWldO
+        MFgyTmhZMmhsSWdvZ0lHSjFhV3hrWDNScGJXVnZkWFFnSUQwZ0lqVWlDaUFnY1hWbGRXVmtYM1Jw
+        YldWdmRYUWdQU0FpTlNJS0NpQWdjMlZ5ZG1salpWOXliMnhsSUQwZ0lpUjdZWGR6WDJsaGJWOXli
+        MnhsTG1WNFlXMXdiR1V1WVhKdWZTSUtDaUFnWVhKMGFXWmhZM1J6SUhzS0lDQWdJSFI1Y0dVZ1BT
+        QWlUazlmUVZKVVNVWkJRMVJUSWdvZ0lIMEtDaUFnWTJGamFHVWdld29nSUNBZ2RIbHdaU0FnUFNB
+        aVRFOURRVXdpQ2lBZ0lDQnRiMlJsY3lBOUlGc2lURTlEUVV4ZlJFOURTMFZTWDB4QldVVlNYME5C
+        UTBoRklpd2dJa3hQUTBGTVgxTlBWVkpEUlY5RFFVTklSU0pkQ2lBZ2ZRb0tJQ0JsYm5acGNtOXVi
+        V1Z1ZENCN0NpQWdJQ0JqYjIxd2RYUmxYM1I1Y0dVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVFs
+        VkpURVJmUjBWT1JWSkJUREZmVTAxQlRFd2lDaUFnSUNCcGJXRm5aU0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ1BTQWlZWGR6TDJOdlpHVmlkV2xzWkM5emRHRnVaR0Z5WkRveExqQWlDaUFn
+        SUNCMGVYQmxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlURWxPVlZoZlEwOU9W
+        RUZKVGtWU0lnb2dJQ0FnYVcxaFoyVmZjSFZzYkY5amNtVmtaVzUwYVdGc2MxOTBlWEJsSUQwZ0lr
+        TlBSRVZDVlVsTVJDSUtDaUFnSUNCbGJuWnBjbTl1YldWdWRGOTJZWEpwWVdKc1pTQjdDaUFnSUNB
+        Z0lHNWhiV1VnSUQwZ0lsTlBUVVZmUzBWWk1TSUtJQ0FnSUNBZ2RtRnNkV1VnUFNBaVUwOU5SVjlX
+        UVV4VlJURWlDaUFnSUNCOUNpQWdmUW9LSUNCemIzVnlZMlVnZXdvZ0lDQWdkSGx3WlNBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdJa2RKVkVoVlFpSUtJQ0FnSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0E5SUNKb2RI
+        Undjem92TDJkcGRHaDFZaTVqYjIwdmJXbDBZMmhsYkd4b0wzQmhZMnRsY2k1bmFYUWlDaUFnSUNC
+        bmFYUmZZMnh2Ym1WZlpHVndkR2dnUFNBeENpQWdmUW9LSUNCMFlXZHpJRDBnZXdvZ0lDQWdSVzUy
+        YVhKdmJtMWxiblFnUFNBaVZHVnpkQ0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRGIyUmxRblZwYkdRZ1VISnZhbVZqZENCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCdVlXMWxZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJSbFluVnBiR1JmY0hKdmFtVmpkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

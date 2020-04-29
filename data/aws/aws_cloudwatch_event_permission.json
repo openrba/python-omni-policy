@@ -8,13 +8,13 @@
         "arguments": {
             "principal": {
                 "description": "The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "statement_id": {
                 "description": "An identifier string for the external account that you are granting permissions to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

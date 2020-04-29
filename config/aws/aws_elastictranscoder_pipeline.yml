@@ -26,7 +26,7 @@ aws_elastictranscoder_pipeline:
         input_bucket:
             description: The Amazon S3 bucket in which you saved the media files that
                 you want to transcode and the graphics that you want to use as watermarks.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -47,7 +47,7 @@ aws_elastictranscoder_pipeline:
             notes: ''
         role:
             description: The IAM Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         thumbnail_config:
@@ -71,3 +71,23 @@ aws_elastictranscoder_pipeline:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hoYzNScFkzUnlZVzV6WTI5a1pYSmZjR2x3Wld4cGJtVWlJ
+        Q0ppWVhJaUlIc0tJQ0JwYm5CMWRGOWlkV05yWlhRZ1BTQWlKSHRoZDNOZmN6TmZZblZqYTJWMExt
+        bHVjSFYwWDJKMVkydGxkQzVpZFdOclpYUjlJZ29nSUc1aGJXVWdJQ0FnSUNBZ0lDQTlJQ0poZDNO
+        ZlpXeGhjM1JwWTNSeVlXNXpZMjlrWlhKZmNHbHdaV3hwYm1WZmRHWmZkR1Z6ZEY4aUNpQWdjbTlz
+        WlNBZ0lDQWdJQ0FnSUQwZ0lpUjdZWGR6WDJsaGJWOXliMnhsTG5SbGMzUmZjbTlzWlM1aGNtNTlJ
+        Z29LSUNCamIyNTBaVzUwWDJOdmJtWnBaeUI3Q2lBZ0lDQmlkV05yWlhRZ0lDQWdJQ0FnSUQwZ0lp
+        UjdZWGR6WDNNelgySjFZMnRsZEM1amIyNTBaVzUwWDJKMVkydGxkQzVpZFdOclpYUjlJZ29nSUNB
+        Z2MzUnZjbUZuWlY5amJHRnpjeUE5SUNKVGRHRnVaR0Z5WkNJS0lDQjlDZ29nSUhSb2RXMWlibUZw
+        YkY5amIyNW1hV2NnZXdvZ0lDQWdZblZqYTJWMElDQWdJQ0FnSUNBOUlDSWtlMkYzYzE5ek0xOWlk
+        V05yWlhRdWRHaDFiV0pmWW5WamEyVjBMbUoxWTJ0bGRIMGlDaUFnSUNCemRHOXlZV2RsWDJOc1lY
+        TnpJRDBnSWxOMFlXNWtZWEprSWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwRmJHRnpkR2xqSUZSeVlXNXpZMjlrWlhJZ2NHbHdaV3hwYm1WeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpkSEpoYm5OamIyUmxjbDl3YVhCbGJHbHVaUzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

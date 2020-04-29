@@ -7,16 +7,28 @@ aws_ec2_availability_zone_group:
     arguments:
         group_name:
             description: Name of the Availability Zone Group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         opt_in_status:
             description: 'Indicates whether to enable or disable Availability Zone
                 Group. Valid values: `opted-in` or `not-opted-in`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: Name of the Availability Zone Group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDJGMllXbHNZV0pwYkdsMGVWOTZiMjVsWDJkeWIzVndJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHZHliM1Z3WDI1aGJXVWdJQ0FnUFNBaWRYTXRkMlZ6ZEMweUxX
+        eGhlQzB4SWdvZ0lHOXdkRjlwYmw5emRHRjBkWE1nUFNBaWIzQjBaV1F0YVc0aUNuMEs=
+    import: !!binary |
+        Q2dwRlF6SWdRWFpoYVd4aFltbHNhWFI1SUZwdmJtVWdSM0p2ZFhCeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1ozSnZkWEFnYm1GdFpTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZllYWmhhV3hoWW1sc2FYUjVYM3B2Ym1WZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

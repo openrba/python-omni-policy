@@ -12,7 +12,7 @@ openstack_dns_zone_v2:
             notes: ''
         name:
             description: The name of the zone. Note the `.` at the end of the name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email:
@@ -50,23 +50,13 @@ openstack_dns_zone_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        email:
-            description: See Argument Reference above.
-        type:
-            description: See Argument Reference above.
-        attributes:
-            description: See Argument Reference above.
-        ttl:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        masters:
-            description: See Argument Reference above.
-        value_specs:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUhSb1pTQjZiMjVsSUVsRU9nb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWtibk5mZW05dVpWOTJNaTVvZEcxc0xtMWhjbXRrYjNkdQ==

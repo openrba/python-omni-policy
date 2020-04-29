@@ -8,12 +8,12 @@ google_dataproc_job:
     arguments:
         placement.cluster_name:
             description: 'The name of the cluster where the job '
-            required: true
+            required: false
             policy: ''
             notes: ''
         xxx_config:
             description: Exactly one of the specific job types to run on the
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -41,13 +41,13 @@ google_dataproc_job:
             description: Maximum number of times per hour a driver may be restarted
                 as a result of driver terminating with non-zero code before job is
                 reported failed.
-            required: true
+            required: false
             policy: ''
             notes: ''
         main_python_file_uri:
             description: The HCFS URI of the main Python file to use as the driver.
                 Must be a .py file.
-            required: true
+            required: false
             policy: ''
             notes: ''
         args:
@@ -92,7 +92,7 @@ google_dataproc_job:
             description: 'The per-package log levels for the driver. This may include
                 ''root'' package name to configure rootLogger. Examples: ''com.google
                 = FATAL'', ''root = INFO'', ''org.apache = DEBUG'''
-            required: true
+            required: false
             policy: ''
             notes: ''
         main_class:
@@ -156,3 +156,41 @@ google_dataproc_job:
                 may be used as part of job setup and handling. If not present, control
                 files may be placed in the same location as driver_output_uri.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWkdGMFlYQnliMk5mWTJ4MWMzUmxjaUlnSW0xNVkyeDFj
+        M1JsY2lJZ2V3b2dJRzVoYldVZ0lDQTlJQ0prY0hKdll5MWpiSFZ6ZEdWeUxYVnVhWEYxWlMxdVlX
+        MWxJZ29nSUhKbFoybHZiaUE5SUNKMWN5MWpaVzUwY21Gc01TSUtmUW9LSXlCVGRXSnRhWFFnWVc0
+        Z1pYaGhiWEJzWlNCemNHRnlheUJxYjJJZ2RHOGdZU0JrWVhSaGNISnZZeUJqYkhWemRHVnlDbkps
+        YzI5MWNtTmxJQ0puYjI5bmJHVmZaR0YwWVhCeWIyTmZhbTlpSWlBaWMzQmhjbXNpSUhzS0lDQnla
+        V2RwYjI0Z0lDQWdJQ0FnUFNCbmIyOW5iR1ZmWkdGMFlYQnliMk5mWTJ4MWMzUmxjaTV0ZVdOc2RY
+        TjBaWEl1Y21WbmFXOXVDaUFnWm05eVkyVmZaR1ZzWlhSbElEMGdkSEoxWlFvZ0lIQnNZV05sYldW
+        dWRDQjdDaUFnSUNCamJIVnpkR1Z5WDI1aGJXVWdQU0JuYjI5bmJHVmZaR0YwWVhCeWIyTmZZMngx
+        YzNSbGNpNXRlV05zZFhOMFpYSXVibUZ0WlFvZ0lIMEtDaUFnYzNCaGNtdGZZMjl1Wm1sbklIc0tJ
+        Q0FnSUcxaGFXNWZZMnhoYzNNZ0lDQWdQU0FpYjNKbkxtRndZV05vWlM1emNHRnlheTVsZUdGdGNH
+        eGxjeTVUY0dGeWExQnBJZ29nSUNBZ2FtRnlYMlpwYkdWZmRYSnBjeUE5SUZzaVptbHNaVG92THk5
+        MWMzSXZiR2xpTDNOd1lYSnJMMlY0WVcxd2JHVnpMMnBoY25NdmMzQmhjbXN0WlhoaGJYQnNaWE11
+        YW1GeUlsMEtJQ0FnSUdGeVozTWdJQ0FnSUNBZ0lDQWdQU0JiSWpFd01EQWlYUW9LSUNBZ0lIQnli
+        M0JsY25ScFpYTWdQU0I3Q2lBZ0lDQWdJQ0p6Y0dGeWF5NXNiMmREYjI1bUlpQTlJQ0owY25WbEln
+        b2dJQ0FnZlFvS0lDQWdJR3h2WjJkcGJtZGZZMjl1Wm1sbklIc0tJQ0FnSUNBZ1pISnBkbVZ5WDJ4
+        dloxOXNaWFpsYkhNZ1BTQjdDaUFnSUNBZ0lDQWdJbkp2YjNRaUlEMGdJa2xPUms4aUNpQWdJQ0Fn
+        SUgwS0lDQWdJSDBLSUNCOUNuMEtDaU1nVTNWaWJXbDBJR0Z1SUdWNFlXMXdiR1VnY0hsemNHRnlh
+        eUJxYjJJZ2RHOGdZU0JrWVhSaGNISnZZeUJqYkhWemRHVnlDbkpsYzI5MWNtTmxJQ0puYjI5bmJH
+        VmZaR0YwWVhCeWIyTmZhbTlpSWlBaWNIbHpjR0Z5YXlJZ2V3b2dJSEpsWjJsdmJpQWdJQ0FnSUNB
+        OUlHZHZiMmRzWlY5a1lYUmhjSEp2WTE5amJIVnpkR1Z5TG0xNVkyeDFjM1JsY2k1eVpXZHBiMjRL
+        SUNCbWIzSmpaVjlrWld4bGRHVWdQU0IwY25WbENpQWdjR3hoWTJWdFpXNTBJSHNLSUNBZ0lHTnNk
+        WE4wWlhKZmJtRnRaU0E5SUdkdmIyZHNaVjlrWVhSaGNISnZZMTlqYkhWemRHVnlMbTE1WTJ4MWMz
+        UmxjaTV1WVcxbENpQWdmUW9LSUNCd2VYTndZWEpyWDJOdmJtWnBaeUI3Q2lBZ0lDQnRZV2x1WDNC
+        NWRHaHZibDltYVd4bFgzVnlhU0E5SUNKbmN6b3ZMMlJoZEdGd2NtOWpMV1Y0WVcxd2JHVnpMVEpt
+        TVRCa056aGtNVEUwWmpaaFlXVmpOelkwTmpKbE0yTXpNVEJtTXpGbUwzTnlZeTl3ZVhOd1lYSnJM
+        MmhsYkd4dkxYZHZjbXhrTDJobGJHeHZMWGR2Y214a0xuQjVJZ29nSUNBZ2NISnZjR1Z5ZEdsbGN5
+        QTlJSHNLSUNBZ0lDQWdJbk53WVhKckxteHZaME52Ym1ZaUlEMGdJblJ5ZFdVaUNpQWdJQ0I5Q2lB
+        Z2ZRcDlDZ29qSUVOb1pXTnJJRzkxZENCamRYSnlaVzUwSUhOMFlYUmxJRzltSUhSb1pTQnFiMkp6
+        Q205MWRIQjFkQ0FpYzNCaGNtdGZjM1JoZEhWeklpQjdDaUFnZG1Gc2RXVWdQU0JuYjI5bmJHVmZa
+        R0YwWVhCeWIyTmZhbTlpTG5Od1lYSnJMbk4wWVhSMWMxc3dYUzV6ZEdGMFpRcDlDZ3B2ZFhSd2RY
+        UWdJbkI1YzNCaGNtdGZjM1JoZEhWeklpQjdDaUFnZG1Gc2RXVWdQU0JuYjI5bmJHVmZaR0YwWVhC
+        eWIyTmZhbTlpTG5CNWMzQmhjbXN1YzNSaGRIVnpXekJkTG5OMFlYUmxDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5a1lYUmhjSEp2WTE5cWIySXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

@@ -7,7 +7,7 @@ aws_docdb_cluster_parameter_group:
     arguments:
         name:
             description: The name of the documentDB parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name_prefix:
@@ -39,7 +39,7 @@ aws_docdb_cluster_parameter_group:
             notes: ''
         value:
             description: The value of the documentDB parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         apply_method:
@@ -54,3 +54,18 @@ aws_docdb_cluster_parameter_group:
         arn:
             description: The ARN of the documentDB cluster parameter group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaRzlqWkdKZlkyeDFjM1JsY2w5d1lYSmhiV1YwWlhKZlozSnZk
+        WEFpSUNKbGVHRnRjR3hsSWlCN0NpQWdabUZ0YVd4NUlDQWdJQ0FnUFNBaVpHOWpaR0l6TGpZaUNp
+        QWdibUZ0WlNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQmtaWE5qY21sd2RHbHZiaUE5SUNK
+        a2IyTmtZaUJqYkhWemRHVnlJSEJoY21GdFpYUmxjaUJuY205MWNDSUtDaUFnY0dGeVlXMWxkR1Z5
+        SUhzS0lDQWdJRzVoYldVZ0lEMGdJblJzY3lJS0lDQWdJSFpoYkhWbElEMGdJbVZ1WVdKc1pXUWlD
+        aUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwRWIyTjFiV1Z1ZEVSQ0lFTnNkWE4wWlhJZ1VHRnlZVzFsZEdWeUlFZHliM1Z3Y3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCdVlXMWxZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYjJOa1lsOWpiSFZ6ZEdWeVgzQmhjbUZ0WlhSbGNsOW5jbTkxY0M1b2RHMXNMbTFoY210
+        a2IzZHU=

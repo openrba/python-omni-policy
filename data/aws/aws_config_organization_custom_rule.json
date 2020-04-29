@@ -8,19 +8,19 @@
         "arguments": {
             "lambda_function_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of the rule",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "trigger_types": {
                 "description": "List of notification types that trigger AWS Config to run an evaluation for the rule. Valid values: `ConfigurationItemChangeNotification`, `OversizedConfigurationItemChangeNotification`, and `ScheduledNotification`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

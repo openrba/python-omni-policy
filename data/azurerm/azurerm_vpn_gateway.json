@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The Name which should be used for this VPN Gateway. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The Name of the Resource Group in which this VPN Gateway should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The Azure location where this VPN Gateway should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "virtual_hub_id": {
                 "description": "The ID of the Virtual Hub within which this VPN Gateway should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,13 +50,13 @@
             },
             "asn": {
                 "description": "The ASN of the BGP Speaker. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "peer_weight": {
                 "description": "The weight added to Routes learned from this BGP Speaker. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

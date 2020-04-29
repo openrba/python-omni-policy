@@ -14,7 +14,7 @@ aws_config_delivery_channel:
         s3_bucket_name:
             description: The name of the S3 bucket used to store the configuration
                 history.
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_key_prefix:
@@ -38,3 +38,36 @@ aws_config_delivery_channel:
         id:
             description: The name of the delivery channel.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjl1Wm1sblgyUmxiR2wyWlhKNVgyTm9ZVzV1Wld3aUlDSm1i
+        MjhpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb2dJSE16WDJKMVky
+        dGxkRjl1WVcxbElEMGdJaVI3WVhkelgzTXpYMkoxWTJ0bGRDNWlMbUoxWTJ0bGRIMGlDaUFnWkdW
+        d1pXNWtjMTl2YmlBZ0lDQWdQU0JiSW1GM2MxOWpiMjVtYVdkZlkyOXVabWxuZFhKaGRHbHZibDl5
+        WldOdmNtUmxjaTVtYjI4aVhRcDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzTXpYMkoxWTJ0bGRDSWdJ
+        bUlpSUhzS0lDQmlkV05yWlhRZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVdFlYZHpZMjl1Wm1sbkln
+        b2dJR1p2Y21ObFgyUmxjM1J5YjNrZ1BTQjBjblZsQ24wS0NuSmxjMjkxY21ObElDSmhkM05mWTI5
+        dVptbG5YMk52Ym1acFozVnlZWFJwYjI1ZmNtVmpiM0prWlhJaUlDSm1iMjhpSUhzS0lDQnVZVzFs
+        SUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUhKdmJHVmZZWEp1SUQwZ0lpUjdZWGR6WDJsaGJWOXli
+        MnhsTG5JdVlYSnVmU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTlwWVcxZmNtOXNaU0lnSW5JaUlI
+        c0tJQ0J1WVcxbElEMGdJbUYzYzJOdmJtWnBaeTFsZUdGdGNHeGxJZ29LSUNCaGMzTjFiV1ZmY205
+        c1pWOXdiMnhwWTNrZ1BTQThQRkJQVEVsRFdRcDdDaUFnSWxabGNuTnBiMjRpT2lBaU1qQXhNaTB4
+        TUMweE55SXNDaUFnSWxOMFlYUmxiV1Z1ZENJNklGc0tJQ0FnSUhzS0lDQWdJQ0FnSWtGamRHbHZi
+        aUk2SUNKemRITTZRWE56ZFcxbFVtOXNaU0lzQ2lBZ0lDQWdJQ0pRY21sdVkybHdZV3dpT2lCN0Np
+        QWdJQ0FnSUNBZ0lsTmxjblpwWTJVaU9pQWlZMjl1Wm1sbkxtRnRZWHB2Ym1GM2N5NWpiMjBpQ2lB
+        Z0lDQWdJSDBzQ2lBZ0lDQWdJQ0pGWm1abFkzUWlPaUFpUVd4c2IzY2lMQW9nSUNBZ0lDQWlVMmxr
+        SWpvZ0lpSUtJQ0FnSUgwS0lDQmRDbjBLVUU5TVNVTlpDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZh
+        V0Z0WDNKdmJHVmZjRzlzYVdONUlpQWljQ0lnZXdvZ0lHNWhiV1VnUFNBaVlYZHpZMjl1Wm1sbkxX
+        VjRZVzF3YkdVaUNpQWdjbTlzWlNBOUlDSWtlMkYzYzE5cFlXMWZjbTlzWlM1eUxtbGtmU0lLQ2lB
+        Z2NHOXNhV041SUQwZ1BEeFFUMHhKUTFrS2V3b2dJQ0pXWlhKemFXOXVJam9nSWpJd01USXRNVEF0
+        TVRjaUxBb2dJQ0pUZEdGMFpXMWxiblFpT2lCYkNpQWdJQ0I3Q2lBZ0lDQWdJQ0pCWTNScGIyNGlP
+        aUJiQ2lBZ0lDQWdJQ0FnSW5Nek9pb2lDaUFnSUNBZ0lGMHNDaUFnSUNBZ0lDSkZabVpsWTNRaU9p
+        QWlRV3hzYjNjaUxBb2dJQ0FnSUNBaVVtVnpiM1Z5WTJVaU9pQmJDaUFnSUNBZ0lDQWdJaVI3WVhk
+        elgzTXpYMkoxWTJ0bGRDNWlMbUZ5Ym4waUxBb2dJQ0FnSUNBZ0lDSWtlMkYzYzE5ek0xOWlkV05y
+        WlhRdVlpNWhjbTU5THlvaUNpQWdJQ0FnSUYwS0lDQWdJSDBLSUNCZENuMEtVRTlNU1VOWkNuMEs=
+    import: !!binary |
+        Q2dwRVpXeHBkbVZ5ZVNCRGFHRnVibVZzSUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnYm1GdFpTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZaR1ZzYVhabGNubGZZMmhoYm01bGJDNW9kRzFzTG0xaGNtdGtiM2R1

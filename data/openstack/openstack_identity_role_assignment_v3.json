@@ -32,28 +32,12 @@
             },
             "role_id": {
                 "description": "The role to assign.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "domain_id": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "See Argument Reference above."
-            },
-            "group_id": {
-                "description": "See Argument Reference above."
-            },
-            "user_id": {
-                "description": "See Argument Reference above."
-            },
-            "role_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

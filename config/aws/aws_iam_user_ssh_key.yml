@@ -9,20 +9,20 @@ aws_iam_user_ssh_key:
         username:
             description: The name of the IAM user to associate the SSH public key
                 with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         encoding:
             description: Specifies the public key encoding format to use in the response.
                 To retrieve the public key in ssh-rsa format, use `SSH`. To retrieve
                 the public key in PEM format, use `PEM`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         public_key:
             description: The SSH public key. The public key must be encoded in ssh-rsa
                 format or PEM format.
-            required: true
+            required: false
             policy: ''
             notes: ''
         status:
@@ -38,3 +38,26 @@ aws_iam_user_ssh_key:
         fingerprint:
             description: The MD5 message digest of the SSH public key.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNWelpYSWlJQ0oxYzJWeUlpQjdDaUFnYm1GdFpTQTlJ
+        Q0owWlhOMExYVnpaWElpQ2lBZ2NHRjBhQ0E5SUNJdklncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgy
+        bGhiVjkxYzJWeVgzTnphRjlyWlhraUlDSjFjMlZ5SWlCN0NpQWdkWE5sY201aGJXVWdJQ0E5SUNJ
+        a2UyRjNjMTlwWVcxZmRYTmxjaTUxYzJWeUxtNWhiV1Y5SWdvZ0lHVnVZMjlrYVc1bklDQWdQU0Fp
+        VTFOSUlnb2dJSEIxWW14cFkxOXJaWGtnUFNBaWMzTm9MWEp6WVNCQlFVRkJRak5PZW1GRE1YbGpN
+        a1ZCUVVGQlJFRlJRVUpCUVVGQ1FWRkVNMFkyZEhsUVJVWkZlbFl3VEZneldEaENjMWhrVFhOUmVq
+        RjRNbU5GYVd0TFJFVlpNR0ZKYWpReGNXZDRUVU5RTDJsMFpXNWxjVmhUU1VaYVFuQTFkbWw2VUha
+        aGIwbFNNMVZ0T1hoTE4xQkhiMWM0WjJsMWNFZHVLMFZRZFhoSlFUUmpSRTAwZG5wUGNVOXJhVTFR
+        YUhvMVdFc3dkMmhGYW10V2VsUnZOQ3RUTUhCMWRrUmFkWGRKYzJScFZ6bHRlR2hLWXpkMFowSk9U
+        REJqV1d4WFUxbFdhM28wUnk5bWMyeE9abEpRVnpWdFdVRk5ORGxtTkdab2RIaFFZalZ2YXpSUk1r
+        eG5PV1JRUzFaSVR5OUNaMlYxTlhkdlRXTTNVbGt3Y0RGbGFqWkVORU5MUmtVMmJIbHRVMFJLY0Zj
+        d1dVaFlMM2R4UlRrclkyWkZZWFZvTjNoYVkwY3djVGwwTW5SaE5rWTJabTFZTUdGbmRuQkdlVnB2
+        T0dGR1lsaGxWVUp5TjI5elUwTktUbWQyWVhaWFlrMHZNRFp1YVZkeVQzWlpXREo0ZDFka2FGaHRX
+        Rk55WWxnNFdtSmhZbFp2YUVKTE5ERWdiWGwwWlhOMFFHMTVaRzl0WVdsdUxtTnZiU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwVFUwZ2djSFZpYkdsaklHdGxlWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnZFhObGNtNWhiV1ZnTENCZ2MzTm9YM0IxWW14cFkxOXJaWGxmYVdSZ0xDQmhibVFnWUdWdVky
+        OWthVzVuWUNCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmRYTmxjbDl6YzJoZmEyVjVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

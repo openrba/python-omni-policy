@@ -7,12 +7,12 @@ aws_neptune_cluster_snapshot:
     arguments:
         db_cluster_identifier:
             description: The DB Cluster Identifier from which to take the snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
         db_cluster_snapshot_identifier:
             description: The Identifier for the snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -46,3 +46,18 @@ aws_neptune_cluster_snapshot:
         vpc_id:
             description: The VPC ID associated with the DB cluster snapshot.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVZ3ZEhWdVpWOWpiSFZ6ZEdWeVgzTnVZWEJ6YUc5MElpQWla
+        WGhoYlhCc1pTSWdld29nSUdSaVgyTnNkWE4wWlhKZmFXUmxiblJwWm1sbGNpQWdJQ0FnSUNBZ0lD
+        QTlJQ0lrZTJGM2MxOXVaWEIwZFc1bFgyTnNkWE4wWlhJdVpYaGhiWEJzWlM1cFpIMGlDaUFnWkdK
+        ZlkyeDFjM1JsY2w5emJtRndjMmh2ZEY5cFpHVnVkR2xtYVdWeUlEMGdJbkpsYzI5MWNtTmxkR1Z6
+        ZEhOdVlYQnphRzkwTVRJek5DSUtmUW89
+    import: !!binary |
+        Q2dwZ1lYZHpYMjVsY0hSMWJtVmZZMngxYzNSbGNsOXpibUZ3YzJodmRHQWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lHSjVJSFZ6YVc1bklIUm9aU0JqYkhWemRHVnlJSE51WVhCemFHOTBJR2xrWlc1MGFX
+        WnBaWElzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhCMGRXNWxYMk5zZFhOMFpYSmZjMjVoY0hOb2IzUXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

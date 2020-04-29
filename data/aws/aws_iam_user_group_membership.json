@@ -8,13 +8,13 @@
         "arguments": {
             "user": {
                 "description": "The name of the [IAM User][2] to add to groups",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "groups": {
                 "description": "A list of [IAM Groups][1] to add the user to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -25,7 +25,7 @@ aws_docdb_subnet_group:
             notes: ''
         subnet_ids:
             description: A list of VPC subnet IDs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -39,3 +39,16 @@ aws_docdb_subnet_group:
         arn:
             description: The ARN of the docDB subnet group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaRzlqWkdKZmMzVmlibVYwWDJkeWIzVndJaUFpWkdWbVlYVnNk
+        Q0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpYldGcGJpSUtJQ0J6ZFdKdVpYUmZhV1J6SUQwZ1d5
+        SWtlMkYzYzE5emRXSnVaWFF1Wm5KdmJuUmxibVF1YVdSOUlpd2dJaVI3WVhkelgzTjFZbTVsZEM1
+        aVlXTnJaVzVrTG1sa2ZTSmRDZ29nSUhSaFozTWdQU0I3Q2lBZ0lDQk9ZVzFsSUQwZ0lrMTVJR1J2
+        WTJSaUlITjFZbTVsZENCbmNtOTFjQ0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRWIyTjFiV1Z1ZEVSQ0lGTjFZbTVsZENCbmNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYjJOa1lsOXpkV0p1WlhSZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

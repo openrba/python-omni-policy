@@ -9,19 +9,19 @@
         "arguments": {
             "billing_account_id": {
                 "description": "The billing account id.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The role that should be applied.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "member": {
                 "description": "The user that the role should apply to. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

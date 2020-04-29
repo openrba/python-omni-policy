@@ -9,13 +9,13 @@
         "arguments": {
             "name": {
                 "description": "The name (also called Instance Id in the Cloud Console",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "cluster": {
                 "description": "A block of cluster configuration options. This can be specified 1 or 2 times. See structure below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -39,13 +39,13 @@
             },
             "cluster_id": {
                 "description": "The ID of the Cloud Bigtable cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "zone": {
                 "description": "The zone to create the Cloud Bigtable cluster in. Each",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

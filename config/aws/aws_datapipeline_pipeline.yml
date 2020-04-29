@@ -7,7 +7,7 @@ aws_datapipeline_pipeline:
     arguments:
         name:
             description: The name of Pipeline.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -20,5 +20,17 @@ aws_datapipeline_pipeline:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The identifier of the client certificate.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0YwWVhCcGNHVnNhVzVsWDNCcGNHVnNhVzVsSWlBaVpHVm1Z
+        WFZzZENJZ2V3b2dJRzVoYldVZ1BTQWlkR1l0Y0dsd1pXeHBibVV0WkdWbVlYVnNkQ0lLZlFvPQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJoZEdGd2FYQmxiR2x1WlY5d2FYQmxiR2x1WldBZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUdKNUlIVnphVzVuSUhSb1pTQnBaQ0FvVUdsd1pXeHBibVVnU1VRcExDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWVhSaGNHbHdaV3hwYm1WZmNHbHdaV3hwYm1VdWFIUnRiQzV0WVhKclpHOTNiZz09

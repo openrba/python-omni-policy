@@ -8,37 +8,37 @@
         "arguments": {
             "network_watcher_name": {
                 "description": "The name of the Network Watcher. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which the Network Watcher was deployed. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_security_group_id": {
                 "description": "The ID of the Network Security Group for which to enable flow logs for. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_id": {
                 "description": "The ID of the Storage Account where flow logs are stored.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "enabled": {
                 "description": "Boolean flag to enable/disable traffic analytics.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "retention_policy": {
                 "description": "A `retention_policy` block as documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,25 +56,25 @@
             },
             "days": {
                 "description": "The number of days to retain flow log records.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_id": {
                 "description": "The resource guid of the attached workspace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_region": {
                 "description": "The location of the attached workspace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_resource_id": {
                 "description": "The resource ID of the attached workspace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

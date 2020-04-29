@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Name of the cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vpc_config": {
                 "description": "Nested argument for the VPC associated with your cluster. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see [Cluster VPC Considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

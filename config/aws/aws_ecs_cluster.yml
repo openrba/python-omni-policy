@@ -8,7 +8,7 @@ aws_ecs_cluster:
         name:
             description: The name of the cluster (up to 255 letters, numbers, hyphens,
                 and underscores)
-            required: true
+            required: false
             policy: ''
             notes: ''
         capacity_providers:
@@ -40,3 +40,13 @@ aws_ecs_cluster:
         arn:
             description: The Amazon Resource Name (ARN) that identifies the cluster
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV056WDJOc2RYTjBaWElpSUNKbWIyOGlJSHNLSUNCdVlXMWxJ
+        RDBnSW5kb2FYUmxMV2hoY25RaUNuMEs=
+    import: !!binary |
+        Q2dwRlExTWdZMngxYzNSbGNuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdi
+        bUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWTNOZlkyeDFjM1JsY2k1b2RHMXNMbTFoY210a2IzZHU=

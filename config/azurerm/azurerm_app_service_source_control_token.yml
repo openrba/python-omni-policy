@@ -8,12 +8,12 @@ azurerm_app_service_source_control_token:
         type:
             description: The source control type. Possible values are `BitBucket`,
                 `Dropbox`, `GitHub` and `OneDrive`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         token:
             description: The OAuth access token.
-            required: true
+            required: false
             policy: ''
             notes: ''
         token_secret:
@@ -22,4 +22,32 @@ azurerm_app_service_source_control_token:
             policy: ''
             notes: ''
     attributes: {}
-    timeouts: {}
+    timeouts:
+        create:
+            description: Used when creating the App Service Source Control Token.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the App Service Source Control Token.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the App Service Source Control Token.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the App Service Source Control Token.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJGd2NGOXpaWEoyYVdObFgzTnZkWEpqWlY5amIyNTBj
+        bTlzWDNSdmEyVnVJaUFpWlhoaGJYQnNaU0lnZXdvZ0lIUjVjR1VnSUQwZ0lrZHBkRWgxWWlJS0lD
+        QjBiMnRsYmlBOUlDSTNaVFUzTnpNMVpUYzNaVFUzTjJVMU55SUtmUW89
+    import: !!binary |
+        Q2dwQmNIQWdVMlZ5ZG1salpTQlRiM1Z5WTJVZ1EyOXVkSEp2YkNCVWIydGxiaWR6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhSNWNHVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndYM05sY25acFkyVmZjMjkxY21ObFgyTnZiblJ5YjJ4ZmRHOXJaVzR1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

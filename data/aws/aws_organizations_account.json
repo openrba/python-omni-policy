@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "A friendly name for the member account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "email": {
                 "description": "The email address of the owner to assign to the new member account. This email address must not already be associated with another AWS account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

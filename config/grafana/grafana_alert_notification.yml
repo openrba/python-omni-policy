@@ -8,12 +8,12 @@ grafana_alert_notification:
     arguments:
         name:
             description: The name of the alert notification channel.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of the alert notification channel.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_default:
@@ -27,7 +27,17 @@ grafana_alert_notification:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The ID of the resource
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmNtRm1ZVzVoWDJGc1pYSjBYMjV2ZEdsbWFXTmhkR2x2YmlJZ0ltVnRZ
+        V2xzWDNOdmJXVjBaV0Z0SWlCN0NpQWdibUZ0WlNBOUlDSkZiV0ZwYkNCMGFHRjBJSFJsWVcwaUNp
+        QWdkSGx3WlNBOUlDSmxiV0ZwYkNJS0lDQnBjMTlrWldaaGRXeDBJRDBnWm1Gc2MyVUtDaUFnYzJW
+        MGRHbHVaM01nZXdvZ0lDQWdZV1JrY21WemMyVnpJRDBnSW1admIwQmxlR0Z0Y0d4bExtNWxkRHRp
+        WVhKQVpYaGhiWEJzWlM1dVpYUWlDaUFnSUNCMWNHeHZZV1JKYldGblpTQTlJQ0ptWVd4elpTSUtJ
+        Q0I5Q24wSw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHlZV1poYm1FdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllXeGxjblJmYm05MGFXWnBZMkYwYVc5dUxtaDBiV3d1YldRPQ==

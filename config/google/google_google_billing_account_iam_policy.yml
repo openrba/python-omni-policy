@@ -9,13 +9,29 @@ google_google_billing_account_iam_policy:
     arguments:
         billing_account_id:
             description: The billing account id.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
             description: The `google_iam_policy` data source that represents
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWW1sc2JHbHVaMTloWTJOdmRXNTBYMmxoYlY5d2IyeHBZ
+        M2tpSUNKd2IyeHBZM2tpSUhzS0lDQmlhV3hzYVc1blgyRmpZMjkxYm5SZmFXUWdQU0FpTURCQlFU
+        QXdMVEF3TUVGQlFTMHdNRUZCTUVFaUNpQWdjRzlzYVdONVgyUmhkR0VnSUNBZ0lDQWdJRDBnWkdG
+        MFlTNW5iMjluYkdWZmFXRnRYM0J2YkdsamVTNWhaRzFwYmk1d2IyeHBZM2xmWkdGMFlRcDlDZ3Br
+        WVhSaElDSm5iMjluYkdWZmFXRnRYM0J2YkdsamVTSWdJbUZrYldsdUlpQjdDaUFnWW1sdVpHbHVa
+        eUI3Q2lBZ0lDQnliMnhsSUQwZ0luSnZiR1Z6TDJKcGJHeHBibWN1ZG1sbGQyVnlJZ29LSUNBZ0lH
+        MWxiV0psY25NZ1BTQmJDaUFnSUNBZ0lDSjFjMlZ5T21waGJtVkFaWGhoYlhCc1pTNWpiMjBpTEFv
+        Z0lDQWdYUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWW1sc2JHbHVaMTloWTJOdmRXNTBYMmxoYlY5d2IyeHBZM2t1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Cosmos DB SQL Database. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which the Cosmos DB SQL Database is created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "account_name": {
                 "description": "The name of the Cosmos DB Account to create the container within. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "database_name": {
                 "description": "The name of the Cosmos DB SQL Database to create the container within. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,7 +56,7 @@
             },
             "paths": {
                 "description": "A list of paths to use for this unique key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

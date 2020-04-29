@@ -7,25 +7,25 @@ azurerm_data_factory_dataset_sql_server_table:
     arguments:
         name:
             description: The name of the column.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Data
                 Factory Dataset SQL Server Table. Changing this forces a new resource
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_factory_name:
             description: The Data Factory name in which to associate the Dataset with.
                 Changing this forces a new resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         linked_service_name:
             description: The Data Factory Linked Service name in which to associate
                 the Dataset with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         table_name:

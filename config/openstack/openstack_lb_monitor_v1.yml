@@ -12,22 +12,22 @@ openstack_lb_monitor_v1:
             notes: ''
         type:
             description: The type of probe, which is PING, TCP, HTTP, or HTTPS,
-            required: true
+            required: false
             policy: ''
             notes: ''
         delay:
             description: The time, in seconds, between sending probes to members.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout:
             description: Maximum number of seconds for a monitor to wait for a
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_retries:
             description: Number of permissible ping failures before changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         url_path:
@@ -55,25 +55,17 @@ openstack_lb_monitor_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        type:
-            description: See Argument Reference above.
-        delay:
-            description: See Argument Reference above.
-        timeout:
-            description: See Argument Reference above.
-        max_retries:
-            description: See Argument Reference above.
-        url_path:
-            description: See Argument Reference above.
-        http_method:
-            description: See Argument Reference above.
-        expected_codes:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiVzl1YVhSdmNsOTJNU0lnSW0xdmJtbDBi
+        M0pmTVNJZ2V3b2dJSFI1Y0dVZ0lDQWdJQ0FnSUNBZ0lEMGdJbEJKVGtjaUNpQWdaR1ZzWVhrZ0lD
+        QWdJQ0FnSUNBZ1BTQXpNQW9nSUhScGJXVnZkWFFnSUNBZ0lDQWdJRDBnTlFvZ0lHMWhlRjl5WlhS
+        eWFXVnpJQ0FnSUQwZ013b2dJR0ZrYldsdVgzTjBZWFJsWDNWd0lEMGdJblJ5ZFdVaUNuMEs=
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRTFsYldKbGNuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDl0YjI1cGRHOXlYM1l4TG1oMGJXd3ViV0Z5YTJSdmQyND0=

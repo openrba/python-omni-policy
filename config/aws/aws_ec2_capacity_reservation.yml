@@ -9,7 +9,7 @@ aws_ec2_capacity_reservation:
     arguments:
         availability_zone:
             description: The Availability Zone in which to create the Capacity Reservation.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ebs_optimized:
@@ -40,7 +40,7 @@ aws_ec2_capacity_reservation:
             notes: ''
         instance_count:
             description: The number of instances for which to reserve capacity.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_match_criteria:
@@ -55,12 +55,12 @@ aws_ec2_capacity_reservation:
                 Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server
                 Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL
                 Server Web`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_type:
             description: The instance type for which to reserve capacity.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -78,3 +78,16 @@ aws_ec2_capacity_reservation:
         id:
             description: The Capacity Reservation ID.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDJOaGNHRmphWFI1WDNKbGMyVnlkbUYwYVc5dUlpQWla
+        R1ZtWVhWc2RDSWdld29nSUdsdWMzUmhibU5sWDNSNWNHVWdJQ0FnSUQwZ0luUXlMbTFwWTNKdkln
+        b2dJR2x1YzNSaGJtTmxYM0JzWVhSbWIzSnRJRDBnSWt4cGJuVjRMMVZPU1ZnaUNpQWdZWFpoYVd4
+        aFltbHNhWFI1WDNwdmJtVWdQU0FpWlhVdGQyVnpkQzB4WVNJS0lDQnBibk4wWVc1alpWOWpiM1Z1
+        ZENBZ0lDQTlJREVLZlFvPQ==
+    import: !!binary |
+        Q2dwRFlYQmhZMmwwZVNCU1pYTmxjblpoZEdsdmJuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZlkyRndZV05wZEhsZmNtVnpaWEoyWVhScGIyNHViV0Z5YTJSdmQyND0=

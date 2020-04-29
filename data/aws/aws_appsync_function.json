@@ -8,31 +8,31 @@
         "arguments": {
             "api_id": {
                 "description": "The ID of the associated AppSync API.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "data_source": {
                 "description": "The Function DataSource name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The Function name. The function name does not have to be unique.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "request_mapping_template": {
                 "description": "The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "response_mapping_template": {
                 "description": "The Function response mapping template.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

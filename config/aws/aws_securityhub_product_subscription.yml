@@ -8,7 +8,7 @@ aws_securityhub_product_subscription:
         product_arn:
             description: The ARN of the product that generates findings that you want
                 to import into Security Hub - see below.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -17,3 +17,21 @@ aws_securityhub_product_subscription:
                 the product that generates the findings that you want to import into
                 Security Hub.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbG9kV0pmWVdOamIzVnVkQ0lnSW1WNFlXMXdi
+        R1VpSUh0OUNncGtZWFJoSUNKaGQzTmZjbVZuYVc5dUlpQWlZM1Z5Y21WdWRDSWdlMzBLQ25KbGMy
+        OTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbG9kV0pmY0hKdlpIVmpkRjl6ZFdKelkzSnBjSFJwYjI0
+        aUlDSmxlR0Z0Y0d4bElpQjdDaUFnWkdWd1pXNWtjMTl2YmlBZ1BTQmJJbUYzYzE5elpXTjFjbWww
+        ZVdoMVlsOWhZMk52ZFc1MExtVjRZVzF3YkdVaVhRb2dJSEJ5YjJSMVkzUmZZWEp1SUQwZ0ltRnli
+        anBoZDNNNmMyVmpkWEpwZEhsb2RXSTZKSHRrWVhSaExtRjNjMTl5WldkcGIyNHVZM1Z5Y21WdWRD
+        NXVZVzFsZlRvM016TXlOVEV6T1RVeU5qYzZjSEp2WkhWamRDOWhiR1Z5ZEd4dloybGpMMkZzZEdo
+        eVpXRjBiV0Z1WVdkbGJXVnVkQ0lLZlFvPQ==
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSWRXSWdjSEp2WkhWamRDQnpkV0p6WTNKcGNIUnBiMjV6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0JwYmlCMGFHVWdabTl5YlNCZ2NISnZaSFZqZEY5aGNtNHNZWEp1WUN3Z1pT
+        NW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WldOMWNtbDBlV2gxWWw5d2NtOWtkV04wWDNOMVluTmpjbWx3ZEdsdmJpNXRZWEpyWkc5
+        M2JnPT0=

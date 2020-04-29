@@ -8,19 +8,19 @@
         "arguments": {
             "role_name": {
                 "description": "Name of the role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bound_service_account_names": {
                 "description": "List of service account names able to access this role. If set to `[\"*\"]` all names are allowed, both this and bound_service_account_namespaces can not be \"*\".",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bound_service_account_namespaces": {
                 "description": "List of namespaces allowed to access this role. If set to `[\"*\"]` all namespaces are allowed, both this and bound_service_account_names can not be set to \"*\".",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

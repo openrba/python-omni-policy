@@ -7,23 +7,23 @@ azurerm_site_recovery_protection_container:
     arguments:
         name:
             description: The name of the network mapping.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Name of the resource group where the vault that should be
                 updated is located.
-            required: true
+            required: false
             policy: ''
             notes: ''
         recovery_vault_name:
             description: The name of the vault that should be updated.
-            required: true
+            required: false
             policy: ''
             notes: ''
         recovery_fabric_name:
             description: Name of fabric that should contain this protection container.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

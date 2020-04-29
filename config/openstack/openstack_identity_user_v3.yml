@@ -72,10 +72,29 @@ openstack_identity_user_v3:
             notes: ''
         rule:
             description: A list of authentication plugins that the user must
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        domain_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXUmxiblJwZEhsZmNISnZhbVZqZEY5Mk15SWdJ
+        bkJ5YjJwbFkzUmZNU0lnZXdvZ0lHNWhiV1VnUFNBaWNISnZhbVZqZEY4eElncDlDZ3B5WlhOdmRY
+        SmpaU0FpYjNCbGJuTjBZV05yWDJsa1pXNTBhWFI1WDNWelpYSmZkak1pSUNKMWMyVnlYekVpSUhz
+        S0lDQmtaV1poZFd4MFgzQnliMnBsWTNSZmFXUWdQU0FpSkh0dmNHVnVjM1JoWTJ0ZmFXUmxiblJw
+        ZEhsZmNISnZhbVZqZEY5Mk15NXdjbTlxWldOMFh6RXVhV1I5SWdvZ0lHNWhiV1VnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQTlJQ0oxYzJWeVh6RWlDaUFnWkdWelkzSnBjSFJwYjI0Z0lDQWdJQ0FnSUQwZ0lr
+        RWdkWE5sY2lJS0NpQWdjR0Z6YzNkdmNtUWdQU0FpY0dGemMzZHZjbVF4TWpNaUNnb2dJR2xuYm05
+        eVpWOWphR0Z1WjJWZmNHRnpjM2R2Y21SZmRYQnZibDltYVhKemRGOTFjMlVnUFNCMGNuVmxDZ29n
+        SUcxMWJIUnBYMlpoWTNSdmNsOWhkWFJvWDJWdVlXSnNaV1FnUFNCMGNuVmxDZ29nSUcxMWJIUnBY
+        MlpoWTNSdmNsOWhkWFJvWDNKMWJHVWdld29nSUNBZ2NuVnNaU0E5SUZzaWNHRnpjM2R2Y21RaUxD
+        QWlkRzkwY0NKZENpQWdmUW9LSUNCdGRXeDBhVjltWVdOMGIzSmZZWFYwYUY5eWRXeGxJSHNLSUNB
+        Z0lISjFiR1VnUFNCYkluQmhjM04zYjNKa0lsMEtJQ0I5Q2dvZ0lHVjRkSEpoSUQwZ2V3b2dJQ0Fn
+        WlcxaGFXd2dQU0FpZFhObGNsOHhRR1p2YjJKaGNpNWpiMjBpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwVmMyVnljeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0JwWkdBc0lHVXVa
+        eTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXBaR1Z1ZEdsMGVWOTFjMlZ5WDNZekxtaDBiV3d1YldGeWEyUnZkMjQ9

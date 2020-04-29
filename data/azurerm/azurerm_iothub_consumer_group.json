@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of this Consumer Group. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "iothub_name": {
                 "description": "The name of the IoT Hub. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "eventhub_endpoint_name": {
                 "description": "The name of the Event Hub-compatible endpoint in the IoT hub. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group that contains the IoT hub. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

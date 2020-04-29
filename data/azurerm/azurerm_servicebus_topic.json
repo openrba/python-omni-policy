@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the ServiceBus Topic resource. Changing this forces a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "namespace_name": {
                 "description": "The name of the ServiceBus Namespace to create",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -64,7 +64,10 @@
                 "description": "Boolean flag which controls whether to enable",
                 "required": false,
                 "policy": "",
-                "notes": "Partitioning is available at entity creation for all queues and topics in Basic or Standard SKUs. It is not available for the Premium messaging SKU, but any previously existing partitioned entities in Premium namespaces continue to work as expected. Please [see the documentation](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning) for more information."
+                "notes": [
+                    "-> ",
+                    " Partitioning is available at entity creation for all queues and topics in Basic or Standard SKUs. It is not available for the Premium messaging SKU, but any previously existing partitioned entities in Premium namespaces continue to work as expected. Please [see the documentation](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-partitioning) for more information."
+                ]
             },
             "max_size_in_megabytes": {
                 "description": "Integer value which controls the size of",

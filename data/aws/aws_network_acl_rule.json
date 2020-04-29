@@ -8,13 +8,13 @@
         "arguments": {
             "network_acl_id": {
                 "description": "The ID of the network ACL.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_number": {
                 "description": "The rule number for the entry (for example, 100). ACL entries are processed in ascending order by rule number.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,13 +26,13 @@
             },
             "protocol": {
                 "description": "The protocol. A value of -1 means all protocols.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_action": {
                 "description": "Indicates whether to allow or deny the traffic that matches the rule. Accepted values: `allow` | `deny`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

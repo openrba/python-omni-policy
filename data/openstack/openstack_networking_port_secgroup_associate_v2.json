@@ -14,13 +14,13 @@
             },
             "port_id": {
                 "description": "An UUID of the port to apply security groups to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "security_group_ids": {
                 "description": "A list of security group IDs to apply to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,20 +31,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "port_id": {
-                "description": "See Argument Reference above."
-            },
-            "security_group_ids": {
-                "description": "See Argument Reference above."
-            },
-            "all_security_group_ids": {
-                "description": "The collection of Security Group IDs on the port"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

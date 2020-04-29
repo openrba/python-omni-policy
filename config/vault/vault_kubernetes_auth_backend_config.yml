@@ -8,7 +8,7 @@ vault_kubernetes_auth_backend_config:
         kubernetes_host:
             description: Host must be a host string, a host:port pair, or a URL to
                 the base of the Kubernetes API server.
-            required: true
+            required: false
             policy: ''
             notes: ''
         kubernetes_ca_cert:
@@ -34,3 +34,19 @@ vault_kubernetes_auth_backend_config:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSnJkV0psY201bGRHVnpJ
+        aUI3Q2lBZ2RIbHdaU0E5SUNKcmRXSmxjbTVsZEdWeklncDlDZ3B5WlhOdmRYSmpaU0FpZG1GMWJI
+        UmZhM1ZpWlhKdVpYUmxjMTloZFhSb1gySmhZMnRsYm1SZlkyOXVabWxuSWlBaVpYaGhiWEJzWlNJ
+        Z2V3b2dJR0poWTJ0bGJtUWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJa2UzWmhkV3gwWDJGMWRHaGZZbUZq
+        YTJWdVpDNXJkV0psY201bGRHVnpMbkJoZEdoOUlnb2dJR3QxWW1WeWJtVjBaWE5mYUc5emRDQWdJ
+        Q0E5SUNKb2RIUndPaTh2WlhoaGJYQnNaUzVqYjIwNk5EUXpJZ29nSUd0MVltVnlibVYwWlhOZlky
+        RmZZMlZ5ZENBOUlDSXRMUzB0TFVKRlIwbE9JRU5GVWxSSlJrbERRVlJGTFMwdExTMWNibVY0WVcx
+        d2JHVmNiaTB0TFMwdFJVNUVJRU5GVWxSSlJrbERRVlJGTFMwdExTMGlDaUFnZEc5clpXNWZjbVYy
+        YVdWM1pYSmZhbmQwSUQwZ0lscFlhR2hpV0VKeldsRnZQU0lLSUNCcGMzTjFaWElnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlZWEJwSWdwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJ0MVltVnlibVYwWlhOZllYVjBhRjlpWVdOclpXNWtYMk52Ym1acFp5NXRaQT09

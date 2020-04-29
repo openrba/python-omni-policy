@@ -7,7 +7,7 @@ aws_pinpoint_apns_voip_sandbox_channel:
     arguments:
         application_id:
             description: The application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -22,39 +22,56 @@ aws_pinpoint_apns_voip_sandbox_channel:
             notes: ''
         certificate:
             description: The pem encoded TLS Certificate from Apple.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_key:
             description: The Certificate Private Key file (ie. `.key` file).
-            required: true
+            required: false
             policy: ''
             notes: ''
         bundle_id:
             description: The ID assigned to your iOS app. To find this value, choose
                 Certificates, IDs & Profiles, choose App IDs in the Identifiers section,
                 and choose your app.
-            required: true
+            required: false
             policy: ''
             notes: ''
         team_id:
             description: The ID assigned to your Apple developer account team. This
                 value is provided on the Membership page.
-            required: true
+            required: false
             policy: ''
             notes: ''
         token_key:
             description: 'The `.p8` file that you download from your Apple developer
                 account when you create an authentication key. '
-            required: true
+            required: false
             policy: ''
             notes: ''
         token_key_id:
             description: The ID assigned to your signing key. To find this value,
                 choose Certificates, IDs & Profiles, and choose your key in the Keys
                 section.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR2x1Y0c5cGJuUmZZWEJ1YzE5MmIybHdYM05oYm1SaWIzaGZZ
+        MmhoYm01bGJDSWdJbUZ3Ym5OZmRtOXBjRjl6WVc1a1ltOTRJaUI3Q2lBZ1lYQndiR2xqWVhScGIy
+        NWZhV1FnUFNBaUpIdGhkM05mY0dsdWNHOXBiblJmWVhCd0xtRndjQzVoY0hCc2FXTmhkR2x2Ymw5
+        cFpIMGlDZ29nSUdObGNuUnBabWxqWVhSbElEMGdJaVI3Wm1sc1pTZ2lMaTlqWlhKMGFXWnBZMkYw
+        WlM1d1pXMGlLWDBpQ2lBZ2NISnBkbUYwWlY5clpYa2dQU0FpSkh0bWFXeGxLQ0l1TDNCeWFYWmhk
+        R1ZmYTJWNUxtdGxlU0lwZlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5d2FXNXdiMmx1ZEY5aGNI
+        QWlJQ0poY0hBaUlIdDlDZz09
+    import: !!binary |
+        Q2dwUWFXNXdiMmx1ZENCQlVFNXpJRlp2U1ZBZ1UyRnVaR0p2ZUNCRGFHRnVibVZzSUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUdGd2NHeHBZMkYwYVc5dUxXbGtZQ3dnWlM1bkxn
+        b0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YVc1d2IybHVkRjloY0c1elgzWnZhWEJmYzJGdVpHSnZlRjlqYUdGdWJtVnNMbTFoY210
+        a2IzZHU=

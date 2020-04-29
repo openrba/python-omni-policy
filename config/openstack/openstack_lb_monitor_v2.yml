@@ -12,7 +12,7 @@ openstack_lb_monitor_v2:
             notes: ''
         pool_id:
             description: The id of the pool that this monitor will be assigned to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -27,22 +27,22 @@ openstack_lb_monitor_v2:
             notes: ''
         type:
             description: The type of probe, which is PING, TCP, HTTP, HTTPS,
-            required: true
+            required: false
             policy: ''
             notes: ''
         delay:
             description: The time, in seconds, between sending probes to members.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout:
             description: Maximum number of seconds for a monitor to wait for a
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_retries:
             description: Number of permissible ping failures before
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_retries_down:
@@ -65,27 +65,18 @@ openstack_lb_monitor_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the monitor.
-        tenant_id:
-            description: See Argument Reference above.
-        type:
-            description: See Argument Reference above.
-        delay:
-            description: See Argument Reference above.
-        timeout:
-            description: See Argument Reference above.
-        max_retries:
-            description: See Argument Reference above.
-        max_retries_down:
-            description: See Argument Reference above.
-        url_path:
-            description: See Argument Reference above.
-        http_method:
-            description: See Argument Reference above.
-        expected_codes:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiVzl1YVhSdmNsOTJNaUlnSW0xdmJtbDBi
+        M0pmTVNJZ2V3b2dJSEJ2YjJ4ZmFXUWdJQ0FnSUQwZ0lpUjdiM0JsYm5OMFlXTnJYMnhpWDNCdmIy
+        eGZkakl1Y0c5dmJGOHhMbWxrZlNJS0lDQjBlWEJsSUNBZ0lDQWdJQ0E5SUNKUVNVNUhJZ29nSUdS
+        bGJHRjVJQ0FnSUNBZ0lEMGdNakFLSUNCMGFXMWxiM1YwSUNBZ0lDQTlJREV3Q2lBZ2JXRjRYM0ps
+        ZEhKcFpYTWdQU0ExQ24wSw==
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRkJ2YjJ3Z1RXOXVhWFJ2Y2lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUUxdmJtbDBiM0lnU1VRc0lHVXVaeTQ2Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDl0YjI1cGRHOXlYM1l5TG1oMGJXd3ViV0Z5YTJSdmQyND0=

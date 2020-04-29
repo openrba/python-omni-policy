@@ -8,25 +8,25 @@
         "arguments": {
             "metric_name": {
                 "description": "The name or description for the Amazon CloudWatch metric of this rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name or description of the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rate_key": {
                 "description": "Valid value is IP.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rate_limit": {
                 "description": "The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 100.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

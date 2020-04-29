@@ -7,28 +7,30 @@ azurerm_vpn_server_configuration:
     arguments:
         name:
             description: A name used to uniquely identify this certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The Name of the Resource Group in which this VPN Server Configuration
                 should be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The Azure location where this VPN Server Configuration should
                 be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpn_authentication_types:
             description: A list of one of more Authentication Types applicable for
                 this VPN Server Configuration. Possible values are `AAD` (Azure Active
                 Directory), `Certificate` and `Radius`.
-            required: true
+            required: false
             policy: ''
-            notes: At this time a maximum of one VPN Authentication Types can be specified.
+            notes:
+            - '-> '
+            - ' At this time a maximum of one VPN Authentication Types can be specified.'
         ipsec_policy:
             description: A `ipsec_policy` block as defined below.
             required: false
@@ -48,7 +50,7 @@ azurerm_vpn_server_configuration:
         azure_active_directory_authentication:
             description: A `azure_active_directory_authentication` block as defined
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_root_certificate:
@@ -64,96 +66,96 @@ azurerm_vpn_server_configuration:
             notes: ''
         radius_server:
             description: A `radius_server` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         audience:
             description: The Audience which should be used for authentication.
-            required: true
+            required: false
             policy: ''
             notes: ''
         issuer:
             description: The Issuer which should be used for authentication.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant:
             description: The Tenant which should be used for authentication.
-            required: true
+            required: false
             policy: ''
             notes: ''
         thumbprint:
             description: The Thumbprint of the Certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         public_cert_data:
             description: The Public Key Data associated with the Certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dh_group:
             description: The DH Group, used in IKE Phase 1. Possible values include
                 `DHGroup1`, `DHGroup2`, `DHGroup14`, `DHGroup24`, `DHGroup2048`, `ECP256`,
                 `ECP384` and `None`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ike_encryption:
             description: The IKE encryption algorithm, used for IKE Phase 2. Possible
                 values include `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`
                 and `GCMAES256`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ike_integrity:
             description: The IKE encryption integrity algorithm, used for IKE Phase
                 2. Possible values include `GCMAES128`, `GCMAES256`, `MD5`, `SHA1`,
                 `SHA256` and `SHA384`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ipsec_encryption:
             description: The IPSec encryption algorithm, used for IKE phase 1. Possible
                 values include `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`,
                 `GCMAES192`, `GCMAES256` and `None`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ipsec_integrity:
             description: The IPSec integrity algorithm, used for IKE phase 1. Possible
                 values include `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`
                 and `SHA256`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pfs_group:
             description: The Pfs Group, used in IKE Phase 2. Possible values include
                 `ECP256`, `ECP384`, `PFS1`, `PFS2`, `PFS14`, `PFS24`, `PFS2048`, `PFSMM`
                 and `None`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sa_lifetime_seconds:
             description: The IPSec Security Association lifetime in seconds for a
                 Site-to-Site VPN tunnel.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sa_data_size_kilobytes:
             description: The IPSec Security Association payload size in KB for a Site-to-Site
                 VPN tunnel.
-            required: true
+            required: false
             policy: ''
             notes: ''
         address:
             description: The Address of the Radius Server.
-            required: true
+            required: false
             policy: ''
             notes: ''
         secret:
             description: The Secret used to communicate with the Radius Server.
-            required: true
+            required: false
             policy: ''
             notes: ''
         server_root_certificate:

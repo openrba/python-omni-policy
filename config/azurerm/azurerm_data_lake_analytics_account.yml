@@ -9,25 +9,25 @@ azurerm_data_lake_analytics_account:
             description: Specifies the name of the Data Lake Analytics Account. Changing
                 this forces a new resource to be created. Has to be between 3 to 24
                 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Data
                 Lake Analytics Account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_store_account_name:
             description: Specifies the data lake store to use by default. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tier:

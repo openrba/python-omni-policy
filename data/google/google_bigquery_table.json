@@ -9,13 +9,13 @@
         "arguments": {
             "dataset_id": {
                 "description": "The dataset ID to create the table in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "table_id": {
                 "description": "A unique ID for the resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -93,7 +93,7 @@
             },
             "autodetect": {
                 "description": "- Let BigQuery try to autodetect the schema",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -129,19 +129,19 @@
             },
             "source_format": {
                 "description": "- The data format. Supported values are:",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_uris": {
                 "description": "A list of the fully-qualified URIs that point to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "quote": {
                 "description": "- The value that is used to quote data sections in a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -177,7 +177,7 @@
             },
             "range": {
                 "description": "Information required to partition based on ranges.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -189,13 +189,13 @@
             },
             "field": {
                 "description": "The field used to determine how to create a range-based",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The only type supported is DAY, which will generate",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -207,25 +207,25 @@
             },
             "start": {
                 "description": "Start of the range partitioning, inclusive.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "end": {
                 "description": "End of the range partitioning, exclusive.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "interval": {
                 "description": "The width of each range within the partition.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "query": {
                 "description": "A query that BigQuery executes when the view is referenced.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -237,7 +237,7 @@
             },
             "kms_key_name": {
                 "description": "The self link or full name of a key which should be used to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

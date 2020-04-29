@@ -8,17 +8,17 @@ google_bigtable_gc_policy:
     arguments:
         table:
             description: The name of the table.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_name:
             description: The name of the Bigtable instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         column_family:
             description: The name of the column family.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -47,13 +47,34 @@ google_bigtable_gc_policy:
             notes: ''
         days:
             description: Number of days before applying GC policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         number:
             description: Number of version before applying the GC policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWW1sbmRHRmliR1ZmYVc1emRHRnVZMlVpSUNKcGJuTjBZ
+        VzVqWlNJZ2V3b2dJRzVoYldVZ1BTQWlkR1l0YVc1emRHRnVZMlVpQ2lBZ1kyeDFjM1JsY2lCN0Np
+        QWdJQ0JqYkhWemRHVnlYMmxrSUNBZ1BTQWlkR1l0YVc1emRHRnVZMlV0WTJ4MWMzUmxjaUlLSUNB
+        Z0lIcHZibVVnSUNBZ0lDQWdJQ0E5SUNKMWN5MWpaVzUwY21Gc01TMWlJZ29nSUNBZ2JuVnRYMjV2
+        WkdWeklDQWdJRDBnTXdvZ0lDQWdjM1J2Y21GblpWOTBlWEJsSUQwZ0lraEVSQ0lLSUNCOUNuMEtD
+        bkpsYzI5MWNtTmxJQ0puYjI5bmJHVmZZbWxuZEdGaWJHVmZkR0ZpYkdVaUlDSjBZV0pzWlNJZ2V3
+        b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ1BTQWlkR1l0ZEdGaWJHVWlDaUFnYVc1emRHRnVZMlZmYm1G
+        dFpTQTlJR2R2YjJkc1pWOWlhV2QwWVdKc1pWOXBibk4wWVc1alpTNXBibk4wWVc1alpTNXVZVzFs
+        Q2dvZ0lHTnZiSFZ0Ymw5bVlXMXBiSGtnZXdvZ0lDQWdabUZ0YVd4NUlEMGdJbTVoYldVaUNpQWdm
+        UXA5Q2dweVpYTnZkWEpqWlNBaVoyOXZaMnhsWDJKcFozUmhZbXhsWDJkalgzQnZiR2xqZVNJZ0lu
+        QnZiR2xqZVNJZ2V3b2dJR2x1YzNSaGJtTmxYMjVoYldVZ1BTQm5iMjluYkdWZlltbG5kR0ZpYkdW
+        ZmFXNXpkR0Z1WTJVdWFXNXpkR0Z1WTJVdWJtRnRaUW9nSUhSaFlteGxJQ0FnSUNBZ0lDQWdQU0Ju
+        YjI5bmJHVmZZbWxuZEdGaWJHVmZkR0ZpYkdVdWRHRmliR1V1Ym1GdFpRb2dJR052YkhWdGJsOW1Z
+        VzFwYkhrZ1BTQWlibUZ0WlNJS0NpQWdiV0Y0WDJGblpTQjdDaUFnSUNCa1lYbHpJRDBnTndvZ0lI
+        MEtmUW89
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5aWFXZDBZV0pzWlY5blkxOXdiMnhwWTNrdWFIUnRiQzV0WVhKclpHOTNiZz09

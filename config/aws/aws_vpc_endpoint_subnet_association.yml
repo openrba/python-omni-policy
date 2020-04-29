@@ -9,12 +9,12 @@ aws_vpc_endpoint_subnet_association:
         vpc_endpoint_id:
             description: The ID of the VPC endpoint with which the subnet will be
                 associated.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The ID of the subnet to be associated with the VPC endpoint.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -26,3 +26,9 @@ aws_vpc_endpoint_subnet_association:
         R2x2YmlJZ0luTnVYMlZqTWlJZ2V3b2dJSFp3WTE5bGJtUndiMmx1ZEY5cFpDQTlJQ0lrZTJGM2Mx
         OTJjR05mWlc1a2NHOXBiblF1WldNeUxtbGtmU0lLSUNCemRXSnVaWFJmYVdRZ0lDQWdJQ0FnUFNB
         aUpIdGhkM05mYzNWaWJtVjBMbk51TG1sa2ZTSUtmUW89
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZlpXNWtjRzlwYm5SZmMzVmlibVYwWDJGemMyOWphV0YwYVc5dUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

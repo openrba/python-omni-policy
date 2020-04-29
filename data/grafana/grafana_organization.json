@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The display name for the Grafana organization created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,11 +43,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "org_id": {
-                "description": "The organization id assigned to this organization by Grafana."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

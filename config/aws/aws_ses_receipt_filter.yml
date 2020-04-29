@@ -7,18 +7,27 @@ aws_ses_receipt_filter:
     arguments:
         name:
             description: The name of the filter
-            required: true
+            required: false
             policy: ''
             notes: ''
         cidr:
             description: The IP address or address range to filter, in CIDR notation
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: Block or Allow
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDNKbFkyVnBjSFJmWm1sc2RHVnlJaUFpWm1sc2RHVnlJ
+        aUI3Q2lBZ2JtRnRaU0FnSUQwZ0ltSnNiMk5yTFhOd1lXMXRaWElpQ2lBZ1kybGtjaUFnSUQwZ0lq
+        RXdMakV3TGpFd0xqRXdJZ29nSUhCdmJHbGplU0E5SUNKQ2JHOWpheUlLZlFvPQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZmNtVmpaV2x3ZEY5bWFXeDBaWEl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

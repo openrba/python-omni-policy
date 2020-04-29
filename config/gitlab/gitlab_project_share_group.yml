@@ -7,18 +7,30 @@ gitlab_project_share_group:
     arguments:
         project_id:
             description: The id of the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         group_id:
             description: The id of the group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_level:
             description: One of five levels of access to the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmY0hKdmFtVmpkRjl6YUdGeVpWOW5jbTkxY0NJZ0luUmxj
+        M1FpSUhzS2NISnZhbVZqZEY5cFpDQTlJQ0l4TWpNME5TSUtaM0p2ZFhCZmFXUWdQU0F4TXpNM0Nt
+        RmpZMlZ6YzE5c1pYWmxiQ0E5SUNKbmRXVnpkQ0lLZlFvPQ==
+    import: !!binary |
+        Q2dwSGFYUk1ZV0lnY0hKdmFtVmpkQ0JuY205MWNDQnphR0Z5WlhNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JR0Z1SUdsa0lHMWhaR1VnZFhBZ2IyWWdZSEJ5YjJwbFkzUnBaRHBuY205MWNH
+        bGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5d2NtOXFaV04wWDNOb1lYSmxYMmR5YjNWd0xtaDBiV3d1YldGeWEyUnZkMjQ9

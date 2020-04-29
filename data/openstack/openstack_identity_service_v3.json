@@ -14,7 +14,7 @@
             },
             "name": {
                 "description": "The service name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "type": {
                 "description": "The service type.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,23 +37,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "type": {
-                "description": "See Argument Reference above."
-            },
-            "enabled": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

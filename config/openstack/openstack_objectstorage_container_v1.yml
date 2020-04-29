@@ -12,7 +12,7 @@ openstack_objectstorage_container_v1:
             notes: ''
         name:
             description: A unique name for the container. Changing this creates a
-            required: true
+            required: false
             policy: ''
             notes: ''
         container_read:
@@ -57,23 +57,20 @@ openstack_objectstorage_container_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        container_read:
-            description: See Argument Reference above.
-        container_sync_to:
-            description: See Argument Reference above.
-        container_sync_key:
-            description: See Argument Reference above.
-        container_write:
-            description: See Argument Reference above.
-        versioning:
-            description: See Argument Reference above.
-        metadata:
-            description: See Argument Reference above.
-        content_type:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUhSb1pTQnVZVzFsSUc5bUlIUm9aU0JqYjI1MFlXbHVaWEk2Q2dwVGIyMWxJR0YwZEhKcFlu
+        VjBaWE1nWTJGdUozUWdZbVVnYVcxd2IzSjBaV1FnT2dvcUlHQm1iM0pqWlY5a1pYTjBjbTk1WUFv
+        cUlHQmpiMjUwWlc1MFgzUjVjR1ZnQ2lvZ1lHMWxkR0ZrWVhSaFlBb3FJR0JqYjI1MFlXbHVaWEpm
+        YzNsdVkxOTBiMkFLS2lCZ1kyOXVkR0ZwYm1WeVgzTjVibU5mYTJWNVlBb0tVMjhnZVc5MUoyeHNJ
+        R2hoZG1VZ2RHOGdZSFJsY25KaFptOXliU0J3YkdGdVlDQmhibVFnWUhSbGNuSmhabTl5YlNCaGNI
+        QnNlV0FnWVdaMFpYSWdkR2hsSUdsdGNHOXlkQ0IwYnlCbWFYZ2dkR2h2YzJVZ2JXbHpjMmx1WnlC
+        aGRIUnlhV0oxZEdWekxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXZZbXBsWTNSemRHOXlZV2RsWDJOdmJuUmhhVzVsY2w5Mk1TNW9kRzFzTG0x
+        aGNtdGtiM2R1

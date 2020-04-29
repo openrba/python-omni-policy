@@ -7,12 +7,12 @@ openstack_images_image_v2:
     arguments:
         container_format:
             description: The container format. Must be one of
-            required: true
+            required: false
             policy: ''
             notes: ''
         disk_format:
             description: The disk format. Must be one of
-            required: true
+            required: false
             policy: ''
             notes: ''
         local_file_path:
@@ -42,7 +42,7 @@ openstack_images_image_v2:
             notes: ''
         name:
             description: The name of the image.
-            required: true
+            required: false
             policy: ''
             notes: ''
         properties:
@@ -80,47 +80,20 @@ openstack_images_image_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        checksum:
-            description: The checksum of the data associated with the image.
-        container_format:
-            description: See Argument Reference above.
-        created_at:
-            description: The date the image was created.
-        disk_format:
-            description: See Argument Reference above.
-        file:
-            description: the trailing path after the glance
-        id:
-            description: A unique ID assigned by Glance.
-        metadata:
-            description: The metadata associated with the image.
-        min_disk_gb:
-            description: See Argument Reference above.
-        min_ram_mb:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        owner:
-            description: The id of the openstack user who owns the image.
-        properties:
-            description: See Argument Reference above.
-        protected:
-            description: See Argument Reference above.
-        region:
-            description: See Argument Reference above.
-        schema:
-            description: The path to the JSON-schema that represent
-        size_bytes:
-            description: The size in bytes of the data associated with the image.
-        status:
-            description: The status of the image. It can be "queued", "active"
-        tags:
-            description: See Argument Reference above.
-        updated_at:
-            description: The date the image was last updated.
-        update_at:
-            description: '(**Deprecated** '
-        visibility:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXMWhaMlZ6WDJsdFlXZGxYM1l5SWlBaWNtRnVZ
+        MmhsY205eklpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKU1lXNWphR1Z5VDFNaUNp
+        QWdhVzFoWjJWZmMyOTFjbU5sWDNWeWJDQTlJQ0pvZEhSd2N6b3ZMM0psYkdWaGMyVnpMbkpoYm1O
+        b1pYSXVZMjl0TDI5ekwyeGhkR1Z6ZEM5eVlXNWphR1Z5YjNNdGIzQmxibk4wWVdOckxtbHRaeUlL
+        SUNCamIyNTBZV2x1WlhKZlptOXliV0YwSUQwZ0ltSmhjbVVpQ2lBZ1pHbHphMTltYjNKdFlYUWdJ
+        Q0FnSUNBOUlDSnhZMjkzTWlJS0NpQWdjSEp2Y0dWeWRHbGxjeUE5SUhzS0lDQWdJR3RsZVNBOUlD
+        SjJZV3gxWlNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwSmJXRm5aWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnYVdSZ0xDQmxM
+        bWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXBiV0ZuWlhOZmFXMWhaMlZmZGpJdWFIUnRiQzV0WVhKclpHOTNiZz09

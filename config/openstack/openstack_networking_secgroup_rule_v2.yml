@@ -18,12 +18,12 @@ openstack_networking_secgroup_rule_v2:
             notes: ''
         direction:
             description: The direction of the rule, valid values are __ingress__
-            required: true
+            required: false
             policy: ''
             notes: ''
         ethertype:
             description: The layer 3 protocol type, valid values are __IPv4__
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
@@ -55,7 +55,7 @@ openstack_networking_secgroup_rule_v2:
             notes: ''
         security_group_id:
             description: The security group id the rule should belong
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant_id:
@@ -63,27 +63,25 @@ openstack_networking_secgroup_rule_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        direction:
-            description: See Argument Reference above.
-        ethertype:
-            description: See Argument Reference above.
-        protocol:
-            description: See Argument Reference above.
-        port_range_min:
-            description: See Argument Reference above.
-        port_range_max:
-            description: See Argument Reference above.
-        remote_ip_prefix:
-            description: See Argument Reference above.
-        remote_group_id:
-            description: See Argument Reference above.
-        security_group_id:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpaV05uY205MWNGOTJN
+        aUlnSW5ObFkyZHliM1Z3WHpFaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSnpaV05uY205MWNG
+        OHhJZ29nSUdSbGMyTnlhWEIwYVc5dUlEMGdJazE1SUc1bGRYUnliMjRnYzJWamRYSnBkSGtnWjNK
+        dmRYQWlDbjBLQ25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpaV05u
+        Y205MWNGOXlkV3hsWDNZeUlpQWljMlZqWjNKdmRYQmZjblZzWlY4eElpQjdDaUFnWkdseVpXTjBh
+        Vzl1SUNBZ0lDQWdJQ0FnUFNBaWFXNW5jbVZ6Y3lJS0lDQmxkR2hsY25SNWNHVWdJQ0FnSUNBZ0lD
+        QTlJQ0pKVUhZMElnb2dJSEJ5YjNSdlkyOXNJQ0FnSUNBZ0lDQWdJRDBnSW5SamNDSUtJQ0J3YjNK
+        MFgzSmhibWRsWDIxcGJpQWdJQ0E5SURJeUNpQWdjRzl5ZEY5eVlXNW5aVjl0WVhnZ0lDQWdQU0F5
+        TWdvZ0lISmxiVzkwWlY5cGNGOXdjbVZtYVhnZ0lEMGdJakF1TUM0d0xqQXZNQ0lLSUNCelpXTjFj
+        bWwwZVY5bmNtOTFjRjlwWkNBOUlDSWtlMjl3Wlc1emRHRmphMTl1WlhSM2IzSnJhVzVuWDNObFky
+        ZHliM1Z3WDNZeUxuTmxZMmR5YjNWd1h6RXVhV1I5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSGNtOTFjQ0JTZFd4bGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM05sWTJkeWIzVndYM0oxYkdWZmRqSXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

@@ -8,24 +8,24 @@ azurerm_automation_certificate:
         name:
             description: Specifies the name of the Certificate. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the Certificate is
                 created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automation_account_name:
             description: The name of the automation account in which the Certificate
                 is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         base64:
             description: Base64 encoded value of the certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:

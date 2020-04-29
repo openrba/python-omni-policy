@@ -7,7 +7,7 @@ aws_appsync_api_key:
     arguments:
         api_id:
             description: The ID of the associated AppSync API
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -27,3 +27,18 @@ aws_appsync_api_key:
         key:
             description: The API key
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJ3YzNsdVkxOW5jbUZ3YUhGc1gyRndhU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQmhkWFJvWlc1MGFXTmhkR2x2Ymw5MGVYQmxJRDBnSWtGUVNWOUxSVmtpQ2lBZ2Jt
+        RnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ3A5Q2dweVpYTnZkWEpqWlNB
+        aVlYZHpYMkZ3Y0hONWJtTmZZWEJwWDJ0bGVTSWdJbVY0WVcxd2JHVWlJSHNLSUNCaGNHbGZhV1Fn
+        SUQwZ0lpUjdZWGR6WDJGd2NITjVibU5mWjNKaGNHaHhiRjloY0drdVpYaGhiWEJzWlM1cFpIMGlD
+        aUFnWlhod2FYSmxjeUE5SUNJeU1ERTRMVEExTFRBelZEQTBPakF3T2pBd1dpSUtmUW89
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3Y0hONWJtTmZZWEJwWDJ0bGVXQWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQkJjSEJUZVc1aklFRlFTU0JKUkNCaGJtUWdhMlY1SUhObGNHRnlZWFJsWkNCaWVT
+        QmdPbUFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCemVXNWpYMkZ3YVY5clpYa3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

@@ -12,7 +12,7 @@ openstack_identity_service_v3:
             notes: ''
         name:
             description: The service name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -22,7 +22,7 @@ openstack_identity_service_v3:
             notes: ''
         type:
             description: The service type.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -30,15 +30,17 @@ openstack_identity_service_v3:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        type:
-            description: See Argument Reference above.
-        enabled:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXUmxiblJwZEhsZmMyVnlkbWxqWlY5Mk15SWdJ
+        bk5sY25acFkyVmZNU0lnZXdvZ0lHNWhiV1VnUFNBaVkzVnpkRzl0SWdvZ0lIUjVjR1VnUFNBaVkz
+        VnpkRzl0SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwVFpYSjJhV05sY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCcFpHQXNJ
+        R1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXBaR1Z1ZEdsMGVWOXpaWEoyYVdObFgzWXpMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

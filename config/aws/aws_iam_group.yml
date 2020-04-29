@@ -11,7 +11,7 @@ aws_iam_group:
                 the following characters: `=,.@-_.`. Group names are not distinguished
                 by case. For example, you cannot create groups named both "ADMINS"
                 and "admins".'
-            required: true
+            required: false
             policy: ''
             notes: ''
         path:
@@ -31,3 +31,13 @@ aws_iam_group:
         unique_id:
             description: The [unique ID][1] assigned by AWS.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDJkeWIzVndJaUFpWkdWMlpXeHZjR1Z5Y3lJZ2V3b2dJ
+        RzVoYldVZ1BTQWlaR1YyWld4dmNHVnljeUlLSUNCd1lYUm9JRDBnSWk5MWMyVnljeThpQ24wSw==
+    import: !!binary |
+        Q2dwSlFVMGdSM0p2ZFhCeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lHNWhi
+        V1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

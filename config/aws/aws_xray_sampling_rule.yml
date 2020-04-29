@@ -7,63 +7,63 @@ aws_xray_sampling_rule:
     arguments:
         rule_name:
             description: The name of the sampling rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_arn:
             description: Matches the ARN of the AWS resource on which the service
                 runs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         priority:
             description: The priority of the sampling rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         fixed_rate:
             description: The percentage of matching requests to instrument, after
                 the reservoir is exhausted.
-            required: true
+            required: false
             policy: ''
             notes: ''
         reservoir_size:
             description: A fixed number of matching requests to instrument per second,
                 prior to applying the fixed rate. The reservoir is not used directly
                 by services, but applies to all services using the rule collectively.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_name:
             description: Matches the `name` that the service uses to identify itself
                 in segments.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_type:
             description: Matches the `origin` that the service uses to identify its
                 type in segments.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host:
             description: Matches the hostname from a request URL.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_method:
             description: Matches the HTTP method of a request.
-            required: true
+            required: false
             policy: ''
             notes: ''
         url_path:
             description: Matches the path from a request URL.
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
             description: The version of the sampling rule format (`1` )
-            required: true
+            required: false
             policy: ''
             notes: ''
         attributes:
@@ -77,3 +77,20 @@ aws_xray_sampling_rule:
         arn:
             description: The ARN of the sampling rule.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZlSEpoZVY5ellXMXdiR2x1WjE5eWRXeGxJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lISjFiR1ZmYm1GdFpTQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVaUNpQWdjSEpwYjNKcGRI
+        a2dJQ0FnSUNBZ1BTQXhNREF3TUFvZ0lIWmxjbk5wYjI0Z0lDQWdJQ0FnSUQwZ01Rb2dJSEpsYzJW
+        eWRtOXBjbDl6YVhwbElEMGdNUW9nSUdacGVHVmtYM0poZEdVZ0lDQWdJRDBnTUM0d05Rb2dJSFZ5
+        YkY5d1lYUm9JQ0FnSUNBZ0lEMGdJaW9pQ2lBZ2FHOXpkQ0FnSUNBZ0lDQWdJQ0FnUFNBaUtpSUtJ
+        Q0JvZEhSd1gyMWxkR2h2WkNBZ0lDQTlJQ0lxSWdvZ0lITmxjblpwWTJWZmRIbHdaU0FnSUQwZ0lp
+        b2lDaUFnYzJWeWRtbGpaVjl1WVcxbElDQWdQU0FpS2lJS0lDQnlaWE52ZFhKalpWOWhjbTRnSUNB
+        OUlDSXFJZ29LSUNCaGRIUnlhV0oxZEdWeklEMGdld29nSUNBZ1NHVnNiRzhnUFNBaVZISnBjeUlL
+        SUNCOUNuMEs=
+    import: !!binary |
+        Q2dwWVVtRjVJRk5oYlhCc2FXNW5JRkoxYkdWeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ2JtRnRaU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTk0Y21GNVgzTmhiWEJzYVc1blgzSjFiR1V1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

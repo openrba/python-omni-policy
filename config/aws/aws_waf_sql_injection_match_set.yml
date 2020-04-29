@@ -7,7 +7,7 @@ aws_waf_sql_injection_match_set:
     arguments:
         name:
             description: The name or description of the SQL Injection Match Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sql_injection_match_tuples:
@@ -21,3 +21,18 @@ aws_waf_sql_injection_match_set:
         id:
             description: The ID of the WAF SQL Injection Match Set.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDNOeGJGOXBibXBsWTNScGIyNWZiV0YwWTJoZmMyVjBJ
+        aUFpYzNGc1gybHVhbVZqZEdsdmJsOXRZWFJqYUY5elpYUWlJSHNLSUNCdVlXMWxJRDBnSW5SbUxY
+        TnhiRjlwYm1wbFkzUnBiMjVmYldGMFkyaGZjMlYwSWdvS0lDQnpjV3hmYVc1cVpXTjBhVzl1WDIx
+        aGRHTm9YM1IxY0d4bGN5QjdDaUFnSUNCMFpYaDBYM1J5WVc1elptOXliV0YwYVc5dUlEMGdJbFZT
+        VEY5RVJVTlBSRVVpQ2dvZ0lDQWdabWxsYkdSZmRHOWZiV0YwWTJnZ2V3b2dJQ0FnSUNCMGVYQmxJ
+        RDBnSWxGVlJWSlpYMU5VVWtsT1J5SUtJQ0FnSUgwS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwQlYxTWdWMEZHSUZOUlRDQkpibXBsWTNScGIyNGdUV0YwWTJnZ1UyVjBJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVnBjaUJKUkN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmMzRnNYMmx1YW1WamRHbHZibDl0WVhSamFGOXpaWFF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

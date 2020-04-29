@@ -7,7 +7,7 @@ aws_redshift_subnet_group:
     arguments:
         name:
             description: The name of the Redshift Subnet group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,7 +18,7 @@ aws_redshift_subnet_group:
             notes: ''
         subnet_ids:
             description: An array of VPC subnet IDs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -32,3 +32,26 @@ aws_redshift_subnet_group:
         id:
             description: The Redshift Subnet group ID.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaVptOXZJaUI3Q2lBZ1kybGtjbDlpYkc5amF5QTlJ
+        Q0l4TUM0eExqQXVNQzh4TmlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5emRXSnVaWFFpSUNKbWIy
+        OGlJSHNLSUNCamFXUnlYMkpzYjJOcklDQWdJQ0FnSUNBOUlDSXhNQzR4TGpFdU1DOHlOQ0lLSUNC
+        aGRtRnBiR0ZpYVd4cGRIbGZlbTl1WlNBOUlDSjFjeTEzWlhOMExUSmhJZ29nSUhad1kxOXBaQ0Fn
+        SUNBZ0lDQWdJQ0FnSUQwZ0lpUjdZWGR6WDNad1l5NW1iMjh1YVdSOUlnb0tJQ0IwWVdkeklEMGdl
+        d29nSUNBZ1RtRnRaU0E5SUNKMFppMWtZbk4xWW01bGRDMTBaWE4wTFRFaUNpQWdmUXA5Q2dweVpY
+        TnZkWEpqWlNBaVlYZHpYM04xWW01bGRDSWdJbUpoY2lJZ2V3b2dJR05wWkhKZllteHZZMnNnSUNB
+        Z0lDQWdJRDBnSWpFd0xqRXVNaTR3THpJMElnb2dJR0YyWVdsc1lXSnBiR2wwZVY5NmIyNWxJRDBn
+        SW5WekxYZGxjM1F0TW1JaUNpQWdkbkJqWDJsa0lDQWdJQ0FnSUNBZ0lDQWdQU0FpSkh0aGQzTmZk
+        bkJqTG1admJ5NXBaSDBpQ2dvZ0lIUmhaM01nUFNCN0NpQWdJQ0JPWVcxbElEMGdJblJtTFdSaWMz
+        VmlibVYwTFhSbGMzUXRNaUlLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmNtVmtjMmhwWm5S
+        ZmMzVmlibVYwWDJkeWIzVndJaUFpWm05dklpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBOUlDSm1iMjhp
+        Q2lBZ2MzVmlibVYwWDJsa2N5QTlJRnNpSkh0aGQzTmZjM1ZpYm1WMExtWnZieTVwWkgwaUxDQWlK
+        SHRoZDNOZmMzVmlibVYwTG1KaGNpNXBaSDBpWFFvS0lDQjBZV2R6SUQwZ2V3b2dJQ0FnWlc1MmFY
+        SnZibTFsYm5RZ1BTQWlVSEp2WkhWamRHbHZiaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwU1pXUnphR2xtZENCemRXSnVaWFFnWjNKdmRYQnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZRzVoYldWZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WldSemFHbG1kRjl6ZFdKdVpYUmZaM0p2ZFhBdWFIUnRiQzV0WVhKclpHOTNiZz09

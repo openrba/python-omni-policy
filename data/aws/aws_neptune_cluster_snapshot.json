@@ -8,13 +8,13 @@
         "arguments": {
             "db_cluster_identifier": {
                 "description": "The DB Cluster Identifier from which to take the snapshot.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "db_cluster_snapshot_identifier": {
                 "description": "The Identifier for the snapshot.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

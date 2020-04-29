@@ -7,23 +7,23 @@ aws_opsworks_stack:
     arguments:
         name:
             description: The name of the stack.
-            required: true
+            required: false
             policy: ''
             notes: ''
         region:
             description: The name of the region where the stack will exist.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_role_arn:
             description: The ARN of an IAM role that the OpsWorks service will act
                 as.
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_instance_profile_arn:
             description: The ARN of an IAM Instance Profile that created instances
-            required: true
+            required: false
             policy: ''
             notes: ''
         agent_version:
@@ -127,12 +127,12 @@ aws_opsworks_stack:
             notes: ''
         type:
             description: The type of source to use. For example, "archive".
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
             description: The URL where the cookbooks resource can be found.
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
@@ -161,3 +161,21 @@ aws_opsworks_stack:
         id:
             description: The id of the stack.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0J6ZDI5eWEzTmZjM1JoWTJzaUlDSnRZV2x1SWlCN0NpQWdi
+        bUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKaGQyVnpiMjFsTFhOMFlX
+        TnJJZ29nSUhKbFoybHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkWE10ZDJW
+        emRDMHhJZ29nSUhObGNuWnBZMlZmY205c1pWOWhjbTRnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlKSHRo
+        ZDNOZmFXRnRYM0p2YkdVdWIzQnpkMjl5YTNNdVlYSnVmU0lLSUNCa1pXWmhkV3gwWDJsdWMzUmhi
+        bU5sWDNCeWIyWnBiR1ZmWVhKdUlEMGdJaVI3WVhkelgybGhiVjlwYm5OMFlXNWpaVjl3Y205bWFX
+        eGxMbTl3YzNkdmNtdHpMbUZ5Ym4waUNnb2dJSFJoWjNNZ1BTQjdDaUFnSUNCT1lXMWxJRDBnSW1a
+        dmIySmhjaTEwWlhKeVlXWnZjbTB0YzNSaFkyc2lDaUFnZlFvS0lDQmpkWE4wYjIxZmFuTnZiaUE5
+        SUR3OFJVOVVDbnNLSUNKbWIyOWlZWElpT2lCN0NpQWdJQ0FpZG1WeWMybHZiaUk2SUNJeExqQXVN
+        Q0lLSUNCOUNuMEtSVTlVQ24wSw==
+    import: !!binary |
+        Q2dwUGNITlhiM0pyY3lCemRHRmphM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y0hOM2IzSnJjMTl6ZEdGamF5NW9kRzFzTG0xaGNtdGtiM2R1

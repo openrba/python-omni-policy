@@ -7,7 +7,7 @@ aws_gamelift_fleet:
     arguments:
         build_id:
             description: ID of the Gamelift Build to be deployed on the fleet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -23,7 +23,7 @@ aws_gamelift_fleet:
             notes: ''
         ec2_instance_type:
             description: Name of an EC2 instance type. e.g. `t2.micro`
-            required: true
+            required: false
             policy: ''
             notes: ''
         fleet_type:
@@ -45,7 +45,7 @@ aws_gamelift_fleet:
             notes: ''
         name:
             description: The name of the fleet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         new_game_session_protection_policy:
@@ -79,3 +79,20 @@ aws_gamelift_fleet:
         operating_system:
             description: Operating system of the fleet's computing resources.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaMkZ0Wld4cFpuUmZabXhsWlhRaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnWW5WcGJHUmZhV1FnSUNBZ0lDQWdJQ0FnUFNBaUpIdGhkM05mWjJGdFpXeHBablJmWW5WcGJH
+        UXVaWGhoYlhCc1pTNXBaSDBpQ2lBZ1pXTXlYMmx1YzNSaGJtTmxYM1I1Y0dVZ1BTQWlkREl1Ylds
+        amNtOGlDaUFnWm14bFpYUmZkSGx3WlNBZ0lDQWdJQ0FnUFNBaVQwNWZSRVZOUVU1RUlnb2dJRzVo
+        YldVZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1V0Wm14bFpYUXRibUZ0WlNJS0NpQWdj
+        blZ1ZEdsdFpWOWpiMjVtYVdkMWNtRjBhVzl1SUhzS0lDQWdJSE5sY25abGNsOXdjbTlqWlhOeklI
+        c0tJQ0FnSUNBZ1kyOXVZM1Z5Y21WdWRGOWxlR1ZqZFhScGIyNXpJRDBnTVFvZ0lDQWdJQ0JzWVhW
+        dVkyaGZjR0YwYUNBZ0lDQWdJQ0FnSUNBZ1BTQWlRenBjWEdkaGJXVmNYRWR2Ylc5cmRWTmxjblps
+        Y2k1bGVHVWlDaUFnSUNCOUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwSFlXMWxiR2xtZENCR2JHVmxkSE1nWTJGdWJtOTBJR0psSUdsdGNHOXlkR1ZrSUdGMElIUm9h
+        WE1nZEdsdFpTND0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluWVcxbGJHbG1kRjltYkdWbGRDNW9kRzFzTG0xaGNtdGtiM2R1

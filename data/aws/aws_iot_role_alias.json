@@ -8,13 +8,13 @@
         "arguments": {
             "alias": {
                 "description": "The name of the role alias.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The identity of the role to which the alias refers.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,12 +8,12 @@ google_google_folder:
     arguments:
         display_name:
             description: "The folder\u2019s display name."
-            required: true
+            required: false
             policy: ''
             notes: ''
         parent:
             description: The resource name of the parent Folder or Organization.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -24,3 +24,19 @@ google_google_folder:
         create_time:
             description: Timestamp when the Folder was created. Assigned by the server.
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1ZHOXdMV3hsZG1Wc0lHWnZiR1JsY2lCMWJtUmxjaUJoYmlCdmNtZGhibWw2WVhScGIyNHVD
+        bkpsYzI5MWNtTmxJQ0puYjI5bmJHVmZabTlzWkdWeUlpQWlaR1Z3WVhKMGJXVnVkREVpSUhzS0lD
+        QmthWE53YkdGNVgyNWhiV1VnUFNBaVJHVndZWEowYldWdWRDQXhJZ29nSUhCaGNtVnVkQ0FnSUNB
+        Z0lDQTlJQ0p2Y21kaGJtbDZZWFJwYjI1ekx6RXlNelExTmpjaUNuMEtDaU1nUm05c1pHVnlJRzVs
+        YzNSbFpDQjFibVJsY2lCaGJtOTBhR1Z5SUdadmJHUmxjaTRLY21WemIzVnlZMlVnSW1kdmIyZHNa
+        VjltYjJ4a1pYSWlJQ0owWldGdExXRmlZeUlnZXdvZ0lHUnBjM0JzWVhsZmJtRnRaU0E5SUNKVVpX
+        RnRJRUZDUXlJS0lDQndZWEpsYm5RZ0lDQWdJQ0FnUFNCbmIyOW5iR1ZmWm05c1pHVnlMbVJsY0dG
+        eWRHMWxiblF4TG01aGJXVUtmUW89
+    import: !!binary |
+        Q2dwR2IyeGtaWEp6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWm05c1pHVnlK
+        M01nYVdRc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWm05c1pHVnlMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

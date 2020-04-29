@@ -8,7 +8,7 @@ aws_media_store_container:
         name:
             description: The name of the container. Must contain alphanumeric characters
                 or underscores.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -22,3 +22,13 @@ aws_media_store_container:
         endpoint:
             description: The DNS endpoint of the container.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiV1ZrYVdGZmMzUnZjbVZmWTI5dWRHRnBibVZ5SWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzVoYldVZ1BTQWlaWGhoYlhCc1pTSUtmUW89
+    import: !!binary |
+        Q2dwTlpXUnBZVk4wYjNKbElFTnZiblJoYVc1bGNpQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElFMWxaR2xoVTNSdmNtVWdRMjl1ZEdGcGJtVnlJRTVoYldVc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0WldScFlWOXpkRzl5WlY5amIyNTBZV2x1WlhJdWFIUnRiQzV0WVhKclpHOTNiZz09

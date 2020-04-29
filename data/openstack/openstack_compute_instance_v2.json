@@ -152,7 +152,7 @@
             },
             "source_type": {
                 "description": "The source type of the device. Must be one of",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -236,13 +236,13 @@
             },
             "file": {
                 "description": "The absolute path of the destination file.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "content": {
                 "description": "The contents of the file. Limited to 255 bytes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -259,59 +259,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "access_ip_v4": {
-                "description": "The first detected Fixed IPv4 address."
-            },
-            "access_ip_v6": {
-                "description": "The first detected Fixed IPv6 address."
-            },
-            "metadata": {
-                "description": "See Argument Reference above."
-            },
-            "security_groups": {
-                "description": "See Argument Reference above."
-            },
-            "flavor_id": {
-                "description": "See Argument Reference above."
-            },
-            "flavor_name": {
-                "description": "See Argument Reference above."
-            },
-            "network/uuid": {
-                "description": "See Argument Reference above."
-            },
-            "network/name": {
-                "description": "See Argument Reference above."
-            },
-            "network/port": {
-                "description": "See Argument Reference above."
-            },
-            "network/fixed_ip_v4": {
-                "description": "The Fixed IPv4 address of the Instance on that"
-            },
-            "network/fixed_ip_v6": {
-                "description": "The Fixed IPv6 address of the Instance on that"
-            },
-            "network/mac": {
-                "description": "The MAC address of the NIC on that network."
-            },
-            "all_metadata": {
-                "description": "Contains all instance metadata, even metadata not set"
-            },
-            "tags": {
-                "description": "See Argument Reference above."
-            },
-            "all_tags": {
-                "description": "The collection of tags assigned on the instance, which have"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

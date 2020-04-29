@@ -8,12 +8,12 @@ aws_dx_hosted_transit_virtual_interface_accepter:
     arguments:
         dx_gateway_id:
             description: The ID of the [Direct Connect gateway](dx_gateway.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_interface_id:
             description: The ID of the Direct Connect virtual interface to accept.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:

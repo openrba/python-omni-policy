@@ -8,7 +8,7 @@
         "arguments": {
             "agent_arns": {
                 "description": "A list of DataSync Agent ARNs with which this location will be associated.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,19 +26,19 @@
             },
             "password": {
                 "description": "The password of the user who can mount the share and has file permissions in the SMB.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "server_hostname": {
                 "description": "Specifies the IP address or DNS name of the SMB server. The DataSync Agent(s",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subdirectory": {
                 "description": "Subdirectory to perform actions as source or destination. Should be exported by the NFS server.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,12 +50,16 @@
             },
             "user": {
                 "description": "The user who can mount the share and has file and folder permissions in the SMB share.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Location."
+            }
+        },
         "timeouts": {}
     }
 }

@@ -8,25 +8,25 @@ azurerm_automation_schedule:
         name:
             description: Specifies the name of the Schedule. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the Schedule is created.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automation_account_name:
             description: The name of the automation account in which the Schedule
                 is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         frequency:
             description: The frequency of the schedule. - can be either `OneTime`,
                 `Day`, `Hour`, `Week`, or `Month`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -81,13 +81,13 @@ azurerm_automation_schedule:
         day:
             description: Day of the occurrence. Must be one of `Monday`, `Tuesday`,
                 `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         occurrence:
             description: Occurrence of the week within the month. Must be between
                 `1` and `5`. `-1` for last week within the month.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

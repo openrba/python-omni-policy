@@ -7,18 +7,18 @@ aws_guardduty_member:
     arguments:
         account_id:
             description: AWS account ID for member account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         detector_id:
             description: The detector ID of the GuardDuty account where you want to
                 create member accounts.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email:
             description: Email address for member account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         invite:

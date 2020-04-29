@@ -8,18 +8,18 @@ aws_dlm_lifecycle_policy:
     arguments:
         description:
             description: A description for the DLM lifecycle policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         execution_role_arn:
             description: The ARN of an IAM role that is able to be assumed by the
                 DLM service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_details:
             description: See the [`policy_details` configuration](#policy-details-arguments
-            required: true
+            required: false
             policy: ''
             notes: ''
         state:
@@ -39,3 +39,48 @@ aws_dlm_lifecycle_policy:
         id:
             description: Identifier of the DLM Lifecycle Policy.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNKdmJHVWlJQ0prYkcxZmJHbG1aV041WTJ4bFgzSnZi
+        R1VpSUhzS0lDQnVZVzFsSUQwZ0ltUnNiUzFzYVdabFkzbGpiR1V0Y205c1pTSUtDaUFnWVhOemRX
+        MWxYM0p2YkdWZmNHOXNhV041SUQwZ1BEeEZUMFlLZXdvZ0lDSldaWEp6YVc5dUlqb2dJakl3TVRJ
+        dE1UQXRNVGNpTEFvZ0lDSlRkR0YwWlcxbGJuUWlPaUJiQ2lBZ0lDQjdDaUFnSUNBZ0lDSkJZM1Jw
+        YjI0aU9pQWljM1J6T2tGemMzVnRaVkp2YkdVaUxBb2dJQ0FnSUNBaVVISnBibU5wY0dGc0lqb2dl
+        d29nSUNBZ0lDQWdJQ0pUWlhKMmFXTmxJam9nSW1Sc2JTNWhiV0Y2YjI1aGQzTXVZMjl0SWdvZ0lD
+        QWdJQ0I5TEFvZ0lDQWdJQ0FpUldabVpXTjBJam9nSWtGc2JHOTNJaXdLSUNBZ0lDQWdJbE5wWkNJ
+        NklDSWlDaUFnSUNCOUNpQWdYUXA5Q2tWUFJncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgybGhiVjl5
+        YjJ4bFgzQnZiR2xqZVNJZ0ltUnNiVjlzYVdabFkzbGpiR1VpSUhzS0lDQnVZVzFsSUQwZ0ltUnNi
+        UzFzYVdabFkzbGpiR1V0Y0c5c2FXTjVJZ29nSUhKdmJHVWdQU0FpSkh0aGQzTmZhV0Z0WDNKdmJH
+        VXVaR3h0WDJ4cFptVmplV05zWlY5eWIyeGxMbWxrZlNJS0NpQWdjRzlzYVdONUlEMGdQRHhGVDBZ
+        S2V3b2dJQ0FpVm1WeWMybHZiaUk2SUNJeU1ERXlMVEV3TFRFM0lpd0tJQ0FnSWxOMFlYUmxiV1Z1
+        ZENJNklGc0tJQ0FnSUNBZ2V3b2dJQ0FnSUNBZ0lDQWlSV1ptWldOMElqb2dJa0ZzYkc5M0lpd0tJ
+        Q0FnSUNBZ0lDQWdJa0ZqZEdsdmJpSTZJRnNLSUNBZ0lDQWdJQ0FnSUNBZ0ltVmpNanBEY21WaGRH
+        VlRibUZ3YzJodmRDSXNDaUFnSUNBZ0lDQWdJQ0FnSUNKbFl6STZSR1ZzWlhSbFUyNWhjSE5vYjNR
+        aUxBb2dJQ0FnSUNBZ0lDQWdJQ0FpWldNeU9rUmxjMk55YVdKbFZtOXNkVzFsY3lJc0NpQWdJQ0Fn
+        SUNBZ0lDQWdJQ0psWXpJNlJHVnpZM0pwWW1WVGJtRndjMmh2ZEhNaUNpQWdJQ0FnSUNBZ0lGMHND
+        aUFnSUNBZ0lDQWdJQ0pTWlhOdmRYSmpaU0k2SUNJcUlnb2dJQ0FnSUNCOUxBb2dJQ0FnSUNCN0Np
+        QWdJQ0FnSUNBZ0lDSkZabVpsWTNRaU9pQWlRV3hzYjNjaUxBb2dJQ0FnSUNBZ0lDQWlRV04wYVc5
+        dUlqb2dXd29nSUNBZ0lDQWdJQ0FnSUNBaVpXTXlPa055WldGMFpWUmhaM01pQ2lBZ0lDQWdJQ0Fn
+        SUYwc0NpQWdJQ0FnSUNBZ0lDSlNaWE52ZFhKalpTSTZJQ0poY200NllYZHpPbVZqTWpvcU9qcHpi
+        bUZ3YzJodmRDOHFJZ29nSUNBZ0lDQjlDaUFnSUYwS2ZRcEZUMFlLZlFvS2NtVnpiM1Z5WTJVZ0lt
+        RjNjMTlrYkcxZmJHbG1aV041WTJ4bFgzQnZiR2xqZVNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JrWlhO
+        amNtbHdkR2x2YmlBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlNCRVRFMGdiR2xtWldONVkyeGxJSEJ2
+        YkdsamVTSUtJQ0JsZUdWamRYUnBiMjVmY205c1pWOWhjbTRnUFNBaUpIdGhkM05mYVdGdFgzSnZi
+        R1V1Wkd4dFgyeHBabVZqZVdOc1pWOXliMnhsTG1GeWJuMGlDaUFnYzNSaGRHVWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUQwZ0lrVk9RVUpNUlVRaUNnb2dJSEJ2YkdsamVWOWtaWFJoYVd4eklIc0tJQ0FnSUhK
+        bGMyOTFjbU5sWDNSNWNHVnpJRDBnV3lKV1QweFZUVVVpWFFvS0lDQWdJSE5qYUdWa2RXeGxJSHNL
+        SUNBZ0lDQWdibUZ0WlNBOUlDSXlJSGRsWld0eklHOW1JR1JoYVd4NUlITnVZWEJ6YUc5MGN5SUtD
+        aUFnSUNBZ0lHTnlaV0YwWlY5eWRXeGxJSHNLSUNBZ0lDQWdJQ0JwYm5SbGNuWmhiQ0FnSUNBZ0lE
+        MGdNalFLSUNBZ0lDQWdJQ0JwYm5SbGNuWmhiRjkxYm1sMElEMGdJa2hQVlZKVElnb2dJQ0FnSUNB
+        Z0lIUnBiV1Z6SUNBZ0lDQWdJQ0FnUFNCYklqSXpPalExSWwwS0lDQWdJQ0FnZlFvS0lDQWdJQ0Fn
+        Y21WMFlXbHVYM0oxYkdVZ2V3b2dJQ0FnSUNBZ0lHTnZkVzUwSUQwZ01UUUtJQ0FnSUNBZ2ZRb0tJ
+        Q0FnSUNBZ2RHRm5jMTkwYjE5aFpHUWdQU0I3Q2lBZ0lDQWdJQ0FnVTI1aGNITm9iM1JEY21WaGRH
+        OXlJRDBnSWtSTVRTSUtJQ0FnSUNBZ2ZRb0tJQ0FnSUNBZ1kyOXdlVjkwWVdkeklEMGdabUZzYzJV
+        S0lDQWdJSDBLQ2lBZ0lDQjBZWEpuWlhSZmRHRm5jeUE5SUhzS0lDQWdJQ0FnVTI1aGNITm9iM1Fn
+        UFNBaWRISjFaU0lLSUNBZ0lIMEtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwRVRFMGdiR2xtWldONWJHVWdjRzlzYVdOcFpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lHSjVJ
+        SFJvWldseUlIQnZiR2xqZVNCSlJEb0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYkcxZmJHbG1aV041WTJ4bFgzQnZiR2xqZVM1dFlYSnJaRzkzYmc9PQ==

@@ -7,12 +7,12 @@ aws_api_gateway_documentation_version:
     arguments:
         version:
             description: The version identifier of the API documentation snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rest_api_id:
             description: The ID of the associated Rest API
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -22,3 +22,26 @@ aws_api_gateway_documentation_version:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmWkc5amRXMWxiblJoZEdsdmJsOTJa
+        WEp6YVc5dUlpQWlaWGhoYlhCc1pTSWdld29nSUhabGNuTnBiMjRnSUNBZ0lEMGdJbVY0WVcxd2JH
+        VmZkbVZ5YzJsdmJpSUtJQ0J5WlhOMFgyRndhVjlwWkNBOUlDSWtlMkYzYzE5aGNHbGZaMkYwWlhk
+        aGVWOXlaWE4wWDJGd2FTNWxlR0Z0Y0d4bExtbGtmU0lLSUNCa1pYTmpjbWx3ZEdsdmJpQTlJQ0pG
+        ZUdGdGNHeGxJR1JsYzJOeWFYQjBhVzl1SWdvZ0lHUmxjR1Z1WkhOZmIyNGdJRDBnV3lKaGQzTmZZ
+        WEJwWDJkaGRHVjNZWGxmWkc5amRXMWxiblJoZEdsdmJsOXdZWEowTG1WNFlXMXdiR1VpWFFwOUNn
+        cHlaWE52ZFhKalpTQWlZWGR6WDJGd2FWOW5ZWFJsZDJGNVgzSmxjM1JmWVhCcElpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdQU0FpWlhoaGJYQnNaVjloY0draUNuMEtDbkpsYzI5MWNtTmxJQ0po
+        ZDNOZllYQnBYMmRoZEdWM1lYbGZaRzlqZFcxbGJuUmhkR2x2Ymw5d1lYSjBJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHeHZZMkYwYVc5dUlIc0tJQ0FnSUhSNWNHVWdQU0FpUVZCSklnb2dJSDBLQ2lBZ2NI
+        SnZjR1Z5ZEdsbGN5QWdQU0FpZTF3aVpHVnpZM0pwY0hScGIyNWNJanBjSWtWNFlXMXdiR1ZjSW4w
+        aUNpQWdjbVZ6ZEY5aGNHbGZhV1FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjlo
+        Y0drdVpYaGhiWEJzWlM1cFpIMGlDbjBL
+    import: !!binary |
+        Q2dwQlVFa2dSMkYwWlhkaGVTQmtiMk4xYldWdWRHRjBhVzl1SUhabGNuTnBiMjV6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QmdVa1ZUVkMxQlVFa3RTVVF2VmtWU1UwbFBUbUFzSUdVdVp5
+        NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5a2IyTjFiV1Z1ZEdGMGFXOXVYM1psY25OcGIyNHVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

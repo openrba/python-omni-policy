@@ -7,12 +7,12 @@ aws_apigatewayv2_integration:
     arguments:
         api_id:
             description: The API identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         integration_type:
             description: The integration type of an integration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_id:
@@ -86,5 +86,20 @@ aws_apigatewayv2_integration:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The integration identifier.
+        integration_response_selection_expression:
+            description: The [integration response selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-integration-response-selection-expressions)
+                for the integration.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5cGJuUmxaM0poZEdsdmJtQWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lHSjVJSFZ6YVc1bklIUm9aU0JCVUVrZ2FXUmxiblJwWm1sbGNpQmhibVFnYVc1MFpX
+        ZHlZWFJwYjI0Z2FXUmxiblJwWm1sbGNpd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZmFXNTBaV2R5WVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

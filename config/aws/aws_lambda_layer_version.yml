@@ -8,7 +8,7 @@ aws_lambda_layer_version:
     arguments:
         layer_name:
             description: A unique name for your Lambda Layer
-            required: true
+            required: false
             policy: ''
             notes: ''
         filename:
@@ -74,3 +74,16 @@ aws_lambda_layer_version:
         version:
             description: This Lamba Layer version.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR0Z0WW1SaFgyeGhlV1Z5WDNabGNuTnBiMjRpSUNKc1lXMWla
+        R0ZmYkdGNVpYSWlJSHNLSUNCbWFXeGxibUZ0WlNBZ0lEMGdJbXhoYldKa1lWOXNZWGxsY2w5d1lY
+        bHNiMkZrTG5wcGNDSUtJQ0JzWVhsbGNsOXVZVzFsSUQwZ0lteGhiV0prWVY5c1lYbGxjbDl1WVcx
+        bElnb0tJQ0JqYjIxd1lYUnBZbXhsWDNKMWJuUnBiV1Z6SUQwZ1d5SnViMlJsYW5NNExqRXdJbDBL
+        ZlFvPQ==
+    import: !!binary |
+        Q2dwTVlXMWlaR0VnVEdGNVpYSnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCZ1lYSnVZ
+        QzRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWVcxaVpHRmZiR0Y1WlhKZmRtVnljMmx2Ymk1b2RHMXNMbTFoY210a2IzZHU=

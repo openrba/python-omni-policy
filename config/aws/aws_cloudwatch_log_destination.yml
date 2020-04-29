@@ -7,22 +7,37 @@ aws_cloudwatch_log_destination:
     arguments:
         name:
             description: A name for the log destination
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The ARN of an IAM role that grants Amazon CloudWatch Logs
                 permissions to put data into the target
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_arn:
             description: The ARN of the target Amazon Kinesis stream resource for
                 the destination
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         arn:
             description: The Amazon Resource Name (ARN) specifying the log destination.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lYUmphRjlzYjJkZlpHVnpkR2x1WVhScGIyNGlJ
+        Q0owWlhOMFgyUmxjM1JwYm1GMGFXOXVJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQTlJQ0owWlhOMFgy
+        UmxjM1JwYm1GMGFXOXVJZ29nSUhKdmJHVmZZWEp1SUNBZ1BTQWlKSHRoZDNOZmFXRnRYM0p2YkdV
+        dWFXRnRYMlp2Y2w5amJHOTFaSGRoZEdOb0xtRnlibjBpQ2lBZ2RHRnlaMlYwWDJGeWJpQTlJQ0lr
+        ZTJGM2MxOXJhVzVsYzJselgzTjBjbVZoYlM1cmFXNWxjMmx6WDJadmNsOWpiRzkxWkhkaGRHTm9M
+        bUZ5Ym4waUNuMEs=
+    import: !!binary |
+        Q2dwRGJHOTFaRmRoZEdOb0lFeHZaM01nWkdWemRHbHVZWFJwYjI1eklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lHNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDJ4dloxOWtaWE4wYVc1aGRHbHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

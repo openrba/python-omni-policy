@@ -37,13 +37,13 @@ aws_lb_listener:
             notes: ''
         default_action:
             description: An Action block. Action blocks are documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of routing action. Valid values are `forward`, `redirect`,
                 `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_group_arn:
@@ -92,7 +92,7 @@ aws_lb_listener:
         content_type:
             description: The content type. Valid values are `text/plain`, `text/css`,
                 `text/html`, `application/javascript` and `application/json`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         message_body:
@@ -129,58 +129,58 @@ aws_lb_listener:
             notes: ''
         user_pool_arn:
             description: The ARN of the Cognito user pool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_pool_client_id:
             description: The ID of the Cognito user pool client.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_pool_domain:
             description: The domain prefix or fully-qualified domain name of the Cognito
                 user pool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         authorization_endpoint:
             description: The authorization endpoint of the IdP.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_id:
             description: The OAuth 2.0 client identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_secret:
             description: The OAuth 2.0 client secret.
-            required: true
+            required: false
             policy: ''
             notes: ''
         issuer:
             description: The OIDC issuer identifier of the IdP.
-            required: true
+            required: false
             policy: ''
             notes: ''
         token_endpoint:
             description: The token endpoint of the IdP.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_info_endpoint:
             description: The user info endpoint of the IdP.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
             description: The key of query parameter
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: The value of query parameter
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -189,3 +189,11 @@ aws_lb_listener:
         arn:
             description: The ARN of the listener (matches `id`)
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwTWFYTjBaVzVsY25NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWldseUlFRlNU
+        aXdnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWWw5c2FYTjBaVzVsY2k1b2RHMXNMbTFoY210a2IzZHU=

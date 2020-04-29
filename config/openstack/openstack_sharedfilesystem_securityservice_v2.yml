@@ -23,7 +23,7 @@ openstack_sharedfilesystem_securityservice_v2:
             notes: ''
         type:
             description: The security service type - can either be active\_directory,
-            required: true
+            required: false
             policy: ''
             notes: ''
         dns_ip:
@@ -57,29 +57,24 @@ openstack_sharedfilesystem_securityservice_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the Security Service.
-        region:
-            description: See Argument Reference above.
-        project_id:
-            description: The owner of the Security Service.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        type:
-            description: See Argument Reference above.
-        dns_ip:
-            description: See Argument Reference above.
-        ou:
-            description: See Argument Reference above.
-        user:
-            description: See Argument Reference above.
-        password:
-            description: See Argument Reference above.
-        domain:
-            description: See Argument Reference above.
-        server:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmMyaGhjbVZrWm1sc1pYTjVjM1JsYlY5elpXTjFj
+        bWwwZVhObGNuWnBZMlZmZGpJaUlDSnpaV04xY21sMGVYTmxjblpwWTJWZk1TSWdld29nSUc1aGJX
+        VWdJQ0FnSUNBZ0lEMGdJbk5sWTNWeWFYUjVJZ29nSUdSbGMyTnlhWEIwYVc5dUlEMGdJbU55WldG
+        MFpXUWdZbmtnZEdWeWNtRm1iM0p0SWdvZ0lIUjVjR1VnSUNBZ0lDQWdJRDBnSW1GamRHbDJaVjlr
+        YVhKbFkzUnZjbmtpQ2lBZ2MyVnlkbVZ5SUNBZ0lDQWdQU0FpTVRreUxqRTJPQzR4T1RrdU1UQWlD
+        aUFnWkc1elgybHdJQ0FnSUNBZ1BTQWlNVGt5TGpFMk9DNHhPVGt1TVRBaUNpQWdaRzl0WVdsdUlD
+        QWdJQ0FnUFNBaVpYaGhiWEJzWlM1amIyMGlDaUFnYjNVZ0lDQWdJQ0FnSUNBZ1BTQWlRMDQ5UTI5
+        dGNIVjBaWEp6TEVSRFBXVjRZVzF3YkdVc1JFTTlZMjl0SWdvZ0lIVnpaWElnSUNBZ0lDQWdJRDBn
+        SW1wdmFXNUViMjFoYVc1VmMyVnlJZ29nSUhCaGMzTjNiM0prSUNBZ0lEMGdJbk00WTNKbGRDSUtm
+        UW89
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUhSb1pTQkpSQ0J2WmlCMGFHVWdjMlZqZFhKcGRIa2djMlZ5ZG1salpUb0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXphR0Z5WldSbWFXeGxjM2x6ZEdWdFgzTmxZM1Z5YVhSNWMyVnlkbWxqWlY5
+        Mk1pNW9kRzFzTG0xaGNtdGtiM2R1

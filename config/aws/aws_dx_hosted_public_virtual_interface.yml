@@ -7,38 +7,38 @@ aws_dx_hosted_public_virtual_interface:
     arguments:
         address_family:
             description: The address family for the BGP peer. `ipv4 ` or `ipv6`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bgp_asn:
             description: The autonomous system (AS
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_id:
             description: The ID of the Direct Connect connection (or LAG
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name for the virtual interface.
-            required: true
+            required: false
             policy: ''
             notes: ''
         owner_account_id:
             description: The AWS account that will own the new virtual interface.
-            required: true
+            required: false
             policy: ''
             notes: ''
         route_filter_prefixes:
             description: A list of routes to be advertised to the AWS network in this
                 region.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vlan:
             description: The VLAN ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         amazon_address:

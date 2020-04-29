@@ -7,19 +7,22 @@ azurerm_backup_container_storage_account:
     arguments:
         resource_group_name:
             description: Name of the resource group where the vault is located.
-            required: true
+            required: false
             policy: ''
             notes: ''
         recovery_vault_name:
             description: The name of the vault where the storage account will be registered.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_id:
             description: Azure Resource ID of the storage account to be registered
-            required: true
+            required: false
             policy: ''
-            notes: ''
+            notes:
+            - -> **NOTE** Azure Backup places a Resource Lock on the storage account
+                that will cause deletion to fail until the account is unregistered
+                from Azure Backup
     attributes:
         id:
             description: The ID of the Backup Storage Account Container.

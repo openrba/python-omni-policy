@@ -10,42 +10,42 @@ azurerm_data_factory_linked_service_data_lake_storage_gen2:
             description: Specifies the name of the Data Factory Linked Service MySQL.
                 Changing this forces a new resource to be created. Must be globally
                 unique. See the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Data
                 Factory Linked Service MySQL. Changing this forces a new resource
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_factory_name:
             description: The Data Factory name in which to associate the Linked Service
                 with. Changing this forces a new resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
             description: The endpoint for the Azure Data Lake Storage Gen2 service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_principal_id:
             description: The service principal id in which to authenticate against
                 the Azure Data Lake Storage Gen2 account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_principal_key:
             description: The service principal key in which to authenticate against
                 the Azure Data Lake Storage Gen2 account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant:
             description: The tenant id or name in which to authenticate against the
                 Azure Data Lake Storage Gen2 account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:

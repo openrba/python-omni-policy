@@ -10,21 +10,40 @@ google_google_folder_iam_binding:
         folder:
             description: The resource name of the folder the policy is attached to.
                 Its format is folders/{folder_id}.
-            required: true
+            required: false
             policy: ''
             notes: ''
         members:
             description: '- An array of identities that will be granted the privilege
                 in the `role`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Only one
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         etag:
             description: (Computed) The etag of the folder's IAM policy.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWm05c1pHVnlJaUFpWkdWd1lYSjBiV1Z1ZERFaUlIc0tJ
+        Q0JrYVhOd2JHRjVYMjVoYldVZ1BTQWlSR1Z3WVhKMGJXVnVkQ0F4SWdvZ0lIQmhjbVZ1ZENBZ0lD
+        QWdJQ0E5SUNKdmNtZGhibWw2WVhScGIyNXpMekV5TXpRMU5qY2lDbjBLQ25KbGMyOTFjbU5sSUNK
+        bmIyOW5iR1ZmWm05c1pHVnlYMmxoYlY5aWFXNWthVzVuSWlBaVlXUnRhVzRpSUhzS0lDQm1iMnhr
+        WlhJZ1BTQm5iMjluYkdWZlptOXNaR1Z5TG1SbGNHRnlkRzFsYm5ReExtNWhiV1VLSUNCeWIyeGxJ
+        Q0FnUFNBaWNtOXNaWE12WldScGRHOXlJZ29LSUNCdFpXMWlaWEp6SUQwZ1d3b2dJQ0FnSW5WelpY
+        STZZV3hwWTJWQVoyMWhhV3d1WTI5dElpd0tJQ0JkQ24wSw==
+    import: !!binary |
+        Q2dwSlFVMGdZbWx1WkdsdVp5QnBiWEJ2Y25SeklIVnpaU0J6Y0dGalpTMWtaV3hwYldsMFpXUWdh
+        V1JsYm5ScFptbGxjbk03SUdacGNuTjBJSFJvWlNCeVpYTnZkWEpqWlNCcGJpQnhkV1Z6ZEdsdmJp
+        QmhibVFnZEdobGJpQjBhR1VnY205c1pTNGdJRlJvWlhObElHSnBibVJwYm1keklHTmhiaUJpWlNC
+        cGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lHWnZiR1JsY21BZ1lXNWtJSEp2YkdVc0lHVXVaeTRL
+        Q2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWm05c1pHVnlYMmxoYlY5aWFXNWthVzVuTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

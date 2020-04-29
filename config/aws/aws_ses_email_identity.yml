@@ -7,10 +7,20 @@ aws_ses_email_identity:
     arguments:
         email:
             description: The email address to assign to SES
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         arn:
             description: The ARN of the email identity.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDJWdFlXbHNYMmxrWlc1MGFYUjVJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHVnRZV2xzSUQwZ0ltVnRZV2xzUUdWNFlXMXdiR1V1WTI5dElncDlDZz09
+    import: !!binary |
+        Q2dwVFJWTWdaVzFoYVd3Z2FXUmxiblJwZEdsbGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHVnRZV2xzSUdGa1pISmxjM011Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZlpXMWhhV3hmYVdSbGJuUnBkSGt1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

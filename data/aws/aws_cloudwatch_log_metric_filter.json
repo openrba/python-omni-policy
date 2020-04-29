@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "pattern": {
                 "description": "A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "log_group_name": {
                 "description": "The name of the log group to associate the metric filter with.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "metric_transformation": {
                 "description": "A block defining collection of information",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "namespace": {
                 "description": "The destination namespace of the CloudWatch metric.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "What to publish to the metric. For example, if you're counting the occurrences of a particular term like \"Error\", the value will be \"1\" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

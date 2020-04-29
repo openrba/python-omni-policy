@@ -7,13 +7,13 @@ aws_cloud9_environment_ec2:
     arguments:
         name:
             description: The name of the environment.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_type:
             description: The type of instance to connect to the environment, e.g.
                 `t2.micro`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automatic_stop_time_minutes:
@@ -52,3 +52,12 @@ aws_cloud9_environment_ec2:
         type:
             description: The type of the environment (e.g. `ssh` or `ec2`)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdRNVgyVnVkbWx5YjI1dFpXNTBYMlZqTWlJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0JwYm5OMFlXNWpaVjkwZVhCbElEMGdJblF5TG0xcFkzSnZJZ29nSUc1aGJX
+        VWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzFsYm5ZaUNuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpEbGZaVzUyYVhKdmJtMWxiblJmWldNeUxtaDBiV3d1YldGeWEyUnZkMjQ9

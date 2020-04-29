@@ -7,19 +7,19 @@ azurerm_monitor_action_group:
     arguments:
         name:
             description: The name of the webhook receiver. Names must be unique (case-insensitive
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Action
                 Group instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         short_name:
             description: The short name of the action group. This will be used in
                 SMS messages.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -87,7 +87,7 @@ azurerm_monitor_action_group:
             notes: ''
         role_id:
             description: The arm role id.
-            required: true
+            required: false
             policy: ''
             notes: ''
         use_common_alert_schema:
@@ -98,89 +98,89 @@ azurerm_monitor_action_group:
         automation_account_id:
             description: The automation account ID which holds this runbook and authenticates
                 to Azure resources.
-            required: true
+            required: false
             policy: ''
             notes: ''
         runbook_name:
             description: The name for this runbook.
-            required: true
+            required: false
             policy: ''
             notes: ''
         webhook_resource_id:
             description: The resource id for webhook linked to this runbook.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_global_runbook:
             description: Indicates whether this instance is global runbook.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_uri:
             description: The URI where webhooks should be sent.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email_address:
             description: The email address of this receiver.
-            required: true
+            required: false
             policy: ''
             notes: ''
         function_app_resouce_id:
             description: The Azure resource ID of the function app.
-            required: true
+            required: false
             policy: ''
             notes: ''
         function_name:
             description: The function name in the function app.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_trigger_url:
             description: The http trigger url where http request sent to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         workspace_id:
             description: The Azure Log Analytics workspace ID where this connection
                 is defined.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_id:
             description: The unique connection identifier of the ITSM connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ticket_configuration:
             description: A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems
                 option will be part of this blob as well.
-            required: true
+            required: false
             policy: ''
             notes: ''
         region:
             description: The region of the workspace.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_id:
             description: The Azure resource ID of the logic app.
-            required: true
+            required: false
             policy: ''
             notes: ''
         callback_url:
             description: The callback url where http request sent to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         country_code:
             description: The country code of the voice receiver.
-            required: true
+            required: false
             policy: ''
             notes: ''
         phone_number:
             description: The phone number of the voice receiver.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

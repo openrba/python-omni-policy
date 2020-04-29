@@ -27,7 +27,7 @@ openstack_lb_pool_v2:
             notes: ''
         protocol:
             description: The protocol - can either be TCP, HTTP, HTTPS, PROXY
-            required: true
+            required: false
             policy: ''
             notes: ''
         loadbalancer_id:
@@ -42,7 +42,7 @@ openstack_lb_pool_v2:
             notes: ''
         lb_method:
             description: The load balancing algorithm to
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_state_up:
@@ -52,7 +52,7 @@ openstack_lb_pool_v2:
             notes: ''
         type:
             description: The type of persistence mode. The current specification
-            required: true
+            required: false
             policy: ''
             notes: ''
         cookie_name:
@@ -60,21 +60,19 @@ openstack_lb_pool_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the pool.
-        tenant_id:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        protocol:
-            description: See Argument Reference above.
-        lb_method:
-            description: See Argument Reference above.
-        persistence:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZjRzl2YkY5Mk1pSWdJbkJ2YjJ4Zk1TSWdl
+        d29nSUhCeWIzUnZZMjlzSUNBZ0lEMGdJa2hVVkZBaUNpQWdiR0pmYldWMGFHOWtJQ0FnUFNBaVVr
+        OVZUa1JmVWs5Q1NVNGlDaUFnYkdsemRHVnVaWEpmYVdRZ1BTQWlaRGswTVRVM09EWXROV1l4WVMw
+        ME1qaGlMV0l6TldZdE1tWXhOVEl6WlRFME5tUXlJZ29LSUNCd1pYSnphWE4wWlc1alpTQjdDaUFn
+        SUNCMGVYQmxJQ0FnSUNBZ0lDQTlJQ0pCVUZCZlEwOVBTMGxGSWdvZ0lDQWdZMjl2YTJsbFgyNWhi
+        V1VnUFNBaWRHVnpkRU52YjJ0cFpTSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRkJ2YjJ3Z1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCUWIyOXNJRWxFTENCbExtY3VPZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDl3YjI5c1gzWXlMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

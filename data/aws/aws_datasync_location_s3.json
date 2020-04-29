@@ -8,19 +8,19 @@
         "arguments": {
             "s3_bucket_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "s3_config": {
                 "description": "Configuration block containing information for connecting to S3.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subdirectory": {
                 "description": "Prefix to perform actions as source or destination.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Location."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Location."
+            }
+        },
         "timeouts": {}
     }
 }

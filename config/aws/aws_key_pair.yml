@@ -19,7 +19,7 @@ aws_key_pair:
             notes: ''
         public_key:
             description: The public key material.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -36,3 +36,23 @@ aws_key_pair:
             description: The MD5 public key fingerprint as specified in section 4
                 of RFC 4716.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhMlY1WDNCaGFYSWlJQ0prWlhCc2IzbGxjaUlnZXdvZ0lHdGxl
+        Vjl1WVcxbElDQWdQU0FpWkdWd2JHOTVaWEl0YTJWNUlnb2dJSEIxWW14cFkxOXJaWGtnUFNBaWMz
+        Tm9MWEp6WVNCQlFVRkJRak5PZW1GRE1YbGpNa1ZCUVVGQlJFRlJRVUpCUVVGQ1FWRkVNMFkyZEhs
+        UVJVWkZlbFl3VEZneldEaENjMWhrVFhOUmVqRjRNbU5GYVd0TFJFVlpNR0ZKYWpReGNXZDRUVU5R
+        TDJsMFpXNWxjVmhUU1VaYVFuQTFkbWw2VUhaaGIwbFNNMVZ0T1hoTE4xQkhiMWM0WjJsMWNFZHVL
+        MFZRZFhoSlFUUmpSRTAwZG5wUGNVOXJhVTFRYUhvMVdFc3dkMmhGYW10V2VsUnZOQ3RUTUhCMWRr
+        UmFkWGRKYzJScFZ6bHRlR2hLWXpkMFowSk9UREJqV1d4WFUxbFdhM28wUnk5bWMyeE9abEpRVnpW
+        dFdVRk5ORGxtTkdab2RIaFFZalZ2YXpSUk1reG5PV1JRUzFaSVR5OUNaMlYxTlhkdlRXTTNVbGt3
+        Y0RGbGFqWkVORU5MUmtVMmJIbHRVMFJLY0Zjd1dVaFlMM2R4UlRrclkyWkZZWFZvTjNoYVkwY3dj
+        VGwwTW5SaE5rWTJabTFZTUdGbmRuQkdlVnB2T0dGR1lsaGxWVUp5TjI5elUwTktUbWQyWVhaWFlr
+        MHZNRFp1YVZkeVQzWlpXREo0ZDFka2FGaHRXRk55WWxnNFdtSmhZbFp2YUVKTE5ERWdaVzFoYVd4
+        QVpYaGhiWEJzWlM1amIyMGlDbjBL
+    import: !!binary |
+        Q2dwTFpYa2dVR0ZwY25NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2EyVjVY
+        MjVoYldWZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlyWlhsZmNHRnBjaTVvZEcxc0xtMWhjbXRrYjNkdQ==

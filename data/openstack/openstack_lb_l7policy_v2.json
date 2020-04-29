@@ -32,13 +32,13 @@
             },
             "action": {
                 "description": "The L7 Policy action - can either be REDIRECT\\_TO\\_POOL,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "listener_id": {
                 "description": "The Listener on which the L7 Policy will be associated with.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,41 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the L7 Policy."
-            },
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "action": {
-                "description": "See Argument Reference above."
-            },
-            "listener_id": {
-                "description": "See Argument Reference above."
-            },
-            "position": {
-                "description": "See Argument Reference above."
-            },
-            "redirect_pool_id": {
-                "description": "See Argument Reference above."
-            },
-            "redirect_url": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

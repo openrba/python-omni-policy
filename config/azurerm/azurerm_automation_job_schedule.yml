@@ -8,20 +8,20 @@ azurerm_automation_job_schedule:
         resource_group_name:
             description: The name of the resource group in which the Job Schedule
                 is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automation_account_name:
             description: The name of the Automation Account in which the Job Schedule
                 is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         runbook_name:
             description: The name of a Runbook to link to a Schedule. It needs to
                 be in the same Automation Account as the Schedule and Job Schedule.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         parameters:
@@ -30,10 +30,12 @@ azurerm_automation_job_schedule:
                 to be created.
             required: false
             policy: ''
-            notes: The parameter keys/names must strictly be in lowercase, even if
-                this is not the case in the runbook. This is due to a limitation in
-                Azure Automation where the parameter names are normalized. The values
-                specified don't have this limitation.
+            notes:
+            - '-> '
+            - ' The parameter keys/names must strictly be in lowercase, even if this
+                is not the case in the runbook. This is due to a limitation in Azure
+                Automation where the parameter names are normalized. The values specified
+                don''t have this limitation.'
         run_on:
             description: Name of a Hybrid Worker Group the Runbook will be executed
                 on. Changing this forces a new resource to be created.

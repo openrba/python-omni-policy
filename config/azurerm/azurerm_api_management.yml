@@ -8,39 +8,39 @@ azurerm_api_management:
         name:
             description: The name of the API Management Service. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The name of the Azure Region in which the API Management
                 Service should be expanded to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the API Management
                 Service should be exist. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         publisher_name:
             description: The name of publisher/company.
-            required: true
+            required: false
             policy: ''
             notes: ''
         publisher_email:
             description: The email of publisher/company.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku_name:
             description: '`sku_name` is a string consisting of two parts separated
                 by an underscore(\_). The fist part is the `name`, valid values include:
-                `Developer`, `Basic`, `Standard` and `Premium`. The second part is
-                the `capacity` (e.g. the number of deployed units of the `sku`), which
-                must be a positive `integer` (e.g. `Developer_1`).'
-            required: true
+                `Consumption`, `Developer`, `Basic`, `Standard` and `Premium`. The
+                second part is the `capacity` (e.g. the number of deployed units of
+                the `sku`), which must be a positive `integer` (e.g. `Developer_1`).'
+            required: false
             policy: ''
             notes: ''
         additional_location:
@@ -112,19 +112,21 @@ azurerm_api_management:
             notes: ''
         encoded_certificate:
             description: The Base64 Encoded PFX Certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate_password:
             description: The password associated with the certificate provided above.
             required: false
             policy: ''
-            notes: Either `key_vault_id` or `certificate` and `certificate_password`
-                must be specified.
+            notes:
+            - '-> '
+            - ' Either `key_vault_id` or `certificate` and `certificate_password`
+                must be specified.'
         store_name:
             description: The name of the Certificate Store where this certificate
                 should be stored. Possible values are `CertificateAuthority` and `Root`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         management:
@@ -151,12 +153,12 @@ azurerm_api_management:
             description: Specifies the type of Managed Service Identity that should
                 be configured on this API Management Service. At this time the only
                 supported value is`SystemAssigned`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host_name:
             description: The Hostname to use for the Management API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key_vault_id:
@@ -164,10 +166,12 @@ azurerm_api_management:
                 which must be should be of the type `application/x-pkcs12`.
             required: false
             policy: ''
-            notes: Setting this field requires the `identity` block to be specified,
+            notes:
+            - '-> '
+            - ' Setting this field requires the `identity` block to be specified,
                 since this identity is used for to retrieve the Key Vault Certificate.
                 Auto-updating the Certificate from the Key Vault requires the Secret
-                version isn't specified.
+                version isn''t specified.'
         negotiate_client_certificate:
             description: Should Client Certificate Negotiation be enabled for this
                 Hostname? Defaults to `false`.
@@ -203,7 +207,9 @@ azurerm_api_management:
                 Defaults to `false`.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - -> **info:** This maps to the `Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Ssl30`
+                field
         enable_backend_tls10:
             description: Should TLS 1.0 be enabled on the backend of the gateway?
                 Defaults to `false`.
@@ -324,7 +330,7 @@ azurerm_api_management:
                 property and will be removed in version 2.0 of the provider.'
         enabled:
             description: Should Terms of Service be displayed during sign up?.
-            required: true
+            required: false
             policy: ''
             notes: ''
         terms_of_service:
@@ -334,18 +340,18 @@ azurerm_api_management:
             notes: ''
         subnet_id:
             description: The id of the subnet that will be used for the API Management.
-            required: true
+            required: false
             policy: ''
             notes: ''
         consent_required:
             description: Should the user be asked for consent during sign up?
-            required: true
+            required: false
             policy: ''
             notes: ''
         text:
             description: The Terms of Service which users are required to agree to
                 in order to sign up.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

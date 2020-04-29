@@ -98,7 +98,7 @@
             },
             "bucket": {
                 "description": "The S3 bucket name to store the logs in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -116,7 +116,7 @@
             },
             "subnet_id": {
                 "description": "The id of the subnet of which to attach to the load balancer. You can specify only one subnet per Availability Zone.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

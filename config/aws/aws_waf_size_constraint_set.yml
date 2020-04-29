@@ -7,7 +7,7 @@ aws_waf_size_constraint_set:
     arguments:
         name:
             description: The name or description of the Size Constraint Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size_constraints:
@@ -22,3 +22,18 @@ aws_waf_size_constraint_set:
         arn:
             description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDNOcGVtVmZZMjl1YzNSeVlXbHVkRjl6WlhRaUlDSnph
+        WHBsWDJOdmJuTjBjbUZwYm5SZmMyVjBJaUI3Q2lBZ2JtRnRaU0E5SUNKMFpuTnBlbVZmWTI5dWMz
+        UnlZV2x1ZEhNaUNnb2dJSE5wZW1WZlkyOXVjM1J5WVdsdWRITWdld29nSUNBZ2RHVjRkRjkwY21G
+        dWMyWnZjbTFoZEdsdmJpQTlJQ0pPVDA1Rklnb2dJQ0FnWTI5dGNHRnlhWE52Ymw5dmNHVnlZWFJ2
+        Y2lBOUlDSkZVU0lLSUNBZ0lITnBlbVVnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpTkRBNU5pSUtD
+        aUFnSUNCbWFXVnNaRjkwYjE5dFlYUmphQ0I3Q2lBZ0lDQWdJSFI1Y0dVZ1BTQWlRazlFV1NJS0lD
+        QWdJSDBLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQlYxTWdWMEZHSUZOcGVtVWdRMjl1YzNSeVlXbHVkQ0JUWlhRZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWldseUlFbEVMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmMybDZaVjlqYjI1emRISmhhVzUwWDNObGRDNW9kRzFzTG0xaGNtdGtiM2R1

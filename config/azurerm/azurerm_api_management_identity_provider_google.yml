@@ -9,23 +9,23 @@ azurerm_api_management_identity_provider_google:
             description: The Name of the API Management Service where this Google
                 Identity Provider should be created. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The Name of the Resource Group where the API Management Service
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_id:
             description: Client Id for Google Sign-in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_secret:
             description: Client secret for Google Sign-in.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

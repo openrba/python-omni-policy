@@ -12,27 +12,27 @@ openstack_lb_vip_v1:
             notes: ''
         name:
             description: The name of the vip. Changing this updates the name of
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The network on which to allocate the vip's address. A
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: ' The protocol - can be either ''TCP, ''HTTP'', or'
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
             description: The port on which to listen for client traffic. Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         pool_id:
             description: The ID of the pool with which the vip is associated.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant_id:
@@ -72,7 +72,7 @@ openstack_lb_vip_v1:
             notes: ''
         type:
             description: The type of persistence mode. Valid values are "SOURCE_IP",
-            required: true
+            required: false
             policy: ''
             notes: ''
         cookie_name:
@@ -80,33 +80,17 @@ openstack_lb_vip_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        subnet_id:
-            description: See Argument Reference above.
-        protocol:
-            description: See Argument Reference above.
-        port:
-            description: See Argument Reference above.
-        pool_id:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        address:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        persistence:
-            description: See Argument Reference above.
-        conn_limit:
-            description: See Argument Reference above.
-        floating_ip:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        port_id:
-            description: Port UUID for this VIP at associated floating IP (if any).
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZkbWx3WDNZeElpQWlkbWx3WHpFaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnUFNBaWRHWmZkR1Z6ZEY5c1lsOTJhWEFpQ2lBZ2MzVmlibVYwWDJsa0lE
+        MGdJakV5TXpRMUlnb2dJSEJ5YjNSdlkyOXNJQ0E5SUNKSVZGUlFJZ29nSUhCdmNuUWdJQ0FnSUNB
+        OUlEZ3dDaUFnY0c5dmJGOXBaQ0FnSUQwZ0lqWTNPRGt3SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRlpKVUhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDkyYVhCZmRqRXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

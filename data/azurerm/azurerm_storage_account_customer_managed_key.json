@@ -8,25 +8,25 @@
         "arguments": {
             "storage_account_id": {
                 "description": "The ID of the Storage Account. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_vault_id": {
                 "description": "The ID of the Key Vault. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_name": {
                 "description": "The name of Key Vault Key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_version": {
                 "description": "The version of Key Vault Key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

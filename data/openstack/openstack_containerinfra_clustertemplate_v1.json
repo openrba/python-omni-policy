@@ -5,7 +5,188 @@
         "page_title": "OpenStack: openstack_containerinfra_clustertemplate_v1",
         "sidebar_current": "docs-openstack-resource-containerinfra-clustertemplate-v1",
         "description": "Manages a V1 Magnum cluster template resource within OpenStack.",
-        "arguments": {},
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V1 Container Infra",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the cluster template. Changing this updates",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project_id": {
+                "description": "The project of the cluster template. Required if",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_id": {
+                "description": "The user of the cluster template. Required if admin",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "apiserver_port": {
+                "description": "The API server port for the Container",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "coe": {
+                "description": "The Container Orchestration Engine for this cluster",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_distro": {
+                "description": "The distro for the cluster (fedora-atomic,",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "dns_nameserver": {
+                "description": "Address of the DNS nameserver that is used in",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "docker_storage_driver": {
+                "description": "Docker storage driver. Changing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "docker_volume_size": {
+                "description": "The size (in GB",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "external_network_id": {
+                "description": "The ID of the external network that will",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fixed_network": {
+                "description": "The fixed network that will be attached to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fixed_subnet": {
+                "description": "The fixed subnet that will be attached to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "flavor": {
+                "description": "The flavor for the nodes of the cluster. Can be set via",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "master_flavor": {
+                "description": "The flavor for the master nodes. Can be set via",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "floating_ip_enabled": {
+                "description": "Indicates whether created cluster should",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "http_proxy": {
+                "description": "The address of a proxy for receiving all HTTP",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "https_proxy": {
+                "description": "The address of a proxy for receiving all HTTPS",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "image": {
+                "description": "The reference to an image that is used for nodes of the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "insecure_registry": {
+                "description": "The insecure registry URL for the cluster",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "keypair_id": {
+                "description": "The name of the Compute service SSH keypair.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "The list of key value pairs representing additional",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "master_lb_enabled": {
+                "description": "Indicates whether created cluster should",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "network_driver": {
+                "description": "The name of the driver for the container",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "no_proxy": {
+                "description": "A comma-separated list of IP addresses that shouldn't",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "public": {
+                "description": "Indicates whether cluster template should be public.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "registry_enabled": {
+                "description": "Indicates whether Docker registry is enabled",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_type": {
+                "description": "The server type for the cluster template. Changing",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tls_disabled": {
+                "description": "Indicates whether the TLS should be disabled in",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "volume_driver": {
+                "description": "The name of the driver that is used for the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
         "attributes": {},
         "timeouts": {}
     }

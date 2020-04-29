@@ -9,7 +9,7 @@ kubernetes_endpoints:
         metadata:
             description: Standard endpoints' metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         subset:
@@ -20,3 +20,33 @@ kubernetes_endpoints:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgyVnVaSEJ2YVc1MGN5SWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdFpYUmhaR0YwWVNCN0NpQWdJQ0J1WVcxbElEMGdJblJsY25KaFptOXliUzFsZUdGdGNH
+        eGxJZ29nSUgwS0NpQWdjM1ZpYzJWMElIc0tJQ0FnSUdGa1pISmxjM01nZXdvZ0lDQWdJQ0JwY0NB
+        OUlDSXhNQzR3TGpBdU5DSUtJQ0FnSUgwS0NpQWdJQ0JoWkdSeVpYTnpJSHNLSUNBZ0lDQWdhWEFn
+        UFNBaU1UQXVNQzR3TGpVaUNpQWdJQ0I5Q2dvZ0lDQWdjRzl5ZENCN0NpQWdJQ0FnSUc1aGJXVWdJ
+        Q0FnSUQwZ0ltaDBkSEFpQ2lBZ0lDQWdJSEJ2Y25RZ0lDQWdJRDBnT0RBS0lDQWdJQ0FnY0hKdmRH
+        OWpiMndnUFNBaVZFTlFJZ29nSUNBZ2ZRb0tJQ0FnSUhCdmNuUWdld29nSUNBZ0lDQnVZVzFsSUNB
+        Z0lDQTlJQ0pvZEhSd2N5SUtJQ0FnSUNBZ2NHOXlkQ0FnSUNBZ1BTQTBORE1LSUNBZ0lDQWdjSEp2
+        ZEc5amIyd2dQU0FpVkVOUUlnb2dJQ0FnZlFvZ0lIMEtDaUFnYzNWaWMyVjBJSHNLSUNBZ0lHRmta
+        SEpsYzNNZ2V3b2dJQ0FnSUNCcGNDQTlJQ0l4TUM0d0xqRXVOQ0lLSUNBZ0lIMEtDaUFnSUNCaFpH
+        UnlaWE56SUhzS0lDQWdJQ0FnYVhBZ1BTQWlNVEF1TUM0eExqVWlDaUFnSUNCOUNnb2dJQ0FnY0c5
+        eWRDQjdDaUFnSUNBZ0lHNWhiV1VnSUNBZ0lEMGdJbWgwZEhBaUNpQWdJQ0FnSUhCdmNuUWdJQ0Fn
+        SUQwZ09EQUtJQ0FnSUNBZ2NISnZkRzlqYjJ3Z1BTQWlWRU5RSWdvZ0lDQWdmUW9LSUNBZ0lIQnZj
+        blFnZXdvZ0lDQWdJQ0J1WVcxbElDQWdJQ0E5SUNKb2RIUndjeUlLSUNBZ0lDQWdjRzl5ZENBZ0lD
+        QWdQU0EwTkRNS0lDQWdJQ0FnY0hKdmRHOWpiMndnUFNBaVZFTlFJZ29nSUNBZ2ZRb2dJSDBLZlFv
+        S2NtVnpiM1Z5WTJVZ0ltdDFZbVZ5Ym1WMFpYTmZjMlZ5ZG1salpTSWdJbVY0WVcxd2JHVWlJSHNL
+        SUNCdFpYUmhaR0YwWVNCN0NpQWdJQ0J1WVcxbElEMGdJaVI3YTNWaVpYSnVaWFJsYzE5bGJtUndi
+        Mmx1ZEhNdVpYaGhiWEJzWlM1dFpYUmhaR0YwWVM0d0xtNWhiV1Y5SWdvZ0lIMEtDaUFnYzNCbFl5
+        QjdDaUFnSUNCd2IzSjBJSHNLSUNBZ0lDQWdjRzl5ZENBZ0lDQWdJQ0FnUFNBNE1EZ3dDaUFnSUNB
+        Z0lIUmhjbWRsZEY5d2IzSjBJRDBnT0RBS0lDQWdJSDBLQ2lBZ0lDQndiM0owSUhzS0lDQWdJQ0Fn
+        Y0c5eWRDQWdJQ0FnSUNBZ1BTQTRORFF6Q2lBZ0lDQWdJSFJoY21kbGRGOXdiM0owSUQwZ05EUXpD
+        aUFnSUNCOUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQmJpQkZibVJ3YjJsdWRITWdjbVZ6YjNWeVkyVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUdsMGN5QnVZVzFsYzNCaFkyVWdZVzVrSUc1aGJXVXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZaVzVrY0c5cGJuUnpMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

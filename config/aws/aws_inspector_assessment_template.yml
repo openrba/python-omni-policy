@@ -7,22 +7,22 @@ aws_inspector_assessment_template:
     arguments:
         name:
             description: The name of the assessment template.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_arn:
             description: The assessment target ARN to attach the template to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         duration:
             description: The duration of the inspector run.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rules_package_arns:
             description: The rules to be used during the run.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -34,3 +34,25 @@ aws_inspector_assessment_template:
         arn:
             description: The template assessment ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhVzV6Y0dWamRHOXlYMkZ6YzJWemMyMWxiblJmZEdWdGNHeGhk
+        R1VpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsSWdvZ0lI
+        UmhjbWRsZEY5aGNtNGdQU0FpSkh0aGQzTmZhVzV6Y0dWamRHOXlYMkZ6YzJWemMyMWxiblJmZEdG
+        eVoyVjBMbVY0WVcxd2JHVXVZWEp1ZlNJS0lDQmtkWEpoZEdsdmJpQWdJRDBnTXpZd01Bb0tJQ0J5
+        ZFd4bGMxOXdZV05yWVdkbFgyRnlibk1nUFNCYkNpQWdJQ0FpWVhKdU9tRjNjenBwYm5Od1pXTjBi
+        M0k2ZFhNdGQyVnpkQzB5T2pjMU9EQTFPREE0TmpZeE5qcHlkV3hsYzNCaFkydGhaMlV2TUMwNWFH
+        ZEJOVEUyY0NJc0NpQWdJQ0FpWVhKdU9tRjNjenBwYm5Od1pXTjBiM0k2ZFhNdGQyVnpkQzB5T2pj
+        MU9EQTFPREE0TmpZeE5qcHlkV3hsYzNCaFkydGhaMlV2TUMxSU5XaHdVMkYzWXlJc0NpQWdJQ0Fp
+        WVhKdU9tRjNjenBwYm5Od1pXTjBiM0k2ZFhNdGQyVnpkQzB5T2pjMU9EQTFPREE0TmpZeE5qcHlk
+        V3hsYzNCaFkydGhaMlV2TUMxS1NrOTBXbWx4VVNJc0NpQWdJQ0FpWVhKdU9tRjNjenBwYm5Od1pX
+        TjBiM0k2ZFhNdGQyVnpkQzB5T2pjMU9EQTFPREE0TmpZeE5qcHlkV3hsYzNCaFkydGhaMlV2TUMx
+        Mlp6VkhSMGhUUkNJc0NpQWdYUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYMmx1YzNCbFkzUnZjbDloYzNObGMzTnRaVzUwWDNSbGJYQnNZWFJsWUNCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnWW5rZ2RYTnBibWNnZEdobElIUmxiWEJzWVhSbElHRnpjMlZ6YzIxbGJu
+        UWdRVkpPTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYm5Od1pXTjBiM0pmWVhOelpYTnpiV1Z1ZEY5MFpXMXdiR0YwWlM1b2RHMXNMbTFoY210
+        a2IzZHU=

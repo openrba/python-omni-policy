@@ -7,12 +7,12 @@ aws_redshift_parameter_group:
     arguments:
         name:
             description: The name of the Redshift parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         family:
             description: The family of the Redshift parameter group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -28,7 +28,7 @@ aws_redshift_parameter_group:
             notes: ''
         value:
             description: The value of the Redshift parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -42,3 +42,20 @@ aws_redshift_parameter_group:
         id:
             description: The Redshift parameter group name.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbVZrYzJocFpuUmZjR0Z5WVcxbGRHVnlYMmR5YjNWd0lpQWlZ
+        bUZ5SWlCN0NpQWdibUZ0WlNBZ0lEMGdJbkJoY21GdFpYUmxjaTFuY205MWNDMTBaWE4wTFhSbGNu
+        SmhabTl5YlNJS0lDQm1ZVzFwYkhrZ1BTQWljbVZrYzJocFpuUXRNUzR3SWdvS0lDQndZWEpoYldW
+        MFpYSWdld29nSUNBZ2JtRnRaU0FnUFNBaWNtVnhkV2x5WlY5emMyd2lDaUFnSUNCMllXeDFaU0E5
+        SUNKMGNuVmxJZ29nSUgwS0NpQWdjR0Z5WVcxbGRHVnlJSHNLSUNBZ0lHNWhiV1VnSUQwZ0luRjFa
+        WEo1WDJkeWIzVndJZ29nSUNBZ2RtRnNkV1VnUFNBaVpYaGhiWEJzWlNJS0lDQjlDZ29nSUhCaGNt
+        RnRaWFJsY2lCN0NpQWdJQ0J1WVcxbElDQTlJQ0psYm1GaWJHVmZkWE5sY2w5aFkzUnBkbWwwZVY5
+        c2IyZG5hVzVuSWdvZ0lDQWdkbUZzZFdVZ1BTQWlkSEoxWlNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwU1pXUnphR2xtZENCUVlYSmhiV1YwWlhJZ1IzSnZkWEJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WldSemFHbG1kRjl3WVhKaGJXVjBaWEpmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

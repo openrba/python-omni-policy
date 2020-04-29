@@ -7,7 +7,7 @@ aws_iot_thing:
     arguments:
         name:
             description: The name of the thing.
-            required: true
+            required: false
             policy: ''
             notes: ''
         attributes:
@@ -28,3 +28,14 @@ aws_iot_thing:
         arn:
             description: The ARN of the thing.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhVzkwWDNSb2FXNW5JaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhi
+        V1VnUFNBaVpYaGhiWEJzWlNJS0NpQWdZWFIwY21saWRYUmxjeUE5SUhzS0lDQWdJRVpwY25OMElE
+        MGdJbVY0WVcxd2JHVjJZV3gxWlNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwSlQxUWdWR2hwYm1keklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ2JtRnRa
+        U3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYjNSZmRHaHBibWN1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

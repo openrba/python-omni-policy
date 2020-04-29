@@ -7,7 +7,7 @@ vault_ldap_auth_backend_group:
     arguments:
         groupname:
             description: The LDAP groupname
-            required: true
+            required: false
             policy: ''
             notes: ''
         policies:
@@ -22,3 +22,25 @@ vault_ldap_auth_backend_group:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjlzWkdGd1gyRjFkR2hmWW1GamEyVnVaQ0lnSW14a1lYQWlJ
+        SHNLSUNBZ0lIQmhkR2dnSUNBZ0lDQWdJRDBnSW14a1lYQWlDaUFnSUNCMWNtd2dJQ0FnSUNBZ0lD
+        QTlJQ0pzWkdGd2N6b3ZMMlJqTFRBeExtVjRZVzF3YkdVdWIzSm5JZ29nSUNBZ2RYTmxjbVJ1SUNB
+        Z0lDQWdQU0FpVDFVOVZYTmxjbk1zVDFVOVFXTmpiM1Z1ZEhNc1JFTTlaWGhoYlhCc1pTeEVRejF2
+        Y21jaUNpQWdJQ0IxYzJWeVlYUjBjaUFnSUNBOUlDSnpRVTFCWTJOdmRXNTBUbUZ0WlNJS0lDQWdJ
+        SFZ3Ym1SdmJXRnBiaUFnSUQwZ0lrVllRVTFRVEVVdVQxSkhJZ29nSUNBZ1pHbHpZMjkyWlhKa2Jp
+        QWdQU0JtWVd4elpRb2dJQ0FnWjNKdmRYQmtiaUFnSUNBZ1BTQWlUMVU5UjNKdmRYQnpMRVJEUFdW
+        NFlXMXdiR1VzUkVNOWIzSm5JZ29nSUNBZ1ozSnZkWEJtYVd4MFpYSWdQU0FpS0NZb2IySnFaV04w
+        UTJ4aGMzTTlaM0p2ZFhBcEtHMWxiV0psY2pveExqSXVPRFF3TGpFeE16VTFOaTR4TGpRdU1UazBN
+        VG85ZTNzdVZYTmxja1JPZlgwcEtTSUtmUW9LY21WemIzVnlZMlVnSW5aaGRXeDBYMnhrWVhCZllY
+        VjBhRjlpWVdOclpXNWtYMmR5YjNWd0lpQWlaM0p2ZFhBaUlIc0tJQ0FnSUdkeWIzVndibUZ0WlNB
+        OUlDSmtZbUVpQ2lBZ0lDQndiMnhwWTJsbGN5QWdQU0JiSW1SaVlTSmRDaUFnSUNCaVlXTnJaVzVr
+        SUNBZ1BTQWlKSHQyWVhWc2RGOXNaR0Z3WDJGMWRHaGZZbUZqYTJWdVpDNXNaR0Z3TG5CaGRHaDlJ
+        Z3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwTVJFRlFJR0YxZEdobGJuUnBZMkYwYVc5dUlHSmhZMnRsYm1RZ1ozSnZkWEJ6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhCaGRHaGdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJ4a1lYQmZZWFYwYUY5aVlXTnJaVzVrWDJkeWIzVndMbWgwYld3dWJXUT0=

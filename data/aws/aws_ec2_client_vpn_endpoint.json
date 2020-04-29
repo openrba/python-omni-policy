@@ -8,19 +8,19 @@
         "arguments": {
             "authentication_options": {
                 "description": "Information about the authentication method to be used to authenticate clients.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "client_cidr_block": {
                 "description": "The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "connection_log_options": {
                 "description": "Information about the client connection logging options.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "server_certificate_arn": {
                 "description": "The ARN of the ACM server certificate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

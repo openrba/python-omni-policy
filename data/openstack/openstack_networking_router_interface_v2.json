@@ -14,25 +14,12 @@
             },
             "router_id": {
                 "description": "ID of the router this interface belongs to. Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "router_id": {
-                "description": "See Argument Reference above."
-            },
-            "subnet_id": {
-                "description": "See Argument Reference above."
-            },
-            "port_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

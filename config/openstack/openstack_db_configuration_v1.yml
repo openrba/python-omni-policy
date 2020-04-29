@@ -7,7 +7,7 @@ openstack_db_configuration_v1:
     arguments:
         region:
             description: The region in which to create the db instance. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -23,7 +23,7 @@ openstack_db_configuration_v1:
             notes: ''
         datastore:
             description: An array of database engine type and version. The datastore
-            required: true
+            required: false
             policy: ''
             notes: ''
         configuration:
@@ -36,13 +36,13 @@ openstack_db_configuration_v1:
         type:
             description: Database engine type to be used with this configuration.
                 Changing this creates a new resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
             description: Version of database engine type to be used with this configuration.
                 Changing this creates a new resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
@@ -51,19 +51,12 @@ openstack_db_configuration_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        datastore/type:
-            description: See Argument Reference above.
-        datastore/version:
-            description: See Argument Reference above.
-        configuration/name:
-            description: See Argument Reference above.
-        configuration/value:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWtZbDlqYjI1bWFXZDFjbUYwYVc5dVgzWXhMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

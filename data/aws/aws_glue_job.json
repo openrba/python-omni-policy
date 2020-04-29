@@ -14,7 +14,7 @@
             },
             "command": {
                 "description": "The command of the job. Defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,7 +62,7 @@
             },
             "name": {
                 "description": "The name you assign to this job. It must be unique in your account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,7 +74,7 @@
             },
             "role_arn": {
                 "description": "The ARN of the IAM role associated with this job.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

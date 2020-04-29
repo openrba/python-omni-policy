@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The display name of a backup plan.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule": {
                 "description": "A rule object that specifies a scheduled task that is used to back up a selection of resources.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

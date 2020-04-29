@@ -10,13 +10,28 @@ google_google_organization_iam_policy:
         org_id:
             description: The numeric ID of the organization in which you want to create
                 a custom role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
             description: The `google_iam_policy` data source that represents
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYjNKbllXNXBlbUYwYVc5dVgybGhiVjl3YjJ4cFkza2lJ
+        Q0p3YjJ4cFkza2lJSHNLSUNCdmNtZGZhV1FnSUNBZ0lDQTlJQ0l4TWpNME5UWTNPRGtpQ2lBZ2NH
+        OXNhV041WDJSaGRHRWdQU0JrWVhSaExtZHZiMmRzWlY5cFlXMWZjRzlzYVdONUxtRmtiV2x1TG5C
+        dmJHbGplVjlrWVhSaENuMEtDbVJoZEdFZ0ltZHZiMmRzWlY5cFlXMWZjRzlzYVdONUlpQWlZV1J0
+        YVc0aUlIc0tJQ0JpYVc1a2FXNW5JSHNLSUNBZ0lISnZiR1VnUFNBaWNtOXNaWE12WldScGRHOXlJ
+        Z29LSUNBZ0lHMWxiV0psY25NZ1BTQmJDaUFnSUNBZ0lDSjFjMlZ5T21waGJtVkFaWGhoYlhCc1pT
+        NWpiMjBpTEFvZ0lDQWdYUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmYjNKbllXNXBlbUYwYVc5dVgybGhiVjl3YjJ4cFkza3VhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

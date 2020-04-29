@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the EventHub Namespace resource. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the namespace. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "Defines which tier to use. Valid options are `Basic` and `Standard`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,7 +62,7 @@
             },
             "default_action": {
                 "description": "The default action to take when a rule is not matched. Possible values are `Allow` and `Deny`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,7 +80,7 @@
             },
             "subnet_id": {
                 "description": "The id of the subnet to match on.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -92,7 +92,7 @@
             },
             "ip_mask": {
                 "description": "The ip mask to match on.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

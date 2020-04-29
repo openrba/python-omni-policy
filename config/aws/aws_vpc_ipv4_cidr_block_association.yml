@@ -7,12 +7,12 @@ aws_vpc_ipv4_cidr_block_association:
     arguments:
         cidr_block:
             description: The additional IPv4 CIDR block to associate with the VPC.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_id:
             description: The ID of the VPC to make the association with.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

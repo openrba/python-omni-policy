@@ -7,7 +7,7 @@ vault_approle_auth_backend_login:
     arguments:
         role_id:
             description: The ID of the role to log in with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         secret_id:
@@ -15,19 +15,27 @@ vault_approle_auth_backend_login:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        policies:
-            description: A list of policies applied to the token.
-        renewable:
-            description: Whether the token is renewable or not.
-        lease_duration:
-            description: How long the token is valid for, in seconds.
-        lease_started:
-            description: The date and time the lease started, in RFC 3339 format.
-        accessor:
-            description: The accessor for the token.
-        client_token:
-            description: The Vault token created.
-        metadata:
-            description: The metadata associated with the token.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmhjSEJ5YjJ4bElpQjdD
+        aUFnZEhsd1pTQTlJQ0poY0hCeWIyeGxJZ3A5Q2dweVpYTnZkWEpqWlNBaWRtRjFiSFJmWVhCd2Nt
+        OXNaVjloZFhSb1gySmhZMnRsYm1SZmNtOXNaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQmlZV05yWlc1
+        a0lDQWdQU0FpSkh0MllYVnNkRjloZFhSb1gySmhZMnRsYm1RdVlYQndjbTlzWlM1d1lYUm9mU0lL
+        SUNCeWIyeGxYMjVoYldVZ1BTQWlkR1Z6ZEMxeWIyeGxJZ29nSUhCdmJHbGphV1Z6SUNBOUlGc2la
+        R1ZtWVhWc2RDSXNJQ0prWlhZaUxDQWljSEp2WkNKZENuMEtDbkpsYzI5MWNtTmxJQ0oyWVhWc2RG
+        OWhjSEJ5YjJ4bFgyRjFkR2hmWW1GamEyVnVaRjl5YjJ4bFgzTmxZM0psZEY5cFpDSWdJbWxrSWlC
+        N0NpQWdZbUZqYTJWdVpDQWdJRDBnSWlSN2RtRjFiSFJmWVhWMGFGOWlZV05yWlc1a0xtRndjSEp2
+        YkdVdWNHRjBhSDBpQ2lBZ2NtOXNaVjl1WVcxbElEMGdJaVI3ZG1GMWJIUmZZWEJ3Y205c1pWOWhk
+        WFJvWDJKaFkydGxibVJmY205c1pTNWxlR0Z0Y0d4bExuSnZiR1ZmYm1GdFpYMGlDbjBLQ25KbGMy
+        OTFjbU5sSUNKMllYVnNkRjloY0hCeWIyeGxYMkYxZEdoZlltRmphMlZ1WkY5c2IyZHBiaUlnSW14
+        dloybHVJaUI3Q2lBZ1ltRmphMlZ1WkNBZ0lEMGdJaVI3ZG1GMWJIUmZZWFYwYUY5aVlXTnJaVzVr
+        TG1Gd2NISnZiR1V1Y0dGMGFIMGlDaUFnY205c1pWOXBaQ0FnSUQwZ0lpUjdkbUYxYkhSZllYQndj
+        bTlzWlY5aGRYUm9YMkpoWTJ0bGJtUmZjbTlzWlM1bGVHRnRjR3hsTG5KdmJHVmZhV1I5SWdvZ0lI
+        TmxZM0psZEY5cFpDQTlJQ0lrZTNaaGRXeDBYMkZ3Y0hKdmJHVmZZWFYwYUY5aVlXTnJaVzVrWDNK
+        dmJHVmZjMlZqY21WMFgybGtMbWxrTG5ObFkzSmxkRjlwWkgwaUNuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGd2NISnZiR1ZmWVhWMGFGOWlZV05yWlc1a1gyeHZaMmx1TG1oMGJXd3ViV1E9

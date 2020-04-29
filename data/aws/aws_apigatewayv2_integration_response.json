@@ -8,19 +8,19 @@
         "arguments": {
             "api_id": {
                 "description": "The API identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "integration_id": {
                 "description": "The identifier of the [`aws_apigatewayv2_integration`](/docs/providers/aws/r/apigatewayv2_integration.html).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "integration_response_key": {
                 "description": "The integration response key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,7 +43,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The integration response identifier."
+            }
+        },
         "timeouts": {}
     }
 }

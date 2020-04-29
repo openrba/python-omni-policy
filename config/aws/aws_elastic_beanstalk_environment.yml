@@ -7,12 +7,12 @@ aws_elastic_beanstalk_environment:
     arguments:
         name:
             description: A unique name for this Environment. This name is used
-            required: true
+            required: false
             policy: ''
             notes: ''
         application:
             description: Name of the application that contains the version
-            required: true
+            required: false
             policy: ''
             notes: ''
         cname_prefix:
@@ -75,3 +75,21 @@ aws_elastic_beanstalk_environment:
         tier:
             description: The environment tier specified.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hoYzNScFkxOWlaV0Z1YzNSaGJHdGZZWEJ3YkdsallYUnBi
+        MjRpSUNKMFpuUmxjM1FpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0E5SUNKMFppMTBaWE4wTFc1aGJX
+        VWlDaUFnWkdWelkzSnBjSFJwYjI0Z1BTQWlkR1l0ZEdWemRDMWtaWE5qSWdwOUNncHlaWE52ZFhK
+        alpTQWlZWGR6WDJWc1lYTjBhV05mWW1WaGJuTjBZV3hyWDJWdWRtbHliMjV0Wlc1MElpQWlkR1ps
+        Ym5aMFpYTjBJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0owWmkxMFpYTjBM
+        VzVoYldVaUNpQWdZWEJ3YkdsallYUnBiMjRnSUNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTlsYkdGemRH
+        bGpYMkpsWVc1emRHRnNhMTloY0hCc2FXTmhkR2x2Ymk1MFpuUmxjM1F1Ym1GdFpYMGlDaUFnYzI5
+        c2RYUnBiMjVmYzNSaFkydGZibUZ0WlNBOUlDSTJOR0pwZENCQmJXRjZiMjRnVEdsdWRYZ2dNakF4
+        TlM0d015QjJNaTR3TGpNZ2NuVnVibWx1WnlCSGJ5QXhMalFpQ24wSw==
+    import: !!binary |
+        Q2dwRmJHRnpkR2xqSUVKbFlXNXpkR0ZzYXlCRmJuWnBjbTl1YldWdWRITWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpYMkpsWVc1emRHRnNhMTlsYm5acGNtOXViV1Z1ZEM1b2RHMXNMbTFoY210
+        a2IzZHU=

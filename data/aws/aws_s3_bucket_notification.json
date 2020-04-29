@@ -8,7 +8,7 @@
         "arguments": {
             "bucket": {
                 "description": "The name of the bucket to put notification configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,13 +38,13 @@
             },
             "topic_arn": {
                 "description": "Specifies Amazon SNS topic ARN.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "events": {
                 "description": "Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,13 +62,13 @@
             },
             "queue_arn": {
                 "description": "Specifies Amazon SQS queue ARN.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "lambda_function_arn": {
                 "description": "Specifies Amazon Lambda function ARN.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

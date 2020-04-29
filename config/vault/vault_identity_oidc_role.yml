@@ -27,10 +27,21 @@ vault_identity_oidc_role:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The name of the created role.
-        client_id:
-            description: The value that will be included in the `aud` field of all
-                the OIDC identity
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25aaGNtbGhZbXhsSUNKclpYa2lJSHNLSUNCa1pYTmpjbWx3ZEdsdmJpQTlJQ0pPWVcxbElHOW1J
+        SFJvWlNCUFNVUkRJRXRsZVNJS0lDQmtaV1poZFd4MElDQWdJQ0E5SUNKclpYa2lDbjBLQ25KbGMy
+        OTFjbU5sSUNKMllYVnNkRjlwWkdWdWRHbDBlVjl2YVdSalgydGxlU0lnSW10bGVTSWdld29nSUc1
+        aGJXVWdJQ0FnSUNBOUlIWmhjaTVyWlhrS0lDQmhiR2R2Y21sMGFHMGdQU0FpVWxNeU5UWWlDZ29n
+        SUdGc2JHOTNaV1JmWTJ4cFpXNTBYMmxrY3lBOUlGc0tJQ0FnSUhaaGRXeDBYMmxrWlc1MGFYUjVY
+        MjlwWkdOZmNtOXNaUzV5YjJ4bExtTnNhV1Z1ZEY5cFpBb2dJRjBLZlFvS2NtVnpiM1Z5WTJVZ0lu
+        WmhkV3gwWDJsa1pXNTBhWFI1WDI5cFpHTmZjbTlzWlNJZ0luSnZiR1VpSUhzS0lDQnVZVzFsSUQw
+        Z0luSnZiR1VpQ2lBZ2EyVjVJQ0E5SUhaaGNpNXJaWGtLZlFvPQ==
+    import: !!binary |
+        Q2dwVWFHVWdhMlY1SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IzYVhSb0lIUm9aU0J5YjJ4bElHNWhi
+        V1VzSUdadmNpQmxlR0Z0Y0d4bE9nb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJsa1pXNTBhWFI1WDI5cFpHTmZjbTlzWlM1b2RHMXNMbTFr

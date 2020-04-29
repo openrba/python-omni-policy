@@ -51,7 +51,7 @@
             },
             "log_type": {
                 "description": "Permission type for which logging is to be configured.  Must be one of `DATA_READ`, `DATA_WRITE`, or `ADMIN_READ`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -63,13 +63,13 @@
             },
             "expression": {
                 "description": "Textual representation of an expression in Common Expression Language syntax.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "title": {
                 "description": "A title for the expression, i.e. a short string describing its purpose.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,7 +8,7 @@ aws_ec2_client_vpn_endpoint:
         authentication_options:
             description: Information about the authentication method to be used to
                 authenticate clients.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_cidr_block:
@@ -18,12 +18,12 @@ aws_ec2_client_vpn_endpoint:
                 routes that you add manually. The address range cannot be changed
                 after the Client VPN endpoint has been created. The CIDR block should
                 be /22 or greater.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_log_options:
             description: Information about the client connection logging options.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -41,7 +41,7 @@ aws_ec2_client_vpn_endpoint:
             notes: ''
         server_certificate_arn:
             description: The ARN of the ACM server certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         split_tunnel:
@@ -70,3 +70,26 @@ aws_ec2_client_vpn_endpoint:
         status:
             description: The current state of the Client VPN endpoint.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDJOc2FXVnVkRjkyY0c1ZlpXNWtjRzlwYm5RaUlDSmxl
+        R0Z0Y0d4bElpQjdDaUFnWkdWelkzSnBjSFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJQ0owWlhKeVlX
+        WnZjbTB0WTJ4cFpXNTBkbkJ1TFdWNFlXMXdiR1VpQ2lBZ2MyVnlkbVZ5WDJObGNuUnBabWxqWVhS
+        bFgyRnliaUE5SUNJa2UyRjNjMTloWTIxZlkyVnlkR2xtYVdOaGRHVXVZMlZ5ZEM1aGNtNTlJZ29n
+        SUdOc2FXVnVkRjlqYVdSeVgySnNiMk5ySUNBZ0lDQWdQU0FpTVRBdU1DNHdMakF2TVRZaUNnb2dJ
+        R0YxZEdobGJuUnBZMkYwYVc5dVgyOXdkR2x2Ym5NZ2V3b2dJQ0FnZEhsd1pTQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVkyVnlkR2xtYVdOaGRHVXRZWFYwYUdWdWRHbGpZWFJwYjI0
+        aUNpQWdJQ0J5YjI5MFgyTmxjblJwWm1sallYUmxYMk5vWVdsdVgyRnliaUE5SUNJa2UyRjNjMTlo
+        WTIxZlkyVnlkR2xtYVdOaGRHVXVjbTl2ZEY5alpYSjBMbUZ5Ym4waUNpQWdmUW9LSUNCamIyNXVa
+        V04wYVc5dVgyeHZaMTl2Y0hScGIyNXpJSHNLSUNBZ0lHVnVZV0pzWldRZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUhSeWRXVUtJQ0FnSUdOc2IzVmtkMkYwWTJoZmJHOW5YMmR5YjNWd0lDQTlJQ0lrZTJG
+        M2MxOWpiRzkxWkhkaGRHTm9YMnh2WjE5bmNtOTFjQzVzWnk1dVlXMWxmU0lLSUNBZ0lHTnNiM1Zr
+        ZDJGMFkyaGZiRzluWDNOMGNtVmhiU0E5SUNJa2UyRjNjMTlqYkc5MVpIZGhkR05vWDJ4dloxOXpk
+        SEpsWVcwdWJITXVibUZ0WlgwaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQlYxTWdRMnhwWlc1MElGWlFUaUJsYm1Sd2IybHVkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYVdSZ0lIWmhiSFZsSUdadmRXNWtJSFpwWVNCZ1lYZHpJR1ZqTWlCa1pY
+        TmpjbWxpWlMxamJHbGxiblF0ZG5CdUxXVnVaSEJ2YVc1MGMyQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZlkyeHBaVzUwWDNad2JsOWxibVJ3YjJsdWRDNW9kRzFzTG0xaGNtdGtiM2R1

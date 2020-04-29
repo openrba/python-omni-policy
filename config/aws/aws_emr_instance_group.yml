@@ -8,19 +8,19 @@ aws_emr_instance_group:
         name:
             description: Human friendly name given to the instance group. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cluster_id:
             description: ID of the EMR Cluster to attach to. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_type:
             description: The EC2 instance type for all instances in the instance group.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_count:
@@ -88,3 +88,18 @@ aws_emr_instance_group:
         id:
             description: The EMR Instance ID
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaVzF5WDJsdWMzUmhibU5sWDJkeWIzVndJaUFpZEdGemF5SWdl
+        d29nSUdOc2RYTjBaWEpmYVdRZ0lDQWdJRDBnSWlSN1lYZHpYMlZ0Y2w5amJIVnpkR1Z5TG5SbUxY
+        UmxjM1F0WTJ4MWMzUmxjaTVwWkgwaUNpQWdhVzV6ZEdGdVkyVmZZMjkxYm5RZ1BTQXhDaUFnYVc1
+        emRHRnVZMlZmZEhsd1pTQWdQU0FpYlRVdWVHeGhjbWRsSWdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0ltMTVJR3hwZEhSc1pTQnBibk4wWVc1alpTQm5jbTkxY0NJS2ZRbz0=
+    import: !!binary |
+        Q2dwRlRWSWdkR0Z6YXlCcGJuTjBZVzVqWlNCbmNtOTFjQ0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxhWElnUlUxU0lFTnNkWE4wWlhJZ2FXUWdZVzVrSUVsdWMzUmhibU5sSUVkeWIz
+        VndJR2xrSUhObGNHRnlZWFJsWkNCaWVTQmhJR1p2Y25kaGNtUXRjMnhoYzJnZ1lDOWdMQ0JsTG1j
+        dUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYlhKZmFXNXpkR0Z1WTJWZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

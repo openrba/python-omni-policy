@@ -20,7 +20,7 @@
             },
             "cidr_block": {
                 "description": "The CIDR block for the subnet.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,7 +44,7 @@
             },
             "vpc_id": {
                 "description": "The VPC ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

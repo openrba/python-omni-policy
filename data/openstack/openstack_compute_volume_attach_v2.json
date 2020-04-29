@@ -14,13 +14,13 @@
             },
             "instance_id": {
                 "description": "The ID of the Instance to attach the Volume to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "volume_id": {
                 "description": "The ID of the Volume to attach to an Instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,23 +37,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "instance_id": {
-                "description": "See Argument Reference above."
-            },
-            "volume_id": {
-                "description": "See Argument Reference above."
-            },
-            "device": {
-                "description": "See Argument Reference above. _NOTE_: The correctness of this"
-            },
-            "multiattach": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -8,16 +8,27 @@ aws_cloudwatch_log_stream:
         name:
             description: The name of the log stream. Must not be longer than 512 characters
                 and must not contain `:`
-            required: true
+            required: false
             policy: ''
             notes: ''
         log_group_name:
             description: The name of the log group under which the log stream is to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         arn:
             description: The Amazon Resource Name (ARN) specifying the log stream.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lYUmphRjlzYjJkZlozSnZkWEFpSUNKNVlXUmhJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKWllXUmhJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMk5zYjNWa2Qy
+        RjBZMmhmYkc5blgzTjBjbVZoYlNJZ0ltWnZieUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUQw
+        Z0lsTmhiWEJzWlV4dloxTjBjbVZoYlRFeU16UWlDaUFnYkc5blgyZHliM1Z3WDI1aGJXVWdQU0Fp
+        Skh0aGQzTmZZMnh2ZFdSM1lYUmphRjlzYjJkZlozSnZkWEF1ZVdGa1lTNXVZVzFsZlNJS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDJ4dloxOXpkSEpsWVcwdWFIUnRiQzV0WVhKclpHOTNiZz09

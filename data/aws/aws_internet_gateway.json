@@ -8,7 +8,7 @@
         "arguments": {
             "vpc_id": {
                 "description": "The VPC ID to create in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -16,7 +16,10 @@
                 "description": "A map of tags to assign to the resource.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> ",
+                    " It's recommended to denote that the AWS Instance or Elastic IP depends on the Internet Gateway. For example:"
+                ]
             }
         },
         "attributes": {

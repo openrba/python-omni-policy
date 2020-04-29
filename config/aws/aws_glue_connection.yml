@@ -13,7 +13,7 @@ aws_glue_connection:
             notes: ''
         connection_properties:
             description: A map of key-value pairs used as parameters for this connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_type:
@@ -33,7 +33,7 @@ aws_glue_connection:
             notes: ''
         name:
             description: The name of the connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         physical_connection_requirements:
@@ -46,3 +46,12 @@ aws_glue_connection:
         id:
             description: Catalog ID and name of the connection
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSGJIVmxJRU52Ym01bFkzUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUVOQlZFRk1UMGN0U1VSZ0lDaEJWMU1nWVdOamIzVnVkQ0JKUkNCcFppQnViM1FnWTNWemRH
+        OXRLU0JoYm1RZ1lFNUJUVVZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkhWbFgyTnZibTVsWTNScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

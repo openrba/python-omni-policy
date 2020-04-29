@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "A name to identify the stream. This is unique to the",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "destination": {
                 "description": "This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extended_s3` instead), `extended_s3`, `redshift`, `elasticsearch`, and `splunk`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,13 +62,13 @@
             },
             "kinesis_stream_arn": {
                 "description": "The kinesis stream used as the source of the firehose delivery stream.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The ARN of the IAM role to be assumed by Firehose for calling the Amazon ES Configuration API and for indexing documents.  The pattern needs to be `arn:.*`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,7 +80,7 @@
             },
             "bucket_arn": {
                 "description": "The ARN of the S3 bucket",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -152,19 +152,19 @@
             },
             "cluster_jdbcurl": {
                 "description": "The jdbcurl of the redshift cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "username": {
                 "description": "The username that the firehose delivery stream will assume. It is strongly recommended that the username and password provided is used exclusively for Amazon Kinesis Firehose purposes, and that the permissions for the account are restricted for Amazon Redshift INSERT permissions.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "password": {
                 "description": "The password for the username above.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -176,7 +176,7 @@
             },
             "data_table_name": {
                 "description": "The name of the table in the redshift cluster that the s3 bucket will copy to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -206,13 +206,13 @@
             },
             "domain_arn": {
                 "description": "The ARN of the Amazon ES domain.  The IAM role must have permission for `DescribeElasticsearchDomain`, `DescribeElasticsearchDomains`, and `DescribeElasticsearchDomainConfig` after assuming `RoleARN`.  The pattern needs to be `arn:.*`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "index_name": {
                 "description": "The Elasticsearch index name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -224,7 +224,7 @@
             },
             "type_name": {
                 "description": "The Elasticsearch type name with maximum length of 100 characters.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -236,7 +236,7 @@
             },
             "hec_endpoint": {
                 "description": "The HTTP Event Collector (HEC",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -266,7 +266,7 @@
             },
             "type": {
                 "description": "The type of processor. Valid Values: `Lambda`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -278,13 +278,13 @@
             },
             "parameter_name": {
                 "description": "Parameter name. Valid Values: `LambdaArn`, `NumberOfRetries`, `RoleArn`, `BufferSizeInMBs`, `BufferIntervalInSeconds`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "parameter_value": {
                 "description": "Parameter value. Must be between 1 and 512 length (inclusive). When providing a Lambda ARN, you should specify the resource version as well.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

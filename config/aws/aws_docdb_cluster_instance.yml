@@ -24,7 +24,7 @@ aws_docdb_cluster_instance:
             notes: ''
         cluster_identifier:
             description: The identifier of the [`aws_docdb_cluster`](/docs/providers/aws/r/docdb_cluster.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         engine:
@@ -48,7 +48,7 @@ aws_docdb_cluster_instance:
         instance_class:
             description: The instance class to use. For details on CPU and memory,
                 see [Scaling for DocDB Instances][2]. DocDB currently
-            required: true
+            required: false
             policy: ''
             notes: ''
         preferred_maintenance_window:
@@ -88,3 +88,22 @@ aws_docdb_cluster_instance:
         storage_encrypted:
             description: Specifies whether the DB cluster is encrypted.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaRzlqWkdKZlkyeDFjM1JsY2w5cGJuTjBZVzVqWlNJZ0ltTnNk
+        WE4wWlhKZmFXNXpkR0Z1WTJWeklpQjdDaUFnWTI5MWJuUWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ01n
+        b2dJR2xrWlc1MGFXWnBaWElnSUNBZ0lDQWdJQ0E5SUNKa2IyTmtZaTFqYkhWemRHVnlMV1JsYlc4
+        dEpIdGpiM1Z1ZEM1cGJtUmxlSDBpQ2lBZ1kyeDFjM1JsY2w5cFpHVnVkR2xtYVdWeUlEMGdJaVI3
+        WVhkelgyUnZZMlJpWDJOc2RYTjBaWEl1WkdWbVlYVnNkQzVwWkgwaUNpQWdhVzV6ZEdGdVkyVmZZ
+        MnhoYzNNZ0lDQWdJRDBnSW1SaUxuSTFMbXhoY21kbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgy
+        UnZZMlJpWDJOc2RYTjBaWElpSUNKa1pXWmhkV3gwSWlCN0NpQWdZMngxYzNSbGNsOXBaR1Z1ZEds
+        bWFXVnlJRDBnSW1SdlkyUmlMV05zZFhOMFpYSXRaR1Z0YnlJS0lDQmhkbUZwYkdGaWFXeHBkSGxm
+        ZW05dVpYTWdQU0JiSW5WekxYZGxjM1F0TW1FaUxDQWlkWE10ZDJWemRDMHlZaUlzSUNKMWN5MTNa
+        WE4wTFRKaklsMEtJQ0J0WVhOMFpYSmZkWE5sY201aGJXVWdJQ0FnUFNBaVptOXZJZ29nSUcxaGMz
+        UmxjbDl3WVhOemQyOXlaQ0FnSUNBOUlDSmlZWEppZFhRNFkyaGhjbk1pQ24wSw==
+    import: !!binary |
+        Q2dwRWIyTkVRaUJEYkhWemRHVnlJRWx1YzNSaGJtTmxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0JwWkdWdWRHbG1hV1Z5WUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYjJOa1lsOWpiSFZ6ZEdWeVgybHVjM1JoYm1ObExtaDBiV3d1YldGeWEyUnZkMjQ9

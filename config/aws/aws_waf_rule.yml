@@ -9,12 +9,12 @@ aws_waf_rule:
             description: The name or description for the Amazon CloudWatch metric
                 of this rule. The name can contain only alphanumeric characters (A-Z,
                 a-z, 0-9); the name can't contain whitespace.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name or description of the rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         predicates:
@@ -33,3 +33,20 @@ aws_waf_rule:
         arn:
             description: The ARN of the WAF rule.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDJsd2MyVjBJaUFpYVhCelpYUWlJSHNLSUNCdVlXMWxJ
+        RDBnSW5SbVNWQlRaWFFpQ2dvZ0lHbHdYM05sZEY5a1pYTmpjbWx3ZEc5eWN5QjdDaUFnSUNCMGVY
+        QmxJQ0E5SUNKSlVGWTBJZ29nSUNBZ2RtRnNkV1VnUFNBaU1Ua3lMakF1Tnk0d0x6STBJZ29nSUgw
+        S2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5M1lXWmZjblZzWlNJZ0luZGhabkoxYkdVaUlIc0tJQ0Jr
+        WlhCbGJtUnpYMjl1SUNBOUlGc2lZWGR6WDNkaFpsOXBjSE5sZEM1cGNITmxkQ0pkQ2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdQU0FpZEdaWFFVWlNkV3hsSWdvZ0lHMWxkSEpwWTE5dVlXMWxJRDBnSW5SbVYw
+        RkdVblZzWlNJS0NpQWdjSEpsWkdsallYUmxjeUI3Q2lBZ0lDQmtZWFJoWDJsa0lEMGdJaVI3WVhk
+        elgzZGhabDlwY0hObGRDNXBjSE5sZEM1cFpIMGlDaUFnSUNCdVpXZGhkR1ZrSUQwZ1ptRnNjMlVL
+        SUNBZ0lIUjVjR1VnSUNBZ1BTQWlTVkJOWVhSamFDSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwWFFVWWdjblZzWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCcFpDd2da
+        UzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmNuVnNaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

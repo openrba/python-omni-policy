@@ -12,12 +12,12 @@ openstack_compute_secgroup_v2:
             notes: ''
         name:
             description: A unique name for the security group. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
             description: A description for the security group. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule:
@@ -27,17 +27,17 @@ openstack_compute_secgroup_v2:
             notes: ''
         from_port:
             description: An integer representing the lower bound of the port
-            required: true
+            required: false
             policy: ''
             notes: ''
         to_port:
             description: An integer representing the upper bound of the port
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_protocol:
             description: The protocol type that will be allowed. Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         cidr:
@@ -55,13 +55,23 @@ openstack_compute_secgroup_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        rule:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZlkyOXRjSFYwWlY5elpXTm5jbTkxY0Y5Mk1pSWdJ
+        bk5sWTJkeWIzVndYekVpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0E5SUNKdGVWOXpaV05uY205MWND
+        SUtJQ0JrWlhOamNtbHdkR2x2YmlBOUlDSnRlU0J6WldOMWNtbDBlU0JuY205MWNDSUtDaUFnY25W
+        c1pTQjdDaUFnSUNCbWNtOXRYM0J2Y25RZ0lDQTlJREl5Q2lBZ0lDQjBiMTl3YjNKMElDQWdJQ0E5
+        SURJeUNpQWdJQ0JwY0Y5d2NtOTBiMk52YkNBOUlDSjBZM0FpQ2lBZ0lDQmphV1J5SUNBZ0lDQWdJ
+        Q0E5SUNJd0xqQXVNQzR3THpBaUNpQWdmUW9LSUNCeWRXeGxJSHNLSUNBZ0lHWnliMjFmY0c5eWRD
+        QWdJRDBnT0RBS0lDQWdJSFJ2WDNCdmNuUWdJQ0FnSUQwZ09EQUtJQ0FnSUdsd1gzQnliM1J2WTI5
+        c0lEMGdJblJqY0NJS0lDQWdJR05wWkhJZ0lDQWdJQ0FnSUQwZ0lqQXVNQzR3TGpBdk1DSUtJQ0I5
+        Q24wSw==
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSGNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgzTmxZMmR5YjNWd1gzWXlMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

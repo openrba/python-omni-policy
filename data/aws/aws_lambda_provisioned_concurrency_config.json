@@ -8,19 +8,19 @@
         "arguments": {
             "function_name": {
                 "description": "Name or Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "provisioned_concurrent_executions": {
                 "description": "Amount of capacity to allocate. Must be greater than or equal to `1`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "qualifier": {
                 "description": "Lambda Function version or Lambda Alias name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

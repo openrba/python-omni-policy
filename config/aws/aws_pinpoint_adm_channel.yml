@@ -7,17 +7,17 @@ aws_pinpoint_adm_channel:
     arguments:
         application_id:
             description: The application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_id:
             description: Client ID (part of OAuth Credentials
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_secret:
             description: Client Secret (part of OAuth Credentials
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -27,3 +27,17 @@ aws_pinpoint_adm_channel:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR2x1Y0c5cGJuUmZZWEJ3SWlBaVlYQndJaUI3ZlFvS2NtVnpi
+        M1Z5WTJVZ0ltRjNjMTl3YVc1d2IybHVkRjloWkcxZlkyaGhibTVsYkNJZ0ltTm9ZVzV1Wld3aUlI
+        c0tJQ0JoY0hCc2FXTmhkR2x2Ymw5cFpDQTlJQ0lrZTJGM2MxOXdhVzV3YjJsdWRGOWhjSEF1WVhC
+        d0xtRndjR3hwWTJGMGFXOXVYMmxrZlNJS0lDQmpiR2xsYm5SZmFXUWdJQ0FnSUNBOUlDSWlDaUFn
+        WTJ4cFpXNTBYM05sWTNKbGRDQWdQU0FpSWdvZ0lHVnVZV0pzWldRZ0lDQWdJQ0FnSUQwZ2RISjFa
+        UXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwUWFXNXdiMmx1ZENCQlJFMGdRMmhoYm01bGJDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQmhjSEJzYVdOaGRHbHZiaTFwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YVc1d2IybHVkRjloWkcxZlkyaGhibTVsYkM1dFlYSnJaRzkzYmc9PQ==

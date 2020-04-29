@@ -13,23 +13,23 @@ openstack_keymanager_order_v1:
         type:
             description: The type of key to be generated. Must be one of `asymmetric`,
                 `key`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         meta:
             description: Dictionary containing the order metadata used to generate
                 the order. The structure is described below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         algorithm:
             description: Algorithm to use for key generation.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bit_length:
             description: '- Bit lenght of key to be generated.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         expiration:
@@ -55,29 +55,15 @@ openstack_keymanager_order_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        container_ref:
-            description: The container reference / where to find the container.
-        created:
-            description: The date the order was created.
-        creator_id:
-            description: The creator of the order.
-        meta:
-            description: See Argument Reference above.
-        order_ref:
-            description: The order reference / where to find the order.
-        region:
-            description: See Argument Reference above.
-        secret_ref:
-            description: The secret reference / where to find the secret.
-        status:
-            description: The status of the order.
-        sub_status:
-            description: The sub status of the order.
-        sub_status_message:
-            description: The sub status message of the order.
-        type:
-            description: The type of the order.
-        updated:
-            description: The date the order was last updated.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwUGNtUmxjbk1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0J2Y21SbGNpQnBa
+        Q0FvZEdobElHeGhjM1FnY0dGeWRDQnZaaUIwYUdVZ2IzSmtaWElnY21WbVpYSmxibU5sS1N3Z1pT
+        NW5Mam9LQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXJaWGx0WVc1aFoyVnlYMjl5WkdWeVgzWXhMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

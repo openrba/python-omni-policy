@@ -18,10 +18,32 @@ aws_route_table_association:
             notes: ''
         route_table_id:
             description: The ID of the routing table to associate with.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the association
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbTkxZEdWZmRHRmliR1ZmWVhOemIyTnBZWFJwYjI0aUlDSmhJ
+        aUI3Q2lBZ2MzVmlibVYwWDJsa0lDQWdJQ0FnUFNCaGQzTmZjM1ZpYm1WMExtWnZieTVwWkFvZ0lI
+        SnZkWFJsWDNSaFlteGxYMmxrSUQwZ1lYZHpYM0p2ZFhSbFgzUmhZbXhsTG1KaGNpNXBaQXA5Q2c9
+        PQ==
+    import: !!binary |
+        Q2dwK1BpQXFLazVQVkVVNktpb2dRWFIwWlcxd2RHbHVaeUIwYnlCaGMzTnZZMmxoZEdVZ1lTQnli
+        M1YwWlNCMFlXSnNaU0IzYVhSb0lHRWdjM1ZpYm1WMElHOXlJR2RoZEdWM1lYa3NJSGRvWlhKbElH
+        VnBkR2hsY2dwcGN5QmhiSEpsWVdSNUlHRnpjMjlqYVdGMFpXUXNJSGRwYkd3Z2NtVnpkV3gwSUds
+        dUlHRnVJR1Z5Y205eUlDaGxMbWN1TEFwZ1VtVnpiM1Z5WTJVdVFXeHlaV0ZrZVVGemMyOWphV0Yw
+        WldRNklIUm9aU0J6Y0dWamFXWnBaV1FnWVhOemIyTnBZWFJwYjI0Z1ptOXlJSEp2ZFhSbElIUmhZ
+        bXhsQ25KMFlpMDBNVGMyTmpVM01qYzVJR052Ym1ac2FXTjBjeUIzYVhSb0lHRnVJR1Y0YVhOMGFX
+        NW5JR0Z6YzI5amFXRjBhVzl1WUNrZ2RXNXNaWE56SUhsdmRTQm1hWEp6ZEFwcGJYQnZjblFnZEdo
+        bElHOXlhV2RwYm1Gc0lHRnpjMjlqYVdGMGFXOXVMZ29LUlVNeUlGSnZkWFJsSUZSaFlteGxJRUZ6
+        YzI5amFXRjBhVzl1Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdGemMyOWph
+        V0YwWldRZ2NtVnpiM1Z5WTJVZ1NVUWdZVzVrSUZKdmRYUmxJRlJoWW14bElFbEVDbk5sY0dGeVlY
+        UmxaQ0JpZVNCaElHWnZjbmRoY21RZ2MyeGhjMmdnS0dBdllDa3VDZ3BHYjNJZ1pYaGhiWEJzWlNC
+        M2FYUm9JRVZETWlCVGRXSnVaWFJ6T2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpWOTBZV0pzWlY5aGMzTnZZMmxoZEdsdmJpNW9kRzFzTG0xaGNtdGtiM2R1

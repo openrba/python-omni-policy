@@ -8,32 +8,32 @@ azurerm_key_vault:
         name:
             description: Specifies the name of the Key Vault. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Key
                 Vault. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku_name:
             description: The Name of the SKU used for this Key Vault. Possible values
                 are `standard` and `premium`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant_id:
             description: The Azure Active Directory tenant ID that should be used
                 for authenticating requests to the key vault. Must match the `tenant_id`
                 used above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_policy:
@@ -87,7 +87,7 @@ azurerm_key_vault:
             description: The object ID of a user, service principal or security group
                 in the Azure Active Directory tenant for the vault. The object ID
                 must be unique for the list of access policies.
-            required: true
+            required: false
             policy: ''
             notes: ''
         application_id:
@@ -129,13 +129,13 @@ azurerm_key_vault:
         bypass:
             description: Specifies which traffic can bypass the network rules. Possible
                 values are `AzureServices` and `None`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_action:
             description: The Default Action to use when no rules match from `ip_rules`
                 / `virtual_network_subnet_ids`. Possible values are `Allow` and `Deny`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_rules:

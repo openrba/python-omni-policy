@@ -8,67 +8,67 @@
         "arguments": {
             "name": {
                 "description": "The name of the Stream Input Blob. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "stream_analytics_job_name": {
                 "description": "The name of the Stream Analytics Job. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "date_format": {
                 "description": "The date format. Wherever `{date}` appears in `path_pattern`, the value of this property is used as the date format instead.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "path_pattern": {
                 "description": "The blob path pattern. Not a regular expression. It represents a pattern against which blob names will be matched to determine whether or not they should be included as input or output to the job.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_name": {
                 "description": "The name of the Storage Account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_key": {
                 "description": "The Access Key which should be used to connect to this Storage Account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_container_name": {
                 "description": "The name of the Container within the Storage Account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "time_format": {
                 "description": "The time format. Wherever `{time}` appears in `path_pattern`, the value of this property is used as the time format instead.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "serialization": {
                 "description": "A `serialization` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -76,13 +76,19 @@
                 "description": "The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.",
                 "required": false,
                 "policy": "",
-                "notes": "This is required when `type` is set to `Csv` or `Json`."
+                "notes": [
+                    "-> ",
+                    " This is required when `type` is set to `Csv` or `Json`."
+                ]
             },
             "field_delimiter": {
                 "description": "The delimiter that will be used to separate comma-separated value (CSV",
                 "required": false,
                 "policy": "",
-                "notes": "This is required when `type` is set to `Csv`."
+                "notes": [
+                    "-> ",
+                    " This is required when `type` is set to `Csv`."
+                ]
             }
         },
         "attributes": {

@@ -9,19 +9,19 @@
         "arguments": {
             "folder": {
                 "description": "The resource name of the folder the policy is attached to. Its format is folders/{folder_id}.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "member": {
                 "description": "The identity that will be granted the privilege in the `role`. For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The role that should be applied. Note that custom roles must be of the format",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

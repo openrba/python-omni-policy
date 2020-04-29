@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "A human-readable name for the application.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "short_name": {
                 "description": "A short, machine-readable name for the application. This can only be defined on resource creation and ignored on resource update.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "stack_id": {
                 "description": "The id of the stack the application will belong to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of source to use. For example, \"archive\".",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -110,7 +110,7 @@
             },
             "url": {
                 "description": "The URL where the app resource can be found.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -140,13 +140,13 @@
             },
             "key": {
                 "description": "Variable name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "Variable value.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -158,13 +158,13 @@
             },
             "private_key": {
                 "description": "The private key; the contents of the certificate's domain.key file.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "certificate": {
                 "description": "The contents of the certificate's domain.crt file.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

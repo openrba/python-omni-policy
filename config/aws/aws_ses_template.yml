@@ -8,7 +8,7 @@ aws_ses_template:
         name:
             description: The name of the template. Cannot exceed 64 characters. You
                 will refer to this name when you send email.
-            required: true
+            required: false
             policy: ''
             notes: ''
         html:
@@ -33,3 +33,18 @@ aws_ses_template:
         id:
             description: The name of the SES template
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDNSbGJYQnNZWFJsSWlBaVRYbFVaVzF3YkdGMFpTSWdl
+        d29nSUc1aGJXVWdJQ0FnUFNBaVRYbFVaVzF3YkdGMFpTSUtJQ0J6ZFdKcVpXTjBJRDBnSWtkeVpX
+        VjBhVzVuY3l3Z2UzdHVZVzFsZlgwaElnb2dJR2gwYld3Z0lDQWdQU0FpUEdneFBraGxiR3h2SUh0
+        N2JtRnRaWDE5TER3dmFERStQSEErV1c5MWNpQm1ZWFp2Y21sMFpTQmhibWx0WVd3Z2FYTWdlM3Rt
+        WVhadmNtbDBaV0Z1YVcxaGJIMTlMand2Y0Q0aUNpQWdkR1Y0ZENBZ0lDQTlJQ0pJWld4c2J5Qjdl
+        MjVoYldWOWZTeGNjbHh1V1c5MWNpQm1ZWFp2Y21sMFpTQmhibWx0WVd3Z2FYTWdlM3RtWVhadmNt
+        bDBaV0Z1YVcxaGJIMTlMaUlLZlFvPQ==
+    import: !!binary |
+        Q2dwVFJWTWdkR1Z0Y0d4aGRHVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdk
+        R1Z0Y0d4aGRHVWdibUZ0WlN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZmRHVnRjR3hoZEdVdWFIUnRiQzV0WVhKclpHOTNiZz09

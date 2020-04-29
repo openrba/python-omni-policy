@@ -7,21 +7,21 @@ vault_kubernetes_auth_backend_role:
     arguments:
         role_name:
             description: Name of the role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bound_service_account_names:
             description: List of service account names able to access this role. If
                 set to `["*"]` all names are allowed, both this and bound_service_account_namespaces
                 can not be "*".
-            required: true
+            required: false
             policy: ''
             notes: ''
         bound_service_account_namespaces:
             description: List of namespaces allowed to access this role. If set to
                 `["*"]` all namespaces are allowed, both this and bound_service_account_names
                 can not be set to "*".
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend:
@@ -36,3 +36,24 @@ vault_kubernetes_auth_backend_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSnJkV0psY201bGRHVnpJ
+        aUI3Q2lBZ2RIbHdaU0E5SUNKcmRXSmxjbTVsZEdWeklncDlDZ3B5WlhOdmRYSmpaU0FpZG1GMWJI
+        UmZhM1ZpWlhKdVpYUmxjMTloZFhSb1gySmhZMnRsYm1SZmNtOXNaU0lnSW1WNFlXMXdiR1VpSUhz
+        S0lDQmlZV05yWlc1a0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlIWmhkV3gw
+        WDJGMWRHaGZZbUZqYTJWdVpDNXJkV0psY201bGRHVnpMbkJoZEdnS0lDQnliMnhsWDI1aGJXVWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExYSnZiR1VpQ2lBZ1lt
+        OTFibVJmYzJWeWRtbGpaVjloWTJOdmRXNTBYMjVoYldWeklDQWdJQ0FnUFNCYkltVjRZVzF3YkdV
+        aVhRb2dJR0p2ZFc1a1gzTmxjblpwWTJWZllXTmpiM1Z1ZEY5dVlXMWxjM0JoWTJWeklEMGdXeUps
+        ZUdGdGNHeGxJbDBLSUNCMGIydGxibDkwZEd3Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0E5SURNMk1EQUtJQ0IwYjJ0bGJsOXdiMnhwWTJsbGN5QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJRnNpWkdWbVlYVnNkQ0lzSUNKa1pYWWlMQ0FpY0hKdlpDSmRDaUFnWVhWa2FXVnVZMlVnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZG1GMWJIUWlDbjBL
+    import: !!binary |
+        Q2dwTGRXSmxjbTVsZEdWeklHRjFkR2dnWW1GamEyVnVaQ0J5YjJ4bElHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lIQmhkR2hnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJ0MVltVnlibVYwWlhOZllYVjBhRjlpWVdOclpXNWtYM0p2YkdVdWFIUnRiQzV0WkE9
+        PQ==

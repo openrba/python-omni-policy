@@ -8,31 +8,31 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the PostgreSQL Server. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the PostgreSQL Server. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku_name": {
                 "description": "Specifies the SKU Name for this PostgreSQL Server. The name of the SKU, follows the `tier` + `family` + `cores` pattern (e.g. `B_Gen4_1`, `GP_Gen5_8`). For more information see the [product documentation](https://docs.microsoft.com/en-us/rest/api/postgresql/servers/create#sku).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ssl_enforcement": {
                 "description": "Specifies if SSL should be enforced on connections. Possible values are `Enabled` and `Disabled`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

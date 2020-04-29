@@ -8,25 +8,25 @@
         "arguments": {
             "detail_type": {
                 "description": "The level of detail to include in the notifications for this resource. Possible values are `BASIC` and `FULL`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "event_type_ids": {
                 "description": "A list of event types associated with this notification rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of notification rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource": {
                 "description": "The ARN of the resource to associate with the notification rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "address": {
                 "description": "The ARN of notification rule target. For example, a SNS Topic ARN.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

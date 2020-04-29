@@ -7,19 +7,19 @@ aws_api_gateway_usage_plan_key:
     arguments:
         key_id:
             description: The identifier of the API key resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key_type:
             description: The type of the API key resource. Currently, the valid key
                 type is API_KEY.
-            required: true
+            required: false
             policy: ''
             notes: ''
         usage_plan_id:
             description: The Id of the usage plan resource representing to associate
                 the key to.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -37,3 +37,27 @@ aws_api_gateway_usage_plan_key:
         value:
             description: The value of a usage plan key.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNKMFpYTjBJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKTmVVUmxiVzlCVUVraUNuMEtDaU1nTGk0dUNncHlaWE52ZFhKalpT
+        QWlZWGR6WDJGd2FWOW5ZWFJsZDJGNVgzVnpZV2RsWDNCc1lXNGlJQ0p0ZVhWellXZGxjR3hoYmlJ
+        Z2V3b2dJRzVoYldVZ1BTQWliWGxmZFhOaFoyVmZjR3hoYmlJS0NpQWdZWEJwWDNOMFlXZGxjeUI3
+        Q2lBZ0lDQmhjR2xmYVdRZ1BTQWlKSHRoZDNOZllYQnBYMmRoZEdWM1lYbGZjbVZ6ZEY5aGNHa3Vk
+        R1Z6ZEM1cFpIMGlDaUFnSUNCemRHRm5aU0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZlpH
+        VndiRzk1YldWdWRDNW1iMjh1YzNSaFoyVmZibUZ0WlgwaUNpQWdmUXA5Q2dweVpYTnZkWEpqWlNB
+        aVlYZHpYMkZ3YVY5bllYUmxkMkY1WDJGd2FWOXJaWGtpSUNKdGVXdGxlU0lnZXdvZ0lHNWhiV1Vn
+        UFNBaWJYbGZhMlY1SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJGd2FWOW5ZWFJsZDJGNVgzVnpZ
+        V2RsWDNCc1lXNWZhMlY1SWlBaWJXRnBiaUlnZXdvZ0lHdGxlVjlwWkNBZ0lDQWdJQ0FnUFNBaUpI
+        dGhkM05mWVhCcFgyZGhkR1YzWVhsZllYQnBYMnRsZVM1dGVXdGxlUzVwWkgwaUNpQWdhMlY1WDNS
+        NWNHVWdJQ0FnSUNBOUlDSkJVRWxmUzBWWklnb2dJSFZ6WVdkbFgzQnNZVzVmYVdRZ1BTQWlKSHRo
+        ZDNOZllYQnBYMmRoZEdWM1lYbGZkWE5oWjJWZmNHeGhiaTV0ZVhWellXZGxjR3hoYmk1cFpIMGlD
+        bjBL
+    import: !!binary |
+        Q2dwQlYxTWdRVkJKSUVkaGRHVjNZWGtnVlhOaFoyVWdVR3hoYmlCTFpYa2dZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdWVk5CUjBVdFVFeEJUaTFKUkM5VlUwRkhSUzFRVEVGT0xV
+        dEZXUzFKUkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5MWMyRm5aVjl3YkdGdVgydGxlUzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

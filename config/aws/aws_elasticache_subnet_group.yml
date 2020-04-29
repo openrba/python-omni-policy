@@ -8,7 +8,7 @@ aws_elasticache_subnet_group:
         name:
             description: Name for the cache subnet group. Elasticache converts this
                 name to lowercase.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -19,8 +19,27 @@ aws_elasticache_subnet_group:
             notes: ''
         subnet_ids:
             description: List of VPC Subnet IDs for the cache subnet group
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaVptOXZJaUI3Q2lBZ1kybGtjbDlpYkc5amF5QTlJ
+        Q0l4TUM0d0xqQXVNQzh4TmlJS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUU1aGJXVWdQU0FpZEdZdGRH
+        VnpkQ0lLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmMzVmlibVYwSWlBaVptOXZJaUI3Q2lB
+        Z2RuQmpYMmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlKSHRoZDNOZmRuQmpMbVp2Ynk1cFpIMGlDaUFn
+        WTJsa2NsOWliRzlqYXlBZ0lDQWdJQ0FnUFNBaU1UQXVNQzR3TGpBdk1qUWlDaUFnWVhaaGFXeGhZ
+        bWxzYVhSNVgzcHZibVVnUFNBaWRYTXRkMlZ6ZEMweVlTSUtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lF
+        NWhiV1VnUFNBaWRHWXRkR1Z6ZENJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZaV3hoYzNS
+        cFkyRmphR1ZmYzNWaWJtVjBYMmR5YjNWd0lpQWlZbUZ5SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0E5
+        SUNKMFppMTBaWE4wTFdOaFkyaGxMWE4xWW01bGRDSUtJQ0J6ZFdKdVpYUmZhV1J6SUQwZ1d5SWtl
+        MkYzYzE5emRXSnVaWFF1Wm05dkxtbGtmU0pkQ24wSw==
+    import: !!binary |
+        Q2dwRmJHRnpkR2xEWVdOb1pTQlRkV0p1WlhRZ1IzSnZkWEJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpZV05vWlY5emRXSnVaWFJmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

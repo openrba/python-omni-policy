@@ -7,12 +7,12 @@ aws_athena_database:
     arguments:
         name:
             description: Name of the database to create.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bucket:
             description: Name of s3 bucket to save the results of the query execution.
-            required: true
+            required: false
             policy: ''
             notes: ''
         encryption_configuration:
@@ -30,7 +30,7 @@ aws_athena_database:
             notes: ''
         encryption_option:
             description: The type of key; one of `SSE_S3`, `SSE_KMS`, `CSE_KMS`
-            required: true
+            required: false
             policy: ''
             notes: ''
         kms_key:
@@ -43,3 +43,13 @@ aws_athena_database:
         id:
             description: The database name
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpYUc5blpTSWdld29nSUdKMVkydGxk
+        Q0E5SUNKb2IyZGxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMkYwYUdWdVlWOWtZWFJoWW1GelpT
+        SWdJbWh2WjJVaUlIc0tJQ0J1WVcxbElDQWdQU0FpWkdGMFlXSmhjMlZmYm1GdFpTSUtJQ0JpZFdO
+        clpYUWdQU0FpSkh0aGQzTmZjek5mWW5WamEyVjBMbWh2WjJVdVluVmphMlYwZlNJS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZEdobGJtRmZaR0YwWVdKaGMyVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

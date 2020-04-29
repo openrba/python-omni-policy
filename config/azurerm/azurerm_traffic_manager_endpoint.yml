@@ -7,17 +7,17 @@ azurerm_traffic_manager_endpoint:
     arguments:
         name:
             description: The name of the custom header.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         profile_name:
             description: The name of the Traffic Manager Profile to attach
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint_status:
@@ -27,7 +27,7 @@ azurerm_traffic_manager_endpoint:
             notes: ''
         type:
             description: 'The Endpoint type, must be one of:'
-            required: true
+            required: false
             policy: ''
             notes: ''
         target:
@@ -81,12 +81,12 @@ azurerm_traffic_manager_endpoint:
         value:
             description: The value of custom header. Applicable for Http and Https
                 protocol.
-            required: true
+            required: false
             policy: ''
             notes: ''
         first:
             description: The First IP....
-            required: true
+            required: false
             policy: ''
             notes: ''
         last:
@@ -98,8 +98,10 @@ azurerm_traffic_manager_endpoint:
             description: The Scope...
             required: false
             policy: ''
-            notes: One and only one of either `last` (in case of IP range) or `scope`
-                (in case of CIDR) must be specified.
+            notes:
+            - '-> '
+            - ' One and only one of either `last` (in case of IP range) or `scope`
+                (in case of CIDR) must be specified.'
     attributes:
         id:
             description: The ID of the Traffic Manager Endpoint.

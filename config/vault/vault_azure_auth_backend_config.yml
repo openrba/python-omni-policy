@@ -7,12 +7,12 @@ vault_azure_auth_backend_config:
     arguments:
         tenant_id:
             description: The tenant id for the Azure Active Directory
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource:
             description: The configured URL for the application registered in
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend:
@@ -37,3 +37,21 @@ vault_azure_auth_backend_config:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnZEhsd1pTQTlJQ0poZW5WeVpTSUtmUW9LY21WemIzVnlZMlVnSW5aaGRXeDBYMkY2ZFhKbFgy
+        RjFkR2hmWW1GamEyVnVaRjlqYjI1bWFXY2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ1ltRmphMlZ1WkNB
+        Z0lDQWdJQ0E5SUNJa2UzWmhkV3gwWDJGMWRHaGZZbUZqYTJWdVpDNWxlR0Z0Y0d4bExuQmhkR2g5
+        SWdvZ0lIUmxibUZ1ZEY5cFpDQWdJQ0FnUFNBaU1URXhNVEV4TVRFdE1qSXlNaTB6TXpNekxUUTBO
+        RFF0TlRVMU5UVTFOVFUxTlRVMUlnb2dJR05zYVdWdWRGOXBaQ0FnSUNBZ1BTQWlNVEV4TVRFeE1U
+        RXRNakl5TWkwek16TXpMVFEwTkRRdE5UVTFOVFUxTlRVMU5UVTFJZ29nSUdOc2FXVnVkRjl6WldO
+        eVpYUWdQU0FpTURFeU16UTFOamM0T1RBeE1qTTBOVFkzT0RraUNpQWdjbVZ6YjNWeVkyVWdJQ0Fn
+        SUNBOUlDSm9kSFJ3Y3pvdkwzWmhkV3gwTG1oaGMyaHBZMjl5Y0M1amIyMGlDbjBL
+    import: !!binary |
+        Q2dwQmVuVnlaU0JoZFhSb0lHSmhZMnRsYm1SeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUJnWVhWMGFDOWdMQ0IwYUdVZ1lHSmhZMnRsYm1SZ0lIQmhkR2dzSUdGdVpDQmdMMk52Ym1acFoy
+        QWdaUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGNmRYSmxYMkYxZEdoZlltRmphMlZ1WkY5amIyNW1hV2N1YUhSdGJDNXRaQT09

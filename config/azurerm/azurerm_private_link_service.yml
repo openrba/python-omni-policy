@@ -8,24 +8,24 @@ azurerm_private_link_service:
         name:
             description: Specifies the name which should be used for the NAT IP Configuration.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group where the Private Link Service
                 should exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         nat_ip_configuration:
             description: One or more (up to 8
-            required: true
+            required: false
             policy: ''
             notes: ''
         load_balancer_frontend_ip_configuration_ids:
@@ -33,7 +33,7 @@ azurerm_private_link_service:
                 Load Balancer, where traffic from the Private Link Service should
                 be routed. You can use Load Balancer Rules to direct this traffic
                 to appropriate backend pools where your applications are running.
-            required: true
+            required: false
             policy: ''
             notes: ''
         auto_approval_subscription_ids:
@@ -59,19 +59,23 @@ azurerm_private_link_service:
                 this Private Link Service.
             required: false
             policy: ''
-            notes: If no Subscription ID's are specified then Azure allows every Subscription
-                to see this Private Link Service.
+            notes:
+            - '-> '
+            - ' If no Subscription ID''s are specified then Azure allows every Subscription
+                to see this Private Link Service.'
         subnet_id:
             description: Specifies the ID of the Subnet which should be used for the
                 Private Link Service.
-            required: true
+            required: false
             policy: ''
-            notes: Verify that the Subnet's `enforce_private_link_service_network_policies`
-                attribute is set to `true`.
+            notes:
+            - '-> '
+            - ' Verify that the Subnet''s `enforce_private_link_service_network_policies`
+                attribute is set to `true`.'
         primary:
             description: Is this is the Primary IP Configuration? Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_ip_address:

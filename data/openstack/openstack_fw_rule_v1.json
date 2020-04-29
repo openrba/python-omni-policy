@@ -26,13 +26,13 @@
             },
             "protocol": {
                 "description": "The protocol type on which the firewall rule operates.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "action": {
                 "description": "Action to be taken ( must be \"allow\" or \"deny\"",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -85,44 +85,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "protocol": {
-                "description": "See Argument Reference above."
-            },
-            "action": {
-                "description": "See Argument Reference above."
-            },
-            "ip_version": {
-                "description": "See Argument Reference above."
-            },
-            "source_ip_address": {
-                "description": "See Argument Reference above."
-            },
-            "destination_ip_address": {
-                "description": "See Argument Reference above."
-            },
-            "source_port": {
-                "description": "See Argument Reference above."
-            },
-            "destination_port": {
-                "description": "See Argument Reference above."
-            },
-            "enabled": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -7,20 +7,20 @@ aws_backup_selection:
     arguments:
         name:
             description: The display name of a resource selection document.
-            required: true
+            required: false
             policy: ''
             notes: ''
         plan_id:
             description: The backup plan ID to be associated with the selection of
                 resources.
-            required: true
+            required: false
             policy: ''
             notes: ''
         iam_role_arn:
             description: The ARN of the IAM role that AWS Backup uses to authenticate
                 when restoring and backing up the target resource. See the [AWS Backup
                 Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#managed-policies
-            required: true
+            required: false
             policy: ''
             notes: ''
         selection_tag:
@@ -38,20 +38,28 @@ aws_backup_selection:
         type:
             description: An operation, such as `StringEquals`, that is applied to
                 a key-value pair used to filter resources in a selection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
             description: The key in a key-value pair.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: The value in a key-value pair.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: Backup Selection identifier
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQ1lXTnJkWEFnYzJWc1pXTjBhVzl1SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnY205c1pTQndiR0Z1WDJsa0lHRnVaQ0JwWkNCelpYQmhjbUYwWldRZ1lua2dZSHhnTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlpWVdOcmRYQmZjMlZzWldOMGFXOXVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

@@ -6,7 +6,7 @@ github_user_gpg_key:
     arguments:
         armored_public_key:
             description: Your public GPG key, generated in ASCII-armored format.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -15,3 +15,17 @@ github_user_gpg_key:
         key_id:
             description: The key ID of the GPG key, e.g. `3262EFF25BA0D270`
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUm9kV0pmZFhObGNsOW5jR2RmYTJWNUlpQWlaWGhoYlhCc1pTSWdl
+        d29nSUdGeWJXOXlaV1JmY0hWaWJHbGpYMnRsZVNBOUlDSXRMUzB0TFVKRlIwbE9JRkJIVUNCUVZV
+        Sk1TVU1nUzBWWklFSk1UME5MTFMwdExTMWNiaTR1TGx4dUxTMHRMUzFGVGtRZ1VFZFFJRkJWUWt4
+        SlF5QkxSVmtnUWt4UFEwc3RMUzB0TFNJS2ZRbz0=
+    import: !!binary |
+        Q2dwSFVFY2dhMlY1Y3lCaGNtVWdibTkwSUdsdGNHOXlkR0ZpYkdVZ1pIVmxJSFJ2SUhSb1pTQm1Z
+        V04wSUhSb1lYUWdXMEZRU1Ywb2FIUjBjSE02THk5a1pYWmxiRzl3WlhJdVoybDBhSFZpTG1OdmJT
+        OTJNeTkxYzJWeWN5OW5jR2RmYTJWNWN5OGpaM0JuTFd0bGVYTXBDbVJ2WlhNZ2JtOTBJSEpsZEhW
+        eWJpQndjbVYyYVc5MWMyeDVJSFZ3Ykc5aFpHVmtJRWRRUnlCclpYa3U=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5MWMyVnlYMmR3WjE5clpYa3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

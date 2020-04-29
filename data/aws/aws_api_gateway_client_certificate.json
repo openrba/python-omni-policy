@@ -19,7 +19,23 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The identifier of the client certificate."
+            },
+            "created_date": {
+                "description": "The date when the client certificate was created."
+            },
+            "expiration_date": {
+                "description": "The date when the client certificate will expire."
+            },
+            "pem_encoded_certificate": {
+                "description": "The PEM-encoded public key of the client certificate."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN)"
+            }
+        },
         "timeouts": {}
     }
 }

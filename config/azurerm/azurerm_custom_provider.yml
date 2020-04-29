@@ -7,19 +7,19 @@ azurerm_custom_provider:
     arguments:
         name:
             description: 'Specifies the name of the action. '
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Custom
                 Provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_type:
@@ -46,7 +46,7 @@ azurerm_custom_provider:
             notes: ''
         endpoint:
             description: 'Specifies the endpoint of the action. '
-            required: true
+            required: false
             policy: ''
             notes: ''
         routing_type:
@@ -58,7 +58,7 @@ azurerm_custom_provider:
             notes: ''
         specification:
             description: 'The endpoint where the validation specification is located. '
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

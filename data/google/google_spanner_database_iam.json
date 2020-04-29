@@ -9,25 +9,25 @@
         "arguments": {
             "database": {
                 "description": "The name of the Spanner database.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance": {
                 "description": "The name of the Spanner instance the database belongs to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "member/members": {
                 "description": "Identities that will be granted the privilege in `role`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The role that should be applied. Only one",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,11 +44,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "etag": {
-                "description": "(Computed) The etag of the database's IAM policy."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

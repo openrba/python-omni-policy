@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the VPC Link.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "security_group_ids": {
                 "description": "Security group IDs for the VPC Link.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_ids": {
                 "description": "Subnet IDs for the VPC Link.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The VPC Link identifier."
+            },
+            "arn": {
+                "description": "The VPC Link ARN."
+            }
+        },
         "timeouts": {}
     }
 }

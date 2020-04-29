@@ -9,17 +9,17 @@ aws_msk_configuration:
         server_properties:
             description: Contents of the server.properties file. Supported properties
                 are documented in the [MSK Developer Guide](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html).
-            required: true
+            required: false
             policy: ''
             notes: ''
         kafka_versions:
             description: List of Apache Kafka versions which can use this configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Name of the configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -33,3 +33,16 @@ aws_msk_configuration:
         latest_revision:
             description: Latest revision of the configuration.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiWE5yWDJOdmJtWnBaM1Z5WVhScGIyNGlJQ0psZUdGdGNHeGxJ
+        aUI3Q2lBZ2EyRm1hMkZmZG1WeWMybHZibk1nUFNCYklqSXVNUzR3SWwwS0lDQnVZVzFsSUNBZ0lD
+        QWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb0tJQ0J6WlhKMlpYSmZjSEp2Y0dWeWRHbGxjeUE5SUR3
+        OFVGSlBVRVZTVkVsRlV3cGhkWFJ2TG1OeVpXRjBaUzUwYjNCcFkzTXVaVzVoWW14bElEMGdkSEox
+        WlFwa1pXeGxkR1V1ZEc5d2FXTXVaVzVoWW14bElEMGdkSEoxWlFwUVVrOVFSVkpVU1VWVENuMEs=
+    import: !!binary |
+        Q2dwTlUwc2dZMjl1Wm1sbmRYSmhkR2x2Ym5NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCamIyNW1hV2QxY21GMGFXOXVJRUZTVGl3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0YzJ0ZlkyOXVabWxuZFhKaGRHbHZiaTVvZEcxc0xtMWhjbXRrYjNkdQ==

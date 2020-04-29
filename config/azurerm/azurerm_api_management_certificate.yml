@@ -8,25 +8,25 @@ azurerm_api_management_certificate:
         name:
             description: The name of the API Management Certificate. Changing this
                 forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_management_name:
             description: The Name of the API Management Service where this Service
                 should be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The Name of the Resource Group where the API Management Service
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         data:
             description: The base-64 encoded certificate data, which must be a PFX
                 file. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:

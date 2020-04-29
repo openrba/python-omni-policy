@@ -25,7 +25,7 @@ aws_neptune_subnet_group:
             notes: ''
         subnet_ids:
             description: A list of VPC subnet IDs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -39,3 +39,16 @@ aws_neptune_subnet_group:
         arn:
             description: The ARN of the neptune subnet group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVZ3ZEhWdVpWOXpkV0p1WlhSZlozSnZkWEFpSUNKa1pXWmhk
+        V3gwSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0E5SUNKdFlXbHVJZ29nSUhOMVltNWxkRjlwWkhNZ1BT
+        QmJJaVI3WVhkelgzTjFZbTVsZEM1bWNtOXVkR1Z1WkM1cFpIMGlMQ0FpSkh0aGQzTmZjM1ZpYm1W
+        MExtSmhZMnRsYm1RdWFXUjlJbDBLQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJRTVoYldVZ1BTQWlUWGtn
+        Ym1Wd2RIVnVaU0J6ZFdKdVpYUWdaM0p2ZFhBaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwT1pYQjBkVzVsSUZOMVltNWxkQ0JuY205MWNITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdibUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhCMGRXNWxYM04xWW01bGRGOW5jbTkxY0M1b2RHMXNMbTFoY210a2IzZHU=

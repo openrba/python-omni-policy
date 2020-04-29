@@ -8,24 +8,24 @@ google_google_organization_iam_custom_role:
     arguments:
         role_id:
             description: The role id to use for this role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         org_id:
             description: The numeric ID of the organization in which you want to create
                 a custom role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         title:
             description: A human-readable title for the role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         permissions:
             description: The names of the permissions this role grants when bound
                 in an IAM policy. At least one permission must be specified.
-            required: true
+            required: false
             policy: ''
             notes: ''
         stage:
@@ -48,3 +48,19 @@ google_google_organization_iam_custom_role:
                 Like `id`, this field can be used as a reference in other resources
                 such as IAM role bindings.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYjNKbllXNXBlbUYwYVc5dVgybGhiVjlqZFhOMGIyMWZj
+        bTlzWlNJZ0ltMTVMV04xYzNSdmJTMXliMnhsSWlCN0NpQWdjbTlzWlY5cFpDQWdJQ0FnUFNBaWJY
+        bERkWE4wYjIxU2IyeGxJZ29nSUc5eVoxOXBaQ0FnSUNBZ0lEMGdJakV5TXpRMU5qYzRPU0lLSUNC
+        MGFYUnNaU0FnSUNBZ0lDQTlJQ0pOZVNCRGRYTjBiMjBnVW05c1pTSUtJQ0JrWlhOamNtbHdkR2x2
+        YmlBOUlDSkJJR1JsYzJOeWFYQjBhVzl1SWdvZ0lIQmxjbTFwYzNOcGIyNXpJRDBnV3lKcFlXMHVj
+        bTlzWlhNdWJHbHpkQ0lzSUNKcFlXMHVjbTlzWlhNdVkzSmxZWFJsSWl3Z0ltbGhiUzV5YjJ4bGN5
+        NWtaV3hsZEdVaVhRcDlDZz09
+    import: !!binary |
+        Q2dwRGRYTjBiMjFwZW1Wa0lFbEJUU0J2Y21kaGJtbDZZWFJwYjI0Z2NtOXNaU0JqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxhWElnVlZKSkxDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmYjNKbllXNXBlbUYwYVc5dVgybGhiVjlqZFhOMGIyMWZjbTlzWlM1
+        b2RHMXNMbTFoY210a2IzZHU=

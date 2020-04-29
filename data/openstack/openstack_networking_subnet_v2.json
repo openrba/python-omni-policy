@@ -14,7 +14,7 @@
             },
             "network_id": {
                 "description": "The UUID of the parent network. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -116,76 +116,30 @@
             },
             "start": {
                 "description": "The starting address.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "end": {
                 "description": "The ending address.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_cidr": {
                 "description": "The destination CIDR.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "next_hop": {
                 "description": "The next hop in the route.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "network_id": {
-                "description": "See Argument Reference above."
-            },
-            "cidr": {
-                "description": "See Argument Reference above."
-            },
-            "ip_version": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "allocation_pools": {
-                "description": "See Argument Reference above."
-            },
-            "gateway_ip": {
-                "description": "See Argument Reference above."
-            },
-            "enable_dhcp": {
-                "description": "See Argument Reference above."
-            },
-            "dns_nameservers": {
-                "description": "See Argument Reference above."
-            },
-            "host_routes": {
-                "description": "See Argument Reference above."
-            },
-            "subnetpool_id": {
-                "description": "See Argument Reference above."
-            },
-            "tags": {
-                "description": "See Argument Reference above."
-            },
-            "all_tags": {
-                "description": "The collection of ags assigned on the subnet, which have been"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -7,7 +7,7 @@ vault_okta_auth_backend:
     arguments:
         path:
             description: Path to mount the Okta auth backend
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,7 +18,7 @@ vault_okta_auth_backend:
         organization:
             description: The Okta organization. This will be the first part of the
                 url `https://XXX.okta.com`
-            required: true
+            required: false
             policy: ''
             notes: ''
         token:
@@ -59,8 +59,20 @@ vault_okta_auth_backend:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        accessor:
-            description: The mount accessor related to the auth mount. It is useful
-                for integration with [Identity Secrets Engine](https://www.vaultproject.io/docs/secrets/identity/index.html).
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjl2YTNSaFgyRjFkR2hmWW1GamEyVnVaQ0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQWdJR1JsYzJOeWFYQjBhVzl1SUNBOUlDSkVaVzF2Ym5OMGNtRjBhVzl1SUc5bUlI
+        Um9aU0JVWlhKeVlXWnZjbTBnVDJ0MFlTQmhkWFJvSUdKaFkydGxibVFpQ2lBZ0lDQnZjbWRoYm1s
+        NllYUnBiMjRnUFNBaVpYaGhiWEJzWlNJS0lDQWdJSFJ2YTJWdUlDQWdJQ0FnSUNBOUlDSnpiMjFs
+        ZEdocGJtY2dkR2hoZENCemFHOTFiR1FnWW1VZ2EyVndkQ0J6WldOeVpYUWlDaUFnSUNBS0lDQWdJ
+        R2R5YjNWd0lIc0tJQ0FnSUNBZ0lDQm5jbTkxY0Y5dVlXMWxJRDBnSW1admJ5SUtJQ0FnSUNBZ0lD
+        QndiMnhwWTJsbGN5QWdJRDBnV3lKdmJtVWlMQ0FpZEhkdklsMEtJQ0FnSUgwS0lDQWdJQW9nSUNB
+        Z2RYTmxjaUI3Q2lBZ0lDQWdJQ0FnZFhObGNtNWhiV1VnUFNBaVltRnlJZ29nSUNBZ0lDQWdJR2R5
+        YjNWd2N5QWdJRDBnV3lKbWIyOGlYUW9nSUNBZ2ZRcDlDZz09
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDI5cmRHRmZZWFYwYUY5aVlXTnJaVzVrTG1oMGJXd3ViV1E9

@@ -8,43 +8,46 @@
         "arguments": {
             "name": {
                 "description": "The Azure Region in which this Image Version should exist.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "gallery_name": {
                 "description": "The name of the Shared Image Gallery in which the Shared Image exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "image_name": {
                 "description": "The name of the Shared Image within the Shared Image Gallery in which this Version should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The Azure Region in which the Shared Image Gallery exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group in which the Shared Image Gallery exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "managed_image_id": {
                 "description": "The ID of the Managed Image which should be used for this Shared Image Version. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
-                "notes": "The ID can be sourced from the `azurerm_image` [Data Source](https://www.terraform.io/docs/providers/azurerm/d/image.html) or [Resource](https://www.terraform.io/docs/providers/azurerm/r/image.html)."
+                "notes": [
+                    "-> ",
+                    " The ID can be sourced from the `azurerm_image` [Data Source](https://www.terraform.io/docs/providers/azurerm/d/image.html) or [Resource](https://www.terraform.io/docs/providers/azurerm/r/image.html)."
+                ]
             },
             "target_region": {
                 "description": "One or more `target_region` blocks as documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,7 +65,7 @@
             },
             "regional_replica_count": {
                 "description": "The number of replicas of the Image Version to be created per region.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

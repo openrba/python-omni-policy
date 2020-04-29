@@ -26,13 +26,13 @@
             },
             "neutron_net_id": {
                 "description": "The UUID of a neutron network when setting up or updating",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "neutron_subnet_id": {
                 "description": "The UUID of the neutron subnet when setting up or",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,44 +43,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the Share Network."
-            },
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "The owner of the Share Network."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "neutron_net_id": {
-                "description": "See Argument Reference above."
-            },
-            "neutron_subnet_id": {
-                "description": "See Argument Reference above."
-            },
-            "security_service_ids": {
-                "description": "See Argument Reference above."
-            },
-            "network_type": {
-                "description": "The share network type. Can either be VLAN, VXLAN, GRE, or flat."
-            },
-            "segmentation_id": {
-                "description": "The share network segmentation ID."
-            },
-            "cidr": {
-                "description": "The share network CIDR."
-            },
-            "ip_version": {
-                "description": "The IP version of the share network. Can either be 4 or 6."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

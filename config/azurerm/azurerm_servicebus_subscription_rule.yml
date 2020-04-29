@@ -8,37 +8,37 @@ azurerm_servicebus_subscription_rule:
         name:
             description: Specifies the name of the ServiceBus Subscription Rule. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         namespace_name:
             description: The name of the ServiceBus Namespace in which the ServiceBus
                 Topic exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         topic_name:
             description: The name of the ServiceBus Topic in which the ServiceBus
                 Subscription exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subscription_name:
             description: The name of the ServiceBus Subscription in which this Rule
                 should be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in the ServiceBus Namespace
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter_type:
             description: Type of filter to be applied to a BrokeredMessage. Possible
                 values are `SqlFilter` and `CorrelationFilter`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sql_filter:

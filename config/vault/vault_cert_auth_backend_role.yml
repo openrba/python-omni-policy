@@ -7,12 +7,12 @@ vault_cert_auth_backend_role:
     arguments:
         name:
             description: Name of the role
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate:
             description: CA certificate used to validate client certificates
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_names:
@@ -62,3 +62,19 @@ vault_cert_auth_backend_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmpaWEowSWlCN0NpQWdJ
+        Q0J3WVhSb0lEMGdJbU5sY25RaUNpQWdJQ0IwZVhCbElEMGdJbU5sY25RaUNuMEtDbkpsYzI5MWNt
+        TmxJQ0oyWVhWc2RGOWpaWEowWDJGMWRHaGZZbUZqYTJWdVpGOXliMnhsSWlBaVkyVnlkQ0lnZXdv
+        Z0lDQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlabTl2SWdvZ0lDQWdZMlZ5ZEdsbWFXTmhkR1Vn
+        SUNBZ1BTQm1hV3hsS0NJdmNHRjBhQzkwYnk5alpYSjBjeTlqWVMxalpYSjBMbkJsYlNJcENpQWdJ
+        Q0JpWVdOclpXNWtJQ0FnSUNBZ0lDQTlJSFpoZFd4MFgyRjFkR2hmWW1GamEyVnVaQzVqWlhKMExu
+        QmhkR2dLSUNBZ0lHRnNiRzkzWldSZmJtRnRaWE1nSUQwZ1d5Sm1iMjh1WlhoaGJYQnNaUzV2Y21j
+        aUxDQWlZbUY2TG1WNFlXMXdiR1V1YjNKbklsMEtJQ0FnSUhSdmEyVnVYM1IwYkNBZ0lDQWdJRDBn
+        TXpBd0NpQWdJQ0IwYjJ0bGJsOXRZWGhmZEhSc0lDQTlJRFl3TUFvZ0lDQWdkRzlyWlc1ZmNHOXNh
+        V05wWlhNZ1BTQmJJbVp2YnlKZENuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJObGNuUmZZWFYwYUY5aVlXTnJaVzVrWDNKdmJHVXVhSFJ0YkM1dFpBPT0=

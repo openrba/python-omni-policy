@@ -7,12 +7,12 @@ vault_identity_entity_policies:
     arguments:
         policies:
             description: List of policies to assign to the entity
-            required: true
+            required: false
             policy: ''
             notes: ''
         entity_id:
             description: Entity ID to assign policies to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         exclusive:
@@ -20,7 +20,11 @@ vault_identity_entity_policies:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        entity_name:
-            description: The name of the entity that are assigned the policies.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJsa1pXNTBhWFI1WDJWdWRHbDBlVjl3YjJ4cFkybGxjeTVvZEcxc0xtMWs=

@@ -8,13 +8,13 @@ aws_dynamodb_global_table:
         name:
             description: The name of the global table. Must match underlying DynamoDB
                 Table names in all regions.
-            required: true
+            required: false
             policy: ''
             notes: ''
         replica:
             description: Underlying DynamoDB Table. At least 1 replica must be defined.
                 See below.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -23,3 +23,36 @@ aws_dynamodb_global_table:
         arn:
             description: The ARN of the DynamoDB Global Table
     timeouts: {}
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGQzTWlJSHNLSUNCaGJHbGhjeUFnUFNBaWRYTXRaV0Z6ZEMweElnb2dJ
+        SEpsWjJsdmJpQTlJQ0oxY3kxbFlYTjBMVEVpQ24wS0NuQnliM1pwWkdWeUlDSmhkM01pSUhzS0lD
+        QmhiR2xoY3lBZ1BTQWlkWE10ZDJWemRDMHlJZ29nSUhKbFoybHZiaUE5SUNKMWN5MTNaWE4wTFRJ
+        aUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZlpIbHVZVzF2WkdKZmRHRmliR1VpSUNKMWN5MWxZWE4w
+        TFRFaUlIc0tJQ0J3Y205MmFXUmxjaUE5SUNKaGQzTXVkWE10WldGemRDMHhJZ29LSUNCb1lYTm9Y
+        MnRsZVNBZ0lDQWdJQ0FnSUQwZ0ltMTVRWFIwY21saWRYUmxJZ29nSUc1aGJXVWdJQ0FnSUNBZ0lD
+        QWdJQ0FnUFNBaWJYbFVZV0pzWlNJS0lDQnpkSEpsWVcxZlpXNWhZbXhsWkNBZ0lEMGdkSEoxWlFv
+        Z0lITjBjbVZoYlY5MmFXVjNYM1I1Y0dVZ1BTQWlUa1ZYWDBGT1JGOVBURVJmU1UxQlIwVlRJZ29n
+        SUhKbFlXUmZZMkZ3WVdOcGRIa2dJQ0FnUFNBeENpQWdkM0pwZEdWZlkyRndZV05wZEhrZ0lDQTlJ
+        REVLQ2lBZ1lYUjBjbWxpZFhSbElIc0tJQ0FnSUc1aGJXVWdQU0FpYlhsQmRIUnlhV0oxZEdVaUNp
+        QWdJQ0IwZVhCbElEMGdJbE1pQ2lBZ2ZRcDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgyUjVibUZ0YjJS
+        aVgzUmhZbXhsSWlBaWRYTXRkMlZ6ZEMweUlpQjdDaUFnY0hKdmRtbGtaWElnUFNBaVlYZHpMblZ6
+        TFhkbGMzUXRNaUlLQ2lBZ2FHRnphRjlyWlhrZ0lDQWdJQ0FnSUNBOUlDSnRlVUYwZEhKcFluVjBa
+        U0lLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltMTVWR0ZpYkdVaUNpQWdjM1J5WldGdFgy
+        VnVZV0pzWldRZ0lDQTlJSFJ5ZFdVS0lDQnpkSEpsWVcxZmRtbGxkMTkwZVhCbElEMGdJazVGVjE5
+        QlRrUmZUMHhFWDBsTlFVZEZVeUlLSUNCeVpXRmtYMk5oY0dGamFYUjVJQ0FnSUQwZ01Rb2dJSGR5
+        YVhSbFgyTmhjR0ZqYVhSNUlDQWdQU0F4Q2dvZ0lHRjBkSEpwWW5WMFpTQjdDaUFnSUNCdVlXMWxJ
+        RDBnSW0xNVFYUjBjbWxpZFhSbElnb2dJQ0FnZEhsd1pTQTlJQ0pUSWdvZ0lIMEtmUW9LY21WemIz
+        VnlZMlVnSW1GM2MxOWtlVzVoYlc5a1lsOW5iRzlpWVd4ZmRHRmliR1VpSUNKdGVWUmhZbXhsSWlC
+        N0NpQWdaR1Z3Wlc1a2MxOXZiaUE5SUZzaVlYZHpYMlI1Ym1GdGIyUmlYM1JoWW14bExuVnpMV1Zo
+        YzNRdE1TSXNJQ0poZDNOZlpIbHVZVzF2WkdKZmRHRmliR1V1ZFhNdGQyVnpkQzB5SWwwS0lDQndj
+        bTkyYVdSbGNpQWdJRDBnSW1GM2N5NTFjeTFsWVhOMExURWlDZ29nSUc1aGJXVWdQU0FpYlhsVVlX
+        SnNaU0lLQ2lBZ2NtVndiR2xqWVNCN0NpQWdJQ0J5WldkcGIyNWZibUZ0WlNBOUlDSjFjeTFsWVhO
+        MExURWlDaUFnZlFvS0lDQnlaWEJzYVdOaElIc0tJQ0FnSUhKbFoybHZibDl1WVcxbElEMGdJblZ6
+        TFhkbGMzUXRNaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRWVXNWhiVzlFUWlCSGJHOWlZV3dnVkdGaWJHVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdaMnh2WW1Gc0lIUmhZbXhsSUc1aGJXVXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZVc1aGJXOWtZbDluYkc5aVlXeGZkR0ZpYkdVdWFIUnRiQzV0WVhKclpHOTNiZz09

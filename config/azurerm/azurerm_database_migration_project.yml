@@ -8,39 +8,39 @@ azurerm_database_migration_project:
         name:
             description: Specify the name of the database migration project. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_name:
             description: Name of the database migration service where resource belongs
                 to. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Name of the resource group in which to create the database
                 migration project. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_platform:
             description: 'The platform type of the migration source. Currently only
                 support: `SQL`(on-premises SQL Server). Changing this forces a new
                 resource to be created.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_platform:
             description: 'The platform type of the migration target. Currently only
                 support: `SQLDB`(Azure SQL Database). Changing this forces a new resource
                 to be created.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:

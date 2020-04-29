@@ -8,22 +8,22 @@ aws_lightsail_instance:
         name:
             description: The name of the Lightsail Instance. Names be unique within
                 each AWS Region in your Lightsail account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         availability_zone:
             description: The Availability Zone in which to create your
-            required: true
+            required: false
             policy: ''
             notes: ''
         blueprint_id:
             description: The ID for a virtual private server image
-            required: true
+            required: false
             policy: ''
             notes: ''
         bundle_id:
             description: The bundle of specification information (see list below)
-            required: true
+            required: false
             policy: ''
             notes: ''
         key_pair_name:
@@ -49,3 +49,19 @@ aws_lightsail_instance:
         created_at:
             description: The timestamp when the instance was created.
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRWRwZEV4aFlpQk1hV2RvZEhOaGFXd2dTVzV6ZEdGdVkyVUtj
+        bVZ6YjNWeVkyVWdJbUYzYzE5c2FXZG9kSE5oYVd4ZmFXNXpkR0Z1WTJVaUlDSm5hWFJzWVdKZmRH
+        VnpkQ0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbU4xYzNSdmJWOW5hWFJzWVdJ
+        aUNpQWdZWFpoYVd4aFltbHNhWFI1WDNwdmJtVWdQU0FpZFhNdFpXRnpkQzB4WWlJS0lDQmliSFZs
+        Y0hKcGJuUmZhV1FnSUNBZ0lDQTlJQ0p6ZEhKcGJtY2lDaUFnWW5WdVpHeGxYMmxrSUNBZ0lDQWdJ
+        Q0FnUFNBaWMzUnlhVzVuSWdvZ0lHdGxlVjl3WVdseVgyNWhiV1VnSUNBZ0lEMGdJbk52YldWZmEy
+        VjVYMjVoYldVaUNpQWdkR0ZuY3lBOUlIc0tJQ0FnSUdadmJ5QTlJQ0ppWVhJaUNpQWdmUXA5Q2c9
+        PQ==
+    import: !!binary |
+        Q2dwTWFXZG9kSE5oYVd3Z1NXNXpkR0Z1WTJWeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdWcGNpQnVZVzFsTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzYVdkb2RITmhhV3hmYVc1emRHRnVZMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

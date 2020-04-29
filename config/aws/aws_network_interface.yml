@@ -7,7 +7,7 @@ aws_network_interface:
     arguments:
         subnet_id:
             description: Subnet ID to create the ENI in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -50,12 +50,12 @@ aws_network_interface:
             notes: ''
         instance:
             description: ID of the instance to attach to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         device_index:
             description: Integer to define the devices index.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -80,3 +80,18 @@ aws_network_interface:
         tags:
             description: Tags assigned to the ENI.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVYwZDI5eWExOXBiblJsY21aaFkyVWlJQ0owWlhOMElpQjdD
+        aUFnYzNWaWJtVjBYMmxrSUNBZ0lDQWdJRDBnSWlSN1lYZHpYM04xWW01bGRDNXdkV0pzYVdOZllT
+        NXBaSDBpQ2lBZ2NISnBkbUYwWlY5cGNITWdJQ0FnSUQwZ1d5SXhNQzR3TGpBdU5UQWlYUW9nSUhO
+        bFkzVnlhWFI1WDJkeWIzVndjeUE5SUZzaUpIdGhkM05mYzJWamRYSnBkSGxmWjNKdmRYQXVkMlZp
+        TG1sa2ZTSmRDZ29nSUdGMGRHRmphRzFsYm5RZ2V3b2dJQ0FnYVc1emRHRnVZMlVnSUNBZ0lEMGdJ
+        aVI3WVhkelgybHVjM1JoYm1ObExuUmxjM1F1YVdSOUlnb2dJQ0FnWkdWMmFXTmxYMmx1WkdWNElE
+        MGdNUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwT1pYUjNiM0pySUVsdWRHVnlabUZqWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhSM2IzSnJYMmx1ZEdWeVptRmpaUzV0WVhKclpHOTNiZz09

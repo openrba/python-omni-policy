@@ -6,24 +6,28 @@ azurerm_spring_cloud_service:
     description: Manages an Azure Spring Cloud Service.
     arguments:
         name:
-            description: Specifies the name of the Spring Cloud Service resource.
-                Changing this forces a new resource to be created.
-            required: true
+            description: A name to identify on the Git repository, required only if
+                repos exists.
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies The name of the resource group in which to create
                 the Spring Cloud Service. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> '
+            - ' At this time Azure Spring Cloud Service is only supported in a subset
+                of regions (including `East US`, `South East Asia`, `West Europe`
+                and `West US 2`.'
         config_server_git_setting:
             description: A `config_server_git_setting` block as defined below.
             required: false
@@ -38,7 +42,7 @@ azurerm_spring_cloud_service:
             description: The URI of the Git repository that's used as the Config Server
                 back end should be started with `http://`, `https://`, `git@`, or
                 `ssh://`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         label:
@@ -77,19 +81,19 @@ azurerm_spring_cloud_service:
         username:
             description: The username that's used to access the Git repository server,
                 required when the Git repository server supports Http Basic Authentication.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
             description: The password used to access the Git repository server, required
                 when the Git repository server supports Http Basic Authentication.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_key:
             description: The SSH private key to access the Git repository, required
                 when the URI starts with `git@` or `ssh://`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host_key:

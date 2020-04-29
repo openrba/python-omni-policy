@@ -7,7 +7,7 @@ aws_iam_policy_attachment:
     arguments:
         name:
             description: '- The name of the attachment. This cannot be an empty string.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         users:
@@ -27,7 +27,7 @@ aws_iam_policy_attachment:
             notes: ''
         policy_arn:
             description: '- The ARN of the policy you want to apply'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -36,3 +36,32 @@ aws_iam_policy_attachment:
         name:
             description: The name of the attachment.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNWelpYSWlJQ0oxYzJWeUlpQjdDaUFnYm1GdFpTQTlJ
+        Q0owWlhOMExYVnpaWElpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mYVdGdFgzSnZiR1VpSUNKeWIy
+        eGxJaUI3Q2lBZ2JtRnRaU0E5SUNKMFpYTjBMWEp2YkdVaUNnb2dJR0Z6YzNWdFpWOXliMnhsWDNC
+        dmJHbGplU0E5SUR3OFJVOUdDbnNLSUNBaVZtVnljMmx2YmlJNklDSXlNREV5TFRFd0xURTNJaXdL
+        SUNBaVUzUmhkR1Z0Wlc1MElqb2dXd29nSUNBZ2V3b2dJQ0FnSUNBaVFXTjBhVzl1SWpvZ0luTjBj
+        enBCYzNOMWJXVlNiMnhsSWl3S0lDQWdJQ0FnSWxCeWFXNWphWEJoYkNJNklIc0tJQ0FnSUNBZ0lD
+        QWlVMlZ5ZG1salpTSTZJQ0psWXpJdVlXMWhlbTl1WVhkekxtTnZiU0lLSUNBZ0lDQWdmU3dLSUNB
+        Z0lDQWdJa1ZtWm1WamRDSTZJQ0pCYkd4dmR5SXNDaUFnSUNBZ0lDSlRhV1FpT2lBaUlnb2dJQ0Fn
+        ZlFvZ0lGMEtmUXBGVDBZS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cFlXMWZaM0p2ZFhBaUlDSm5j
+        bTkxY0NJZ2V3b2dJRzVoYldVZ1BTQWlkR1Z6ZEMxbmNtOTFjQ0lLZlFvS2NtVnpiM1Z5WTJVZ0lt
+        RjNjMTlwWVcxZmNHOXNhV041SWlBaWNHOXNhV041SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnUFNB
+        aWRHVnpkQzF3YjJ4cFkza2lDaUFnWkdWelkzSnBjSFJwYjI0Z1BTQWlRU0IwWlhOMElIQnZiR2xq
+        ZVNJS0NpQWdjRzlzYVdONUlEMGdQRHhGVDBZS2V3b2dJQ0pXWlhKemFXOXVJam9nSWpJd01USXRN
+        VEF0TVRjaUxBb2dJQ0pUZEdGMFpXMWxiblFpT2lCYkNpQWdJQ0I3Q2lBZ0lDQWdJQ0pCWTNScGIy
+        NGlPaUJiQ2lBZ0lDQWdJQ0FnSW1Wak1qcEVaWE5qY21saVpTb2lDaUFnSUNBZ0lGMHNDaUFnSUNB
+        Z0lDSkZabVpsWTNRaU9pQWlRV3hzYjNjaUxBb2dJQ0FnSUNBaVVtVnpiM1Z5WTJVaU9pQWlLaUlL
+        SUNBZ0lIMEtJQ0JkQ24wS1JVOUdDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNCdmJHbGpl
+        VjloZEhSaFkyaHRaVzUwSWlBaWRHVnpkQzFoZEhSaFkyZ2lJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lE
+        MGdJblJsYzNRdFlYUjBZV05vYldWdWRDSUtJQ0IxYzJWeWN5QWdJQ0FnSUQwZ1d5SWtlMkYzYzE5
+        cFlXMWZkWE5sY2k1MWMyVnlMbTVoYldWOUlsMEtJQ0J5YjJ4bGN5QWdJQ0FnSUQwZ1d5SWtlMkYz
+        YzE5cFlXMWZjbTlzWlM1eWIyeGxMbTVoYldWOUlsMEtJQ0JuY205MWNITWdJQ0FnSUQwZ1d5SWtl
+        MkYzYzE5cFlXMWZaM0p2ZFhBdVozSnZkWEF1Ym1GdFpYMGlYUW9nSUhCdmJHbGplVjloY200Z1BT
+        QWlKSHRoZDNOZmFXRnRYM0J2YkdsamVTNXdiMnhwWTNrdVlYSnVmU0lLZlFvPQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmNHOXNhV041WDJGMGRHRmphRzFsYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

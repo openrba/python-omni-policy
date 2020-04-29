@@ -8,12 +8,12 @@ aws_proxy_protocol_policy:
     arguments:
         load_balancer:
             description: The load balancer to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_ports:
             description: List of instance ports to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -22,3 +22,21 @@ aws_proxy_protocol_policy:
         load_balancer:
             description: The load balancer to which the policy is attached.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hpSWlBaWJHSWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlkR1Z6ZEMxc1lpSUtJQ0JoZG1GcGJHRmlhV3hwZEhsZmVtOXVaWE1nUFNCYklu
+        VnpMV1ZoYzNRdE1XRWlYUW9LSUNCc2FYTjBaVzVsY2lCN0NpQWdJQ0JwYm5OMFlXNWpaVjl3YjNK
+        MElDQWdJQ0E5SURJMUNpQWdJQ0JwYm5OMFlXNWpaVjl3Y205MGIyTnZiQ0E5SUNKMFkzQWlDaUFn
+        SUNCc1lsOXdiM0owSUNBZ0lDQWdJQ0FnSUNBOUlESTFDaUFnSUNCc1lsOXdjbTkwYjJOdmJDQWdJ
+        Q0FnSUNBOUlDSjBZM0FpQ2lBZ2ZRb0tJQ0JzYVhOMFpXNWxjaUI3Q2lBZ0lDQnBibk4wWVc1alpW
+        OXdiM0owSUNBZ0lDQTlJRFU0TndvZ0lDQWdhVzV6ZEdGdVkyVmZjSEp2ZEc5amIyd2dQU0FpZEdO
+        d0lnb2dJQ0FnYkdKZmNHOXlkQ0FnSUNBZ0lDQWdJQ0FnUFNBMU9EY0tJQ0FnSUd4aVgzQnliM1J2
+        WTI5c0lDQWdJQ0FnSUQwZ0luUmpjQ0lLSUNCOUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmNISnZl
+        SGxmY0hKdmRHOWpiMnhmY0c5c2FXTjVJaUFpYzIxMGNDSWdld29nSUd4dllXUmZZbUZzWVc1alpY
+        SWdJRDBnSWlSN1lYZHpYMlZzWWk1c1lpNXVZVzFsZlNJS0lDQnBibk4wWVc1alpWOXdiM0owY3lB
+        OUlGc2lNalVpTENBaU5UZzNJbDBLZlFvPQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3Y205NGVWOXdjbTkwYjJOdmJGOXdiMnhwWTNrdWFIUnRiQzV0WVhKclpHOTNiZz09

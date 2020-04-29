@@ -8,19 +8,19 @@
         "arguments": {
             "directory_id": {
                 "description": "The id of directory.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "dns_ips": {
                 "description": "A list of forwarder IP addresses.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "remote_domain_name": {
                 "description": "The fully qualified domain name of the remote domain for which forwarders will be used.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

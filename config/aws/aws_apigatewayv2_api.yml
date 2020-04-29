@@ -7,12 +7,12 @@ aws_apigatewayv2_api:
     arguments:
         name:
             description: The name of the API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol_type:
             description: 'The API protocol. Valid values: `HTTP`, `WEBSOCKET`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_key_selection_expression:
@@ -95,5 +95,22 @@ aws_apigatewayv2_api:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The API identifier.
+        api_endpoint:
+            description: The URI of the API, of the form `{api-id}.execute-api.{region}.amazonaws.com`.
+        arn:
+            description: The ARN of the API.
+        execution_arn:
+            description: The ARN prefix to be used in an [`aws_lambda_permission`](/docs/providers/aws/r/lambda_permission.html)'s
+                `source_arn` attribute
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5aGNHbGdJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmll
+        U0IxYzJsdVp5QjBhR1VnUVZCSklHbGtaVzUwYVdacFpYSXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZllYQnBMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

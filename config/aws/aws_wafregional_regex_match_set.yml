@@ -7,16 +7,36 @@ aws_wafregional_regex_match_set:
     arguments:
         name:
             description: The name or description of the Regex Match Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         regex_match_tuple:
             description: The regular expression pattern that you want AWS WAF to search
                 for in web requests,
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the WAF Regional Regex Match Set.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtY21WbmFXOXVZV3hmY21WblpYaGZiV0YwWTJoZmMyVjBJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnUFNBaVpYaGhiWEJzWlNJS0NpQWdjbVZuWlhoZmJX
+        RjBZMmhmZEhWd2JHVWdld29nSUNBZ1ptbGxiR1JmZEc5ZmJXRjBZMmdnZXdvZ0lDQWdJQ0JrWVhS
+        aElEMGdJbFZ6WlhJdFFXZGxiblFpQ2lBZ0lDQWdJSFI1Y0dVZ1BTQWlTRVZCUkVWU0lnb2dJQ0Fn
+        ZlFvS0lDQWdJSEpsWjJWNFgzQmhkSFJsY201ZmMyVjBYMmxrSUQwZ0lpUjdZWGR6WDNkaFpuSmxa
+        Mmx2Ym1Gc1gzSmxaMlY0WDNCaGRIUmxjbTVmYzJWMExtVjRZVzF3YkdVdWFXUjlJZ29nSUNBZ2RH
+        VjRkRjkwY21GdWMyWnZjbTFoZEdsdmJpQWdQU0FpVGs5T1JTSUtJQ0I5Q24wS0NuSmxjMjkxY21O
+        bElDSmhkM05mZDJGbWNtVm5hVzl1WVd4ZmNtVm5aWGhmY0dGMGRHVnlibDl6WlhRaUlDSmxlR0Z0
+        Y0d4bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVWlD
+        aUFnY21WblpYaGZjR0YwZEdWeWJsOXpkSEpwYm1keklEMGdXeUp2Ym1VaUxDQWlkSGR2SWwwS2ZR
+        bz0=
+    import: !!binary |
+        Q2dwWFFVWWdVbVZuYVc5dVlXd2dVbVZuWlhnZ1RXRjBZMmdnVTJWMElHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ2FXUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5eVpXZGxlRjl0WVhSamFGOXpaWFF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

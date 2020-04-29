@@ -5,7 +5,104 @@
         "page_title": "OpenStack: openstack_containerinfra_cluster_v1",
         "sidebar_current": "docs-openstack-resource-containerinfra-cluster-v1",
         "description": "Manages a V1 Magnum cluster resource within OpenStack.",
-        "arguments": {},
+        "arguments": {
+            "region": {
+                "description": "The region in which to obtain the V1 Container Infra",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the cluster. Changing this updates the name",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project_id": {
+                "description": "The project of the cluster. Required if admin wants",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "user_id": {
+                "description": "The user of the cluster. Required if admin wants to",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "cluster_template_id": {
+                "description": "The UUID of the V1 Container Infra cluster",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "create_timeout": {
+                "description": "The timeout (in minutes",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "discovery_url": {
+                "description": "The URL used for cluster node discovery.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "docker_volume_size": {
+                "description": "The size (in GB",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "flavor": {
+                "description": "The flavor for the nodes of the cluster. Can be set via",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "master_flavor": {
+                "description": "The flavor for the master nodes. Can be set via",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "keypair": {
+                "description": "The name of the Compute service SSH keypair. Changing",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "labels": {
+                "description": "The list of key value pairs representing additional",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "master_count": {
+                "description": "The number of master nodes for the cluster.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "node_count": {
+                "description": "The number of nodes for the cluster. Changing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fixed_network": {
+                "description": "The fixed network that will be attached to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "fixed_subnet": {
+                "description": "The fixed subnet that will be attached to the",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
         "attributes": {},
         "timeouts": {}
     }

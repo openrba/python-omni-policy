@@ -7,18 +7,18 @@ aws_sagemaker_notebook_instance:
     arguments:
         name:
             description: The name of the notebook instance (must be unique).
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The ARN of the IAM role to be used by the notebook instance
                 which allows SageMaker to call other services on your behalf.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_type:
             description: The name of ML compute instance type.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
@@ -61,3 +61,17 @@ aws_sagemaker_notebook_instance:
             description: The Amazon Resource Name (ARN) assigned by AWS to this notebook
                 instance.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMkZuWlcxaGEyVnlYMjV2ZEdWaWIyOXJYMmx1YzNSaGJtTmxJ
+        aUFpYm1raUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lEMGdJbTE1TFc1dmRHVmliMjlyTFdsdWMz
+        UmhibU5sSWdvZ0lISnZiR1ZmWVhKdUlDQWdJQ0FnUFNBaUpIdGhkM05mYVdGdFgzSnZiR1V1Y205
+        c1pTNWhjbTU5SWdvZ0lHbHVjM1JoYm1ObFgzUjVjR1VnUFNBaWJXd3VkREl1YldWa2FYVnRJZ29L
+        SUNCMFlXZHpJRDBnZXdvZ0lDQWdUbUZ0WlNBOUlDSm1iMjhpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwVFlXZGxiV0ZyWlhJZ1RtOTBaV0p2YjJzZ1NXNXpkR0Z1WTJWeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lHNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WVdkbGJXRnJaWEpmYm05MFpXSnZiMnRmYVc1emRHRnVZMlV1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Machine Learning Workspace. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Specifies the name of the Resource Group in which the Machine Learning Workspace should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,25 +26,28 @@
             },
             "application_insights_id": {
                 "description": "The ID of the Application Insights associated with this Machine Learning Workspace. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_vault_id": {
                 "description": "The ID of key vault associated with this Machine Learning Workspace. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_id": {
                 "description": "The ID of the Storage Account associated with this Machine Learning Workspace. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
-                "notes": "The `account_tier` cannot be `Premium` in order to associate the Storage Account to this Machine Learning Workspace."
+                "notes": [
+                    "-> ",
+                    " The `account_tier` cannot be `Premium` in order to associate the Storage Account to this Machine Learning Workspace."
+                ]
             },
             "identity": {
                 "description": "An `identity` block defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -52,7 +55,10 @@
                 "description": "The ID of the container registry associated with this Machine Learning Workspace. Changing this forces a new resource to be created.",
                 "required": false,
                 "policy": "",
-                "notes": "The `admin_enabled` should be `true` in order to associate the Container Registry to this Machine Learning Workspace."
+                "notes": [
+                    "-> ",
+                    " The `admin_enabled` should be `true` in order to associate the Container Registry to this Machine Learning Workspace."
+                ]
             },
             "description": {
                 "description": "The description of this Machine Learning Workspace.",
@@ -86,7 +92,7 @@
             },
             "type": {
                 "description": "The Type of Identity which should be used for this Disk Encryption Set. At this time the only possible value is `SystemAssigned`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

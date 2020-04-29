@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name of event subscription.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,13 +32,13 @@
             },
             "source_ids": {
                 "description": "Ids of sources to listen to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sns_topic_arn": {
                 "description": "SNS topic arn to send events on.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

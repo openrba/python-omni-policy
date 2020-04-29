@@ -7,7 +7,7 @@ aws_lightsail_domain:
     arguments:
         domain_name:
             description: The name of the Lightsail domain to manage
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -16,3 +16,11 @@ aws_lightsail_domain:
         arn:
             description: The ARN of the Lightsail domain
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR2xuYUhSellXbHNYMlJ2YldGcGJpSWdJbVJ2YldGcGJsOTBa
+        WE4wSWlCN0NpQWdaRzl0WVdsdVgyNWhiV1VnUFNBaWJYbGtiMjFoYVc0dVkyOXRJZ3A5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzYVdkb2RITmhhV3hmWkc5dFlXbHVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

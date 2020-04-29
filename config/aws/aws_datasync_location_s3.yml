@@ -7,18 +7,18 @@ aws_datasync_location_s3:
     arguments:
         s3_bucket_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_config:
             description: Configuration block containing information for connecting
                 to S3.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subdirectory:
             description: Prefix to perform actions as source or destination.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -27,5 +27,24 @@ aws_datasync_location_s3:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Amazon Resource Name (ARN) of the DataSync Location.
+        arn:
+            description: Amazon Resource Name (ARN) of the DataSync Location.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0YwWVhONWJtTmZiRzlqWVhScGIyNWZjek1pSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdjek5mWW5WamEyVjBYMkZ5YmlBOUlDSWtlMkYzYzE5ek0xOWlkV05yWlhRdVpY
+        aGhiWEJzWlM1aGNtNTlJZ29nSUhOMVltUnBjbVZqZEc5eWVTQWdQU0FpTDJWNFlXMXdiR1V2Y0hK
+        bFptbDRJZ29LSUNCek0xOWpiMjVtYVdjZ2V3b2dJQ0FnWW5WamEyVjBYMkZqWTJWemMxOXliMnhs
+        WDJGeWJpQTlJQ0lrZTJGM2MxOXBZVzFmY205c1pTNWxlR0Z0Y0d4bExtRnlibjBpQ2lBZ2ZRcDlD
+        Zz09
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJoZEdGemVXNWpYMnh2WTJGMGFXOXVYM016WUNCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnWW5rZ2RYTnBibWNnZEdobElFUmhkR0ZUZVc1aklGUmhjMnNnUVcxaGVtOXVJRkpsYzI5MWNt
+        TmxJRTVoYldVZ0tFRlNUaWtzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWVhSaGMzbHVZMTlzYjJOaGRHbHZibDl6TXk1b2RHMXNMbTFoY210a2IzZHU=

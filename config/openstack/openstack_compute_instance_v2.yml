@@ -127,7 +127,7 @@ openstack_compute_instance_v2:
             notes: ''
         source_type:
             description: The source type of the device. Must be one of
-            required: true
+            required: false
             policy: ''
             notes: ''
         boot_index:
@@ -197,12 +197,12 @@ openstack_compute_instance_v2:
             notes: ''
         file:
             description: The absolute path of the destination file.
-            required: true
+            required: false
             policy: ''
             notes: ''
         content:
             description: The contents of the file. Limited to 255 bytes.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ignore_resize_confirmation:
@@ -215,39 +215,18 @@ openstack_compute_instance_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        access_ip_v4:
-            description: The first detected Fixed IPv4 address.
-        access_ip_v6:
-            description: The first detected Fixed IPv6 address.
-        metadata:
-            description: See Argument Reference above.
-        security_groups:
-            description: See Argument Reference above.
-        flavor_id:
-            description: See Argument Reference above.
-        flavor_name:
-            description: See Argument Reference above.
-        network/uuid:
-            description: See Argument Reference above.
-        network/name:
-            description: See Argument Reference above.
-        network/port:
-            description: See Argument Reference above.
-        network/fixed_ip_v4:
-            description: The Fixed IPv4 address of the Instance on that
-        network/fixed_ip_v6:
-            description: The Fixed IPv6 address of the Instance on that
-        network/mac:
-            description: The MAC address of the NIC on that network.
-        all_metadata:
-            description: Contains all instance metadata, even metadata not set
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of tags assigned on the instance, which have
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        YVc1bklHbHVjM1JoYm1ObGN3b0tTVzF3YjNKMGFXNW5JR2x1YzNSaGJtTmxjeUJqWVc0Z1ltVWdk
+        SEpwWTJ0NUxDQnphVzVqWlNCMGFHVWdibTkyWVNCaGNHa2daRzlsY3lCdWIzUWdiMlptWlhJZ1lX
+        eHNDbWx1Wm05eWJXRjBhVzl1SUhCeWIzWnBaR1ZrSUdGMElHTnlaV0YwYVc5dUlIUnBiV1VnWm05
+        eUlHeGhkR1Z5SUhKbGRISnBaWFpoYkM0S1RtVjBkMjl5YXlCcGJuUmxjbVpoWTJVZ1lYUjBZV05v
+        YldWdWRDQnZjbVJsY2l3Z1lXNWtJRzUxYldKbGNpQmhibVFnYzJsNlpYTWdiMllnWlhCb1pXMWxj
+        bUZzQ21ScGMydHpJR0Z5WlNCbGVHRnRjR3hsY3lCdlppQjBhR2x6TGdvS0l3PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgybHVjM1JoYm1ObFgzWXlMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

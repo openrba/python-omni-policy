@@ -7,15 +7,23 @@ aws_s3_bucket_policy:
     arguments:
         bucket:
             description: The name of the bucket to which to apply the policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: The text of the policy. For more information about building
                 AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document
                 Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVE15QmlkV05yWlhRZ2NHOXNhV05wWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCaWRXTnJaWFFnYm1GdFpTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6TTE5aWRXTnJaWFJmY0c5c2FXTjVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

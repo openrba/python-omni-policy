@@ -9,7 +9,7 @@ aws_resourcegroups_group:
             description: The resource group's name. A resource group name can have
                 a maximum of 127 characters, including letters, numbers, hyphens,
                 dots, and underscores. The name cannot start with `AWS` or `aws`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -20,7 +20,7 @@ aws_resourcegroups_group:
         resource_query:
             description: A `resource_query` block. Resource queries are documented
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -30,15 +30,30 @@ aws_resourcegroups_group:
             notes: ''
         query:
             description: The resource query as a JSON string.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: 'The type of the resource query. Defaults to `TAG_FILTERS_1_0`. '
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         arn:
             description: The ARN assigned by AWS for this resource group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbVZ6YjNWeVkyVm5jbTkxY0hOZlozSnZkWEFpSUNKMFpYTjBJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKMFpYTjBMV2R5YjNWd0lnb0tJQ0J5WlhOdmRYSmpaVjl4ZFdWeWVT
+        QjdDaUFnSUNCeGRXVnllU0E5SUR3OFNsTlBUZ3A3Q2lBZ0lsSmxjMjkxY21ObFZIbHdaVVpwYkhS
+        bGNuTWlPaUJiQ2lBZ0lDQWlRVmRUT2pwRlF6STZPa2x1YzNSaGJtTmxJZ29nSUYwc0NpQWdJbFJo
+        WjBacGJIUmxjbk1pT2lCYkNpQWdJQ0I3Q2lBZ0lDQWdJQ0pMWlhraU9pQWlVM1JoWjJVaUxBb2dJ
+        Q0FnSUNBaVZtRnNkV1Z6SWpvZ1d5SlVaWE4wSWwwS0lDQWdJSDBLSUNCZENuMEtTbE5QVGdvZ0lI
+        MEtmUW89
+    import: !!binary |
+        Q2dwU1pYTnZkWEpqWlNCbmNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WlhOdmRYSmpaV2R5YjNWd2MxOW5jbTkxY0M1b2RHMXNMbTFoY210a2IzZHU=

@@ -8,22 +8,22 @@ google_compute_instance_group_manager:
     arguments:
         base_instance_name:
             description: The base instance name to use for
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
             description: Application versions managed by this instance group. Each
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: '- Version name.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone:
             description: The zone that instances in this group should be created
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -46,7 +46,10 @@ google_compute_instance_group_manager:
                 a percentage depending on the settings. Structure is documented below.'
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - -> Exactly one `version` you specify must not have a `target_size` specified.
+                During a rolling update, the instance group manager will fulfill the
+                `target_size`
         target_pools:
             description: The full URL of all target pools to which new
             required: false
@@ -83,7 +86,7 @@ google_compute_instance_group_manager:
                 However, if the Updater determines that the minimal action you specify
                 is not enough to perform the update, it might perform a more disruptive
                 action.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
@@ -93,7 +96,7 @@ google_compute_instance_group_manager:
                 so that no action is proactively executed but the update will be performed
                 as part of other actions (for example, resizes or recreateInstances
                 calls).'
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_surge_percent:
@@ -110,24 +113,24 @@ google_compute_instance_group_manager:
             notes: ''
         port:
             description: The port number.
-            required: true
+            required: false
             policy: ''
             notes: ''
         health_check:
             description: The health check resource that signals autohealing.
-            required: true
+            required: false
             policy: ''
             notes: ''
         initial_delay_sec:
             description: The number of seconds that the managed instance group waits
                 before
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_template:
             description: '- The full URL to an instance template from which all new
                 instances of this version will be created.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         percent:

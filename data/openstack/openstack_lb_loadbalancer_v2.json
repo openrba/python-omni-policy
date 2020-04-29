@@ -14,7 +14,7 @@
             },
             "vip_subnet_id": {
                 "description": "The network on which to allocate the",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,41 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "vip_subnet_id": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "vip_address": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "flavor_id": {
-                "description": "See Argument Reference above."
-            },
-            "loadbalancer_provider": {
-                "description": "See Argument Reference above."
-            },
-            "security_group_ids": {
-                "description": "See Argument Reference above."
-            },
-            "vip_port_id": {
-                "description": "The Port ID of the Load Balancer IP."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

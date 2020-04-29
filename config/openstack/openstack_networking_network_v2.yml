@@ -85,36 +85,42 @@ openstack_networking_network_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        shared:
-            description: See Argument Reference above.
-        external:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        availability_zone_hints:
-            description: See Argument Reference above.
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of tags assigned on the network, which have
-                been
-        transparent_vlan:
-            description: See Argument Reference above.
-        port_security_enabled:
-            description: See Argument Reference above.
-        mtu:
-            description: See Argument Reference above.
-        dns_domain:
-            description: See Argument Reference above.
-        qos_policy_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlibVYwZDI5eWEx
+        OHhJZ29nSUdGa2JXbHVYM04wWVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNK
+        dmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpkV0p1WlhSZmRqSWlJQ0p6ZFdKdVpYUmZNU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpYzNWaWJtVjBYekVpQ2lBZ2JtVjBkMjl5YTE5cFpDQTlJ
+        Q0lrZTI5d1pXNXpkR0ZqYTE5dVpYUjNiM0pyYVc1blgyNWxkSGR2Y210ZmRqSXVibVYwZDI5eWEx
+        OHhMbWxrZlNJS0lDQmphV1J5SUNBZ0lDQWdJRDBnSWpFNU1pNHhOamd1TVRrNUxqQXZNalFpQ2lB
+        Z2FYQmZkbVZ5YzJsdmJpQTlJRFFLZlFvS2NtVnpiM1Z5WTJVZ0ltOXdaVzV6ZEdGamExOWpiMjF3
+        ZFhSbFgzTmxZMmR5YjNWd1gzWXlJaUFpYzJWalozSnZkWEJmTVNJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUQwZ0luTmxZMmR5YjNWd1h6RWlDaUFnWkdWelkzSnBjSFJwYjI0Z1BTQWlZU0J6WldOMWNt
+        bDBlU0JuY205MWNDSUtDaUFnY25Wc1pTQjdDaUFnSUNCbWNtOXRYM0J2Y25RZ0lDQTlJREl5Q2lB
+        Z0lDQjBiMTl3YjNKMElDQWdJQ0E5SURJeUNpQWdJQ0JwY0Y5d2NtOTBiMk52YkNBOUlDSjBZM0Fp
+        Q2lBZ0lDQmphV1J5SUNBZ0lDQWdJQ0E5SUNJd0xqQXVNQzR3THpBaUNpQWdmUXA5Q2dweVpYTnZk
+        WEpqWlNBaWIzQmxibk4wWVdOclgyNWxkSGR2Y210cGJtZGZjRzl5ZEY5Mk1pSWdJbkJ2Y25SZk1T
+        SWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSndiM0owWHpFaUNpQWdibVYwZDI5
+        eWExOXBaQ0FnSUNBZ0lDQWdJRDBnSWlSN2IzQmxibk4wWVdOclgyNWxkSGR2Y210cGJtZGZibVYw
+        ZDI5eWExOTJNaTV1WlhSM2IzSnJYekV1YVdSOUlnb2dJR0ZrYldsdVgzTjBZWFJsWDNWd0lDQWdJ
+        Q0E5SUNKMGNuVmxJZ29nSUhObFkzVnlhWFI1WDJkeWIzVndYMmxrY3lBOUlGc2lKSHR2Y0dWdWMz
+        UmhZMnRmWTI5dGNIVjBaVjl6WldObmNtOTFjRjkyTWk1elpXTm5jbTkxY0Y4eExtbGtmU0pkQ2dv
+        Z0lHWnBlR1ZrWDJsd0lIc0tJQ0FnSUNKemRXSnVaWFJmYVdRaUlDQTlJQ0lrZTI5d1pXNXpkR0Zq
+        YTE5dVpYUjNiM0pyYVc1blgzTjFZbTVsZEY5Mk1pNXpkV0p1WlhSZk1TNXBaSDBpQ2lBZ0lDQWlh
+        WEJmWVdSa2NtVnpjeUlnUFNBaU1Ua3lMakUyT0M0eE9Ua3VNVEFpQ2lBZ2ZRcDlDZ3B5WlhOdmRY
+        SmpaU0FpYjNCbGJuTjBZV05yWDJOdmJYQjFkR1ZmYVc1emRHRnVZMlZmZGpJaUlDSnBibk4wWVc1
+        alpWOHhJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltbHVjM1JoYm1ObFh6RWlDaUFn
+        YzJWamRYSnBkSGxmWjNKdmRYQnpJRDBnV3lJa2UyOXdaVzV6ZEdGamExOWpiMjF3ZFhSbFgzTmxZ
+        MmR5YjNWd1gzWXlMbk5sWTJkeWIzVndYekV1Ym1GdFpYMGlYUW9LSUNCdVpYUjNiM0pySUhzS0lD
+        QWdJSEJ2Y25RZ1BTQWlKSHR2Y0dWdWMzUmhZMnRmYm1WMGQyOXlhMmx1WjE5d2IzSjBYM1l5TG5C
+        dmNuUmZNUzVwWkgwaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwT1pYUjNiM0pyY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCcFpHQXNJ
+        R1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YMjVsZEhkdmNtdGZkakl1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

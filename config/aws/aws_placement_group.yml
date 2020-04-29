@@ -7,12 +7,12 @@ aws_placement_group:
     arguments:
         name:
             description: The name of the placement group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         strategy:
             description: The placement strategy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -26,3 +26,14 @@ aws_placement_group:
         placement_group_id:
             description: The ID of the placement group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR3hoWTJWdFpXNTBYMmR5YjNWd0lpQWlkMlZpSWlCN0NpQWdi
+        bUZ0WlNBZ0lDQWdQU0FpYUhWdWEza3RaRzl5ZVMxd1p5SUtJQ0J6ZEhKaGRHVm5lU0E5SUNKamJI
+        VnpkR1Z5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwUWJHRmpaVzFsYm5RZ1ozSnZkWEJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YkdGalpXMWxiblJmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

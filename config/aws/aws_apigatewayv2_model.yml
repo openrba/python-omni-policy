@@ -7,23 +7,23 @@ aws_apigatewayv2_model:
     arguments:
         api_id:
             description: The API identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         content_type:
             description: ' The content-type for the model, for example, `application/json`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the model. Must be alphanumeric.
-            required: true
+            required: false
             policy: ''
             notes: ''
         schema:
             description: The schema for the model. This should be a [JSON schema draft
                 4](https://tools.ietf.org/html/draft-zyp-json-schema-04
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -31,5 +31,16 @@ aws_apigatewayv2_model:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The model identifier.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5dGIyUmxiR0FnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        R0o1SUhWemFXNW5JSFJvWlNCQlVFa2dhV1JsYm5ScFptbGxjaUJoYm1RZ2JXOWtaV3dnYVdSbGJu
+        UnBabWxsY2l3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZmJXOWtaV3d1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

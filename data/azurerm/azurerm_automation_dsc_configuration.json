@@ -8,31 +8,31 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the DSC Configuration. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which the DSC Configuration is created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "automation_account_name": {
                 "description": "The name of the automation account in which the DSC Configuration is created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "content_embedded": {
                 "description": "The PowerShell DSC Configuration script.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Must be the same location as the Automation Account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

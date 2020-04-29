@@ -9,13 +9,34 @@ kubernetes_service:
         metadata:
             description: Standard service's metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec defines the behavior of a service. [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status)
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzTmxjblpwWTJVaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYldWMFlXUmhkR0VnZXdvZ0lDQWdibUZ0WlNBOUlDSjBaWEp5WVdadmNtMHRaWGhoYlhCc1pT
+        SUtJQ0I5Q2lBZ2MzQmxZeUI3Q2lBZ0lDQnpaV3hsWTNSdmNpQTlJSHNLSUNBZ0lDQWdZWEJ3SUQw
+        Z0lpUjdhM1ZpWlhKdVpYUmxjMTl3YjJRdVpYaGhiWEJzWlM1dFpYUmhaR0YwWVM0d0xteGhZbVZz
+        Y3k1aGNIQjlJZ29nSUNBZ2ZRb2dJQ0FnYzJWemMybHZibDloWm1acGJtbDBlU0E5SUNKRGJHbGxi
+        blJKVUNJS0lDQWdJSEJ2Y25RZ2V3b2dJQ0FnSUNCd2IzSjBJQ0FnSUNBZ0lDQTlJRGd3T0RBS0lD
+        QWdJQ0FnZEdGeVoyVjBYM0J2Y25RZ1BTQTRNQW9nSUNBZ2ZRb0tJQ0FnSUhSNWNHVWdQU0FpVEc5
+        aFpFSmhiR0Z1WTJWeUlnb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltdDFZbVZ5Ym1WMFpYTmZjRzlr
+        SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzFsZEdGa1lYUmhJSHNLSUNBZ0lHNWhiV1VnUFNBaWRHVnlj
+        bUZtYjNKdExXVjRZVzF3YkdVaUNpQWdJQ0JzWVdKbGJITWdQU0I3Q2lBZ0lDQWdJR0Z3Y0NBOUlD
+        Sk5lVUZ3Y0NJS0lDQWdJSDBLSUNCOUNnb2dJSE53WldNZ2V3b2dJQ0FnWTI5dWRHRnBibVZ5SUhz
+        S0lDQWdJQ0FnYVcxaFoyVWdQU0FpYm1kcGJuZzZNUzQzTGpraUNpQWdJQ0FnSUc1aGJXVWdJRDBn
+        SW1WNFlXMXdiR1VpQ2lBZ0lDQjlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QnBkSE1nYm1GdFpYTndZ
+        V05sSUdGdVpDQnVZVzFsTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjMlZ5ZG1salpTNW9kRzFzTG0xaGNtdGtiM2R1

@@ -9,7 +9,7 @@
         "arguments": {
             "name": {
                 "description": "A unique name for the resource, required by device registry.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -57,7 +57,7 @@
             },
             "pubsub_topic_name": {
                 "description": "PubSub topic name to publish device state updates.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -69,31 +69,31 @@
             },
             "mqtt_enabled_state": {
                 "description": "The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "http_enabled_state": {
                 "description": "The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "public_key_certificate": {
                 "description": "The certificate format and data.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "format": {
                 "description": "The field allows only  `X509_CERTIFICATE_PEM`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "certificate": {
                 "description": "The certificate data.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -7,12 +7,12 @@ aws_waf_rule_group:
     arguments:
         name:
             description: A friendly name of the rule group
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_name:
             description: A friendly name for the metrics from the rule group
-            required: true
+            required: false
             policy: ''
             notes: ''
         activated_rule:
@@ -31,3 +31,19 @@ aws_waf_rule_group:
         arn:
             description: The ARN of the WAF rule group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDNKMWJHVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaU0lLSUNCdFpYUnlhV05mYm1GdFpTQTlJQ0psZUdGdGNH
+        eGxJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYM2RoWmw5eWRXeGxYMmR5YjNWd0lpQWlaWGhoYlhC
+        c1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVWlDaUFnYldWMGNtbGpYMjVo
+        YldVZ1BTQWlaWGhoYlhCc1pTSUtDaUFnWVdOMGFYWmhkR1ZrWDNKMWJHVWdld29nSUNBZ1lXTjBh
+        Vzl1SUhzS0lDQWdJQ0FnZEhsd1pTQTlJQ0pEVDFWT1ZDSUtJQ0FnSUgwS0NpQWdJQ0J3Y21sdmNt
+        bDBlU0E5SURVd0NpQWdJQ0J5ZFd4bFgybGtJQ0E5SUNJa2UyRjNjMTkzWVdaZmNuVnNaUzVsZUdG
+        dGNHeGxMbWxrZlNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwWFFVWWdVblZzWlNCSGNtOTFjQ0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R2xrTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmNuVnNaVjluY205MWNDNW9kRzFzTG0xaGNtdGtiM2R1

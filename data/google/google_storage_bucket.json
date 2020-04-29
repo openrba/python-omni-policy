@@ -9,7 +9,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -99,13 +99,13 @@
             },
             "action": {
                 "description": "The Lifecycle Rule's action configuration. A single block of this type is supported. Structure is documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "condition": {
                 "description": "The Lifecycle Rule's condition configuration. A single block of this type is supported. Structure is documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -141,7 +141,7 @@
             },
             "enabled": {
                 "description": "While set to `true`, versioning is fully enabled for this bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -195,7 +195,7 @@
             },
             "log_bucket": {
                 "description": "The bucket that will receive log objects.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -206,14 +206,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "self_link": {
-                "description": "The URI of the created resource."
-            },
-            "url": {
-                "description": "The base URL of the bucket, in the format `gs://<bucket-name>`."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

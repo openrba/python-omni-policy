@@ -20,7 +20,7 @@
             },
             "certificate_body": {
                 "description": "The contents of the public key certificate in",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "private_key": {
                 "description": "The contents of the private key in PEM-encoded format.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,18 +7,28 @@ gitlab_tag_protection:
     arguments:
         project:
             description: The id of the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tag:
             description: Name of the tag or wildcard.
-            required: true
+            required: false
             policy: ''
             notes: ''
         create_access_level:
             description: One of five levels of access to the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmZEdGblgzQnliM1JsWTNScGIyNGlJQ0pVWVdkUWNtOTBa
+        V04wSWlCN0NpQWdjSEp2YW1WamRDQTlJQ0l4TWpNME5TSUtJQ0IwWVdjZ1BTQWlWR0ZuVUhKdmRH
+        VmpkR1ZrSWdvZ0lHTnlaV0YwWlY5aFkyTmxjM05mYkdWMlpXd2dQU0FpWkdWMlpXeHZjR1Z5SWdw
+        OUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5MFlXZGZjSEp2ZEdWamRHbHZiaTVvZEcxc0xtMWhjbXRrYjNkdQ==

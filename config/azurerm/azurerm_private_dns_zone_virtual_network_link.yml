@@ -8,25 +8,25 @@ azurerm_private_dns_zone_virtual_network_link:
         name:
             description: The name of the Private DNS Zone Virtual Network Link. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_dns_zone_name:
             description: The name of the Private DNS zone (without a terminating dot).
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the resource group where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_network_id:
             description: The Resource ID of the Virtual Network that should be linked
                 to the DNS Zone. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         registration_enabled:

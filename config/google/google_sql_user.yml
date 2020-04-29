@@ -8,12 +8,12 @@ google_sql_user:
     arguments:
         instance:
             description: The name of the Cloud SQL instance. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the user. Changing this forces a new resource
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:

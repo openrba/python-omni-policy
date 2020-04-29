@@ -8,13 +8,13 @@
         "arguments": {
             "directory_id": {
                 "description": "The id of directory.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "log_group_name": {
                 "description": "Name of the cloudwatch log group to which the logs should be published. The log group should be already created and the directory service principal should be provided with required permission to create stream and publish logs. Changing this value would delete the current subscription and create a new one. A directory can only have one log subscription at a time.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

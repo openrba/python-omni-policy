@@ -8,25 +8,25 @@
         "arguments": {
             "rest_api_id": {
                 "description": "The ID of the associated REST API",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_id": {
                 "description": "The API resource ID",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "http_method": {
                 "description": "The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "status_code": {
                 "description": "The HTTP status code",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

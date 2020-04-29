@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Name of the organization.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "email": {
                 "description": "Admin email address.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,11 +43,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The name of the organization."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

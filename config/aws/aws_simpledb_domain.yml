@@ -7,10 +7,20 @@ aws_simpledb_domain:
     arguments:
         name:
             description: The name of the SimpleDB domain
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The name of the SimpleDB domain
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMmx0Y0d4bFpHSmZaRzl0WVdsdUlpQWlkWE5sY25NaUlIc0tJ
+        Q0J1WVcxbElEMGdJblZ6WlhKeklncDlDZz09
+    import: !!binary |
+        Q2dwVGFXMXdiR1ZFUWlCRWIyMWhhVzV6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YVcxd2JHVmtZbDlrYjIxaGFXNHVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

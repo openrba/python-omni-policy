@@ -13,7 +13,26 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The identifier for the distribution. For example: `EDFDVBD632BHDS5`."
+            },
+            "caller_reference": {
+                "description": "Internal value used by CloudFront to allow future"
+            },
+            "cloudfront_access_identity_path": {
+                "description": "A shortcut to the full path for the"
+            },
+            "etag": {
+                "description": "The current version of the origin access identity's information."
+            },
+            "iam_arn": {
+                "description": "A pre-generated ARN for use in S3 bucket policies (see below)."
+            },
+            "s3_canonical_user_id": {
+                "description": "The Amazon S3 canonical user ID for the origin"
+            }
+        },
         "timeouts": {}
     }
 }

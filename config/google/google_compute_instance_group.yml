@@ -8,12 +8,12 @@ google_compute_instance_group:
     arguments:
         name:
             description: The name which the port will be mapped to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone:
             description: The zone that this instance group should be created in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -43,7 +43,7 @@ google_compute_instance_group:
             notes: ''
         port:
             description: The port number to map the name to.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

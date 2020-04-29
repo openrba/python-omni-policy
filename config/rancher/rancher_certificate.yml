@@ -8,7 +8,7 @@ rancher_certificate:
     arguments:
         name:
             description: The name of the certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,12 +18,12 @@ rancher_certificate:
             notes: ''
         environment_id:
             description: The ID of the environment to create the certificate for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cert:
             description: The certificate content.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cert_chain:
@@ -33,30 +33,24 @@ rancher_certificate:
             notes: ''
         key:
             description: The certificate key.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: (Computed) The ID of the resource.
-        cn:
-            description: The certificate CN.
-        algorithm:
-            description: The certificate algorithm.
-        cert_fingerprint:
-            description: The certificate fingerprint.
-        expires_at:
-            description: The certificate expiration date.
-        issued_at:
-            description: The certificate creation date.
-        issuer:
-            description: The certificate issuer.
-        key_size:
-            description: The certificate key size.
-        serial_number:
-            description: The certificate serial number.
-        subject_alternative_names:
-            description: The list of certificate Subject Alternative Names.
-        version:
-            description: The certificate version.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRkpoYm1Ob1pYSWdRMlZ5ZEdsbWFXTmhkR1VLY21WemIzVnlZ
+        MlVnY21GdVkyaGxjbDlqWlhKMGFXWnBZMkYwWlNBaVptOXZJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lD
+        QWdJQ0FnUFNBaVptOXZJZ29nSUdSbGMyTnlhWEIwYVc5dUlDQWdJRDBnSW0xNUlHWnZieUJqWlhK
+        MGFXWnBZMkYwWlNJS0lDQmxiblpwY205dWJXVnVkRjlwWkNBOUlDSWtlM0poYm1Ob1pYSmZaVzUy
+        YVhKdmJtMWxiblF1ZEdWemRDNXBaSDBpQ2lBZ1kyVnlkQ0E5SUNJa2UyWnBiR1VvSW5ObGNuWmxj
+        aTVqY25RaUtYMGlDaUFnYTJWNUlEMGdJaVI3Wm1sc1pTZ2ljMlZ5ZG1WeUxtdGxlU0lwZlNJS2ZR
+        bz0=
+    import: !!binary |
+        Q2dwRFpYSjBhV1pwWTJGMFpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQkRa
+        WEowYVdacFkyRjBaU0JKUkFwcGJpQjBhR1VnWm05eWJXRjBJR0E4Wlc1MmFYSnZibTFsYm5SZmFX
+        UStMenhqWlhKMGFXWnBZMkYwWlY5cFpENWdDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYSmhibU5vWlhJdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlkyVnlkR2xtYVdOaGRHVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

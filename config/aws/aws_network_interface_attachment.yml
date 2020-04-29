@@ -7,17 +7,17 @@ aws_network_interface_attachment:
     arguments:
         instance_id:
             description: Instance ID to attach.
-            required: true
+            required: false
             policy: ''
             notes: ''
         network_interface_id:
             description: ENI ID to attach.
-            required: true
+            required: false
             policy: ''
             notes: ''
         device_index:
             description: Network interface index (int).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -30,3 +30,15 @@ aws_network_interface_attachment:
         status:
             description: The status of the Network Interface Attachment.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVYwZDI5eWExOXBiblJsY21aaFkyVmZZWFIwWVdOb2JXVnVk
+        Q0lnSW5SbGMzUWlJSHNLSUNCcGJuTjBZVzVqWlY5cFpDQWdJQ0FnSUNBZ0lDQTlJQ0lrZTJGM2Mx
+        OXBibk4wWVc1alpTNTBaWE4wTG1sa2ZTSUtJQ0J1WlhSM2IzSnJYMmx1ZEdWeVptRmpaVjlwWkNB
+        OUlDSWtlMkYzYzE5dVpYUjNiM0pyWDJsdWRHVnlabUZqWlM1MFpYTjBMbWxrZlNJS0lDQmtaWFpw
+        WTJWZmFXNWtaWGdnSUNBZ0lDQWdJQ0E5SURBS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhSM2IzSnJYMmx1ZEdWeVptRmpaVjloZEhSaFkyaHRaVzUwTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

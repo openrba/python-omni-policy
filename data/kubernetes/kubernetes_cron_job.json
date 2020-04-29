@@ -8,13 +8,13 @@
         "arguments": {
             "metadata": {
                 "description": "Standard resource's metadata. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "spec": {
                 "description": "Spec defines the behavior of a CronJob. https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

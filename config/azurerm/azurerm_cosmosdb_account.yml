@@ -9,18 +9,18 @@ azurerm_cosmosdb_account:
             description: The capability to enable - Possible values are `EnableAggregationPipeline`,
                 `EnableCassandra`, `EnableGremlin`,`EnableMongo`, `EnableTable`, `MongoDBv3.4`,
                 and `mongoEnableDocLevelTTL`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the CosmosDB Account
                 is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The name of the Azure region to host replicated data.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -31,7 +31,7 @@ azurerm_cosmosdb_account:
         offer_type:
             description: Specifies the Offer Type to use for this CosmosDB Account
                 - currently this can only be set to `Standard`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         kind:
@@ -44,14 +44,14 @@ azurerm_cosmosdb_account:
         consistency_policy:
             description: Specifies a `consistency_policy` resource, used to define
                 the consistency policy for this CosmosDB account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         geo_location:
             description: Specifies a `geo_location` resource, used to define where
                 data should be replicated with the `failover_priority` 0 specifying
                 the primary location.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_range_filter:
@@ -95,7 +95,7 @@ azurerm_cosmosdb_account:
             description: The Consistency Level to use for this CosmosDB Account -
                 can be either `BoundedStaleness`, `Eventual`, `Session`, `Strong`
                 or `ConsistentPrefix`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_interval_in_seconds:
@@ -127,12 +127,12 @@ azurerm_cosmosdb_account:
                 must be unique for each of the regions in which the database account
                 exists. Changing this causes the location to be re-provisioned and
                 cannot be changed for the location with failover priority `0`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         id:
             description: The ID of the virtual network subnet.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

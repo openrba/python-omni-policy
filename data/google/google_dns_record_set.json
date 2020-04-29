@@ -9,31 +9,31 @@
         "arguments": {
             "managed_zone": {
                 "description": "The name of the zone in which this record set will",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The DNS name this record set will apply to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rrdatas": {
                 "description": "The string data for the records in this record set",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ttl": {
                 "description": "The time-to-live of this record set (seconds).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The DNS record set type.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

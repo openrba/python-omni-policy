@@ -22,7 +22,7 @@ aws_glue_classifier:
             notes: ''
         name:
             description: The name of the classifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         xml_classifier:
@@ -34,3 +34,11 @@ aws_glue_classifier:
         id:
             description: Name of the classifier
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSGJIVmxJRU5zWVhOemFXWnBaWEp6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1ZwY2lCdVlXMWxMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkhWbFgyTnNZWE56YVdacFpYSXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

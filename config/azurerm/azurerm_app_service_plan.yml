@@ -8,19 +8,19 @@ azurerm_app_service_plan:
         name:
             description: Specifies the name of the App Service Plan component. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the App
                 Service Plan component.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         kind:
@@ -32,7 +32,7 @@ azurerm_app_service_plan:
             notes: ''
         sku:
             description: A `sku` block as documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_service_environment_id:
@@ -60,12 +60,12 @@ azurerm_app_service_plan:
             notes: ''
         tier:
             description: Specifies the plan's pricing tier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size:
             description: Specifies the plan's instance size.
-            required: true
+            required: false
             policy: ''
             notes: ''
         capacity:

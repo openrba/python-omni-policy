@@ -8,13 +8,13 @@ azurerm_frontdoor_firewall_policy:
         name:
             description: Gets name of the resource that is unique within a policy.
                 This name can be used to access the resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -67,23 +67,23 @@ azurerm_frontdoor_firewall_policy:
         action:
             description: The action to be applied when the rule matches. Possible
                 values are `Allow`, `Block`, `Log`, or `Redirect`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         priority:
             description: The priority of the rule. Rules with a lower value will be
                 evaluated before rules with a higher value. Defaults to `1`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The name of the managed rule to use with this resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         match_condition:
             description: One or more `match_condition` block defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rate_limit_duration_in_minutes:
@@ -99,25 +99,25 @@ azurerm_frontdoor_firewall_policy:
         match_variable:
             description: The variable type to be excluded. Possible values are `QueryStringArgNames`,
                 `RequestBodyPostArgNames`, `RequestCookieNames`, `RequestHeaderNames`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         match_values:
             description: Up to `100` possible values to match.
-            required: true
+            required: false
             policy: ''
             notes: ''
         operator:
             description: 'Comparison operator to apply to the selector when specifying
                 which elements in the collection this exclusion applies to. Possible
                 values are: `Equals`, `Contains`, `StartsWith`, `EndsWith`, `EqualsAny`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         selector:
             description: Selector for the value in the `match_variable` attribute
                 this exclusion applies to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         negation_condition:
@@ -133,7 +133,7 @@ azurerm_frontdoor_firewall_policy:
             notes: ''
         version:
             description: The version on the managed rule to use with this resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         exclusion:
@@ -148,7 +148,7 @@ azurerm_frontdoor_firewall_policy:
             notes: ''
         rule_group_name:
             description: The managed rule group to override.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule:
@@ -159,7 +159,7 @@ azurerm_frontdoor_firewall_policy:
             notes: ''
         rule_id:
             description: Identifier for the managed rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

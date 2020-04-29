@@ -7,7 +7,7 @@ aws_pinpoint_email_channel:
     arguments:
         application_id:
             description: The application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -17,21 +17,53 @@ aws_pinpoint_email_channel:
             notes: ''
         from_address:
             description: The email address used to send emails from.
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity:
             description: The ARN of an identity verified with SES.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The ARN of an IAM Role used to submit events to Mobile Analytics'
                 event ingestion service.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         messages_per_second:
             description: Messages per second that can be sent.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR2x1Y0c5cGJuUmZaVzFoYVd4ZlkyaGhibTVsYkNJZ0ltVnRZ
+        V2xzSWlCN0NpQWdZWEJ3YkdsallYUnBiMjVmYVdRZ1BTQWlKSHRoZDNOZmNHbHVjRzlwYm5SZllY
+        QndMbUZ3Y0M1aGNIQnNhV05oZEdsdmJsOXBaSDBpQ2lBZ1puSnZiVjloWkdSeVpYTnpJQ0FnUFNB
+        aWRYTmxja0JsZUdGdGNHeGxMbU52YlNJS0lDQnBaR1Z1ZEdsMGVTQWdJQ0FnSUNBOUlDSWtlMkYz
+        YzE5elpYTmZaRzl0WVdsdVgybGtaVzUwYVhSNUxtbGtaVzUwYVhSNUxtRnlibjBpQ2lBZ2NtOXNa
+        VjloY200Z0lDQWdJQ0FnUFNBaUpIdGhkM05mYVdGdFgzSnZiR1V1Y205c1pTNWhjbTU5SWdwOUNn
+        cHlaWE52ZFhKalpTQWlZWGR6WDNCcGJuQnZhVzUwWDJGd2NDSWdJbUZ3Y0NJZ2UzMEtDbkpsYzI5
+        MWNtTmxJQ0poZDNOZmMyVnpYMlJ2YldGcGJsOXBaR1Z1ZEdsMGVTSWdJbWxrWlc1MGFYUjVJaUI3
+        Q2lBZ1pHOXRZV2x1SUQwZ0ltVjRZVzF3YkdVdVkyOXRJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpY
+        MmxoYlY5eWIyeGxJaUFpY205c1pTSWdld29nSUdGemMzVnRaVjl5YjJ4bFgzQnZiR2xqZVNBOUlE
+        dzhSVTlHQ25zS0lDQWlWbVZ5YzJsdmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWlVM1JoZEdW
+        dFpXNTBJam9nV3dvZ0lDQWdld29nSUNBZ0lDQWlRV04wYVc5dUlqb2dJbk4wY3pwQmMzTjFiV1ZT
+        YjJ4bElpd0tJQ0FnSUNBZ0lsQnlhVzVqYVhCaGJDSTZJSHNLSUNBZ0lDQWdJQ0FpVTJWeWRtbGpa
+        U0k2SUNKd2FXNXdiMmx1ZEM1aGJXRjZiMjVoZDNNdVkyOXRJZ29nSUNBZ0lDQjlMQW9nSUNBZ0lD
+        QWlSV1ptWldOMElqb2dJa0ZzYkc5M0lpd0tJQ0FnSUNBZ0lsTnBaQ0k2SUNJaUNpQWdJQ0I5Q2lB
+        Z1hRcDlDa1ZQUmdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJsaGJWOXliMnhsWDNCdmJHbGplU0ln
+        SW5KdmJHVmZjRzlzYVdONUlpQjdDaUFnYm1GdFpTQTlJQ0p5YjJ4bFgzQnZiR2xqZVNJS0lDQnli
+        MnhsSUQwZ0lpUjdZWGR6WDJsaGJWOXliMnhsTG5KdmJHVXVhV1I5SWdvS0lDQndiMnhwWTNrZ1BT
+        QThQRVZQUmdwN0NpQWdJbFpsY25OcGIyNGlPaUFpTWpBeE1pMHhNQzB4TnlJc0NpQWdJbE4wWVhS
+        bGJXVnVkQ0k2SUhzS0lDQWdJQ0pCWTNScGIyNGlPaUJiQ2lBZ0lDQWdJQ0p0YjJKcGJHVmhibUZz
+        ZVhScFkzTTZVSFYwUlhabGJuUnpJaXdLSUNBZ0lDQWdJbTF2WW1sc1pXRnVZV3g1ZEdsamN6cFFk
+        WFJKZEdWdGN5SUtJQ0FnSUYwc0NpQWdJQ0FpUldabVpXTjBJam9nSWtGc2JHOTNJaXdLSUNBZ0lD
+        SlNaWE52ZFhKalpTSTZJRnNLSUNBZ0lDQWdJaW9pQ2lBZ0lDQmRDaUFnZlFwOUNrVlBSZ3A5Q2c9
+        PQ==
+    import: !!binary |
+        Q2dwUWFXNXdiMmx1ZENCRmJXRnBiQ0JEYUdGdWJtVnNJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZR0Z3Y0d4cFkyRjBhVzl1TFdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YVc1d2IybHVkRjlsYldGcGJGOWphR0Z1Ym1Wc0xtMWhjbXRrYjNkdQ==

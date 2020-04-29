@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the PostgreSQL virtual network rule. Cannot be empty and must only contain alphanumeric characters and hyphens. Cannot start with a number, and cannot start or end with a hyphen. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group where the PostgreSQL server resides. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "server_name": {
                 "description": "The name of the SQL Server to which this PostgreSQL virtual network rule will be applied to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "The ID of the subnet that the PostgreSQL server will be connected to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

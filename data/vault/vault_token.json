@@ -85,20 +85,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "lease_duration": {
-                "description": "String containing the token lease duration if present in state file"
-            },
-            "lease_started": {
-                "description": "String containing the token lease started time if present in state file"
-            },
-            "client_token": {
-                "description": "String containing the client token if stored in present file"
-            },
-            "encrypted_client_token": {
-                "description": "String containing the client token encrypted with the given `pgp_key` if stored in present file"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

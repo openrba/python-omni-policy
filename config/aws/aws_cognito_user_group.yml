@@ -7,12 +7,12 @@ aws_cognito_user_group:
     arguments:
         name:
             description: The name of the user group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_pool_id:
             description: The user pool ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -32,3 +32,34 @@ aws_cognito_user_group:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjluYm1sMGIxOTFjMlZ5WDNCdmIyd2lJQ0p0WVdsdUlpQjdD
+        aUFnYm1GdFpTQTlJQ0pwWkdWdWRHbDBlU0J3YjI5c0lncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgy
+        bGhiVjl5YjJ4bElpQWlaM0p2ZFhCZmNtOXNaU0lnZXdvZ0lHNWhiV1VnUFNBaWRYTmxjaTFuY205
+        MWNDMXliMnhsSWdvS0lDQmhjM04xYldWZmNtOXNaVjl3YjJ4cFkza2dQU0E4UEVWUFJncDdDaUFn
+        SWxabGNuTnBiMjRpT2lBaU1qQXhNaTB4TUMweE55SXNDaUFnSWxOMFlYUmxiV1Z1ZENJNklGc0tJ
+        Q0FnSUhzS0lDQWdJQ0FnSWxOcFpDSTZJQ0lpTEFvZ0lDQWdJQ0FpUldabVpXTjBJam9nSWtGc2JH
+        OTNJaXdLSUNBZ0lDQWdJbEJ5YVc1amFYQmhiQ0k2SUhzS0lDQWdJQ0FnSUNBaVJtVmtaWEpoZEdW
+        a0lqb2dJbU52WjI1cGRHOHRhV1JsYm5ScGRIa3VZVzFoZW05dVlYZHpMbU52YlNJS0lDQWdJQ0Fn
+        ZlN3S0lDQWdJQ0FnSWtGamRHbHZiaUk2SUNKemRITTZRWE56ZFcxbFVtOXNaVmRwZEdoWFpXSkpa
+        R1Z1ZEdsMGVTSXNDaUFnSUNBZ0lDSkRiMjVrYVhScGIyNGlPaUI3Q2lBZ0lDQWdJQ0FnSWxOMGNt
+        bHVaMFZ4ZFdGc2N5STZJSHNLSUNBZ0lDQWdJQ0FnSUNKamIyZHVhWFJ2TFdsa1pXNTBhWFI1TG1G
+        dFlYcHZibUYzY3k1amIyMDZZWFZrSWpvZ0luVnpMV1ZoYzNRdE1Ub3hNak0wTlRZM09DMWtaV0Zr
+        TFdKbFpXWXRZMkZtWlMweE1qTTBOVFkzT1RCaFlpSUtJQ0FnSUNBZ0lDQjlMQW9nSUNBZ0lDQWdJ
+        Q0pHYjNKQmJubFdZV3gxWlRwVGRISnBibWRNYVd0bElqb2dld29nSUNBZ0lDQWdJQ0FnSW1Odloy
+        NXBkRzh0YVdSbGJuUnBkSGt1WVcxaGVtOXVZWGR6TG1OdmJUcGhiWElpT2lBaVlYVjBhR1Z1ZEds
+        allYUmxaQ0lLSUNBZ0lDQWdJQ0I5Q2lBZ0lDQWdJSDBLSUNBZ0lIMEtJQ0JkQ24wS1JVOUdDbjBL
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjluYm1sMGIxOTFjMlZ5WDJkeWIzVndJaUFpYldGcGJpSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQTlJQ0oxYzJWeUxXZHliM1Z3SWdvZ0lIVnpaWEpmY0c5dmJG
+        OXBaQ0E5SUNJa2UyRjNjMTlqYjJkdWFYUnZYM1Z6WlhKZmNHOXZiQzV0WVdsdUxtbGtmU0lLSUNC
+        a1pYTmpjbWx3ZEdsdmJpQWdQU0FpVFdGdVlXZGxaQ0JpZVNCVVpYSnlZV1p2Y20waUNpQWdjSEps
+        WTJWa1pXNWpaU0FnSUQwZ05ESUtJQ0J5YjJ4bFgyRnliaUFnSUNBZ1BTQWlKSHRoZDNOZmFXRnRY
+        M0p2YkdVdVozSnZkWEJmY205c1pTNWhjbTU5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwRGIyZHVhWFJ2SUZWelpYSWdSM0p2ZFhCeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lIVnpaWEpmY0c5dmJGOXBaR0F2WUc1aGJXVmdJR0YwZEhKcFluVjBaWE1nWTI5dVky
+        RjBaVzVoZEdWa0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJkdWFYUnZYM1Z6WlhKZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

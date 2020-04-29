@@ -8,7 +8,7 @@ aws_ram_resource_share_accepter:
     arguments:
         share_arn:
             description: The ARN of the resource share.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -29,3 +29,29 @@ aws_ram_resource_share_accepter:
         resources:
             description: A list of the resource ARNs shared via the resource share.
     timeouts: {}
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGQzTWlJSHNLSUNCd2NtOW1hV3hsSUQwZ0luQnliMlpwYkdVeUlncDlD
+        Z3B3Y205MmFXUmxjaUFpWVhkeklpQjdDaUFnWVd4cFlYTWdJQ0E5SUNKaGJIUmxjbTVoZEdVaUNp
+        QWdjSEp2Wm1sc1pTQTlJQ0p3Y205bWFXeGxNU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTl5WVcx
+        ZmNtVnpiM1Z5WTJWZmMyaGhjbVVpSUNKelpXNWtaWEpmYzJoaGNtVWlJSHNLSUNCd2NtOTJhV1Js
+        Y2lBOUlDSmhkM011WVd4MFpYSnVZWFJsSWdvS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdJblJtTFhSbGMzUXRjbVZ6YjNWeVkyVXRjMmhoY21VaUNpQWdZV3hzYjNkZlpY
+        aDBaWEp1WVd4ZmNISnBibU5wY0dGc2N5QTlJSFJ5ZFdVS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUU1
+        aGJXVWdQU0FpZEdZdGRHVnpkQzF5WlhOdmRYSmpaUzF6YUdGeVpTSUtJQ0I5Q24wS0NuSmxjMjkx
+        Y21ObElDSmhkM05mY21GdFgzQnlhVzVqYVhCaGJGOWhjM052WTJsaGRHbHZiaUlnSW5ObGJtUmxj
+        bDlwYm5acGRHVWlJSHNLSUNCd2NtOTJhV1JsY2lBOUlDSmhkM011WVd4MFpYSnVZWFJsSWdvS0lD
+        QndjbWx1WTJsd1lXd2dJQ0FnSUNBZ0lDQWdQU0FpSkh0a1lYUmhMbUYzYzE5allXeHNaWEpmYVdS
+        bGJuUnBkSGt1Y21WalpXbDJaWEl1WVdOamIzVnVkRjlwWkgwaUNpQWdjbVZ6YjNWeVkyVmZjMmho
+        Y21WZllYSnVJRDBnSWlSN1lYZHpYM0poYlY5eVpYTnZkWEpqWlY5emFHRnlaUzV6Wlc1a1pYSmZj
+        MmhoY21VdVlYSnVmU0lLZlFvS1pHRjBZU0FpWVhkelgyTmhiR3hsY2w5cFpHVnVkR2wwZVNJZ0lu
+        SmxZMlZwZG1WeUlpQjdmUW9LY21WemIzVnlZMlVnSW1GM2MxOXlZVzFmY21WemIzVnlZMlZmYzJo
+        aGNtVmZZV05qWlhCMFpYSWlJQ0p5WldObGFYWmxjbDloWTJObGNIUWlJSHNLSUNCemFHRnlaVjlo
+        Y200Z1BTQWlKSHRoZDNOZmNtRnRYM0J5YVc1amFYQmhiRjloYzNOdlkybGhkR2x2Ymk1elpXNWta
+        WEpmYVc1MmFYUmxMbkpsYzI5MWNtTmxYM05vWVhKbFgyRnlibjBpQ24wSw==
+    import: !!binary |
+        Q2dwU1pYTnZkWEpqWlNCemFHRnlaU0JoWTJObGNIUmxjbk1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0J5WlhOdmRYSmpaU0J6YUdGeVpTQkJVazRzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WVcxZmNtVnpiM1Z5WTJWZmMyaGhjbVZmWVdOalpYQjBaWEl1YldGeWEyUnZkMjQ9

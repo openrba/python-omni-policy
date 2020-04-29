@@ -7,18 +7,18 @@ aws_ami_copy:
     arguments:
         name:
             description: A region-unique name for the AMI.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_ami_id:
             description: The id of the AMI to copy. This id must be valid in the region
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_ami_region:
             description: The region from which the AMI will be copied. This may be
                 the
-            required: true
+            required: false
             policy: ''
             notes: ''
         encrypted:
@@ -62,3 +62,8 @@ aws_ami_copy:
         emIzVnlZMlZmWVcxcFgybGtJQ0FnSUNBOUlDSmhiV2t0ZUhoNGVIaDRlSGdpQ2lBZ2MyOTFjbU5s
         WDJGdGFWOXlaV2RwYjI0Z1BTQWlkWE10ZDJWemRDMHhJZ29LSUNCMFlXZHpJRDBnZXdvZ0lDQWdU
         bUZ0WlNBOUlDSklaV3hzYjFkdmNteGtJZ29nSUgwS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloYldsZlkyOXdlUzVvZEcxc0xtMWhjbXRrYjNkdQ==

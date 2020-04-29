@@ -8,13 +8,13 @@
         "arguments": {
             "bucket": {
                 "description": "The name of the bucket this analytics configuration is associated with.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "Unique identifier of the analytics configuration for the bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,7 +44,7 @@
             },
             "data_export": {
                 "description": "Data export configuration (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,19 +56,19 @@
             },
             "destination": {
                 "description": "Specifies the destination for the exported analytics data (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "s3_bucket_destination": {
                 "description": "Analytics data export currently only supports an S3 bucket destination (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bucket_arn": {
                 "description": "The ARN of the destination bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

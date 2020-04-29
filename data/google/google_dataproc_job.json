@@ -9,13 +9,13 @@
         "arguments": {
             "placement.cluster_name": {
                 "description": "The name of the cluster where the job ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "xxx_config": {
                 "description": "Exactly one of the specific job types to run on the",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -45,13 +45,13 @@
             },
             "scheduling.max_failures_per_hour": {
                 "description": "Maximum number of times per hour a driver may be restarted as a result of driver terminating with non-zero code before job is reported failed.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "main_python_file_uri": {
                 "description": "The HCFS URI of the main Python file to use as the driver. Must be a .py file.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -93,7 +93,7 @@
             },
             "logging_config.driver_log_levels": {
                 "description": "The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -14,13 +14,13 @@
             },
             "image_id": {
                 "description": "The image ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "member_id": {
                 "description": "The member ID, e.g. the target project ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,17 +31,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "created_at": {
-                "description": "The date the image access was created."
-            },
-            "updated_at": {
-                "description": "The date the image access was last updated."
-            },
-            "schema": {
-                "description": "The member schema."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

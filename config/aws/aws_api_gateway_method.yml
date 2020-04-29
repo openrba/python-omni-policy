@@ -7,24 +7,24 @@ aws_api_gateway_method:
     arguments:
         rest_api_id:
             description: The ID of the associated REST API
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_id:
             description: The API resource ID
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_method:
             description: The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`,
                 `OPTIONS`, `ANY`)
-            required: true
+            required: false
             policy: ''
             notes: ''
         authorization:
             description: The type of authorization used for the method (`NONE`, `CUSTOM`,
                 `AWS_IAM`, `COGNITO_USER_POOLS`)
-            required: true
+            required: false
             policy: ''
             notes: ''
         authorizer_id:
@@ -61,3 +61,26 @@ aws_api_gateway_method:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNKTmVVUmxi
+        VzlCVUVraUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSk5lVVJsYlc5QlVFa2lDaUFnWkdWelkz
+        SnBjSFJwYjI0Z1BTQWlWR2hwY3lCcGN5QnRlU0JCVUVrZ1ptOXlJR1JsYlc5dWMzUnlZWFJwYjI0
+        Z2NIVnljRzl6WlhNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZllYQnBYMmRoZEdWM1lYbGZjbVZ6
+        YjNWeVkyVWlJQ0pOZVVSbGJXOVNaWE52ZFhKalpTSWdld29nSUhKbGMzUmZZWEJwWDJsa0lEMGdJ
+        aVI3WVhkelgyRndhVjluWVhSbGQyRjVYM0psYzNSZllYQnBMazE1UkdWdGIwRlFTUzVwWkgwaUNp
+        QWdjR0Z5Wlc1MFgybGtJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0dr
+        dVRYbEVaVzF2UVZCSkxuSnZiM1JmY21WemIzVnlZMlZmYVdSOUlnb2dJSEJoZEdoZmNHRnlkQ0Fn
+        SUQwZ0ltMTVaR1Z0YjNKbGMyOTFjbU5sSWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJGd2FWOW5Z
+        WFJsZDJGNVgyMWxkR2h2WkNJZ0lrMTVSR1Z0YjAxbGRHaHZaQ0lnZXdvZ0lISmxjM1JmWVhCcFgy
+        bGtJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0drdVRYbEVaVzF2UVZC
+        SkxtbGtmU0lLSUNCeVpYTnZkWEpqWlY5cFpDQWdJRDBnSWlSN1lYZHpYMkZ3YVY5bllYUmxkMkY1
+        WDNKbGMyOTFjbU5sTGsxNVJHVnRiMUpsYzI5MWNtTmxMbWxrZlNJS0lDQm9kSFJ3WDIxbGRHaHZa
+        Q0FnSUQwZ0lrZEZWQ0lLSUNCaGRYUm9iM0pwZW1GMGFXOXVJRDBnSWs1UFRrVWlDbjBL
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVY5bllYUmxkMkY1WDIxbGRHaHZaR0FnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklHQlNSVk5VTFVGUVNTMUpSQzlTUlZOUFZWSkRSUzFKUkM5SVZGUlFMVTFGVkVoUFJH
+        QXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5dFpYUm9iMlF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

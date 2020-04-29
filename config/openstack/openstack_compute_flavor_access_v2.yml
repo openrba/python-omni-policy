@@ -13,19 +13,33 @@ openstack_compute_flavor_access_v2:
         flavor_id:
             description: The UUID of flavor to use. Changing this creates a new flavor
                 access.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant_id:
             description: The UUID of tenant which is allowed to use the flavor.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        flavor_id:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXUmxiblJwZEhsZmNISnZhbVZqZEY5Mk15SWdJ
+        bkJ5YjJwbFkzUmZNU0lnZXdvZ0lHNWhiV1VnUFNBaWJYa3RjSEp2YW1WamRDSUtmUW9LY21WemIz
+        VnlZMlVnSW05d1pXNXpkR0ZqYTE5amIyMXdkWFJsWDJac1lYWnZjbDkyTWlJZ0ltWnNZWFp2Y2w4
+        eElpQjdDaUFnYm1GdFpTQWdJQ0FnSUQwZ0ltMTVMV1pzWVhadmNpSUtJQ0J5WVcwZ0lDQWdJQ0Fn
+        UFNBaU9EQTVOaUlLSUNCMlkzQjFjeUFnSUNBZ1BTQWlNaUlLSUNCa2FYTnJJQ0FnSUNBZ1BTQWlN
+        akFpQ2lBZ2FYTmZjSFZpYkdsaklEMGdabUZzYzJVS2ZRb0tjbVZ6YjNWeVkyVWdJbTl3Wlc1emRH
+        RmphMTlqYjIxd2RYUmxYMlpzWVhadmNsOWhZMk5sYzNOZmRqSWlJQ0poWTJObGMzTmZNU0lnZXdv
+        Z0lIUmxibUZ1ZEY5cFpDQTlJQ0lrZTI5d1pXNXpkR0ZqYTE5cFpHVnVkR2wwZVY5d2NtOXFaV04w
+        WDNZekxuQnliMnBsWTNSZk1TNXBaSDBpQ2lBZ1pteGhkbTl5WDJsa0lEMGdJaVI3YjNCbGJuTjBZ
+        V05yWDJOdmJYQjFkR1ZmWm14aGRtOXlYM1l5TG1ac1lYWnZjbDh4TG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUdGc2JDQjBkMjhnWVhKbmRXMWxiblJ6TENCelpYQmhjbUYwWldRS1lua2dZU0JtYjNKM1lY
+        SmtJSE5zWVhOb09nb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgyWnNZWFp2Y2w5aFkyTmxjM05mZGpJdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

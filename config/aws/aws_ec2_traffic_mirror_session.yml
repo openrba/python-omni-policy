@@ -19,12 +19,12 @@ aws_ec2_traffic_mirror_session:
             notes: ''
         traffic_mirror_filter_id:
             description: ID of the traffic mirror filter to be used
-            required: true
+            required: false
             policy: ''
             notes: ''
         traffic_mirror_target_id:
             description: ID of the traffic mirror target to be used
-            required: true
+            required: false
             policy: ''
             notes: ''
         packet_length:
@@ -39,7 +39,7 @@ aws_ec2_traffic_mirror_session:
             description: '- The session number determines the order in which sessions
                 are evaluated when an interface is used by multiple sessions. The
                 first session with a matching filter is the one that mirrors the packets. '
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_network_id:
@@ -59,3 +59,27 @@ aws_ec2_traffic_mirror_session:
         id:
             description: The name of the session.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDNSeVlXWm1hV05mYldseWNtOXlYMlpwYkhSbGNpSWdJ
+        bVpwYkhSbGNpSWdld29nSUdSbGMyTnlhWEIwYVc5dUlDQWdJQ0FnUFNBaWRISmhabVpwWXlCdGFY
+        SnliM0lnWm1sc2RHVnlJQzBnZEdWeWNtRm1iM0p0SUdWNFlXMXdiR1VpQ2lBZ2JtVjBkMjl5YTE5
+        elpYSjJhV05sY3lBOUlGc2lZVzFoZW05dUxXUnVjeUpkQ24wS0NuSmxjMjkxY21ObElDSmhkM05m
+        WldNeVgzUnlZV1ptYVdOZmJXbHljbTl5WDNSaGNtZGxkQ0lnSW5SaGNtZGxkQ0lnZXdvZ0lHNWxk
+        SGR2Y210ZmJHOWhaRjlpWVd4aGJtTmxjbDloY200Z1BTQWlKSHRoZDNOZmJHSXViR0l1WVhKdWZT
+        SUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOWxZekpmZEhKaFptWnBZMTl0YVhKeWIzSmZjMlZ6YzJs
+        dmJpSWdJbk5sYzNOcGIyNGlJSHNLSUNCa1pYTmpjbWx3ZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaWRISmhabVpwWXlCdGFYSnliM0lnYzJWemMybHZiaUF0SUhSbGNuSmhabTl5YlNCbGVHRnRj
+        R3hsSWdvZ0lHNWxkSGR2Y210ZmFXNTBaWEptWVdObFgybGtJQ0FnSUNBOUlDSWtlMkYzYzE5cGJu
+        TjBZVzVqWlM1MFpYTjBMbkJ5YVcxaGNubGZibVYwZDI5eWExOXBiblJsY21aaFkyVmZhV1I5SWdv
+        Z0lIUnlZV1ptYVdOZmJXbHljbTl5WDJacGJIUmxjbDlwWkNBOUlDSWtlMkYzYzE5bFl6SmZkSEpo
+        Wm1acFkxOXRhWEp5YjNKZlptbHNkR1Z5TG1acGJIUmxjaTVwWkgwaUNpQWdkSEpoWm1acFkxOXRh
+        WEp5YjNKZmRHRnlaMlYwWDJsa0lEMGdJaVI3WVhkelgyVmpNbDkwY21GbVptbGpYMjFwY25KdmNs
+        OTBZWEpuWlhRdWRHRnlaMlYwTG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwVWNtRm1abWxqSUcxcGNuSnZjaUJ6WlhOemFXOXVjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZmRISmhabVpwWTE5dGFYSnliM0pmYzJWemMybHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

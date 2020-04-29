@@ -8,7 +8,7 @@
         "arguments": {
             "certificate_authority_configuration": {
                 "description": "Nested argument containing algorithms and certificate subject information. Defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,7 +43,35 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Amazon Resource Name (ARN) of the certificate authority."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the certificate authority."
+            },
+            "certificate": {
+                "description": "Base64-encoded certificate authority (CA) certificate. Only available after the certificate authority certificate has been imported."
+            },
+            "certificate_chain": {
+                "description": "Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported."
+            },
+            "certificate_signing_request": {
+                "description": "The base64 PEM-encoded certificate signing request (CSR) for your private CA certificate."
+            },
+            "not_after": {
+                "description": "Date and time after which the certificate authority is not valid. Only available after the certificate authority certificate has been imported."
+            },
+            "not_before": {
+                "description": "Date and time before which the certificate authority is not valid. Only available after the certificate authority certificate has been imported."
+            },
+            "serial": {
+                "description": "Serial number of the certificate authority. Only available after the certificate authority certificate has been imported."
+            },
+            "status": {
+                "description": "Status of the certificate authority."
+            }
+        },
         "timeouts": {}
     }
 }

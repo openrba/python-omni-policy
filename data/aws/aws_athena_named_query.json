@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The plain language name for the query. Maximum length of 128.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,13 +20,13 @@
             },
             "database": {
                 "description": "The database to which the query belongs.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "query": {
                 "description": "The text of the query itself. In other words, all query statements. Maximum length of 262144.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

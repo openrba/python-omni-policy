@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the storage blob. Must be unique within the storage container the blob is located.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_name": {
                 "description": "Specifies the storage account in which to create the storage container.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_container_name": {
                 "description": "The name of the storage container in which this blob should be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of the storage blob to be created. Possible values are `Append`, `Block` or `Page`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

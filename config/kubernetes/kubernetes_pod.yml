@@ -9,13 +9,40 @@ kubernetes_pod:
     arguments:
         metadata:
             description: Standard pod's metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec of the pod owned by the cluster
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzQnZaQ0lnSW5SbGMzUWlJSHNLSUNCdFpYUmha
+        R0YwWVNCN0NpQWdJQ0J1WVcxbElEMGdJblJsY25KaFptOXliUzFsZUdGdGNHeGxJZ29nSUgwS0Np
+        QWdjM0JsWXlCN0NpQWdJQ0JqYjI1MFlXbHVaWElnZXdvZ0lDQWdJQ0JwYldGblpTQTlJQ0p1WjJs
+        dWVEb3hMamN1T1NJS0lDQWdJQ0FnYm1GdFpTQWdQU0FpWlhoaGJYQnNaU0lLQ2lBZ0lDQWdJR1Z1
+        ZGlCN0NpQWdJQ0FnSUNBZ2JtRnRaU0FnUFNBaVpXNTJhWEp2Ym0xbGJuUWlDaUFnSUNBZ0lDQWdk
+        bUZzZFdVZ1BTQWlkR1Z6ZENJS0lDQWdJQ0FnZlFvS0lDQWdJQ0FnYkdsMlpXNWxjM05mY0hKdllt
+        VWdld29nSUNBZ0lDQWdJR2gwZEhCZloyVjBJSHNLSUNBZ0lDQWdJQ0FnSUhCaGRHZ2dQU0FpTDI1
+        bmFXNTRYM04wWVhSMWN5SUtJQ0FnSUNBZ0lDQWdJSEJ2Y25RZ1BTQTRNQW9LSUNBZ0lDQWdJQ0Fn
+        SUdoMGRIQmZhR1ZoWkdWeUlIc0tJQ0FnSUNBZ0lDQWdJQ0FnYm1GdFpTQWdQU0FpV0MxRGRYTjBi
+        MjB0U0dWaFpHVnlJZ29nSUNBZ0lDQWdJQ0FnSUNCMllXeDFaU0E5SUNKQmQyVnpiMjFsSWdvZ0lD
+        QWdJQ0FnSUNBZ2ZRb2dJQ0FnSUNBZ0lIMEtDaUFnSUNBZ0lDQWdhVzVwZEdsaGJGOWtaV3hoZVY5
+        elpXTnZibVJ6SUQwZ013b2dJQ0FnSUNBZ0lIQmxjbWx2WkY5elpXTnZibVJ6SUNBZ0lDQWdJQ0E5
+        SURNS0lDQWdJQ0FnZlFvZ0lDQWdmUW9LSUNBZ0lHUnVjMTlqYjI1bWFXY2dld29nSUNBZ0lDQnVZ
+        VzFsYzJWeWRtVnljeUE5SUZzaU1TNHhMakV1TVNJc0lDSTRMamd1T0M0NElpd2dJamt1T1M0NUxq
+        a2lYUW9nSUNBZ0lDQnpaV0Z5WTJobGN5QWdJQ0E5SUZzaVpYaGhiWEJzWlM1amIyMGlYUW9LSUNB
+        Z0lDQWdiM0IwYVc5dUlIc0tJQ0FnSUNBZ0lDQnVZVzFsSUNBOUlDSnVaRzkwY3lJS0lDQWdJQ0Fn
+        SUNCMllXeDFaU0E5SURFS0lDQWdJQ0FnZlFvS0lDQWdJQ0FnYjNCMGFXOXVJSHNLSUNBZ0lDQWdJ
+        Q0J1WVcxbElEMGdJblZ6WlMxMll5SUtJQ0FnSUNBZ2ZRb2dJQ0FnZlFvS0lDQWdJR1J1YzE5d2Iy
+        eHBZM2tnUFNBaVRtOXVaU0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwUWIyUWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQnVZVzFsYzNCaFkyVWdZ
+        VzVrSUc1aGJXVXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjRzlrTG1oMGJXd3ViV0Z5YTJSdmQyND0=

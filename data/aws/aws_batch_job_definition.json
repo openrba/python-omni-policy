@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the job definition.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,12 +38,19 @@
             },
             "type": {
                 "description": "The type of job definition.  Must be `container`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "The Amazon Resource Name of the job definition."
+            },
+            "revision": {
+                "description": "The revision of the job definition."
+            }
+        },
         "timeouts": {}
     }
 }

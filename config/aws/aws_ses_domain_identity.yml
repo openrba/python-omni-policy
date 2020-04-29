@@ -7,7 +7,7 @@ aws_ses_domain_identity:
     arguments:
         domain:
             description: The domain name to assign to SES
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -16,3 +16,19 @@ aws_ses_domain_identity:
         verification_token:
             description: A code which when added to the domain as a TXT record
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDJSdmJXRnBibDlwWkdWdWRHbDBlU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQmtiMjFoYVc0Z1BTQWlaWGhoYlhCc1pTNWpiMjBpQ24wS0NuSmxjMjkxY21ObElD
+        SmhkM05mY205MWRHVTFNMTl5WldOdmNtUWlJQ0psZUdGdGNHeGxYMkZ0WVhwdmJuTmxjMTkyWlhK
+        cFptbGpZWFJwYjI1ZmNtVmpiM0prSWlCN0NpQWdlbTl1WlY5cFpDQTlJQ0pCUWtORVJVWkhTRWxL
+        TVRJeklnb2dJRzVoYldVZ0lDQWdQU0FpWDJGdFlYcHZibk5sY3k1bGVHRnRjR3hsTG1OdmJTSUtJ
+        Q0IwZVhCbElDQWdJRDBnSWxSWVZDSUtJQ0IwZEd3Z0lDQWdJRDBnSWpZd01DSUtJQ0J5WldOdmNt
+        UnpJRDBnV3lJa2UyRjNjMTl6WlhOZlpHOXRZV2x1WDJsa1pXNTBhWFI1TG1WNFlXMXdiR1V1ZG1W
+        eWFXWnBZMkYwYVc5dVgzUnZhMlZ1ZlNKZENuMEs=
+    import: !!binary |
+        Q2dwVFJWTWdaRzl0WVdsdUlHbGtaVzUwYVhScFpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmtiMjFoYVc0Z2JtRnRaUzRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZlpHOXRZV2x1WDJsa1pXNTBhWFI1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

@@ -8,19 +8,19 @@
         "arguments": {
             "rest_api_id": {
                 "description": "The ID of the associated REST API",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "stage_name": {
                 "description": "The name of the stage",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "deployment_id": {
                 "description": "The ID of the deployment that the stage points to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -79,7 +79,20 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "Amazon Resource Name (ARN)"
+            },
+            "id": {
+                "description": "The ID of the stage"
+            },
+            "invoke_url": {
+                "description": "The URL to invoke the API pointing to the stage,"
+            },
+            "execution_arn": {
+                "description": "The execution ARN to be used in [`lambda_permission`](/docs/providers/aws/r/lambda_permission.html)'s `source_arn`"
+            }
+        },
         "timeouts": {}
     }
 }

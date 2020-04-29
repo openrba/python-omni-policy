@@ -7,7 +7,7 @@ aws_sfn_activity:
     arguments:
         name:
             description: The name of the activity to create.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -24,3 +24,13 @@ aws_sfn_activity:
         creation_date:
             description: The date the activity was created.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlp1WDJGamRHbDJhWFI1SWlBaWMyWnVYMkZqZEdsMmFYUjVJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKdGVTMWhZM1JwZG1sMGVTSUtmUW89
+    import: !!binary |
+        Q2dwQlkzUnBkbWwwYVdWeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lHRnli
+        bUFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Wm01ZllXTjBhWFpwZEhrdWFIUnRiQzV0WVhKclpHOTNiZz09

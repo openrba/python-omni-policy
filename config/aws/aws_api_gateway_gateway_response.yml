@@ -7,12 +7,12 @@ aws_api_gateway_gateway_response:
     arguments:
         rest_api_id:
             description: The string identifier of the associated REST API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         response_type:
             description: The response type of the associated GatewayResponse.
-            required: true
+            required: false
             policy: ''
             notes: ''
         status_code:
@@ -34,3 +34,22 @@ aws_api_gateway_gateway_response:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNKdFlXbHVJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKTmVVUmxiVzlCVUVraUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZllY
+        QnBYMmRoZEdWM1lYbGZaMkYwWlhkaGVWOXlaWE53YjI1elpTSWdJblJsYzNRaUlIc0tJQ0J5WlhO
+        MFgyRndhVjlwWkNBZ0lEMGdJaVI3WVhkelgyRndhVjluWVhSbGQyRjVYM0psYzNSZllYQnBMbTFo
+        YVc0dWFXUjlJZ29nSUhOMFlYUjFjMTlqYjJSbElDQWdQU0FpTkRBeElnb2dJSEpsYzNCdmJuTmxY
+        M1I1Y0dVZ1BTQWlWVTVCVlZSSVQxSkpXa1ZFSWdvS0lDQnlaWE53YjI1elpWOTBaVzF3YkdGMFpY
+        TWdQU0I3Q2lBZ0lDQWlZWEJ3YkdsallYUnBiMjR2YW5OdmJpSWdQU0FpZXlkdFpYTnpZV2RsSnpv
+        a1kyOXVkR1Y0ZEM1bGNuSnZjaTV0WlhOellXZGxVM1J5YVc1bmZTSUtJQ0I5Q2dvZ0lISmxjM0J2
+        Ym5ObFgzQmhjbUZ0WlhSbGNuTWdQU0I3Q2lBZ0lDQWlaMkYwWlhkaGVYSmxjM0J2Ym5ObExtaGxZ
+        V1JsY2k1QmRYUm9iM0pwZW1GMGFXOXVJaUE5SUNJblFtRnphV01uSWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVY5bllYUmxkMkY1WDJkaGRHVjNZWGxmY21WemNHOXVjMlZnSUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QmdVa1ZUVkMxQlVFa3RTVVF2VWtWVFVFOU9VMFV0VkZsUVJX
+        QXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5bllYUmxkMkY1WDNKbGMzQnZibk5sTG0xaGNtdGtiM2R1

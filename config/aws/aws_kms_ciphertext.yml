@@ -8,12 +8,12 @@ aws_kms_ciphertext:
         plaintext:
             description: Data to be encrypted. Note that this may show up in logs,
                 and it will be stored in the state file.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key_id:
             description: Globally unique key ID for the customer master key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         context:
@@ -25,3 +25,17 @@ aws_kms_ciphertext:
         ciphertext_blob:
             description: Base64 encoded ciphertext
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhMjF6WDJ0bGVTSWdJbTloZFhSb1gyTnZibVpwWnlJZ2V3b2dJ
+        R1JsYzJOeWFYQjBhVzl1SUQwZ0ltOWhkWFJvSUdOdmJtWnBaeUlLSUNCcGMxOWxibUZpYkdWa0lD
+        QTlJSFJ5ZFdVS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cmJYTmZZMmx3YUdWeWRHVjRkQ0lnSW05
+        aGRYUm9JaUI3Q2lBZ2EyVjVYMmxrSUQwZ0lpUjdZWGR6WDJ0dGMxOXJaWGt1YjJGMWRHaGZZMjl1
+        Wm1sbkxtdGxlVjlwWkgwaUNnb2dJSEJzWVdsdWRHVjRkQ0E5SUR3OFJVOUdDbnNLSUNBaVkyeHBa
+        VzUwWDJsa0lqb2dJbVUxT0Rka1ltRmxNakl5TWpKbU5UVmtZVEl5SWl3S0lDQWlZMnhwWlc1MFgz
+        TmxZM0psZENJNklDSTRNamc1TlRjMVpEQXdNREF3WVdObE5UVmxNVGd4TldWak1UTTJOek01TlRV
+        M01qRmlPR0UxSWdwOUNrVlBSZ3A5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlyYlhOZlkybHdhR1Z5ZEdWNGRDNW9kRzFzTG0xaGNtdGtiM2R1

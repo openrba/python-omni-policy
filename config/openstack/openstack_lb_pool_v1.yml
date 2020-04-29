@@ -12,22 +12,22 @@ openstack_lb_pool_v1:
             notes: ''
         name:
             description: The name of the pool. Changing this updates the name of
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: ' The protocol used by the pool members, you can use'
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The network on which the members of the pool will be
-            required: true
+            required: false
             policy: ''
             notes: ''
         lb_method:
             description: The algorithm used to distribute load between the
-            required: true
+            required: false
             policy: ''
             notes: ''
         lb_provider:
@@ -52,36 +52,31 @@ openstack_lb_pool_v1:
             notes: ''
         address:
             description: The IP address of the member. Changing this creates a
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
             description: An integer representing the port on which the member is
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_state_up:
             description: The administrative state of the member.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        protocol:
-            description: See Argument Reference above.
-        subnet_id:
-            description: See Argument Reference above.
-        lb_method:
-            description: See Argument Reference above.
-        lb_provider:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        monitor_id:
-            description: See Argument Reference above.
-        member:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZjRzl2YkY5Mk1TSWdJbkJ2YjJ4Zk1TSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lEMGdJblJtWDNSbGMzUmZiR0pmY0c5dmJDSUtJQ0J3Y205MGIy
+        TnZiQ0FnSUNBOUlDSklWRlJRSWdvZ0lITjFZbTVsZEY5cFpDQWdJRDBnSWpFeU16UTFJZ29nSUd4
+        aVgyMWxkR2h2WkNBZ0lEMGdJbEpQVlU1RVgxSlBRa2xPSWdvZ0lHeGlYM0J5YjNacFpHVnlJRDBn
+        SW1oaGNISnZlSGtpQ2lBZ2JXOXVhWFJ2Y2w5cFpITWdQU0JiSWpZM09Ea3dJbDBLZlFvPQ==
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRkJ2YjJ4eklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDl3YjI5c1gzWXhMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

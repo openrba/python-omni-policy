@@ -12,7 +12,7 @@ openstack_lb_member_v2:
             notes: ''
         pool_id:
             description: The id of the pool that this member will be assigned
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
@@ -32,12 +32,12 @@ openstack_lb_member_v2:
             notes: ''
         address:
             description: The IP address of the member to receive traffic from
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol_port:
             description: The port on which to listen for client traffic.
-            required: true
+            required: false
             policy: ''
             notes: ''
         weight:
@@ -50,23 +50,18 @@ openstack_lb_member_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the member.
-        name:
-            description: See Argument Reference above.
-        weight:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        subnet_id:
-            description: See Argument Reference above.
-        pool_id:
-            description: See Argument Reference above.
-        address:
-            description: See Argument Reference above.
-        protocol_port:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiV1Z0WW1WeVgzWXlJaUFpYldWdFltVnlY
+        ekVpSUhzS0lDQndiMjlzWDJsa0lDQWdJQ0FnSUQwZ0lqa3pOVFk0TldaaUxXRTRPVFl0TkRCbU9T
+        MDVabVkwTFdGbE5UTXhZVE5oTURCbVpTSUtJQ0JoWkdSeVpYTnpJQ0FnSUNBZ0lEMGdJakU1TWk0
+        eE5qZ3VNVGs1TGpJeklnb2dJSEJ5YjNSdlkyOXNYM0J2Y25RZ1BTQTRNRGd3Q24wSw==
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRkJ2YjJ3Z1RXVnRZbVZ5SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnVUc5dmJDQkpSQ0JoYm1RZ1RXVnRZbVZ5SUVsRUNuTmxjR0Z5WVhSbFpD
+        QmllU0JoSUhOc1lYTm9MQ0JsTG1jdU9nb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDl0WlcxaVpYSmZkakl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

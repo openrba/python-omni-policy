@@ -8,13 +8,13 @@
         "arguments": {
             "user_principal_name": {
                 "description": "The User Principal Name of the Azure AD User.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "display_name": {
                 "description": "The name to display in the address book for the user.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "password": {
                 "description": "The password for the User. The password must satisfy minimum requirements as specified by the password policy. The maximum length is 256 characters.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

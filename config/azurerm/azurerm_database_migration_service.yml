@@ -8,26 +8,26 @@ azurerm_database_migration_service:
         name:
             description: Specify the name of the database migration service. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Name of the resource group in which to create the database
                 migration service. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The ID of the virtual subnet resource to which the database
                 migration service should be joined. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku_name:
@@ -35,7 +35,7 @@ azurerm_database_migration_service:
                 values are `Premium_4vCores`, `Standard_1vCores`, `Standard_2vCores`
                 and `Standard_4vCores`. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:

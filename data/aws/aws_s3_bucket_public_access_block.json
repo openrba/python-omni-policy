@@ -8,7 +8,7 @@
         "arguments": {
             "bucket": {
                 "description": "S3 Bucket to which this Public Access Block configuration should be applied.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,7 +37,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Name of the S3 bucket the configuration is attached to"
+            }
+        },
         "timeouts": {}
     }
 }

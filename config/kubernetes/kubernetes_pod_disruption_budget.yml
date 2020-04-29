@@ -12,13 +12,26 @@ kubernetes_pod_disruption_budget:
     arguments:
         metadata:
             description: 'Standard resource''s metadata. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status'
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec defines the behavior of a Pod Disruption Budget. https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzQnZaRjlrYVhOeWRYQjBhVzl1WDJKMVpHZGxk
+        Q0lnSW1SbGJXOGlJSHNLSUNCdFpYUmhaR0YwWVNCN0NpQWdJQ0J1WVcxbElEMGdJbVJsYlc4aUNp
+        QWdmUW9nSUhOd1pXTWdld29nSUNBZ2JXRjRYM1Z1WVhaaGFXeGhZbXhsSUNBZ0lDQWdJQ0FnSUNB
+        Z1BTQWlNakFsSWdvZ0lDQWdjMlZzWldOMGIzSWdld29nSUNBZ0lDQnRZWFJqYUY5c1lXSmxiSE1n
+        UFNCN0NpQWdJQ0FnSUNBZ2RHVnpkQ0E5SUNKTmVVVjRZVzF3YkdWQmNIQWlDaUFnSUNBZ0lIMEtJ
+        Q0FnSUgwS0lDQjlDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjRzlrWDJScGMzSjFjSFJwYjI1ZlluVmtaMlYwTG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

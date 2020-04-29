@@ -7,13 +7,43 @@ aws_cloudwatch_log_destination_policy:
     arguments:
         destination_name:
             description: A name for the subscription filter
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_policy:
             description: The policy document. This is a JSON formatted string.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lYUmphRjlzYjJkZlpHVnpkR2x1WVhScGIyNGlJ
+        Q0owWlhOMFgyUmxjM1JwYm1GMGFXOXVJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQTlJQ0owWlhOMFgy
+        UmxjM1JwYm1GMGFXOXVJZ29nSUhKdmJHVmZZWEp1SUNBZ1BTQWlKSHRoZDNOZmFXRnRYM0p2YkdV
+        dWFXRnRYMlp2Y2w5amJHOTFaSGRoZEdOb0xtRnlibjBpQ2lBZ2RHRnlaMlYwWDJGeWJpQTlJQ0lr
+        ZTJGM2MxOXJhVzVsYzJselgzTjBjbVZoYlM1cmFXNWxjMmx6WDJadmNsOWpiRzkxWkhkaGRHTm9M
+        bUZ5Ym4waUNuMEtDbVJoZEdFZ0ltRjNjMTlwWVcxZmNHOXNhV041WDJSdlkzVnRaVzUwSWlBaWRH
+        VnpkRjlrWlhOMGFXNWhkR2x2Ymw5d2IyeHBZM2tpSUhzS0lDQnpkR0YwWlcxbGJuUWdld29nSUNB
+        Z1pXWm1aV04wSUQwZ0lrRnNiRzkzSWdvS0lDQWdJSEJ5YVc1amFYQmhiSE1nZXdvZ0lDQWdJQ0Iw
+        ZVhCbElEMGdJa0ZYVXlJS0NpQWdJQ0FnSUdsa1pXNTBhV1pwWlhKeklEMGdXd29nSUNBZ0lDQWdJ
+        Q0l4TWpNME5UWTNPRGt3TVRJaUxBb2dJQ0FnSUNCZENpQWdJQ0I5Q2dvZ0lDQWdZV04wYVc5dWN5
+        QTlJRnNLSUNBZ0lDQWdJbXh2WjNNNlVIVjBVM1ZpYzJOeWFYQjBhVzl1Um1sc2RHVnlJaXdLSUNB
+        Z0lGMEtDaUFnSUNCeVpYTnZkWEpqWlhNZ1BTQmJDaUFnSUNBZ0lDSWtlMkYzYzE5amJHOTFaSGRo
+        ZEdOb1gyeHZaMTlrWlhOMGFXNWhkR2x2Ymk1MFpYTjBYMlJsYzNScGJtRjBhVzl1TG1GeWJuMGlM
+        QW9nSUNBZ1hRb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTlqYkc5MVpIZGhkR05vWDJ4dlox
+        OWtaWE4wYVc1aGRHbHZibDl3YjJ4cFkza2lJQ0owWlhOMFgyUmxjM1JwYm1GMGFXOXVYM0J2Ykds
+        amVTSWdld29nSUdSbGMzUnBibUYwYVc5dVgyNWhiV1VnUFNBaUpIdGhkM05mWTJ4dmRXUjNZWFJq
+        YUY5c2IyZGZaR1Z6ZEdsdVlYUnBiMjR1ZEdWemRGOWtaWE4wYVc1aGRHbHZiaTV1WVcxbGZTSUtJ
+        Q0JoWTJObGMzTmZjRzlzYVdONUlDQWdJRDBnSWlSN1pHRjBZUzVoZDNOZmFXRnRYM0J2YkdsamVW
+        OWtiMk4xYldWdWRDNTBaWE4wWDJSbGMzUnBibUYwYVc5dVgzQnZiR2xqZVM1cWMyOXVmU0lLZlFv
+        PQ==
+    import: !!binary |
+        Q2dwRGJHOTFaRmRoZEdOb0lFeHZaM01nWkdWemRHbHVZWFJwYjI0Z2NHOXNhV05wWlhNZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ1pHVnpkR2x1WVhScGIyNWZibUZ0WldBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDJ4dloxOWtaWE4wYVc1aGRHbHZibDl3YjJ4cFkza3VhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

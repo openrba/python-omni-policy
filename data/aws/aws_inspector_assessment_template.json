@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the assessment template.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_arn": {
                 "description": "The assessment target ARN to attach the template to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "duration": {
                 "description": "The duration of the inspector run.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rules_package_arns": {
                 "description": "The rules to be used during the run.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

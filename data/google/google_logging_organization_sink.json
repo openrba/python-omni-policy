@@ -9,19 +9,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the logging sink.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "org_id": {
                 "description": "The numeric ID of the organization to be exported to the sink.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination": {
                 "description": "The destination of the sink (or, in other words, where logs are written to). Can be a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -45,7 +45,7 @@
             },
             "use_partitioned_tables": {
                 "description": "Whether to use [BigQuery's partition tables](https://cloud.google.com/bigquery/docs/partitioned-tables).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

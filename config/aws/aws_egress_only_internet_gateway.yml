@@ -7,7 +7,7 @@ aws_egress_only_internet_gateway:
     arguments:
         vpc_id:
             description: The VPC ID to create in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -19,3 +19,18 @@ aws_egress_only_internet_gateway:
         id:
             description: The ID of the egress-only Internet gateway.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaVpYaGhiWEJzWlNJZ2V3b2dJR05wWkhKZllteHZZ
+        MnNnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJakV3TGpFdU1DNHdMekUySWdvZ0lH
+        RnpjMmxuYmw5blpXNWxjbUYwWldSZmFYQjJObDlqYVdSeVgySnNiMk5ySUQwZ2RISjFaUXA5Q2dw
+        eVpYTnZkWEpqWlNBaVlYZHpYMlZuY21WemMxOXZibXg1WDJsdWRHVnlibVYwWDJkaGRHVjNZWGtp
+        SUNKbGVHRnRjR3hsSWlCN0NpQWdkbkJqWDJsa0lEMGdJaVI3WVhkelgzWndZeTVsZUdGdGNHeGxM
+        bWxrZlNJS0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUU1aGJXVWdQU0FpYldGcGJpSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwRlozSmxjM010YjI1c2VTQkpiblJsY201bGRDQm5ZWFJsZDJGNWN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWjNKbGMzTmZiMjVzZVY5cGJuUmxjbTVsZEY5bllYUmxkMkY1TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

@@ -8,25 +8,25 @@
         "arguments": {
             "cluster_name": {
                 "description": "Group identifier. DAX converts this name to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "iam_role_arn": {
                 "description": "A valid Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "node_type": {
                 "description": "The compute and memory capacity of the nodes. See",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "replication_factor": {
                 "description": "The number of nodes in the DAX cluster. A",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

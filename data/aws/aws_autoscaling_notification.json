@@ -8,19 +8,19 @@
         "arguments": {
             "group_names": {
                 "description": "A list of AutoScaling Group Names",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "notifications": {
                 "description": "A list of Notification Types that trigger",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "topic_arn": {
                 "description": "The Topic ARN for notifications to be sent through",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

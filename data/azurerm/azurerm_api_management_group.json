@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the API Management Group. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group in which the API Management Group should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "api_management_name": {
                 "description": "The name of the [API Management Service](api_management.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "display_name": {
                 "description": "The display name of this API Management Group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

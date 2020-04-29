@@ -8,13 +8,13 @@
         "arguments": {
             "zone_id": {
                 "description": "The private hosted zone to associate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vpc_id": {
                 "description": "The VPC to associate with the private hosted zone.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

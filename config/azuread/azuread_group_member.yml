@@ -8,18 +8,35 @@ azuread_group_member:
         group_object_id:
             description: The Object ID of the Azure AD Group you want to add the Member
                 to.  Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member_object_id:
             description: The Object ID of the Azure AD Object you want to add as a
                 Member to the Group. Supported Object types are Users, Groups or Service
                 Principals. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: The Member object has to be present in your Azure Active Directory,
-                either as a Member or a Guest.
+            notes:
+            - '-> '
+            - ' The Member object has to be present in your Azure Active Directory,
+                either as a Member or a Guest.'
     attributes:
         id:
             description: The ID of the Azure AD Group Member.
     timeouts: {}
+    usage: !!binary |
+        Q2dwa1lYUmhJQ0poZW5WeVpXRmtYM1Z6WlhJaUlDSmxlR0Z0Y0d4bElpQjdDaUFnZFhObGNsOXdj
+        bWx1WTJsd1lXeGZibUZ0WlNBOUlDSnFaRzlsUUdoaGMyaHBZMjl5Y0M1amIyMGlDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGVuVnlaV0ZrWDJkeWIzVndJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnUFNB
+        aWJYbGZaM0p2ZFhBaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpXRmtYMmR5YjNWd1gyMWxiV0ps
+        Y2lJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JuY205MWNGOXZZbXBsWTNSZmFXUWdJQ0E5SUNJa2UyRjZk
+        WEpsWVdSZlozSnZkWEF1WlhoaGJYQnNaUzVwWkgwaUNpQWdiV1Z0WW1WeVgyOWlhbVZqZEY5cFpD
+        QWdQU0FpSkh0a1lYUmhMbUY2ZFhKbFlXUmZkWE5sY2k1bGVHRnRjR3hsTG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwQmVuVnlaU0JCWTNScGRtVWdSR2x5WldOMGIzSjVJRWR5YjNWd0lFMWxiV0psY25NZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2IySnFaV04wSUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsWVdRdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlozSnZkWEJmYldWdFltVnlMbTFoY210a2IzZHU=

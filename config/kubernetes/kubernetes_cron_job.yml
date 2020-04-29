@@ -8,13 +8,38 @@ kubernetes_cron_job:
     arguments:
         metadata:
             description: 'Standard resource''s metadata. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status'
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec defines the behavior of a CronJob. https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgyTnliMjVmYW05aUlpQWlaR1Z0YnlJZ2V3b2dJ
+        RzFsZEdGa1lYUmhJSHNLSUNBZ0lHNWhiV1VnUFNBaVpHVnRieUlLSUNCOUNpQWdjM0JsWXlCN0Np
+        QWdJQ0JqYjI1amRYSnlaVzVqZVY5d2IyeHBZM2tnSUNBZ0lDQWdJQ0FnSUNBOUlDSlNaWEJzWVdO
+        bElnb2dJQ0FnWm1GcGJHVmtYMnB2WW5OZmFHbHpkRzl5ZVY5c2FXMXBkQ0FnSUNBZ1BTQTFDaUFn
+        SUNCelkyaGxaSFZzWlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0l4SURBZ0tpQXFJ
+        Q29pQ2lBZ0lDQnpkR0Z5ZEdsdVoxOWtaV0ZrYkdsdVpWOXpaV052Ym1SeklDQWdJQ0E5SURFd0Np
+        QWdJQ0J6ZFdOalpYTnpablZzWDJwdlluTmZhR2x6ZEc5eWVWOXNhVzFwZENBOUlERXdDaUFnSUNC
+        emRYTndaVzVrSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJSFJ5ZFdVS0lDQWdJSFIw
+        YkY5elpXTnZibVJ6WDJGbWRHVnlYMlpwYm1semFHVmtJQ0FnSUQwZ01UQUtJQ0FnSUdwdllsOTBa
+        VzF3YkdGMFpTQjdDaUFnSUNBZ0lHMWxkR0ZrWVhSaElIdDlDaUFnSUNBZ0lITndaV01nZXdvZ0lD
+        QWdJQ0FnSUdKaFkydHZabVpmYkdsdGFYUWdQU0F5Q2lBZ0lDQWdJQ0FnZEdWdGNHeGhkR1VnZXdv
+        Z0lDQWdJQ0FnSUNBZ2JXVjBZV1JoZEdFZ2UzMEtJQ0FnSUNBZ0lDQWdJSE53WldNZ2V3b2dJQ0Fn
+        SUNBZ0lDQWdJQ0JqYjI1MFlXbHVaWElnZXdvZ0lDQWdJQ0FnSUNBZ0lDQWdJRzVoYldVZ0lDQWdQ
+        U0FpYUdWc2JHOGlDaUFnSUNBZ0lDQWdJQ0FnSUNBZ2FXMWhaMlVnSUNBOUlDSmlkWE41WW05NEln
+        b2dJQ0FnSUNBZ0lDQWdJQ0FnSUdOdmJXMWhibVFnUFNCYklpOWlhVzR2YzJnaUxDQWlMV01pTENB
+        aVpHRjBaVHNnWldOb2J5QklaV3hzYnlCbWNtOXRJSFJvWlNCTGRXSmxjbTVsZEdWeklHTnNkWE4w
+        WlhJaVhRb2dJQ0FnSUNBZ0lDQWdJQ0I5Q2lBZ0lDQWdJQ0FnSUNBZ0lISmxjM1JoY25SZmNHOXNh
+        V041SUQwZ0lrOXVSbUZwYkhWeVpTSUtJQ0FnSUNBZ0lDQWdJSDBLSUNBZ0lDQWdJQ0I5Q2lBZ0lD
+        QWdJSDBLSUNBZ0lIMEtJQ0I5Q24wSw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZZM0p2Ymw5cWIySXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

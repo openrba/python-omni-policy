@@ -9,31 +9,36 @@ azurerm_backup_protected_file_share:
             description: The name of the resource group in which to create the Azure
                 Backup Protected File Share. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         recovery_vault_name:
             description: Specifies the name of the Recovery Services Vault to use.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_storage_account_id:
             description: Specifies the ID of the storage account of the file share
                 to backup. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: ''
+            notes:
+            - -> **NOTE** The storage account must already be registered with the
+                recovery vault in order to backup shares within the account. You can
+                use the `azurerm_backup_container_storage_account` resource or the
+                [Register-AzRecoveryServicesBackupContainer PowerShell cmdlet](https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/register-azrecoveryservicesbackupcontainer?view=azps-3.2.0)
+                to register a storage account with a vault.
         source_file_share_name:
             description: Specifies the name of the file share to backup. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backup_policy_id:
             description: Specifies the ID of the backup policy to use. The policy
                 must be an Azure File Share backup policy. Other types are not supported.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

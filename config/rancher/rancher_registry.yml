@@ -8,7 +8,7 @@ rancher_registry:
     arguments:
         name:
             description: The name of the registry.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,15 +18,28 @@ rancher_registry:
             notes: ''
         environment_id:
             description: The ID of the environment to create the registry for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         server_address:
             description: The server address for the registry.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: (Computed) The ID of the resource.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRkpoYm1Ob1pYSWdjbVZuYVhOMGNua0tjbVZ6YjNWeVkyVWdJ
+        bkpoYm1Ob1pYSmZjbVZuYVhOMGNua2lJQ0prYjJOclpYSm9kV0lpSUhzS0lDQnVZVzFsSUNBZ0lD
+        QWdJQ0FnSUNBOUlDSmtiMk5yWlhKb2RXSWlDaUFnWkdWelkzSnBjSFJwYjI0Z0lDQWdQU0FpUkc5
+        amEyVnlTSFZpSUZKbFoybHpkSEo1SWdvZ0lHVnVkbWx5YjI1dFpXNTBYMmxrSUQwZ0lpUjdjbUZ1
+        WTJobGNsOWxiblpwY205dWJXVnVkQzVrWldaaGRXeDBMbWxrZlNJS0lDQnpaWEoyWlhKZllXUmtj
+        bVZ6Y3lBOUlDSnBibVJsZUM1a2IyTnJaWEpvZFdJdWFXOGlDbjBL
+    import: !!binary |
+        Q2dwU1pXZHBjM1J5YVdWeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1JXNTJh
+        WEp2Ym0xbGJuUWdZVzVrSUZKbFoybHpkSEo1SUVsRWN5QnBiaUIwYUdVZ1ptOXliUXBnUEdWdWRt
+        bHliMjV0Wlc1MFgybGtQaTg4Y21WbmFYTjBjbmxmYVdRK1lBb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYSmhibU5vWlhJdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmNtVm5hWE4wY25rdWFIUnRiQzV0WVhKclpHOTNiZz09

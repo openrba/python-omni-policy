@@ -8,7 +8,7 @@ aws_codecommit_repository:
         repository_name:
             description: The name for the repository. This needs to be less than 100
                 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -38,3 +38,15 @@ aws_codecommit_repository:
         clone_url_ssh:
             description: The URL to use for cloning the repository over SSH.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjlrWldOdmJXMXBkRjl5WlhCdmMybDBiM0o1SWlBaWRHVnpk
+        Q0lnZXdvZ0lISmxjRzl6YVhSdmNubGZibUZ0WlNBOUlDSk5lVlJsYzNSU1pYQnZjMmwwYjNKNUln
+        b2dJR1JsYzJOeWFYQjBhVzl1SUNBZ0lDQTlJQ0pVYUdseklHbHpJSFJvWlNCVFlXMXdiR1VnUVhC
+        d0lGSmxjRzl6YVhSdmNua2lDbjBL
+    import: !!binary |
+        Q2dwRGIyUmxZMjl0YldsMElISmxjRzl6YVhSdmNua2dZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhKbGNHOXphWFJ2Y25rZ2JtRnRaU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJSbFkyOXRiV2wwWDNKbGNHOXphWFJ2Y25rdWFIUnRiQzV0WVhKclpHOTNiZz09

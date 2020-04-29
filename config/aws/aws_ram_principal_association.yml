@@ -9,12 +9,12 @@ aws_ram_principal_association:
             description: The principal to associate with the resource share. Possible
                 values are an AWS account ID, an AWS Organizations Organization ARN,
                 or an AWS Organizations Organization Unit ARN.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_share_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -22,3 +22,12 @@ aws_ram_principal_association:
             description: The Amazon Resource Name (ARN) of the Resource Share and
                 the principal, separated by a comma.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwU1FVMGdVSEpwYm1OcGNHRnNJRUZ6YzI5amFXRjBhVzl1Y3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsYVhJZ1VtVnpiM1Z5WTJVZ1UyaGhjbVVnUVZKT0lHRnVaQ0IwYUdVZ1lI
+        QnlhVzVqYVhCaGJHQWdjMlZ3WVhKaGRHVmtJR0o1SUdFZ1kyOXRiV0VzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WVcxZmNISnBibU5wY0dGc1gyRnpjMjlqYVdGMGFXOXVMbTFoY210a2IzZHU=

@@ -11,7 +11,7 @@ kubernetes_resource_quota:
         metadata:
             description: Standard resource quota's metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
@@ -21,3 +21,16 @@ kubernetes_resource_quota:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzSmxjMjkxY21ObFgzRjFiM1JoSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzFsZEdGa1lYUmhJSHNLSUNBZ0lHNWhiV1VnUFNBaWRHVnljbUZtYjNKdExX
+        VjRZVzF3YkdVaUNpQWdmUW9nSUhOd1pXTWdld29nSUNBZ2FHRnlaQ0E5SUhzS0lDQWdJQ0FnY0c5
+        a2N5QTlJREV3Q2lBZ0lDQjlDaUFnSUNCelkyOXdaWE1nUFNCYklrSmxjM1JGWm1admNuUWlYUW9n
+        SUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwU1pYTnZkWEpqWlNCUmRXOTBZU0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2FYUnpJ
+        RzVoYldWemNHRmpaU0JoYm1RZ2JtRnRaU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjbVZ6YjNWeVkyVmZjWFZ2ZEdFdWFIUnRiQzV0WVhKclpHOTNiZz09

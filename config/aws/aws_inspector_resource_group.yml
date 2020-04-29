@@ -8,10 +8,20 @@ aws_inspector_resource_group:
         tags:
             description: Key-value map of tags that are used to select the EC2 instances
                 to be included in an [Amazon Inspector assessment target](/docs/providers/aws/r/inspector_assessment_target.html).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         arn:
             description: The resource group ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhVzV6Y0dWamRHOXlYM0psYzI5MWNtTmxYMmR5YjNWd0lpQWla
+        WGhoYlhCc1pTSWdld29nSUhSaFozTWdQU0I3Q2lBZ0lDQk9ZVzFsSUQwZ0ltWnZieUlLSUNBZ0lF
+        VnVkaUFnUFNBaVltRnlJZ29nSUgwS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYm5Od1pXTjBiM0pmY21WemIzVnlZMlZmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

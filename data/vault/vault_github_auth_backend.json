@@ -14,7 +14,7 @@
             },
             "organization": {
                 "description": "The organization configured users must be part of.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -79,11 +79,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "accessor": {
-                "description": "The mount accessor related to the auth mount. It is useful for integration with [Identity Secrets Engine](https://www.vaultproject.io/docs/secrets/identity/index.html)."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

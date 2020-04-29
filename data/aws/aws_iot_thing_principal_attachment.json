@@ -8,13 +8,13 @@
         "arguments": {
             "principal": {
                 "description": "The AWS IoT Certificate ARN or Amazon Cognito Identity ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "thing": {
                 "description": "The name of the thing.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

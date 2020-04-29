@@ -8,25 +8,25 @@
         "arguments": {
             "api_management_name": {
                 "description": "The Name of the API Management Service where this Facebook Identity Provider should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The Name of the Resource Group where the API Management Service exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "app_id": {
                 "description": "App ID for Facebook.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "app_secret": {
                 "description": "App Secret for Facebook.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

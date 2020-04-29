@@ -8,24 +8,24 @@ azurerm_batch_certificate:
         account_name:
             description: Specifies the name of the Batch account. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Batch
                 account. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate:
             description: The base64-encoded contents of the certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         format:
             description: The format of the certificate. Possible values are `Cer`
                 or `Pfx`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
@@ -37,7 +37,7 @@ azurerm_batch_certificate:
         thumbprint:
             description: The thumbprint of the certificate. At this time the only
                 supported value is 'SHA1'.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

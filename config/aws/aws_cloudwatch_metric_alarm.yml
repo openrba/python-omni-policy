@@ -8,7 +8,7 @@ aws_cloudwatch_metric_alarm:
         alarm_name:
             description: The descriptive name for the alarm. This name must be unique
                 within the user's AWS account
-            required: true
+            required: false
             policy: ''
             notes: ''
         comparison_operator:
@@ -19,13 +19,13 @@ aws_cloudwatch_metric_alarm:
                 Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`,
                 `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used
                 only for alarms based on anomaly detection models.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         evaluation_periods:
             description: The number of periods over which data is compared to the
                 specified threshold.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_name:
@@ -147,3 +147,23 @@ aws_cloudwatch_metric_alarm:
         id:
             description: The ID of the health check
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lYUmphRjl0WlhSeWFXTmZZV3hoY20waUlDSm1i
+        MjlpWVhJaUlIc0tJQ0JoYkdGeWJWOXVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGNu
+        SmhabTl5YlMxMFpYTjBMV1p2YjJKaGNqVWlDaUFnWTI5dGNHRnlhWE52Ymw5dmNHVnlZWFJ2Y2lB
+        Z0lDQWdJQ0E5SUNKSGNtVmhkR1Z5VkdoaGJrOXlSWEYxWVd4VWIxUm9jbVZ6YUc5c1pDSUtJQ0Js
+        ZG1Gc2RXRjBhVzl1WDNCbGNtbHZaSE1nSUNBZ0lDQWdJRDBnSWpJaUNpQWdiV1YwY21salgyNWhi
+        V1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pEVUZWVmRHbHNhWHBoZEdsdmJpSUtJQ0J1WVcxbGMz
+        QmhZMlVnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtGWFV5OUZReklpQ2lBZ2NHVnlhVzlrSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSXhNakFpQ2lBZ2MzUmhkR2x6ZEdsaklDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBOUlDSkJkbVZ5WVdkbElnb2dJSFJvY21WemFHOXNaQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpT0RBaUNpQWdZV3hoY20xZlpHVnpZM0pwY0hScGIyNGdJQ0FnSUNBZ0lD
+        QTlJQ0pVYUdseklHMWxkSEpwWXlCdGIyNXBkRzl5Y3lCbFl6SWdZM0IxSUhWMGFXeHBlbUYwYVc5
+        dUlnb2dJR2x1YzNWbVptbGphV1Z1ZEY5a1lYUmhYMkZqZEdsdmJuTWdQU0JiWFFwOUNnPT0=
+    import: !!binary |
+        Q2dwRGJHOTFaQ0JOWlhSeWFXTWdRV3hoY20xeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lHRnNZWEp0WDI1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDIxbGRISnBZMTloYkdGeWJTNW9kRzFzTG0xaGNtdGtiM2R1

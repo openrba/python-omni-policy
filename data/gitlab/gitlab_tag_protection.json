@@ -8,19 +8,19 @@
         "arguments": {
             "project": {
                 "description": "The id of the project.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "tag": {
                 "description": "Name of the tag or wildcard.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "create_access_level": {
                 "description": "One of five levels of access to the project.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

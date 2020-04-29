@@ -9,13 +9,13 @@
         "arguments": {
             "host_project": {
                 "description": "The ID of a host project to associate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_project": {
                 "description": "The ID of the project that will serve as a Shared VPC service project.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,43 +8,43 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the LB Rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "loadbalancer_id": {
                 "description": "The ID of the Load Balancer in which to create the Rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "frontend_ip_configuration_name": {
                 "description": "The name of the frontend IP configuration to which the rule is associated.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol": {
                 "description": "The transport protocol for the external endpoint. Possible values are `Tcp`, `Udp` or `All`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "frontend_port": {
                 "description": "The port for the external endpoint. Port numbers for each Rule must be unique within the Load Balancer. Possible values range between 0 and 65534, inclusive.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "backend_port": {
                 "description": "The port used for internal connections on the endpoint. Possible values range between 0 and 65535, inclusive.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

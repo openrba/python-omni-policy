@@ -26,25 +26,25 @@
             },
             "type": {
                 "description": "The L7 Rule type - can either be COOKIE, FILE\\_TYPE, HEADER,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "compare_type": {
                 "description": "The comparison type for the L7 rule - can either be",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "l7policy_id": {
                 "description": "The ID of the L7 Policy to query. Changing this creates a new",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "The value to use for the comparison. For example, the file type to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,41 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the L7 Rule."
-            },
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "type": {
-                "description": "See Argument Reference above."
-            },
-            "compare_type": {
-                "description": "See Argument Reference above."
-            },
-            "l7policy_id": {
-                "description": "See Argument Reference above."
-            },
-            "value": {
-                "description": "See Argument Reference above."
-            },
-            "key": {
-                "description": "See Argument Reference above."
-            },
-            "invert": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "listener_id": {
-                "description": "The ID of the Listener owning this resource."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -7,7 +7,7 @@ aws_network_acl:
     arguments:
         vpc_id:
             description: The ID of the associated VPC.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
@@ -32,27 +32,27 @@ aws_network_acl:
             notes: ''
         from_port:
             description: The from port to match.
-            required: true
+            required: false
             policy: ''
             notes: ''
         to_port:
             description: The to port to match.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_no:
             description: The rule number. Used for ordering.
-            required: true
+            required: false
             policy: ''
             notes: ''
         action:
             description: The action to take.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: The protocol to match. If using the -1 'all'
-            required: true
+            required: false
             policy: ''
             notes: ''
         cidr_block:
@@ -81,3 +81,21 @@ aws_network_acl:
         owner_id:
             description: The ID of the AWS account that owns the network ACL.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVYwZDI5eWExOWhZMndpSUNKdFlXbHVJaUI3Q2lBZ2RuQmpY
+        MmxrSUQwZ0lpUjdZWGR6WDNad1l5NXRZV2x1TG1sa2ZTSUtDaUFnWldkeVpYTnpJSHNLSUNBZ0lI
+        QnliM1J2WTI5c0lDQWdQU0FpZEdOd0lnb2dJQ0FnY25Wc1pWOXVieUFnSUNBOUlESXdNQW9nSUNB
+        Z1lXTjBhVzl1SUNBZ0lDQTlJQ0poYkd4dmR5SUtJQ0FnSUdOcFpISmZZbXh2WTJzZ1BTQWlNVEF1
+        TXk0d0xqQXZNVGdpQ2lBZ0lDQm1jbTl0WDNCdmNuUWdJRDBnTkRRekNpQWdJQ0IwYjE5d2IzSjBJ
+        Q0FnSUQwZ05EUXpDaUFnZlFvS0lDQnBibWR5WlhOeklIc0tJQ0FnSUhCeWIzUnZZMjlzSUNBZ1BT
+        QWlkR053SWdvZ0lDQWdjblZzWlY5dWJ5QWdJQ0E5SURFd01Bb2dJQ0FnWVdOMGFXOXVJQ0FnSUNB
+        OUlDSmhiR3h2ZHlJS0lDQWdJR05wWkhKZllteHZZMnNnUFNBaU1UQXVNeTR3TGpBdk1UZ2lDaUFn
+        SUNCbWNtOXRYM0J2Y25RZ0lEMGdPREFLSUNBZ0lIUnZYM0J2Y25RZ0lDQWdQU0E0TUFvZ0lIMEtD
+        aUFnZEdGbmN5QTlJSHNLSUNBZ0lFNWhiV1VnUFNBaWJXRnBiaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwT1pYUjNiM0pySUVGRFRITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdh
+        V1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhSM2IzSnJYMkZqYkM1b2RHMXNMbTFoY210a2IzZHU=

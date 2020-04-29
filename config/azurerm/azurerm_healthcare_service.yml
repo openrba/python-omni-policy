@@ -8,18 +8,18 @@ azurerm_healthcare_service:
         name:
             description: The name of the service instance. Used for service endpoint,
                 must be unique within the audience.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which to create the Service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure Region where the Service should
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_policy_ids:
@@ -74,22 +74,22 @@ azurerm_healthcare_service:
             notes: ''
         allowed_origins:
             description: A set of origins to be allowed via CORS.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_headers:
             description: A set of headers to be allowed via CORS.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_methods:
             description: The methods to be allowed via CORS.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_age_in_seconds:
             description: The max age to be allowed via CORS.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_credentials:

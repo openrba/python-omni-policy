@@ -7,25 +7,25 @@ aws_cloudwatch_log_subscription_filter:
     arguments:
         name:
             description: A name for the subscription filter
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_arn:
             description: The ARN of the destination to deliver matching log events
                 to. Kinesis stream or Lambda function ARN.
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter_pattern:
             description: A valid CloudWatch Logs filter pattern for subscribing to
                 a filtered stream of log events.
-            required: true
+            required: false
             policy: ''
             notes: ''
         log_group_name:
             description: The name of the log group to associate the subscription filter
                 with
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
@@ -48,3 +48,23 @@ aws_cloudwatch_log_subscription_filter:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lYUmphRjlzYjJkZmMzVmljMk55YVhCMGFXOXVY
+        MlpwYkhSbGNpSWdJblJsYzNSZmJHRnRZbVJoWm5WdVkzUnBiMjVmYkc5blptbHNkR1Z5SWlCN0Np
+        QWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJsYzNSZmJHRnRZbVJoWm5WdVkzUnBiMjVmYkc5
+        blptbHNkR1Z5SWdvZ0lISnZiR1ZmWVhKdUlDQWdJQ0FnSUNBOUlDSWtlMkYzYzE5cFlXMWZjbTlz
+        WlM1cFlXMWZabTl5WDJ4aGJXSmtZUzVoY201OUlnb2dJR3h2WjE5bmNtOTFjRjl1WVcxbElDQTlJ
+        Q0l2WVhkekwyeGhiV0prWVM5bGVHRnRjR3hsWDJ4aGJXSmtZVjl1WVcxbElnb2dJR1pwYkhSbGNs
+        OXdZWFIwWlhKdUlDQTlJQ0pzYjJkMGVYQmxJSFJsYzNRaUNpQWdaR1Z6ZEdsdVlYUnBiMjVmWVhK
+        dUlEMGdJaVI3WVhkelgydHBibVZ6YVhOZmMzUnlaV0Z0TG5SbGMzUmZiRzluYzNSeVpXRnRMbUZ5
+        Ym4waUNpQWdaR2x6ZEhKcFluVjBhVzl1SUNBZ0lEMGdJbEpoYm1SdmJTSUtmUW89
+    import: !!binary |
+        Q2dwRGJHOTFaRmRoZEdOb0lFeHZaM01nYzNWaWMyTnlhWEIwYVc5dUlHWnBiSFJsY2lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUd4dlp5Qm5jbTkxY0NCdVlXMWxJR0Z1WkNCemRX
+        SnpZM0pwY0hScGIyNGdabWxzZEdWeUlHNWhiV1VnYzJWd1lYSmhkR1ZrSUdKNUlHQjhZQzRLQ2c9
+        PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDJ4dloxOXpkV0p6WTNKcGNIUnBiMjVmWm1sc2RHVnlMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

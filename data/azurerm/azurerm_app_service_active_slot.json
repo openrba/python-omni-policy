@@ -8,24 +8,45 @@
         "arguments": {
             "resource_group_name": {
                 "description": "The name of the resource group in which the App Service exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "app_service_name": {
                 "description": "The name of the App Service within which the Slot exists.  Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "app_service_slot_name": {
                 "description": "The name of the App Service Slot which should be promoted to the Production Slot within the App Service.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
         "attributes": {},
-        "timeouts": {}
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the App Service Active Slot.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the App Service Active Slot.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the App Service Active Slot.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the App Service Active Slot.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

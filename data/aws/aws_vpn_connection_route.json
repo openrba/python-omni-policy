@@ -8,18 +8,25 @@
         "arguments": {
             "destination_cidr_block": {
                 "description": "The CIDR block associated with the local subnet of the customer network.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vpn_connection_id": {
                 "description": "The ID of the VPN connection.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "destination_cidr_block": {
+                "description": "The CIDR block associated with the local subnet of the customer network."
+            },
+            "vpn_connection_id": {
+                "description": "The ID of the VPN connection."
+            }
+        },
         "timeouts": {}
     }
 }

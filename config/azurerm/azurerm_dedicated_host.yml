@@ -8,33 +8,33 @@ azurerm_dedicated_host:
         name:
             description: Specifies the name of this Dedicated Host. Changing this
                 forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dedicated_host_group_id:
             description: Specifies the ID of the Dedicated Host Group where the Dedicated
                 Host should exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specify the supported Azure location where the resource exists.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku_name:
             description: Specify the sku name of the Dedicated Host. Possible values
                 are `DSv3-Type1`, `DSv3-Type2`, `ESv3-Type1`, `ESv3-Type2`,`FSv2-Type2`.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         platform_fault_domain:
             description: Specify the fault domain of the Dedicated Host Group in which
                 to create the Dedicated Host. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         auto_replace_on_failure:

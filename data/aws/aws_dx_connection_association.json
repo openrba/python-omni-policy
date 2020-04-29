@@ -8,13 +8,13 @@
         "arguments": {
             "connection_id": {
                 "description": "The ID of the connection.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "lag_id": {
                 "description": "The ID of the LAG with which to associate the connection.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

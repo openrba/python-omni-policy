@@ -7,12 +7,12 @@ aws_ami_from_instance:
     arguments:
         name:
             description: A region-unique name for the AMI.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_instance_id:
             description: The id of the instance to use as the basis of the AMI.
-            required: true
+            required: false
             policy: ''
             notes: ''
         snapshot_without_reboot:
@@ -46,3 +46,8 @@ aws_ami_from_instance:
         aUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJsY25KaFptOXliUzFsZUdGdGNH
         eGxJZ29nSUhOdmRYSmpaVjlwYm5OMFlXNWpaVjlwWkNBOUlDSnBMWGg0ZUhoNGVIaDRJZ3A5Q2c9
         PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloYldsZlpuSnZiVjlwYm5OMFlXNWpaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

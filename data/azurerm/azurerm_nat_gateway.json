@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the NAT Gateway. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Specifies the name of the Resource Group in which the NAT Gateway should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,37 +7,37 @@ azurerm_firewall_nat_rule_collection:
     arguments:
         name:
             description: Specifies the name of the rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         azure_firewall_name:
             description: Specifies the name of the Firewall in which the NAT Rule
                 Collection should be created. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the name of the Resource Group in which the Firewall
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         priority:
             description: Specifies the priority of the rule collection. Possible values
                 are between `100` - `65000`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         action:
             description: Specifies the action the rule will apply to matching traffic.
                 Possible values are `Dnat` and `Snat`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule:
             description: One or more `rule` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -47,35 +47,104 @@ azurerm_firewall_nat_rule_collection:
             notes: ''
         destination_addresses:
             description: A list of destination IP addresses and/or IP ranges.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_ports:
             description: A list of destination ports.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocols:
             description: A list of protocols. Possible values are `Any`, `ICMP`, `TCP`
                 and `UDP`.  If `action` is `Dnat`, protocols can only be `TCP` and
                 `UDP`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_addresses:
             description: A list of source IP addresses and/or IP ranges.
-            required: true
+            required: false
             policy: ''
             notes: ''
         translated_address:
             description: The address of the service behind the Firewall.
-            required: true
+            required: false
             policy: ''
             notes: ''
         translated_port:
             description: The port of the service behind the Firewall.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
-    timeouts: {}
+    timeouts:
+        create:
+            description: Used when creating the Firewall NAT Rule Collection.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Firewall NAT Rule Collection.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Firewall NAT Rule Collection.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Firewall NAT Rule Collection.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0lrNXZjblJvSUVWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20x
+        ZmRtbHlkSFZoYkY5dVpYUjNiM0pySWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaWRHVnpkSFp1WlhRaUNpQWdZV1JrY21WemMxOXpjR0ZqWlNBZ0lDQWdJ
+        Q0E5SUZzaU1UQXVNQzR3TGpBdk1UWWlYUW9nSUd4dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BT
+        QmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNC
+        eVpYTnZkWEpqWlY5bmNtOTFjRjl1WVcxbElEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkx
+        Y0M1bGVHRnRjR3hsTG01aGJXVUtmUW9LY21WemIzVnlZMlVnSW1GNmRYSmxjbTFmYzNWaWJtVjBJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtGNmRY
+        SmxSbWx5WlhkaGJHeFRkV0p1WlhRaUNpQWdjbVZ6YjNWeVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNC
+        aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXVibUZ0WlFvZ0lIWnBjblIx
+        WVd4ZmJtVjBkMjl5YTE5dVlXMWxJRDBnWVhwMWNtVnliVjkyYVhKMGRXRnNYMjVsZEhkdmNtc3Va
+        WGhoYlhCc1pTNXVZVzFsQ2lBZ1lXUmtjbVZ6YzE5d2NtVm1hWGdnSUNBZ0lDQWdQU0FpTVRBdU1D
+        NHhMakF2TWpRaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM0IxWW14cFkxOXBjQ0lnSW1W
+        NFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGMzUndhWEFp
+        Q2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZa
+        M0p2ZFhBdVpYaGhiWEJzWlM1c2IyTmhkR2x2YmdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdG
+        c2JHOWpZWFJwYjI1ZmJXVjBhRzlrSUNBZ1BTQWlVM1JoZEdsaklnb2dJSE5yZFNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnUFNBaVUzUmhibVJoY21RaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRY
+        MlpwY21WM1lXeHNJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdQU0FpZEdWemRHWnBjbVYzWVd4c0lnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnUFNC
+        aGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0WVcxd2JHVXViRzlqWVhScGIyNEtJQ0J5
+        WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFj
+        QzVsZUdGdGNHeGxMbTVoYldVS0NpQWdhWEJmWTI5dVptbG5kWEpoZEdsdmJpQjdDaUFnSUNCdVlX
+        MWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pqYjI1bWFXZDFjbUYwYVc5dUlnb2dJQ0FnYzNW
+        aWJtVjBYMmxrSUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzTjFZbTVsZEM1bGVHRnRjR3hs
+        TG1sa0NpQWdJQ0J3ZFdKc2FXTmZhWEJmWVdSa2NtVnpjMTlwWkNBOUlHRjZkWEpsY20xZmNIVmli
+        R2xqWDJsd0xtVjRZVzF3YkdVdWFXUUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgy
+        WnBjbVYzWVd4c1gyNWhkRjl5ZFd4bFgyTnZiR3hsWTNScGIyNGlJQ0psZUdGdGNHeGxJaUI3Q2lB
+        Z2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0owWlhOMFkyOXNiR1ZqZEdsdmJpSUtJQ0Jo
+        ZW5WeVpWOW1hWEpsZDJGc2JGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5bWFYSmxkMkZzYkM1bGVHRnRj
+        R3hsTG01aGJXVUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5YlY5eVpY
+        TnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQndjbWx2Y21sMGVTQWdJQ0FnSUNB
+        Z0lDQWdJRDBnTVRBd0NpQWdZV04wYVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKRWJtRjBJZ29L
+        SUNCeWRXeGxJSHNLSUNBZ0lHNWhiV1VnUFNBaWRHVnpkSEoxYkdVaUNnb2dJQ0FnYzI5MWNtTmxY
+        MkZrWkhKbGMzTmxjeUE5SUZzS0lDQWdJQ0FnSWpFd0xqQXVNQzR3THpFMklpd0tJQ0FnSUYwS0Np
+        QWdJQ0JrWlhOMGFXNWhkR2x2Ymw5d2IzSjBjeUE5SUZzS0lDQWdJQ0FnSWpVeklpd0tJQ0FnSUYw
+        S0NpQWdJQ0JrWlhOMGFXNWhkR2x2Ymw5aFpHUnlaWE56WlhNZ1BTQmJDaUFnSUNBZ0lDSTRMamd1
+        T0M0NElpd0tJQ0FnSUNBZ0lqZ3VPQzQwTGpRaUxBb2dJQ0FnWFFvS0lDQWdJSEJ5YjNSdlkyOXNj
+        eUE5SUZzS0lDQWdJQ0FnSWxSRFVDSXNDaUFnSUNBZ0lDSlZSRkFpTEFvZ0lDQWdYUW9nSUgwS2ZR
+        bz0=
+    import: !!binary |
+        Q2dwQmVuVnlaU0JHYVhKbGQyRnNiQ0JPUVZRZ1VuVnNaU0JEYjJ4c1pXTjBhVzl1Y3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCeVpYTnZkWEpqWlNCcFpHQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlptbHlaWGRoYkd4ZmJtRjBYM0oxYkdWZlkyOXNiR1ZqZEdsdmJpNW9kRzFzTG0x
+        aGNtdGtiM2R1

@@ -9,13 +9,13 @@
         "arguments": {
             "billing_account": {
                 "description": "The billing account to create the exclusion for.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of the logging exclusion.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -33,7 +33,7 @@
             },
             "filter": {
                 "description": "The filter to apply when excluding logs. Only log entries that match the filter are excluded.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

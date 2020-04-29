@@ -7,13 +7,13 @@ aws_sns_platform_application:
     arguments:
         name:
             description: The friendly name for the SNS platform application
-            required: true
+            required: false
             policy: ''
             notes: ''
         platform:
             description: The platform that the app is registered with. See [Platform][1]
                 for supported platforms.
-            required: true
+            required: false
             policy: ''
             notes: ''
         platform_credential:
@@ -22,7 +22,7 @@ aws_sns_platform_application:
                 when stored into the Terraform state is only a hash of the real value,
                 so therefore it is not practical to use this as an attribute for other
                 resources.
-            required: true
+            required: false
             policy: ''
             notes: ''
         event_delivery_failure_topic_arn:
@@ -82,3 +82,12 @@ aws_sns_platform_application:
         arn:
             description: The ARN of the SNS platform application
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVFRsTWdjR3hoZEdadmNtMGdZWEJ3YkdsallYUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnUVZKT0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Ym5OZmNHeGhkR1p2Y20xZllYQndiR2xqWVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

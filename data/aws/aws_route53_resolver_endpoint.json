@@ -8,19 +8,19 @@
         "arguments": {
             "direction": {
                 "description": "The direction of DNS queries to or from the Route 53 Resolver endpoint.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ip_address": {
                 "description": "The subnets and IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "security_group_ids": {
                 "description": "The ID of one or more security groups that you want to use to control access to this VPC.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "subnet_id": {
                 "description": "The ID of the subnet that contains the IP address.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

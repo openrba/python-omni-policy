@@ -8,13 +8,13 @@ google_bigtable_instance:
     arguments:
         name:
             description: The name (also called Instance Id in the Cloud Console
-            required: true
+            required: false
             policy: ''
             notes: ''
         cluster:
             description: A block of cluster configuration options. This can be specified
                 1 or 2 times. See structure below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -36,12 +36,12 @@ google_bigtable_instance:
             notes: ''
         cluster_id:
             description: The ID of the Cloud Bigtable cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone:
             description: The zone to create the Cloud Bigtable cluster in. Each
-            required: true
+            required: false
             policy: ''
             notes: ''
         num_nodes:
@@ -56,3 +56,18 @@ google_bigtable_instance:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWW1sbmRHRmliR1ZmYVc1emRHRnVZMlVpSUNKd2NtOWtk
+        V04wYVc5dUxXbHVjM1JoYm1ObElpQjdDaUFnYm1GdFpTQTlJQ0owWmkxcGJuTjBZVzVqWlNJS0Np
+        QWdZMngxYzNSbGNpQjdDaUFnSUNCamJIVnpkR1Z5WDJsa0lDQWdQU0FpZEdZdGFXNXpkR0Z1WTJV
+        dFkyeDFjM1JsY2lJS0lDQWdJSHB2Ym1VZ0lDQWdJQ0FnSUNBOUlDSjFjeTFqWlc1MGNtRnNNUzFp
+        SWdvZ0lDQWdiblZ0WDI1dlpHVnpJQ0FnSUQwZ01Rb2dJQ0FnYzNSdmNtRm5aVjkwZVhCbElEMGdJ
+        a2hFUkNJS0lDQjlDZ29nSUd4cFptVmplV05zWlNCN0NpQWdJQ0J3Y21WMlpXNTBYMlJsYzNSeWIz
+        a2dQU0IwY25WbENpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQ2FXZDBZV0pzWlNCSmJuTjBZVzVqWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        R0Z1ZVNCdlppQjBhR1Z6WlNCaFkyTmxjSFJsWkNCbWIzSnRZWFJ6T2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5aWFXZDBZV0pzWlY5cGJuTjBZVzVqWlM1b2RHMXNMbTFoY210a2IzZHU=

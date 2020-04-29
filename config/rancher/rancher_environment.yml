@@ -8,7 +8,7 @@ rancher_environment:
     arguments:
         name:
             description: The name of the environment.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -36,8 +36,22 @@ rancher_environment:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The ID of the environment (ie `1a11`) that can be used in
-                other Terraform resources such as Rancher Stack definitions.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRkpoYm1Ob1pYSWdaVzUyYVhKdmJtMWxiblFLY21WemIzVnlZ
+        MlVnSW5KaGJtTm9aWEpmWlc1MmFYSnZibTFsYm5RaUlDSmtaV1poZFd4MElpQjdDaUFnYm1GdFpT
+        QTlJQ0p6ZEdGbmFXNW5JZ29nSUdSbGMyTnlhWEIwYVc5dUlEMGdJbFJvWlNCemRHRm5hVzVuSUdW
+        dWRtbHliMjV0Wlc1MElnb2dJRzl5WTJobGMzUnlZWFJwYjI0Z1BTQWlZMkYwZEd4bElnb0tJQ0J0
+        WlcxaVpYSWdld29nSUNBZ1pYaDBaWEp1WVd4ZmFXUWdQU0FpTmpVd05ETXdJZ29nSUNBZ1pYaDBa
+        WEp1WVd4ZmFXUmZkSGx3WlNBOUlDSm5hWFJvZFdKZmRYTmxjaUlLSUNBZ0lISnZiR1VnUFNBaWIz
+        ZHVaWElpQ2lBZ2ZRb0tJQ0J0WlcxaVpYSWdld29nSUNBZ1pYaDBaWEp1WVd4ZmFXUWdQU0FpTVRJ
+        ek5DSUtJQ0FnSUdWNGRHVnlibUZzWDJsa1gzUjVjR1VnUFNBaVoybDBhSFZpWDNSbFlXMGlDaUFn
+        SUNCeWIyeGxJRDBnSW0xbGJXSmxjaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRmJuWnBjbTl1YldWdWRITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pXbHlJ
+        RkpoYm1Ob1pYSWdRVkJKSUVsRUxDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYSmhibU5vWlhJdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdlpXNTJhWEp2Ym0xbGJuUXVhSFJ0YkM1dFpBPT0=

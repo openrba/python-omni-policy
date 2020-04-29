@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name to identify the Group Membership",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "users": {
                 "description": "A list of IAM User names to associate with the Group",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "group": {
                 "description": "The IAM Group name to attach the list of `users` to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

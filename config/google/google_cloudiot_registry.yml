@@ -8,7 +8,7 @@ google_cloudiot_registry:
     arguments:
         name:
             description: A unique name for the resource, required by device registry.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -52,7 +52,7 @@ google_cloudiot_registry:
             notes: ''
         pubsub_topic_name:
             description: PubSub topic name to publish device state updates.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subfolder_matches:
@@ -62,30 +62,56 @@ google_cloudiot_registry:
             notes: ''
         mqtt_enabled_state:
             description: The field allows `MQTT_ENABLED` or `MQTT_DISABLED`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_enabled_state:
             description: The field allows `HTTP_ENABLED` or `HTTP_DISABLED`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         public_key_certificate:
             description: The certificate format and data.
-            required: true
+            required: false
             policy: ''
             notes: ''
         format:
             description: The field allows only  `X509_CERTIFICATE_PEM`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate:
             description: The certificate data.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: an identifier for the resource with format `projects/{{project}}/locations/{{region}}/registries/{{name}}`
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmY0hWaWMzVmlYM1J2Y0dsaklpQWlaR1ZtWVhWc2RDMWta
+        WFpwWTJWemRHRjBkWE1pSUhzS0lDQnVZVzFsSUQwZ0ltUmxabUYxYkhRdFpHVjJhV05sYzNSaGRI
+        VnpJZ3A5Q2dweVpYTnZkWEpqWlNBaVoyOXZaMnhsWDNCMVluTjFZbDkwYjNCcFl5SWdJbVJsWm1G
+        MWJIUXRkR1ZzWlcxbGRISjVJaUI3Q2lBZ2JtRnRaU0E5SUNKa1pXWmhkV3gwTFhSbGJHVnRaWFJ5
+        ZVNJS2ZRb0tjbVZ6YjNWeVkyVWdJbWR2YjJkc1pWOWpiRzkxWkdsdmRGOXlaV2RwYzNSeWVTSWdJ
+        bVJsWm1GMWJIUXRjbVZuYVhOMGNua2lJSHNLSUNCdVlXMWxJRDBnSW1SbFptRjFiSFF0Y21WbmFY
+        TjBjbmtpQ2dvZ0lHVjJaVzUwWDI1dmRHbG1hV05oZEdsdmJsOWpiMjVtYVdkeklIc0tJQ0FnSUhC
+        MVluTjFZbDkwYjNCcFkxOXVZVzFsSUQwZ1oyOXZaMnhsWDNCMVluTjFZbDkwYjNCcFl5NWtaV1po
+        ZFd4MExYUmxiR1Z0WlhSeWVTNXBaQW9nSUgwS0NpQWdjM1JoZEdWZmJtOTBhV1pwWTJGMGFXOXVY
+        Mk52Ym1acFp5QTlJSHNLSUNBZ0lIQjFZbk4xWWw5MGIzQnBZMTl1WVcxbElEMGdaMjl2WjJ4bFgz
+        QjFZbk4xWWw5MGIzQnBZeTVrWldaaGRXeDBMV1JsZG1salpYTjBZWFIxY3k1cFpBb2dJSDBLQ2lB
+        Z2FIUjBjRjlqYjI1bWFXY2dQU0I3Q2lBZ0lDQm9kSFJ3WDJWdVlXSnNaV1JmYzNSaGRHVWdQU0Fp
+        U0ZSVVVGOUZUa0ZDVEVWRUlnb2dJSDBLQ2lBZ2JYRjBkRjlqYjI1bWFXY2dQU0I3Q2lBZ0lDQnRj
+        WFIwWDJWdVlXSnNaV1JmYzNSaGRHVWdQU0FpVFZGVVZGOUZUa0ZDVEVWRUlnb2dJSDBLQ2lBZ1kz
+        SmxaR1Z1ZEdsaGJITWdld29nSUNBZ2NIVmliR2xqWDJ0bGVWOWpaWEowYVdacFkyRjBaU0E5SUhz
+        S0lDQWdJQ0FnWm05eWJXRjBJQ0FnSUNBZ1BTQWlXRFV3T1Y5RFJWSlVTVVpKUTBGVVJWOVFSVTBp
+        Q2lBZ0lDQWdJR05sY25ScFptbGpZWFJsSUQwZ1ptbHNaU2dpY25OaFgyTmxjblF1Y0dWdElpa0tJ
+        Q0FnSUgwS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwQklHUmxkbWxqWlNCeVpXZHBjM1J5ZVNCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCdVlXMWxZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amJHOTFaR2x2ZEY5eVpXZHBjM1J5ZVM1b2RHMXNMbTFoY210a2IzZHU=

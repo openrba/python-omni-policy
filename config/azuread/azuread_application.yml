@@ -7,7 +7,7 @@ azuread_application:
     arguments:
         name:
             description: The display name for the application.
-            required: true
+            required: false
             policy: ''
             notes: ''
         homepage:
@@ -75,7 +75,7 @@ azuread_application:
         type:
             description: Specifies whether the id property references an `OAuth2Permission`
                 or an `AppRole`. Possible values are `Scope` or `Role`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_role:
@@ -88,37 +88,37 @@ azuread_application:
             description: The unique identifier for the resource that the application
                 requires access to. This should be equal to the appId declared on
                 the target resource application.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_access:
             description: A collection of `resource_access` blocks as documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         id:
             description: The unique identifier for one of the `OAuth2Permission` or
                 `AppRole` instances that the resource application exposes.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_member_types:
             description: Specifies whether this app role definition can be assigned
                 to users and groups by setting to `User`, or to other applications
                 (that are accessing this application in daemon service scenarios
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
             description: Permission help text that appears in the admin app assignment
                 and consent experiences.
-            required: true
+            required: false
             policy: ''
             notes: ''
         display_name:
             description: Display name for the permission that appears in the admin
                 consent and app assignment experiences.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_enabled:
@@ -158,3 +158,38 @@ azuread_application:
         value:
             description: The name of this permission.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaV0ZrWDJGd2NHeHBZMkYwYVc5dUlpQWlaWGhoYlhCc1pTSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVaUNp
+        QWdhRzl0WlhCaFoyVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYUhSMGNITTZMeTlvYjIx
+        bGNHRm5aU0lLSUNCcFpHVnVkR2xtYVdWeVgzVnlhWE1nSUNBZ0lDQWdJQ0FnSUNBOUlGc2lhSFIw
+        Y0hNNkx5OTFjbWtpWFFvZ0lISmxjR3g1WDNWeWJITWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdX
+        eUpvZEhSd2N6b3ZMM0psY0d4NWRYSnNJbDBLSUNCaGRtRnBiR0ZpYkdWZmRHOWZiM1JvWlhKZmRH
+        VnVZVzUwY3lBOUlHWmhiSE5sQ2lBZ2IyRjFkR2d5WDJGc2JHOTNYMmx0Y0d4cFkybDBYMlpzYjNj
+        Z1BTQjBjblZsQ2lBZ2RIbHdaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlkMlZp
+        WVhCd0wyRndhU0lLSUNCdmQyNWxjbk1nSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlGc2lN
+        REF3TURBd01EUXRNREF3TUMwd01EQXdMV013TURBdE1EQXdNREF3TURBd01EQXdJbDBLQ2lBZ2Nt
+        VnhkV2x5WldSZmNtVnpiM1Z5WTJWZllXTmpaWE56SUhzS0lDQWdJSEpsYzI5MWNtTmxYMkZ3Y0Y5
+        cFpDQTlJQ0l3TURBd01EQXdNeTB3TURBd0xUQXdNREF0WXpBd01DMHdNREF3TURBd01EQXdNREFp
+        Q2dvZ0lDQWdjbVZ6YjNWeVkyVmZZV05qWlhOeklIc0tJQ0FnSUNBZ2FXUWdJQ0E5SUNJdUxpNGlD
+        aUFnSUNBZ0lIUjVjR1VnUFNBaVVtOXNaU0lLSUNBZ0lIMEtDaUFnSUNCeVpYTnZkWEpqWlY5aFky
+        TmxjM01nZXdvZ0lDQWdJQ0JwWkNBZ0lEMGdJaTR1TGlJS0lDQWdJQ0FnZEhsd1pTQTlJQ0pUWTI5
+        d1pTSUtJQ0FnSUgwS0NpQWdJQ0J5WlhOdmRYSmpaVjloWTJObGMzTWdld29nSUNBZ0lDQnBaQ0Fn
+        SUQwZ0lpNHVMaUlLSUNBZ0lDQWdkSGx3WlNBOUlDSlRZMjl3WlNJS0lDQWdJSDBLSUNCOUNnb2dJ
+        SEpsY1hWcGNtVmtYM0psYzI5MWNtTmxYMkZqWTJWemN5QjdDaUFnSUNCeVpYTnZkWEpqWlY5aGNI
+        QmZhV1FnUFNBaU1EQXdNREF3TURJdE1EQXdNQzB3TURBd0xXTXdNREF0TURBd01EQXdNREF3TURB
+        d0lnb0tJQ0FnSUhKbGMyOTFjbU5sWDJGalkyVnpjeUI3Q2lBZ0lDQWdJR2xrSUNBZ1BTQWlMaTR1
+        SWdvZ0lDQWdJQ0IwZVhCbElEMGdJbE5qYjNCbElnb2dJQ0FnZlFvZ0lIMEtDaUFnWVhCd1gzSnZi
+        R1VnZXdvZ0lDQWdZV3hzYjNkbFpGOXRaVzFpWlhKZmRIbHdaWE1nUFNCYkNpQWdJQ0FnSUNKVmMy
+        VnlJaXdLSUNBZ0lDQWdJa0Z3Y0d4cFkyRjBhVzl1SWl3S0lDQWdJRjBLQ2lBZ0lDQmtaWE5qY21s
+        d2RHbHZiaUFnUFNBaVFXUnRhVzV6SUdOaGJpQnRZVzVoWjJVZ2NtOXNaWE1nWVc1a0lIQmxjbVp2
+        Y20wZ1lXeHNJSFJoYzJzZ1lXTjBhVzl1Y3lJS0lDQWdJR1JwYzNCc1lYbGZibUZ0WlNBOUlDSkJa
+        RzFwYmlJS0lDQWdJR2x6WDJWdVlXSnNaV1FnSUNBOUlIUnlkV1VLSUNBZ0lIWmhiSFZsSUNBZ0lD
+        QWdJQ0E5SUNKQlpHMXBiaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQmVuVnlaU0JCWTNScGRtVWdSR2x5WldOMGIzSjVJRUZ3Y0d4cFkyRjBhVzl1Y3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCdlltcGxZM1FnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsWVdRdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndiR2xqWVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

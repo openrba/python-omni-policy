@@ -8,13 +8,13 @@
         "arguments": {
             "type": {
                 "description": "The data source type. Must be one of the data source",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "A unique name for the data source within the Grafana",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -115,11 +115,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The opaque unique id assigned to the data source by the Grafana"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

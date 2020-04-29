@@ -7,12 +7,12 @@ vault_gcp_auth_backend_role:
     arguments:
         role:
             description: Name of the GCP role
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: Type of GCP authentication role (either `gce` or `iam`)
-            required: true
+            required: false
             policy: ''
             notes: ''
         project_id:
@@ -39,3 +39,20 @@ vault_gcp_auth_backend_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSm5ZM0FpSUhzS0lDQWdJ
+        SEJoZEdnZ1BTQWlaMk53SWdvZ0lDQWdkSGx3WlNBOUlDSm5ZM0FpQ24wS0NuSmxjMjkxY21ObElD
+        SjJZWFZzZEY5blkzQmZZWFYwYUY5aVlXTnJaVzVrWDNKdmJHVWlJQ0puWTNBaUlIc0tJQ0FnSUdK
+        aFkydGxibVFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0IyWVhWc2RGOWhkWFJvWDJKaFkydGxibVF1
+        WjJOd0xuQmhkR2dLSUNBZ0lIQnliMnBsWTNSZmFXUWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVptOXZM
+        V0poY2kxaVlYb2lDaUFnSUNCaWIzVnVaRjl6WlhKMmFXTmxYMkZqWTI5MWJuUnpJRDBnV3lKa1lY
+        UmhZbUZ6WlMxelpYSjJaWEpBWm05dkxXSmhjaTFpWVhvdWFXRnRMbWR6WlhKMmFXTmxZV05qYjNW
+        dWRDNWpiMjBpWFFvZ0lDQWdkRzlyWlc1ZmNHOXNhV05wWlhNZ0lDQWdJQ0FnSUNBOUlGc2laR0Yw
+        WVdKaGMyVXRjMlZ5ZG1WeUlsMEtDbjBL
+    import: !!binary |
+        Q2dwSFExQWdZWFYwYUdWdWRHbGpZWFJwYjI0Z2NtOXNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnY0dGMGFHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJkamNGOWhkWFJvWDJKaFkydGxibVJmY205c1pTNW9kRzFzTG0xaw==

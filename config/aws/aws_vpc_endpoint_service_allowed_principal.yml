@@ -8,15 +8,28 @@ aws_vpc_endpoint_service_allowed_principal:
     arguments:
         vpc_endpoint_service_id:
             description: The ID of the VPC endpoint service to allow permission.
-            required: true
+            required: false
             policy: ''
             notes: ''
         principal_arn:
             description: The ARN of the principal to allow permissions.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the association.
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbUYzYzE5allXeHNaWEpmYVdSbGJuUnBkSGtpSUNKamRYSnlaVzUwSWlCN2ZRb0tj
+        bVZ6YjNWeVkyVWdJbUYzYzE5MmNHTmZaVzVrY0c5cGJuUmZjMlZ5ZG1salpWOWhiR3h2ZDJWa1gz
+        QnlhVzVqYVhCaGJDSWdJbUZzYkc5M1gyMWxYM1J2WDJadmJ5SWdld29nSUhad1kxOWxibVJ3YjJs
+        dWRGOXpaWEoyYVdObFgybGtJRDBnSWlSN1lYZHpYM1p3WTE5bGJtUndiMmx1ZEY5elpYSjJhV05s
+        TG1admJ5NXBaSDBpQ2lBZ2NISnBibU5wY0dGc1gyRnliaUFnSUNBZ0lDQWdJQ0FnUFNBaUpIdGtZ
+        WFJoTG1GM2MxOWpZV3hzWlhKZmFXUmxiblJwZEhrdVkzVnljbVZ1ZEM1aGNtNTlJZ3A5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZlpXNWtjRzlwYm5SZmMyVnlkbWxqWlY5aGJHeHZkMlZrWDNCeWFXNWphWEJoYkM1
+        b2RHMXNMbTFoY210a2IzZHU=

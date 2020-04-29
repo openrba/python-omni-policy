@@ -7,7 +7,7 @@ aws_ecr_repository:
     arguments:
         name:
             description: Name of the repository.
-            required: true
+            required: false
             policy: ''
             notes: ''
         image_tag_mutability:

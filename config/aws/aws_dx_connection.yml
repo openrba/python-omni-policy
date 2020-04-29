@@ -7,7 +7,7 @@ aws_dx_connection:
     arguments:
         name:
             description: The name of the connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bandwidth:
@@ -15,13 +15,13 @@ aws_dx_connection:
                 connections: 1Gbps, 10Gbps. Valid values for hosted connections: 50Mbps,
                 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps and
                 10Gbps. Case sensitive.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The AWS Direct Connect location where the connection is located.
                 See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -44,3 +44,14 @@ aws_dx_connection:
             description: The Direct Connect endpoint on which the physical connection
                 terminates.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaSGhmWTI5dWJtVmpkR2x2YmlJZ0ltaHZaMlVpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdQU0FpZEdZdFpIZ3RZMjl1Ym1WamRHbHZiaUlLSUNCaVlXNWtkMmxrZEdnZ1BT
+        QWlNVWRpY0hNaUNpQWdiRzlqWVhScGIyNGdJRDBnSWtWeFJFTXlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwRWFYSmxZM1FnUTI5dWJtVmpkQ0JqYjI1dVpXTjBhVzl1Y3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCamIyNXVaV04wYVc5dUlHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZUY5amIyNXVaV04wYVc5dUxtaDBiV3d1YldGeWEyUnZkMjQ9

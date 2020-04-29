@@ -7,12 +7,12 @@ vault_aws_auth_backend_cert:
     arguments:
         cert_name:
             description: The name of the certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         aws_public_cert:
             description: The  Base64 encoded AWS Public key required to
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
@@ -27,3 +27,20 @@ vault_aws_auth_backend_cert:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmhkM01pSUhzS0lDQjBl
+        WEJsSUQwZ0ltRjNjeUlLZlFvS2NtVnpiM1Z5WTJVZ0luWmhkV3gwWDJGM2MxOWhkWFJvWDJKaFky
+        dGxibVJmWTJWeWRDSWdJbU5sY25RaUlIc0tJQ0JpWVdOclpXNWtJQ0FnSUNBZ0lDQWdQU0FpSkh0
+        MllYVnNkRjloZFhSb1gySmhZMnRsYm1RdVlYZHpMbkJoZEdoOUlnb2dJR05sY25SZmJtRnRaU0Fn
+        SUNBZ0lDQTlJQ0p0ZVMxalpYSjBJZ29nSUdGM2MxOXdkV0pzYVdOZlkyVnlkQ0E5SUNJa2UyWnBi
+        R1VvSWlSN2NHRjBhQzV0YjJSMWJHVjlMMkYzYzE5d2RXSnNhV05mYTJWNUxtTnlkSDBwSWdvZ0lI
+        UjVjR1VnSUNBZ0lDQWdJQ0FnSUNBOUlDSndhMk56TnlJS2ZRbz0=
+    import: !!binary |
+        Q2dwQlYxTWdZWFYwYUNCaVlXTnJaVzVrSUdObGNuUnBabWxqWVhSbGN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnWUdGMWRHZ3ZZQ3dnZEdobElHQmlZV05yWlc1a1lDQndZWFJvTENCZ0wy
+        TnZibVpwWnk5alpYSjBhV1pwWTJGMFpTOWdMQ0JoYm1RZ2RHaGxJR0JqWlhKMFgyNWhiV1ZnSUdV
+        dVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGM2MxOWhkWFJvWDJKaFkydGxibVJmWTJWeWRDNW9kRzFzTG0xaw==

@@ -7,15 +7,45 @@ aws_cloudwatch_dashboard:
     arguments:
         dashboard_name:
             description: The name of the dashboard.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dashboard_body:
             description: The detailed information about the dashboard, including what
                 widgets are included and their location on the dashboard. You can
                 read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        dashboard_arn:
+            description: The Amazon Resource Name (ARN) of the dashboard.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSM1lYUmphRjlrWVhOb1ltOWhjbVFpSUNKdFlXbHVJ
+        aUI3Q2lBZ1pHRnphR0p2WVhKa1gyNWhiV1VnUFNBaWJYa3RaR0Z6YUdKdllYSmtJZ29LSUNCa1lY
+        Tm9ZbTloY21SZlltOWtlU0E5SUR3OFJVOUdDaUI3Q2lBZ0lDSjNhV1JuWlhSeklqb2dXd29nSUNB
+        Z0lDQWdld29nSUNBZ0lDQWdJQ0FnSW5SNWNHVWlPaUp0WlhSeWFXTWlMQW9nSUNBZ0lDQWdJQ0Fn
+        SW5naU9qQXNDaUFnSUNBZ0lDQWdJQ0FpZVNJNk1Dd0tJQ0FnSUNBZ0lDQWdJQ0ozYVdSMGFDSTZN
+        VElzQ2lBZ0lDQWdJQ0FnSUNBaWFHVnBaMmgwSWpvMkxBb2dJQ0FnSUNBZ0lDQWdJbkJ5YjNCbGNu
+        UnBaWE1pT25zS0lDQWdJQ0FnSUNBZ0lDQWdJQ0p0WlhSeWFXTnpJanBiQ2lBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0JiQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBaVFWZFRMMFZETWlJc0NpQWdJQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWlRMUJWVlhScGJHbDZZWFJwYjI0aUxBb2dJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJa2x1YzNSaGJtTmxTV1FpTEFvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lt
+        a3RNREV5TXpRMUlnb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1hRb2dJQ0FnSUNBZ0lDQWdJQ0FnWFN3
+        S0lDQWdJQ0FnSUNBZ0lDQWdJQ0p3WlhKcGIyUWlPak13TUN3S0lDQWdJQ0FnSUNBZ0lDQWdJQ0p6
+        ZEdGMElqb2lRWFpsY21GblpTSXNDaUFnSUNBZ0lDQWdJQ0FnSUNBaWNtVm5hVzl1SWpvaWRYTXRa
+        V0Z6ZEMweElpd0tJQ0FnSUNBZ0lDQWdJQ0FnSUNKMGFYUnNaU0k2SWtWRE1pQkpibk4wWVc1alpT
+        QkRVRlVpQ2lBZ0lDQWdJQ0FnSUNCOUNpQWdJQ0FnSUNCOUxBb2dJQ0FnSUNBZ2V3b2dJQ0FnSUNB
+        Z0lDQWdJblI1Y0dVaU9pSjBaWGgwSWl3S0lDQWdJQ0FnSUNBZ0lDSjRJam93TEFvZ0lDQWdJQ0Fn
+        SUNBZ0lua2lPamNzQ2lBZ0lDQWdJQ0FnSUNBaWQybGtkR2dpT2pNc0NpQWdJQ0FnSUNBZ0lDQWlh
+        R1ZwWjJoMElqb3pMQW9nSUNBZ0lDQWdJQ0FnSW5CeWIzQmxjblJwWlhNaU9uc0tJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNKdFlYSnJaRzkzYmlJNklraGxiR3h2SUhkdmNteGtJZ29nSUNBZ0lDQWdJQ0FnZlFv
+        Z0lDQWdJQ0FnZlFvZ0lDQmRDaUI5Q2lCRlQwWUtmUW89
+    import: !!binary |
+        Q2dwRGJHOTFaRmRoZEdOb0lHUmhjMmhpYjJGeVpITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdaR0Z6YUdKdllYSmtYMjVoYldWZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDJSaGMyaGliMkZ5WkM1b2RHMXNMbTFoY210a2IzZHU=

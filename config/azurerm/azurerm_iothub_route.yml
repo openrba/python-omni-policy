@@ -7,27 +7,27 @@ azurerm_iothub_route:
     arguments:
         name:
             description: The name of the route.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group under which the IotHub Route
                 resource has to be created. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         iothub_name:
             description: The name of the IoTHub to which this Route belongs. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source:
             description: 'The source that the routing rule is to be applied to. Possible
                 values include: `DeviceJobLifecycleEvents`, `DeviceLifecycleEvents`,
                 `DeviceMessages`, `Invalid`, `TwinChangeEvents`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         condition:
@@ -40,12 +40,12 @@ azurerm_iothub_route:
         endpoint_names:
             description: The list of endpoints to which messages that satisfy the
                 condition are routed. Currently only one endpoint is allowed.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
             description: Specifies whether a route is enabled.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

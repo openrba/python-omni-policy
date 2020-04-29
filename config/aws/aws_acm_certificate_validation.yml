@@ -7,7 +7,7 @@ aws_acm_certificate_validation:
     arguments:
         certificate_arn:
             description: The ARN of the certificate that is being validated.
-            required: true
+            required: false
             policy: ''
             notes: ''
         validation_record_fqdns:
@@ -22,3 +22,10 @@ aws_acm_certificate_validation:
         id:
             description: The time at which the certificate was issued
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloWTIxZlkyVnlkR2xtYVdOaGRHVmZkbUZzYVdSaGRHbHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

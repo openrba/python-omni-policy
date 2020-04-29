@@ -97,7 +97,7 @@ aws_lb_target_group:
         type:
             description: The type of sticky sessions. The only current possible value
                 is `lb_cookie`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cookie_duration:
@@ -171,3 +171,11 @@ aws_lb_target_group:
         name:
             description: The name of the Target Group
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVVlYSm5aWFFnUjNKdmRYQnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVnBj
+        aUJCVWs0c0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWWw5MFlYSm5aWFJmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

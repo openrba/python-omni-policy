@@ -7,18 +7,18 @@ aws_appmesh_virtual_service:
     arguments:
         name:
             description: The name to use for the virtual service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         mesh_name:
             description: The name of the service mesh in which to create the virtual
                 service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: The virtual service specification to apply.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -46,13 +46,13 @@ aws_appmesh_virtual_service:
         virtual_node_name:
             description: The name of the virtual node that is acting as a service
                 provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_router_name:
             description: The name of the virtual router that is acting as a service
                 provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -65,3 +65,12 @@ aws_appmesh_virtual_service:
         last_updated_date:
             description: The last update date of the virtual service.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQmNIQWdUV1Z6YUNCMmFYSjBkV0ZzSUhObGNuWnBZMlZ6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QmdiV1Z6YUY5dVlXMWxZQ0IwYjJkbGRHaGxjaUIzYVhSb0lIUm9aU0IyYVhKMGRX
+        RnNJSE5sY25acFkyVW5jeUJnYm1GdFpXQXNDbVV1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCdFpYTm9YM1pwY25SMVlXeGZjMlZ5ZG1salpTNW9kRzFzTG0xaGNtdGtiM2R1

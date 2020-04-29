@@ -7,19 +7,19 @@
         "arguments": {
             "repo": {
                 "description": "The repository to create the file in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "file": {
                 "description": "The path of the file to manage.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "content": {
                 "description": "The file content.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

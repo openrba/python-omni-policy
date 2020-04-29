@@ -7,7 +7,7 @@ aws_ec2_transit_gateway_vpc_attachment_accepter:
     arguments:
         transit_gateway_attachment_id:
             description: The ID of the EC2 Transit Gateway Attachment to manage.
-            required: true
+            required: false
             policy: ''
             notes: ''
         transit_gateway_default_route_table_association:
@@ -29,5 +29,38 @@ aws_ec2_transit_gateway_vpc_attachment_accepter:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: EC2 Transit Gateway Attachment identifier
+        dns_support:
+            description: 'Whether DNS support is enabled. Valid values: `disable`,
+                `enable`.'
+        ipv6_support:
+            description: 'Whether IPv6 support is enabled. Valid values: `disable`,
+                `enable`.'
+        subnet_ids:
+            description: Identifiers of EC2 Subnets.
+        transit_gateway_id:
+            description: Identifier of EC2 Transit Gateway.
+        vpc_id:
+            description: Identifier of EC2 VPC.
+        vpc_owner_id:
+            description: Identifier of the AWS account that owns the EC2 VPC.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDNSeVlXNXphWFJmWjJGMFpYZGhlVjkyY0dOZllYUjBZ
+        V05vYldWdWRGOWhZMk5sY0hSbGNpSWdJbVY0WVcxd2JHVWlJSHNLSUNCMGNtRnVjMmwwWDJkaGRH
+        VjNZWGxmWVhSMFlXTm9iV1Z1ZEY5cFpDQTlJQ0lrZTJGM2MxOWxZekpmZEhKaGJuTnBkRjluWVhS
+        bGQyRjVYM1p3WTE5aGRIUmhZMmh0Wlc1MExtVjRZVzF3YkdVdWFXUjlJZ29LSUNCMFlXZHpJRDBn
+        ZXdvZ0lDQWdUbUZ0WlNBOUlDSkZlR0Z0Y0d4bElHTnliM056TFdGalkyOTFiblFnWVhSMFlXTm9i
+        V1Z1ZENJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwZ1lYZHpYMlZqTWw5MGNtRnVjMmwwWDJkaGRHVjNZWGxmZG5CalgyRjBkR0ZqYUcxbGJuUmZZ
+        V05qWlhCMFpYSmdJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0IxYzJsdVp5QjBhR1VnUlVNeUlG
+        UnlZVzV6YVhRZ1IyRjBaWGRoZVNCQmRIUmhZMmh0Wlc1MElHbGtaVzUwYVdacFpYSXNJR1V1Wnk0
+        S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZmRISmhibk5wZEY5bllYUmxkMkY1WDNad1kxOWhkSFJoWTJodFpXNTBYMkZqWTJW
+        d2RHVnlMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

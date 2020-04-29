@@ -8,13 +8,13 @@
         "arguments": {
             "authentication_type": {
                 "description": "The authentication type. Valid values: `API_KEY`, `AWS_IAM`, `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "A user-supplied name for the GraphqlApi.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,23 +8,23 @@ azurerm_monitor_scheduled_query_rules_log:
     arguments:
         name:
             description: Name of the dimension.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the scheduled
                 query rule instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         criteria:
             description: A `criteria` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_source_id:
             description: The resource uri over which log search query is to be run.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -40,23 +40,23 @@ azurerm_monitor_scheduled_query_rules_log:
             notes: ''
         dimension:
             description: A `dimension` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_name:
             description: Name of the metric.  Supported metrics are listed in the
                 Azure Monitor [Microsoft.OperationalInsights/workspaces](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported#microsoftoperationalinsightsworkspaces
-            required: true
+            required: false
             policy: ''
             notes: ''
         operator:
             description: Operator for dimension values, - 'Include'.
-            required: true
+            required: false
             policy: ''
             notes: ''
         values:
             description: List of dimension values.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

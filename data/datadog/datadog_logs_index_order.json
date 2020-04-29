@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The unique name of the index order resource. ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "indexes": {
                 "description": "The index resource list. Logs are tested against the query filter of each index one by one following the order of the list.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

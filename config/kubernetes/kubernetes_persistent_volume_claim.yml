@@ -9,13 +9,13 @@ kubernetes_persistent_volume_claim:
         metadata:
             description: Standard persistent volume claim's metadata. For more info
                 see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec defines the desired characteristics of a volume requested
                 by a pod author. For more info see [Kubernetes reference](http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims)
-            required: true
+            required: false
             policy: ''
             notes: ''
         wait_until_bound:
@@ -26,3 +26,27 @@ kubernetes_persistent_volume_claim:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzQmxjbk5wYzNSbGJuUmZkbTlzZFcxbFgyTnNZ
+        V2x0SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzFsZEdGa1lYUmhJSHNLSUNBZ0lHNWhiV1VnUFNBaVpY
+        aGhiWEJzWldOc1lXbHRibUZ0WlNJS0lDQjlDaUFnYzNCbFl5QjdDaUFnSUNCaFkyTmxjM05mYlc5
+        a1pYTWdQU0JiSWxKbFlXUlhjbWwwWlUxaGJua2lYUW9nSUNBZ2NtVnpiM1Z5WTJWeklIc0tJQ0Fn
+        SUNBZ2NtVnhkV1Z6ZEhNZ1BTQjdDaUFnSUNBZ0lDQWdjM1J2Y21GblpTQTlJQ0kxUjJraUNpQWdJ
+        Q0FnSUgwS0lDQWdJSDBLSUNBZ0lIWnZiSFZ0WlY5dVlXMWxJRDBnSWlSN2EzVmlaWEp1WlhSbGMx
+        OXdaWEp6YVhOMFpXNTBYM1p2YkhWdFpTNWxlR0Z0Y0d4bExtMWxkR0ZrWVhSaExqQXVibUZ0Wlgw
+        aUNpQWdmUXA5Q2dweVpYTnZkWEpqWlNBaWEzVmlaWEp1WlhSbGMxOXdaWEp6YVhOMFpXNTBYM1p2
+        YkhWdFpTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdFpYUmhaR0YwWVNCN0NpQWdJQ0J1WVcxbElEMGdJ
+        bVY0WVcxd2JHVjJiMngxYldWdVlXMWxJZ29nSUgwS0lDQnpjR1ZqSUhzS0lDQWdJR05oY0dGamFY
+        UjVJRDBnZXdvZ0lDQWdJQ0J6ZEc5eVlXZGxJRDBnSWpFd1Iya2lDaUFnSUNCOUNpQWdJQ0JoWTJO
+        bGMzTmZiVzlrWlhNZ1BTQmJJbEpsWVdSWGNtbDBaVTFoYm5raVhRb2dJQ0FnY0dWeWMybHpkR1Z1
+        ZEY5MmIyeDFiV1ZmYzI5MWNtTmxJSHNLSUNBZ0lDQWdaMk5sWDNCbGNuTnBjM1JsYm5SZlpHbHph
+        eUI3Q2lBZ0lDQWdJQ0FnY0dSZmJtRnRaU0E5SUNKMFpYTjBMVEV5TXlJS0lDQWdJQ0FnZlFvZ0lD
+        QWdmUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwUVpYSnphWE4wWlc1MElGWnZiSFZ0WlNCRGJHRnBiU0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2FYUnpJRzVoYldWemNHRmpaU0JoYm1RZ2JtRnRaU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjR1Z5YzJsemRHVnVkRjkyYjJ4MWJXVmZZMnhoYVcwdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

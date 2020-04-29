@@ -20,13 +20,13 @@
             },
             "endpoint_region": {
                 "description": "The endpoint region. The `region` and",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "url": {
                 "description": "The endpoint url.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,37 +38,12 @@
             },
             "service_id": {
                 "description": "The endpoint service ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "endpoint_region": {
-                "description": "See Argument Reference above."
-            },
-            "url": {
-                "description": "See Argument Reference above."
-            },
-            "interface": {
-                "description": "See Argument Reference above."
-            },
-            "service_id": {
-                "description": "See Argument Reference above."
-            },
-            "service_name": {
-                "description": "The service name of the endpoint."
-            },
-            "service_type": {
-                "description": "The service type of the endpoint."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

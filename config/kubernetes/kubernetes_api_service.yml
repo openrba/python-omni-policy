@@ -9,14 +9,30 @@ kubernetes_api_service:
         metadata:
             description: Standard API service's metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec contains information for locating and communicating
                 with a server. [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status)
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgyRndhVjl6WlhKMmFXTmxJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHMWxkR0ZrWVhSaElIc0tJQ0FnSUc1aGJXVWdQU0FpZEdWeWNtRm1iM0p0TFdWNFlX
+        MXdiR1VpQ2lBZ2ZRb2dJSE53WldNZ2V3b2dJQ0FnYzJWc1pXTjBiM0lnZXdvZ0lDQWdJQ0JoY0hB
+        Z1BTQWlKSHRyZFdKbGNtNWxkR1Z6WDNCdlpDNWxlR0Z0Y0d4bExtMWxkR0ZrWVhSaExqQXViR0Zp
+        Wld4ekxtRndjSDBpQ2lBZ0lDQjlDaUFnSUNCelpYTnphVzl1WDJGbVptbHVhWFI1SUQwZ0lrTnNh
+        V1Z1ZEVsUUlnb2dJQ0FnY0c5eWRDQjdDaUFnSUNBZ0lIQnZjblFnUFNBNE1EZ3dDaUFnSUNBZ0lI
+        UmhjbWRsZEY5d2IzSjBJRDBnT0RBS0lDQWdJSDBLQ2lBZ0lDQjBlWEJsSUQwZ0lreHZZV1JDWVd4
+        aGJtTmxjaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwQlVFa2djMlZ5ZG1salpTQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnYVhSeklHNWhi
+        V1VzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZZWEJwWDNObGNuWnBZMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

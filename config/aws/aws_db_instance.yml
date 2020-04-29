@@ -125,7 +125,7 @@ aws_db_instance:
             notes: ''
         instance_class:
             description: The instance type of the RDS instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         iops:
@@ -318,3 +318,11 @@ aws_db_instance:
         character_set_name:
             description: The character set used on Oracle instances.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRVFpQkpibk4wWVc1alpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdh
+        V1JsYm5ScFptbGxjbUFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5cGJuTjBZVzVqWlM1b2RHMXNMbTFoY210a2IzZHU=

@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name attribute in the resource `datadog_logs_pipeline_order` needs to be unique. It's recommended to use the same value as the resource `NAME`. ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "pipelines": {
                 "description": "The pipeline IDs list. The order of pipeline IDs in this attribute defines the overall pipeline order for logs.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

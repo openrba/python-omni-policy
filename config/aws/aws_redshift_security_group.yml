@@ -7,7 +7,7 @@ aws_redshift_security_group:
     arguments:
         name:
             description: The name of the Redshift security group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -25,3 +25,14 @@ aws_redshift_security_group:
         id:
             description: The Redshift security group ID.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbVZrYzJocFpuUmZjMlZqZFhKcGRIbGZaM0p2ZFhBaUlDSmta
+        V1poZFd4MElpQjdDaUFnYm1GdFpTQTlJQ0p5WldSemFHbG1kQzF6WnlJS0NpQWdhVzVuY21WemN5
+        QjdDaUFnSUNCamFXUnlJRDBnSWpFd0xqQXVNQzR3THpJMElnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwU1pXUnphR2xtZENCelpXTjFjbWwwZVNCbmNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WldSemFHbG1kRjl6WldOMWNtbDBlVjluY205MWNDNW9kRzFzTG0xaGNtdGtiM2R1

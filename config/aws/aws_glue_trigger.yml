@@ -8,7 +8,7 @@ aws_glue_trigger:
         actions:
             description: List of actions initiated by this trigger when it fires.
                 Defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -24,7 +24,7 @@ aws_glue_trigger:
             notes: ''
         name:
             description: The name of the trigger.
-            required: true
+            required: false
             policy: ''
             notes: ''
         predicate:
@@ -47,7 +47,7 @@ aws_glue_trigger:
         type:
             description: The type of trigger. Valid values are `CONDITIONAL`, `ON_DEMAND`,
                 and `SCHEDULED`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         workflow_name:
@@ -62,3 +62,11 @@ aws_glue_trigger:
         id:
             description: Trigger name
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSGJIVmxJRlJ5YVdkblpYSnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCZ2JtRnRa
+        V0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkhWbFgzUnlhV2RuWlhJdWFIUnRiQzV0WVhKclpHOTNiZz09

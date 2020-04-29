@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name of the alias.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "routing_strategy": {
                 "description": "Specifies the fleet and/or routing type to use for the alias.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

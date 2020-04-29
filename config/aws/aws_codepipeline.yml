@@ -7,7 +7,7 @@ aws_codepipeline:
     arguments:
         name:
             description: The action declaration's name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
@@ -19,7 +19,7 @@ aws_codepipeline:
         artifact_store:
             description: One or more artifact_store blocks. Artifact stores are documented
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         stage:
@@ -35,12 +35,12 @@ aws_codepipeline:
         location:
             description: The location where AWS CodePipeline stores artifacts for
                 a pipeline; currently only `S3` is supported.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of key; currently only `KMS` is supported
-            required: true
+            required: false
             policy: ''
             notes: ''
         encryption_key:
@@ -57,25 +57,25 @@ aws_codepipeline:
             notes: ''
         id:
             description: The KMS key ARN or ID
-            required: true
+            required: false
             policy: ''
             notes: ''
         action:
             description: The action(s
-            required: true
+            required: false
             policy: ''
             notes: ''
         category:
             description: A category defines what kind of action can be taken in the
                 stage, and constrains the provider type for the action. Possible values
                 are `Approval`, `Build`, `Deploy`, `Invoke`, `Source` and `Test`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         owner:
             description: The creator of the action being called. Possible values are
                 `AWS`, `Custom` and `ThirdParty`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         provider:
@@ -83,12 +83,12 @@ aws_codepipeline:
                 providers are determined by the action category. For example, an action
                 in the Deploy category type might have a provider of AWS CodeDeploy,
                 which would be specified as CodeDeploy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
             description: A string that identifies the action type.
-            required: true
+            required: false
             policy: ''
             notes: ''
         configuration:
@@ -125,3 +125,76 @@ aws_codepipeline:
         arn:
             description: The codepipeline ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpWTI5a1pYQnBjR1ZzYVc1bFgySjFZ
+        MnRsZENJZ2V3b2dJR0oxWTJ0bGRDQTlJQ0owWlhOMExXSjFZMnRsZENJS0lDQmhZMndnSUNBZ1BT
+        QWljSEpwZG1GMFpTSUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXBZVzFmY205c1pTSWdJbU52WkdW
+        d2FYQmxiR2x1WlY5eWIyeGxJaUI3Q2lBZ2JtRnRaU0E5SUNKMFpYTjBMWEp2YkdVaUNnb2dJR0Z6
+        YzNWdFpWOXliMnhsWDNCdmJHbGplU0E5SUR3OFJVOUdDbnNLSUNBaVZtVnljMmx2YmlJNklDSXlN
+        REV5TFRFd0xURTNJaXdLSUNBaVUzUmhkR1Z0Wlc1MElqb2dXd29nSUNBZ2V3b2dJQ0FnSUNBaVJX
+        Wm1aV04wSWpvZ0lrRnNiRzkzSWl3S0lDQWdJQ0FnSWxCeWFXNWphWEJoYkNJNklIc0tJQ0FnSUNB
+        Z0lDQWlVMlZ5ZG1salpTSTZJQ0pqYjJSbGNHbHdaV3hwYm1VdVlXMWhlbTl1WVhkekxtTnZiU0lL
+        SUNBZ0lDQWdmU3dLSUNBZ0lDQWdJa0ZqZEdsdmJpSTZJQ0p6ZEhNNlFYTnpkVzFsVW05c1pTSUtJ
+        Q0FnSUgwS0lDQmRDbjBLUlU5R0NuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXRnRYM0p2YkdWZmNH
+        OXNhV041SWlBaVkyOWtaWEJwY0dWc2FXNWxYM0J2YkdsamVTSWdld29nSUc1aGJXVWdQU0FpWTI5
+        a1pYQnBjR1ZzYVc1bFgzQnZiR2xqZVNJS0lDQnliMnhsSUQwZ0lpUjdZWGR6WDJsaGJWOXliMnhs
+        TG1OdlpHVndhWEJsYkdsdVpWOXliMnhsTG1sa2ZTSUtDaUFnY0c5c2FXTjVJRDBnUER4RlQwWUtl
+        d29nSUNKV1pYSnphVzl1SWpvZ0lqSXdNVEl0TVRBdE1UY2lMQW9nSUNKVGRHRjBaVzFsYm5RaU9p
+        QmJDaUFnSUNCN0NpQWdJQ0FnSUNKRlptWmxZM1FpT2lKQmJHeHZkeUlzQ2lBZ0lDQWdJQ0pCWTNS
+        cGIyNGlPaUJiQ2lBZ0lDQWdJQ0FnSW5Nek9rZGxkRTlpYW1WamRDSXNDaUFnSUNBZ0lDQWdJbk16
+        T2tkbGRFOWlhbVZqZEZabGNuTnBiMjRpTEFvZ0lDQWdJQ0FnSUNKek16cEhaWFJDZFdOclpYUlda
+        WEp6YVc5dWFXNW5JaXdLSUNBZ0lDQWdJQ0FpY3pNNlVIVjBUMkpxWldOMElnb2dJQ0FnSUNCZExB
+        b2dJQ0FnSUNBaVVtVnpiM1Z5WTJVaU9pQmJDaUFnSUNBZ0lDQWdJaVI3WVhkelgzTXpYMkoxWTJ0
+        bGRDNWpiMlJsY0dsd1pXeHBibVZmWW5WamEyVjBMbUZ5Ym4waUxBb2dJQ0FnSUNBZ0lDSWtlMkYz
+        YzE5ek0xOWlkV05yWlhRdVkyOWtaWEJwY0dWc2FXNWxYMkoxWTJ0bGRDNWhjbTU5THlvaUNpQWdJ
+        Q0FnSUYwS0lDQWdJSDBzQ2lBZ0lDQjdDaUFnSUNBZ0lDSkZabVpsWTNRaU9pQWlRV3hzYjNjaUxB
+        b2dJQ0FnSUNBaVFXTjBhVzl1SWpvZ1d3b2dJQ0FnSUNBZ0lDSmpiMlJsWW5WcGJHUTZRbUYwWTJo
+        SFpYUkNkV2xzWkhNaUxBb2dJQ0FnSUNBZ0lDSmpiMlJsWW5WcGJHUTZVM1JoY25SQ2RXbHNaQ0lL
+        SUNBZ0lDQWdYU3dLSUNBZ0lDQWdJbEpsYzI5MWNtTmxJam9nSWlvaUNpQWdJQ0I5Q2lBZ1hRcDlD
+        a1ZQUmdwOUNncGtZWFJoSUNKaGQzTmZhMjF6WDJGc2FXRnpJaUFpY3pOcmJYTnJaWGtpSUhzS0lD
+        QnVZVzFsSUQwZ0ltRnNhV0Z6TDIxNVMyMXpTMlY1SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJO
+        dlpHVndhWEJsYkdsdVpTSWdJbU52WkdWd2FYQmxiR2x1WlNJZ2V3b2dJRzVoYldVZ0lDQWdJRDBn
+        SW5SbUxYUmxjM1F0Y0dsd1pXeHBibVVpQ2lBZ2NtOXNaVjloY200Z1BTQWlKSHRoZDNOZmFXRnRY
+        M0p2YkdVdVkyOWtaWEJwY0dWc2FXNWxYM0p2YkdVdVlYSnVmU0lLQ2lBZ1lYSjBhV1poWTNSZmMz
+        UnZjbVVnZXdvZ0lDQWdiRzlqWVhScGIyNGdQU0FpSkh0aGQzTmZjek5mWW5WamEyVjBMbU52WkdW
+        d2FYQmxiR2x1WlY5aWRXTnJaWFF1WW5WamEyVjBmU0lLSUNBZ0lIUjVjR1VnSUNBZ0lEMGdJbE16
+        SWdvS0lDQWdJR1Z1WTNKNWNIUnBiMjVmYTJWNUlIc0tJQ0FnSUNBZ2FXUWdJQ0E5SUNJa2UyUmhk
+        R0V1WVhkelgydHRjMTloYkdsaGN5NXpNMnR0YzJ0bGVTNWhjbTU5SWdvZ0lDQWdJQ0IwZVhCbElE
+        MGdJa3ROVXlJS0lDQWdJSDBLSUNCOUNnb2dJSE4wWVdkbElIc0tJQ0FnSUc1aGJXVWdQU0FpVTI5
+        MWNtTmxJZ29LSUNBZ0lHRmpkR2x2YmlCN0NpQWdJQ0FnSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaVUyOTFjbU5sSWdvZ0lDQWdJQ0JqWVhSbFoyOXllU0FnSUNBZ0lDQWdJRDBnSWxOdmRYSmpa
+        U0lLSUNBZ0lDQWdiM2R1WlhJZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pVYUdseVpGQmhjblI1SWdvZ0lD
+        QWdJQ0J3Y205MmFXUmxjaUFnSUNBZ0lDQWdJRDBnSWtkcGRFaDFZaUlLSUNBZ0lDQWdkbVZ5YzJs
+        dmJpQWdJQ0FnSUNBZ0lDQTlJQ0l4SWdvZ0lDQWdJQ0J2ZFhSd2RYUmZZWEowYVdaaFkzUnpJRDBn
+        V3lKemIzVnlZMlZmYjNWMGNIVjBJbDBLQ2lBZ0lDQWdJR052Ym1acFozVnlZWFJwYjI0Z1BTQjdD
+        aUFnSUNBZ0lDQWdUM2R1WlhJZ0lEMGdJbTE1TFc5eVoyRnVhWHBoZEdsdmJpSUtJQ0FnSUNBZ0lD
+        QlNaWEJ2SUNBZ1BTQWlkR1Z6ZENJS0lDQWdJQ0FnSUNCQ2NtRnVZMmdnUFNBaWJXRnpkR1Z5SWdv
+        Z0lDQWdJQ0I5Q2lBZ0lDQjlDaUFnZlFvS0lDQnpkR0ZuWlNCN0NpQWdJQ0J1WVcxbElEMGdJa0ox
+        YVd4a0lnb0tJQ0FnSUdGamRHbHZiaUI3Q2lBZ0lDQWdJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdQ
+        U0FpUW5WcGJHUWlDaUFnSUNBZ0lHTmhkR1ZuYjNKNUlDQWdJQ0FnSUNBZ1BTQWlRblZwYkdRaUNp
+        QWdJQ0FnSUc5M2JtVnlJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVFWZFRJZ29nSUNBZ0lDQndjbTkyYVdS
+        bGNpQWdJQ0FnSUNBZ0lEMGdJa052WkdWQ2RXbHNaQ0lLSUNBZ0lDQWdhVzV3ZFhSZllYSjBhV1po
+        WTNSeklDQTlJRnNpYzI5MWNtTmxYMjkxZEhCMWRDSmRDaUFnSUNBZ0lHOTFkSEIxZEY5aGNuUnBa
+        bUZqZEhNZ1BTQmJJbUoxYVd4a1gyOTFkSEIxZENKZENpQWdJQ0FnSUhabGNuTnBiMjRnSUNBZ0lD
+        QWdJQ0FnUFNBaU1TSUtDaUFnSUNBZ0lHTnZibVpwWjNWeVlYUnBiMjRnUFNCN0NpQWdJQ0FnSUNB
+        Z1VISnZhbVZqZEU1aGJXVWdQU0FpZEdWemRDSUtJQ0FnSUNBZ2ZRb2dJQ0FnZlFvZ0lIMEtDaUFn
+        YzNSaFoyVWdld29nSUNBZ2JtRnRaU0E5SUNKRVpYQnNiM2tpQ2dvZ0lDQWdZV04wYVc5dUlIc0tJ
+        Q0FnSUNBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUQwZ0lrUmxjR3h2ZVNJS0lDQWdJQ0FnWTJGMFpX
+        ZHZjbmtnSUNBZ0lDQWdJRDBnSWtSbGNHeHZlU0lLSUNBZ0lDQWdiM2R1WlhJZ0lDQWdJQ0FnSUNB
+        Z0lEMGdJa0ZYVXlJS0lDQWdJQ0FnY0hKdmRtbGtaWElnSUNBZ0lDQWdJRDBnSWtOc2IzVmtSbTl5
+        YldGMGFXOXVJZ29nSUNBZ0lDQnBibkIxZEY5aGNuUnBabUZqZEhNZ1BTQmJJbUoxYVd4a1gyOTFk
+        SEIxZENKZENpQWdJQ0FnSUhabGNuTnBiMjRnSUNBZ0lDQWdJQ0E5SUNJeElnb0tJQ0FnSUNBZ1ky
+        OXVabWxuZFhKaGRHbHZiaUE5SUhzS0lDQWdJQ0FnSUNCQlkzUnBiMjVOYjJSbElDQWdJQ0E5SUNK
+        U1JWQk1RVU5GWDA5T1gwWkJTVXhWVWtVaUNpQWdJQ0FnSUNBZ1EyRndZV0pwYkdsMGFXVnpJQ0Fn
+        UFNBaVEwRlFRVUpKVEVsVVdWOUJWVlJQWDBWWVVFRk9SQ3hEUVZCQlFrbE1TVlJaWDBsQlRTSUtJ
+        Q0FnSUNBZ0lDQlBkWFJ3ZFhSR2FXeGxUbUZ0WlNBOUlDSkRjbVZoZEdWVGRHRmphMDkxZEhCMWRD
+        NXFjMjl1SWdvZ0lDQWdJQ0FnSUZOMFlXTnJUbUZ0WlNBZ0lDQWdJRDBnSWsxNVUzUmhZMnNpQ2lB
+        Z0lDQWdJQ0FnVkdWdGNHeGhkR1ZRWVhSb0lDQWdQU0FpWW5WcGJHUmZiM1YwY0hWME9qcHpZVzB0
+        ZEdWdGNHeGhkR1ZrTG5saGJXd2lDaUFnSUNBZ0lIMEtJQ0FnSUgwS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwRGIyUmxVR2x3Wld4cGJtVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdi
+        bUZ0WlN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJSbGNHbHdaV3hwYm1VdWJXRnlhMlJ2ZDI0PQ==

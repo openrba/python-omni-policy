@@ -7,7 +7,7 @@ aws_db_security_group:
     arguments:
         name:
             description: The name of the DB security group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,7 +18,7 @@ aws_db_security_group:
             notes: ''
         ingress:
             description: A list of ingress rules.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -32,3 +32,14 @@ aws_db_security_group:
         arn:
             description: The arn of the DB security group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0pmYzJWamRYSnBkSGxmWjNKdmRYQWlJQ0prWldaaGRXeDBJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKeVpITmZjMmNpQ2dvZ0lHbHVaM0psYzNNZ2V3b2dJQ0FnWTJsa2Np
+        QTlJQ0l4TUM0d0xqQXVNQzh5TkNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwRVFpQlRaV04xY21sMGVTQm5jbTkxY0hNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2JtRnRaV0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5elpXTjFjbWwwZVY5bmNtOTFjQzVvZEcxc0xtMWhjbXRrYjNkdQ==

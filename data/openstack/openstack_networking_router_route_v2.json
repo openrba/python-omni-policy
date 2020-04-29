@@ -14,37 +14,24 @@
             },
             "router_id": {
                 "description": "ID of the router this routing entry belongs to. Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_cidr": {
                 "description": "CIDR block to match on the packet\u2019s destination IP. Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "next_hop": {
                 "description": "IP address of the next hop gateway.  Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "router_id": {
-                "description": "See Argument Reference above."
-            },
-            "destination_cidr": {
-                "description": "See Argument Reference above."
-            },
-            "next_hop": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

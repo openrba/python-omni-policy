@@ -7,7 +7,7 @@ aws_dynamodb_table:
     arguments:
         name:
             description: The name of the table, this needs to be unique
-            required: true
+            required: false
             policy: ''
             notes: ''
         billing_mode:
@@ -42,7 +42,7 @@ aws_dynamodb_table:
         attribute:
             description: 'List of nested attribute definitions. Only required for
                 `hash_key` and `range_key` attributes. Each attribute has two properties:'
-            required: true
+            required: false
             policy: ''
             notes: ''
         ttl:

@@ -52,5 +52,26 @@ aws_ec2_transit_gateway:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: EC2 Transit Gateway Amazon Resource Name (ARN)
+        association_default_route_table_id:
+            description: Identifier of the default association route table
+        id:
+            description: EC2 Transit Gateway identifier
+        owner_id:
+            description: Identifier of the AWS account that owns the EC2 Transit Gateway
+        propagation_default_route_table_id:
+            description: Identifier of the default propagation route table
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDNSeVlXNXphWFJmWjJGMFpYZGhlU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQmtaWE5qY21sd2RHbHZiaUE5SUNKbGVHRnRjR3hsSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMlZqTWw5MGNtRnVjMmwwWDJkaGRHVjNZWGxnSUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0JpZVNCMWMybHVaeUIwYUdVZ1JVTXlJRlJ5WVc1emFYUWdSMkYwWlhkaGVTQnBaR1Z1ZEdsbWFX
+        VnlMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZmRISmhibk5wZEY5bllYUmxkMkY1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

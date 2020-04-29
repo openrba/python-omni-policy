@@ -8,12 +8,12 @@ vault_github_team:
         backend:
             description: Path where the github auth backend is mounted. Defaults to
                 `github`
-            required: true
+            required: false
             policy: ''
             notes: ''
         team:
             description: 'GitHub team name in "slugified" format, for example: Terraform'
-            required: true
+            required: false
             policy: ''
             notes: ''
         policies:
@@ -24,3 +24,17 @@ vault_github_team:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjluYVhSb2RXSmZZWFYwYUY5aVlXTnJaVzVrSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzl5WjJGdWFYcGhkR2x2YmlBOUlDSnRlVzl5WnlJS2ZRb0tjbVZ6YjNWeVky
+        VWdJblpoZFd4MFgyZHBkR2gxWWw5MFpXRnRJaUFpZEdaZlpHVjJjeUlnZXdvZ0lHSmhZMnRsYm1R
+        Z0lEMGdkbUYxYkhSZloybDBhSFZpWDJGMWRHaGZZbUZqYTJWdVpDNWxlR0Z0Y0d4bExtbGtDaUFn
+        ZEdWaGJTQWdJQ0FnUFNBaWRHVnljbUZtYjNKdExXUmxkbVZzYjNCbGNuTWlDaUFnY0c5c2FXTnBa
+        WE1nUFNCYkltUmxkbVZzYjNCbGNpSXNJQ0p5WldGa0xXOXViSGtpWFFwOUNnPT0=
+    import: !!binary |
+        Q2dwSGFYUm9kV0lnZEdWaGJTQnRZWEJ3YVc1bmN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQndZWFJvWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJkcGRHaDFZbDkwWldGdExtaDBiV3d1YldRPQ==

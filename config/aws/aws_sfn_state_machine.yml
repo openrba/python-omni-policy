@@ -7,17 +7,17 @@ aws_sfn_state_machine:
     arguments:
         name:
             description: The name of the state machine.
-            required: true
+            required: false
             policy: ''
             notes: ''
         definition:
             description: The Amazon States Language definition of the state machine.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -34,3 +34,22 @@ aws_sfn_state_machine:
             description: The current status of the state machine. Either "ACTIVE"
                 or "DELETING".
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ0xpNHVDZ3B5WlhOdmRYSmpaU0FpWVhkelgzTm1ibDl6ZEdGMFpWOXRZV05vYVc1bElpQWlj
+        Mlp1WDNOMFlYUmxYMjFoWTJocGJtVWlJSHNLSUNCdVlXMWxJQ0FnSUNBOUlDSnRlUzF6ZEdGMFpT
+        MXRZV05vYVc1bElnb2dJSEp2YkdWZllYSnVJRDBnSWlSN1lYZHpYMmxoYlY5eWIyeGxMbWxoYlY5
+        bWIzSmZjMlp1TG1GeWJuMGlDZ29nSUdSbFptbHVhWFJwYjI0Z1BTQThQRVZQUmdwN0NpQWdJa052
+        YlcxbGJuUWlPaUFpUVNCSVpXeHNieUJYYjNKc1pDQmxlR0Z0Y0d4bElHOW1JSFJvWlNCQmJXRjZi
+        MjRnVTNSaGRHVnpJRXhoYm1kMVlXZGxJSFZ6YVc1bklHRnVJRUZYVXlCTVlXMWlaR0VnUm5WdVkz
+        UnBiMjRpTEFvZ0lDSlRkR0Z5ZEVGMElqb2dJa2hsYkd4dlYyOXliR1FpTEFvZ0lDSlRkR0YwWlhN
+        aU9pQjdDaUFnSUNBaVNHVnNiRzlYYjNKc1pDSTZJSHNLSUNBZ0lDQWdJbFI1Y0dVaU9pQWlWR0Z6
+        YXlJc0NpQWdJQ0FnSUNKU1pYTnZkWEpqWlNJNklDSWtlMkYzYzE5c1lXMWlaR0ZmWm5WdVkzUnBi
+        MjR1YkdGdFltUmhMbUZ5Ym4waUxBb2dJQ0FnSUNBaVJXNWtJam9nZEhKMVpRb2dJQ0FnZlFvZ0lI
+        MEtmUXBGVDBZS2ZRbz0=
+    import: !!binary |
+        Q2dwVGRHRjBaU0JOWVdOb2FXNWxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0JoY201Z0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Wm01ZmMzUmhkR1ZmYldGamFHbHVaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

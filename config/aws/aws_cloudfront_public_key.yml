@@ -14,7 +14,7 @@ aws_cloudfront_public_key:
         encoded_key:
             description: The encoded public key that you want to add to CloudFront
                 to use with features like field-level encryption.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -36,3 +36,13 @@ aws_cloudfront_public_key:
         id:
             description: 'The identifier for the public key. For example: `K3D5EWEUDCCXON`.'
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSbWNtOXVkRjl3ZFdKc2FXTmZhMlY1SWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJR052YlcxbGJuUWdJQ0FnSUQwZ0luUmxjM1FnY0hWaWJHbGpJR3RsZVNJS0lD
+        QmxibU52WkdWa1gydGxlU0E5SUNJa2UyWnBiR1VvSW5CMVlteHBZMTlyWlhrdWNHVnRJaWw5SWdv
+        Z0lHNWhiV1VnSUNBZ0lDQWdJRDBnSW5SbGMzUmZhMlY1SWdwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpHWnliMjUwWDNCMVlteHBZMTlyWlhrdWFIUnRiQzV0WVhKclpHOTNiZz09

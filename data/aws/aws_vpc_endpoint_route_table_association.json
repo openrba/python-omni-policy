@@ -8,13 +8,13 @@
         "arguments": {
             "route_table_id": {
                 "description": "Identifier of the EC2 Route Table to be associated with the VPC Endpoint.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vpc_endpoint_id": {
                 "description": "Identifier of the VPC Endpoint with which the EC2 Route Table will be associated.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

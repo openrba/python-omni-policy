@@ -12,7 +12,7 @@ openstack_networking_quota_v2:
             notes: ''
         project_id:
             description: ID of the project to manage quota. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         floatingip:
@@ -60,27 +60,25 @@ openstack_networking_quota_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        project_id:
-            description: See Argument Reference above.
-        floatingip:
-            description: See Argument Reference above.
-        network:
-            description: See Argument Reference above.
-        port:
-            description: See Argument Reference above.
-        rbac_policy:
-            description: See Argument Reference above.
-        router:
-            description: See Argument Reference above.
-        security_group:
-            description: See Argument Reference above.
-        security_group_rule:
-            description: See Argument Reference above.
-        subnet:
-            description: See Argument Reference above.
-        subnetpool:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXUmxiblJwZEhsZmNISnZhbVZqZEY5Mk1pSWdJ
+        bkJ5YjJwbFkzUmZNU0lnZXdvZ0lHNWhiV1VnUFNCd2NtOXFaV04wWHpFS2ZRb0tjbVZ6YjNWeVky
+        VWdJbTl3Wlc1emRHRmphMTl1WlhSM2IzSnJhVzVuWDNGMWIzUmhYM1l5SWlBaWNYVnZkR0ZmTVNJ
+        Z2V3b2dJSEJ5YjJwbFkzUmZhV1FnSUNBZ0lDQWdJQ0FnUFNBaUpIdHZjR1Z1YzNSaFkydGZhV1Js
+        Ym5ScGRIbGZjSEp2YW1WamRGOTJNaTV3Y205cVpXTjBYekV1YVdSOUlnb2dJR1pzYjJGMGFXNW5h
+        WEFnSUNBZ0lDQWdJQ0FnUFNBeE1Bb2dJRzVsZEhkdmNtc2dJQ0FnSUNBZ0lDQWdJQ0FnUFNBMENp
+        QWdjRzl5ZENBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURFd01Bb2dJSEppWVdOZmNHOXNhV041SUNB
+        Z0lDQWdJQ0FnUFNBeE1Bb2dJSEp2ZFhSbGNpQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBMENpQWdjMlZq
+        ZFhKcGRIbGZaM0p2ZFhBZ0lDQWdJQ0E5SURFd0NpQWdjMlZqZFhKcGRIbGZaM0p2ZFhCZmNuVnNa
+        U0E5SURFd01Bb2dJSE4xWW01bGRDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBNENpQWdjM1ZpYm1WMGNH
+        OXZiQ0FnSUNBZ0lDQWdJQ0E5SURJS2ZRbz0=
+    import: !!binary |
+        Q2dwUmRXOTBZWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JnY0hKdmFtVmpk
+        RjlwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0YxYjNSaFgzWXlMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

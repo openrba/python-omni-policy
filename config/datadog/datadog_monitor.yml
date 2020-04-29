@@ -10,23 +10,23 @@ datadog_monitor:
             description: The type of the monitor. The mapping from these types to
                 the types found in the Datadog Web UI can be found in the Datadog
                 API [documentation](https://docs.datadoghq.com/api/?lang=python#create-a-monitor
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Name of Datadog monitor
-            required: true
+            required: false
             policy: ''
             notes: ''
         query:
             description: The monitor query to notify on. Note this is not the same
                 query you see in the UI and
-            required: true
+            required: false
             policy: ''
             notes: ''
         message:
             description: A message to include with notifications for this monitor.
-            required: true
+            required: false
             policy: ''
             notes: ''
         escalation_message:
@@ -129,3 +129,30 @@ datadog_monitor:
         id:
             description: ID of the Datadog monitor
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRVJoZEdGa2IyY2diVzl1YVhSdmNncHlaWE52ZFhKalpTQWla
+        R0YwWVdSdloxOXRiMjVwZEc5eUlpQWlabTl2SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSWs1aGJXVWdabTl5SUcxdmJtbDBiM0lnWm05dklnb2dJSFI1Y0dVZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0E5SUNKdFpYUnlhV01nWVd4bGNuUWlDaUFnYldWemMyRm5aU0FnSUNBZ0lDQWdJQ0Fn
+        SUQwZ0lrMXZibWwwYjNJZ2RISnBaMmRsY21Wa0xpQk9iM1JwWm5rNklFQm9hWEJqYUdGMExXTm9Z
+        VzV1Wld3aUNpQWdaWE5qWVd4aGRHbHZibDl0WlhOellXZGxJRDBnSWtWelkyRnNZWFJwYjI0Z2JX
+        VnpjMkZuWlNCQWNHRm5aWEprZFhSNUlnb0tJQ0J4ZFdWeWVTQTlJQ0poZG1jb2JHRnpkRjh4YUNr
+        NllYWm5PbUYzY3k1bFl6SXVZM0IxZTJWdWRtbHliMjV0Wlc1ME9tWnZieXhvYjNOME9tWnZiMzBn
+        WW5rZ2UyaHZjM1I5SUQ0Z05DSUtDaUFnZEdoeVpYTm9iMnhrY3lBOUlIc0tJQ0FnSUc5cklDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ01Bb2dJQ0FnZDJGeWJtbHVaeUFnSUNBZ0lDQWdJQ0FnUFNBeUNp
+        QWdJQ0IzWVhKdWFXNW5YM0psWTI5MlpYSjVJQ0E5SURFS0lDQWdJR055YVhScFkyRnNJQ0FnSUNB
+        Z0lDQWdJRDBnTkFvZ0lDQWdZM0pwZEdsallXeGZjbVZqYjNabGNua2dQU0F6Q2lBZ2ZRb0tJQ0J1
+        YjNScFpubGZibTlmWkdGMFlTQWdJQ0E5SUdaaGJITmxDaUFnY21WdWIzUnBabmxmYVc1MFpYSjJZ
+        V3dnUFNBMk1Bb0tJQ0J1YjNScFpubGZZWFZrYVhRZ1BTQm1ZV3h6WlFvZ0lIUnBiV1Z2ZFhSZmFD
+        QWdJQ0E5SURZd0NpQWdhVzVqYkhWa1pWOTBZV2R6SUQwZ2RISjFaUW9LSUNBaklHbG5ibTl5WlNC
+        aGJua2dZMmhoYm1kbGN5QnBiaUJ6YVd4bGJtTmxaQ0IyWVd4MVpUc2dkWE5wYm1jZ2MybHNaVzVq
+        WldRZ2FYTWdaR1Z3Y21WallYUmxaQ0JwYmlCbVlYWnZjaUJ2WmlCa2IzZHVkR2x0WlhNS0lDQnNh
+        V1psWTNsamJHVWdld29nSUNBZ2FXZHViM0psWDJOb1lXNW5aWE1nUFNCYmMybHNaVzVqWldSZENp
+        QWdmUW9LSUNCMFlXZHpJRDBnV3lKbWIyODZZbUZ5SWl3Z0ltSmhlaUpkQ24wSw==
+    import: !!binary |
+        Q2dwTmIyNXBkRzl5Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsYVhJZ2JuVnRa
+        WEpwWXlCSlJDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJXOXVhWFJ2Y2k1b2RHMXNMbTFoY210a2IzZHU=

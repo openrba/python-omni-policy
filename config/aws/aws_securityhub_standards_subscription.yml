@@ -7,7 +7,7 @@ aws_securityhub_standards_subscription:
     arguments:
         standards_arn:
             description: The ARN of a standard - see below.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -15,3 +15,24 @@ aws_securityhub_standards_subscription:
             description: The ARN of a resource that represents your subscription to
                 a supported standard.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbG9kV0pmWVdOamIzVnVkQ0lnSW1WNFlXMXdi
+        R1VpSUh0OUNncHlaWE52ZFhKalpTQWlZWGR6WDNObFkzVnlhWFI1YUhWaVgzTjBZVzVrWVhKa2Mx
+        OXpkV0p6WTNKcGNIUnBiMjRpSUNKamFYTWlJSHNLSUNCa1pYQmxibVJ6WDI5dUlDQWdJRDBnV3lK
+        aGQzTmZjMlZqZFhKcGRIbG9kV0pmWVdOamIzVnVkQzVsZUdGdGNHeGxJbDBLSUNCemRHRnVaR0Z5
+        WkhOZllYSnVJRDBnSW1GeWJqcGhkM002YzJWamRYSnBkSGxvZFdJNk9qcHlkV3hsYzJWMEwyTnBj
+        eTFoZDNNdFptOTFibVJoZEdsdmJuTXRZbVZ1WTJodFlYSnJMM1l2TVM0eUxqQWlDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbG9kV0pmYzNSaGJtUmhjbVJ6WDNOMVluTmpjbWx3ZEds
+        dmJpSWdJbkJqYVY4ek1qRWlJSHNLSUNCa1pYQmxibVJ6WDI5dUlDQWdJRDBnV3lKaGQzTmZjMlZq
+        ZFhKcGRIbG9kV0pmWVdOamIzVnVkQzVsZUdGdGNHeGxJbDBLSUNCemRHRnVaR0Z5WkhOZllYSnVJ
+        RDBnSW1GeWJqcGhkM002YzJWamRYSnBkSGxvZFdJNmRYTXRaV0Z6ZEMweE9qcHpkR0Z1WkdGeVpI
+        TXZjR05wTFdSemN5OTJMek11TWk0eElncDlDZz09
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSWRXSWdjM1JoYm1SaGNtUnpJSE4xWW5OamNtbHdkR2x2Ym5NZ1kyRnVJ
+        R0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCemRHRnVaR0Z5WkhNZ2MzVmljMk55YVhCMGFX
+        OXVJRUZTVGl3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WldOMWNtbDBlV2gxWWw5emRHRnVaR0Z5WkhOZmMzVmljMk55YVhCMGFXOXVMbTFoY210
+        a2IzZHU=

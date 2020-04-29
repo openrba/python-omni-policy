@@ -8,19 +8,19 @@
         "arguments": {
             "alarm_name": {
                 "description": "The descriptive name for the alarm. This name must be unique within the user's AWS account",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "comparison_operator": {
                 "description": "The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "evaluation_periods": {
                 "description": "The number of periods over which data is compared to the specified threshold.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

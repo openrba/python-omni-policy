@@ -8,13 +8,13 @@ aws_s3_bucket_analysis_configuration:
         bucket:
             description: The name of the bucket this analytics configuration is associated
                 with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Unique identifier of the analytics configuration for the
                 bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter:
@@ -40,7 +40,7 @@ aws_s3_bucket_analysis_configuration:
             notes: ''
         data_export:
             description: Data export configuration (documented below).
-            required: true
+            required: false
             policy: ''
             notes: ''
         output_schema_version:
@@ -52,18 +52,18 @@ aws_s3_bucket_analysis_configuration:
         destination:
             description: Specifies the destination for the exported analytics data
                 (documented below).
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_bucket_destination:
             description: Analytics data export currently only supports an S3 bucket
                 destination (documented below).
-            required: true
+            required: false
             policy: ''
             notes: ''
         bucket_arn:
             description: The ARN of the destination bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bucket_account_id:
@@ -79,3 +79,13 @@ aws_s3_bucket_analysis_configuration:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVE15QmlkV05yWlhRZ1lXNWhiSGwwYVdOeklHTnZibVpwWjNWeVlYUnBiMjV6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QmdZblZqYTJWME9tRnVZV3g1ZEdsamMyQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6TTE5aWRXTnJaWFJmWVc1aGJIbHphWE5mWTI5dVptbG5kWEpoZEdsdmJpNW9kRzFzTG0x
+        aGNtdGtiM2R1

@@ -22,24 +22,24 @@ openstack_lb_l7rule_v2:
             notes: ''
         type:
             description: The L7 Rule type - can either be COOKIE, FILE\_TYPE, HEADER,
-            required: true
+            required: false
             policy: ''
             notes: ''
         compare_type:
             description: The comparison type for the L7 rule - can either be
-            required: true
+            required: false
             policy: ''
             notes: ''
         l7policy_id:
             description: The ID of the L7 Policy to query. Changing this creates a
                 new
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: The value to use for the comparison. For example, the file
                 type to
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
@@ -59,27 +59,46 @@ openstack_lb_l7rule_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the L7 Rule.
-        region:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        type:
-            description: See Argument Reference above.
-        compare_type:
-            description: See Argument Reference above.
-        l7policy_id:
-            description: See Argument Reference above.
-        value:
-            description: See Argument Reference above.
-        key:
-            description: See Argument Reference above.
-        invert:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        listener_id:
-            description: The ID of the Listener owning this resource.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlibVYwZDI5eWEx
+        OHhJZ29nSUdGa2JXbHVYM04wWVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNK
+        dmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpkV0p1WlhSZmRqSWlJQ0p6ZFdKdVpYUmZNU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpYzNWaWJtVjBYekVpQ2lBZ1kybGtjaUFnSUNBZ0lDQTlJ
+        Q0l4T1RJdU1UWTRMakU1T1M0d0x6STBJZ29nSUdsd1gzWmxjbk5wYjI0Z1BTQTBDaUFnYm1WMGQy
+        OXlhMTlwWkNBOUlDSWtlMjl3Wlc1emRHRmphMTl1WlhSM2IzSnJhVzVuWDI1bGRIZHZjbXRmZGpJ
+        dWJtVjBkMjl5YTE4eExtbGtmU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltOXdaVzV6ZEdGamExOXNZbDlz
+        YjJGa1ltRnNZVzVqWlhKZmRqSWlJQ0pzYjJGa1ltRnNZVzVqWlhKZk1TSWdld29nSUc1aGJXVWdJ
+        Q0FnSUNBZ0lDQWdQU0FpYkc5aFpHSmhiR0Z1WTJWeVh6RWlDaUFnZG1sd1gzTjFZbTVsZEY5cFpD
+        QTlJQ0lrZTI5d1pXNXpkR0ZqYTE5dVpYUjNiM0pyYVc1blgzTjFZbTVsZEY5Mk1pNXpkV0p1WlhS
+        Zk1TNXBaSDBpQ24wS0NuSmxjMjkxY21ObElDSnZjR1Z1YzNSaFkydGZiR0pmYkdsemRHVnVaWEpm
+        ZGpJaUlDSnNhWE4wWlc1bGNsOHhJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUQwZ0lteHBj
+        M1JsYm1WeVh6RWlDaUFnY0hKdmRHOWpiMndnSUNBZ0lDQWdJRDBnSWtoVVZGQWlDaUFnY0hKdmRH
+        OWpiMnhmY0c5eWRDQWdJRDBnT0RBNE1Bb2dJR3h2WVdSaVlXeGhibU5sY2w5cFpDQTlJQ0lrZTI5
+        d1pXNXpkR0ZqYTE5c1lsOXNiMkZrWW1Gc1lXNWpaWEpmZGpJdWJHOWhaR0poYkdGdVkyVnlYekV1
+        YVdSOUlncDlDZ3B5WlhOdmRYSmpaU0FpYjNCbGJuTjBZV05yWDJ4aVgzQnZiMnhmZGpJaUlDSndi
+        MjlzWHpFaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdQU0FpY0c5dmJGOHhJZ29nSUhCeWIz
+        UnZZMjlzSUNBZ0lDQWdJQ0E5SUNKSVZGUlFJZ29nSUd4aVgyMWxkR2h2WkNBZ0lDQWdJQ0E5SUNK
+        U1QxVk9SRjlTVDBKSlRpSUtJQ0JzYjJGa1ltRnNZVzVqWlhKZmFXUWdQU0FpSkh0dmNHVnVjM1Jo
+        WTJ0ZmJHSmZiRzloWkdKaGJHRnVZMlZ5WDNZeUxteHZZV1JpWVd4aGJtTmxjbDh4TG1sa2ZTSUtm
+        UW9LY21WemIzVnlZMlVnSW05d1pXNXpkR0ZqYTE5c1lsOXNOM0J2YkdsamVWOTJNaUlnSW13M2NH
+        OXNhV041WHpFaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ1BTQWlkR1Z6ZENJS0lDQmhZM1JwYjI0
+        Z0lDQWdJQ0FnUFNBaVVrVkVTVkpGUTFSZlZFOWZWVkpNSWdvZ0lHUmxjMk55YVhCMGFXOXVJQ0E5
+        SUNKMFpYTjBJR1JsYzJOeWFYQjBhVzl1SWdvZ0lIQnZjMmwwYVc5dUlDQWdJQ0E5SURFS0lDQnNh
+        WE4wWlc1bGNsOXBaQ0FnUFNBaUpIdHZjR1Z1YzNSaFkydGZiR0pmYkdsemRHVnVaWEpmZGpJdWJH
+        bHpkR1Z1WlhKZk1TNXBaSDBpQ2lBZ2NtVmthWEpsWTNSZmRYSnNJRDBnSW1oMGRIQTZMeTkzZDNj
+        dVpYaGhiWEJzWlM1amIyMGlDbjBLQ25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiRGR5
+        ZFd4bFgzWXlJaUFpYkRkeWRXeGxYekVpSUhzS0lDQnNOM0J2YkdsamVWOXBaQ0FnUFNBaUpIdHZj
+        R1Z1YzNSaFkydGZiR0pmYkRkd2IyeHBZM2xmZGpJdWJEZHdiMnhwWTNsZk1TNXBaSDBpQ2lBZ2RI
+        bHdaU0FnSUNBZ0lDQWdJRDBnSWxCQlZFZ2lDaUFnWTI5dGNHRnlaVjkwZVhCbElEMGdJa1ZSVlVG
+        TVgxUlBJZ29nSUhaaGJIVmxJQ0FnSUNBZ0lDQTlJQ0l2WVhCcElncDlDZz09
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRXczSUZKMWJHVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQk1OeUJRYjJ4cFkza2dTVVFnWVc1a0lFdzNJRkoxYkdVZ1NVUUtjMlZ3WVhKaGRH
+        VmtJR0o1SUdFZ2MyeGhjMmdzSUdVdVp5NDZDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDlzTjNKMWJHVmZkakl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

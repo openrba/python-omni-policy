@@ -7,7 +7,7 @@ aws_sagemaker_endpoint:
     arguments:
         endpoint_config_name:
             description: The name of the endpoint configuration to use.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -27,3 +27,16 @@ aws_sagemaker_endpoint:
         name:
             description: The name of the endpoint.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMkZuWlcxaGEyVnlYMlZ1WkhCdmFXNTBJaUFpWlNJZ2V3b2dJ
+        RzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltMTVMV1Z1WkhCdmFXNTBJZ29nSUdWdVpI
+        QnZhVzUwWDJOdmJtWnBaMTl1WVcxbElEMGdJaVI3WVhkelgzTmhaMlZ0WVd0bGNsOWxibVJ3YjJs
+        dWRGOWpiMjVtYVdkMWNtRjBhVzl1TG1WakxtNWhiV1Y5SWdvS0lDQjBZV2R6SUQwZ2V3b2dJQ0Fn
+        VG1GdFpTQTlJQ0ptYjI4aUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRmJtUndiMmx1ZEhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2JtRnRa
+        V0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WVdkbGJXRnJaWEpmWlc1a2NHOXBiblF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

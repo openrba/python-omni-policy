@@ -7,7 +7,7 @@ aws_lambda_alias:
     arguments:
         name:
             description: 'Name for the alias you are creating. Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_]+)`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,13 +18,13 @@ aws_lambda_alias:
         function_name:
             description: The function ARN of the Lambda function for which you want
                 to create an alias.
-            required: true
+            required: false
             policy: ''
             notes: ''
         function_version:
             description: 'Lambda function version for which you are creating the alias.
                 Pattern: `(\$LATEST|[0-9]+)`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         routing_config:
@@ -47,3 +47,19 @@ aws_lambda_alias:
             description: 'The ARN to be used for invoking Lambda Function from API
                 Gateway '
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR0Z0WW1SaFgyRnNhV0Z6SWlBaWRHVnpkRjloYkdsaGN5SWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHVnpkR0ZzYVdGeklnb2dJR1JsYzJOeWFY
+        QjBhVzl1SUNBZ0lDQWdQU0FpWVNCellXMXdiR1VnWkdWelkzSnBjSFJwYjI0aUNpQWdablZ1WTNS
+        cGIyNWZibUZ0WlNBZ0lDQTlJQ0lrZTJGM2MxOXNZVzFpWkdGZlpuVnVZM1JwYjI0dWJHRnRZbVJo
+        WDJaMWJtTjBhVzl1WDNSbGMzUXVZWEp1ZlNJS0lDQm1kVzVqZEdsdmJsOTJaWEp6YVc5dUlEMGdJ
+        akVpQ2dvZ0lISnZkWFJwYm1kZlkyOXVabWxuSUQwZ2V3b2dJQ0FnWVdSa2FYUnBiMjVoYkY5MlpY
+        SnphVzl1WDNkbGFXZG9kSE1nUFNCN0NpQWdJQ0FnSUNJeUlpQTlJREF1TlFvZ0lDQWdmUW9nSUgw
+        S2ZRbz0=
+    import: !!binary |
+        Q2dwTVlXMWlaR0VnUm5WdVkzUnBiMjRnUVd4cFlYTmxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0JtZFc1amRHbHZibDl1WVcxbEwyRnNhV0Z6WUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWVcxaVpHRmZZV3hwWVhNdWFIUnRiQzV0WVhKclpHOTNiZz09

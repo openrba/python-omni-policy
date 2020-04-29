@@ -8,32 +8,32 @@ azurerm_cosmosdb_mongo_collection:
         name:
             description: Specifies the name of the Cosmos DB Mongo Collection. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the Cosmos DB Mongo
                 Collection is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         database_name:
             description: The name of the Cosmos DB Mongo Database in which the Cosmos
                 DB Mongo Collection is created. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_ttl_seconds:
             description: The default Time To Live in seconds. If the value is `0`
                 items are not automatically expired.
-            required: true
+            required: false
             policy: ''
             notes: ''
         shard_key:
             description: The name of the key to partition on for sharding. There must
                 not be any other unique index keys.
-            required: true
+            required: false
             policy: ''
             notes: ''
         index:
@@ -52,7 +52,7 @@ azurerm_cosmosdb_mongo_collection:
         keys:
             description: Specifies the list of user settable keys for each Cosmos
                 DB Mongo Collection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         unique:

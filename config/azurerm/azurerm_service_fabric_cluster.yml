@@ -8,51 +8,53 @@ azurerm_service_fabric_cluster:
         name:
             description: The name of the Node Type. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the Service Fabric
                 Cluster exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the Azure Region where the Service Fabric Cluster
                 should exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         reliability_level:
             description: Specifies the Reliability Level of the Cluster. Possible
                 values include `None`, `Bronze`, `Silver`, `Gold` and `Platinum`.
-            required: true
+            required: false
             policy: ''
-            notes: 'The Reliability Level of the Cluster depends on the number of
-                nodes in the Cluster: `Platinum` requires at least 9 VM''s, `Gold`
-                requires at least 7 VM''s, `Silver` requires at least 5 VM''s, `Bronze`
-                requires at least 3 VM''s.'
+            notes:
+            - '-> '
+            - ' The Reliability Level of the Cluster depends on the number of nodes
+                in the Cluster: `Platinum` requires at least 9 VM''s, `Gold` requires
+                at least 7 VM''s, `Silver` requires at least 5 VM''s, `Bronze` requires
+                at least 3 VM''s.'
         management_endpoint:
             description: Specifies the Management Endpoint of the cluster such as
                 `http://example.com`. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         node_type:
             description: One or more `node_type` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         upgrade_mode:
             description: Specifies the Upgrade Mode of the cluster. Possible values
                 are `Automatic` or `Manual`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vm_image:
             description: Specifies the Image expected for the Service Fabric Cluster,
                 such as `Windows`. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cluster_code_version:
@@ -98,8 +100,10 @@ azurerm_service_fabric_cluster:
             description: 'A `client_certificate_common_name` block as defined below. '
             required: false
             policy: ''
-            notes: If Client Certificates are enabled then at a Certificate must be
-                configured on the cluster.
+            notes:
+            - '-> '
+            - ' If Client Certificates are enabled then at a Certificate must be configured
+                on the cluster.'
         diagnostics_config:
             description: A `diagnostics_config` block as defined below. Changing this
                 forces a new resource to be created.
@@ -118,81 +122,82 @@ azurerm_service_fabric_cluster:
             notes: ''
         tenant_id:
             description: The Azure Active Directory Tenant ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cluster_application_id:
             description: The Azure Active Directory Cluster Application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_application_id:
             description: The Azure Active Directory Client ID which should be used
                 for the Client Application.
-            required: true
+            required: false
             policy: ''
             notes: ''
         common_names:
             description: A `common_names` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         x509_store_name:
             description: The X509 Store where the Certificate Exists, such as `My`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate_common_name:
             description: The common or subject name of the certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate_issuer_thumbprint:
             description: The Issuer Thumbprint of the Certificate.
             required: false
             policy: ''
-            notes: Certificate Issuer Thumbprint may become required in the future,
-                `https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-create-cluster-using-cert-cn#download-and-update-a-sample-template`.
+            notes:
+            - '-> '
+            - ' Certificate Issuer Thumbprint may become required in the future, `https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-create-cluster-using-cert-cn#download-and-update-a-sample-template`.'
         thumbprint:
             description: The Thumbprint associated with the Client Certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         thumbprint_secondary:
             description: The Secondary Thumbprint of the Certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_admin:
             description: Does the Client Certificate have Admin Access to the cluster?
                 Non-admin clients can only perform read only operations on the cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_name:
             description: The name of the Storage Account where the Diagnostics should
                 be sent to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protected_account_key_name:
             description: The protected diagnostics storage key name, such as `StorageAccountKey1`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         blob_endpoint:
             description: The Blob Endpoint of the Storage Account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         queue_endpoint:
             description: The Queue Endpoint of the Storage Account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         table_endpoint:
             description: The Table Endpoint of the Storage Account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         parameters:
@@ -215,25 +220,25 @@ azurerm_service_fabric_cluster:
             notes: ''
         instance_count:
             description: The number of nodes for this Node Type.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_primary:
             description: Is this the Primary Node Type? Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_endpoint_port:
             description: The Port used for the Client Endpoint for this Node Type.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_endpoint_port:
             description: The Port used for the HTTP Endpoint for this Node Type. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         durability_level:
@@ -261,12 +266,12 @@ azurerm_service_fabric_cluster:
             notes: ''
         start_port:
             description: The start of the Ephemeral Port Range on this Node Type.
-            required: true
+            required: false
             policy: ''
             notes: ''
         end_port:
             description: The end of the Ephemeral Port Range on this Node Type.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

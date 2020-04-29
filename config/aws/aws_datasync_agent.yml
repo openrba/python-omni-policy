@@ -7,7 +7,7 @@ aws_datasync_agent:
     arguments:
         name:
             description: Name of the DataSync Agent.
-            required: true
+            required: false
             policy: ''
             notes: ''
         activation_key:
@@ -30,5 +30,21 @@ aws_datasync_agent:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Amazon Resource Name (ARN) of the DataSync Agent.
+        arn:
+            description: Amazon Resource Name (ARN) of the DataSync Agent.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0YwWVhONWJtTmZZV2RsYm5RaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYVhCZllXUmtjbVZ6Y3lBOUlDSXhMakl1TXk0MElnb2dJRzVoYldVZ0lDQWdJQ0FnUFNBaVpY
+        aGhiWEJzWlNJS2ZRbz0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJoZEdGemVXNWpYMkZuWlc1MFlDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ1lua2dk
+        WE5wYm1jZ2RHaGxJRVJoZEdGVGVXNWpJRUZuWlc1MElFRnRZWHB2YmlCU1pYTnZkWEpqWlNCT1lX
+        MWxJQ2hCVWs0cExDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWVhSaGMzbHVZMTloWjJWdWRDNW9kRzFzTG0xaGNtdGtiM2R1

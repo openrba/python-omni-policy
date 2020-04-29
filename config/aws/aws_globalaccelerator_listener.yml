@@ -7,7 +7,7 @@ aws_globalaccelerator_listener:
     arguments:
         accelerator_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_affinity:
@@ -46,3 +46,24 @@ aws_globalaccelerator_listener:
         id:
             description: The Amazon Resource Name (ARN) of the listener.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaMnh2WW1Gc1lXTmpaV3hsY21GMGIzSmZZV05qWld4bGNtRjBi
+        M0lpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1Y0WVcxd2JH
+        VWlDaUFnYVhCZllXUmtjbVZ6YzE5MGVYQmxJRDBnSWtsUVZqUWlDaUFnWlc1aFlteGxaQ0FnSUNB
+        Z0lDQWdJRDBnZEhKMVpRb0tJQ0JoZEhSeWFXSjFkR1Z6SUhzS0lDQWdJR1pzYjNkZmJHOW5jMTls
+        Ym1GaWJHVmtJQ0FnUFNCMGNuVmxDaUFnSUNCbWJHOTNYMnh2WjNOZmN6TmZZblZqYTJWMElEMGdJ
+        bVY0WVcxd2JHVXRZblZqYTJWMElnb2dJQ0FnWm14dmQxOXNiMmR6WDNNelgzQnlaV1pwZUNBOUlD
+        Sm1iRzkzTFd4dlozTXZJZ29nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5bmJHOWlZV3hoWTJO
+        bGJHVnlZWFJ2Y2w5c2FYTjBaVzVsY2lJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JoWTJObGJHVnlZWFJ2
+        Y2w5aGNtNGdQU0FpSkh0aGQzTmZaMnh2WW1Gc1lXTmpaV3hsY21GMGIzSmZZV05qWld4bGNtRjBi
+        M0l1WlhoaGJYQnNaUzVwWkgwaUNpQWdZMnhwWlc1MFgyRm1abWx1YVhSNUlEMGdJbE5QVlZKRFJW
+        OUpVQ0lLSUNCd2NtOTBiMk52YkNBZ0lDQWdJQ0FnUFNBaVZFTlFJZ29LSUNCd2IzSjBYM0poYm1k
+        bElIc0tJQ0FnSUdaeWIyMWZjRzl5ZENBOUlEZ3dDaUFnSUNCMGIxOXdiM0owSUNBZ1BTQTRNQW9n
+        SUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwSGJHOWlZV3dnUVdOalpXeGxjbUYwYjNJZ2JHbHpkR1Z1WlhKeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkc5aVlXeGhZMk5sYkdWeVlYUnZjbDlzYVhOMFpXNWxjaTV0WVhKclpHOTNiZz09

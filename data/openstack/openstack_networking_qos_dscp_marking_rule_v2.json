@@ -14,28 +14,18 @@
             },
             "qos_policy_id": {
                 "description": "The QoS policy reference. Changing this creates a new QoS DSCP marking rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "dscp_mark": {
                 "description": "The value of DSCP mark. Changing this updates the DSCP mark value existing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "qos_policy_id": {
-                "description": "See Argument Reference above."
-            },
-            "dscp_mark": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

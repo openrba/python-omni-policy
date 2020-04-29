@@ -7,13 +7,13 @@
         "arguments": {
             "events": {
                 "description": "A list of events which should trigger the webhook. See a list of [available events](https://developer.github.com/v3/activity/events/types/)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "configuration": {
                 "description": "key/value pair of configuration for this webhook. Available keys are `url`, `content_type`, `secret` and `insecure_ssl`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

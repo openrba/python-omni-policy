@@ -7,7 +7,7 @@ aws_dax_subnet_group:
     arguments:
         name:
             description: The name of the subnet group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -17,10 +17,22 @@ aws_dax_subnet_group:
             notes: ''
         subnet_ids:
             description: A list of VPC subnet IDs for the subnet group.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The name of the subnet group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0Y0WDNOMVltNWxkRjluY205MWNDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCdVlXMWxJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVWlDaUFnYzNWaWJtVjBYMmxrY3lBOUlG
+        c2lKSHRoZDNOZmMzVmlibVYwTG1WNFlXMXdiR1V4TG1sa2ZTSXNJQ0lrZTJGM2MxOXpkV0p1WlhR
+        dVpYaGhiWEJzWlRJdWFXUjlJbDBLZlFvPQ==
+    import: !!binary |
+        Q2dwRVFWZ2dVM1ZpYm1WMElFZHliM1Z3SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUc1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWVhoZmMzVmlibVYwWDJkeWIzVndMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

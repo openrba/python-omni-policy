@@ -12,12 +12,12 @@ aws_organizations_policy:
                 admins in attached accounts can delegate to their users, groups, and
                 roles. For more information about the SCP syntax, see the [Service
                 Control Policy Syntax documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_scp-syntax.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The friendly name to assign to the policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -31,5 +31,23 @@ aws_organizations_policy:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The unique identifier (ID) of the policy.
+        arn:
+            description: Amazon Resource Name (ARN) of the policy.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0puWVc1cGVtRjBhVzl1YzE5d2IyeHBZM2tpSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdibUZ0WlNBOUlDSmxlR0Z0Y0d4bElnb0tJQ0JqYjI1MFpXNTBJRDBnUER4RFQw
+        NVVSVTVVQ25zS0lDQWlWbVZ5YzJsdmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWlVM1JoZEdW
+        dFpXNTBJam9nZXdvZ0lDQWdJa1ZtWm1WamRDSTZJQ0pCYkd4dmR5SXNDaUFnSUNBaVFXTjBhVzl1
+        SWpvZ0lpb2lMQW9nSUNBZ0lsSmxjMjkxY21ObElqb2dJaW9pQ2lBZ2ZRcDlDa05QVGxSRlRsUUtm
+        UW89
+    import: !!binary |
+        Q2dwZ1lYZHpYMjl5WjJGdWFYcGhkR2x2Ym5OZmNHOXNhV041WUNCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnWW5rZ2RYTnBibWNnZEdobElIQnZiR2xqZVNCSlJDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y21kaGJtbDZZWFJwYjI1elgzQnZiR2xqZVM1b2RHMXNMbTFoY210a2IzZHU=

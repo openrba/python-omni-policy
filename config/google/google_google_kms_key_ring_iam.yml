@@ -9,17 +9,17 @@ google_google_kms_key_ring_iam:
     arguments:
         key_ring_id:
             description: The key ring ID, in the form
-            required: true
+            required: false
             policy: ''
             notes: ''
         member/members:
             description: Identities that will be granted the privilege in `role`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Only one
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
@@ -35,13 +35,13 @@ google_google_kms_key_ring_iam:
         expression:
             description: Textual representation of an expression in Common Expression
                 Language syntax.
-            required: true
+            required: false
             policy: ''
             notes: ''
         title:
             description: A title for the expression, i.e. a short string describing
                 its purpose.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -55,3 +55,15 @@ google_google_kms_key_ring_iam:
         etag:
             description: (Computed) The etag of the key ring's IAM policy.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSlFVMGdiV1Z0WW1WeUlHbHRjRzl5ZEhNZ2RYTmxJSE53WVdObExXUmxiR2x0YVhSbFpDQnBa
+        R1Z1ZEdsbWFXVnljenNnZEdobElISmxjMjkxY21ObElHbHVJSEYxWlhOMGFXOXVMQ0IwYUdVZ2Nt
+        OXNaU3dnWVc1a0lIUm9aU0JoWTJOdmRXNTBMaUFnVkdocGN5QnRaVzFpWlhJZ2NtVnpiM1Z5WTJV
+        Z1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2EyVjVYM0pwYm1kZmFXUmdMQ0J5
+        YjJ4bExDQmhibVFnWVdOamIzVnVkQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmYTIxelgydGxlVjl5YVc1blgybGhiUzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

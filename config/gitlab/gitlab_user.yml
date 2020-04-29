@@ -7,22 +7,22 @@ gitlab_user:
     arguments:
         name:
             description: The name of the user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
             description: The username of the user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
             description: The password of the user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email:
             description: The e-mail address of the user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_admin:
@@ -63,3 +63,23 @@ gitlab_user:
         id:
             description: The unique id assigned to the user by the GitLab server.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmZFhObGNpSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0lrVjRZVzF3YkdVZ1JtOXZJZ29nSUhWelpYSnVZVzFsSUNBZ0lD
+        QWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQndZWE56ZDI5eVpDQWdJQ0FnSUNBZ0lEMGdJbk4xY0dW
+        eVVHRnpjM2R2Y21RaUNpQWdaVzFoYVd3Z0lDQWdJQ0FnSUNBZ0lDQTlJQ0puYVhSc1lXSkFkWE5s
+        Y2k1amNtVmhkR1VpQ2lBZ2FYTmZZV1J0YVc0Z0lDQWdJQ0FnSUNBOUlIUnlkV1VLSUNCd2NtOXFa
+        V04wYzE5c2FXMXBkQ0FnSUQwZ05Bb2dJR05oYmw5amNtVmhkR1ZmWjNKdmRYQWdQU0JtWVd4elpR
+        b2dJR2x6WDJWNGRHVnlibUZzSUNBZ0lDQWdQU0IwY25WbENpQWdjbVZ6WlhSZmNHRnpjM2R2Y21R
+        Z0lDQTlJR1poYkhObENuMEs=
+    import: !!binary |
+        YVc1bklIVnpaWEp6Q2dwWmIzVWdZMkZ1SUdsdGNHOXlkQ0JoSUhWelpYSWdkRzhnZEdWeWNtRm1i
+        M0p0SUhOMFlYUmxJSFZ6YVc1bklHQjBaWEp5WVdadmNtMGdhVzF3YjNKMElEeHlaWE52ZFhKalpU
+        NGdQR2xrUG1BdUNsUm9aU0JnYVdSZ0lHMTFjM1FnWW1VZ1lXNGdhVzUwWldkbGNpQm1iM0lnZEdo
+        bElHbGtJRzltSUhSb1pTQjFjMlZ5SUhsdmRTQjNZVzUwSUhSdklHbHRjRzl5ZEN3S1ptOXlJR1Y0
+        WVcxd2JHVTZDZ29nSUNBZ2RHVnljbUZtYjNKdElHbHRjRzl5ZENCbmFYUnNZV0pmZFhObGNpNWxl
+        R0Z0Y0d4bElEUXk=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5MWMyVnlMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

@@ -31,7 +31,32 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The instance profile's ID."
+            },
+            "arn": {
+                "description": "The ARN assigned by AWS to the instance profile."
+            },
+            "create_date": {
+                "description": "The creation timestamp of the instance profile."
+            },
+            "name": {
+                "description": "The instance profile's name."
+            },
+            "path": {
+                "description": "The path of the instance profile in IAM."
+            },
+            "role": {
+                "description": "The role assigned to the instance profile."
+            },
+            "roles": {
+                "description": "The list of roles assigned to the instance profile. (**Deprecated**)"
+            },
+            "unique_id": {
+                "description": "The [unique ID][1] assigned by AWS."
+            }
+        },
         "timeouts": {}
     }
 }

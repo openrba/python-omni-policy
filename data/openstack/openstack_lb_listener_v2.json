@@ -14,13 +14,13 @@
             },
             "protocol": {
                 "description": "The protocol - can either be TCP, HTTP, HTTPS,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol_port": {
                 "description": "The port on which to listen for client traffic.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "loadbalancer_id": {
                 "description": "The load balancer on which to provision this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -109,56 +109,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the Listener."
-            },
-            "protocol": {
-                "description": "See Argument Reference above."
-            },
-            "protocol_port": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "default_port_id": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "connection_limit": {
-                "description": "See Argument Reference above."
-            },
-            "timeout_client_data": {
-                "description": "See Argument Reference above."
-            },
-            "timeout_member_connect": {
-                "description": "See Argument Reference above."
-            },
-            "timeout_member_data": {
-                "description": "See Argument Reference above."
-            },
-            "timeout_tcp_inspect": {
-                "description": "See Argument Reference above."
-            },
-            "default_tls_container_ref": {
-                "description": "See Argument Reference above."
-            },
-            "sni_container_refs": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "insert_headers": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

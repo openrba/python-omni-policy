@@ -8,7 +8,7 @@ aws_datasync_location_smb:
         agent_arns:
             description: A list of DataSync Agent ARNs with which this location will
                 be associated.
-            required: true
+            required: false
             policy: ''
             notes: ''
         domain:
@@ -25,19 +25,19 @@ aws_datasync_location_smb:
         password:
             description: The password of the user who can mount the share and has
                 file permissions in the SMB.
-            required: true
+            required: false
             policy: ''
             notes: ''
         server_hostname:
             description: Specifies the IP address or DNS name of the SMB server. The
                 DataSync Agent(s
-            required: true
+            required: false
             policy: ''
             notes: ''
         subdirectory:
             description: Subdirectory to perform actions as source or destination.
                 Should be exported by the NFS server.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -49,8 +49,25 @@ aws_datasync_location_smb:
         user:
             description: The user who can mount the share and has file and folder
                 permissions in the SMB share.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: Amazon Resource Name (ARN) of the DataSync Location.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0YwWVhONWJtTmZiRzlqWVhScGIyNWZjMjFpSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJSE5sY25abGNsOW9iM04wYm1GdFpTQTlJQ0p6YldJdVpYaGhiWEJzWlM1amIy
+        MGlDaUFnYzNWaVpHbHlaV04wYjNKNUlDQWdJRDBnSWk5bGVIQnZjblJsWkM5d1lYUm9JZ29LSUNC
+        MWMyVnlJQ0FnSUNBOUlDSkhkV1Z6ZENJS0lDQndZWE56ZDI5eVpDQTlJQ0pCVG05MFIzSmxZWFJR
+        WVhOemQyOXlaQ0lLQ2lBZ1lXZGxiblJmWVhKdWN5QTlJRnNpSkh0aGQzTmZaR0YwWVhONWJtTmZZ
+        V2RsYm5RdVpYaGhiWEJzWlM1aGNtNTlJbDBLZlFvPQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJoZEdGemVXNWpYMnh2WTJGMGFXOXVYM050WW1BZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUdKNUlIVnphVzVuSUhSb1pTQkJiV0Y2YjI0Z1VtVnpiM1Z5WTJVZ1RtRnRaU0FvUVZKT0tT
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWVhSaGMzbHVZMTlzYjJOaGRHbHZibDl6YldJdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -7,12 +7,12 @@ aws_securityhub_member:
     arguments:
         account_id:
             description: The ID of the member AWS account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email:
             description: The email of the member AWS account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         invite:
@@ -30,3 +30,17 @@ aws_securityhub_member:
             description: The status of the relationship between the member account
                 and its master account.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbG9kV0pmWVdOamIzVnVkQ0lnSW1WNFlXMXdi
+        R1VpSUh0OUNncHlaWE52ZFhKalpTQWlZWGR6WDNObFkzVnlhWFI1YUhWaVgyMWxiV0psY2lJZ0lt
+        VjRZVzF3YkdVaUlIc0tJQ0JrWlhCbGJtUnpYMjl1SUQwZ1d5SmhkM05mYzJWamRYSnBkSGxvZFdK
+        ZllXTmpiM1Z1ZEM1bGVHRnRjR3hsSWwwS0lDQmhZMk52ZFc1MFgybGtJRDBnSWpFeU16UTFOamM0
+        T1RBeE1pSUtJQ0JsYldGcGJDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdWQVpYaGhiWEJzWlM1amIyMGlD
+        aUFnYVc1MmFYUmxJQ0FnSUNBOUlIUnlkV1VLZlFvPQ==
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSWRXSWdiV1Z0WW1WeWN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobGFYSWdZV05qYjNWdWRDQkpSQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WldOMWNtbDBlV2gxWWw5dFpXMWlaWEl1YldGeWEyUnZkMjQ9

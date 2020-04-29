@@ -7,7 +7,7 @@ aws_lightsail_static_ip:
     arguments:
         name:
             description: The name for the allocated static IP
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -18,3 +18,11 @@ aws_lightsail_static_ip:
         support_code:
             description: The support code.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR2xuYUhSellXbHNYM04wWVhScFkxOXBjQ0lnSW5SbGMzUWlJ
+        SHNLSUNCdVlXMWxJRDBnSW1WNFlXMXdiR1VpQ24wSw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzYVdkb2RITmhhV3hmYzNSaGRHbGpYMmx3TG1oMGJXd3ViV0Z5YTJSdmQyND0=

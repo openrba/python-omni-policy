@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "A unique name for the this Application Version.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "application": {
                 "description": "Name of the Beanstalk Application the version is associated with.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,13 +26,13 @@
             },
             "bucket": {
                 "description": "S3 bucket that contains the Application Version source bundle.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key": {
                 "description": "S3 object that is the Application Version source bundle.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

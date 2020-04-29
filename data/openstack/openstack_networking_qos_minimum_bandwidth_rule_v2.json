@@ -14,13 +14,13 @@
             },
             "qos_policy_id": {
                 "description": "The QoS policy reference. Changing this creates a new QoS minimum bandwidth rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "min_kbps": {
                 "description": "The minimum kilobits per second. Changing this updates the min kbps value of the existing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,20 +31,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "qos_policy_id": {
-                "description": "See Argument Reference above."
-            },
-            "min_kbps": {
-                "description": "See Argument Reference above."
-            },
-            "direction": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

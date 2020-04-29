@@ -9,7 +9,7 @@ google_google_project_service:
     arguments:
         service:
             description: The service to enable.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -34,3 +34,16 @@ google_google_project_service:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmY0hKdmFtVmpkRjl6WlhKMmFXTmxJaUFpY0hKdmFtVmpk
+        Q0lnZXdvZ0lIQnliMnBsWTNRZ1BTQWllVzkxY2kxd2NtOXFaV04wTFdsa0lnb2dJSE5sY25acFky
+        VWdQU0FpYVdGdExtZHZiMmRzWldGd2FYTXVZMjl0SWdvS0lDQmthWE5oWW14bFgyUmxjR1Z1WkdW
+        dWRGOXpaWEoyYVdObGN5QTlJSFJ5ZFdVS2ZRbz0=
+    import: !!binary |
+        Q2dwUWNtOXFaV04wSUhObGNuWnBZMlZ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhCeWIycGxZM1JmYVdSZ0lHRnVaQ0JnYzJWeWRtbGpaV0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmY0hKdmFtVmpkRjl6WlhKMmFXTmxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

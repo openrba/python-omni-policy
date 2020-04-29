@@ -7,7 +7,7 @@ vault_jwt_auth_backend:
     arguments:
         path:
             description: Path to mount the JWT/OIDC auth backend
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
@@ -121,3 +121,15 @@ vault_jwt_auth_backend:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjlxZDNSZllYVjBhRjlpWVdOclpXNWtJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lDQWdaR1Z6WTNKcGNIUnBiMjRnSUQwZ0lrUmxiVzl1YzNSeVlYUnBiMjRnYjJZZ2RH
+        aGxJRlJsY25KaFptOXliU0JLVjFRZ1lYVjBhQ0JpWVdOclpXNWtJZ29nSUNBZ2NHRjBhQ0E5SUNK
+        cWQzUWlDaUFnSUNCdmFXUmpYMlJwYzJOdmRtVnllVjkxY213Z1BTQWlhSFIwY0hNNkx5OXRlV052
+        TG1GMWRHZ3dMbU52YlM4aUNpQWdJQ0JpYjNWdVpGOXBjM04xWlhJZ1BTQWlhSFIwY0hNNkx5OXRl
+        V052TG1GMWRHZ3dMbU52YlM4aUNuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJwM2RGOWhkWFJvWDJKaFkydGxibVF1YUhSdGJDNXRaQT09

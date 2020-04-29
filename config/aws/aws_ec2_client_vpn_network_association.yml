@@ -7,12 +7,12 @@ aws_ec2_client_vpn_network_association:
     arguments:
         client_vpn_endpoint_id:
             description: The ID of the Client VPN endpoint.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The ID of the subnet to associate with the Client VPN endpoint.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -27,3 +27,15 @@ aws_ec2_client_vpn_network_association:
             description: 'The ID of the VPC in which the target network (subnet) is
                 located. '
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDJOc2FXVnVkRjkyY0c1ZmJtVjBkMjl5YTE5aGMzTnZZ
+        MmxoZEdsdmJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCamJHbGxiblJmZG5CdVgyVnVaSEJ2YVc1MFgy
+        bGtJRDBnSWlSN1lYZHpYMlZqTWw5amJHbGxiblJmZG5CdVgyVnVaSEJ2YVc1MExtVjRZVzF3YkdV
+        dWFXUjlJZ29nSUhOMVltNWxkRjlwWkNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpSkh0aGQzTmZjM1Zp
+        Ym1WMExtVjRZVzF3YkdVdWFXUjlJZ3A5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZlkyeHBaVzUwWDNad2JsOXVaWFIzYjNKclgyRnpjMjlqYVdGMGFXOXVMbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

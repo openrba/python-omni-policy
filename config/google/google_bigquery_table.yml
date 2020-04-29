@@ -8,12 +8,12 @@ google_bigquery_table:
     arguments:
         dataset_id:
             description: The dataset ID to create the table in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         table_id:
             description: A unique ID for the resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -78,7 +78,7 @@ google_bigquery_table:
             notes: ''
         autodetect:
             description: '- Let BigQuery try to autodetect the schema'
-            required: true
+            required: false
             policy: ''
             notes: ''
         compression:
@@ -108,17 +108,17 @@ google_bigquery_table:
             notes: ''
         source_format:
             description: '- The data format. Supported values are:'
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_uris:
             description: A list of the fully-qualified URIs that point to
-            required: true
+            required: false
             policy: ''
             notes: ''
         quote:
             description: '- The value that is used to quote data sections in a'
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_jagged_rows:
@@ -148,7 +148,7 @@ google_bigquery_table:
             notes: ''
         range:
             description: Information required to partition based on ranges.
-            required: true
+            required: false
             policy: ''
             notes: ''
         expiration_ms:
@@ -158,12 +158,12 @@ google_bigquery_table:
             notes: ''
         field:
             description: The field used to determine how to create a range-based
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The only type supported is DAY, which will generate
-            required: true
+            required: false
             policy: ''
             notes: ''
         require_partition_filter:
@@ -173,22 +173,22 @@ google_bigquery_table:
             notes: ''
         start:
             description: Start of the range partitioning, inclusive.
-            required: true
+            required: false
             policy: ''
             notes: ''
         end:
             description: End of the range partitioning, exclusive.
-            required: true
+            required: false
             policy: ''
             notes: ''
         interval:
             description: The width of each range within the partition.
-            required: true
+            required: false
             policy: ''
             notes: ''
         query:
             description: A query that BigQuery executes when the view is referenced.
-            required: true
+            required: false
             policy: ''
             notes: ''
         use_legacy_sql:
@@ -199,7 +199,7 @@ google_bigquery_table:
         kms_key_name:
             description: The self link or full name of a key which should be used
                 to
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -228,3 +228,40 @@ google_bigquery_table:
         type:
             description: Describes the table type.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWW1sbmNYVmxjbmxmWkdGMFlYTmxkQ0lnSW1SbFptRjFi
+        SFFpSUhzS0lDQmtZWFJoYzJWMFgybGtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWm05dkln
+        b2dJR1p5YVdWdVpHeDVYMjVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBJZ29nSUdS
+        bGMyTnlhWEIwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSlVhR2x6SUdseklHRWdkR1Z6
+        ZENCa1pYTmpjbWx3ZEdsdmJpSUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaVJWVWlDaUFnWkdWbVlYVnNkRjkwWVdKc1pWOWxlSEJwY21GMGFXOXVYMjF6SUQwZ016
+        WXdNREF3TUFvS0lDQnNZV0psYkhNZ1BTQjdDaUFnSUNCbGJuWWdQU0FpWkdWbVlYVnNkQ0lLSUNC
+        OUNuMEtDbkpsYzI5MWNtTmxJQ0puYjI5bmJHVmZZbWxuY1hWbGNubGZkR0ZpYkdVaUlDSmtaV1po
+        ZFd4MElpQjdDaUFnWkdGMFlYTmxkRjlwWkNBOUlHZHZiMmRzWlY5aWFXZHhkV1Z5ZVY5a1lYUmhj
+        MlYwTG1SbFptRjFiSFF1WkdGMFlYTmxkRjlwWkFvZ0lIUmhZbXhsWDJsa0lDQWdQU0FpWW1GeUln
+        b0tJQ0IwYVcxbFgzQmhjblJwZEdsdmJtbHVaeUI3Q2lBZ0lDQjBlWEJsSUQwZ0lrUkJXU0lLSUNC
+        OUNnb2dJR3hoWW1Wc2N5QTlJSHNLSUNBZ0lHVnVkaUE5SUNKa1pXWmhkV3gwSWdvZ0lIMEtDaUFn
+        YzJOb1pXMWhJRDBnUER4RlQwWUtXd29nSUhzS0lDQWdJQ0p1WVcxbElqb2dJbkJsY20xaGJHbHVh
+        eUlzQ2lBZ0lDQWlkSGx3WlNJNklDSlRWRkpKVGtjaUxBb2dJQ0FnSW0xdlpHVWlPaUFpVGxWTVRF
+        RkNURVVpTEFvZ0lDQWdJbVJsYzJOeWFYQjBhVzl1SWpvZ0lsUm9aU0JRWlhKdFlXeHBibXNpQ2lB
+        Z2ZTd0tJQ0I3Q2lBZ0lDQWlibUZ0WlNJNklDSnpkR0YwWlNJc0NpQWdJQ0FpZEhsd1pTSTZJQ0pU
+        VkZKSlRrY2lMQW9nSUNBZ0ltMXZaR1VpT2lBaVRsVk1URUZDVEVVaUxBb2dJQ0FnSW1SbGMyTnlh
+        WEIwYVc5dUlqb2dJbE4wWVhSbElIZG9aWEpsSUhSb1pTQm9aV0ZrSUc5bVptbGpaU0JwY3lCc2Iy
+        TmhkR1ZrSWdvZ0lIMEtYUXBGVDBZS0NuMEtDbkpsYzI5MWNtTmxJQ0puYjI5bmJHVmZZbWxuY1hW
+        bGNubGZkR0ZpYkdVaUlDSnphR1ZsZENJZ2V3b2dJR1JoZEdGelpYUmZhV1FnUFNCbmIyOW5iR1Zm
+        WW1sbmNYVmxjbmxmWkdGMFlYTmxkQzVrWldaaGRXeDBMbVJoZEdGelpYUmZhV1FLSUNCMFlXSnNa
+        VjlwWkNBZ0lEMGdJbk5vWldWMElnb0tJQ0JsZUhSbGNtNWhiRjlrWVhSaFgyTnZibVpwWjNWeVlY
+        UnBiMjRnZXdvZ0lDQWdZWFYwYjJSbGRHVmpkQ0FnSUNBOUlIUnlkV1VLSUNBZ0lITnZkWEpqWlY5
+        bWIzSnRZWFFnUFNBaVIwOVBSMHhGWDFOSVJVVlVVeUlLQ2lBZ0lDQm5iMjluYkdWZmMyaGxaWFJ6
+        WDI5d2RHbHZibk1nZXdvZ0lDQWdJQ0J6YTJsd1gyeGxZV1JwYm1kZmNtOTNjeUE5SURFS0lDQWdJ
+        SDBLQ2lBZ0lDQnpiM1Z5WTJWZmRYSnBjeUE5SUZzS0lDQWdJQ0FnSW1oMGRIQnpPaTh2Wkc5amN5
+        NW5iMjluYkdVdVkyOXRMM053Y21WaFpITm9aV1YwY3k5a0x6RXlNelExTmpjNE9UQXhNak0wTlNJ
+        c0NpQWdJQ0JkQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwQ2FXZFJkV1Z5ZVNCMFlXSnNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnY0hKdmFtVmpkR0FzSUdCa1lYUmhjMlYwWDJsa1lDd2dZVzVrSUdCMFlXSnNaVjlwWkdBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5aWFXZHhkV1Z5ZVY5MFlXSnNaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

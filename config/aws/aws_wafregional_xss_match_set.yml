@@ -8,7 +8,7 @@ aws_wafregional_xss_match_set:
     arguments:
         name:
             description: The name of the set
-            required: true
+            required: false
             policy: ''
             notes: ''
         xss_match_tuple:
@@ -21,3 +21,20 @@ aws_wafregional_xss_match_set:
         id:
             description: The ID of the Regional WAF XSS Match Set.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtY21WbmFXOXVZV3hmZUhOelgyMWhkR05vWDNObGRDSWdJ
+        bmh6YzE5dFlYUmphRjl6WlhRaUlIc0tJQ0J1WVcxbElEMGdJbmh6YzE5dFlYUmphRjl6WlhRaUNn
+        b2dJSGh6YzE5dFlYUmphRjkwZFhCc1pTQjdDaUFnSUNCMFpYaDBYM1J5WVc1elptOXliV0YwYVc5
+        dUlEMGdJazVQVGtVaUNnb2dJQ0FnWm1sbGJHUmZkRzlmYldGMFkyZ2dld29nSUNBZ0lDQjBlWEJs
+        SUQwZ0lsVlNTU0lLSUNBZ0lIMEtJQ0I5Q2dvZ0lIaHpjMTl0WVhSamFGOTBkWEJzWlNCN0NpQWdJ
+        Q0IwWlhoMFgzUnlZVzV6Wm05eWJXRjBhVzl1SUQwZ0lrNVBUa1VpQ2dvZ0lDQWdabWxsYkdSZmRH
+        OWZiV0YwWTJnZ2V3b2dJQ0FnSUNCMGVYQmxJRDBnSWxGVlJWSlpYMU5VVWtsT1J5SUtJQ0FnSUgw
+        S0lDQjlDbjBL
+    import: !!binary |
+        Q2dwQlYxTWdWMEZHSUZKbFoybHZibUZzSUZoVFV5Qk5ZWFJqYUNCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5NGMzTmZiV0YwWTJoZmMyVjBMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

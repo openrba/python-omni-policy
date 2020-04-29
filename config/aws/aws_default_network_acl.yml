@@ -7,7 +7,7 @@ aws_default_network_acl:
     arguments:
         default_network_acl_id:
             description: The Network ACL ID to manage. This
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
@@ -32,27 +32,27 @@ aws_default_network_acl:
             notes: ''
         from_port:
             description: The from port to match.
-            required: true
+            required: false
             policy: ''
             notes: ''
         to_port:
             description: The to port to match.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_no:
             description: The rule number. Used for ordering.
-            required: true
+            required: false
             policy: ''
             notes: ''
         action:
             description: The action to take.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: The protocol to match. If using the -1 'all'
-            required: true
+            required: false
             policy: ''
             notes: ''
         cidr_block:
@@ -85,3 +85,11 @@ aws_default_network_acl:
         egress:
             description: Set of egress rules
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRVpXWmhkV3gwSUU1bGRIZHZjbXNnUVVOTWN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWldaaGRXeDBYMjVsZEhkdmNtdGZZV05zTG1oMGJXd3ViV0Z5YTJSdmQyND0=

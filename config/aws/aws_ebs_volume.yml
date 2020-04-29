@@ -7,7 +7,7 @@ aws_ebs_volume:
     arguments:
         availability_zone:
             description: The AZ where the EBS volume will exist.
-            required: true
+            required: false
             policy: ''
             notes: ''
         encrypted:
@@ -53,3 +53,15 @@ aws_ebs_volume:
         arn:
             description: The volume ARN (e.g. arn:aws:ec2:us-east-1:0123456789012:volume/vol-59fcb34e).
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV0p6WDNadmJIVnRaU0lnSW1WNFlXMXdiR1VpSUhzS0lDQmhk
+        bUZwYkdGaWFXeHBkSGxmZW05dVpTQTlJQ0oxY3kxM1pYTjBMVEpoSWdvZ0lITnBlbVVnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdOREFLQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJRTVoYldVZ1BTQWlTR1ZzYkc5
+        WGIzSnNaQ0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwRlFsTWdWbTlzZFcxbGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnBa
+        R0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWW5OZmRtOXNkVzFsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

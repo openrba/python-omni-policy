@@ -8,7 +8,7 @@
         "arguments": {
             "application_id": {
                 "description": "The application ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,19 +20,19 @@
             },
             "from_address": {
                 "description": "The email address used to send emails from.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "identity": {
                 "description": "The ARN of an identity verified with SES.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

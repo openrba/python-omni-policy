@@ -7,13 +7,13 @@
         "arguments": {
             "title": {
                 "description": "A descriptive name for the new key. e.g. `Personal MacBook Air`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key": {
                 "description": "The public SSH key to add to your GitHub account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,31 +8,31 @@
         "arguments": {
             "bucket": {
                 "description": "The S3 bucket configuration where inventory results are published (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "Unique identifier of the inventory configuration for the bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "included_object_versions": {
                 "description": "Object versions to include in the inventory list. Valid values: `All`, `Current`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "schedule": {
                 "description": "Specifies the schedule for generating inventory results (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination": {
                 "description": "Contains information about where to publish the inventory results (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,19 +62,19 @@
             },
             "frequency": {
                 "description": "Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bucket_arn": {
                 "description": "The Amazon S3 bucket ARN of the destination.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "format": {
                 "description": "Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -104,7 +104,7 @@
             },
             "key_id": {
                 "description": "The ARN of the KMS customer master key (CMK",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

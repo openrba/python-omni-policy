@@ -7,7 +7,7 @@ mysql_user:
     arguments:
         user:
             description: The name of the user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         host:
@@ -46,13 +46,15 @@ mysql_user:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        user:
-            description: The name of the user.
-        password:
-            description: The password of the user.
-        id:
-            description: The id of the user created, composed as "username@host".
-        host:
-            description: The host where the user was created.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdGVYTnhiRjkxYzJWeUlpQWlhbVJ2WlNJZ2V3b2dJSFZ6WlhJZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNKcVpHOWxJZ29nSUdodmMzUWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        SmxlR0Z0Y0d4bExtTnZiU0lLSUNCd2JHRnBiblJsZUhSZmNHRnpjM2R2Y21RZ1BTQWljR0Z6YzNk
+        dmNtUWlDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXMTVjM0ZzTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDNWelpYSXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

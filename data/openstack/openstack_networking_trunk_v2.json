@@ -26,7 +26,7 @@
             },
             "port_id": {
                 "description": "The ID of the port to be made a subport of the trunk.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,46 +56,18 @@
             },
             "segmentation_type": {
                 "description": "The segmentation technology to use, e.g., \"vlan\".",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "segmentation_id": {
                 "description": "The numeric id of the subport segment.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "port_id": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "sub_port": {
-                "description": "See Argument Reference above."
-            },
-            "tags": {
-                "description": "See Argument Reference above."
-            },
-            "all_tags": {
-                "description": "The collection of tags assigned on the trunk, which have been"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

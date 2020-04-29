@@ -8,25 +8,25 @@
         "arguments": {
             "project": {
                 "description": "The id of the project.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "branch": {
                 "description": "Name of the branch.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "push_access_level": {
                 "description": "One of five levels of access to the project.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "merge_access_level": {
                 "description": "One of five levels of access to the project.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "A name for the HTTP header in the client request that will be matched on.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "mesh_name": {
                 "description": "The name of the service mesh in which to create the route.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "virtual_router_name": {
                 "description": "The name of the virtual router in which to create the route.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "spec": {
                 "description": "The route specification to apply.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,7 +56,7 @@
             },
             "action": {
                 "description": "The action to take if a match is determined.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -68,7 +68,7 @@
             },
             "weighted_target": {
                 "description": "The targets that traffic is routed to when a request matches the route.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -98,13 +98,13 @@
             },
             "virtual_node": {
                 "description": "The virtual node to associate with the weighted target.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "weight": {
                 "description": "The relative weight of the weighted target. An integer between 0 and 100.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -140,7 +140,7 @@
             },
             "end": {
                 "description": "The end of the range.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

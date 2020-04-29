@@ -9,14 +9,29 @@ google_compute_shared_vpc_service_project:
     arguments:
         host_project:
             description: The ID of a host project to associate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_project:
             description: The ID of the project that will serve as a Shared VPC service
                 project.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjl6YUdGeVpXUmZkbkJqWDNObGNuWnBZ
+        MlZmY0hKdmFtVmpkQ0lnSW5ObGNuWnBZMlV4SWlCN0NpQWdhRzl6ZEY5d2NtOXFaV04wSUNBZ0lE
+        MGdJbWh2YzNRdGNISnZhbVZqZEMxcFpDSUtJQ0J6WlhKMmFXTmxYM0J5YjJwbFkzUWdQU0FpYzJW
+        eWRtbGpaUzF3Y205cVpXTjBMV2xrTFRFaUNuMEs=
+    import: !!binary |
+        Q2dwSGIyOW5iR1VnUTI5dGNIVjBaU0JGYm1kcGJtVWdVMmhoY21Wa0lGWlFReUJ6WlhKMmFXTmxJ
+        SEJ5YjJwbFkzUWdabVZoZEhWeVpTQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElH
+        Qm9iM04wWDNCeWIycGxZM1JnSUdGdVpDQmdjMlZ5ZG1salpWOXdjbTlxWldOMFlDd2daUzVuTGdv
+        Sw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDNOb1lYSmxaRjkyY0dOZmMyVnlkbWxqWlY5d2NtOXFaV04wTG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

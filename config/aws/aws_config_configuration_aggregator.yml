@@ -7,7 +7,7 @@ aws_config_configuration_aggregator:
     arguments:
         name:
             description: The name of the configuration aggregator.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_aggregation_source:
@@ -30,3 +30,12 @@ aws_config_configuration_aggregator:
         arn:
             description: The ARN of the aggregator
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRGIyNW1hV2QxY21GMGFXOXVJRUZuWjNKbFoyRjBiM0p6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnYm1GdFpTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZZMjl1Wm1sbmRYSmhkR2x2Ymw5aFoyZHlaV2RoZEc5eUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

@@ -8,31 +8,31 @@
         "arguments": {
             "cluster_name": {
                 "description": "Name of the EKS Cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "fargate_profile_name": {
                 "description": "Name of the EKS Fargate Profile.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "pod_execution_role_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "selector": {
                 "description": "Configuration block(s",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_ids": {
                 "description": "Identifiers of private EC2 Subnets to associate with the EKS Fargate Profile. These subnets must have the following resource tag: `kubernetes.io/cluster/CLUSTER_NAME` (where `CLUSTER_NAME` is replaced with the name of the EKS Cluster).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

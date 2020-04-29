@@ -8,33 +8,33 @@ azurerm_notification_hub_namespace:
         name:
             description: The name to use for this Notification Hub Namespace. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the Notification
                 Hub Namespace should exist. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The Azure Region in which this Notification Hub Namespace
                 should be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         namespace_type:
             description: The Type of Namespace - possible values are `Messaging` or
                 `NotificationHub`. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku_name:
             description: The name of the SKU to use for this Notification Hub Namespace.
                 Possible values are `Free`, `Basic` or `Standard`. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:

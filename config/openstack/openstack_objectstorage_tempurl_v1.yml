@@ -12,17 +12,17 @@ openstack_objectstorage_tempurl_v1:
             notes: ''
         container:
             description: The container name the object belongs to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         object:
             description: The object name the tempurl is for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ttl:
             description: The TTL, in seconds, for the URL. For how long it should
-            required: true
+            required: false
             policy: ''
             notes: ''
         method:
@@ -35,19 +35,26 @@ openstack_objectstorage_tempurl_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: Computed md5 hash based on the generated url
-        container:
-            description: See Argument Reference above.
-        object:
-            description: See Argument Reference above.
-        ttl:
-            description: See Argument Reference above.
-        method:
-            description: See Argument Reference above.
-        url:
-            description: The URL
-        region:
-            description: The region the endpoint is located in.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmIySnFaV04wYzNSdmNtRm5aVjlqYjI1MFlXbHVa
+        WEpmZGpFaUlDSmpiMjUwWVdsdVpYSmZNU0lnZXdvZ0lHNWhiV1VnUFNBaWRHVnpkQ0lLSUNCdFpY
+        UmhaR0YwWVNBOUlIc0tJQ0FnSUZSbGJYQXRWVkpNTFV0bGVTQTlJQ0owWlhOMGEyVjVJZ29nSUgw
+        S2ZRb0tjbVZ6YjNWeVkyVWdJbTl3Wlc1emRHRmphMTl2WW1wbFkzUnpkRzl5WVdkbFgyOWlhbVZq
+        ZEY5Mk1TSWdJbTlpYW1WamRGOHhJaUI3Q2lBZ1kyOXVkR0ZwYm1WeVgyNWhiV1VnUFNBaUpIdHZj
+        R1Z1YzNSaFkydGZiMkpxWldOMGMzUnZjbUZuWlY5amIyNTBZV2x1WlhKZmRqRXVZMjl1ZEdGcGJt
+        VnlYekV1Ym1GdFpYMGlDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdQU0FpZEdWemRDSUtJQ0JqYjI1
+        MFpXNTBJQ0FnSUNBZ0lDQTlJQ0pJWld4c2J5d2dkMjl5YkdRaElncDlDZ3B5WlhOdmRYSmpaU0Fp
+        YjNCbGJuTjBZV05yWDI5aWFtVmpkSE4wYjNKaFoyVmZkR1Z0Y0hWeWJGOTJNU0lnSW05aWFsOTBa
+        VzF3ZFhKc0lpQjdDaUFnWTI5dWRHRnBibVZ5SUQwZ0lpUjdiM0JsYm5OMFlXTnJYMjlpYW1WamRI
+        TjBiM0poWjJWZlkyOXVkR0ZwYm1WeVgzWXhMbU52Ym5SaGFXNWxjbDh4TG01aGJXVjlJZ29nSUc5
+        aWFtVmpkQ0FnSUNBOUlDSWtlMjl3Wlc1emRHRmphMTl2WW1wbFkzUnpkRzl5WVdkbFgyOWlhbVZq
+        ZEY5Mk1TNXZZbXBsWTNSZk1TNXVZVzFsZlNJS0lDQnRaWFJvYjJRZ0lDQWdQU0FpY0c5emRDSUtJ
+        Q0IwZEd3Z0lDQWdJQ0FnUFNBeU1BcDlDZz09
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXZZbXBsWTNSemRHOXlZV2RsWDNSbGJYQjFjbXhmZGpFdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

@@ -10,22 +10,22 @@ azurerm_virtual_network_peering:
     arguments:
         name:
             description: The name of the virtual network peering. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_network_name:
             description: The name of the virtual network. Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         remote_virtual_network_id:
             description: The full Azure resource ID of the
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_virtual_network_access:
@@ -47,7 +47,9 @@ azurerm_virtual_network_peering:
             description: Controls if remote gateways can be used on
             required: false
             policy: ''
-            notes: '`use_remote_gateways` must be set to `false` if using Global Virtual
+            notes:
+            - '-> '
+            - ' `use_remote_gateways` must be set to `false` if using Global Virtual
                 Network Peerings.'
     attributes:
         id:

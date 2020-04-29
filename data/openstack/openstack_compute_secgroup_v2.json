@@ -14,13 +14,13 @@
             },
             "name": {
                 "description": "A unique name for the security group. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "description": {
                 "description": "A description for the security group. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,19 +32,19 @@
             },
             "from_port": {
                 "description": "An integer representing the lower bound of the port",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "to_port": {
                 "description": "An integer representing the upper bound of the port",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ip_protocol": {
                 "description": "The protocol type that will be allowed. Changing",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,20 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "rule": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

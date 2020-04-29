@@ -8,12 +8,12 @@ datadog_logs_index:
     arguments:
         name:
             description: The name of the index.
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter:
             description: Logs filter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         exclusion_filter:
@@ -23,3 +23,30 @@ datadog_logs_index:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKa1lYUmhaRzluWDJ4dlozTmZhVzVrWlhnaUlDSnpZVzF3YkdWZmFXNWta
+        WGdpSUhzS0lDQWdJRzVoYldVZ1BTQWllVzkxY2lCcGJtUmxlQ0lLSUNBZ0lHWnBiSFJsY2lCN0Np
+        QWdJQ0FnSUNBZ2NYVmxjbmtnUFNBaUtpSUtJQ0FnSUgwS0lDQWdJR1Y0WTJ4MWMybHZibDltYVd4
+        MFpYSWdld29nSUNBZ0lDQWdJRzVoYldVZ1BTQWlSbWxzZEdWeUlHTnZjbVZrYm5NZ2JHOW5jeUlL
+        SUNBZ0lDQWdJQ0JwYzE5bGJtRmliR1ZrSUQwZ2RISjFaUW9nSUNBZ0lDQWdJR1pwYkhSbGNpQjdD
+        aUFnSUNBZ0lDQWdJQ0FnSUhGMVpYSjVJRDBnSW1Gd2NEcGpiM0psWkc1eklnb2dJQ0FnSUNBZ0lD
+        QWdJQ0J6WVcxd2JHVmZjbUYwWlNBOUlEQXVPVGNLSUNBZ0lDQWdJQ0I5Q2lBZ0lDQjlDaUFnSUNC
+        bGVHTnNkWE5wYjI1ZlptbHNkR1Z5SUhzS0lDQWdJQ0FnSUNCdVlXMWxJRDBnSWt0MVltVnlibVYw
+        WlhNZ1lYQnBjMlZ5ZG1WeUlnb2dJQ0FnSUNBZ0lHbHpYMlZ1WVdKc1pXUWdQU0IwY25WbENpQWdJ
+        Q0FnSUNBZ1ptbHNkR1Z5SUhzS0lDQWdJQ0FnSUNBZ0lDQWdjWFZsY25rZ1BTQWljMlZ5ZG1salpU
+        cHJkV0psWDJGd2FYTmxjblpsY2lJS0lDQWdJQ0FnSUNBZ0lDQWdjMkZ0Y0d4bFgzSmhkR1VnUFNB
+        eExqQUtJQ0FnSUNBZ0lDQjlDaUFnSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwVWFHVWdZM1Z5Y21WdWRDQkVZWFJoWkc5bklGUmxjbkpoWm05eWJTQndjbTkyYVdSbGNpQjJa
+        WEp6YVc5dUlHUnZaWE1nYm05MElITjFjSEJ2Y25RZ2RHaGxJR055WldGMGFXOXVJR0Z1WkNCa1pX
+        eGxkR2x2YmlCdlppQnBibVJsZUdWekxncFVieUJ0WVc1aFoyVWdkR2hsSUdWNGFYTjBhVzVuSUds
+        dVpHVjRaWE1zSUdSdklHQjBaWEp5WVdadmNtMGdhVzF3YjNKMElEeGtZWFJoWkc5blgyeHZaM05m
+        YVc1a1pYZ3VibUZ0WlQ0Z1BHbHVaR1Y0VG1GdFpUNWdJSFJ2SUdsdGNHOXlkQ0IwYUdWdElIUnZJ
+        RlJsY25KaFptOXliUzRnQ2tsbUlIbHZkU0JqY21WaGRHVWdZU0J5WlhOdmRYSmpaU0IzYUdsamFD
+        QmtiMlZ6SUc1dmRDQnRZWFJqYUNCMGFHVWdibUZ0WlNCdlppQmhibmtnWlhocGMzUnBibWNnYVc1
+        a1pYZ3NJR0IwWlhKeVlXWnZjbTBnWVhCd2JIbGdJSGRwYkd3Z2RHaHliM2NnWUU1dmRDQkdiM1Z1
+        WkdBZ1pYSnliM0lLWTI5a1pTNGdDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5jMTlwYm1SbGVDNW9kRzFzTG0xaGNtdGtiM2R1

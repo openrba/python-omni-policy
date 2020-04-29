@@ -8,14 +8,14 @@ aws_organizations_account:
     arguments:
         name:
             description: A friendly name for the member account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email:
             description: The email address of the owner to assign to the new member
                 account. This email address must not already be associated with another
                 AWS account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         iam_user_access_to_billing:
@@ -56,3 +56,14 @@ aws_organizations_account:
         id:
             description: The AWS account id
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0puWVc1cGVtRjBhVzl1YzE5aFkyTnZkVzUwSWlBaVlXTmpi
+        M1Z1ZENJZ2V3b2dJRzVoYldVZ0lEMGdJbTE1WDI1bGQxOWhZMk52ZFc1MElnb2dJR1Z0WVdsc0lE
+        MGdJbXB2YUc1QVpHOWxMbTl5WnlJS2ZRbz0=
+    import: !!binary |
+        Q2dwVWFHVWdRVmRUSUcxbGJXSmxjaUJoWTJOdmRXNTBJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmll
+        U0IxYzJsdVp5QjBhR1VnWUdGalkyOTFiblJmYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y21kaGJtbDZZWFJwYjI1elgyRmpZMjkxYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

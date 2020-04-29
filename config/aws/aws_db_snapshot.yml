@@ -7,12 +7,12 @@ aws_db_snapshot:
     arguments:
         db_instance_identifier:
             description: The DB Instance Identifier from which to take the snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
         db_snapshot_identifier:
             description: The Identifier for the snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -56,3 +56,24 @@ aws_db_snapshot:
         vpc_id:
             description: Specifies the storage type associated with DB snapshot.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0pmYVc1emRHRnVZMlVpSUNKaVlYSWlJSHNLSUNCaGJHeHZZ
+        MkYwWldSZmMzUnZjbUZuWlNBOUlERXdDaUFnWlc1bmFXNWxJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVRY
+        bFRVVXdpQ2lBZ1pXNW5hVzVsWDNabGNuTnBiMjRnSUNBZ1BTQWlOUzQyTGpJeElnb2dJR2x1YzNS
+        aGJtTmxYMk5zWVhOeklDQWdJRDBnSW1SaUxuUXlMbTFwWTNKdklnb2dJRzVoYldVZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1KaGVpSUtJQ0J3WVhOemQyOXlaQ0FnSUNBZ0lDQWdJQ0E5SUNKaVlYSmlZ
+        WEppWVhKaVlYSWlDaUFnZFhObGNtNWhiV1VnSUNBZ0lDQWdJQ0FnUFNBaVptOXZJZ29LSUNCdFlX
+        bHVkR1Z1WVc1alpWOTNhVzVrYjNjZ0lDQWdJQ0E5SUNKR2NtazZNRGs2TURBdFJuSnBPakE1T2pN
+        d0lnb2dJR0poWTJ0MWNGOXlaWFJsYm5ScGIyNWZjR1Z5YVc5a0lEMGdNQW9nSUhCaGNtRnRaWFJs
+        Y2w5bmNtOTFjRjl1WVcxbElDQWdJRDBnSW1SbFptRjFiSFF1YlhsemNXdzFMallpQ24wS0NuSmxj
+        MjkxY21ObElDSmhkM05mWkdKZmMyNWhjSE5vYjNRaUlDSjBaWE4wSWlCN0NpQWdaR0pmYVc1emRH
+        RnVZMlZmYVdSbGJuUnBabWxsY2lBOUlDSWtlMkYzYzE5a1lsOXBibk4wWVc1alpTNWlZWEl1YVdS
+        OUlnb2dJR1JpWDNOdVlYQnphRzkwWDJsa1pXNTBhV1pwWlhJZ1BTQWlkR1Z6ZEhOdVlYQnphRzkw
+        TVRJek5DSUtmUW89
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJpWDNOdVlYQnphRzkwWUNCallXNGdZbVVnYVcxd2IzSjBaV1FnWW5rZ2RYTnBi
+        bWNnZEdobElITnVZWEJ6YUc5MElHbGtaVzUwYVdacFpYSXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5emJtRndjMmh2ZEM1b2RHMXNMbTFoY210a2IzZHU=

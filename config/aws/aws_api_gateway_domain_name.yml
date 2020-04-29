@@ -7,7 +7,7 @@ aws_api_gateway_domain_name:
     arguments:
         domain_name:
             description: The fully-qualified domain name to register
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint_configuration:
@@ -87,3 +87,11 @@ aws_api_gateway_domain_name:
         arn:
             description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQlVFa2dSMkYwWlhkaGVTQmtiMjFoYVc0Z2JtRnRaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aV2x5SUdCdVlXMWxZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5a2IyMWhhVzVmYm1GdFpTNW9kRzFzTG0xaGNtdGtiM2R1

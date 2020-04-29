@@ -8,12 +8,12 @@ azurerm_advanced_threat_protection:
         target_resource_id:
             description: The ID of the Azure Resource which to enable Advanced Threat
                 Protection on. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
             description: Should Advanced Threat Protection be enabled on this resource?
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

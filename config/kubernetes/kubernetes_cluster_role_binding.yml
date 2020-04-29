@@ -9,20 +9,43 @@ kubernetes_cluster_role_binding:
         metadata:
             description: Standard kubernetes metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_ref:
             description: The ClusterRole to bind Subjects to. For more info see [Kubernetes
                 reference](https://kubernetes.io/docs/admin/authorization/rbac/#rolebinding-and-clusterrolebinding)
-            required: true
+            required: false
             policy: ''
             notes: ''
         subject:
             description: The Users, Groups, or ServiceAccounts to grant permissions
                 to. For more info see [Kubernetes reference](https://kubernetes.io/docs/admin/authorization/rbac/#referring-to-subjects)
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgyTnNkWE4wWlhKZmNtOXNaVjlpYVc1a2FXNW5J
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHMWxkR0ZrWVhSaElIc0tJQ0FnSUc1aGJXVWdQU0FpZEdWeWNt
+        Rm1iM0p0TFdWNFlXMXdiR1VpQ2lBZ2ZRb2dJSEp2YkdWZmNtVm1JSHNLSUNBZ0lHRndhVjluY205
+        MWNDQTlJQ0p5WW1GakxtRjFkR2h2Y21sNllYUnBiMjR1YXpoekxtbHZJZ29nSUNBZ2EybHVaQ0Fn
+        SUNBZ0lEMGdJa05zZFhOMFpYSlNiMnhsSWdvZ0lDQWdibUZ0WlNBZ0lDQWdJRDBnSW1Oc2RYTjBa
+        WEl0WVdSdGFXNGlDaUFnZlFvZ0lITjFZbXBsWTNRZ2V3b2dJQ0FnYTJsdVpDQWdJQ0FnSUQwZ0ls
+        VnpaWElpQ2lBZ0lDQnVZVzFsSUNBZ0lDQWdQU0FpWVdSdGFXNGlDaUFnSUNCaGNHbGZaM0p2ZFhB
+        Z1BTQWljbUpoWXk1aGRYUm9iM0pwZW1GMGFXOXVMbXM0Y3k1cGJ5SUtJQ0I5Q2lBZ2MzVmlhbVZq
+        ZENCN0NpQWdJQ0JyYVc1a0lDQWdJQ0FnUFNBaVUyVnlkbWxqWlVGalkyOTFiblFpQ2lBZ0lDQnVZ
+        VzFsSUNBZ0lDQWdQU0FpWkdWbVlYVnNkQ0lLSUNBZ0lHNWhiV1Z6Y0dGalpTQTlJQ0pyZFdKbExY
+        TjVjM1JsYlNJS0lDQjlDaUFnYzNWaWFtVmpkQ0I3Q2lBZ0lDQnJhVzVrSUNBZ0lDQWdQU0FpUjNK
+        dmRYQWlDaUFnSUNCdVlXMWxJQ0FnSUNBZ1BTQWljM2x6ZEdWdE9tMWhjM1JsY25NaUNpQWdJQ0Jo
+        Y0dsZlozSnZkWEFnUFNBaWNtSmhZeTVoZFhSb2IzSnBlbUYwYVc5dUxtczRjeTVwYnlJS0lDQjlD
+        bjBL
+    import: !!binary |
+        Q2dwRGJIVnpkR1Z5VW05c1pVSnBibVJwYm1jZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCdVlXMWxMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZZMngxYzNSbGNsOXliMnhsWDJKcGJtUnBibWN1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

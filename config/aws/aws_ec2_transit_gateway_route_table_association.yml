@@ -7,13 +7,38 @@ aws_ec2_transit_gateway_route_table_association:
     arguments:
         transit_gateway_attachment_id:
             description: Identifier of EC2 Transit Gateway Attachment.
-            required: true
+            required: false
             policy: ''
             notes: ''
         transit_gateway_route_table_id:
             description: Identifier of EC2 Transit Gateway Route Table.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: EC2 Transit Gateway Route Table identifier combined with
+                EC2 Transit Gateway Attachment identifier
+        resource_id:
+            description: Identifier of the resource
+        resource_type:
+            description: Type of the resource
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDNSeVlXNXphWFJmWjJGMFpYZGhlVjl5YjNWMFpWOTBZ
+        V0pzWlY5aGMzTnZZMmxoZEdsdmJpSWdJbVY0WVcxd2JHVWlJSHNLSUNCMGNtRnVjMmwwWDJkaGRH
+        VjNZWGxmWVhSMFlXTm9iV1Z1ZEY5cFpDQWdQU0FpSkh0aGQzTmZaV015WDNSeVlXNXphWFJmWjJG
+        MFpYZGhlVjkyY0dOZllYUjBZV05vYldWdWRDNWxlR0Z0Y0d4bExtbGtmU0lLSUNCMGNtRnVjMmww
+        WDJkaGRHVjNZWGxmY205MWRHVmZkR0ZpYkdWZmFXUWdQU0FpSkh0aGQzTmZaV015WDNSeVlXNXph
+        WFJmWjJGMFpYZGhlVjl5YjNWMFpWOTBZV0pzWlM1bGVHRnRjR3hsTG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwZ1lYZHpYMlZqTWw5MGNtRnVjMmwwWDJkaGRHVjNZWGxmY205MWRHVmZkR0ZpYkdWZllYTnpi
+        Mk5wWVhScGIyNWdJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0IxYzJsdVp5QjBhR1VnUlVNeUlG
+        UnlZVzV6YVhRZ1IyRjBaWGRoZVNCU2IzVjBaU0JVWVdKc1pTQnBaR1Z1ZEdsbWFXVnlMQ0JoYmlC
+        MWJtUmxjbk5qYjNKbExDQmhibVFnZEdobElFVkRNaUJVY21GdWMybDBJRWRoZEdWM1lYa2dRWFIw
+        WVdOb2JXVnVkQ0JwWkdWdWRHbG1hV1Z5TENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZmRISmhibk5wZEY5bllYUmxkMkY1WDNKdmRYUmxYM1JoWW14bFgyRnpjMjlqYVdG
+        MGFXOXVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

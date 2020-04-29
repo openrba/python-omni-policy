@@ -13,20 +13,24 @@ openstack_networking_qos_dscp_marking_rule_v2:
         qos_policy_id:
             description: The QoS policy reference. Changing this creates a new QoS
                 DSCP marking rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dscp_mark:
             description: The value of DSCP mark. Changing this updates the DSCP mark
                 value existing
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        qos_policy_id:
-            description: See Argument Reference above.
-        dscp_mark:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwUmIxTWdSRk5EVUNCdFlYSnJhVzVuSUhKMWJHVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZSEZ2YzE5d2IyeHBZM2xmYVdRdlpITmpjRjl0WVhKcmFXNW5YM0oxYkdWZmFX
+        UmdJR1p2Y20xaGRDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0Z2YzE5a2MyTndYMjFoY210cGJtZGZjblZzWlY5
+        Mk1pNW9kRzFzTG0xaGNtdGtiM2R1

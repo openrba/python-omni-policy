@@ -11,18 +11,18 @@ aws_customer_gateway:
     arguments:
         bgp_asn:
             description: The gateway's Border Gateway Protocol (BGP
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_address:
             description: The IP address of the gateway's Internet-routable external
                 interface.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of customer gateway. The only type AWS
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -30,5 +30,30 @@ aws_customer_gateway:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The amazon-assigned ID of the gateway.
+        bgp_asn:
+            description: The gateway's Border Gateway Protocol (BGP) Autonomous System
+                Number (ASN).
+        ip_address:
+            description: The IP address of the gateway's Internet-routable external
+                interface.
+        type:
+            description: The type of customer gateway.
+        tags:
+            description: Tags applied to the gateway.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZM1Z6ZEc5dFpYSmZaMkYwWlhkaGVTSWdJbTFoYVc0aUlIc0tJ
+        Q0JpWjNCZllYTnVJQ0FnSUQwZ05qVXdNREFLSUNCcGNGOWhaR1J5WlhOeklEMGdJakUzTWk0NE15
+        NHhNalF1TVRBaUNpQWdkSGx3WlNBZ0lDQWdJQ0E5SUNKcGNITmxZeTR4SWdvS0lDQjBZV2R6SUQw
+        Z2V3b2dJQ0FnVG1GdFpTQTlJQ0p0WVdsdUxXTjFjM1J2YldWeUxXZGhkR1YzWVhraUNpQWdmUXA5
+        Q2c9PQ==
+    import: !!binary |
+        Q2dwRGRYTjBiMjFsY2lCSFlYUmxkMkY1Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqZFhOMGIyMWxjbDluWVhSbGQyRjVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

@@ -7,13 +7,30 @@ aws_dx_connection_association:
     arguments:
         connection_id:
             description: The ID of the connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         lag_id:
             description: The ID of the LAG with which to associate the connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaSGhmWTI5dWJtVmpkR2x2YmlJZ0ltVjRZVzF3YkdVaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQmlZVzVrZDJsa2RHZ2dQU0FpTVVkaWNI
+        TWlDaUFnYkc5allYUnBiMjRnSUQwZ0lrVnhVMlV5SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJS
+        NFgyeGhaeUlnSW1WNFlXMXdiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaVpYaGhiWEJzWlNJS0lDQmpiMjV1WldOMGFXOXVjMTlpWVc1a2QybGtkR2dnUFNBaU1VZGlj
+        SE1pQ2lBZ2JHOWpZWFJwYjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSWtWeFUyVXlJZ3A5Q2dweVpY
+        TnZkWEpqWlNBaVlYZHpYMlI0WDJOdmJtNWxZM1JwYjI1ZllYTnpiMk5wWVhScGIyNGlJQ0psZUdG
+        dGNHeGxJaUI3Q2lBZ1kyOXVibVZqZEdsdmJsOXBaQ0E5SUNJa2UyRjNjMTlrZUY5amIyNXVaV04w
+        YVc5dUxtVjRZVzF3YkdVdWFXUjlJZ29nSUd4aFoxOXBaQ0FnSUNBZ0lDQWdQU0FpSkh0aGQzTmZa
+        SGhmYkdGbkxtVjRZVzF3YkdVdWFXUjlJZ3A5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZUY5amIyNXVaV04wYVc5dVgyRnpjMjlqYVdGMGFXOXVMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the storage table. Must be unique within the storage account the table is located.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_name": {
                 "description": "Specifies the storage account in which to create the storage table.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,31 +26,31 @@
             },
             "id": {
                 "description": "The ID which should be used for this Shared Identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "access_policy": {
                 "description": "An `access_policy` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "expiry": {
                 "description": "The ISO8061 UTC time at which this Access Policy should be valid until.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "permissions": {
                 "description": "The permissions which should associated with this Shared Identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "start": {
                 "description": "The ISO8061 UTC time at which this Access Policy should be valid from.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

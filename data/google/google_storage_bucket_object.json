@@ -9,13 +9,13 @@
         "arguments": {
             "bucket": {
                 "description": "The name of the containing bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of the object. If you're interpolating the name of this object, see `output_name` instead.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,20 +74,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "crc32c": {
-                "description": "(Computed) Base 64 CRC32 hash of the uploaded data."
-            },
-            "md5hash": {
-                "description": "(Computed) Base 64 MD5 hash of the uploaded data."
-            },
-            "self_link": {
-                "description": "(Computed) A url reference to this object."
-            },
-            "output_name": {
-                "description": "(Computed) The name of the object. Use this field in interpolations with `google_storage_object_acl` to recreate"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

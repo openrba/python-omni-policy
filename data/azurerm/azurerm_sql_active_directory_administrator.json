@@ -8,31 +8,31 @@
         "arguments": {
             "server_name": {
                 "description": "The name of the SQL Server on which to set the administrator. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group for the SQL server. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "login": {
                 "description": "The login name of the principal to set as the server administrator",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "object_id": {
                 "description": "The ID of the principal to set as the server administrator",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "tenant_id": {
                 "description": "The Azure Tenant ID",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

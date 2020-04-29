@@ -14,7 +14,7 @@ azurerm_web_application_firewall_policy:
         resource_group_name:
             description: The name of the resource group. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
@@ -24,12 +24,12 @@ azurerm_web_application_firewall_policy:
             policy: ''
             notes: ''
         custom_rules:
-            description: One or more `custom_rule` blocks as defined below.
+            description: One or more `custom_rules` blocks as defined below.
             required: false
             policy: ''
             notes: ''
         policy_settings:
-            description: A `policy_setting` block as defined below.
+            description: A `policy_settings` block as defined below.
             required: false
             policy: ''
             notes: ''
@@ -46,33 +46,34 @@ azurerm_web_application_firewall_policy:
             notes: ''
         priority:
             description: Describes priority of the rule. Rules with a lower value
-                will be evaluated before rules with a higher value
-            required: true
+                will be evaluated before rules with a higher value.
+            required: false
             policy: ''
             notes: ''
         rule_type:
-            description: Describes the type of rule
-            required: true
+            description: Describes the type of rule.
+            required: false
             policy: ''
             notes: ''
         match_conditions:
-            description: One or more `match_condition` block defined below.
-            required: true
+            description: One or more `match_conditions` blocks as defined below.
+            required: false
             policy: ''
             notes: ''
         action:
-            description: Type of Actions
-            required: true
+            description: Type of action.
+            required: false
             policy: ''
             notes: ''
         match_variables:
-            description: One or more `match_variable` block defined below.
-            required: true
+            description: 'The name of the Match Variable. Possible values: `RequestArgNames`,
+                `RequestCookieNames`, `RequestHeaderNames`.'
+            required: false
             policy: ''
             notes: ''
         operator:
-            description: Describes operator to be matched
-            required: true
+            description: Describes operator to be matched.
+            required: false
             policy: ''
             notes: ''
         negation_condition:
@@ -81,17 +82,17 @@ azurerm_web_application_firewall_policy:
             policy: ''
             notes: ''
         match_values:
-            description: Match value
-            required: true
+            description: A list of match values.
+            required: false
             policy: ''
             notes: ''
         variable_name:
             description: The name of the Match Variable
-            required: true
+            required: false
             policy: ''
             notes: ''
         selector:
-            description: Describes field of the matchVariable collection
+            description: Describes field of the matchVariable collection.
             required: false
             policy: ''
             notes: ''
@@ -120,17 +121,17 @@ azurerm_web_application_firewall_policy:
         selector_match_operator:
             description: 'Describes operator to be matched. Possible values: `Contains`,
                 `EndsWith`, `Equals`, `EqualsAny`, `StartsWith`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The rule set type.
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
             description: The rule set version.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_group_override:
@@ -140,7 +141,7 @@ azurerm_web_application_firewall_policy:
             notes: ''
         rule_group_name:
             description: The name of the Rule Group
-            required: true
+            required: false
             policy: ''
             notes: ''
         disabled_rules:
@@ -198,7 +199,23 @@ azurerm_web_application_firewall_policy:
         QjlDZ29nSUNBZ0lDQnZjR1Z5WVhSdmNpQWdJQ0FnSUNBZ0lDQWdQU0FpUTI5dWRHRnBibk1pQ2lB
         Z0lDQWdJRzVsWjJGMGFXOXVYMk52Ym1ScGRHbHZiaUE5SUdaaGJITmxDaUFnSUNBZ0lHMWhkR05v
         WDNaaGJIVmxjeUFnSUNBZ0lDQTlJRnNpVjJsdVpHOTNjeUpkQ2lBZ0lDQjlDZ29nSUNBZ1lXTjBh
-        Vzl1SUQwZ0lrSnNiMk5ySWdvZ0lIMEtmUW89
+        Vzl1SUQwZ0lrSnNiMk5ySWdvZ0lIMEtDaUFnY0c5c2FXTjVYM05sZEhScGJtZHpJSHNLSUNBZ0lH
+        VnVZV0pzWldRZ1BTQjBjblZsQ2lBZ0lDQnRiMlJsSUNBZ0lEMGdJbEJ5WlhabGJuUnBiMjRpQ2lB
+        Z2ZRb0tJQ0J0WVc1aFoyVmtYM0oxYkdWeklIc0tJQ0FnSUdWNFkyeDFjMmx2YmlCN0NpQWdJQ0Fn
+        SUcxaGRHTm9YM1poY21saFlteGxJQ0FnSUNBZ0lDQWdJRDBnSWxKbGNYVmxjM1JJWldGa1pYSk9Z
+        VzFsY3lJS0lDQWdJQ0FnYzJWc1pXTjBiM0lnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZUMxamIy
+        MXdZVzU1TFhObFkzSmxkQzFvWldGa1pYSWlDaUFnSUNBZ0lITmxiR1ZqZEc5eVgyMWhkR05vWDI5
+        d1pYSmhkRzl5SUQwZ0lrVnhkV0ZzY3lJS0lDQWdJSDBLSUNBZ0lHVjRZMngxYzJsdmJpQjdDaUFn
+        SUNBZ0lHMWhkR05vWDNaaGNtbGhZbXhsSUNBZ0lDQWdJQ0FnSUQwZ0lsSmxjWFZsYzNSRGIyOXJh
+        V1ZPWVcxbGN5SUtJQ0FnSUNBZ2MyVnNaV04wYjNJZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRH
+        OXZMWFJoYzNSNUlnb2dJQ0FnSUNCelpXeGxZM1J2Y2w5dFlYUmphRjl2Y0dWeVlYUnZjaUE5SUNK
+        RmJtUnpWMmwwYUNJS0lDQWdJSDBLQ2lBZ0lDQnRZVzVoWjJWa1gzSjFiR1ZmYzJWMElIc0tJQ0Fn
+        SUNBZ2NuVnNaVjl6WlhSZmRIbHdaU0FnSUNBOUlDSlBWMEZUVUNJS0lDQWdJQ0FnY25Wc1pWOXpa
+        WFJmZG1WeWMybHZiaUE5SUNJekxqRWlDaUFnSUNBZ0lISjFiR1ZmWjNKdmRYQmZiM1psY25KcFpH
+        VWdld29nSUNBZ0lDQWdJSEoxYkdWZlozSnZkWEJmYm1GdFpTQTlJQ0pTUlZGVlJWTlVMVGt5TUMx
+        UVVrOVVUME5QVEMxRlRrWlBVa05GVFVWT1ZDSUtJQ0FnSUNBZ0lDQmthWE5oWW14bFpGOXlkV3hs
+        Y3lBOUlGc0tJQ0FnSUNBZ0lDQWdJQ0k1TWpBek1EQWlMQW9nSUNBZ0lDQWdJQ0FnSWpreU1EUTBN
+        Q0lLSUNBZ0lDQWdJQ0JkQ2lBZ0lDQWdJSDBLSUNBZ0lIMEtJQ0I5Q2dwOUNnPT0=
     import: !!binary |
         Q2dwWFpXSWdRWEJ3YkdsallYUnBiMjRnUm1seVpYZGhiR3dnVUc5c2FXTjVJR05oYmlCaVpTQnBi
         WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZSEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L

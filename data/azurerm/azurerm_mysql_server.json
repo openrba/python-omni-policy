@@ -8,55 +8,55 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the MySQL Server. Changing this forces a new resource to be created. This needs to be globally unique within Azure.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the MySQL Server. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku_name": {
                 "description": "Specifies the SKU Name for this MySQL Server. The name of the SKU, follows the `tier` + `family` + `cores` pattern (e.g. `B_Gen4_1`, `GP_Gen5_8`). For more information see the [product documentation](https://docs.microsoft.com/en-us/rest/api/mysql/servers/create#sku).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_profile": {
                 "description": "A `storage_profile` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "administrator_login": {
                 "description": "The Administrator Login for the MySQL Server. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "administrator_login_password": {
                 "description": "The Password associated with the `administrator_login` for the MySQL Server.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "version": {
                 "description": "Specifies the version of MySQL to use. Valid values are `5.6`, `5.7`, and `8.0`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ssl_enforcement": {
                 "description": "Specifies if SSL should be enforced on connections. Possible values are `Enabled` and `Disabled`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,7 +74,7 @@
             },
             "storage_mb": {
                 "description": "Max storage allowed for a server. Possible values are between `5120` MB(5GB",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

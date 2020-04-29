@@ -20,7 +20,7 @@
             },
             "user_arn": {
                 "description": "The user's IAM ARN to set permissions for",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "stack_id": {
                 "description": "The stack to set the permissions for",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

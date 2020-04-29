@@ -8,13 +8,13 @@
         "arguments": {
             "identity_pool_name": {
                 "description": "- The Cognito Identity Pool name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "allow_unauthenticated_identities": {
                 "description": "- Whether the identity pool supports unauthenticated logins or not.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

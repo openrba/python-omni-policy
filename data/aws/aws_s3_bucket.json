@@ -8,7 +8,7 @@
         "arguments": {
             "bucket": {
                 "description": "The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -146,13 +146,13 @@
             },
             "allowed_methods": {
                 "description": "Specifies which methods are allowed. Can be `GET`, `PUT`, `POST`, `DELETE` or `HEAD`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "allowed_origins": {
                 "description": "Specifies which origins are allowed.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -170,7 +170,7 @@
             },
             "enabled": {
                 "description": "Boolean which indicates if this criteria is enabled.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -182,7 +182,7 @@
             },
             "target_bucket": {
                 "description": "The name of the bucket that will receive the log objects.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -260,13 +260,13 @@
             },
             "role": {
                 "description": "The ARN of the IAM role for Amazon S3 to assume when replicating the objects.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rules": {
                 "description": "Specifies the rules managing the replication (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -278,7 +278,7 @@
             },
             "destination": {
                 "description": "Specifies the destination for the rule (documented below).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -290,7 +290,7 @@
             },
             "status": {
                 "description": "The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -368,25 +368,25 @@
             },
             "owner": {
                 "description": "The override value for the owner on replicated objects. Currently only `Destination` is supported.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "object_lock_enabled": {
                 "description": "Indicates whether this bucket has an Object Lock configuration enabled. Valid value is `Enabled`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "default_retention": {
                 "description": "The default retention period that you want to apply to new objects placed in this bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "mode": {
                 "description": "The default Object Lock retention mode you want to apply to new objects placed in this bucket. Valid values are `GOVERNANCE` and `COMPLIANCE`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

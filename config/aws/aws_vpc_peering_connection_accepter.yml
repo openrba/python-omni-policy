@@ -7,7 +7,7 @@ aws_vpc_peering_connection_accepter:
     arguments:
         vpc_peering_connection_id:
             description: The VPC Peering Connection ID to manage.
-            required: true
+            required: false
             policy: ''
             notes: ''
         auto_accept:
@@ -39,3 +39,36 @@ aws_vpc_peering_connection_accepter:
         requester:
             description: A configuration block that describes [VPC Peering Connection]
     timeouts: {}
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGQzTWlJSHNLSUNCeVpXZHBiMjRnUFNBaWRYTXRaV0Z6ZEMweElnb0tJ
+        Q0FqSUZKbGNYVmxjM1JsY2lkeklHTnlaV1JsYm5ScFlXeHpMZ3A5Q2dwd2NtOTJhV1JsY2lBaVlY
+        ZHpJaUI3Q2lBZ1lXeHBZWE1nSUQwZ0luQmxaWElpQ2lBZ2NtVm5hVzl1SUQwZ0luVnpMWGRsYzNR
+        dE1pSUtDaUFnSXlCQlkyTmxjSFJsY2lkeklHTnlaV1JsYm5ScFlXeHpMZ3A5Q2dweVpYTnZkWEpq
+        WlNBaVlYZHpYM1p3WXlJZ0ltMWhhVzRpSUhzS0lDQmphV1J5WDJKc2IyTnJJRDBnSWpFd0xqQXVN
+        QzR3THpFMklncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzWndZeUlnSW5CbFpYSWlJSHNLSUNCd2Nt
+        OTJhV1JsY2lBZ0lEMGdJbUYzY3k1d1pXVnlJZ29nSUdOcFpISmZZbXh2WTJzZ1BTQWlNVEF1TVM0
+        d0xqQXZNVFlpQ24wS0NtUmhkR0VnSW1GM2MxOWpZV3hzWlhKZmFXUmxiblJwZEhraUlDSndaV1Z5
+        SWlCN0NpQWdjSEp2ZG1sa1pYSWdQU0FpWVhkekxuQmxaWElpQ24wS0NpTWdVbVZ4ZFdWemRHVnlK
+        M01nYzJsa1pTQnZaaUIwYUdVZ1kyOXVibVZqZEdsdmJpNEtjbVZ6YjNWeVkyVWdJbUYzYzE5MmNH
+        TmZjR1ZsY21sdVoxOWpiMjV1WldOMGFXOXVJaUFpY0dWbGNpSWdld29nSUhad1kxOXBaQ0FnSUNB
+        Z0lDQWdQU0FpSkh0aGQzTmZkbkJqTG0xaGFXNHVhV1I5SWdvZ0lIQmxaWEpmZG5CalgybGtJQ0Fn
+        UFNBaUpIdGhkM05mZG5CakxuQmxaWEl1YVdSOUlnb2dJSEJsWlhKZmIzZHVaWEpmYVdRZ1BTQWlK
+        SHRrWVhSaExtRjNjMTlqWVd4c1pYSmZhV1JsYm5ScGRIa3VjR1ZsY2k1aFkyTnZkVzUwWDJsa2ZT
+        SUtJQ0J3WldWeVgzSmxaMmx2YmlBZ0lEMGdJblZ6TFhkbGMzUXRNaUlLSUNCaGRYUnZYMkZqWTJW
+        d2RDQWdJRDBnWm1Gc2MyVUtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lGTnBaR1VnUFNBaVVtVnhkV1Z6
+        ZEdWeUlnb2dJSDBLZlFvS0l5QkJZMk5sY0hSbGNpZHpJSE5wWkdVZ2IyWWdkR2hsSUdOdmJtNWxZ
+        M1JwYjI0dUNuSmxjMjkxY21ObElDSmhkM05mZG5CalgzQmxaWEpwYm1kZlkyOXVibVZqZEdsdmJs
+        OWhZMk5sY0hSbGNpSWdJbkJsWlhJaUlIc0tJQ0J3Y205MmFXUmxjaUFnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSW1GM2N5NXdaV1Z5SWdvZ0lIWndZMTl3WldWeWFXNW5YMk52Ym01bFkzUnBiMjVm
+        YVdRZ1BTQWlKSHRoZDNOZmRuQmpYM0JsWlhKcGJtZGZZMjl1Ym1WamRHbHZiaTV3WldWeUxtbGtm
+        U0lLSUNCaGRYUnZYMkZqWTJWd2RDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ2RISjFaUW9LSUNCMFlX
+        ZHpJRDBnZXdvZ0lDQWdVMmxrWlNBOUlDSkJZMk5sY0hSbGNpSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwV1VFTWdVR1ZsY21sdVp5QkRiMjV1WldOMGFXOXVJRUZqWTJWd2RHVnljeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdZbmtnZFhOcGJtY2dkR2hsSUZCbFpYSnBibWNnUTI5dWJtVmpkR2x2YmlCSlJD
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZmNHVmxjbWx1WjE5amIyNXVaV04wYVc5dVgyRmpZMlZ3ZEdWeUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

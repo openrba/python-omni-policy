@@ -17,13 +17,13 @@ openstack_sharedfilesystem_share_v2:
             notes: ''
         share_proto:
             description: The share protocol - can either be NFS, CIFS,
-            required: true
+            required: false
             policy: ''
             notes: ''
         size:
             description: The share size, in GBs. The requested share size cannot be
                 greater
-            required: true
+            required: false
             policy: ''
             notes: ''
         share_type:
@@ -57,43 +57,36 @@ openstack_sharedfilesystem_share_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the Share.
-        region:
-            description: See Argument Reference above.
-        project_id:
-            description: The owner of the Share.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        share_proto:
-            description: See Argument Reference above.
-        size:
-            description: See Argument Reference above.
-        share_type:
-            description: See Argument Reference above.
-        snapshot_id:
-            description: See Argument Reference above.
-        is_public:
-            description: See Argument Reference above.
-        metadata:
-            description: See Argument Reference above.
-        share_network_id:
-            description: See Argument Reference above.
-        availability_zone:
-            description: See Argument Reference above.
-        export_locations:
-            description: A list of export locations. For example, when a share server
-        has_replicas:
-            description: Indicates whether a share has replicas or not.
-        host:
-            description: The share host name.
-        replication_type:
-            description: The share replication type.
-        share_server_id:
-            description: The UUID of the share server.
-        all_metadata:
-            description: The map of metadata, assigned on the share, which has been
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlibVYwZDI5eWEx
+        OHhJZ29nSUdGa2JXbHVYM04wWVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNK
+        dmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpkV0p1WlhSZmRqSWlJQ0p6ZFdKdVpYUmZNU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpYzNWaWJtVjBYekVpQ2lBZ1kybGtjaUFnSUNBZ0lDQTlJ
+        Q0l4T1RJdU1UWTRMakU1T1M0d0x6STBJZ29nSUdsd1gzWmxjbk5wYjI0Z1BTQTBDaUFnYm1WMGQy
+        OXlhMTlwWkNBOUlDSWtlMjl3Wlc1emRHRmphMTl1WlhSM2IzSnJhVzVuWDI1bGRIZHZjbXRmZGpJ
+        dWJtVjBkMjl5YTE4eExtbGtmU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltOXdaVzV6ZEdGamExOXphR0Z5
+        WldSbWFXeGxjM2x6ZEdWdFgzTm9ZWEpsYm1WMGQyOXlhMTkyTWlJZ0luTm9ZWEpsYm1WMGQyOXlh
+        MTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZEdWemRGOXphR0Z5Wlc1bGRI
+        ZHZjbXNpQ2lBZ1pHVnpZM0pwY0hScGIyNGdJQ0FnSUNBZ1BTQWlkR1Z6ZENCemFHRnlaU0J1WlhS
+        M2IzSnJJSGRwZEdnZ2MyVmpkWEpwZEhrZ2MyVnlkbWxqWlhNaUNpQWdibVYxZEhKdmJsOXVaWFJm
+        YVdRZ0lDQWdQU0FpSkh0dmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlM
+        bTVsZEhkdmNtdGZNUzVwWkgwaUNpQWdibVYxZEhKdmJsOXpkV0p1WlhSZmFXUWdQU0FpSkh0dmNH
+        VnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpkV0p1WlhSZmRqSXVjM1ZpYm1WMFh6RXVhV1I5SWdw
+        OUNncHlaWE52ZFhKalpTQWliM0JsYm5OMFlXTnJYM05vWVhKbFpHWnBiR1Z6ZVhOMFpXMWZjMmho
+        Y21WZmRqSWlJQ0p6YUdGeVpWOHhJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSnVa
+        bk5mYzJoaGNtVWlDaUFnWkdWelkzSnBjSFJwYjI0Z0lDQWdJQ0E5SUNKMFpYTjBJSE5vWVhKbElH
+        UmxjMk55YVhCMGFXOXVJZ29nSUhOb1lYSmxYM0J5YjNSdklDQWdJQ0FnUFNBaVRrWlRJZ29nSUhO
+        cGVtVWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBeENpQWdjMmhoY21WZmJtVjBkMjl5YTE5cFpDQTlJQ0lr
+        ZTI5d1pXNXpkR0ZqYTE5emFHRnlaV1JtYVd4bGMzbHpkR1Z0WDNOb1lYSmxibVYwZDI5eWExOTJN
+        aTV6YUdGeVpXNWxkSGR2Y210Zk1TNXBaSDBpQ24wSw==
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUhSb1pTQkpSQ0J2WmlCMGFHVWdjMmhoY21VNkNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXphR0Z5WldSbWFXeGxjM2x6ZEdWdFgzTm9ZWEpsWDNZeUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

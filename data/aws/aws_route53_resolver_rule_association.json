@@ -8,13 +8,13 @@
         "arguments": {
             "resolver_rule_id": {
                 "description": "The ID of the resolver rule that you want to associate with the VPC.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vpc_id": {
                 "description": "The ID of the VPC that you want to associate the resolver rule with.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

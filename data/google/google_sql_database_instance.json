@@ -15,7 +15,7 @@
             },
             "settings": {
                 "description": "The settings to use for the database. The",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -57,7 +57,7 @@
             },
             "tier": {
                 "description": "The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -123,7 +123,7 @@
             },
             "value": {
                 "description": "A CIDR notation IPv4 or IPv6 address that is allowed to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -266,53 +266,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "self_link": {
-                "description": "The URI of the created resource."
-            },
-            "connection_name": {
-                "description": "The connection name of the instance to be used in"
-            },
-            "service_account_email_address": {
-                "description": "The service account email address assigned to the"
-            },
-            "ip_address.0.ip_address": {
-                "description": "The IPv4 address assigned."
-            },
-            "ip_address.0.time_to_retire": {
-                "description": "The time this IP address will be retired, in RFC"
-            },
-            "ip_address.0.type": {
-                "description": "The type of this IP address."
-            },
-            "first_ip_address": {
-                "description": "The first IPv4 address of any type assigned. This is to"
-            },
-            "public_ip_address": {
-                "description": "The first public (`PRIMARY`) IPv4 address assigned. This is"
-            },
-            "private_ip_address": {
-                "description": "The first private (`PRIVATE`) IPv4 address assigned. This is"
-            },
-            "settings.version": {
-                "description": "Used to make sure changes to the `settings` block are"
-            },
-            "server_ca_cert.0.cert": {
-                "description": "The CA Certificate used to connect to the SQL Instance via SSL."
-            },
-            "server_ca_cert.0.common_name": {
-                "description": "The CN valid for the CA Cert."
-            },
-            "server_ca_cert.0.create_time": {
-                "description": "Creation time of the CA Cert."
-            },
-            "server_ca_cert.0.expiration_time": {
-                "description": "Expiration time of the CA Cert."
-            },
-            "server_ca_cert.0.sha1_fingerprint": {
-                "description": "SHA Fingerprint of the CA Cert."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

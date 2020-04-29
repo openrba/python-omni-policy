@@ -7,56 +7,56 @@
         "description": "Manages an Application Gateway.",
         "arguments": {
             "name": {
-                "description": "The name of the Application Gateway. Changing this forces a new resource to be created.",
-                "required": true,
+                "description": "Unique name of the rewrite rule block",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to the Application Gateway should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The Azure region where the Application Gateway should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "backend_address_pool": {
                 "description": "One or more `backend_address_pool` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "backend_http_settings": {
                 "description": "One or more `backend_http_settings` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "frontend_ip_configuration": {
                 "description": "One or more `frontend_ip_configuration` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "frontend_port": {
                 "description": "One or more `frontend_port` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "gateway_ip_configuration": {
                 "description": "One or more `gateway_ip_configuration` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "http_listener": {
                 "description": "One or more `http_listener` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -68,13 +68,13 @@
             },
             "request_routing_rule": {
                 "description": "One or more `request_routing_rule` blocks as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "A `sku` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -82,7 +82,9 @@
                 "description": "A collection of availability zones to spread the Application Gateway over.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> **Please Note**: Availability Zones are [only supported in several regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview).  They are also only supported for [v2 SKUs](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant)"
+                ]
             },
             "authentication_certificate": {
                 "description": "One or more `authentication_certificate` blocks.",
@@ -182,7 +184,7 @@
             },
             "cookie_based_affinity": {
                 "description": "Is Cookie-Based Affinity enabled? Possible values are `Enabled` and `Disabled`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -194,13 +196,13 @@
             },
             "path": {
                 "description": "The Path used for this Probe.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "port": {
                 "description": "The port used for this Frontend Port.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -212,13 +214,13 @@
             },
             "protocol": {
                 "description": "The Protocol used for this Probe. Possible values are `Http` and `Https`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "request_timeout": {
                 "description": "The request timeout in seconds, which must be between 1 and 86400 seconds.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -248,19 +250,19 @@
             },
             "enabled": {
                 "description": "Is the Web Application Firewall be enabled?",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "drain_timeout_sec": {
                 "description": "The number of seconds connection draining is active. Acceptable values are from `1` second to `3600` seconds.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "The ID of a Subnet.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -287,13 +289,13 @@
             },
             "frontend_ip_configuration_name": {
                 "description": "The Name of the Frontend IP Configuration used for this HTTP Listener.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "frontend_port_name": {
                 "description": "The Name of the Frontend Port use for this HTTP Listener.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -325,7 +327,7 @@
             },
             "identity_ids": {
                 "description": "Specifies a list with a single user managed identity id to be assigned to the Application Gateway.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -337,13 +339,13 @@
             },
             "status_code": {
                 "description": "Status code of the application gateway customer error. Possible values are `HttpStatus403` and `HttpStatus502`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "paths": {
                 "description": "A list of Paths used in this Path Rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -379,19 +381,19 @@
             },
             "interval": {
                 "description": "The Interval between two consecutive probes in seconds. Possible values range from 1 second to a maximum of 86,400 seconds.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "timeout": {
                 "description": "The Timeout used for this Probe, which indicates when a probe becomes unhealthy. Possible values range from 1 second to a maximum of 86,400 seconds.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "unhealthy_threshold": {
                 "description": "The Unhealthy Threshold for this Probe, which indicates the amount of retries which should be attempted before a node is deemed unhealthy. Possible values are from 1 - 20 seconds.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -415,13 +417,13 @@
             },
             "rule_type": {
                 "description": "The Type of Routing that should be used for this Rule. Possible values are `Basic` and `PathBasedRouting`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "http_listener_name": {
                 "description": "The Name of the HTTP Listener which should be used for this Routing Rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -433,13 +435,13 @@
             },
             "tier": {
                 "description": "The Tier of the SKU to use for this Application Gateway. Possible values are `Standard`, `Standard_v2`, `WAF` and `WAF_v2`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "capacity": {
                 "description": "The Capacity of the SKU to use for this Application Gateway. When using a V1 SKU this value must be between 1 and 32, and 1 to 125 for a V2 SKU. This property is optional if `autoscale_configuration` is set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -481,7 +483,7 @@
             },
             "path_rule": {
                 "description": "One or more `path_rule` blocks as defined above.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -517,19 +519,19 @@
             },
             "firewall_mode": {
                 "description": "The Web Application Firewall Mode. Possible values are `Detection` and `Prevention`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_set_type": {
                 "description": "The Type of the Rule Set used for this Web Application Firewall.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_set_version": {
                 "description": "The Version of the Rule Set used for this Web Application Firewall. Possible values are `2.2.9`, `3.0`, and `3.1`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -565,7 +567,7 @@
             },
             "rule_group_name": {
                 "description": "The rule group where specific rules should be disabled. Accepted values are:  `crs_20_protocol_violations`, `crs_21_protocol_anomalies`, `crs_23_request_limits`, `crs_30_http_policy`, `crs_35_bad_robots`, `crs_40_generic_attacks`, `crs_41_sql_injection_attacks`, `crs_41_xss_attacks`, `crs_42_tight_security`, `crs_45_trojans`, `General`, `REQUEST-911-METHOD-ENFORCEMENT`, `REQUEST-913-SCANNER-DETECTION`, `REQUEST-920-PROTOCOL-ENFORCEMENT`, `REQUEST-921-PROTOCOL-ATTACK`, `REQUEST-930-APPLICATION-ATTACK-LFI`, `REQUEST-931-APPLICATION-ATTACK-RFI`, `REQUEST-932-APPLICATION-ATTACK-RCE`, `REQUEST-933-APPLICATION-ATTACK-PHP`, `REQUEST-941-APPLICATION-ATTACK-XSS`, `REQUEST-942-APPLICATION-ATTACK-SQLI`, `REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -577,7 +579,7 @@
             },
             "match_variable": {
                 "description": "Match variable of the exclusion rule to exclude header, cookie or GET arguments. Possible values are `RequestHeaderNames`, `RequestArgNames` and `RequestCookieNames`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -595,13 +597,13 @@
             },
             "custom_error_page_url": {
                 "description": "Error page URL of the application gateway customer error.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "redirect_type": {
                 "description": "The type of redirect. Possible values are `Permanent`, `Temporary`, `Found` and `SeeOther`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -631,7 +633,7 @@
             },
             "min_capacity": {
                 "description": "Minimum capacity for autoscaling. Accepted values are in the range `0` to `100`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -643,13 +645,13 @@
             },
             "rewrite_rule": {
                 "description": "One or more `rewrite_rule` blocks as defined above.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_sequence": {
                 "description": "Rule sequence of the rewrite rule that determines the order of execution in a set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -673,13 +675,13 @@
             },
             "variable": {
                 "description": "The [variable](https://docs.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers#server-variables",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "pattern": {
                 "description": "The pattern, either fixed string or regular expression, that evaluates the truthfulness of the condition.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -697,13 +699,13 @@
             },
             "header_name": {
                 "description": "Header name of the header configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "header_value": {
                 "description": "Header value of the header configuration. To delete a response header set this property to an empty string.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

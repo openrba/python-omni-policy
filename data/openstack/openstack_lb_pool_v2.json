@@ -32,7 +32,7 @@
             },
             "protocol": {
                 "description": "The protocol - can either be TCP, HTTP, HTTPS, PROXY",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "lb_method": {
                 "description": "The load balancing algorithm to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,7 +62,7 @@
             },
             "type": {
                 "description": "The type of persistence mode. The current specification",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -73,32 +73,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the pool."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "protocol": {
-                "description": "See Argument Reference above."
-            },
-            "lb_method": {
-                "description": "See Argument Reference above."
-            },
-            "persistence": {
-                "description": "See Argument Reference above."
-            },
-            "admin_state_up": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

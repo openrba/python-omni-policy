@@ -4,49 +4,9 @@ azurerm_resource_group:
     layout: azurerm
     page_title: 'Azure Resource Manager: azurerm_resource_group'
     description: Manages a Resource Group.
-    arguments:
-        location:
-            description: The Azure Region where the Resource Group should exist. Changing
-                this forces a new Resource Group to be created.
-            required: true
-            policy: ''
-            notes: ''
-        name:
-            description: The Name which should be used for this Resource Group. Changing
-                this forces a new Resource Group to be created.
-            required: true
-            policy: ''
-            notes: ''
-        tags:
-            description: A mapping of tags which should be assigned to the Resource
-                Group.
-            required: false
-            policy: ''
-            notes: ''
-    attributes:
-        id:
-            description: The ID of the Resource Group.
-    timeouts:
-        create:
-            description: Used when creating the Resource Group.
-            required: false
-            timeout: 1
-        read:
-            description: Used when retrieving the Resource Group.
-            required: false
-            timeout: 5
-        update:
-            description: Used when updating the Resource Group.
-            required: false
-            timeout: 1
-        delete:
-            description: Used when deleting the Resource Group.
-            required: false
-            timeout: 1
-    usage: !!binary |
-        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
-        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVWlDaUFnYkc5allYUnBiMjRnUFNBaVYy
-        VnpkQ0JGZFhKdmNHVWlDbjBL
-    import: !!binary |
-        Q2dwU1pYTnZkWEpqWlNCSGNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
-        U0JnY21WemIzVnlZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    arguments: {}
+    attributes: {}
+    timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: {}

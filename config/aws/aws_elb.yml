@@ -47,7 +47,7 @@ aws_elb:
             notes: ''
         listener:
             description: A list of listener blocks. Listeners documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         health_check:
@@ -84,7 +84,7 @@ aws_elb:
             notes: ''
         bucket:
             description: The S3 bucket name to store the logs in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bucket_prefix:
@@ -95,7 +95,7 @@ aws_elb:
             notes: ''
         interval:
             description: The interval between checks.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -105,22 +105,22 @@ aws_elb:
             notes: ''
         instance_port:
             description: The port on the instance to route to
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_protocol:
             description: The protocol to use to the instance. Valid
-            required: true
+            required: false
             policy: ''
             notes: ''
         lb_port:
             description: The port to listen on for the load balancer
-            required: true
+            required: false
             policy: ''
             notes: ''
         lb_protocol:
             description: The protocol to listen on. Valid values are `HTTP`,
-            required: true
+            required: false
             policy: ''
             notes: ''
         ssl_certificate_id:
@@ -130,23 +130,23 @@ aws_elb:
             notes: ''
         healthy_threshold:
             description: The number of checks before the instance is declared healthy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         unhealthy_threshold:
             description: The number of checks before the instance is declared unhealthy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target:
             description: The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}",
                 where PROTOCOL
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout:
             description: The length of time before the check times out.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -168,3 +168,36 @@ aws_elb:
             description: The canonical hosted zone ID of the ELB (to be used in a
                 Route 53 Alias record)
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJR3h2WVdRZ1ltRnNZVzVqWlhJS2NtVnpiM1Z5WTJVZ0ltRjNj
+        MTlsYkdJaUlDSmlZWElpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWm05dllt
+        RnlMWFJsY25KaFptOXliUzFsYkdJaUNpQWdZWFpoYVd4aFltbHNhWFI1WDNwdmJtVnpJRDBnV3lK
+        MWN5MTNaWE4wTFRKaElpd2dJblZ6TFhkbGMzUXRNbUlpTENBaWRYTXRkMlZ6ZEMweVl5SmRDZ29n
+        SUdGalkyVnpjMTlzYjJkeklIc0tJQ0FnSUdKMVkydGxkQ0FnSUNBZ0lDQWdQU0FpWm05dklnb2dJ
+        Q0FnWW5WamEyVjBYM0J5WldacGVDQTlJQ0ppWVhJaUNpQWdJQ0JwYm5SbGNuWmhiQ0FnSUNBZ0lE
+        MGdOakFLSUNCOUNnb2dJR3hwYzNSbGJtVnlJSHNLSUNBZ0lHbHVjM1JoYm1ObFgzQnZjblFnSUNB
+        Z0lEMGdPREF3TUFvZ0lDQWdhVzV6ZEdGdVkyVmZjSEp2ZEc5amIyd2dQU0FpYUhSMGNDSUtJQ0Fn
+        SUd4aVgzQnZjblFnSUNBZ0lDQWdJQ0FnSUQwZ09EQUtJQ0FnSUd4aVgzQnliM1J2WTI5c0lDQWdJ
+        Q0FnSUQwZ0ltaDBkSEFpQ2lBZ2ZRb0tJQ0JzYVhOMFpXNWxjaUI3Q2lBZ0lDQnBibk4wWVc1alpW
+        OXdiM0owSUNBZ0lDQWdQU0E0TURBd0NpQWdJQ0JwYm5OMFlXNWpaVjl3Y205MGIyTnZiQ0FnUFNB
+        aWFIUjBjQ0lLSUNBZ0lHeGlYM0J2Y25RZ0lDQWdJQ0FnSUNBZ0lDQTlJRFEwTXdvZ0lDQWdiR0pm
+        Y0hKdmRHOWpiMndnSUNBZ0lDQWdJRDBnSW1oMGRIQnpJZ29nSUNBZ2MzTnNYMk5sY25ScFptbGpZ
+        WFJsWDJsa0lEMGdJbUZ5YmpwaGQzTTZhV0Z0T2pveE1qTTBOVFkzT0Rrd01USTZjMlZ5ZG1WeUxX
+        TmxjblJwWm1sallYUmxMMk5sY25ST1lXMWxJZ29nSUgwS0NpQWdhR1ZoYkhSb1gyTm9aV05ySUhz
+        S0lDQWdJR2hsWVd4MGFIbGZkR2h5WlhOb2IyeGtJQ0FnUFNBeUNpQWdJQ0IxYm1obFlXeDBhSGxm
+        ZEdoeVpYTm9iMnhrSUQwZ01nb2dJQ0FnZEdsdFpXOTFkQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlETUtJ
+        Q0FnSUhSaGNtZGxkQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlTRlJVVURvNE1EQXdMeUlLSUNBZ0lH
+        bHVkR1Z5ZG1Gc0lDQWdJQ0FnSUNBZ0lDQWdQU0F6TUFvZ0lIMEtDaUFnYVc1emRHRnVZMlZ6SUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ1d5SWtlMkYzYzE5cGJuTjBZVzVqWlM1bWIyOHVhV1I5
+        SWwwS0lDQmpjbTl6YzE5NmIyNWxYMnh2WVdSZlltRnNZVzVqYVc1bklDQWdQU0IwY25WbENpQWdh
+        V1JzWlY5MGFXMWxiM1YwSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnTkRBd0NpQWdZMjl1Ym1WamRH
+        bHZibDlrY21GcGJtbHVaeUFnSUNBZ0lDQWdJRDBnZEhKMVpRb2dJR052Ym01bFkzUnBiMjVmWkhK
+        aGFXNXBibWRmZEdsdFpXOTFkQ0E5SURRd01Bb0tJQ0IwWVdkeklEMGdld29nSUNBZ1RtRnRaU0E5
+        SUNKbWIyOWlZWEl0ZEdWeWNtRm1iM0p0TFdWc1lpSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwRlRFSnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZRzVoYldWZ0xDQmxM
+        bWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdJdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -19,12 +19,12 @@ datadog_user:
             notes: ''
         email:
             description: Email address for user
-            required: true
+            required: false
             policy: ''
             notes: ''
         handle:
             description: The user handle, must be a valid email.
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_admin:
@@ -34,7 +34,7 @@ datadog_user:
             notes: ''
         name:
             description: Name for user
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
@@ -53,3 +53,15 @@ datadog_user:
         verified:
             description: Returns true if Datadog user is verified
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRVJoZEdGa2IyY2dkWE5sY2dweVpYTnZkWEpqWlNBaVpHRjBZ
+        V1J2WjE5MWMyVnlJaUFpWm05dklpQjdDaUFnWlcxaGFXd2dJRDBnSW01bGQwQmxlR0Z0Y0d4bExt
+        TnZiU0lLSUNCb1lXNWtiR1VnUFNBaWJtVjNRR1Y0WVcxd2JHVXVZMjl0SWdvZ0lHNWhiV1VnSUNB
+        OUlDSk9aWGNnVlhObGNpSUtmUW89
+    import: !!binary |
+        Q2dwMWMyVnljeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxhWElnYUdGdVpHeGxM
+        Q0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRYTmxjaTVvZEcxc0xtMWhjbXRrYjNkdQ==

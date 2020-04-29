@@ -8,19 +8,19 @@ google_logging_folder_sink:
     arguments:
         name:
             description: The name of the logging sink.
-            required: true
+            required: false
             policy: ''
             notes: ''
         folder:
             description: The folder to be exported to the sink. Note that either [FOLDER_ID]
                 or "folders/[FOLDER_ID]" is
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination:
             description: The destination of the sink (or, in other words, where logs
                 are written to). Can be a
-            required: true
+            required: false
             policy: ''
             notes: ''
         filter:
@@ -43,7 +43,7 @@ google_logging_folder_sink:
             notes: ''
         use_partitioned_tables:
             description: Whether to use [BigQuery's partition tables](https://cloud.google.com/bigquery/docs/partitioned-tables).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -51,3 +51,29 @@ google_logging_folder_sink:
             description: The identity associated with this sink. This identity must
                 be granted write access to the
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYkc5bloybHVaMTltYjJ4a1pYSmZjMmx1YXlJZ0ltMTVM
+        WE5wYm1zaUlIc0tJQ0J1WVcxbElDQWdQU0FpYlhrdGMybHVheUlLSUNCbWIyeGtaWElnUFNCbmIy
+        OW5iR1ZmWm05c1pHVnlMbTE1TFdadmJHUmxjaTV1WVcxbENnb2dJQ01nUTJGdUlHVjRjRzl5ZENC
+        MGJ5QndkV0p6ZFdJc0lHTnNiM1ZrSUhOMGIzSmhaMlVzSUc5eUlHSnBaM0YxWlhKNUNpQWdaR1Z6
+        ZEdsdVlYUnBiMjRnUFNBaWMzUnZjbUZuWlM1bmIyOW5iR1ZoY0dsekxtTnZiUzhrZTJkdmIyZHNa
+        Vjl6ZEc5eVlXZGxYMkoxWTJ0bGRDNXNiMmN0WW5WamEyVjBMbTVoYldWOUlnb0tJQ0FqSUV4dlp5
+        QmhiR3dnVjBGU1RpQnZjaUJvYVdkb1pYSWdjMlYyWlhKcGRIa2diV1Z6YzJGblpYTWdjbVZzWVhS
+        cGJtY2dkRzhnYVc1emRHRnVZMlZ6Q2lBZ1ptbHNkR1Z5SUQwZ0luSmxjMjkxY21ObExuUjVjR1Vn
+        UFNCblkyVmZhVzV6ZEdGdVkyVWdRVTVFSUhObGRtVnlhWFI1SUQ0OUlGZEJVazRpQ24wS0NuSmxj
+        MjkxY21ObElDSm5iMjluYkdWZmMzUnZjbUZuWlY5aWRXTnJaWFFpSUNKc2IyY3RZblZqYTJWMElp
+        QjdDaUFnYm1GdFpTQTlJQ0ptYjJ4a1pYSXRiRzluWjJsdVp5MWlkV05yWlhRaUNuMEtDbkpsYzI5
+        MWNtTmxJQ0puYjI5bmJHVmZjSEp2YW1WamRGOXBZVzFmWW1sdVpHbHVaeUlnSW14dlp5MTNjbWww
+        WlhJaUlIc0tJQ0J5YjJ4bElEMGdJbkp2YkdWekwzTjBiM0poWjJVdWIySnFaV04wUTNKbFlYUnZj
+        aUlLQ2lBZ2JXVnRZbVZ5Y3lBOUlGc0tJQ0FnSUdkdmIyZHNaVjlzYjJkbmFXNW5YMlp2YkdSbGNs
+        OXphVzVyTG0xNUxYTnBibXN1ZDNKcGRHVnlYMmxrWlc1MGFYUjVMQW9nSUYwS2ZRb0tjbVZ6YjNW
+        eVkyVWdJbWR2YjJkc1pWOW1iMnhrWlhJaUlDSnRlUzFtYjJ4a1pYSWlJSHNLSUNCa2FYTndiR0Y1
+        WDI1aGJXVWdQU0FpVFhrZ1ptOXNaR1Z5SWdvZ0lIQmhjbVZ1ZENBZ0lDQWdJQ0E5SUNKdmNtZGhi
+        bWw2WVhScGIyNXpMekV5TXpRMU5pSUtmUW89
+    import: !!binary |
+        Q2dwR2IyeGtaWEl0YkdWMlpXd2diRzluWjJsdVp5QnphVzVyY3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hwY3lCbWIzSnRZWFE2Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5c2IyZG5hVzVuWDJadmJHUmxjbDl6YVc1ckxtaDBiV3d1YldGeWEyUnZkMjQ9

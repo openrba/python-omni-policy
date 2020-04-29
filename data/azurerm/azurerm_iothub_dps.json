@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the sku. Possible values are `B1`, `B2`, `B3`, `F1`, `S1`, `S2`, and `S3`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group under which the Iot Device Provisioning Service resource has to be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The location of the IoT hub. Changing this forces a new resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "A `sku` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,13 +44,13 @@
             },
             "capacity": {
                 "description": "The number of provisioned IoT Device Provisioning Service units.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "connection_string": {
                 "description": "The connection string to connect to the IoT Hub. Changing this forces a new resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -15,5 +15,27 @@ aws_api_gateway_client_certificate:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The identifier of the client certificate.
+        created_date:
+            description: The date when the client certificate was created.
+        expiration_date:
+            description: The date when the client certificate will expire.
+        pem_encoded_certificate:
+            description: The PEM-encoded public key of the client certificate.
+        arn:
+            description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmWTJ4cFpXNTBYMk5sY25ScFptbGpZ
+        WFJsSWlBaVpHVnRieUlnZXdvZ0lHUmxjMk55YVhCMGFXOXVJRDBnSWsxNUlHTnNhV1Z1ZENCalpY
+        SjBhV1pwWTJGMFpTSUtmUW89
+    import: !!binary |
+        Q2dwQlVFa2dSMkYwWlhkaGVTQkRiR2xsYm5RZ1EyVnlkR2xtYVdOaGRHVnpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdhV1FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5amJHbGxiblJmWTJWeWRHbG1hV05oZEdVdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

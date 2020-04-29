@@ -7,7 +7,7 @@ aws_route_table:
     arguments:
         vpc_id:
             description: The VPC ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         route:
@@ -32,3 +32,21 @@ aws_route_table:
         owner_id:
             description: The ID of the AWS account that owns the route table.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbTkxZEdWZmRHRmliR1VpSUNKeUlpQjdDaUFnZG5CalgybGtJ
+        RDBnSWlSN1lYZHpYM1p3WXk1a1pXWmhkV3gwTG1sa2ZTSUtDaUFnY205MWRHVWdld29nSUNBZ1ky
+        bGtjbDlpYkc5amF5QTlJQ0l4TUM0d0xqRXVNQzh5TkNJS0lDQWdJR2RoZEdWM1lYbGZhV1FnUFNB
+        aUpIdGhkM05mYVc1MFpYSnVaWFJmWjJGMFpYZGhlUzV0WVdsdUxtbGtmU0lLSUNCOUNnb2dJSEp2
+        ZFhSbElIc0tJQ0FnSUdsd2RqWmZZMmxrY2w5aWJHOWpheUFnSUNBZ0lDQWdQU0FpT2pvdk1DSUtJ
+        Q0FnSUdWbmNtVnpjMTl2Ym14NVgyZGhkR1YzWVhsZmFXUWdQU0FpSkh0aGQzTmZaV2R5WlhOelgy
+        OXViSGxmYVc1MFpYSnVaWFJmWjJGMFpYZGhlUzVtYjI4dWFXUjlJZ29nSUgwS0NpQWdkR0ZuY3lB
+        OUlIc0tJQ0FnSUU1aGJXVWdQU0FpYldGcGJpSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwU2IzVjBaU0JVWVdKc1pYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQnli
+        M1YwWlNCMFlXSnNaU0JnYVdSZ0xpQkdiM0lnWlhoaGJYQnNaU3dnZEc4Z2FXMXdiM0owQ25KdmRY
+        UmxJSFJoWW14bElHQnlkR0l0TkdVMk1UWm1ObVEyT1dBc0lIVnpaU0IwYUdseklHTnZiVzFoYm1R
+        NkNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpWOTBZV0pzWlM1b2RHMXNMbTFoY210a2IzZHU=

@@ -7,12 +7,12 @@ github_user_ssh_key:
         title:
             description: A descriptive name for the new key. e.g. `Personal MacBook
                 Air`
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
             description: The public SSH key to add to your GitHub account.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -21,3 +21,14 @@ github_user_ssh_key:
         url:
             description: The URL of the SSH key
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUm9kV0pmZFhObGNsOXpjMmhmYTJWNUlpQWlaWGhoYlhCc1pTSWdl
+        d29nSUhScGRHeGxJRDBnSW1WNFlXMXdiR1VnZEdsMGJHVWlDaUFnYTJWNUlDQWdQU0FpSkh0bWFX
+        eGxLQ0orTHk1emMyZ3ZhV1JmY25OaExuQjFZaUlwZlNJS2ZRbz0=
+    import: !!binary |
+        Q2dwVFUwZ2dhMlY1Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsYVhJZ1NVUWda
+        UzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5MWMyVnlYM056YUY5clpYa3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

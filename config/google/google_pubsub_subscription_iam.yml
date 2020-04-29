@@ -9,17 +9,17 @@ google_pubsub_subscription_iam:
         subscription:
             description: The subscription name or id to bind to attach IAM policy
                 to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member/members:
             description: Identities that will be granted the privilege in `role`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Only one
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
@@ -32,7 +32,15 @@ google_pubsub_subscription_iam:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        etag:
-            description: (Computed) The etag of the subscription's IAM policy.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwUWRXSnpkV0lnYzNWaWMyTnlhWEIwYVc5dUlFbEJUU0J5WlhOdmRYSmpaWE1nWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0J3Y205cVpXTjBMQ0J6ZFdKelkzSnBjSFJwYjI0Z2Jt
+        RnRaU3dnY205c1pTQmhibVFnYldWdFltVnlMZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5d2RXSnpkV0pmYzNWaWMyTnlhWEIwYVc5dVgybGhiUzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

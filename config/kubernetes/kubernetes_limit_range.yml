@@ -9,7 +9,7 @@ kubernetes_limit_range:
         metadata:
             description: Standard limit range's metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
@@ -20,3 +20,22 @@ kubernetes_limit_range:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgyeHBiV2wwWDNKaGJtZGxJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHMWxkR0ZrWVhSaElIc0tJQ0FnSUc1aGJXVWdQU0FpZEdWeWNtRm1iM0p0TFdWNFlX
+        MXdiR1VpQ2lBZ2ZRb2dJSE53WldNZ2V3b2dJQ0FnYkdsdGFYUWdld29nSUNBZ0lDQjBlWEJsSUQw
+        Z0lsQnZaQ0lLSUNBZ0lDQWdiV0Y0SUQwZ2V3b2dJQ0FnSUNBZ0lHTndkU0FnSUNBOUlDSXlNREJ0
+        SWdvZ0lDQWdJQ0FnSUcxbGJXOXllU0E5SUNJeE1ESTBUU0lLSUNBZ0lDQWdmUW9nSUNBZ2ZRb2dJ
+        Q0FnYkdsdGFYUWdld29nSUNBZ0lDQjBlWEJsSUQwZ0lsQmxjbk5wYzNSbGJuUldiMngxYldWRGJH
+        RnBiU0lLSUNBZ0lDQWdiV2x1SUQwZ2V3b2dJQ0FnSUNBZ0lITjBiM0poWjJVZ1BTQWlNalJOSWdv
+        Z0lDQWdJQ0I5Q2lBZ0lDQjlDaUFnSUNCc2FXMXBkQ0I3Q2lBZ0lDQWdJSFI1Y0dVZ1BTQWlRMjl1
+        ZEdGcGJtVnlJZ29nSUNBZ0lDQmtaV1poZFd4MElEMGdld29nSUNBZ0lDQWdJR053ZFNBZ0lDQTlJ
+        Q0kxTUcwaUNpQWdJQ0FnSUNBZ2JXVnRiM0o1SUQwZ0lqSTBUU0lLSUNBZ0lDQWdmUW9nSUNBZ2ZR
+        b2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwTWFXMXBkQ0JTWVc1blpTQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnYVhSeklHNWhi
+        V1Z6Y0dGalpTQmhibVFnYm1GdFpTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZiR2x0YVhSZmNtRnVaMlV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

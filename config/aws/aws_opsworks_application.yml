@@ -7,23 +7,23 @@ aws_opsworks_application:
     arguments:
         name:
             description: A human-readable name for the application.
-            required: true
+            required: false
             policy: ''
             notes: ''
         short_name:
             description: A short, machine-readable name for the application. This
                 can only be defined on resource creation and ignored on resource update.
-            required: true
+            required: false
             policy: ''
             notes: ''
         stack_id:
             description: The id of the stack the application will belong to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of source to use. For example, "archive".
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -100,7 +100,7 @@ aws_opsworks_application:
             notes: ''
         url:
             description: The URL where the app resource can be found.
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
@@ -127,12 +127,12 @@ aws_opsworks_application:
             notes: ''
         key:
             description: Variable name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: Variable value.
-            required: true
+            required: false
             policy: ''
             notes: ''
         secure:
@@ -143,12 +143,12 @@ aws_opsworks_application:
         private_key:
             description: The private key; the contents of the certificate's domain.key
                 file.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate:
             description: The contents of the certificate's domain.crt file.
-            required: true
+            required: false
             policy: ''
             notes: ''
         chain:
@@ -161,3 +161,28 @@ aws_opsworks_application:
         id:
             description: The id of the application.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0J6ZDI5eWEzTmZZWEJ3YkdsallYUnBiMjRpSUNKbWIyOHRZ
+        WEJ3SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnUFNBaVptOXZZbUZ5SUdGd2NHeHBZMkYwYVc5dUln
+        b2dJSE5vYjNKMFgyNWhiV1VnSUQwZ0ltWnZiMkpoY2lJS0lDQnpkR0ZqYTE5cFpDQWdJQ0E5SUNJ
+        a2UyRjNjMTl2Y0hOM2IzSnJjMTl6ZEdGamF5NXRZV2x1TG1sa2ZTSUtJQ0IwZVhCbElDQWdJQ0Fn
+        SUNBOUlDSnlZV2xzY3lJS0lDQmtaWE5qY21sd2RHbHZiaUE5SUNKVWFHbHpJR2x6SUdFZ1VtRnBi
+        SE1nWVhCd2JHbGpZWFJwYjI0aUNnb2dJR1J2YldGcGJuTWdQU0JiQ2lBZ0lDQWlaWGhoYlhCc1pT
+        NWpiMjBpTEFvZ0lDQWdJbk4xWWk1bGVHRnRjR3hsTG1OdmJTSXNDaUFnWFFvS0lDQmxiblpwY205
+        dWJXVnVkQ0I3Q2lBZ0lDQnJaWGtnSUNBZ1BTQWlhMlY1SWdvZ0lDQWdkbUZzZFdVZ0lEMGdJblpo
+        YkhWbElnb2dJQ0FnYzJWamRYSmxJRDBnWm1Gc2MyVUtJQ0I5Q2dvZ0lHRndjRjl6YjNWeVkyVWdl
+        d29nSUNBZ2RIbHdaU0FnSUNBZ1BTQWlaMmwwSWdvZ0lDQWdjbVYyYVhOcGIyNGdQU0FpYldGemRH
+        VnlJZ29nSUNBZ2RYSnNJQ0FnSUNBZ1BTQWlhSFIwY0hNNkx5OW5hWFJvZFdJdVkyOXRMMlY0WVcx
+        d2JHVXVaMmwwSWdvZ0lIMEtDaUFnWlc1aFlteGxYM056YkNBOUlIUnlkV1VLQ2lBZ2MzTnNYMk52
+        Ym1acFozVnlZWFJwYjI0Z2V3b2dJQ0FnY0hKcGRtRjBaVjlyWlhrZ1BTQWlKSHRtYVd4bEtDSXVM
+        Mlp2YjJKaGNpNXJaWGtpS1gwaUNpQWdJQ0JqWlhKMGFXWnBZMkYwWlNBOUlDSWtlMlpwYkdVb0lp
+        NHZabTl2WW1GeUxtTnlkQ0lwZlNJS0lDQjlDZ29nSUdSdlkzVnRaVzUwWDNKdmIzUWdJQ0FnSUNB
+        Z0lDQTlJQ0p3ZFdKc2FXTWlDaUFnWVhWMGIxOWlkVzVrYkdWZmIyNWZaR1Z3Ykc5NUlEMGdkSEox
+        WlFvZ0lISmhhV3h6WDJWdWRpQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKemRHRm5hVzVuSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwUGNITjNiM0pyY3lCQmNIQnNhV05oZEdsdmJpQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y0hOM2IzSnJjMTloY0hCc2FXTmhkR2x2Ymk1b2RHMXNMbTFoY210a2IzZHU=

@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the rule",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_set_name": {
                 "description": "The name of the rule set",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -92,37 +92,37 @@
             },
             "header_name": {
                 "description": "The name of the header to add",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "header_value": {
                 "description": "The value of the header to add",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "position": {
                 "description": "The position of the action in the receipt rule",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "message": {
                 "description": "The message to send",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sender": {
                 "description": "The email address of the sender",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "smtp_reply_code": {
                 "description": "The RFC 5321 SMTP reply code",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -140,7 +140,7 @@
             },
             "function_arn": {
                 "description": "The ARN of the Lambda function to invoke",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -152,7 +152,7 @@
             },
             "bucket_name": {
                 "description": "The name of the S3 bucket",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -170,13 +170,13 @@
             },
             "scope": {
                 "description": "The scope to apply",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "organization_arn": {
                 "description": "The ARN of the WorkMail organization",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

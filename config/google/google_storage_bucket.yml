@@ -8,7 +8,7 @@ google_storage_bucket:
     arguments:
         name:
             description: The name of the bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         force_destroy:
@@ -87,13 +87,13 @@ google_storage_bucket:
         action:
             description: The Lifecycle Rule's action configuration. A single block
                 of this type is supported. Structure is documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         condition:
             description: The Lifecycle Rule's condition configuration. A single block
                 of this type is supported. Structure is documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         age:
@@ -127,7 +127,7 @@ google_storage_bucket:
         enabled:
             description: While set to `true`, versioning is fully enabled for this
                 bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         main_page_suffix:
@@ -177,7 +177,7 @@ google_storage_bucket:
             notes: ''
         log_bucket:
             description: The bucket that will receive log objects.
-            required: true
+            required: false
             policy: ''
             notes: ''
         log_object_prefix:
@@ -185,9 +185,30 @@ google_storage_bucket:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        self_link:
-            description: The URI of the created resource.
-        url:
-            description: The base URL of the bucket, in the format `gs://<bucket-name>`.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYzNSdmNtRm5aVjlpZFdOclpYUWlJQ0p6ZEdGMGFXTXRj
+        MmwwWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ1BTQWlhVzFoWjJVdGMzUnZjbVV1WTI5dEln
+        b2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ1BTQWlSVlVpQ2lBZ1ptOXlZMlZmWkdWemRISnZlU0E5SUhS
+        eWRXVUtDaUFnWW5WamEyVjBYM0J2YkdsamVWOXZibXg1SUQwZ2RISjFaUW9LSUNCM1pXSnphWFJs
+        SUhzS0lDQWdJRzFoYVc1ZmNHRm5aVjl6ZFdabWFYZ2dQU0FpYVc1a1pYZ3VhSFJ0YkNJS0lDQWdJ
+        RzV2ZEY5bWIzVnVaRjl3WVdkbElDQWdQU0FpTkRBMExtaDBiV3dpQ2lBZ2ZRb2dJR052Y25NZ2V3
+        b2dJQ0FnYjNKcFoybHVJQ0FnSUNBZ0lDQWdJRDBnV3lKb2RIUndPaTh2YVcxaFoyVXRjM1J2Y21V
+        dVkyOXRJbDBLSUNBZ0lHMWxkR2h2WkNBZ0lDQWdJQ0FnSUNBOUlGc2lSMFZVSWl3Z0lraEZRVVFp
+        TENBaVVGVlVJaXdnSWxCUFUxUWlMQ0FpUkVWTVJWUkZJbDBLSUNBZ0lISmxjM0J2Ym5ObFgyaGxZ
+        V1JsY2lBOUlGc2lLaUpkQ2lBZ0lDQnRZWGhmWVdkbFgzTmxZMjl1WkhNZ1BTQXpOakF3Q2lBZ2ZR
+        cDlDZz09
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUdKMVkydGxkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnYm1GdFpXQWdiM0lnSUdCd2NtOXFaV04wTDI1aGJXVmdMaUJKWmlCMGFHVWdjSEp2YW1WamRD
+        QnBjeUJ1YjNRS2NHRnpjMlZrSUhSdklIUm9aU0JwYlhCdmNuUWdZMjl0YldGdVpDQnBkQ0IzYVd4
+        c0lHSmxJR2x1Wm1WeWNtVmtJR1p5YjIwZ2RHaGxJSEJ5YjNacFpHVnlJR0pzYjJOcklHOXlJR1Z1
+        ZG1seWIyNXRaVzUwSUhaaGNtbGhZbXhsY3k0S1NXWWdhWFFnWTJGdWJtOTBJR0psSUdsdVptVnlj
+        bVZrSUdsMElIZHBiR3dnWW1VZ2NYVmxjbWxsWkNCbWNtOXRJSFJvWlNCRGIyMXdkWFJsSUVGUVNT
+        QW9kR2hwY3lCM2FXeHNJR1poYVd3Z2FXWWdkR2hsSUVGUVNTQnBjd3B1YjNRZ1pXNWhZbXhsWkNr
+        dUNncGxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emRHOXlZV2RsWDJKMVkydGxkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the API.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol_type": {
                 "description": "The API protocol. Valid values: `HTTP`, `WEBSOCKET`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -109,7 +109,20 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The API identifier."
+            },
+            "api_endpoint": {
+                "description": "The URI of the API, of the form `{api-id}.execute-api.{region}.amazonaws.com`."
+            },
+            "arn": {
+                "description": "The ARN of the API."
+            },
+            "execution_arn": {
+                "description": "The ARN prefix to be used in an [`aws_lambda_permission`](/docs/providers/aws/r/lambda_permission.html)'s `source_arn` attribute"
+            }
+        },
         "timeouts": {}
     }
 }

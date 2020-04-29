@@ -9,12 +9,12 @@ google_google_folder_iam_policy:
         folder:
             description: The resource name of the folder the policy is attached to.
                 Its format is folders/{folder_id}.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
             description: The `google_iam_policy` data source that represents
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -23,3 +23,22 @@ google_google_folder_iam_policy:
                 used for optimistic concurrency control as a way to help prevent simultaneous
                 updates of a policy from overwriting each other.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWm05c1pHVnlYMmxoYlY5d2IyeHBZM2tpSUNKbWIyeGta
+        WEpmWVdSdGFXNWZjRzlzYVdONUlpQjdDaUFnWm05c1pHVnlJQ0FnSUNBZ1BTQm5iMjluYkdWZlpt
+        OXNaR1Z5TG1SbGNHRnlkRzFsYm5ReExtNWhiV1VLSUNCd2IyeHBZM2xmWkdGMFlTQTlJR1JoZEdF
+        dVoyOXZaMnhsWDJsaGJWOXdiMnhwWTNrdVlXUnRhVzR1Y0c5c2FXTjVYMlJoZEdFS2ZRb0tjbVZ6
+        YjNWeVkyVWdJbWR2YjJkc1pWOW1iMnhrWlhJaUlDSmtaWEJoY25SdFpXNTBNU0lnZXdvZ0lHUnBj
+        M0JzWVhsZmJtRnRaU0E5SUNKRVpYQmhjblJ0Wlc1MElERWlDaUFnY0dGeVpXNTBJQ0FnSUNBZ0lE
+        MGdJbTl5WjJGdWFYcGhkR2x2Ym5Ndk1USXpORFUyTnlJS2ZRb0taR0YwWVNBaVoyOXZaMnhsWDJs
+        aGJWOXdiMnhwWTNraUlDSmhaRzFwYmlJZ2V3b2dJR0pwYm1ScGJtY2dld29nSUNBZ2NtOXNaU0E5
+        SUNKeWIyeGxjeTlsWkdsMGIzSWlDZ29nSUNBZ2JXVnRZbVZ5Y3lBOUlGc0tJQ0FnSUNBZ0luVnpa
+        WEk2YW1GdVpVQmxlR0Z0Y0d4bExtTnZiU0lzQ2lBZ0lDQmRDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwQklIQnZiR2xqZVNCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCbWIyeGta
+        WEpnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWm05c1pHVnlYMmxoYlY5d2IyeHBZM2t1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

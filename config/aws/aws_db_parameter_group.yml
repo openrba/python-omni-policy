@@ -7,7 +7,7 @@ aws_db_parameter_group:
     arguments:
         name:
             description: The name of the DB parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name_prefix:
@@ -18,7 +18,7 @@ aws_db_parameter_group:
             notes: ''
         family:
             description: The family of the DB parameter group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -41,7 +41,7 @@ aws_db_parameter_group:
             notes: ''
         value:
             description: The value of the DB parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         apply_method:
@@ -55,3 +55,17 @@ aws_db_parameter_group:
         arn:
             description: The ARN of the db parameter group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0pmY0dGeVlXMWxkR1Z5WDJkeWIzVndJaUFpWkdWbVlYVnNk
+        Q0lnZXdvZ0lHNWhiV1VnSUNBOUlDSnlaSE10Y0djaUNpQWdabUZ0YVd4NUlEMGdJbTE1YzNGc05T
+        NDJJZ29LSUNCd1lYSmhiV1YwWlhJZ2V3b2dJQ0FnYm1GdFpTQWdQU0FpWTJoaGNtRmpkR1Z5WDNO
+        bGRGOXpaWEoyWlhJaUNpQWdJQ0IyWVd4MVpTQTlJQ0oxZEdZNElnb2dJSDBLQ2lBZ2NHRnlZVzFs
+        ZEdWeUlIc0tJQ0FnSUc1aGJXVWdJRDBnSW1Ob1lYSmhZM1JsY2w5elpYUmZZMnhwWlc1MElnb2dJ
+        Q0FnZG1Gc2RXVWdQU0FpZFhSbU9DSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwRVFpQlFZWEpoYldWMFpYSWdaM0p2ZFhCeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lHNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5d1lYSmhiV1YwWlhKZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

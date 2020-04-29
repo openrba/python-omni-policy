@@ -7,22 +7,22 @@ tfe_oauth_client:
     arguments:
         organization:
             description: Name of the organization.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_url:
             description: The base URL of your VCS provider's API (e.g.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_url:
             description: The homepage of your VCS provider (e.g.
-            required: true
+            required: false
             policy: ''
             notes: ''
         oauth_token:
             description: The token string you were given by your VCS provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         private_key:
@@ -33,12 +33,20 @@ tfe_oauth_client:
             notes: ''
         service_provider:
             description: The VCS provider being connected with. Valid
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The ID of the OAuth client.
-        oauth_token_id:
-            description: The ID of the OAuth token associated with the OAuth client.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMFptVmZiMkYxZEdoZlkyeHBaVzUwSWlBaWRHVnpkQ0lnZXdvZ0lHOXla
+        MkZ1YVhwaGRHbHZiaUFnSUNBZ1BTQWliWGt0YjNKbkxXNWhiV1VpQ2lBZ1lYQnBYM1Z5YkNBZ0lD
+        QWdJQ0FnSUNBOUlDSm9kSFJ3Y3pvdkwyRndhUzVuYVhSb2RXSXVZMjl0SWdvZ0lHaDBkSEJmZFhK
+        c0lDQWdJQ0FnSUNBZ1BTQWlhSFIwY0hNNkx5OW5hWFJvZFdJdVkyOXRJZ29nSUc5aGRYUm9YM1J2
+        YTJWdUlDQWdJQ0FnUFNBaWJYa3RkbU56TFhCeWIzWnBaR1Z5TFhSdmEyVnVJZ29nSUhObGNuWnBZ
+        MlZmY0hKdmRtbGtaWElnUFNBaVoybDBhSFZpSWdwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYUm1aUzlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2WVhWMGFGOWpiR2xsYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

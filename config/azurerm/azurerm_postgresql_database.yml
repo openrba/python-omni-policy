@@ -9,33 +9,33 @@ azurerm_postgresql_database:
             description: Specifies the name of the PostgreSQL Database, which needs
                 [to be a valid PostgreSQL identifier](https://www.postgresql.org/docs/current/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS).
                 Changing this forces a
-            required: true
+            required: false
             policy: ''
             notes: ''
         server_name:
             description: Specifies the name of the PostgreSQL Server. Changing this
                 forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the PostgreSQL Server
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         charset:
             description: Specifies the Charset for the PostgreSQL Database, which
                 needs [to be a valid PostgreSQL Charset](https://www.postgresql.org/docs/current/static/multibyte.html).
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         collation:
             description: Specifies the Collation for the PostgreSQL Database, which
                 needs [to be a valid PostgreSQL Collation](https://www.postgresql.org/docs/current/static/collation.html).
                 Note that Microsoft uses different [notation](https://msdn.microsoft.com/library/windows/desktop/dd373814.aspx
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

@@ -9,19 +9,19 @@
         "arguments": {
             "description": {
                 "description": "Unique description to identify the Transfer Job.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "transfer_spec": {
                 "description": "Transfer specification. Structure documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "schedule": {
                 "description": "Schedule specification defining when the Transfer Job should be scheduled to start, end and and what time to run. Structure documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -39,7 +39,7 @@
             },
             "gcs_data_sink": {
                 "description": "A Google Cloud Storage data sink. Structure documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -75,7 +75,7 @@
             },
             "schedule_start_date": {
                 "description": "The first day the recurring transfer is scheduled to run. If `schedule_start_date` is in the past, the transfer will run for the first time on the following day. Structure documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -129,61 +129,61 @@
             },
             "bucket_name": {
                 "description": "S3 Bucket name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "aws_access_key": {
                 "description": "AWS credentials block.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "access_key_id": {
                 "description": "AWS Key ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "secret_access_key": {
                 "description": "AWS Secret Access Key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "list_url": {
                 "description": "The URL that points to the file that stores the object list entries. This file must allow public access. Currently, only URLs with HTTP and HTTPS schemes are supported.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "year": {
                 "description": "Year of date. Must be from 1 to 9999.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "month": {
                 "description": "Month of year. Must be from 1 to 12.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "day": {
                 "description": "Day of month. Must be from 1 to 31 and valid for the year and month.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "hours": {
                 "description": "Hours of day in 24 hour format. Should be from 0 to 23",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "minutes": {
                 "description": "Minutes of hour of day. Must be from 0 to 59.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -195,25 +195,12 @@
             },
             "nanos": {
                 "description": "Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "name": {
-                "description": "The name of the Transfer Job."
-            },
-            "creation_time": {
-                "description": "When the Transfer Job was created."
-            },
-            "last_modification_time": {
-                "description": "When the Transfer Job was last modified."
-            },
-            "deletion_time": {
-                "description": "When the Transfer Job was deleted."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

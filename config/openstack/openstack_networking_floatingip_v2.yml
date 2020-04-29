@@ -17,7 +17,7 @@ openstack_networking_floatingip_v2:
             notes: ''
         pool:
             description: The name of the pool from which to obtain the floating
-            required: true
+            required: false
             policy: ''
             notes: ''
         port_id:
@@ -60,28 +60,16 @@ openstack_networking_floatingip_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        pool:
-            description: See Argument Reference above.
-        address:
-            description: The actual floating IP address itself.
-        port_id:
-            description: ID of associated port.
-        tenant_id:
-            description: the ID of the tenant in which to create the floating IP.
-        fixed_ip:
-            description: The fixed IP which the floating IP maps to.
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of tags assigned on the floating IP, which
-                have
-        dns_name:
-            description: See Argument Reference above.
-        dns_domain:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOW1iRzloZEdsdVoybHdY
+        M1l5SWlBaVpteHZZWFJwY0Y4eElpQjdDaUFnY0c5dmJDQTlJQ0p3ZFdKc2FXTWlDbjBL
+    import: !!binary |
+        Q2dwR2JHOWhkR2x1WnlCSlVITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdh
+        V1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YMlpzYjJGMGFXNW5hWEJmZGpJdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

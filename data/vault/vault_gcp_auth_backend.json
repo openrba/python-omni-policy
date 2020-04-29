@@ -6,7 +6,20 @@
         "sidebar_current": "docs-vault-resource-gcp-auth-backend-role",
         "description": "Managing roles in an GCP auth backend in Vault",
         "arguments": {},
-        "attributes": {},
+        "attributes": {
+            "client_id": {
+                "description": "The Client ID of the credentials"
+            },
+            "private_key_id": {
+                "description": "The ID of the private key from the credentials"
+            },
+            "project_id": {
+                "description": "The GCP Project ID"
+            },
+            "client_email": {
+                "description": "The clients email associated with the credentials"
+            }
+        },
         "timeouts": {}
     }
 }

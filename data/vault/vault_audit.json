@@ -8,7 +8,7 @@
         "arguments": {
             "type": {
                 "description": "Type of the audit device, such as 'file'.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "options": {
                 "description": "Configuration options to pass to the audit device itself.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

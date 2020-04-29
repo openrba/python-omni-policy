@@ -8,7 +8,7 @@
         "arguments": {
             "rest_api_id": {
                 "description": "The ID of the associated REST API",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,7 +37,20 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The ID of the deployment"
+            },
+            "invoke_url": {
+                "description": "The URL to invoke the API pointing to the stage,"
+            },
+            "execution_arn": {
+                "description": "The execution ARN to be used in [`lambda_permission`](/docs/providers/aws/r/lambda_permission.html)'s `source_arn`"
+            },
+            "created_date": {
+                "description": "The creation date of the deployment"
+            }
+        },
         "timeouts": {}
     }
 }

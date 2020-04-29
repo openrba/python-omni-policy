@@ -7,12 +7,12 @@ helm_release:
     arguments:
         name:
             description: full name of the variable to be set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         chart:
             description: Chart name to be installed. A path may be used.
-            required: true
+            required: false
             policy: ''
             notes: ''
         repository:
@@ -200,31 +200,40 @@ helm_release:
             required: false
             policy: ''
             notes: ''
+        create_namespace:
+            description: Create the namespace if it does not yet exist. Defaults to
+                `false`.
+            required: false
+            policy: ''
+            notes: ''
         value:
             description: value of the variable to be set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         binary_path:
             description: relative or full path to command binary.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        metadata:
-            description: Block status of the deployed release.
-        chart:
-            description: The name of the chart.
-        name:
-            description: Name is the name of the release.
-        namespace:
-            description: Namespace is the kubernetes namespace of the release.
-        revision:
-            description: Version is an int32 which represents the version of the release.
-        status:
-            description: Status of the release.
-        version:
-            description: A SemVer 2 conformant version string of the chart.
-        values:
-            description: The compounded values from `values` and `set*` attributes.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKb1pXeHRYM0psYkdWaGMyVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ0lDQTlJQ0p0ZVMxeVpXUnBjeTF5Wld4bFlYTmxJZ29nSUhKbGNHOXphWFJ2Y25rZ1BT
+        QWlhSFIwY0hNNkx5OXJkV0psY201bGRHVnpMV05vWVhKMGN5NXpkRzl5WVdkbExtZHZiMmRzWldG
+        d2FYTXVZMjl0SWlBS0lDQmphR0Z5ZENBZ0lDQWdJRDBnSW5KbFpHbHpJZ29nSUhabGNuTnBiMjRn
+        SUNBZ1BTQWlOaTR3TGpFaUNnb2dJSFpoYkhWbGN5QTlJRnNLSUNBZ0lDSWtlMlpwYkdVb0luWmhi
+        SFZsY3k1NVlXMXNJaWw5SWdvZ0lGMEtDaUFnYzJWMElIc0tJQ0FnSUc1aGJXVWdJRDBnSW1Oc2RY
+        TjBaWEl1Wlc1aFlteGxaQ0lLSUNBZ0lIWmhiSFZsSUQwZ0luUnlkV1VpQ2lBZ2ZRb0tJQ0J6WlhR
+        Z2V3b2dJQ0FnYm1GdFpTQWdQU0FpYldWMGNtbGpjeTVsYm1GaWJHVmtJZ29nSUNBZ2RtRnNkV1Vn
+        UFNBaWRISjFaU0lLSUNCOUNnb2dJSE5sZEY5emRISnBibWNnZXdvZ0lDQWdibUZ0WlNBZ1BTQWlj
+        MlZ5ZG1salpTNWhibTV2ZEdGMGFXOXVjeTV3Y205dFpYUm9aWFZ6WEZ3dWFXOHZjRzl5ZENJS0lD
+        QWdJSFpoYkhWbElEMGdJamt4TWpjaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQklFaGxiRzBnVW1Wc1pXRnpaU0J5WlhOdmRYSmpaU0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2FYUnpJRzVoYldWemNHRmpaU0JoYm1RZ2JtRnRaU0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXaGxiRzB2WW14dllpOXRZWE4wWlhJdmQyVmljMmwwWlM5a2Iy
+        TnpMM0l2Y21Wc1pXRnpaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

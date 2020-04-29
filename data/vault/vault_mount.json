@@ -8,13 +8,13 @@
         "arguments": {
             "path": {
                 "description": "Where the secret backend will be mounted",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "Type of the backend, such as \"aws\"",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,11 +55,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "accessor": {
-                "description": "The accessor for this mount."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

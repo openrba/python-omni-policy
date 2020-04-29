@@ -7,13 +7,13 @@ aws_autoscaling_lifecycle_hook:
     arguments:
         name:
             description: The name of the lifecycle hook.
-            required: true
+            required: false
             policy: ''
             notes: ''
         autoscaling_group_name:
             description: The name of the Auto Scaling group to which you want to assign
                 the lifecycle hook
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_result:
@@ -34,7 +34,7 @@ aws_autoscaling_lifecycle_hook:
         lifecycle_transition:
             description: The instance state to which you want to attach the lifecycle
                 hook. For a list of lifecycle hook types, see [describe-lifecycle-hook-types](https://docs.aws.amazon.com/cli/latest/reference/autoscaling/describe-lifecycle-hook-types.html#examples)
-            required: true
+            required: false
             policy: ''
             notes: ''
         notification_metadata:
@@ -59,3 +59,33 @@ aws_autoscaling_lifecycle_hook:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWFYwYjNOallXeHBibWRmWjNKdmRYQWlJQ0ptYjI5aVlYSWlJ
+        SHNLSUNCaGRtRnBiR0ZpYVd4cGRIbGZlbTl1WlhNZ0lDQTlJRnNpZFhNdGQyVnpkQzB5WVNKZENp
+        QWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHVnljbUZtYjNKdExYUmxjM1F0Wm05
+        dlltRnlOU0lLSUNCb1pXRnNkR2hmWTJobFkydGZkSGx3WlNBZ0lDQTlJQ0pGUXpJaUNpQWdkR1Z5
+        YldsdVlYUnBiMjVmY0c5c2FXTnBaWE1nUFNCYklrOXNaR1Z6ZEVsdWMzUmhibU5sSWwwS0NpQWdk
+        R0ZuSUhzS0lDQWdJR3RsZVNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVJtOXZJZ29nSUNBZ2Rt
+        RnNkV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0ptYjI4dFltRnlJZ29nSUNBZ2NISnZjR0ZuWVhS
+        bFgyRjBYMnhoZFc1amFDQTlJSFJ5ZFdVS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZWFYw
+        YjNOallXeHBibWRmYkdsbVpXTjVZMnhsWDJodmIyc2lJQ0ptYjI5aVlYSWlJSHNLSUNCdVlXMWxJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1admIySmhjaUlLSUNCaGRYUnZjMk5oYkdsdVox
+        OW5jbTkxY0Y5dVlXMWxJRDBnSWlSN1lYZHpYMkYxZEc5elkyRnNhVzVuWDJkeWIzVndMbVp2YjJK
+        aGNpNXVZVzFsZlNJS0lDQmtaV1poZFd4MFgzSmxjM1ZzZENBZ0lDQWdJQ0FnSUQwZ0lrTlBUbFJK
+        VGxWRklnb2dJR2hsWVhKMFltVmhkRjkwYVcxbGIzVjBJQ0FnSUNBZ1BTQXlNREF3Q2lBZ2JHbG1a
+        V041WTJ4bFgzUnlZVzV6YVhScGIyNGdJQ0E5SUNKaGRYUnZjMk5oYkdsdVp6cEZRekpmU1U1VFZF
+        Rk9RMFZmVEVGVlRrTklTVTVISWdvS0lDQnViM1JwWm1sallYUnBiMjVmYldWMFlXUmhkR0VnUFNB
+        OFBFVlBSZ3A3Q2lBZ0ltWnZieUk2SUNKaVlYSWlDbjBLUlU5R0Nnb2dJRzV2ZEdsbWFXTmhkR2x2
+        Ymw5MFlYSm5aWFJmWVhKdUlEMGdJbUZ5YmpwaGQzTTZjM0Z6T25WekxXVmhjM1F0TVRvME5EUTBO
+        VFUxTlRZMk5qWTZjWFZsZFdVeEtpSUtJQ0J5YjJ4bFgyRnliaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QTlJQ0poY200NllYZHpPbWxoYlRvNk1USXpORFUyTnpnNU1ERXlPbkp2YkdVdlV6TkJZMk5sYzNN
+        aUNuMEs=
+    import: !!binary |
+        Q2dwQmRYUnZVMk5oYkdsdVp5Qk1hV1psWTNsamJHVWdTRzl2YTNNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCeWIyeGxJR0YxZEc5elkyRnNhVzVuWDJkeWIzVndYMjVoYldVZ1lX
+        NWtJRzVoYldVZ2MyVndZWEpoZEdWa0lHSjVJR0F2WUM0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZFhSdmMyTmhiR2x1WjE5c2FXWmxZM2xqYkdWZmFHOXZheTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

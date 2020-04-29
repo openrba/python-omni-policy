@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Name of the database to create.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bucket": {
                 "description": "Name of s3 bucket to save the results of the query execution.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "encryption_option": {
                 "description": "The type of key; one of `SSE_S3`, `SSE_KMS`, `CSE_KMS`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

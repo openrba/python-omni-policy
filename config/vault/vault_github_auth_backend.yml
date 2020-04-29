@@ -12,7 +12,7 @@ vault_github_auth_backend:
             notes: ''
         organization:
             description: The organization configured users must be part of.
-            required: true
+            required: false
             policy: ''
             notes: ''
         base_url:
@@ -65,8 +65,15 @@ vault_github_auth_backend:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        accessor:
-            description: The mount accessor related to the auth mount. It is useful
-                for integration with [Identity Secrets Engine](https://www.vaultproject.io/docs/secrets/identity/index.html).
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjluYVhSb2RXSmZZWFYwYUY5aVlXTnJaVzVrSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzl5WjJGdWFYcGhkR2x2YmlBOUlDSnRlVzl5WnlJS2ZRbz0=
+    import: !!binary |
+        Q2dwSGFYUm9kV0lnWVhWMGFHVnVkR2xqWVhScGIyNGdiVzkxYm5SeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lIQmhkR2hnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJkcGRHaDFZbDloZFhSb1gySmhZMnRsYm1RdWFIUnRiQzV0WkE9PQ==

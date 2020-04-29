@@ -13,7 +13,17 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "throttle_settings": {
+                "description": "Account-Level throttle settings. See exported fields below."
+            },
+            "burst_limit": {
+                "description": "The absolute maximum number of times API Gateway allows the API to be called per second (RPS)."
+            },
+            "rate_limit": {
+                "description": "The number of times API Gateway allows the API to be called per second on average (RPS)."
+            }
+        },
         "timeouts": {}
     }
 }

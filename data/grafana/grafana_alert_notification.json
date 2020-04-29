@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the alert notification channel.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of the alert notification channel.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,11 +31,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the resource"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -62,13 +62,13 @@
             },
             "replication_instance_class": {
                 "description": "The compute and memory capacity of the replication instance as specified by the replication instance class. Can be one of `dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "replication_instance_id": {
                 "description": "The replication instance identifier. This parameter is stored as a lowercase string.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,13 +7,55 @@ aws_config_configuration_recorder_status:
     arguments:
         name:
             description: The name of the recorder
-            required: true
+            required: false
             policy: ''
             notes: ''
         is_enabled:
             description: Whether the configuration recorder should be enabled or disabled.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjl1Wm1sblgyTnZibVpwWjNWeVlYUnBiMjVmY21WamIzSmta
+        WEpmYzNSaGRIVnpJaUFpWm05dklpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBOUlDSWtlMkYzYzE5amIy
+        NW1hV2RmWTI5dVptbG5kWEpoZEdsdmJsOXlaV052Y21SbGNpNW1iMjh1Ym1GdFpYMGlDaUFnYVhO
+        ZlpXNWhZbXhsWkNBOUlIUnlkV1VLSUNCa1pYQmxibVJ6WDI5dUlEMGdXeUpoZDNOZlkyOXVabWxu
+        WDJSbGJHbDJaWEo1WDJOb1lXNXVaV3d1Wm05dklsMEtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXBZ
+        VzFmY205c1pWOXdiMnhwWTNsZllYUjBZV05vYldWdWRDSWdJbUVpSUhzS0lDQnliMnhsSUNBZ0lD
+        QWdJRDBnSWlSN1lYZHpYMmxoYlY5eWIyeGxMbkl1Ym1GdFpYMGlDaUFnY0c5c2FXTjVYMkZ5YmlB
+        OUlDSmhjbTQ2WVhkek9tbGhiVG82WVhkek9uQnZiR2xqZVM5elpYSjJhV05sTFhKdmJHVXZRVmRU
+        UTI5dVptbG5VbTlzWlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5ek0xOWlkV05yWlhRaUlDSmlJ
+        aUI3Q2lBZ1luVmphMlYwSUQwZ0ltRjNjMk52Ym1acFp5MWxlR0Z0Y0d4bElncDlDZ3B5WlhOdmRY
+        SmpaU0FpWVhkelgyTnZibVpwWjE5a1pXeHBkbVZ5ZVY5amFHRnVibVZzSWlBaVptOXZJaUI3Q2lB
+        Z2JtRnRaU0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQnpNMTlpZFdOclpYUmZibUZ0
+        WlNBOUlDSWtlMkYzYzE5ek0xOWlkV05yWlhRdVlpNWlkV05yWlhSOUlncDlDZ3B5WlhOdmRYSmpa
+        U0FpWVhkelgyTnZibVpwWjE5amIyNW1hV2QxY21GMGFXOXVYM0psWTI5eVpHVnlJaUFpWm05dklp
+        QjdDaUFnYm1GdFpTQWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQnliMnhsWDJGeWJpQTlJQ0lrZTJG
+        M2MxOXBZVzFmY205c1pTNXlMbUZ5Ym4waUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXRnRYM0p2
+        YkdVaUlDSnlJaUI3Q2lBZ2JtRnRaU0E5SUNKbGVHRnRjR3hsTFdGM2MyTnZibVpwWnlJS0NpQWdZ
+        WE56ZFcxbFgzSnZiR1ZmY0c5c2FXTjVJRDBnUER4UVQweEpRMWtLZXdvZ0lDSldaWEp6YVc5dUlq
+        b2dJakl3TVRJdE1UQXRNVGNpTEFvZ0lDSlRkR0YwWlcxbGJuUWlPaUJiQ2lBZ0lDQjdDaUFnSUNB
+        Z0lDSkJZM1JwYjI0aU9pQWljM1J6T2tGemMzVnRaVkp2YkdVaUxBb2dJQ0FnSUNBaVVISnBibU5w
+        Y0dGc0lqb2dld29nSUNBZ0lDQWdJQ0pUWlhKMmFXTmxJam9nSW1OdmJtWnBaeTVoYldGNmIyNWhk
+        M011WTI5dElnb2dJQ0FnSUNCOUxBb2dJQ0FnSUNBaVJXWm1aV04wSWpvZ0lrRnNiRzkzSWl3S0lD
+        QWdJQ0FnSWxOcFpDSTZJQ0lpQ2lBZ0lDQjlDaUFnWFFwOUNsQlBURWxEV1FwOUNncHlaWE52ZFhK
+        alpTQWlZWGR6WDJsaGJWOXliMnhsWDNCdmJHbGplU0lnSW5BaUlIc0tJQ0J1WVcxbElEMGdJbUYz
+        YzJOdmJtWnBaeTFsZUdGdGNHeGxJZ29nSUhKdmJHVWdQU0FpSkh0aGQzTmZhV0Z0WDNKdmJHVXVj
+        aTVwWkgwaUNnb2dJSEJ2YkdsamVTQTlJRHc4VUU5TVNVTlpDbnNLSUNBaVZtVnljMmx2YmlJNklD
+        SXlNREV5TFRFd0xURTNJaXdLSUNBaVUzUmhkR1Z0Wlc1MElqb2dXd29nSUNBZ2V3b2dJQ0FnSUNB
+        aVFXTjBhVzl1SWpvZ1d3b2dJQ0FnSUNBZ0lDSnpNem9xSWdvZ0lDQWdJQ0JkTEFvZ0lDQWdJQ0Fp
+        UldabVpXTjBJam9nSWtGc2JHOTNJaXdLSUNBZ0lDQWdJbEpsYzI5MWNtTmxJam9nV3dvZ0lDQWdJ
+        Q0FnSUNJa2UyRjNjMTl6TTE5aWRXTnJaWFF1WWk1aGNtNTlJaXdLSUNBZ0lDQWdJQ0FpSkh0aGQz
+        TmZjek5mWW5WamEyVjBMbUl1WVhKdWZTOHFJZ29nSUNBZ0lDQmRDaUFnSUNCOUNpQWdYUXA5Q2xC
+        UFRFbERXUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRGIyNW1hV2QxY21GMGFXOXVJRkpsWTI5eVpHVnlJRk4wWVhSMWN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnZEdobElHNWhiV1VnYjJZZ2RHaGxJRU52Ym1acFozVnlZWFJwYjI0Z1Vt
+        VmpiM0prWlhJc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZZMjl1Wm1sbmRYSmhkR2x2Ymw5eVpXTnZjbVJsY2w5emRHRjBkWE11YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

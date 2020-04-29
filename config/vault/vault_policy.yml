@@ -7,13 +7,25 @@ vault_policy:
     arguments:
         name:
             description: The name of the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: String containing a Vault policy
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjl3YjJ4cFkza2lJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0E5SUNKa1pYWXRkR1ZoYlNJS0NpQWdjRzlzYVdONUlEMGdQRHhGVDFRS2NHRjBhQ0FpYzJWamNt
+        VjBMMjE1WDJGd2NDSWdld29nSUdOaGNHRmlhV3hwZEdsbGN5QTlJRnNpZDNKcGRHVWlYUXA5Q2tW
+        UFZBcDlDZz09
+    import: !!binary |
+        Q2dwUWIyeHBZMmxsY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCdVlXMWxZ
+        Q3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDNCdmJHbGplUzVvZEcxc0xtMWs=

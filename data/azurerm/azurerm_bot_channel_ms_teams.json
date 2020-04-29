@@ -8,19 +8,19 @@
         "arguments": {
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the Bot Channel. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bot_name": {
                 "description": "The name of the Bot Resource this channel will be associated with. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

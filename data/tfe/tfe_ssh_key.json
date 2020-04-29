@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Name to identify the SSH key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "organization": {
                 "description": "Name of the organization.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key": {
                 "description": "The text of the SSH private key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

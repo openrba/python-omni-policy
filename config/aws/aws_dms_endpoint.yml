@@ -17,12 +17,12 @@ aws_dms_endpoint:
             notes: ''
         endpoint_id:
             description: The database endpoint identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint_type:
             description: The type of endpoint. Can be one of `source | target`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         engine_name:
@@ -30,7 +30,7 @@ aws_dms_endpoint:
                 | aurora-postgresql| azuredb | db2 | docdb | dynamodb | elasticsearch
                 | kinesis | mariadb | mongodb | mysql | oracle | postgres | redshift
                 | s3 | sqlserver | sybase`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         extra_connection_attributes:
@@ -117,3 +117,28 @@ aws_dms_endpoint:
         endpoint_arn:
             description: The Amazon Resource Name (ARN) for the endpoint.
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJR1Z1WkhCdmFXNTBDbkpsYzI5MWNtTmxJQ0poZDNOZlpHMXpY
+        MlZ1WkhCdmFXNTBJaUFpZEdWemRDSWdld29nSUdObGNuUnBabWxqWVhSbFgyRnliaUFnSUNBZ0lD
+        QWdJQ0FnSUNBOUlDSmhjbTQ2WVhkek9tRmpiVHAxY3kxbFlYTjBMVEU2TVRJek5EVTJOemc1TURF
+        eU9tTmxjblJwWm1sallYUmxMekV5TXpRMU5qYzRMVEV5TXpRdE1USXpOQzB4TWpNMExURXlNelEx
+        TmpjNE9UQXhNaUlLSUNCa1lYUmhZbUZ6WlY5dVlXMWxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlk
+        R1Z6ZENJS0lDQmxibVJ3YjJsdWRGOXBaQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZEdWemRD
+        MWtiWE10Wlc1a2NHOXBiblF0ZEdZaUNpQWdaVzVrY0c5cGJuUmZkSGx3WlNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSW5OdmRYSmpaU0lLSUNCbGJtZHBibVZmYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlZWFZ5YjNKaElnb2dJR1Y0ZEhKaFgyTnZibTVsWTNScGIyNWZZWFIwY21saWRYUmxj
+        eUE5SUNJaUNpQWdhMjF6WDJ0bGVWOWhjbTRnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1GeWJq
+        cGhkM002YTIxek9uVnpMV1ZoYzNRdE1Ub3hNak0wTlRZM09Ea3dNVEk2YTJWNUx6RXlNelExTmpj
+        NExURXlNelF0TVRJek5DMHhNak0wTFRFeU16UTFOamM0T1RBeE1pSUtJQ0J3WVhOemQyOXlaQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWRHVnpkQ0lLSUNCd2IzSjBJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQXpNekEyQ2lBZ2MyVnlkbVZ5WDI1aGJXVWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdJblJsYzNRaUNpQWdjM05zWDIxdlpHVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJRDBnSW01dmJtVWlDZ29nSUhSaFozTWdQU0I3Q2lBZ0lDQk9ZVzFsSUQwZ0luUmxjM1Fp
+        Q2lBZ2ZRb0tJQ0IxYzJWeWJtRnRaU0E5SUNKMFpYTjBJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwRmJtUndiMmx1ZEhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ1pXNWtj
+        RzlwYm5SZmFXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYlhOZlpXNWtjRzlwYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

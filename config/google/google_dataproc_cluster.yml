@@ -8,7 +8,7 @@ google_dataproc_cluster:
     arguments:
         name:
             description: The name of the cluster, unique within the project and
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -181,17 +181,17 @@ google_dataproc_cluster:
             notes: ''
         kerberos_config:
             description: Kerberos Configuration
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_uri:
             description: The autoscaling policy used by the cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         script:
             description: The script to be executed during initialization of the cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout_sec:
@@ -201,7 +201,7 @@ google_dataproc_cluster:
             notes: ''
         kms_key_name:
             description: The Cloud KMS key name to use for PD disk encryption for
-            required: true
+            required: false
             policy: ''
             notes: ''
         idle_delete_ttl:
@@ -233,3 +233,8 @@ google_dataproc_cluster:
         Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWkdGMFlYQnliMk5mWTJ4MWMzUmxjaUlnSW5OcGJYQnNa
         V05zZFhOMFpYSWlJSHNLSUNCdVlXMWxJQ0FnUFNBaWMybHRjR3hsWTJ4MWMzUmxjaUlLSUNCeVpX
         ZHBiMjRnUFNBaWRYTXRZMlZ1ZEhKaGJERWlDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5a1lYUmhjSEp2WTE5amJIVnpkR1Z5TG1oMGJXd3ViV0Z5YTJSdmQyND0=

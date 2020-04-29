@@ -7,29 +7,29 @@ azurerm_dns_txt_record:
     arguments:
         name:
             description: The name of the DNS TXT Record.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the resource group where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone_name:
             description: Specifies the DNS Zone where the DNS Zone (parent resource
-            required: true
+            required: false
             policy: ''
             notes: ''
         ttl:
             description: The Time To Live (TTL
-            required: true
+            required: false
             policy: ''
             notes: ''
         record:
             description: A list of values that make up the txt record. Each `record`
                 block supports fields documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -39,7 +39,7 @@ azurerm_dns_txt_record:
             notes: ''
         value:
             description: 'The value of the record. Max length: 1024 characters'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

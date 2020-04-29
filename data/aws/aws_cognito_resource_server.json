@@ -9,13 +9,13 @@
         "arguments": {
             "identifier": {
                 "description": "An identifier for the resource server.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "A name for the resource server.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "scope_identifiers": {
+                "description": "A list of all scopes configured for this resource server in the format identifier/scope_name."
+            }
+        },
         "timeouts": {}
     }
 }

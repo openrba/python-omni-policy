@@ -12,7 +12,7 @@ openstack_networking_port_v2:
             notes: ''
         name:
             description: Name of the DHCP option.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -22,7 +22,7 @@ openstack_networking_port_v2:
             notes: ''
         network_id:
             description: The ID of the network to attach the port to. Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_state_up:
@@ -112,17 +112,17 @@ openstack_networking_port_v2:
             notes: ''
         subnet_id:
             description: Subnet in which to allocate IP address for
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_address:
             description: The additional IP address.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: Value of the DHCP option.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_version:
@@ -155,41 +155,14 @@ openstack_networking_port_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        mac_address:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        device_owner:
-            description: See Argument Reference above.
-        security_group_ids:
-            description: See Argument Reference above.
-        device_id:
-            description: See Argument Reference above.
-        fixed_ip:
-            description: See Argument Reference above.
-        all_fixed_ips:
-            description: The collection of Fixed IP addresses on the port in the
-        all_security_group_ids:
-            description: The collection of Security Group IDs on the port
-        extra_dhcp_option:
-            description: See Argument Reference above.
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of tags assigned on the port, which have been
-        binding:
-            description: See Argument Reference above.
-        dns_name:
-            description: See Argument Reference above.
-        dns_assignment:
-            description: The list of maps representing port DNS assignments.
-        qos_policy_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwUWIzSjBjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0JwWkdBc0lHVXVa
+        eTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0J2Y25SZmRqSXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

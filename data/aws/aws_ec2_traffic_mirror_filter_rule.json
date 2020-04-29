@@ -14,13 +14,13 @@
             },
             "traffic_mirror_filter_id": {
                 "description": "ID of the traffic mirror filter to which this rule should be added",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_cidr_block": {
                 "description": "The destination CIDR block to assign to the Traffic Mirror rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,19 +38,19 @@
             },
             "rule_action": {
                 "description": "The action to take (accept | reject",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_number": {
                 "description": "The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_cidr_block": {
                 "description": "The source CIDR block to assign to the Traffic Mirror rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,7 +62,7 @@
             },
             "traffic_direction": {
                 "description": "The direction of traffic to be captured. Valid values are `ingress` and `egress`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,13 +8,13 @@ aws_glue_catalog_table:
         name:
             description: Name of the table. For Hive compatibility, this must be entirely
                 lowercase.
-            required: true
+            required: false
             policy: ''
             notes: ''
         database_name:
             description: Name of the metadata database where the table metadata resides.
                 For Hive compatibility, this must be all lowercase.
-            required: true
+            required: false
             policy: ''
             notes: ''
         catalog_id:
@@ -75,3 +75,12 @@ aws_glue_catalog_table:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSGJIVmxJRlJoWW14bGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2QybDBhQ0IwYUdWcGNpQmpZ
+        WFJoYkc5bklFbEVJQ2gxYzNWaGJHeDVJRUZYVXlCaFkyTnZkVzUwSUVsRUtTd2daR0YwWVdKaGMy
+        VWdibUZ0WlN3Z1lXNWtJSFJoWW14bElHNWhiV1VzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkhWbFgyTmhkR0ZzYjJkZmRHRmliR1V1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

@@ -17,7 +17,7 @@ aws_lightsail_key_pair:
             notes: ''
         public_key:
             description: The public key material. This public key will be
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -33,3 +33,13 @@ aws_lightsail_key_pair:
         private_key:
             description: the private key, base64 encoded. This is only populated
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJRXhwWjJoMGMyRnBiQ0JMWlhrZ1VHRnBjZ3B5WlhOdmRYSmpa
+        U0FpWVhkelgyeHBaMmgwYzJGcGJGOXJaWGxmY0dGcGNpSWdJbXhuWDJ0bGVWOXdZV2x5SWlCN0Np
+        QWdibUZ0WlNBOUlDSnNaMTlyWlhsZmNHRnBjaUlLZlFvPQ==
+    import: !!binary |
+        SUdGdUlHVjRhWE4wYVc1bklIQjFZbXhwWXlCclpYa0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzYVdkb2RITmhhV3hmYTJWNVgzQmhhWEl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

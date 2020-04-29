@@ -8,21 +8,21 @@ azurerm_relay_hybrid_connection:
         name:
             description: Specifies the name of the Azure Relay Hybrid Connection.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Azure
                 Relay Hybrid Connection. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         relay_namespace_name:
             description: The name of the Azure Relay in which to create the Azure
                 Relay Hybrid Connection. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         requires_client_authorization:

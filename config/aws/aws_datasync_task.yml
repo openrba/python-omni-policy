@@ -7,12 +7,12 @@ aws_datasync_task:
     arguments:
         destination_location_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_location_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         cloudwatch_log_group_arn:
@@ -39,5 +39,25 @@ aws_datasync_task:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Amazon Resource Name (ARN) of the DataSync Task.
+        arn:
+            description: Amazon Resource Name (ARN) of the DataSync Task.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0YwWVhONWJtTmZkR0Z6YXlJZ0ltVjRZVzF3YkdVaUlIc0tJ
+        Q0JrWlhOMGFXNWhkR2x2Ymw5c2IyTmhkR2x2Ymw5aGNtNGdQU0FpSkh0aGQzTmZaR0YwWVhONWJt
+        TmZiRzlqWVhScGIyNWZjek11WkdWemRHbHVZWFJwYjI0dVlYSnVmU0lLSUNCdVlXMWxJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQnpiM1Z5WTJWZmJHOWpZWFJw
+        YjI1ZllYSnVJQ0FnSUNBZ1BTQWlKSHRoZDNOZlpHRjBZWE41Ym1OZmJHOWpZWFJwYjI1ZmJtWnpM
+        bk52ZFhKalpTNWhjbTU5SWdvS0lDQnZjSFJwYjI1eklIc0tJQ0FnSUdKNWRHVnpYM0JsY2w5elpX
+        TnZibVFnUFNBdE1Rb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJoZEdGemVXNWpYM1JoYzJ0Z0lHTmhiaUJpWlNCcGJYQnZjblJsWkNCaWVTQjFj
+        Mmx1WnlCMGFHVWdSR0YwWVZONWJtTWdWR0Z6YXlCQmJXRjZiMjRnVW1WemIzVnlZMlVnVG1GdFpT
+        QW9RVkpPS1N3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWVhSaGMzbHVZMTkwWVhOckxtaDBiV3d1YldGeWEyUnZkMjQ9

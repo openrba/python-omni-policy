@@ -7,18 +7,18 @@ aws_dx_bgp_peer:
     arguments:
         address_family:
             description: The address family for the BGP peer. `ipv4 ` or `ipv6`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bgp_asn:
             description: The autonomous system (AS
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_interface_id:
             description: The ID of the Direct Connect virtual interface on which to
                 create the BGP peer.
-            required: true
+            required: false
             policy: ''
             notes: ''
         amazon_address:
@@ -53,3 +53,8 @@ aws_dx_bgp_peer:
         RnNYMmx1ZEdWeVptRmpaUzVtYjI4dWFXUjlJZ29nSUdGa1pISmxjM05mWm1GdGFXeDVJQ0FnSUNB
         Z0lEMGdJbWx3ZGpZaUNpQWdZbWR3WDJGemJpQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBMk5UTTFNUXA5
         Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZUY5aVozQmZjR1ZsY2k1b2RHMXNMbTFoY210a2IzZHU=

@@ -7,24 +7,24 @@ azurerm_network_profile:
     arguments:
         name:
             description: Specifies the name of the IP Configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the resource.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         container_network_interface:
             description: A `container_network_interface` block as documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -34,12 +34,12 @@ azurerm_network_profile:
             notes: ''
         ip_configuration:
             description: One or more `ip_configuration` blocks as documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: Reference to the subnet associated with the IP Configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

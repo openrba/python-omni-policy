@@ -7,12 +7,12 @@ aws_elasticache_parameter_group:
     arguments:
         name:
             description: The name of the ElastiCache parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         family:
             description: The family of the ElastiCache parameter group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -28,10 +28,25 @@ aws_elasticache_parameter_group:
             notes: ''
         value:
             description: The value of the ElastiCache parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ElastiCache parameter group name.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hoYzNScFkyRmphR1ZmY0dGeVlXMWxkR1Z5WDJkeWIzVndJ
+        aUFpWkdWbVlYVnNkQ0lnZXdvZ0lHNWhiV1VnSUNBOUlDSmpZV05vWlMxd1lYSmhiWE1pQ2lBZ1pt
+        RnRhV3g1SUQwZ0luSmxaR2x6TWk0NElnb0tJQ0J3WVhKaGJXVjBaWElnZXdvZ0lDQWdibUZ0WlNB
+        Z1BTQWlZV04wYVhabGNtVm9ZWE5vYVc1bklnb2dJQ0FnZG1Gc2RXVWdQU0FpZVdWeklnb2dJSDBL
+        Q2lBZ2NHRnlZVzFsZEdWeUlIc0tJQ0FnSUc1aGJXVWdJRDBnSW0xcGJpMXpiR0YyWlhNdGRHOHRk
+        M0pwZEdVaUNpQWdJQ0IyWVd4MVpTQTlJQ0l5SWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwRmJHRnpkR2xEWVdOb1pTQlFZWEpoYldWMFpYSWdSM0p2ZFhCeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lHNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpZV05vWlY5d1lYSmhiV1YwWlhKZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

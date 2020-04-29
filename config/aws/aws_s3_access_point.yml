@@ -8,12 +8,12 @@ aws_s3_access_point:
         bucket:
             description: The name of the bucket that you want to associate this access
                 point with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name you want to assign to this access point.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_id:
@@ -62,3 +62,12 @@ aws_s3_access_point:
                 allows access from the public Internet, subject to the access point
                 and bucket access policies).
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVE15QkJZMk5sYzNNZ1VHOXBiblJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUdGalkyOTFiblJmYVdSZ0lHRnVaQ0JnYm1GdFpXQWdjMlZ3WVhKaGRHVmtJR0o1SUdFZ1ky
+        OXNiMjRnS0dBNllDa3NJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6TTE5aFkyTmxjM05mY0c5cGJuUXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

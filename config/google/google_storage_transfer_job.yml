@@ -8,19 +8,19 @@ google_storage_transfer_job:
     arguments:
         description:
             description: Unique description to identify the Transfer Job.
-            required: true
+            required: false
             policy: ''
             notes: ''
         transfer_spec:
             description: Transfer specification. Structure documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         schedule:
             description: Schedule specification defining when the Transfer Job should
                 be scheduled to start, end and and what time to run. Structure documented
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -39,7 +39,7 @@ google_storage_transfer_job:
             notes: ''
         gcs_data_sink:
             description: A Google Cloud Storage data sink. Structure documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         object_conditions:
@@ -79,7 +79,7 @@ google_storage_transfer_job:
             description: The first day the recurring transfer is scheduled to run.
                 If `schedule_start_date` is in the past, the transfer will run for
                 the first time on the following day. Structure documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         schedule_end_date:
@@ -144,55 +144,55 @@ google_storage_transfer_job:
             notes: ''
         bucket_name:
             description: S3 Bucket name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         aws_access_key:
             description: AWS credentials block.
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_key_id:
             description: AWS Key ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         secret_access_key:
             description: AWS Secret Access Key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         list_url:
             description: The URL that points to the file that stores the object list
                 entries. This file must allow public access. Currently, only URLs
                 with HTTP and HTTPS schemes are supported.
-            required: true
+            required: false
             policy: ''
             notes: ''
         year:
             description: Year of date. Must be from 1 to 9999.
-            required: true
+            required: false
             policy: ''
             notes: ''
         month:
             description: Month of year. Must be from 1 to 12.
-            required: true
+            required: false
             policy: ''
             notes: ''
         day:
             description: Day of month. Must be from 1 to 31 and valid for the year
                 and month.
-            required: true
+            required: false
             policy: ''
             notes: ''
         hours:
             description: Hours of day in 24 hour format. Should be from 0 to 23
-            required: true
+            required: false
             policy: ''
             notes: ''
         minutes:
             description: Minutes of hour of day. Must be from 0 to 59.
-            required: true
+            required: false
             policy: ''
             notes: ''
         seconds:
@@ -203,16 +203,55 @@ google_storage_transfer_job:
             notes: ''
         nanos:
             description: Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        name:
-            description: The name of the Transfer Job.
-        creation_time:
-            description: When the Transfer Job was created.
-        last_modification_time:
-            description: When the Transfer Job was last modified.
-        deletion_time:
-            description: When the Transfer Job was deleted.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbWR2YjJkc1pWOXpkRzl5WVdkbFgzUnlZVzV6Wm1WeVgzQnliMnBsWTNSZmMyVnlk
+        bWxqWlY5aFkyTnZkVzUwSWlBaVpHVm1ZWFZzZENJZ2V3b2dJSEJ5YjJwbFkzUWdQU0IyWVhJdWNI
+        SnZhbVZqZEFwOUNncHlaWE52ZFhKalpTQWlaMjl2WjJ4bFgzTjBiM0poWjJWZlluVmphMlYwSWlB
+        aWN6TXRZbUZqYTNWd0xXSjFZMnRsZENJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ1BTQWlKSHQy
+        WVhJdVlYZHpYM016WDJKMVkydGxkSDB0WW1GamEzVndJZ29nSUhOMGIzSmhaMlZmWTJ4aGMzTWdQ
+        U0FpVGtWQlVreEpUa1VpQ2lBZ2NISnZhbVZqZENBZ0lDQWdJQ0E5SUhaaGNpNXdjbTlxWldOMENu
+        MEtDbkpsYzI5MWNtTmxJQ0puYjI5bmJHVmZjM1J2Y21GblpWOWlkV05yWlhSZmFXRnRYMjFsYldK
+        bGNpSWdJbk16TFdKaFkydDFjQzFpZFdOclpYUWlJSHNLSUNCaWRXTnJaWFFnSUNBZ0lEMGdaMjl2
+        WjJ4bFgzTjBiM0poWjJWZlluVmphMlYwTG5NekxXSmhZMnQxY0MxaWRXTnJaWFF1Ym1GdFpRb2dJ
+        SEp2YkdVZ0lDQWdJQ0FnUFNBaWNtOXNaWE12YzNSdmNtRm5aUzVoWkcxcGJpSUtJQ0J0WlcxaVpY
+        SWdJQ0FnSUQwZ0luTmxjblpwWTJWQlkyTnZkVzUwT2lSN1pHRjBZUzVuYjI5bmJHVmZjM1J2Y21G
+        blpWOTBjbUZ1YzJabGNsOXdjbTlxWldOMFgzTmxjblpwWTJWZllXTmpiM1Z1ZEM1a1pXWmhkV3gw
+        TG1WdFlXbHNmU0lLSUNCa1pYQmxibVJ6WDI5dUlEMGdXMmR2YjJkc1pWOXpkRzl5WVdkbFgySjFZ
+        MnRsZEM1ek15MWlZV05yZFhBdFluVmphMlYwWFFwOUNncHlaWE52ZFhKalpTQWlaMjl2WjJ4bFgz
+        TjBiM0poWjJWZmRISmhibk5tWlhKZmFtOWlJaUFpY3pNdFluVmphMlYwTFc1cFoyaDBiSGt0WW1G
+        amEzVndJaUI3Q2lBZ1pHVnpZM0pwY0hScGIyNGdQU0FpVG1sbmFIUnNlU0JpWVdOcmRYQWdiMlln
+        VXpNZ1luVmphMlYwSWdvZ0lIQnliMnBsWTNRZ0lDQWdJRDBnZG1GeUxuQnliMnBsWTNRS0NpQWdk
+        SEpoYm5ObVpYSmZjM0JsWXlCN0NpQWdJQ0J2WW1wbFkzUmZZMjl1WkdsMGFXOXVjeUI3Q2lBZ0lD
+        QWdJRzFoZUY5MGFXMWxYMlZzWVhCelpXUmZjMmx1WTJWZmJHRnpkRjl0YjJScFptbGpZWFJwYjI0
+        Z1BTQWlOakF3Y3lJS0lDQWdJQ0FnWlhoamJIVmtaVjl3Y21WbWFYaGxjeUE5SUZzS0lDQWdJQ0Fn
+        SUNBaWNtVnhkV1Z6ZEhNdVozb2lMQW9nSUNBZ0lDQmRDaUFnSUNCOUNpQWdJQ0IwY21GdWMyWmxj
+        bDl2Y0hScGIyNXpJSHNLSUNBZ0lDQWdaR1ZzWlhSbFgyOWlhbVZqZEhOZmRXNXBjWFZsWDJsdVgz
+        TnBibXNnUFNCbVlXeHpaUW9nSUNBZ2ZRb2dJQ0FnWVhkelgzTXpYMlJoZEdGZmMyOTFjbU5sSUhz
+        S0lDQWdJQ0FnWW5WamEyVjBYMjVoYldVZ1BTQjJZWEl1WVhkelgzTXpYMkoxWTJ0bGRBb2dJQ0Fn
+        SUNCaGQzTmZZV05qWlhOelgydGxlU0I3Q2lBZ0lDQWdJQ0FnWVdOalpYTnpYMnRsZVY5cFpDQWdJ
+        Q0FnUFNCMllYSXVZWGR6WDJGalkyVnpjMTlyWlhrS0lDQWdJQ0FnSUNCelpXTnlaWFJmWVdOalpY
+        TnpYMnRsZVNBOUlIWmhjaTVoZDNOZmMyVmpjbVYwWDJ0bGVRb2dJQ0FnSUNCOUNpQWdJQ0I5Q2lB
+        Z0lDQm5ZM05mWkdGMFlWOXphVzVySUhzS0lDQWdJQ0FnWW5WamEyVjBYMjVoYldVZ1BTQm5iMjlu
+        YkdWZmMzUnZjbUZuWlY5aWRXTnJaWFF1Y3pNdFltRmphM1Z3TFdKMVkydGxkQzV1WVcxbENpQWdJ
+        Q0I5Q2lBZ2ZRb0tJQ0J6WTJobFpIVnNaU0I3Q2lBZ0lDQnpZMmhsWkhWc1pWOXpkR0Z5ZEY5a1lY
+        UmxJSHNLSUNBZ0lDQWdlV1ZoY2lBZ1BTQXlNREU0Q2lBZ0lDQWdJRzF2Ym5Sb0lEMGdNVEFLSUNB
+        Z0lDQWdaR0Y1SUNBZ1BTQXhDaUFnSUNCOUNpQWdJQ0J6WTJobFpIVnNaVjlsYm1SZlpHRjBaU0I3
+        Q2lBZ0lDQWdJSGxsWVhJZ0lEMGdNakF4T1FvZ0lDQWdJQ0J0YjI1MGFDQTlJREVLSUNBZ0lDQWda
+        R0Y1SUNBZ1BTQXhOUW9nSUNBZ2ZRb2dJQ0FnYzNSaGNuUmZkR2x0WlY5dlpsOWtZWGtnZXdvZ0lD
+        QWdJQ0JvYjNWeWN5QWdJRDBnTWpNS0lDQWdJQ0FnYldsdWRYUmxjeUE5SURNd0NpQWdJQ0FnSUhO
+        bFkyOXVaSE1nUFNBd0NpQWdJQ0FnSUc1aGJtOXpJQ0FnUFNBd0NpQWdJQ0I5Q2lBZ2ZRb0tJQ0Jr
+        WlhCbGJtUnpYMjl1SUQwZ1cyZHZiMmRzWlY5emRHOXlZV2RsWDJKMVkydGxkRjlwWVcxZmJXVnRZ
+        bVZ5TG5NekxXSmhZMnQxY0MxaWRXTnJaWFJkQ24wSw==
+    import: !!binary |
+        Q2dwVGRHOXlZV2RsSUdKMVkydGxkSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JVY21GdWMyWmxjaUJLYjJJbmN5QmdjSEp2YW1WamRHQWdZVzVrSUdCdVlXMWxZQ0IzYVhSb2Iz
+        VjBJSFJvWlNCZ2RISmhibk5tWlhKS2IySXZZQ0J3Y21WbWFYZ3NJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emRHOXlZV2RsWDNSeVlXNXpabVZ5WDJwdllpNW9kRzFzTG0xaGNtdGtiM2R1

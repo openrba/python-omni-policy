@@ -7,7 +7,7 @@ vault_azure_auth_backend_role:
     arguments:
         role:
             description: The name of the role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bound_service_principal_ids:
@@ -42,3 +42,24 @@ vault_azure_auth_backend_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmhlblZ5WlNJZ2V3b2dJ
+        SFI1Y0dVZ1BTQWlZWHAxY21VaUNuMEtDbkpsYzI5MWNtTmxJQ0oyWVhWc2RGOWhlblZ5WlY5aGRY
+        Um9YMkpoWTJ0bGJtUmZjbTlzWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JpWVdOclpXNWtJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJaVI3ZG1GMWJIUmZZWFYwYUY5aVlXTnJaVzVr
+        TG1GNmRYSmxMbkJoZEdoOUlnb2dJSEp2YkdVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlkR1Z6ZEMxeWIyeGxJZ29nSUdKdmRXNWtYM04xWW5OamNtbHdkR2x2Ymw5cFpI
+        TWdJQ0FnSUNBZ0lDQWdQU0JiSWpFeE1URXhNVEV4TFRJeU1qSXRNek16TXkwME5EUTBMVFUxTlRV
+        MU5UVTFOVFUxTlNKZENpQWdZbTkxYm1SZmNtVnpiM1Z5WTJWZlozSnZkWEJ6SUNBZ0lDQWdJQ0Fn
+        SUNBOUlGc2lNVEl6TkRVMk56ZzVNREV5SWwwS0lDQjBiMnRsYmw5MGRHd2dJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ05qQUtJQ0IwYjJ0bGJsOXRZWGhmZEhSc0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdNVEl3Q2lBZ2RHOXJaVzVmY0c5c2FXTnBaWE1nSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0E5SUZzaVpHVm1ZWFZzZENJc0lDSmtaWFlpTENBaWNISnZaQ0pkQ24wSw==
+    import: !!binary |
+        Q2dwQmVuVnlaU0JoZFhSb0lHSmhZMnRsYm1RZ2NtOXNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklHQmhkWFJvTDJBc0lIUm9aU0JnWW1GamEyVnVaR0FnY0dGMGFDd2dZQzl5YjJ4bEwy
+        QXNJR0Z1WkNCMGFHVWdZSEp2YkdWZ0lHNWhiV1VnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGNmRYSmxYMkYxZEdoZlltRmphMlZ1WkY5eWIyeGxMbWgwYld3dWJXUT0=

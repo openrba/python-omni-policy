@@ -8,12 +8,12 @@ google_bigtable_table:
     arguments:
         name:
             description: The name of the table.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_name:
             description: The name of the Bigtable instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         split_keys:
@@ -39,3 +39,23 @@ google_bigtable_table:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWW1sbmRHRmliR1ZmYVc1emRHRnVZMlVpSUNKcGJuTjBZ
+        VzVqWlNJZ2V3b2dJRzVoYldVZ1BTQWlkR1l0YVc1emRHRnVZMlVpQ2dvZ0lHTnNkWE4wWlhJZ2V3
+        b2dJQ0FnWTJ4MWMzUmxjbDlwWkNBZ0lEMGdJblJtTFdsdWMzUmhibU5sTFdOc2RYTjBaWElpQ2lB
+        Z0lDQjZiMjVsSUNBZ0lDQWdJQ0FnUFNBaWRYTXRZMlZ1ZEhKaGJERXRZaUlLSUNBZ0lHNTFiVjl1
+        YjJSbGN5QWdJQ0E5SURNS0lDQWdJSE4wYjNKaFoyVmZkSGx3WlNBOUlDSklSRVFpQ2lBZ2ZRb0tJ
+        Q0JzYVdabFkzbGpiR1VnZXdvZ0lDQWdjSEpsZG1WdWRGOWtaWE4wY205NUlEMGdkSEoxWlFvZ0lI
+        MEtmUW9LY21WemIzVnlZMlVnSW1kdmIyZHNaVjlpYVdkMFlXSnNaVjkwWVdKc1pTSWdJblJoWW14
+        bElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQTlJQ0owWmkxMFlXSnNaU0lLSUNCcGJuTjBZVzVq
+        WlY5dVlXMWxJRDBnWjI5dloyeGxYMkpwWjNSaFlteGxYMmx1YzNSaGJtTmxMbWx1YzNSaGJtTmxM
+        bTVoYldVS0lDQnpjR3hwZEY5clpYbHpJQ0FnSUQwZ1d5SmhJaXdnSW1JaUxDQWlZeUpkQ2dvZ0lH
+        eHBabVZqZVdOc1pTQjdDaUFnSUNCd2NtVjJaVzUwWDJSbGMzUnliM2tnUFNCMGNuVmxDaUFnZlFw
+        OUNnPT0=
+    import: !!binary |
+        Q2dwQ2FXZDBZV0pzWlNCVVlXSnNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklHRnVl
+        U0J2WmlCMGFHVnpaU0JoWTJObGNIUmxaQ0JtYjNKdFlYUnpPZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5aWFXZDBZV0pzWlY5MFlXSnNaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

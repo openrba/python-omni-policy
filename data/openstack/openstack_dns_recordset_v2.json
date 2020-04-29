@@ -14,13 +14,13 @@
             },
             "zone_id": {
                 "description": "The ID of the zone in which to create the record set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of the record set. Note the `.` at the end of the name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,32 +55,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "type": {
-                "description": "See Argument Reference above."
-            },
-            "ttl": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "records": {
-                "description": "See Argument Reference above."
-            },
-            "zone_id": {
-                "description": "See Argument Reference above."
-            },
-            "value_specs": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

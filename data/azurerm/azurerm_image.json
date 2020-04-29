@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the image. Changing this forces a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specified the supported Azure location where the resource exists.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,13 +62,13 @@
             },
             "os_type": {
                 "description": "Specifies the type of operating system contained in the virtual machine image. Possible values are: Windows or Linux.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "os_state": {
                 "description": "Specifies the state of the operating system contained in the blob. Currently, the only value is Generalized.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -98,7 +98,7 @@
             },
             "lun": {
                 "description": "Specifies the logical unit number of the data disk.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

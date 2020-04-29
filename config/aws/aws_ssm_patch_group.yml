@@ -8,16 +8,29 @@ aws_ssm_patch_group:
         baseline_id:
             description: The ID of the patch baseline to register the patch group
                 with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         patch_group:
             description: The name of the patch group that should be registered with
                 the patch baseline.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the patch baseline.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM050WDNCaGRHTm9YMkpoYzJWc2FXNWxJaUFpY0hKdlpIVmpk
+        R2x2YmlJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpY0dGMFkyZ3RZbUZ6Wld4cGJt
+        VWlDaUFnWVhCd2NtOTJaV1JmY0dGMFkyaGxjeUE5SUZzaVMwSXhNak0wTlRZaVhRcDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhkelgzTnpiVjl3WVhSamFGOW5jbTkxY0NJZ0luQmhkR05vWjNKdmRYQWlJSHNL
+        SUNCaVlYTmxiR2x1WlY5cFpDQTlJQ0lrZTJGM2MxOXpjMjFmY0dGMFkyaGZZbUZ6Wld4cGJtVXVj
+        SEp2WkhWamRHbHZiaTVwWkgwaUNpQWdjR0YwWTJoZlozSnZkWEFnUFNBaWNHRjBZMmd0WjNKdmRY
+        QXRibUZ0WlNJS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZmNHRjBZMmhmWjNKdmRYQXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

@@ -8,19 +8,19 @@
         "arguments": {
             "api_id": {
                 "description": "The API ID for the GraphQL API for the DataSource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "A user-supplied name for the DataSource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

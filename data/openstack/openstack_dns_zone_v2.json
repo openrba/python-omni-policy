@@ -14,7 +14,7 @@
             },
             "name": {
                 "description": "The name of the zone. Note the `.` at the end of the name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -61,35 +61,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "email": {
-                "description": "See Argument Reference above."
-            },
-            "type": {
-                "description": "See Argument Reference above."
-            },
-            "attributes": {
-                "description": "See Argument Reference above."
-            },
-            "ttl": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "masters": {
-                "description": "See Argument Reference above."
-            },
-            "value_specs": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

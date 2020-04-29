@@ -9,13 +9,13 @@
         "arguments": {
             "folder": {
                 "description": "The resource name of the folder the policy is attached to. Its format is folders/{folder_id}.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy_data": {
                 "description": "The `google_iam_policy` data source that represents",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

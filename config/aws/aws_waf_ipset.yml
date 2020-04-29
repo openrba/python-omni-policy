@@ -7,7 +7,7 @@ aws_waf_ipset:
     arguments:
         name:
             description: The name or description of the IPSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_set_descriptors:
@@ -22,3 +22,16 @@ aws_waf_ipset:
         arn:
             description: The ARN of the WAF IPSet.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDJsd2MyVjBJaUFpYVhCelpYUWlJSHNLSUNCdVlXMWxJ
+        RDBnSW5SbVNWQlRaWFFpQ2dvZ0lHbHdYM05sZEY5a1pYTmpjbWx3ZEc5eWN5QjdDaUFnSUNCMGVY
+        QmxJQ0E5SUNKSlVGWTBJZ29nSUNBZ2RtRnNkV1VnUFNBaU1Ua3lMakF1Tnk0d0x6STBJZ29nSUgw
+        S0NpQWdhWEJmYzJWMFgyUmxjMk55YVhCMGIzSnpJSHNLSUNBZ0lIUjVjR1VnSUQwZ0lrbFFWalFp
+        Q2lBZ0lDQjJZV3gxWlNBOUlDSXhNQzR4Tmk0eE5pNHdMekUySWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwWFFVWWdTVkJUWlhSeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdWcGNpQkpS
+        Q3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmFYQnpaWFF1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

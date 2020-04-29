@@ -7,7 +7,7 @@ aws_wafregional_geo_match_set:
     arguments:
         name:
             description: The name or description of the Geo Match Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         geo_match_constraint:
@@ -20,3 +20,18 @@ aws_wafregional_geo_match_set:
         id:
             description: The ID of the WAF Regional Geo Match Set.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtY21WbmFXOXVZV3hmWjJWdlgyMWhkR05vWDNObGRDSWdJ
+        bWRsYjE5dFlYUmphRjl6WlhRaUlIc0tJQ0J1WVcxbElEMGdJbWRsYjE5dFlYUmphRjl6WlhRaUNn
+        b2dJR2RsYjE5dFlYUmphRjlqYjI1emRISmhhVzUwSUhzS0lDQWdJSFI1Y0dVZ0lEMGdJa052ZFc1
+        MGNua2lDaUFnSUNCMllXeDFaU0E5SUNKVlV5SUtJQ0I5Q2dvZ0lHZGxiMTl0WVhSamFGOWpiMjV6
+        ZEhKaGFXNTBJSHNLSUNBZ0lIUjVjR1VnSUQwZ0lrTnZkVzUwY25raUNpQWdJQ0IyWVd4MVpTQTlJ
+        Q0pEUVNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwWFFVWWdVbVZuYVc5dVlXd2dSMlZ2SUUxaGRHTm9JRk5sZENCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUdsa0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5blpXOWZiV0YwWTJoZmMyVjBMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

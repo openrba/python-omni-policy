@@ -9,17 +9,17 @@ aws_lb_ssl_negotiation_policy:
     arguments:
         name:
             description: The name of the SSL negotiation policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         load_balancer:
             description: The load balancer to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         lb_port:
             description: The load balancer port to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         attribute:
@@ -39,3 +39,33 @@ aws_lb_ssl_negotiation_policy:
         attribute:
             description: The SSL Negotiation policy attributes.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hpSWlBaWJHSWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlkR1Z6ZEMxc1lpSUtJQ0JoZG1GcGJHRmlhV3hwZEhsZmVtOXVaWE1nUFNCYklu
+        VnpMV1ZoYzNRdE1XRWlYUW9LSUNCc2FYTjBaVzVsY2lCN0NpQWdJQ0JwYm5OMFlXNWpaVjl3YjNK
+        MElDQWdJQ0FnUFNBNE1EQXdDaUFnSUNCcGJuTjBZVzVqWlY5d2NtOTBiMk52YkNBZ1BTQWlhSFIw
+        Y0hNaUNpQWdJQ0JzWWw5d2IzSjBJQ0FnSUNBZ0lDQWdJQ0FnUFNBME5ETUtJQ0FnSUd4aVgzQnli
+        M1J2WTI5c0lDQWdJQ0FnSUNBOUlDSm9kSFJ3Y3lJS0lDQWdJSE56YkY5alpYSjBhV1pwWTJGMFpW
+        OXBaQ0E5SUNKaGNtNDZZWGR6T21saGJUbzZNVEl6TkRVMk56ZzVNREV5T25ObGNuWmxjaTFqWlhK
+        MGFXWnBZMkYwWlM5alpYSjBUbUZ0WlNJS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZiR0pm
+        YzNOc1gyNWxaMjkwYVdGMGFXOXVYM0J2YkdsamVTSWdJbVp2YnlJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlabTl2TFhCdmJHbGplU0lLSUNCc2IyRmtYMkpoYkdGdVkyVnlJRDBnSWlSN1lY
+        ZHpYMlZzWWk1c1lpNXBaSDBpQ2lBZ2JHSmZjRzl5ZENBZ0lDQWdJQ0E5SURRME13b0tJQ0JoZEhS
+        eWFXSjFkR1VnZXdvZ0lDQWdibUZ0WlNBZ1BTQWlVSEp2ZEc5amIyd3RWRXhUZGpFaUNpQWdJQ0Iy
+        WVd4MVpTQTlJQ0ptWVd4elpTSUtJQ0I5Q2dvZ0lHRjBkSEpwWW5WMFpTQjdDaUFnSUNCdVlXMWxJ
+        Q0E5SUNKUWNtOTBiMk52YkMxVVRGTjJNUzR4SWdvZ0lDQWdkbUZzZFdVZ1BTQWlabUZzYzJVaUNp
+        QWdmUW9LSUNCaGRIUnlhV0oxZEdVZ2V3b2dJQ0FnYm1GdFpTQWdQU0FpVUhKdmRHOWpiMnd0VkV4
+        VGRqRXVNaUlLSUNBZ0lIWmhiSFZsSUQwZ0luUnlkV1VpQ2lBZ2ZRb0tJQ0JoZEhSeWFXSjFkR1Vn
+        ZXdvZ0lDQWdibUZ0WlNBZ1BTQWlVMlZ5ZG1WeUxVUmxabWx1WldRdFEybHdhR1Z5TFU5eVpHVnlJ
+        Z29nSUNBZ2RtRnNkV1VnUFNBaWRISjFaU0lLSUNCOUNnb2dJR0YwZEhKcFluVjBaU0I3Q2lBZ0lD
+        QnVZVzFsSUNBOUlDSkZRMFJJUlMxU1UwRXRRVVZUTVRJNExVZERUUzFUU0VFeU5UWWlDaUFnSUNC
+        MllXeDFaU0E5SUNKMGNuVmxJZ29nSUgwS0NpQWdZWFIwY21saWRYUmxJSHNLSUNBZ0lHNWhiV1Vn
+        SUQwZ0lrRkZVekV5T0MxSFEwMHRVMGhCTWpVMklnb2dJQ0FnZG1Gc2RXVWdQU0FpZEhKMVpTSUtJ
+        Q0I5Q2dvZ0lHRjBkSEpwWW5WMFpTQjdDaUFnSUNCdVlXMWxJQ0E5SUNKRlJFZ3RVbE5CTFVSRlV5
+        MURRa016TFZOSVFTSUtJQ0FnSUhaaGJIVmxJRDBnSW1aaGJITmxJZ29nSUgwS2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWWw5emMyeGZibVZuYjNScFlYUnBiMjVmY0c5c2FXTjVMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

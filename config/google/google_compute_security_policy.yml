@@ -8,7 +8,7 @@ google_compute_security_policy:
     arguments:
         name:
             description: The name of the security policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -29,18 +29,18 @@ google_compute_security_policy:
             notes: ''
         action:
             description: 'Action to take when `match` matches the request. Valid values:'
-            required: true
+            required: false
             policy: ''
             notes: ''
         priority:
             description: An unique positive integer indicating the priority of evaluation
                 for a rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         match:
             description: A match condition that incoming traffic is evaluated against.
-            required: true
+            required: false
             policy: ''
             notes: ''
         preview:
@@ -67,13 +67,13 @@ google_compute_security_policy:
             notes: ''
         src_ip_ranges:
             description: Set of IP addresses or ranges (IPV4 or IPV6
-            required: true
+            required: false
             policy: ''
             notes: ''
         expression:
             description: Textual representation of an expression in Common Expression
                 Language syntax.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -82,3 +82,25 @@ google_compute_security_policy:
         self_link:
             description: The URI of the created resource.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjl6WldOMWNtbDBlVjl3YjJ4cFkza2lJ
+        Q0p3YjJ4cFkza2lJSHNLSUNCdVlXMWxJRDBnSW0xNUxYQnZiR2xqZVNJS0NpQWdjblZzWlNCN0Np
+        QWdJQ0JoWTNScGIyNGdJQ0E5SUNKa1pXNTVLRFF3TXlraUNpQWdJQ0J3Y21sdmNtbDBlU0E5SUNJ
+        eE1EQXdJZ29nSUNBZ2JXRjBZMmdnZXdvZ0lDQWdJQ0IyWlhKemFXOXVaV1JmWlhod2NpQTlJQ0pU
+        VWtOZlNWQlRYMVl4SWdvZ0lDQWdJQ0JqYjI1bWFXY2dld29nSUNBZ0lDQWdJSE55WTE5cGNGOXlZ
+        VzVuWlhNZ1BTQmJJamt1T1M0NUxqQXZNalFpWFFvZ0lDQWdJQ0I5Q2lBZ0lDQjlDaUFnSUNCa1pY
+        TmpjbWx3ZEdsdmJpQTlJQ0pFWlc1NUlHRmpZMlZ6Y3lCMGJ5QkpVSE1nYVc0Z09TNDVMamt1TUM4
+        eU5DSUtJQ0I5Q2dvZ0lISjFiR1VnZXdvZ0lDQWdZV04wYVc5dUlDQWdQU0FpWVd4c2IzY2lDaUFn
+        SUNCd2NtbHZjbWwwZVNBOUlDSXlNVFEzTkRnek5qUTNJZ29nSUNBZ2JXRjBZMmdnZXdvZ0lDQWdJ
+        Q0IyWlhKemFXOXVaV1JmWlhod2NpQTlJQ0pUVWtOZlNWQlRYMVl4SWdvZ0lDQWdJQ0JqYjI1bWFX
+        Y2dld29nSUNBZ0lDQWdJSE55WTE5cGNGOXlZVzVuWlhNZ1BTQmJJaW9pWFFvZ0lDQWdJQ0I5Q2lB
+        Z0lDQjlDaUFnSUNCa1pYTmpjbWx3ZEdsdmJpQTlJQ0prWldaaGRXeDBJSEoxYkdVaUNpQWdmUXA5
+        Q2c9PQ==
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCd2IyeHBZMmxsY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dZ
+        VzU1SUc5bUlIUm9aU0JtYjJ4c2IzZHBibWNnWm05eWJXRjBjd29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5amIyMXdkWFJsWDNObFkzVnlhWFI1WDNCdmJHbGplUzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

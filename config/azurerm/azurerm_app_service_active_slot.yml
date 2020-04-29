@@ -8,20 +8,56 @@ azurerm_app_service_active_slot:
         resource_group_name:
             description: The name of the resource group in which the App Service exists.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_service_name:
             description: The name of the App Service within which the Slot exists.  Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_service_slot_name:
             description: The name of the App Service Slot which should be promoted
                 to the Production Slot within the App Service.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
-    timeouts: {}
+    timeouts:
+        create:
+            description: Used when creating the App Service Active Slot.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the App Service Active Slot.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the App Service Active Slot.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the App Service Active Slot.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKeVlXNWtiMjFmYVdRaUlDSnpaWEoyWlhJaUlIc0tJQ0FqSUM0dUxncDlD
+        Z3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDSWdJbVY0WVcxd2JH
+        VWlJSHNLSUNBaklDNHVMZ3A5Q2dweVpYTnZkWEpqWlNBaVlYcDFjbVZ5YlY5aGNIQmZjMlZ5ZG1s
+        alpWOXdiR0Z1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJQ01nTGk0dUNuMEtDbkpsYzI5MWNtTmxJQ0po
+        ZW5WeVpYSnRYMkZ3Y0Y5elpYSjJhV05sSWlBaVpYaGhiWEJzWlNJZ2V3b2dJQ01nTGk0dUNuMEtD
+        bkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYMkZ3Y0Y5elpYSjJhV05sWDNOc2IzUWlJQ0psZUdGdGNH
+        eGxJaUI3Q2lBZ0l5QXVMaTRLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZllYQndYM05sY25a
+        cFkyVmZZV04wYVhabFgzTnNiM1FpSUNKbGVHRnRjR3hsSWlCN0NpQWdjbVZ6YjNWeVkyVmZaM0p2
+        ZFhCZmJtRnRaU0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxM
+        bTVoYldVS0lDQmhjSEJmYzJWeWRtbGpaVjl1WVcxbElDQWdJQ0FnUFNCaGVuVnlaWEp0WDJGd2NG
+        OXpaWEoyYVdObExtVjRZVzF3YkdVdWJtRnRaUW9nSUdGd2NGOXpaWEoyYVdObFgzTnNiM1JmYm1G
+        dFpTQTlJR0Y2ZFhKbGNtMWZZWEJ3WDNObGNuWnBZMlZmYzJ4dmRDNWxlR0Z0Y0d4bExtNWhiV1VL
+        ZlFvPQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndYM05sY25acFkyVmZZV04wYVhabFgzTnNiM1F1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

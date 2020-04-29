@@ -7,7 +7,7 @@ aws_cloudformation_stack:
     arguments:
         name:
             description: Stack name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         template_body:

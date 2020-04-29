@@ -8,37 +8,37 @@ azurerm_netapp_pool:
         name:
             description: The name of the NetApp Pool. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group where the NetApp Pool should
                 be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_name:
             description: The name of the NetApp account in which the NetApp Pool should
                 be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_level:
             description: The service level of the file system. Valid values include
                 `Premium`, `Standard`, or `Ultra`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size_in_tb:
             description: Provisioned size of the pool in TB. Value must be between
                 `4` and `500`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -66,3 +66,11 @@ azurerm_netapp_pool:
             description: Used when deleting the NetApp Pool.
             required: false
             timeout: 30
+    usage: {}
+    import: !!binary |
+        Q2dwT1pYUkJjSEFnVUc5dmJDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnla
+        WE52ZFhKalpTQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJtVjBZWEJ3WDNCdmIyd3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

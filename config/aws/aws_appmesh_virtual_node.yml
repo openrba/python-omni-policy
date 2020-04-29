@@ -7,18 +7,18 @@ aws_appmesh_virtual_node:
     arguments:
         name:
             description: The name to use for the virtual node.
-            required: true
+            required: false
             policy: ''
             notes: ''
         mesh_name:
             description: The name of the service mesh in which to create the virtual
                 node.
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: The virtual node specification to apply.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -58,12 +58,12 @@ aws_appmesh_virtual_node:
         virtual_service_name:
             description: The name of the virtual service that is acting as a virtual
                 node backend.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port_mapping:
             description: The port mapping information for the listener.
-            required: true
+            required: false
             policy: ''
             notes: ''
         health_check:
@@ -107,17 +107,17 @@ aws_appmesh_virtual_node:
             notes: ''
         namespace_name:
             description: The name of the AWS Cloud Map namespace to use.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_name:
             description: The name of the AWS Cloud Map service to use. Use the [`aws_service_discovery_service`](/docs/providers/aws/r/service_discovery_service.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         hostname:
             description: The DNS host name for your virtual node.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
@@ -129,31 +129,31 @@ aws_appmesh_virtual_node:
         protocol:
             description: The protocol for the health check request. Valid values are
                 `http` and `tcp`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         healthy_threshold:
             description: The number of consecutive successful health checks that must
                 occur before declaring listener healthy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         interval_millis:
             description: The time period in milliseconds between each health check
                 execution.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout_millis:
             description: The amount of time to wait when receiving a response from
                 the health check, in milliseconds.
-            required: true
+            required: false
             policy: ''
             notes: ''
         unhealthy_threshold:
             description: The number of consecutive failed health checks that must
                 occur before declaring a virtual node unhealthy.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -166,3 +166,12 @@ aws_appmesh_virtual_node:
         last_updated_date:
             description: The last update date of the virtual node.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQmNIQWdUV1Z6YUNCMmFYSjBkV0ZzSUc1dlpHVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCZ2JXVnphRjl1WVcxbFlDQjBiMmRsZEdobGNpQjNhWFJvSUhSb1pTQjJhWEowZFdGc0lH
+        NXZaR1VuY3lCZ2JtRnRaV0FzQ21VdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCdFpYTm9YM1pwY25SMVlXeGZibTlrWlM1b2RHMXNMbTFoY210a2IzZHU=

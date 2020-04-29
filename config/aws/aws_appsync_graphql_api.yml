@@ -8,12 +8,12 @@ aws_appsync_graphql_api:
         authentication_type:
             description: 'The authentication type. Valid values: `API_KEY`, `AWS_IAM`,
                 `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: A user-supplied name for the GraphqlApi.
-            required: true
+            required: false
             policy: ''
             notes: ''
         log_config:
@@ -64,3 +64,11 @@ aws_appsync_graphql_api:
             description: Map of URIs associated with the API. e.g. `uris["GRAPHQL"]
                 = https://ID.appsync-api.REGION.amazonaws.com/graphql`
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQmNIQlRlVzVqSUVkeVlYQm9VVXdnUVZCSklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1IzSmhjR2hSVENCQlVFa2dTVVFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCemVXNWpYMmR5WVhCb2NXeGZZWEJwTG1oMGJXd3ViV0Z5YTJSdmQyND0=

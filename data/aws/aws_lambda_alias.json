@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name for the alias you are creating. Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_]+)`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,13 +20,13 @@
             },
             "function_name": {
                 "description": "The function ARN of the Lambda function for which you want to create an alias.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "function_version": {
                 "description": "Lambda function version for which you are creating the alias. Pattern: `(\\$LATEST|[0-9]+)`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

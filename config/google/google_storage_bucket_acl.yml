@@ -8,7 +8,7 @@ google_storage_bucket_acl:
     arguments:
         bucket:
             description: The name of the bucket it applies to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         predefined_acl:
@@ -29,3 +29,17 @@ google_storage_bucket_acl:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYzNSdmNtRm5aVjlpZFdOclpYUWlJQ0pwYldGblpTMXpk
+        Rzl5WlNJZ2V3b2dJRzVoYldVZ0lDQWdJRDBnSW1sdFlXZGxMWE4wYjNKbExXSjFZMnRsZENJS0lD
+        QnNiMk5oZEdsdmJpQTlJQ0pGVlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbWR2YjJkc1pWOXpkRzl5WVdk
+        bFgySjFZMnRsZEY5aFkyd2lJQ0pwYldGblpTMXpkRzl5WlMxaFkyd2lJSHNLSUNCaWRXTnJaWFFn
+        UFNCbmIyOW5iR1ZmYzNSdmNtRm5aVjlpZFdOclpYUXVhVzFoWjJVdGMzUnZjbVV1Ym1GdFpRb0tJ
+        Q0J5YjJ4bFgyVnVkR2wwZVNBOUlGc0tJQ0FnSUNKUFYwNUZVanAxYzJWeUxXMTVMbVZ0WVdsc1FH
+        ZHRZV2xzTG1OdmJTSXNDaUFnSUNBaVVrVkJSRVZTT21keWIzVndMVzE1WjNKdmRYQWlMQW9nSUYw
+        S2ZRbz0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emRHOXlZV2RsWDJKMVkydGxkRjloWTJ3dWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -7,20 +7,20 @@ aws_dx_lag:
     arguments:
         name:
             description: The name of the LAG.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connections_bandwidth:
             description: 'The bandwidth of the individual physical connections bundled
                 by the LAG. Valid values: 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps,
                 500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps. Case sensitive.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The AWS Direct Connect location in which the LAG should be
                 allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         force_destroy:
@@ -41,3 +41,15 @@ aws_dx_lag:
         arn:
             description: The ARN of the LAG.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaSGhmYkdGbklpQWlhRzluWlNJZ2V3b2dJRzVoYldVZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBaaTFrZUMxc1lXY2lDaUFnWTI5dWJtVmpkR2x2Ym5OZllt
+        RnVaSGRwWkhSb0lEMGdJakZIWW5Ceklnb2dJR3h2WTJGMGFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        OUlDSkZjVVJETWlJS0lDQm1iM0pqWlY5a1pYTjBjbTk1SUNBZ0lDQWdJQ0FnUFNCMGNuVmxDbjBL
+    import: !!binary |
+        Q2dwRWFYSmxZM1FnUTI5dWJtVmpkQ0JNUVVkeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lHeGhaeUJwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZUY5c1lXY3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

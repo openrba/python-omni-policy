@@ -19,7 +19,7 @@ aws_rds_cluster_instance:
             notes: ''
         cluster_identifier:
             description: The identifier of the [`aws_rds_cluster`](/docs/providers/aws/r/rds_cluster.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         engine:
@@ -35,7 +35,7 @@ aws_rds_cluster_instance:
             notes: ''
         instance_class:
             description: The instance class to use. For details on CPU
-            required: true
+            required: false
             policy: ''
             notes: ''
         publicly_accessible:
@@ -140,3 +140,23 @@ aws_rds_cluster_instance:
         id:
             description: The Instance identifier
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbVJ6WDJOc2RYTjBaWEpmYVc1emRHRnVZMlVpSUNKamJIVnpk
+        R1Z5WDJsdWMzUmhibU5sY3lJZ2V3b2dJR052ZFc1MElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURJS0lD
+        QnBaR1Z1ZEdsbWFXVnlJQ0FnSUNBZ0lDQWdQU0FpWVhWeWIzSmhMV05zZFhOMFpYSXRaR1Z0Ynkw
+        a2UyTnZkVzUwTG1sdVpHVjRmU0lLSUNCamJIVnpkR1Z5WDJsa1pXNTBhV1pwWlhJZ1BTQWlKSHRo
+        ZDNOZmNtUnpYMk5zZFhOMFpYSXVaR1ZtWVhWc2RDNXBaSDBpQ2lBZ2FXNXpkR0Z1WTJWZlkyeGhj
+        M01nSUNBZ0lEMGdJbVJpTG5JMExteGhjbWRsSWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDNKa2Mx
+        OWpiSFZ6ZEdWeUlpQWlaR1ZtWVhWc2RDSWdld29nSUdOc2RYTjBaWEpmYVdSbGJuUnBabWxsY2lB
+        OUlDSmhkWEp2Y21FdFkyeDFjM1JsY2kxa1pXMXZJZ29nSUdGMllXbHNZV0pwYkdsMGVWOTZiMjVs
+        Y3lBOUlGc2lkWE10ZDJWemRDMHlZU0lzSUNKMWN5MTNaWE4wTFRKaUlpd2dJblZ6TFhkbGMzUXRN
+        bU1pWFFvZ0lHUmhkR0ZpWVhObFgyNWhiV1VnSUNBZ0lDQTlJQ0p0ZVdSaUlnb2dJRzFoYzNSbGNs
+        OTFjMlZ5Ym1GdFpTQWdJQ0E5SUNKbWIyOGlDaUFnYldGemRHVnlYM0JoYzNOM2IzSmtJQ0FnSUQw
+        Z0ltSmhjbUoxZERoamFHRnljeUlLZlFvPQ==
+    import: !!binary |
+        Q2dwU1JGTWdRMngxYzNSbGNpQkpibk4wWVc1alpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdhV1JsYm5ScFptbGxjbUFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WkhOZlkyeDFjM1JsY2w5cGJuTjBZVzVqWlM1b2RHMXNMbTFoY210a2IzZHU=

@@ -8,22 +8,22 @@ google_spanner_database_iam:
     arguments:
         database:
             description: The name of the Spanner database.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance:
             description: The name of the Spanner instance the database belongs to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member/members:
             description: Identities that will be granted the privilege in `role`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Only one
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
@@ -36,7 +36,19 @@ google_spanner_database_iam:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        etag:
-            description: (Computed) The etag of the database's IAM policy.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwR2IzSWdZV3hzSUdsdGNHOXlkQ0J6ZVc1MFlYaGxjeXdnZEdobElDSnlaWE52ZFhKalpTQnBi
+        aUJ4ZFdWemRHbHZiaUlnWTJGdUlIUmhhMlVnWVc1NUlHOW1JSFJvWlNCbWIyeHNiM2RwYm1jZ1pt
+        OXliWE02Q2dvcUlIdDdjSEp2YW1WamRIMTlMM3Q3YVc1emRHRnVZMlY5ZlM5N2UyUmhkR0ZpWVhO
+        bGZYMEtLaUI3ZTJsdWMzUmhibU5sZlgwdmUzdGtZWFJoWW1GelpYMTlJQ2h3Y205cVpXTjBJR2x6
+        SUhSaGEyVnVJR1p5YjIwZ2NISnZkbWxrWlhJZ2NISnZhbVZqZENrS0NrbEJUU0J0WlcxaVpYSWdh
+        VzF3YjNKMGN5QjFjMlVnYzNCaFkyVXRaR1ZzYVcxcGRHVmtJR2xrWlc1MGFXWnBaWEp6T3lCMGFH
+        VWdjbVZ6YjNWeVkyVWdhVzRnY1hWbGMzUnBiMjRzSUhSb1pTQnliMnhsTENCaGJtUWdkR2hsSUcx
+        bGJXSmxjaUJwWkdWdWRHbDBlU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emNHRnVibVZ5WDJSaGRHRmlZWE5sWDJsaGJTNW9kRzFzTG0xaGNtdGtiM2R1

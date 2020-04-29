@@ -8,43 +8,43 @@
         "arguments": {
             "name": {
                 "description": "The name of the network mapping.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Name of the resource group where the vault that should be updated is located.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "recovery_vault_name": {
                 "description": "The name of the vault that should be updated.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_recovery_fabric_name": {
                 "description": "Specifies the ASR fabric where mapping should be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_recovery_fabric_name": {
                 "description": "The Azure Site Recovery fabric object corresponding to the recovery Azure region.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_network_id": {
                 "description": "The id of the primary network.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_network_id": {
                 "description": "The id of the recovery network.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

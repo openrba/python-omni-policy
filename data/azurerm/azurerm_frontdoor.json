@@ -8,39 +8,48 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Routing Rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "backend_pool": {
                 "description": "A `backend_pool` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "backend_pool_health_probe": {
                 "description": "A `backend_pool_health_probe` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "backend_pool_load_balancing": {
                 "description": "A `backend_pool_load_balancing` block as defined below.",
-                "required": true,
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "backend_pools_send_receive_timeout_seconds": {
+                "description": "Specifies the send and receive timeout on forwarding request to the backend. When the timeout is reached, the request fails and returns. Possible values are between `0` - `240`. Defaults to `60`.",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "enforce_backend_pools_certificate_name_check": {
                 "description": "Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.",
-                "required": true,
+                "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> ",
+                    " `backend_pools_send_receive_timeout_seconds` and `enforce_backend_pools_certificate_name_check` apply to all backend pools."
+                ]
             },
             "load_balancer_enabled": {
                 "description": "Should the Front Door Load Balancer be Enabled? Defaults to `true`.",
@@ -56,13 +65,13 @@
             },
             "frontend_endpoint": {
                 "description": "A `frontend_endpoint` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "routing_rule": {
                 "description": "A `routing_rule` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,19 +83,19 @@
             },
             "backend": {
                 "description": "A `backend` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "load_balancing_name": {
                 "description": "Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "health_probe_name": {
                 "description": "Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -98,25 +107,25 @@
             },
             "address": {
                 "description": "Location of the backend (IP address or FQDN)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "host_header": {
                 "description": "The value to use as the host header sent to the backend.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "http_port": {
                 "description": "The HTTP TCP port number. Possible values are between `1` - `65535`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "https_port": {
                 "description": "The HTTPS TCP port number. Possible values are between `1` - `65535`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -134,7 +143,7 @@
             },
             "host_name": {
                 "description": "Specifies the host name of the `frontend_endpoint`. Must be a domain name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -152,7 +161,7 @@
             },
             "custom_https_provisioning_enabled": {
                 "description": "Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -160,7 +169,10 @@
                 "description": "A `custom_https_configuration` block as defined below.",
                 "required": false,
                 "policy": "",
-                "notes": "This block is required when `custom_https_provisioning_enabled` is set to `true`."
+                "notes": [
+                    "-> ",
+                    " This block is required when `custom_https_provisioning_enabled` is set to `true`."
+                ]
             },
             "web_application_firewall_policy_link_id": {
                 "description": "Defines the Web Application Firewall policy `ID` for each host.",
@@ -184,7 +196,10 @@
                 "description": "Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.",
                 "required": false,
                 "policy": "",
-                "notes": "Use the `Head` method if you do not need to check the response body of your health probe."
+                "notes": [
+                    "-> ",
+                    " Use the `Head` method if you do not need to check the response body of your health probe."
+                ]
             },
             "interval_in_seconds": {
                 "description": "The number of seconds between each Health Probe. Defaults to `120`.",
@@ -212,7 +227,7 @@
             },
             "frontend_endpoints": {
                 "description": "The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -242,7 +257,7 @@
             },
             "backend_pool_name": {
                 "description": "Specifies the name of the Backend Pool to forward the incoming traffic to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -320,19 +335,19 @@
             },
             "azure_key_vault_certificate_vault_id": {
                 "description": "The ID of the Key Vault containing the SSL certificate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "azure_key_vault_certificate_secret_name": {
                 "description": "The name of the Key Vault secret representing the full certificate PFX.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "azure_key_vault_certificate_secret_version": {
                 "description": "The version of the Key Vault secret representing the full certificate PFX.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

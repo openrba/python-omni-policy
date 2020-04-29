@@ -8,19 +8,19 @@
         "arguments": {
             "rest_api_id": {
                 "description": "The ID of the associated REST API.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_id": {
                 "description": "The API resource ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "http_method": {
                 "description": "The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTION`, `ANY`)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "type": {
                 "description": "The integration input's [type](https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/). Valid values are `HTTP` (for HTTP backends), `MOCK` (not calling any real backend), `AWS` (for AWS services), `AWS_PROXY` (for Lambda proxy integration",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

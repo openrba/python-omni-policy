@@ -9,12 +9,12 @@ azurerm_iothub_endpoint_servicebus_queue:
             description: 'The name of the endpoint. The name must be unique across
                 endpoint types. The following names are reserved:  `events`, `operationsMonitoringEvents`,
                 `fileNotifications` and `$default`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_string:
             description: The connection string for the endpoint.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

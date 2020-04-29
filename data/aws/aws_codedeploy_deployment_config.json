@@ -8,7 +8,7 @@
         "arguments": {
             "deployment_config_name": {
                 "description": "The name of the deployment config.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "value": {
                 "description": "The value when the type is `FLEET_PERCENT` represents the minimum number of healthy instances as",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

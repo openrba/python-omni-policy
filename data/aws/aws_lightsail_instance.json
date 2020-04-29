@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the Lightsail Instance. Names be unique within each AWS Region in your Lightsail account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "availability_zone": {
                 "description": "The Availability Zone in which to create your",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "blueprint_id": {
                 "description": "The ID for a virtual private server image",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bundle_id": {
                 "description": "The bundle of specification information (see list below)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

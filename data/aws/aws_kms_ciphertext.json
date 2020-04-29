@@ -8,13 +8,13 @@
         "arguments": {
             "plaintext": {
                 "description": "Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_id": {
                 "description": "Globally unique key ID for the customer master key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

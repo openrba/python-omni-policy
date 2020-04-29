@@ -6,50 +6,51 @@ azurerm_linux_virtual_machine_scale_set:
     description: Manages a Linux Virtual Machine Scale Set.
     arguments:
         name:
-            description: The name of the Linux Virtual Machine Scale Set. Changing
-                this forces a new resource to be created.
-            required: true
+            description: The Name of the Public IP Address Configuration.
+            required: false
             policy: ''
             notes: ''
         location:
             description: The Azure location where the Linux Virtual Machine Scale
                 Set should exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the Linux Virtual
                 Machine Scale Set should be exist. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_username:
             description: The username of the local administrator on each Virtual Machine
                 Scale Set instance. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instances:
             description: The number of Virtual Machines in the Scale Set.
-            required: true
+            required: false
             policy: ''
-            notes: If you're using AutoScaling, you may wish to use [Terraform's `ignore_changes`
+            notes:
+            - '-> '
+            - ' If you''re using AutoScaling, you may wish to use [Terraform''s `ignore_changes`
                 functionality](https://www.terraform.io/docs/configuration/resources.html#ignore_changes)
-                to ignore changes to this field.
+                to ignore changes to this field.'
         sku:
             description: The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         network_interface:
             description: One or more `network_interface` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         os_disk:
             description: An `os_disk` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         additional_capabilities:
@@ -63,8 +64,10 @@ azurerm_linux_virtual_machine_scale_set:
                 created.
             required: false
             policy: ''
-            notes: When an `admin_password` is specified `disable_password_authentication`
-                must be set to `false`.
+            notes:
+            - '-> '
+            - ' When an `admin_password` is specified `disable_password_authentication`
+                must be set to `false`.'
         admin_ssh_key:
             description: One or more `admin_ssh_key` blocks as defined below.
             required: false
@@ -101,14 +104,19 @@ azurerm_linux_virtual_machine_scale_set:
                 Virtual Machine Scale Set.
             required: false
             policy: ''
-            notes: When Custom Data has been configured, it's not possible to remove
+            notes:
+            - '-> '
+            - ' When Custom Data has been configured, it''s not possible to remove
                 it without tainting the Virtual Machine Scale Set, due to a limitation
-                of the Azure API.
+                of the Azure API.'
         data_disk:
             description: One or more `data_disk` blocks as defined below.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> '
+            - ' When an `admin_password` is specified `disable_password_authentication`
+                must be set to `false`.'
         do_not_run_extensions_on_overprovisioned_machines:
             description: Should Virtual Machine Extensions be run on Overprovisioned
                 Virtual Machines in the Scale Set? Defaults to `false`.
@@ -268,12 +276,12 @@ azurerm_linux_virtual_machine_scale_set:
         public_key:
             description: The Public Key which should be used for authentication, which
                 needs to be at least 2048-bit and in `ssh-rsa` format.
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
             description: The Username for which this Public SSH Key should be configured.
-            required: true
+            required: false
             policy: ''
             notes:
             - '-> '
@@ -283,20 +291,20 @@ azurerm_linux_virtual_machine_scale_set:
         disable_automatic_rollback:
             description: Should automatic rollbacks be disabled? Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enable_automatic_os_upgrade:
             description: Should OS Upgrades automatically be applied to Scale Set
                 instances in a rolling fashion when a newer version of the OS Image
                 becomes available? Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
             description: Should the terminate notification be enabled on this Virtual
                 Machine Scale Set? Defaults to `false`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         grace_period:
@@ -309,12 +317,12 @@ azurerm_linux_virtual_machine_scale_set:
             description: The Primary/Secondary Endpoint for the Azure Storage Account
                 which should be used to store Boot Diagnostics, including Console
                 Output and Screenshots from the Hypervisor.
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
             description: The Secret URL of a Key Vault Certificate.
-            required: true
+            required: false
             policy: ''
             notes:
             - '-> '
@@ -323,7 +331,7 @@ azurerm_linux_virtual_machine_scale_set:
         caching:
             description: The Type of Caching which should be used for the Internal
                 OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disk_size_gb:
@@ -341,14 +349,14 @@ azurerm_linux_virtual_machine_scale_set:
         lun:
             description: The Logical Unit Number of the Data Disk, which must be unique
                 within the Virtual Machine.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_type:
             description: The Type of Storage Account which should back this the Internal
                 OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`
                 and `Premium_LRS`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disk_encryption_set_id:
@@ -373,7 +381,7 @@ azurerm_linux_virtual_machine_scale_set:
             description: The type of Managed Identity which should be assigned to
                 the Linux Virtual Machine Scale Set. Possible values are `SystemAssigned`,
                 `UserAssigned` and `SystemAssigned, UserAssigned`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity_ids:
@@ -442,7 +450,7 @@ azurerm_linux_virtual_machine_scale_set:
             notes: ''
         ip_configuration:
             description: One or more `ip_configuration` blocks as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dns_servers:
@@ -507,7 +515,7 @@ azurerm_linux_virtual_machine_scale_set:
                 As this is a maximum, unhealthy instances in previous or future batches
                 can cause the percentage of instances in a batch to decrease to ensure
                 higher reliability. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_unhealthy_instance_percent:
@@ -517,7 +525,7 @@ azurerm_linux_virtual_machine_scale_set:
                 by the virtual machine health checks before the rolling upgrade aborts.
                 This constraint will be checked prior to starting any batch. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_unhealthy_upgraded_instance_percent:
@@ -526,7 +534,7 @@ azurerm_linux_virtual_machine_scale_set:
                 after each batch is upgraded. If this percentage is ever exceeded,
                 the rolling update aborts. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pause_time_between_batches:
@@ -534,18 +542,18 @@ azurerm_linux_virtual_machine_scale_set:
                 machines in one batch and starting the next batch. The time duration
                 should be specified in ISO 8601 format. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate:
             description: One or more `certificate` blocks as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key_vault_id:
             description: The ID of the Key Vault from which all Secrets should be
                 sourced.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout:

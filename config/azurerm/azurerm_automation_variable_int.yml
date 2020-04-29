@@ -8,19 +8,19 @@ azurerm_automation_variable_int:
         name:
             description: The name of the Automation Variable. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Automation
                 Variable. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automation_account_name:
             description: The name of the automation account in which the Variable
                 is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:

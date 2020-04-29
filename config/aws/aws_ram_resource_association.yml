@@ -7,15 +7,29 @@ aws_ram_resource_association:
     arguments:
         resource_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_share_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The Amazon Resource Name (ARN) of the resource share.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbUZ0WDNKbGMyOTFjbU5sWDJGemMyOWphV0YwYVc5dUlpQWla
+        WGhoYlhCc1pTSWdld29nSUhKbGMyOTFjbU5sWDJGeWJpQWdJQ0FnSUNBOUlDSWtlMkYzYzE5emRX
+        SnVaWFF1WlhoaGJYQnNaUzVoY201OUlnb2dJSEpsYzI5MWNtTmxYM05vWVhKbFgyRnliaUE5SUNJ
+        a2UyRjNjMTl5WVcxZmNtVnpiM1Z5WTJWZmMyaGhjbVV1WlhoaGJYQnNaUzVoY201OUlncDlDZz09
+    import: !!binary |
+        Q2dwU1FVMGdVbVZ6YjNWeVkyVWdRWE56YjJOcFlYUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1ZwY2lCU1pYTnZkWEpqWlNCVGFHRnlaU0JCVWs0Z1lXNWtJRkpsYzI5MWNt
+        TmxJRUZTVGlCelpYQmhjbUYwWldRZ1lua2dZU0JqYjIxdFlTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WVcxZmNtVnpiM1Z5WTJWZllYTnpiMk5wWVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

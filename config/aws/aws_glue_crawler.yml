@@ -7,19 +7,19 @@ aws_glue_crawler:
     arguments:
         database_name:
             description: Glue database where results are written.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Name of the crawler.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The IAM role friendly name (including path without leading
                 slash), or ARN of an IAM role, used by the crawler to access other
                 resources.
-            required: true
+            required: false
             policy: ''
             notes: ''
         classifiers:
@@ -88,3 +88,11 @@ aws_glue_crawler:
         arn:
             description: 'The ARN of the crawler '
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSGJIVmxJRU55WVhkc1pYSnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCZ2JtRnRa
+        V0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkhWbFgyTnlZWGRzWlhJdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -7,29 +7,29 @@ aws_eks_node_group:
     arguments:
         cluster_name:
             description: Name of the EKS Cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         node_group_name:
             description: Name of the EKS Node Group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         node_role_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         scaling_config:
             description: Configuration block with scaling settings. Detailed below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
             description: 'Identifiers of EC2 Subnets to associate with the EKS Node
                 Group. These subnets must have the following resource tag: `kubernetes.io/cluster/CLUSTER_NAME`
                 (where `CLUSTER_NAME` is replaced with the name of the EKS Cluster).'
-            required: true
+            required: false
             policy: ''
             notes: ''
         ami_type:
@@ -93,3 +93,30 @@ aws_eks_node_group:
         status:
             description: Status of the EKS Node Group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3R6WDI1dlpHVmZaM0p2ZFhBaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnWTJ4MWMzUmxjbDl1WVcxbElDQWdJRDBnWVhkelgyVnJjMTlqYkhWemRHVnlMbVY0WVcxd2JH
+        VXVibUZ0WlFvZ0lHNXZaR1ZmWjNKdmRYQmZibUZ0WlNBOUlDSmxlR0Z0Y0d4bElnb2dJRzV2WkdW
+        ZmNtOXNaVjloY200Z0lDQTlJR0YzYzE5cFlXMWZjbTlzWlM1bGVHRnRjR3hsTG1GeWJnb2dJSE4x
+        WW01bGRGOXBaSE1nSUNBZ0lDQTlJR0YzYzE5emRXSnVaWFF1WlhoaGJYQnNaVnNxWFM1cFpBb0tJ
+        Q0J6WTJGc2FXNW5YMk52Ym1acFp5QjdDaUFnSUNCa1pYTnBjbVZrWDNOcGVtVWdQU0F4Q2lBZ0lD
+        QnRZWGhmYzJsNlpTQWdJQ0FnUFNBeENpQWdJQ0J0YVc1ZmMybDZaU0FnSUNBZ1BTQXhDaUFnZlFv
+        S0lDQWpJRVZ1YzNWeVpTQjBhR0YwSUVsQlRTQlNiMnhsSUhCbGNtMXBjM05wYjI1eklHRnlaU0Jq
+        Y21WaGRHVmtJR0psWm05eVpTQmhibVFnWkdWc1pYUmxaQ0JoWm5SbGNpQkZTMU1nVG05a1pTQkhj
+        bTkxY0NCb1lXNWtiR2x1Wnk0S0lDQWpJRTkwYUdWeWQybHpaU3dnUlV0VElIZHBiR3dnYm05MElH
+        SmxJR0ZpYkdVZ2RHOGdjSEp2Y0dWeWJIa2daR1ZzWlhSbElFVkRNaUJKYm5OMFlXNWpaWE1nWVc1
+        a0lFVnNZWE4wYVdNZ1RtVjBkMjl5YXlCSmJuUmxjbVpoWTJWekxnb2dJR1JsY0dWdVpITmZiMjRn
+        UFNCYkNpQWdJQ0JoZDNOZmFXRnRYM0p2YkdWZmNHOXNhV041WDJGMGRHRmphRzFsYm5RdVpYaGhi
+        WEJzWlMxQmJXRjZiMjVGUzFOWGIzSnJaWEpPYjJSbFVHOXNhV041TEFvZ0lDQWdZWGR6WDJsaGJW
+        OXliMnhsWDNCdmJHbGplVjloZEhSaFkyaHRaVzUwTG1WNFlXMXdiR1V0UVcxaGVtOXVSVXRUWDBO
+        T1NWOVFiMnhwWTNrc0NpQWdJQ0JoZDNOZmFXRnRYM0p2YkdWZmNHOXNhV041WDJGMGRHRmphRzFs
+        Ym5RdVpYaGhiWEJzWlMxQmJXRjZiMjVGUXpKRGIyNTBZV2x1WlhKU1pXZHBjM1J5ZVZKbFlXUlBi
+        bXg1TEFvZ0lGMEtmUW89
+    import: !!binary |
+        Q2dwRlMxTWdUbTlrWlNCSGNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnWTJ4MWMzUmxjbDl1WVcxbFlDQmhibVFnWUc1dlpHVmZaM0p2ZFhCZmJtRnRaV0FnYzJWd1lY
+        SmhkR1ZrSUdKNUlHRWdZMjlzYjI0Z0tHQTZZQ2tzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYTNOZmJtOWtaVjluY205MWNDNW9kRzFzTG0xaGNtdGtiM2R1

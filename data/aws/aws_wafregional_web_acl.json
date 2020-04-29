@@ -8,19 +8,19 @@
         "arguments": {
             "default_action": {
                 "description": "The action that you want AWS WAF Regional to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "metric_name": {
                 "description": "The name or description for the Amazon CloudWatch metric of this web ACL.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name or description of the web ACL.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

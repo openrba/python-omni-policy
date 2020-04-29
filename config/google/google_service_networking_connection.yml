@@ -9,19 +9,41 @@ google_service_networking_connection:
         network:
             description: Name of VPC network connected with service producers using
                 VPC peering.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service:
             description: Provider peering service that is managing peering connectivity
                 for a
-            required: true
+            required: false
             policy: ''
             notes: ''
         reserved_peering_ranges:
             description: Named IP address range(s
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWTI5dGNIVjBaVjl1WlhSM2IzSnJJaUFpY0dWbGNtbHVa
+        MTl1WlhSM2IzSnJJaUI3Q2lBZ2JtRnRaU0E5SUNKd1pXVnlhVzVuTFc1bGRIZHZjbXNpQ24wS0Nu
+        SmxjMjkxY21ObElDSm5iMjluYkdWZlkyOXRjSFYwWlY5bmJHOWlZV3hmWVdSa2NtVnpjeUlnSW5C
+        eWFYWmhkR1ZmYVhCZllXeHNiMk1pSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUQwZ0luQnlhWFpo
+        ZEdVdGFYQXRZV3hzYjJNaUNpQWdjSFZ5Y0c5elpTQWdJQ0FnSUNBOUlDSldVRU5mVUVWRlVrbE9S
+        eUlLSUNCaFpHUnlaWE56WDNSNWNHVWdJRDBnSWtsT1ZFVlNUa0ZNSWdvZ0lIQnlaV1pwZUY5c1pX
+        NW5kR2dnUFNBeE5nb2dJRzVsZEhkdmNtc2dJQ0FnSUNBZ1BTQm5iMjluYkdWZlkyOXRjSFYwWlY5
+        dVpYUjNiM0pyTG5CbFpYSnBibWRmYm1WMGQyOXlheTV6Wld4bVgyeHBibXNLZlFvS2NtVnpiM1Z5
+        WTJVZ0ltZHZiMmRzWlY5elpYSjJhV05sWDI1bGRIZHZjbXRwYm1kZlkyOXVibVZqZEdsdmJpSWdJ
+        bVp2YjJKaGNpSWdld29nSUc1bGRIZHZjbXNnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWjI5dloy
+        eGxYMk52YlhCMWRHVmZibVYwZDI5eWF5NXdaV1Z5YVc1blgyNWxkSGR2Y21zdWMyVnNabDlzYVc1
+        ckNpQWdjMlZ5ZG1salpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWljMlZ5ZG1salpXNWxkSGR2
+        Y210cGJtY3VaMjl2WjJ4bFlYQnBjeTVqYjIwaUNpQWdjbVZ6WlhKMlpXUmZjR1ZsY21sdVoxOXlZ
+        VzVuWlhNZ1BTQmJaMjl2WjJ4bFgyTnZiWEIxZEdWZloyeHZZbUZzWDJGa1pISmxjM011Y0hKcGRt
+        RjBaVjlwY0Y5aGJHeHZZeTV1WVcxbFhRcDlDZz09
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5elpYSjJhV05sWDI1bGRIZHZjbXRwYm1kZlkyOXVibVZqZEdsdmJpNW9kRzFzTG0x
+        aGNtdGtiM2R1

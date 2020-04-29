@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name of the DataSync Agent.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Agent."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Agent."
+            }
+        },
         "timeouts": {}
     }
 }

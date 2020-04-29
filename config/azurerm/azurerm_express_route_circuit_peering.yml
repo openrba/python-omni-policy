@@ -9,18 +9,18 @@ azurerm_express_route_circuit_peering:
             description: The type of the ExpressRoute Circuit Peering. Acceptable
                 values include `AzurePrivatePeering`, `AzurePublicPeering` and `MicrosoftPeering`.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         express_route_circuit_name:
             description: The name of the ExpressRoute Circuit in which to create the
                 Peering.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         primary_peer_address_prefix:
@@ -57,7 +57,7 @@ azurerm_express_route_circuit_peering:
             notes: ''
         advertised_public_prefixes:
             description: A list of Advertised Public Prefixes
-            required: true
+            required: false
             policy: ''
             notes: ''
         customer_asn:

@@ -8,7 +8,7 @@
         "arguments": {
             "stack_id": {
                 "description": "The id of the stack the layer will belong to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -116,25 +116,25 @@
             },
             "mount_point": {
                 "description": "The path to mount the EBS volume on the layer's instances.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "size": {
                 "description": "The size of the volume in gigabytes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "number_of_disks": {
                 "description": "The number of disks to use for the EBS volume.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "raid_level": {
                 "description": "The RAID level to use for the volume.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

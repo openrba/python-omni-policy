@@ -20,13 +20,13 @@
             },
             "share_proto": {
                 "description": "The share protocol - can either be NFS, CIFS,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "size": {
                 "description": "The share size, in GBs. The requested share size cannot be greater",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,65 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the Share."
-            },
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "The owner of the Share."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "share_proto": {
-                "description": "See Argument Reference above."
-            },
-            "size": {
-                "description": "See Argument Reference above."
-            },
-            "share_type": {
-                "description": "See Argument Reference above."
-            },
-            "snapshot_id": {
-                "description": "See Argument Reference above."
-            },
-            "is_public": {
-                "description": "See Argument Reference above."
-            },
-            "metadata": {
-                "description": "See Argument Reference above."
-            },
-            "share_network_id": {
-                "description": "See Argument Reference above."
-            },
-            "availability_zone": {
-                "description": "See Argument Reference above."
-            },
-            "export_locations": {
-                "description": "A list of export locations. For example, when a share server"
-            },
-            "has_replicas": {
-                "description": "Indicates whether a share has replicas or not."
-            },
-            "host": {
-                "description": "The share host name."
-            },
-            "replication_type": {
-                "description": "The share replication type."
-            },
-            "share_server_id": {
-                "description": "The UUID of the share server."
-            },
-            "all_metadata": {
-                "description": "The map of metadata, assigned on the share, which has been"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -7,7 +7,7 @@ aws_waf_regex_pattern_set:
     arguments:
         name:
             description: The name or description of the Regex Pattern Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         regex_pattern_strings:
@@ -21,3 +21,15 @@ aws_waf_regex_pattern_set:
         arn:
             description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDNKbFoyVjRYM0JoZEhSbGNtNWZjMlYwSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBabDkzWVdaZmNt
+        Vm5aWGhmY0dGMGRHVnlibDl6WlhRaUNpQWdjbVZuWlhoZmNHRjBkR1Z5Ymw5emRISnBibWR6SUQw
+        Z1d5SnZibVVpTENBaWRIZHZJbDBLZlFvPQ==
+    import: !!binary |
+        Q2dwQlYxTWdWMEZHSUZKbFoyVjRJRkJoZEhSbGNtNGdVMlYwSUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1ZwY2lCSlJDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmNtVm5aWGhmY0dGMGRHVnlibDl6WlhRdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the capacity provider.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "auto_scaling_group_provider": {
                 "description": "Nested argument defining the provider for the ECS auto scaling group. Defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name for the cache security group. This value is stored as a lowercase string.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "security_group_names": {
                 "description": "List of EC2 security group names to be",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

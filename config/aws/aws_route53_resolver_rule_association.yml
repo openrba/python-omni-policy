@@ -8,13 +8,13 @@ aws_route53_resolver_rule_association:
         resolver_rule_id:
             description: The ID of the resolver rule that you want to associate with
                 the VPC.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_id:
             description: The ID of the VPC that you want to associate the resolver
                 rule with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -27,3 +27,16 @@ aws_route53_resolver_rule_association:
         id:
             description: The ID of the resolver rule association.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbTkxZEdVMU0xOXlaWE52YkhabGNsOXlkV3hsWDJGemMyOWph
+        V0YwYVc5dUlpQWlaWGhoYlhCc1pTSWdld29nSUhKbGMyOXNkbVZ5WDNKMWJHVmZhV1FnUFNBaUpI
+        dGhkM05mY205MWRHVTFNMTl5WlhOdmJIWmxjbDl5ZFd4bExuTjVjeTVwWkgwaUNpQWdkbkJqWDJs
+        a0lDQWdJQ0FnSUNBZ0lDQTlJQ0lrZTJGM2MxOTJjR011Wm05dkxtbGtmU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwU2IzVjBaVFV6SUZKbGMyOXNkbVZ5SUhKMWJHVWdZWE56YjJOcFlYUnBiMjV6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpUVXpYM0psYzI5c2RtVnlYM0oxYkdWZllYTnpiMk5wWVhScGIyNHVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

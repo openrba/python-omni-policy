@@ -8,49 +8,49 @@
         "arguments": {
             "name": {
                 "description": "The name of the HPC Cache NFS Target. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group in which to create the HPC Cache NFS Target. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "cache_name": {
                 "description": "The name HPC Cache, which the HPC Cache NFS Target will be added to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_host_name": {
                 "description": "The IP address or fully qualified domain name (FQDN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "usage_model": {
                 "description": "The type of usage of the HPC Cache NFS Target.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "namespace_junction": {
                 "description": "Can be specified multiple times to define multiple `namespace_junction`. Each `namespace_juntion` block supports fields documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "namespace_path": {
                 "description": "The client-facing file path of this NFS target within the HPC Cache NFS Target.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "nfs_export": {
                 "description": "The NFS export of this NFS target within the HPC Cache NFS Target.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

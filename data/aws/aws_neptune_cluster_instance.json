@@ -26,7 +26,7 @@
             },
             "cluster_identifier": {
                 "description": "The identifier of the [`aws_neptune_cluster`](/docs/providers/aws/r/neptune_cluster.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,7 +56,7 @@
             },
             "instance_class": {
                 "description": "The instance class to use.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

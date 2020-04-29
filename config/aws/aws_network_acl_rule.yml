@@ -7,13 +7,13 @@ aws_network_acl_rule:
     arguments:
         network_acl_id:
             description: The ID of the network ACL.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_number:
             description: The rule number for the entry (for example, 100). ACL entries
                 are processed in ascending order by rule number.
-            required: true
+            required: false
             policy: ''
             notes: ''
         egress:
@@ -24,13 +24,13 @@ aws_network_acl_rule:
             notes: ''
         protocol:
             description: The protocol. A value of -1 means all protocols.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_action:
             description: 'Indicates whether to allow or deny the traffic that matches
                 the rule. Accepted values: `allow` | `deny`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         cidr_block:
@@ -70,3 +70,29 @@ aws_network_acl_rule:
         id:
             description: The ID of the network ACL Rule
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVYwZDI5eWExOWhZMndpSUNKaVlYSWlJSHNLSUNCMmNHTmZh
+        V1FnUFNCaGQzTmZkbkJqTG1admJ5NXBaQXA5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMjVsZEhkdmNt
+        dGZZV05zWDNKMWJHVWlJQ0ppWVhJaUlIc0tJQ0J1WlhSM2IzSnJYMkZqYkY5cFpDQTlJR0YzYzE5
+        dVpYUjNiM0pyWDJGamJDNWlZWEl1YVdRS0lDQnlkV3hsWDI1MWJXSmxjaUFnSUNBOUlESXdNQW9n
+        SUdWbmNtVnpjeUFnSUNBZ0lDQWdJRDBnWm1Gc2MyVUtJQ0J3Y205MGIyTnZiQ0FnSUNBZ0lDQTlJ
+        Q0owWTNBaUNpQWdjblZzWlY5aFkzUnBiMjRnSUNBZ1BTQWlZV3hzYjNjaUNpQWdZMmxrY2w5aWJH
+        OWpheUFnSUNBZ1BTQmhkM05mZG5CakxtWnZieTVqYVdSeVgySnNiMk5yQ2lBZ1puSnZiVjl3YjNK
+        MElDQWdJQ0FnUFNBeU1nb2dJSFJ2WDNCdmNuUWdJQ0FnSUNBZ0lEMGdNaklLZlFvPQ==
+    import: !!binary |
+        Q2dwSmJtUnBkbWxrZFdGc0lISjFiR1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QmdU
+        a1ZVVjA5U1MxOUJRMHhmU1VRNlVsVk1SVjlPVlUxQ1JWSTZVRkpQVkU5RFQwdzZSVWRTUlZOVFlD
+        d2dkMmhsY21VZ1lGQlNUMVJQUTA5TVlDQmpZVzRnWW1VZ1lTQmtaV05wYldGc0lDaGxMbWN1SURZ
+        cElHOXlJSE4wY21sdVp5QW9aUzVuTGlCMFkzQXBJSFpoYkhWbExncEpaaUJwYlhCdmNuUnBibWNn
+        WVNCeWRXeGxJSEJ5WlhacGIzVnpiSGtnY0hKdmRtbHphVzl1WldRZ1lua2dWR1Z5Y21GbWIzSnRM
+        Q0IwYUdVZ1lGQlNUMVJQUTA5TVlDQnRkWE4wSUdKbElIUm9aU0JwYm5CMWRDQjJZV3gxWlNCMWMy
+        VmtJR0YwSUdOeVpXRjBhVzl1SUhScGJXVXVDa1p2Y2lCdGIzSmxJR2x1Wm05eWJXRjBhVzl1SUc5
+        dUlIQnliM1J2WTI5c0lHNTFiV0psY25NZ1lXNWtJR3RsZVhkdmNtUnpMQ0J6WldVZ2FHVnlaVG9n
+        YUhSMGNITTZMeTkzZDNjdWFXRnVZUzV2Y21jdllYTnphV2R1YldWdWRITXZjSEp2ZEc5amIyd3Ri
+        blZ0WW1WeWN5OXdjbTkwYjJOdmJDMXVkVzFpWlhKekxuaG9kRzFzQ2dwR2IzSWdaWGhoYlhCc1pT
+        d2dhVzF3YjNKMElHRWdibVYwZDI5eWF5QkJRMHdnVW5Wc1pTQjNhWFJvSUdGdUlHRnlaM1Z0Wlc1
+        MElHeHBhMlVnZEdocGN6b0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhSM2IzSnJYMkZqYkY5eWRXeGxMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

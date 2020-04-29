@@ -7,12 +7,12 @@ aws_docdb_cluster_snapshot:
     arguments:
         db_cluster_identifier:
             description: The DocDB Cluster Identifier from which to take the snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
         db_cluster_snapshot_identifier:
             description: The Identifier for the snapshot.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -42,3 +42,17 @@ aws_docdb_cluster_snapshot:
         vpc_id:
             description: The VPC ID associated with the DocDB cluster snapshot.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaRzlqWkdKZlkyeDFjM1JsY2w5emJtRndjMmh2ZENJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0JrWWw5amJIVnpkR1Z5WDJsa1pXNTBhV1pwWlhJZ0lDQWdJQ0FnSUNBZ1BT
+        QWlKSHRoZDNOZlpHOWpaR0pmWTJ4MWMzUmxjaTVsZUdGdGNHeGxMbWxrZlNJS0lDQmtZbDlqYkhW
+        emRHVnlYM051WVhCemFHOTBYMmxrWlc1MGFXWnBaWElnUFNBaWNtVnpiM1Z5WTJWMFpYTjBjMjVo
+        Y0hOb2IzUXhNak0wSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJ2WTJSaVgyTnNkWE4wWlhKZmMyNWhjSE5vYjNSZ0lHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCaWVTQjFjMmx1WnlCMGFHVWdZMngxYzNSbGNpQnpibUZ3YzJodmRDQnBaR1Z1ZEdsbWFX
+        VnlMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYjJOa1lsOWpiSFZ6ZEdWeVgzTnVZWEJ6YUc5MExtaDBiV3d1YldGeWEyUnZkMjQ9

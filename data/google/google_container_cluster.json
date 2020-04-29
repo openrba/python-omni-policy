@@ -9,7 +9,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the cluster, unique within the project and",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -23,7 +23,9 @@
                 "description": "The list of zones in which the cluster's nodes",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> A \"multi-zonal\" cluster is a zonal cluster with at least one additional zone"
+                ]
             },
             "addons_config": {
                 "description": "The configuration for addons supported by GKE.",
@@ -233,13 +235,13 @@
             },
             "state": {
                 "description": "`ENCRYPTED` or `DECRYPTED`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_name": {
                 "description": "the key to use to encrypt/decrypt secrets.  See the [DatabaseEncryption definition](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#Cluster.DatabaseEncryption",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -257,7 +259,7 @@
             },
             "enabled": {
                 "description": "- Enables vertical pod autoscaling",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -281,7 +283,7 @@
             },
             "resource_type": {
                 "description": "The type of the resource. For example, `cpu` and",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -311,7 +313,7 @@
             },
             "security_group": {
                 "description": "The name of the RBAC security group for use with Google security groups in Kubernetes RBAC. Group name must be in format `gke-security-groups@yourdomain.com`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -491,19 +493,19 @@
             },
             "type": {
                 "description": "- The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "count": {
                 "description": "- The number of the guest accelerator cards exposed to this instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "identity_namespace": {
                 "description": "- Currently, the only supported identity namespace is the project's default.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -527,13 +529,13 @@
             },
             "sandbox_type": {
                 "description": "Which sandbox to use for pods in the node pool.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "channel": {
                 "description": "The selected release channel.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -551,13 +553,13 @@
             },
             "bigquery_destination": {
                 "description": "- Parameters for using BigQuery as the destination of resource usage export.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bigquery_destination.dataset_id": {
                 "description": "- The ID of a BigQuery Dataset. For Example:",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -575,25 +577,25 @@
             },
             "key": {
                 "description": "Key for taint.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "Value for taint.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "effect": {
                 "description": "Effect for taint. Accepted values are `NO_SCHEDULE`, `PREFER_NO_SCHEDULE`, and `NO_EXECUTE`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "node_metadata": {
                 "description": "How to expose the node metadata to the workload running on the node.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

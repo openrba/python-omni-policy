@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Human friendly name given to the instance group. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "cluster_id": {
                 "description": "ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_type": {
                 "description": "The EC2 instance type for all instances in the instance group. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

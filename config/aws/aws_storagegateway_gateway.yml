@@ -8,7 +8,7 @@ aws_storagegateway_gateway:
     arguments:
         gateway_name:
             description: Name of the gateway.
-            required: true
+            required: false
             policy: ''
             notes: ''
         gateway_timezone:
@@ -16,7 +16,7 @@ aws_storagegateway_gateway:
                 "GMT", "GMT-hr:mm", or "GMT+hr:mm". For example, `GMT-4:00` indicates
                 the time is 4 hours behind GMT. The time zone is used, for example,
                 for scheduling snapshots and your gateway's maintenance schedule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         activation_key:
@@ -73,5 +73,20 @@ aws_storagegateway_gateway:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Amazon Resource Name (ARN) of the gateway.
+        arn:
+            description: Amazon Resource Name (ARN) of the gateway.
+        gateway_id:
+            description: Identifier of the gateway.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYM04wYjNKaFoyVm5ZWFJsZDJGNVgyZGhkR1YzWVhsZ0lHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCaWVTQjFjMmx1WnlCMGFHVWdaMkYwWlhkaGVTQkJiV0Y2YjI0Z1VtVnpiM1Z5WTJVZ1Rt
+        RnRaU0FvUVZKT0tTd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6ZEc5eVlXZGxaMkYwWlhkaGVWOW5ZWFJsZDJGNUxtaDBiV3d1YldGeWEyUnZkMjQ9

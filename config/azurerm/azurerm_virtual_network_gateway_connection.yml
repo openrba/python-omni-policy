@@ -7,27 +7,27 @@ azurerm_virtual_network_gateway_connection:
     arguments:
         name:
             description: The name of the connection. Changing the name forces a
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The location/region where the connection is
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of connection. Valid options are `IPsec`
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_network_gateway_id:
             description: The ID of the Virtual Network Gateway
-            required: true
+            required: false
             policy: ''
             notes: ''
         authorization_key:
@@ -56,7 +56,7 @@ azurerm_virtual_network_gateway_connection:
             policy: ''
             notes: ''
         shared_key:
-            description: The shared IPSec key. A key must be provided if a
+            description: The shared IPSec key. A key could be provided if a
             required: false
             policy: ''
             notes: ''
@@ -64,7 +64,10 @@ azurerm_virtual_network_gateway_connection:
             description: The IKE protocol version to use. Possible
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> **Note**: Only valid for `IPSec` connections on virtual network
+                gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ`
+                or `VpnGw3AZ`.'
         enable_bgp:
             description: If `true`, BGP (Border Gateway Protocol
             required: false
@@ -93,32 +96,32 @@ azurerm_virtual_network_gateway_connection:
             notes: ''
         dh_group:
             description: The DH group used in IKE phase 1 for initial SA. Valid
-            required: true
+            required: false
             policy: ''
             notes: ''
         ike_encryption:
             description: The IKE encryption algorithm. Valid
-            required: true
+            required: false
             policy: ''
             notes: ''
         ike_integrity:
             description: The IKE integrity algorithm. Valid
-            required: true
+            required: false
             policy: ''
             notes: ''
         ipsec_encryption:
             description: The IPSec encryption algorithm. Valid
-            required: true
+            required: false
             policy: ''
             notes: ''
         ipsec_integrity:
             description: The IPSec integrity algorithm. Valid
-            required: true
+            required: false
             policy: ''
             notes: ''
         pfs_group:
             description: The DH group used in IKE phase 2 for new child SA.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sa_datasize:
@@ -151,3 +154,13 @@ azurerm_virtual_network_gateway_connection:
             description: Used when deleting the Virtual Network Gateway Connection.
             required: false
             timeout: 30
+    usage: {}
+    import: !!binary |
+        Q2dwV2FYSjBkV0ZzSUU1bGRIZHZjbXNnUjJGMFpYZGhlU0JEYjI1dVpXTjBhVzl1Y3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsYVhJZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxn
+        b0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRtbHlkSFZoYkY5dVpYUjNiM0pyWDJkaGRHVjNZWGxmWTI5dWJtVmpkR2x2Ymk1
+        b2RHMXNMbTFoY210a2IzZHU=

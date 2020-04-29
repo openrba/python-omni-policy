@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Name of the workspace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "organization": {
                 "description": "Name of the organization.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,7 +74,7 @@
             },
             "identifier": {
                 "description": "A reference to your VCS repository in the format",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -92,16 +92,12 @@
             },
             "oauth_token_id": {
                 "description": "Token ID of the VCS Connection (OAuth Conection Token)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The workspace ID."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

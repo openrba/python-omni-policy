@@ -8,67 +8,69 @@ azurerm_dev_test_linux_virtual_machine:
         name:
             description: Specifies the name of the Dev Test Machine. Changing this
                 forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: The validation requirements for the Name change based on the `os_type`
+            notes:
+            - '-> '
+            - ' The validation requirements for the Name change based on the `os_type`
                 used in this Virtual Machine. For a Linux VM the name must be between
                 1-62 characters, and for a Windows VM the name must be between 1-15
                 characters. It must begin and end with a letter or number, and cannot
-                be all numbers.
+                be all numbers.'
         lab_name:
             description: Specifies the name of the Dev Test Lab in which the Virtual
                 Machine should be created. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the Dev Test Lab
                 resource exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the Dev Test
                 Lab exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         gallery_image_reference:
             description: A `gallery_image_reference` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         lab_subnet_name:
             description: The name of a Subnet within the Dev Test Virtual Network
                 where this machine should exist. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         lab_virtual_network_id:
             description: The ID of the Dev Test Virtual Network where this Virtual
                 Machine should be created. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size:
             description: The Machine Size to use for this Virtual Machine, such as
                 `Standard_F2`. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_type:
             description: The type of Storage to use on this Virtual Machine. Possible
                 values are `Standard` and `Premium`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
             description: The Username associated with the local administrator on this
                 Virtual Machine. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_claim:
@@ -88,8 +90,10 @@ azurerm_dev_test_linux_virtual_machine:
                 this forces a new resource to be created.
             required: false
             policy: ''
-            notes: If any `inbound_nat_rule` blocks are specified then `disallow_public_ip_address`
-                must be set to `true`.
+            notes:
+            - '-> '
+            - ' If any `inbound_nat_rule` blocks are specified then `disallow_public_ip_address`
+                must be set to `true`.'
         notes:
             description: Any notes about the Virtual Machine.
             required: false
@@ -108,7 +112,9 @@ azurerm_dev_test_linux_virtual_machine:
                 created.
             required: false
             policy: ''
-            notes: One or either `password` or `ssh_key` must be specified.
+            notes:
+            - '-> '
+            - ' One or either `password` or `ssh_key` must be specified.'
         tags:
             description: A mapping of tags to assign to the resource.
             required: false
@@ -117,37 +123,37 @@ azurerm_dev_test_linux_virtual_machine:
         offer:
             description: The Offer of the Gallery Image. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         publisher:
             description: The Publisher of the Gallery Image. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku:
             description: The SKU of the Gallery Image. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
             description: The Version of the Gallery Image. Changing this forces a
                 new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: The Protocol used for this NAT Rule. Possible values are
                 `Tcp` and `Udp`. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend_port:
             description: The Backend Port associated with this NAT Rule. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

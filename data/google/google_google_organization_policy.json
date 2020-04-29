@@ -9,13 +9,13 @@
         "arguments": {
             "org_id": {
                 "description": "The numeric ID of the organization to set the policy for.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "constraint": {
                 "description": "The name of the Constraint the Policy is configuring, for example, `serviceuser.services`. Check out the [complete list of available constraints](https://cloud.google.com/resource-manager/docs/organization-policy/understanding-constraints#available_constraints).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -45,7 +45,7 @@
             },
             "enforced": {
                 "description": "If true, then the Policy is enforced. If false, then any configuration is acceptable.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -81,7 +81,7 @@
             },
             "default": {
                 "description": "May only be set to true. If set, then the default Policy is restored.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

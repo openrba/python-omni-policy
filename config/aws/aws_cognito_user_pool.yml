@@ -35,7 +35,7 @@ aws_cognito_user_pool:
             notes: ''
         name:
             description: The name of the user pool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email_verification_subject:
@@ -79,5 +79,23 @@ aws_cognito_user_pool:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The id of the user pool.
+        arn:
+            description: The ARN of the user pool.
+        endpoint:
+            description: 'The endpoint name of the user pool. Example format: cognito-idp.REGION.amazonaws.com/xxxx_yyyyy'
+        creation_date:
+            description: The date the user pool was created.
+        last_modified_date:
+            description: The date the user pool was last modified.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRGIyZHVhWFJ2SUZWelpYSWdVRzl2YkhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJkdWFYUnZYM1Z6WlhKZmNHOXZiQzV0WVhKclpHOTNiZz09

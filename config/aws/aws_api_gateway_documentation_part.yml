@@ -8,7 +8,7 @@ aws_api_gateway_documentation_part:
         location:
             description: The location of the targeted API entity of the to-be-created
                 documentation part. See below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         properties:
@@ -16,13 +16,33 @@ aws_api_gateway_documentation_part:
                 the targeted API entity. The map must be encoded as a JSON string,
                 e.g., "{ \"description\": \"The API does ...\" }". Only Swagger-compliant
                 key-value pairs can be exported and, hence, published.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         rest_api_id:
             description: The ID of the associated Rest API
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The unique ID of the Documentation Part
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmWkc5amRXMWxiblJoZEdsdmJsOXdZ
+        WEowSWlBaVpYaGhiWEJzWlNJZ2V3b2dJR3h2WTJGMGFXOXVJSHNLSUNBZ0lIUjVjR1VnSUNBOUlD
+        Sk5SVlJJVDBRaUNpQWdJQ0J0WlhSb2IyUWdQU0FpUjBWVUlnb2dJQ0FnY0dGMGFDQWdJRDBnSWk5
+        bGVHRnRjR3hsSWdvZ0lIMEtDaUFnY0hKdmNHVnlkR2xsY3lBZ1BTQWllMXdpWkdWelkzSnBjSFJw
+        YjI1Y0lqcGNJa1Y0WVcxd2JHVWdaR1Z6WTNKcGNIUnBiMjVjSW4waUNpQWdjbVZ6ZEY5aGNHbGZh
+        V1FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0drdVpYaGhiWEJzWlM1cFpI
+        MGlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNK
+        bGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBOUlDSmxlR0Z0Y0d4bFgyRndhU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwQlVFa2dSMkYwWlhkaGVTQmtiMk4xYldWdWRHRjBhVzl1WDNCaGNuUnpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCZ1VrVlRWQzFCVUVrdFNVUXZSRTlETFZCQlVsUXRTVVJnTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5a2IyTjFiV1Z1ZEdGMGFXOXVYM0JoY25RdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

@@ -7,12 +7,12 @@ aws_ses_receipt_rule:
     arguments:
         name:
             description: The name of the rule
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_set_name:
             description: The name of the rule set
-            required: true
+            required: false
             policy: ''
             notes: ''
         after:
@@ -77,32 +77,32 @@ aws_ses_receipt_rule:
             notes: ''
         header_name:
             description: The name of the header to add
-            required: true
+            required: false
             policy: ''
             notes: ''
         header_value:
             description: The value of the header to add
-            required: true
+            required: false
             policy: ''
             notes: ''
         position:
             description: The position of the action in the receipt rule
-            required: true
+            required: false
             policy: ''
             notes: ''
         message:
             description: The message to send
-            required: true
+            required: false
             policy: ''
             notes: ''
         sender:
             description: The email address of the sender
-            required: true
+            required: false
             policy: ''
             notes: ''
         smtp_reply_code:
             description: The RFC 5321 SMTP reply code
-            required: true
+            required: false
             policy: ''
             notes: ''
         status_code:
@@ -117,7 +117,7 @@ aws_ses_receipt_rule:
             notes: ''
         function_arn:
             description: The ARN of the Lambda function to invoke
-            required: true
+            required: false
             policy: ''
             notes: ''
         invocation_type:
@@ -127,7 +127,7 @@ aws_ses_receipt_rule:
             notes: ''
         bucket_name:
             description: The name of the S3 bucket
-            required: true
+            required: false
             policy: ''
             notes: ''
         kms_key_arn:
@@ -142,13 +142,32 @@ aws_ses_receipt_rule:
             notes: ''
         scope:
             description: The scope to apply
-            required: true
+            required: false
             policy: ''
             notes: ''
         organization_arn:
             description: The ARN of the WorkMail organization
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1FXUmtJR0VnYUdWaFpHVnlJSFJ2SUhSb1pTQmxiV0ZwYkNCaGJtUWdjM1J2Y21VZ2FYUWdh
+        VzRnVXpNS2NtVnpiM1Z5WTJVZ0ltRjNjMTl6WlhOZmNtVmpaV2x3ZEY5eWRXeGxJaUFpYzNSdmNt
+        VWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJRDBnSW5OMGIzSmxJZ29nSUhKMWJHVmZjMlYwWDI1
+        aGJXVWdQU0FpWkdWbVlYVnNkQzF5ZFd4bExYTmxkQ0lLSUNCeVpXTnBjR2xsYm5SeklDQWdJRDBn
+        V3lKcllYSmxia0JsZUdGdGNHeGxMbU52YlNKZENpQWdaVzVoWW14bFpDQWdJQ0FnSUNBOUlIUnlk
+        V1VLSUNCelkyRnVYMlZ1WVdKc1pXUWdJRDBnZEhKMVpRb0tJQ0JoWkdSZmFHVmhaR1Z5WDJGamRH
+        bHZiaUI3Q2lBZ0lDQm9aV0ZrWlhKZmJtRnRaU0FnUFNBaVEzVnpkRzl0TFVobFlXUmxjaUlLSUNB
+        Z0lHaGxZV1JsY2w5MllXeDFaU0E5SUNKQlpHUmxaQ0JpZVNCVFJWTWlDaUFnSUNCd2IzTnBkR2x2
+        YmlBZ0lDQWdQU0F4Q2lBZ2ZRb0tJQ0J6TTE5aFkzUnBiMjRnZXdvZ0lDQWdZblZqYTJWMFgyNWhi
+        V1VnUFNBaVpXMWhhV3h6SWdvZ0lDQWdjRzl6YVhScGIyNGdJQ0FnUFNBeUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwVFJWTWdjbVZqWldsd2RDQnlkV3hsY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUhKMWJHVnpaWFFnYm1GdFpTQmhibVFnY25Wc1pTQnVZVzFsSUhObGNHRnlZWFJsWkNCaWVT
+        QmdPbUF1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZmNtVmpaV2x3ZEY5eWRXeGxMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

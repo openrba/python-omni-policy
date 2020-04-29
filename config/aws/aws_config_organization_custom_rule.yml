@@ -7,19 +7,19 @@ aws_config_organization_custom_rule:
     arguments:
         lambda_function_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the rule
-            required: true
+            required: false
             policy: ''
             notes: ''
         trigger_types:
             description: 'List of notification types that trigger AWS Config to run
                 an evaluation for the rule. Valid values: `ConfigurationItemChangeNotification`,
                 `OversizedConfigurationItemChangeNotification`, and `ScheduledNotification`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -71,3 +71,29 @@ aws_config_organization_custom_rule:
         arn:
             description: Amazon Resource Name (ARN) of the rule
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR0Z0WW1SaFgzQmxjbTFwYzNOcGIyNGlJQ0psZUdGdGNHeGxJ
+        aUI3Q2lBZ1lXTjBhVzl1SUNBZ0lDQWdJQ0E5SUNKc1lXMWlaR0U2U1c1MmIydGxSblZ1WTNScGIy
+        NGlDaUFnWm5WdVkzUnBiMjVmYm1GdFpTQTlJQ0lrZTJGM2MxOXNZVzFpWkdGZlpuVnVZM1JwYjI0
+        dVpYaGhiWEJzWlM1aGNtNTlJZ29nSUhCeWFXNWphWEJoYkNBZ0lDQWdQU0FpWTI5dVptbG5MbUZ0
+        WVhwdmJtRjNjeTVqYjIwaUNpQWdjM1JoZEdWdFpXNTBYMmxrSUNBOUlDSkJiR3h2ZDBWNFpXTjFk
+        R2x2YmtaeWIyMURiMjVtYVdjaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmIzSm5ZVzVwZW1GMGFX
+        OXVjMTl2Y21kaGJtbDZZWFJwYjI0aUlDSmxlR0Z0Y0d4bElpQjdDaUFnWVhkelgzTmxjblpwWTJW
+        ZllXTmpaWE56WDNCeWFXNWphWEJoYkhNZ1BTQmJJbU52Ym1acFp5MXRkV3gwYVdGalkyOTFiblJ6
+        WlhSMWNDNWhiV0Y2YjI1aGQzTXVZMjl0SWwwS0lDQm1aV0YwZFhKbFgzTmxkQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0E5SUNKQlRFd2lDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZMjl1Wm1sblgy
+        OXlaMkZ1YVhwaGRHbHZibDlqZFhOMGIyMWZjblZzWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JrWlhC
+        bGJtUnpYMjl1SUQwZ1d5SmhkM05mYkdGdFltUmhYM0JsY20xcGMzTnBiMjR1WlhoaGJYQnNaU0lz
+        SUNKaGQzTmZiM0puWVc1cGVtRjBhVzl1YzE5dmNtZGhibWw2WVhScGIyNHVaWGhoYlhCc1pTSmRD
+        Z29nSUd4aGJXSmtZVjltZFc1amRHbHZibDloY200Z1BTQWlKSHRoZDNOZmJHRnRZbVJoWDJaMWJt
+        TjBhVzl1TG1WNFlXMXdiR1V1WVhKdWZTSUtJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQw
+        Z0ltVjRZVzF3YkdVaUNpQWdkSEpwWjJkbGNsOTBlWEJsY3lBZ0lDQWdJQ0E5SUZzaVEyOXVabWxu
+        ZFhKaGRHbHZia2wwWlcxRGFHRnVaMlZPYjNScFptbGpZWFJwYjI0aVhRcDlDZz09
+    import: !!binary |
+        Q2dwRGIyNW1hV2NnVDNKbllXNXBlbUYwYVc5dUlFTjFjM1J2YlNCU2RXeGxjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJRzVoYldVc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZiM0puWVc1cGVtRjBhVzl1WDJOMWMzUnZiVjl5ZFd4bExtaDBiV3d1YldG
+        eWEyUnZkMjQ9

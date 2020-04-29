@@ -26,7 +26,7 @@ aws_lambda_event_source_mapping:
         event_source_arn:
             description: The event source ARN - can be a Kinesis stream, DynamoDB
                 stream, or SQS queue.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -38,7 +38,7 @@ aws_lambda_event_source_mapping:
         function_name:
             description: The name or the ARN of the Lambda function that will be subscribing
                 to events.
-            required: true
+            required: false
             policy: ''
             notes: ''
         starting_position:
@@ -107,3 +107,13 @@ aws_lambda_event_source_mapping:
         uuid:
             description: The UUID of the created event source mapping.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwTVlXMWlaR0VnWlhabGJuUWdjMjkxY21ObElHMWhjSEJwYm1keklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lGVlZTVVJnSUNobGRtVnVkQ0J6YjNWeVkyVWdiV0Z3Y0dsdVp5
+        QnBaR1Z1ZEdsbWFXVnlLU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWVcxaVpHRmZaWFpsYm5SZmMyOTFjbU5sWDIxaGNIQnBibWN1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

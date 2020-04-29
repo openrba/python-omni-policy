@@ -8,13 +8,13 @@
         "arguments": {
             "table_name": {
                 "description": "The name of the table to contain the item.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "hash_key": {
                 "description": "Hash key to use for lookups and identification of the item",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "item": {
                 "description": "JSON representation of a map of attribute name/value pairs, one for each attribute.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

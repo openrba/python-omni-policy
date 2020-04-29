@@ -7,7 +7,7 @@ aws_vpc_peering_connection_options:
     arguments:
         vpc_peering_connection_id:
             description: The ID of the requester VPC peering connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
         accepter:
@@ -26,3 +26,12 @@ aws_vpc_peering_connection_options:
         id:
             description: The ID of the VPC Peering Connection Options.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwV1VFTWdVR1ZsY21sdVp5QkRiMjV1WldOMGFXOXVJRTl3ZEdsdmJuTWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdkbkJqSUhCbFpYSnBibWNnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZmNHVmxjbWx1WjE5amIyNXVaV04wYVc5dVgyOXdkR2x2Ym5NdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

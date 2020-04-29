@@ -8,22 +8,22 @@ azurerm_virtual_network_gateway:
     arguments:
         name:
             description: A user-defined name of the revoked certificate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The location/region where the Virtual Network Gateway is
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of the Virtual Network Gateway. Valid options are
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpn_type:
@@ -48,7 +48,7 @@ azurerm_virtual_network_gateway:
             notes: ''
         sku:
             description: Configuration of the size and capacity of the virtual network
-            required: true
+            required: false
             policy: ''
             notes: ''
         generation:
@@ -56,12 +56,13 @@ azurerm_virtual_network_gateway:
                 include `Generation1`, `Generation2` or `None`.
             required: false
             policy: ''
-            notes: The available values depend on the `type` and `sku` arguments -
-                where `Generation2` is only value for a `sku` larger than `VpnGw2`
-                or `VpnGw2AZ`.
+            notes:
+            - '-> '
+            - ' The available values depend on the `type` and `sku` arguments - where
+                `Generation2` is only value for a `sku` larger than `VpnGw2` or `VpnGw2AZ`.'
         ip_configuration:
             description: One or two `ip_configuration` blocks documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpn_client_configuration:
@@ -81,17 +82,17 @@ azurerm_virtual_network_gateway:
             notes: ''
         subnet_id:
             description: The ID of the gateway subnet of a virtual network in
-            required: true
+            required: false
             policy: ''
             notes: ''
         public_ip_address_id:
             description: The ID of the public ip address to associate
-            required: true
+            required: false
             policy: ''
             notes: ''
         address_space:
             description: The address space out of which ip addresses for
-            required: true
+            required: false
             policy: ''
             notes: ''
         root_certificate:
@@ -136,7 +137,7 @@ azurerm_virtual_network_gateway:
             notes: ''
         public_cert_data:
             description: The SHA1 thumbprint of the certificate to be
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

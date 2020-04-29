@@ -8,19 +8,19 @@
         "arguments": {
             "app_name": {
                 "description": "The name of the application.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "deployment_group_name": {
                 "description": "The name of the deployment group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_role_arn": {
                 "description": "The service role ARN that allows deployments.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

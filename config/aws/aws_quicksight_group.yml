@@ -7,7 +7,7 @@ aws_quicksight_group:
     arguments:
         group_name:
             description: A name for the group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         aws_account_id:
@@ -31,3 +31,14 @@ aws_quicksight_group:
         arn:
             description: Amazon Resource Name (ARN) of group
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjWFZwWTJ0emFXZG9kRjluY205MWNDSWdJbVY0WVcxd2JHVWlJ
+        SHNLSUNCbmNtOTFjRjl1WVcxbElEMGdJblJtTFdWNFlXMXdiR1VpQ24wSw==
+    import: !!binary |
+        Q2dwUmRXbGphMU5wWjJoMElFZHliM1Z3SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWVhkeklHRmpZMjkxYm5RZ2FXUXNJRzVoYldWemNHRmpaU0JoYm1RZ1ozSnZkWEFnYm1GdFpT
+        QnpaWEJoY21GMFpXUWdZbmtnWUM5Z0xnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl4ZFdsamEzTnBaMmgwWDJkeWIzVndMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

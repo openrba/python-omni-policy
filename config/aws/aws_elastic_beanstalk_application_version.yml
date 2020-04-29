@@ -7,13 +7,13 @@ aws_elastic_beanstalk_application_version:
     arguments:
         name:
             description: A unique name for the this Application Version.
-            required: true
+            required: false
             policy: ''
             notes: ''
         application:
             description: Name of the Beanstalk Application the version is associated
                 with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -23,12 +23,12 @@ aws_elastic_beanstalk_application_version:
             notes: ''
         bucket:
             description: S3 bucket that contains the Application Version source bundle.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
             description: S3 object that is the Application Version source bundle.
-            required: true
+            required: false
             policy: ''
             notes: ''
         force_delete:
@@ -41,3 +41,26 @@ aws_elastic_beanstalk_application_version:
         arn:
             description: The ARN assigned by AWS for this Elastic Beanstalk Application.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpWkdWbVlYVnNkQ0lnZXdvZ0lHSjFZ
+        MnRsZENBOUlDSjBablJsYzNRdVlYQndiR2xqWVhScGIyNTJaWEp6YVc5dUxtSjFZMnRsZENJS2ZR
+        b0tjbVZ6YjNWeVkyVWdJbUYzYzE5ek0xOWlkV05yWlhSZmIySnFaV04wSWlBaVpHVm1ZWFZzZENJ
+        Z2V3b2dJR0oxWTJ0bGRDQTlJQ0lrZTJGM2MxOXpNMTlpZFdOclpYUXVaR1ZtWVhWc2RDNXBaSDBp
+        Q2lBZ2EyVjVJQ0FnSUQwZ0ltSmxZVzV6ZEdGc2F5OW5ieTEyTVM1NmFYQWlDaUFnYzI5MWNtTmxJ
+        RDBnSW1kdkxYWXhMbnBwY0NJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5bGJHRnpkR2xqWDJKbFlX
+        NXpkR0ZzYTE5aGNIQnNhV05oZEdsdmJpSWdJbVJsWm1GMWJIUWlJSHNLSUNCdVlXMWxJQ0FnSUNB
+        Z0lDQTlJQ0owWmkxMFpYTjBMVzVoYldVaUNpQWdaR1Z6WTNKcGNIUnBiMjRnUFNBaWRHWXRkR1Z6
+        ZEMxa1pYTmpJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMlZzWVhOMGFXTmZZbVZoYm5OMFlXeHJY
+        MkZ3Y0d4cFkyRjBhVzl1WDNabGNuTnBiMjRpSUNKa1pXWmhkV3gwSWlCN0NpQWdibUZ0WlNBZ0lD
+        QWdJQ0FnUFNBaWRHWXRkR1Z6ZEMxMlpYSnphVzl1TFd4aFltVnNJZ29nSUdGd2NHeHBZMkYwYVc5
+        dUlEMGdJblJtTFhSbGMzUXRibUZ0WlNJS0lDQmtaWE5qY21sd2RHbHZiaUE5SUNKaGNIQnNhV05o
+        ZEdsdmJpQjJaWEp6YVc5dUlHTnlaV0YwWldRZ1lua2dkR1Z5Y21GbWIzSnRJZ29nSUdKMVkydGxk
+        Q0FnSUNBZ0lEMGdJaVI3WVhkelgzTXpYMkoxWTJ0bGRDNWtaV1poZFd4MExtbGtmU0lLSUNCclpY
+        a2dJQ0FnSUNBZ0lDQTlJQ0lrZTJGM2MxOXpNMTlpZFdOclpYUmZiMkpxWldOMExtUmxabUYxYkhR
+        dWFXUjlJZ3A5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpYMkpsWVc1emRHRnNhMTloY0hCc2FXTmhkR2x2Ymw5MlpYSnphVzl1TG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

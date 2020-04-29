@@ -9,25 +9,25 @@
         "arguments": {
             "role_id": {
                 "description": "The role id to use for this role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "org_id": {
                 "description": "The numeric ID of the organization in which you want to create a custom role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "title": {
                 "description": "A human-readable title for the role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "permissions": {
                 "description": "The names of the permissions this role grants when bound in an IAM policy. At least one permission must be specified.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -9,28 +9,30 @@ azurerm_logic_app_trigger_recurrence:
             description: Specifies the name of the Recurrence Triggers to be created
                 within the Logic App Workflow. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
-            notes: This name must be unique across all Triggers within the Logic App
-                Workflow.
+            notes:
+            - '-> '
+            - ' This name must be unique across all Triggers within the Logic App
+                Workflow.'
         logic_app_id:
             description: Specifies the ID of the Logic App Workflow. Changing this
                 forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         frequency:
             description: Specifies the Frequency at which this Trigger should be run.
                 Possible values include `Month`, `Week`, `Day`, `Hour`, `Minute` and
                 `Second`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         interval:
             description: Specifies interval used for the Frequency, for example a
                 value of `4` for `interval` and `hour` for `frequency` would run the
                 Trigger every 4 hours.
-            required: true
+            required: false
             policy: ''
             notes: ''
         start_time:

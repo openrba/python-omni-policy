@@ -7,7 +7,7 @@ aws_workspaces_ip_group:
     arguments:
         name:
             description: The name of the IP group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -24,3 +24,15 @@ aws_workspaces_ip_group:
         id:
             description: The IP group identifier.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMjl5YTNOd1lXTmxjMTlwY0Y5bmNtOTFjQ0lnSW1OdmJuUnlZ
+        V04wYjNKeklpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ1BTQWlRMjl1ZEhKaFkzUnZjbk1pQ2lBZ1pH
+        VnpZM0pwY0hScGIyNGdQU0FpUTI5dWRISmhZM1J2Y25NZ1NWQWdZV05qWlhOeklHTnZiblJ5YjJ3
+        Z1ozSnZkWEFpQ24wSw==
+    import: !!binary |
+        Q2dwWGIzSnJVM0JoWTJWeklFbFFJR2R5YjNWd2N5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobGFYSWdSM0p2ZFhCSlJDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzYjNKcmMzQmhZMlZ6WDJsd1gyZHliM1Z3TG1oMGJXd3ViV0Z5YTJSdmQyND0=

@@ -7,14 +7,14 @@ aws_ecr_repository_policy:
     arguments:
         repository:
             description: Name of the repository to apply the policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: The policy document. This is a JSON formatted string. For
                 more information about building IAM policy documents with Terraform,
                 see the [AWS IAM Policy Document Guide](https://learn.hashicorp.com/terraform/aws/iam-policy)
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -23,3 +23,34 @@ aws_ecr_repository_policy:
         registry_id:
             description: The registry ID where the repository was created.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV055WDNKbGNHOXphWFJ2Y25raUlDSm1iMjhpSUhzS0lDQnVZ
+        VzFsSUQwZ0ltSmhjaUlLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTlsWTNKZmNtVndiM05wZEc5eWVW
+        OXdiMnhwWTNraUlDSm1iMjl3YjJ4cFkza2lJSHNLSUNCeVpYQnZjMmwwYjNKNUlEMGdJaVI3WVhk
+        elgyVmpjbDl5WlhCdmMybDBiM0o1TG1admJ5NXVZVzFsZlNJS0NpQWdjRzlzYVdONUlEMGdQRHhG
+        VDBZS2V3b2dJQ0FnSWxabGNuTnBiMjRpT2lBaU1qQXdPQzB4TUMweE55SXNDaUFnSUNBaVUzUmhk
+        R1Z0Wlc1MElqb2dXd29nSUNBZ0lDQWdJSHNLSUNBZ0lDQWdJQ0FnSUNBZ0lsTnBaQ0k2SUNKdVpY
+        Y2djRzlzYVdONUlpd0tJQ0FnSUNBZ0lDQWdJQ0FnSWtWbVptVmpkQ0k2SUNKQmJHeHZkeUlzQ2lB
+        Z0lDQWdJQ0FnSUNBZ0lDSlFjbWx1WTJsd1lXd2lPaUFpS2lJc0NpQWdJQ0FnSUNBZ0lDQWdJQ0pC
+        WTNScGIyNGlPaUJiQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FpWldOeU9rZGxkRVJ2ZDI1c2IyRmtW
+        WEpzUm05eVRHRjVaWElpTEFvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSW1WamNqcENZWFJqYUVkbGRF
+        bHRZV2RsSWl3S0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNKbFkzSTZRbUYwWTJoRGFHVmphMHhoZVdW
+        eVFYWmhhV3hoWW1sc2FYUjVJaXdLSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0psWTNJNlVIVjBTVzFo
+        WjJVaUxBb2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0ltVmpjanBKYm1sMGFXRjBaVXhoZVdWeVZYQnNi
+        MkZrSWl3S0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNKbFkzSTZWWEJzYjJGa1RHRjVaWEpRWVhKMElp
+        d0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDSmxZM0k2UTI5dGNHeGxkR1ZNWVhsbGNsVndiRzloWkNJ
+        c0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBaVpXTnlPa1JsYzJOeWFXSmxVbVZ3YjNOcGRHOXlhV1Z6
+        SWl3S0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNKbFkzSTZSMlYwVW1Wd2IzTnBkRzl5ZVZCdmJHbGpl
+        U0lzQ2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FpWldOeU9reHBjM1JKYldGblpYTWlMQW9nSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJbVZqY2pwRVpXeGxkR1ZTWlhCdmMybDBiM0o1SWl3S0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNKbFkzSTZRbUYwWTJoRVpXeGxkR1ZKYldGblpTSXNDaUFnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWlaV055T2xObGRGSmxjRzl6YVhSdmNubFFiMnhwWTNraUxBb2dJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0ltVmpjanBFWld4bGRHVlNaWEJ2YzJsMGIzSjVVRzlzYVdONUlnb2dJQ0FnSUNBZ0lD
+        QWdJQ0JkQ2lBZ0lDQWdJQ0FnZlFvZ0lDQWdYUXA5Q2tWUFJncDlDZz09
+    import: !!binary |
+        Q2dwRlExSWdVbVZ3YjNOcGRHOXllU0JRYjJ4cFkza2dZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQnlaWEJ2YzJsMGIzSjVJRzVoYldVc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWTNKZmNtVndiM05wZEc5eWVWOXdiMnhwWTNrdWFIUnRiQzV0WVhKclpHOTNiZz09

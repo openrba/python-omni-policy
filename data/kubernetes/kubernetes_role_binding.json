@@ -8,19 +8,19 @@
         "arguments": {
             "metadata": {
                 "description": "Standard kubernetes metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_ref": {
                 "description": "The Role to bind Subjects to. For more info see [Kubernetes reference](https://kubernetes.io/docs/admin/authorization/rbac/#rolebinding-and-clusterrolebinding)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subject": {
                 "description": "The Users, Groups, or ServiceAccounts to grand permissions to. For more info see [Kubernetes reference](https://kubernetes.io/docs/admin/authorization/rbac/#referring-to-subjects)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "The name of the Connection String.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the Function App.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "app_service_plan_id": {
                 "description": "The ID of the App Service Plan within which to create this Function App.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_name": {
                 "description": "The backend storage account name which will be used by this Function App (such as the dashboard, logs).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_account_access_key": {
                 "description": "The access key which will be used to access the backend storage account for the Function App.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,7 +80,7 @@
             },
             "enabled": {
                 "description": "Is Authentication enabled?",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -122,13 +122,13 @@
             },
             "type": {
                 "description": "Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "The value for the Connection String.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -290,13 +290,13 @@
             },
             "client_id": {
                 "description": "The OAuth 2.0 client ID that was created for the app used for authentication.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "client_secret": {
                 "description": "The OAuth 2.0 client secret that was created for the app used for authentication.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -308,13 +308,13 @@
             },
             "app_id": {
                 "description": "The App ID of the Facebook app used for login",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "app_secret": {
                 "description": "The App Secret of the Facebook app used for Facebook Login.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -334,7 +334,10 @@
                 "description": "The Subnet ID used for this IP Restriction.",
                 "required": false,
                 "policy": "",
-                "notes": "One of either `ip_address` or `subnet_id` must be specified"
+                "notes": [
+                    "-> ",
+                    " One of either `ip_address` or `subnet_id` must be specified"
+                ]
             }
         },
         "attributes": {

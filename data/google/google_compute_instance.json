@@ -9,31 +9,31 @@
         "arguments": {
             "boot_disk": {
                 "description": "The boot disk for the instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "machine_type": {
                 "description": "The machine type to create.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "A unique name for the resource, required by GCE.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "zone": {
                 "description": "The zone that the machine should be created in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_interface": {
                 "description": "Networks to attach to the instance. This can",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -95,7 +95,9 @@
                 "description": "Metadata key/value pairs to make available from",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> Depending on the OS you choose for your instance, some metadata keys have"
+                ]
             },
             "metadata_startup_script": {
                 "description": "An alternative to using the",
@@ -195,7 +197,7 @@
             },
             "source": {
                 "description": "The name or self_link of the disk to attach to this instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -207,7 +209,7 @@
             },
             "type": {
                 "description": "- The accelerator type resource to expose to this instance. E.g. `nvidia-tesla-k80`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -219,7 +221,7 @@
             },
             "interface": {
                 "description": "The disk interface to use for attaching this disk; either SCSI or NVME.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -279,7 +281,7 @@
             },
             "scopes": {
                 "description": "A list of service scopes. Both OAuth2 URLs and gcloud",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -309,25 +311,25 @@
             },
             "count": {
                 "description": "- The number of the guest accelerator cards exposed to this instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key": {
                 "description": "- The key for the node affinity label.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "operator": {
                 "description": "- The operator. Can be `IN` for node-affinities",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "- The values for the node affinity label.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

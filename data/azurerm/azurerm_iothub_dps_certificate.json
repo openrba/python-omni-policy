@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Iot Device Provisioning Service Certificate resource. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group under which the Iot Device Provisioning Service Certificate resource has to be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "iot_dps_name": {
                 "description": "The name of the IoT Device Provisioning Service that this certificate will be attached to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "certificate_content": {
                 "description": "The Base-64 representation of the X509 leaf certificate .cer file or just a .pem file content.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

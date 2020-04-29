@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the App Service Environment. Changing this forces a new resource to be created. ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "The ID of the Subnet which the App Service Environment should be connected to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,38 @@
                 "notes": ""
             }
         },
-        "attributes": {},
-        "timeouts": {}
+        "attributes": {
+            "id": {
+                "description": "The ID of the App Service Environment."
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group where the App Service Environment exists."
+            },
+            "location": {
+                "description": "The location where the App Service Environment exists."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the App Service Environment.",
+                "required": false,
+                "timeout": 4
+            },
+            "update": {
+                "description": "Used when updating the App Service Environment.",
+                "required": false,
+                "timeout": 4
+            },
+            "read": {
+                "description": "Used when retrieving the App Service Environment.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the App Service Environment.",
+                "required": false,
+                "timeout": 4
+            }
+        }
     }
 }

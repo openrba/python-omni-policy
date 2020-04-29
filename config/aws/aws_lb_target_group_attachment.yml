@@ -10,7 +10,7 @@ aws_lb_target_group_attachment:
     arguments:
         target_group_arn:
             description: The ARN of the target group with which to register targets
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_id:
@@ -18,7 +18,7 @@ aws_lb_target_group_attachment:
                 or the container ID for an ECS container. If the target type is ip,
                 specify an IP address. If the target type is lambda, specify the arn
                 of lambda.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
@@ -36,3 +36,20 @@ aws_lb_target_group_attachment:
         id:
             description: A unique identifier for the attachment
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR0pmZEdGeVoyVjBYMmR5YjNWd1gyRjBkR0ZqYUcxbGJuUWlJ
+        Q0owWlhOMElpQjdDaUFnZEdGeVoyVjBYMmR5YjNWd1gyRnliaUE5SUNJa2UyRjNjMTlzWWw5MFlY
+        Sm5aWFJmWjNKdmRYQXVkR1Z6ZEM1aGNtNTlJZ29nSUhSaGNtZGxkRjlwWkNBZ0lDQWdJQ0FnUFNB
+        aUpIdGhkM05mYVc1emRHRnVZMlV1ZEdWemRDNXBaSDBpQ2lBZ2NHOXlkQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlEZ3dDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZiR0pmZEdGeVoyVjBYMmR5YjNWd0lpQWlk
+        R1Z6ZENJZ2V3b2dJQzh2SUU5MGFHVnlJR0Z5WjNWdFpXNTBjd3A5Q2dweVpYTnZkWEpqWlNBaVlY
+        ZHpYMmx1YzNSaGJtTmxJaUFpZEdWemRDSWdld29nSUM4dklFOTBhR1Z5SUdGeVozVnRaVzUwY3dw
+        OUNnPT0=
+    import: !!binary |
+        Q2dwVVlYSm5aWFFnUjNKdmRYQWdRWFIwWVdOb2JXVnVkSE1nWTJGdWJtOTBJR0psSUdsdGNHOXlk
+        R1ZrTGc9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzWWw5MFlYSm5aWFJmWjNKdmRYQmZZWFIwWVdOb2JXVnVkQzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

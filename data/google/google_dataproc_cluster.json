@@ -9,7 +9,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the cluster, unique within the project and",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -207,19 +207,19 @@
             },
             "kerberos_config": {
                 "description": "Kerberos Configuration",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy_uri": {
                 "description": "The autoscaling policy used by the cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "script": {
                 "description": "The script to be executed during initialization of the cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -231,7 +231,7 @@
             },
             "kms_key_name": {
                 "description": "The Cloud KMS key name to use for PD disk encryption for",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

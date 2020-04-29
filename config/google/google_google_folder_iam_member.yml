@@ -10,22 +10,41 @@ google_google_folder_iam_member:
         folder:
             description: The resource name of the folder the policy is attached to.
                 Its format is folders/{folder_id}.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member:
             description: The identity that will be granted the privilege in the `role`.
                 For more details on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Note that custom roles must
                 be of the format
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         etag:
             description: (Computed) The etag of the folder's IAM policy.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWm05c1pHVnlJaUFpWkdWd1lYSjBiV1Z1ZERFaUlIc0tJ
+        Q0JrYVhOd2JHRjVYMjVoYldVZ1BTQWlSR1Z3WVhKMGJXVnVkQ0F4SWdvZ0lIQmhjbVZ1ZENBZ0lD
+        QWdJQ0E5SUNKdmNtZGhibWw2WVhScGIyNXpMekV5TXpRMU5qY2lDbjBLQ25KbGMyOTFjbU5sSUNK
+        bmIyOW5iR1ZmWm05c1pHVnlYMmxoYlY5dFpXMWlaWElpSUNKaFpHMXBiaUlnZXdvZ0lHWnZiR1Js
+        Y2lBOUlHZHZiMmRzWlY5bWIyeGtaWEl1WkdWd1lYSjBiV1Z1ZERFdWJtRnRaUW9nSUhKdmJHVWdJ
+        Q0E5SUNKeWIyeGxjeTlsWkdsMGIzSWlDaUFnYldWdFltVnlJRDBnSW5WelpYSTZZV3hwWTJWQVoy
+        MWhhV3d1WTI5dElncDlDZz09
+    import: !!binary |
+        Q2dwSlFVMGdiV1Z0WW1WeUlHbHRjRzl5ZEhNZ2RYTmxJSE53WVdObExXUmxiR2x0YVhSbFpDQnBa
+        R1Z1ZEdsbWFXVnljenNnZEdobElISmxjMjkxY21ObElHbHVJSEYxWlhOMGFXOXVMQ0IwYUdVZ2Nt
+        OXNaU3dnWVc1a0lIUm9aU0JoWTJOdmRXNTBMaUFnVkdocGN5QnRaVzFpWlhJZ2NtVnpiM1Z5WTJV
+        Z1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ1ptOXNaR1Z5WUN3Z2NtOXNaU3dn
+        WVc1a0lHMWxiV0psY2lCcFpHVnVkR2wwZVNCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWm05c1pHVnlYMmxoYlY5dFpXMWlaWEl1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

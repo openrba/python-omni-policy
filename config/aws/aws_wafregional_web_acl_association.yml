@@ -7,16 +7,26 @@ aws_wafregional_web_acl_association:
     arguments:
         web_acl_id:
             description: The ID of the WAF Regional WebACL to create an association.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_arn:
             description: ARN of the resource to associate with. For example, an Application
                 Load Balancer or API Gateway Stage.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the association
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwWFFVWWdVbVZuYVc5dVlXd2dWMlZpSUVGRFRDQkJjM052WTJsaGRHbHZiaUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxhWElnWUhkbFlsOWhZMnhmYVdRNmNtVnpiM1Z5WTJWZllY
+        SnVZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5M1pXSmZZV05zWDJGemMyOWphV0YwYVc5dUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

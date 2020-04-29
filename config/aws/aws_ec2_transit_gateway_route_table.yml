@@ -7,7 +7,7 @@ aws_ec2_transit_gateway_route_table:
     arguments:
         transit_gateway_id:
             description: Identifier of EC2 Transit Gateway.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -15,5 +15,26 @@ aws_ec2_transit_gateway_route_table:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        default_association_route_table:
+            description: Boolean whether this is the default association route table
+                for the EC2 Transit Gateway.
+        default_propagation_route_table:
+            description: Boolean whether this is the default propagation route table
+                for the EC2 Transit Gateway.
+        id:
+            description: EC2 Transit Gateway Route Table identifier
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDNSeVlXNXphWFJmWjJGMFpYZGhlVjl5YjNWMFpWOTBZ
+        V0pzWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0IwY21GdWMybDBYMmRoZEdWM1lYbGZhV1FnUFNBaUpI
+        dGhkM05mWldNeVgzUnlZVzV6YVhSZloyRjBaWGRoZVM1bGVHRnRjR3hsTG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwZ1lYZHpYMlZqTWw5MGNtRnVjMmwwWDJkaGRHVjNZWGxmY205MWRHVmZkR0ZpYkdWZ0lHTmhi
+        aUJpWlNCcGJYQnZjblJsWkNCaWVTQjFjMmx1WnlCMGFHVWdSVU15SUZSeVlXNXphWFFnUjJGMFpY
+        ZGhlU0JTYjNWMFpTQlVZV0pzWlNCcFpHVnVkR2xtYVdWeUxDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZmRISmhibk5wZEY5bllYUmxkMkY1WDNKdmRYUmxYM1JoWW14bExtaDBiV3d1YldG
+        eWEyUnZkMjQ9

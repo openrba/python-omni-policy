@@ -7,7 +7,7 @@ aws_ssm_association:
     arguments:
         name:
             description: The name of the SSM document to apply.
-            required: true
+            required: false
             policy: ''
             notes: ''
         association_name:
@@ -80,7 +80,7 @@ aws_ssm_association:
             notes: ''
         s3_bucket_name:
             description: The S3 bucket name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_key_prefix:
@@ -91,13 +91,13 @@ aws_ssm_association:
         key:
             description: Either `InstanceIds` or `tag:Tag Name` to specify an EC2
                 tag.
-            required: true
+            required: false
             policy: ''
             notes: ''
         values:
             description: A list of instance IDs or tag values. AWS currently limits
                 this list size to one value.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -110,3 +110,16 @@ aws_ssm_association:
         parameters:
             description: Additional parameters passed to the SSM document.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM050WDJGemMyOWphV0YwYVc5dUlpQWlaWGhoYlhCc1pTSWdl
+        d29nSUc1aGJXVWdQU0FpSkh0aGQzTmZjM050WDJSdlkzVnRaVzUwTG1WNFlXMXdiR1V1Ym1GdFpY
+        MGlDZ29nSUhSaGNtZGxkSE1nZXdvZ0lDQWdhMlY1SUNBZ0lEMGdJa2x1YzNSaGJtTmxTV1J6SWdv
+        Z0lDQWdkbUZzZFdWeklEMGdXeUlrZTJGM2MxOXBibk4wWVc1alpTNWxlR0Z0Y0d4bExtbGtmU0pk
+        Q2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwVFUwMGdZWE56YjJOcFlYUnBiMjV6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUdGemMyOWphV0YwYVc5dVgybGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZllYTnpiMk5wWVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

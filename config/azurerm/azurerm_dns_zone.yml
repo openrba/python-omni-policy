@@ -7,13 +7,13 @@ azurerm_dns_zone:
     arguments:
         name:
             description: The name of the DNS Zone. Must be a valid domain name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the resource group where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:

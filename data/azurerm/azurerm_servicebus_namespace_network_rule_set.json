@@ -8,13 +8,13 @@
         "arguments": {
             "resource_group_name": {
                 "description": "Specifies the name of the Resource Group where the ServiceBus Namespace Network Rule Set should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "namespace_name": {
                 "description": "Specifies the ServiceBus Namespace name to which to attach the ServiceBus Namespace Network Rule Set. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "subnet_id": {
                 "description": "The Subnet ID which should be able to access this ServiceBus Namespace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

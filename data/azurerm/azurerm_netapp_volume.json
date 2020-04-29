@@ -8,43 +8,43 @@
         "arguments": {
             "name": {
                 "description": "The name of the NetApp Volume. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group where the NetApp Volume should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "account_name": {
                 "description": "The name of the NetApp account in which the NetApp Pool should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "volume_path": {
                 "description": "A unique file path for the volume. Used when creating mount targets. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "pool_name": {
                 "description": "The name of the NetApp pool in which the NetApp Volume should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_level": {
                 "description": "The target performance of the file system. Valid values include `Premium`, `Standard`, or `Ultra`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,13 +56,13 @@
             },
             "subnet_id": {
                 "description": "The ID of the Subnet the NetApp Volume resides in, which must have the `Microsoft.NetApp/volumes` delegation. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_quota_in_gb": {
                 "description": "The maximum Storage Quota allowed for a file system in Gigabytes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -76,17 +76,19 @@
                 "description": "A mapping of tags to assign to the resource.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> **Note**: It is highly recommended to use the **lifecycle** property as noted in the example since it will prevent an accidental deletion of the volume if the `protocols` argument changes to a different protocol type. "
+                ]
             },
             "rule_index": {
                 "description": "The index number of the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "allowed_clients": {
                 "description": "A list of allowed clients IPv4 addresses.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -127,11 +129,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the NetApp Volume."
-            }
-        },
+        "attributes": {},
         "timeouts": {
             "create": {
                 "description": "Used when creating the NetApp Volume.",

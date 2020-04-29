@@ -18,12 +18,12 @@ aws_vpc_endpoint_connection_notification:
             notes: ''
         connection_notification_arn:
             description: The ARN of the SNS topic for the notifications.
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_events:
             description: One or more endpoint [events](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html#API_CreateVpcEndpointConnectionNotification_RequestParameters
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -34,3 +34,31 @@ aws_vpc_endpoint_connection_notification:
         notification_type:
             description: The type of notification.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMjV6WDNSdmNHbGpJaUFpZEc5d2FXTWlJSHNLSUNCdVlXMWxJ
+        RDBnSW5ad1kyVXRibTkwYVdacFkyRjBhVzl1TFhSdmNHbGpJZ29LSUNCd2IyeHBZM2tnUFNBOFBG
+        QlBURWxEV1FwN0NpQWdJQ0FpVm1WeWMybHZiaUk2SWpJd01USXRNVEF0TVRjaUxBb2dJQ0FnSWxO
+        MFlYUmxiV1Z1ZENJNlczc0tJQ0FnSUNBZ0lDQWlSV1ptWldOMElqb2dJa0ZzYkc5M0lpd0tJQ0Fn
+        SUNBZ0lDQWlVSEpwYm1OcGNHRnNJam9nZXdvZ0lDQWdJQ0FnSUNBZ0lDQWlVMlZ5ZG1salpTSTZJ
+        Q0oyY0dObExtRnRZWHB2Ym1GM2N5NWpiMjBpQ2lBZ0lDQWdJQ0FnZlN3S0lDQWdJQ0FnSUNBaVFX
+        TjBhVzl1SWpvZ0lsTk9VenBRZFdKc2FYTm9JaXdLSUNBZ0lDQWdJQ0FpVW1WemIzVnlZMlVpT2lB
+        aVlYSnVPbUYzY3pwemJuTTZLam9xT25ad1kyVXRibTkwYVdacFkyRjBhVzl1TFhSdmNHbGpJZ29n
+        SUNBZ2ZWMEtmUXBRVDB4SlExa0tmUW9LY21WemIzVnlZMlVnSW1GM2MxOTJjR05mWlc1a2NHOXBi
+        blJmYzJWeWRtbGpaU0lnSW1admJ5SWdld29nSUdGalkyVndkR0Z1WTJWZmNtVnhkV2x5WldRZ0lD
+        QWdJQ0FnSUQwZ1ptRnNjMlVLSUNCdVpYUjNiM0pyWDJ4dllXUmZZbUZzWVc1alpYSmZZWEp1Y3lB
+        OUlGc2lKSHRoZDNOZmJHSXVkR1Z6ZEM1aGNtNTlJbDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTky
+        Y0dOZlpXNWtjRzlwYm5SZlkyOXVibVZqZEdsdmJsOXViM1JwWm1sallYUnBiMjRpSUNKbWIyOGlJ
+        SHNLSUNCMmNHTmZaVzVrY0c5cGJuUmZjMlZ5ZG1salpWOXBaQ0FnSUNBZ1BTQWlKSHRoZDNOZmRu
+        QmpYMlZ1WkhCdmFXNTBYM05sY25acFkyVXVabTl2TG1sa2ZTSUtJQ0JqYjI1dVpXTjBhVzl1WDI1
+        dmRHbG1hV05oZEdsdmJsOWhjbTRnUFNBaUpIdGhkM05mYzI1elgzUnZjR2xqTG5SdmNHbGpMbUZ5
+        Ym4waUNpQWdZMjl1Ym1WamRHbHZibDlsZG1WdWRITWdJQ0FnSUNBZ0lDQWdJRDBnV3lKQlkyTmxj
+        SFFpTENBaVVtVnFaV04wSWwwS2ZRbz0=
+    import: !!binary |
+        Q2dwV1VFTWdSVzVrY0c5cGJuUWdZMjl1Ym1WamRHbHZiaUJ1YjNScFptbGpZWFJwYjI1eklHTmhi
+        aUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lGWlFReUJsYm1Sd2IybHVkQ0JqYjI1dVpX
+        TjBhVzl1SUc1dmRHbG1hV05oZEdsdmJpQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZlpXNWtjRzlwYm5SZlkyOXVibVZqZEdsdmJsOXViM1JwWm1sallYUnBiMjR1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

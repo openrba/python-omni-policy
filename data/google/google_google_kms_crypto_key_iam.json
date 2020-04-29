@@ -9,19 +9,19 @@
         "arguments": {
             "crypto_key_id": {
                 "description": "The crypto key ID, in the form",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "member/members": {
                 "description": "Identities that will be granted the privilege in `role`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The role that should be applied. Note that custom roles must be of the format",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -39,13 +39,13 @@
             },
             "expression": {
                 "description": "Textual representation of an expression in Common Expression Language syntax.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "title": {
                 "description": "A title for the expression, i.e. a short string describing its purpose.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

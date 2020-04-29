@@ -9,17 +9,17 @@ google_healthcare_dicom_store_iam:
     arguments:
         dicom_store_id:
             description: The DICOM store ID, in the form
-            required: true
+            required: false
             policy: ''
             notes: ''
         member/members:
             description: Identities that will be granted the privilege in `role`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Only one
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_data:
@@ -31,3 +31,15 @@ google_healthcare_dicom_store_iam:
         etag:
             description: (Computed) The etag of the DICOM store's IAM policy.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSlFVMGdiV1Z0WW1WeUlHbHRjRzl5ZEhNZ2RYTmxJSE53WVdObExXUmxiR2x0YVhSbFpDQnBa
+        R1Z1ZEdsbWFXVnljenNnZEdobElISmxjMjkxY21ObElHbHVJSEYxWlhOMGFXOXVMQ0IwYUdVZ2Nt
+        OXNaU3dnWVc1a0lIUm9aU0JoWTJOdmRXNTBMaUFnVkdocGN5QnRaVzFpWlhJZ2NtVnpiM1Z5WTJV
+        Z1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ1pHbGpiMjFmYzNSdmNtVmZhV1Jn
+        TENCeWIyeGxMQ0JoYm1RZ1lXTmpiM1Z1ZENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5b1pXRnNkR2hqWVhKbFgyUnBZMjl0WDNOMGIzSmxYMmxoYlM1b2RHMXNMbTFoY210
+        a2IzZHU=

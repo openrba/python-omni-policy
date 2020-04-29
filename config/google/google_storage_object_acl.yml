@@ -8,12 +8,12 @@ google_storage_object_acl:
     arguments:
         bucket:
             description: The name of the bucket the object is stored in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         object:
             description: The name of the object to apply the acl to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         predefined_acl:
@@ -26,6 +26,27 @@ google_storage_object_acl:
                 [GCS Object ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - -> The object's creator will always have `OWNER` permissions for their
+                object, and any attempt to modify that permission would return an
+                error. Instead, Terraform automatically
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYzNSdmNtRm5aVjlpZFdOclpYUWlJQ0pwYldGblpTMXpk
+        Rzl5WlNJZ2V3b2dJRzVoYldVZ0lDQWdJRDBnSW1sdFlXZGxMWE4wYjNKbExXSjFZMnRsZENJS0lD
+        QnNiMk5oZEdsdmJpQTlJQ0pGVlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbWR2YjJkc1pWOXpkRzl5WVdk
+        bFgySjFZMnRsZEY5dlltcGxZM1FpSUNKcGJXRm5aU0lnZXdvZ0lHNWhiV1VnSUNBOUlDSnBiV0Zu
+        WlRFaUNpQWdZblZqYTJWMElEMGdaMjl2WjJ4bFgzTjBiM0poWjJWZlluVmphMlYwTG1sdFlXZGxM
+        WE4wYjNKbExtNWhiV1VLSUNCemIzVnlZMlVnUFNBaWFXMWhaMlV4TG1wd1p5SUtmUW9LY21WemIz
+        VnlZMlVnSW1kdmIyZHNaVjl6ZEc5eVlXZGxYMjlpYW1WamRGOWhZMndpSUNKcGJXRm5aUzF6ZEc5
+        eVpTMWhZMndpSUhzS0lDQmlkV05yWlhRZ1BTQm5iMjluYkdWZmMzUnZjbUZuWlY5aWRXTnJaWFF1
+        YVcxaFoyVXRjM1J2Y21VdWJtRnRaUW9nSUc5aWFtVmpkQ0E5SUdkdmIyZHNaVjl6ZEc5eVlXZGxY
+        MkoxWTJ0bGRGOXZZbXBsWTNRdWFXMWhaMlV1YjNWMGNIVjBYMjVoYldVS0NpQWdjbTlzWlY5bGJu
+        UnBkSGtnUFNCYkNpQWdJQ0FpVDFkT1JWSTZkWE5sY2kxdGVTNWxiV0ZwYkVCbmJXRnBiQzVqYjIw
+        aUxBb2dJQ0FnSWxKRlFVUkZVanBuY205MWNDMXRlV2R5YjNWd0lpd0tJQ0JkQ24wSw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emRHOXlZV2RsWDI5aWFtVmpkRjloWTJ3dWFIUnRiQzV0WVhKclpHOTNiZz09

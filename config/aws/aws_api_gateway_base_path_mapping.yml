@@ -7,12 +7,12 @@ aws_api_gateway_base_path_mapping:
     arguments:
         domain_name:
             description: The already-registered domain name to connect the API to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_id:
             description: The id of the API to connect.
-            required: true
+            required: false
             policy: ''
             notes: ''
         stage_name:
@@ -31,3 +31,33 @@ aws_api_gateway_base_path_mapping:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmWkdWd2JHOTViV1Z1ZENJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0FqSUZObFpTQmhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0drZ1pH
+        OWpjeUJtYjNJZ2FHOTNJSFJ2SUdOeVpXRjBaU0IwYUdsekNpQWdjbVZ6ZEY5aGNHbGZhV1FnUFNB
+        aUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0drdVRYbEVaVzF2UVZCSkxtbGtmU0lL
+        SUNCemRHRm5aVjl1WVcxbElDQTlJQ0pzYVhabElncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgyRndh
+        VjluWVhSbGQyRjVYMlJ2YldGcGJsOXVZVzFsSWlBaVpYaGhiWEJzWlNJZ2V3b2dJR1J2YldGcGJs
+        OXVZVzFsSUQwZ0ltVjRZVzF3YkdVdVkyOXRJZ29LSUNCalpYSjBhV1pwWTJGMFpWOXVZVzFsSUNB
+        Z0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFdGd2FTSUtJQ0JqWlhKMGFXWnBZMkYwWlY5aWIyUjVJQ0Fn
+        SUNBZ0lDQTlJQ0lrZTJacGJHVW9JaVI3Y0dGMGFDNXRiMlIxYkdWOUwyVjRZVzF3YkdVdVkyOXRM
+        MlY0WVcxd2JHVXVZM0owSWlsOUlnb2dJR05sY25ScFptbGpZWFJsWDJOb1lXbHVJQ0FnSUNBZ0lE
+        MGdJaVI3Wm1sc1pTZ2lKSHR3WVhSb0xtMXZaSFZzWlgwdlpYaGhiWEJzWlM1amIyMHZZMkV1WTNK
+        MElpbDlJZ29nSUdObGNuUnBabWxqWVhSbFgzQnlhWFpoZEdWZmEyVjVJRDBnSWlSN1ptbHNaU2dp
+        Skh0d1lYUm9MbTF2WkhWc1pYMHZaWGhoYlhCc1pTNWpiMjB2WlhoaGJYQnNaUzVyWlhraUtYMGlD
+        bjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmWW1GelpWOXdZWFJvWDIxaGNI
+        QnBibWNpSUNKMFpYTjBJaUI3Q2lBZ1lYQnBYMmxrSUNBZ0lDQWdQU0FpSkh0aGQzTmZZWEJwWDJk
+        aGRHVjNZWGxmY21WemRGOWhjR2t1VFhsRVpXMXZRVkJKTG1sa2ZTSUtJQ0J6ZEdGblpWOXVZVzFs
+        SUNBOUlDSWtlMkYzYzE5aGNHbGZaMkYwWlhkaGVWOWtaWEJzYjNsdFpXNTBMbVY0WVcxd2JHVXVj
+        M1JoWjJWZmJtRnRaWDBpQ2lBZ1pHOXRZV2x1WDI1aGJXVWdQU0FpSkh0aGQzTmZZWEJwWDJkaGRH
+        VjNZWGxmWkc5dFlXbHVYMjVoYldVdVpYaGhiWEJzWlM1a2IyMWhhVzVmYm1GdFpYMGlDbjBL
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVY5bllYUmxkMkY1WDJKaGMyVmZjR0YwYUY5dFlYQndhVzVuWUNCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnWW5rZ2RYTnBibWNnZEdobElHUnZiV0ZwYmlCdVlXMWxJR0Z1WkNCaVlY
+        TmxJSEJoZEdnc0lHVXVaeTRLQ2tadmNpQmxiWEIwZVNCZ1ltRnpaVjl3WVhSb1lDQW9aUzVuTGlC
+        eWIyOTBJSEJoZEdnZ0tHQXZZQ2twT2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5aVlYTmxYM0JoZEdoZmJXRndjR2x1Wnk1b2RHMXNMbTFoY210
+        a2IzZHU=

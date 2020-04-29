@@ -7,17 +7,17 @@ aws_apigatewayv2_vpc_link:
     arguments:
         name:
             description: The name of the VPC Link.
-            required: true
+            required: false
             policy: ''
             notes: ''
         security_group_ids:
             description: Security group IDs for the VPC Link.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
             description: Subnet IDs for the VPC Link.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -25,5 +25,24 @@ aws_apigatewayv2_vpc_link:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The VPC Link identifier.
+        arn:
+            description: The VPC Link ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWjJGMFpYZGhlWFl5WDNad1kxOXNhVzVySWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsSWdvZ0lI
+        TmxZM1Z5YVhSNVgyZHliM1Z3WDJsa2N5QTlJRnRrWVhSaExtRjNjMTl6WldOMWNtbDBlVjluY205
+        MWNDNWxlR0Z0Y0d4bExtbGtYUW9nSUhOMVltNWxkRjlwWkhNZ0lDQWdJQ0FnSUNBOUlHUmhkR0V1
+        WVhkelgzTjFZbTVsZEY5cFpITXVaWGhoYlhCc1pTNXBaSE1LQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJ
+        RlZ6WVdkbElEMGdJbVY0WVcxd2JHVWlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5MmNHTmZiR2x1YTJBZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUdKNUlIVnphVzVuSUhSb1pTQldVRU1nVEdsdWF5QnBaR1Z1ZEdsbWFXVnlMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZmRuQmpYMnhwYm1zdWFIUnRiQzV0WVhKclpHOTNiZz09

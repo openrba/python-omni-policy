@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the volume.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,13 +20,13 @@
             },
             "environment_id": {
                 "description": "The ID of the environment to create the volume for.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "driver": {
                 "description": "The volume driver.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

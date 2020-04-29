@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name for the cache subnet group. Elasticache converts this name to lowercase.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "subnet_ids": {
                 "description": "List of VPC Subnet IDs for the cache subnet group",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

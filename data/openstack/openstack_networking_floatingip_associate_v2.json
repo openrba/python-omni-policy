@@ -14,28 +14,18 @@
             },
             "floating_ip": {
                 "description": "IP Address of an existing floating IP.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "port_id": {
                 "description": "ID of an existing port with at least one IP address to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "floating_ip": {
-                "description": "See Argument Reference above."
-            },
-            "port_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

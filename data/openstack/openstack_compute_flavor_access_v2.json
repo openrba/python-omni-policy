@@ -14,28 +14,18 @@
             },
             "flavor_id": {
                 "description": "The UUID of flavor to use. Changing this creates a new flavor access.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "tenant_id": {
                 "description": "The UUID of tenant which is allowed to use the flavor.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "flavor_id": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

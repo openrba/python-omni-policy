@@ -8,14 +8,14 @@ google_google_project_organization_policy:
     arguments:
         project:
             description: The project id of the project to set the policy for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         constraint:
             description: The name of the Constraint the Policy is configuring, for
                 example, `serviceuser.services`. Check out the [complete list of available
                 constraints](https://cloud.google.com/resource-manager/docs/organization-policy/understanding-constraints#available_constraints).
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
@@ -45,7 +45,7 @@ google_google_project_organization_policy:
         enforced:
             description: If true, then the Policy is enforced. If false, then any
                 configuration is acceptable.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow:
@@ -79,7 +79,7 @@ google_google_project_organization_policy:
         default:
             description: May only be set to true. If set, then the default Policy
                 is restored.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -92,3 +92,17 @@ google_google_project_organization_policy:
                 to nanoseconds, representing when the variable was last updated. Example:
                 "2016-10-09T12:33:37.578138407Z".'
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmY0hKdmFtVmpkRjl2Y21kaGJtbDZZWFJwYjI1ZmNHOXNh
+        V041SWlBaWMyVnlhV0ZzWDNCdmNuUmZjRzlzYVdONUlpQjdDaUFnY0hKdmFtVmpkQ0FnSUNBOUlD
+        SjViM1Z5TFhCeWIycGxZM1F0YVdRaUNpQWdZMjl1YzNSeVlXbHVkQ0E5SUNKamIyMXdkWFJsTG1S
+        cGMyRmliR1ZUWlhKcFlXeFFiM0owUVdOalpYTnpJZ29LSUNCaWIyOXNaV0Z1WDNCdmJHbGplU0I3
+        Q2lBZ0lDQmxibVp2Y21ObFpDQTlJSFJ5ZFdVS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwUWNtOXFaV04wSUc5eVoyRnVhWHBoZEdsdmJpQndiMnhwWTJsbGN5QmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnWVc1NUlHOW1JSFJvWlNCbWIyeHNiM2NnWm05eWJXRjBjem9LQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmY0hKdmFtVmpkRjl2Y21kaGJtbDZZWFJwYjI1ZmNHOXNhV041TG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

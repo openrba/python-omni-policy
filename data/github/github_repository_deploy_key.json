@@ -7,25 +7,25 @@
         "arguments": {
             "key": {
                 "description": "A SSH key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "read_only": {
                 "description": "A boolean qualifying the key to be either read only or read/write.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "repository": {
                 "description": "Name of the GitHub repository.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "title": {
                 "description": "A title.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

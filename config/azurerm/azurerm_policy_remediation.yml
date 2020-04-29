@@ -8,19 +8,19 @@ azurerm_policy_remediation:
         name:
             description: The name of the Policy Remediation. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         scope:
             description: 'The Scope at which the Policy Remediation should be applied.
                 Changing this forces a new resource to be created. A scope must be
                 a Resource ID out of one of the following list:'
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_assignment_id:
             description: The resource ID of the policy assignment that should be remediated.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_definition_reference_id:

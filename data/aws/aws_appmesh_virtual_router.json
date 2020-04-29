@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name to use for the virtual router.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "mesh_name": {
                 "description": "The name of the service mesh in which to create the virtual router.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "spec": {
                 "description": "The virtual router specification to apply.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,25 +32,25 @@
             },
             "listener": {
                 "description": "The listeners that the virtual router is expected to receive inbound traffic from.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "port_mapping": {
                 "description": "The port mapping information for the listener.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "port": {
                 "description": "The port used for the port mapping.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol": {
                 "description": "The protocol used for the port mapping. Valid values are `http` and `tcp`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

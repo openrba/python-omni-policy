@@ -8,13 +8,13 @@
         "arguments": {
             "autoscaling_group_name": {
                 "description": "The name or Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "scheduled_action_name": {
                 "description": "The name of this scaling action.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,7 +55,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "The ARN assigned by AWS to the autoscaling schedule."
+            }
+        },
         "timeouts": {}
     }
 }

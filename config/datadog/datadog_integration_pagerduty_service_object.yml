@@ -8,7 +8,7 @@ datadog_integration_pagerduty_service_object:
     arguments:
         service_name:
             description: Your Service name in PagerDuty.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_key:
@@ -17,8 +17,15 @@ datadog_integration_pagerduty_service_object:
                 to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform).
                 The best way to solve a drift is to manually mark the Service Object
                 resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXNTBaV2R5WVhScGIyNWZjR0ZuWlhKa2RYUjVYM05sY25acFkyVmZiMkpxWldO
+        MExtaDBiV3d1YldGeWEyUnZkMjQ9

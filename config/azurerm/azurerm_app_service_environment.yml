@@ -8,13 +8,13 @@ azurerm_app_service_environment:
         name:
             description: 'The name of the App Service Environment. Changing this forces
                 a new resource to be created. '
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The ID of the Subnet which the App Service Environment should
                 be connected to. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pricing_tier:
@@ -29,5 +29,62 @@ azurerm_app_service_environment:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+    attributes:
+        id:
+            description: The ID of the App Service Environment.
+        resource_group_name:
+            description: The name of the Resource Group where the App Service Environment
+                exists.
+        location:
+            description: The location where the App Service Environment exists.
+    timeouts:
+        create:
+            description: Used when creating the App Service Environment.
+            required: false
+            timeout: 4
+        update:
+            description: Used when updating the App Service Environment.
+            required: false
+            timeout: 4
+        read:
+            description: Used when retrieving the App Service Environment.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the App Service Environment.
+            required: false
+            timeout: 4
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVlNSekVpQ2lBZ2JHOWpZWFJwYjI0Z1BT
+        QWlkMlZ6ZEdWMWNtOXdaU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmRtbHlkSFZoYkY5
+        dVpYUjNiM0pySWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        UFNBaVpYaGhiWEJzWlMxMmJtVjBNU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdJ
+        aVI3WVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dWZT
+        SUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ0lpUjdZWHAxY21WeWJWOXlaWE52ZFhK
+        alpWOW5jbTkxY0M1bGVHRnRjR3hsTG01aGJXVjlJZ29nSUdGa1pISmxjM05mYzNCaFkyVWdJQ0Fn
+        SUNBZ1BTQmJJakV3TGpBdU1DNHdMekUySWwwS2ZRb0tjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZj
+        M1ZpYm1WMElpQWlZWE5sSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVlY
+        TmxjM1ZpYm1WMElnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhiV1VnSUQwZ1lYcDFjbVZ5YlY5
+        eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbTVoYldVS0lDQjJhWEowZFdGc1gyNWxkSGR2
+        Y210ZmJtRnRaU0E5SUdGNmRYSmxjbTFmZG1seWRIVmhiRjl1WlhSM2IzSnJMbVY0WVcxd2JHVXVi
+        bUZ0WlFvZ0lHRmtaSEpsYzNOZmNISmxabWw0SUNBZ0lDQWdJRDBnSWpFd0xqQXVNUzR3THpJMEln
+        cDlDZ3B5WlhOdmRYSmpaU0FpWVhwMWNtVnliVjl6ZFdKdVpYUWlJQ0puWVhSbGQyRjVJaUI3Q2lB
+        Z2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWjJGMFpYZGhlWE4xWW01bGRDSUtJQ0J5
+        WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZk
+        WEF1WlhoaGJYQnNaUzV1WVcxbENpQWdkbWx5ZEhWaGJGOXVaWFIzYjNKclgyNWhiV1VnUFNCaGVu
+        VnlaWEp0WDNacGNuUjFZV3hmYm1WMGQyOXlheTVsZUdGdGNHeGxMbTVoYldVS0lDQmhaR1J5WlhO
+        elgzQnlaV1pwZUNBZ0lDQWdJQ0E5SUNJeE1DNHdMakl1TUM4eU5DSUtmUW9LY21WemIzVnlZMlVn
+        SW1GNmRYSmxjbTFmWVhCd1gzTmxjblpwWTJWZlpXNTJhWEp2Ym0xbGJuUWlJQ0psZUdGdGNHeGxJ
+        aUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFdGelpT
+        SUtJQ0J6ZFdKdVpYUmZhV1FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXpkV0p1WlhR
+        dVlYTmxMbWxrQ2lBZ2NISnBZMmx1WjE5MGFXVnlJQ0FnSUNBZ0lDQWdJQ0E5SUNKSk1pSUtJQ0Jt
+        Y205dWRGOWxibVJmYzJOaGJHVmZabUZqZEc5eUlEMGdNVEFLZlFvSw==
+    import: !!binary |
+        Q2dwVWFHVWdRWEJ3SUZObGNuWnBZMlVnUlc1MmFYSnZibTFsYm5RZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCZ2NtVnpiM1Z5WTJVZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndYM05sY25acFkyVmZaVzUyYVhKdmJtMWxiblF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

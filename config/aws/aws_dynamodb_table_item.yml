@@ -7,12 +7,12 @@ aws_dynamodb_table_item:
     arguments:
         table_name:
             description: The name of the table to contain the item.
-            required: true
+            required: false
             policy: ''
             notes: ''
         hash_key:
             description: Hash key to use for lookups and identification of the item
-            required: true
+            required: false
             policy: ''
             notes: ''
         range_key:
@@ -24,8 +24,28 @@ aws_dynamodb_table_item:
         item:
             description: JSON representation of a map of attribute name/value pairs,
                 one for each attribute.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaSGx1WVcxdlpHSmZkR0ZpYkdWZmFYUmxiU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQjBZV0pzWlY5dVlXMWxJRDBnSWlSN1lYZHpYMlI1Ym1GdGIyUmlYM1JoWW14bExt
+        VjRZVzF3YkdVdWJtRnRaWDBpQ2lBZ2FHRnphRjlyWlhrZ0lDQTlJQ0lrZTJGM2MxOWtlVzVoYlc5
+        a1lsOTBZV0pzWlM1bGVHRnRjR3hsTG1oaGMyaGZhMlY1ZlNJS0NpQWdhWFJsYlNBOUlEdzhTVlJG
+        VFFwN0NpQWdJbVY0WVcxd2JHVklZWE5vUzJWNUlqb2dleUpUSWpvZ0luTnZiV1YwYUdsdVp5SjlM
+        QW9nSUNKdmJtVWlPaUI3SWs0aU9pQWlNVEV4TVRFaWZTd0tJQ0FpZEhkdklqb2dleUpPSWpvZ0lq
+        SXlNakl5SW4wc0NpQWdJblJvY21WbElqb2dleUpPSWpvZ0lqTXpNek16SW4wc0NpQWdJbVp2ZFhJ
+        aU9pQjdJazRpT2lBaU5EUTBORFFpZlFwOUNrbFVSVTBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTlr
+        ZVc1aGJXOWtZbDkwWVdKc1pTSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJ
+        Q0E5SUNKbGVHRnRjR3hsTFc1aGJXVWlDaUFnY21WaFpGOWpZWEJoWTJsMGVTQWdQU0F4TUFvZ0lI
+        ZHlhWFJsWDJOaGNHRmphWFI1SUQwZ01UQUtJQ0JvWVhOb1gydGxlU0FnSUNBZ0lDQTlJQ0psZUdG
+        dGNHeGxTR0Z6YUV0bGVTSUtDaUFnWVhSMGNtbGlkWFJsSUhzS0lDQWdJRzVoYldVZ1BTQWlaWGho
+        YlhCc1pVaGhjMmhMWlhraUNpQWdJQ0IwZVhCbElEMGdJbE1pQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwRWVXNWhiVzlFUWlCMFlXSnNaU0JwZEdWdGN5QmpZVzV1YjNRZ1ltVWdhVzF3YjNKMFpXUXU=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrZVc1aGJXOWtZbDkwWVdKc1pWOXBkR1Z0TG1oMGJXd3ViV0Z5YTJSdmQyND0=

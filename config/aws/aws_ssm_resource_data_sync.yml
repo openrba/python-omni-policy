@@ -7,13 +7,49 @@ aws_ssm_resource_data_sync:
     arguments:
         name:
             description: Name for the configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_destination:
             description: Amazon S3 configuration details for the sync.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpYUc5blpTSWdld29nSUdKMVkydGxk
+        Q0E5SUNKMFppMTBaWE4wTFdKMVkydGxkQzB4TWpNMElnb2dJSEpsWjJsdmJpQTlJQ0oxY3kxbFlY
+        TjBMVEVpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mY3pOZlluVmphMlYwWDNCdmJHbGplU0lnSW1o
+        dloyVWlJSHNLSUNCaWRXTnJaWFFnUFNBaUpIdGhkM05mY3pOZlluVmphMlYwTG1odloyVXVZblZq
+        YTJWMGZTSUtDaUFnY0c5c2FXTjVJRDBnUER4RlQwWUtld29nSUNBZ0lsWmxjbk5wYjI0aU9pQWlN
+        akF4TWkweE1DMHhOeUlzQ2lBZ0lDQWlVM1JoZEdWdFpXNTBJam9nV3dvZ0lDQWdJQ0FnSUhzS0lD
+        QWdJQ0FnSUNBZ0lDQWdJbE5wWkNJNklDSlRVMDFDZFdOclpYUlFaWEp0YVhOemFXOXVjME5vWldO
+        cklpd0tJQ0FnSUNBZ0lDQWdJQ0FnSWtWbVptVmpkQ0k2SUNKQmJHeHZkeUlzQ2lBZ0lDQWdJQ0Fn
+        SUNBZ0lDSlFjbWx1WTJsd1lXd2lPaUI3Q2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FpVTJWeWRtbGpa
+        U0k2SUNKemMyMHVZVzFoZW05dVlYZHpMbU52YlNJS0lDQWdJQ0FnSUNBZ0lDQWdmU3dLSUNBZ0lD
+        QWdJQ0FnSUNBZ0lrRmpkR2x2YmlJNklDSnpNenBIWlhSQ2RXTnJaWFJCWTJ3aUxBb2dJQ0FnSUNB
+        Z0lDQWdJQ0FpVW1WemIzVnlZMlVpT2lBaVlYSnVPbUYzY3pwek16bzZPblJtTFhSbGMzUXRZblZq
+        YTJWMExURXlNelFpQ2lBZ0lDQWdJQ0FnZlN3S0lDQWdJQ0FnSUNCN0NpQWdJQ0FnSUNBZ0lDQWdJ
+        Q0pUYVdRaU9pQWlJRk5UVFVKMVkydGxkRVJsYkdsMlpYSjVJaXdLSUNBZ0lDQWdJQ0FnSUNBZ0lr
+        Vm1abVZqZENJNklDSkJiR3h2ZHlJc0NpQWdJQ0FnSUNBZ0lDQWdJQ0pRY21sdVkybHdZV3dpT2lC
+        N0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBaVUyVnlkbWxqWlNJNklDSnpjMjB1WVcxaGVtOXVZWGR6
+        TG1OdmJTSUtJQ0FnSUNBZ0lDQWdJQ0FnZlN3S0lDQWdJQ0FnSUNBZ0lDQWdJa0ZqZEdsdmJpSTZJ
+        Q0p6TXpwUWRYUlBZbXBsWTNRaUxBb2dJQ0FnSUNBZ0lDQWdJQ0FpVW1WemIzVnlZMlVpT2lCYklt
+        RnlianBoZDNNNmN6TTZPanAwWmkxMFpYTjBMV0oxWTJ0bGRDMHhNak0wTHlvaVhTd0tJQ0FnSUNB
+        Z0lDQWdJQ0FnSWtOdmJtUnBkR2x2YmlJNklIc0tJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDSlRkSEpw
+        Ym1kRmNYVmhiSE1pT2lCN0NpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJbk16T25ndFlXMTZM
+        V0ZqYkNJNklDSmlkV05yWlhRdGIzZHVaWEl0Wm5Wc2JDMWpiMjUwY205c0lnb2dJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ2ZRb2dJQ0FnSUNBZ0lDQWdJQ0I5Q2lBZ0lDQWdJQ0FnZlFvZ0lDQWdYUXA5Q2tW
+        UFJncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzTnpiVjl5WlhOdmRYSmpaVjlrWVhSaFgzTjVibU1p
+        SUNKbWIyOGlJSHNLSUNCdVlXMWxJRDBnSW1admJ5SUtDaUFnY3pOZlpHVnpkR2x1WVhScGIyNGdQ
+        U0I3Q2lBZ0lDQmlkV05yWlhSZmJtRnRaU0E5SUNJa2UyRjNjMTl6TTE5aWRXTnJaWFF1YUc5blpT
+        NWlkV05yWlhSOUlnb2dJQ0FnY21WbmFXOXVJQ0FnSUNBZ1BTQWlKSHRoZDNOZmN6TmZZblZqYTJW
+        MExtaHZaMlV1Y21WbmFXOXVmU0lLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwVFUwMGdjbVZ6YjNWeVkyVWdaR0YwWVNCemVXNWpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZRzVoYldWZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZmNtVnpiM1Z5WTJWZlpHRjBZVjl6ZVc1akxtaDBiV3d1YldGeWEyUnZkMjQ9

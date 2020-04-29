@@ -7,18 +7,18 @@ aws_appmesh_virtual_router:
     arguments:
         name:
             description: The name to use for the virtual router.
-            required: true
+            required: false
             policy: ''
             notes: ''
         mesh_name:
             description: The name of the service mesh in which to create the virtual
                 router.
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: The virtual router specification to apply.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -29,23 +29,23 @@ aws_appmesh_virtual_router:
         listener:
             description: The listeners that the virtual router is expected to receive
                 inbound traffic from.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port_mapping:
             description: The port mapping information for the listener.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
             description: The port used for the port mapping.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: The protocol used for the port mapping. Valid values are
                 `http` and `tcp`.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -58,3 +58,18 @@ aws_appmesh_virtual_router:
         last_updated_date:
             description: The last update date of the virtual router.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJ3YldWemFGOTJhWEowZFdGc1gzSnZkWFJsY2lJZ0luTmxj
+        blpwWTJWaUlpQjdDaUFnYm1GdFpTQWdJQ0FnSUQwZ0luTmxjblpwWTJWQ0lnb2dJRzFsYzJoZmJt
+        RnRaU0E5SUNJa2UyRjNjMTloY0hCdFpYTm9YMjFsYzJndWMybHRjR3hsTG1sa2ZTSUtDaUFnYzNC
+        bFl5QjdDaUFnSUNCc2FYTjBaVzVsY2lCN0NpQWdJQ0FnSUhCdmNuUmZiV0Z3Y0dsdVp5QjdDaUFn
+        SUNBZ0lDQWdjRzl5ZENBZ0lDQWdQU0E0TURnd0NpQWdJQ0FnSUNBZ2NISnZkRzlqYjJ3Z1BTQWlh
+        SFIwY0NJS0lDQWdJQ0FnZlFvZ0lDQWdmUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwQmNIQWdUV1Z6YUNCMmFYSjBkV0ZzSUhKdmRYUmxjbk1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklHQnRaWE5vWDI1aGJXVmdJSFJ2WjJWMGFHVnlJSGRwZEdnZ2RHaGxJSFpwY25SMVlX
+        d2djbTkxZEdWeUozTWdZRzVoYldWZ0xBcGxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCdFpYTm9YM1pwY25SMVlXeGZjbTkxZEdWeUxtaDBiV3d1YldGeWEyUnZkMjQ9

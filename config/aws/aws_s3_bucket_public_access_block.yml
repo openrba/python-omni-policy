@@ -8,7 +8,7 @@ aws_s3_bucket_public_access_block:
         bucket:
             description: S3 Bucket to which this Public Access Block configuration
                 should be applied.
-            required: true
+            required: false
             policy: ''
             notes: ''
         block_public_acls:
@@ -42,5 +42,23 @@ aws_s3_bucket_public_access_block:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Name of the S3 bucket the configuration is attached to
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHSjFZ
+        MnRsZENBOUlDSmxlR0Z0Y0d4bElncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzTXpYMkoxWTJ0bGRG
+        OXdkV0pzYVdOZllXTmpaWE56WDJKc2IyTnJJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHSjFZMnRsZENB
+        OUlDSWtlMkYzYzE5ek0xOWlkV05yWlhRdVpYaGhiWEJzWlM1cFpIMGlDZ29nSUdKc2IyTnJYM0Ix
+        WW14cFkxOWhZMnh6SUNBZ1BTQjBjblZsQ2lBZ1lteHZZMnRmY0hWaWJHbGpYM0J2YkdsamVTQTlJ
+        SFJ5ZFdVS2ZRbz0=
+    import: !!binary |
+        Q2dwZ1lYZHpYM016WDJKMVkydGxkRjl3ZFdKc2FXTmZZV05qWlhOelgySnNiMk5yWUNCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnWW5rZ2RYTnBibWNnZEdobElHSjFZMnRsZENCdVlXMWxMQ0JsTG1jdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6TTE5aWRXTnJaWFJmY0hWaWJHbGpYMkZqWTJWemMxOWliRzlqYXk1b2RHMXNMbTFoY210
+        a2IzZHU=

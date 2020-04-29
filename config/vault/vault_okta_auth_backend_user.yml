@@ -7,7 +7,7 @@ vault_okta_auth_backend_user:
     arguments:
         path:
             description: The path where the Okta auth backend is mounted
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
@@ -27,3 +27,16 @@ vault_okta_auth_backend_user:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjl2YTNSaFgyRjFkR2hmWW1GamEyVnVaQ0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQWdJSEJoZEdnZ0lDQWdJQ0FnSUNBOUlDSjFjMlZ5WDI5cmRHRWlDaUFnSUNCdmNt
+        ZGhibWw2WVhScGIyNGdQU0FpWkhWdGJYa2lDbjBLQ25KbGMyOTFjbU5sSUNKMllYVnNkRjl2YTNS
+        aFgyRjFkR2hmWW1GamEyVnVaRjkxYzJWeUlpQWlabTl2SWlCN0NpQWdJQ0J3WVhSb0lDQWdJQ0E5
+        SUNJa2UzWmhkV3gwWDI5cmRHRmZZWFYwYUY5aVlXTnJaVzVrTG1WNFlXMXdiR1V1Y0dGMGFIMGlD
+        aUFnSUNCMWMyVnlibUZ0WlNBOUlDSm1iMjhpQ2lBZ0lDQm5jbTkxY0hNZ0lDQTlJRnNpYjI1bElp
+        d2dJblIzYnlKZENuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDI5cmRHRmZZWFYwYUY5aVlXTnJaVzVrWDNWelpYSXVhSFJ0YkM1dFpBPT0=

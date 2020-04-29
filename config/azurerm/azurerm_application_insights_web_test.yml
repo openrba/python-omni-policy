@@ -8,35 +8,35 @@ azurerm_application_insights_web_test:
         name:
             description: Specifies the name of the Application Insights WebTest. Changing
                 this forces a
-            required: true
+            required: false
             policy: ''
             notes: ''
         application_insights_id:
             description: The ID of the Application Insights component on which the
                 WebTest operates. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The location of the resource group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         kind:
             description: The kind of web test that this web test watches. Choices
                 are `ping` and `multistep`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         geo_locations:
             description: A list of where to physically run the tests from to give
                 global coverage for accessibility of your application.
-            required: true
+            required: false
             policy: ''
             notes: ''
         configuration:
             description: An XML configuration specification for a WebTest.
-            required: true
+            required: false
             policy: ''
             notes: ''
         frequency:
@@ -72,4 +72,75 @@ azurerm_application_insights_web_test:
             policy: ''
             notes: ''
     attributes: {}
-    timeouts: {}
+    timeouts:
+        create:
+            description: Used when creating the Application Insights Web Test.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Application Insights Web Test.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Application Insights Web Test.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Application Insights Web Test.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJblJtTFhSbGMzUWlDaUFnYkc5allYUnBiMjRnUFNBaVYy
+        VnpkQ0JGZFhKdmNHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDJGd2NHeHBZMkYwYVc5
+        dVgybHVjMmxuYUhSeklpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ1BTQWlkR1l0ZEdWemRDMWhjSEJwYm5OcFoyaDBjeUlLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJ
+        Q0FnSUNBZ0lEMGdJbGRsYzNRZ1JYVnliM0JsSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJX
+        VWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUdG
+        d2NHeHBZMkYwYVc5dVgzUjVjR1VnSUNBZ1BTQWlkMlZpSWdwOUNncHlaWE52ZFhKalpTQWlZWHAx
+        Y21WeWJWOWhjSEJzYVdOaGRHbHZibDlwYm5OcFoyaDBjMTkzWldKZmRHVnpkQ0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSjBaaTEwWlhOMExX
+        RndjR2x1YzJsbmFIUnpMWGRsWW5SbGMzUWlDaUFnYkc5allYUnBiMjRnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJHOWpZWFJw
+        YjI0S0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpi
+        M1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcxbENpQWdZWEJ3YkdsallYUnBiMjVmYVc1emFX
+        ZG9kSE5mYVdRZ1BTQmhlblZ5WlhKdFgyRndjR3hwWTJGMGFXOXVYMmx1YzJsbmFIUnpMbVY0WVcx
+        d2JHVXVhV1FLSUNCcmFXNWtJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKd2FXNW5JZ29n
+        SUdaeVpYRjFaVzVqZVNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnTXpBd0NpQWdkR2x0Wlc5MWRDQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQTJNQW9nSUdWdVlXSnNaV1FnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJRDBnZEhKMVpRb2dJR2RsYjE5c2IyTmhkR2x2Ym5NZ0lDQWdJQ0FnSUNBZ0lEMGdXeUoxY3kx
+        MGVDMXpiakV0WVhweUlpd2dJblZ6TFdsc0xXTm9NUzFoZW5JaVhRb0tJQ0JqYjI1bWFXZDFjbUYw
+        YVc5dUlEMGdQRHhZVFV3S1BGZGxZbFJsYzNRZ1RtRnRaVDBpVjJWaVZHVnpkREVpSUVsa1BTSkJR
+        a1EwT0RVNE5TMHdPRE14TFRRd1EwSXRPVEEyT1MwMk9ESkZRVFpDUWpNMU9ETWlJRVZ1WVdKc1pX
+        UTlJbFJ5ZFdVaUlFTnpjMUJ5YjJwbFkzUlRkSEoxWTNSMWNtVTlJaUlnUTNOelNYUmxjbUYwYVc5
+        dVBTSWlJRlJwYldWdmRYUTlJakFpSUZkdmNtdEpkR1Z0U1dSelBTSWlJSGh0Ykc1elBTSm9kSFJ3
+        T2k4dmJXbGpjbTl6YjJaMExtTnZiUzl6WTJobGJXRnpMMVpwYzNWaGJGTjBkV1JwYnk5VVpXRnRW
+        R1Z6ZEM4eU1ERXdJaUJFWlhOamNtbHdkR2x2YmowaUlpQkRjbVZrWlc1MGFXRnNWWE5sY2s1aGJX
+        VTlJaUlnUTNKbFpHVnVkR2xoYkZCaGMzTjNiM0prUFNJaUlGQnlaVUYxZEdobGJuUnBZMkYwWlQw
+        aVZISjFaU0lnVUhKdmVIazlJbVJsWm1GMWJIUWlJRk4wYjNCUGJrVnljbTl5UFNKR1lXeHpaU0ln
+        VW1WamIzSmtaV1JTWlhOMWJIUkdhV3hsUFNJaUlGSmxjM1ZzZEhOTWIyTmhiR1U5SWlJK0NpQWdQ
+        RWwwWlcxelBnb2dJQ0FnUEZKbGNYVmxjM1FnVFdWMGFHOWtQU0pIUlZRaUlFZDFhV1E5SW1FMVpq
+        RXdNVEkyTFdVMFkyUXROVGN3WkMwNU5qRmpMV05sWVRRek9UazVZVEl3TUNJZ1ZtVnljMmx2Ymow
+        aU1TNHhJaUJWY213OUltaDBkSEE2THk5dGFXTnliM052Wm5RdVkyOXRJaUJVYUdsdWExUnBiV1U5
+        SWpBaUlGUnBiV1Z2ZFhROUlqTXdNQ0lnVUdGeWMyVkVaWEJsYm1SbGJuUlNaWEYxWlhOMGN6MGlW
+        SEoxWlNJZ1JtOXNiRzkzVW1Wa2FYSmxZM1J6UFNKVWNuVmxJaUJTWldOdmNtUlNaWE4xYkhROUls
+        UnlkV1VpSUVOaFkyaGxQU0pHWVd4elpTSWdVbVZ6Y0c5dWMyVlVhVzFsUjI5aGJEMGlNQ0lnUlc1
+        amIyUnBibWM5SW5WMFppMDRJaUJGZUhCbFkzUmxaRWgwZEhCVGRHRjBkWE5EYjJSbFBTSXlNREFp
+        SUVWNGNHVmpkR1ZrVW1WemNHOXVjMlZWY213OUlpSWdVbVZ3YjNKMGFXNW5UbUZ0WlQwaUlpQkpa
+        MjV2Y21WSWRIUndVM1JoZEhWelEyOWtaVDBpUm1Gc2MyVWlJQzgrQ2lBZ1BDOUpkR1Z0Y3o0S1BD
+        OVhaV0pVWlhOMFBncFlUVXdLQ24wS0NtOTFkSEIxZENBaWQyVmlkR1Z6ZEY5cFpDSWdld29nSUha
+        aGJIVmxJRDBnWVhwMWNtVnliVjloY0hCc2FXTmhkR2x2Ymw5cGJuTnBaMmgwYzE5M1pXSmZkR1Z6
+        ZEM1bGVHRnRjR3hsTG1sa0NuMEtDbTkxZEhCMWRDQWlkMlZpZEdWemRGOXdjbTkyYVhOcGIyNXBi
+        bWRmYzNSaGRHVWlJSHNLSUNCMllXeDFaU0E5SUdGNmRYSmxjbTFmWVhCd2JHbGpZWFJwYjI1ZmFX
+        NXphV2RvZEhOZmQyVmlYM1JsYzNRdVpYaGhiWEJzWlM1d2NtOTJhWE5wYjI1cGJtZGZjM1JoZEdV
+        S2ZRb0tiM1YwY0hWMElDSjNaV0owWlhOMGMxOXplVzUwYUdWMGFXTmZhV1FpSUhzS0lDQjJZV3gx
+        WlNBOUlHRjZkWEpsY20xZllYQndiR2xqWVhScGIyNWZhVzV6YVdkb2RITmZkMlZpWDNSbGMzUXVa
+        WGhoYlhCc1pTNXplVzUwYUdWMGFXTmZiVzl1YVhSdmNsOXBaQXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQmNIQnNhV05oZEdsdmJpQkpibk5wWjJoMGN5QlhaV0lnVkdWemRITWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdllYQndiR2xqWVhScGIyNWZhVzV6YVdkb2RITmZkMlZpWDNSbGMzUXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

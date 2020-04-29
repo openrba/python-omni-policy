@@ -9,15 +9,24 @@ aws_cloudwatch_log_resource_policy:
             description: Details of the resource policy, including the identity of
                 the principal that is enabled to put logs to this account. This is
                 formatted as a JSON string. Maximum length of 5120 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_name:
             description: Name of the resource policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The name of the CloudWatch log resource policy
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRGJHOTFaRmRoZEdOb0lHeHZaeUJ5WlhOdmRYSmpaU0J3YjJ4cFkybGxjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJSEJ2YkdsamVTQnVZVzFsTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpIZGhkR05vWDJ4dloxOXlaWE52ZFhKalpWOXdiMnhwWTNrdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

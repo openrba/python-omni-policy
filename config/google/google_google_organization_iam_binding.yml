@@ -10,21 +10,37 @@ google_google_organization_iam_binding:
         org_id:
             description: The numeric ID of the organization in which you want to create
                 a custom role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied. Only one
-            required: true
+            required: false
             policy: ''
             notes: ''
         members:
             description: A list of users that the role should apply to. For more details
                 on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         etag:
             description: (Computed) The etag of the organization's IAM policy.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYjNKbllXNXBlbUYwYVc5dVgybGhiVjlpYVc1a2FXNW5J
+        aUFpWW1sdVpHbHVaeUlnZXdvZ0lHOXlaMTlwWkNBOUlDSXhNak0wTlRZM09Ea2lDaUFnY205c1pT
+        QWdJQ0E5SUNKeWIyeGxjeTlpY205M2MyVnlJZ29LSUNCdFpXMWlaWEp6SUQwZ1d3b2dJQ0FnSW5W
+        elpYSTZZV3hwWTJWQVoyMWhhV3d1WTI5dElpd0tJQ0JkQ24wSw==
+    import: !!binary |
+        Q2dwSlFVMGdZbWx1WkdsdVp5QnBiWEJ2Y25SeklIVnpaU0J6Y0dGalpTMWtaV3hwYldsMFpXUWdh
+        V1JsYm5ScFptbGxjbk03SUdacGNuTjBJSFJvWlNCeVpYTnZkWEpqWlNCcGJpQnhkV1Z6ZEdsdmJp
+        QmhibVFnZEdobGJpQjBhR1VnY205c1pTNGdJRlJvWlhObElHSnBibVJwYm1keklHTmhiaUJpWlNC
+        cGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lHOXlaMTlwWkdBZ1lXNWtJSEp2YkdVc0lHVXVaeTRL
+        Q2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmYjNKbllXNXBlbUYwYVc5dVgybGhiVjlpYVc1a2FXNW5MbWgwYld3
+        dWJXRnlhMlJ2ZDI0PQ==

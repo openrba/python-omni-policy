@@ -9,28 +9,28 @@ azurerm_api_management_identity_provider_aad:
             description: The Name of the API Management Service where this AAD Identity
                 Provider should be created. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The Name of the Resource Group where the API Management Service
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_id:
             description: Client Id of the Application in the AAD Identity Provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_secret:
             description: Client secret of the Application in the AAD Identity Provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_tenants:
             description: List of allowed AAD Tenants.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

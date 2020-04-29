@@ -8,13 +8,13 @@ google_google_project:
     arguments:
         name:
             description: The display name of the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project_id:
             description: The project ID. Changing this forces a new project to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         org_id:
@@ -51,3 +51,15 @@ google_google_project:
         number:
             description: The numeric identifier of the project.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmY0hKdmFtVmpkQ0lnSW0xNVgzQnliMnBsWTNRaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnSUQwZ0lrMTVJRkJ5YjJwbFkzUWlDaUFnY0hKdmFtVmpkRjlwWkNBOUlD
+        SjViM1Z5TFhCeWIycGxZM1F0YVdRaUNpQWdiM0puWDJsa0lDQWdJQ0E5SUNJeE1qTTBOVFkzSWdw
+        OUNnPT0=
+    import: !!binary |
+        Q2dwUWNtOXFaV04wY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCd2NtOXFa
+        V04wWDJsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmY0hKdmFtVmpkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

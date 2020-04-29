@@ -8,12 +8,12 @@ gitlab_service_slack:
     arguments:
         project:
             description: ID of the project you want to activate integration on.
-            required: true
+            required: false
             policy: ''
             notes: ''
         webhook:
             description: 'Webhook URL (ex.: https://hooks.slack.com/services/...)'
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
@@ -125,3 +125,23 @@ gitlab_service_slack:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmY0hKdmFtVmpkQ0lnSW1GM1pYTnZiV1ZmY0hKdmFtVmpk
+        Q0lnZXdvZ0lHNWhiV1VnUFNBaVlYZGxjMjl0WlY5d2NtOXFaV04wSWdvZ0lHUmxjMk55YVhCMGFX
+        OXVJRDBnSWsxNUlHRjNaWE52YldVZ2NISnZhbVZqZEM0aUNpQWdkbWx6YVdKcGJHbDBlVjlzWlha
+        bGJDQTlJQ0p3ZFdKc2FXTWlDbjBLQ25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmYzJWeWRtbGpaVjl6
+        YkdGamF5SWdJbk5zWVdOcklpQjdDaUFnY0hKdmFtVmpkQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaUpIdG5hWFJzWVdKZmNISnZhbVZqZEM1aGQyVnpiMjFsWDNCeWIycGxZM1F1YVdSOUln
+        b2dJSGRsWW1odmIyc2dJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1oMGRIQnpPaTh2ZDJW
+        aWFHOXZheTVqYjIwaUNpQWdkWE5sY201aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Fp
+        YlhsMWMyVnlJZ29nSUhCMWMyaGZaWFpsYm5SeklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ2RISjFa
+        UW9nSUhCMWMyaGZZMmhoYm01bGJDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0luQjFjMmhmWTJoaGJp
+        SUtmUW89
+    import: !!binary |
+        YVc1bklGTnNZV05ySUhObGNuWnBZMlVLQ2xsdmRTQmpZVzRnYVcxd2IzSjBJR0VnYzJWeWRtbGpa
+        Vjl6YkdGamF5QnpkR0YwWlNCMWMybHVaeUJnZEdWeWNtRm1iM0p0SUdsdGNHOXlkQ0E4Y21WemIz
+        VnlZMlUrSUR4d2NtOXFaV04wWDJsa1BtQTZDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5elpYSjJhV05sWDNOc1lXTnJMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

@@ -12,12 +12,12 @@ openstack_lb_listener_v2:
             notes: ''
         protocol:
             description: The protocol - can either be TCP, HTTP, HTTPS,
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol_port:
             description: The port on which to listen for client traffic.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant_id:
@@ -27,7 +27,7 @@ openstack_lb_listener_v2:
             notes: ''
         loadbalancer_id:
             description: The load balancer on which to provision this
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -90,37 +90,19 @@ openstack_lb_listener_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the Listener.
-        protocol:
-            description: See Argument Reference above.
-        protocol_port:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        default_port_id:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        connection_limit:
-            description: See Argument Reference above.
-        timeout_client_data:
-            description: See Argument Reference above.
-        timeout_member_connect:
-            description: See Argument Reference above.
-        timeout_member_data:
-            description: See Argument Reference above.
-        timeout_tcp_inspect:
-            description: See Argument Reference above.
-        default_tls_container_ref:
-            description: See Argument Reference above.
-        sni_container_refs:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        insert_headers:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiR2x6ZEdWdVpYSmZkaklpSUNKc2FYTjBa
+        VzVsY2w4eElpQjdDaUFnY0hKdmRHOWpiMndnSUNBZ0lDQWdJRDBnSWtoVVZGQWlDaUFnY0hKdmRH
+        OWpiMnhmY0c5eWRDQWdJRDBnT0RBNE1Bb2dJR3h2WVdSaVlXeGhibU5sY2w5cFpDQTlJQ0prT1RR
+        eE5UYzROaTAxWmpGaExUUXlPR0l0WWpNMVppMHlaakUxTWpObE1UUTJaRElpQ2dvZ0lHbHVjMlZ5
+        ZEY5b1pXRmtaWEp6SUQwZ2V3b2dJQ0FnV0MxR2IzSjNZWEprWldRdFJtOXlJRDBnSW5SeWRXVWlD
+        aUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRXhwYzNSbGJtVnlJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdUR2x6ZEdWdVpYSWdTVVFzSUdVdVp5NDZDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDlzYVhOMFpXNWxjbDkyTWk1b2RHMXNMbTFoY210a2IzZHU=

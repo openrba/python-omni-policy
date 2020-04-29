@@ -8,12 +8,12 @@ vault_github_user:
         backend:
             description: Path where the github auth backend is mounted. Defaults to
                 `github`
-            required: true
+            required: false
             policy: ''
             notes: ''
         user:
             description: GitHub user name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policies:
@@ -24,3 +24,17 @@ vault_github_user:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjluYVhSb2RXSmZZWFYwYUY5aVlXTnJaVzVrSWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzl5WjJGdWFYcGhkR2x2YmlBOUlDSnRlVzl5WnlJS2ZRb0tjbVZ6YjNWeVky
+        VWdJblpoZFd4MFgyZHBkR2gxWWw5MWMyVnlJaUFpZEdaZmRYTmxjaUlnZXdvZ0lHSmhZMnRsYm1R
+        Z0lDQWdJQ0FnSUQwZ2RtRjFiSFJmWjJsMGFIVmlYMkYxZEdoZlltRmphMlZ1WkM1bGVHRnRjR3hs
+        TG1sa0NpQWdkWE5sY2lBZ0lDQWdJQ0FnSUNBZ1BTQWlhbTlvYmk1a2IyVWlDaUFnZEc5clpXNWZj
+        RzlzYVdOcFpYTWdQU0JiSW1SbGRtVnNiM0JsY2lJc0lDSnlaV0ZrTFc5dWJIa2lYUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwSGFYUm9kV0lnZFhObGNpQnRZWEJ3YVc1bmN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQndZWFJvWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJkcGRHaDFZbDkxYzJWeUxtaDBiV3d1YldRPQ==

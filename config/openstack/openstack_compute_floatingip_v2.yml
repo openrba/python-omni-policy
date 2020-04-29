@@ -12,19 +12,19 @@ openstack_compute_floatingip_v2:
             notes: ''
         pool:
             description: The name of the pool from which to obtain the floating
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        pool:
-            description: See Argument Reference above.
-        address:
-            description: The actual floating IP address itself.
-        fixed_ip:
-            description: The fixed IP address corresponding to the floating IP.
-        instance_id:
-            description: UUID of the compute instance associated with the floating
-                IP.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZlkyOXRjSFYwWlY5bWJHOWhkR2x1WjJsd1gzWXlJ
+        aUFpWm14dllYUnBjRjh4SWlCN0NpQWdjRzl2YkNBOUlDSndkV0pzYVdNaUNuMEs=
+    import: !!binary |
+        Q2dwR2JHOWhkR2x1WnlCSlVITWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdh
+        V1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgyWnNiMkYwYVc1bmFYQmZkakl1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

@@ -8,7 +8,7 @@
         "arguments": {
             "virtual_machine_id": {
                 "description": "The ID of the Virtual Machine. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -68,43 +68,43 @@
             },
             "day_of_week": {
                 "description": "The day of week to apply the patch on.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "maintenance_window_starting_hour": {
                 "description": "The Hour, in the Virtual Machine Time-Zone when the patching maintenance window should begin.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "maintenance_window_duration_in_minutes": {
                 "description": "The size of the Maintenance Window in minutes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The credential name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_vault_url": {
                 "description": "The azure Key Vault url. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_principal_name": {
                 "description": "The service principal name to access key vault. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_principal_secret": {
                 "description": "The service principal name secret to access key vault. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

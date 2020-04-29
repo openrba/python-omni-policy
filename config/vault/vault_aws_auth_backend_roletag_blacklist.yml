@@ -8,7 +8,7 @@ vault_aws_auth_backend_roletag_blacklist:
     arguments:
         backend:
             description: The path the AWS auth backend being configured was
-            required: true
+            required: false
             policy: ''
             notes: ''
         safety_buffer:
@@ -23,3 +23,15 @@ vault_aws_auth_backend_roletag_blacklist:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFhSb1gySmhZMnRsYm1RaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnZEhsd1pTQTlJQ0poZDNNaUNuMEtDbkpsYzI5MWNtTmxJQ0oyWVhWc2RGOWhkM05mWVhWMGFG
+        OWlZV05yWlc1a1gzSnZiR1YwWVdkZllteGhZMnRzYVhOMElpQWlaWGhoYlhCc1pTSWdld29nSUdK
+        aFkydGxibVFnSUNBZ0lDQWdQU0FpSkh0MllYVnNkRjloZFhSb1gySmhZMnRsYm1RdVpYaGhiWEJz
+        WlM1d1lYUm9mU0lLSUNCellXWmxkSGxmWW5WbVptVnlJRDBnTXpZd0NuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGM2MxOWhkWFJvWDJKaFkydGxibVJmY205c1pYUmhaMTlpYkdGamEyeHBjM1F1YUhS
+        dGJDNXRaQT09

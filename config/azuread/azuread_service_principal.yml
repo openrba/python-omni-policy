@@ -9,7 +9,7 @@ azuread_service_principal:
         application_id:
             description: The ID of the Azure AD Application for which to create a
                 Service Principal.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_role_assignment_required:
@@ -57,3 +57,25 @@ azuread_service_principal:
         value:
             description: The name of this permission.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaV0ZrWDJGd2NHeHBZMkYwYVc5dUlpQWlaWGhoYlhCc1pTSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVaUNp
+        QWdhRzl0WlhCaFoyVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYUhSMGNEb3ZMMmh2YldW
+        d1lXZGxJZ29nSUdsa1pXNTBhV1pwWlhKZmRYSnBjeUFnSUNBZ0lDQWdJQ0FnSUQwZ1d5Sm9kSFJ3
+        T2k4dmRYSnBJbDBLSUNCeVpYQnNlVjkxY214eklDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlGc2lh
+        SFIwY0RvdkwzSmxjR3g1ZFhKc0lsMEtJQ0JoZG1GcGJHRmliR1ZmZEc5ZmIzUm9aWEpmZEdWdVlX
+        NTBjeUE5SUdaaGJITmxDaUFnYjJGMWRHZ3lYMkZzYkc5M1gybHRjR3hwWTJsMFgyWnNiM2NnUFNC
+        MGNuVmxDbjBLQ25KbGMyOTFjbU5sSUNKaGVuVnlaV0ZrWDNObGNuWnBZMlZmY0hKcGJtTnBjR0Zz
+        SWlBaVpYaGhiWEJzWlNJZ2V3b2dJR0Z3Y0d4cFkyRjBhVzl1WDJsa0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaUpIdGhlblZ5WldGa1gyRndjR3hwWTJGMGFXOXVMbVY0WVcxd2JHVXVZWEJ3YkdsallY
+        UnBiMjVmYVdSOUlnb2dJR0Z3Y0Y5eWIyeGxYMkZ6YzJsbmJtMWxiblJmY21WeGRXbHlaV1FnUFNC
+        bVlXeHpaUW9LSUNCMFlXZHpJRDBnV3lKbGVHRnRjR3hsSWl3Z0luUmhaM01pTENBaWFHVnlaU0pk
+        Q24wSw==
+    import: !!binary |
+        Q2dwQmVuVnlaU0JCWTNScGRtVWdSR2x5WldOMGIzSjVJRk5sY25acFkyVWdVSEpwYm1OcGNHRnNj
+        eUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J2WW1wbFkzUWdhV1JnTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsWVdRdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMyVnlkbWxqWlY5d2NtbHVZMmx3WVd3dWFIUnRiQzV0WVhKclpHOTNiZz09

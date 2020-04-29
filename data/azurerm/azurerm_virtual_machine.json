@@ -7,26 +7,26 @@
         "description": "Manages a Virtual Machine.",
         "arguments": {
             "name": {
-                "description": "Specifies the name of the Virtual Machine. Changing this forces a new resource to be created.",
-                "required": true,
+                "description": "Specifies the name of the OS Disk.",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Specifies the name of the Resource Group in which the Virtual Machine should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the Azure Region where the Virtual Machine exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_interface_ids": {
                 "description": "A list of Network Interface ID's which should be associated with the Virtual Machine.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,7 +44,7 @@
             },
             "vm_size": {
                 "description": "Specifies the [size of the Virtual Machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -76,7 +76,10 @@
                 "description": "Should the Data Disks (either the Managed Disks / VHD Blobs",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> ",
+                    " This setting works when instance is deleted via Terraform only and don't forget to delete disks manually if you deleted VM manually. It can increase spending."
+                ]
             },
             "identity": {
                 "description": "A `identity` block.",
@@ -134,7 +137,7 @@
             },
             "storage_os_disk": {
                 "description": "A `storage_os_disk` block.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -154,19 +157,19 @@
             },
             "pass": {
                 "description": "Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "component": {
                 "description": "Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "setting_name": {
                 "description": "Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -178,19 +181,19 @@
             },
             "enabled": {
                 "description": "Should Boot Diagnostics be enabled for this Virtual Machine?",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_uri": {
                 "description": "The Storage Account's Blob Endpoint which should hold the virtual machine's diagnostic files.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ultra_ssd_enabled": {
                 "description": "Should Ultra SSD disk be enabled for this Virtual Machine?",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": [
                     "-> **Note**: Azure Ultra Disk Storage is currently in preview and are not available to subscriptions that have not [requested](https://aka.ms/UltraSSDPreviewSignUp) onboarding to `Azure Ultra Disk Storage` preview. `Azure Ultra Disk Storage` is only available in `East US 2`, `North Europe`, and `Southeast Asia` regions. For more information see the `Azure Ultra Disk Storage` [product documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd), [product blog](https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-ultra-disk-storage/) and [FAQ](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq-for-disks#ultra-disks)."
@@ -198,7 +201,7 @@
             },
             "type": {
                 "description": "The Managed Service Identity Type of this Virtual Machine. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` (where you can specify the Service Principal ID's",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": [
                     "-> ",
@@ -213,13 +216,13 @@
             },
             "computer_name": {
                 "description": "Specifies the name of the Virtual Machine.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "admin_username": {
                 "description": "Specifies the name of the local administrator account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -240,7 +243,7 @@
             },
             "disable_password_authentication": {
                 "description": "Specifies whether password authentication should be disabled. If set to `false`, an `admin_password` must be specified.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -252,13 +255,13 @@
             },
             "source_vault_id": {
                 "description": "Specifies the ID of the Key Vault to use.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vault_certificates": {
                 "description": "One or more `vault_certificates` blocks.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -297,19 +300,19 @@
             },
             "publisher": {
                 "description": "Specifies the publisher of the image used to create the virtual machine. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "product": {
                 "description": "Specifies the product of the image from the marketplace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_data": {
                 "description": "The Public SSH Key which should be written to the `path` defined above.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": [
                     "-> ",
@@ -318,7 +321,7 @@
             },
             "path": {
                 "description": "The path of the destination file on the virtual machine",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": [
                     "-> ",
@@ -327,13 +330,13 @@
             },
             "offer": {
                 "description": "Specifies the offer of the image used to create the virtual machine. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "Specifies the SKU of the image used to create the virtual machine. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -345,7 +348,7 @@
             },
             "id": {
                 "description": "Specifies the ID of the Custom Image which the Virtual Machine should be created from. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": [
                     "-> ",
@@ -360,7 +363,7 @@
             },
             "create_option": {
                 "description": "Specifies how the OS Disk should be created. Possible values are `Attach` (managed disks only",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -372,7 +375,7 @@
             },
             "lun": {
                 "description": "Specifies the logical unit number of the data disk. This needs to be unique within all the Data Disks on the Virtual Machine.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -429,7 +432,7 @@
             },
             "protocol": {
                 "description": "Specifies the protocol of listener. Possible values are `HTTP` or `HTTPS`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

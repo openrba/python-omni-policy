@@ -8,7 +8,7 @@
         "arguments": {
             "type": {
                 "description": "The type of rule being created. Valid options are `ingress` (inbound)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,19 +32,19 @@
             },
             "from_port": {
                 "description": "The start port (or ICMP type number if protocol is \"icmp\" or \"icmpv6\").",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol": {
                 "description": "The protocol. If not icmp, icmpv6, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "security_group_id": {
                 "description": "The security group to apply this rule to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,7 +62,7 @@
             },
             "to_port": {
                 "description": "The end port (or ICMP code if protocol is \"icmp\").",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

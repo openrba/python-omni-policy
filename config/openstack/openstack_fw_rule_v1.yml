@@ -22,12 +22,12 @@ openstack_fw_rule_v1:
             notes: ''
         protocol:
             description: The protocol type on which the firewall rule operates.
-            required: true
+            required: false
             policy: ''
             notes: ''
         action:
             description: Action to be taken ( must be "allow" or "deny"
-            required: true
+            required: false
             policy: ''
             notes: ''
         ip_version:
@@ -70,29 +70,19 @@ openstack_fw_rule_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        protocol:
-            description: See Argument Reference above.
-        action:
-            description: See Argument Reference above.
-        ip_version:
-            description: See Argument Reference above.
-        source_ip_address:
-            description: See Argument Reference above.
-        destination_ip_address:
-            description: See Argument Reference above.
-        source_port:
-            description: See Argument Reference above.
-        destination_port:
-            description: See Argument Reference above.
-        enabled:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZlpuZGZjblZzWlY5Mk1TSWdJbkoxYkdWZk1TSWdl
+        d29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWJYbGZjblZzWlNJS0lDQmtaWE5qY21sd2RH
+        bHZiaUFnSUNBZ0lEMGdJbVJ5YjNBZ1ZFVk1Ua1ZVSUhSeVlXWm1hV01pQ2lBZ1lXTjBhVzl1SUNB
+        Z0lDQWdJQ0FnSUNBOUlDSmtaVzU1SWdvZ0lIQnliM1J2WTI5c0lDQWdJQ0FnSUNBZ1BTQWlkR053
+        SWdvZ0lHUmxjM1JwYm1GMGFXOXVYM0J2Y25RZ1BTQWlNak1pQ2lBZ1pXNWhZbXhsWkNBZ0lDQWdJ
+        Q0FnSUNBOUlDSjBjblZsSWdwOUNnPT0=
+    import: !!binary |
+        Q2dwR2FYSmxkMkZzYkNCU2RXeGxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOW1kMTl5ZFd4bFgzWXhMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

@@ -7,55 +7,57 @@ azurerm_windows_virtual_machine_scale_set:
     arguments:
         name:
             description: The Name of the Public IP Address Configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The Azure location where the Windows Virtual Machine Scale
                 Set should exist. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group in which the Windows Virtual
                 Machine Scale Set should be exist. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_password:
             description: The Password which should be used for the local-administrator
                 on this Virtual Machine. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_username:
             description: The username of the local administrator on each Virtual Machine
                 Scale Set instance. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instances:
             description: The number of Virtual Machines in the Scale Set.
-            required: true
+            required: false
             policy: ''
-            notes: If you're using AutoScaling, you may wish to use [Terraform's `ignore_changes`
+            notes:
+            - '-> '
+            - ' If you''re using AutoScaling, you may wish to use [Terraform''s `ignore_changes`
                 functionality](https://www.terraform.io/docs/configuration/resources.html#ignore_changes)
-                to ignore changes to this field.
+                to ignore changes to this field.'
         sku:
             description: The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         network_interface:
             description: One or more `network_interface` blocks as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         os_disk:
             description: An `os_disk` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         additional_capabilities:
@@ -100,9 +102,11 @@ azurerm_windows_virtual_machine_scale_set:
                 Virtual Machine Scale Set.
             required: false
             policy: ''
-            notes: When Custom Data has been configured, it's not possible to remove
+            notes:
+            - '-> '
+            - ' When Custom Data has been configured, it''s not possible to remove
                 it without tainting the Virtual Machine Scale Set, due to a limitation
-                of the Azure API.
+                of the Azure API.'
         data_disk:
             description: One or more `data_disk` blocks as defined below.
             required: false
@@ -125,7 +129,9 @@ azurerm_windows_virtual_machine_scale_set:
                 from the Scale Set. Changing this forces a new resource to be created.
             required: false
             policy: ''
-            notes: This can only be configured when `priority` is set to `Spot`.
+            notes:
+            - '-> '
+            - ' This can only be configured when `priority` is set to `Spot`.'
         health_probe_id:
             description: The ID of a Load Balancer Probe which should be used to determine
                 the health of an instance. Changing this forces a new resource to
@@ -154,7 +160,9 @@ azurerm_windows_virtual_machine_scale_set:
                 Machine in the Scale Set should not be evicted for price reasons.
             required: false
             policy: ''
-            notes: This can only be configured when `priority` is set to `Spot`.
+            notes:
+            - '-> '
+            - ' This can only be configured when `priority` is set to `Spot`.'
         overprovision:
             description: Should Azure over-provision Virtual Machines in this Scale
                 Set? This means that multiple Virtual Machines will be provisioned
@@ -171,7 +179,9 @@ azurerm_windows_virtual_machine_scale_set:
                 value forces a new resource.
             required: false
             policy: ''
-            notes: When `priority` is set to `Spot` an `eviction_policy` must be specified.
+            notes:
+            - '-> '
+            - ' When `priority` is set to `Spot` an `eviction_policy` must be specified.'
         provision_vm_agent:
             description: Should the Azure VM Agent be provisioned on each Virtual
                 Machine in the Scale Set? Defaults to `true`. Changing this value
@@ -219,14 +229,18 @@ azurerm_windows_virtual_machine_scale_set:
                 Set should be based on.
             required: false
             policy: ''
-            notes: One of either `source_image_id` or `source_image_reference` must
-                be set.
+            notes:
+            - '-> '
+            - ' One of either `source_image_id` or `source_image_reference` must be
+                set.'
         source_image_reference:
             description: A `source_image_reference` block as defined below.
             required: false
             policy: ''
-            notes: One of either `source_image_id` or `source_image_reference` must
-                be set.
+            notes:
+            - '-> '
+            - ' One of either `source_image_id` or `source_image_reference` must be
+                set.'
         tags:
             description: A mapping of tags which should be assigned to this Virtual
                 Machine Scale Set.
@@ -260,7 +274,9 @@ azurerm_windows_virtual_machine_scale_set:
                 Changing this forces a new resource to be created.
             required: false
             policy: ''
-            notes: This can only be set to `true` when one or more `zones` are configured.
+            notes:
+            - '-> '
+            - ' This can only be set to `true` when one or more `zones` are configured.'
         zones:
             description: A list of Availability Zones in which the Virtual Machines
                 in this Scale Set should be created in. Changing this forces a new
@@ -279,33 +295,33 @@ azurerm_windows_virtual_machine_scale_set:
             description: The XML formatted content that is added to the unattend.xml
                 file for the specified path and component. Changing this forces a
                 new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         setting:
             description: The name of the setting to which the content applies. Possible
                 values are `AutoLogon` and `FirstLogonCommands`. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disable_automatic_rollback:
             description: Should automatic rollbacks be disabled? Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enable_automatic_os_upgrade:
             description: Should OS Upgrades automatically be applied to Scale Set
                 instances in a rolling fashion when a newer version of the OS Image
                 becomes available? Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
             description: Should the terminate notification be enabled on this Virtual
                 Machine Scale Set? Defaults to `false`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         grace_period:
@@ -318,25 +334,27 @@ azurerm_windows_virtual_machine_scale_set:
             description: The Primary/Secondary Endpoint for the Azure Storage Account
                 which should be used to store Boot Diagnostics, including Console
                 Output and Screenshots from the Hypervisor.
-            required: true
+            required: false
             policy: ''
             notes: ''
         store:
             description: The certificate store on the Virtual Machine where the certificate
                 should be added.
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
             description: The Secret URL of a Key Vault Certificate.
-            required: true
+            required: false
             policy: ''
-            notes: This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
-                Resource.
+            notes:
+            - '-> '
+            - ' This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
+                Resource.'
         caching:
             description: The Type of Caching which should be used for the Internal
                 OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disk_size_gb:
@@ -345,21 +363,23 @@ azurerm_windows_virtual_machine_scale_set:
                 sourced from.
             required: false
             policy: ''
-            notes: If specified this must be equal to or larger than the size of the
+            notes:
+            - '-> '
+            - ' If specified this must be equal to or larger than the size of the
                 Image the VM Scale Set is based on. When creating a larger disk than
-                exists in the image you'll need to repartition the disk to use the
-                remaining space.
+                exists in the image you''ll need to repartition the disk to use the
+                remaining space.'
         lun:
             description: The Logical Unit Number of the Data Disk, which must be unique
                 within the Virtual Machine.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_type:
             description: The Type of Storage Account which should back this the Internal
                 OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`
                 and `Premium_LRS`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disk_encryption_set_id:
@@ -367,21 +387,24 @@ azurerm_windows_virtual_machine_scale_set:
                 encrypt this OS Disk.
             required: false
             policy: ''
-            notes: The Disk Encryption Set must have the `Reader` Role Assignment
-                scoped on the Key Vault - in addition to an Access Policy to the Key
-                Vault
+            notes:
+            - '-> '
+            - ' The Disk Encryption Set must have the `Reader` Role Assignment scoped
+                on the Key Vault - in addition to an Access Policy to the Key Vault'
         write_accelerator_enabled:
             description: Should Write Accelerator be Enabled for this OS Disk? Defaults
                 to `false`.
             required: false
             policy: ''
-            notes: This requires that the `storage_account_type` is set to `Premium_LRS`
-                and that `caching` is set to `None`.
+            notes:
+            - '-> '
+            - ' This requires that the `storage_account_type` is set to `Premium_LRS`
+                and that `caching` is set to `None`.'
         type:
             description: The type of Managed Identity which should be assigned to
                 the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`,
                 `UserAssigned` and `SystemAssigned, UserAssigned`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity_ids:
@@ -407,23 +430,29 @@ azurerm_windows_virtual_machine_scale_set:
                 which this Virtual Machine Scale Set should be connected to.
             required: false
             policy: ''
-            notes: When using this field you'll also need to configure a Rule for
-                the Load Balancer, and use a `depends_on` between this resource and
-                the Load Balancer Rule.
+            notes:
+            - '-> '
+            - ' When using this field you''ll also need to configure a Rule for the
+                Load Balancer, and use a `depends_on` between this resource and the
+                Load Balancer Rule.'
         load_balancer_inbound_nat_rules_ids:
             description: A list of NAT Rule ID's from a Load Balancer which this Virtual
                 Machine Scale Set should be connected to.
             required: false
             policy: ''
-            notes: When using this field you'll also need to configure a Rule for
-                the Load Balancer, and use a `depends_on` between this resource and
-                the Load Balancer Rule.
+            notes:
+            - '-> '
+            - ' When using this field you''ll also need to configure a Rule for the
+                Load Balancer, and use a `depends_on` between this resource and the
+                Load Balancer Rule.'
         primary:
             description: Is this the Primary IP Configuration?
             required: false
             policy: ''
-            notes: If multiple `network_interface` blocks are specified, one must
-                be set to `primary`.
+            notes:
+            - '-> '
+            - ' If multiple `network_interface` blocks are specified, one must be
+                set to `primary`.'
         public_ip_address:
             description: A `public_ip_address` block as defined below.
             required: false
@@ -444,7 +473,7 @@ azurerm_windows_virtual_machine_scale_set:
             notes: ''
         ip_configuration:
             description: One or more `ip_configuration` blocks as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dns_servers:
@@ -509,7 +538,7 @@ azurerm_windows_virtual_machine_scale_set:
                 As this is a maximum, unhealthy instances in previous or future batches
                 can cause the percentage of instances in a batch to decrease to ensure
                 higher reliability. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_unhealthy_instance_percent:
@@ -519,7 +548,7 @@ azurerm_windows_virtual_machine_scale_set:
                 by the virtual machine health checks before the rolling upgrade aborts.
                 This constraint will be checked prior to starting any batch. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_unhealthy_upgraded_instance_percent:
@@ -528,7 +557,7 @@ azurerm_windows_virtual_machine_scale_set:
                 after each batch is upgraded. If this percentage is ever exceeded,
                 the rolling update aborts. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pause_time_between_batches:
@@ -536,18 +565,18 @@ azurerm_windows_virtual_machine_scale_set:
                 machines in one batch and starting the next batch. The time duration
                 should be specified in ISO 8601 format. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate:
             description: One or more `certificate` blocks as defined above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key_vault_id:
             description: The ID of the Key Vault from which all Secrets should be
                 sourced.
-            required: true
+            required: false
             policy: ''
             notes: ''
         timeout:
@@ -560,12 +589,14 @@ azurerm_windows_virtual_machine_scale_set:
                 specified when `protocol` is set to `Https`.
             required: false
             policy: ''
-            notes: This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
-                Resource.
+            notes:
+            - '-> '
+            - ' This can be sourced from the `secret_id` field within the `azurerm_key_vault_certificate`
+                Resource.'
         protocol:
             description: The Protocol of the WinRM Listener. Possible values are `Http`
                 and `Https`.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

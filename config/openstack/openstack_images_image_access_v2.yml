@@ -12,12 +12,12 @@ openstack_images_image_access_v2:
             notes: ''
         image_id:
             description: The image ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member_id:
             description: The member ID, e.g. the target project ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         status:
@@ -25,11 +25,15 @@ openstack_images_image_access_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        created_at:
-            description: The date the image access was created.
-        updated_at:
-            description: The date the image access was last updated.
-        schema:
-            description: The member schema.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwSmJXRm5aU0JoWTJObGMzTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdh
+        VzFoWjJWZmFXUmdJR0Z1WkNCMGFHVWdZRzFsYldKbGNsOXBaR0FzQ25ObGNHRnlZWFJsWkNCaWVT
+        QmhJSE5zWVhOb0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXBiV0ZuWlhOZmFXMWhaMlZmWVdOalpYTnpYM1l5TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

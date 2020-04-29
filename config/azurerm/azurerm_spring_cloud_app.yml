@@ -8,20 +8,20 @@ azurerm_spring_cloud_app:
         name:
             description: Specifies the name of the Spring Cloud Application. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the name of the resource group in which to create
                 the Spring Cloud Application. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_name:
             description: 'Specifies the name of the Spring Cloud Service resource.
                 Changing this forces a new resource to be created. '
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

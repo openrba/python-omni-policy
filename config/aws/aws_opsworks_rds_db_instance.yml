@@ -8,23 +8,23 @@ aws_opsworks_rds_db_instance:
         stack_id:
             description: The stack to register a db instance for. Changing this will
                 force a new resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rds_db_instance_arn:
             description: The db instance to register for this stack. Changing this
                 will force a new resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         db_user:
             description: A db username
-            required: true
+            required: false
             policy: ''
             notes: ''
         db_password:
             description: A db password
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -33,3 +33,16 @@ aws_opsworks_rds_db_instance:
                 to identify the stack <-> instance relation. This value is not used
                 in aws.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0J6ZDI5eWEzTmZjbVJ6WDJSaVgybHVjM1JoYm1ObElpQWli
+        WGxmYVc1emRHRnVZMlVpSUhzS0lDQnpkR0ZqYTE5cFpDQWdJQ0FnSUNBZ0lDQWdJRDBnSWlSN1lY
+        ZHpYMjl3YzNkdmNtdHpYM04wWVdOckxtMTVYM04wWVdOckxtbGtmU0lLSUNCeVpITmZaR0pmYVc1
+        emRHRnVZMlZmWVhKdUlEMGdJaVI3WVhkelgyUmlYMmx1YzNSaGJtTmxMbTE1WDJsdWMzUmhibU5s
+        TG1GeWJuMGlDaUFnWkdKZmRYTmxjaUFnSUNBZ0lDQWdJQ0FnSUNBOUlDSnpiMjFsVlhObGNpSUtJ
+        Q0JrWWw5d1lYTnpkMjl5WkNBZ0lDQWdJQ0FnSUQwZ0luTnZiV1ZRWVhOeklncDlDZz09
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y0hOM2IzSnJjMTl5WkhOZlpHSmZhVzV6ZEdGdVkyVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

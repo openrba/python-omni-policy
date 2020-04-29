@@ -8,13 +8,13 @@
         "arguments": {
             "container_format": {
                 "description": "The container format. Must be one of",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "disk_format": {
                 "description": "The disk format. Must be one of",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "name": {
                 "description": "The name of the image.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -97,71 +97,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "checksum": {
-                "description": "The checksum of the data associated with the image."
-            },
-            "container_format": {
-                "description": "See Argument Reference above."
-            },
-            "created_at": {
-                "description": "The date the image was created."
-            },
-            "disk_format": {
-                "description": "See Argument Reference above."
-            },
-            "file": {
-                "description": "the trailing path after the glance"
-            },
-            "id": {
-                "description": "A unique ID assigned by Glance."
-            },
-            "metadata": {
-                "description": "The metadata associated with the image."
-            },
-            "min_disk_gb": {
-                "description": "See Argument Reference above."
-            },
-            "min_ram_mb": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "owner": {
-                "description": "The id of the openstack user who owns the image."
-            },
-            "properties": {
-                "description": "See Argument Reference above."
-            },
-            "protected": {
-                "description": "See Argument Reference above."
-            },
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "schema": {
-                "description": "The path to the JSON-schema that represent"
-            },
-            "size_bytes": {
-                "description": "The size in bytes of the data associated with the image."
-            },
-            "status": {
-                "description": "The status of the image. It can be \"queued\", \"active\""
-            },
-            "tags": {
-                "description": "See Argument Reference above."
-            },
-            "updated_at": {
-                "description": "The date the image was last updated."
-            },
-            "update_at": {
-                "description": "(**Deprecated** "
-            },
-            "visibility": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

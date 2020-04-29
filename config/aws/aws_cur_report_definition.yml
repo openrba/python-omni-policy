@@ -8,33 +8,33 @@ aws_cur_report_definition:
         report_name:
             description: Unique name for the report. Must start with a number/letter
                 and is case sensitive. Limited to 256 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         time_unit:
             description: 'The frequency on which report data are measured and displayed.  Valid
                 values are: HOURLY, DAILY.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         format:
             description: 'Format for report. Valid values are: textORcsv.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         compression:
             description: 'Compression format for report. Valid values are: GZIP, ZIP.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         additional_schema_elements:
             description: 'A list of schema elements. Valid values are: RESOURCES.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_bucket:
             description: Name of the existing S3 bucket to hold generated reports.
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_prefix:
@@ -44,14 +44,33 @@ aws_cur_report_definition:
             notes: ''
         s3_region:
             description: Region of the existing S3 bucket to hold generated reports.
-            required: true
+            required: false
             policy: ''
             notes: ''
         additional_artifacts:
             description: ' A list of additional artifacts. Valid values are: REDSHIFT,
                 QUICKSIGHT.'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZM1Z5WDNKbGNHOXlkRjlrWldacGJtbDBhVzl1SWlBaVpYaGhi
+        WEJzWlY5amRYSmZjbVZ3YjNKMFgyUmxabWx1YVhScGIyNGlJSHNLSUNCeVpYQnZjblJmYm1GdFpT
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bExXTjFjaTF5WlhCdmNuUXRaR1ZtYVc1
+        cGRHbHZiaUlLSUNCMGFXMWxYM1Z1YVhRZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSklUMVZT
+        VEZraUNpQWdabTl5YldGMElDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpZEdWNGRFOVNZ
+        M04ySWdvZ0lHTnZiWEJ5WlhOemFXOXVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa2RhU1ZBaUNp
+        QWdZV1JrYVhScGIyNWhiRjl6WTJobGJXRmZaV3hsYldWdWRITWdQU0JiSWxKRlUwOVZVa05GVXlK
+        ZENpQWdjek5mWW5WamEyVjBJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzFp
+        ZFdOclpYUXRibUZ0WlNJS0lDQnpNMTl5WldkcGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0oxY3kxbFlYTjBMVEVpQ2lBZ1lXUmthWFJwYjI1aGJGOWhjblJwWm1GamRITWdJQ0FnSUNBZ1BT
+        QmJJbEpGUkZOSVNVWlVJaXdnSWxGVlNVTkxVMGxIU0ZRaVhRcDlDZz09
+    import: !!binary |
+        Q2dwU1pYQnZjblFnUkdWbWFXNXBkR2x2Ym5NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2NtVndiM0owWDI1aGJXVmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqZFhKZmNtVndiM0owWDJSbFptbHVhWFJwYjI0dWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -8,19 +8,19 @@
         "arguments": {
             "key": {
                 "description": "Name of the variable.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "value": {
                 "description": "Value of the variable.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "category": {
                 "description": "Whether this is a Terraform or environment variable.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,16 +44,12 @@
             },
             "workspace_id": {
                 "description": "ID of the workspace that owns the variable.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the variable."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

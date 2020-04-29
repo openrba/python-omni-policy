@@ -8,19 +8,19 @@
         "arguments": {
             "description": {
                 "description": "A description for the DLM lifecycle policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "execution_role_arn": {
                 "description": "The ARN of an IAM role that is able to be assumed by the DLM service.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy_details": {
                 "description": "See the [`policy_details` configuration](#policy-details-arguments",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

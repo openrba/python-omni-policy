@@ -18,12 +18,12 @@ aws_autoscaling_group:
             notes: ''
         max_size:
             description: The maximum size of the auto scale group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         min_size:
             description: The minimum size of the auto scale group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         availability_zones:
@@ -196,3 +196,41 @@ aws_autoscaling_group:
         health_check_type:
             description: '"EC2" or "ELB". Controls how health checking is done.'
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR3hoWTJWdFpXNTBYMmR5YjNWd0lpQWlkR1Z6ZENJZ2V3b2dJ
+        RzVoYldVZ0lDQWdJRDBnSW5SbGMzUWlDaUFnYzNSeVlYUmxaM2tnUFNBaVkyeDFjM1JsY2lJS2ZR
+        b0tjbVZ6YjNWeVkyVWdJbUYzYzE5aGRYUnZjMk5oYkdsdVoxOW5jbTkxY0NJZ0ltSmhjaUlnZXdv
+        Z0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlabTl2WW1GeU15MTBaWEp5
+        WVdadmNtMHRkR1Z6ZENJS0lDQnRZWGhmYzJsNlpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdO
+        UW9nSUcxcGJsOXphWHBsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBeUNpQWdhR1ZoYkhSb1gy
+        Tm9aV05yWDJkeVlXTmxYM0JsY21sdlpDQTlJRE13TUFvZ0lHaGxZV3gwYUY5amFHVmphMTkwZVhC
+        bElDQWdJQ0FnSUNBZ1BTQWlSVXhDSWdvZ0lHUmxjMmx5WldSZlkyRndZV05wZEhrZ0lDQWdJQ0Fn
+        SUNBZ1BTQTBDaUFnWm05eVkyVmZaR1ZzWlhSbElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUhSeWRXVUtJ
+        Q0J3YkdGalpXMWxiblJmWjNKdmRYQWdJQ0FnSUNBZ0lDQWdJRDBnSWlSN1lYZHpYM0JzWVdObGJX
+        VnVkRjluY205MWNDNTBaWE4wTG1sa2ZTSUtJQ0JzWVhWdVkyaGZZMjl1Wm1sbmRYSmhkR2x2YmlB
+        Z0lDQWdJRDBnSWlSN1lYZHpYMnhoZFc1amFGOWpiMjVtYVdkMWNtRjBhVzl1TG1admIySmhjaTV1
+        WVcxbGZTSUtJQ0IyY0dOZmVtOXVaVjlwWkdWdWRHbG1hV1Z5SUNBZ0lDQWdJRDBnV3lJa2UyRjNj
+        MTl6ZFdKdVpYUXVaWGhoYlhCc1pURXVhV1I5SWl3Z0lpUjdZWGR6WDNOMVltNWxkQzVsZUdGdGNH
+        eGxNaTVwWkgwaVhRb0tJQ0JwYm1sMGFXRnNYMnhwWm1WamVXTnNaVjlvYjI5cklIc0tJQ0FnSUc1
+        aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVp2YjJKaGNpSUtJQ0FnSUdSbFptRjFiSFJm
+        Y21WemRXeDBJQ0FnSUNBZ0lEMGdJa05QVGxSSlRsVkZJZ29nSUNBZ2FHVmhjblJpWldGMFgzUnBi
+        V1Z2ZFhRZ0lDQWdQU0F5TURBd0NpQWdJQ0JzYVdabFkzbGpiR1ZmZEhKaGJuTnBkR2x2YmlBOUlD
+        SmhkWFJ2YzJOaGJHbHVaenBGUXpKZlNVNVRWRUZPUTBWZlRFRlZUa05JU1U1SElnb0tJQ0FnSUc1
+        dmRHbG1hV05oZEdsdmJsOXRaWFJoWkdGMFlTQTlJRHc4UlU5R0Nuc0tJQ0FpWm05dklqb2dJbUpo
+        Y2lJS2ZRcEZUMFlLQ2lBZ0lDQnViM1JwWm1sallYUnBiMjVmZEdGeVoyVjBYMkZ5YmlBOUlDSmhj
+        bTQ2WVhkek9uTnhjenAxY3kxbFlYTjBMVEU2TkRRME5EVTFOVFUyTmpZMk9uRjFaWFZsTVNvaUNp
+        QWdJQ0J5YjJ4bFgyRnliaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0poY200NllYZHpPbWxoYlRv
+        Nk1USXpORFUyTnpnNU1ERXlPbkp2YkdVdlV6TkJZMk5sYzNNaUNpQWdmUW9LSUNCMFlXY2dld29n
+        SUNBZ2EyVjVJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0ptYjI4aUNpQWdJQ0IyWVd4MVpTQWdJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltSmhjaUlLSUNBZ0lIQnliM0JoWjJGMFpWOWhkRjlzWVhWdVky
+        Z2dQU0IwY25WbENpQWdmUW9LSUNCMGFXMWxiM1YwY3lCN0NpQWdJQ0JrWld4bGRHVWdQU0FpTVRW
+        dElnb2dJSDBLQ2lBZ2RHRm5JSHNLSUNBZ0lHdGxlU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0Fp
+        Ykc5eVpXMGlDaUFnSUNCMllXeDFaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbWx3YzNWdElnb2dJ
+        Q0FnY0hKdmNHRm5ZWFJsWDJGMFgyeGhkVzVqYUNBOUlHWmhiSE5sQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwQmRYUnZVMk5oYkdsdVp5QkhjbTkxY0hNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2JtRnRaV0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZFhSdmMyTmhiR2x1WjE5bmNtOTFjQzVvZEcxc0xtMWhjbXRrYjNkdQ==

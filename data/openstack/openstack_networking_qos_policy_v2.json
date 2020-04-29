@@ -14,7 +14,7 @@
             },
             "name": {
                 "description": "The name of the QoS policy. Changing this updates the name of",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,44 +55,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "See Argument Reference above."
-            },
-            "created_at": {
-                "description": "The time at which QoS policy was created."
-            },
-            "updated_at": {
-                "description": "The time at which QoS policy was created."
-            },
-            "shared": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "is_default": {
-                "description": "See Argument Reference above."
-            },
-            "revision_number": {
-                "description": "The revision number of the QoS policy."
-            },
-            "value_specs": {
-                "description": "See Argument Reference above."
-            },
-            "tags": {
-                "description": "See Argument Reference above."
-            },
-            "all_tags": {
-                "description": "The collection of tags assigned on the QoS policy, which have been"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

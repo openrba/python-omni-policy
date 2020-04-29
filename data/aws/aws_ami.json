@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "A region-unique name for the AMI.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,13 +62,13 @@
             },
             "image_location": {
                 "description": "Path to an S3 object containing an image manifest, e.g. created",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "kernel_id": {
                 "description": "The id of the kernel image (AKI",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -86,7 +86,7 @@
             },
             "device_name": {
                 "description": "The path at which the device is exposed to created instances.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -134,7 +134,7 @@
             },
             "virtual_name": {
                 "description": "A name for the ephemeral device, of the form \"ephemeralN\" where",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

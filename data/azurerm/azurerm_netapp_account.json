@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the NetApp Account. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group where the NetApp Account should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,31 +38,31 @@
             },
             "dns_servers": {
                 "description": "A list of DNS server IP addresses for the Active Directory domain. Only allows `IPv4` address.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "domain": {
                 "description": "The name of the Active Directory domain.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "smb_server_name": {
                 "description": "The NetBIOS name which should be used for the NetApp SMB Server, which will be registered as a computer account in the AD and used to mount volumes.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "username": {
                 "description": "The Username of Active Directory Domain Administrator.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "password": {
                 "description": "The password associated with the `username`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name of the policy set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "organization": {
                 "description": "Name of the organization.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -52,11 +52,14 @@
                 "description": "A list of workspace external IDs. This",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> ",
+                    " When neither `vcs_repo` or `policy_ids` is not specified, the current"
+                ]
             },
             "identifier": {
                 "description": "A reference to your VCS repository in the format",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,16 +77,12 @@
             },
             "oauth_token_id": {
                 "description": "Token ID of the VCS Connection (OAuth Conection Token)",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the policy set."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

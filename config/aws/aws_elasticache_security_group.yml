@@ -9,7 +9,7 @@ aws_elasticache_security_group:
         name:
             description: Name for the cache security group. This value is stored as
                 a lowercase string.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -20,8 +20,23 @@ aws_elasticache_security_group:
             notes: ''
         security_group_names:
             description: List of EC2 security group names to be
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZqZFhKcGRIbGZaM0p2ZFhBaUlDSmlZWElpSUhzS0lDQnVZ
+        VzFsSUQwZ0luTmxZM1Z5YVhSNUxXZHliM1Z3SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJWc1lY
+        TjBhV05oWTJobFgzTmxZM1Z5YVhSNVgyZHliM1Z3SWlBaVltRnlJaUI3Q2lBZ2JtRnRaU0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWld4aGMzUnBZMkZqYUdVdGMyVmpkWEpwZEhrdFozSnZkWEFp
+        Q2lBZ2MyVmpkWEpwZEhsZlozSnZkWEJmYm1GdFpYTWdQU0JiSWlSN1lYZHpYM05sWTNWeWFYUjVY
+        MmR5YjNWd0xtSmhjaTV1WVcxbGZTSmRDbjBL
+    import: !!binary |
+        Q2dwRmJHRnpkR2xEWVdOb1pTQlRaV04xY21sMGVTQkhjbTkxY0hNZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUdKNUlHNWhiV1VzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpZV05vWlY5elpXTjFjbWwwZVY5bmNtOTFjQzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

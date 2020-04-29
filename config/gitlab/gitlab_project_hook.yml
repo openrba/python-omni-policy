@@ -7,12 +7,12 @@ gitlab_project_hook:
     arguments:
         project:
             description: The name or id of the project to add the hook to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
             description: The url of the hook to invoke.
-            required: true
+            required: false
             policy: ''
             notes: ''
         token:
@@ -69,3 +69,14 @@ gitlab_project_hook:
         id:
             description: The unique id assigned to the hook by the GitLab server.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmY0hKdmFtVmpkRjlvYjI5cklpQWlaWGhoYlhCc1pTSWdl
+        d29nSUhCeWIycGxZM1FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMMmh2YjJ0bFpD
+        SUtJQ0IxY213Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlhSFIwY0hNNkx5OWxlR0Z0Y0d4
+        bExtTnZiUzlvYjI5ckwyVjRZVzF3YkdVaUNpQWdiV1Z5WjJWZmNtVnhkV1Z6ZEhOZlpYWmxiblJ6
+        SUQwZ2RISjFaUXA5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5d2NtOXFaV04wWDJodmIyc3VhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

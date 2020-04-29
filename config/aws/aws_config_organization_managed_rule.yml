@@ -7,13 +7,13 @@ aws_config_organization_managed_rule:
     arguments:
         name:
             description: The name of the rule
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_identifier:
             description: Identifier of an available AWS Config Managed Rule to call.
                 For available values, see the [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -65,3 +65,21 @@ aws_config_organization_managed_rule:
         arn:
             description: Amazon Resource Name (ARN) of the rule
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0puWVc1cGVtRjBhVzl1YzE5dmNtZGhibWw2WVhScGIyNGlJ
+        Q0psZUdGdGNHeGxJaUI3Q2lBZ1lYZHpYM05sY25acFkyVmZZV05qWlhOelgzQnlhVzVqYVhCaGJI
+        TWdQU0JiSW1OdmJtWnBaeTF0ZFd4MGFXRmpZMjkxYm5SelpYUjFjQzVoYldGNmIyNWhkM011WTI5
+        dElsMEtJQ0JtWldGMGRYSmxYM05sZENBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSkJURXdp
+        Q24wS0NuSmxjMjkxY21ObElDSmhkM05mWTI5dVptbG5YMjl5WjJGdWFYcGhkR2x2Ymw5dFlXNWha
+        MlZrWDNKMWJHVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ1pHVndaVzVrYzE5dmJpQTlJRnNpWVhkelgy
+        OXlaMkZ1YVhwaGRHbHZibk5mYjNKbllXNXBlbUYwYVc5dUxtVjRZVzF3YkdVaVhRb0tJQ0J1WVcx
+        bElDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaU0lLSUNCeWRXeGxYMmxrWlc1MGFXWnBaWEln
+        UFNBaVNVRk5YMUJCVTFOWFQxSkVYMUJQVEVsRFdTSUtmUW89
+    import: !!binary |
+        Q2dwRGIyNW1hV2NnVDNKbllXNXBlbUYwYVc5dUlFMWhibUZuWldRZ1VuVnNaWE1nWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0J1WVcxbExDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZiM0puWVc1cGVtRjBhVzl1WDIxaGJtRm5aV1JmY25Wc1pTNW9kRzFzTG0x
+        aGNtdGtiM2R1

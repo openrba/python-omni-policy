@@ -8,13 +8,13 @@ google_storage_bucket_object:
     arguments:
         bucket:
             description: The name of the containing bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the object. If you're interpolating the name
                 of this object, see `output_name` instead.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metadata:
@@ -64,14 +64,16 @@ google_storage_bucket_object:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        crc32c:
-            description: (Computed) Base 64 CRC32 hash of the uploaded data.
-        md5hash:
-            description: (Computed) Base 64 MD5 hash of the uploaded data.
-        self_link:
-            description: (Computed) A url reference to this object.
-        output_name:
-            description: (Computed) The name of the object. Use this field in interpolations
-                with `google_storage_object_acl` to recreate
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYzNSdmNtRm5aVjlpZFdOclpYUmZiMkpxWldOMElpQWlj
+        R2xqZEhWeVpTSWdld29nSUc1aGJXVWdJQ0E5SUNKaWRYUjBaWEptYkhrd01TSUtJQ0J6YjNWeVky
+        VWdQU0FpTDJsdFlXZGxjeTl1WVhSMWNtVXZaMkZ5WkdWdUxYUnBaMlZ5TFcxdmRHZ3VhbkJuSWdv
+        Z0lHSjFZMnRsZENBOUlDSnBiV0ZuWlMxemRHOXlaU0lLZlFvPQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5emRHOXlZV2RsWDJKMVkydGxkRjl2WW1wbFkzUXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

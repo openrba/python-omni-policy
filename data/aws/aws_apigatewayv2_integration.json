@@ -8,13 +8,13 @@
         "arguments": {
             "api_id": {
                 "description": "The API identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "integration_type": {
                 "description": "The integration type of an integration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -91,7 +91,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The integration identifier."
+            },
+            "integration_response_selection_expression": {
+                "description": "The [integration response selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-integration-response-selection-expressions) for the integration."
+            }
+        },
         "timeouts": {}
     }
 }

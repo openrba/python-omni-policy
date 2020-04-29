@@ -8,13 +8,13 @@
         "arguments": {
             "administration_role_arn": {
                 "description": "Amazon Resource Number (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "Name of the StackSet. The name must be unique in the region where you create your StackSet. The name can contain only alphanumeric characters (case-sensitive",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

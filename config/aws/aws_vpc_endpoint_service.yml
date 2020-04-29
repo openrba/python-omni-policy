@@ -8,13 +8,13 @@ aws_vpc_endpoint_service:
         acceptance_required:
             description: Whether or not VPC endpoint connection requests to the service
                 must be accepted by the service owner - `true` or `false`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         network_load_balancer_arns:
             description: The ARNs of one or more Network Load Balancers for the endpoint
                 service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_principals:
@@ -46,3 +46,11 @@ aws_vpc_endpoint_service:
         state:
             description: The state of the VPC endpoint service.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwV1VFTWdSVzVrY0c5cGJuUWdVMlZ5ZG1salpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdWbEJESUdWdVpIQnZhVzUwSUhObGNuWnBZMlVnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZlpXNWtjRzlwYm5SZmMyVnlkbWxqWlM1b2RHMXNMbTFoY210a2IzZHU=

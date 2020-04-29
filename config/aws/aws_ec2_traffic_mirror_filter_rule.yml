@@ -13,13 +13,13 @@ aws_ec2_traffic_mirror_filter_rule:
         traffic_mirror_filter_id:
             description: ID of the traffic mirror filter to which this rule should
                 be added
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_cidr_block:
             description: The destination CIDR block to assign to the Traffic Mirror
                 rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_port_range:
@@ -37,19 +37,19 @@ aws_ec2_traffic_mirror_filter_rule:
             notes: ''
         rule_action:
             description: The action to take (accept | reject
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_number:
             description: The number of the Traffic Mirror rule. This number must be
                 unique for each Traffic Mirror rule in a given direction. The rules
                 are processed in ascending order by rule number.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_cidr_block:
             description: The source CIDR block to assign to the Traffic Mirror rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_port_range:
@@ -61,7 +61,7 @@ aws_ec2_traffic_mirror_filter_rule:
         traffic_direction:
             description: The direction of traffic to be captured. Valid values are
                 `ingress` and `egress`
-            required: true
+            required: false
             policy: ''
             notes: ''
         from_port:
@@ -78,3 +78,38 @@ aws_ec2_traffic_mirror_filter_rule:
         id:
             description: The name of the traffic mirror filter rule.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV015WDNSeVlXWm1hV05mYldseWNtOXlYMlpwYkhSbGNpSWdJ
+        bVpwYkhSbGNpSWdld29nSUdSbGMyTnlhWEIwYVc5dUlDQWdJQ0FnUFNBaWRISmhabVpwWXlCdGFY
+        SnliM0lnWm1sc2RHVnlJQzBnZEdWeWNtRm1iM0p0SUdWNFlXMXdiR1VpQ2lBZ2JtVjBkMjl5YTE5
+        elpYSjJhV05sY3lBOUlGc2lZVzFoZW05dUxXUnVjeUpkQ24wS0NuSmxjMjkxY21ObElDSmhkM05m
+        WldNeVgzUnlZV1ptYVdOZmJXbHljbTl5WDJacGJIUmxjbDl5ZFd4bElpQWljblZzWlc5MWRDSWdl
+        d29nSUdSbGMyTnlhWEIwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBJSEoxYkdVaUNp
+        QWdkSEpoWm1acFkxOXRhWEp5YjNKZlptbHNkR1Z5WDJsa0lEMGdJaVI3WVhkelgyVmpNbDkwY21G
+        bVptbGpYMjFwY25KdmNsOW1hV3gwWlhJdVptbHNkR1Z5TG1sa2ZTSUtJQ0JrWlhOMGFXNWhkR2x2
+        Ymw5amFXUnlYMkpzYjJOcklDQWdQU0FpTVRBdU1DNHdMakF2T0NJS0lDQnpiM1Z5WTJWZlkybGtj
+        bDlpYkc5amF5QWdJQ0FnSUNBZ1BTQWlNVEF1TUM0d0xqQXZPQ0lLSUNCeWRXeGxYMjUxYldKbGNp
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBeENpQWdjblZzWlY5aFkzUnBiMjRnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdJbUZqWTJWd2RDSUtJQ0IwY21GbVptbGpYMlJwY21WamRHbHZiaUFnSUNBZ0lDQWdQU0Fp
+        WldkeVpYTnpJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMlZqTWw5MGNtRm1abWxqWDIxcGNuSnZj
+        bDltYVd4MFpYSmZjblZzWlNJZ0luSjFiR1ZwYmlJZ2V3b2dJR1JsYzJOeWFYQjBhVzl1SUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJQ0owWlhOMElISjFiR1VpQ2lBZ2RISmhabVpwWTE5dGFYSnliM0pmWm1s
+        c2RHVnlYMmxrSUQwZ0lpUjdZWGR6WDJWak1sOTBjbUZtWm1salgyMXBjbkp2Y2w5bWFXeDBaWEl1
+        Wm1sc2RHVnlMbWxrZlNJS0lDQmtaWE4wYVc1aGRHbHZibDlqYVdSeVgySnNiMk5ySUNBZ1BTQWlN
+        VEF1TUM0d0xqQXZPQ0lLSUNCemIzVnlZMlZmWTJsa2NsOWliRzlqYXlBZ0lDQWdJQ0FnUFNBaU1U
+        QXVNQzR3TGpBdk9DSUtJQ0J5ZFd4bFgyNTFiV0psY2lBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0F4Q2lB
+        Z2NuVnNaVjloWTNScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltRmpZMlZ3ZENJS0lDQjBjbUZt
+        Wm1salgyUnBjbVZqZEdsdmJpQWdJQ0FnSUNBZ1BTQWlhVzVuY21WemN5SUtJQ0J3Y205MGIyTnZi
+        Q0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0EyQ2dvZ0lHUmxjM1JwYm1GMGFXOXVYM0J2Y25SZmNt
+        RnVaMlVnZXdvZ0lDQWdabkp2YlY5d2IzSjBJRDBnTWpJS0lDQWdJSFJ2WDNCdmNuUWdJQ0E5SURV
+        ekNpQWdmUW9LSUNCemIzVnlZMlZmY0c5eWRGOXlZVzVuWlNCN0NpQWdJQ0JtY205dFgzQnZjblFn
+        UFNBd0NpQWdJQ0IwYjE5d2IzSjBJQ0FnUFNBeE1Bb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwVWNtRm1abWxqSUcxcGNuSnZjaUJ5ZFd4bGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQjBjbUZtWm1salgyMXBjbkp2Y2w5bWFXeDBaWEpmYVdSZ0lHRnVaQ0JnYVdSZ0lI
+        TmxjR0Z5WVhSbFpDQmllU0JnT21BZ1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZmRISmhabVpwWTE5dGFYSnliM0pmWm1sc2RHVnlYM0oxYkdVdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

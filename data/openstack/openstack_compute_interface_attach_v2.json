@@ -14,7 +14,7 @@
             },
             "instance_id": {
                 "description": "The ID of the Instance to attach the Port or Network to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -37,23 +37,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "instance_id": {
-                "description": "See Argument Reference above."
-            },
-            "port_id": {
-                "description": "See Argument Reference above."
-            },
-            "network_id": {
-                "description": "See Argument Reference above."
-            },
-            "fixed_ip": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

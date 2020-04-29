@@ -8,13 +8,13 @@
         "arguments": {
             "gateway_name": {
                 "description": "Name of the gateway.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "gateway_timezone": {
                 "description": "Time zone for the gateway. The time zone is of the format \"GMT\", \"GMT-hr:mm\", or \"GMT+hr:mm\". For example, `GMT-4:00` indicates the time is 4 hours behind GMT. The time zone is used, for example, for scheduling snapshots and your gateway's maintenance schedule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -73,7 +73,17 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Amazon Resource Name (ARN) of the gateway."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the gateway."
+            },
+            "gateway_id": {
+                "description": "Identifier of the gateway."
+            }
+        },
         "timeouts": {}
     }
 }

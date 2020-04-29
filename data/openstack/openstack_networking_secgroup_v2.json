@@ -14,7 +14,7 @@
             },
             "name": {
                 "description": "A unique name for the security group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,26 +43,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "tags": {
-                "description": "See Argument Reference above."
-            },
-            "all_tags": {
-                "description": "The collection of tags assigned on the security group, which have"
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

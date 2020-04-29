@@ -8,31 +8,31 @@ aws_s3_bucket_inventory:
         bucket:
             description: The S3 bucket configuration where inventory results are published
                 (documented below).
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Unique identifier of the inventory configuration for the
                 bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         included_object_versions:
             description: 'Object versions to include in the inventory list. Valid
                 values: `All`, `Current`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         schedule:
             description: Specifies the schedule for generating inventory results (documented
                 below).
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination:
             description: Contains information about where to publish the inventory
                 results (documented below).
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -60,18 +60,18 @@ aws_s3_bucket_inventory:
         frequency:
             description: 'Specifies how frequently inventory results are produced.
                 Valid values: `Daily`, `Weekly`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         bucket_arn:
             description: The Amazon S3 bucket ARN of the destination.
-            required: true
+            required: false
             policy: ''
             notes: ''
         format:
             description: Specifies the output format of the inventory results. Can
                 be `CSV`, [`ORC`](https://orc.apache.org/
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_id:
@@ -101,8 +101,17 @@ aws_s3_bucket_inventory:
             notes: ''
         key_id:
             description: The ARN of the KMS customer master key (CMK
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVE15QmlkV05yWlhRZ2FXNTJaVzUwYjNKNUlHTnZibVpwWjNWeVlYUnBiMjV6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QmdZblZqYTJWME9tbHVkbVZ1ZEc5eWVXQXNJR1V1Wnk0S0Nn
+        PT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6TTE5aWRXTnJaWFJmYVc1MlpXNTBiM0o1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

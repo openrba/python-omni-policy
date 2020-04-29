@@ -7,13 +7,13 @@ github_organization_webhook:
         events:
             description: A list of events which should trigger the webhook. See a
                 list of [available events](https://developer.github.com/v3/activity/events/types/)
-            required: true
+            required: false
             policy: ''
             notes: ''
         configuration:
             description: key/value pair of configuration for this webhook. Available
                 keys are `url`, `content_type`, `secret` and `insecure_ssl`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         active:
@@ -32,3 +32,15 @@ github_organization_webhook:
         url:
             description: URL of the webhook
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUm9kV0pmYjNKbllXNXBlbUYwYVc5dVgzZGxZbWh2YjJzaUlDSm1i
+        MjhpSUhzS0lDQnVZVzFsSUQwZ0luZGxZaUlLQ2lBZ1kyOXVabWxuZFhKaGRHbHZiaUI3Q2lBZ0lD
+        QjFjbXdnSUNBZ0lDQWdJQ0FnUFNBaWFIUjBjSE02THk5bmIyOW5iR1V1WkdVdklnb2dJQ0FnWTI5
+        dWRHVnVkRjkwZVhCbElEMGdJbVp2Y20waUNpQWdJQ0JwYm5ObFkzVnlaVjl6YzJ3Z1BTQm1ZV3h6
+        WlFvZ0lIMEtDaUFnWVdOMGFYWmxJRDBnWm1Gc2MyVUtDaUFnWlhabGJuUnpJRDBnV3lKcGMzTjFa
+        WE1pWFFwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5dmNtZGhibWw2WVhScGIyNWZkMlZpYUc5dmF5NW9kRzFzTG0xaGNtdGtiM2R1

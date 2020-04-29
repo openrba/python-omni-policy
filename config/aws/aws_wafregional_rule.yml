@@ -7,13 +7,13 @@ aws_wafregional_rule:
     arguments:
         name:
             description: The name or description of the rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_name:
             description: The name or description for the Amazon CloudWatch metric
                 of this rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         predicate:
@@ -32,3 +32,20 @@ aws_wafregional_rule:
         arn:
             description: The ARN of the WAF Regional Rule.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtY21WbmFXOXVZV3hmYVhCelpYUWlJQ0pwY0hObGRDSWdl
+        d29nSUc1aGJXVWdQU0FpZEdaSlVGTmxkQ0lLQ2lBZ2FYQmZjMlYwWDJSbGMyTnlhWEIwYjNJZ2V3
+        b2dJQ0FnZEhsd1pTQWdQU0FpU1ZCV05DSUtJQ0FnSUhaaGJIVmxJRDBnSWpFNU1pNHdMamN1TUM4
+        eU5DSUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhkM05mZDJGbWNtVm5hVzl1WVd4ZmNuVnNaU0ln
+        SW5kaFpuSjFiR1VpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJQ0E5SUNKMFpsZEJSbEoxYkdVaUNpQWdi
+        V1YwY21salgyNWhiV1VnUFNBaWRHWlhRVVpTZFd4bElnb0tJQ0J3Y21Wa2FXTmhkR1VnZXdvZ0lD
+        QWdkSGx3WlNBZ0lDQTlJQ0pKVUUxaGRHTm9JZ29nSUNBZ1pHRjBZVjlwWkNBOUlDSWtlMkYzYzE5
+        M1lXWnlaV2RwYjI1aGJGOXBjSE5sZEM1cGNITmxkQzVwWkgwaUNpQWdJQ0J1WldkaGRHVmtJRDBn
+        Wm1Gc2MyVUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwWFFVWWdVbVZuYVc5dVlXd2dVblZzWlNCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdsa0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5eWRXeGxMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

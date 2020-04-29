@@ -7,12 +7,12 @@ aws_route53_zone_association:
     arguments:
         zone_id:
             description: The private hosted zone to associate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_id:
             description: The VPC to associate with the private hosted zone.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_region:
@@ -30,3 +30,35 @@ aws_route53_zone_association:
         vpc_region:
             description: The region in which the VPC identified by `vpc_id` was created.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaWNISnBiV0Z5ZVNJZ2V3b2dJR05wWkhKZllteHZZ
+        MnNnSUNBZ0lDQWdJQ0FnSUQwZ0lqRXdMall1TUM0d0x6RTJJZ29nSUdWdVlXSnNaVjlrYm5OZmFH
+        OXpkRzVoYldWeklEMGdkSEoxWlFvZ0lHVnVZV0pzWlY5a2JuTmZjM1Z3Y0c5eWRDQWdJRDBnZEhK
+        MVpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzWndZeUlnSW5ObFkyOXVaR0Z5ZVNJZ2V3b2dJR05w
+        WkhKZllteHZZMnNnSUNBZ0lDQWdJQ0FnSUQwZ0lqRXdMamN1TUM0d0x6RTJJZ29nSUdWdVlXSnNa
+        VjlrYm5OZmFHOXpkRzVoYldWeklEMGdkSEoxWlFvZ0lHVnVZV0pzWlY5a2JuTmZjM1Z3Y0c5eWRD
+        QWdJRDBnZEhKMVpRcDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzSnZkWFJsTlROZmVtOXVaU0lnSW1W
+        NFlXMXdiR1VpSUhzS0lDQnVZVzFsSUQwZ0ltVjRZVzF3YkdVdVkyOXRJZ29LSUNBaklFNVBWRVU2
+        SUZSb1pTQmhkM05mY205MWRHVTFNMTk2YjI1bElIWndZeUJoY21kMWJXVnVkQ0JoWTJObGNIUnpJ
+        RzExYkhScGNHeGxJR052Ym1acFozVnlZWFJwYjI0S0lDQWpJQ0FnSUNBZ0lHSnNiMk5yY3k0Z1ZH
+        aGxJR0psYkc5M0lIVnpZV2RsSUc5bUlIUm9aU0J6YVc1bmJHVWdkbkJqSUdOdmJtWnBaM1Z5WVhS
+        cGIyNHNJSFJvWlFvZ0lDTWdJQ0FnSUNBZ2JHbG1aV041WTJ4bElHTnZibVpwWjNWeVlYUnBiMjRz
+        SUdGdVpDQjBhR1VnWVhkelgzSnZkWFJsTlROZmVtOXVaVjloYzNOdlkybGhkR2x2YmdvZ0lDTWdJ
+        Q0FnSUNBZ2NtVnpiM1Z5WTJVZ2FYTWdabTl5SUdsc2JIVnpkSEpoZEdsMlpTQndkWEp3YjNObGN5
+        QW9aUzVuTGlCbWIzSWdZU0J6WlhCaGNtRjBaUW9nSUNNZ0lDQWdJQ0FnWTNKdmMzTXRZV05qYjNW
+        dWRDQmhkWFJvYjNKcGVtRjBhVzl1SUhCeWIyTmxjM01zSUhkb2FXTm9JR2x6SUc1dmRDQnphRzkz
+        YmlCb1pYSmxLUzRLSUNCMmNHTWdld29nSUNBZ2RuQmpYMmxrSUQwZ0lpUjdZWGR6WDNad1l5NXdj
+        bWx0WVhKNUxtbGtmU0lLSUNCOUNnb2dJR3hwWm1WamVXTnNaU0I3Q2lBZ0lDQnBaMjV2Y21WZlky
+        aGhibWRsY3lBOUlGc2lkbkJqSWwwS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZjbTkxZEdV
+        MU0xOTZiMjVsWDJGemMyOWphV0YwYVc5dUlpQWljMlZqYjI1a1lYSjVJaUI3Q2lBZ2VtOXVaVjlw
+        WkNBOUlDSWtlMkYzYzE5eWIzVjBaVFV6WDNwdmJtVXVaWGhoYlhCc1pTNTZiMjVsWDJsa2ZTSUtJ
+        Q0IyY0dOZmFXUWdJRDBnSWlSN1lYZHpYM1p3WXk1elpXTnZibVJoY25rdWFXUjlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwU2IzVjBaU0ExTXlCSWIzTjBaV1FnV205dVpTQkJjM052WTJsaGRHbHZibk1nWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJSFpwWVNCMGFHVWdTRzl6ZEdWa0lGcHZibVVnU1VRZ1lXNWtJRlpRUXlCSlJD
+        d2djMlZ3WVhKaGRHVmtJR0o1SUdFZ1kyOXNiMjRnS0dBNllDa3NJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpUVXpYM3B2Ym1WZllYTnpiMk5wWVhScGIyNHVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

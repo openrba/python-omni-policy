@@ -23,7 +23,7 @@ aws_budgets_budget:
             notes: ''
         budget_type:
             description: Whether this budget tracks monetary cost or usage.
-            required: true
+            required: false
             policy: ''
             notes: ''
         cost_filters:
@@ -38,13 +38,13 @@ aws_budgets_budget:
             notes: ''
         limit_amount:
             description: The amount of cost or usage being measured for a budget.
-            required: true
+            required: false
             policy: ''
             notes: ''
         limit_unit:
             description: The unit of measurement used for the budget forecast, actual
                 spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         time_period_end:
@@ -56,13 +56,13 @@ aws_budgets_budget:
         time_period_start:
             description: 'The start of the time period covered by the budget. The
                 start date must come before the end date. Format: `2017-01-01_12:00`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         time_unit:
             description: 'The length of time until a budget resets the actual and
                 forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         notification:
@@ -75,3 +75,28 @@ aws_budgets_budget:
         id:
             description: id of resource.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZblZrWjJWMGMxOWlkV1JuWlhRaUlDSmxZeklpSUhzS0lDQnVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0ppZFdSblpYUXRaV015TFcxdmJuUm9iSGtpQ2lBZ1lu
+        VmtaMlYwWDNSNWNHVWdJQ0FnSUNBZ1BTQWlRMDlUVkNJS0lDQnNhVzFwZEY5aGJXOTFiblFnSUNB
+        Z0lDQTlJQ0l4TWpBd0lnb2dJR3hwYldsMFgzVnVhWFFnSUNBZ0lDQWdJRDBnSWxWVFJDSUtJQ0Iw
+        YVcxbFgzQmxjbWx2WkY5bGJtUWdJQ0E5SUNJeU1EZzNMVEEyTFRFMVh6QXdPakF3SWdvZ0lIUnBi
+        V1ZmY0dWeWFXOWtYM04wWVhKMElEMGdJakl3TVRjdE1EY3RNREZmTURBNk1EQWlDaUFnZEdsdFpW
+        OTFibWwwSUNBZ0lDQWdJQ0FnUFNBaVRVOU9WRWhNV1NJS0NpQWdZMjl6ZEY5bWFXeDBaWEp6SUQw
+        Z2V3b2dJQ0FnVTJWeWRtbGpaU0E5SUNKQmJXRjZiMjRnUld4aGMzUnBZeUJEYjIxd2RYUmxJRU5z
+        YjNWa0lDMGdRMjl0Y0hWMFpTSUtJQ0I5Q2dvZ0lHNXZkR2xtYVdOaGRHbHZiaUI3Q2lBZ0lDQmpi
+        MjF3WVhKcGMyOXVYMjl3WlhKaGRHOXlJQ0FnSUNBZ0lDQTlJQ0pIVWtWQlZFVlNYMVJJUVU0aUNp
+        QWdJQ0IwYUhKbGMyaHZiR1FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SURFd01Bb2dJQ0FnZEdo
+        eVpYTm9iMnhrWDNSNWNHVWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaVVFVlNRMFZPVkVGSFJTSUtJQ0Fn
+        SUc1dmRHbG1hV05oZEdsdmJsOTBlWEJsSUNBZ0lDQWdJQ0FnSUQwZ0lrWlBVa1ZEUVZOVVJVUWlD
+        aUFnSUNCemRXSnpZM0pwWW1WeVgyVnRZV2xzWDJGa1pISmxjM05sY3lBOUlGc2lkR1Z6ZEVCbGVH
+        RnRjR3hsTG1OdmJTSmRDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwQ2RXUm5aWFJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QmdRV05qYjNWdWRFbEVP
+        a0oxWkdkbGRFNWhiV1ZnTENCbExtY3VDZ3BnSkNCMFpYSnlZV1p2Y20wZ2FXMXdiM0owSUdGM2Mx
+        OWlkV1JuWlhSelgySjFaR2RsZEM1dGVVSjFaR2RsZENBeE1qTTBOVFkzT0Rrd01USTZiWGxDZFdS
+        blpYUmc=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlpZFdSblpYUnpYMkoxWkdkbGRDNW9kRzFzTG0xaGNtdGtiM2R1

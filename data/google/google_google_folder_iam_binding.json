@@ -9,19 +9,19 @@
         "arguments": {
             "folder": {
                 "description": "The resource name of the folder the policy is attached to. Its format is folders/{folder_id}.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "members": {
                 "description": "- An array of identities that will be granted the privilege in the `role`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The role that should be applied. Only one",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

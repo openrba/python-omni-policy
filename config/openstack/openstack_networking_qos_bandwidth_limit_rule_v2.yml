@@ -13,13 +13,13 @@ openstack_networking_qos_bandwidth_limit_rule_v2:
         qos_policy_id:
             description: The QoS policy reference. Changing this creates a new QoS
                 bandwidth limit rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_kbps:
             description: The maximum kilobits per second of a QoS bandwidth limit
                 rule. Changing this updates the
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_burst_kbps:
@@ -34,15 +34,15 @@ openstack_networking_qos_bandwidth_limit_rule_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        qos_policy_id:
-            description: See Argument Reference above.
-        max_kbps:
-            description: See Argument Reference above.
-        max_burst_kbps:
-            description: See Argument Reference above.
-        direction:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwUmIxTWdZbUZ1WkhkcFpIUm9JR3hwYldsMElISjFiR1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhGdmMxOXdiMnhwWTNsZmFXUXZZbUZ1WkhkcFpIUm9YMnhwYldsMFgz
+        SjFiR1ZnSUdadmNtMWhkQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0Z2YzE5aVlXNWtkMmxrZEdoZmJHbHRhWFJmY25W
+        c1pWOTJNaTVvZEcxc0xtMWhjbXRrYjNkdQ==

@@ -27,7 +27,7 @@ aws_batch_compute_environment:
             notes: ''
         service_role:
             description: The full Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         state:
@@ -41,7 +41,7 @@ aws_batch_compute_environment:
         type:
             description: The type of compute environment. Valid items are `EC2` or
                 `SPOT`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allocation_strategy:
@@ -81,12 +81,12 @@ aws_batch_compute_environment:
         instance_role:
             description: The Amazon ECS instance role applied to Amazon EC2 instances
                 in a compute environment.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_type:
             description: A list of instance types that may be launched.
-            required: true
+            required: false
             policy: ''
             notes: ''
         launch_template:
@@ -97,19 +97,19 @@ aws_batch_compute_environment:
             notes: ''
         max_vcpus:
             description: The maximum number of EC2 vCPUs that an environment can reach.
-            required: true
+            required: false
             policy: ''
             notes: ''
         min_vcpus:
             description: The minimum number of EC2 vCPUs that an environment should
                 maintain.
-            required: true
+            required: false
             policy: ''
             notes: ''
         security_group_ids:
             description: A list of EC2 security group that are associated with instances
                 launched in the compute environment.
-            required: true
+            required: false
             policy: ''
             notes: ''
         spot_iam_fleet_role:
@@ -120,7 +120,7 @@ aws_batch_compute_environment:
         subnets:
             description: A list of VPC subnets into which the compute resources are
                 launched.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -142,3 +142,62 @@ aws_batch_compute_environment:
             description: A short, human-readable string to provide additional details
                 about the current status of the compute environment.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNKdmJHVWlJQ0psWTNOZmFXNXpkR0Z1WTJWZmNtOXNa
+        U0lnZXdvZ0lHNWhiV1VnUFNBaVpXTnpYMmx1YzNSaGJtTmxYM0p2YkdVaUNnb2dJR0Z6YzNWdFpW
+        OXliMnhsWDNCdmJHbGplU0E5SUR3OFJVOUdDbnNLSUNBZ0lDSldaWEp6YVc5dUlqb2dJakl3TVRJ
+        dE1UQXRNVGNpTEFvZ0lDQWdJbE4wWVhSbGJXVnVkQ0k2SUZzS0NYc0tDU0FnSUNBaVFXTjBhVzl1
+        SWpvZ0luTjBjenBCYzNOMWJXVlNiMnhsSWl3S0NTQWdJQ0FpUldabVpXTjBJam9nSWtGc2JHOTNJ
+        aXdLQ1NBZ0lDQWlVSEpwYm1OcGNHRnNJam9nZXdvSkNTSlRaWEoyYVdObElqb2dJbVZqTWk1aGJX
+        RjZiMjVoZDNNdVkyOXRJZ29KSUNBZ0lIMEtDWDBLSUNBZ0lGMEtmUXBGVDBZS2ZRb0tjbVZ6YjNW
+        eVkyVWdJbUYzYzE5cFlXMWZjbTlzWlY5d2IyeHBZM2xmWVhSMFlXTm9iV1Z1ZENJZ0ltVmpjMTlw
+        Ym5OMFlXNWpaVjl5YjJ4bElpQjdDaUFnY205c1pTQWdJQ0FnSUNBOUlDSWtlMkYzYzE5cFlXMWZj
+        bTlzWlM1bFkzTmZhVzV6ZEdGdVkyVmZjbTlzWlM1dVlXMWxmU0lLSUNCd2IyeHBZM2xmWVhKdUlE
+        MGdJbUZ5YmpwaGQzTTZhV0Z0T2pwaGQzTTZjRzlzYVdONUwzTmxjblpwWTJVdGNtOXNaUzlCYldG
+        NmIyNUZRekpEYjI1MFlXbHVaWEpUWlhKMmFXTmxabTl5UlVNeVVtOXNaU0lLZlFvS2NtVnpiM1Z5
+        WTJVZ0ltRjNjMTlwWVcxZmFXNXpkR0Z1WTJWZmNISnZabWxzWlNJZ0ltVmpjMTlwYm5OMFlXNWpa
+        Vjl5YjJ4bElpQjdDaUFnYm1GdFpTQTlJQ0psWTNOZmFXNXpkR0Z1WTJWZmNtOXNaU0lLSUNCeWIy
+        eGxJRDBnSWlSN1lYZHpYMmxoYlY5eWIyeGxMbVZqYzE5cGJuTjBZVzVqWlY5eWIyeGxMbTVoYldW
+        OUlncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgybGhiVjl5YjJ4bElpQWlZWGR6WDJKaGRHTm9YM05s
+        Y25acFkyVmZjbTlzWlNJZ2V3b2dJRzVoYldVZ1BTQWlZWGR6WDJKaGRHTm9YM05sY25acFkyVmZj
+        bTlzWlNJS0NpQWdZWE56ZFcxbFgzSnZiR1ZmY0c5c2FXTjVJRDBnUER4RlQwWUtld29nSUNBZ0ls
+        Wmxjbk5wYjI0aU9pQWlNakF4TWkweE1DMHhOeUlzQ2lBZ0lDQWlVM1JoZEdWdFpXNTBJam9nV3dv
+        SmV3b0pJQ0FnSUNKQlkzUnBiMjRpT2lBaWMzUnpPa0Z6YzNWdFpWSnZiR1VpTEFvSklDQWdJQ0pG
+        Wm1abFkzUWlPaUFpUVd4c2IzY2lMQW9KSUNBZ0lDSlFjbWx1WTJsd1lXd2lPaUI3Q2drSklsTmxj
+        blpwWTJVaU9pQWlZbUYwWTJndVlXMWhlbTl1WVhkekxtTnZiU0lLQ1NBZ0lDQjlDZ2w5Q2lBZ0lD
+        QmRDbjBLUlU5R0NuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXRnRYM0p2YkdWZmNHOXNhV041WDJG
+        MGRHRmphRzFsYm5RaUlDSmhkM05mWW1GMFkyaGZjMlZ5ZG1salpWOXliMnhsSWlCN0NpQWdjbTlz
+        WlNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTlwWVcxZmNtOXNaUzVoZDNOZlltRjBZMmhmYzJWeWRtbGpa
+        Vjl5YjJ4bExtNWhiV1Y5SWdvZ0lIQnZiR2xqZVY5aGNtNGdQU0FpWVhKdU9tRjNjenBwWVcwNk9t
+        RjNjenB3YjJ4cFkza3ZjMlZ5ZG1salpTMXliMnhsTDBGWFUwSmhkR05vVTJWeWRtbGpaVkp2YkdV
+        aUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmMyVmpkWEpwZEhsZlozSnZkWEFpSUNKellXMXdiR1Vp
+        SUhzS0lDQnVZVzFsSUQwZ0ltRjNjMTlpWVhSamFGOWpiMjF3ZFhSbFgyVnVkbWx5YjI1dFpXNTBY
+        M05sWTNWeWFYUjVYMmR5YjNWd0lnb0tJQ0JsWjNKbGMzTWdld29nSUNBZ1puSnZiVjl3YjNKMElD
+        QWdQU0F3Q2lBZ0lDQjBiMTl3YjNKMElDQWdJQ0E5SURBS0lDQWdJSEJ5YjNSdlkyOXNJQ0FnSUQw
+        Z0lpMHhJZ29nSUNBZ1kybGtjbDlpYkc5amEzTWdQU0JiSWpBdU1DNHdMakF2TUNKZENpQWdmUXA5
+        Q2dweVpYTnZkWEpqWlNBaVlYZHpYM1p3WXlJZ0luTmhiWEJzWlNJZ2V3b2dJR05wWkhKZllteHZZ
+        MnNnUFNBaU1UQXVNUzR3TGpBdk1UWWlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZjM1ZpYm1WMElp
+        QWljMkZ0Y0d4bElpQjdDaUFnZG5CalgybGtJQ0FnSUNBOUlDSWtlMkYzYzE5MmNHTXVjMkZ0Y0d4
+        bExtbGtmU0lLSUNCamFXUnlYMkpzYjJOcklEMGdJakV3TGpFdU1TNHdMekkwSWdwOUNncHlaWE52
+        ZFhKalpTQWlZWGR6WDJKaGRHTm9YMk52YlhCMWRHVmZaVzUyYVhKdmJtMWxiblFpSUNKellXMXdi
+        R1VpSUhzS0lDQmpiMjF3ZFhSbFgyVnVkbWx5YjI1dFpXNTBYMjVoYldVZ1BTQWljMkZ0Y0d4bEln
+        b0tJQ0JqYjIxd2RYUmxYM0psYzI5MWNtTmxjeUI3Q2lBZ0lDQnBibk4wWVc1alpWOXliMnhsSUQw
+        Z0lpUjdZWGR6WDJsaGJWOXBibk4wWVc1alpWOXdjbTltYVd4bExtVmpjMTlwYm5OMFlXNWpaVjl5
+        YjJ4bExtRnlibjBpQ2dvZ0lDQWdhVzV6ZEdGdVkyVmZkSGx3WlNBOUlGc0tJQ0FnSUNBZ0ltTTBM
+        bXhoY21kbElpd0tJQ0FnSUYwS0NpQWdJQ0J0WVhoZmRtTndkWE1nUFNBeE5nb2dJQ0FnYldsdVgz
+        WmpjSFZ6SUQwZ01Bb0tJQ0FnSUhObFkzVnlhWFI1WDJkeWIzVndYMmxrY3lBOUlGc0tJQ0FnSUNB
+        Z0lpUjdZWGR6WDNObFkzVnlhWFI1WDJkeWIzVndMbk5oYlhCc1pTNXBaSDBpTEFvZ0lDQWdYUW9L
+        SUNBZ0lITjFZbTVsZEhNZ1BTQmJDaUFnSUNBZ0lDSWtlMkYzYzE5emRXSnVaWFF1YzJGdGNHeGxM
+        bWxrZlNJc0NpQWdJQ0JkQ2dvZ0lDQWdkSGx3WlNBOUlDSkZReklpQ2lBZ2ZRb0tJQ0J6WlhKMmFX
+        TmxYM0p2YkdVZ1BTQWlKSHRoZDNOZmFXRnRYM0p2YkdVdVlYZHpYMkpoZEdOb1gzTmxjblpwWTJW
+        ZmNtOXNaUzVoY201OUlnb2dJSFI1Y0dVZ0lDQWdJQ0FnSUNBOUlDSk5RVTVCUjBWRUlnb2dJR1Js
+        Y0dWdVpITmZiMjRnSUNBOUlGc2lZWGR6WDJsaGJWOXliMnhsWDNCdmJHbGplVjloZEhSaFkyaHRa
+        VzUwTG1GM2MxOWlZWFJqYUY5elpYSjJhV05sWDNKdmJHVWlYUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwQlYxTWdRbUYwWTJnZ1kyOXRjSFYwWlNCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCamIyMXdkWFJsWDJWdWRtbHliMjV0Wlc1MFgyNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlpWVhSamFGOWpiMjF3ZFhSbFgyVnVkbWx5YjI1dFpXNTBMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

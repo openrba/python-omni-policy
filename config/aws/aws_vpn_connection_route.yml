@@ -8,13 +8,40 @@ aws_vpn_connection_route:
         destination_cidr_block:
             description: The CIDR block associated with the local subnet of the customer
                 network.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpn_connection_id:
             description: The ID of the VPN connection.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        destination_cidr_block:
+            description: The CIDR block associated with the local subnet of the customer
+                network.
+        vpn_connection_id:
+            description: The ID of the VPN connection.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaWRuQmpJaUI3Q2lBZ1kybGtjbDlpYkc5amF5QTlJ
+        Q0l4TUM0d0xqQXVNQzh4TmlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5MmNHNWZaMkYwWlhkaGVT
+        SWdJblp3Ymw5bllYUmxkMkY1SWlCN0NpQWdkbkJqWDJsa0lEMGdJaVI3WVhkelgzWndZeTUyY0dN
+        dWFXUjlJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMk4xYzNSdmJXVnlYMmRoZEdWM1lYa2lJQ0pq
+        ZFhOMGIyMWxjbDluWVhSbGQyRjVJaUI3Q2lBZ1ltZHdYMkZ6YmlBZ0lDQTlJRFkxTURBd0NpQWdh
+        WEJmWVdSa2NtVnpjeUE5SUNJeE56SXVNQzR3TGpFaUNpQWdkSGx3WlNBZ0lDQWdJQ0E5SUNKcGNI
+        TmxZeTR4SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDNad2JsOWpiMjV1WldOMGFXOXVJaUFpYldG
+        cGJpSWdld29nSUhad2JsOW5ZWFJsZDJGNVgybGtJQ0FnSUNBZ1BTQWlKSHRoZDNOZmRuQnVYMmRo
+        ZEdWM1lYa3VkbkJ1WDJkaGRHVjNZWGt1YVdSOUlnb2dJR04xYzNSdmJXVnlYMmRoZEdWM1lYbGZh
+        V1FnUFNBaUpIdGhkM05mWTNWemRHOXRaWEpmWjJGMFpYZGhlUzVqZFhOMGIyMWxjbDluWVhSbGQy
+        RjVMbWxrZlNJS0lDQjBlWEJsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW1sd2MyVmpMakVpQ2lB
+        Z2MzUmhkR2xqWDNKdmRYUmxjMTl2Ym14NUlDQTlJSFJ5ZFdVS2ZRb0tjbVZ6YjNWeVkyVWdJbUYz
+        YzE5MmNHNWZZMjl1Ym1WamRHbHZibDl5YjNWMFpTSWdJbTltWm1salpTSWdld29nSUdSbGMzUnBi
+        bUYwYVc5dVgyTnBaSEpmWW14dlkyc2dQU0FpTVRreUxqRTJPQzR4TUM0d0x6STBJZ29nSUhad2Js
+        OWpiMjV1WldOMGFXOXVYMmxrSUNBZ0lDQWdQU0FpSkh0aGQzTmZkbkJ1WDJOdmJtNWxZM1JwYjI0
+        dWJXRnBiaTVwWkgwaUNuMEs=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0c1ZlkyOXVibVZqZEdsdmJsOXliM1YwWlM1b2RHMXNMbTFoY210a2IzZHU=

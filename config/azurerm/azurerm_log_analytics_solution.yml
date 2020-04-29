@@ -9,7 +9,7 @@ azurerm_log_analytics_solution:
             description: Specifies the name of the solution to be deployed. See [here
                 for options](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-add-solutions).Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
@@ -17,44 +17,44 @@ azurerm_log_analytics_solution:
                 solution is created. Changing this forces a new resource to be created.
                 Note: The solution and it''s related workspace can only exist in the
                 same resource group.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         workspace_resource_id:
             description: The full resource ID of the Log Analytics workspace with
                 which the solution will be linked. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         workspace_name:
             description: The full name of the Log Analytics workspace with which the
                 solution will be linked. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         plan:
             description: A `plan` block as documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         publisher:
             description: The publisher of the solution. For example `Microsoft`. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         product:
             description: The product name of the solution. For example `OMSGallery/Containers`.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         promotion_code:
@@ -63,4 +63,54 @@ azurerm_log_analytics_solution:
             policy: ''
             notes: ''
     attributes: {}
-    timeouts: {}
+    timeouts:
+        create:
+            description: Used when creating the Log Analytics Solution.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the Log Analytics Solution.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the Log Analytics Solution.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the Log Analytics Solution.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbXM0Y3kxc2IyY3RZVzVoYkhsMGFXTnpMWFJsYzNRaUNp
+        QWdiRzlqWVhScGIyNGdQU0FpZDJWemRHVjFjbTl3WlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbkpoYm1S
+        dmJWOXBaQ0lnSW5kdmNtdHpjR0ZqWlNJZ2V3b2dJR3RsWlhCbGNuTWdQU0I3Q2lBZ0lDQWpJRWRs
+        Ym1WeVlYUmxJR0VnYm1WM0lHbGtJR1ZoWTJnZ2RHbHRaU0IzWlNCemQybDBZMmdnZEc4Z1lTQnVa
+        WGNnY21WemIzVnlZMlVnWjNKdmRYQUtJQ0FnSUdkeWIzVndYMjVoYldVZ1BTQmhlblZ5WlhKdFgz
+        SmxjMjkxY21ObFgyZHliM1Z3TG1WNFlXMXdiR1V1Ym1GdFpRb2dJSDBLQ2lBZ1lubDBaVjlzWlc1
+        bmRHZ2dQU0E0Q24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgyeHZaMTloYm1Gc2VYUnBZM05m
+        ZDI5eWEzTndZV05sSWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzVoYldVZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaWF6aHpMWGR2Y210emNHRmpaUzBrZTNKaGJtUnZiVjlwWkM1M2IzSnJjM0JoWTJVdWFH
+        VjRmU0lLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhK
+        alpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ2NtVnpiM1Z5WTJWZlozSnZkWEJm
+        Ym1GdFpTQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlXMWxD
+        aUFnYzJ0MUlDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSlFaWEpIUWpJd01UZ2lDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGVuVnlaWEp0WDJ4dloxOWhibUZzZVhScFkzTmZjMjlzZFhScGIyNGlJQ0psZUdG
+        dGNHeGxJaUI3Q2lBZ2MyOXNkWFJwYjI1ZmJtRnRaU0FnSUNBZ0lDQWdJRDBnSWtOdmJuUmhhVzVs
+        Y2tsdWMybG5hSFJ6SWdvZ0lHeHZZMkYwYVc5dUlDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxj
+        bTFmY21WemIzVnlZMlZmWjNKdmRYQXVaWGhoYlhCc1pTNXNiMk5oZEdsdmJnb2dJSEpsYzI5MWNt
+        TmxYMmR5YjNWd1gyNWhiV1VnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1Wlho
+        aGJYQnNaUzV1WVcxbENpQWdkMjl5YTNOd1lXTmxYM0psYzI5MWNtTmxYMmxrSUQwZ1lYcDFjbVZ5
+        YlY5c2IyZGZZVzVoYkhsMGFXTnpYM2R2Y210emNHRmpaUzVsZUdGdGNHeGxMbWxrQ2lBZ2QyOXlh
+        M053WVdObFgyNWhiV1VnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjlzYjJkZllXNWhiSGwwYVdOelgz
+        ZHZjbXR6Y0dGalpTNWxlR0Z0Y0d4bExtNWhiV1VLQ2lBZ2NHeGhiaUI3Q2lBZ0lDQndkV0pzYVhO
+        b1pYSWdQU0FpVFdsamNtOXpiMlowSWdvZ0lDQWdjSEp2WkhWamRDQWdJRDBnSWs5TlUwZGhiR3hs
+        Y25rdlEyOXVkR0ZwYm1WeVNXNXphV2RvZEhNaUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwTWIyY2dRVzVoYkhsMGFXTnpJRk52YkhWMGFXOXVjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J5WlhOdmRYSmpaU0JwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5YMkZ1WVd4NWRHbGpjMTl6YjJ4MWRHbHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

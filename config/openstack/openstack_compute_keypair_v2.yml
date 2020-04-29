@@ -12,7 +12,7 @@ openstack_compute_keypair_v2:
             notes: ''
         name:
             description: A unique name for the keypair. Changing this creates a new
-            required: true
+            required: false
             policy: ''
             notes: ''
         public_key:
@@ -25,15 +25,13 @@ openstack_compute_keypair_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        public_key:
-            description: See Argument Reference above.
-        fingerprint:
-            description: The fingerprint of the public key.
-        private_key:
-            description: The generated private key when no public key is specified.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        SUdGdUlFVjRhWE4wYVc1bklGQjFZbXhwWXlCTFpYa0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgydGxlWEJoYVhKZmRqSXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

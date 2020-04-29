@@ -7,12 +7,12 @@ aws_config_aggregate_authorization:
     arguments:
         account_id:
             description: Account ID
-            required: true
+            required: false
             policy: ''
             notes: ''
         region:
             description: Region
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -24,3 +24,15 @@ aws_config_aggregate_authorization:
         arn:
             description: The ARN of the authorization
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjl1Wm1sblgyRm5aM0psWjJGMFpWOWhkWFJvYjNKcGVtRjBh
+        Vzl1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJR0ZqWTI5MWJuUmZhV1FnUFNBaU1USXpORFUyTnpnNU1E
+        RXlJZ29nSUhKbFoybHZiaUFnSUNBZ1BTQWlaWFV0ZDJWemRDMHlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwRGIyNW1hV2NnWVdkbmNtVm5ZWFJsSUdGMWRHaHZjbWw2WVhScGIyNXpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCZ1lXTmpiM1Z1ZEY5cFpEcHlaV2RwYjI1Z0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjI1bWFXZGZZV2RuY21WbllYUmxYMkYxZEdodmNtbDZZWFJwYjI0dWJXRnlhMlJ2ZDI0
+        PQ==

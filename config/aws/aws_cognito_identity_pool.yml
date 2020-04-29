@@ -7,13 +7,13 @@ aws_cognito_identity_pool:
     arguments:
         identity_pool_name:
             description: '- The Cognito Identity Pool name.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_unauthenticated_identities:
             description: '- Whether the identity pool supports unauthenticated logins
                 or not.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         developer_provider_name:
@@ -54,3 +54,36 @@ aws_cognito_identity_pool:
         arn:
             description: The ARN of the identity pool.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNOaGJXeGZjSEp2ZG1sa1pYSWlJQ0prWldaaGRXeDBJ
+        aUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdGVTMXpZVzFzTFhCeWIz
+        WnBaR1Z5SWdvZ0lITmhiV3hmYldWMFlXUmhkR0ZmWkc5amRXMWxiblFnUFNBaUpIdG1hV3hsS0NK
+        ellXMXNMVzFsZEdGa1lYUmhMbmh0YkNJcGZTSUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOWpiMmR1
+        YVhSdlgybGtaVzUwYVhSNVgzQnZiMndpSUNKdFlXbHVJaUI3Q2lBZ2FXUmxiblJwZEhsZmNHOXZi
+        Rjl1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBaWFXUmxiblJwZEhrZ2NHOXZiQ0lLSUNCaGJH
+        eHZkMTkxYm1GMWRHaGxiblJwWTJGMFpXUmZhV1JsYm5ScGRHbGxjeUE5SUdaaGJITmxDZ29nSUdO
+        dloyNXBkRzlmYVdSbGJuUnBkSGxmY0hKdmRtbGtaWEp6SUhzS0lDQWdJR05zYVdWdWRGOXBaQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJalpzYUd4cmEyWmlabUkwY1RWcmNIQTVNSFZ5Wm1aaFpTSUtJ
+        Q0FnSUhCeWIzWnBaR1Z5WDI1aGJXVWdJQ0FnSUNBZ0lDQWdJRDBnSW1OdloyNXBkRzh0YVdSd0xu
+        VnpMV1ZoYzNRdE1TNWhiV0Y2YjI1aGQzTXVZMjl0TDNWekxXVmhjM1F0TVY5VWRqQTBPVE5oY0Vv
+        aUNpQWdJQ0J6WlhKMlpYSmZjMmxrWlY5MGIydGxibDlqYUdWamF5QTlJR1poYkhObENpQWdmUW9L
+        SUNCamIyZHVhWFJ2WDJsa1pXNTBhWFI1WDNCeWIzWnBaR1Z5Y3lCN0NpQWdJQ0JqYkdsbGJuUmZh
+        V1FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0kzYTI5a2EzWm1jV1ppTkhGbWEzQXpPV1YxY21abVlX
+        VWlDaUFnSUNCd2NtOTJhV1JsY2w5dVlXMWxJQ0FnSUNBZ0lDQWdJQ0E5SUNKamIyZHVhWFJ2TFds
+        a2NDNTFjeTFsWVhOMExURXVZVzFoZW05dVlYZHpMbU52YlM5bGRTMTNaWE4wTFRGZlduSXlNekZo
+        Y0VwMUlnb2dJQ0FnYzJWeWRtVnlYM05wWkdWZmRHOXJaVzVmWTJobFkyc2dQU0JtWVd4elpRb2dJ
+        SDBLQ2lBZ2MzVndjRzl5ZEdWa1gyeHZaMmx1WDNCeWIzWnBaR1Z5Y3lBOUlIc0tJQ0FnSUNKbmNt
+        RndhQzVtWVdObFltOXZheTVqYjIwaUlDQTlJQ0kzTXpRMk1qUXhOVGs0T1RNMU5UVXlJZ29nSUNB
+        Z0ltRmpZMjkxYm5SekxtZHZiMmRzWlM1amIyMGlJRDBnSWpFeU16UTFOamM0T1RBeE1pNWhjSEJ6
+        TG1kdmIyZHNaWFZ6WlhKamIyNTBaVzUwTG1OdmJTSUtJQ0I5Q2dvZ0lITmhiV3hmY0hKdmRtbGta
+        WEpmWVhKdWN5QWdJQ0FnSUNBZ0lDQWdQU0JiSWlSN1lYZHpYMmxoYlY5ellXMXNYM0J5YjNacFpH
+        VnlMbVJsWm1GMWJIUXVZWEp1ZlNKZENpQWdiM0JsYm1sa1gyTnZibTVsWTNSZmNISnZkbWxrWlhK
+        ZllYSnVjeUE5SUZzaVlYSnVPbUYzY3pwcFlXMDZPakV5TXpRMU5qYzRPVEF4TWpwdmFXUmpMWEJ5
+        YjNacFpHVnlMMlp2Ynk1bGVHRnRjR3hsTG1OdmJTSmRDbjBL
+    import: !!binary |
+        Q2dwRGIyZHVhWFJ2SUVsa1pXNTBhWFI1SUZCdmIyd2dZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQnVZVzFsTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJkdWFYUnZYMmxrWlc1MGFYUjVYM0J2YjJ3dWJXRnlhMlJ2ZDI0PQ==

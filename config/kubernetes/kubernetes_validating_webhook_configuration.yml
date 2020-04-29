@@ -9,13 +9,35 @@ kubernetes_validating_webhook_configuration:
         metadata:
             description: Standard Validating Webhook Configuration metadata. For more
                 info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         webhook:
             description: A list of webhooks and the affected resources and operations.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzWmhiR2xrWVhScGJtZGZkMlZpYUc5dmExOWpi
+        MjVtYVdkMWNtRjBhVzl1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJRzFsZEdGa1lYUmhJSHNLSUNBZ0lH
+        NWhiV1VnUFNBaWRHVnpkQzUwWlhKeVlXWnZjbTB1YVc4aUNpQWdmUW9LSUNCM1pXSm9iMjlySUhz
+        S0lDQWdJRzVoYldVZ1BTQWlkR1Z6ZEM1MFpYSnlZV1p2Y20wdWFXOGlDZ29nSUNBZ1lXUnRhWE56
+        YVc5dVgzSmxkbWxsZDE5MlpYSnphVzl1Y3lBOUlGc2lkakVpTENBaWRqRmlaWFJoTVNKZENnb2dJ
+        Q0FnWTJ4cFpXNTBYMk52Ym1acFp5QjdDaUFnSUNBZ0lITmxjblpwWTJVZ2V3b2dJQ0FnSUNBZ0lH
+        NWhiV1Z6Y0dGalpTQTlJQ0psZUdGdGNHeGxMVzVoYldWemNHRmpaU0lLSUNBZ0lDQWdJQ0J1WVcx
+        bElEMGdJbVY0WVcxd2JHVXRjMlZ5ZG1salpTSUtJQ0FnSUNBZ2ZRb2dJQ0FnZlFvS0lDQWdJSEox
+        YkdVZ2V3b2dJQ0FnSUNCaGNHbGZaM0p2ZFhCeklEMGdXeUpoY0hCeklsMEtJQ0FnSUNBZ1lYQnBY
+        M1psY25OcGIyNXpJRDBnV3lKMk1TSmRDaUFnSUNBZ0lHOXdaWEpoZEdsdmJuTWdQU0JiSWtOU1JV
+        RlVSU0pkQ2lBZ0lDQWdJSEpsYzI5MWNtTmxjeUE5SUZzaVpHVndiRzk1YldWdWRITWlYUW9nSUNB
+        Z0lDQnpZMjl3WlNBOUlDSk9ZVzFsYzNCaFkyVmtJZ29nSUNBZ2ZRb0tJQ0FnSUhOcFpHVmZaV1pt
+        WldOMGN5QTlJQ0pPYjI1bElnb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwV1lXeHBaR0YwYVc1bklGZGxZbWh2YjJzZ1EyOXVabWxuZFhKaGRHbHZiaUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJRzVoYldVc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZkbUZzYVdSaGRHbHVaMTkzWldKb2IyOXJYMk52Ym1acFozVnlZWFJwYjI0
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

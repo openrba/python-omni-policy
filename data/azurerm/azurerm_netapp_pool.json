@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "The name of the NetApp Pool. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group where the NetApp Pool should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "account_name": {
                 "description": "The name of the NetApp account in which the NetApp Pool should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_level": {
                 "description": "The service level of the file system. Valid values include `Premium`, `Standard`, or `Ultra`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "size_in_tb": {
                 "description": "Provisioned size of the pool in TB. Value must be between `4` and `500`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

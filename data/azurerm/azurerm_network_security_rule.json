@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the security rule. This needs to be unique across all Rules in the Network Security Group. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the Network Security Rule. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_security_group_name": {
                 "description": "The name of the Network Security Group that we want to attach the rule to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "protocol": {
                 "description": "Network protocol this rule applies to. Possible values include `Tcp`, `Udp`, `Icmp`, or `*` (which matches all).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -98,19 +98,19 @@
             },
             "access": {
                 "description": "Specifies whether network traffic is allowed or denied. Possible values are `Allow` and `Deny`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "priority": {
                 "description": "Specifies the priority of the rule. The value can be between 100 and 4096. The priority number must be unique for each rule in the collection. The lower the priority number, the higher the priority of the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "direction": {
                 "description": "The direction specifies if rule will be evaluated on incoming or outgoing traffic. Possible values are `Inbound` and `Outbound`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

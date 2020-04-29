@@ -8,12 +8,12 @@ google_logging_billing_account_exclusion:
     arguments:
         billing_account:
             description: The billing account to create the exclusion for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the logging exclusion.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -30,8 +30,26 @@ google_logging_billing_account_exclusion:
         filter:
             description: The filter to apply when excluding logs. Only log entries
                 that match the filter are excluded.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYkc5bloybHVaMTlpYVd4c2FXNW5YMkZqWTI5MWJuUmZa
+        WGhqYkhWemFXOXVJaUFpYlhrdFpYaGpiSFZ6YVc5dUlpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lD
+        QWdJRDBnSW0xNUxXbHVjM1JoYm1ObExXUmxZblZuTFdWNFkyeDFjMmx2YmlJS0lDQmlhV3hzYVc1
+        blgyRmpZMjkxYm5RZ1BTQWlRVUpEUkVWR0xUQXhNak0wTlMxSFNFbEtTMHdpQ2dvZ0lHUmxjMk55
+        YVhCMGFXOXVJRDBnSWtWNFkyeDFaR1VnUjBORklHbHVjM1JoYm1ObElHUmxZblZuSUd4dlozTWlD
+        Z29nSUNNZ1JYaGpiSFZrWlNCaGJHd2dSRVZDVlVjZ2IzSWdiRzkzWlhJZ2MyVjJaWEpwZEhrZ2JX
+        VnpjMkZuWlhNZ2NtVnNZWFJwYm1jZ2RHOGdhVzV6ZEdGdVkyVnpDaUFnWm1sc2RHVnlJRDBnSW5K
+        bGMyOTFjbU5sTG5SNWNHVWdQU0JuWTJWZmFXNXpkR0Z1WTJVZ1FVNUVJSE5sZG1WeWFYUjVJRHc5
+        SUVSRlFsVkhJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwQ2FXeHNhVzVuSUdGalkyOTFiblFnYkc5bloybHVaeUJsZUdOc2RYTnBiMjV6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1ZwY2lCVlVra3NJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5c2IyZG5hVzVuWDJKcGJHeHBibWRmWVdOamIzVnVkRjlsZUdOc2RYTnBiMjR1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

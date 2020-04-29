@@ -7,13 +7,13 @@ aws_waf_regex_match_set:
     arguments:
         name:
             description: The name or description of the Regex Match Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         regex_match_tuple:
             description: The regular expression pattern that you want AWS WAF to search
                 for in web requests,
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -22,3 +22,21 @@ aws_waf_regex_match_set:
         arn:
             description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDNKbFoyVjRYMjFoZEdOb1gzTmxkQ0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQnVZVzFsSUQwZ0ltVjRZVzF3YkdVaUNnb2dJSEpsWjJWNFgyMWhkR05vWDNSMWNH
+        eGxJSHNLSUNBZ0lHWnBaV3hrWDNSdlgyMWhkR05vSUhzS0lDQWdJQ0FnWkdGMFlTQTlJQ0pWYzJW
+        eUxVRm5aVzUwSWdvZ0lDQWdJQ0IwZVhCbElEMGdJa2hGUVVSRlVpSUtJQ0FnSUgwS0NpQWdJQ0J5
+        WldkbGVGOXdZWFIwWlhKdVgzTmxkRjlwWkNBOUlDSWtlMkYzYzE5M1lXWmZjbVZuWlhoZmNHRjBk
+        R1Z5Ymw5elpYUXVaWGhoYlhCc1pTNXBaSDBpQ2lBZ0lDQjBaWGgwWDNSeVlXNXpabTl5YldGMGFX
+        OXVJQ0E5SUNKT1QwNUZJZ29nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5M1lXWmZjbVZuWlho
+        ZmNHRjBkR1Z5Ymw5elpYUWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1VpQ2lBZ2NtVm5aWGhmY0dGMGRHVnlibDl6ZEhKcGJtZHpJ
+        RDBnV3lKdmJtVWlMQ0FpZEhkdklsMEtmUW89
+    import: !!binary |
+        Q2dwWFFVWWdVbVZuWlhnZ1RXRjBZMmdnVTJWMElHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdWcGNpQkpSQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmNtVm5aWGhmYldGMFkyaGZjMlYwTG1oMGJXd3ViV0Z5YTJSdmQyND0=

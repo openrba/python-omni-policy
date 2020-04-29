@@ -14,7 +14,7 @@
             },
             "project_id": {
                 "description": "ID of the project to manage quotas. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -61,35 +61,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "See Argument Reference above."
-            },
-            "volumes": {
-                "description": "See Argument Reference above."
-            },
-            "snapshots": {
-                "description": "See Argument Reference above."
-            },
-            "gigabytes": {
-                "description": "See Argument Reference above."
-            },
-            "per_volume_gigabytes": {
-                "description": "See Argument Reference above."
-            },
-            "backups": {
-                "description": "See Argument Reference above."
-            },
-            "backup_gigabytes": {
-                "description": "See Argument Reference above."
-            },
-            "groups": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

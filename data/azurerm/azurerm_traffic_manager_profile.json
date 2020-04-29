@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the custom header.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the Traffic Manager profile.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,19 +26,19 @@
             },
             "traffic_routing_method": {
                 "description": "Specifies the algorithm used to route traffic, possible values are:",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "dns_config": {
                 "description": "This block specifies the DNS configuration of the Profile, it supports the fields documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "monitor_config": {
                 "description": "This block specifies the Endpoint monitoring configuration for the Profile, it supports the fields documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,25 +50,25 @@
             },
             "relative_name": {
                 "description": "The relative domain name, this is combined with the domain name used by Traffic Manager to form the FQDN which is exported as documented below. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ttl": {
                 "description": "The TTL value of the Profile used by Local DNS resolvers and clients.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol": {
                 "description": "The protocol used by the monitoring checks, supported values are `HTTP`, `HTTPS` and `TCP`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "port": {
                 "description": "The port number used by the monitoring checks.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -110,7 +110,7 @@
             },
             "value": {
                 "description": "The value of custom header. Applicable for Http and Https protocol.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

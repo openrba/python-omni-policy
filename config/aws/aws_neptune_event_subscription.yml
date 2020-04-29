@@ -32,7 +32,7 @@ aws_neptune_event_subscription:
             notes: ''
         sns_topic_arn:
             description: The ARN of the SNS topic to send events to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_ids:
@@ -57,3 +57,42 @@ aws_neptune_event_subscription:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVZ3ZEhWdVpWOWpiSFZ6ZEdWeUlpQWlaR1ZtWVhWc2RDSWdl
+        d29nSUdOc2RYTjBaWEpmYVdSbGJuUnBabWxsY2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lt
+        NWxjSFIxYm1VdFkyeDFjM1JsY2kxa1pXMXZJZ29nSUdWdVoybHVaU0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltNWxjSFIxYm1VaUNpQWdZbUZqYTNWd1gzSmxkR1Z1
+        ZEdsdmJsOXdaWEpwYjJRZ0lDQWdJQ0FnSUNBZ0lDQWdQU0ExQ2lBZ2NISmxabVZ5Y21Wa1gySmhZ
+        MnQxY0Y5M2FXNWtiM2NnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlNRGM2TURBdE1EazZNREFpQ2lBZ2My
+        dHBjRjltYVc1aGJGOXpibUZ3YzJodmRDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQjBjblZsQ2lB
+        Z2FXRnRYMlJoZEdGaVlYTmxYMkYxZEdobGJuUnBZMkYwYVc5dVgyVnVZV0pzWldRZ1BTQWlkSEox
+        WlNJS0lDQmhjSEJzZVY5cGJXMWxaR2xoZEdWc2VTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0owY25WbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgyNWxjSFIxYm1WZlkyeDFjM1JsY2w5cGJu
+        TjBZVzVqWlNJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JqYjNWdWRDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNB
+        eENpQWdZMngxYzNSbGNsOXBaR1Z1ZEdsbWFXVnlJRDBnSWlSN1lYZHpYMjVsY0hSMWJtVmZZMngx
+        YzNSbGNpNWtaV1poZFd4MExtbGtmU0lLSUNCbGJtZHBibVVnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWli
+        bVZ3ZEhWdVpTSUtJQ0JwYm5OMFlXNWpaVjlqYkdGemN5QWdJQ0FnUFNBaVpHSXVjalF1YkdGeVoy
+        VWlDaUFnWVhCd2JIbGZhVzF0WldScFlYUmxiSGtnSUQwZ0luUnlkV1VpQ24wS0NuSmxjMjkxY21O
+        bElDSmhkM05mYzI1elgzUnZjR2xqSWlBaVpHVm1ZWFZzZENJZ2V3b2dJRzVoYldVZ1BTQWlibVZ3
+        ZEhWdVpTMWxkbVZ1ZEhNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmJtVndkSFZ1WlY5bGRtVnVk
+        Rjl6ZFdKelkzSnBjSFJwYjI0aUlDSmtaV1poZFd4MElpQjdDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lD
+        QTlJQ0p1WlhCMGRXNWxMV1YyWlc1MExYTjFZaUlLSUNCemJuTmZkRzl3YVdOZllYSnVJRDBnSWlS
+        N1lYZHpYM051YzE5MGIzQnBZeTVrWldaaGRXeDBMbUZ5Ym4waUNnb2dJSE52ZFhKalpWOTBlWEJs
+        SUQwZ0ltUmlMV2x1YzNSaGJtTmxJZ29nSUhOdmRYSmpaVjlwWkhNZ0lEMGdXeUlrZTJGM2MxOXVa
+        WEIwZFc1bFgyTnNkWE4wWlhKZmFXNXpkR0Z1WTJVdVpYaGhiWEJzWlM1cFpIMGlYUW9LSUNCbGRt
+        VnVkRjlqWVhSbFoyOXlhV1Z6SUQwZ1d3b2dJQ0FnSW0xaGFXNTBaVzVoYm1ObElpd0tJQ0FnSUNK
+        aGRtRnBiR0ZpYVd4cGRIa2lMQW9nSUNBZ0ltTnlaV0YwYVc5dUlpd0tJQ0FnSUNKaVlXTnJkWEFp
+        TEFvZ0lDQWdJbkpsYzNSdmNtRjBhVzl1SWl3S0lDQWdJQ0p5WldOdmRtVnllU0lzQ2lBZ0lDQWla
+        R1ZzWlhScGIyNGlMQW9nSUNBZ0ltWmhhV3h2ZG1WeUlpd0tJQ0FnSUNKbVlXbHNkWEpsSWl3S0lD
+        QWdJQ0p1YjNScFptbGpZWFJwYjI0aUxBb2dJQ0FnSW1OdmJtWnBaM1Z5WVhScGIyNGdZMmhoYm1k
+        bElpd0tJQ0FnSUNKeVpXRmtJSEpsY0d4cFkyRWlMQW9nSUYwS0NpQWdkR0ZuY3lBOUlIc0tJQ0Fn
+        SUNKbGJuWWlJRDBnSW5SbGMzUWlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMjVsY0hSMWJtVmZaWFpsYm5SZmMzVmljMk55YVhCMGFXOXVZQ0JqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdZbmtnZFhOcGJtY2dkR2hsSUdWMlpXNTBJSE4xWW5OamNtbHdkR2x2YmlCdVlX
+        MWxMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhCMGRXNWxYMlYyWlc1MFgzTjFZbk5qY21sd2RHbHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

@@ -8,27 +8,27 @@ azurerm_local_network_gateway:
     arguments:
         name:
             description: The name of the local network gateway. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The location/region where the local network gateway is
-            required: true
+            required: false
             policy: ''
             notes: ''
         gateway_address:
             description: The IP address of the gateway to which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         address_space:
             description: The list of string CIDRs representing the
-            required: true
+            required: false
             policy: ''
             notes: ''
         bgp_settings:
@@ -43,12 +43,12 @@ azurerm_local_network_gateway:
             notes: ''
         asn:
             description: The BGP speaker's ASN.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bgp_peering_address:
             description: The BGP peering address and BGP identifier
-            required: true
+            required: false
             policy: ''
             notes: ''
         peer_weight:

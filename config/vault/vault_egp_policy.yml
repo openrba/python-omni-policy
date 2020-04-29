@@ -7,24 +7,34 @@ vault_egp_policy:
     arguments:
         name:
             description: The name of the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         paths:
             description: List of paths to which the policy will be applied to
-            required: true
+            required: false
             policy: ''
             notes: ''
         enforcement_level:
             description: Enforcement level of Sentinel policy. Can be either `advisory`
                 or `soft-mandatory` or `hard-mandatory`
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: String containing a Sentinel policy
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjlsWjNCZmNHOXNhV041SWlBaVlXeHNiM2N0WVd4c0lpQjdD
+        aUFnYm1GdFpTQTlJQ0poYkd4dmR5MWhiR3dpQ2lBZ2NHRjBhSE1nUFNCYklpb2lYUW9nSUdWdVpt
+        OXlZMlZ0Wlc1MFgyeGxkbVZzSUQwZ0luTnZablF0YldGdVpHRjBiM0o1SWdvS0lDQndiMnhwWTNr
+        Z1BTQThQRVZQVkFwdFlXbHVJRDBnY25Wc1pTQjdDaUFnZEhKMVpRcDlDa1ZQVkFwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJWbmNGOXdiMnhwWTNrdWFIUnRiQzV0WkE9PQ==

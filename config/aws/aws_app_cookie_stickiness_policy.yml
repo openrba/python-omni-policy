@@ -8,23 +8,23 @@ aws_app_cookie_stickiness_policy:
     arguments:
         name:
             description: The name of the stickiness policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         load_balancer:
             description: The name of load balancer to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         lb_port:
             description: The load balancer port to which the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         cookie_name:
             description: The application cookie whose lifetime the ELB's cookie should
                 follow.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -40,3 +40,24 @@ aws_app_cookie_stickiness_policy:
             description: The application cookie whose lifetime the ELB's cookie should
                 follow.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3hpSWlBaWJHSWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ1BTQWlkR1Z6ZEMxc1lpSUtJQ0JoZG1GcGJHRmlhV3hwZEhsZmVtOXVaWE1nUFNCYklu
+        VnpMV1ZoYzNRdE1XRWlYUW9LSUNCc2FYTjBaVzVsY2lCN0NpQWdJQ0JwYm5OMFlXNWpaVjl3YjNK
+        MElDQWdJQ0E5SURnd01EQUtJQ0FnSUdsdWMzUmhibU5sWDNCeWIzUnZZMjlzSUQwZ0ltaDBkSEFp
+        Q2lBZ0lDQnNZbDl3YjNKMElDQWdJQ0FnSUNBZ0lDQTlJRGd3Q2lBZ0lDQnNZbDl3Y205MGIyTnZi
+        Q0FnSUNBZ0lDQTlJQ0pvZEhSd0lnb2dJSDBLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTloY0hCZlky
+        OXZhMmxsWDNOMGFXTnJhVzVsYzNOZmNHOXNhV041SWlBaVptOXZJaUI3Q2lBZ2JtRnRaU0FnSUNB
+        Z0lDQWdJQ0E5SUNKbWIyOWZjRzlzYVdONUlnb2dJR3h2WVdSZlltRnNZVzVqWlhJZ1BTQWlKSHRo
+        ZDNOZlpXeGlMbXhpTG01aGJXVjlJZ29nSUd4aVgzQnZjblFnSUNBZ0lDQWdQU0E0TUFvZ0lHTnZi
+        MnRwWlY5dVlXMWxJQ0FnUFNBaVRYbEJjSEJEYjI5cmFXVWlDbjBL
+    import: !!binary |
+        Q2dwQmNIQnNhV05oZEdsdmJpQmpiMjlyYVdVZ2MzUnBZMnRwYm1WemN5QndiMnhwWTJsbGN5QmpZ
+        VzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElFVk1RaUJ1WVcxbExDQndiM0owTENCaGJt
+        UWdjRzlzYVdONUlHNWhiV1VnYzJWd1lYSmhkR1ZrSUdKNUlHTnZiRzl1Y3lBb1lEcGdLU3dnWlM1
+        bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCZlkyOXZhMmxsWDNOMGFXTnJhVzVsYzNOZmNHOXNhV041TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

@@ -8,7 +8,7 @@ aws_ecs_service:
         name:
             description: The name of the service (up to 255 letters, numbers, hyphens,
                 and underscores)
-            required: true
+            required: false
             policy: ''
             notes: ''
         capacity_provider_strategy:
@@ -136,7 +136,7 @@ aws_ecs_service:
             notes: ''
         task_definition:
             description: The family and revision (`family:revision`
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -152,3 +152,28 @@ aws_ecs_service:
         desired_count:
             description: The number of instances of the task definition
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV056WDNObGNuWnBZMlVpSUNKdGIyNW5ieUlnZXdvZ0lHNWhi
+        V1VnSUNBZ0lDQWdJQ0FnSUNBOUlDSnRiMjVuYjJSaUlnb2dJR05zZFhOMFpYSWdJQ0FnSUNBZ0lD
+        QTlJQ0lrZTJGM2MxOWxZM05mWTJ4MWMzUmxjaTVtYjI4dWFXUjlJZ29nSUhSaGMydGZaR1ZtYVc1
+        cGRHbHZiaUE5SUNJa2UyRjNjMTlsWTNOZmRHRnphMTlrWldacGJtbDBhVzl1TG0xdmJtZHZMbUZ5
+        Ym4waUNpQWdaR1Z6YVhKbFpGOWpiM1Z1ZENBZ0lEMGdNd29nSUdsaGJWOXliMnhsSUNBZ0lDQWdJ
+        Q0E5SUNJa2UyRjNjMTlwWVcxZmNtOXNaUzVtYjI4dVlYSnVmU0lLSUNCa1pYQmxibVJ6WDI5dUlD
+        QWdJQ0FnUFNCYkltRjNjMTlwWVcxZmNtOXNaVjl3YjJ4cFkza3VabTl2SWwwS0NpQWdiM0prWlhK
+        bFpGOXdiR0ZqWlcxbGJuUmZjM1J5WVhSbFoza2dld29nSUNBZ2RIbHdaU0FnUFNBaVltbHVjR0Zq
+        YXlJS0lDQWdJR1pwWld4a0lEMGdJbU53ZFNJS0lDQjlDZ29nSUd4dllXUmZZbUZzWVc1alpYSWdl
+        d29nSUNBZ2RHRnlaMlYwWDJkeWIzVndYMkZ5YmlBOUlDSWtlMkYzYzE5c1lsOTBZWEpuWlhSZloz
+        SnZkWEF1Wm05dkxtRnlibjBpQ2lBZ0lDQmpiMjUwWVdsdVpYSmZibUZ0WlNBZ0lEMGdJbTF2Ym1k
+        dklnb2dJQ0FnWTI5dWRHRnBibVZ5WDNCdmNuUWdJQ0E5SURnd09EQUtJQ0I5Q2dvZ0lIQnNZV05s
+        YldWdWRGOWpiMjV6ZEhKaGFXNTBjeUI3Q2lBZ0lDQjBlWEJsSUNBZ0lDQWdJRDBnSW0xbGJXSmxj
+        azltSWdvZ0lDQWdaWGh3Y21WemMybHZiaUE5SUNKaGRIUnlhV0oxZEdVNlpXTnpMbUYyWVdsc1lX
+        SnBiR2wwZVMxNmIyNWxJR2x1SUZ0MWN5MTNaWE4wTFRKaExDQjFjeTEzWlhOMExUSmlYU0lLSUNC
+        OUNuMEs=
+    import: !!binary |
+        Q2dwRlExTWdjMlZ5ZG1salpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdi
+        bUZ0WldBZ2RHOW5aWFJvWlhJZ2QybDBhQ0JsWTNNZ1kyeDFjM1JsY2lCZ2JtRnRaV0FzSUdVdVp5
+        NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWTNOZmMyVnlkbWxqWlM1b2RHMXNMbTFoY210a2IzZHU=

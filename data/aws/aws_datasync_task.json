@@ -8,13 +8,13 @@
         "arguments": {
             "destination_location_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_location_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,7 +43,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Task."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Task."
+            }
+        },
         "timeouts": {}
     }
 }

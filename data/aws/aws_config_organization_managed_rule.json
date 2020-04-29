@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the rule",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "rule_identifier": {
                 "description": "Identifier of an available AWS Config Managed Rule to call. For available values, see the [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

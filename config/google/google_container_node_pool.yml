@@ -9,7 +9,7 @@ google_container_node_pool:
         cluster:
             description: The cluster to create the node pool for. Cluster must be
                 present in `location` provided for zonal clusters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
@@ -36,7 +36,9 @@ google_container_node_pool:
             description: The maximum number of pods per node in this node pool.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> Note: `node_locations` will not revert to the cluster''s default
+                set of zones'
         name:
             description: The name of the node pool. If left blank, Terraform will
             required: false
@@ -78,12 +80,12 @@ google_container_node_pool:
             notes: ''
         min_node_count:
             description: Minimum number of nodes in the NodePool. Must be >=0 and
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_node_count:
             description: Maximum number of nodes in the NodePool. Must be >= min_node_count.
-            required: true
+            required: false
             policy: ''
             notes: ''
         auto_repair:
@@ -99,13 +101,13 @@ google_container_node_pool:
         max_surge:
             description: The number of additional nodes that can be added to the node
                 pool during
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_unavailable:
             description: The number of nodes that can be simultaneously unavailable
                 during
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

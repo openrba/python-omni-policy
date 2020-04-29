@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the notebook instance (must be unique).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The ARN of the IAM role to be used by the notebook instance which allows SageMaker to call other services on your behalf.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_type": {
                 "description": "The name of ML compute instance type.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,19 +8,19 @@ google_logging_folder_bucket_config:
     arguments:
         folder:
             description: The parent resource that contains the logging bucket.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: 'The location of the bucket. The supported locations are:
                 "global" "us-central1"'
-            required: true
+            required: false
             policy: ''
             notes: ''
         bucket_id:
             description: 'The name of the logging bucket. Logging automatically creates
                 two log buckets: `_Required` and `_Default`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -43,3 +43,19 @@ google_logging_folder_bucket_config:
             description: ' The bucket''s lifecycle such as active or deleted. See
                 [LifecycleState](https://cloud.google.com/logging/docs/reference/v2/rest/v2/billingAccounts.buckets#LogBucket.LifecycleState).'
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWm05c1pHVnlJaUFpWkdWbVlYVnNkQ0lnZXdvSlpHbHpj
+        R3hoZVY5dVlXMWxJRDBnSW5OdmJXVXRabTlzWkdWeUxXNWhiV1VpQ2dsd1lYSmxiblFnSUNBZ0lD
+        QWdQU0FpYjNKbllXNXBlbUYwYVc5dWN5OHhNak0wTlRZM09Ea2lDbjBLQ25KbGMyOTFjbU5sSUNK
+        bmIyOW5iR1ZmYkc5bloybHVaMTltYjJ4a1pYSmZZblZqYTJWMFgyTnZibVpwWnlJZ0ltSmhjMmxq
+        SWlCN0NnbG1iMnhrWlhJZ0lDQWdQU0JuYjI5bmJHVmZabTlzWkdWeUxtUmxabUYxYkhRdWJtRnRa
+        UW9KYkc5allYUnBiMjRnSUQwZ0ltZHNiMkpoYkNJS0NYSmxkR1Z1ZEdsdmJsOWtZWGx6SUQwZ016
+        QUtDV0oxWTJ0bGRGOXBaQ0E5SUNKZlJHVm1ZWFZzZENJS2ZRbz0=
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWda
+        bTlzYkc5M2FXNW5JR1p2Y20xaGREb0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5c2IyZG5hVzVuWDJadmJHUmxjbDlpZFdOclpYUmZZMjl1Wm1sbkxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

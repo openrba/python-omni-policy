@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Name of the build",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "operating_system": {
                 "description": "Operating system that the game server binaries are built to run on. e.g. `WINDOWS_2012` or `AMAZON_LINUX`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_location": {
                 "description": "Information indicating where your game build files are stored. See below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

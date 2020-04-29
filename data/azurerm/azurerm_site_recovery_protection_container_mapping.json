@@ -8,43 +8,43 @@
         "arguments": {
             "name": {
                 "description": "The name of the network mapping.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Name of the resource group where the vault that should be updated is located.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "recovery_vault_name": {
                 "description": "The name of the vault that should be updated.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "recovery_fabric_name": {
                 "description": "Name of fabric that should contains the protection container to map.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "recovery_source_protection_container_name": {
                 "description": "Name of the source protection container to map.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "recovery_target_protection_container_id": {
                 "description": "Id of target protection container to map to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "recovery_replication_policy_id": {
                 "description": "Id of the policy to use for this mapping.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

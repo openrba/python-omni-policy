@@ -12,27 +12,51 @@ openstack_networking_router_route_v2:
             notes: ''
         router_id:
             description: ID of the router this routing entry belongs to. Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_cidr:
             description: "CIDR block to match on the packet\u2019s destination IP.\
                 \ Changing"
-            required: true
+            required: false
             policy: ''
             notes: ''
         next_hop:
             description: IP address of the next hop gateway.  Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        router_id:
-            description: See Argument Reference above.
-        destination_cidr:
-            description: See Argument Reference above.
-        next_hop:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXliM1YwWlhKZmRqSWlJ
+        Q0p5YjNWMFpYSmZNU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUQwZ0luSnZkWFJsY2w4eEln
+        b2dJR0ZrYldsdVgzTjBZWFJsWDNWd0lEMGdJblJ5ZFdVaUNuMEtDbkpsYzI5MWNtTmxJQ0p2Y0dW
+        dWMzUmhZMnRmYm1WMGQyOXlhMmx1WjE5dVpYUjNiM0pyWDNZeUlpQWlibVYwZDI5eWExOHhJaUI3
+        Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnUFNBaWJtVjBkMjl5YTE4eElnb2dJR0ZrYldsdVgzTjBZ
+        WFJsWDNWd0lEMGdJblJ5ZFdVaUNuMEtDbkpsYzI5MWNtTmxJQ0p2Y0dWdWMzUmhZMnRmYm1WMGQy
+        OXlhMmx1WjE5emRXSnVaWFJmZGpJaUlDSnpkV0p1WlhSZk1TSWdld29nSUc1bGRIZHZjbXRmYVdR
+        Z1BTQWlKSHR2Y0dWdWMzUmhZMnRmYm1WMGQyOXlhMmx1WjE5dVpYUjNiM0pyWDNZeUxtNWxkSGR2
+        Y210Zk1TNXBaSDBpQ2lBZ1kybGtjaUFnSUNBZ0lDQTlJQ0l4T1RJdU1UWTRMakU1T1M0d0x6STBJ
+        Z29nSUdsd1gzWmxjbk5wYjI0Z1BTQTBDbjBLQ25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJt
+        VjBkMjl5YTJsdVoxOXliM1YwWlhKZmFXNTBaWEptWVdObFgzWXlJaUFpYVc1MFh6RWlJSHNLSUNC
+        eWIzVjBaWEpmYVdRZ1BTQWlKSHR2Y0dWdWMzUmhZMnRmYm1WMGQyOXlhMmx1WjE5eWIzVjBaWEpm
+        ZGpJdWNtOTFkR1Z5WHpFdWFXUjlJZ29nSUhOMVltNWxkRjlwWkNBOUlDSWtlMjl3Wlc1emRHRmph
+        MTl1WlhSM2IzSnJhVzVuWDNOMVltNWxkRjkyTWk1emRXSnVaWFJmTVM1cFpIMGlDbjBLQ25KbGMy
+        OTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXliM1YwWlhKZmNtOTFkR1ZmZGpJ
+        aUlDSnliM1YwWlhKZmNtOTFkR1ZmTVNJZ2V3b2dJR1JsY0dWdVpITmZiMjRnSUNBZ0lDQWdQU0Ji
+        SW05d1pXNXpkR0ZqYTE5dVpYUjNiM0pyYVc1blgzSnZkWFJsY2w5cGJuUmxjbVpoWTJWZmRqSXVh
+        VzUwWHpFaVhRb2dJSEp2ZFhSbGNsOXBaQ0FnSUNBZ0lDQWdQU0FpSkh0dmNHVnVjM1JoWTJ0ZmJt
+        VjBkMjl5YTJsdVoxOXliM1YwWlhKZmRqSXVjbTkxZEdWeVh6RXVhV1I5SWdvZ0lHUmxjM1JwYm1G
+        MGFXOXVYMk5wWkhJZ1BTQWlNVEF1TUM0eExqQXZNalFpQ2lBZ2JtVjRkRjlvYjNBZ0lDQWdJQ0Fn
+        SUNBOUlDSXhPVEl1TVRZNExqRTVPUzR5TlRRaUNuMEs=
+    import: !!binary |
+        Q2dwU2IzVjBhVzVuSUdWdWRISnBaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklHRWdZ
+        Mjl0WW1sdVpXUWdTVVFnZFhOcGJtY2dkR2hsSUdadmJHeHZkMmx1WnlCbWIzSnRZWFE2SUdCZ1BI
+        SnZkWFJsY2w5cFpENHRjbTkxZEdVdFBHUmxjM1JwYm1GMGFXOXVYMk5wWkhJK0xUeHVaWGgwWDJo
+        dmNENWdZQW9L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0p2ZFhSbGNsOXliM1YwWlY5Mk1pNW9kRzFzTG0x
+        aGNtdGtiM2R1

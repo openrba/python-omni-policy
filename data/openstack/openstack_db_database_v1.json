@@ -8,28 +8,18 @@
         "arguments": {
             "name": {
                 "description": "A unique name for the resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_id": {
                 "description": "The ID for the database instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "Openstack region resource is created in."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "instance_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

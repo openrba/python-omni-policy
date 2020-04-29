@@ -8,24 +8,24 @@ aws_wafregional_rate_based_rule:
         metric_name:
             description: The name or description for the Amazon CloudWatch metric
                 of this rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name or description of the rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rate_key:
             description: Valid value is IP.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rate_limit:
             description: The maximum number of requests, which have an identical value
                 in the field specified by the RateKey, allowed in a five-minute period.
                 Minimum value is 100.
-            required: true
+            required: false
             policy: ''
             notes: ''
         predicate:
@@ -44,3 +44,23 @@ aws_wafregional_rate_based_rule:
         arn:
             description: The ARN of the WAF Regional Rate Based Rule.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtY21WbmFXOXVZV3hmYVhCelpYUWlJQ0pwY0hObGRDSWdl
+        d29nSUc1aGJXVWdQU0FpZEdaSlVGTmxkQ0lLQ2lBZ2FYQmZjMlYwWDJSbGMyTnlhWEIwYjNKeklI
+        c0tJQ0FnSUhSNWNHVWdJRDBnSWtsUVZqUWlDaUFnSUNCMllXeDFaU0E5SUNJeE9USXVNQzQzTGpB
+        dk1qUWlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWGR6WDNkaFpuSmxaMmx2Ym1Gc1gzSmhkR1Zm
+        WW1GelpXUmZjblZzWlNJZ0luZGhabkoxYkdVaUlIc0tJQ0JrWlhCbGJtUnpYMjl1SUNBOUlGc2lZ
+        WGR6WDNkaFpuSmxaMmx2Ym1Gc1gybHdjMlYwTG1sd2MyVjBJbDBLSUNCdVlXMWxJQ0FnSUNBZ0lD
+        QTlJQ0owWmxkQlJsSjFiR1VpQ2lBZ2JXVjBjbWxqWDI1aGJXVWdQU0FpZEdaWFFVWlNkV3hsSWdv
+        S0lDQnlZWFJsWDJ0bGVTQWdJRDBnSWtsUUlnb2dJSEpoZEdWZmJHbHRhWFFnUFNBeE1EQUtDaUFn
+        Y0hKbFpHbGpZWFJsSUhzS0lDQWdJR1JoZEdGZmFXUWdQU0FpSkh0aGQzTmZkMkZtY21WbmFXOXVZ
+        V3hmYVhCelpYUXVhWEJ6WlhRdWFXUjlJZ29nSUNBZ2JtVm5ZWFJsWkNBOUlHWmhiSE5sQ2lBZ0lD
+        QjBlWEJsSUNBZ0lEMGdJa2xRVFdGMFkyZ2lDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwWFFVWWdVbVZuYVc5dVlXd2dVbUYwWlNCQ1lYTmxaQ0JTZFd4bElHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ2FXUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5eVlYUmxYMkpoYzJWa1gzSjFiR1V1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

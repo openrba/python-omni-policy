@@ -7,7 +7,7 @@ aws_appmesh_mesh:
     arguments:
         name:
             description: The name to use for the service mesh.
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
@@ -40,3 +40,11 @@ aws_appmesh_mesh:
         last_updated_date:
             description: The last update date of the service mesh.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQmNIQWdUV1Z6YUNCelpYSjJhV05sSUcxbGMyaGxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR0J1WVcxbFlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCdFpYTm9YMjFsYzJndWFIUnRiQzV0WVhKclpHOTNiZz09

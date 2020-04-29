@@ -14,7 +14,7 @@
             },
             "project_id": {
                 "description": "ID of the project to manage quotas.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -103,56 +103,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "See Argument Reference above."
-            },
-            "fixed_ips": {
-                "description": "See Argument Reference above."
-            },
-            "floating_ips": {
-                "description": "See Argument Reference above."
-            },
-            "injected_file_content_bytes": {
-                "description": "See Argument Reference above."
-            },
-            "injected_file_path_bytes": {
-                "description": "See Argument Reference above."
-            },
-            "injected_files": {
-                "description": "See Argument Reference above."
-            },
-            "key_pairs": {
-                "description": "See Argument Reference above."
-            },
-            "metadata_items": {
-                "description": "See Argument Reference above."
-            },
-            "ram": {
-                "description": "See Argument Reference above."
-            },
-            "security_group_rules": {
-                "description": "See Argument Reference above."
-            },
-            "security_groups": {
-                "description": "See Argument Reference above."
-            },
-            "cores": {
-                "description": "See Argument Reference above."
-            },
-            "instances": {
-                "description": "See Argument Reference above."
-            },
-            "server_groups": {
-                "description": "See Argument Reference above."
-            },
-            "server_group_members": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

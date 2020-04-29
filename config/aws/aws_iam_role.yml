@@ -20,7 +20,7 @@ aws_iam_role:
         assume_role_policy:
             description: The policy that grants an entity permission to assume the
                 role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         force_detach_policies:
@@ -64,3 +64,20 @@ aws_iam_role:
         unique_id:
             description: The stable and unique string identifying the role.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNKdmJHVWlJQ0owWlhOMFgzSnZiR1VpSUhzS0lDQnVZ
+        VzFsSUQwZ0luUmxjM1JmY205c1pTSUtDaUFnWVhOemRXMWxYM0p2YkdWZmNHOXNhV041SUQwZ1BE
+        eEZUMFlLZXdvZ0lDSldaWEp6YVc5dUlqb2dJakl3TVRJdE1UQXRNVGNpTEFvZ0lDSlRkR0YwWlcx
+        bGJuUWlPaUJiQ2lBZ0lDQjdDaUFnSUNBZ0lDSkJZM1JwYjI0aU9pQWljM1J6T2tGemMzVnRaVkp2
+        YkdVaUxBb2dJQ0FnSUNBaVVISnBibU5wY0dGc0lqb2dld29nSUNBZ0lDQWdJQ0pUWlhKMmFXTmxJ
+        am9nSW1Wak1pNWhiV0Y2YjI1aGQzTXVZMjl0SWdvZ0lDQWdJQ0I5TEFvZ0lDQWdJQ0FpUldabVpX
+        TjBJam9nSWtGc2JHOTNJaXdLSUNBZ0lDQWdJbE5wWkNJNklDSWlDaUFnSUNCOUNpQWdYUXA5Q2tW
+        UFJnb0tJQ0IwWVdkeklEMGdld29nSUNBZ2RHRm5MV3RsZVNBOUlDSjBZV2N0ZG1Gc2RXVWlDaUFn
+        ZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwSlFVMGdVbTlzWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2JtRnRa
+        V0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmNtOXNaUzVvZEcxc0xtMWhjbXRrYjNkdQ==

@@ -9,18 +9,18 @@ google_google_project_iam_custom_role:
         role_id:
             description: The camel case role id to use for this role. Cannot contain
                 `-` characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         title:
             description: A human-readable title for the role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         permissions:
             description: The names of the permissions this role grants when bound
                 in an IAM policy. At least one permission must be specified.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:
@@ -40,3 +40,18 @@ google_google_project_iam_custom_role:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmY0hKdmFtVmpkRjlwWVcxZlkzVnpkRzl0WDNKdmJHVWlJ
+        Q0p0ZVMxamRYTjBiMjB0Y205c1pTSWdld29nSUhKdmJHVmZhV1FnSUNBZ0lEMGdJbTE1UTNWemRH
+        OXRVbTlzWlNJS0lDQjBhWFJzWlNBZ0lDQWdJQ0E5SUNKTmVTQkRkWE4wYjIwZ1VtOXNaU0lLSUNC
+        a1pYTmpjbWx3ZEdsdmJpQTlJQ0pCSUdSbGMyTnlhWEIwYVc5dUlnb2dJSEJsY20xcGMzTnBiMjV6
+        SUQwZ1d5SnBZVzB1Y205c1pYTXViR2x6ZENJc0lDSnBZVzB1Y205c1pYTXVZM0psWVhSbElpd2dJ
+        bWxoYlM1eWIyeGxjeTVrWld4bGRHVWlYUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwRGRYTjBiMjFwZW1Wa0lFbEJUU0J3Y205cVpXTjBJSEp2YkdVZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWldseUlGVlNTU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmY0hKdmFtVmpkRjlwWVcxZlkzVnpkRzl0WDNKdmJHVXVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

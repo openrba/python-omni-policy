@@ -8,12 +8,12 @@ google_logging_organization_exclusion:
     arguments:
         name:
             description: The name of the logging exclusion.
-            required: true
+            required: false
             policy: ''
             notes: ''
         org_id:
             description: The organization to create the exclusion in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -30,8 +30,25 @@ google_logging_organization_exclusion:
         filter:
             description: The filter to apply when excluding logs. Only log entries
                 that match the filter are excluded.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYkc5bloybHVaMTl2Y21kaGJtbDZZWFJwYjI1ZlpYaGpi
+        SFZ6YVc5dUlpQWliWGt0WlhoamJIVnphVzl1SWlCN0NpQWdibUZ0WlNBZ0lEMGdJbTE1TFdsdWMz
+        UmhibU5sTFdSbFluVm5MV1Y0WTJ4MWMybHZiaUlLSUNCdmNtZGZhV1FnUFNBaU1USXpORFUyTnpn
+        NUlnb0tJQ0JrWlhOamNtbHdkR2x2YmlBOUlDSkZlR05zZFdSbElFZERSU0JwYm5OMFlXNWpaU0Jr
+        WldKMVp5QnNiMmR6SWdvS0lDQWpJRVY0WTJ4MVpHVWdZV3hzSUVSRlFsVkhJRzl5SUd4dmQyVnlJ
+        SE5sZG1WeWFYUjVJRzFsYzNOaFoyVnpJSEpsYkdGMGFXNW5JSFJ2SUdsdWMzUmhibU5sY3dvZ0lH
+        WnBiSFJsY2lBOUlDSnlaWE52ZFhKalpTNTBlWEJsSUQwZ1oyTmxYMmx1YzNSaGJtTmxJRUZPUkNC
+        elpYWmxjbWwwZVNBOFBTQkVSVUpWUnlJS2ZRbz0=
+    import: !!binary |
+        Q2dwUGNtZGhibWw2WVhScGIyNHRiR1YyWld3Z2JHOW5aMmx1WnlCbGVHTnNkWE5wYjI1eklHTmhi
+        aUJpWlNCcGJYQnZjblJsWkNCMWMybHVaeUIwYUdWcGNpQlZVa2tzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5c2IyZG5hVzVuWDI5eVoyRnVhWHBoZEdsdmJsOWxlR05zZFhOcGIyNHVhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

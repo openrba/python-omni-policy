@@ -8,19 +8,19 @@ aws_codecommit_trigger:
         repository_name:
             description: The name for the repository. This needs to be less than 100
                 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the trigger.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_arn:
             description: The ARN of the resource that is the target for a trigger.
                 For example, the ARN of a topic in Amazon Simple Notification Service
                 (SNS).
-            required: true
+            required: false
             policy: ''
             notes: ''
         custom_data:
@@ -41,8 +41,22 @@ aws_codecommit_trigger:
                 Amazon Simple Notification Service (SNS). If no events are specified,
                 the trigger will run for all repository events. Event types include:
                 `all`, `updateReference`, `createReference`, `deleteReference`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjlrWldOdmJXMXBkRjl5WlhCdmMybDBiM0o1SWlBaWRHVnpk
+        Q0lnZXdvZ0lISmxjRzl6YVhSdmNubGZibUZ0WlNBOUlDSjBaWE4wSWdwOUNncHlaWE52ZFhKalpT
+        QWlZWGR6WDJOdlpHVmpiMjF0YVhSZmRISnBaMmRsY2lJZ0luUmxjM1FpSUhzS0lDQnlaWEJ2YzJs
+        MGIzSjVYMjVoYldVZ1BTQWlKSHRoZDNOZlkyOWtaV052YlcxcGRGOXlaWEJ2YzJsMGIzSjVMblJs
+        YzNRdWNtVndiM05wZEc5eWVWOXVZVzFsZlNJS0NpQWdkSEpwWjJkbGNpQjdDaUFnSUNCdVlXMWxJ
+        Q0FnSUNBZ0lDQWdJQ0FnUFNBaVlXeHNJZ29nSUNBZ1pYWmxiblJ6SUNBZ0lDQWdJQ0FnSUQwZ1d5
+        SmhiR3dpWFFvZ0lDQWdaR1Z6ZEdsdVlYUnBiMjVmWVhKdUlEMGdJaVI3WVhkelgzTnVjMTkwYjNC
+        cFl5NTBaWE4wTG1GeWJuMGlDaUFnZlFwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJSbFkyOXRiV2wwWDNSeWFXZG5aWEl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

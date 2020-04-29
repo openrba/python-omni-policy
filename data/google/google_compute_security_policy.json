@@ -9,7 +9,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the security policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -33,19 +33,19 @@
             },
             "action": {
                 "description": "Action to take when `match` matches the request. Valid values:",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "priority": {
                 "description": "An unique positive integer indicating the priority of evaluation for a rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "match": {
                 "description": "A match condition that incoming traffic is evaluated against.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -75,13 +75,13 @@
             },
             "src_ip_ranges": {
                 "description": "Set of IP addresses or ranges (IPV4 or IPV6",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "expression": {
                 "description": "Textual representation of an expression in Common Expression Language syntax.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

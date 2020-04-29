@@ -9,18 +9,18 @@ aws_waf_web_acl:
             description: Configuration block with action that you want AWS WAF to
                 take when a request doesn't match the criteria in any of the rules
                 that are associated with the web ACL. Detailed below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_name:
             description: The name or description for the Amazon CloudWatch metric
                 of this web ACL.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name or description of the web ACL.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rules:
@@ -45,3 +45,28 @@ aws_waf_web_acl:
         arn:
             description: The ARN of the WAF WebACL.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDJsd2MyVjBJaUFpYVhCelpYUWlJSHNLSUNCdVlXMWxJ
+        RDBnSW5SbVNWQlRaWFFpQ2dvZ0lHbHdYM05sZEY5a1pYTmpjbWx3ZEc5eWN5QjdDaUFnSUNCMGVY
+        QmxJQ0E5SUNKSlVGWTBJZ29nSUNBZ2RtRnNkV1VnUFNBaU1Ua3lMakF1Tnk0d0x6STBJZ29nSUgw
+        S2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5M1lXWmZjblZzWlNJZ0luZGhabkoxYkdVaUlIc0tJQ0Jr
+        WlhCbGJtUnpYMjl1SUNBOUlGc2lZWGR6WDNkaFpsOXBjSE5sZEM1cGNITmxkQ0pkQ2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdQU0FpZEdaWFFVWlNkV3hsSWdvZ0lHMWxkSEpwWTE5dVlXMWxJRDBnSW5SbVYw
+        RkdVblZzWlNJS0NpQWdjSEpsWkdsallYUmxjeUI3Q2lBZ0lDQmtZWFJoWDJsa0lEMGdJaVI3WVhk
+        elgzZGhabDlwY0hObGRDNXBjSE5sZEM1cFpIMGlDaUFnSUNCdVpXZGhkR1ZrSUQwZ1ptRnNjMlVL
+        SUNBZ0lIUjVjR1VnSUNBZ1BTQWlTVkJOWVhSamFDSUtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhk
+        M05mZDJGbVgzZGxZbDloWTJ3aUlDSjNZV1pmWVdOc0lpQjdDaUFnWkdWd1pXNWtjMTl2YmlBZ1BT
+        QmJJbUYzYzE5M1lXWmZhWEJ6WlhRdWFYQnpaWFFpTENBaVlYZHpYM2RoWmw5eWRXeGxMbmRoWm5K
+        MWJHVWlYUW9nSUc1aGJXVWdJQ0FnSUNBZ0lEMGdJblJtVjJWaVFVTk1JZ29nSUcxbGRISnBZMTl1
+        WVcxbElEMGdJblJtVjJWaVFVTk1JZ29LSUNCa1pXWmhkV3gwWDJGamRHbHZiaUI3Q2lBZ0lDQjBl
+        WEJsSUQwZ0lrRk1URTlYSWdvZ0lIMEtDaUFnY25Wc1pYTWdld29nSUNBZ1lXTjBhVzl1SUhzS0lD
+        QWdJQ0FnZEhsd1pTQTlJQ0pDVEU5RFN5SUtJQ0FnSUgwS0NpQWdJQ0J3Y21sdmNtbDBlU0E5SURF
+        S0lDQWdJSEoxYkdWZmFXUWdJRDBnSWlSN1lYZHpYM2RoWmw5eWRXeGxMbmRoWm5KMWJHVXVhV1I5
+        SWdvZ0lDQWdkSGx3WlNBZ0lDQWdQU0FpVWtWSFZVeEJVaUlLSUNCOUNuMEs=
+    import: !!binary |
+        Q2dwWFFVWWdWMlZpSUVGRFRDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnBa
+        R0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmQyVmlYMkZqYkM1b2RHMXNMbTFoY210a2IzZHU=

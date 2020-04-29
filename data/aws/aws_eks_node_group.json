@@ -8,31 +8,31 @@
         "arguments": {
             "cluster_name": {
                 "description": "Name of the EKS Cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "node_group_name": {
                 "description": "Name of the EKS Node Group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "node_role_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "scaling_config": {
                 "description": "Configuration block with scaling settings. Detailed below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_ids": {
                 "description": "Identifiers of EC2 Subnets to associate with the EKS Node Group. These subnets must have the following resource tag: `kubernetes.io/cluster/CLUSTER_NAME` (where `CLUSTER_NAME` is replaced with the name of the EKS Cluster).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

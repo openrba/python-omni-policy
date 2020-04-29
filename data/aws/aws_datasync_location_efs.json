@@ -8,13 +8,13 @@
         "arguments": {
             "ec2_config": {
                 "description": "Configuration block containing EC2 configurations for connecting to the EFS File System.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "efs_file_system_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Location."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the DataSync Location."
+            }
+        },
         "timeouts": {}
     }
 }

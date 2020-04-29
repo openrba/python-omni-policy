@@ -7,7 +7,7 @@ tfe_team_token:
     arguments:
         team_id:
             description: ID of the team.
-            required: true
+            required: false
             policy: ''
             notes: ''
         force_regenerate:
@@ -15,9 +15,17 @@ tfe_team_token:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The ID of the token.
-        token:
-            description: The generated token.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMFptVmZkR1ZoYlNJZ0luUmxjM1FpSUhzS0lDQnVZVzFsSUNBZ0lDQWdJ
+        Q0FnUFNBaWJYa3RkR1ZoYlMxdVlXMWxJZ29nSUc5eVoyRnVhWHBoZEdsdmJpQTlJQ0p0ZVMxdmNt
+        Y3RibUZ0WlNJS2ZRb0tjbVZ6YjNWeVkyVWdJblJtWlY5MFpXRnRYM1J2YTJWdUlpQWlkR1Z6ZENJ
+        Z2V3b2dJSFJsWVcxZmFXUWdQU0FpSkh0MFptVmZkR1ZoYlM1MFpYTjBMbWxrZlNJS2ZRbz0=
+    import: !!binary |
+        Q2dwVVpXRnRJSFJ2YTJWdWN5QmpZVzRnWW1VZ2FXMXdiM0owWldRN0lIVnpaU0JnUEZSRlFVMGdT
+        VVErWUNCaGN5QjBhR1VnYVcxd2IzSjBJRWxFTGlCR2IzSWdaWGhoYlhCc1pUb0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYUm1aUzlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkwWldGdFgzUnZhMlZ1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

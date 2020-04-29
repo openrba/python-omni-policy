@@ -7,12 +7,12 @@ aws_cognito_user_pool_domain:
     arguments:
         domain:
             description: The domain string.
-            required: true
+            required: false
             policy: ''
             notes: ''
         user_pool_id:
             description: The user pool ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate_arn:
@@ -21,5 +21,22 @@ aws_cognito_user_pool_domain:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        aws_account_id:
+            description: The AWS account ID for the user pool owner.
+        cloudfront_distribution_arn:
+            description: The ARN of the CloudFront distribution.
+        s3_bucket:
+            description: The S3 bucket where the static files for this domain are
+                stored.
+        version:
+            description: The app version.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRGIyZHVhWFJ2SUZWelpYSWdVRzl2YkNCRWIyMWhhVzV6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUdSdmJXRnBibUFzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJkdWFYUnZYM1Z6WlhKZmNHOXZiRjlrYjIxaGFXNHViV0Z5YTJSdmQyND0=

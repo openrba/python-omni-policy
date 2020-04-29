@@ -7,7 +7,7 @@ aws_neptune_cluster_parameter_group:
     arguments:
         name:
             description: The name of the neptune parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name_prefix:
@@ -18,7 +18,7 @@ aws_neptune_cluster_parameter_group:
             notes: ''
         family:
             description: The family of the neptune cluster parameter group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -39,7 +39,7 @@ aws_neptune_cluster_parameter_group:
             notes: ''
         value:
             description: The value of the neptune parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         apply_method:
@@ -54,3 +54,18 @@ aws_neptune_cluster_parameter_group:
         arn:
             description: The ARN of the neptune cluster parameter group.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVZ3ZEhWdVpWOWpiSFZ6ZEdWeVgzQmhjbUZ0WlhSbGNsOW5j
+        bTkxY0NJZ0ltVjRZVzF3YkdVaUlIc0tJQ0JtWVcxcGJIa2dJQ0FnSUNBOUlDSnVaWEIwZFc1bE1T
+        SUtJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb2dJR1JsYzJOeWFYQjBhVzl1SUQw
+        Z0ltNWxjSFIxYm1VZ1kyeDFjM1JsY2lCd1lYSmhiV1YwWlhJZ1ozSnZkWEFpQ2dvZ0lIQmhjbUZ0
+        WlhSbGNpQjdDaUFnSUNCdVlXMWxJQ0E5SUNKdVpYQjBkVzVsWDJWdVlXSnNaVjloZFdScGRGOXNi
+        MmNpQ2lBZ0lDQjJZV3gxWlNBOUlERUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwT1pYQjBkVzVsSUVOc2RYTjBaWElnVUdGeVlXMWxkR1Z5SUVkeWIzVndjeUJqWVc0Z1ltVWdh
+        VzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJR0J1WVcxbFlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhCMGRXNWxYMk5zZFhOMFpYSmZjR0Z5WVcxbGRHVnlYMmR5YjNWd0xtaDBiV3d1YldG
+        eWEyUnZkMjQ9

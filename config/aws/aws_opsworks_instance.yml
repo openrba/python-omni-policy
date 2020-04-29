@@ -7,17 +7,17 @@ aws_opsworks_instance:
     arguments:
         instance_type:
             description: The type of instance to start
-            required: true
+            required: false
             policy: ''
             notes: ''
         stack_id:
             description: The id of the stack the instance will belong to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         layer_ids:
             description: The ids of the layers the instance will belong to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         state:

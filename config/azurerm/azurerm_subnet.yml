@@ -15,24 +15,24 @@ azurerm_subnet:
                 `Microsoft.Netapp/volumes`, `Microsoft.ServiceFabricMesh/networks`,
                 `Microsoft.Sql/managedInstances`, `Microsoft.Sql/servers`, `Microsoft.StreamAnalytics/streamingJobs`,
                 `Microsoft.Web/hostingEnvironments` and `Microsoft.Web/serverFarms`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the subnet.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         virtual_network_name:
             description: The name of the virtual network to which to attach the subnet.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         address_prefix:
             description: The address prefix to use for the subnet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         address_prefixes:
@@ -52,24 +52,28 @@ azurerm_subnet:
                 on the subnet. Default value is `false`. Conflicts with enforce_private_link_service_network_policies.
             required: false
             policy: ''
-            notes: Network policies, like network security groups (NSG), are not supported
+            notes:
+            - '-> '
+            - ' Network policies, like network security groups (NSG), are not supported
                 for Private Link Endpoints or Private Link Services. In order to deploy
                 a Private Link Endpoint on a given subnet, you must set the `enforce_private_link_endpoint_network_policies`
                 attribute to `true`. This setting is only applicable for the Private
                 Link Endpoint, for all other resources in the subnet access is controlled
                 based via the Network Security Group which can be configured using
-                the `azurerm_subnet_network_security_group_association` resource.
+                the `azurerm_subnet_network_security_group_association` resource.'
         enforce_private_link_service_network_policies:
             description: Enable or Disable network policies for the private link service
                 on the subnet. Default valule is `false`. Conflicts with `enforce_private_link_endpoint_network_policies`.
             required: false
             policy: ''
-            notes: In order to deploy a Private Link Service on a given subnet, you
-                must set the `enforce_private_link_service_network_policies` attribute
+            notes:
+            - '-> '
+            - ' In order to deploy a Private Link Service on a given subnet, you must
+                set the `enforce_private_link_service_network_policies` attribute
                 to `true`. This setting is only applicable for the Private Link Service,
                 for all other resources in the subnet access is controlled based on
                 the Network Security Group which can be configured using the `azurerm_subnet_network_security_group_association`
-                resource.
+                resource.'
         service_endpoints:
             description: 'The list of Service endpoints to associate with the subnet.
                 Possible values include: `Microsoft.AzureActiveDirectory`, `Microsoft.AzureCosmosDB`,
@@ -80,13 +84,15 @@ azurerm_subnet:
             notes: ''
         service_delegation:
             description: A `service_delegation` block as defined below.
-            required: true
+            required: false
             policy: ''
-            notes: Delegating to services may not be available in all regions. Check
+            notes:
+            - '-> '
+            - ' Delegating to services may not be available in all regions. Check
                 that the service you are delegating to is available in your region
                 using the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/network/vnet/subnet?view=azure-cli-latest#az-network-vnet-subnet-list-available-delegations).
                 Also, `actions` is specific to each service type. The exact list of
-                `actions` needs to be retrieved using the aforementioned [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/network/vnet/subnet?view=azure-cli-latest#az-network-vnet-subnet-list-available-delegations).
+                `actions` needs to be retrieved using the aforementioned [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/network/vnet/subnet?view=azure-cli-latest#az-network-vnet-subnet-list-available-delegations).'
         actions:
             description: A list of Actions which should be delegated. This list is
                 specific to the service to delegate to. Possible values include `Microsoft.Network/networkinterfaces/*`,
@@ -95,8 +101,10 @@ azurerm_subnet:
                 and `Microsoft.Network/virtualNetworks/subnets/unprepareNetworkPolicies/action`.
             required: false
             policy: ''
-            notes: Azure may add default actions depending on the service delegation
-                name and they can't be changed.
+            notes:
+            - '-> '
+            - ' Azure may add default actions depending on the service delegation
+                name and they can''t be changed.'
     attributes:
         id:
             description: The subnet ID.
@@ -109,7 +117,7 @@ azurerm_subnet:
             description: The name of the virtual network in which the subnet is created
                 in
         address_prefix:
-            description: The address prefix for the subnet
+            description: (Deprecated) The address prefix for the subnet
         address_prefixes:
             description: The address prefixes for the subnet
     timeouts:
@@ -144,14 +152,14 @@ azurerm_subnet:
         eVkyVmZaM0p2ZFhCZmJtRnRaU0FnUFNCaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndMbVY0
         WVcxd2JHVXVibUZ0WlFvZ0lIWnBjblIxWVd4ZmJtVjBkMjl5YTE5dVlXMWxJRDBnWVhwMWNtVnli
         VjkyYVhKMGRXRnNYMjVsZEhkdmNtc3VaWGhoYlhCc1pTNXVZVzFsQ2lBZ1lXUmtjbVZ6YzE5d2Nt
-        Vm1hWGdnSUNBZ0lDQWdQU0FpTVRBdU1DNHhMakF2TWpRaUNnb2dJR1JsYkdWbllYUnBiMjRnZXdv
-        Z0lDQWdibUZ0WlNBOUlDSmhZMk4wWlhOMFpHVnNaV2RoZEdsdmJpSUtDaUFnSUNCelpYSjJhV05s
-        WDJSbGJHVm5ZWFJwYjI0Z2V3b2dJQ0FnSUNCdVlXMWxJQ0FnSUQwZ0lrMXBZM0p2YzI5bWRDNURi
-        MjUwWVdsdVpYSkpibk4wWVc1alpTOWpiMjUwWVdsdVpYSkhjbTkxY0hNaUNpQWdJQ0FnSUdGamRH
-        bHZibk1nUFNCYklrMXBZM0p2YzI5bWRDNU9aWFIzYjNKckwzWnBjblIxWVd4T1pYUjNiM0pyY3k5
-        emRXSnVaWFJ6TDJwdmFXNHZZV04wYVc5dUlpd2dJazFwWTNKdmMyOW1kQzVPWlhSM2IzSnJMM1pw
-        Y25SMVlXeE9aWFIzYjNKcmN5OXpkV0p1WlhSekwzQnlaWEJoY21WT1pYUjNiM0pyVUc5c2FXTnBa
-        WE12WVdOMGFXOXVJbDBLSUNBZ0lIMEtJQ0I5Q24wSw==
+        Vm1hWGhsY3lBZ0lDQWdQU0JiSWpFd0xqQXVNUzR3THpJMElsMEtDaUFnWkdWc1pXZGhkR2x2YmlC
+        N0NpQWdJQ0J1WVcxbElEMGdJbUZqWTNSbGMzUmtaV3hsWjJGMGFXOXVJZ29LSUNBZ0lITmxjblpw
+        WTJWZlpHVnNaV2RoZEdsdmJpQjdDaUFnSUNBZ0lHNWhiV1VnSUNBZ1BTQWlUV2xqY205emIyWjBM
+        a052Ym5SaGFXNWxja2x1YzNSaGJtTmxMMk52Ym5SaGFXNWxja2R5YjNWd2N5SUtJQ0FnSUNBZ1lX
+        TjBhVzl1Y3lBOUlGc2lUV2xqY205emIyWjBMazVsZEhkdmNtc3ZkbWx5ZEhWaGJFNWxkSGR2Y210
+        ekwzTjFZbTVsZEhNdmFtOXBiaTloWTNScGIyNGlMQ0FpVFdsamNtOXpiMlowTGs1bGRIZHZjbXN2
+        ZG1seWRIVmhiRTVsZEhkdmNtdHpMM04xWW01bGRITXZjSEpsY0dGeVpVNWxkSGR2Y210UWIyeHBZ
+        MmxsY3k5aFkzUnBiMjRpWFFvZ0lDQWdmUW9nSUgwS2ZRbz0=
     import: !!binary |
         Q2dwVGRXSnVaWFJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUhKbGMyOTFj
         bU5sSUdsa1lDd2daUzVuTGdvSw==

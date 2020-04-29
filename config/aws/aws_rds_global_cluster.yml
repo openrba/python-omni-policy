@@ -40,5 +40,47 @@ aws_rds_global_cluster:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: RDS Global Cluster Amazon Resource Name (ARN)
+        global_cluster_resource_id:
+            description: AWS Region-unique, immutable identifier for the global database
+                cluster. This identifier is found in AWS CloudTrail log entries whenever
+                the AWS KMS key for the DB cluster is accessed
+        id:
+            description: RDS Global Cluster identifier
     timeouts: {}
+    usage: !!binary |
+        Q25CeWIzWnBaR1Z5SUNKaGQzTWlJSHNLSUNCaGJHbGhjeUFnUFNBaWNISnBiV0Z5ZVNJS0lDQnla
+        V2RwYjI0Z1BTQWlkWE10WldGemRDMHlJZ3A5Q2dwd2NtOTJhV1JsY2lBaVlYZHpJaUI3Q2lBZ1lX
+        eHBZWE1nSUQwZ0luTmxZMjl1WkdGeWVTSUtJQ0J5WldkcGIyNGdQU0FpZFhNdGQyVnpkQzB5SWdw
+        OUNncHlaWE52ZFhKalpTQWlZWGR6WDNKa2MxOW5iRzlpWVd4ZlkyeDFjM1JsY2lJZ0ltVjRZVzF3
+        YkdVaUlIc0tJQ0J3Y205MmFXUmxjaUE5SUNKaGQzTXVjSEpwYldGeWVTSUtDaUFnWjJ4dlltRnNY
+        Mk5zZFhOMFpYSmZhV1JsYm5ScFptbGxjaUE5SUNKbGVHRnRjR3hsSWdwOUNncHlaWE52ZFhKalpT
+        QWlZWGR6WDNKa2MxOWpiSFZ6ZEdWeUlpQWljSEpwYldGeWVTSWdld29nSUhCeWIzWnBaR1Z5SUQw
+        Z0ltRjNjeTV3Y21sdFlYSjVJZ29LSUNBaklDNHVMaUJ2ZEdobGNpQmpiMjVtYVdkMWNtRjBhVzl1
+        SUM0dUxnb2dJR1Z1WjJsdVpWOXRiMlJsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWjJ4dlltRnNJ
+        Z29nSUdkc2IySmhiRjlqYkhWemRHVnlYMmxrWlc1MGFXWnBaWElnUFNBaUpIdGhkM05mY21Selgy
+        ZHNiMkpoYkY5amJIVnpkR1Z5TG1WNFlXMXdiR1V1YVdSOUlncDlDZ3B5WlhOdmRYSmpaU0FpWVhk
+        elgzSmtjMTlqYkhWemRHVnlYMmx1YzNSaGJtTmxJaUFpY0hKcGJXRnllU0lnZXdvZ0lIQnliM1pw
+        WkdWeUlEMGdJbUYzY3k1d2NtbHRZWEo1SWdvS0lDQWpJQzR1TGlCdmRHaGxjaUJqYjI1bWFXZDFj
+        bUYwYVc5dUlDNHVMZ29nSUdOc2RYTjBaWEpmYVdSbGJuUnBabWxsY2lBOUlDSWtlMkYzYzE5eVpI
+        TmZZMngxYzNSbGNpNXdjbWx0WVhKNUxtbGtmU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTl5WkhO
+        ZlkyeDFjM1JsY2lJZ0luTmxZMjl1WkdGeWVTSWdld29nSUdSbGNHVnVaSE5mYjI0Z1BTQmJJbUYz
+        YzE5eVpITmZZMngxYzNSbGNsOXBibk4wWVc1alpTNXdjbWx0WVhKNUlsMEtJQ0J3Y205MmFXUmxj
+        aUFnSUQwZ0ltRjNjeTV6WldOdmJtUmhjbmtpQ2dvZ0lDTWdMaTR1SUc5MGFHVnlJR052Ym1acFoz
+        VnlZWFJwYjI0Z0xpNHVDaUFnWlc1bmFXNWxYMjF2WkdVZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNK
+        bmJHOWlZV3dpQ2lBZ1oyeHZZbUZzWDJOc2RYTjBaWEpmYVdSbGJuUnBabWxsY2lBOUlDSWtlMkYz
+        YzE5eVpITmZaMnh2WW1Gc1gyTnNkWE4wWlhJdVpYaGhiWEJzWlM1cFpIMGlDbjBLQ25KbGMyOTFj
+        bU5sSUNKaGQzTmZjbVJ6WDJOc2RYTjBaWEpmYVc1emRHRnVZMlVpSUNKelpXTnZibVJoY25raUlI
+        c0tJQ0J3Y205MmFXUmxjaUE5SUNKaGQzTXVjMlZqYjI1a1lYSjVJZ29LSUNBaklDNHVMaUJ2ZEdo
+        bGNpQmpiMjVtYVdkMWNtRjBhVzl1SUM0dUxnb2dJR05zZFhOMFpYSmZhV1JsYm5ScFptbGxjaUE5
+        SUNJa2UyRjNjMTl5WkhOZlkyeDFjM1JsY2k1elpXTnZibVJoY25rdWFXUjlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYM0prYzE5bmJHOWlZV3hmWTJ4MWMzUmxjbUFnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        R0o1SUhWemFXNW5JSFJvWlNCU1JGTWdSMnh2WW1Gc0lFTnNkWE4wWlhJZ2FXUmxiblJwWm1sbGNp
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WkhOZloyeHZZbUZzWDJOc2RYTjBaWEl1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

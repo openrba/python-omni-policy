@@ -7,12 +7,12 @@ gitlab_group:
     arguments:
         name:
             description: The name of this group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         path:
             description: The path of the group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -53,3 +53,25 @@ gitlab_group:
         runners_token:
             description: The group level registration token to use during runner setup.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmWjNKdmRYQWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaU0lLSUNCd1lYUm9JQ0FnSUNBZ0lDQTlJQ0psZUdGdGNH
+        eGxJZ29nSUdSbGMyTnlhWEIwYVc5dUlEMGdJa0Z1SUdWNFlXMXdiR1VnWjNKdmRYQWlDbjBLQ2k4
+        dklFTnlaV0YwWlNCaElIQnliMnBsWTNRZ2FXNGdkR2hsSUdWNFlXMXdiR1VnWjNKdmRYQUtjbVZ6
+        YjNWeVkyVWdJbWRwZEd4aFlsOXdjbTlxWldOMElpQWlaWGhoYlhCc1pTSWdld29nSUc1aGJXVWdJ
+        Q0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxJZ29nSUdSbGMyTnlhWEIwYVc5dUlDQTlJQ0pCYmlCbGVH
+        RnRjR3hsSUhCeWIycGxZM1FpQ2lBZ2JtRnRaWE53WVdObFgybGtJRDBnSWlSN1oybDBiR0ZpWDJk
+        eWIzVndMbVY0WVcxd2JHVXVhV1I5SWdwOUNnPT0=
+    import: !!binary |
+        YVc1bklHZHliM1Z3Y3dvS1dXOTFJR05oYmlCcGJYQnZjblFnWVNCbmNtOTFjQ0J6ZEdGMFpTQjFj
+        Mmx1WnlCZ2RHVnljbUZtYjNKdElHbHRjRzl5ZENBOGNtVnpiM1Z5WTJVK0lEeHBaRDVnTGlBZ1ZH
+        aGxDbUJwWkdBZ1kyRnVJR0psSUhkb1lYUmxkbVZ5SUhSb1pTQmJaR1YwWVdsc2N5QnZaaUJoSUdk
+        eWIzVndYVnRrWlhSaGFXeHpYMjltWDJGZlozSnZkWEJkSUdGd2FTQjBZV3RsY3lCbWIzSUthWFJ6
+        SUdBNmFXUmdJSFpoYkhWbExDQnpieUJtYjNJZ1pYaGhiWEJzWlRvS0NpQWdJQ0IwWlhKeVlXWnZj
+        bTBnYVcxd2IzSjBJR2RwZEd4aFlsOW5jbTkxY0M1bGVHRnRjR3hsSUdWNFlXMXdiR1VLQ2x0a1pY
+        UmhhV3h6WDI5bVgyRmZaM0p2ZFhCZE9pQm9kSFJ3Y3pvdkwyUnZZM011WjJsMGJHRmlMbU52YlM5
+        bFpTOWhjR2t2WjNKdmRYQnpMbWgwYld3alpHVjBZV2xzY3kxdlppMWhMV2R5YjNWdw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmNtOTFjQzVvZEcxc0xtMWhjbXRrYjNkdQ==

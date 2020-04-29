@@ -7,7 +7,7 @@ aws_batch_job_definition:
     arguments:
         name:
             description: Specifies the name of the job definition.
-            required: true
+            required: false
             policy: ''
             notes: ''
         container_properties:
@@ -36,8 +36,37 @@ aws_batch_job_definition:
             notes: ''
         type:
             description: The type of job definition.  Must be `container`
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: The Amazon Resource Name of the job definition.
+        revision:
+            description: The revision of the job definition.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZbUYwWTJoZmFtOWlYMlJsWm1sdWFYUnBiMjRpSUNKMFpYTjBJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKMFpsOTBaWE4wWDJKaGRHTm9YMnB2WWw5a1pXWnBibWwwYVc5dUln
+        b2dJSFI1Y0dVZ1BTQWlZMjl1ZEdGcGJtVnlJZ29LSUNCamIyNTBZV2x1WlhKZmNISnZjR1Z5ZEds
+        bGN5QTlJRHc4UTA5T1ZFRkpUa1ZTWDFCU1QxQkZVbFJKUlZNS2V3b0pJbU52YlcxaGJtUWlPaUJi
+        SW14eklpd2dJaTFzWVNKZExBb0pJbWx0WVdkbElqb2dJbUoxYzNsaWIzZ2lMQW9KSW0xbGJXOXll
+        U0k2SURFd01qUXNDZ2tpZG1Od2RYTWlPaUF4TEFvSkluWnZiSFZ0WlhNaU9pQmJDaUFnSUNBZ0lI
+        c0tJQ0FnSUNBZ0lDQWlhRzl6ZENJNklIc0tJQ0FnSUNBZ0lDQWdJQ0p6YjNWeVkyVlFZWFJvSWpv
+        Z0lpOTBiWEFpQ2lBZ0lDQWdJQ0FnZlN3S0lDQWdJQ0FnSUNBaWJtRnRaU0k2SUNKMGJYQWlDaUFn
+        SUNBZ0lIMEtJQ0FnSUYwc0Nna2laVzUyYVhKdmJtMWxiblFpT2lCYkNna0pleUp1WVcxbElqb2dJ
+        bFpCVWs1QlRVVWlMQ0FpZG1Gc2RXVWlPaUFpVmtGU1ZrRk1JbjBLQ1Ywc0Nna2liVzkxYm5SUWIy
+        bHVkSE1pT2lCYkNna0pld29nSUNBZ0lDQWdJQ0FnSW5OdmRYSmpaVlp2YkhWdFpTSTZJQ0owYlhB
+        aUxBb2dJQ0FnSUNBZ0lDQWdJbU52Ym5SaGFXNWxjbEJoZEdnaU9pQWlMM1J0Y0NJc0NpQWdJQ0Fn
+        SUNBZ0lDQWljbVZoWkU5dWJIa2lPaUJtWVd4elpRb2dJQ0FnSUNBZ0lIMEtDVjBzQ2lBZ0lDQWlk
+        V3hwYldsMGN5STZJRnNLSUNBZ0lDQWdld29nSUNBZ0lDQWdJQ0pvWVhKa1RHbHRhWFFpT2lBeE1E
+        STBMQW9nSUNBZ0lDQWdJQ0p1WVcxbElqb2dJbTV2Wm1sc1pTSXNDaUFnSUNBZ0lDQWdJbk52Wm5S
+        TWFXMXBkQ0k2SURFd01qUUtJQ0FnSUNBZ2ZRb2dJQ0FnWFFwOUNrTlBUbFJCU1U1RlVsOVFVazlR
+        UlZKVVNVVlRDbjBL
+    import: !!binary |
+        Q2dwQ1lYUmphQ0JLYjJJZ1JHVm1hVzVwZEdsdmJpQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQmhjbTVnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlpWVhSamFGOXFiMkpmWkdWbWFXNXBkR2x2Ymk1b2RHMXNMbTFoY210a2IzZHU=

@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "scope": {
                 "description": "Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -86,31 +86,31 @@
             },
             "storage_account_id": {
                 "description": "Specifies the id of the storage account id where the storage blob is located.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "queue_name": {
                 "description": "Specifies the name of the storage queue where the Event Subscriptio will receive events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "eventhub_id": {
                 "description": "Specifies the id of the eventhub where the Event Subscription will receive events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "hybrid_connection_id": {
                 "description": "Specifies the id of the hybrid connection where the Event Subscription will receive events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "url": {
                 "description": "Specifies the url of the webhook where the Event Subscription will receive events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -134,19 +134,19 @@
             },
             "storage_blob_container_name": {
                 "description": "Specifies the name of the Storage blob container that is the destination of the deadletter events",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "max_delivery_attempts": {
                 "description": "Specifies the maximum number of delivery retry attempts for events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "event_time_to_live": {
                 "description": "Specifies the time to live (in minutes",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

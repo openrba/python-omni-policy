@@ -7,12 +7,12 @@ vault_identity_group_policies:
     arguments:
         policies:
             description: List of policies to assign to the group
-            required: true
+            required: false
             policy: ''
             notes: ''
         group_id:
             description: Group ID to assign policies to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         exclusive:
@@ -20,7 +20,11 @@ vault_identity_group_policies:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        group_name:
-            description: The name of the group that are assigned the policies.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJsa1pXNTBhWFI1WDJkeWIzVndYM0J2YkdsamFXVnpMbWgwYld3dWJXUT0=

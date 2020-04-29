@@ -9,7 +9,7 @@ aws_glacier_vault:
             description: The name of the Vault. Names can be between 1 and 255 characters
                 long and the valid characters are a-z, A-Z, 0-9, '_' (underscore),
                 '-' (hyphen), and '.' (period).
-            required: true
+            required: false
             policy: ''
             notes: ''
         access_policy:
@@ -30,12 +30,12 @@ aws_glacier_vault:
         events:
             description: You can configure a vault to publish a notification for `ArchiveRetrievalCompleted`
                 and `InventoryRetrievalCompleted` events.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sns_topic:
             description: The SNS Topic ARN.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -44,3 +44,28 @@ aws_glacier_vault:
         arn:
             description: The ARN of the vault.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMjV6WDNSdmNHbGpJaUFpWVhkelgzTnVjMTkwYjNCcFl5SWdl
+        d29nSUc1aGJXVWdQU0FpWjJ4aFkybGxjaTF6Ym5NdGRHOXdhV01pQ24wS0NuSmxjMjkxY21ObElD
+        SmhkM05mWjJ4aFkybGxjbDkyWVhWc2RDSWdJbTE1WDJGeVkyaHBkbVVpSUhzS0lDQnVZVzFsSUQw
+        Z0lrMTVRWEpqYUdsMlpTSUtDaUFnYm05MGFXWnBZMkYwYVc5dUlIc0tJQ0FnSUhOdWMxOTBiM0Jw
+        WXlBOUlDSWtlMkYzYzE5emJuTmZkRzl3YVdNdVlYZHpYM051YzE5MGIzQnBZeTVoY201OUlnb2dJ
+        Q0FnWlhabGJuUnpJQ0FnSUQwZ1d5SkJjbU5vYVhabFVtVjBjbWxsZG1Gc1EyOXRjR3hsZEdWa0lp
+        d2dJa2x1ZG1WdWRHOXllVkpsZEhKcFpYWmhiRU52YlhCc1pYUmxaQ0pkQ2lBZ2ZRb0tJQ0JoWTJO
+        bGMzTmZjRzlzYVdONUlEMGdQRHhGVDBZS2V3b2dJQ0FnSWxabGNuTnBiMjRpT2lJeU1ERXlMVEV3
+        TFRFM0lpd0tJQ0FnSUNKVGRHRjBaVzFsYm5RaU9sc0tJQ0FnSUNBZ0lIc0tJQ0FnSUNBZ0lDQWdJ
+        Q0pUYVdRaU9pQWlZV1JrTFhKbFlXUXRiMjVzZVMxd1pYSnRJaXdLSUNBZ0lDQWdJQ0FnSUNKUWNt
+        bHVZMmx3WVd3aU9pQWlLaUlzQ2lBZ0lDQWdJQ0FnSUNBaVJXWm1aV04wSWpvZ0lrRnNiRzkzSWl3
+        S0lDQWdJQ0FnSUNBZ0lDSkJZM1JwYjI0aU9pQmJDaUFnSUNBZ0lDQWdJQ0FnSUNBaVoyeGhZMmxs
+        Y2pwSmJtbDBhV0YwWlVwdllpSXNDaUFnSUNBZ0lDQWdJQ0FnSUNBaVoyeGhZMmxsY2pwSFpYUkti
+        MkpQZFhSd2RYUWlDaUFnSUNBZ0lDQWdJQ0JkTEFvZ0lDQWdJQ0FnSUNBZ0lsSmxjMjkxY21ObElq
+        b2dJbUZ5YmpwaGQzTTZaMnhoWTJsbGNqcGxkUzEzWlhOMExURTZORE15T1RneE1UUTJPVEUyT25a
+        aGRXeDBjeTlOZVVGeVkyaHBkbVVpQ2lBZ0lDQWdJQ0I5Q2lBZ0lDQmRDbjBLUlU5R0Nnb2dJSFJo
+        WjNNZ1BTQjdDaUFnSUNCVVpYTjBJRDBnSWsxNVFYSmphR2wyWlNJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwSGJHRmphV1Z5SUZaaGRXeDBjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2RHaGxJ
+        R0J1WVcxbFlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkdGamFXVnlYM1poZFd4MExtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -7,12 +7,12 @@ aws_ses_domain_mail_from:
     arguments:
         domain:
             description: Verified domain name to generate DKIM tokens for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         mail_from_domain:
             description: Subdomain (of above domain
-            required: true
+            required: false
             policy: ''
             notes: ''
         behavior_on_mx_failure:
@@ -26,3 +26,34 @@ aws_ses_domain_mail_from:
         id:
             description: The domain name.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDJSdmJXRnBibDl0WVdsc1gyWnliMjBpSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdaRzl0WVdsdUlDQWdJQ0FnSUNBZ0lDQTlJQ0lrZTJGM2MxOXpaWE5mWkc5dFlX
+        bHVYMmxrWlc1MGFYUjVMbVY0WVcxd2JHVXVaRzl0WVdsdWZTSUtJQ0J0WVdsc1gyWnliMjFmWkc5
+        dFlXbHVJRDBnSW1KdmRXNWpaUzRrZTJGM2MxOXpaWE5mWkc5dFlXbHVYMmxrWlc1MGFYUjVMbVY0
+        WVcxd2JHVXVaRzl0WVdsdWZTSUtmUW9LSXlCRmVHRnRjR3hsSUZORlV5QkViMjFoYVc0Z1NXUmxi
+        blJwZEhrS2NtVnpiM1Z5WTJVZ0ltRjNjMTl6WlhOZlpHOXRZV2x1WDJsa1pXNTBhWFI1SWlBaVpY
+        aGhiWEJzWlNJZ2V3b2dJR1J2YldGcGJpQTlJQ0psZUdGdGNHeGxMbU52YlNJS2ZRb0tJeUJGZUdG
+        dGNHeGxJRkp2ZFhSbE5UTWdUVmdnY21WamIzSmtDbkpsYzI5MWNtTmxJQ0poZDNOZmNtOTFkR1Ux
+        TTE5eVpXTnZjbVFpSUNKbGVHRnRjR3hsWDNObGMxOWtiMjFoYVc1ZmJXRnBiRjltY205dFgyMTRJ
+        aUI3Q2lBZ2VtOXVaVjlwWkNBOUlDSWtlMkYzYzE5eWIzVjBaVFV6WDNwdmJtVXVaWGhoYlhCc1pT
+        NXBaSDBpQ2lBZ2JtRnRaU0FnSUNBOUlDSWtlMkYzYzE5elpYTmZaRzl0WVdsdVgyMWhhV3hmWm5K
+        dmJTNWxlR0Z0Y0d4bExtMWhhV3hmWm5KdmJWOWtiMjFoYVc1OUlnb2dJSFI1Y0dVZ0lDQWdQU0Fp
+        VFZnaUNpQWdkSFJzSUNBZ0lDQTlJQ0kyTURBaUNpQWdjbVZqYjNKa2N5QTlJRnNpTVRBZ1ptVmxa
+        R0poWTJzdGMyMTBjQzUxY3kxbFlYTjBMVEV1WVcxaGVtOXVjMlZ6TG1OdmJTSmRJQ01nUTJoaGJt
+        ZGxJSFJ2SUhSb1pTQnlaV2RwYjI0Z2FXNGdkMmhwWTJnZ1lHRjNjMTl6WlhOZlpHOXRZV2x1WDJs
+        a1pXNTBhWFI1TG1WNFlXMXdiR1ZnSUdseklHTnlaV0YwWldRS2ZRb0tJeUJGZUdGdGNHeGxJRkp2
+        ZFhSbE5UTWdWRmhVSUhKbFkyOXlaQ0JtYjNJZ1UxQkdDbkpsYzI5MWNtTmxJQ0poZDNOZmNtOTFk
+        R1UxTTE5eVpXTnZjbVFpSUNKbGVHRnRjR3hsWDNObGMxOWtiMjFoYVc1ZmJXRnBiRjltY205dFgz
+        UjRkQ0lnZXdvZ0lIcHZibVZmYVdRZ1BTQWlKSHRoZDNOZmNtOTFkR1UxTTE5NmIyNWxMbVY0WVcx
+        d2JHVXVhV1I5SWdvZ0lHNWhiV1VnSUNBZ1BTQWlKSHRoZDNOZmMyVnpYMlJ2YldGcGJsOXRZV2xz
+        WDJaeWIyMHVaWGhoYlhCc1pTNXRZV2xzWDJaeWIyMWZaRzl0WVdsdWZTSUtJQ0IwZVhCbElDQWdJ
+        RDBnSWxSWVZDSUtJQ0IwZEd3Z0lDQWdJRDBnSWpZd01DSUtJQ0J5WldOdmNtUnpJRDBnV3lKMlBY
+        TndaakVnYVc1amJIVmtaVHBoYldGNmIyNXpaWE11WTI5dElDMWhiR3dpWFFwOUNnPT0=
+    import: !!binary |
+        Q2dwTlFVbE1JRVpTVDAwZ1pHOXRZV2x1SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUdSdmJXRnBibUFnWVhSMGNtbGlkWFJsTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZlpHOXRZV2x1WDIxaGFXeGZabkp2YlM1b2RHMXNMbTFoY210a2IzZHU=

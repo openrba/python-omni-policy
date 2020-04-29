@@ -8,19 +8,19 @@
         "arguments": {
             "application_id": {
                 "description": "The application ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_stream_arn": {
                 "description": "The Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The IAM role that authorizes Amazon Pinpoint to publish events to the stream in your account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

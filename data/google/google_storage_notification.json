@@ -9,19 +9,19 @@
         "arguments": {
             "bucket": {
                 "description": "The name of the bucket.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "payload_format": {
                 "description": "The desired content of the Payload. One of `\"JSON_API_V1\"` or `\"NONE\"`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "topic": {
                 "description": "The Cloud PubSub topic to which this subscription publishes. Expects either the ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,14 +44,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "notification_id": {
-                "description": "The ID of the created notification."
-            },
-            "self_link": {
-                "description": "The URI of the created resource."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

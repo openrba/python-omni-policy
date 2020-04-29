@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the webhook.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "authentication": {
                 "description": "The type of authentication  to use. One of `IP`, `GITHUB_HMAC`, or `UNAUTHENTICATED`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,19 +26,19 @@
             },
             "filter": {
                 "description": "One or more `filter` blocks. Filter blocks are documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_action": {
                 "description": "The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "target_pipeline": {
                 "description": "The name of the pipeline.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,13 +62,13 @@
             },
             "json_path": {
                 "description": "The [JSON path](https://github.com/json-path/JsonPath",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "match_equals": {
                 "description": "The value to match on (e.g. `refs/heads/{Branch}`). See [AWS docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -7,14 +7,14 @@ aws_appautoscaling_policy:
     arguments:
         name:
             description: The name of the policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_type:
-            description: For DynamoDB, only `TargetTrackingScaling` is supported.
-                For Amazon ECS, Spot Fleet, and Amazon RDS, both `StepScaling` and
-                `TargetTrackingScaling` are supported. For any other service, only
-                `StepScaling` is supported. Defaults to `StepScaling`.
+            description: The policy type. Valid values are `StepScaling` and `TargetTrackingScaling`.
+                Defaults to `StepScaling`. Certain services only support only one
+                policy type. For more information see the [Target Tracking Scaling
+                Policies](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html
             required: false
             policy: ''
             notes: ''
@@ -22,21 +22,21 @@ aws_appautoscaling_policy:
             description: 'The resource type and unique identifier string for the resource
                 associated with the scaling policy. Documentation can be found in
                 the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)'
-            required: true
+            required: false
             policy: ''
             notes: ''
         scalable_dimension:
             description: 'The scalable dimension of the scalable target. Documentation
                 can be found in the `ScalableDimension` parameter at: [AWS Application
                 Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)'
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_namespace:
             description: 'The AWS service namespace of the scalable target. Documentation
                 can be found in the `ServiceNamespace` parameter at: [AWS Application
                 Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)'
-            required: true
+            required: false
             policy: ''
             notes: ''
         step_scaling_policy_configuration:
@@ -51,5 +51,21 @@ aws_appautoscaling_policy:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: The ARN assigned by AWS to the scaling policy.
+        name:
+            description: The scaling policy's name.
+        policy_type:
+            description: The scaling policy's type.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwQmNIQnNhV05oZEdsdmJpQkJkWFJ2VTJOaGJHbHVaeUJRYjJ4cFkza2dZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjMlZ5ZG1salpTMXVZVzFsYzNCaFkyVmdJQ3dnWUhKbGMy
+        OTFjbU5sTFdsa1lDd2dZSE5qWVd4aFlteGxMV1JwYldWdWMybHZibUFnWVc1a0lHQndiMnhwWTNr
+        dGJtRnRaV0FnYzJWd1lYSmhkR1ZrSUdKNUlHQXZZQzRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCaGRYUnZjMk5oYkdsdVoxOXdiMnhwWTNrdWFIUnRiQzV0WVhKclpHOTNiZz09

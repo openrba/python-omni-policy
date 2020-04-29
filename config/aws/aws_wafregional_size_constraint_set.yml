@@ -8,7 +8,7 @@ aws_wafregional_size_constraint_set:
     arguments:
         name:
             description: The name or description of the Size Constraint Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size_constraints:
@@ -21,3 +21,19 @@ aws_wafregional_size_constraint_set:
         id:
             description: The ID of the WAF Size Constraint Set.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtY21WbmFXOXVZV3hmYzJsNlpWOWpiMjV6ZEhKaGFXNTBY
+        M05sZENJZ0luTnBlbVZmWTI5dWMzUnlZV2x1ZEY5elpYUWlJSHNLSUNCdVlXMWxJRDBnSW5SbWMy
+        bDZaVjlqYjI1emRISmhhVzUwY3lJS0NpQWdjMmw2WlY5amIyNXpkSEpoYVc1MGN5QjdDaUFnSUNC
+        MFpYaDBYM1J5WVc1elptOXliV0YwYVc5dUlEMGdJazVQVGtVaUNpQWdJQ0JqYjIxd1lYSnBjMjl1
+        WDI5d1pYSmhkRzl5SUQwZ0lrVlJJZ29nSUNBZ2MybDZaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJ
+        Q0kwTURrMklnb0tJQ0FnSUdacFpXeGtYM1J2WDIxaGRHTm9JSHNLSUNBZ0lDQWdkSGx3WlNBOUlD
+        SkNUMFJaSWdvZ0lDQWdmUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwWFFVWWdVMmw2WlNCRGIyNXpkSEpoYVc1MElGTmxkQ0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJR2xrTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5emFYcGxYMk52Ym5OMGNtRnBiblJmYzJWMExtaDBiV3d1YldG
+        eWEyUnZkMjQ9

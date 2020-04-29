@@ -25,7 +25,7 @@ datadog_integration_pagerduty:
             notes: ''
         subdomain:
             description: "Your PagerDuty account\u2019s personalized subdomain name."
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_token:
@@ -35,3 +35,10 @@ datadog_integration_pagerduty:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFXNTBaV2R5WVhScGIyNWZjR0ZuWlhKa2RYUjVMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

@@ -7,7 +7,7 @@ postgresql_postgresql_schema:
     arguments:
         name:
             description: The name of the schema. Must be unique in the PostgreSQL
-            required: true
+            required: false
             policy: ''
             notes: ''
         database:
@@ -71,3 +71,13 @@ postgresql_postgresql_schema:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        SUVWNFlXMXdiR1VLQ21Cd2IzTjBaM0psYzNGc1gzTmphR1Z0WVdBZ2MzVndjRzl5ZEhNZ2FXMXdi
+        M0owYVc1bklISmxjMjkxY21ObGN5NGdJRk4xY0hCdmMybHVaeUIwYUdVZ1ptOXNiRzkzYVc1bkNs
+        UmxjbkpoWm05eWJUb0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYQnZjM1JuY21WemNXd3ZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjRzl6ZEdkeVpYTnhiRjl6WTJobGJXRXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

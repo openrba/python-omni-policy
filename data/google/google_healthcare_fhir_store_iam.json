@@ -9,19 +9,19 @@
         "arguments": {
             "fhir_store_id": {
                 "description": "The FHIR store ID, in the form",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "member/members": {
                 "description": "Identities that will be granted the privilege in `role`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "The role that should be applied. Only one",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

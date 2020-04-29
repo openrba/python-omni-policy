@@ -6,7 +6,7 @@ github_repository:
     arguments:
         name:
             description: The name of the repository.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -127,3 +127,16 @@ github_repository:
             description: URL that can be provided to `svn checkout` to check out the
                 repository via GitHub's Subversion protocol emulation.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUm9kV0pmY21Wd2IzTnBkRzl5ZVNJZ0ltVjRZVzF3YkdVaUlIc0tJ
+        Q0J1WVcxbElDQWdJQ0FnSUNBOUlDSmxlR0Z0Y0d4bElnb2dJR1JsYzJOeWFYQjBhVzl1SUQwZ0lr
+        MTVJR0YzWlhOdmJXVWdZMjlrWldKaGMyVWlDZ29nSUhCeWFYWmhkR1VnUFNCMGNuVmxDZ29nSUhS
+        bGJYQnNZWFJsSUhzS0lDQWdJRzkzYm1WeUlEMGdJbWRwZEdoMVlpSUtJQ0FnSUhKbGNHOXphWFJ2
+        Y25rZ1BTQWlkR1Z5Y21GbWIzSnRMVzF2WkhWc1pTMTBaVzF3YkdGMFpTSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwU1pYQnZjMmwwYjNKcFpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdi
+        bUZ0WldBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5eVpYQnZjMmwwYjNKNUxtaDBiV3d1YldGeWEyUnZkMjQ9

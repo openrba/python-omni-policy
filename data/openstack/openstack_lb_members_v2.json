@@ -14,7 +14,7 @@
             },
             "pool_id": {
                 "description": "The id of the pool that members will be assigned to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,13 +38,13 @@
             },
             "address": {
                 "description": "The IP address of the members to receive traffic from",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol_port": {
                 "description": "The port on which to listen for client traffic.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -61,17 +61,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the members."
-            },
-            "pool_id": {
-                "description": "See Argument Reference above."
-            },
-            "member": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

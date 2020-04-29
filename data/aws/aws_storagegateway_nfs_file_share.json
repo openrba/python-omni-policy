@@ -8,25 +8,25 @@
         "arguments": {
             "client_list": {
                 "description": "The list of clients that are allowed to access the file gateway. The list must contain either valid IP addresses or valid CIDR blocks. Set to `[\"0.0.0.0/0\"]` to not limit access. Minimum 1 item. Maximum 100 items.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "gateway_arn": {
                 "description": "Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location_arn": {
                 "description": "The ARN of the backed storage used for storing file data.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role_arn": {
                 "description": "The ARN of the AWS Identity and Access Management (IAM",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -91,7 +91,20 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "Amazon Resource Name (ARN) of the NFS File Share."
+            },
+            "arn": {
+                "description": "Amazon Resource Name (ARN) of the NFS File Share."
+            },
+            "fileshare_id": {
+                "description": "ID of the NFS File Share."
+            },
+            "path": {
+                "description": "File share path used by the NFS client to identify the mount point."
+            }
+        },
         "timeouts": {}
     }
 }

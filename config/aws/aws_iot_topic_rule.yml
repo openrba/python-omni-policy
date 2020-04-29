@@ -7,7 +7,7 @@ aws_iot_topic_rule:
     arguments:
         name:
             description: The name of the rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -17,50 +17,50 @@ aws_iot_topic_rule:
             notes: ''
         enabled:
             description: Specifies whether the rule is enabled.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sql:
             description: The SQL statement used to query the topic. For more information,
                 see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference
-            required: true
+            required: false
             policy: ''
             notes: ''
         sql_version:
             description: The version of the SQL rules engine to use when evaluating
                 the rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         alarm_name:
             description: The CloudWatch alarm name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The ARN of the IAM role that grants access.
-            required: true
+            required: false
             policy: ''
             notes: ''
         state_reason:
             description: The reason for the alarm change.
-            required: true
+            required: false
             policy: ''
             notes: ''
         state_value:
             description: 'The value of the alarm state. Acceptable values are: OK,
                 ALARM, INSUFFICIENT_DATA.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_name:
             description: The CloudWatch metric name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_namespace:
             description: The CloudWatch metric namespace name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_timestamp:
@@ -70,17 +70,17 @@ aws_iot_topic_rule:
             notes: ''
         metric_unit:
             description: 'The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)'
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_value:
             description: The CloudWatch metric value.
-            required: true
+            required: false
             policy: ''
             notes: ''
         hash_key_field:
             description: The hash key name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         hash_key_type:
@@ -90,7 +90,7 @@ aws_iot_topic_rule:
             notes: ''
         hash_key_value:
             description: The hash key value.
-            required: true
+            required: false
             policy: ''
             notes: ''
         payload_field:
@@ -115,32 +115,32 @@ aws_iot_topic_rule:
             notes: ''
         table_name:
             description: The name of the DynamoDB table.
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint:
             description: The endpoint of your Elasticsearch domain.
-            required: true
+            required: false
             policy: ''
             notes: ''
         id:
             description: The unique identifier for the document you are storing.
-            required: true
+            required: false
             policy: ''
             notes: ''
         index:
             description: The Elasticsearch index where you want to store your data.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of document you are storing.
-            required: true
+            required: false
             policy: ''
             notes: ''
         delivery_stream_name:
             description: The delivery stream name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         separator:
@@ -157,49 +157,49 @@ aws_iot_topic_rule:
             notes: ''
         stream_name:
             description: The name of the Amazon Kinesis stream.
-            required: true
+            required: false
             policy: ''
             notes: ''
         function_arn:
             description: The ARN of the Lambda function.
-            required: true
+            required: false
             policy: ''
             notes: ''
         topic:
             description: The name of the MQTT topic the message should be republished
                 to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bucket_name:
             description: The Amazon S3 bucket name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
             description: The object key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         message_format:
             description: The message format of the message to publish. Accepted values
                 are "JSON" and "RAW".
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_arn:
             description: The ARN of the SNS topic.
-            required: true
+            required: false
             policy: ''
             notes: ''
         queue_url:
             description: The URL of the Amazon SQS queue.
-            required: true
+            required: false
             policy: ''
             notes: ''
         use_base64:
             description: Specifies whether to use Base64 encoding.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -208,3 +208,35 @@ aws_iot_topic_rule:
         arn:
             description: The ARN of the topic rule
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhVzkwWDNSdmNHbGpYM0oxYkdVaUlDSnlkV3hsSWlCN0NpQWdi
+        bUZ0WlNBZ0lDQWdJQ0FnUFNBaVRYbFNkV3hsSWdvZ0lHUmxjMk55YVhCMGFXOXVJRDBnSWtWNFlX
+        MXdiR1VnY25Wc1pTSUtJQ0JsYm1GaWJHVmtJQ0FnSUNBOUlIUnlkV1VLSUNCemNXd2dJQ0FnSUNB
+        Z0lDQTlJQ0pUUlV4RlExUWdLaUJHVWs5TklDZDBiM0JwWXk5MFpYTjBKeUlLSUNCemNXeGZkbVZ5
+        YzJsdmJpQTlJQ0l5TURFMkxUQXpMVEl6SWdvS0lDQnpibk1nZXdvZ0lDQWdiV1Z6YzJGblpWOW1i
+        M0p0WVhRZ1BTQWlVa0ZYSWdvZ0lDQWdjbTlzWlY5aGNtNGdJQ0FnSUNBZ1BTQWlKSHRoZDNOZmFX
+        RnRYM0p2YkdVdWNtOXNaUzVoY201OUlnb2dJQ0FnZEdGeVoyVjBYMkZ5YmlBZ0lDQWdQU0FpSkh0
+        aGQzTmZjMjV6WDNSdmNHbGpMbTE1ZEc5d2FXTXVZWEp1ZlNJS0lDQjlDbjBLQ25KbGMyOTFjbU5s
+        SUNKaGQzTmZjMjV6WDNSdmNHbGpJaUFpYlhsMGIzQnBZeUlnZXdvZ0lHNWhiV1VnUFNBaWJYbDBi
+        M0JwWXlJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cFlXMWZjbTlzWlNJZ0luSnZiR1VpSUhzS0lD
+        QnVZVzFsSUQwZ0ltMTVjbTlzWlNJS0NpQWdZWE56ZFcxbFgzSnZiR1ZmY0c5c2FXTjVJRDBnUER4
+        RlQwWUtld29nSUNKV1pYSnphVzl1SWpvZ0lqSXdNVEl0TVRBdE1UY2lMQW9nSUNKVGRHRjBaVzFs
+        Ym5RaU9pQmJDaUFnSUNCN0NpQWdJQ0FnSUNKRlptWmxZM1FpT2lBaVFXeHNiM2NpTEFvZ0lDQWdJ
+        Q0FpVUhKcGJtTnBjR0ZzSWpvZ2V3b2dJQ0FnSUNBZ0lDSlRaWEoyYVdObElqb2dJbWx2ZEM1aGJX
+        RjZiMjVoZDNNdVkyOXRJZ29nSUNBZ0lDQjlMQW9nSUNBZ0lDQWlRV04wYVc5dUlqb2dJbk4wY3pw
+        QmMzTjFiV1ZTYjJ4bElnb2dJQ0FnZlFvZ0lGMEtmUXBGVDBZS2ZRb0tjbVZ6YjNWeVkyVWdJbUYz
+        YzE5cFlXMWZjbTlzWlY5d2IyeHBZM2tpSUNKcFlXMWZjRzlzYVdONVgyWnZjbDlzWVcxaVpHRWlJ
+        SHNLSUNCdVlXMWxJRDBnSW0xNWNHOXNhV041SWdvZ0lISnZiR1VnUFNBaUpIdGhkM05mYVdGdFgz
+        SnZiR1V1Y205c1pTNXBaSDBpQ2dvZ0lIQnZiR2xqZVNBOUlEdzhSVTlHQ25zS0lDQWlWbVZ5YzJs
+        dmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWlVM1JoZEdWdFpXNTBJam9nV3dvZ0lDQWdld29n
+        SUNBZ0lDQWdJQ0pGWm1abFkzUWlPaUFpUVd4c2IzY2lMQW9nSUNBZ0lDQWdJQ0pCWTNScGIyNGlP
+        aUJiQ2lBZ0lDQWdJQ0FnSUNBZ0lDSnpibk02VUhWaWJHbHphQ0lLSUNBZ0lDQWdJQ0JkTEFvZ0lD
+        QWdJQ0FnSUNKU1pYTnZkWEpqWlNJNklDSWtlMkYzYzE5emJuTmZkRzl3YVdNdWJYbDBiM0JwWXk1
+        aGNtNTlJZ29nSUNBZ2ZRb2dJRjBLZlFwRlQwWUtmUW89
+    import: !!binary |
+        Q2dwSmIxUWdWRzl3YVdNZ1VuVnNaWE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYjNSZmRHOXdhV05mY25Wc1pTNW9kRzFzTG0xaGNtdGtiM2R1

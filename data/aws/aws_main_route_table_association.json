@@ -8,13 +8,13 @@
         "arguments": {
             "vpc_id": {
                 "description": "The ID of the VPC whose main route table should be set",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "route_table_id": {
                 "description": "The ID of the Route Table to set as the new",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

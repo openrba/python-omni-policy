@@ -8,7 +8,7 @@
         "arguments": {
             "ami": {
                 "description": "The AMI to use for the instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -46,7 +46,10 @@
                 "description": " If set to to 1, hyperthreading is disabled on the launched instance. Defaults to 2 if not set. See [Optimizing CPU Options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-optimize-cpu.html",
                 "required": false,
                 "policy": "",
-                "notes": "Changing `cpu_core_count` and/or `cpu_threads_per_core` will cause the resource to be destroyed and re-created."
+                "notes": [
+                    "-> ",
+                    " Changing `cpu_core_count` and/or `cpu_threads_per_core` will cause the resource to be destroyed and re-created."
+                ]
             },
             "ebs_optimized": {
                 "description": "If true, the launched EC2 instance will be EBS-optimized.",
@@ -68,7 +71,7 @@
             },
             "instance_type": {
                 "description": "The type of instance to start. Updates to this field will trigger a stop/start of the EC2 instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -94,7 +97,10 @@
                 "description": "A list of security group names (EC2-Classic",
                 "required": false,
                 "policy": "",
-                "notes": "If you are creating Instances in a VPC, use `vpc_security_group_ids` instead."
+                "notes": [
+                    "-> ",
+                    " If you are creating Instances in a VPC, use `vpc_security_group_ids` instead."
+                ]
             },
             "vpc_security_group_ids": {
                 "description": "A list of security group IDs to associate with.",

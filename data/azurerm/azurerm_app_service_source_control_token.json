@@ -8,13 +8,13 @@
         "arguments": {
             "type": {
                 "description": "The source control type. Possible values are `BitBucket`, `Dropbox`, `GitHub` and `OneDrive`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "token": {
                 "description": "The OAuth access token.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,6 +26,27 @@
             }
         },
         "attributes": {},
-        "timeouts": {}
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the App Service Source Control Token.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the App Service Source Control Token.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the App Service Source Control Token.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the App Service Source Control Token.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@
         "arguments": {
             "transit_gateway_id": {
                 "description": "Identifier of EC2 Transit Gateway.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -19,7 +19,17 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "default_association_route_table": {
+                "description": "Boolean whether this is the default association route table for the EC2 Transit Gateway."
+            },
+            "default_propagation_route_table": {
+                "description": "Boolean whether this is the default propagation route table for the EC2 Transit Gateway."
+            },
+            "id": {
+                "description": "EC2 Transit Gateway Route Table identifier"
+            }
+        },
         "timeouts": {}
     }
 }

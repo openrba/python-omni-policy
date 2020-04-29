@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the policy set definition. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy_type": {
                 "description": "The policy set type. Possible values are `BuiltIn` or `Custom`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "display_name": {
                 "description": "The display name of the policy set definition.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy_definitions": {
                 "description": "The policy definitions for the policy set definition. This is a json object representing the bundled policy definitions.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

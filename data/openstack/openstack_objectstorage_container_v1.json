@@ -14,7 +14,7 @@
             },
             "name": {
                 "description": "A unique name for the container. Changing this creates a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,35 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "container_read": {
-                "description": "See Argument Reference above."
-            },
-            "container_sync_to": {
-                "description": "See Argument Reference above."
-            },
-            "container_sync_key": {
-                "description": "See Argument Reference above."
-            },
-            "container_write": {
-                "description": "See Argument Reference above."
-            },
-            "versioning": {
-                "description": "See Argument Reference above."
-            },
-            "metadata": {
-                "description": "See Argument Reference above."
-            },
-            "content_type": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -9,13 +9,13 @@
         "arguments": {
             "billing_account_id": {
                 "description": "The billing account id.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy_data": {
                 "description": "The `google_iam_policy` data source that represents",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,7 +8,7 @@ aws_spot_datafeed_subscription:
         bucket:
             description: The Amazon S3 bucket in which to store the Spot instance
                 data feed.
-            required: true
+            required: false
             policy: ''
             notes: ''
         prefix:
@@ -18,3 +18,18 @@ aws_spot_datafeed_subscription:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjek5mWW5WamEyVjBJaUFpWkdWbVlYVnNkQ0lnZXdvZ0lHSjFZ
+        MnRsZENBOUlDSjBaaTF6Y0c5MExXUmhkR0ZtWldWa0lncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgz
+        TndiM1JmWkdGMFlXWmxaV1JmYzNWaWMyTnlhWEIwYVc5dUlpQWlaR1ZtWVhWc2RDSWdld29nSUdK
+        MVkydGxkQ0E5SUNJa2UyRjNjMTl6TTE5aWRXTnJaWFF1WkdWbVlYVnNkQzVpZFdOclpYUjlJZ29n
+        SUhCeVpXWnBlQ0E5SUNKdGVWOXpkV0prYVhKbFkzUnZjbmtpQ24wSw==
+    import: !!binary |
+        Q2dwQklGTndiM1FnUkdGMFlXWmxaV1FnVTNWaWMyTnlhWEIwYVc5dUlHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ2QyOXlaQ0JnYzNCdmRDMWtZWFJoWm1WbFpDMXpkV0p6WTNKcGNI
+        UnBiMjVnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Y0c5MFgyUmhkR0ZtWldWa1gzTjFZbk5qY21sd2RHbHZiaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

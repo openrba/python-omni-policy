@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the route.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group under which the IotHub resource has to be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource has to be createc. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "A `sku` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,19 +80,19 @@
             },
             "capacity": {
                 "description": "The number of provisioned IoT Hub units.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of the endpoint. Possible values are `AzureIotHub.StorageContainer`, `AzureIotHub.ServiceBusQueue`, `AzureIotHub.ServiceBusTopic` or `AzureIotHub.EventHub`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "connection_string": {
                 "description": "The connection string for the Azure Storage account to which files are uploaded.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -110,7 +110,7 @@
             },
             "container_name": {
                 "description": "The name of the root container where you upload files. The container need not exist but should be creatable using the connection_string specified.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -128,13 +128,13 @@
             },
             "ip_mask": {
                 "description": "The IP address range in CIDR notation for the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "action": {
                 "description": "The desired action for requests captured by this rule. Possible values are  `Accept`, `Reject`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,18 +7,18 @@ aws_api_gateway_integration:
     arguments:
         rest_api_id:
             description: The ID of the associated REST API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_id:
             description: The API resource ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_method:
             description: The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`,
                 `OPTION`, `ANY`)
-            required: true
+            required: false
             policy: ''
             notes: ''
         integration_http_method:
@@ -31,7 +31,7 @@ aws_api_gateway_integration:
                 Valid values are `HTTP` (for HTTP backends), `MOCK` (not calling any
                 real backend), `AWS` (for AWS services), `AWS_PROXY` (for Lambda proxy
                 integration
-            required: true
+            required: false
             policy: ''
             notes: ''
         connection_type:
@@ -107,3 +107,42 @@ aws_api_gateway_integration:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNKTmVVUmxi
+        VzlCVUVraUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSk5lVVJsYlc5QlVFa2lDaUFnWkdWelkz
+        SnBjSFJwYjI0Z1BTQWlWR2hwY3lCcGN5QnRlU0JCVUVrZ1ptOXlJR1JsYlc5dWMzUnlZWFJwYjI0
+        Z2NIVnljRzl6WlhNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZllYQnBYMmRoZEdWM1lYbGZjbVZ6
+        YjNWeVkyVWlJQ0pOZVVSbGJXOVNaWE52ZFhKalpTSWdld29nSUhKbGMzUmZZWEJwWDJsa0lEMGdJ
+        aVI3WVhkelgyRndhVjluWVhSbGQyRjVYM0psYzNSZllYQnBMazE1UkdWdGIwRlFTUzVwWkgwaUNp
+        QWdjR0Z5Wlc1MFgybGtJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0dr
+        dVRYbEVaVzF2UVZCSkxuSnZiM1JmY21WemIzVnlZMlZmYVdSOUlnb2dJSEJoZEdoZmNHRnlkQ0Fn
+        SUQwZ0ltMTVaR1Z0YjNKbGMyOTFjbU5sSWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJGd2FWOW5Z
+        WFJsZDJGNVgyMWxkR2h2WkNJZ0lrMTVSR1Z0YjAxbGRHaHZaQ0lnZXdvZ0lISmxjM1JmWVhCcFgy
+        bGtJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0drdVRYbEVaVzF2UVZC
+        SkxtbGtmU0lLSUNCeVpYTnZkWEpqWlY5cFpDQWdJRDBnSWlSN1lYZHpYMkZ3YVY5bllYUmxkMkY1
+        WDNKbGMyOTFjbU5sTGsxNVJHVnRiMUpsYzI5MWNtTmxMbWxrZlNJS0lDQm9kSFJ3WDIxbGRHaHZa
+        Q0FnSUQwZ0lrZEZWQ0lLSUNCaGRYUm9iM0pwZW1GMGFXOXVJRDBnSWs1UFRrVWlDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmYVc1MFpXZHlZWFJwYjI0aUlDSk5lVVJsYlc5
+        SmJuUmxaM0poZEdsdmJpSWdld29nSUhKbGMzUmZZWEJwWDJsa0lDQWdJQ0FnSUNBZ0lEMGdJaVI3
+        WVhkelgyRndhVjluWVhSbGQyRjVYM0psYzNSZllYQnBMazE1UkdWdGIwRlFTUzVwWkgwaUNpQWdj
+        bVZ6YjNWeVkyVmZhV1FnSUNBZ0lDQWdJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNt
+        VnpiM1Z5WTJVdVRYbEVaVzF2VW1WemIzVnlZMlV1YVdSOUlnb2dJR2gwZEhCZmJXVjBhRzlrSUNB
+        Z0lDQWdJQ0FnSUQwZ0lpUjdZWGR6WDJGd2FWOW5ZWFJsZDJGNVgyMWxkR2h2WkM1TmVVUmxiVzlO
+        WlhSb2IyUXVhSFIwY0Y5dFpYUm9iMlI5SWdvZ0lIUjVjR1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
+        RDBnSWsxUFEwc2lDaUFnWTJGamFHVmZhMlY1WDNCaGNtRnRaWFJsY25NZ1BTQmJJbTFsZEdodlpD
+        NXlaWEYxWlhOMExuQmhkR2d1Y0dGeVlXMGlYUW9nSUdOaFkyaGxYMjVoYldWemNHRmpaU0FnSUNB
+        Z0lEMGdJbVp2YjJKaGNpSUtJQ0IwYVcxbGIzVjBYMjFwYkd4cGMyVmpiMjVrY3lBOUlESTVNREF3
+        Q2dvZ0lISmxjWFZsYzNSZmNHRnlZVzFsZEdWeWN5QTlJSHNLSUNBZ0lDSnBiblJsWjNKaGRHbHZi
+        aTV5WlhGMVpYTjBMbWhsWVdSbGNpNVlMVUYxZEdodmNtbDZZWFJwYjI0aUlEMGdJaWR6ZEdGMGFX
+        TW5JZ29nSUgwS0NpQWdJeUJVY21GdWMyWnZjbTF6SUhSb1pTQnBibU52YldsdVp5QllUVXdnY21W
+        eGRXVnpkQ0IwYnlCS1UwOU9DaUFnY21WeGRXVnpkRjkwWlcxd2JHRjBaWE1nUFNCN0NpQWdJQ0Fp
+        WVhCd2JHbGpZWFJwYjI0dmVHMXNJaUE5SUR3OFJVOUdDbnNLSUNBZ0ltSnZaSGtpSURvZ0pHbHVj
+        SFYwTG1wemIyNG9KeVFuS1FwOUNrVlBSZ29nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVY5bllYUmxkMkY1WDJsdWRHVm5jbUYwYVc5dVlDQmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ2RYTnBibWNnWUZKRlUxUXRRVkJKTFVsRUwxSkZVMDlWVWtORkxVbEVMMGhVVkZBdFRV
+        VlVTRTlFWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5cGJuUmxaM0poZEdsdmJpNW9kRzFzTG0xaGNtdGtiM2R1

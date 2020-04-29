@@ -14,25 +14,25 @@
             },
             "name": {
                 "description": "The name of the pool. Changing this updates the name of",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "protocol": {
                 "description": " The protocol used by the pool members, you can use",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "The network on which the members of the pool will be",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "lb_method": {
                 "description": "The algorithm used to distribute load between the",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,52 +62,24 @@
             },
             "address": {
                 "description": "The IP address of the member. Changing this creates a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "port": {
                 "description": "An integer representing the port on which the member is",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "admin_state_up": {
                 "description": "The administrative state of the member.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "protocol": {
-                "description": "See Argument Reference above."
-            },
-            "subnet_id": {
-                "description": "See Argument Reference above."
-            },
-            "lb_method": {
-                "description": "See Argument Reference above."
-            },
-            "lb_provider": {
-                "description": "See Argument Reference above."
-            },
-            "tenant_id": {
-                "description": "See Argument Reference above."
-            },
-            "monitor_id": {
-                "description": "See Argument Reference above."
-            },
-            "member": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

@@ -7,29 +7,35 @@ postgresql_postgresql_grant:
     arguments:
         role:
             description: The name of the role to grant privileges on.
-            required: true
+            required: false
             policy: ''
             notes: ''
         database:
             description: The database to grant privileges on for this role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         schema:
             description: The database schema to grant privileges on for this role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         object_type:
             description: 'The PostgreSQL object type to grant the privileges on (one
                 of: table, sequence).'
-            required: true
+            required: false
             policy: ''
             notes: ''
         privileges:
             description: The list of privileges to grant.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYQnZjM1JuY21WemNXd3ZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjRzl6ZEdkeVpYTnhiRjluY21GdWRDNW9kRzFzTG0xaGNtdGtiM2R1

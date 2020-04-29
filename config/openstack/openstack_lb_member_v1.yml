@@ -12,17 +12,17 @@ openstack_lb_member_v1:
             notes: ''
         pool_id:
             description: ' The ID of the LB pool. Changing this creates a new'
-            required: true
+            required: false
             policy: ''
             notes: ''
         address:
             description: The IP address of the member. Changing this creates a
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
             description: An integer representing the port on which the member is
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_state_up:
@@ -35,18 +35,17 @@ openstack_lb_member_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        pool_id:
-            description: See Argument Reference above.
-        address:
-            description: See Argument Reference above.
-        port:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        weight:
-            description: The load balancing weight of the member. This is currently
-                unable
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiV1Z0WW1WeVgzWXhJaUFpYldWdFltVnlY
+        ekVpSUhzS0lDQndiMjlzWDJsa0lEMGdJbVE1TkRFMU56ZzJMVFZtTVdFdE5ESTRZaTFpTXpWbUxU
+        Sm1NVFV5TTJVeE5EWmtNaUlLSUNCaFpHUnlaWE56SUQwZ0lqRTVNaTR4TmpndU1DNHhNQ0lLSUNC
+        d2IzSjBJQ0FnSUQwZ09EQUtmUW89
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRTFsYldKbGNuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDl0WlcxaVpYSmZkakV1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

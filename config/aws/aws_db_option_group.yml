@@ -26,13 +26,13 @@ aws_db_option_group:
         engine_name:
             description: Specifies the name of the engine that this option group should
                 be associated with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         major_engine_version:
             description: Specifies the major version of the engine that this option
                 group should be associated with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         option:
@@ -47,7 +47,7 @@ aws_db_option_group:
             notes: ''
         option_name:
             description: The Name of the Option (e.g. MEMCACHED).
-            required: true
+            required: false
             policy: ''
             notes: ''
         option_settings:

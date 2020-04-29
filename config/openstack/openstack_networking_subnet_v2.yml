@@ -12,7 +12,7 @@ openstack_networking_subnet_v2:
             notes: ''
         network_id:
             description: The UUID of the parent network. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         cidr:
@@ -97,54 +97,39 @@ openstack_networking_subnet_v2:
             notes: ''
         start:
             description: The starting address.
-            required: true
+            required: false
             policy: ''
             notes: ''
         end:
             description: The ending address.
-            required: true
+            required: false
             policy: ''
             notes: ''
         destination_cidr:
             description: The destination CIDR.
-            required: true
+            required: false
             policy: ''
             notes: ''
         next_hop:
             description: The next hop in the route.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        network_id:
-            description: See Argument Reference above.
-        cidr:
-            description: See Argument Reference above.
-        ip_version:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        allocation_pools:
-            description: See Argument Reference above.
-        gateway_ip:
-            description: See Argument Reference above.
-        enable_dhcp:
-            description: See Argument Reference above.
-        dns_nameservers:
-            description: See Argument Reference above.
-        host_routes:
-            description: See Argument Reference above.
-        subnetpool_id:
-            description: See Argument Reference above.
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of ags assigned on the subnet, which have
-                been
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1pmZEdWemRG
+        OXVaWFIzYjNKcklnb2dJR0ZrYldsdVgzTjBZWFJsWDNWd0lEMGdJblJ5ZFdVaUNuMEtDbkpsYzI5
+        MWNtTmxJQ0p2Y0dWdWMzUmhZMnRmYm1WMGQyOXlhMmx1WjE5emRXSnVaWFJmZGpJaUlDSnpkV0p1
+        WlhSZk1TSWdld29nSUc1bGRIZHZjbXRmYVdRZ1BTQWlKSHR2Y0dWdWMzUmhZMnRmYm1WMGQyOXlh
+        Mmx1WjE5dVpYUjNiM0pyWDNZeUxtNWxkSGR2Y210Zk1TNXBaSDBpQ2lBZ1kybGtjaUFnSUNBZ0lD
+        QTlJQ0l4T1RJdU1UWTRMakU1T1M0d0x6STBJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwVGRXSnVaWFJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUdsa1lDd2da
+        UzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM04xWW01bGRGOTJNaTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

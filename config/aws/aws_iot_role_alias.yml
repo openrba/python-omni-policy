@@ -7,12 +7,12 @@ aws_iot_role_alias:
     arguments:
         alias:
             description: The name of the role alias.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The identity of the role to which the alias refers.
-            required: true
+            required: false
             policy: ''
             notes: ''
         credential_duration:
@@ -26,3 +26,21 @@ aws_iot_role_alias:
         arn:
             description: The ARN assigned by AWS to this role alias.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNKdmJHVWlJQ0p5YjJ4bElpQjdDaUFnYm1GdFpTQTlJ
+        Q0prZVc1aGJXOWtZaTFoWTJObGMzTXRjbTlzWlNJS0NpQWdjRzlzYVdONUlEMGdQRHhGVDBZS2V3
+        b2dJQ0pXWlhKemFXOXVJam9nSWpJd01USXRNVEF0TVRjaUxBb2dJQ0pUZEdGMFpXMWxiblFpT2lC
+        YkNpQWdJQ0I3Q2lBZ0lDQWdJQ0pGWm1abFkzUWlPaUFpUVd4c2IzY2lMQW9nSUNBZ0lDQWlVSEpw
+        Ym1OcGNHRnNJam9nZXlKVFpYSjJhV05sSWpvZ0ltTnlaV1JsYm5ScFlXeHpMbWx2ZEM1aGJXRjZi
+        MjVoZDNNdVkyOXRJbjBzQ2lBZ0lDQWdJQ0pCWTNScGIyNGlPaUFpYzNSek9rRnpjM1Z0WlZKdmJH
+        VWlDaUFnSUNCOUNpQWdYUXA5Q2tWUFJncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgybHZkRjl5YjJ4
+        bFgyRnNhV0Z6SWlBaVlXeHBZWE1pSUhzS0lDQmhiR2xoY3lBZ0lDQTlJQ0pVYUdWeWJXOXpkR0Yw
+        TFdSNWJtRnRiMlJpTFdGalkyVnpjeTF5YjJ4bExXRnNhV0Z6SWdvZ0lISnZiR1ZmWVhKdUlEMGdJ
+        aVI3WVhkelgybGhiVjl5YjJ4bExuSnZiR1V1WVhKdWZTSUtmUW89
+    import: !!binary |
+        Q2dwSlQxUWdVbTlzWlNCQmJHbGhjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkbWxoSUhSb1pTQmhi
+        R2xoY3l3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYjNSZmNtOXNaVjloYkdsaGN5NW9kRzFzTG0xaGNtdGtiM2R1

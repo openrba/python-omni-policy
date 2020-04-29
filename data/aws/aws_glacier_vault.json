@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the Vault. Names can be between 1 and 255 characters long and the valid characters are a-z, A-Z, 0-9, '_' (underscore), '-' (hyphen), and '.' (period).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,13 +32,13 @@
             },
             "events": {
                 "description": "You can configure a vault to publish a notification for `ArchiveRetrievalCompleted` and `InventoryRetrievalCompleted` events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sns_topic": {
                 "description": "The SNS Topic ARN.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

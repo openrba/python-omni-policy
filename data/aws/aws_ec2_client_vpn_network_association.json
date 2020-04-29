@@ -8,13 +8,13 @@
         "arguments": {
             "client_vpn_endpoint_id": {
                 "description": "The ID of the Client VPN endpoint.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "The ID of the subnet to associate with the Client VPN endpoint.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

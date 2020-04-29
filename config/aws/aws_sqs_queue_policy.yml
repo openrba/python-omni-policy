@@ -7,15 +7,36 @@ aws_sqs_queue_policy:
     arguments:
         queue_url:
             description: The URL of the SQS Queue to which to attach the policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: The JSON policy for the SQS queue. For more information about
                 building AWS IAM policy documents with Terraform, see the [AWS IAM
                 Policy Document Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM0Z6WDNGMVpYVmxJaUFpY1NJZ2V3b2dJRzVoYldVZ1BTQWla
+        WGhoYlhCc1pYRjFaWFZsSWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDNOeGMxOXhkV1YxWlY5d2Iy
+        eHBZM2tpSUNKMFpYTjBJaUI3Q2lBZ2NYVmxkV1ZmZFhKc0lEMGdJaVI3WVhkelgzTnhjMTl4ZFdW
+        MVpTNXhMbWxrZlNJS0NpQWdjRzlzYVdONUlEMGdQRHhRVDB4SlExa0tld29nSUNKV1pYSnphVzl1
+        SWpvZ0lqSXdNVEl0TVRBdE1UY2lMQW9nSUNKSlpDSTZJQ0p6Y1hOd2IyeHBZM2tpTEFvZ0lDSlRk
+        R0YwWlcxbGJuUWlPaUJiQ2lBZ0lDQjdDaUFnSUNBZ0lDSlRhV1FpT2lBaVJtbHljM1FpTEFvZ0lD
+        QWdJQ0FpUldabVpXTjBJam9nSWtGc2JHOTNJaXdLSUNBZ0lDQWdJbEJ5YVc1amFYQmhiQ0k2SUNJ
+        cUlpd0tJQ0FnSUNBZ0lrRmpkR2x2YmlJNklDSnpjWE02VTJWdVpFMWxjM05oWjJVaUxBb2dJQ0Fn
+        SUNBaVVtVnpiM1Z5WTJVaU9pQWlKSHRoZDNOZmMzRnpYM0YxWlhWbExuRXVZWEp1ZlNJc0NpQWdJ
+        Q0FnSUNKRGIyNWthWFJwYjI0aU9pQjdDaUFnSUNBZ0lDQWdJa0Z5YmtWeGRXRnNjeUk2SUhzS0lD
+        QWdJQ0FnSUNBZ0lDSmhkM002VTI5MWNtTmxRWEp1SWpvZ0lpUjdZWGR6WDNOdWMxOTBiM0JwWXk1
+        bGVHRnRjR3hsTG1GeWJuMGlDaUFnSUNBZ0lDQWdmUW9nSUNBZ0lDQjlDaUFnSUNCOUNpQWdYUXA5
+        Q2xCUFRFbERXUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwVFVWTWdVWFZsZFdVZ1VHOXNhV05wWlhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCeGRXVjFaU0JWVWt3c0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Y1hOZmNYVmxkV1ZmY0c5c2FXTjVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

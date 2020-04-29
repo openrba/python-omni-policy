@@ -9,7 +9,7 @@ kubernetes_storage_class:
         metadata:
             description: Standard storage class's metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         parameters:
@@ -20,7 +20,7 @@ kubernetes_storage_class:
             notes: ''
         storage_provisioner:
             description: Indicates the type of the provisioner
-            required: true
+            required: false
             policy: ''
             notes: ''
         reclaim_policy:
@@ -44,3 +44,19 @@ kubernetes_storage_class:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzTjBiM0poWjJWZlkyeGhjM01pSUNKbGVHRnRj
+        R3hsSWlCN0NpQWdiV1YwWVdSaGRHRWdld29nSUNBZ2JtRnRaU0E5SUNKMFpYSnlZV1p2Y20wdFpY
+        aGhiWEJzWlNJS0lDQjlDaUFnYzNSdmNtRm5aVjl3Y205MmFYTnBiMjVsY2lBOUlDSnJkV0psY201
+        bGRHVnpMbWx2TDJkalpTMXdaQ0lLSUNCeVpXTnNZV2x0WDNCdmJHbGplU0FnSUNBZ0lEMGdJbEps
+        ZEdGcGJpSUtJQ0J3WVhKaGJXVjBaWEp6SUQwZ2V3b2dJQ0FnZEhsd1pTQTlJQ0p3WkMxemRHRnVa
+        R0Z5WkNJS0lDQjlDaUFnYlc5MWJuUmZiM0IwYVc5dWN5QTlJRnNpWm1sc1pWOXRiMlJsUFRBM01E
+        QWlMQ0FpWkdseVgyMXZaR1U5TURjM055SXNJQ0p0Wm5ONWJXeHBibXR6SWl3Z0luVnBaRDB4TURB
+        d0lpd2dJbWRwWkQweE1EQXdJaXdnSW01dlluSnNJaXdnSW1OaFkyaGxQVzV2Ym1VaVhRcDlDZz09
+    import: !!binary |
+        Q2dwcmRXSmxjbTVsZEdWelgzTjBiM0poWjJWZlkyeGhjM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklHbDBjeUJ1WVcxbExDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjM1J2Y21GblpWOWpiR0Z6Y3k1b2RHMXNMbTFoY210a2IzZHU=

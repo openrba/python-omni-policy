@@ -8,13 +8,13 @@
         "arguments": {
             "baseline_id": {
                 "description": "The ID of the patch baseline to register the patch group with.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "patch_group": {
                 "description": "The name of the patch group that should be registered with the patch baseline.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

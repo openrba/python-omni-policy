@@ -7,24 +7,42 @@ aws_batch_job_queue:
     arguments:
         name:
             description: Specifies the name of the job queue.
-            required: true
+            required: false
             policy: ''
             notes: ''
         compute_environments:
             description: Specifies the set of compute environments
-            required: true
+            required: false
             policy: ''
             notes: ''
         priority:
             description: The priority of the job queue. Job queues with a higher priority
-            required: true
+            required: false
             policy: ''
             notes: ''
         state:
             description: 'The state of the job queue. Must be one of: `ENABLED` or
                 `DISABLED`'
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: The Amazon Resource Name of the job queue.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZbUYwWTJoZmFtOWlYM0YxWlhWbElpQWlkR1Z6ZEY5eGRXVjFa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbUxYUmxjM1F0WW1GMFky
+        Z3RhbTlpTFhGMVpYVmxJZ29nSUhOMFlYUmxJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJa1ZPUVVK
+        TVJVUWlDaUFnY0hKcGIzSnBkSGtnSUNBZ0lDQWdJQ0FnSUNBZ1BTQXhDaUFnWTI5dGNIVjBaVjls
+        Ym5acGNtOXViV1Z1ZEhNZ1BTQmJJaVI3WVhkelgySmhkR05vWDJOdmJYQjFkR1ZmWlc1MmFYSnZi
+        bTFsYm5RdWRHVnpkRjlsYm5acGNtOXViV1Z1ZEY4eExtRnlibjBpTENBaUpIdGhkM05mWW1GMFky
+        aGZZMjl0Y0hWMFpWOWxiblpwY205dWJXVnVkQzUwWlhOMFgyVnVkbWx5YjI1dFpXNTBYekl1WVhK
+        dWZTSmRDbjBL
+    import: !!binary |
+        Q2dwQ1lYUmphQ0JLYjJJZ1VYVmxkV1VnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnWVhKdVlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlpWVhSamFGOXFiMkpmY1hWbGRXVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

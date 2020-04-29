@@ -7,7 +7,7 @@ aws_service_discovery_public_dns_namespace:
     arguments:
         name:
             description: The name of the namespace.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -26,3 +26,17 @@ aws_service_discovery_public_dns_namespace:
             description: The ID for the hosted zone that Amazon Route 53 creates when
                 you create a namespace.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ5ZG1salpWOWthWE5qYjNabGNubGZjSFZpYkdsalgyUnVj
+        MTl1WVcxbGMzQmhZMlVpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnUFNBaWFH
+        OW5aUzVsZUdGdGNHeGxMbU52YlNJS0lDQmtaWE5qY21sd2RHbHZiaUE5SUNKbGVHRnRjR3hsSWdw
+        OUNnPT0=
+    import: !!binary |
+        Q2dwVFpYSjJhV05sSUVScGMyTnZkbVZ5ZVNCUWRXSnNhV01nUkU1VElFNWhiV1Z6Y0dGalpTQmpZ
+        VzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHNWhiV1Z6Y0dGalpTQkpSQ3dnWlM1bkxn
+        b0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhKMmFXTmxYMlJwYzJOdmRtVnllVjl3ZFdKc2FXTmZaRzV6WDI1aGJXVnpjR0ZqWlM1
+        b2RHMXNMbTFoY210a2IzZHU=

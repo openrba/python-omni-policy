@@ -9,19 +9,19 @@
         "arguments": {
             "table": {
                 "description": "The name of the table.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_name": {
                 "description": "The name of the Bigtable instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "column_family": {
                 "description": "The name of the column family.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -51,13 +51,13 @@
             },
             "days": {
                 "description": "Number of days before applying GC policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "number": {
                 "description": "Number of version before applying the GC policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

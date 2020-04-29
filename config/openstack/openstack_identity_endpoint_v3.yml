@@ -17,12 +17,12 @@ openstack_identity_endpoint_v3:
             notes: ''
         endpoint_region:
             description: The endpoint region. The `region` and
-            required: true
+            required: false
             policy: ''
             notes: ''
         url:
             description: The endpoint url.
-            required: true
+            required: false
             policy: ''
             notes: ''
         interface:
@@ -32,24 +32,26 @@ openstack_identity_endpoint_v3:
             notes: ''
         service_id:
             description: The endpoint service ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        endpoint_region:
-            description: See Argument Reference above.
-        url:
-            description: See Argument Reference above.
-        interface:
-            description: See Argument Reference above.
-        service_id:
-            description: See Argument Reference above.
-        service_name:
-            description: The service name of the endpoint.
-        service_type:
-            description: The service type of the endpoint.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmFXUmxiblJwZEhsZmMyVnlkbWxqWlY5Mk15SWdJ
+        bk5sY25acFkyVmZNU0lnZXdvZ0lHNWhiV1VnUFNBaWJYa3RjMlZ5ZG1salpTSUtJQ0IwZVhCbElE
+        MGdJbTE1TFhObGNuWnBZMlV0ZEhsd1pTSUtmUW9LY21WemIzVnlZMlVnSW05d1pXNXpkR0ZqYTE5
+        cFpHVnVkR2wwZVY5bGJtUndiMmx1ZEY5Mk15SWdJbVZ1WkhCdmFXNTBYekVpSUhzS0lDQnVZVzFs
+        SUQwZ0ltMTVMV1Z1WkhCdmFXNTBJZ29nSUhObGNuWnBZMlZmYVdRZ1BTQWlKSHR2Y0dWdWMzUmhZ
+        MnRmYVdSbGJuUnBkSGxmYzJWeWRtbGpaVjkyTXk1elpYSjJhV05sWHpFdWFXUjlJZ29nSUdWdVpI
+        QnZhVzUwWDNKbFoybHZiaUE5SUNJa2UyOXdaVzV6ZEdGamExOXBaR1Z1ZEdsMGVWOXpaWEoyYVdO
+        bFgzWXpMbk5sY25acFkyVmZNUzV5WldkcGIyNTlJZ29nSUhWeWJDQTlJQ0pvZEhSd09pOHZiWGt0
+        Wlc1a2NHOXBiblFpQ24wSw==
+    import: !!binary |
+        Q2dwRmJtUndiMmx1ZEhNZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2FXUmdM
+        Q0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXBaR1Z1ZEdsMGVWOWxibVJ3YjJsdWRGOTJNeTVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

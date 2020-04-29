@@ -8,31 +8,31 @@
         "arguments": {
             "name": {
                 "description": "The name of the ExpressRoute gateway. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the ExpressRoute gateway. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "virtual_hub_id": {
                 "description": "The ID of a Virtual HUB within which the ExpressRoute gateway should be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "scale_units": {
                 "description": "The number of scale units with which to provision the ExpressRoute gateway. Each scale unit is equal to 2Gbps, with support for up to 10 scale units (20Gbps).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

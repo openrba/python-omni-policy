@@ -7,7 +7,7 @@ aws_kinesis_firehose_delivery_stream:
     arguments:
         name:
             description: A name to identify the stream. This is unique to the
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -30,7 +30,7 @@ aws_kinesis_firehose_delivery_stream:
             description: This is the destination to where the data is delivered. The
                 only options are `s3` (Deprecated, use `extended_s3` instead), `extended_s3`,
                 `redshift`, `elasticsearch`, and `splunk`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         s3_configuration:
@@ -60,14 +60,14 @@ aws_kinesis_firehose_delivery_stream:
         kinesis_stream_arn:
             description: The kinesis stream used as the source of the firehose delivery
                 stream.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The ARN of the IAM role to be assumed by Firehose for calling
                 the Amazon ES Configuration API and for indexing documents.  The pattern
                 needs to be `arn:.*`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -77,7 +77,7 @@ aws_kinesis_firehose_delivery_stream:
             notes: ''
         bucket_arn:
             description: The ARN of the S3 bucket
-            required: true
+            required: false
             policy: ''
             notes: ''
         prefix:
@@ -153,7 +153,7 @@ aws_kinesis_firehose_delivery_stream:
             notes: ''
         cluster_jdbcurl:
             description: The jdbcurl of the redshift cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         username:
@@ -162,12 +162,12 @@ aws_kinesis_firehose_delivery_stream:
                 is used exclusively for Amazon Kinesis Firehose purposes, and that
                 the permissions for the account are restricted for Amazon Redshift
                 INSERT permissions.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
             description: The password for the username above.
-            required: true
+            required: false
             policy: ''
             notes: ''
         retry_duration:
@@ -182,7 +182,7 @@ aws_kinesis_firehose_delivery_stream:
         data_table_name:
             description: The name of the table in the redshift cluster that the s3
                 bucket will copy to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         copy_options:
@@ -217,12 +217,12 @@ aws_kinesis_firehose_delivery_stream:
                 permission for `DescribeElasticsearchDomain`, `DescribeElasticsearchDomains`,
                 and `DescribeElasticsearchDomainConfig` after assuming `RoleARN`.  The
                 pattern needs to be `arn:.*`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         index_name:
             description: The Elasticsearch index name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         index_rotation_period:
@@ -235,7 +235,7 @@ aws_kinesis_firehose_delivery_stream:
             notes: ''
         type_name:
             description: The Elasticsearch type name with maximum length of 100 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         hec_acknowledgment_timeout:
@@ -247,7 +247,7 @@ aws_kinesis_firehose_delivery_stream:
             notes: ''
         hec_endpoint:
             description: The HTTP Event Collector (HEC
-            required: true
+            required: false
             policy: ''
             notes: ''
         hec_endpoint_type:
@@ -275,7 +275,7 @@ aws_kinesis_firehose_delivery_stream:
             notes: ''
         type:
             description: 'The type of processor. Valid Values: `Lambda`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         parameters:
@@ -286,17 +286,26 @@ aws_kinesis_firehose_delivery_stream:
         parameter_name:
             description: 'Parameter name. Valid Values: `LambdaArn`, `NumberOfRetries`,
                 `RoleArn`, `BufferSizeInMBs`, `BufferIntervalInSeconds`'
-            required: true
+            required: false
             policy: ''
             notes: ''
         parameter_value:
             description: Parameter value. Must be between 1 and 512 length (inclusive).
                 When providing a Lambda ARN, you should specify the resource version
                 as well.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         arn:
             description: The Amazon Resource Name (ARN) specifying the Stream
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwTGFXNWxjMmx6SUVacGNtVm9iM05sSUVSbGJHbDJaWEo1SUhOMGNtVmhiWE1nWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0J6ZEhKbFlXMGdRVkpPTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlyYVc1bGMybHpYMlpwY21Wb2IzTmxYMlJsYkdsMlpYSjVYM04wY21WaGJTNW9kRzFzTG0x
+        aGNtdGtiM2R1

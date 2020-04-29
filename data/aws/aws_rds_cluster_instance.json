@@ -20,7 +20,7 @@
             },
             "cluster_identifier": {
                 "description": "The identifier of the [`aws_rds_cluster`](/docs/providers/aws/r/rds_cluster.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "instance_class": {
                 "description": "The instance class to use. For details on CPU",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -20,7 +20,7 @@
             },
             "broker_name": {
                 "description": "The name of the broker.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,19 +44,19 @@
             },
             "engine_type": {
                 "description": "The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "engine_version": {
                 "description": "The version of the broker engine. See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "host_instance_type": {
                 "description": "The broker's instance type. e.g. `mq.t2.micro` or `mq.m4.large`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -68,7 +68,7 @@
             },
             "security_groups": {
                 "description": "The list of security group IDs assigned to the broker.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

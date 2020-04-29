@@ -7,20 +7,20 @@ aws_appautoscaling_scheduled_action:
     arguments:
         name:
             description: The name of the scheduled action.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_namespace:
             description: 'The namespace of the AWS service. Documentation can be found
                 in the parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_PutScheduledAction.html#ApplicationAutoScaling-PutScheduledAction-request-ServiceNamespace'
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_id:
             description: 'The identifier of the resource associated with the scheduled
                 action. Documentation can be found in the parameter at: [AWS Application
                 Auto Scaling API Reference](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_PutScheduledAction.html#ApplicationAutoScaling-PutScheduledAction-request-ResourceId)'
-            required: true
+            required: false
             policy: ''
             notes: ''
         scalable_dimension:
@@ -60,3 +60,10 @@ aws_appautoscaling_scheduled_action:
         arn:
             description: The Amazon Resource Name (ARN) of the scheduled action.
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0hCaGRYUnZjMk5oYkdsdVoxOXpZMmhsWkhWc1pXUmZZV04wYVc5dUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

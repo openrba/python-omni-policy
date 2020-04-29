@@ -6,7 +6,7 @@ github_team:
     arguments:
         name:
             description: The name of the team.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -38,3 +38,15 @@ github_team:
             description: The slug of the created team, which may or may not differ
                 from `name`,
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1FXUmtJR0VnZEdWaGJTQjBieUIwYUdVZ2IzSm5ZVzVwZW1GMGFXOXVDbkpsYzI5MWNtTmxJ
+        Q0puYVhSb2RXSmZkR1ZoYlNJZ0luTnZiV1ZmZEdWaGJTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lE
+        MGdJbk52YldVdGRHVmhiU0lLSUNCa1pYTmpjbWx3ZEdsdmJpQTlJQ0pUYjIxbElHTnZiMndnZEdW
+        aGJTSUtJQ0J3Y21sMllXTjVJQ0FnSUNBOUlDSmpiRzl6WldRaUNuMEs=
+    import: !!binary |
+        Q2dwSGFYUklkV0lnVkdWaGJYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQkhh
+        WFJJZFdJZ2RHVmhiU0JKUkNCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5MFpXRnRMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

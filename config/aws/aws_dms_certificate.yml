@@ -7,7 +7,7 @@ aws_dms_certificate:
     arguments:
         certificate_id:
             description: The certificate identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         certificate_pem:
@@ -26,3 +26,15 @@ aws_dms_certificate:
         certificate_arn:
             description: The Amazon Resource Name (ARN) for the certificate.
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJR05sY25ScFptbGpZWFJsQ25KbGMyOTFjbU5sSUNKaGQzTmZa
+        RzF6WDJObGNuUnBabWxqWVhSbElpQWlkR1Z6ZENJZ2V3b2dJR05sY25ScFptbGpZWFJsWDJsa0lD
+        QTlJQ0owWlhOMExXUnRjeTFqWlhKMGFXWnBZMkYwWlMxMFppSUtJQ0JqWlhKMGFXWnBZMkYwWlY5
+        d1pXMGdQU0FpTGk0dUlncDlDZz09
+    import: !!binary |
+        Q2dwRFpYSjBhV1pwWTJGMFpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdZ
+        MlZ5ZEdsbWFXTmhkR1ZmWVhKdVlDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYlhOZlkyVnlkR2xtYVdOaGRHVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

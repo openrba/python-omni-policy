@@ -7,7 +7,7 @@ aws_iot_certificate:
     arguments:
         active:
             description: ' Boolean flag to indicate if the certificate should be active'
-            required: true
+            required: false
             policy: ''
             notes: ''
         csr:
@@ -27,3 +27,9 @@ aws_iot_certificate:
         private_key:
             description: When no CSR is provided, the private key.
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYjNSZlkyVnlkR2xtYVdOaGRHVXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

@@ -19,7 +19,7 @@ aws_kms_alias:
         target_key_id:
             description: Identifier for the key for which the alias is for, can be
                 either an ARN or key_id.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -28,3 +28,15 @@ aws_kms_alias:
         target_key_arn:
             description: The Amazon Resource Name (ARN) of the target key identifier.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhMjF6WDJ0bGVTSWdJbUVpSUh0OUNncHlaWE52ZFhKalpTQWlZ
+        WGR6WDJ0dGMxOWhiR2xoY3lJZ0ltRWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lDQWdJRDBnSW1Gc2FX
+        RnpMMjE1TFd0bGVTMWhiR2xoY3lJS0lDQjBZWEpuWlhSZmEyVjVYMmxrSUQwZ0lpUjdZWGR6WDJ0
+        dGMxOXJaWGt1WVM1clpYbGZhV1I5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwTFRWTWdZV3hwWVhObGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnZEdobElHQnVZ
+        VzFsWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlyYlhOZllXeHBZWE11YUhSdGJDNXRZWEpyWkc5M2JnPT0=

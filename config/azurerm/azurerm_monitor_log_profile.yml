@@ -7,18 +7,18 @@ azurerm_monitor_log_profile:
     arguments:
         name:
             description: The name of the Log Profile. Changing this forces a
-            required: true
+            required: false
             policy: ''
             notes: ''
         categories:
             description: List of categories of the logs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         locations:
             description: List of regions for which Activity Log events are stored
                 or streamed.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_id:
@@ -36,13 +36,13 @@ azurerm_monitor_log_profile:
         retention_policy:
             description: A `retention_policy` block as documented below. A retention
                 policy for how long Activity Logs are retained in the storage account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
             description: A boolean value to indicate whether the retention policy
                 is enabled.
-            required: true
+            required: false
             policy: ''
             notes: ''
         days:

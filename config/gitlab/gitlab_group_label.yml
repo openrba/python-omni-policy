@@ -7,18 +7,18 @@ gitlab_group_label:
     arguments:
         group:
             description: The name or id of the group to add the label to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the label.
-            required: true
+            required: false
             policy: ''
             notes: ''
         color:
             description: 'The color of the label given in 6-digit hex notation with
                 leading ''#'' sign (e.g. #FFAABB'
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -31,3 +31,13 @@ gitlab_group_label:
             description: The unique id assigned to the label by the GitLab server
                 (the name of the label).
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmWjNKdmRYQmZiR0ZpWld3aUlDSm1hWGh0WlNJZ2V3b2dJ
+        R2R5YjNWd0lDQWdJQ0FnSUQwZ0ltVjRZVzF3YkdVaUNpQWdibUZ0WlNBZ0lDQWdJQ0FnUFNBaVpt
+        bDRiV1VpQ2lBZ1pHVnpZM0pwY0hScGIyNGdQU0FpYVhOemRXVWdkMmwwYUNCbVlXbHNhVzVuSUhS
+        bGMzUnpJZ29nSUdOdmJHOXlJQ0FnSUNBZ0lEMGdJaU5tWm1Oak1EQWlDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmNtOTFjRjlzWVdKbGJDNW9kRzFzTG0xaGNtdGtiM2R1

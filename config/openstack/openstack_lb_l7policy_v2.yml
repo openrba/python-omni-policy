@@ -27,12 +27,12 @@ openstack_lb_l7policy_v2:
             notes: ''
         action:
             description: The L7 Policy action - can either be REDIRECT\_TO\_POOL,
-            required: true
+            required: false
             policy: ''
             notes: ''
         listener_id:
             description: The Listener on which the L7 Policy will be associated with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         position:
@@ -57,27 +57,42 @@ openstack_lb_l7policy_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the L7 Policy.
-        region:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        action:
-            description: See Argument Reference above.
-        listener_id:
-            description: See Argument Reference above.
-        position:
-            description: See Argument Reference above.
-        redirect_pool_id:
-            description: See Argument Reference above.
-        redirect_url:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlibVYwZDI5eWEx
+        OHhJZ29nSUdGa2JXbHVYM04wWVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNK
+        dmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpkV0p1WlhSZmRqSWlJQ0p6ZFdKdVpYUmZNU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdQU0FpYzNWaWJtVjBYekVpQ2lBZ1kybGtjaUFnSUNBZ0lDQTlJ
+        Q0l4T1RJdU1UWTRMakU1T1M0d0x6STBJZ29nSUdsd1gzWmxjbk5wYjI0Z1BTQTBDaUFnYm1WMGQy
+        OXlhMTlwWkNBOUlDSWtlMjl3Wlc1emRHRmphMTl1WlhSM2IzSnJhVzVuWDI1bGRIZHZjbXRmZGpJ
+        dWJtVjBkMjl5YTE4eExtbGtmU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltOXdaVzV6ZEdGamExOXNZbDlz
+        YjJGa1ltRnNZVzVqWlhKZmRqSWlJQ0pzYjJGa1ltRnNZVzVqWlhKZk1TSWdld29nSUc1aGJXVWdJ
+        Q0FnSUNBZ0lDQWdQU0FpYkc5aFpHSmhiR0Z1WTJWeVh6RWlDaUFnZG1sd1gzTjFZbTVsZEY5cFpD
+        QTlJQ0lrZTI5d1pXNXpkR0ZqYTE5dVpYUjNiM0pyYVc1blgzTjFZbTVsZEY5Mk1pNXpkV0p1WlhS
+        Zk1TNXBaSDBpQ24wS0NuSmxjMjkxY21ObElDSnZjR1Z1YzNSaFkydGZiR0pmYkdsemRHVnVaWEpm
+        ZGpJaUlDSnNhWE4wWlc1bGNsOHhJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUQwZ0lteHBj
+        M1JsYm1WeVh6RWlDaUFnY0hKdmRHOWpiMndnSUNBZ0lDQWdJRDBnSWtoVVZGQWlDaUFnY0hKdmRH
+        OWpiMnhmY0c5eWRDQWdJRDBnT0RBNE1Bb2dJR3h2WVdSaVlXeGhibU5sY2w5cFpDQTlJQ0lrZTI5
+        d1pXNXpkR0ZqYTE5c1lsOXNiMkZrWW1Gc1lXNWpaWEpmZGpJdWJHOWhaR0poYkdGdVkyVnlYekV1
+        YVdSOUlncDlDZ3B5WlhOdmRYSmpaU0FpYjNCbGJuTjBZV05yWDJ4aVgzQnZiMnhmZGpJaUlDSndi
+        MjlzWHpFaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdQU0FpY0c5dmJGOHhJZ29nSUhCeWIz
+        UnZZMjlzSUNBZ0lDQWdJQ0E5SUNKSVZGUlFJZ29nSUd4aVgyMWxkR2h2WkNBZ0lDQWdJQ0E5SUNK
+        U1QxVk9SRjlTVDBKSlRpSUtJQ0JzYjJGa1ltRnNZVzVqWlhKZmFXUWdQU0FpSkh0dmNHVnVjM1Jo
+        WTJ0ZmJHSmZiRzloWkdKaGJHRnVZMlZ5WDNZeUxteHZZV1JpWVd4aGJtTmxjbDh4TG1sa2ZTSUtm
+        UW9LY21WemIzVnlZMlVnSW05d1pXNXpkR0ZqYTE5c1lsOXNOM0J2YkdsamVWOTJNaUlnSW13M2NH
+        OXNhV041WHpFaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJRDBnSW5SbGMzUWlDaUFnWVdO
+        MGFXOXVJQ0FnSUNBZ0lDQWdJQ0E5SUNKU1JVUkpVa1ZEVkY5VVQxOVFUMDlNSWdvZ0lHUmxjMk55
+        YVhCMGFXOXVJQ0FnSUNBZ1BTQWlkR1Z6ZENCc055QndiMnhwWTNraUNpQWdjRzl6YVhScGIyNGdJ
+        Q0FnSUNBZ0lDQTlJREVLSUNCc2FYTjBaVzVsY2w5cFpDQWdJQ0FnSUQwZ0lpUjdiM0JsYm5OMFlX
+        TnJYMnhpWDJ4cGMzUmxibVZ5WDNZeUxteHBjM1JsYm1WeVh6RXVhV1I5SWdvZ0lISmxaR2x5WldO
+        MFgzQnZiMnhmYVdRZ1BTQWlKSHR2Y0dWdWMzUmhZMnRmYkdKZmNHOXZiRjkyTWk1d2IyOXNYekV1
+        YVdSOUlncDlDZz09
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRXczSUZCdmJHbGplU0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ2RHaGxJRXczSUZCdmJHbGplU0JKUkN3Z1pTNW5Mam9LQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDlzTjNCdmJHbGplVjkyTWk1b2RHMXNMbTFoY210a2IzZHU=

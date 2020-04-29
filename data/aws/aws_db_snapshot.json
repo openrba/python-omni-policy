@@ -8,13 +8,13 @@
         "arguments": {
             "db_instance_identifier": {
                 "description": "The DB Instance Identifier from which to take the snapshot.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "db_snapshot_identifier": {
                 "description": "The Identifier for the snapshot.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

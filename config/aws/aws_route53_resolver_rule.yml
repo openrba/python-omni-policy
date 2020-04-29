@@ -8,12 +8,12 @@ aws_route53_resolver_rule:
         domain_name:
             description: DNS queries for this domain name are forwarded to the IP
                 addresses that are specified using `target_ip`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         rule_type:
             description: The rule type. Valid values are `FORWARD`, `SYSTEM` and `RECURSIVE`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -42,7 +42,7 @@ aws_route53_resolver_rule:
         ip:
             description: One IP address that you want to forward DNS queries to. You
                 can specify only IPv4 addresses.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port:
@@ -64,3 +64,11 @@ aws_route53_resolver_rule:
                 account is sharing the rule with another account, or another account
                 is sharing the rule with the current account.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwU2IzVjBaVFV6SUZKbGMyOXNkbVZ5SUhKMWJHVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpUVXpYM0psYzI5c2RtVnlYM0oxYkdVdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -8,17 +8,17 @@ aws_iam_group_membership:
     arguments:
         name:
             description: The name to identify the Group Membership
-            required: true
+            required: false
             policy: ''
             notes: ''
         users:
             description: A list of IAM User names to associate with the Group
-            required: true
+            required: false
             policy: ''
             notes: ''
         group:
             description: The IAM Group name to attach the list of `users` to
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -27,3 +27,19 @@ aws_iam_group_membership:
         users:
             description: list of IAM User names
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDJkeWIzVndYMjFsYldKbGNuTm9hWEFpSUNKMFpXRnRJ
+        aUI3Q2lBZ2JtRnRaU0E5SUNKMFppMTBaWE4wYVc1bkxXZHliM1Z3TFcxbGJXSmxjbk5vYVhBaUNn
+        b2dJSFZ6WlhKeklEMGdXd29nSUNBZ0lpUjdZWGR6WDJsaGJWOTFjMlZ5TG5WelpYSmZiMjVsTG01
+        aGJXVjlJaXdLSUNBZ0lDSWtlMkYzYzE5cFlXMWZkWE5sY2k1MWMyVnlYM1IzYnk1dVlXMWxmU0lz
+        Q2lBZ1hRb0tJQ0JuY205MWNDQTlJQ0lrZTJGM2MxOXBZVzFmWjNKdmRYQXVaM0p2ZFhBdWJtRnRa
+        WDBpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mYVdGdFgyZHliM1Z3SWlBaVozSnZkWEFpSUhzS0lD
+        QnVZVzFsSUQwZ0luUmxjM1F0WjNKdmRYQWlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNW
+        elpYSWlJQ0oxYzJWeVgyOXVaU0lnZXdvZ0lHNWhiV1VnUFNBaWRHVnpkQzExYzJWeUlncDlDZ3B5
+        WlhOdmRYSmpaU0FpWVhkelgybGhiVjkxYzJWeUlpQWlkWE5sY2w5MGQyOGlJSHNLSUNCdVlXMWxJ
+        RDBnSW5SbGMzUXRkWE5sY2kxMGQyOGlDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZlozSnZkWEJmYldWdFltVnljMmhwY0M1b2RHMXNMbTFoY210a2IzZHU=

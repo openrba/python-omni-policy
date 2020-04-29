@@ -7,7 +7,7 @@ aws_api_gateway_api_key:
     arguments:
         name:
             description: The name of the API key
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -32,5 +32,25 @@ aws_api_gateway_api_key:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The ID of the API key
+        created_date:
+            description: The creation date of the API key
+        last_updated_date:
+            description: The last update date of the API key
+        value:
+            description: The value of the API key
+        arn:
+            description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmWVhCcFgydGxlU0lnSWsxNVJHVnRi
+        MEZ3YVV0bGVTSWdld29nSUc1aGJXVWdQU0FpWkdWdGJ5SUtmUW89
+    import: !!binary |
+        Q2dwQlVFa2dSMkYwWlhkaGVTQkxaWGx6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5aGNHbGZhMlY1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

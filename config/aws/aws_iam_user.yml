@@ -11,7 +11,7 @@ aws_iam_user:
                 the following characters: `=,.@-_.`. User names are not distinguished
                 by case. For example, you cannot create users named both "TESTUSER"
                 and "testuser".'
-            required: true
+            required: false
             policy: ''
             notes: ''
         path:
@@ -38,3 +38,23 @@ aws_iam_user:
         unique_id:
             description: The [unique ID][1] assigned by AWS.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNWelpYSWlJQ0pzWWlJZ2V3b2dJRzVoYldVZ1BTQWli
+        RzloWkdKaGJHRnVZMlZ5SWdvZ0lIQmhkR2dnUFNBaUwzTjVjM1JsYlM4aUNnb2dJSFJoWjNNZ1BT
+        QjdDaUFnSUNCMFlXY3RhMlY1SUQwZ0luUmhaeTEyWVd4MVpTSUtJQ0I5Q24wS0NuSmxjMjkxY21O
+        bElDSmhkM05mYVdGdFgyRmpZMlZ6YzE5clpYa2lJQ0pzWWlJZ2V3b2dJSFZ6WlhJZ1BTQWlKSHRo
+        ZDNOZmFXRnRYM1Z6WlhJdWJHSXVibUZ0WlgwaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXRnRY
+        M1Z6WlhKZmNHOXNhV041SWlBaWJHSmZjbThpSUhzS0lDQnVZVzFsSUQwZ0luUmxjM1FpQ2lBZ2RY
+        TmxjaUE5SUNJa2UyRjNjMTlwWVcxZmRYTmxjaTVzWWk1dVlXMWxmU0lLQ2lBZ2NHOXNhV041SUQw
+        Z1BEeEZUMFlLZXdvZ0lDSldaWEp6YVc5dUlqb2dJakl3TVRJdE1UQXRNVGNpTEFvZ0lDSlRkR0Yw
+        WlcxbGJuUWlPaUJiQ2lBZ0lDQjdDaUFnSUNBZ0lDSkJZM1JwYjI0aU9pQmJDaUFnSUNBZ0lDQWdJ
+        bVZqTWpwRVpYTmpjbWxpWlNvaUNpQWdJQ0FnSUYwc0NpQWdJQ0FnSUNKRlptWmxZM1FpT2lBaVFX
+        eHNiM2NpTEFvZ0lDQWdJQ0FpVW1WemIzVnlZMlVpT2lBaUtpSUtJQ0FnSUgwS0lDQmRDbjBLUlU5
+        R0NuMEs=
+    import: !!binary |
+        Q2dwSlFVMGdWWE5sY25NZ1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5JSFJvWlNCZ2JtRnRa
+        V0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmRYTmxjaTVvZEcxc0xtMWhjbXRrYjNkdQ==

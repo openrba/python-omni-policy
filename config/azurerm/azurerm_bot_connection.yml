@@ -8,43 +8,43 @@ azurerm_bot_connection:
         name:
             description: Specifies the name of the Bot Connection. Changing this forces
                 a new resource to be created. Must be globally unique.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Bot
                 Connection. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The supported Azure location where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bot_name:
             description: The name of the Bot Resource this connection will be associated
                 with. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_provider_name:
             description: The name of the service provider that will be associated
                 with this connection. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_id:
             description: The Client ID that will be used to authenticate with the
                 service provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_secret:
             description: The Client Secret that will be used to authenticate with
                 the service provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         scopes:

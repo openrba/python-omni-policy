@@ -12,19 +12,29 @@ openstack_networking_floatingip_associate_v2:
             notes: ''
         floating_ip:
             description: IP Address of an existing floating IP.
-            required: true
+            required: false
             policy: ''
             notes: ''
         port_id:
             description: ID of an existing port with at least one IP address to
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        floating_ip:
-            description: See Argument Reference above.
-        port_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXdiM0owWDNZeUlpQWlj
+        Rzl5ZEY4eElpQjdDaUFnYm1WMGQyOXlhMTlwWkNBOUlDSmhOV0ppWkRJeE15MWxNV1F6TFRRNVlq
+        WXRZV1ZrTVMwNVpHWTJNR1ZoT1RSaU9XRWlDbjBLQ25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0
+        ZmJtVjBkMjl5YTJsdVoxOW1iRzloZEdsdVoybHdYMkZ6YzI5amFXRjBaVjkyTWlJZ0ltWnBjRjh4
+        SWlCN0NpQWdabXh2WVhScGJtZGZhWEFnUFNBaU1TNHlMak11TkNJS0lDQndiM0owWDJsa0lDQWdJ
+        Q0E5SUNJa2UyOXdaVzV6ZEdGamExOXVaWFIzYjNKcmFXNW5YM0J2Y25SZmRqSXVjRzl5ZEY4eExt
+        bGtmU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwR2JHOWhkR2x1WnlCSlVDQmhjM052WTJsaGRHbHZibk1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYVdSZ0lHOW1JSFJvWlNCbWJHOWhkR2x1WnlCSlVDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YMlpzYjJGMGFXNW5hWEJmWVhOemIyTnBZWFJsWDNZ
+        eUxtaDBiV3d1YldGeWEyUnZkMjQ9

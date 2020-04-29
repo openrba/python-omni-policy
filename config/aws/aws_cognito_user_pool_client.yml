@@ -52,7 +52,7 @@ aws_cognito_user_pool_client:
             notes: ''
         name:
             description: The name of the application client.
-            required: true
+            required: false
             policy: ''
             notes: ''
         prevent_user_existence_errors:
@@ -87,7 +87,7 @@ aws_cognito_user_pool_client:
             notes: ''
         user_pool_id:
             description: The user pool the client belongs to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         write_attributes:
@@ -102,5 +102,19 @@ aws_cognito_user_pool_client:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The id of the user pool client.
+        client_secret:
+            description: The client secret of the user pool client.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRGIyZHVhWFJ2SUZWelpYSWdVRzl2YkNCRGJHbGxiblJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUdsa1lDQnZaaUIwYUdVZ1EyOW5ibWwwYnlCVmMyVnlJRkJ2YjJ3c0lH
+        RnVaQ0IwYUdVZ1lHbGtZQ0J2WmlCMGFHVWdRMjluYm1sMGJ5QlZjMlZ5SUZCdmIyd2dRMnhwWlc1
+        MExDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJkdWFYUnZYM1Z6WlhKZmNHOXZiRjlqYkdsbGJuUXViV0Z5YTJSdmQyND0=

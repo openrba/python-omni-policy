@@ -13,7 +13,7 @@ rancher_host:
             notes: ''
         name:
             description: The name of the host.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -23,13 +23,13 @@ rancher_host:
             notes: ''
         environment_id:
             description: The ID of the environment the host is associated to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         hostname:
             description: The host name. Used as the primary key to detect the host
                 ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         labels:
@@ -40,3 +40,15 @@ rancher_host:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1RXRnVZV2RsSUdGdUlHVjRhWE4wYVc1bklGSmhibU5vWlhJZ2FHOXpkQXB5WlhOdmRYSmpa
+        U0J5WVc1amFHVnlYMmh2YzNRZ0ltWnZieUlnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUQwZ0lt
+        WnZieUlLSUNCa1pYTmpjbWx3ZEdsdmJpQWdJQ0E5SUNKVWFHVWdabTl2SUc1dlpHVWlDaUFnWlc1
+        MmFYSnZibTFsYm5SZmFXUWdQU0FpTVdFMUlnb2dJR2h2YzNSdVlXMWxJQ0FnSUNBZ0lEMGdJbVp2
+        Ynk1bGVHRnRjR3hsTG1OdmJTSUtJQ0JzWVdKbGJITWdld29nSUNBZ2NtOXNaU0E5SUNKa1lYUmhZ
+        bUZ6WlNJS0lDQjlDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYSmhibU5vWlhJdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmFHOXpkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

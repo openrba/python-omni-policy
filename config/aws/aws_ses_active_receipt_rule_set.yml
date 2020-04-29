@@ -7,8 +7,18 @@ aws_ses_active_receipt_rule_set:
     arguments:
         rule_set_name:
             description: The name of the rule set
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDJGamRHbDJaVjl5WldObGFYQjBYM0oxYkdWZmMyVjBJ
+        aUFpYldGcGJpSWdld29nSUhKMWJHVmZjMlYwWDI1aGJXVWdQU0FpY0hKcGJXRnllUzF5ZFd4bGN5
+        SUtmUW89
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZllXTjBhWFpsWDNKbFkyVnBjSFJmY25Wc1pWOXpaWFF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

@@ -8,19 +8,19 @@
         "arguments": {
             "repository_name": {
                 "description": "The name for the repository. This needs to be less than 100 characters.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name of the trigger.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_arn": {
                 "description": "The ARN of the resource that is the target for a trigger. For example, the ARN of a topic in Amazon Simple Notification Service (SNS).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "events": {
                 "description": "The repository events that will cause the trigger to run actions in another service, such as sending a notification through Amazon Simple Notification Service (SNS). If no events are specified, the trigger will run for all repository events. Event types include: `all`, `updateReference`, `createReference`, `deleteReference`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

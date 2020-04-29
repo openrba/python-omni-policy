@@ -8,7 +8,7 @@ aws_iam_access_key:
     arguments:
         user:
             description: The IAM user to associate with this access key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pgp_key:
@@ -38,3 +38,23 @@ aws_iam_access_key:
         ses_smtp_password_v4:
             description: The secret access key converted into an SES SMTP
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDJGalkyVnpjMTlyWlhraUlDSnNZaUlnZXdvZ0lIVnpa
+        WElnSUNBZ1BTQWlKSHRoZDNOZmFXRnRYM1Z6WlhJdWJHSXVibUZ0WlgwaUNpQWdjR2R3WDJ0bGVT
+        QTlJQ0pyWlhsaVlYTmxPbk52YldWZmNHVnljMjl1WDNSb1lYUmZaWGhwYzNSeklncDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhkelgybGhiVjkxYzJWeUlpQWliR0lpSUhzS0lDQnVZVzFsSUQwZ0lteHZZV1Jp
+        WVd4aGJtTmxjaUlLSUNCd1lYUm9JRDBnSWk5emVYTjBaVzB2SWdwOUNncHlaWE52ZFhKalpTQWlZ
+        WGR6WDJsaGJWOTFjMlZ5WDNCdmJHbGplU0lnSW14aVgzSnZJaUI3Q2lBZ2JtRnRaU0E5SUNKMFpY
+        TjBJZ29nSUhWelpYSWdQU0FpSkh0aGQzTmZhV0Z0WDNWelpYSXViR0l1Ym1GdFpYMGlDZ29nSUhC
+        dmJHbGplU0E5SUR3OFJVOUdDbnNLSUNBaVZtVnljMmx2YmlJNklDSXlNREV5TFRFd0xURTNJaXdL
+        SUNBaVUzUmhkR1Z0Wlc1MElqb2dXd29nSUNBZ2V3b2dJQ0FnSUNBaVFXTjBhVzl1SWpvZ1d3b2dJ
+        Q0FnSUNBZ0lDSmxZekk2UkdWelkzSnBZbVVxSWdvZ0lDQWdJQ0JkTEFvZ0lDQWdJQ0FpUldabVpX
+        TjBJam9nSWtGc2JHOTNJaXdLSUNBZ0lDQWdJbEpsYzI5MWNtTmxJam9nSWlvaUNpQWdJQ0I5Q2lB
+        Z1hRcDlDa1ZQUmdwOUNncHZkWFJ3ZFhRZ0luTmxZM0psZENJZ2V3b2dJSFpoYkhWbElEMGdJaVI3
+        WVhkelgybGhiVjloWTJObGMzTmZhMlY1TG14aUxtVnVZM0o1Y0hSbFpGOXpaV055WlhSOUlncDlD
+        Zz09
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZllXTmpaWE56WDJ0bGVTNW9kRzFzTG0xaGNtdGtiM2R1

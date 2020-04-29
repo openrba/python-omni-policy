@@ -8,61 +8,61 @@
         "arguments": {
             "name": {
                 "description": "The name of the Stream Input IoTHub. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the Resource Group where the Stream Analytics Job exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "stream_analytics_job_name": {
                 "description": "The name of the Stream Analytics Job. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "eventhub_consumer_group_name": {
                 "description": "The name of an Event Hub Consumer Group that should be used to read events from the Event Hub. Specifying distinct consumer group names for multiple inputs allows each of those inputs to receive the same events from the Event Hub.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "endpoint": {
                 "description": "The IoT Hub endpoint to connect to (ie. messages/events, messages/operationsMonitoringEvents, etc.).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "iothub_namespace": {
                 "description": "The name or the URI of the IoT Hub.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "serialization": {
                 "description": "A `serialization` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "shared_access_policy_key": {
                 "description": "The shared access policy key for the specified shared access policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "shared_access_policy_name": {
                 "description": "The shared access policy name for the Event Hub, Service Bus Queue, Service Bus Topic, etc.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The serialization format used for incoming data streams. Possible values are `Avro`, `Csv` and `Json`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -70,13 +70,19 @@
                 "description": "The encoding of the incoming data in the case of input and the encoding of outgoing data in the case of output. It currently can only be set to `UTF8`.",
                 "required": false,
                 "policy": "",
-                "notes": "This is required when `type` is set to `Csv` or `Json`."
+                "notes": [
+                    "-> ",
+                    " This is required when `type` is set to `Csv` or `Json`."
+                ]
             },
             "field_delimiter": {
                 "description": "The delimiter that will be used to separate comma-separated value (CSV",
                 "required": false,
                 "policy": "",
-                "notes": "This is required when `type` is set to `Csv`."
+                "notes": [
+                    "-> ",
+                    " This is required when `type` is set to `Csv`."
+                ]
             }
         },
         "attributes": {

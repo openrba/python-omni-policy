@@ -8,19 +8,19 @@
         "arguments": {
             "address_family": {
                 "description": "The address family for the BGP peer. `ipv4 ` or `ipv6`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "bgp_asn": {
                 "description": "The autonomous system (AS",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "virtual_interface_id": {
                 "description": "The ID of the Direct Connect virtual interface on which to create the BGP peer.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

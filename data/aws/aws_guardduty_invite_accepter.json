@@ -8,13 +8,13 @@
         "arguments": {
             "detector_id": {
                 "description": "The detector ID of the member GuardDuty account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "master_account_id": {
                 "description": "AWS account ID for master account.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

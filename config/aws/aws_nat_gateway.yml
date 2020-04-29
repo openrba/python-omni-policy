@@ -7,19 +7,23 @@ aws_nat_gateway:
     arguments:
         allocation_id:
             description: The Allocation ID of the Elastic IP address for the gateway.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
             description: The Subnet ID of the subnet in which to place the gateway.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
             description: A map of tags to assign to the resource.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> '
+            - ' It''s recommended to denote that the NAT Gateway depends on the Internet
+                Gateway for the VPC in which the NAT Gateway''s subnet is located.
+                For example:'
     attributes:
         id:
             description: The ID of the NAT Gateway.
@@ -34,3 +38,14 @@ aws_nat_gateway:
         public_ip:
             description: The public IP address of the NAT Gateway.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibUYwWDJkaGRHVjNZWGtpSUNKbmR5SWdld29nSUdGc2JHOWpZ
+        WFJwYjI1ZmFXUWdQU0FpSkh0aGQzTmZaV2x3TG01aGRDNXBaSDBpQ2lBZ2MzVmlibVYwWDJsa0lD
+        QWdJQ0E5SUNJa2UyRjNjMTl6ZFdKdVpYUXVjSFZpYkdsakxtbGtmU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwT1FWUWdSMkYwWlhkaGVYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdh
+        V1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WVhSZloyRjBaWGRoZVM1b2RHMXNMbTFoY210a2IzZHU=

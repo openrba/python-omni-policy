@@ -10,7 +10,7 @@ google_google_organization_iam_audit_config:
         org_id:
             description: The numeric ID of the organization in which you want to manage
                 the audit logging config.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service:
@@ -20,19 +20,19 @@ google_google_organization_iam_audit_config:
                 the union of the two AuditConfigs is used for that service: the `log_types`
                 specified in each `audit_log_config` are enabled, and the `exempted_members`
                 in each `audit_log_config` are exempted.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         audit_log_config:
             description: The configuration for logging of each type of permission.  This
                 can be specified multiple times.  Structure is documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         log_type:
             description: Permission type for which logging is to be configured.  Must
                 be one of `DATA_READ`, `DATA_WRITE`, or `ADMIN_READ`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         exempted_members:
@@ -42,3 +42,13 @@ google_google_organization_iam_audit_config:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2tsQlRTQmhkV1JwZENCamIyNW1hV2NnYVcxd2IzSjBjeUIxYzJVZ2RHaGxJR2xrWlc1MGFXWnBa
+        WElnYjJZZ2RHaGxJSEpsYzI5MWNtTmxJR2x1SUhGMVpYTjBhVzl1SUdGdVpDQjBhR1VnYzJWeWRt
+        bGpaU3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmYjNKbllXNXBlbUYwYVc5dVgybGhiVjloZFdScGRGOWpiMjVtYVdj
+        dWFIUnRiQzV0WVhKclpHOTNiZz09

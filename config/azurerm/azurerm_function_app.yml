@@ -7,37 +7,37 @@ azurerm_function_app:
     arguments:
         name:
             description: The name of the Connection String.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Function
                 App.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_service_plan_id:
             description: The ID of the App Service Plan within which to create this
                 Function App.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_name:
             description: The backend storage account name which will be used by this
                 Function App (such as the dashboard, logs).
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_account_access_key:
             description: The access key which will be used to access the backend storage
                 account for the Function App.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_settings:
@@ -75,7 +75,7 @@ azurerm_function_app:
             notes: ''
         enabled:
             description: Is Authentication enabled?
-            required: true
+            required: false
             policy: ''
             notes: ''
         https_only:
@@ -119,12 +119,12 @@ azurerm_function_app:
                 IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned`
                 which assigns both a system managed identity as well as the specified
                 user assigned identities.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: The value for the Connection String.
-            required: true
+            required: false
             policy: ''
             notes: ''
         always_on:
@@ -280,13 +280,13 @@ azurerm_function_app:
         client_id:
             description: The OAuth 2.0 client ID that was created for the app used
                 for authentication.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_secret:
             description: The OAuth 2.0 client secret that was created for the app
                 used for authentication.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allowed_audiences:
@@ -297,12 +297,12 @@ azurerm_function_app:
             notes: ''
         app_id:
             description: The App ID of the Facebook app used for login
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_secret:
             description: The App Secret of the Facebook app used for Facebook Login.
-            required: true
+            required: false
             policy: ''
             notes: ''
         oauth_scopes:
@@ -320,7 +320,9 @@ azurerm_function_app:
             description: The Subnet ID used for this IP Restriction.
             required: false
             policy: ''
-            notes: One of either `ip_address` or `subnet_id` must be specified
+            notes:
+            - '-> '
+            - ' One of either `ip_address` or `subnet_id` must be specified'
     attributes:
         id:
             description: The ID of the Function App
@@ -391,10 +393,10 @@ azurerm_function_app:
         Q0FnSUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjbVZ6YjNWeVkyVmZaM0p2ZFhBdVpYaGhiWEJzWlM1dVlX
         MWxDaUFnWVhCd1gzTmxjblpwWTJWZmNHeGhibDlwWkNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDJG
         d2NGOXpaWEoyYVdObFgzQnNZVzR1WlhoaGJYQnNaUzVwWkFvZ0lITjBiM0poWjJWZllXTmpiM1Z1
-        ZEY5dVlXMWxJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RdWRHVnpk
-        QzVwWkFvZ0lITjBiM0poWjJWZllXTmpiM1Z1ZEY5aFkyTmxjM05mYTJWNUlEMGdZWHAxY21WeWJW
-        OXpkRzl5WVdkbFgyRmpZMjkxYm5RdWRHVnpkQzV3Y21sdFlYSjVYMkZqWTJWemMxOXJaWGtLZlFv
-        PQ==
+        ZEY5dVlXMWxJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZMjkxYm5RdVpYaGhi
+        WEJzWlM1dVlXMWxDaUFnYzNSdmNtRm5aVjloWTJOdmRXNTBYMkZqWTJWemMxOXJaWGtnUFNCaGVu
+        VnlaWEp0WDNOMGIzSmhaMlZmWVdOamIzVnVkQzVsZUdGdGNHeGxMbkJ5YVcxaGNubGZZV05qWlhO
+        elgydGxlUXA5Q2c9PQ==
     import: !!binary |
         Q2dwR2RXNWpkR2x2YmlCQmNIQnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
         SEpsYzI5MWNtTmxJR2xrWUN3Z1pTNW5MZ29L

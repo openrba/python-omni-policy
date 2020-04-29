@@ -9,19 +9,19 @@ azurerm_app_service_custom_hostname_binding:
             description: Specifies the Custom Hostname to use for the App Service,
                 example `www.example.com`. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         app_service_name:
             description: The name of the App Service in which to add the Custom Hostname
                 Binding. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the App Service exists.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ssl_state:
@@ -35,7 +35,9 @@ azurerm_app_service_custom_hostname_binding:
                 resource to be created.
             required: false
             policy: ''
-            notes: '`thumbprint` must be specified when `ssl_state` is set.'
+            notes:
+            - '-> '
+            - ' `thumbprint` must be specified when `ssl_state` is set.'
     attributes:
         id:
             description: The ID of the App Service Custom Hostname Binding

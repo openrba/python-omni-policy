@@ -13,17 +13,17 @@ aws_dms_replication_task:
             notes: ''
         migration_type:
             description: The migration type. Can be one of `full-load | cdc | full-load-and-cdc`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         replication_instance_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         replication_task_id:
             description: The replication task identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         replication_task_settings:
@@ -35,14 +35,14 @@ aws_dms_replication_task:
             notes: ''
         source_endpoint_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         table_mappings:
             description: An escaped JSON string that contains the table mappings.
                 For information on table mapping see [Using Table Mapping with an
                 AWS Database Migration Service Task to Select and Filter Data](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TableMapping.html)
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -52,10 +52,37 @@ aws_dms_replication_task:
             notes: ''
         target_endpoint_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         replication_task_arn:
             description: The Amazon Resource Name (ARN) for the replication task.
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJSEpsY0d4cFkyRjBhVzl1SUhSaGMyc0tjbVZ6YjNWeVkyVWdJ
+        bUYzYzE5a2JYTmZjbVZ3YkdsallYUnBiMjVmZEdGemF5SWdJblJsYzNRaUlIc0tJQ0JqWkdOZmMz
+        UmhjblJmZEdsdFpTQWdJQ0FnSUNBZ0lDQWdJRDBnTVRRNE5ETTBOamc0TUFvZ0lHMXBaM0poZEds
+        dmJsOTBlWEJsSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlablZzYkMxc2IyRmtJZ29nSUhKbGNHeHBZMkYw
+        YVc5dVgybHVjM1JoYm1ObFgyRnliaUFnUFNBaUpIdGhkM05mWkcxelgzSmxjR3hwWTJGMGFXOXVY
+        Mmx1YzNSaGJtTmxMblJsYzNRdFpHMXpMWEpsY0d4cFkyRjBhVzl1TFdsdWMzUmhibU5sTFhSbUxu
+        SmxjR3hwWTJGMGFXOXVYMmx1YzNSaGJtTmxYMkZ5Ym4waUNpQWdjbVZ3YkdsallYUnBiMjVmZEdG
+        emExOXBaQ0FnSUNBZ0lDQTlJQ0owWlhOMExXUnRjeTF5WlhCc2FXTmhkR2x2YmkxMFlYTnJMWFJt
+        SWdvZ0lISmxjR3hwWTJGMGFXOXVYM1JoYzJ0ZmMyVjBkR2x1WjNNZ1BTQWlMaTR1SWdvZ0lITnZk
+        WEpqWlY5bGJtUndiMmx1ZEY5aGNtNGdJQ0FnSUNBZ1BTQWlKSHRoZDNOZlpHMXpYMlZ1WkhCdmFX
+        NTBMblJsYzNRdFpHMXpMWE52ZFhKalpTMWxibVJ3YjJsdWRDMTBaaTVsYm1Sd2IybHVkRjloY201
+        OUlnb2dJSFJoWW14bFgyMWhjSEJwYm1keklDQWdJQ0FnSUNBZ0lDQWdQU0FpZTF3aWNuVnNaWE5j
+        SWpwYmUxd2ljblZzWlMxMGVYQmxYQ0k2WENKelpXeGxZM1JwYjI1Y0lpeGNJbkoxYkdVdGFXUmNJ
+        anBjSWpGY0lpeGNJbkoxYkdVdGJtRnRaVndpT2x3aU1Wd2lMRndpYjJKcVpXTjBMV3h2WTJGMGIz
+        SmNJanA3WENKelkyaGxiV0V0Ym1GdFpWd2lPbHdpSlZ3aUxGd2lkR0ZpYkdVdGJtRnRaVndpT2x3
+        aUpWd2lmU3hjSW5KMWJHVXRZV04wYVc5dVhDSTZYQ0pwYm1Oc2RXUmxYQ0o5WFgwaUNnb2dJSFJo
+        WjNNZ1BTQjdDaUFnSUNCT1lXMWxJRDBnSW5SbGMzUWlDaUFnZlFvS0lDQjBZWEpuWlhSZlpXNWtj
+        RzlwYm5SZllYSnVJRDBnSWlSN1lYZHpYMlJ0YzE5bGJtUndiMmx1ZEM1MFpYTjBMV1J0Y3kxMFlY
+        Sm5aWFF0Wlc1a2NHOXBiblF0ZEdZdVpXNWtjRzlwYm5SZllYSnVmU0lLZlFvPQ==
+    import: !!binary |
+        Q2dwU1pYQnNhV05oZEdsdmJpQjBZWE5yY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUdCeVpYQnNhV05oZEdsdmJsOTBZWE5yWDJsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYlhOZmNtVndiR2xqWVhScGIyNWZkR0Z6YXk1b2RHMXNMbTFoY210a2IzZHU=

@@ -14,19 +14,19 @@
             },
             "container": {
                 "description": "The container name the object belongs to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "object": {
                 "description": "The object name the tempurl is for.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ttl": {
                 "description": "The TTL, in seconds, for the URL. For how long it should",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -43,29 +43,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "Computed md5 hash based on the generated url"
-            },
-            "container": {
-                "description": "See Argument Reference above."
-            },
-            "object": {
-                "description": "See Argument Reference above."
-            },
-            "ttl": {
-                "description": "See Argument Reference above."
-            },
-            "method": {
-                "description": "See Argument Reference above."
-            },
-            "url": {
-                "description": "The URL"
-            },
-            "region": {
-                "description": "The region the endpoint is located in."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

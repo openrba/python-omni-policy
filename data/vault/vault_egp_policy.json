@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the policy",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "paths": {
                 "description": "List of paths to which the policy will be applied to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "enforcement_level": {
                 "description": "Enforcement level of Sentinel policy. Can be either `advisory` or `soft-mandatory` or `hard-mandatory`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy": {
                 "description": "String containing a Sentinel policy",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

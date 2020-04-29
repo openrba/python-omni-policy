@@ -7,7 +7,7 @@ aws_wafregional_byte_match_set:
     arguments:
         name:
             description: The name or description of the ByteMatchSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         byte_match_tuples:
@@ -19,23 +19,23 @@ aws_wafregional_byte_match_set:
         field_to_match:
             description: Settings for the ByteMatchTuple. FieldToMatch documented
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         positional_constraint:
             description: Within the portion of a web request that you want to search.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_string:
             description: The value that you want AWS WAF to search for. The maximum
                 length of the value is 50 bytes.
-            required: true
+            required: false
             policy: ''
             notes: ''
         text_transformation:
             description: The formatting way for web request.
-            required: true
+            required: false
             policy: ''
             notes: ''
         data:
@@ -48,10 +48,27 @@ aws_wafregional_byte_match_set:
         type:
             description: The part of the web request that you want AWS WAF to search
                 for a specified string.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the WAF ByteMatchSet.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtY21WbmFXOXVZV3hmWW5sMFpWOXRZWFJqYUY5elpYUWlJ
+        Q0ppZVhSbFgzTmxkQ0lnZXdvZ0lHNWhiV1VnUFNBaWRHWmZkMkZtWDJKNWRHVmZiV0YwWTJoZmMy
+        VjBJZ29LSUNCaWVYUmxYMjFoZEdOb1gzUjFjR3hsY3lCN0NpQWdJQ0IwWlhoMFgzUnlZVzV6Wm05
+        eWJXRjBhVzl1SUNBZ1BTQWlUazlPUlNJS0lDQWdJSFJoY21kbGRGOXpkSEpwYm1jZ0lDQWdJQ0Fn
+        SUNBOUlDSmlZV1J5WldabGNqRWlDaUFnSUNCd2IzTnBkR2x2Ym1Gc1gyTnZibk4wY21GcGJuUWdQ
+        U0FpUTA5T1ZFRkpUbE1pQ2dvZ0lDQWdabWxsYkdSZmRHOWZiV0YwWTJnZ2V3b2dJQ0FnSUNCMGVY
+        QmxJRDBnSWtoRlFVUkZVaUlLSUNBZ0lDQWdaR0YwWVNBOUlDSnlaV1psY21WeUlnb2dJQ0FnZlFv
+        Z0lIMEtmUW89
+    import: !!binary |
+        Q2dwWFFVWWdVbVZuYVc5dVlXd2dRbmwwWlNCTllYUmphQ0JUWlhRZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCcFpDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaeVpXZHBiMjVoYkY5aWVYUmxYMjFoZEdOb1gzTmxkQzVvZEcxc0xtMWhjbXRrYjNk
+        dQ==

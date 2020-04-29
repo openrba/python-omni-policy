@@ -9,21 +9,38 @@ google_google_billing_account_iam_binding:
     arguments:
         billing_account_id:
             description: The billing account id.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role:
             description: The role that should be applied.
-            required: true
+            required: false
             policy: ''
             notes: ''
         members:
             description: A list of users that the role should apply to. For more details
                 on format and restrictions see https://cloud.google.com/billing/reference/rest/v1/Policy#Binding
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         etag:
             description: (Computed) The etag of the billing account's IAM policy.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWW1sc2JHbHVaMTloWTJOdmRXNTBYMmxoYlY5aWFXNWth
+        VzVuSWlBaVltbHVaR2x1WnlJZ2V3b2dJR0pwYkd4cGJtZGZZV05qYjNWdWRGOXBaQ0E5SUNJd01F
+        RkJNREF0TURBd1FVRkJMVEF3UVVFd1FTSUtJQ0J5YjJ4bElDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNB
+        aWNtOXNaWE12WW1sc2JHbHVaeTUyYVdWM1pYSWlDZ29nSUcxbGJXSmxjbk1nUFNCYkNpQWdJQ0Fp
+        ZFhObGNqcGhiR2xqWlVCbmJXRnBiQzVqYjIwaUxBb2dJRjBLZlFvPQ==
+    import: !!binary |
+        Q2dwSlFVMGdZbWx1WkdsdVp5QnBiWEJ2Y25SeklIVnpaU0J6Y0dGalpTMWtaV3hwYldsMFpXUWdh
+        V1JsYm5ScFptbGxjbk03SUdacGNuTjBJSFJvWlNCeVpYTnZkWEpqWlNCcGJpQnhkV1Z6ZEdsdmJp
+        QmhibVFnZEdobGJpQjBhR1VnY205c1pTNGdJRlJvWlhObElHSnBibVJwYm1keklHTmhiaUJpWlNC
+        cGJYQnZjblJsWkNCMWMybHVaeUIwYUdVZ1lHSnBiR3hwYm1kZllXTmpiM1Z1ZEY5cFpHQWdZVzVr
+        SUhKdmJHVXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWW1sc2JHbHVaMTloWTJOdmRXNTBYMmxoYlY5aWFXNWthVzVuTG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

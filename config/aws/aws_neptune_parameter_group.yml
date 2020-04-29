@@ -7,12 +7,12 @@ aws_neptune_parameter_group:
     arguments:
         name:
             description: The name of the Neptune parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         family:
             description: The family of the Neptune parameter group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -33,7 +33,7 @@ aws_neptune_parameter_group:
             notes: ''
         value:
             description: The value of the Neptune parameter.
-            required: true
+            required: false
             policy: ''
             notes: ''
         apply_method:
@@ -48,3 +48,15 @@ aws_neptune_parameter_group:
         arn:
             description: The Neptune parameter group Amazon Resource Name (ARN).
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVZ3ZEhWdVpWOXdZWEpoYldWMFpYSmZaM0p2ZFhBaUlDSmxl
+        R0Z0Y0d4bElpQjdDaUFnWm1GdGFXeDVJRDBnSW01bGNIUjFibVV4SWdvZ0lHNWhiV1VnSUNBOUlD
+        SmxlR0Z0Y0d4bElnb0tJQ0J3WVhKaGJXVjBaWElnZXdvZ0lDQWdibUZ0WlNBZ1BTQWlibVZ3ZEhW
+        dVpWOXhkV1Z5ZVY5MGFXMWxiM1YwSWdvZ0lDQWdkbUZzZFdVZ1BTQWlNalVpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwT1pYQjBkVzVsSUZCaGNtRnRaWFJsY2lCSGNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklIUm9aU0JnYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhCMGRXNWxYM0JoY21GdFpYUmxjbDluY205MWNDNW9kRzFzTG0xaGNtdGtiM2R1

@@ -7,23 +7,23 @@ aws_api_gateway_integration_response:
     arguments:
         rest_api_id:
             description: The ID of the associated REST API
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_id:
             description: The API resource ID
-            required: true
+            required: false
             policy: ''
             notes: ''
         http_method:
             description: The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`,
                 `OPTIONS`, `ANY`)
-            required: true
+            required: false
             policy: ''
             notes: ''
         status_code:
             description: The HTTP status code
-            required: true
+            required: false
             policy: ''
             notes: ''
         selection_pattern:
@@ -54,3 +54,54 @@ aws_api_gateway_integration_response:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNKTmVVUmxi
+        VzlCVUVraUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSk5lVVJsYlc5QlVFa2lDaUFnWkdWelkz
+        SnBjSFJwYjI0Z1BTQWlWR2hwY3lCcGN5QnRlU0JCVUVrZ1ptOXlJR1JsYlc5dWMzUnlZWFJwYjI0
+        Z2NIVnljRzl6WlhNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZllYQnBYMmRoZEdWM1lYbGZjbVZ6
+        YjNWeVkyVWlJQ0pOZVVSbGJXOVNaWE52ZFhKalpTSWdld29nSUhKbGMzUmZZWEJwWDJsa0lEMGdJ
+        aVI3WVhkelgyRndhVjluWVhSbGQyRjVYM0psYzNSZllYQnBMazE1UkdWdGIwRlFTUzVwWkgwaUNp
+        QWdjR0Z5Wlc1MFgybGtJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0dr
+        dVRYbEVaVzF2UVZCSkxuSnZiM1JmY21WemIzVnlZMlZmYVdSOUlnb2dJSEJoZEdoZmNHRnlkQ0Fn
+        SUQwZ0ltMTVaR1Z0YjNKbGMyOTFjbU5sSWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJGd2FWOW5Z
+        WFJsZDJGNVgyMWxkR2h2WkNJZ0lrMTVSR1Z0YjAxbGRHaHZaQ0lnZXdvZ0lISmxjM1JmWVhCcFgy
+        bGtJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0drdVRYbEVaVzF2UVZC
+        SkxtbGtmU0lLSUNCeVpYTnZkWEpqWlY5cFpDQWdJRDBnSWlSN1lYZHpYMkZ3YVY5bllYUmxkMkY1
+        WDNKbGMyOTFjbU5sTGsxNVJHVnRiMUpsYzI5MWNtTmxMbWxrZlNJS0lDQm9kSFJ3WDIxbGRHaHZa
+        Q0FnSUQwZ0lrZEZWQ0lLSUNCaGRYUm9iM0pwZW1GMGFXOXVJRDBnSWs1UFRrVWlDbjBLQ25KbGMy
+        OTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmYVc1MFpXZHlZWFJwYjI0aUlDSk5lVVJsYlc5
+        SmJuUmxaM0poZEdsdmJpSWdld29nSUhKbGMzUmZZWEJwWDJsa0lEMGdJaVI3WVhkelgyRndhVjlu
+        WVhSbGQyRjVYM0psYzNSZllYQnBMazE1UkdWdGIwRlFTUzVwWkgwaUNpQWdjbVZ6YjNWeVkyVmZh
+        V1FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpiM1Z5WTJVdVRYbEVaVzF2VW1WemIz
+        VnlZMlV1YVdSOUlnb2dJR2gwZEhCZmJXVjBhRzlrSUQwZ0lpUjdZWGR6WDJGd2FWOW5ZWFJsZDJG
+        NVgyMWxkR2h2WkM1TmVVUmxiVzlOWlhSb2IyUXVhSFIwY0Y5dFpYUm9iMlI5SWdvZ0lIUjVjR1Vn
+        SUNBZ0lDQWdJRDBnSWsxUFEwc2lDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZ
+        WGxmYldWMGFHOWtYM0psYzNCdmJuTmxJaUFpY21WemNHOXVjMlZmTWpBd0lpQjdDaUFnY21WemRG
+        OWhjR2xmYVdRZ1BTQWlKSHRoZDNOZllYQnBYMmRoZEdWM1lYbGZjbVZ6ZEY5aGNHa3VUWGxFWlcx
+        dlFWQkpMbWxrZlNJS0lDQnlaWE52ZFhKalpWOXBaQ0E5SUNJa2UyRjNjMTloY0dsZloyRjBaWGRo
+        ZVY5eVpYTnZkWEpqWlM1TmVVUmxiVzlTWlhOdmRYSmpaUzVwWkgwaUNpQWdhSFIwY0Y5dFpYUm9i
+        MlFnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmJXVjBhRzlrTGsxNVJHVnRiMDFsZEdodlpD
+        NW9kSFJ3WDIxbGRHaHZaSDBpQ2lBZ2MzUmhkSFZ6WDJOdlpHVWdQU0FpTWpBd0lncDlDZ3B5WlhO
+        dmRYSmpaU0FpWVhkelgyRndhVjluWVhSbGQyRjVYMmx1ZEdWbmNtRjBhVzl1WDNKbGMzQnZibk5s
+        SWlBaVRYbEVaVzF2U1c1MFpXZHlZWFJwYjI1U1pYTndiMjV6WlNJZ2V3b2dJSEpsYzNSZllYQnBY
+        MmxrSUQwZ0lpUjdZWGR6WDJGd2FWOW5ZWFJsZDJGNVgzSmxjM1JmWVhCcExrMTVSR1Z0YjBGUVNT
+        NXBaSDBpQ2lBZ2NtVnpiM1Z5WTJWZmFXUWdQU0FpSkh0aGQzTmZZWEJwWDJkaGRHVjNZWGxmY21W
+        emIzVnlZMlV1VFhsRVpXMXZVbVZ6YjNWeVkyVXVhV1I5SWdvZ0lHaDBkSEJmYldWMGFHOWtJRDBn
+        SWlSN1lYZHpYMkZ3YVY5bllYUmxkMkY1WDIxbGRHaHZaQzVOZVVSbGJXOU5aWFJvYjJRdWFIUjBj
+        Rjl0WlhSb2IyUjlJZ29nSUhOMFlYUjFjMTlqYjJSbElEMGdJaVI3WVhkelgyRndhVjluWVhSbGQy
+        RjVYMjFsZEdodlpGOXlaWE53YjI1elpTNXlaWE53YjI1elpWOHlNREF1YzNSaGRIVnpYMk52WkdW
+        OUlnb0tJQ0FqSUZSeVlXNXpabTl5YlhNZ2RHaGxJR0poWTJ0bGJtUWdTbE5QVGlCeVpYTndiMjV6
+        WlNCMGJ5QllUVXdLSUNCeVpYTndiMjV6WlY5MFpXMXdiR0YwWlhNZ1BTQjdDaUFnSUNBaVlYQndi
+        R2xqWVhScGIyNHZlRzFzSWlBOUlEdzhSVTlHQ2lOelpYUW9KR2x1Y0hWMFVtOXZkQ0E5SUNScGJu
+        QjFkQzV3WVhSb0tDY2tKeWtwQ2p3L2VHMXNJSFpsY25OcGIyNDlJakV1TUNJZ1pXNWpiMlJwYm1j
+        OUlsVlVSaTA0SWo4K0NqeHRaWE56WVdkbFBnb2dJQ0FnSkdsdWNIVjBVbTl2ZEM1aWIyUjVDand2
+        YldWemMyRm5aVDRLUlU5R0NpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVY5bllYUmxkMkY1WDJsdWRHVm5jbUYwYVc5dVgzSmxjM0J2Ym5ObFlDQmpZ
+        VzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBibWNnWUZKRlUxUXRRVkJKTFVsRUwxSkZVMDlWVWtORkxV
+        bEVMMGhVVkZBdFRVVlVTRTlFTDFOVVFWUlZVeTFEVDBSRllDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5cGJuUmxaM0poZEdsdmJsOXlaWE53YjI1elpTNW9kRzFzTG0x
+        aGNtdGtiM2R1

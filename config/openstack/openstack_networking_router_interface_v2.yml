@@ -12,16 +12,33 @@ openstack_networking_router_interface_v2:
             notes: ''
         router_id:
             description: ID of the router this interface belongs to. Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        router_id:
-            description: See Argument Reference above.
-        subnet_id:
-            description: See Argument Reference above.
-        port_id:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlkR1pmZEdWemRG
+        OXVaWFIzYjNKcklnb2dJR0ZrYldsdVgzTjBZWFJsWDNWd0lEMGdJblJ5ZFdVaUNuMEtDbkpsYzI5
+        MWNtTmxJQ0p2Y0dWdWMzUmhZMnRmYm1WMGQyOXlhMmx1WjE5emRXSnVaWFJmZGpJaUlDSnpkV0p1
+        WlhSZk1TSWdld29nSUc1bGRIZHZjbXRmYVdRZ1BTQWlKSHR2Y0dWdWMzUmhZMnRmYm1WMGQyOXlh
+        Mmx1WjE5dVpYUjNiM0pyWDNZeUxtNWxkSGR2Y210Zk1TNXBaSDBpQ2lBZ1kybGtjaUFnSUNBZ0lD
+        QTlJQ0l4T1RJdU1UWTRMakU1T1M0d0x6STBJZ29nSUdsd1gzWmxjbk5wYjI0Z1BTQTBDbjBLQ25K
+        bGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXliM1YwWlhKZmRqSWlJQ0p5
+        YjNWMFpYSmZNU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpYlhsZmNtOTFk
+        R1Z5SWdvZ0lHVjRkR1Z5Ym1Gc1gyNWxkSGR2Y210ZmFXUWdQU0FpWmpZM1pqQmtOekl0TUdSa1pp
+        MHhNV1UwTFRsa09UVXRaVEZtTWpsbU5ERTNaVEptSWdwOUNncHlaWE52ZFhKalpTQWliM0JsYm5O
+        MFlXTnJYMjVsZEhkdmNtdHBibWRmY205MWRHVnlYMmx1ZEdWeVptRmpaVjkyTWlJZ0luSnZkWFJs
+        Y2w5cGJuUmxjbVpoWTJWZk1TSWdld29nSUhKdmRYUmxjbDlwWkNBOUlDSWtlMjl3Wlc1emRHRmph
+        MTl1WlhSM2IzSnJhVzVuWDNKdmRYUmxjbDkyTWk1eWIzVjBaWEpmTVM1cFpIMGlDaUFnYzNWaWJt
+        VjBYMmxrSUQwZ0lpUjdiM0JsYm5OMFlXTnJYMjVsZEhkdmNtdHBibWRmYzNWaWJtVjBYM1l5TG5O
+        MVltNWxkRjh4TG1sa2ZTSUtmUW89
+    import: !!binary |
+        Q2dwU2IzVjBaWElnU1c1MFpYSm1ZV05sY3lCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsSUhCdmNuUWdZR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0p2ZFhSbGNsOXBiblJsY21aaFkyVmZkakl1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

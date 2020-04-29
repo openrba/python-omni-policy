@@ -7,15 +7,46 @@ aws_sns_topic_policy:
     arguments:
         arn:
             description: The ARN of the SNS topic
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: The fully-formed AWS policy as JSON. For more information
                 about building AWS IAM policy documents with Terraform, see the [AWS
                 IAM Policy Document Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMjV6WDNSdmNHbGpJaUFpZEdWemRDSWdld29nSUc1aGJXVWdQ
+        U0FpYlhrdGRHOXdhV010ZDJsMGFDMXdiMnhwWTNraUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmMy
+        NXpYM1J2Y0dsalgzQnZiR2xqZVNJZ0ltUmxabUYxYkhRaUlIc0tJQ0JoY200Z1BTQWlKSHRoZDNO
+        ZmMyNXpYM1J2Y0dsakxuUmxjM1F1WVhKdWZTSUtDaUFnY0c5c2FXTjVJRDBnSWlSN1pHRjBZUzVo
+        ZDNOZmFXRnRYM0J2YkdsamVWOWtiMk4xYldWdWRDNXpibk5mZEc5d2FXTmZjRzlzYVdONUxtcHpi
+        MjU5SWdwOUNncGtZWFJoSUNKaGQzTmZhV0Z0WDNCdmJHbGplVjlrYjJOMWJXVnVkQ0lnSW5OdWMx
+        OTBiM0JwWTE5d2IyeHBZM2tpSUhzS0lDQndiMnhwWTNsZmFXUWdQU0FpWDE5a1pXWmhkV3gwWDNC
+        dmJHbGplVjlKUkNJS0NpQWdjM1JoZEdWdFpXNTBJSHNLSUNBZ0lHRmpkR2x2Ym5NZ1BTQmJDaUFn
+        SUNBZ0lDSlRUbE02VTNWaWMyTnlhV0psSWl3S0lDQWdJQ0FnSWxOT1V6cFRaWFJVYjNCcFkwRjBk
+        SEpwWW5WMFpYTWlMQW9nSUNBZ0lDQWlVMDVUT2xKbGJXOTJaVkJsY20xcGMzTnBiMjRpTEFvZ0lD
+        QWdJQ0FpVTA1VE9sSmxZMlZwZG1VaUxBb2dJQ0FnSUNBaVUwNVRPbEIxWW14cGMyZ2lMQW9nSUNB
+        Z0lDQWlVMDVUT2t4cGMzUlRkV0p6WTNKcGNIUnBiMjV6UW5sVWIzQnBZeUlzQ2lBZ0lDQWdJQ0pU
+        VGxNNlIyVjBWRzl3YVdOQmRIUnlhV0oxZEdWeklpd0tJQ0FnSUNBZ0lsTk9VenBFWld4bGRHVlVi
+        M0JwWXlJc0NpQWdJQ0FnSUNKVFRsTTZRV1JrVUdWeWJXbHpjMmx2YmlJc0NpQWdJQ0JkQ2dvZ0lD
+        QWdZMjl1WkdsMGFXOXVJSHNLSUNBZ0lDQWdkR1Z6ZENBZ0lDQWdQU0FpVTNSeWFXNW5SWEYxWVd4
+        eklnb2dJQ0FnSUNCMllYSnBZV0pzWlNBOUlDSkJWMU02VTI5MWNtTmxUM2R1WlhJaUNnb2dJQ0Fn
+        SUNCMllXeDFaWE1nUFNCYkNpQWdJQ0FnSUNBZ0lpUjdkbUZ5TG1GalkyOTFiblF0YVdSOUlpd0tJ
+        Q0FnSUNBZ1hRb2dJQ0FnZlFvS0lDQWdJR1ZtWm1WamRDQTlJQ0pCYkd4dmR5SUtDaUFnSUNCd2Nt
+        bHVZMmx3WVd4eklIc0tJQ0FnSUNBZ2RIbHdaU0FnSUNBZ0lDQWdQU0FpUVZkVElnb2dJQ0FnSUNC
+        cFpHVnVkR2xtYVdWeWN5QTlJRnNpS2lKZENpQWdJQ0I5Q2dvZ0lDQWdjbVZ6YjNWeVkyVnpJRDBn
+        V3dvZ0lDQWdJQ0FpSkh0aGQzTmZjMjV6WDNSdmNHbGpMblJsYzNRdVlYSnVmU0lzQ2lBZ0lDQmRD
+        Z29nSUNBZ2MybGtJRDBnSWw5ZlpHVm1ZWFZzZEY5emRHRjBaVzFsYm5SZlNVUWlDaUFnZlFwOUNn
+        PT0=
+    import: !!binary |
+        Q2dwVFRsTWdWRzl3YVdNZ1VHOXNhV041SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnZEc5d2FXTWdRVkpPTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6Ym5OZmRHOXdhV05mY0c5c2FXTjVMbWgwYld3dWJXRnlhMlJ2ZDI0PQ==

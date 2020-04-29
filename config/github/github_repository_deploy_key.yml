@@ -6,23 +6,40 @@ github_repository_deploy_key:
     arguments:
         key:
             description: A SSH key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         read_only:
             description: A boolean qualifying the key to be either read only or read/write.
-            required: true
+            required: false
             policy: ''
             notes: ''
         repository:
             description: Name of the GitHub repository.
-            required: true
+            required: false
             policy: ''
             notes: ''
         title:
             description: A title.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1FXUmtJR0VnWkdWd2JHOTVJR3RsZVFweVpYTnZkWEpqWlNBaVoybDBhSFZpWDNKbGNHOXph
+        WFJ2Y25sZlpHVndiRzk1WDJ0bGVTSWdJbVY0WVcxd2JHVmZjbVZ3YjNOcGRHOXllVjlrWlhCc2Iz
+        bGZhMlY1SWlCN0NpQWdkR2wwYkdVZ0lDQWdJQ0E5SUNKU1pYQnZjMmwwYjNKNUlIUmxjM1FnYTJW
+        NUlnb2dJSEpsY0c5emFYUnZjbmtnUFNBaWRHVnpkQzF5WlhCdklnb2dJR3RsZVNBZ0lDQWdJQ0Fn
+        UFNBaWMzTm9MWEp6WVNCQlFVRXVMaTRpQ2lBZ2NtVmhaRjl2Ym14NUlDQTlJQ0ptWVd4elpTSUtm
+        UW89
+    import: !!binary |
+        Q2dwU1pYQnZjMmwwYjNKNUlHUmxjR3h2ZVNCclpYbHpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCaElHTnZiRzl1TFhObGNHRnlZWFJsWkNCd1lXbHlJRzltSUhKbGNHOXphWFJ2Y25rZ2Jt
+        RnRaUXBoYm1RZ1IybDBTSFZpSjNNZ2EyVjVJR2xrTGlCVWFHVWdiR0YwZEdWeUlHTmhiaUJpWlNC
+        dlluUmhhVzVsWkNCaWVTQkhhWFJJZFdJbmN5QlRSRXR6SUdGdVpDQkJVRWt1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5eVpYQnZjMmwwYjNKNVgyUmxjR3h2ZVY5clpYa3VhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

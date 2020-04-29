@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the document.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "content": {
                 "description": "The JSON or YAML content of the document.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,7 +32,7 @@
             },
             "document_type": {
                 "description": "The type of the document. Valid document types include: `Automation`, `Command`, `Package`, `Policy`, and `Session`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

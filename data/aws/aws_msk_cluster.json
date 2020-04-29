@@ -8,25 +8,25 @@
         "arguments": {
             "broker_node_group_info": {
                 "description": "Configuration block for the broker nodes of the Kafka cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "cluster_name": {
                 "description": "Name of the MSK cluster.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "kafka_version": {
                 "description": "Specify the desired Kafka software version.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "number_of_broker_nodes": {
                 "description": "The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

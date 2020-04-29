@@ -7,12 +7,12 @@ aws_api_gateway_model:
     arguments:
         rest_api_id:
             description: The ID of the associated REST API
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the model
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -22,15 +22,33 @@ aws_api_gateway_model:
             notes: ''
         content_type:
             description: The content type of the model
-            required: true
+            required: false
             policy: ''
             notes: ''
         schema:
             description: The schema of the model in a JSON form
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the model
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNKTmVVUmxi
+        VzlCVUVraUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSk5lVVJsYlc5QlVFa2lDaUFnWkdWelkz
+        SnBjSFJwYjI0Z1BTQWlWR2hwY3lCcGN5QnRlU0JCVUVrZ1ptOXlJR1JsYlc5dWMzUnlZWFJwYjI0
+        Z2NIVnljRzl6WlhNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZllYQnBYMmRoZEdWM1lYbGZiVzlr
+        Wld3aUlDSk5lVVJsYlc5TmIyUmxiQ0lnZXdvZ0lISmxjM1JmWVhCcFgybGtJQ0E5SUNJa2UyRjNj
+        MTloY0dsZloyRjBaWGRoZVY5eVpYTjBYMkZ3YVM1TmVVUmxiVzlCVUVrdWFXUjlJZ29nSUc1aGJX
+        VWdJQ0FnSUNBZ0lDQTlJQ0oxYzJWeUlnb2dJR1JsYzJOeWFYQjBhVzl1SUNBOUlDSmhJRXBUVDA0
+        Z2MyTm9aVzFoSWdvZ0lHTnZiblJsYm5SZmRIbHdaU0E5SUNKaGNIQnNhV05oZEdsdmJpOXFjMjl1
+        SWdvS0lDQnpZMmhsYldFZ1BTQThQRVZQUmdwN0NpQWdJblI1Y0dVaU9pQWliMkpxWldOMElncDlD
+        a1ZQUmdwOUNnPT0=
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVY5bllYUmxkMkY1WDIxdlpHVnNZQ0JqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        WE5wYm1jZ1lGSkZVMVF0UVZCSkxVbEVMMDVCVFVWZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5dGIyUmxiQzVvZEcxc0xtMWhjbXRrYjNkdQ==

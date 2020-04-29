@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the certificate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,13 +20,13 @@
             },
             "environment_id": {
                 "description": "The ID of the environment to create the certificate for.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "cert": {
                 "description": "The certificate content.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,46 +38,12 @@
             },
             "key": {
                 "description": "The certificate key.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "(Computed) The ID of the resource."
-            },
-            "cn": {
-                "description": "The certificate CN."
-            },
-            "algorithm": {
-                "description": "The certificate algorithm."
-            },
-            "cert_fingerprint": {
-                "description": "The certificate fingerprint."
-            },
-            "expires_at": {
-                "description": "The certificate expiration date."
-            },
-            "issued_at": {
-                "description": "The certificate creation date."
-            },
-            "issuer": {
-                "description": "The certificate issuer."
-            },
-            "key_size": {
-                "description": "The certificate key size."
-            },
-            "serial_number": {
-                "description": "The certificate serial number."
-            },
-            "subject_alternative_names": {
-                "description": "The list of certificate Subject Alternative Names."
-            },
-            "version": {
-                "description": "The certificate version."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

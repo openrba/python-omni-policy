@@ -7,20 +7,42 @@ aws_ses_identity_policy:
     arguments:
         identity:
             description: Name or Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Name of the policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: JSON string of the policy. For more information about building
                 AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document
                 Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjMlZ6WDJSdmJXRnBibDlwWkdWdWRHbDBlU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQmtiMjFoYVc0Z1BTQWlaWGhoYlhCc1pTNWpiMjBpQ24wS0NtUmhkR0VnSW1GM2Mx
+        OXBZVzFmY0c5c2FXTjVYMlJ2WTNWdFpXNTBJaUFpWlhoaGJYQnNaU0lnZXdvZ0lITjBZWFJsYldW
+        dWRDQjdDaUFnSUNCaFkzUnBiMjV6SUNBZ1BTQmJJbE5GVXpwVFpXNWtSVzFoYVd3aUxDQWlVMFZU
+        T2xObGJtUlNZWGRGYldGcGJDSmRDaUFnSUNCeVpYTnZkWEpqWlhNZ1BTQmJJaVI3WVhkelgzTmxj
+        MTlrYjIxaGFXNWZhV1JsYm5ScGRIa3VaWGhoYlhCc1pTNWhjbTU5SWwwS0NpQWdJQ0J3Y21sdVky
+        bHdZV3h6SUhzS0lDQWdJQ0FnYVdSbGJuUnBabWxsY25NZ1BTQmJJaW9pWFFvZ0lDQWdJQ0IwZVhC
+        bElDQWdJQ0FnSUNBOUlDSkJWMU1pQ2lBZ0lDQjlDaUFnZlFwOUNncHlaWE52ZFhKalpTQWlZWGR6
+        WDNObGMxOXBaR1Z1ZEdsMGVWOXdiMnhwWTNraUlDSmxlR0Z0Y0d4bElpQjdDaUFnYVdSbGJuUnBk
+        SGtnUFNBaUpIdGhkM05mYzJWelgyUnZiV0ZwYmw5cFpHVnVkR2wwZVM1bGVHRnRjR3hsTG1GeWJu
+        MGlDaUFnYm1GdFpTQWdJQ0FnUFNBaVpYaGhiWEJzWlNJS0lDQndiMnhwWTNrZ0lDQTlJQ0lrZTJS
+        aGRHRXVZWGR6WDJsaGJWOXdiMnhwWTNsZlpHOWpkVzFsYm5RdVpYaGhiWEJzWlM1cWMyOXVmU0lL
+        ZlFvPQ==
+    import: !!binary |
+        Q2dwVFJWTWdTV1JsYm5ScGRIa2dVRzlzYVdOcFpYTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQnBaR1Z1ZEdsMGVTQmhibVFnY0c5c2FXTjVJRzVoYldVc0lITmxjR0Z5WVhSbFpD
+        QmllU0JoSUhCcGNHVWdZMmhoY21GamRHVnlJQ2hnZkdBcExDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6WlhOZmFXUmxiblJwZEhsZmNHOXNhV041TG1oMGJXd3ViV0Z5YTJSdmQyND0=

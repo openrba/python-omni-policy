@@ -8,25 +8,25 @@
         "arguments": {
             "api_management_name": {
                 "description": "The Name of the API Management Service where this Twitter Identity Provider should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The Name of the Resource Group where the API Management Service exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "api_key": {
                 "description": "App Consumer API key for Twitter.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "api_secret_key": {
                 "description": "App Consumer API secret key for Twitter.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

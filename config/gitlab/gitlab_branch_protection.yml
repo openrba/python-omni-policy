@@ -7,23 +7,34 @@ gitlab_branch_protection:
     arguments:
         project:
             description: The id of the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         branch:
             description: Name of the branch.
-            required: true
+            required: false
             policy: ''
             notes: ''
         push_access_level:
             description: One of five levels of access to the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         merge_access_level:
             description: One of five levels of access to the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmFYUnNZV0pmWW5KaGJtTm9YM0J5YjNSbFkzUnBiMjRpSUNKQ2NtRnVZ
+        MmhRY205MFpXTjBJaUI3Q2lBZ2NISnZhbVZqZENBOUlDSXhNak0wTlNJS0lDQmljbUZ1WTJnZ1BT
+        QWlRbkpoYm1Ob1VISnZkR1ZqZEdWa0lnb2dJSEIxYzJoZllXTmpaWE56WDJ4bGRtVnNJRDBnSW1S
+        bGRtVnNiM0JsY2lJS0lDQnRaWEpuWlY5aFkyTmxjM05mYkdWMlpXd2dQU0FpWkdWMlpXeHZjR1Z5
+        SWdwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR3hoWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5aWNtRnVZMmhmY0hKdmRHVmpkR2x2Ymk1b2RHMXNMbTFoY210a2IzZHU=

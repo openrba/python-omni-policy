@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "A region-unique name for the AMI.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "source_instance_id": {
                 "description": "The id of the instance to use as the basis of the AMI.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

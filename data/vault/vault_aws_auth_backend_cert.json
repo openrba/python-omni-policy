@@ -8,13 +8,13 @@
         "arguments": {
             "cert_name": {
                 "description": "The name of the certificate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "aws_public_cert": {
                 "description": "The  Base64 encoded AWS Public key required to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

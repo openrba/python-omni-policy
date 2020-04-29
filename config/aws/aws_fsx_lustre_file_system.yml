@@ -7,14 +7,14 @@ aws_fsx_lustre_file_system:
     arguments:
         storage_capacity:
             description: The storage capacity (GiB
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
             description: A list of IDs for the subnets that the file system will be
                 accessible from. File systems currently support only one subnet. The
                 file server is also launched in that subnet's Availability Zone.
-            required: true
+            required: false
             policy: ''
             notes: ''
         export_path:
@@ -65,3 +65,16 @@ aws_fsx_lustre_file_system:
         vpc_id:
             description: Identifier of the Virtual Private Cloud for the file system.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZabk40WDJ4MWMzUnlaVjltYVd4bFgzTjVjM1JsYlNJZ0ltVjRZ
+        VzF3YkdVaUlIc0tJQ0JwYlhCdmNuUmZjR0YwYUNBZ0lDQWdJRDBnSW5Nek9pOHZKSHRoZDNOZmN6
+        TmZZblZqYTJWMExtVjRZVzF3YkdVdVluVmphMlYwZlNJS0lDQnpkRzl5WVdkbFgyTmhjR0ZqYVhS
+        NUlEMGdNVEl3TUFvZ0lITjFZbTVsZEY5cFpITWdJQ0FnSUNBZ1BTQmJJaVI3WVhkelgzTjFZbTVs
+        ZEM1bGVHRnRjR3hsTG1sa2ZTSmRDbjBL
+    import: !!binary |
+        Q2dwR1UzZ2dSbWxzWlNCVGVYTjBaVzF6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTltYzNoZmJIVnpkSEpsWDJacGJHVmZjM2x6ZEdWdExtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -7,12 +7,12 @@ aws_vpn_gateway_attachment:
     arguments:
         vpc_id:
             description: The ID of the VPC.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpn_gateway_id:
             description: The ID of the Virtual Private Gateway.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -22,3 +22,19 @@ aws_vpn_gateway_attachment:
         vpn_gateway_id:
             description: The ID of the Virtual Private Gateway.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqSWlBaWJtVjBkMjl5YXlJZ2V3b2dJR05wWkhKZllteHZZ
+        MnNnUFNBaU1UQXVNQzR3TGpBdk1UWWlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZkbkJ1WDJkaGRH
+        VjNZWGtpSUNKMmNHNGlJSHNLSUNCMFlXZHpJRDBnZXdvZ0lDQWdUbUZ0WlNBOUlDSmxlR0Z0Y0d4
+        bExYWndiaTFuWVhSbGQyRjVJZ29nSUgwS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5MmNHNWZaMkYw
+        WlhkaGVWOWhkSFJoWTJodFpXNTBJaUFpZG5CdVgyRjBkR0ZqYUcxbGJuUWlJSHNLSUNCMmNHTmZh
+        V1FnSUNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTkyY0dNdWJtVjBkMjl5YXk1cFpIMGlDaUFnZG5CdVgy
+        ZGhkR1YzWVhsZmFXUWdQU0FpSkh0aGQzTmZkbkJ1WDJkaGRHVjNZWGt1ZG5CdUxtbGtmU0lLZlFv
+        PQ==
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR1J2WlhNZ2JtOTBJSE4xY0hCdmNuUWdhVzF3YjNKMGFXNW5M
+        Zz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0c1ZloyRjBaWGRoZVY5aGRIUmhZMmh0Wlc1MExtaDBiV3d1YldGeWEyUnZkMjQ9

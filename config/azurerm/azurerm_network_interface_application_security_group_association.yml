@@ -9,14 +9,14 @@ azurerm_network_interface_application_security_group_association:
         network_interface_id:
             description: The ID of the Network Interface. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         application_security_group_id:
             description: The ID of the Application Security Group which this Network
                 Interface which should be connected to. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

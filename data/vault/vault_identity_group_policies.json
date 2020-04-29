@@ -8,13 +8,13 @@
         "arguments": {
             "policies": {
                 "description": "List of policies to assign to the group",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "group_id": {
                 "description": "Group ID to assign policies to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -25,11 +25,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "group_name": {
-                "description": "The name of the group that are assigned the policies."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

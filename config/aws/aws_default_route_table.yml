@@ -7,7 +7,7 @@ aws_default_route_table:
     arguments:
         default_route_table_id:
             description: The ID of the Default Routing Table.
-            required: true
+            required: false
             policy: ''
             notes: ''
         route:
@@ -31,3 +31,14 @@ aws_default_route_table:
         owner_id:
             description: The ID of the AWS account that owns the route table
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR1ZtWVhWc2RGOXliM1YwWlY5MFlXSnNaU0lnSW5JaUlIc0tJ
+        Q0JrWldaaGRXeDBYM0p2ZFhSbFgzUmhZbXhsWDJsa0lEMGdJaVI3WVhkelgzWndZeTVtYjI4dVpH
+        Vm1ZWFZzZEY5eWIzVjBaVjkwWVdKc1pWOXBaSDBpQ2dvZ0lISnZkWFJsSUhzS0lDQWdJQ01nTGk0
+        dUNpQWdmUW9LSUNCMFlXZHpJRDBnZXdvZ0lDQWdUbUZ0WlNBOUlDSmtaV1poZFd4MElIUmhZbXhs
+        SWdvZ0lIMEtmUW89
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWldaaGRXeDBYM0p2ZFhSbFgzUmhZbXhsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

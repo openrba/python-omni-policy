@@ -8,27 +8,27 @@ azurerm_managed_application_definition:
         name:
             description: Specifies the name of the Managed Application Definition.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the Resource Group where the Managed Application
                 Definition should exist. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         lock_level:
             description: Specifies the managed application lock level. Valid values
                 include `CanNotDelete`, `None`, `ReadOnly`. Changing this forces a
                 new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         authorization:
@@ -73,21 +73,23 @@ azurerm_managed_application_definition:
             description: A mapping of tags to assign to the resource.
             required: false
             policy: ''
-            notes: If either `create_ui_definition` or `main_template` is set they
-                both must be set.
+            notes:
+            - '-> '
+            - ' If either `create_ui_definition` or `main_template` is set they both
+                must be set.'
         role_definition_id:
             description: Specifies a role definition identifier for the provider.
                 This role will define all the permissions that the provider must have
                 on the managed application's container resource group. This role definition
                 cannot have permission to delete the resource group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_principal_id:
             description: Specifies a service principal identifier for the provider.
                 This is the identity that the provider will use to call ARM to manage
                 the managed application resources.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

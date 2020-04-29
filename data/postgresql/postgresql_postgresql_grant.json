@@ -8,31 +8,31 @@
         "arguments": {
             "role": {
                 "description": "The name of the role to grant privileges on.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "database": {
                 "description": "The database to grant privileges on for this role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "schema": {
                 "description": "The database schema to grant privileges on for this role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "object_type": {
                 "description": "The PostgreSQL object type to grant the privileges on (one of: table, sequence).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "privileges": {
                 "description": "The list of privileges to grant.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

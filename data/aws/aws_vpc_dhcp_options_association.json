@@ -8,13 +8,13 @@
         "arguments": {
             "vpc_id": {
                 "description": "The ID of the VPC to which we would like to associate a DHCP Options Set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "dhcp_options_id": {
                 "description": "The ID of the DHCP Options Set to associate to the VPC.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Public IP resource . Changing this forces a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -28,11 +28,13 @@
                 "description": "The SKU of the Public IP. Accepted values are `Basic` and `Standard`. Defaults to `Basic`.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> **Note** Public IP Standard SKUs require `allocation_method` to be set to `Static`."
+                ]
             },
             "allocation_method": {
                 "description": " Defines the allocation method for this IP address. Possible values are `Static` or `Dynamic`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

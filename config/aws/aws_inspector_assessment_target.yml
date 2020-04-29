@@ -7,7 +7,7 @@ aws_inspector_assessment_target:
     arguments:
         name:
             description: The name of the assessment target.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_arn:
@@ -19,3 +19,20 @@ aws_inspector_assessment_target:
         arn:
             description: The target assessment ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhVzV6Y0dWamRHOXlYM0psYzI5MWNtTmxYMmR5YjNWd0lpQWlZ
+        bUZ5SWlCN0NpQWdkR0ZuY3lBOUlIc0tJQ0FnSUU1aGJXVWdQU0FpWm05dklnb2dJQ0FnUlc1MklD
+        QTlJQ0ppWVhJaUNpQWdmUXA5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMmx1YzNCbFkzUnZjbDloYzNO
+        bGMzTnRaVzUwWDNSaGNtZGxkQ0lnSW1admJ5SWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBOUlDSmhjM05sYzNOdFpXNTBJSFJoY21kbGRDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOWhj
+        bTRnUFNBaUpIdGhkM05mYVc1emNHVmpkRzl5WDNKbGMyOTFjbU5sWDJkeWIzVndMbUpoY2k1aGNt
+        NTlJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwSmJuTndaV04wYjNJZ1FYTnpaWE56YldWdWRDQlVZWEpuWlhSeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMmFXRWdkR2hsYVhJZ1FXMWhlbTl1SUZKbGMyOTFjbU5sSUU1aGJXVWdLRUZTVGlrc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYm5Od1pXTjBiM0pmWVhOelpYTnpiV1Z1ZEY5MFlYSm5aWFF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

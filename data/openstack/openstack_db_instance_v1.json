@@ -8,7 +8,7 @@
         "arguments": {
             "region": {
                 "description": "The region in which to create the db instance. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "flavor_id": {
                 "description": "The flavor ID of the desired flavor for the instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,13 +32,13 @@
             },
             "size": {
                 "description": "Specifies the volume size in GB. Changing this creates new instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "datastore": {
                 "description": "An array of database engine type and version. The datastore",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,13 +62,13 @@
             },
             "type": {
                 "description": "Database engine type to be used in new instance. Changing this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "version": {
                 "description": "Version of database engine type to be used in new instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -127,62 +127,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "size": {
-                "description": "See Argument Reference above."
-            },
-            "flavor_id": {
-                "description": "See Argument Reference above."
-            },
-            "configuration_id": {
-                "description": "See Argument Reference above."
-            },
-            "datastore/type": {
-                "description": "See Argument Reference above."
-            },
-            "datastore/version": {
-                "description": "See Argument Reference above."
-            },
-            "network/uuid": {
-                "description": "See Argument Reference above."
-            },
-            "network/port": {
-                "description": "See Argument Reference above."
-            },
-            "network/fixed_ip_v4": {
-                "description": "The Fixed IPv4 address of the Instance on that"
-            },
-            "network/fixed_ip_v6": {
-                "description": "The Fixed IPv6 address of the Instance on that"
-            },
-            "database/name": {
-                "description": "See Argument Reference above."
-            },
-            "database/collate": {
-                "description": "See Argument Reference above."
-            },
-            "database/charset": {
-                "description": "See Argument Reference above."
-            },
-            "user/name": {
-                "description": "See Argument Reference above."
-            },
-            "user/password": {
-                "description": "See Argument Reference above."
-            },
-            "user/databases": {
-                "description": "See Argument Reference above."
-            },
-            "user/host": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

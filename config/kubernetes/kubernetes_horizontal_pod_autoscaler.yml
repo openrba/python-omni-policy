@@ -10,14 +10,29 @@ kubernetes_horizontal_pod_autoscaler:
         metadata:
             description: Standard horizontal pod autoscaler's metadata. For more info
                 see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Behaviour of the autoscaler. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status)
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgyaHZjbWw2YjI1MFlXeGZjRzlrWDJGMWRHOXpZ
+        MkZzWlhJaUlDSmxlR0Z0Y0d4bElpQjdDaUFnYldWMFlXUmhkR0VnZXdvZ0lDQWdibUZ0WlNBOUlD
+        SjBaWEp5WVdadmNtMHRaWGhoYlhCc1pTSUtJQ0I5Q2dvZ0lITndaV01nZXdvZ0lDQWdiV0Y0WDNK
+        bGNHeHBZMkZ6SUQwZ01UQUtJQ0FnSUcxcGJsOXlaWEJzYVdOaGN5QTlJRGdLQ2lBZ0lDQnpZMkZz
+        WlY5MFlYSm5aWFJmY21WbUlIc0tJQ0FnSUNBZ2EybHVaQ0E5SUNKRVpYQnNiM2x0Wlc1MElnb2dJ
+        Q0FnSUNCdVlXMWxJRDBnSWsxNVFYQndJZ29nSUNBZ2ZRb2dJSDBLZlFvPQ==
+    import: !!binary |
+        Q2dwSWIzSnBlbTl1ZEdGc0lGQnZaQ0JCZFhSdmMyTmhiR1Z5SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnYm1GdFpYTndZV05sSUdGdVpDQnVZVzFsTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZhRzl5YVhwdmJuUmhiRjl3YjJSZllYVjBiM05qWVd4bGNpNW9kRzFzTG0x
+        aGNtdGtiM2R1

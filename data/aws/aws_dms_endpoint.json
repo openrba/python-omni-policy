@@ -20,19 +20,19 @@
             },
             "endpoint_id": {
                 "description": "The database endpoint identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "endpoint_type": {
                 "description": "The type of endpoint. Can be one of `source | target`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "engine_name": {
                 "description": "The type of engine for the endpoint. Can be one of `aurora | aurora-postgresql| azuredb | db2 | docdb | dynamodb | elasticsearch | kinesis | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -43,7 +43,17 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "RDS Global Cluster Amazon Resource Name (ARN)"
+            },
+            "global_cluster_resource_id": {
+                "description": "AWS Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed"
+            },
+            "id": {
+                "description": "RDS Global Cluster identifier"
+            }
+        },
         "timeouts": {}
     }
 }

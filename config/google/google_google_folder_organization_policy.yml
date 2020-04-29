@@ -9,14 +9,14 @@ google_google_folder_organization_policy:
         folder:
             description: The resource name of the folder to set the policy for. Its
                 format is folders/{folder_id}.
-            required: true
+            required: false
             policy: ''
             notes: ''
         constraint:
             description: The name of the Constraint the Policy is configuring, for
                 example, `serviceuser.services`. Check out the [complete list of available
                 constraints](https://cloud.google.com/resource-manager/docs/organization-policy/understanding-constraints#available_constraints).
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
@@ -45,7 +45,7 @@ google_google_folder_organization_policy:
         enforced:
             description: If true, then the Policy is enforced. If false, then any
                 configuration is acceptable.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow:
@@ -79,7 +79,7 @@ google_google_folder_organization_policy:
         default:
             description: May only be set to true. If set, then the default Policy
                 is restored.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -92,3 +92,17 @@ google_google_folder_organization_policy:
                 to nanoseconds, representing when the variable was last updated. Example:
                 "2016-10-09T12:33:37.578138407Z".'
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmWm05c1pHVnlYMjl5WjJGdWFYcGhkR2x2Ymw5d2IyeHBZ
+        M2tpSUNKelpYSnBZV3hmY0c5eWRGOXdiMnhwWTNraUlIc0tJQ0JtYjJ4a1pYSWdJQ0FnSUQwZ0lt
+        WnZiR1JsY25Ndk1USXpORFUyTnpnNUlnb2dJR052Ym5OMGNtRnBiblFnUFNBaVkyOXRjSFYwWlM1
+        a2FYTmhZbXhsVTJWeWFXRnNVRzl5ZEVGalkyVnpjeUlLQ2lBZ1ltOXZiR1ZoYmw5d2IyeHBZM2tn
+        ZXdvZ0lDQWdaVzVtYjNKalpXUWdQU0IwY25WbENpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwR2IyeGtaWElnYjNKbllXNXBlbUYwYVc5dUlIQnZiR2xqYVdWeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUJoYm5rZ2IyWWdkR2hsSUdadmJHeHZkeUJtYjNKdFlYUnpPZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5bmIyOW5iR1ZmWm05c1pHVnlYMjl5WjJGdWFYcGhkR2x2Ymw5d2IyeHBZM2t1YUhS
+        dGJDNXRZWEpyWkc5M2JnPT0=

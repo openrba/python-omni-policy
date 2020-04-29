@@ -8,18 +8,18 @@ azurerm_template_deployment:
         name:
             description: Specifies the name of the template deployment. Changing this
                 forces a
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         deployment_mode:
             description: Specifies the mode that is used to deploy resources. This
                 value could be either `Incremental` or `Complete`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         template_body:
@@ -117,3 +117,8 @@ azurerm_template_deployment:
         OTFiblJPWVcxbElpQjdDaUFnZG1Gc2RXVWdQU0JoZW5WeVpYSnRYM1JsYlhCc1lYUmxYMlJsY0d4
         dmVXMWxiblF1WlhoaGJYQnNaUzV2ZFhSd2RYUnpXeUp6ZEc5eVlXZGxRV05qYjNWdWRFNWhiV1Vp
         WFFwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRHVnRjR3hoZEdWZlpHVndiRzk1YldWdWRDNW9kRzFzTG0xaGNtdGtiM2R1

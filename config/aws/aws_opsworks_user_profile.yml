@@ -7,7 +7,7 @@ aws_opsworks_user_profile:
     arguments:
         user_arn:
             description: The user's IAM ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_self_management:
@@ -18,7 +18,7 @@ aws_opsworks_user_profile:
             notes: ''
         ssh_username:
             description: The ssh username, with witch this user wants to log in
-            required: true
+            required: false
             policy: ''
             notes: ''
         ssh_public_key:
@@ -30,3 +30,12 @@ aws_opsworks_user_profile:
         id:
             description: Same value as `user_arn`
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0J6ZDI5eWEzTmZkWE5sY2w5d2NtOW1hV3hsSWlBaWJYbGZj
+        SEp2Wm1sc1pTSWdld29nSUhWelpYSmZZWEp1SUNBZ0lDQTlJQ0lrZTJGM2MxOXBZVzFmZFhObGNp
+        NTFjMlZ5TG1GeWJuMGlDaUFnYzNOb1gzVnpaWEp1WVcxbElEMGdJbTE1WDNWelpYSWlDbjBL
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y0hOM2IzSnJjMTkxYzJWeVgzQnliMlpwYkdVdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -12,35 +12,41 @@ openstack_networking_rbac_policy_v2:
             notes: ''
         action:
             description: Action for the RBAC policy. Can either be
-            required: true
+            required: false
             policy: ''
             notes: ''
         object_id:
             description: The ID of the `object_type` resource. An
-            required: true
+            required: false
             policy: ''
             notes: ''
         object_type:
             description: The type of the object that the RBAC policy
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_tenant:
             description: The ID of the tenant to which the RBAC policy
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        action:
-            description: See Argument Reference above.
-        object_id:
-            description: See Argument Reference above.
-        object_type:
-            description: See Argument Reference above.
-        target_tenant:
-            description: See Argument Reference above.
-        tenant_id:
-            description: The owner of the RBAC policy.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlibVYwZDI5eWEx
+        OHhJZ29nSUdGa2JXbHVYM04wWVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNK
+        dmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXlZbUZqWDNCdmJHbGplVjkyTWlJZ0luSmlZV05m
+        Y0c5c2FXTjVYekVpSUhzS0lDQmhZM1JwYjI0Z0lDQWdJQ0FnSUQwZ0ltRmpZMlZ6YzE5aGMxOXph
+        R0Z5WldRaUNpQWdiMkpxWldOMFgybGtJQ0FnSUNBOUlDSWtlMjl3Wlc1emRHRmphMTl1WlhSM2Iz
+        SnJhVzVuWDI1bGRIZHZjbXRmZGpJdWJtVjBkMjl5YTE4eExtbGtmU0lLSUNCdlltcGxZM1JmZEhs
+        d1pTQWdJRDBnSW01bGRIZHZjbXNpQ2lBZ2RHRnlaMlYwWDNSbGJtRnVkQ0E5SUNJeU1EUXhOV0U1
+        TnpOak9XVTBOV1F6T1RFM1pqQTNPRGsxTURZME5EWTVOeUlLZlFvPQ==
+    import: !!binary |
+        Q2dwU1FrRkRJSEJ2YkdsamFXVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        R2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM0ppWVdOZmNHOXNhV041WDNZeUxtaDBiV3d1YldG
+        eWEyUnZkMjQ9

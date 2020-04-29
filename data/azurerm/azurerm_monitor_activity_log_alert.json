@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the activity log alert. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the activity log alert instance.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "scopes": {
                 "description": "The Scope at which the Activity Log should be applied, for example a the Resource ID of a Subscription or a Resource (such as a Storage Account).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "criteria": {
                 "description": "A `criteria` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,7 +56,7 @@
             },
             "action_group_id": {
                 "description": "The ID of the Action Group can be sourced from [the `azurerm_monitor_action_group` resource](./monitor_action_group.html).",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -68,7 +68,7 @@
             },
             "category": {
                 "description": "The category of the operation. Possible values are `Administrative`, `Autoscale`, `Policy`, `Recommendation`, `ResourceHealth`, `Security` and `ServiceHealth`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

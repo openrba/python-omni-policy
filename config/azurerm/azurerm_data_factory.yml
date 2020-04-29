@@ -9,19 +9,19 @@ azurerm_data_factory:
             description: Specifies the name of the Data Factory. Changing this forces
                 a new resource to be created. Must be globally unique. See the [Microsoft
                 documentation](https://docs.microsoft.com/en-us/azure/data-factory/naming-rules
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Data
                 Factory.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         github_configuration:
@@ -45,47 +45,47 @@ azurerm_data_factory:
             policy: ''
             notes: ''
         account_name:
-            description: Specifies the GitHub account name.
-            required: true
+            description: Specifies the VSTS account name.
+            required: false
             policy: ''
             notes: ''
         branch_name:
             description: Specifies the branch of the repository to get code from.
-            required: true
+            required: false
             policy: ''
             notes: ''
         git_url:
             description: 'Specifies the GitHub Enterprise host name. For example:
                 https://github.mydomain.com. Use https://github.com for open source
                 repositories.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         repository_name:
             description: Specifies the name of the git repository.
-            required: true
+            required: false
             policy: ''
             notes: ''
         root_folder:
             description: Specifies the root folder within the repository. Set to `/`
                 for the top level.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: Specifies the identity type of the Data Factory. At this
                 time the only allowed value is `SystemAssigned`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project_name:
             description: Specifies the name of the VSTS project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tenant_id:
             description: Specifies the Tenant ID associated with the VSTS account.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

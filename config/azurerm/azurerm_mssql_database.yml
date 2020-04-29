@@ -8,13 +8,13 @@ azurerm_mssql_database:
         name:
             description: The name of the Ms SQL Database. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         server_id:
             description: The id of the Ms SQL Server on which to create the database.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         auto_pause_delay_in_minutes:
@@ -77,7 +77,7 @@ azurerm_mssql_database:
             notes: ''
         restore_point_in_time:
             description: Specifies the point in time (ISO8601 format
-            required: true
+            required: false
             policy: ''
             notes: ''
         read_replica_count:
@@ -130,7 +130,7 @@ azurerm_mssql_database:
         state:
             description: The State of the Policy. Possible values are `Enabled`, `Disabled`
                 or `New`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disabled_alerts:
@@ -157,15 +157,13 @@ azurerm_mssql_database:
             policy: ''
             notes: ''
         storage_account_access_key:
-            description: Specifies the identifier key of the Threat Detection audit
-                storage account. Required if `state` is `Enabled`.
+            description: ' Specifies the access key to use for the auditing storage
+                account.'
             required: false
             policy: ''
             notes: ''
         storage_endpoint:
             description: Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net).
-                This blob storage will hold all Threat Detection audit logs. Required
-                if `state` is `Enabled`.
             required: false
             policy: ''
             notes: ''
@@ -210,24 +208,39 @@ azurerm_mssql_database:
         Q25CeWIzWnBaR1Z5SUNKaGVuVnlaWEp0SWlCN0NpQWdabVZoZEhWeVpYTWdlMzBLZlFvS2NtVnpi
         M1Z5WTJVZ0ltRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEFpSUNKbGVHRnRjR3hsSWlCN0Np
         QWdibUZ0WlNBZ0lDQWdQU0FpWlhoaGJYQnNaUzF5WlhOdmRYSmpaWE1pQ2lBZ2JHOWpZWFJwYjI0
-        Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTnhiRjl6
-        WlhKMlpYSWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJ
-        Q0FnSUNBZ0lDQTlJQ0psZUdGdGNHeGxMWE54YkhObGNuWmxjaUlLSUNCeVpYTnZkWEpqWlY5bmNt
-        OTFjRjl1WVcxbElDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1
-        bGVHRnRjR3hsTG01aGJXVUtJQ0JzYjJOaGRHbHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
-        SUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNHeGxMbXh2WTJGMGFXOXVD
-        aUFnZG1WeWMybHZiaUFnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlDSXhNaTR3SWdvZ0lH
-        RmtiV2x1YVhOMGNtRjBiM0pmYkc5bmFXNGdJQ0FnSUNBZ0lDQWdQU0FpTkdSdE1XNHhOVGR5TkRj
-        d2NpSUtJQ0JoWkcxcGJtbHpkSEpoZEc5eVgyeHZaMmx1WDNCaGMzTjNiM0prSUQwZ0lqUXRkak55
-        ZVMwMU0yTnlNemN0Y0RRMU5YY3djbVFpQ24wS2NtVnpiM1Z5WTJVZ0ltRjZkWEpsY20xZmJYTnpj
-        V3hmWkdGMFlXSmhjMlVpSUNKMFpYTjBJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnUFNBaVlX
-        TmpkR1Z6ZEMxa1lpMGxaQ0lLSUNCelpYSjJaWEpmYVdRZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzNG
-        c1gzTmxjblpsY2k1MFpYTjBMbWxrQ2lBZ1kyOXNiR0YwYVc5dUlDQWdJQ0FnUFNBaVUxRk1YMHho
-        ZEdsdU1WOUhaVzVsY21Gc1gwTlFNVjlEU1Y5QlV5SUtJQ0JzYVdObGJuTmxYM1I1Y0dVZ0lDQTlJ
-        Q0pNYVdObGJuTmxTVzVqYkhWa1pXUWlDaUFnYldGNFgzTnBlbVZmWjJJZ0lDQWdQU0EwQ2lBZ2Nt
-        VmhaRjl6WTJGc1pTQWdJQ0FnUFNCMGNuVmxDaUFnYzJ0MVgyNWhiV1VnSUNBZ0lDQWdQU0FpUWtO
-        ZlIyVnVOVjh5SWdvZ0lIcHZibVZmY21Wa2RXNWtZVzUwSUQwZ2RISjFaUW9LSUNCMFlXZHpJRDBn
-        ZXdvZ0lDQWdabTl2SUQwZ0ltSmhjaUlLSUNCOUNncDlDZz09
+        Z1BTQWlWMlZ6ZENCRmRYSnZjR1VpQ24wS0NuSmxjMjkxY21ObElDSmhlblZ5WlhKdFgzTjBiM0po
+        WjJWZllXTmpiM1Z1ZENJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaWE5oSWdvZ0lISmxjMjkxY21ObFgyZHliM1Z3WDI1aGJX
+        VWdJQ0FnSUNBOUlHRjZkWEpsY20xZmNtVnpiM1Z5WTJWZlozSnZkWEF1WlhoaGJYQnNaUzV1WVcx
+        bENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXlaWE52
+        ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1Q2lBZ1lXTmpiM1Z1ZEY5MGFXVnlJ
+        Q0FnSUNBZ0lDQWdJQ0FnSUQwZ0lsTjBZVzVrWVhKa0lnb2dJR0ZqWTI5MWJuUmZjbVZ3YkdsallY
+        UnBiMjVmZEhsd1pTQTlJQ0pNVWxNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM054YkY5
+        elpYSjJaWElpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTFhOeGJITmxjblpsY2lJS0lDQnlaWE52ZFhKalpWOW5j
+        bTkxY0Y5dVlXMWxJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNtVnliVjl5WlhOdmRYSmpaVjluY205MWND
+        NWxlR0Z0Y0d4bExtNWhiV1VLSUNCc2IyTmhkR2x2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lEMGdZWHAxY21WeWJWOXlaWE52ZFhKalpWOW5jbTkxY0M1bGVHRnRjR3hsTG14dlkyRjBhVzl1
+        Q2lBZ2RtVnljMmx2YmlBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0l4TWk0d0lnb2dJ
+        R0ZrYldsdWFYTjBjbUYwYjNKZmJHOW5hVzRnSUNBZ0lDQWdJQ0FnUFNBaU5HUnRNVzR4TlRkeU5E
+        Y3djaUlLSUNCaFpHMXBibWx6ZEhKaGRHOXlYMnh2WjJsdVgzQmhjM04zYjNKa0lEMGdJalF0ZGpO
+        eWVTMDFNMk55TXpjdGNEUTFOWGN3Y21RaUNuMEtjbVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZiWE56
+        Y1d4ZlpHRjBZV0poYzJVaUlDSjBaWE4wSWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlZ
+        V05qZEdWemRDMWtZaTBsWkNJS0lDQnpaWEoyWlhKZmFXUWdJQ0FnSUNBOUlHRjZkWEpsY20xZmMz
+        RnNYM05sY25abGNpNTBaWE4wTG1sa0NpQWdZMjlzYkdGMGFXOXVJQ0FnSUNBZ1BTQWlVMUZNWDB4
+        aGRHbHVNVjlIWlc1bGNtRnNYME5RTVY5RFNWOUJVeUlLSUNCc2FXTmxibk5sWDNSNWNHVWdJQ0E5
+        SUNKTWFXTmxibk5sU1c1amJIVmtaV1FpQ2lBZ2JXRjRYM05wZW1WZloySWdJQ0FnUFNBMENpQWdj
+        bVZoWkY5elkyRnNaU0FnSUNBZ1BTQjBjblZsQ2lBZ2MydDFYMjVoYldVZ0lDQWdJQ0FnUFNBaVFr
+        TmZSMlZ1TlY4eUlnb2dJSHB2Ym1WZmNtVmtkVzVrWVc1MElEMGdkSEoxWlFvS0lDQmxlSFJsYm1S
+        bFpGOWhkV1JwZEdsdVoxOXdiMnhwWTNrZ2V3b2dJQ0FnYzNSdmNtRm5aVjlsYm1Sd2IybHVkQ0Fn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdZWHAxY21WeWJWOXpkRzl5WVdkbFgyRmpZ
+        MjkxYm5RdVpYaGhiWEJzWlM1d2NtbHRZWEo1WDJKc2IySmZaVzVrY0c5cGJuUUtJQ0FnSUhOMGIz
+        SmhaMlZmWVdOamIzVnVkRjloWTJObGMzTmZhMlY1SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJR0Y2ZFhK
+        bGNtMWZjM1J2Y21GblpWOWhZMk52ZFc1MExtVjRZVzF3YkdVdWNISnBiV0Z5ZVY5aFkyTmxjM05m
+        YTJWNUNpQWdJQ0J6ZEc5eVlXZGxYMkZqWTI5MWJuUmZZV05qWlhOelgydGxlVjlwYzE5elpXTnZi
+        bVJoY25rZ1BTQjBjblZsQ2lBZ0lDQnlaWFJsYm5ScGIyNWZhVzVmWkdGNWN5QWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQWdJQ0FnUFNBMkNpQWdmUW9LQ2lBZ2RHRm5jeUE5SUhzS0lDQWdJR1p2YnlB
+        OUlDSmlZWElpQ2lBZ2ZRb0tmUW89
     import: !!binary |
         Q2dwVFVVd2dSR0YwWVdKaGMyVWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdj
         bVZ6YjNWeVkyVWdhV1JnTENCbExtY3VDZ289

@@ -8,13 +8,13 @@
         "arguments": {
             "metric_name": {
                 "description": "The name or description for the Amazon CloudWatch metric of this rule. The name can contain only alphanumeric characters (A-Z, a-z, 0-9); the name can't contain whitespace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "name": {
                 "description": "The name or description of the rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

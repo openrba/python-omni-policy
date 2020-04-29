@@ -7,17 +7,17 @@ aws_codedeploy_deployment_group:
     arguments:
         app_name:
             description: The name of the application.
-            required: true
+            required: false
             policy: ''
             notes: ''
         deployment_group_name:
             description: The name of the deployment group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_role_arn:
             description: The service role ARN that allows deployments.
-            required: true
+            required: false
             policy: ''
             notes: ''
         alarm_configuration:
@@ -93,3 +93,47 @@ aws_codedeploy_deployment_group:
         id:
             description: Application name and deployment group name.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNKdmJHVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0E5SUNKbGVHRnRjR3hsTFhKdmJHVWlDZ29nSUdGemMzVnRaVjl5YjJ4bFgzQnZiR2xqZVNBOUlE
+        dzhSVTlHQ25zS0lDQWlWbVZ5YzJsdmJpSTZJQ0l5TURFeUxURXdMVEUzSWl3S0lDQWlVM1JoZEdW
+        dFpXNTBJam9nV3dvZ0lDQWdld29nSUNBZ0lDQWlVMmxrSWpvZ0lpSXNDaUFnSUNBZ0lDSkZabVps
+        WTNRaU9pQWlRV3hzYjNjaUxBb2dJQ0FnSUNBaVVISnBibU5wY0dGc0lqb2dld29nSUNBZ0lDQWdJ
+        Q0pUWlhKMmFXTmxJam9nSW1OdlpHVmtaWEJzYjNrdVlXMWhlbTl1WVhkekxtTnZiU0lLSUNBZ0lD
+        QWdmU3dLSUNBZ0lDQWdJa0ZqZEdsdmJpSTZJQ0p6ZEhNNlFYTnpkVzFsVW05c1pTSUtJQ0FnSUgw
+        S0lDQmRDbjBLUlU5R0NuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXRnRYM0p2YkdWZmNHOXNhV041
+        WDJGMGRHRmphRzFsYm5RaUlDSkJWMU5EYjJSbFJHVndiRzk1VW05c1pTSWdld29nSUhCdmJHbGpl
+        VjloY200Z1BTQWlZWEp1T21GM2N6cHBZVzA2T21GM2N6cHdiMnhwWTNrdmMyVnlkbWxqWlMxeWIy
+        eGxMMEZYVTBOdlpHVkVaWEJzYjNsU2IyeGxJZ29nSUhKdmJHVWdJQ0FnSUNBZ1BTQWlKSHRoZDNO
+        ZmFXRnRYM0p2YkdVdVpYaGhiWEJzWlM1dVlXMWxmU0lLZlFvS2NtVnpiM1Z5WTJVZ0ltRjNjMTlq
+        YjJSbFpHVndiRzk1WDJGd2NDSWdJbVY0WVcxd2JHVWlJSHNLSUNCdVlXMWxJRDBnSW1WNFlXMXdi
+        R1V0WVhCd0lncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzTnVjMTkwYjNCcFl5SWdJbVY0WVcxd2JH
+        VWlJSHNLSUNCdVlXMWxJRDBnSW1WNFlXMXdiR1V0ZEc5d2FXTWlDbjBLQ25KbGMyOTFjbU5sSUNK
+        aGQzTmZZMjlrWldSbGNHeHZlVjlrWlhCc2IzbHRaVzUwWDJkeWIzVndJaUFpWlhoaGJYQnNaU0ln
+        ZXdvZ0lHRndjRjl1WVcxbElDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJa2UyRjNjMTlqYjJSbFpHVndi
+        Rzk1WDJGd2NDNWxlR0Z0Y0d4bExtNWhiV1Y5SWdvZ0lHUmxjR3h2ZVcxbGJuUmZaM0p2ZFhCZmJt
+        RnRaU0E5SUNKbGVHRnRjR3hsTFdkeWIzVndJZ29nSUhObGNuWnBZMlZmY205c1pWOWhjbTRnSUNB
+        Z0lDQTlJQ0lrZTJGM2MxOXBZVzFmY205c1pTNWxlR0Z0Y0d4bExtRnlibjBpQ2dvZ0lHVmpNbDkw
+        WVdkZmMyVjBJSHNLSUNBZ0lHVmpNbDkwWVdkZlptbHNkR1Z5SUhzS0lDQWdJQ0FnYTJWNUlDQWdQ
+        U0FpWm1sc2RHVnlhMlY1TVNJS0lDQWdJQ0FnZEhsd1pTQWdQU0FpUzBWWlgwRk9SRjlXUVV4VlJT
+        SUtJQ0FnSUNBZ2RtRnNkV1VnUFNBaVptbHNkR1Z5ZG1Gc2RXVWlDaUFnSUNCOUNnb2dJQ0FnWldN
+        eVgzUmhaMTltYVd4MFpYSWdld29nSUNBZ0lDQnJaWGtnSUNBOUlDSm1hV3gwWlhKclpYa3lJZ29n
+        SUNBZ0lDQjBlWEJsSUNBOUlDSkxSVmxmUVU1RVgxWkJURlZGSWdvZ0lDQWdJQ0IyWVd4MVpTQTlJ
+        Q0ptYVd4MFpYSjJZV3gxWlNJS0lDQWdJSDBLSUNCOUNnb2dJSFJ5YVdkblpYSmZZMjl1Wm1sbmRY
+        SmhkR2x2YmlCN0NpQWdJQ0IwY21sbloyVnlYMlYyWlc1MGN5QWdJQ0FnUFNCYklrUmxjR3h2ZVcx
+        bGJuUkdZV2xzZFhKbElsMEtJQ0FnSUhSeWFXZG5aWEpmYm1GdFpTQWdJQ0FnSUNBOUlDSmxlR0Z0
+        Y0d4bExYUnlhV2RuWlhJaUNpQWdJQ0IwY21sbloyVnlYM1JoY21kbGRGOWhjbTRnUFNBaUpIdGhk
+        M05mYzI1elgzUnZjR2xqTG1WNFlXMXdiR1V1WVhKdWZTSUtJQ0I5Q2dvZ0lHRjFkRzlmY205c2JH
+        SmhZMnRmWTI5dVptbG5kWEpoZEdsdmJpQjdDaUFnSUNCbGJtRmliR1ZrSUQwZ2RISjFaUW9nSUNB
+        Z1pYWmxiblJ6SUNBOUlGc2lSRVZRVEU5WlRVVk9WRjlHUVVsTVZWSkZJbDBLSUNCOUNnb2dJR0Zz
+        WVhKdFgyTnZibVpwWjNWeVlYUnBiMjRnZXdvZ0lDQWdZV3hoY20xeklDQTlJRnNpYlhrdFlXeGhj
+        bTB0Ym1GdFpTSmRDaUFnSUNCbGJtRmliR1ZrSUQwZ2RISjFaUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwRGIyUmxSR1Z3Ykc5NUlFUmxjR3h2ZVcxbGJuUWdSM0p2ZFhCeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCaWVTQjBhR1ZwY2lCZ1lYQndYMjVoYldWZ0xDQmhJR052Ykc5dUxDQmhibVFnWUdSbGNH
+        eHZlVzFsYm5SZlozSnZkWEJmYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJSbFpHVndiRzk1WDJSbGNHeHZlVzFsYm5SZlozSnZkWEF1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

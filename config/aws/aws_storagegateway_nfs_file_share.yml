@@ -10,22 +10,22 @@ aws_storagegateway_nfs_file_share:
                 The list must contain either valid IP addresses or valid CIDR blocks.
                 Set to `["0.0.0.0/0"]` to not limit access. Minimum 1 item. Maximum
                 100 items.
-            required: true
+            required: false
             policy: ''
             notes: ''
         gateway_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         location_arn:
             description: The ARN of the backed storage used for storing file data.
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: The ARN of the AWS Identity and Access Management (IAM
-            required: true
+            required: false
             policy: ''
             notes: ''
         default_storage_class:
@@ -91,5 +91,30 @@ aws_storagegateway_nfs_file_share:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Amazon Resource Name (ARN) of the NFS File Share.
+        arn:
+            description: Amazon Resource Name (ARN) of the NFS File Share.
+        fileshare_id:
+            description: ID of the NFS File Share.
+        path:
+            description: File share path used by the NFS client to identify the mount
+                point.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM1J2Y21GblpXZGhkR1YzWVhsZmJtWnpYMlpwYkdWZmMyaGhj
+        bVVpSUNKbGVHRnRjR3hsSWlCN0NpQWdZMnhwWlc1MFgyeHBjM1FnSUQwZ1d5SXdMakF1TUM0d0x6
+        QWlYUW9nSUdkaGRHVjNZWGxmWVhKdUlDQTlJQ0lrZTJGM2MxOXpkRzl5WVdkbFoyRjBaWGRoZVY5
+        bllYUmxkMkY1TG1WNFlXMXdiR1V1WVhKdWZTSUtJQ0JzYjJOaGRHbHZibDloY200Z1BTQWlKSHRo
+        ZDNOZmN6TmZZblZqYTJWMExtVjRZVzF3YkdVdVlYSnVmU0lLSUNCeWIyeGxYMkZ5YmlBZ0lDQWdQ
+        U0FpSkh0aGQzTmZhV0Z0WDNKdmJHVXVaWGhoYlhCc1pTNWhjbTU5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwZ1lYZHpYM04wYjNKaFoyVm5ZWFJsZDJGNVgyNW1jMTltYVd4bFgzTm9ZWEpsWUNCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnWW5rZ2RYTnBibWNnZEdobElFNUdVeUJHYVd4bElGTm9ZWEpsSUVGdFlY
+        cHZiaUJTWlhOdmRYSmpaU0JPWVcxbElDaEJVazRwTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6ZEc5eVlXZGxaMkYwWlhkaGVWOXVabk5mWm1sc1pWOXphR0Z5WlM1b2RHMXNMbTFoY210
+        a2IzZHU=

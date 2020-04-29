@@ -8,36 +8,36 @@ azurerm_bot_channel_slack:
         resource_group_name:
             description: The name of the resource group in which to create the Bot
                 Channel. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The supported Azure location where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bot_name:
             description: The name of the Bot Resource this channel will be associated
                 with. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_id:
             description: The Client ID that will be used to authenticate with Slack.
-            required: true
+            required: false
             policy: ''
             notes: ''
         client_secret:
             description: The Client Secret that will be used to authenticate with
                 Slack.
-            required: true
+            required: false
             policy: ''
             notes: ''
         verification_token:
             description: The Verification Token that will be used to authenticate
                 with Slack.
-            required: true
+            required: false
             policy: ''
             notes: ''
         landing_page_url:

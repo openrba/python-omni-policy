@@ -7,22 +7,22 @@ aws_eks_fargate_profile:
     arguments:
         cluster_name:
             description: Name of the EKS Cluster.
-            required: true
+            required: false
             policy: ''
             notes: ''
         fargate_profile_name:
             description: Name of the EKS Fargate Profile.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pod_execution_role_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         selector:
             description: Configuration block(s
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
@@ -30,7 +30,7 @@ aws_eks_fargate_profile:
                 EKS Fargate Profile. These subnets must have the following resource
                 tag: `kubernetes.io/cluster/CLUSTER_NAME` (where `CLUSTER_NAME` is
                 replaced with the name of the EKS Cluster).'
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -47,3 +47,19 @@ aws_eks_fargate_profile:
         status:
             description: Status of the EKS Fargate Profile.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaV3R6WDJaaGNtZGhkR1ZmY0hKdlptbHNaU0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQmpiSFZ6ZEdWeVgyNWhiV1VnSUNBZ0lDQWdJQ0FnSUQwZ1lYZHpYMlZyYzE5amJI
+        VnpkR1Z5TG1WNFlXMXdiR1V1Ym1GdFpRb2dJR1poY21kaGRHVmZjSEp2Wm1sc1pWOXVZVzFsSUNB
+        Z1BTQWlaWGhoYlhCc1pTSUtJQ0J3YjJSZlpYaGxZM1YwYVc5dVgzSnZiR1ZmWVhKdUlEMGdZWGR6
+        WDJsaGJWOXliMnhsTG1WNFlXMXdiR1V1WVhKdUNpQWdjM1ZpYm1WMFgybGtjeUFnSUNBZ0lDQWdJ
+        Q0FnSUNBOUlHRjNjMTl6ZFdKdVpYUXVaWGhoYlhCc1pWc3FYUzVwWkFvS0lDQnpaV3hsWTNSdmNp
+        QjdDaUFnSUNCdVlXMWxjM0JoWTJVZ1BTQWlaWGhoYlhCc1pTSUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwRlMxTWdSbUZ5WjJGMFpTQlFjbTltYVd4bGN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQmpiSFZ6ZEdWeVgyNWhiV1ZnSUdGdVpDQmdabUZ5WjJGMFpWOXdjbTltYVd4bFgy
+        NWhiV1ZnSUhObGNHRnlZWFJsWkNCaWVTQmhJR052Ykc5dUlDaGdPbUFwTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYTNOZlptRnlaMkYwWlY5d2NtOW1hV3hsTG1oMGJXd3ViV0Z5YTJSdmQyND0=

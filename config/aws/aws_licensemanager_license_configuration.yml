@@ -7,7 +7,7 @@ aws_licensemanager_license_configuration:
     arguments:
         name:
             description: Name of the license configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -28,7 +28,7 @@ aws_licensemanager_license_configuration:
         license_counting_type:
             description: Dimension to use to track license inventory. Specify either
                 `vCPU`, `Instance`, `Core` or `Socket`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         license_rules:
@@ -45,3 +45,20 @@ aws_licensemanager_license_configuration:
         id:
             description: The license configuration ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR2xqWlc1elpXMWhibUZuWlhKZmJHbGpaVzV6WlY5amIyNW1h
+        V2QxY21GMGFXOXVJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBOUlDSkZlR0Z0Y0d4bElnb2dJR1JsYzJOeWFYQjBhVzl1SUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQTlJQ0pGZUdGdGNHeGxJZ29nSUd4cFkyVnVjMlZmWTI5MWJuUWdJQ0FnSUNBZ0lDQWdJQ0E5
+        SURFd0NpQWdiR2xqWlc1elpWOWpiM1Z1ZEY5b1lYSmtYMnhwYldsMElEMGdkSEoxWlFvZ0lHeHBZ
+        MlZ1YzJWZlkyOTFiblJwYm1kZmRIbHdaU0FnSUNBOUlDSlRiMk5yWlhRaUNnb2dJR3hwWTJWdWMy
+        VmZjblZzWlhNZ1BTQmJDaUFnSUNBaUkyMXBibWx0ZFcxVGIyTnJaWFJ6UFRJaUxBb2dJRjBLQ2lB
+        Z2RHRm5jeUE5SUhzS0lDQWdJR1p2YnlBOUlDSmlZWEp5SWdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwTWFXTmxibk5sSUdOdmJtWnBaM1Z5WVhScGIyNXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZR2xrWUN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlzYVdObGJuTmxiV0Z1WVdkbGNsOXNhV05sYm5ObFgyTnZibVpwWjNWeVlYUnBiMjR1YldG
+        eWEyUnZkMjQ9

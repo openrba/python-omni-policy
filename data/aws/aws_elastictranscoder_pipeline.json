@@ -26,7 +26,7 @@
             },
             "input_bucket": {
                 "description": "The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,7 +50,7 @@
             },
             "role": {
                 "description": "The IAM Amazon Resource Name (ARN",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

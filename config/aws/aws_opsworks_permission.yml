@@ -18,7 +18,7 @@ aws_opsworks_permission:
             notes: ''
         user_arn:
             description: The user's IAM ARN to set permissions for
-            required: true
+            required: false
             policy: ''
             notes: ''
         level:
@@ -29,7 +29,7 @@ aws_opsworks_permission:
             notes: ''
         stack_id:
             description: The stack to set the permissions for
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -38,3 +38,15 @@ aws_opsworks_permission:
                 is only used internally to identify the permission. This value is
                 not used in aws.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiM0J6ZDI5eWEzTmZjR1Z5YldsemMybHZiaUlnSW0xNVgzTjBZ
+        V05yWDNCbGNtMXBjM05wYjI0aUlIc0tJQ0JoYkd4dmQxOXpjMmdnSUQwZ2RISjFaUW9nSUdGc2JH
+        OTNYM04xWkc4Z1BTQjBjblZsQ2lBZ2JHVjJaV3dnSUNBZ0lDQTlJQ0pwWVcxZmIyNXNlU0lLSUNC
+        MWMyVnlYMkZ5YmlBZ0lEMGdJaVI3WVhkelgybGhiVjkxYzJWeUxuVnpaWEl1WVhKdWZTSUtJQ0J6
+        ZEdGamExOXBaQ0FnSUQwZ0lpUjdZWGR6WDI5d2MzZHZjbXR6WDNOMFlXTnJMbk4wWVdOckxtbGtm
+        U0lLZlFvPQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y0hOM2IzSnJjMTl3WlhKdGFYTnphVzl1TG1oMGJXd3ViV0Z5YTJSdmQyND0=

@@ -7,17 +7,17 @@ aws_apigatewayv2_route_response:
     arguments:
         api_id:
             description: The API identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         route_id:
             description: The identifier of the [`aws_apigatewayv2_route`](/docs/providers/aws/r/apigatewayv2_route.html).
-            required: true
+            required: false
             policy: ''
             notes: ''
         route_response_key:
             description: The route response key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         model_selection_expression:
@@ -30,5 +30,18 @@ aws_apigatewayv2_route_response:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The route response identifier.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5eWIzVjBaVjl5WlhOd2IyNXpaV0FnWTJGdUlHSmxJ
+        R2x0Y0c5eWRHVmtJR0o1SUhWemFXNW5JSFJvWlNCQlVFa2dhV1JsYm5ScFptbGxjaXdnY205MWRH
+        VWdhV1JsYm5ScFptbGxjaUJoYm1RZ2NtOTFkR1VnY21WemNHOXVjMlVnYVdSbGJuUnBabWxsY2l3
+        Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZmNtOTFkR1ZmY21WemNHOXVjMlV1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

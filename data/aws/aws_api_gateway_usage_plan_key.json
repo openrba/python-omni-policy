@@ -8,19 +8,19 @@
         "arguments": {
             "key_id": {
                 "description": "The identifier of the API key resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "key_type": {
                 "description": "The type of the API key resource. Currently, the valid key type is API_KEY.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "usage_plan_id": {
                 "description": "The Id of the usage plan resource representing to associate the key to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

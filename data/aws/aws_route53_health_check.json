@@ -32,19 +32,19 @@
             },
             "type": {
                 "description": "The protocol to use when performing health checks. Valid values are `HTTP`, `HTTPS`, `HTTP_STR_MATCH`, `HTTPS_STR_MATCH`, `TCP`, `CALCULATED` and `CLOUDWATCH_METRIC`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "failure_threshold": {
                 "description": "The number of consecutive health checks that an endpoint must pass or fail.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "request_interval": {
                 "description": "The number of seconds between the time that Amazon Route 53 gets a response from your endpoint and the time that it sends the next health-check request.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

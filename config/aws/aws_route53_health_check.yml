@@ -29,20 +29,20 @@ aws_route53_health_check:
             description: The protocol to use when performing health checks. Valid
                 values are `HTTP`, `HTTPS`, `HTTP_STR_MATCH`, `HTTPS_STR_MATCH`, `TCP`,
                 `CALCULATED` and `CLOUDWATCH_METRIC`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         failure_threshold:
             description: The number of consecutive health checks that an endpoint
                 must pass or fail.
-            required: true
+            required: false
             policy: ''
             notes: ''
         request_interval:
             description: The number of seconds between the time that Amazon Route
                 53 gets a response from your endpoint and the time that it sends the
                 next health-check request.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_path:
@@ -129,3 +129,11 @@ aws_route53_health_check:
         id:
             description: The id of the health check
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwU2IzVjBaVFV6SUVobFlXeDBhQ0JEYUdWamEzTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa0lIVnph
+        VzVuSUhSb1pTQmdhR1ZoYkhSb0lHTm9aV05ySUdsa1lDd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5YjNWMFpUVXpYMmhsWVd4MGFGOWphR1ZqYXk1b2RHMXNMbTFoY210a2IzZHU=

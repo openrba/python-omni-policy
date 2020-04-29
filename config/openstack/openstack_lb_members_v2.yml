@@ -12,7 +12,7 @@ openstack_lb_members_v2:
             notes: ''
         pool_id:
             description: The id of the pool that members will be assigned to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         member:
@@ -32,12 +32,12 @@ openstack_lb_members_v2:
             notes: ''
         address:
             description: The IP address of the members to receive traffic from
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol_port:
             description: The port on which to listen for client traffic.
-            required: true
+            required: false
             policy: ''
             notes: ''
         weight:
@@ -50,11 +50,20 @@ openstack_lb_members_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The unique ID for the members.
-        pool_id:
-            description: See Argument Reference above.
-        member:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJHSmZiV1Z0WW1WeWMxOTJNaUlnSW0xbGJXSmxj
+        bk5mTVNJZ2V3b2dJSEJ2YjJ4ZmFXUWdQU0FpT1RNMU5qZzFabUl0WVRnNU5pMDBNR1k1TFRsbVpq
+        UXRZV1UxTXpGaE0yRXdNR1psSWdvS0lDQnRaVzFpWlhJZ2V3b2dJQ0FnWVdSa2NtVnpjeUFnSUNB
+        Z0lDQTlJQ0l4T1RJdU1UWTRMakU1T1M0eU15SUtJQ0FnSUhCeWIzUnZZMjlzWDNCdmNuUWdQU0E0
+        TURnd0NpQWdmUW9LSUNCdFpXMWlaWElnZXdvZ0lDQWdZV1JrY21WemN5QWdJQ0FnSUNBOUlDSXhP
+        VEl1TVRZNExqRTVPUzR5TkNJS0lDQWdJSEJ5YjNSdlkyOXNYM0J2Y25RZ1BTQTRNRGd3Q2lBZ2ZR
+        cDlDZz09
+    import: !!binary |
+        Q2dwTWIyRmtJRUpoYkdGdVkyVnlJRkJ2YjJ3Z1RXVnRZbVZ5Y3lCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUZCdmIyd2dTVVFzSUdVdVp5NDZDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXNZbDl0WlcxaVpYSnpYM1l5TG1oMGJXd3ViV0Z5YTJSdmQyND0=

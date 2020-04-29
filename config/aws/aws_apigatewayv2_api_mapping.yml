@@ -7,17 +7,17 @@ aws_apigatewayv2_api_mapping:
     arguments:
         api_id:
             description: The API identifier.
-            required: true
+            required: false
             policy: ''
             notes: ''
         domain_name:
             description: The domain name. Use the [`aws_apigatewayv2_domain_name`](/docs/providers/aws/r/apigatewayv2_domain_name.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         stage:
             description: The API stage. Use the [`aws_apigatewayv2_stage`](/docs/providers/aws/r/apigatewayv2_stage.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_mapping_key:
@@ -25,5 +25,17 @@ aws_apigatewayv2_api_mapping:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The API mapping identifier.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMkZ3YVdkaGRHVjNZWGwyTWw5aGNHbGZiV0Z3Y0dsdVoyQWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lHSjVJSFZ6YVc1bklIUm9aU0JCVUVrZ2JXRndjR2x1WnlCcFpHVnVkR2xtYVdWeUlH
+        RnVaQ0JrYjIxaGFXNGdibUZ0WlN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsbllYUmxkMkY1ZGpKZllYQnBYMjFoY0hCcGJtY3VhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

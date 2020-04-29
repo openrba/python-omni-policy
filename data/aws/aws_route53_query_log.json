@@ -8,13 +8,13 @@
         "arguments": {
             "cloudwatch_log_group_arn": {
                 "description": "CloudWatch log group ARN to send query logs.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "zone_id": {
                 "description": "Route53 hosted zone ID to enable query logs.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

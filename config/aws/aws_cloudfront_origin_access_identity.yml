@@ -10,5 +10,29 @@ aws_cloudfront_origin_access_identity:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: 'The identifier for the distribution. For example: `EDFDVBD632BHDS5`.'
+        caller_reference:
+            description: Internal value used by CloudFront to allow future
+        cloudfront_access_identity_path:
+            description: A shortcut to the full path for the
+        etag:
+            description: The current version of the origin access identity's information.
+        iam_arn:
+            description: A pre-generated ARN for use in S3 bucket policies (see below).
+        s3_canonical_user_id:
+            description: The Amazon S3 canonical user ID for the origin
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSbWNtOXVkRjl2Y21sbmFXNWZZV05qWlhOelgybGta
+        VzUwYVhSNUlpQWliM0pwWjJsdVgyRmpZMlZ6YzE5cFpHVnVkR2wwZVNJZ2V3b2dJR052YlcxbGJu
+        UWdQU0FpVTI5dFpTQmpiMjF0Wlc1MElncDlDZz09
+    import: !!binary |
+        Q2dwRGJHOTFaR1p5YjI1MElFOXlhV2RwYmlCQlkyTmxjM01nU1dSbGJuUnBkR2xsY3lCallXNGdZ
+        bVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dkR2hsSUdCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpHWnliMjUwWDI5eWFXZHBibDloWTJObGMzTmZhV1JsYm5ScGRIa3VhSFJ0YkM1
+        dFlYSnJaRzkzYmc9PQ==

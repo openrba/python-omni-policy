@@ -8,13 +8,13 @@
         "arguments": {
             "domain": {
                 "description": "The domain string.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "user_pool_id": {
                 "description": "The user pool ID.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -25,7 +25,20 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "aws_account_id": {
+                "description": "The AWS account ID for the user pool owner."
+            },
+            "cloudfront_distribution_arn": {
+                "description": "The ARN of the CloudFront distribution."
+            },
+            "s3_bucket": {
+                "description": "The S3 bucket where the static files for this domain are stored."
+            },
+            "version": {
+                "description": "The app version."
+            }
+        },
         "timeouts": {}
     }
 }

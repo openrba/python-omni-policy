@@ -12,7 +12,7 @@ openstack_blockstorage_volume_v2:
             notes: ''
         size:
             description: The size of the volume to create (in gigabytes). Changing
-            required: true
+            required: false
             policy: ''
             notes: ''
         availability_zone:
@@ -65,27 +65,18 @@ openstack_blockstorage_volume_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        size:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        availability_zone:
-            description: See Argument Reference above.
-        image_id:
-            description: See Argument Reference above.
-        source_vol_id:
-            description: See Argument Reference above.
-        snapshot_id:
-            description: See Argument Reference above.
-        metadata:
-            description: See Argument Reference above.
-        volume_type:
-            description: See Argument Reference above.
-        attachment:
-            description: If a volume is attached to an instance, this attribute will
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZllteHZZMnR6ZEc5eVlXZGxYM1p2YkhWdFpWOTJN
+        aUlnSW5admJIVnRaVjh4SWlCN0NpQWdjbVZuYVc5dUlDQWdJQ0FnUFNBaVVtVm5hVzl1VDI1bEln
+        b2dJRzVoYldVZ0lDQWdJQ0FnSUQwZ0luWnZiSFZ0WlY4eElnb2dJR1JsYzJOeWFYQjBhVzl1SUQw
+        Z0ltWnBjbk4wSUhSbGMzUWdkbTlzZFcxbElnb2dJSE5wZW1VZ0lDQWdJQ0FnSUQwZ013cDlDZz09
+    import: !!binary |
+        Q2dwV2IyeDFiV1Z6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUdsa1lDd2da
+        UzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWliRzlqYTNOMGIzSmhaMlZmZG05c2RXMWxYM1l5TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

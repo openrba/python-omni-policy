@@ -7,7 +7,7 @@ aws_waf_xss_match_set:
     arguments:
         name:
             description: The name or description of the SizeConstraintSet.
-            required: true
+            required: false
             policy: ''
             notes: ''
         xss_match_tuples:
@@ -22,3 +22,19 @@ aws_waf_xss_match_set:
         arn:
             description: Amazon Resource Name (ARN)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkMkZtWDNoemMxOXRZWFJqYUY5elpYUWlJQ0o0YzNOZmJXRjBZ
+        MmhmYzJWMElpQjdDaUFnYm1GdFpTQTlJQ0o0YzNOZmJXRjBZMmhmYzJWMElnb0tJQ0I0YzNOZmJX
+        RjBZMmhmZEhWd2JHVnpJSHNLSUNBZ0lIUmxlSFJmZEhKaGJuTm1iM0p0WVhScGIyNGdQU0FpVGs5
+        T1JTSUtDaUFnSUNCbWFXVnNaRjkwYjE5dFlYUmphQ0I3Q2lBZ0lDQWdJSFI1Y0dVZ1BTQWlWVkpK
+        SWdvZ0lDQWdmUW9nSUgwS0NpQWdlSE56WDIxaGRHTm9YM1IxY0d4bGN5QjdDaUFnSUNCMFpYaDBY
+        M1J5WVc1elptOXliV0YwYVc5dUlEMGdJazVQVGtVaUNnb2dJQ0FnWm1sbGJHUmZkRzlmYldGMFky
+        Z2dld29nSUNBZ0lDQjBlWEJsSUQwZ0lsRlZSVkpaWDFOVVVrbE9SeUlLSUNBZ0lIMEtJQ0I5Q24w
+        Sw==
+    import: !!binary |
+        Q2dwWFFVWWdXRk5USUUxaGRHTm9JRk5sZENCallXNGdZbVVnYVcxd2IzSjBaV1FnZFhOcGJtY2dk
+        R2hsYVhJZ1NVUXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkzWVdaZmVITnpYMjFoZEdOb1gzTmxkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

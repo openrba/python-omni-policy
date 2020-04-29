@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the application, must be unique within your account",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "service_role": {
                 "description": "The ARN of an IAM service role under which the application version is deleted.  Elastic Beanstalk must have permission to assume this role.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

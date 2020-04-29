@@ -8,19 +8,19 @@
         "arguments": {
             "bgp_asn": {
                 "description": "The gateway's Border Gateway Protocol (BGP",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ip_address": {
                 "description": "The IP address of the gateway's Internet-routable external interface.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of customer gateway. The only type AWS",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,23 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The amazon-assigned ID of the gateway."
+            },
+            "bgp_asn": {
+                "description": "The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN)."
+            },
+            "ip_address": {
+                "description": "The IP address of the gateway's Internet-routable external interface."
+            },
+            "type": {
+                "description": "The type of customer gateway."
+            },
+            "tags": {
+                "description": "Tags applied to the gateway."
+            }
+        },
         "timeouts": {}
     }
 }

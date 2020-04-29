@@ -7,7 +7,7 @@ aws_gamelift_alias:
     arguments:
         name:
             description: Name of the alias.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -17,7 +17,7 @@ aws_gamelift_alias:
             notes: ''
         routing_strategy:
             description: Specifies the fleet and/or routing type to use for the alias.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -26,3 +26,16 @@ aws_gamelift_alias:
         arn:
             description: Alias ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaMkZ0Wld4cFpuUmZZV3hwWVhNaUlDSmxlR0Z0Y0d4bElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ1BTQWlaWGhoYlhCc1pTMWhiR2xoY3lJS0lDQmtaWE5qY21sd2RH
+        bHZiaUE5SUNKRmVHRnRjR3hsSUVSbGMyTnlhWEIwYVc5dUlnb0tJQ0J5YjNWMGFXNW5YM04wY21G
+        MFpXZDVJSHNLSUNBZ0lHMWxjM05oWjJVZ1BTQWlSWGhoYlhCc1pTQk5aWE56WVdkbElnb2dJQ0Fn
+        ZEhsd1pTQWdJQ0E5SUNKVVJWSk5TVTVCVENJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwSFlXMWxiR2xtZENCQmJHbGhjMlZ6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnU1VRc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluWVcxbGJHbG1kRjloYkdsaGN5NW9kRzFzTG0xaGNtdGtiM2R1

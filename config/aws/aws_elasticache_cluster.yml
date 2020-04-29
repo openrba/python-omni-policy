@@ -7,7 +7,7 @@ aws_elasticache_cluster:
     arguments:
         cluster_id:
             description: Group identifier. ElastiCache converts
-            required: true
+            required: false
             policy: ''
             notes: ''
         replication_group_id:
@@ -149,3 +149,11 @@ aws_elasticache_cluster:
             description: (Memcached only) The DNS name of the cache cluster without
                 the port appended.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRmJHRnpkR2xEWVdOb1pTQkRiSFZ6ZEdWeWN5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQmpiSFZ6ZEdWeVgybGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpZV05vWlY5amJIVnpkR1Z5TG1oMGJXd3ViV0Z5YTJSdmQyND0=

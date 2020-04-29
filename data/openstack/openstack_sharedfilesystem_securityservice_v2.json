@@ -26,7 +26,7 @@
             },
             "type": {
                 "description": "The security service type - can either be active\\_directory,",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,44 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The unique ID for the Security Service."
-            },
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "project_id": {
-                "description": "The owner of the Security Service."
-            },
-            "name": {
-                "description": "See Argument Reference above."
-            },
-            "description": {
-                "description": "See Argument Reference above."
-            },
-            "type": {
-                "description": "See Argument Reference above."
-            },
-            "dns_ip": {
-                "description": "See Argument Reference above."
-            },
-            "ou": {
-                "description": "See Argument Reference above."
-            },
-            "user": {
-                "description": "See Argument Reference above."
-            },
-            "password": {
-                "description": "See Argument Reference above."
-            },
-            "domain": {
-                "description": "See Argument Reference above."
-            },
-            "server": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

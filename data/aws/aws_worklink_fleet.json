@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "A region-unique name for the AMI.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -50,31 +50,31 @@
             },
             "vpc_id": {
                 "description": "The VPC ID with connectivity to associated websites.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_ids": {
                 "description": "A list of subnet IDs used for X-ENI connections from Amazon WorkLink rendering containers.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "security_group_ids": {
                 "description": "A list of security group IDs associated with access to the provided subnets.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of identity provider.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "saml_metadata": {
                 "description": "The SAML metadata document provided by the customer\u2019s identity provider.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

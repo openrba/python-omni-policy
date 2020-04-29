@@ -9,13 +9,13 @@
         "arguments": {
             "bucket": {
                 "description": "The name of the bucket the object is stored in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "object": {
                 "description": "The name of the object to apply the acl to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -29,7 +29,9 @@
                 "description": "List of role/entity pairs in the form `ROLE:entity`. See [GCS Object ACL documentation](https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> The object's creator will always have `OWNER` permissions for their object, and any attempt to modify that permission would return an error. Instead, Terraform automatically"
+                ]
             }
         },
         "attributes": {},

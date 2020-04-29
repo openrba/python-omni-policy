@@ -8,12 +8,12 @@ aws_datasync_location_efs:
         ec2_config:
             description: Configuration block containing EC2 configurations for connecting
                 to the EFS File System.
-            required: true
+            required: false
             policy: ''
             notes: ''
         efs_file_system_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
         subdirectory:
@@ -28,5 +28,30 @@ aws_datasync_location_efs:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Amazon Resource Name (ARN) of the DataSync Location.
+        arn:
+            description: Amazon Resource Name (ARN) of the DataSync Location.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0YwWVhONWJtTmZiRzlqWVhScGIyNWZaV1p6SWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJQ01nVkdobElHSmxiRzkzSUdWNFlXMXdiR1VnZFhObGN5QmhkM05mWldaelgy
+        MXZkVzUwWDNSaGNtZGxkQ0JoY3lCaElISmxabVZ5Wlc1alpTQjBieUJsYm5OMWNtVWdZU0J0YjNW
+        dWRDQjBZWEpuWlhRZ1lXeHlaV0ZrZVNCbGVHbHpkSE1nZDJobGJpQnlaWE52ZFhKalpTQmpjbVZo
+        ZEdsdmJpQnZZMk4xY25NdUNpQWdJeUJaYjNVZ1kyRnVJR0ZqWTI5dGNHeHBjMmdnZEdobElITmhi
+        V1VnWW1Wb1lYWnBiM0lnZDJsMGFDQmtaWEJsYm1SelgyOXVJRzl5SUdGdUlHRjNjMTlsWm5OZmJX
+        OTFiblJmZEdGeVoyVjBJR1JoZEdFZ2MyOTFjbU5sSUhKbFptVnlaVzVqWlM0S0lDQmxabk5mWm1s
+        c1pWOXplWE4wWlcxZllYSnVJRDBnSWlSN1lYZHpYMlZtYzE5dGIzVnVkRjkwWVhKblpYUXVaWGho
+        YlhCc1pTNW1hV3hsWDNONWMzUmxiVjloY201OUlnb0tJQ0JsWXpKZlkyOXVabWxuSUhzS0lDQWdJ
+        SE5sWTNWeWFYUjVYMmR5YjNWd1gyRnlibk1nUFNCYklpUjdZWGR6WDNObFkzVnlhWFI1WDJkeWIz
+        VndMbVY0WVcxd2JHVXVZWEp1ZlNKZENpQWdJQ0J6ZFdKdVpYUmZZWEp1SUNBZ0lDQWdJQ0FnSUQw
+        Z0lpUjdZWGR6WDNOMVltNWxkQzVsZUdGdGNHeGxMbUZ5Ym4waUNpQWdmUXA5Q2c9PQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJoZEdGemVXNWpYMnh2WTJGMGFXOXVYMlZtYzJBZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUdKNUlIVnphVzVuSUhSb1pTQkVZWFJoVTNsdVl5QlVZWE5ySUVGdFlYcHZiaUJTWlhOdmRY
+        SmpaU0JPWVcxbElDaEJVazRwTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWVhSaGMzbHVZMTlzYjJOaGRHbHZibDlsWm5NdWFIUnRiQzV0WVhKclpHOTNiZz09

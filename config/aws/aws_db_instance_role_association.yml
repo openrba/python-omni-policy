@@ -7,7 +7,7 @@ aws_db_instance_role_association:
     arguments:
         db_instance_identifier:
             description: DB Instance Identifier to associate with the IAM Role.
-            required: true
+            required: false
             policy: ''
             notes: ''
         feature_name:
@@ -15,12 +15,12 @@ aws_db_instance_role_association:
                 the AWS documentation relevant to the integration or a full list is
                 available in the `SupportedFeatureNames` list returned by [AWS CLI
                 rds describe-db-engine-versions](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html).
-            required: true
+            required: false
             policy: ''
             notes: ''
         role_arn:
             description: Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -28,3 +28,20 @@ aws_db_instance_role_association:
             description: DB Instance Identifier and IAM Role ARN separated by a comma
                 (`,`)
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0pmYVc1emRHRnVZMlZmY205c1pWOWhjM052WTJsaGRHbHZi
+        aUlnSW1WNFlXMXdiR1VpSUhzS0lDQmtZbDlwYm5OMFlXNWpaVjlwWkdWdWRHbG1hV1Z5SUQwZ0lp
+        UjdZWGR6WDJSaVgybHVjM1JoYm1ObExtVjRZVzF3YkdVdWFXUjlJZ29nSUdabFlYUjFjbVZmYm1G
+        dFpTQWdJQ0FnSUNBZ0lDQWdQU0FpVXpOZlNVNVVSVWRTUVZSSlQwNGlDaUFnY205c1pWOWhjbTRn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0lrZTJGM2MxOXBZVzFmY205c1pTNWxlR0Z0Y0d4bExtbGtm
+        U0lLZlFvPQ==
+    import: !!binary |
+        Q2dwZ1lYZHpYMlJpWDJsdWMzUmhibU5sWDNKdmJHVmZZWE56YjJOcFlYUnBiMjVnSUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnUkVJZ1NXNXpkR0Z1WTJVZ1NXUmxiblJwWm1sbGNp
+        QmhibVFnU1VGTklGSnZiR1VnUVZKT0lITmxjR0Z5WVhSbFpDQmllU0JoSUdOdmJXMWhJQ2hnTEdB
+        cExDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5cGJuTjBZVzVqWlY5eWIyeGxYMkZ6YzI5amFXRjBhVzl1TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

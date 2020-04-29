@@ -7,7 +7,7 @@ aws_kinesis_video_stream:
     arguments:
         name:
             description: A name to identify the stream. This is unique to the
-            required: true
+            required: false
             policy: ''
             notes: ''
         data_retention_in_hours:

@@ -8,7 +8,7 @@
         "arguments": {
             "subnet_id": {
                 "description": "Subnet ID to create the ENI in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -56,13 +56,13 @@
             },
             "instance": {
                 "description": "ID of the instance to attach to.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "device_index": {
                 "description": "Integer to define the devices index.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,25 +8,25 @@
         "arguments": {
             "resource_group_name": {
                 "description": "The name of the resource group under which the IotHub Storage Container Endpoint resource has to be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "iothub_name": {
                 "description": "The name of the IoTHub to which this Fallback Route belongs. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "enabled": {
                 "description": "Used to specify whether the fallback route is enabled.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "endpoint_names": {
                 "description": "The endpoints to which messages that satisfy the condition are routed. Currently only 1 endpoint is allowed.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The name of the Redshift Subnet group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "subnet_ids": {
                 "description": "An array of VPC subnet IDs.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

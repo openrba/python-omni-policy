@@ -7,7 +7,7 @@ aws_ssm_maintenance_window_target:
     arguments:
         window_id:
             description: The Id of the maintenance window to register the target with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
@@ -23,7 +23,7 @@ aws_ssm_maintenance_window_target:
         resource_type:
             description: The type of target being registered with the Maintenance
                 Window. Possible values are `INSTANCE` and `RESOURCE_GROUP`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         targets:
@@ -32,7 +32,7 @@ aws_ssm_maintenance_window_target:
                 runs. You can specify targets using instance IDs, resource group names,
                 or tags that have been applied to instances. For more information
                 about these examples formats see
-            required: true
+            required: false
             policy: ''
             notes: ''
         owner_information:
@@ -46,3 +46,13 @@ aws_ssm_maintenance_window_target:
         id:
             description: The ID of the maintenance window target.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVFUwMGdUV0ZwYm5SbGJtRnVZMlVnVjJsdVpHOTNJSFJoY21kbGRITWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUdCWFNVNUVUMWRmU1VRdlYwbE9SRTlYWDFSQlVrZEZWRjlKUkdBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZmJXRnBiblJsYm1GdVkyVmZkMmx1Wkc5M1gzUmhjbWRsZEM1b2RHMXNMbTFoY210
+        a2IzZHU=

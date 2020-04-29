@@ -7,7 +7,7 @@ aws_kinesis_analytics_application:
     arguments:
         name:
             description: Name of the Kinesis Analytics Application.
-            required: true
+            required: false
             policy: ''
             notes: ''
         code:
@@ -56,3 +56,30 @@ aws_kinesis_analytics_application:
         version:
             description: The Version of the application.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhMmx1WlhOcGMxOXpkSEpsWVcwaUlDSjBaWE4wWDNOMGNtVmhi
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJRDBnSW5SbGNuSmhabTl5YlMxcmFXNWxjMmx6TFhSbGMz
+        UWlDaUFnYzJoaGNtUmZZMjkxYm5RZ1BTQXhDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZhMmx1WlhO
+        cGMxOWhibUZzZVhScFkzTmZZWEJ3YkdsallYUnBiMjRpSUNKMFpYTjBYMkZ3Y0d4cFkyRjBhVzl1
+        SWlCN0NpQWdibUZ0WlNBOUlDSnJhVzVsYzJsekxXRnVZV3g1ZEdsamN5MWhjSEJzYVdOaGRHbHZi
+        aTEwWlhOMElnb0tJQ0JwYm5CMWRITWdld29nSUNBZ2JtRnRaVjl3Y21WbWFYZ2dQU0FpZEdWemRG
+        OXdjbVZtYVhnaUNnb2dJQ0FnYTJsdVpYTnBjMTl6ZEhKbFlXMGdld29nSUNBZ0lDQnlaWE52ZFhK
+        alpWOWhjbTRnUFNBaUpIdGhkM05mYTJsdVpYTnBjMTl6ZEhKbFlXMHVkR1Z6ZEY5emRISmxZVzB1
+        WVhKdWZTSUtJQ0FnSUNBZ2NtOXNaVjloY200Z0lDQWdJRDBnSWlSN1lYZHpYMmxoYlY5eWIyeGxM
+        blJsYzNRdVlYSnVmU0lLSUNBZ0lIMEtDaUFnSUNCd1lYSmhiR3hsYkdsemJTQjdDaUFnSUNBZ0lH
+        TnZkVzUwSUQwZ01Rb2dJQ0FnZlFvS0lDQWdJSE5qYUdWdFlTQjdDaUFnSUNBZ0lISmxZMjl5WkY5
+        amIyeDFiVzV6SUhzS0lDQWdJQ0FnSUNCdFlYQndhVzVuSUNBOUlDSWtMblJsYzNRaUNpQWdJQ0Fn
+        SUNBZ2JtRnRaU0FnSUNBZ1BTQWlkR1Z6ZENJS0lDQWdJQ0FnSUNCemNXeGZkSGx3WlNBOUlDSldR
+        VkpEU0VGU0tEZ3BJZ29nSUNBZ0lDQjlDZ29nSUNBZ0lDQnlaV052Y21SZlpXNWpiMlJwYm1jZ1BT
+        QWlWVlJHTFRnaUNnb2dJQ0FnSUNCeVpXTnZjbVJmWm05eWJXRjBJSHNLSUNBZ0lDQWdJQ0J0WVhC
+        d2FXNW5YM0JoY21GdFpYUmxjbk1nZXdvZ0lDQWdJQ0FnSUNBZ2FuTnZiaUI3Q2lBZ0lDQWdJQ0Fn
+        SUNBZ0lISmxZMjl5WkY5eWIzZGZjR0YwYUNBOUlDSWtJZ29nSUNBZ0lDQWdJQ0FnZlFvZ0lDQWdJ
+        Q0FnSUgwS0lDQWdJQ0FnZlFvZ0lDQWdmUW9nSUgwS2ZRbz0=
+    import: !!binary |
+        Q2dwTGFXNWxjMmx6SUVGdVlXeDVkR2xqY3lCQmNIQnNhV05oZEdsdmJpQmpZVzRnWW1VZ2FXMXdi
+        M0owWldRZ1lua2dkWE5wYm1jZ1FWSk9MQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlyYVc1bGMybHpYMkZ1WVd4NWRHbGpjMTloY0hCc2FXTmhkR2x2Ymk1b2RHMXNMbTFoY210
+        a2IzZHU=

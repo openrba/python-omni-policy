@@ -7,12 +7,12 @@ aws_autoscaling_policy:
     arguments:
         name:
             description: The name of the policy.
-            required: true
+            required: false
             policy: ''
             notes: ''
         autoscaling_group_name:
             description: The name of the autoscaling group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         adjustment_type:
@@ -44,7 +44,7 @@ aws_autoscaling_policy:
             notes: ''
         scaling_adjustment:
             description: The number of members by which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         metric_aggregation_type:
@@ -86,7 +86,7 @@ aws_autoscaling_policy:
             notes: ''
         target_value:
             description: The target value for the metric.
-            required: true
+            required: false
             policy: ''
             notes: ''
         disable_scale_in:
@@ -95,5 +95,40 @@ aws_autoscaling_policy:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        arn:
+            description: The ARN assigned by AWS to the scaling policy.
+        name:
+            description: The scaling policy's name.
+        autoscaling_group_name:
+            description: The scaling policy's assigned autoscaling group.
+        adjustment_type:
+            description: The scaling policy's adjustment type.
+        policy_type:
+            description: The scaling policy's type.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWFYwYjNOallXeHBibWRmY0c5c2FXTjVJaUFpWW1GMElpQjdD
+        aUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0ptYjI5aVlYSXpMWFJsY25KaFpt
+        OXliUzEwWlhOMElnb2dJSE5qWVd4cGJtZGZZV1JxZFhOMGJXVnVkQ0FnSUNBZ1BTQTBDaUFnWVdS
+        cWRYTjBiV1Z1ZEY5MGVYQmxJQ0FnSUNBZ0lDQTlJQ0pEYUdGdVoyVkpia05oY0dGamFYUjVJZ29n
+        SUdOdmIyeGtiM2R1SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0F6TURBS0lDQmhkWFJ2YzJOaGJHbHVa
+        MTluY205MWNGOXVZVzFsSUQwZ0lpUjdZWGR6WDJGMWRHOXpZMkZzYVc1blgyZHliM1Z3TG1KaGNp
+        NXVZVzFsZlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5aGRYUnZjMk5oYkdsdVoxOW5jbTkxY0NJ
+        Z0ltSmhjaUlnZXdvZ0lHRjJZV2xzWVdKcGJHbDBlVjk2YjI1bGN5QWdJQ0FnSUNBZ1BTQmJJblZ6
+        TFdWaGMzUXRNV0VpWFFvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWla
+        bTl2WW1GeU15MTBaWEp5WVdadmNtMHRkR1Z6ZENJS0lDQnRZWGhmYzJsNlpTQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUNBZ0lEMGdOUW9nSUcxcGJsOXphWHBsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnUFNB
+        eUNpQWdhR1ZoYkhSb1gyTm9aV05yWDJkeVlXTmxYM0JsY21sdlpDQTlJRE13TUFvZ0lHaGxZV3gw
+        YUY5amFHVmphMTkwZVhCbElDQWdJQ0FnSUNBZ1BTQWlSVXhDSWdvZ0lHWnZjbU5sWDJSbGJHVjBa
+        U0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQjBjblZsQ2lBZ2JHRjFibU5vWDJOdmJtWnBaM1Z5WVhScGIy
+        NGdJQ0FnSUNBOUlDSWtlMkYzYzE5c1lYVnVZMmhmWTI5dVptbG5kWEpoZEdsdmJpNW1iMjh1Ym1G
+        dFpYMGlDbjBL
+    import: !!binary |
+        Q2dwQmRYUnZVMk5oYkdsdVp5QnpZMkZzYVc1bklIQnZiR2xqZVNCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUhKdmJHVWdZWFYwYjNOallXeHBibWRmWjNKdmRYQmZibUZ0WlNCaGJt
+        UWdibUZ0WlNCelpYQmhjbUYwWldRZ1lua2dZQzlnTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloZFhSdmMyTmhiR2x1WjE5d2IyeHBZM2t1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

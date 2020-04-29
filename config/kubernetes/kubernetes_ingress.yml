@@ -10,13 +10,48 @@ kubernetes_ingress:
     arguments:
         metadata:
             description: 'Standard ingress''s metadata. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata'
-            required: true
+            required: false
             policy: ''
             notes: ''
         spec:
             description: Spec defines the behavior of a ingress. https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgybHVaM0psYzNNaUlDSmxlR0Z0Y0d4bFgybHVa
+        M0psYzNNaUlIc0tJQ0J0WlhSaFpHRjBZU0I3Q2lBZ0lDQnVZVzFsSUQwZ0ltVjRZVzF3YkdVdGFX
+        NW5jbVZ6Y3lJS0lDQjlDZ29nSUhOd1pXTWdld29nSUNBZ1ltRmphMlZ1WkNCN0NpQWdJQ0FnSUhO
+        bGNuWnBZMlZmYm1GdFpTQTlJQ0pOZVVGd2NERWlDaUFnSUNBZ0lITmxjblpwWTJWZmNHOXlkQ0E5
+        SURnd09EQUtJQ0FnSUgwS0NpQWdJQ0J5ZFd4bElIc0tJQ0FnSUNBZ2FIUjBjQ0I3Q2lBZ0lDQWdJ
+        Q0FnY0dGMGFDQjdDaUFnSUNBZ0lDQWdJQ0JpWVdOclpXNWtJSHNLSUNBZ0lDQWdJQ0FnSUNBZ2My
+        VnlkbWxqWlY5dVlXMWxJRDBnSWsxNVFYQndNU0lLSUNBZ0lDQWdJQ0FnSUNBZ2MyVnlkbWxqWlY5
+        d2IzSjBJRDBnT0RBNE1Bb2dJQ0FnSUNBZ0lDQWdmUW9LSUNBZ0lDQWdJQ0FnSUhCaGRHZ2dQU0Fp
+        TDJGd2NERXZLaUlLSUNBZ0lDQWdJQ0I5Q2dvZ0lDQWdJQ0FnSUhCaGRHZ2dld29nSUNBZ0lDQWdJ
+        Q0FnWW1GamEyVnVaQ0I3Q2lBZ0lDQWdJQ0FnSUNBZ0lITmxjblpwWTJWZmJtRnRaU0E5SUNKTmVV
+        RndjRElpQ2lBZ0lDQWdJQ0FnSUNBZ0lITmxjblpwWTJWZmNHOXlkQ0E5SURnd09EQUtJQ0FnSUNB
+        Z0lDQWdJSDBLQ2lBZ0lDQWdJQ0FnSUNCd1lYUm9JRDBnSWk5aGNIQXlMeW9pQ2lBZ0lDQWdJQ0Fn
+        ZlFvZ0lDQWdJQ0I5Q2lBZ0lDQjlDZ29nSUNBZ2RHeHpJSHNLSUNBZ0lDQWdjMlZqY21WMFgyNWhi
+        V1VnUFNBaWRHeHpMWE5sWTNKbGRDSUtJQ0FnSUgwS0lDQjlDbjBLQ25KbGMyOTFjbU5sSUNKcmRX
+        SmxjbTVsZEdWelgzQnZaQ0lnSW1WNFlXMXdiR1VpSUhzS0lDQnRaWFJoWkdGMFlTQjdDaUFnSUNC
+        dVlXMWxJRDBnSW5SbGNuSmhabTl5YlMxbGVHRnRjR3hsSWdvZ0lDQWdiR0ZpWld4eklEMGdld29n
+        SUNBZ0lDQmhjSEFnUFNBaVRYbEJjSEF4SWdvZ0lDQWdmUW9nSUgwS0NpQWdjM0JsWXlCN0NpQWdJ
+        Q0JqYjI1MFlXbHVaWElnZXdvZ0lDQWdJQ0JwYldGblpTQTlJQ0p1WjJsdWVEb3hMamN1T1NJS0lD
+        QWdJQ0FnYm1GdFpTQWdQU0FpWlhoaGJYQnNaU0lLQ2lBZ0lDQWdJSEJ2Y25RZ2V3b2dJQ0FnSUNB
+        Z0lHTnZiblJoYVc1bGNsOXdiM0owSUQwZ09EQTRNQW9nSUNBZ0lDQjlDaUFnSUNCOUNpQWdmUXA5
+        Q2dweVpYTnZkWEpqWlNBaWEzVmlaWEp1WlhSbGMxOXdiMlFpSUNKbGVHRnRjR3hsTWlJZ2V3b2dJ
+        RzFsZEdGa1lYUmhJSHNLSUNBZ0lHNWhiV1VnUFNBaWRHVnljbUZtYjNKdExXVjRZVzF3YkdVeUln
+        b2dJQ0FnYkdGaVpXeHpJRDBnZXdvZ0lDQWdJQ0JoY0hBZ1BTQWlUWGxCY0hBeUlnb2dJQ0FnZlFv
+        Z0lIMEtDaUFnYzNCbFl5QjdDaUFnSUNCamIyNTBZV2x1WlhJZ2V3b2dJQ0FnSUNCcGJXRm5aU0E5
+        SUNKdVoybHVlRG94TGpjdU9TSUtJQ0FnSUNBZ2JtRnRaU0FnUFNBaVpYaGhiWEJzWlNJS0NpQWdJ
+        Q0FnSUhCdmNuUWdld29nSUNBZ0lDQWdJR052Ym5SaGFXNWxjbDl3YjNKMElEMGdPREE0TUFvZ0lD
+        QWdJQ0I5Q2lBZ0lDQjlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwSmJtZHlaWE56SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QnBkSE1nYm1GdFpYTndZ
+        V05sSUdGdVpDQnVZVzFsT2dvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZhVzVuY21WemN5NW9kRzFzTG0xaGNtdGtiM2R1

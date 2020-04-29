@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Name for the configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "s3_destination": {
                 "description": "Amazon S3 configuration details for the sync.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "A name for the subscription filter",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_arn": {
                 "description": "The ARN of the destination to deliver matching log events to. Kinesis stream or Lambda function ARN.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "filter_pattern": {
                 "description": "A valid CloudWatch Logs filter pattern for subscribing to a filtered stream of log events.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "log_group_name": {
                 "description": "The name of the log group to associate the subscription filter with",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

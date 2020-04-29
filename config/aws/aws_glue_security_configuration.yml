@@ -8,15 +8,34 @@ aws_glue_security_configuration:
         encryption_configuration:
             description: Configuration block containing encryption configuration.
                 Detailed below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: Name of the security configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: Glue security configuration name
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaMngxWlY5elpXTjFjbWwwZVY5amIyNW1hV2QxY21GMGFXOXVJ
+        aUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhiV1VnUFNBaVpYaGhiWEJzWlNJS0NpQWdaVzVqY25sd2RH
+        bHZibDlqYjI1bWFXZDFjbUYwYVc5dUlIc0tJQ0FnSUdOc2IzVmtkMkYwWTJoZlpXNWpjbmx3ZEds
+        dmJpQjdDaUFnSUNBZ0lHTnNiM1ZrZDJGMFkyaGZaVzVqY25sd2RHbHZibDl0YjJSbElEMGdJa1JK
+        VTBGQ1RFVkVJZ29nSUNBZ2ZRb0tJQ0FnSUdwdllsOWliMjlyYldGeWEzTmZaVzVqY25sd2RHbHZi
+        aUI3Q2lBZ0lDQWdJR3B2WWw5aWIyOXJiV0Z5YTNOZlpXNWpjbmx3ZEdsdmJsOXRiMlJsSUQwZ0lr
+        UkpVMEZDVEVWRUlnb2dJQ0FnZlFvS0lDQWdJSE16WDJWdVkzSjVjSFJwYjI0Z2V3b2dJQ0FnSUNC
+        cmJYTmZhMlY1WDJGeWJpQWdJQ0FnSUNBZ1BTQWlKSHRrWVhSaExtRjNjMTlyYlhOZmEyVjVMbVY0
+        WVcxd2JHVXVZWEp1ZlNJS0lDQWdJQ0FnY3pOZlpXNWpjbmx3ZEdsdmJsOXRiMlJsSUQwZ0lsTlRS
+        UzFMVFZNaUNpQWdJQ0I5Q2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwSGJIVmxJRk5sWTNWeWFYUjVJRU52Ym1acFozVnlZWFJwYjI1eklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUJnYm1GdFpXQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTluYkhWbFgzTmxZM1Z5YVhSNVgyTnZibVpwWjNWeVlYUnBiMjR1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

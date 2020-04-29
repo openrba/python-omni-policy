@@ -22,7 +22,7 @@ openstack_networking_trunk_v2:
             notes: ''
         port_id:
             description: The ID of the port to be made a subport of the trunk.
-            required: true
+            required: false
             policy: ''
             notes: ''
         admin_state_up:
@@ -47,32 +47,53 @@ openstack_networking_trunk_v2:
             notes: ''
         segmentation_type:
             description: The segmentation technology to use, e.g., "vlan".
-            required: true
+            required: false
             policy: ''
             notes: ''
         segmentation_id:
             description: The numeric id of the subport segment.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        port_id:
-            description: See Argument Reference above.
-        admin_state_up:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        sub_port:
-            description: See Argument Reference above.
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of tags assigned on the trunk, which have
-                been
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXVaWFIzYjNKclgzWXlJ
+        aUFpYm1WMGQyOXlhMTh4SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ1BTQWlibVYwZDI5eWEx
+        OHhJZ29nSUdGa2JXbHVYM04wWVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNK
+        dmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpkV0p1WlhSZmRqSWlJQ0p6ZFdKdVpYUmZNU0ln
+        ZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJRDBnSW5OMVltNWxkRjh4SWdvZ0lHNWxkSGR2Y210ZmFXUWdJ
+        RDBnSWlSN2IzQmxibk4wWVdOclgyNWxkSGR2Y210cGJtZGZibVYwZDI5eWExOTJNaTV1WlhSM2Iz
+        SnJYekV1YVdSOUlnb2dJR05wWkhJZ0lDQWdJQ0FnSUQwZ0lqRTVNaTR4TmpndU1TNHdMekkwSWdv
+        Z0lHbHdYM1psY25OcGIyNGdJRDBnTkFvZ0lHVnVZV0pzWlY5a2FHTndJRDBnZEhKMVpRb2dJRzV2
+        WDJkaGRHVjNZWGtnSUQwZ2RISjFaUXA5Q2dweVpYTnZkWEpqWlNBaWIzQmxibk4wWVdOclgyNWxk
+        SGR2Y210cGJtZGZjRzl5ZEY5Mk1pSWdJbkJoY21WdWRGOXdiM0owWHpFaUlIc0tJQ0JrWlhCbGJt
+        UnpYMjl1SUQwZ1d3b2dJQ0FnSW05d1pXNXpkR0ZqYTE5dVpYUjNiM0pyYVc1blgzTjFZbTVsZEY5
+        Mk1pNXpkV0p1WlhSZk1TSXNDaUFnWFFvS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBOUlDSndZWEps
+        Ym5SZmNHOXlkRjh4SWdvZ0lHNWxkSGR2Y210ZmFXUWdJQ0FnSUQwZ0lpUjdiM0JsYm5OMFlXTnJY
+        MjVsZEhkdmNtdHBibWRmYm1WMGQyOXlhMTkyTWk1dVpYUjNiM0pyWHpFdWFXUjlJZ29nSUdGa2JX
+        bHVYM04wWVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0
+        ZmJtVjBkMjl5YTJsdVoxOXdiM0owWDNZeUlpQWljM1ZpY0c5eWRGOHhJaUI3Q2lBZ1pHVndaVzVr
+        YzE5dmJpQTlJRnNLSUNBZ0lDSnZjR1Z1YzNSaFkydGZibVYwZDI5eWEybHVaMTl6ZFdKdVpYUmZk
+        akl1YzNWaWJtVjBYekVpTEFvZ0lGMEtDaUFnYm1GdFpTQWdJQ0FnSUNBZ0lDQWdQU0FpYzNWaWNH
+        OXlkRjh4SWdvZ0lHNWxkSGR2Y210ZmFXUWdJQ0FnSUQwZ0lpUjdiM0JsYm5OMFlXTnJYMjVsZEhk
+        dmNtdHBibWRmYm1WMGQyOXlhMTkyTWk1dVpYUjNiM0pyWHpFdWFXUjlJZ29nSUdGa2JXbHVYM04w
+        WVhSbFgzVndJRDBnSW5SeWRXVWlDbjBLQ25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBk
+        Mjl5YTJsdVoxOTBjblZ1YTE5Mk1pSWdJblJ5ZFc1clh6RWlJSHNLSUNCdVlXMWxJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKMGNuVnVhMTh4SWdvZ0lHRmtiV2x1WDNOMFlYUmxYM1Z3SUQwZ0luUnlkV1VpQ2lB
+        Z2NHOXlkRjlwWkNBZ0lDQWdJQ0FnUFNBaUpIdHZjR1Z1YzNSaFkydGZibVYwZDI5eWEybHVaMTl3
+        YjNKMFgzWXlMbkJoY21WdWRGOXdiM0owWHpFdWFXUjlJZ29LSUNCemRXSmZjRzl5ZENCN0NpQWdJ
+        Q0J3YjNKMFgybGtJQ0FnSUNBZ0lDQWdJQ0E5SUNJa2UyOXdaVzV6ZEdGamExOXVaWFIzYjNKcmFX
+        NW5YM0J2Y25SZmRqSXVjM1ZpY0c5eWRGOHhMbWxrZlNJS0lDQWdJSE5sWjIxbGJuUmhkR2x2Ymw5
+        cFpDQWdJRDBnTVFvZ0lDQWdjMlZuYldWdWRHRjBhVzl1WDNSNWNHVWdQU0FpZG14aGJpSUtJQ0I5
+        Q24wS0NuSmxjMjkxY21ObElDSnZjR1Z1YzNSaFkydGZZMjl0Y0hWMFpWOXBibk4wWVc1alpWOTJN
+        aUlnSW1sdWMzUmhibU5sWHpFaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBZ0lDQWdQU0FpYVc1emRH
+        RnVZMlZmTVNJS0lDQnpaV04xY21sMGVWOW5jbTkxY0hNZ1BTQmJJbVJsWm1GMWJIUWlYUW9LSUNC
+        dVpYUjNiM0pySUhzS0lDQWdJSEJ2Y25RZ1BTQWlKSHR2Y0dWdWMzUmhZMnRmYm1WMGQyOXlhMmx1
+        WjE5MGNuVnVhMTkyTWk1MGNuVnVhMTh4TG5CdmNuUmZhV1I5SWdvZ0lIMEtmUW89
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM1J5ZFc1clgzWXlMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

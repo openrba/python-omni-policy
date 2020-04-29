@@ -8,13 +8,13 @@
         "arguments": {
             "resource_group_name": {
                 "description": "The name of the resource group in which the Log Analytics Linked Service is created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_name": {
                 "description": "Name of the Log Analytics Workspace that will contain the linkedServices resource. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -26,7 +26,7 @@
             },
             "resource_id": {
                 "description": "The ID of the Resource that will be linked to the workspace. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

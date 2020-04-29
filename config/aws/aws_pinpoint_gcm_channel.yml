@@ -7,12 +7,12 @@ aws_pinpoint_gcm_channel:
     arguments:
         application_id:
             description: The application ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_key:
             description: Platform credential API key from Google.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enabled:
@@ -22,3 +22,16 @@ aws_pinpoint_gcm_channel:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjR2x1Y0c5cGJuUmZaMk50WDJOb1lXNXVaV3dpSUNKblkyMGlJ
+        SHNLSUNCaGNIQnNhV05oZEdsdmJsOXBaQ0E5SUNJa2UyRjNjMTl3YVc1d2IybHVkRjloY0hBdVlY
+        QndMbUZ3Y0d4cFkyRjBhVzl1WDJsa2ZTSUtJQ0JoY0dsZmEyVjVJQ0FnSUNBZ0lDQTlJQ0poY0ds
+        ZmEyVjVJZ3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYM0JwYm5CdmFXNTBYMkZ3Y0NJZ0ltRndjQ0ln
+        ZTMwSw==
+    import: !!binary |
+        Q2dwUWFXNXdiMmx1ZENCSFEwMGdRMmhoYm01bGJDQmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQmhjSEJzYVdOaGRHbHZiaTFwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl3YVc1d2IybHVkRjluWTIxZlkyaGhibTVsYkM1dFlYSnJaRzkzYmc9PQ==

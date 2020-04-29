@@ -8,29 +8,29 @@ azurerm_dns_caa_record:
         name:
             description: The name of the DNS CAA Record. If you are creating the record
                 in the apex of the zone use `"@"` as the name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: Specifies the resource group where the DNS Zone (parent resource
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone_name:
             description: Specifies the DNS Zone where the resource exists. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         ttl:
             description: The Time To Live (TTL
-            required: true
+            required: false
             policy: ''
             notes: ''
         record:
             description: A list of values that make up the CAA record. Each `record`
                 block supports fields documented below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -41,17 +41,17 @@ azurerm_dns_caa_record:
         flags:
             description: Extensible CAA flags, currently only 1 is implemented to
                 set the issuer critical flag.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tag:
             description: A property tag, options are issue, issuewild and iodef.
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: A property value such as a registrar domain.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

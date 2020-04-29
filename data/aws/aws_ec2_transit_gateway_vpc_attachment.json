@@ -8,19 +8,19 @@
         "arguments": {
             "subnet_ids": {
                 "description": "Identifiers of EC2 Subnets.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "transit_gateway_id": {
                 "description": "Identifier of EC2 Transit Gateway.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "vpc_id": {
                 "description": "Identifier of EC2 VPC.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,7 +55,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "EC2 Transit Gateway Attachment identifier"
+            },
+            "vpc_owner_id": {
+                "description": "Identifier of the AWS account that owns the EC2 VPC."
+            }
+        },
         "timeouts": {}
     }
 }

@@ -9,13 +9,13 @@ aws_vpn_connection:
     arguments:
         customer_gateway_id:
             description: The ID of the customer gateway.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
             description: The type of VPN connection. The only type AWS supports at
                 this time is "ipsec.1".
-            required: true
+            required: false
             policy: ''
             notes: ''
         transit_gateway_id:
@@ -61,5 +61,61 @@ aws_vpn_connection:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The amazon-assigned ID of the VPN connection.
+        customer_gateway_configuration:
+            description: The configuration information for the VPN connection's customer
+                gateway (in the native XML format).
+        customer_gateway_id:
+            description: The ID of the customer gateway to which the connection is
+                attached.
+        static_routes_only:
+            description: Whether the VPN connection uses static routes exclusively.
+        tags:
+            description: Tags applied to the connection.
+        transit_gateway_attachment_id:
+            description: When associated with an EC2 Transit Gateway (`transit_gateway_id`
+                argument), the attachment ID.
+        tunnel1_address:
+            description: The public IP address of the first VPN tunnel.
+        tunnel1_cgw_inside_address:
+            description: The RFC 6890 link-local address of the first VPN tunnel (Customer
+                Gateway Side).
+        tunnel1_vgw_inside_address:
+            description: The RFC 6890 link-local address of the first VPN tunnel (VPN
+                Gateway Side).
+        tunnel1_preshared_key:
+            description: The preshared key of the first VPN tunnel.
+        tunnel1_bgp_asn:
+            description: The bgp asn number of the first VPN tunnel.
+        tunnel1_bgp_holdtime:
+            description: The bgp holdtime of the first VPN tunnel.
+        tunnel2_address:
+            description: The public IP address of the second VPN tunnel.
+        tunnel2_cgw_inside_address:
+            description: The RFC 6890 link-local address of the second VPN tunnel
+                (Customer Gateway Side).
+        tunnel2_vgw_inside_address:
+            description: The RFC 6890 link-local address of the second VPN tunnel
+                (VPN Gateway Side).
+        tunnel2_preshared_key:
+            description: The preshared key of the second VPN tunnel.
+        tunnel2_bgp_asn:
+            description: The bgp asn number of the second VPN tunnel.
+        tunnel2_bgp_holdtime:
+            description: The bgp holdtime of the second VPN tunnel.
+        type:
+            description: The type of VPN connection.
+        vpn_gateway_id:
+            description: The ID of the virtual private gateway to which the connection
+                is attached.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwV1VFNGdRMjl1Ym1WamRHbHZibk1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnZG5CdUlHTnZibTVsWTNScGIyNGdhV1JnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0c1ZlkyOXVibVZqZEdsdmJpNW9kRzFzTG0xaGNtdGtiM2R1

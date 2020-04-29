@@ -18,7 +18,7 @@ aws_db_event_subscription:
             notes: ''
         sns_topic:
             description: The SNS topic to send events to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_ids:
@@ -56,3 +56,31 @@ aws_db_event_subscription:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZaR0pmYVc1emRHRnVZMlVpSUNKa1pXWmhkV3gwSWlCN0NpQWdZ
+        V3hzYjJOaGRHVmtYM04wYjNKaFoyVWdJQ0FnUFNBeE1Bb2dJR1Z1WjJsdVpTQWdJQ0FnSUNBZ0lD
+        QWdJQ0FnSUQwZ0ltMTVjM0ZzSWdvZ0lHVnVaMmx1WlY5MlpYSnphVzl1SUNBZ0lDQWdJRDBnSWpV
+        dU5pNHhOeUlLSUNCcGJuTjBZVzVqWlY5amJHRnpjeUFnSUNBZ0lDQTlJQ0prWWk1ME1pNXRhV055
+        YnlJS0lDQnVZVzFsSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdGVXUmlJZ29nSUhWelpYSnVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbVp2YnlJS0lDQndZWE56ZDI5eVpDQWdJQ0FnSUNBZ0lD
+        QWdJQ0E5SUNKaVlYSWlDaUFnWkdKZmMzVmlibVYwWDJkeWIzVndYMjVoYldVZ1BTQWliWGxmWkdG
+        MFlXSmhjMlZmYzNWaWJtVjBYMmR5YjNWd0lnb2dJSEJoY21GdFpYUmxjbDluY205MWNGOXVZVzFs
+        SUQwZ0ltUmxabUYxYkhRdWJYbHpjV3cxTGpZaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmMyNXpY
+        M1J2Y0dsaklpQWlaR1ZtWVhWc2RDSWdld29nSUc1aGJXVWdQU0FpY21SekxXVjJaVzUwY3lJS2ZR
+        b0tjbVZ6YjNWeVkyVWdJbUYzYzE5a1lsOWxkbVZ1ZEY5emRXSnpZM0pwY0hScGIyNGlJQ0prWlda
+        aGRXeDBJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lEMGdJbkprY3kxbGRtVnVkQzF6ZFdJaUNpQWdjMjV6
+        WDNSdmNHbGpJRDBnSWlSN1lYZHpYM051YzE5MGIzQnBZeTVrWldaaGRXeDBMbUZ5Ym4waUNnb2dJ
+        SE52ZFhKalpWOTBlWEJsSUQwZ0ltUmlMV2x1YzNSaGJtTmxJZ29nSUhOdmRYSmpaVjlwWkhNZ0lE
+        MGdXeUlrZTJGM2MxOWtZbDlwYm5OMFlXNWpaUzVrWldaaGRXeDBMbWxrZlNKZENnb2dJR1YyWlc1
+        MFgyTmhkR1ZuYjNKcFpYTWdQU0JiQ2lBZ0lDQWlZWFpoYVd4aFltbHNhWFI1SWl3S0lDQWdJQ0pr
+        Wld4bGRHbHZiaUlzQ2lBZ0lDQWlabUZwYkc5MlpYSWlMQW9nSUNBZ0ltWmhhV3gxY21VaUxBb2dJ
+        Q0FnSW14dmR5QnpkRzl5WVdkbElpd0tJQ0FnSUNKdFlXbHVkR1Z1WVc1alpTSXNDaUFnSUNBaWJt
+        OTBhV1pwWTJGMGFXOXVJaXdLSUNBZ0lDSnlaV0ZrSUhKbGNHeHBZMkVpTEFvZ0lDQWdJbkpsWTI5
+        MlpYSjVJaXdLSUNBZ0lDSnlaWE4wYjNKaGRHbHZiaUlzQ2lBZ1hRcDlDZz09
+    import: !!binary |
+        Q2dwRVFpQkZkbVZ1ZENCVGRXSnpZM0pwY0hScGIyNXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCMGFHVWdZRzVoYldWZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrWWw5bGRtVnVkRjl6ZFdKelkzSnBjSFJwYjI0dWFIUnRiQzV0WVhKclpHOTNiZz09

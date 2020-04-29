@@ -8,42 +8,42 @@ azurerm_api_management_api:
         name:
             description: The name of the API Management API. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         api_management_name:
             description: The Name of the API Management Service where this API should
                 be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The Name of the Resource Group where the API Management API
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         revision:
             description: The Revision which used for this API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         display_name:
             description: The display name of the API.
-            required: true
+            required: false
             policy: ''
             notes: ''
         path:
             description: The Path for this API Management API, which is a relative
                 URL which uniquely identifies this API and all of it's resource paths
                 within the API Management Service.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocols:
             description: A list of protocols the operations in this API can be invoked.
                 Possible values are `http` and `https`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -83,19 +83,22 @@ azurerm_api_management_api:
             description: The ID of the Version Set which this API is associated with.
             required: false
             policy: ''
-            notes: When `version` is set, `version_set_id` must also be specified
+            notes:
+            - '-> '
+            - ' When `version` is set, `version_set_id` must also be specified'
         content_format:
             description: 'The format of the content from which the API Definition
-                should be imported. Possible values are: `swagger-json`, `swagger-link-json`,
+                should be imported. Possible values are: `openapi`, `openapi+json`,
+                `openapi+json-link`, `openapi-link`, `swagger-json`, `swagger-link-json`,
                 `wadl-link-json`, `wadl-xml`, `wsdl` and `wsdl-link`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         content_value:
             description: The Content from which the API Definition should be imported.
                 When a `content_format` of `*-link-*` is specified this must be a
                 URL, otherwise this must be defined inline.
-            required: true
+            required: false
             policy: ''
             notes: ''
         wsdl_selector:
@@ -108,23 +111,23 @@ azurerm_api_management_api:
         header:
             description: The name of the HTTP Header which should be used for the
                 Subscription Key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         query:
             description: The name of the QueryString parameter which should be used
                 for the Subscription Key.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_name:
             description: The name of service to import from WSDL.
-            required: true
+            required: false
             policy: ''
             notes: ''
         endpoint_name:
             description: The name of endpoint (port
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

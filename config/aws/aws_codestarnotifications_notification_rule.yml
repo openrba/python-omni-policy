@@ -8,23 +8,23 @@ aws_codestarnotifications_notification_rule:
         detail_type:
             description: The level of detail to include in the notifications for this
                 resource. Possible values are `BASIC` and `FULL`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         event_type_ids:
             description: A list of event types associated with this notification rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of notification rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource:
             description: The ARN of the resource to associate with the notification
                 rule.
-            required: true
+            required: false
             policy: ''
             notes: ''
         status:
@@ -48,7 +48,7 @@ aws_codestarnotifications_notification_rule:
         address:
             description: The ARN of notification rule target. For example, a SNS Topic
                 ARN.
-            required: true
+            required: false
             policy: ''
             notes: ''
         type:
@@ -62,3 +62,32 @@ aws_codestarnotifications_notification_rule:
         arn:
             description: The codestar notification rule ARN.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZMjlrWldOdmJXMXBkRjl5WlhCdmMybDBiM0o1SWlBaVkyOWta
+        U0lnZXdvZ0lISmxjRzl6YVhSdmNubGZibUZ0WlNBOUlDSmxlR0Z0Y0d4bExXTnZaR1V0Y21Wd2J5
+        SUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXpibk5mZEc5d2FXTWlJQ0p1YjNScFppSWdld29nSUc1
+        aGJXVWdQU0FpYm05MGFXWnBZMkYwYVc5dUlncDlDZ3BrWVhSaElDSmhkM05mYVdGdFgzQnZiR2xq
+        ZVY5a2IyTjFiV1Z1ZENJZ0ltNXZkR2xtWDJGalkyVnpjeUlnZXdvZ0lITjBZWFJsYldWdWRDQjdD
+        aUFnSUNCaFkzUnBiMjV6SUQwZ1d5Snpibk02VUhWaWJHbHphQ0pkQ2dvZ0lDQWdjSEpwYm1OcGNH
+        RnNjeUI3Q2lBZ0lDQWdJSFI1Y0dVZ0lDQWdJQ0FnSUQwZ0lsTmxjblpwWTJVaUNpQWdJQ0FnSUds
+        a1pXNTBhV1pwWlhKeklEMGdXeUpqYjJSbGMzUmhjaTF1YjNScFptbGpZWFJwYjI1ekxtRnRZWHB2
+        Ym1GM2N5NWpiMjBpWFFvZ0lDQWdmUW9LSUNBZ0lISmxjMjkxY21ObGN5QTlJRnRoZDNOZmMyNXpY
+        M1J2Y0dsakxtNXZkR2xtTG1GeWJsMEtJQ0I5Q24wS0NuSmxjMjkxY21ObElDSmhkM05mYzI1elgz
+        UnZjR2xqWDNCdmJHbGplU0lnSW1SbFptRjFiSFFpSUhzS0lDQmhjbTRnSUNBZ1BTQmhkM05mYzI1
+        elgzUnZjR2xqTG01dmRHbG1MbUZ5YmdvZ0lIQnZiR2xqZVNBOUlHUmhkR0V1WVhkelgybGhiVjl3
+        YjJ4cFkzbGZaRzlqZFcxbGJuUXVibTkwYVdaZllXTmpaWE56TG1wemIyNEtmUW9LY21WemIzVnlZ
+        MlVnSW1GM2MxOWpiMlJsYzNSaGNtNXZkR2xtYVdOaGRHbHZibk5mYm05MGFXWnBZMkYwYVc5dVgz
+        SjFiR1VpSUNKamIyMXRhWFJ6SWlCN0NpQWdaR1YwWVdsc1gzUjVjR1VnSUNBZ1BTQWlRa0ZUU1VN
+        aUNpQWdaWFpsYm5SZmRIbHdaVjlwWkhNZ1BTQmJJbU52WkdWamIyMXRhWFF0Y21Wd2IzTnBkRzl5
+        ZVMxamIyMXRaVzUwY3kxdmJpMWpiMjF0YVhSeklsMEtDaUFnYm1GdFpTQWdJQ0FnUFNBaVpYaGhi
+        WEJzWlMxamIyUmxMWEpsY0c4dFkyOXRiV2wwY3lJS0lDQnlaWE52ZFhKalpTQTlJR0YzYzE5amIy
+        UmxZMjl0YldsMFgzSmxjRzl6YVhSdmNua3VZMjlrWlM1aGNtNEtDaUFnZEdGeVoyVjBJSHNLSUNB
+        Z0lHRmtaSEpsYzNNZ1BTQmhkM05mYzI1elgzUnZjR2xqTG01dmRHbG1MbUZ5YmdvZ0lIMEtmUW89
+    import: !!binary |
+        Q2dwRGIyUmxVM1JoY2lCdWIzUnBabWxqWVhScGIyNGdjblZzWlNCallXNGdZbVVnYVcxd2IzSjBa
+        V1FnZFhOcGJtY2dkR2hsSUVGU1Rpd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYjJSbGMzUmhjbTV2ZEdsbWFXTmhkR2x2Ym5OZmJtOTBhV1pwWTJGMGFXOXVYM0oxYkdV
+        dWJXRnlhMlJ2ZDI0PQ==

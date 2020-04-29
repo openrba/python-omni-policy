@@ -8,36 +8,36 @@ azurerm_batch_pool:
         name:
             description: Specifies the name of the Batch pool. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Batch
                 pool. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_name:
             description: Specifies the name of the Batch account in which the pool
                 will be created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         node_agent_sku_id:
             description: Specifies the Sku of the node agents that will be created
                 in the Batch pool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         vm_size:
             description: Specifies the size of the VM created in the Batch pool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         storage_image_reference:
             description: A `storage_image_reference` for the virtual machines that
                 will compose the Batch pool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         display_name:
@@ -91,30 +91,32 @@ azurerm_batch_pool:
                 configurations for the Batch pool.
             required: false
             policy: ''
-            notes: For Windows compute nodes, the Batch service installs the certificates
+            notes:
+            - '-> '
+            - ' For Windows compute nodes, the Batch service installs the certificates
                 to the specified certificate store and location. For Linux compute
                 nodes, the certificates are stored in a directory inside the task
                 working directory and an environment variable `AZ_BATCH_CERTIFICATES_DIR`
                 is supplied to the task to query for this location. For certificates
                 with visibility of `remoteUser`, a `certs` directory is created in
-                the user's home directory (e.g., `/home/{user-name}/certs`) and certificates
-                are placed in that directory.
+                the user''s home directory (e.g., `/home/{user-name}/certs`) and certificates
+                are placed in that directory.'
         publisher:
             description: Specifies the publisher of the image used to create the virtual
                 machines. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         offer:
             description: Specifies the offer of the image used to create the virtual
                 machines. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku:
             description: Specifies the SKU of the image used to create the virtual
                 machines. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         version:
@@ -126,7 +128,7 @@ azurerm_batch_pool:
         id:
             description: The ID of the Batch Certificate to install on the Batch Pool,
                 which must be inside the same Batch Account.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target_dedicated_nodes:
@@ -154,12 +156,12 @@ azurerm_batch_pool:
         formula:
             description: The autoscale formula that needs to be used for scaling the
                 Batch pool.
-            required: true
+            required: false
             policy: ''
             notes: ''
         command_line:
             description: The command line executed by the start task.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_task_retry_count:
@@ -181,7 +183,7 @@ azurerm_batch_pool:
         user_identity:
             description: A `user_identity` block that describes the user identity
                 under which the start task runs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_file:
@@ -219,7 +221,7 @@ azurerm_batch_pool:
             description: The location of the certificate store on the compute node
                 into which to install the certificate. Possible values are `CurrentUser`
                 or `LocalMachine`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         store_name:

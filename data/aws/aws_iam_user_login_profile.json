@@ -8,13 +8,13 @@
         "arguments": {
             "user": {
                 "description": "The IAM user's name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "pgp_key": {
                 "description": "Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Only applies on resource creation. Drift detection is not possible with this argument.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

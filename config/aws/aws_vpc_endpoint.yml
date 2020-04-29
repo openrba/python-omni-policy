@@ -10,12 +10,12 @@ aws_vpc_endpoint:
                 in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook
                 service is an exception to this rule, the service name is in the form
                 `aws.sagemaker.<region>.notebook`).
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_id:
             description: The ID of the VPC in which the endpoint will be used.
-            required: true
+            required: false
             policy: ''
             notes: ''
         auto_accept:
@@ -93,3 +93,11 @@ aws_vpc_endpoint:
         hosted_zone_id:
             description: The ID of the private hosted zone.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwV1VFTWdSVzVrY0c5cGJuUnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SFp3WXlCbGJtUndiMmx1ZENCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZlpXNWtjRzlwYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

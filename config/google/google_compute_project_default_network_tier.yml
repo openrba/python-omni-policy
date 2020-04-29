@@ -8,7 +8,7 @@ google_compute_project_default_network_tier:
     arguments:
         network_tier:
             description: The default network tier to be configured for the project.
-            required: true
+            required: false
             policy: ''
             notes: ''
         project:

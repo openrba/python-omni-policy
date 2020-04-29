@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Shared Image. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "gallery_name": {
                 "description": "Specifies the name of the Shared Image Gallery in which this Shared Image should exist. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which the Shared Image Gallery exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the Shared Image Gallery exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "identifier": {
                 "description": "An `identifier` block as defined below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "os_type": {
                 "description": "The type of Operating System present in this Shared Image. Possible values are `Linux` and `Windows`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,19 +80,19 @@
             },
             "offer": {
                 "description": "The Offer Name for this Shared Image.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "publisher": {
                 "description": "The Publisher Name for this Gallery Image.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "sku": {
                 "description": "The Name of the SKU for this Gallery Image.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

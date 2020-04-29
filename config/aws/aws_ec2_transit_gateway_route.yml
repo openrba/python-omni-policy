@@ -8,7 +8,7 @@ aws_ec2_transit_gateway_route:
         destination_cidr_block:
             description: IPv4 CIDR range used for destination matches. Routing decisions
                 are based on the most specific match.
-            required: true
+            required: false
             policy: ''
             notes: ''
         transit_gateway_attachment_id:
@@ -25,8 +25,22 @@ aws_ec2_transit_gateway_route:
             notes: ''
         transit_gateway_route_table_id:
             description: Identifier of EC2 Transit Gateway Route Table.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: EC2 Transit Gateway Route Table identifier combined with
+                destination
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwZ1lYZHpYMlZqTWw5MGNtRnVjMmwwWDJkaGRHVjNZWGxmY205MWRHVmdJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQmllU0IxYzJsdVp5QjBhR1VnUlVNeUlGUnlZVzV6YVhRZ1IyRjBaWGRoZVNCU2Iz
+        VjBaU0JVWVdKc1pTd2dZVzRnZFc1a1pYSnpZMjl5WlN3Z1lXNWtJSFJvWlNCa1pYTjBhVzVoZEds
+        dmJpd2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsWXpKZmRISmhibk5wZEY5bllYUmxkMkY1WDNKdmRYUmxMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

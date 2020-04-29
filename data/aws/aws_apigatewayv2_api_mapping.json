@@ -8,19 +8,19 @@
         "arguments": {
             "api_id": {
                 "description": "The API identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "domain_name": {
                 "description": "The domain name. Use the [`aws_apigatewayv2_domain_name`](/docs/providers/aws/r/apigatewayv2_domain_name.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "stage": {
                 "description": "The API stage. Use the [`aws_apigatewayv2_stage`](/docs/providers/aws/r/apigatewayv2_stage.html",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -31,7 +31,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The API mapping identifier."
+            }
+        },
         "timeouts": {}
     }
 }

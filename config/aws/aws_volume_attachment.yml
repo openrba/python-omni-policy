@@ -7,17 +7,17 @@ aws_volume_attachment:
     arguments:
         device_name:
             description: The device name to expose to the instance (for
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_id:
             description: ID of the Instance to attach to
-            required: true
+            required: false
             policy: ''
             notes: ''
         volume_id:
             description: ID of the Volume to be attached
-            required: true
+            required: false
             policy: ''
             notes: ''
         force_detach:
@@ -38,3 +38,23 @@ aws_volume_attachment:
         volume_id:
             description: ID of the Volume
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbTlzZFcxbFgyRjBkR0ZqYUcxbGJuUWlJQ0psWW5OZllYUjBJ
+        aUI3Q2lBZ1pHVjJhV05sWDI1aGJXVWdQU0FpTDJSbGRpOXpaR2dpQ2lBZ2RtOXNkVzFsWDJsa0lD
+        QWdQU0FpSkh0aGQzTmZaV0p6WDNadmJIVnRaUzVsZUdGdGNHeGxMbWxrZlNJS0lDQnBibk4wWVc1
+        alpWOXBaQ0E5SUNJa2UyRjNjMTlwYm5OMFlXNWpaUzUzWldJdWFXUjlJZ3A5Q2dweVpYTnZkWEpq
+        WlNBaVlYZHpYMmx1YzNSaGJtTmxJaUFpZDJWaUlpQjdDaUFnWVcxcElDQWdJQ0FnSUNBZ0lDQWdJ
+        Q0FnUFNBaVlXMXBMVEl4WmpjNFpURXhJZ29nSUdGMllXbHNZV0pwYkdsMGVWOTZiMjVsSUQwZ0lu
+        VnpMWGRsYzNRdE1tRWlDaUFnYVc1emRHRnVZMlZmZEhsd1pTQWdJQ0FnUFNBaWRERXViV2xqY204
+        aUNnb2dJSFJoWjNNZ1BTQjdDaUFnSUNCT1lXMWxJRDBnSWtobGJHeHZWMjl5YkdRaUNpQWdmUXA5
+        Q2dweVpYTnZkWEpqWlNBaVlYZHpYMlZpYzE5MmIyeDFiV1VpSUNKbGVHRnRjR3hsSWlCN0NpQWdZ
+        WFpoYVd4aFltbHNhWFI1WDNwdmJtVWdQU0FpZFhNdGQyVnpkQzB5WVNJS0lDQnphWHBsSUNBZ0lD
+        QWdJQ0FnSUNBZ0lDQTlJREVLZlFvPQ==
+    import: !!binary |
+        Q2dwRlFsTWdWbTlzZFcxbElFRjBkR0ZqYUcxbGJuUnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFj
+        Mmx1WnlCZ1JFVldTVU5GWDA1QlRVVTZWazlNVlUxRlgwbEVPa2xPVTFSQlRrTkZYMGxFWUN3Z1pT
+        NW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyYjJ4MWJXVmZZWFIwWVdOb2JXVnVkQzVvZEcxc0xtMWhjbXRrYjNkdQ==

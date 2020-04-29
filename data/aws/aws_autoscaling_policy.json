@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "autoscaling_group_name": {
                 "description": "The name of the autoscaling group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,7 +44,7 @@
             },
             "scaling_adjustment": {
                 "description": "The number of members by which to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -92,7 +92,7 @@
             },
             "target_value": {
                 "description": "The target value for the metric.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -103,7 +103,23 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "The ARN assigned by AWS to the scaling policy."
+            },
+            "name": {
+                "description": "The scaling policy's name."
+            },
+            "autoscaling_group_name": {
+                "description": "The scaling policy's assigned autoscaling group."
+            },
+            "adjustment_type": {
+                "description": "The scaling policy's adjustment type."
+            },
+            "policy_type": {
+                "description": "The scaling policy's type."
+            }
+        },
         "timeouts": {}
     }
 }

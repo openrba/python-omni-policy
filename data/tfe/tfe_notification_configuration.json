@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "Name of the notification configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "destination_type": {
                 "description": "The type of notification configuration payload to send. ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,22 +38,18 @@
             },
             "url": {
                 "description": "The HTTP or HTTPS URL of the notification configuration where notification",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "workspace_external_id": {
                 "description": "The external id of the workspace that owns the notification configuration.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the notification configuration."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

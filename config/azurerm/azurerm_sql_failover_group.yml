@@ -8,32 +8,34 @@ azurerm_sql_failover_group:
         name:
             description: The name of the failover group. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group containing the SQL server
-            required: true
+            required: false
             policy: ''
             notes: ''
         server_name:
             description: The name of the primary SQL server. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
-            notes: The failover group will create a secondary database for each database
+            notes:
+            - '-> '
+            - ' The failover group will create a secondary database for each database
                 listed in `databases`. If the secondary databases need to be managed
                 through Terraform, they should be defined as resources and a dependency
                 added to the failover group to ensure the secondary databases are
-                created first.
+                created first.'
         partner_servers:
             description: A list of secondary servers as documented below
-            required: true
+            required: false
             policy: ''
             notes: ''
         read_write_endpoint_failover_policy:
             description: A read/write policy as documented below
-            required: true
+            required: false
             policy: ''
             notes: ''
         readonly_endpoint_failover_policy:
@@ -48,13 +50,85 @@ azurerm_sql_failover_group:
             notes: ''
         id:
             description: the SQL server ID
-            required: true
+            required: false
             policy: ''
             notes: ''
         mode:
             description: the failover mode. Possible values are `Manual`, `Automatic`
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
-    timeouts: {}
+    attributes:
+        id:
+            description: The failover group ID.
+        location:
+            description: the location of the failover group.
+        server_name:
+            description: the name of the primary SQL Database Server.
+        role:
+            description: local replication role of the failover group instance.
+        databases:
+            description: list of databases in the failover group.
+        partner_servers:
+            description: list of partner server information for the failover group.
+    timeouts:
+        create:
+            description: Used when creating the SQL Failover Group.
+            required: false
+            timeout: 30
+        update:
+            description: Used when updating the SQL Failover Group.
+            required: false
+            timeout: 30
+        read:
+            description: Used when retrieving the SQL Failover Group.
+            required: false
+            timeout: 5
+        delete:
+            description: Used when deleting the SQL Failover Group.
+            required: false
+            timeout: 30
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaWEp0WDNKbGMyOTFjbU5sWDJkeWIzVndJaUFpWlhoaGJYQnNa
+        U0lnZXdvZ0lHNWhiV1VnSUNBZ0lEMGdJbVY0WVcxd2JHVXRjbVZ6YjNWeVkyVnpJZ29nSUd4dlky
+        RjBhVzl1SUQwZ0luVnJjMjkxZEdnaUNuMEtDbkpsYzI5MWNtTmxJQ0poZW5WeVpYSnRYM054YkY5
+        elpYSjJaWElpSUNKd2NtbHRZWEo1SWlCN0NpQWdibUZ0WlNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0Fn
+        SUNBZ0lDQWdJQ0E5SUNKemNXd3RjSEpwYldGeWVTSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZ
+        VzFsSUNBZ0lDQWdJQ0FnSUQwZ1lYcDFjbVZ5YlY5eVpYTnZkWEpqWlY5bmNtOTFjQzVsZUdGdGNH
+        eGxMbTVoYldVS0lDQnNiMk5oZEdsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJRDBnWVhw
+        MWNtVnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExteHZZMkYwYVc5dUNpQWdkbVZ5
+        YzJsdmJpQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNJeE1pNHdJZ29nSUdGa2JXbHVh
+        WE4wY21GMGIzSmZiRzluYVc0Z0lDQWdJQ0FnSUNBZ1BTQWljM0ZzWVdSdGFXNGlDaUFnWVdSdGFX
+        NXBjM1J5WVhSdmNsOXNiMmRwYmw5d1lYTnpkMjl5WkNBOUlDSndZU1FrZHpCeVpDSUtmUW9LY21W
+        emIzVnlZMlVnSW1GNmRYSmxjbTFmYzNGc1gzTmxjblpsY2lJZ0luTmxZMjl1WkdGeWVTSWdld29n
+        SUc1aGJXVWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWljM0ZzTFhObFkyOXVa
+        R0Z5ZVNJS0lDQnlaWE52ZFhKalpWOW5jbTkxY0Y5dVlXMWxJQ0FnSUNBZ0lDQWdJRDBnWVhwMWNt
+        VnliVjl5WlhOdmRYSmpaVjluY205MWNDNWxlR0Z0Y0d4bExtNWhiV1VLSUNCc2IyTmhkR2x2YmlB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJbTV2Y25Sb1pYVnliM0JsSWdvZ0lIWmxjbk5w
+        YjI0Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpTVRJdU1DSUtJQ0JoWkcxcGJtbHpk
+        SEpoZEc5eVgyeHZaMmx1SUNBZ0lDQWdJQ0FnSUQwZ0luTnhiR0ZrYldsdUlnb2dJR0ZrYldsdWFY
+        TjBjbUYwYjNKZmJHOW5hVzVmY0dGemMzZHZjbVFnUFNBaWNHRWtKSGN3Y21RaUNuMEtDbkpsYzI5
+        MWNtTmxJQ0poZW5WeVpYSnRYM054YkY5a1lYUmhZbUZ6WlNJZ0ltUmlNU0lnZXdvZ0lHNWhiV1Vn
+        SUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWkdJeElnb2dJSEpsYzI5MWNtTmxYMmR5YjNWd1gyNWhi
+        V1VnUFNCaGVuVnlaWEp0WDNOeGJGOXpaWEoyWlhJdWNISnBiV0Z5ZVM1eVpYTnZkWEpqWlY5bmNt
+        OTFjRjl1WVcxbENpQWdiRzlqWVhScGIyNGdJQ0FnSUNBZ0lDQWdJQ0E5SUdGNmRYSmxjbTFmYzNG
+        c1gzTmxjblpsY2k1d2NtbHRZWEo1TG14dlkyRjBhVzl1Q2lBZ2MyVnlkbVZ5WDI1aGJXVWdJQ0Fn
+        SUNBZ0lDQTlJR0Y2ZFhKbGNtMWZjM0ZzWDNObGNuWmxjaTV3Y21sdFlYSjVMbTVoYldVS2ZRb0tj
+        bVZ6YjNWeVkyVWdJbUY2ZFhKbGNtMWZjM0ZzWDJaaGFXeHZkbVZ5WDJkeWIzVndJaUFpWlhoaGJY
+        QnNaU0lnZXdvZ0lHNWhiV1VnSUNBZ0lDQWdJQ0FnSUNBZ0lDQWdQU0FpWlhoaGJYQnNaUzFtWVds
+        c2IzWmxjaTFuY205MWNDSUtJQ0J5WlhOdmRYSmpaVjluY205MWNGOXVZVzFsSUQwZ1lYcDFjbVZ5
+        YlY5emNXeGZjMlZ5ZG1WeUxuQnlhVzFoY25rdWNtVnpiM1Z5WTJWZlozSnZkWEJmYm1GdFpRb2dJ
+        SE5sY25abGNsOXVZVzFsSUNBZ0lDQWdJQ0FnUFNCaGVuVnlaWEp0WDNOeGJGOXpaWEoyWlhJdWNI
+        SnBiV0Z5ZVM1dVlXMWxDaUFnWkdGMFlXSmhjMlZ6SUNBZ0lDQWdJQ0FnSUNBOUlGdGhlblZ5WlhK
+        dFgzTnhiRjlrWVhSaFltRnpaUzVrWWpFdWFXUmRDaUFnY0dGeWRHNWxjbDl6WlhKMlpYSnpJSHNL
+        SUNBZ0lHbGtJRDBnWVhwMWNtVnliVjl6Y1d4ZmMyVnlkbVZ5TG5ObFkyOXVaR0Z5ZVM1cFpBb2dJ
+        SDBLQ2lBZ2NtVmhaRjkzY21sMFpWOWxibVJ3YjJsdWRGOW1ZV2xzYjNabGNsOXdiMnhwWTNrZ2V3
+        b2dJQ0FnYlc5a1pTQWdJQ0FnSUNBZ0lDQTlJQ0pCZFhSdmJXRjBhV01pQ2lBZ0lDQm5jbUZqWlY5
+        dGFXNTFkR1Z6SUQwZ05qQUtJQ0I5Q24wSw==
+    import: !!binary |
+        Q2dwVFVVd2dSbUZwYkc5MlpYSWdSM0p2ZFhCeklHTmhiaUJpWlNCcGJYQnZjblJsWkNCMWMybHVa
+        eUIwYUdVZ1lISmxjMjkxY21ObElHbGtZQ3dnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsY20wdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzRnNYMlpoYVd4dmRtVnlYMmR5YjNWd0xtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -7,37 +7,37 @@ azurerm_lb_outbound_rule:
     arguments:
         name:
             description: The name of the Frontend IP Configuration.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the resource.
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         loadbalancer_id:
             description: The ID of the Load Balancer in which to create the Outbound
                 Rule. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         frontend_ip_configuration:
             description: One or more `frontend_ip_configuration` blocks as defined
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         backend_address_pool_id:
             description: The ID of the Backend Address Pool. Outbound traffic is randomly
                 load balanced across IPs in the backend IPs.
-            required: true
+            required: false
             policy: ''
             notes: ''
         protocol:
             description: The transport protocol for the external endpoint. Possible
                 values are `Udp`, `Tcp` or `All`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enable_tcp_reset:

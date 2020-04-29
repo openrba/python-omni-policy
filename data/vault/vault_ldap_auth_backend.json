@@ -8,7 +8,7 @@
         "arguments": {
             "url": {
                 "description": "The URL of the LDAP server",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -121,11 +121,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "accessor": {
-                "description": "The accessor for this auth mount."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

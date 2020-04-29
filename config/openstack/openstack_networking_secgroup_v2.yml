@@ -12,7 +12,7 @@ openstack_networking_secgroup_v2:
             notes: ''
         name:
             description: A unique name for the security group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -35,18 +35,18 @@ openstack_networking_secgroup_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        description:
-            description: See Argument Reference above.
-        tenant_id:
-            description: See Argument Reference above.
-        tags:
-            description: See Argument Reference above.
-        all_tags:
-            description: The collection of tags assigned on the security group, which
-                have
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZmJtVjBkMjl5YTJsdVoxOXpaV05uY205MWNGOTJN
+        aUlnSW5ObFkyZHliM1Z3WHpFaUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSnpaV05uY205MWNG
+        OHhJZ29nSUdSbGMyTnlhWEIwYVc5dUlEMGdJazE1SUc1bGRYUnliMjRnYzJWamRYSnBkSGtnWjNK
+        dmRYQWlDbjBL
+    import: !!binary |
+        Q2dwVFpXTjFjbWwwZVNCSGNtOTFjSE1nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9a
+        U0JnYVdSZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXVaWFIzYjNKcmFXNW5YM05sWTJkeWIzVndYM1l5TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

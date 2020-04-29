@@ -8,31 +8,31 @@
         "arguments": {
             "storage_account_name": {
                 "description": "Specifies the storage account in which to create the storage table entity.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "table_name": {
                 "description": "The name of the storage table in which to create the storage table entity.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "partition_key": {
                 "description": "The key for the partition where the entity will be inserted/merged. Changing this forces a new resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "row_key": {
                 "description": "The key for the row where the entity will be inserted/merged. Changing this forces a new resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "entity": {
                 "description": "A map of key/value pairs that describe the entity to be inserted/merged in to the storage table.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

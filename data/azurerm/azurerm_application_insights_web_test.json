@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Application Insights WebTest. Changing this forces a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "application_insights_id": {
                 "description": "The ID of the Application Insights component on which the WebTest operates. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The location of the resource group.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "kind": {
                 "description": "The kind of web test that this web test watches. Choices are `ping` and `multistep`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "geo_locations": {
                 "description": "A list of where to physically run the tests from to give global coverage for accessibility of your application.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "configuration": {
                 "description": "An XML configuration specification for a WebTest.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -80,6 +80,27 @@
             }
         },
         "attributes": {},
-        "timeouts": {}
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Application Insights Web Test.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Application Insights Web Test.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Application Insights Web Test.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Application Insights Web Test.",
+                "required": false,
+                "timeout": 30
+            }
+        }
     }
 }

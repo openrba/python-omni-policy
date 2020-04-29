@@ -8,41 +8,41 @@ azurerm_express_route_circuit:
         name:
             description: The name of the ExpressRoute circuit. Changing this forces
                 a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the ExpressRoute
                 circuit. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         service_provider_name:
             description: The name of the ExpressRoute Service Provider.
-            required: true
+            required: false
             policy: ''
             notes: ''
         peering_location:
             description: The name of the peering location and **not** the Azure resource
                 location.
-            required: true
+            required: false
             policy: ''
             notes: ''
         bandwidth_in_mbps:
             description: The bandwidth in Mbps of the circuit being created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku:
             description: A `sku` block for the ExpressRoute circuit as documented
                 below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_classic_operations:
@@ -58,13 +58,13 @@ azurerm_express_route_circuit:
         tier:
             description: The service tier. Possible values are `Basic`, `Local`, `Standard`
                 or `Premium`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         family:
             description: The billing mode for bandwidth. Possible values are `MeteredData`
                 or `UnlimitedData`.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

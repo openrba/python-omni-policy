@@ -7,18 +7,18 @@ aws_dms_replication_subnet_group:
     arguments:
         replication_subnet_group_description:
             description: The description for the subnet group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         replication_subnet_group_id:
             description: The name for the replication subnet group. This value is
                 stored as a lowercase string.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_ids:
             description: A list of the EC2 subnet IDs for the subnet group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tags:
@@ -30,3 +30,21 @@ aws_dms_replication_subnet_group:
         vpc_id:
             description: The ID of the VPC the subnet group is in.
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJSEpsY0d4cFkyRjBhVzl1SUhOMVltNWxkQ0JuY205MWNBcHla
+        WE52ZFhKalpTQWlZWGR6WDJSdGMxOXlaWEJzYVdOaGRHbHZibDl6ZFdKdVpYUmZaM0p2ZFhBaUlD
+        SjBaWE4wSWlCN0NpQWdjbVZ3YkdsallYUnBiMjVmYzNWaWJtVjBYMmR5YjNWd1gyUmxjMk55YVhC
+        MGFXOXVJRDBnSWxSbGMzUWdjbVZ3YkdsallYUnBiMjRnYzNWaWJtVjBJR2R5YjNWd0lnb2dJSEps
+        Y0d4cFkyRjBhVzl1WDNOMVltNWxkRjluY205MWNGOXBaQ0FnSUNBZ0lDQWdJQ0E5SUNKMFpYTjBM
+        V1J0Y3kxeVpYQnNhV05oZEdsdmJpMXpkV0p1WlhRdFozSnZkWEF0ZEdZaUNnb2dJSE4xWW01bGRG
+        OXBaSE1nUFNCYkNpQWdJQ0FpYzNWaWJtVjBMVEV5TXpRMU5qYzRJaXdLSUNCZENnb2dJSFJoWjNN
+        Z1BTQjdDaUFnSUNCT1lXMWxJRDBnSW5SbGMzUWlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwU1pYQnNhV05oZEdsdmJpQnpkV0p1WlhRZ1ozSnZkWEJ6SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnWUhKbGNHeHBZMkYwYVc5dVgzTjFZbTVsZEY5bmNtOTFjRjlwWkdBc0lH
+        VXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYlhOZmNtVndiR2xqWVhScGIyNWZjM1ZpYm1WMFgyZHliM1Z3TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

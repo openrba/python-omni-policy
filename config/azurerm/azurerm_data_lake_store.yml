@@ -8,19 +8,19 @@ azurerm_data_lake_store:
         name:
             description: Specifies the name of the Data Lake Store. Changing this
                 forces a new resource to be created. Has to be between 3 to 24 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the Data
                 Lake Store.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         tier:
@@ -42,8 +42,10 @@ azurerm_data_lake_store:
                 `Enabled` - and must be a blank string when it's Disabled.
             required: false
             policy: ''
-            notes: Support for User Managed encryption will be supported in the future
-                once a bug in the API is fixed.
+            notes:
+            - '-> '
+            - ' Support for User Managed encryption will be supported in the future
+                once a bug in the API is fixed.'
         tags:
             description: A mapping of tags to assign to the resource.
             required: false

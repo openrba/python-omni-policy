@@ -7,12 +7,12 @@ vault_okta_auth_backend_group:
     arguments:
         path:
             description: The path where the Okta auth backend is mounted
-            required: true
+            required: false
             policy: ''
             notes: ''
         group_name:
             description: Name of the group within the Okta
-            required: true
+            required: false
             policy: ''
             notes: ''
         policies:
@@ -22,3 +22,19 @@ vault_okta_auth_backend_group:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjl2YTNSaFgyRjFkR2hmWW1GamEyVnVaQ0lnSW1WNFlXMXdi
+        R1VpSUhzS0lDQWdJSEJoZEdnZ0lDQWdJQ0FnSUNBOUlDSm5jbTkxY0Y5dmEzUmhJZ29nSUNBZ2Iz
+        Sm5ZVzVwZW1GMGFXOXVJRDBnSW1SMWJXMTVJZ3A5Q2dweVpYTnZkWEpqWlNBaWRtRjFiSFJmYjJ0
+        MFlWOWhkWFJvWDJKaFkydGxibVJmWjNKdmRYQWlJQ0ptYjI4aUlIc0tJQ0FnSUhCaGRHZ2dJQ0Fn
+        SUNBZ1BTQWlKSHQyWVhWc2RGOXZhM1JoWDJGMWRHaGZZbUZqYTJWdVpDNWxlR0Z0Y0d4bExuQmhk
+        R2g5SWdvZ0lDQWdaM0p2ZFhCZmJtRnRaU0E5SUNKbWIyOGlDaUFnSUNCd2IyeHBZMmxsY3lBZ0lE
+        MGdXeUp2Ym1VaUxDQWlkSGR2SWwwS2ZRbz0=
+    import: !!binary |
+        Q2dwUGEzUmhJR0YxZEdobGJuUnBZMkYwYVc5dUlHSmhZMnRsYm1RZ1ozSnZkWEJ6SUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWm05eWJXRjBJR0JpWVdOclpXNWtMMmR5YjNWd1Rt
+        RnRaV0FnWlM1bkxnb0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDI5cmRHRmZZWFYwYUY5aVlXTnJaVzVrWDJkeWIzVndMbWgwYld3dWJXUT0=

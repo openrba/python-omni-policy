@@ -8,19 +8,19 @@
         "arguments": {
             "rest_api_id": {
                 "description": "The ID of the associated REST API",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "parent_id": {
                 "description": "The ID of the parent API resource",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "path_part": {
                 "description": "The last path segment of this API resource.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

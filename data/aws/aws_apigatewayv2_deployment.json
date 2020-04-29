@@ -8,7 +8,7 @@
         "arguments": {
             "api_id": {
                 "description": "The API identifier.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -19,7 +19,14 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "id": {
+                "description": "The deployment identifier."
+            },
+            "auto_deployed": {
+                "description": "Whether the deployment was automatically released."
+            }
+        },
         "timeouts": {}
     }
 }

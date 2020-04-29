@@ -7,12 +7,12 @@ aws_redshift_event_subscription:
     arguments:
         name:
             description: The name of the Redshift event subscription.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sns_topic_arn:
             description: The ARN of the SNS topic to send events to.
-            required: true
+            required: false
             policy: ''
             notes: ''
         source_ids:
@@ -56,3 +56,26 @@ aws_redshift_event_subscription:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjbVZrYzJocFpuUmZZMngxYzNSbGNpSWdJbVJsWm1GMWJIUWlJ
+        SHNLSUNCamJIVnpkR1Z5WDJsa1pXNTBhV1pwWlhJZ1BTQWlaR1ZtWVhWc2RDSUtJQ0JrWVhSaFlt
+        RnpaVjl1WVcxbElDQWdJQ0FnUFNBaVpHVm1ZWFZzZENJS0NpQWdJeUF1TGk0S2ZRb0tjbVZ6YjNW
+        eVkyVWdJbUYzYzE5emJuTmZkRzl3YVdNaUlDSmtaV1poZFd4MElpQjdDaUFnYm1GdFpTQTlJQ0p5
+        WldSemFHbG1kQzFsZG1WdWRITWlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZjbVZrYzJocFpuUmZa
+        WFpsYm5SZmMzVmljMk55YVhCMGFXOXVJaUFpWkdWbVlYVnNkQ0lnZXdvZ0lHNWhiV1VnSUNBZ0lD
+        QWdJQ0FnUFNBaWNtVmtjMmhwWm5RdFpYWmxiblF0YzNWaUlnb2dJSE51YzE5MGIzQnBZMTloY200
+        Z1BTQWlKSHRoZDNOZmMyNXpYM1J2Y0dsakxtUmxabUYxYkhRdVlYSnVmU0lLQ2lBZ2MyOTFjbU5s
+        WDNSNWNHVWdQU0FpWTJ4MWMzUmxjaUlLSUNCemIzVnlZMlZmYVdSeklDQTlJRnNpSkh0aGQzTmZj
+        bVZrYzJocFpuUmZZMngxYzNSbGNpNWtaV1poZFd4MExtbGtmU0pkQ2dvZ0lITmxkbVZ5YVhSNUlE
+        MGdJa2xPUms4aUNnb2dJR1YyWlc1MFgyTmhkR1ZuYjNKcFpYTWdQU0JiQ2lBZ0lDQWlZMjl1Wm1s
+        bmRYSmhkR2x2YmlJc0NpQWdJQ0FpYldGdVlXZGxiV1Z1ZENJc0NpQWdJQ0FpYlc5dWFYUnZjbWx1
+        WnlJc0NpQWdJQ0FpYzJWamRYSnBkSGtpTEFvZ0lGMEtDaUFnZEdGbmN5QTlJSHNLSUNBZ0lFNWhi
+        V1VnUFNBaVpHVm1ZWFZzZENJS0lDQjlDbjBL
+    import: !!binary |
+        Q2dwU1pXUnphR2xtZENCRmRtVnVkQ0JUZFdKelkzSnBjSFJwYjI1eklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lHNWhiV1ZnTENCbExtY3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5WldSemFHbG1kRjlsZG1WdWRGOXpkV0p6WTNKcGNIUnBiMjR1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

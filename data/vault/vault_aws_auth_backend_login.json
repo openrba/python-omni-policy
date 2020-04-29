@@ -67,32 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "lease_duration": {
-                "description": "The duration in seconds the token will be valid, relative"
-            },
-            "lease_start_time": {
-                "description": "The approximate time at which the token was created,"
-            },
-            "renewable": {
-                "description": "Set to true if the token can be extended through renewal."
-            },
-            "metadata": {
-                "description": "A map of information returned by the Vault server about the"
-            },
-            "auth_type": {
-                "description": "The authentication type used to generate this token."
-            },
-            "policies": {
-                "description": "The Vault policies assigned to this token."
-            },
-            "accessor": {
-                "description": "The token's accessor."
-            },
-            "client_token": {
-                "description": "The token returned by Vault."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

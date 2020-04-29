@@ -20,7 +20,7 @@
             },
             "type": {
                 "description": "Used to indicate the type of container. Must be one of `generic`, `rsa` or `certificate`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "secret_ref": {
                 "description": "The secret reference / where to find the secret, URL.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -67,44 +67,7 @@
                 "notes": ""
             }
         },
-        "attributes": {
-            "container_ref": {
-                "description": "The container reference / where to find the container."
-            },
-            "region": {
-                "description": "See Argument Reference above."
-            },
-            "name": {
-                "description": "The name of the consumer."
-            },
-            "type": {
-                "description": "See Argument Reference above."
-            },
-            "secret_refs": {
-                "description": "See Argument Reference above."
-            },
-            "acl": {
-                "description": "See Argument Reference above."
-            },
-            "creator_id": {
-                "description": "The creator of the container."
-            },
-            "status": {
-                "description": "The status of the container."
-            },
-            "created_at": {
-                "description": "The date the container was created."
-            },
-            "updated_at": {
-                "description": "The date the container was last updated."
-            },
-            "consumers": {
-                "description": "The list of the container consumers. The structure is described below."
-            },
-            "url": {
-                "description": "The consumer URL."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

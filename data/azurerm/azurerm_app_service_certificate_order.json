@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the certificate. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the certificate. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created. Currently the only valid value is `global`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -40,7 +40,10 @@
                 "description": "The Distinguished Name for the App Service Certificate Order.",
                 "required": false,
                 "policy": "",
-                "notes": "Either `csr` or `distinguished_name` must be set - but not both."
+                "notes": [
+                    "-> ",
+                    " Either `csr` or `distinguished_name` must be set - but not both."
+                ]
             },
             "key_size": {
                 "description": "Certificate key size.  Defaults to 2048.",

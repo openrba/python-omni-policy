@@ -24,7 +24,7 @@ aws_neptune_cluster_instance:
             notes: ''
         cluster_identifier:
             description: The identifier of the [`aws_neptune_cluster`](/docs/providers/aws/r/neptune_cluster.html
-            required: true
+            required: false
             policy: ''
             notes: ''
         engine:
@@ -52,7 +52,7 @@ aws_neptune_cluster_instance:
             notes: ''
         instance_class:
             description: The instance class to use.
-            required: true
+            required: false
             policy: ''
             notes: ''
         neptune_subnet_group_name:
@@ -118,3 +118,28 @@ aws_neptune_cluster_instance:
         storage_encrypted:
             description: Specifies whether the neptune cluster is encrypted.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZibVZ3ZEhWdVpWOWpiSFZ6ZEdWeUlpQWlaR1ZtWVhWc2RDSWdl
+        d29nSUdOc2RYTjBaWEpmYVdSbGJuUnBabWxsY2lBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0lt
+        NWxjSFIxYm1VdFkyeDFjM1JsY2kxa1pXMXZJZ29nSUdWdVoybHVaU0FnSUNBZ0lDQWdJQ0FnSUNB
+        Z0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUQwZ0ltNWxjSFIxYm1VaUNpQWdZbUZqYTNWd1gzSmxkR1Z1
+        ZEdsdmJsOXdaWEpwYjJRZ0lDQWdJQ0FnSUNBZ0lDQWdQU0ExQ2lBZ2NISmxabVZ5Y21Wa1gySmhZ
+        MnQxY0Y5M2FXNWtiM2NnSUNBZ0lDQWdJQ0FnSUNBZ1BTQWlNRGM2TURBdE1EazZNREFpQ2lBZ2My
+        dHBjRjltYVc1aGJGOXpibUZ3YzJodmRDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQjBjblZsQ2lB
+        Z2FXRnRYMlJoZEdGaVlYTmxYMkYxZEdobGJuUnBZMkYwYVc5dVgyVnVZV0pzWldRZ1BTQjBjblZs
+        Q2lBZ1lYQndiSGxmYVcxdFpXUnBZWFJsYkhrZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBZ1BTQjBj
+        blZsQ24wS0NuSmxjMjkxY21ObElDSmhkM05mYm1Wd2RIVnVaVjlqYkhWemRHVnlYMmx1YzNSaGJt
+        TmxJaUFpWlhoaGJYQnNaU0lnZXdvZ0lHTnZkVzUwSUNBZ0lDQWdJQ0FnSUNBZ0lDQTlJRElLSUNC
+        amJIVnpkR1Z5WDJsa1pXNTBhV1pwWlhJZ1BTQWlKSHRoZDNOZmJtVndkSFZ1WlY5amJIVnpkR1Z5
+        TG1SbFptRjFiSFF1YVdSOUlnb2dJR1Z1WjJsdVpTQWdJQ0FnSUNBZ0lDQWdJQ0E5SUNKdVpYQjBk
+        VzVsSWdvZ0lHbHVjM1JoYm1ObFgyTnNZWE56SUNBZ0lDQTlJQ0prWWk1eU5DNXNZWEpuWlNJS0lD
+        QmhjSEJzZVY5cGJXMWxaR2xoZEdWc2VTQWdQU0IwY25WbENuMEs=
+    import: !!binary |
+        Q2dwZ1lYZHpYMjVsY0hSMWJtVmZZMngxYzNSbGNsOXBibk4wWVc1alpXQWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lHSjVJSFZ6YVc1bklIUm9aU0JwYm5OMFlXNWpaU0JwWkdWdWRHbG1hV1Z5TENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl1WlhCMGRXNWxYMk5zZFhOMFpYSmZhVzV6ZEdGdVkyVXVhSFJ0YkM1dFlYSnJaRzkzYmc9
+        PQ==

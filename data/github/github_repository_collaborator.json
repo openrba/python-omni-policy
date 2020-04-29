@@ -7,13 +7,13 @@
         "arguments": {
             "repository": {
                 "description": "The GitHub repository",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "username": {
                 "description": "The user to add to the repository as a collaborator.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -24,7 +24,11 @@
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "invitation_id": {
+                "description": "ID of the invitation to be used in [`github_user_invitation_accepter`](./user_invitation_accepter.html)"
+            }
+        },
         "timeouts": {}
     }
 }

@@ -7,12 +7,12 @@ tfe_organization:
     arguments:
         name:
             description: Name of the organization.
-            required: true
+            required: false
             policy: ''
             notes: ''
         email:
             description: Admin email address.
-            required: true
+            required: false
             policy: ''
             notes: ''
         session_timeout_minutes:
@@ -35,7 +35,17 @@ tfe_organization:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The name of the organization.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMFptVmZiM0puWVc1cGVtRjBhVzl1SWlBaWRHVnpkQ0lnZXdvZ0lHNWhi
+        V1VnSUQwZ0ltMTVMVzl5WnkxdVlXMWxJZ29nSUdWdFlXbHNJRDBnSW1Ga2JXbHVRR052YlhCaGJu
+        a3VZMjl0SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwUGNtZGhibWw2WVhScGIyNXpJR05oYmlCaVpTQnBiWEJ2Y25SbFpEc2dkWE5sSUdBOFQxSkhR
+        VTVKV2tGVVNVOU9JRTVCVFVVK1lDQmhjeUIwYUdVZ2FXMXdiM0owSUVsRUxpQkdiM0lLWlhoaGJY
+        QnNaVG9LQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYUm1aUzlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl2Y21kaGJtbDZZWFJwYjI0dWFIUnRiQzV0WVhKclpHOTNiZz09

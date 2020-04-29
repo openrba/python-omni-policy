@@ -8,30 +8,34 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the job queue.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "compute_environments": {
                 "description": "Specifies the set of compute environments",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "priority": {
                 "description": "The priority of the job queue. Job queues with a higher priority",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "state": {
                 "description": "The state of the job queue. Must be one of: `ENABLED` or `DISABLED`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {},
+        "attributes": {
+            "arn": {
+                "description": "The Amazon Resource Name of the job queue."
+            }
+        },
         "timeouts": {}
     }
 }

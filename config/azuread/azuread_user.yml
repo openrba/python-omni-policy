@@ -7,12 +7,12 @@ azuread_user:
     arguments:
         user_principal_name:
             description: The User Principal Name of the Azure AD User.
-            required: true
+            required: false
             policy: ''
             notes: ''
         display_name:
             description: The name to display in the address book for the user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_enabled:
@@ -31,7 +31,7 @@ azuread_user:
             description: The password for the User. The password must satisfy minimum
                 requirements as specified by the password policy. The maximum length
                 is 256 characters.
-            required: true
+            required: false
             policy: ''
             notes: ''
         force_password_change:
@@ -69,3 +69,16 @@ azuread_user:
         object_id:
             description: The Object ID of the Azure AD User.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGVuVnlaV0ZrWDNWelpYSWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2RYTmxj
+        bDl3Y21sdVkybHdZV3hmYm1GdFpTQTlJQ0pxWkc5QWFHRnphR2xqYjNKd0xtTnZiU0lLSUNCa2FY
+        TndiR0Y1WDI1aGJXVWdJQ0FnSUNBZ0lEMGdJa291SUVSdlpTSUtJQ0J0WVdsc1gyNXBZMnR1WVcx
+        bElDQWdJQ0FnSUQwZ0ltcGtiMlVpQ2lBZ2NHRnpjM2R2Y21RZ0lDQWdJQ0FnSUNBZ0lDQTlJQ0pU
+        WldOeVpYUlFRSE56ZDJRNU9TRWlDbjBL
+    import: !!binary |
+        Q2dwQmVuVnlaU0JCWTNScGRtVWdSR2x5WldOMGIzSjVJRlZ6WlhKeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1lHOWlhbVZqZENCcFpHQXNJR1V1Wnk0S0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjZkWEpsWVdRdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmRYTmxjaTVvZEcxc0xtMWhjbXRrYjNkdQ==

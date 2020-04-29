@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The resource group's name. A resource group name can have a maximum of 127 characters, including letters, numbers, hyphens, dots, and underscores. The name cannot start with `AWS` or `aws`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "resource_query": {
                 "description": "A `resource_query` block. Resource queries are documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -32,13 +32,13 @@
             },
             "query": {
                 "description": "The resource query as a JSON string.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of the resource query. Defaults to `TAG_FILTERS_1_0`. ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

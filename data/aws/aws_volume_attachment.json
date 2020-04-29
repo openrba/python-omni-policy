@@ -8,19 +8,19 @@
         "arguments": {
             "device_name": {
                 "description": "The device name to expose to the instance (for",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_id": {
                 "description": "ID of the Instance to attach to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "volume_id": {
                 "description": "ID of the Volume to be attached",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -8,16 +8,37 @@ tfe_run_trigger:
         workspace_external_id:
             description: The external id of the workspace that owns the run trigger.
                 This is the workspace where runs will be triggered.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sourceable_id:
             description: The external id of the sourceable. The sourceable must be
                 a workspace.
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: The ID of the run trigger.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMFptVmZiM0puWVc1cGVtRjBhVzl1SWlBaWRHVnpkQzF2Y21kaGJtbDZZ
+        WFJwYjI0aUlIc0tJQ0J1WVcxbElDQTlJQ0p0ZVMxdmNtY3RibUZ0WlNJS0lDQmxiV0ZwYkNBOUlD
+        SmhaRzFwYmtCamIyMXdZVzU1TG1OdmJTSUtmUW9LY21WemIzVnlZMlVnSW5SbVpWOTNiM0pyYzNC
+        aFkyVWlJQ0owWlhOMExYZHZjbXR6Y0dGalpTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lDQTlJQ0p0
+        ZVMxM2IzSnJjM0JoWTJVdGJtRnRaU0lLSUNCdmNtZGhibWw2WVhScGIyNGdQU0FpSkh0MFptVmZi
+        M0puWVc1cGVtRjBhVzl1TG5SbGMzUXRiM0puWVc1cGVtRjBhVzl1TG1sa2ZTSUtmUW9LY21WemIz
+        VnlZMlVnSW5SbVpWOTNiM0pyYzNCaFkyVWlJQ0owWlhOMExYTnZkWEpqWldGaWJHVWlJSHNLSUNC
+        dVlXMWxJQ0FnSUNBZ0lDQWdQU0FpYlhrdGMyOTFjbU5sWVdKc1pTMTNiM0pyYzNCaFkyVXRibUZ0
+        WlNJS0lDQnZjbWRoYm1sNllYUnBiMjRnUFNBaUpIdDBabVZmYjNKbllXNXBlbUYwYVc5dUxuUmxj
+        M1F0YjNKbllXNXBlbUYwYVc5dUxtbGtmU0lLZlFvS2NtVnpiM1Z5WTJVZ0luUm1aVjl5ZFc1ZmRI
+        SnBaMmRsY2lJZ0luUmxjM1FpSUhzS0lDQjNiM0pyYzNCaFkyVmZaWGgwWlhKdVlXeGZhV1FnUFNB
+        aUpIdDBabVZmZDI5eWEzTndZV05sTG5SbGMzUXRkMjl5YTNOd1lXTmxMbVY0ZEdWeWJtRnNYMmxr
+        ZlNJS0lDQnpiM1Z5WTJWaFlteGxYMmxrSUNBZ0lDQWdJQ0FnUFNBaUpIdDBabVZmZDI5eWEzTndZ
+        V05sTG5SbGMzUXRjMjkxY21ObFlXSnNaUzVsZUhSbGNtNWhiRjlwWkgwaUNuMEs=
+    import: !!binary |
+        Q2dwU2RXNGdkSEpwWjJkbGNuTWdZMkZ1SUdKbElHbHRjRzl5ZEdWa095QjFjMlVnWUR4U1ZVNGdW
+        RkpKUjBkRlVpQkpSRDVnSUdGeklIUm9aU0JwYlhCdmNuUWdTVVF1SUVadmNpQmxlR0Z0Y0d4bE9n
+        b0s=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYUm1aUzlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl5ZFc1ZmRISnBaMmRsY2k1b2RHMXNMbTFoY210a2IzZHU=

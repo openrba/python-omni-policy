@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "The name of the environment.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "instance_type": {
                 "description": "The type of instance to connect to the environment, e.g. `t2.micro`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

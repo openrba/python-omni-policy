@@ -32,7 +32,7 @@
             },
             "function_name": {
                 "description": "A unique name for your Lambda Function.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -44,13 +44,13 @@
             },
             "handler": {
                 "description": "The function [entrypoint][3] in your code.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "role": {
                 "description": "IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -74,7 +74,7 @@
             },
             "runtime": {
                 "description": "See [Runtimes][6] for valid values.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -128,25 +128,25 @@
             },
             "target_arn": {
                 "description": "The ARN of an SNS topic or SQS queue to notify when an invocation fails. If this",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "mode": {
                 "description": "Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_ids": {
                 "description": "A list of subnet IDs associated with the Lambda function.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "security_group_ids": {
                 "description": "A list of security group IDs associated with the Lambda function.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

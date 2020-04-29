@@ -10,13 +10,13 @@ datadog_logs_pipeline_order:
             description: 'The name attribute in the resource `datadog_logs_pipeline_order`
                 needs to be unique. It''s recommended to use the same value as the
                 resource `NAME`. '
-            required: true
+            required: false
             policy: ''
             notes: ''
         pipelines:
             description: The pipeline IDs list. The order of pipeline IDs in this
                 attribute defines the overall pipeline order for logs.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -24,3 +24,25 @@ datadog_logs_pipeline_order:
             description: 'The `pipelines` list contains the IDs of resources created
                 and imported by the '
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKa1lYUmhaRzluWDJ4dlozTmZjR2x3Wld4cGJtVmZiM0prWlhJaUlDSnpZ
+        VzF3YkdWZmNHbHdaV3hwYm1WZmIzSmtaWElpSUhzS0lDQWdJRzVoYldVZ1BTQWljMkZ0Y0d4bFgz
+        QnBjR1ZzYVc1bFgyOXlaR1Z5SWdvZ0lDQWdaR1Z3Wlc1a2MxOXZiaUE5SUZzS0lDQWdJQ0FnSUNB
+        aVpHRjBZV1J2WjE5c2IyZHpYMk4xYzNSdmJWOXdhWEJsYkdsdVpTNXpZVzF3YkdWZmNHbHdaV3hw
+        Ym1VaUxBb2dJQ0FnSUNBZ0lDSmtZWFJoWkc5blgyeHZaM05mYVc1MFpXZHlZWFJwYjI1ZmNHbHda
+        V3hwYm1VdWNIbDBhRzl1SWdvZ0lDQWdYUW9nSUNBZ2NHbHdaV3hwYm1WeklEMGdXd29nSUNBZ0lD
+        QWdJQ0lrZTJSaGRHRmtiMmRmYkc5bmMxOWpkWE4wYjIxZmNHbHdaV3hwYm1VdWMyRnRjR3hsWDNC
+        cGNHVnNhVzVsTG1sa2ZTSXNDaUFnSUNBZ0lDQWdJaVI3WkdGMFlXUnZaMTlzYjJkelgybHVkR1Zu
+        Y21GMGFXOXVYM0JwY0dWc2FXNWxMbkI1ZEdodmJpNXBaSDBpQ2lBZ0lDQmRDbjBL
+    import: !!binary |
+        Q2dwVWFHVnlaU0J0ZFhOMElHSmxJR0YwSUcxdmMzUWdiMjVsSUdCa1lYUmhaRzluWDJ4dlozTmZj
+        R2x3Wld4cGJtVmZiM0prWlhKZ0lISmxjMjkxY21ObExpQlFhWEJsYkdsdVpTQnZjbVJsY2lCamNt
+        VmhkR2x2YmlCcGN5QnViM1FnYzNWd2NHOXlkR1ZrSUdaeWIyMGdiRzluY3lCamIyNW1hV2NnUVZC
+        SkxpQUtXVzkxSUdOaGJpQnBiWEJ2Y25RZ2RHaGxJR0JrWVhSaFpHOW5YMnh2WjNOZmNHbHdaV3hw
+        Ym1WZmIzSmtaWEpnSUc5eUlHTnlaV0YwWlNCaElIQnBjR1ZzYVc1bElHOXlaR1Z5SUNoM2FHbGph
+        Q0JwY3lCaFkzUjFZV3hzZVNCa2IybHVaeUIwYUdVZ2RYQmtZWFJsSUc5d1pYSmhkR2x2YmlrdUNn
+        bz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXUmhkR0ZrYjJjdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmJHOW5jMTl3YVhCbGJHbHVaVjl2Y21SbGNpNW9kRzFzTG0xaGNtdGtiM2R1

@@ -7,7 +7,7 @@ openstack_objectstorage_object_v1:
     arguments:
         container_name:
             description: A unique (within an account
-            required: true
+            required: false
             policy: ''
             notes: ''
         content:
@@ -60,7 +60,7 @@ openstack_objectstorage_object_v1:
             notes: ''
         name:
             description: A unique name for the object.
-            required: true
+            required: false
             policy: ''
             notes: ''
         object_manifest:
@@ -79,49 +79,12 @@ openstack_objectstorage_object_v1:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        content_length:
-            description: 'If the operation succeeds, this value is zero (0) or the '
-        content_type:
-            description: 'If the operation succeeds, this value is the MIME type of
-                the object. '
-        date:
-            description: 'The date and time the system responded to the request, using
-                the preferred '
-        etag:
-            description: 'Whatever the value given in argument, will be overriden
-                by the MD5 checksum of the uploaded object content. The value is not
-                quoted. '
-        last_modified:
-            description: 'The date and time when the object was last modified. The
-                date and time '
-        static_large_object:
-            description: True if object is a multipart_manifest.
-        trans_id:
-            description: 'A unique transaction ID for this request. Your service provider
-                might '
-        container_name:
-            description: See Argument Reference above.
-        content:
-            description: See Argument Reference above.
-        content_disposition:
-            description: See Argument Reference above.
-        content_encoding:
-            description: See Argument Reference above.
-        copy_from:
-            description: See Argument Reference above.
-        delete_after:
-            description: See Argument Reference above.
-        delete_at:
-            description: See Argument Reference above.
-        detect_content_type:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        object_manifest:
-            description: See Argument Reference above.
-        region:
-            description: See Argument Reference above.
-        source:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOXZZbXBsWTNSemRHOXlZV2RsWDI5aWFtVmpkRjkyTVM1b2RHMXNMbTFoY210
+        a2IzZHU=

@@ -6,12 +6,12 @@ github_branch_protection:
     arguments:
         repository:
             description: The GitHub repository name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         branch:
             description: The Git branch to protect.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enforce_admins:
@@ -46,3 +46,35 @@ github_branch_protection:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1VISnZkR1ZqZENCMGFHVWdiV0Z6ZEdWeUlHSnlZVzVqYUNCdlppQjBhR1VnWm05dklISmxj
+        Rzl6YVhSdmNua3VJRUZrWkdsMGFXOXVZV3hzZVN3Z2NtVnhkV2x5WlNCMGFHRjBDaU1nZEdobElD
+        SmphUzkwY21GMmFYTWlJR052Ym5SbGVIUWdkRzhnWW1VZ2NHRnpjMmx1WnlCaGJtUWdiMjVzZVNC
+        aGJHeHZkeUIwYUdVZ1pXNW5hVzVsWlhKeklIUmxZVzBnYldWeVoyVUtJeUIwYnlCMGFHVWdZbkpo
+        Ym1Ob0xncHlaWE52ZFhKalpTQWlaMmwwYUhWaVgySnlZVzVqYUY5d2NtOTBaV04wYVc5dUlpQWla
+        WGhoYlhCc1pTSWdld29nSUhKbGNHOXphWFJ2Y25rZ0lDQWdJRDBnSWlSN1oybDBhSFZpWDNKbGNH
+        OXphWFJ2Y25rdVpYaGhiWEJzWlM1dVlXMWxmU0lLSUNCaWNtRnVZMmdnSUNBZ0lDQWdJQ0E5SUNK
+        dFlYTjBaWElpQ2lBZ1pXNW1iM0pqWlY5aFpHMXBibk1nUFNCMGNuVmxDZ29nSUhKbGNYVnBjbVZr
+        WDNOMFlYUjFjMTlqYUdWamEzTWdld29nSUNBZ2MzUnlhV04wSUNBZ1BTQm1ZV3h6WlFvZ0lDQWdZ
+        Mjl1ZEdWNGRITWdQU0JiSW1OcEwzUnlZWFpwY3lKZENpQWdmUW9LSUNCeVpYRjFhWEpsWkY5d2RX
+        eHNYM0psY1hWbGMzUmZjbVYyYVdWM2N5QjdDaUFnSUNCa2FYTnRhWE56WDNOMFlXeGxYM0psZG1s
+        bGQzTWdQU0IwY25WbENpQWdJQ0JrYVhOdGFYTnpZV3hmZFhObGNuTWdJQ0FnSUNBZ1BTQmJJbVp2
+        YnkxMWMyVnlJbDBLSUNBZ0lHUnBjMjFwYzNOaGJGOTBaV0Z0Y3lBZ0lDQWdJQ0E5SUZzaUpIdG5h
+        WFJvZFdKZmRHVmhiUzVsZUdGdGNHeGxMbk5zZFdkOUlpd2dJaVI3WjJsMGFIVmlYM1JsWVcwdWMy
+        VmpiMjVrTG5Oc2RXZDlJbDBLSUNCOUNnb2dJSEpsYzNSeWFXTjBhVzl1Y3lCN0NpQWdJQ0IxYzJW
+        eWN5QTlJRnNpWm05dkxYVnpaWElpWFFvZ0lDQWdkR1ZoYlhNZ1BTQmJJaVI3WjJsMGFIVmlYM1Js
+        WVcwdVpYaGhiWEJzWlM1emJIVm5mU0pkQ2lBZ0lDQmhjSEJ6SUNBOUlGc2labTl2TFdGd2NDSmRD
+        aUFnZlFwOUNncHlaWE52ZFhKalpTQWlaMmwwYUhWaVgzUmxZVzBpSUNKbGVHRnRjR3hsSWlCN0Np
+        QWdibUZ0WlNBOUlDSkZlR0Z0Y0d4bElFNWhiV1VpQ24wS0NuSmxjMjkxY21ObElDSm5hWFJvZFdK
+        ZmRHVmhiVjl5WlhCdmMybDBiM0o1SWlBaVpYaGhiWEJzWlNJZ2V3b2dJSFJsWVcxZmFXUWdJQ0Fn
+        UFNBaUpIdG5hWFJvZFdKZmRHVmhiUzVsZUdGdGNHeGxMbWxrZlNJS0lDQnlaWEJ2YzJsMGIzSjVJ
+        RDBnSWlSN1oybDBhSFZpWDNKbGNHOXphWFJ2Y25rdVpYaGhiWEJzWlM1dVlXMWxmU0lLSUNCd1pY
+        SnRhWE56YVc5dUlEMGdJbkIxYkd3aUNuMEs=
+    import: !!binary |
+        Q2dwSGFYUklkV0lnUW5KaGJtTm9JRkJ5YjNSbFkzUnBiMjRnWTJGdUlHSmxJR2x0Y0c5eWRHVmtJ
+        SFZ6YVc1bklHRnVJRWxFSUcxaFpHVWdkWEFnYjJZZ1lISmxjRzl6YVhSdmNuazZZbkpoYm1Ob1lD
+        d2daUzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHBkR2gxWWk5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5aWNtRnVZMmhmY0hKdmRHVmpkR2x2Ymk1b2RHMXNMbTFoY210a2IzZHU=

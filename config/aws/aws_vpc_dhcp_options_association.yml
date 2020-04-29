@@ -8,15 +8,29 @@ aws_vpc_dhcp_options_association:
         vpc_id:
             description: The ID of the VPC to which we would like to associate a DHCP
                 Options Set.
-            required: true
+            required: false
             policy: ''
             notes: ''
         dhcp_options_id:
             description: The ID of the DHCP Options Set to associate to the VPC.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
         id:
             description: The ID of the DHCP Options Set Association.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZkbkJqWDJSb1kzQmZiM0IwYVc5dWMxOWhjM052WTJsaGRHbHZi
+        aUlnSW1SdWMxOXlaWE52YkhabGNpSWdld29nSUhad1kxOXBaQ0FnSUNBZ0lDQWdJQ0E5SUNJa2Uy
+        RjNjMTkyY0dNdVptOXZMbWxrZlNJS0lDQmthR053WDI5d2RHbHZibk5mYVdRZ1BTQWlKSHRoZDNO
+        ZmRuQmpYMlJvWTNCZmIzQjBhVzl1Y3k1bWIyOHVhV1I5SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwRVNFTlFJR0Z6YzI5amFXRjBhVzl1Y3lCallXNGdZbVVnYVcxd2IzSjBaV1FnWW5rZ2NISnZk
+        bWxrYVc1bklIUm9aU0JXVUVNZ1NVUWdZWE56YjJOcFlYUmxaQ0IzYVhSb0lIUm9aU0J2Y0hScGIy
+        NXpPZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkyY0dOZlpHaGpjRjl2Y0hScGIyNXpYMkZ6YzI5amFXRjBhVzl1TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

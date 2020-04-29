@@ -7,7 +7,7 @@ aws_api_gateway_deployment:
     arguments:
         rest_api_id:
             description: The ID of the associated REST API
-            required: true
+            required: false
             policy: ''
             notes: ''
         stage_name:
@@ -32,5 +32,47 @@ aws_api_gateway_deployment:
             required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: The ID of the deployment
+        invoke_url:
+            description: The URL to invoke the API pointing to the stage,
+        execution_arn:
+            description: The execution ARN to be used in [`lambda_permission`](/docs/providers/aws/r/lambda_permission.html)'s
+                `source_arn`
+        created_date:
+            description: The creation date of the deployment
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemRGOWhjR2tpSUNKTmVVUmxi
+        VzlCVUVraUlIc0tJQ0J1WVcxbElDQWdJQ0FnSUNBOUlDSk5lVVJsYlc5QlVFa2lDaUFnWkdWelkz
+        SnBjSFJwYjI0Z1BTQWlWR2hwY3lCcGN5QnRlU0JCVUVrZ1ptOXlJR1JsYlc5dWMzUnlZWFJwYjI0
+        Z2NIVnljRzl6WlhNaUNuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZllYQnBYMmRoZEdWM1lYbGZjbVZ6
+        YjNWeVkyVWlJQ0pOZVVSbGJXOVNaWE52ZFhKalpTSWdld29nSUhKbGMzUmZZWEJwWDJsa0lEMGdJ
+        aVI3WVhkelgyRndhVjluWVhSbGQyRjVYM0psYzNSZllYQnBMazE1UkdWdGIwRlFTUzVwWkgwaUNp
+        QWdjR0Z5Wlc1MFgybGtJQ0FnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmNtVnpkRjloY0dr
+        dVRYbEVaVzF2UVZCSkxuSnZiM1JmY21WemIzVnlZMlZmYVdSOUlnb2dJSEJoZEdoZmNHRnlkQ0Fn
+        SUQwZ0luUmxjM1FpQ24wS0NuSmxjMjkxY21ObElDSmhkM05mWVhCcFgyZGhkR1YzWVhsZmJXVjBh
+        RzlrSWlBaVRYbEVaVzF2VFdWMGFHOWtJaUI3Q2lBZ2NtVnpkRjloY0dsZmFXUWdJQ0E5SUNJa2Uy
+        RjNjMTloY0dsZloyRjBaWGRoZVY5eVpYTjBYMkZ3YVM1TmVVUmxiVzlCVUVrdWFXUjlJZ29nSUhK
+        bGMyOTFjbU5sWDJsa0lDQWdQU0FpSkh0aGQzTmZZWEJwWDJkaGRHVjNZWGxmY21WemIzVnlZMlV1
+        VFhsRVpXMXZVbVZ6YjNWeVkyVXVhV1I5SWdvZ0lHaDBkSEJmYldWMGFHOWtJQ0FnUFNBaVIwVlVJ
+        Z29nSUdGMWRHaHZjbWw2WVhScGIyNGdQU0FpVGs5T1JTSUtmUW9LY21WemIzVnlZMlVnSW1GM2Mx
+        OWhjR2xmWjJGMFpYZGhlVjlwYm5SbFozSmhkR2x2YmlJZ0lrMTVSR1Z0YjBsdWRHVm5jbUYwYVc5
+        dUlpQjdDaUFnY21WemRGOWhjR2xmYVdRZ1BTQWlKSHRoZDNOZllYQnBYMmRoZEdWM1lYbGZjbVZ6
+        ZEY5aGNHa3VUWGxFWlcxdlFWQkpMbWxrZlNJS0lDQnlaWE52ZFhKalpWOXBaQ0E5SUNJa2UyRjNj
+        MTloY0dsZloyRjBaWGRoZVY5eVpYTnZkWEpqWlM1TmVVUmxiVzlTWlhOdmRYSmpaUzVwWkgwaUNp
+        QWdhSFIwY0Y5dFpYUm9iMlFnUFNBaUpIdGhkM05mWVhCcFgyZGhkR1YzWVhsZmJXVjBhRzlrTGsx
+        NVJHVnRiMDFsZEdodlpDNW9kSFJ3WDIxbGRHaHZaSDBpQ2lBZ2RIbHdaU0FnSUNBZ0lDQWdQU0Fp
+        VFU5RFN5SUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOWhjR2xmWjJGMFpYZGhlVjlrWlhCc2IzbHRa
+        VzUwSWlBaVRYbEVaVzF2UkdWd2JHOTViV1Z1ZENJZ2V3b2dJR1JsY0dWdVpITmZiMjRnUFNCYklp
+        UjdZWGR6WDJGd2FWOW5ZWFJsZDJGNVgybHVkR1ZuY21GMGFXOXVMazE1UkdWdGIwbHVkR1ZuY21G
+        MGFXOXVmU0pkQ2dvZ0lISmxjM1JmWVhCcFgybGtJRDBnSWlSN1lYZHpYMkZ3YVY5bllYUmxkMkY1
+        WDNKbGMzUmZZWEJwTGsxNVJHVnRiMEZRU1M1cFpIMGlDaUFnYzNSaFoyVmZibUZ0WlNBZ1BTQWlk
+        R1Z6ZENJS0NpQWdkbUZ5YVdGaWJHVnpJRDBnZXdvZ0lDQWdJbUZ1YzNkbGNpSWdQU0FpTkRJaUNp
+        QWdmUXA5Q2c9PQ==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5a1pYQnNiM2x0Wlc1MExtaDBiV3d1YldGeWEyUnZkMjQ9

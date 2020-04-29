@@ -7,13 +7,32 @@ aws_storagegateway_upload_buffer:
     arguments:
         disk_id:
             description: Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         gateway_arn:
             description: The Amazon Resource Name (ARN
-            required: true
+            required: false
             policy: ''
             notes: ''
-    attributes: {}
+    attributes:
+        id:
+            description: Combined gateway Amazon Resource Name (ARN) and local disk
+                identifier.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZjM1J2Y21GblpXZGhkR1YzWVhsZmRYQnNiMkZrWDJKMVptWmxj
+        aUlnSW1WNFlXMXdiR1VpSUhzS0lDQmthWE5yWDJsa0lDQWdJQ0E5SUNJa2UyUmhkR0V1WVhkelgz
+        TjBiM0poWjJWbllYUmxkMkY1WDJ4dlkyRnNYMlJwYzJzdVpYaGhiWEJzWlM1cFpIMGlDaUFnWjJG
+        MFpYZGhlVjloY200Z1BTQWlKSHRoZDNOZmMzUnZjbUZuWldkaGRHVjNZWGxmWjJGMFpYZGhlUzVs
+        ZUdGdGNHeGxMbUZ5Ym4waUNuMEs=
+    import: !!binary |
+        Q2dwZ1lYZHpYM04wYjNKaFoyVm5ZWFJsZDJGNVgzVndiRzloWkY5aWRXWm1aWEpnSUdOaGJpQmla
+        U0JwYlhCdmNuUmxaQ0JpZVNCMWMybHVaeUIwYUdVZ1oyRjBaWGRoZVNCQmJXRjZiMjRnVW1WemIz
+        VnlZMlVnVG1GdFpTQW9RVkpPS1NCaGJtUWdiRzlqWVd3Z1pHbHpheUJwWkdWdWRHbG1hV1Z5SUhO
+        bGNHRnlZWFJsWkNCM2FYUm9JR0VnWTI5c2IyNGdLR0E2WUNrc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6ZEc5eVlXZGxaMkYwWlhkaGVWOTFjR3h2WVdSZlluVm1abVZ5TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

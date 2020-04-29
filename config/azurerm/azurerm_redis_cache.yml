@@ -7,35 +7,35 @@ azurerm_redis_cache:
     arguments:
         name:
             description: The name of the Redis instance. Changing this forces a
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: The location of the resource group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to
-            required: true
+            required: false
             policy: ''
             notes: ''
         capacity:
             description: The size of the Redis cache to deploy. Valid values for a
                 SKU `family` of C (Basic/Standard
-            required: true
+            required: false
             policy: ''
             notes: ''
         family:
             description: The SKU family/pricing group to use. Valid values are `C`
                 (for Basic/Standard SKU family
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku_name:
             description: The SKU of Redis to use. Possible values are `Basic`, `Standard`
                 and `Premium`.
-            required: true
+            required: false
             policy: ''
             notes: ''
         enable_non_ssl_port:
@@ -91,7 +91,11 @@ azurerm_redis_cache:
                 Redis Cache should be allocated in.
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - '-> **Please Note**: Availability Zones are [in Preview and only supported
+                in several regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)
+                - as such you must be opted into the Preview to use this functionality.
+                You can [opt into the Availability Zones Preview in the Azure Portal](http://aka.ms/azenroll).'
         enable_authentication:
             description: If set to `false`, the Redis instance will be accessible
                 without authentication. Defaults to `true`.

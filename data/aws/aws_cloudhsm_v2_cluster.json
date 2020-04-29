@@ -14,13 +14,13 @@
             },
             "hsm_type": {
                 "description": "The type of HSM module in the cluster. Currently, only hsm1.medium is supported.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_ids": {
                 "description": "The IDs of subnets in which cluster will operate.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

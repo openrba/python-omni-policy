@@ -8,12 +8,12 @@ aws_elasticache_replication_group:
         replication_group_id:
             description: The replication group identifier. This parameter is stored
                 as a lowercase string.
-            required: true
+            required: false
             policy: ''
             notes: ''
         replication_group_description:
             description: A user-created description for the replication group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         number_cache_clusters:
@@ -24,7 +24,7 @@ aws_elasticache_replication_group:
         node_type:
             description: The compute and memory capacity of the nodes in the node
                 group.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automatic_failover_enabled:
@@ -170,12 +170,12 @@ aws_elasticache_replication_group:
         replicas_per_node_group:
             description: Specify the number of replica nodes in each node group. Valid
                 values are 0 to 5. Changing this number will force a new resource.
-            required: true
+            required: false
             policy: ''
             notes: ''
         num_node_groups:
             description: Specify the number of node groups (shards
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -191,3 +191,13 @@ aws_elasticache_replication_group:
             description: The identifiers of all the nodes that are part of this replication
                 group.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRmJHRnpkR2xEWVdOb1pTQlNaWEJzYVdOaGRHbHZiaUJIY205MWNITWdZMkZ1SUdKbElHbHRj
+        Rzl5ZEdWa0lIVnphVzVuSUhSb1pTQmdjbVZ3YkdsallYUnBiMjVmWjNKdmRYQmZhV1JnTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlsYkdGemRHbGpZV05vWlY5eVpYQnNhV05oZEdsdmJsOW5jbTkxY0M1b2RHMXNMbTFoY210
+        a2IzZHU=

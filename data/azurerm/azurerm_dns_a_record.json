@@ -8,25 +8,25 @@
         "arguments": {
             "name": {
                 "description": "The name of the DNS A Record.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "Specifies the resource group where the DNS Zone (parent resource",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "zone_name": {
                 "description": "Specifies the DNS Zone where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "TTL": {
                 "description": "The Time To Live (TTL",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

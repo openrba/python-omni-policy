@@ -63,7 +63,7 @@ aws_transfer_server:
             notes: ''
         vpc_endpoint_id:
             description: The ID of the VPC endpoint.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -78,3 +78,11 @@ aws_transfer_server:
                 of the server's host key. This value is equivalent to the output of
                 the `ssh-keygen -l -E md5 -f my-new-server-key` command.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVWNtRnVjMlpsY2lCVFpYSjJaWEp6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
+        R1VnWUhObGNuWmxjaUJwWkdBc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTkwY21GdWMyWmxjbDl6WlhKMlpYSXVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

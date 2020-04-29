@@ -8,29 +8,29 @@ azurerm_redis_firewall_rule:
         name:
             description: The name of the Firewall Rule. Changing this forces a new
                 resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         redis_cache_name:
             description: The name of the Redis Cache. Changing this forces a new resource
                 to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which this Redis Cache
                 exists.
-            required: true
+            required: false
             policy: ''
             notes: ''
         start_ip:
             description: The lowest IP address included in the range
-            required: true
+            required: false
             policy: ''
             notes: ''
         end_ip:
             description: The highest IP address included in the range.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

@@ -9,36 +9,36 @@ azurerm_mssql_elasticpool:
             description: Specifies the SKU Name for this Elasticpool. The name of
                 the SKU, will be either `vCore` based `tier` + `family` pattern (e.g.
                 GP_Gen4, BC_Gen5
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which to create the elastic
                 pool. This must be the same as the resource group of the underlying
                 SQL server.
-            required: true
+            required: false
             policy: ''
             notes: ''
         location:
             description: Specifies the supported Azure location where the resource
                 exists. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         server_name:
             description: The name of the SQL Server on which to create the elastic
                 pool. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         sku:
             description: A `sku` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         per_database_settings:
             description: A `per_database_settings` block as defined below.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_size_gb:
@@ -65,18 +65,24 @@ azurerm_mssql_elasticpool:
             required: false
             policy: ''
             notes: ''
+        license_type:
+            description: Specifies the license type applied to this database. Possible
+                values are `LicenseIncluded` and `BasePrice`.
+            required: false
+            policy: ''
+            notes: ''
         capacity:
             description: 'The scale up/out capacity, representing server''s compute
                 units. For more information see the documentation for your Elasticpool
                 configuration: [vCore-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools'
-            required: true
+            required: false
             policy: ''
             notes: ''
         tier:
             description: 'The tier of the particular SKU. Possible values are `GeneralPurpose`,
                 `BusinessCritical`, `Basic`, `Standard`, or `Premium`. For more information
                 see the documentation for your Elasticpool configuration: [vCore-based](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools'
-            required: true
+            required: false
             policy: ''
             notes: ''
         family:
@@ -86,12 +92,12 @@ azurerm_mssql_elasticpool:
             notes: ''
         min_capacity:
             description: The minimum capacity all databases are guaranteed.
-            required: true
+            required: false
             policy: ''
             notes: ''
         max_capacity:
             description: The maximum capacity any one database can consume.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -132,12 +138,13 @@ azurerm_mssql_elasticpool:
         VWdQU0JoZW5WeVpYSnRYM0psYzI5MWNtTmxYMmR5YjNWd0xtVjRZVzF3YkdVdWJtRnRaUW9nSUd4
         dlkyRjBhVzl1SUNBZ0lDQWdJQ0FnSUNBZ1BTQmhlblZ5WlhKdFgzSmxjMjkxY21ObFgyZHliM1Z3
         TG1WNFlXMXdiR1V1Ykc5allYUnBiMjRLSUNCelpYSjJaWEpmYm1GdFpTQWdJQ0FnSUNBZ0lEMGdZ
-        WHAxY21WeWJWOXpjV3hmYzJWeWRtVnlMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHMWhlRjl6YVhwbFgy
-        ZGlJQ0FnSUNBZ0lDQWdQU0EzTlRZS0NpQWdjMnQxSUhzS0lDQWdJRzVoYldVZ0lDQWdJRDBnSWtk
-        UVgwZGxialVpQ2lBZ0lDQjBhV1Z5SUNBZ0lDQTlJQ0pIWlc1bGNtRnNVSFZ5Y0c5elpTSUtJQ0Fn
-        SUdaaGJXbHNlU0FnSUQwZ0lrZGxialVpQ2lBZ0lDQmpZWEJoWTJsMGVTQTlJRFFLSUNCOUNnb2dJ
-        SEJsY2w5a1lYUmhZbUZ6WlY5elpYUjBhVzVuY3lCN0NpQWdJQ0J0YVc1ZlkyRndZV05wZEhrZ1BT
-        QXdMakkxQ2lBZ0lDQnRZWGhmWTJGd1lXTnBkSGtnUFNBMENpQWdmUXA5Q2c9PQ==
+        WHAxY21WeWJWOXpjV3hmYzJWeWRtVnlMbVY0WVcxd2JHVXVibUZ0WlFvZ0lHeHBZMlZ1YzJWZmRI
+        bHdaU0FnSUNBZ0lDQWdQU0FpVEdsalpXNXpaVWx1WTJ4MVpHVmtJZ29nSUcxaGVGOXphWHBsWDJk
+        aUlDQWdJQ0FnSUNBZ1BTQTNOVFlLQ2lBZ2MydDFJSHNLSUNBZ0lHNWhiV1VnSUNBZ0lEMGdJa2RR
+        WDBkbGJqVWlDaUFnSUNCMGFXVnlJQ0FnSUNBOUlDSkhaVzVsY21Gc1VIVnljRzl6WlNJS0lDQWdJ
+        R1poYldsc2VTQWdJRDBnSWtkbGJqVWlDaUFnSUNCallYQmhZMmwwZVNBOUlEUUtJQ0I5Q2dvZ0lI
+        QmxjbDlrWVhSaFltRnpaVjl6WlhSMGFXNW5jeUI3Q2lBZ0lDQnRhVzVmWTJGd1lXTnBkSGtnUFNB
+        d0xqSTFDaUFnSUNCdFlYaGZZMkZ3WVdOcGRIa2dQU0EwQ2lBZ2ZRcDlDZz09
     import: !!binary |
         Q2dwVFVVd2dSV3hoYzNScFl5QlFiMjlzSUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBh
         R1VnWUhKbGMyOTFjbU5sSUdsa1lDd2daUzVuTGdvSw==

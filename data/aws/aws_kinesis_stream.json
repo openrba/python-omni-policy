@@ -8,13 +8,13 @@
         "arguments": {
             "name": {
                 "description": "A name to identify the stream. This is unique to the AWS account and region the Stream is created in.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "shard_count": {
                 "description": "The number of shards that the stream will use.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

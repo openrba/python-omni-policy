@@ -8,25 +8,25 @@ azurerm_automation_dsc_nodeconfiguration:
         name:
             description: Specifies the name of the DSC Node Configuration. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the DSC Node Configuration
                 is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         automation_account_name:
             description: The name of the automation account in which the DSC Node
                 Configuration is created. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         content_embedded:
             description: The PowerShell DSC Node Configuration (mof content).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

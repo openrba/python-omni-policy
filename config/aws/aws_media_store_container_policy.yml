@@ -7,15 +7,43 @@ aws_media_store_container_policy:
     arguments:
         container_name:
             description: The name of the container.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy:
             description: The contents of the policy. For more information about building
                 AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document
                 Guide](https://learn.hashicorp.com/terraform/aws/iam-policy).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbUYzYzE5eVpXZHBiMjRpSUNKamRYSnlaVzUwSWlCN2ZRb0taR0YwWVNBaVlYZHpY
+        Mk5oYkd4bGNsOXBaR1Z1ZEdsMGVTSWdJbU4xY25KbGJuUWlJSHQ5Q2dweVpYTnZkWEpqWlNBaVlY
+        ZHpYMjFsWkdsaFgzTjBiM0psWDJOdmJuUmhhVzVsY2lJZ0ltVjRZVzF3YkdVaUlIc0tJQ0J1WVcx
+        bElEMGdJbVY0WVcxd2JHVWlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZiV1ZrYVdGZmMzUnZjbVZm
+        WTI5dWRHRnBibVZ5WDNCdmJHbGplU0lnSW1WNFlXMXdiR1VpSUhzS0lDQmpiMjUwWVdsdVpYSmZi
+        bUZ0WlNBOUlDSWtlMkYzYzE5dFpXUnBZVjl6ZEc5eVpWOWpiMjUwWVdsdVpYSXVaWGhoYlhCc1pT
+        NXVZVzFsZlNJS0NpQWdjRzlzYVdONUlEMGdQRHhGVDBZS2V3b0pJbFpsY25OcGIyNGlPaUFpTWpB
+        eE1pMHhNQzB4TnlJc0Nna2lVM1JoZEdWdFpXNTBJam9nVzNzS0NRa2lVMmxrSWpvZ0lrMWxaR2xo
+        VTNSdmNtVkdkV3hzUVdOalpYTnpJaXdLQ1FraVFXTjBhVzl1SWpvZ1d5QWliV1ZrYVdGemRHOXla
+        VG9xSWlCZExBb0pDU0pRY21sdVkybHdZV3dpT2lCN0lrRlhVeUlnT2lBaVlYSnVPbUYzY3pwcFlX
+        MDZPaVI3WkdGMFlTNWhkM05mWTJGc2JHVnlYMmxrWlc1MGFYUjVMbU4xY25KbGJuUXVZV05qYjNW
+        dWRGOXBaSDA2Y205dmRDSjlMQW9KQ1NKRlptWmxZM1FpT2lBaVFXeHNiM2NpTEFvSkNTSlNaWE52
+        ZFhKalpTSTZJQ0poY200NllYZHpPbTFsWkdsaGMzUnZjbVU2Skh0a1lYUmhMbUYzYzE5allXeHNa
+        WEpmYVdSbGJuUnBkSGt1WTNWeWNtVnVkQzVoWTJOdmRXNTBYMmxrZlRva2UyUmhkR0V1WVhkelgz
+        SmxaMmx2Ymk1amRYSnlaVzUwTG01aGJXVjlPbU52Ym5SaGFXNWxjaThrZTJGM2MxOXRaV1JwWVY5
+        emRHOXlaVjlqYjI1MFlXbHVaWEl1WlhoaGJYQnNaUzV1WVcxbGZTOHFJaXdLQ1FraVEyOXVaR2ww
+        YVc5dUlqb2dld29KQ1FraVFtOXZiQ0k2SUhzZ0ltRjNjenBUWldOMWNtVlVjbUZ1YzNCdmNuUWlP
+        aUFpZEhKMVpTSWdmUW9KQ1gwS0NYMWRDbjBLUlU5R0NuMEs=
+    import: !!binary |
+        Q2dwTlpXUnBZVk4wYjNKbElFTnZiblJoYVc1bGNpQlFiMnhwWTNrZ1kyRnVJR0psSUdsdGNHOXlk
+        R1ZrSUhWemFXNW5JSFJvWlNCTlpXUnBZVk4wYjNKbElFTnZiblJoYVc1bGNpQk9ZVzFsTENCbExt
+        Y3VDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl0WldScFlWOXpkRzl5WlY5amIyNTBZV2x1WlhKZmNHOXNhV041TG1oMGJXd3ViV0Z5YTJS
+        dmQyND0=

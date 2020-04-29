@@ -9,12 +9,12 @@ google_logging_folder_exclusion:
         folder:
             description: The folder to be exported to the sink. Note that either [FOLDER_ID]
                 or "folders/[FOLDER_ID]" is
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: The name of the logging exclusion.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -31,8 +31,28 @@ google_logging_folder_exclusion:
         filter:
             description: The filter to apply when excluding logs. Only log entries
                 that match the filter are excluded.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmYkc5bloybHVaMTltYjJ4a1pYSmZaWGhqYkhWemFXOXVJ
+        aUFpYlhrdFpYaGpiSFZ6YVc5dUlpQjdDaUFnYm1GdFpTQWdJRDBnSW0xNUxXbHVjM1JoYm1ObExX
+        UmxZblZuTFdWNFkyeDFjMmx2YmlJS0lDQm1iMnhrWlhJZ1BTQm5iMjluYkdWZlptOXNaR1Z5TG0x
+        NUxXWnZiR1JsY2k1dVlXMWxDZ29nSUdSbGMyTnlhWEIwYVc5dUlEMGdJa1Y0WTJ4MVpHVWdSME5G
+        SUdsdWMzUmhibU5sSUdSbFluVm5JR3h2WjNNaUNnb2dJQ01nUlhoamJIVmtaU0JoYkd3Z1JFVkNW
+        VWNnYjNJZ2JHOTNaWElnYzJWMlpYSnBkSGtnYldWemMyRm5aWE1nY21Wc1lYUnBibWNnZEc4Z2FX
+        NXpkR0Z1WTJWekNpQWdabWxzZEdWeUlEMGdJbkpsYzI5MWNtTmxMblI1Y0dVZ1BTQm5ZMlZmYVc1
+        emRHRnVZMlVnUVU1RUlITmxkbVZ5YVhSNUlEdzlJRVJGUWxWSElncDlDZ3B5WlhOdmRYSmpaU0Fp
+        WjI5dloyeGxYMlp2YkdSbGNpSWdJbTE1TFdadmJHUmxjaUlnZXdvZ0lHUnBjM0JzWVhsZmJtRnRa
+        U0E5SUNKTmVTQm1iMnhrWlhJaUNpQWdjR0Z5Wlc1MElDQWdJQ0FnSUQwZ0ltOXlaMkZ1YVhwaGRH
+        bHZibk12TVRJek5EVTJJZ3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwR2IyeGtaWEl0YkdWMlpXd2diRzluWjJsdVp5QmxlR05zZFhOcGIyNXpJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHVnBjaUJWVWtrc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5c2IyZG5hVzVuWDJadmJHUmxjbDlsZUdOc2RYTnBiMjR1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

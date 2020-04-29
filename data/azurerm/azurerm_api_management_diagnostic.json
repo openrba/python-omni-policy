@@ -8,25 +8,25 @@
         "arguments": {
             "identifier": {
                 "description": "The diagnostic identifier for the API Management Service. At this time the only supported value is `applicationinsights`. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "api_management_name": {
                 "description": "The Name of the API Management Service where this Diagnostic should be created. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The Name of the Resource Group where the API Management Service exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "enabled": {
                 "description": "Indicates whether a Diagnostic should receive data or not.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

@@ -23,7 +23,7 @@ aws_ssm_activation:
             notes: ''
         iam_role:
             description: The IAM Role to attach to the managed instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         registration_limit:
@@ -60,3 +60,28 @@ aws_ssm_activation:
             description: The number of managed instances that are currently registered
                 using this activation.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNKdmJHVWlJQ0owWlhOMFgzSnZiR1VpSUhzS0lDQnVZ
+        VzFsSUQwZ0luUmxjM1JmY205c1pTSUtDaUFnWVhOemRXMWxYM0p2YkdWZmNHOXNhV041SUQwZ1BE
+        eEZUMFlLSUNCN0NpQWdJQ0FpVm1WeWMybHZiaUk2SUNJeU1ERXlMVEV3TFRFM0lpd0tJQ0FnSUNK
+        VGRHRjBaVzFsYm5RaU9pQjdDaUFnSUNBZ0lDSkZabVpsWTNRaU9pQWlRV3hzYjNjaUxBb2dJQ0Fn
+        SUNBaVVISnBibU5wY0dGc0lqb2dleUpUWlhKMmFXTmxJam9nSW5OemJTNWhiV0Y2YjI1aGQzTXVZ
+        Mjl0SW4wc0NpQWdJQ0FnSUNKQlkzUnBiMjRpT2lBaWMzUnpPa0Z6YzNWdFpWSnZiR1VpQ2lBZ0lD
+        QjlDaUFnZlFwRlQwWUtmUW9LY21WemIzVnlZMlVnSW1GM2MxOXBZVzFmY205c1pWOXdiMnhwWTNs
+        ZllYUjBZV05vYldWdWRDSWdJblJsYzNSZllYUjBZV05vSWlCN0NpQWdjbTlzWlNBZ0lDQWdJQ0E5
+        SUNJa2UyRjNjMTlwWVcxZmNtOXNaUzUwWlhOMFgzSnZiR1V1Ym1GdFpYMGlDaUFnY0c5c2FXTjVY
+        MkZ5YmlBOUlDSmhjbTQ2WVhkek9tbGhiVG82WVhkek9uQnZiR2xqZVM5QmJXRjZiMjVUVTAxTllX
+        NWhaMlZrU1c1emRHRnVZMlZEYjNKbElncDlDZ3B5WlhOdmRYSmpaU0FpWVhkelgzTnpiVjloWTNS
+        cGRtRjBhVzl1SWlBaVptOXZJaUI3Q2lBZ2JtRnRaU0FnSUNBZ0lDQWdJQ0FnSUNBZ0lEMGdJblJs
+        YzNSZmMzTnRYMkZqZEdsMllYUnBiMjRpQ2lBZ1pHVnpZM0pwY0hScGIyNGdJQ0FnSUNBZ0lEMGdJ
+        bFJsYzNRaUNpQWdhV0Z0WDNKdmJHVWdJQ0FnSUNBZ0lDQWdJRDBnSWlSN1lYZHpYMmxoYlY5eWIy
+        eGxMblJsYzNSZmNtOXNaUzVwWkgwaUNpQWdjbVZuYVhOMGNtRjBhVzl1WDJ4cGJXbDBJRDBnSWpV
+        aUNpQWdaR1Z3Wlc1a2MxOXZiaUFnSUNBZ0lDQWdJRDBnV3lKaGQzTmZhV0Z0WDNKdmJHVmZjRzlz
+        YVdONVgyRjBkR0ZqYUcxbGJuUXVkR1Z6ZEY5aGRIUmhZMmdpWFFwOUNnPT0=
+    import: !!binary |
+        Q2dwQlYxTWdVMU5OSUVGamRHbDJZWFJwYjI0Z1kyRnVJR0psSUdsdGNHOXlkR1ZrSUhWemFXNW5J
+        SFJvWlNCZ2FXUmdMQ0JsTG1jdUNnbz0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTl6YzIxZllXTjBhWFpoZEdsdmJpNW9kRzFzTG0xaGNtdGtiM2R1

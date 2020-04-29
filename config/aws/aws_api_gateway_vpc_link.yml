@@ -7,7 +7,7 @@ aws_api_gateway_vpc_link:
     arguments:
         name:
             description: The name used to label and identify the VPC link.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -30,3 +30,19 @@ aws_api_gateway_vpc_link:
         id:
             description: The identifier of the VpcLink.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZiR0lpSUNKbGVHRnRjR3hsSWlCN0NpQWdibUZ0WlNBZ0lDQWdJ
+        Q0FnSUNBZ0lDQWdJRDBnSW1WNFlXMXdiR1VpQ2lBZ2FXNTBaWEp1WVd3Z0lDQWdJQ0FnSUNBZ0lE
+        MGdkSEoxWlFvZ0lHeHZZV1JmWW1Gc1lXNWpaWEpmZEhsd1pTQTlJQ0p1WlhSM2IzSnJJZ29LSUNC
+        emRXSnVaWFJmYldGd2NHbHVaeUI3Q2lBZ0lDQnpkV0p1WlhSZmFXUWdQU0FpTVRJek5EVWlDaUFn
+        ZlFwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJGd2FWOW5ZWFJsZDJGNVgzWndZMTlzYVc1cklpQWla
+        WGhoYlhCc1pTSWdld29nSUc1aGJXVWdJQ0FnSUNBZ0lEMGdJbVY0WVcxd2JHVWlDaUFnWkdWelkz
+        SnBjSFJwYjI0Z1BTQWlaWGhoYlhCc1pTQmtaWE5qY21sd2RHbHZiaUlLSUNCMFlYSm5aWFJmWVhK
+        dWN5QTlJRnNpSkh0aGQzTmZiR0l1WlhoaGJYQnNaUzVoY201OUlsMEtmUW89
+    import: !!binary |
+        Q2dwQlVFa2dSMkYwWlhkaGVTQldVRU1nVEdsdWF5QmpZVzRnWW1VZ2FXMXdiM0owWldRZ2RYTnBi
+        bWNnZEdobElHQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTloY0dsZloyRjBaWGRoZVY5MmNHTmZiR2x1YXk1b2RHMXNMbTFoY210a2IzZHU=

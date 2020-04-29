@@ -8,13 +8,13 @@
         "arguments": {
             "storage_capacity": {
                 "description": "The storage capacity (GiB",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_ids": {
                 "description": "A list of IDs for the subnets that the file system will be accessible from. File systems currently support only one subnet. The file server is also launched in that subnet's Availability Zone.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

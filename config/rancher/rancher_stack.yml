@@ -8,7 +8,7 @@ rancher_stack:
     arguments:
         name:
             description: The name of the stack.
-            required: true
+            required: false
             policy: ''
             notes: ''
         description:
@@ -18,7 +18,7 @@ rancher_stack:
             notes: ''
         environment_id:
             description: The ID of the environment to create the stack for.
-            required: true
+            required: false
             policy: ''
             notes: ''
         docker_compose:
@@ -60,11 +60,27 @@ rancher_stack:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        id:
-            description: (Computed) The ID of the resource.
-        rendered_docker_compose:
-            description: The interpolated `docker_compose` applied to the stack.
-        rendered_rancher_compose:
-            description: The interpolated `rancher_compose` applied to the stack.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q2lNZ1EzSmxZWFJsSUdFZ2JtVjNJR1Z0Y0hSNUlGSmhibU5vWlhJZ2MzUmhZMnNLY21WemIzVnlZ
+        MlVnSW5KaGJtTm9aWEpmYzNSaFkyc2lJQ0psZUhSbGNtNWhiQzFrYm5NaUlIc0tJQ0J1WVcxbElD
+        QWdJQ0FnSUNBZ0lDQTlJQ0p5YjNWMFpUVXpJZ29nSUdSbGMyTnlhWEIwYVc5dUlDQWdJRDBnSWxK
+        dmRYUmxOVE1nYzNSaFkyc2lDaUFnWlc1MmFYSnZibTFsYm5SZmFXUWdQU0FpSkh0eVlXNWphR1Z5
+        WDJWdWRtbHliMjV0Wlc1MExtUmxabUYxYkhRdWFXUjlJZ29nSUdOaGRHRnNiMmRmYVdRZ0lDQWdJ
+        RDBnSW14cFluSmhjbms2Y205MWRHVTFNem8zSWdvZ0lITmpiM0JsSUNBZ0lDQWdJQ0FnSUQwZ0lu
+        TjVjM1JsYlNJS0NpQWdaVzUyYVhKdmJtMWxiblFnZXdvZ0lDQWdRVmRUWDBGRFEwVlRVMTlMUlZr
+        Z0lDQWdJQ0FnSUQwZ0lrMVpTMFZaSWdvZ0lDQWdRVmRUWDFORlExSkZWRjlMUlZrZ0lDQWdJQ0Fn
+        SUQwZ0lrMVpVMFZEVWtWVUlnb2dJQ0FnUVZkVFgxSkZSMGxQVGlBZ0lDQWdJQ0FnSUNBZ0lEMGdJ
+        bVYxTFdObGJuUnlZV3d0TVNJS0lDQWdJRlJVVENBZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnSUNBOUlD
+        STJNQ0lLSUNBZ0lGSlBUMVJmUkU5TlFVbE9JQ0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsTG1O
+        dmJTSUtJQ0FnSUZKUFZWUkZOVE5mV2s5T1JWOUpSQ0FnSUNBZ0lDQTlJQ0lpQ2lBZ0lDQklSVUZN
+        VkVoZlEwaEZRMHRmU1U1VVJWSldRVXdnUFNBaU1UVWlDaUFnZlFwOUNnPT0=
+    import: !!binary |
+        Q2dwVGRHRmphM01nWTJGdUlHSmxJR2x0Y0c5eWRHVmtJSFZ6YVc1bklIUm9aU0JGYm5acGNtOXVi
+        V1Z1ZENCaGJtUWdVM1JoWTJzZ1NVUWdhVzRnZEdobElHWnZjbTBLWUR4bGJuWnBjbTl1YldWdWRG
+        OXBaRDR2UEhOMFlXTnJYMmxrUG1BS0NnPT0=
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYSmhibU5vWlhJdllteHZZaTl0WVhOMFpYSXZkMlZpYzJsMFpT
+        OWtiMk56TDNJdmMzUmhZMnN1YUhSdGJDNXRZWEpyWkc5M2JnPT0=

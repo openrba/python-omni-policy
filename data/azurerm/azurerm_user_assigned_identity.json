@@ -8,19 +8,19 @@
         "arguments": {
             "name": {
                 "description": "The name of the user assigned identity. Changing this forces a",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "The location/region where the user assigned identity is",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

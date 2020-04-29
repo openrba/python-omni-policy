@@ -8,7 +8,7 @@ azurerm_policy_assignment:
         name:
             description: The name of the Policy Assignment. Changing this forces a
                 new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         scope:
@@ -16,13 +16,13 @@ azurerm_policy_assignment:
                 which must be a Resource ID (such as Subscription e.g. `/subscriptions/00000000-0000-0000-000000000000`
                 or a Resource Group e.g.`/subscriptions/00000000-0000-0000-000000000000/resourceGroups/myResourceGroup`).
                 Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         policy_definition_id:
             description: The ID of the Policy Definition to be applied at the specified
                 Scope.
-            required: true
+            required: false
             policy: ''
             notes: ''
         identity:
@@ -68,7 +68,7 @@ azurerm_policy_assignment:
                 Possible values are `SystemAssigned` (where Azure will generate a
                 Service Principal for you), or `None` (no use of a Managed Service
                 Identity).
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

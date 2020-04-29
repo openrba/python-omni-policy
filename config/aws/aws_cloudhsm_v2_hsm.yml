@@ -7,7 +7,7 @@ aws_cloudhsm_v2_hsm:
     arguments:
         cluster_id:
             description: The ID of Cloud HSM v2 cluster to which HSM will be added.
-            required: true
+            required: false
             policy: ''
             notes: ''
         subnet_id:
@@ -35,3 +35,16 @@ aws_cloudhsm_v2_hsm:
         hsm_eni_id:
             description: The id of the ENI interface allocated for HSM module.
     timeouts: {}
+    usage: !!binary |
+        Q21SaGRHRWdJbUYzYzE5amJHOTFaR2h6YlY5Mk1sOWpiSFZ6ZEdWeUlpQWlZMngxYzNSbGNpSWdl
+        d29nSUdOc2RYTjBaWEpmYVdRZ1BTQWlKSHQyWVhJdVkyeHZkV1JvYzIxZlkyeDFjM1JsY2w5cFpI
+        MGlDbjBLQ25KbGMyOTFjbU5sSUNKaGQzTmZZMnh2ZFdSb2MyMWZkakpmYUhOdElpQWlZMnh2ZFdS
+        b2MyMWZkakpmYUhOdElpQjdDaUFnYzNWaWJtVjBYMmxrSUNBOUlDSWtlMlJoZEdFdVlYZHpYMk5z
+        YjNWa2FITnRYM1l5WDJOc2RYTjBaWEl1WTJ4MWMzUmxjaTV6ZFdKdVpYUmZhV1J6V3pCZGZTSUtJ
+        Q0JqYkhWemRHVnlYMmxrSUQwZ0lpUjdaR0YwWVM1aGQzTmZZMnh2ZFdSb2MyMWZkakpmWTJ4MWMz
+        UmxjaTVqYkhWemRHVnlMbU5zZFhOMFpYSmZhV1I5SWdwOUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlqYkc5MVpHaHpiVjkyTWw5b2MyMHVhSFJ0YkM1dFlYSnJaRzkzYmc9PQ==

@@ -7,14 +7,14 @@ aws_iam_user_login_profile:
     arguments:
         user:
             description: The IAM user's name.
-            required: true
+            required: false
             policy: ''
             notes: ''
         pgp_key:
             description: Either a base-64 encoded PGP public key, or a keybase username
                 in the form `keybase:username`. Only applies on resource creation.
                 Drift detection is not possible with this argument.
-            required: true
+            required: false
             policy: ''
             notes: ''
         password_length:
@@ -40,3 +40,21 @@ aws_iam_user_login_profile:
             description: The encrypted password, base64 encoded. Only available if
                 password was handled on Terraform resource creation, not import.
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNWelpYSWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2JtRnRa
+        U0FnSUNBZ0lDQWdJQ0E5SUNKbGVHRnRjR3hsSWdvZ0lIQmhkR2dnSUNBZ0lDQWdJQ0FnUFNBaUx5
+        SUtJQ0JtYjNKalpWOWtaWE4wY205NUlEMGdkSEoxWlFwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJs
+        aGJWOTFjMlZ5WDJ4dloybHVYM0J5YjJacGJHVWlJQ0psZUdGdGNHeGxJaUI3Q2lBZ2RYTmxjaUFn
+        SUNBOUlDSWtlMkYzYzE5cFlXMWZkWE5sY2k1bGVHRnRjR3hsTG01aGJXVjlJZ29nSUhCbmNGOXJa
+        WGtnUFNBaWEyVjVZbUZ6WlRwemIyMWxYM0JsY25OdmJsOTBhR0YwWDJWNGFYTjBjeUlLZlFvS2Iz
+        VjBjSFYwSUNKd1lYTnpkMjl5WkNJZ2V3b2dJSFpoYkhWbElEMGdJaVI3WVhkelgybGhiVjkxYzJW
+        eVgyeHZaMmx1WDNCeWIyWnBiR1V1WlhoaGJYQnNaUzVsYm1OeWVYQjBaV1JmY0dGemMzZHZjbVI5
+        SWdwOUNnPT0=
+    import: !!binary |
+        Q2dwSlFVMGdWWE5sY2lCTWIyZHBiaUJRY205bWFXeGxjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdk
+        MmwwYUc5MWRDQndZWE56ZDI5eVpDQnBibVp2Y20xaGRHbHZiaUJ6ZFhCd2IzSjBJSFpwWVNCMGFH
+        VWdTVUZOSUZWelpYSWdibUZ0WlN3Z1pTNW5MZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmRYTmxjbDlzYjJkcGJsOXdjbTltYVd4bExtaDBiV3d1YldGeWEyUnZkMjQ9

@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The action declaration's name.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,7 +20,7 @@
             },
             "artifact_store": {
                 "description": "One or more artifact_store blocks. Artifact stores are documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,13 +38,13 @@
             },
             "location": {
                 "description": "The location where AWS CodePipeline stores artifacts for a pipeline; currently only `S3` is supported.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type": {
                 "description": "The type of key; currently only `KMS` is supported",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -62,37 +62,37 @@
             },
             "id": {
                 "description": "The KMS key ARN or ID",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "action": {
                 "description": "The action(s",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "category": {
                 "description": "A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are `Approval`, `Build`, `Deploy`, `Invoke`, `Source` and `Test`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "owner": {
                 "description": "The creator of the action being called. Possible values are `AWS`, `Custom` and `ThirdParty`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "provider": {
                 "description": "The provider of the service being called by the action. Valid providers are determined by the action category. For example, an action in the Deploy category type might have a provider of AWS CodeDeploy, which would be specified as CodeDeploy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "version": {
                 "description": "A string that identifies the action type.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

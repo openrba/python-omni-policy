@@ -8,7 +8,7 @@ google_usage_export_bucket:
     arguments:
         bucket_name:
             description: The bucket to store reports in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         prefix:
@@ -24,3 +24,15 @@ google_usage_export_bucket:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKbmIyOW5iR1ZmY0hKdmFtVmpkRjkxYzJGblpWOWxlSEJ2Y25SZlluVmph
+        MlYwSWlBaWRYTmhaMlZmWlhod2IzSjBJaUI3Q2lBZ2NISnZhbVZqZENBZ0lDQWdQU0FpWkdWMlpX
+        eHZjRzFsYm5RdGNISnZhbVZqZENJS0lDQmlkV05yWlhSZmJtRnRaU0E5SUNKMWMyRm5aUzEwY21G
+        amEybHVaeTFpZFdOclpYUWlDbjBL
+    import: !!binary |
+        Q2dwQklIQnliMnBsWTNRbmN5QlZjMkZuWlNCRmVIQnZjblFnUW5WamEyVjBJR05oYmlCaVpTQnBi
+        WEJ2Y25SbFpDQjFjMmx1WnlCMGFHbHpJR1p2Y20xaGREb0tDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXZHZiMmRzWlM5aWJHOWlMMjFoYzNSbGNpOTNaV0p6YVhSbEwy
+        UnZZM012Y2k5MWMyRm5aVjlsZUhCdmNuUmZZblZqYTJWMExtaDBiV3d1YldGeWEyUnZkMjQ9

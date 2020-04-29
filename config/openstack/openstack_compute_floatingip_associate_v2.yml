@@ -12,12 +12,12 @@ openstack_compute_floatingip_associate_v2:
             notes: ''
         floating_ip:
             description: The floating IP to associate.
-            required: true
+            required: false
             policy: ''
             notes: ''
         instance_id:
             description: The instance to associte the floating IP with.
-            required: true
+            required: false
             policy: ''
             notes: ''
         fixed_ip:
@@ -30,13 +30,15 @@ openstack_compute_floatingip_associate_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        floating_ip:
-            description: See Argument Reference above.
-        instance_id:
-            description: See Argument Reference above.
-        fixed_ip:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwVWFHbHpJSEpsYzI5MWNtTmxJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQmllU0J6Y0dWamFXWjVh
+        VzVuSUdGc2JDQjBhSEpsWlNCaGNtZDFiV1Z1ZEhNc0lITmxjR0Z5WVhSbFpBcGllU0JoSUdadmNu
+        ZGhjbVFnYzJ4aGMyZzZDZ289
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgyWnNiMkYwYVc1bmFYQmZZWE56YjJOcFlYUmxYM1l5TG1o
+        MGJXd3ViV0Z5YTJSdmQyND0=

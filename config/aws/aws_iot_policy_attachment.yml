@@ -7,13 +7,31 @@ aws_iot_policy_attachment:
     arguments:
         policy:
             description: The name of the policy to attach.
-            required: true
+            required: false
             policy: ''
             notes: ''
         target:
             description: The identity to which the policy is attached.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhVzkwWDNCdmJHbGplU0lnSW5CMVluTjFZaUlnZXdvZ0lHNWhi
+        V1VnUFNBaVVIVmlVM1ZpVkc5QmJubFViM0JwWXlJS0NpQWdjRzlzYVdONUlEMGdQRHhGVDBZS2V3
+        b2dJQ0pXWlhKemFXOXVJam9nSWpJd01USXRNVEF0TVRjaUxBb2dJQ0pUZEdGMFpXMWxiblFpT2lC
+        YkNpQWdJQ0I3Q2lBZ0lDQWdJQ0pCWTNScGIyNGlPaUJiQ2lBZ0lDQWdJQ0FnSW1sdmREb3FJZ29n
+        SUNBZ0lDQmRMQW9nSUNBZ0lDQWlSV1ptWldOMElqb2dJa0ZzYkc5M0lpd0tJQ0FnSUNBZ0lsSmxj
+        MjkxY21ObElqb2dJaW9pQ2lBZ0lDQjlDaUFnWFFwOUNrVlBSZ3A5Q2dweVpYTnZkWEpqWlNBaVlY
+        ZHpYMmx2ZEY5alpYSjBhV1pwWTJGMFpTSWdJbU5sY25RaUlIc0tJQ0JqYzNJZ0lDQWdQU0FpSkh0
+        bWFXeGxLQ0pqYzNJdWNHVnRJaWw5SWdvZ0lHRmpkR2wyWlNBOUlIUnlkV1VLZlFvS2NtVnpiM1Z5
+        WTJVZ0ltRjNjMTlwYjNSZmNHOXNhV041WDJGMGRHRmphRzFsYm5RaUlDSmhkSFFpSUhzS0lDQndi
+        MnhwWTNrZ1BTQWlKSHRoZDNOZmFXOTBYM0J2YkdsamVTNXdkV0p6ZFdJdWJtRnRaWDBpQ2lBZ2RH
+        RnlaMlYwSUQwZ0lpUjdZWGR6WDJsdmRGOWpaWEowYVdacFkyRjBaUzVqWlhKMExtRnlibjBpQ24w
+        Sw==
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYjNSZmNHOXNhV041WDJGMGRHRmphRzFsYm5RdWFIUnRiQzV0WVhKclpHOTNiZz09

@@ -8,27 +8,27 @@ google_compute_instance:
     arguments:
         boot_disk:
             description: The boot disk for the instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         machine_type:
             description: The machine type to create.
-            required: true
+            required: false
             policy: ''
             notes: ''
         name:
             description: A unique name for the resource, required by GCE.
-            required: true
+            required: false
             policy: ''
             notes: ''
         zone:
             description: The zone that the machine should be created in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         network_interface:
             description: Networks to attach to the instance. This can
-            required: true
+            required: false
             policy: ''
             notes: ''
         allow_stopping_for_update:
@@ -85,7 +85,9 @@ google_compute_instance:
             description: Metadata key/value pairs to make available from
             required: false
             policy: ''
-            notes: ''
+            notes:
+            - -> Depending on the OS you choose for your instance, some metadata keys
+                have
         metadata_startup_script:
             description: An alternative to using the
             required: false
@@ -171,7 +173,7 @@ google_compute_instance:
             notes: ''
         source:
             description: The name or self_link of the disk to attach to this instance.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size:
@@ -182,7 +184,7 @@ google_compute_instance:
         type:
             description: '- The accelerator type resource to expose to this instance.
                 E.g. `nvidia-tesla-k80`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         image:
@@ -193,7 +195,7 @@ google_compute_instance:
         interface:
             description: The disk interface to use for attaching this disk; either
                 SCSI or NVME.
-            required: true
+            required: false
             policy: ''
             notes: ''
         network:
@@ -245,7 +247,7 @@ google_compute_instance:
             notes: ''
         scopes:
             description: A list of service scopes. Both OAuth2 URLs and gcloud
-            required: true
+            required: false
             policy: ''
             notes: ''
         preemptible:
@@ -271,22 +273,22 @@ google_compute_instance:
         count:
             description: '- The number of the guest accelerator cards exposed to this
                 instance.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         key:
             description: '- The key for the node affinity label.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         operator:
             description: '- The operator. Can be `IN` for node-affinities'
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
             description: '- The values for the node affinity label.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         enable_secure_boot:

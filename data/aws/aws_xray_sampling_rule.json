@@ -8,67 +8,67 @@
         "arguments": {
             "rule_name": {
                 "description": "The name of the sampling rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_arn": {
                 "description": "Matches the ARN of the AWS resource on which the service runs.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "priority": {
                 "description": "The priority of the sampling rule.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "fixed_rate": {
                 "description": "The percentage of matching requests to instrument, after the reservoir is exhausted.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "reservoir_size": {
                 "description": "A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_name": {
                 "description": "Matches the `name` that the service uses to identify itself in segments.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_type": {
                 "description": "Matches the `origin` that the service uses to identify its type in segments.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "host": {
                 "description": "Matches the hostname from a request URL.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "http_method": {
                 "description": "Matches the HTTP method of a request.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "url_path": {
                 "description": "Matches the path from a request URL.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "version": {
                 "description": "The version of the sampling rule format (`1` )",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

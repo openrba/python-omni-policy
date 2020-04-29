@@ -8,26 +8,26 @@ azurerm_cosmosdb_gremlin_graph:
         name:
             description: Specifies the name of the Cosmos DB Gremlin Graph. Changing
                 this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         resource_group_name:
             description: The name of the resource group in which the Cosmos DB Gremlin
                 Graph is created. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         account_name:
             description: The name of the CosmosDB Account to create the Gremlin Graph
                 within. Changing this forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         database_name:
             description: The name of the Cosmos DB Graph Database in which the Cosmos
                 DB Gremlin Graph is created. Changing this forces a new resource to
                 be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         partition_key_path:
@@ -48,14 +48,14 @@ azurerm_cosmosdb_gremlin_graph:
             description: The configuration of the indexing policy. One or more `index_policy`
                 blocks as defined below. Changing this forces a new resource to be
                 created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         conflict_resolution_policy:
             description: The conflict resolution policy for the graph. One or more
                 `conflict_resolution_policy` blocks as defined below. Changing this
                 forces a new resource to be created.
-            required: true
+            required: false
             policy: ''
             notes: ''
         unique_key:
@@ -73,7 +73,7 @@ azurerm_cosmosdb_gremlin_graph:
         indexing_mode:
             description: 'Indicates the indexing mode. Possible values include: `Consistent`,
                 `Lazy`, `None`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         included_paths:
@@ -91,7 +91,7 @@ azurerm_cosmosdb_gremlin_graph:
         mode:
             description: 'Indicates the conflict resolution mode. Possible values
                 include: `LastWriterWins`, `Custom`.'
-            required: true
+            required: false
             policy: ''
             notes: ''
         conflict_resolution_path:
@@ -108,7 +108,7 @@ azurerm_cosmosdb_gremlin_graph:
             notes: ''
         paths:
             description: A list of paths to use for this unique key.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:

@@ -7,13 +7,13 @@ aws_directory_service_directory:
     arguments:
         name:
             description: The fully qualified name for the directory, such as `corp.example.com`
-            required: true
+            required: false
             policy: ''
             notes: ''
         password:
             description: The password for the directory administrator or connector
                 user.
-            required: true
+            required: false
             policy: ''
             notes: ''
         size:
@@ -76,22 +76,22 @@ aws_directory_service_directory:
         subnet_ids:
             description: The identifiers of the subnets for the directory servers
                 (2 subnets in 2 different AZs).
-            required: true
+            required: false
             policy: ''
             notes: ''
         vpc_id:
             description: The identifier of the VPC that the directory is in.
-            required: true
+            required: false
             policy: ''
             notes: ''
         customer_username:
             description: The username corresponding to the password provided.
-            required: true
+            required: false
             policy: ''
             notes: ''
         customer_dns_ips:
             description: The DNS IP addresses of the domain to connect to.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -105,3 +105,12 @@ aws_directory_service_directory:
         security_group_id:
             description: The ID of the security group created by the directory.
     timeouts: {}
+    usage: {}
+    import: !!binary |
+        Q2dwRWFYSmxZM1J2Y25sVFpYSjJhV05sSUdScGNtVmpkRzl5YVdWeklHTmhiaUJpWlNCcGJYQnZj
+        blJsWkNCMWMybHVaeUIwYUdVZ1pHbHlaV04wYjNKNUlHQnBaR0FzSUdVdVp5NEtDZz09
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlrYVhKbFkzUnZjbmxmYzJWeWRtbGpaVjlrYVhKbFkzUnZjbmt1YUhSdGJDNXRZWEpyWkc5
+        M2JnPT0=

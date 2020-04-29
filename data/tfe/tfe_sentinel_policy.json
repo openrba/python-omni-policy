@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "Name of the policy.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -20,28 +20,24 @@
             },
             "organization": {
                 "description": "Name of the organization.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "policy": {
                 "description": "The actual policy itself.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "enforce_mode": {
                 "description": "The enforcement level of the policy. Valid",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "id": {
-                "description": "The ID of the policy."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

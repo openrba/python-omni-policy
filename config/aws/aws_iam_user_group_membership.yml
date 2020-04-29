@@ -10,12 +10,12 @@ aws_iam_user_group_membership:
     arguments:
         user:
             description: The name of the [IAM User][2] to add to groups
-            required: true
+            required: false
             policy: ''
             notes: ''
         groups:
             description: A list of [IAM Groups][1] to add the user to
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes:
@@ -24,3 +24,27 @@ aws_iam_user_group_membership:
         groups:
             description: The list of IAM Groups
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhV0Z0WDNWelpYSmZaM0p2ZFhCZmJXVnRZbVZ5YzJocGNDSWdJ
+        bVY0WVcxd2JHVXhJaUI3Q2lBZ2RYTmxjaUE5SUNJa2UyRjNjMTlwWVcxZmRYTmxjaTUxYzJWeU1T
+        NXVZVzFsZlNJS0NpQWdaM0p2ZFhCeklEMGdXd29nSUNBZ0lpUjdZWGR6WDJsaGJWOW5jbTkxY0M1
+        bmNtOTFjREV1Ym1GdFpYMGlMQW9nSUNBZ0lpUjdZWGR6WDJsaGJWOW5jbTkxY0M1bmNtOTFjREl1
+        Ym1GdFpYMGlMQW9nSUYwS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cFlXMWZkWE5sY2w5bmNtOTFj
+        Rjl0WlcxaVpYSnphR2x3SWlBaVpYaGhiWEJzWlRJaUlIc0tJQ0IxYzJWeUlEMGdJaVI3WVhkelgy
+        bGhiVjkxYzJWeUxuVnpaWEl4TG01aGJXVjlJZ29LSUNCbmNtOTFjSE1nUFNCYkNpQWdJQ0FpSkh0
+        aGQzTmZhV0Z0WDJkeWIzVndMbWR5YjNWd015NXVZVzFsZlNJc0NpQWdYUXA5Q2dweVpYTnZkWEpq
+        WlNBaVlYZHpYMmxoYlY5MWMyVnlJaUFpZFhObGNqRWlJSHNLSUNCdVlXMWxJRDBnSW5WelpYSXhJ
+        Z3A5Q2dweVpYTnZkWEpqWlNBaVlYZHpYMmxoYlY5bmNtOTFjQ0lnSW1keWIzVndNU0lnZXdvZ0lH
+        NWhiV1VnUFNBaVozSnZkWEF4SWdwOUNncHlaWE52ZFhKalpTQWlZWGR6WDJsaGJWOW5jbTkxY0NJ
+        Z0ltZHliM1Z3TWlJZ2V3b2dJRzVoYldVZ1BTQWlaM0p2ZFhBeUlncDlDZ3B5WlhOdmRYSmpaU0Fp
+        WVhkelgybGhiVjluY205MWNDSWdJbWR5YjNWd015SWdld29nSUc1aGJXVWdQU0FpWjNKdmRYQXpJ
+        Z3A5Q2c9PQ==
+    import: !!binary |
+        Q2dwSlFVMGdkWE5sY2lCbmNtOTFjQ0J0WlcxaVpYSnphR2x3SUdOaGJpQmlaU0JwYlhCdmNuUmxa
+        Q0IxYzJsdVp5QjBhR1VnZFhObGNpQnVZVzFsSUdGdVpDQm5jbTkxY0NCdVlXMWxjeUJ6WlhCaGNt
+        RjBaV1FnWW5rZ1lDOWdMZ29L
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwWVcxZmRYTmxjbDluY205MWNGOXRaVzFpWlhKemFHbHdMbWgwYld3dWJXRnlhMlJ2ZDI0
+        PQ==

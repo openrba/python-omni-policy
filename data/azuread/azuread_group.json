@@ -8,7 +8,7 @@
         "arguments": {
             "name": {
                 "description": "The display name for the Group. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -28,7 +28,10 @@
                 "description": "A set of owners who own this Group. Supported Object types are Users or Service Principals.",
                 "required": false,
                 "policy": "",
-                "notes": "Do not use `azuread_group_owner` at the same time as the `owners` argument."
+                "notes": [
+                    "-> ",
+                    " Do not use `azuread_group_owner` at the same time as the `owners` argument."
+                ]
             }
         },
         "attributes": {

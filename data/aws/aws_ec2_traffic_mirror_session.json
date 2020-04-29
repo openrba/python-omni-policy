@@ -20,13 +20,13 @@
             },
             "traffic_mirror_filter_id": {
                 "description": "ID of the traffic mirror filter to be used",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "traffic_mirror_target_id": {
                 "description": "ID of the traffic mirror target to be used",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -38,7 +38,7 @@
             },
             "session_number": {
                 "description": "- The session number determines the order in which sessions are evaluated when an interface is used by multiple sessions. The first session with a matching filter is the one that mirrors the packets. ",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

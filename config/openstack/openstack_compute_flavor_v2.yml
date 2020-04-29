@@ -12,22 +12,22 @@ openstack_compute_flavor_v2:
             notes: ''
         name:
             description: A unique name for the flavor. Changing this creates a new
-            required: true
+            required: false
             policy: ''
             notes: ''
         ram:
             description: The amount of RAM to use, in megabytes. Changing this
-            required: true
+            required: false
             policy: ''
             notes: ''
         vcpus:
             description: The number of virtual CPUs to use. Changing this creates
-            required: true
+            required: false
             policy: ''
             notes: ''
         disk:
             description: The amount of disk space in gigabytes to use for the root
-            required: true
+            required: false
             policy: ''
             notes: ''
         swap:
@@ -50,23 +50,19 @@ openstack_compute_flavor_v2:
             required: false
             policy: ''
             notes: ''
-    attributes:
-        region:
-            description: See Argument Reference above.
-        name:
-            description: See Argument Reference above.
-        ram:
-            description: See Argument Reference above.
-        vcpus:
-            description: See Argument Reference above.
-        disk:
-            description: See Argument Reference above.
-        swap:
-            description: See Argument Reference above.
-        rx_tx_factor:
-            description: See Argument Reference above.
-        is_public:
-            description: See Argument Reference above.
-        extra_specs:
-            description: See Argument Reference above.
+    attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKdmNHVnVjM1JoWTJ0ZlkyOXRjSFYwWlY5bWJHRjJiM0pmZGpJaUlDSjBa
+        WE4wTFdac1lYWnZjaUlnZXdvZ0lHNWhiV1VnSUQwZ0ltMTVMV1pzWVhadmNpSUtJQ0J5WVcwZ0lD
+        QTlJQ0k0TURrMklnb2dJSFpqY0hWeklEMGdJaklpQ2lBZ1pHbHpheUFnUFNBaU1qQWlDZ29nSUdW
+        NGRISmhYM053WldOeklEMGdld29nSUNBZ0ltaDNPbU53ZFY5d2IyeHBZM2tpSUNBZ0lDQWdJQ0E5
+        SUNKRFVGVXRVRTlNU1VOWklpd0tJQ0FnSUNKb2R6cGpjSFZmZEdoeVpXRmtYM0J2YkdsamVTSWdQ
+        U0FpUTFCVkxWUklVa1ZCUkMxUVQweEpRMWtpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwR2JHRjJiM0p6SUdOaGJpQmlaU0JwYlhCdmNuUmxaQ0IxYzJsdVp5QjBhR1VnWUVsRVlDd2da
+        UzVuTGdvSw==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXOXdaVzV6ZEdGamF5OWliRzlpTDIxaGMzUmxjaTkzWldKemFY
+        UmxMMlJ2WTNNdmNpOWpiMjF3ZFhSbFgyWnNZWFp2Y2w5Mk1pNW9kRzFzTG0xaGNtdGtiM2R1

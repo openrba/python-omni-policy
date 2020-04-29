@@ -7,13 +7,28 @@ aws_iot_thing_principal_attachment:
     arguments:
         principal:
             description: The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
-            required: true
+            required: false
             policy: ''
             notes: ''
         thing:
             description: The name of the thing.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKaGQzTmZhVzkwWDNSb2FXNW5JaUFpWlhoaGJYQnNaU0lnZXdvZ0lHNWhi
+        V1VnUFNBaVpYaGhiWEJzWlNJS2ZRb0tjbVZ6YjNWeVkyVWdJbUYzYzE5cGIzUmZZMlZ5ZEdsbWFX
+        TmhkR1VpSUNKalpYSjBJaUI3Q2lBZ1kzTnlJQ0FnSUQwZ0lpUjdabWxzWlNnaVkzTnlMbkJsYlNJ
+        cGZTSUtJQ0JoWTNScGRtVWdQU0IwY25WbENuMEtDbkpsYzI5MWNtTmxJQ0poZDNOZmFXOTBYM1Jv
+        YVc1blgzQnlhVzVqYVhCaGJGOWhkSFJoWTJodFpXNTBJaUFpWVhSMElpQjdDaUFnY0hKcGJtTnBj
+        R0ZzSUQwZ0lpUjdZWGR6WDJsdmRGOWpaWEowYVdacFkyRjBaUzVqWlhKMExtRnlibjBpQ2lBZ2RH
+        aHBibWNnSUNBZ0lEMGdJaVI3WVhkelgybHZkRjkwYUdsdVp5NWxlR0Z0Y0d4bExtNWhiV1Y5SWdw
+        OUNnPT0=
+    import: {}
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXRjNjeTlpYkc5aUwyMWhjM1JsY2k5M1pXSnphWFJsTDJSdlkz
+        TXZjaTlwYjNSZmRHaHBibWRmY0hKcGJtTnBjR0ZzWDJGMGRHRmphRzFsYm5RdWFIUnRiQzV0WVhK
+        clpHOTNiZz09

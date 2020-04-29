@@ -86,16 +86,12 @@
             },
             "rule": {
                 "description": "A list of authentication plugins that the user must",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }
         },
-        "attributes": {
-            "domain_id": {
-                "description": "See Argument Reference above."
-            }
-        },
+        "attributes": {},
         "timeouts": {}
     }
 }

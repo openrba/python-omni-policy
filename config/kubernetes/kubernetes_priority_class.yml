@@ -9,7 +9,7 @@ kubernetes_priority_class:
         metadata:
             description: Standard resource quota's metadata. For more info see [Kubernetes
                 reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)
-            required: true
+            required: false
             policy: ''
             notes: ''
         value:
@@ -34,3 +34,14 @@ kubernetes_priority_class:
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKcmRXSmxjbTVsZEdWelgzQnlhVzl5YVhSNVgyTnNZWE56SWlBaVpYaGhi
+        WEJzWlNJZ2V3b2dJRzFsZEdGa1lYUmhJSHNLSUNBZ0lHNWhiV1VnUFNBaWRHVnljbUZtYjNKdExX
+        VjRZVzF3YkdVaUNpQWdmUW9LSUNCMllXeDFaU0E5SURFd01BcDlDZz09
+    import: !!binary |
+        Q2dwUWNtbHZjbWwwZVNCRGJHRnpjeUJqWVc0Z1ltVWdhVzF3YjNKMFpXUWdkWE5wYm1jZ2FYUnpJ
+        RzVoYldVc0lHVXVaeTRLQ2c9PQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxXdDFZbVZ5Ym1WMFpYTXZZbXh2WWk5dFlYTjBaWEl2ZDJWaWMy
+        bDBaUzlrYjJOekwzSXZjSEpwYjNKcGRIbGZZMnhoYzNNdWJXRnlhMlJ2ZDI0PQ==

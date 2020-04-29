@@ -8,37 +8,37 @@
         "arguments": {
             "name": {
                 "description": "Specifies the name of the Container Registry Webhook. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the Container Registry Webhook. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "registry_name": {
                 "description": "The Name of Container registry this Webhook belongs to. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "service_uri": {
                 "description": "Specifies the service URI for the Webhook to post notifications.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "actions": {
                 "description": "A list of actions that trigger the Webhook to post notifications. At least one action needs to be specified. Valid values are: `push`, `delete`, `quarantine`, `chart_push`, `chart_delete`",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },

@@ -7,32 +7,32 @@
         "description": "Manages a Virtual Machine scale set.",
         "arguments": {
             "name": {
-                "description": "Specifies the name of the virtual machine scale set resource. Changing this forces a new resource to be created.",
-                "required": true,
+                "description": "Specifies the name of the image from the marketplace.",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "resource_group_name": {
                 "description": "The name of the resource group in which to create the virtual machine scale set. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "location": {
                 "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "network_profile": {
                 "description": "A collection of network profile block as documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "os_profile": {
                 "description": "A Virtual Machine OS Profile block as documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -55,20 +55,20 @@
                 "notes": ""
             },
             "sku": {
-                "description": "A sku block as documented below.",
-                "required": true,
+                "description": "Specifies the SKU of the image used to create the virtual machines.",
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_profile_os_disk": {
                 "description": "A storage profile os disk block as documented below",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "upgrade_policy_mode": {
                 "description": "Specifies the mode of an upgrade to virtual machines in the scale set. Possible values, `Rolling`, `Manual`, or `Automatic`. When choosing `Rolling`, you will need to set a health probe.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -94,7 +94,10 @@
                 "description": "Specifies the eviction policy for Virtual Machines in this Scale Set. Possible values are `Deallocate` and `Delete`.",
                 "required": false,
                 "policy": "",
-                "notes": "`eviction_policy` can only be set when `priority` is set to `Low`."
+                "notes": [
+                    "-> ",
+                    " `eviction_policy` can only be set when `priority` is set to `Low`."
+                ]
             },
             "health_probe_id": {
                 "description": "Specifies the identifier for the load balancer health probe. Required when using `Rolling` as your `upgrade_policy_mode`.",
@@ -166,7 +169,9 @@
                 "description": "A collection of availability zones to spread the Virtual Machines over.",
                 "required": false,
                 "policy": "",
-                "notes": ""
+                "notes": [
+                    "-> **Please Note**: Availability Zones are [only supported in several regions at this time](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)."
+                ]
             },
             "tier": {
                 "description": "Specifies the tier of virtual machines in a scale set. Possible values, `standard` or `basic`.",
@@ -176,7 +181,7 @@
             },
             "capacity": {
                 "description": "Specifies the number of virtual machines in the scale set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -206,7 +211,7 @@
             },
             "type": {
                 "description": "The type of extension, available types for a publisher can be found using the Azure CLI.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -218,19 +223,19 @@
             },
             "computer_name_prefix": {
                 "description": "Specifies the computer name prefix for all of the virtual machines in the scale set. Computer name prefixes must be 1 to 9 characters long for windows images and 1 - 58 for linux. Changing this forces a new resource to be created.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "admin_username": {
                 "description": "Specifies the administrator account name to use for all the instances of virtual machines in the scale set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "admin_password": {
                 "description": "Specifies the administrator password to use for all the instances of virtual machines in a scale set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -242,7 +247,7 @@
             },
             "source_vault_id": {
                 "description": "Specifies the key vault to use.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -290,25 +295,25 @@
             },
             "protocol": {
                 "description": "Specifies the protocol of listener",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "pass": {
                 "description": "Specifies the name of the pass that the content applies to. The only allowable value is `oobeSystem`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "component": {
                 "description": "Specifies the name of the component to configure with the added content. The only allowable value is `Microsoft-Windows-Shell-Setup`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "setting_name": {
                 "description": "Specifies the name of the setting to which the content applies. Possible values are: `FirstLogonCommands` and `AutoLogon`.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -332,13 +337,13 @@
             },
             "primary": {
                 "description": "Specifies if this ip_configuration is the primary one.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "ip_configuration": {
                 "description": "An ip_configuration block as documented below.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -368,13 +373,13 @@
             },
             "dns_servers": {
                 "description": "Specifies an array of dns servers.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "subnet_id": {
                 "description": "Specifies the identifier of the subnet.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -416,13 +421,13 @@
             },
             "idle_timeout": {
                 "description": "The idle timeout in minutes. This value must be between 4 and 30.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "domain_name_label": {
                 "description": "The domain name label for the dns settings.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -464,7 +469,7 @@
             },
             "lun": {
                 "description": "Specifies the Logical Unit Number of the disk in each virtual machine in the scale set.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -482,7 +487,7 @@
             },
             "publisher": {
                 "description": "Specifies the publisher of the image.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -500,19 +505,19 @@
             },
             "enabled": {
                 "description": "Whether to enable boot diagnostics for the virtual machine.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "storage_uri": {
                 "description": "Blob endpoint for the storage account to hold the virtual machine's diagnostic files. This must be the root of a storage account, and not a storage container.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
             "type_handler_version": {
                 "description": "Specifies the version of the extension to use, available versions can be found using the Azure CLI.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -530,7 +535,7 @@
             },
             "settings": {
                 "description": "The settings passed to the extension, these are specified as a JSON object in a string.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             },
@@ -542,7 +547,7 @@
             },
             "product": {
                 "description": "Specifies the product of the image from the marketplace.",
-                "required": true,
+                "required": false,
                 "policy": "",
                 "notes": ""
             }

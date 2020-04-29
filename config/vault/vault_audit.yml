@@ -7,7 +7,7 @@ vault_audit:
     arguments:
         type:
             description: Type of the audit device, such as 'file'.
-            required: true
+            required: false
             policy: ''
             notes: ''
         path:
@@ -23,8 +23,19 @@ vault_audit:
             notes: ''
         options:
             description: Configuration options to pass to the audit device itself.
-            required: true
+            required: false
             policy: ''
             notes: ''
     attributes: {}
     timeouts: {}
+    usage: !!binary |
+        Q25KbGMyOTFjbU5sSUNKMllYVnNkRjloZFdScGRDSWdJblJsYzNRaUlIc0tJQ0IwZVhCbElEMGdJ
+        bVpwYkdVaUNnb2dJRzl3ZEdsdmJuTWdQU0I3Q2lBZ0lDQm1hV3hsWDNCaGRHZ2dQU0FpUXpvdmRH
+        VnRjQzloZFdScGRDNTBlSFFpQ2lBZ2ZRcDlDZz09
+    import: !!binary |
+        Q2dwQmRXUnBkQ0JrWlhacFkyVnpJR05oYmlCaVpTQnBiWEJ2Y25SbFpDQjFjMmx1WnlCMGFHVWdZ
+        SEJoZEdoZ0xDQmxMbWN1Q2dvPQ==
+    hcl_url: !!binary |
+        YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNSbGNuSmhabTl5YlMxd2NtOTJhV1JsY25NdmRHVnlj
+        bUZtYjNKdExYQnliM1pwWkdWeUxYWmhkV3gwTDJKc2IySXZiV0Z6ZEdWeUwzZGxZbk5wZEdVdlpH
+        OWpjeTl5TDJGMVpHbDBMbWgwYld3dWJXUT0=
