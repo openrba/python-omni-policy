@@ -422,8 +422,7 @@ def get_resources(provider_lst):
         # Loop through all resources at url
         for resource_dct in requests.get(url).json():
             process_resource(resource_dct)
-
-        
+       
 def get_providers():
     
     dct = {}
@@ -478,23 +477,45 @@ def logger(msg):
             myfile.write(msg)
 
 def yaml_to_json():
-    import os
-    directory = os.path.join("/","path")
-    for root,dirs,files in os.walk(directory):
-        for file in files:
-            if file.endswith(".log") or file.endswith(".txt"):
-                f=open(file, 'r')
-                for line in f:
-                    if userstring in line:
-                        print("file: " + os.path.join(root,file))             
-                        break
-                f.close()
+    for dirpath, subdirs, files in os.walk("."):
+        for f in files:
+            if f.endswith(".yml") or f.endswith(".yaml"):
+                
+                file_path = os.path.join(dirpath, f)
+                # Read in the yaml
+                with open(file_path, 'r') as stream:
+                    try:
+                        dct = yaml.safe_load(stream)
+                    except Exception:
+                        traceback.print_exc()
+                        continue
+                
+                # Remove the binary
+                delete_keys_from_dict(dct,
+                                  ['usage',
+                                  'import',
+                                  'hcl_url'
+                                ])
+                
+                # Spit out the json
+                json_file = file_path.replace(".yml",".json")
+                json_file = json_file.replace(".yaml",".json")
+                json_file = json_file.replace("config","data")
+
+                with open(json_file, 'w') as f:
+                    try:
+                        json.dump(dct, f, indent=4)
+                    except:
+                        traceback.print_exc()
+                        continue
 
 debug=True
 
-providers_lst = get_providers()
+#providers_lst = get_providers()
 
-get_resources(providers_lst)
+#get_resources(providers_lst)
+
+yaml_to_json()
 
 # This section is for debugging markdown processing failures by referencing markdown files directly.
 

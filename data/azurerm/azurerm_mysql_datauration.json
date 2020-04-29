@@ -1,0 +1,62 @@
+{
+    "azurerm_mysql_configuration": {
+        "status": "ASSESS",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_mysql_configuration",
+        "description": "Sets a MySQL Configuration value on a MySQL Server.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the MySQL Configuration, which needs [to be a valid MySQL configuration name](https://dev.mysql.com/doc/refman/5.7/en/server-configuration.html). Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "Specifies the name of the MySQL Server. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the MySQL Server exists. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "Specifies the value of the MySQL Configuration. See the MySQL documentation for valid values.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the MySQL Configuration."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the MySQL Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the MySQL Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the MySQL Configuration.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the MySQL Configuration.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

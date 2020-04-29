@@ -1,0 +1,32 @@
+{
+    "google_runtimeconfig_config": {
+        "status": "ASSESS",
+        "subcategory": "Runtime Configurator",
+        "layout": "google",
+        "page_title": "Google: google_runtimeconfig_config",
+        "sidebar_current": "docs-google-runtimeconfig-config",
+        "description": "Manages a RuntimeConfig resource in Google Cloud.",
+        "arguments": {
+            "name": {
+                "description": "The name of the runtime config.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The ID of the project in which the resource belongs. If it",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description to associate with the runtime",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

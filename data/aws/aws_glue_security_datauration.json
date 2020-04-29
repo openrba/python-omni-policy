@@ -1,0 +1,29 @@
+{
+    "aws_glue_security_configuration": {
+        "status": "ASSESS",
+        "subcategory": "Glue",
+        "layout": "aws",
+        "page_title": "AWS: aws_glue_security_configuration",
+        "description": "Manages a Glue Security Configuration",
+        "arguments": {
+            "encryption_configuration": {
+                "description": "Configuration block containing encryption configuration. Detailed below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "Name of the security configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "Glue security configuration name"
+            }
+        },
+        "timeouts": {}
+    }
+}

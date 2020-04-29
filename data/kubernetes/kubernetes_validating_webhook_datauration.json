@@ -1,0 +1,25 @@
+{
+    "kubernetes_validating_webhook_configuration": {
+        "status": "ASSESS",
+        "layout": "kubernetes",
+        "page_title": "Kubernetes: validating_webhook_configuration",
+        "sidebar_current": "docs-kubernetes-resource-validating-webhook-configuration",
+        "description": "Validating Webhook Configuration configures a validating admission webhook",
+        "arguments": {
+            "metadata": {
+                "description": "Standard Validating Webhook Configuration metadata. For more info see [Kubernetes reference](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata)",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "webhook": {
+                "description": "A list of webhooks and the affected resources and operations.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

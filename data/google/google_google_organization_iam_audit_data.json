@@ -1,0 +1,44 @@
+{
+    "google_google_organization_iam_audit_config": {
+        "status": "ASSESS",
+        "subcategory": "Cloud Platform",
+        "layout": "google",
+        "page_title": "Google: google_organization_iam_audit_config",
+        "sidebar_current": "docs-google-organization-iam-audit-config",
+        "description": "Allows management of audit logging config for a given service for a Google Cloud Platform Organization.",
+        "arguments": {
+            "org_id": {
+                "description": "The numeric ID of the organization in which you want to manage the audit logging config.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "service": {
+                "description": "Service which will be enabled for audit logging.  The special value `allServices` covers all services.  Note that if there are google\\_organization\\_iam\\_audit\\_config resources covering both `allServices` and a specific service then the union of the two AuditConfigs is used for that service: the `log_types` specified in each `audit_log_config` are enabled, and the `exempted_members` in each `audit_log_config` are exempted.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "audit_log_config": {
+                "description": "The configuration for logging of each type of permission.  This can be specified multiple times.  Structure is documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_type": {
+                "description": "Permission type for which logging is to be configured.  Must be one of `DATA_READ`, `DATA_WRITE`, or `ADMIN_READ`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "exempted_members": {
+                "description": "Identities that do not cause logging for this type of permission.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "google_runtimeconfig_variable": {
+        "status": "ASSESS",
+        "subcategory": "Runtime Configurator",
+        "layout": "google",
+        "page_title": "Google: google_runtimeconfig_variable",
+        "sidebar_current": "docs-google-runtimeconfig-variable",
+        "description": "Manages a RuntimeConfig variable in Google Cloud.",
+        "arguments": {
+            "name": {
+                "description": "The name of the variable to manage. Note that variable",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "parent": {
+                "description": "The name of the RuntimeConfig resource containing this",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "text": {
+                "description": "The content to associate with the variable.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "project": {
+                "description": "The ID of the project in which the resource belongs. If it",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}

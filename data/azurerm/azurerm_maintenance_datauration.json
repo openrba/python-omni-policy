@@ -1,0 +1,68 @@
+{
+    "azurerm_maintenance_configuration": {
+        "status": "ASSESS",
+        "subcategory": "Maintenance",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_maintenance_configuration",
+        "description": "Manages a Maintenance Configuration.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the Maintenance Configuration. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the Resource Group where the Maintenance Configuration should exist. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specified the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "scope": {
+                "description": "The scope of the Maintenance Configuration. Possible values are `All`, `Host`, `Resource` or `InResource`. Default to `All`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource. The key could not contain upper case letter.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Maintenance Configuration."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Maintenance Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Maintenance Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Maintenance Configuration.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Maintenance Configuration.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

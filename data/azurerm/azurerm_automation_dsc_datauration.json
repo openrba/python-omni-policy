@@ -1,0 +1,86 @@
+{
+    "azurerm_automation_dsc_configuration": {
+        "status": "ASSESS",
+        "subcategory": "Automation",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_automation_dsc_configuration",
+        "description": "Manages a Automation DSC Configuration.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the DSC Configuration. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the DSC Configuration is created. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "automation_account_name": {
+                "description": "The name of the automation account in which the DSC Configuration is created. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "content_embedded": {
+                "description": "The PowerShell DSC Configuration script.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Must be the same location as the Automation Account.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "log_verbose": {
+                "description": "Verbose log option.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "Description to go with DSC Configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Automation DSC Configuration."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the Automation DSC Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the Automation DSC Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the Automation DSC Configuration.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the Automation DSC Configuration.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "aws_config_aggregate_authorization": {
+        "status": "ASSESS",
+        "subcategory": "Config",
+        "layout": "aws",
+        "page_title": "AWS: aws_config_aggregate_authorization",
+        "description": "Manages an AWS Config Aggregate Authorization.",
+        "arguments": {
+            "account_id": {
+                "description": "Account ID",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "region": {
+                "description": "Region",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A map of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN of the authorization"
+            }
+        },
+        "timeouts": {}
+    }
+}

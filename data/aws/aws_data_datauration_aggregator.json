@@ -1,0 +1,41 @@
+{
+    "aws_config_configuration_aggregator": {
+        "status": "ASSESS",
+        "subcategory": "Config",
+        "layout": "aws",
+        "page_title": "AWS: aws_config_configuration_aggregator",
+        "description": "Manages an AWS Config Configuration Aggregator.",
+        "arguments": {
+            "name": {
+                "description": "The name of the configuration aggregator.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "account_aggregation_source": {
+                "description": "The account(s",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "organization_aggregation_source": {
+                "description": "The organization to aggregate config data from as documented below.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A map of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "arn": {
+                "description": "The ARN of the aggregator"
+            }
+        },
+        "timeouts": {}
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "azurerm_mariadb_configuration": {
+        "status": "ASSESS",
+        "subcategory": "Database",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_mariadb_configuration",
+        "description": "Sets a MariaDB Configuration value on a MariaDB Server.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the MariaDB Configuration, which needs [to be a valid MariaDB configuration name](https://mariadb.com/kb/en/library/server-system-variables/). Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "server_name": {
+                "description": "Specifies the name of the MariaDB Server. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which the MariaDB Server exists. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "value": {
+                "description": "Specifies the value of the MariaDB Configuration. See the MariaDB documentation for valid values.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the MariaDB Configuration."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the MariaDB Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the MariaDB Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the MariaDB Configuration.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the MariaDB Configuration.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

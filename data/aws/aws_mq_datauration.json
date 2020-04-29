@@ -1,0 +1,59 @@
+{
+    "aws_mq_configuration": {
+        "status": "ASSESS",
+        "subcategory": "MQ",
+        "layout": "aws",
+        "page_title": "AWS: aws_mq_configuration",
+        "description": "Provides an MQ configuration Resource",
+        "arguments": {
+            "data": {
+                "description": "The broker configuration in XML format.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "description": {
+                "description": "The description of the configuration.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_type": {
+                "description": "The type of broker engine.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "engine_version": {
+                "description": "The version of the broker engine.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "The name of the configuration",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A map of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The unique ID that Amazon MQ generates for the configuration."
+            },
+            "arn": {
+                "description": "The ARN of the configuration."
+            },
+            "latest_revision": {
+                "description": "The latest revision of the configuration."
+            }
+        },
+        "timeouts": {}
+    }
+}

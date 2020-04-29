@@ -1,0 +1,89 @@
+{
+    "azurerm_app_configuration": {
+        "status": "ASSESS",
+        "subcategory": "App Configuration",
+        "layout": "azurerm",
+        "page_title": "Azure Resource Manager: azurerm_app_configuration",
+        "description": "Manages an Azure App Configuration.",
+        "arguments": {
+            "name": {
+                "description": "Specifies the name of the App Configuration. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "resource_group_name": {
+                "description": "The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "location": {
+                "description": "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "sku": {
+                "description": "The SKU name of the the App Configuration. Possible values are `free` and `standard`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "A mapping of tags to assign to the resource.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {
+            "id": {
+                "description": "The ID of the Access Key."
+            },
+            "endpoint": {
+                "description": "The URL of the App Configuration."
+            },
+            "primary_read_key": {
+                "description": "A `primary_read_key` block as defined below containing the primary read access key."
+            },
+            "primary_write_key": {
+                "description": "A `primary_write_key` block as defined below containing the primary write access key."
+            },
+            "secondary_read_key": {
+                "description": "A `secondary_read_key` block as defined below containing the secondary read access key."
+            },
+            "secondary_write_key": {
+                "description": "A `secondary_write_key` block as defined below containing the secondary write access key."
+            },
+            "connection_string": {
+                "description": "The Connection String for this Access Key "
+            },
+            "secret": {
+                "description": "The Secret of the Access Key."
+            }
+        },
+        "timeouts": {
+            "create": {
+                "description": "Used when creating the App Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "update": {
+                "description": "Used when updating the App Configuration.",
+                "required": false,
+                "timeout": 30
+            },
+            "read": {
+                "description": "Used when retrieving the App Configuration.",
+                "required": false,
+                "timeout": 5
+            },
+            "delete": {
+                "description": "Used when deleting the App Configuration.",
+                "required": false,
+                "timeout": 30
+            }
+        }
+    }
+}

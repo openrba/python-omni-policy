@@ -1,0 +1,91 @@
+{
+    "aws_s3_bucket_analysis_configuration": {
+        "status": "ASSESS",
+        "subcategory": "S3",
+        "layout": "aws",
+        "page_title": "AWS: aws_s3_bucket_analytics_configuration",
+        "description": "Provides a S3 bucket analytics configuration resource.",
+        "arguments": {
+            "bucket": {
+                "description": "The name of the bucket this analytics configuration is associated with.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "name": {
+                "description": "Unique identifier of the analytics configuration for the bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "filter": {
+                "description": "Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "storage_class_analysis": {
+                "description": "Configuration for the analytics data export (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "prefix": {
+                "description": "The prefix to append to exported analytics data.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "tags": {
+                "description": "Set of object tags for filtering.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "data_export": {
+                "description": "Data export configuration (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "output_schema_version": {
+                "description": "The schema version of exported analytics data. Allowed values: `V_1`. Default value: `V_1`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "destination": {
+                "description": "Specifies the destination for the exported analytics data (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "s3_bucket_destination": {
+                "description": "Analytics data export currently only supports an S3 bucket destination (documented below).",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket_arn": {
+                "description": "The ARN of the destination bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "bucket_account_id": {
+                "description": "The account ID that owns the destination bucket.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            },
+            "format": {
+                "description": "The output format of exported analytics data. Allowed values: `CSV`. Default value: `CSV`.",
+                "required": false,
+                "policy": "",
+                "notes": ""
+            }
+        },
+        "attributes": {},
+        "timeouts": {}
+    }
+}
