@@ -26,8 +26,11 @@
             },
             "location": {
                 "description": "The location/region where the virtual network is",
-                "required": false,
-                "policy": "",
+                "required": true,
+                "policy": [
+                    "eastus",
+                    "centralus"
+                ],
                 "notes": ""
             },
             "ddos_protection_plan": {
