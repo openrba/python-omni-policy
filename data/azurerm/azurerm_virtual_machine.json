@@ -216,8 +216,8 @@
             },
             "computer_name": {
                 "description": "Specifies the name of the Virtual Machine.",
-                "required": false,
-                "policy": "",
+                "required": true,
+                "policy": "^[a-z](5)*",
                 "notes": ""
             },
             "admin_username": {

@@ -210,8 +210,8 @@ azurerm_virtual_machine:
             notes: ''
         computer_name:
             description: Specifies the name of the Virtual Machine.
-            required: false
-            policy: ''
+            required: true
+            policy: '^[a-z](5)*'
             notes: ''
         admin_username:
             description: Specifies the name of the local administrator account.
