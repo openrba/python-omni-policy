@@ -25,7 +25,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Create local changes
       run: |
-        ./omni-policy.py
+        python -m ./omni-policy.py
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
