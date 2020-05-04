@@ -290,8 +290,24 @@
             },
             "disk_size_gb": {
                 "description": "The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine is sourced from.",
-                "required": false,
-                "policy": "",
+                "required": true,
+                "policy": [
+                    4,
+                    8,
+                    16,
+                    32,
+                    64,
+                    128,
+                    256,
+                    512,
+                    1024,
+                    2048,
+                    4096,
+                    8192,
+                    16384,
+                    32768,
+                    65536
+                ],
                 "notes": [
                     "-> ",
                     " If specified this must be equal to or larger than the size of the Image the Virtual Machine is based on. When creating a larger disk than exists in the image you'll need to repartition the disk to use the remaining space."
