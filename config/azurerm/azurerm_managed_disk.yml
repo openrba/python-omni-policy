@@ -69,9 +69,9 @@ azurerm_managed_disk:
             description: Specifies the size of the managed disk to create in gigabytes.
                 If `create_option` is `Copy` or `FromImage`, then the value must be
                 equal to or greater than the source's size. The size can only be increased.
-            required: false
-            policy: ''
-            notes: ''
+            required: true
+            policy: [4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536]
+            notes: 'Azure forces you to buy size units.'
         encryption_settings:
             description: A `encryption_settings` block as defined below.
             required: false
