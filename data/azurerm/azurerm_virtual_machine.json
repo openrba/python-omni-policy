@@ -369,24 +369,8 @@
             },
             "disk_size_gb": {
                 "description": "Specifies the size of the OS Disk in gigabytes.",
-                "required": true,
-                "policy": [
-                    4,
-                    8,
-                    16,
-                    32,
-                    64,
-                    128,
-                    256,
-                    512,
-                    1024,
-                    2048,
-                    4096,
-                    8192,
-                    16384,
-                    32768,
-                    65536
-                ],
+                "required": false,
+                "policy": "",
                 "notes": "Azure charges for disk sizes not GB stored."
             },
             "lun": {
